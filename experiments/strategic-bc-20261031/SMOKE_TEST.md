@@ -25,7 +25,7 @@ This is an engineering smoke test, not a training result and not a model claim.
 - masked candidate cross-entropy, action-type weights, value loss disabled by
   absent `return` targets;
 - checkpoint saved and reloaded; forward logits/value finite;
-- train top-1 0.575 on the 200-record fit set.
+- train top-1 0.585 on the 200-record fit set.
 
 This only proves the data path, loss, checkpoint and reload work.  It does **not**
 prove strategic strength; the data is not an expert dataset, and the episode is

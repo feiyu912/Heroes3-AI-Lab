@@ -86,6 +86,7 @@ def main():
     records = []
     per_file = {}
     seen = {}
+    duplicate_kept = 0
     duplicate_conflicts = 0
     for path in files:
         file_rows = read_jsonl(path)
@@ -150,6 +151,7 @@ def main():
                             ))
                         warnings.append(f"conflicting duplicate state {key[:12]} at {path}:{number} (kept first label)")
                         continue
+                    duplicate_kept += 1
                     warnings.append(f"duplicate state {key[:12]} at {path}:{number} (kept first)")
                     continue
                 seen[key] = dict(file=str(path), line=number, action=action)
@@ -203,7 +205,7 @@ def main():
         action_counts=dict(action_counts),
         action_counts_by_split={key: dict(value) for key, value in by_split_action.items()},
         exact_request_overlap=overlap,
-        duplicate_state_kept_first=sum(1 for value in seen.values() if value),
+        duplicate_state_kept_first=duplicate_kept,
         conflicting_duplicates_skipped=duplicate_conflicts,
         conflict_examples=conflict_examples,
         errors=errors,

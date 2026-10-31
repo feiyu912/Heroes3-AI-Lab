@@ -334,11 +334,17 @@ def main():
                 best_state = {name: value.detach().cpu().clone() for name, value in model.state_dict().items()}
                 patience = 0
             else:
-                patience += 1
-                if patience >= args.patience:
-                    print(f"early stopping at epoch {epoch}", file=sys.stderr)
-                    break
-        model.load_state_dict(best_state, strict=True)
+                if validation:
+                    patience += 1
+                    if patience >= args.patience:
+                        print(f"early stopping at epoch {epoch}", file=sys.stderr)
+                        break
+        if validation:
+            model.load_state_dict(best_state, strict=True)
+        else:
+            # Fit-only smoke runs have no validation signal.  Keep the last
+            # epoch rather than silently returning the untrained base weights.
+            best = dict(epoch=len(history), validation=None, train=None)
         final_train = evaluate(model, train, args.device, args.batch_size)
         final_validation = evaluate(model, validation, args.device, args.batch_size)
         final_test = evaluate(model, test, args.device, args.batch_size) if test else None
