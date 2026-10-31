@@ -1,0 +1,8 @@
+{
+  "parent": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-resume-20261020",
+  "parent_run_sha256": "5634301f9cd83b983c9f7c0c06cfd2c51c13a1d47dcefb6edfca8f0abec8f695",
+  "failure": "prepare-worker containment refused evaluations/bootstrap before CUDA/native/optimizer",
+  "change": "bootstrap worker under canonical workers directory",
+  "native_games": 0,
+  "optimizer_steps": 0
+}

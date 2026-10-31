@@ -1,0 +1,11 @@
+{
+  "passed_exact": false,
+  "validation_error": "AssertionError()",
+  "validation_context": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-audits/compare_parallel_boundaries.py\", line 204, in main\n    report=compare(args.continuous.resolve(),args.split.resolve(),args.resume.resolve(),args.device,args.synthetic)\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-audits/compare_parallel_boundaries.py\", line 160, in compare\n    a=audit_stage(continuous,[1,2],device,synthetic);b=audit_stage(split,[1],device,synthetic);c=audit_stage(resume,[2],device,synthetic)\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-audits/compare_parallel_boundaries.py\", line 105, in audit_stage\n    assert report['status']=='completed' and report['synthetic']==synthetic\nAssertionError\n",
+  "device_required": "cuda",
+  "synthetic": false,
+  "audit_launches_games": false,
+  "audit_optimizer_steps": 0,
+  "audit_CUDA_initialized": false,
+  "comparator_sha256": "4e255868de03dc428124a77075edc50b5d4d500f5ba0cb11dfdc7d7a648ce1cc"
+}

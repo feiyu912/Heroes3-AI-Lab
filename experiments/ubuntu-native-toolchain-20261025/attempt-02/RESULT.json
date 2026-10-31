@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "toolchain_root": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01",
+  "actual_executable_compilations": 2,
+  "source_sha256": "b4e16ecaaa29b389ed6be0cf06ba160461221fbaa1ab5c5d2f23a6c153bc6fa4",
+  "environment_sha256": "774807e2392f12e0bc4ef537e8a305af844f79b9844629c0f3b8466347d44dbe",
+  "actual_inherited_flocks": true,
+  "scope": "C/C++20 executable compile/link/run and compiler ELF closure; VCMI configure/build not yet qualified"
+}

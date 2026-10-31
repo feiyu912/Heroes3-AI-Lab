@@ -1,0 +1,264 @@
+{
+  "passed": true,
+  "all12_runtime_owned_initial_armies_exact": true,
+  "actual_runtime_catalog_bound": true,
+  "all12_private_maps_exact": true,
+  "entries": [
+    {
+      "cell": 0,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x1",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 1,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "expected_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "runtime_map_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "trace_sha256": "3b5bb08006ebdff16993f339442aba47aaec3dc58eef9e417878c3dbe4cb49e0"
+    },
+    {
+      "cell": 1,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x1",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 1,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "expected_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "runtime_map_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "trace_sha256": "38a61d48d4795ebdb60c7365883e7f39ce39437e6a589aef75d26814afbba5ec"
+    },
+    {
+      "cell": 2,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x1",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 1,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "expected_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "runtime_map_sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+      "trace_sha256": "b3e9d422c72c625c4557c18cbcf2679864bd9d6c6a64cc51f68cb2dd92dbe0f9"
+    },
+    {
+      "cell": 3,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x1",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 1,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "expected_initial_owned_army": {
+        "0": 20,
+        "2": 10
+      },
+      "runtime_map_sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+      "trace_sha256": "3769a10acfeef5d1e77bfd03be0bdde55aa1d80699e54ec2eb46f1cd5995574c"
+    },
+    {
+      "cell": 4,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x2",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 2,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "expected_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "runtime_map_sha256": "f15db2f51da931c03b54f399f7ac81b42581549afdd872461a1b2affc081c320",
+      "trace_sha256": "0be2dcf5597cde54993f1a6b210060462fcf128b88693173c7cb1660a6cca96e"
+    },
+    {
+      "cell": 5,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x2",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 2,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "expected_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "runtime_map_sha256": "82cef90db00eaacc75fc278edd3109f8bf0dc2c0e8331f671cf916ab86e9f4d0",
+      "trace_sha256": "dfa9c851a7cad5596401e554ecb2d3ef9a5a2bdcc1adc5bb93cb98e20955da9c"
+    },
+    {
+      "cell": 6,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x2",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 2,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "expected_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "runtime_map_sha256": "898849ad95234c7eaeab05d1ab1f7a27cdc2a55bc4fdd16403d15f49b05b7700",
+      "trace_sha256": "8e076020b23673d45f16e06b352c639f7cc2aff1c5166940c1a3ea2eadc2844a"
+    },
+    {
+      "cell": 7,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x2",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 2,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "expected_initial_owned_army": {
+        "0": 40,
+        "2": 20
+      },
+      "runtime_map_sha256": "cec2c0699cd87346ffe0ab61cda9e0ba62bf2d5d608d4ff6f22da5ce7405ce19",
+      "trace_sha256": "ad461ec263dd21285454d91473b392bafc77a58b3e90b03fbb2904137d83d16f"
+    },
+    {
+      "cell": 8,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x4",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 4,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "expected_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "runtime_map_sha256": "3bc4252d9030262d4614217ea3c1694aee09f6e5464f0061c87544bb1215fec3",
+      "trace_sha256": "319b0a6e5d88a7441ca9774c35a828b48cda17b3f65e400679701352e7416785"
+    },
+    {
+      "cell": 9,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x4",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 4,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "expected_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "runtime_map_sha256": "0af160fde5ab790faabfe7a895a49fbb858fd583995b3c237e6d24a5fce7e0c3",
+      "trace_sha256": "9a6bf4325b2fd7b0e0045c1ae4ea28a24316be7d4b1b9fbef7c8ec386e9ed356"
+    },
+    {
+      "cell": 10,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x4",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 4,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "expected_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "runtime_map_sha256": "8d239f03822bb884583a116e065695880f2e1bc35ed1e697935ae50f5f893425",
+      "trace_sha256": "91db57ddab368529dcf7a6808d46ddb0d8cab0a0ba7f1787bfc20fc6f198ede7"
+    },
+    {
+      "cell": 11,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x4",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 4,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "actual_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "expected_initial_owned_army": {
+        "0": 80,
+        "2": 40
+      },
+      "runtime_map_sha256": "9c66b2810e2aa841514b8d7043e05d2478f472df39586a1e64eada8995de10cc",
+      "trace_sha256": "d71088d449ec39a710d13719c8ef7e877508fc768c5ffc6a68a583c97e4fc49d"
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "enemy_initial_state_scope": "Static map strict diff and loaded map identity; unseen enemy state is not inferred from owned-only trace"
+}

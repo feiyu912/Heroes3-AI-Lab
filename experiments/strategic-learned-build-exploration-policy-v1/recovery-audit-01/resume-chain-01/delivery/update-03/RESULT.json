@@ -1,0 +1,128 @@
+{
+  "completed_update": true,
+  "cuda_optimizer_steps": 108,
+  "ability_improvement_claim": false,
+  "training_updates": 3,
+  "optimizer_steps_total": 376,
+  "checkpoint_sha256": "317b0b527aa765b51533a7ffaade92240bac4e739d1ee4227480a2d8890d664d",
+  "checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-03/update/update-3.pt",
+  "stop_bias_before": -1.9780538082122803,
+  "stop_bias_after": -1.9729478359222412,
+  "stop_bias_adam_step": 376,
+  "progress": {
+    "optimizer_steps": 108,
+    "minibatches": 108,
+    "completed": true,
+    "early_stop_kl": false,
+    "forced_only_minibatches": 0,
+    "algorithm_schema": "strategic-learned-build-exploration-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 1724,
+      "episodes": 8,
+      "free_choices": 1724,
+      "forced_transitions": 0,
+      "active_actor_episodes": 8,
+      "actor_weight_sum": 1724.0,
+      "critic_weight_sum": 1724.0,
+      "advantage_mean": -0.1377943717592695,
+      "advantage_variance": 0.4460071905522396,
+      "per_episode": [
+        {
+          "episode_id": "d148aa5a7181d19df10a3bd1939165152d4bdb0c25585b449f05e98d3f8ebcf6",
+          "steps": 276,
+          "free_choices": 276,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "d4534410aa773411f1eea8573a1c05e789ef3b65ee6100d1b56a3a4d169325ef",
+          "steps": 204,
+          "free_choices": 204,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "d730249aa9b29eea92a83e36c0346b10d93c50752a2cae5f3546366003825e9f",
+          "steps": 247,
+          "free_choices": 247,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "3b471c7c90c3cce14d07e4158141c7f04d80e01fb567550f69b18eff026dbc5e",
+          "steps": 41,
+          "free_choices": 41,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "2b40b885f757e65eaa6721b1e0ef39cc1503ad42e42d41e27bbfd12dae653891",
+          "steps": 343,
+          "free_choices": 343,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "95f755d1c9e4194c8bb33e73f36e7fa30a7889801375151f8d3babdd723f92f2",
+          "steps": 353,
+          "free_choices": 353,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "de7363b49dbedec79a3e5b7901f2f1c2a159d4ba1d2c49c0269788535616a0b3",
+          "steps": 161,
+          "free_choices": 161,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "d09c020d9a7eb3f9cfcb9bd2af8a6b5c6820eceadadf5fa31c7cd41aef4e4814",
+          "steps": 99,
+          "free_choices": 99,
+          "reward": -1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": 0.13592861592769623,
+      "critic": 0.1673627346754074,
+      "entropy": 1.3729476928710938,
+      "kl": 0.0017495517386123538,
+      "conditional_kl": 0.0017495517386123538,
+      "loss": 0.21274523437023163
+    },
+    "epoch": 4,
+    "full_batch_post_epoch": {
+      "actor": -0.0031435967459755992,
+      "critic": 0.17451622390691748,
+      "entropy": 1.3455216027191235,
+      "kl": 0.0019646967478148345,
+      "conditional_kl": 0.0019646967478148345,
+      "loss": 0.07738690247668467
+    },
+    "group_optimizer_steps": {
+      "actor": 108,
+      "critic": 108
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 8,
+        "total_tensors": 8,
+        "l2_delta": 0.5009490779040805,
+        "max_abs_delta": 0.020683208480477333
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.7463870205382712,
+        "max_abs_delta": 0.06639190018177032
+      }
+    }
+  },
+  "build_bias_before": 1.4930193424224854,
+  "build_bias_after": 1.488717794418335,
+  "build_bias_adam_step": 376,
+  "build_bias_adam_exp_avg": 0.0013942164368927479,
+  "episodes": 8,
+  "samples": 1724,
+  "training_wins": 4,
+  "policy_builds": 25,
+  "training_losses": 4,
+  "purpose": "curriculum_training",
+  "checkpoint_model_readback_exact": true
+}

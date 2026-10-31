@@ -1,0 +1,88 @@
+{
+  "complete": false,
+  "results": [
+    {
+      "name": "b64-baseline",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "checkpoint_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+      "BattleAI": {
+        "summary": {
+          "policy": "recovered",
+          "battles": 192,
+          "wins": 172,
+          "win_rate": 0.8958333333333334,
+          "wilson95": [
+            0.8445858372628201,
+            0.9315516125946157
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 93.546875
+        },
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/b64-baseline-BattleAI-development.json",
+        "sha256": "064ccba94fc3a53e986df2713c50b598e230150177d470aa0f694a122a2f3c18"
+      },
+      "MMAI_MODEL": {
+        "summary": {
+          "policy": "recovered",
+          "battles": 192,
+          "wins": 114,
+          "win_rate": 0.59375,
+          "wilson95": [
+            0.5231001126508305,
+            0.6607219149469833
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 102.609375
+        },
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/b64-baseline-MMAI_MODEL-development.json",
+        "sha256": "d28e54a958c88323813423ad63458e3d9f47eae88ae3303a8d7b1667dc9c9b50"
+      }
+    },
+    {
+      "name": "mixed-16",
+      "checkpoint": "/root/heroes3-ai-lab/models/expert-mixed-ppo-v1/1792248247434187598/update-16.pt",
+      "checkpoint_sha256": "326d0721739d470c126e6c2dde76364d6d98747eb78a57dc6e5893b0f8aba633",
+      "BattleAI": {
+        "summary": {
+          "policy": "recovered",
+          "battles": 192,
+          "wins": 172,
+          "win_rate": 0.8958333333333334,
+          "wilson95": [
+            0.8445858372628201,
+            0.9315516125946157
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 95.36979166666667
+        },
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/mixed-16-BattleAI-development.json",
+        "sha256": "c4f1bc102a6c7bd85df0487fe7f421e87eac9bdfd0d0199dc38fc9e46d1ed2fb"
+      },
+      "MMAI_MODEL": {
+        "summary": {
+          "policy": "recovered",
+          "battles": 192,
+          "wins": 113,
+          "win_rate": 0.5885416666666666,
+          "wilson95": [
+            0.517861400096107,
+            0.6557482926351614
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 103.01041666666667
+        },
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/mixed-16-MMAI_MODEL-development.json",
+        "sha256": "ba8f8d4d933d68bfc6475087bbca6f2606442370070ebcaf5cf65dacdc489d17"
+      }
+    }
+  ],
+  "goal_achieved": false
+}

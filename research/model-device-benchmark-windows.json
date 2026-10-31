@@ -1,0 +1,222 @@
+{
+  "torch_version": "2.10.0.dev20251107+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "cpu_threads": 2,
+  "warmup": 5,
+  "repetitions": 20,
+  "records": [
+    {
+      "architecture": "mlp",
+      "batch": 1,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 0.19935000000259606
+    },
+    {
+      "architecture": "mlp",
+      "batch": 1,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 0.8250999994743324,
+      "cuda_peak_allocated_mib": 10.18505859375
+    },
+    {
+      "architecture": "mlp",
+      "batch": 12,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 1.0361000004195375
+    },
+    {
+      "architecture": "mlp",
+      "batch": 12,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.6780500000095344,
+      "cuda_peak_allocated_mib": 16.7783203125
+    },
+    {
+      "architecture": "mlp",
+      "batch": 32,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 2.5726500002747343,
+      "update_including_transfer_ms_p50": 9.219150000262744
+    },
+    {
+      "architecture": "mlp",
+      "batch": 32,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.1026000001947978,
+      "update_including_transfer_ms_p50": 2.524200000152632,
+      "cuda_peak_allocated_mib": 48.66845703125
+    },
+    {
+      "architecture": "mlp",
+      "batch": 64,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 5.277899999782676,
+      "update_including_transfer_ms_p50": 17.58074999997916
+    },
+    {
+      "architecture": "mlp",
+      "batch": 64,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.32705000032729,
+      "update_including_transfer_ms_p50": 3.6312499996711267,
+      "cuda_peak_allocated_mib": 78.40185546875
+    },
+    {
+      "architecture": "mlp",
+      "batch": 256,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 23.70115000030637,
+      "update_including_transfer_ms_p50": 71.9984000002114
+    },
+    {
+      "architecture": "mlp",
+      "batch": 256,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 3.8660499999423337,
+      "update_including_transfer_ms_p50": 5.800299999918934,
+      "cuda_peak_allocated_mib": 251.83984375
+    },
+    {
+      "architecture": "attention",
+      "batch": 1,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 1.4167500003168243
+    },
+    {
+      "architecture": "attention",
+      "batch": 1,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.4189500002430577,
+      "cuda_peak_allocated_mib": 22.73046875
+    },
+    {
+      "architecture": "attention",
+      "batch": 12,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 13.003699999899254
+    },
+    {
+      "architecture": "attention",
+      "batch": 12,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.5423000004375353,
+      "cuda_peak_allocated_mib": 41.83154296875
+    },
+    {
+      "architecture": "attention",
+      "batch": 32,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 34.125549999771465,
+      "update_including_transfer_ms_p50": 84.7919500001808
+    },
+    {
+      "architecture": "attention",
+      "batch": 32,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.638350000121136,
+      "update_including_transfer_ms_p50": 5.672100000538194,
+      "cuda_peak_allocated_mib": 113.60791015625
+    },
+    {
+      "architecture": "attention",
+      "batch": 64,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 68.38920000018334,
+      "update_including_transfer_ms_p50": 187.6862499998424
+    },
+    {
+      "architecture": "attention",
+      "batch": 64,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 2.7039500000682892,
+      "update_including_transfer_ms_p50": 6.28950000009354,
+      "cuda_peak_allocated_mib": 202.97998046875
+    },
+    {
+      "architecture": "attention",
+      "batch": 256,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 284.341300000051,
+      "update_including_transfer_ms_p50": 825.770449999709
+    },
+    {
+      "architecture": "attention",
+      "batch": 256,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 8.0410499995196,
+      "update_including_transfer_ms_p50": 21.243300000151066,
+      "cuda_peak_allocated_mib": 727.20166015625
+    },
+    {
+      "architecture": "gnn",
+      "batch": 1,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 0.44364999939716654
+    },
+    {
+      "architecture": "gnn",
+      "batch": 1,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 0.9585500001776381,
+      "cuda_peak_allocated_mib": 24.962890625
+    },
+    {
+      "architecture": "gnn",
+      "batch": 12,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 2.93904999989536
+    },
+    {
+      "architecture": "gnn",
+      "batch": 12,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.0837999998329906,
+      "cuda_peak_allocated_mib": 32.52685546875
+    },
+    {
+      "architecture": "gnn",
+      "batch": 32,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 7.59600000037608,
+      "update_including_transfer_ms_p50": 22.208899999895948
+    },
+    {
+      "architecture": "gnn",
+      "batch": 32,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.181750000341708,
+      "update_including_transfer_ms_p50": 3.20635000070979,
+      "cuda_peak_allocated_mib": 67.0146484375
+    },
+    {
+      "architecture": "gnn",
+      "batch": 64,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 15.093500000148197,
+      "update_including_transfer_ms_p50": 43.07215000017095
+    },
+    {
+      "architecture": "gnn",
+      "batch": 64,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 1.5186999994512007,
+      "update_including_transfer_ms_p50": 3.81859999970402,
+      "cuda_peak_allocated_mib": 111.66162109375
+    },
+    {
+      "architecture": "gnn",
+      "batch": 256,
+      "device": "cpu",
+      "inference_including_transfer_ms_p50": 67.15694999957122,
+      "update_including_transfer_ms_p50": 176.77939999975933
+    },
+    {
+      "architecture": "gnn",
+      "batch": 256,
+      "device": "cuda",
+      "inference_including_transfer_ms_p50": 5.12990000015634,
+      "update_including_transfer_ms_p50": 8.35514999971565,
+      "cuda_peak_allocated_mib": 384.5927734375
+    }
+  ]
+}

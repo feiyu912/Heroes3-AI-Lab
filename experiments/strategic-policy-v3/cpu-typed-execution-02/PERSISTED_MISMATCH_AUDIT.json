@@ -1,0 +1,23 @@
+{
+  "valid": false,
+  "fixture_only": true,
+  "real_execution_certified": false,
+  "errors": [
+    {
+      "phase": "persisted_input",
+      "error": "Persisted typed response mismatch"
+    }
+  ],
+  "ppo_samples_admitted": 0,
+  "potential_verified_policy_decisions": 0,
+  "win": null,
+  "reward": null,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/io-mismatch/typed-broker.jsonl": "6e59497be32dbce047b5d3a39720f1b95d97182b1a104a081b25cfd7b84c7e61",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/events-late-ack.jsonl": "5851fcad07430a3f6b1d4e6ff1dae0f85788be63fcb57b7389ad85402345c5b8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/io-mismatch/request-00000001.json": "b0d69e46e43ace4685a841892a13275f74f7956bdebd05f186fbcf0ee92fb944",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/io-mismatch/action-00000001.json": "7f4213015156ac7807e7f44d9643e6bed83c3e9bd5ff8613d462a0ba5485a23a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/io-mismatch/request-00000002.json": "c3b5476afc398595fd4a53a0533fdc2eb4edb9b6ee916824ae366923e2381dc6",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu-typed-execution-02/io-mismatch/action-00000002.json": "4530b42520ab5d6be3b058acbb4ae0a489176cb50822b921c8bca0bbf835383f"
+  }
+}

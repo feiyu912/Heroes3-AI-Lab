@@ -1,0 +1,23 @@
+{
+  "schema": "human-tactics-quality-withdrawal-v1",
+  "source_file": "G:\\Heroes3-AI-Lab\\experiments\\human-tactics-events-v2\\demonstrations-v1.jsonl",
+  "source_sha256": "a0c9093e5db8f0299b5def2eb248da80137647d19e9e8d673bb38ea38651d70d",
+  "original_file_modified": false,
+  "q3_original_count": 62,
+  "q3_certification_status": "withdrawn",
+  "q2_original_count": 143,
+  "q2_status": "exploratory-unverified-action-event-attribution",
+  "eligible_for_bc": false,
+  "reasons": [
+    "Previous-action events attached to current action",
+    "Missing final step event batch",
+    "Post-hoc favorable cells do not certify every action",
+    "Test data used for selection/training"
+  ],
+  "required_before_reuse": [
+    "Correct per-action attribution from recoverable native windows",
+    "Stable identity unknown kept unknown",
+    "Terminal completeness limitation disclosed",
+    "New independent split and paired benefit proof"
+  ]
+}

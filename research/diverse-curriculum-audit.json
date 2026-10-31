@@ -1,0 +1,9 @@
+{
+  "train_cases": 192,
+  "development_cases": 48,
+  "all_exact_mirrors": true,
+  "no_exact_duplicates_with_prior_suites": true,
+  "excluded_final_suite_for_dedup_only": true,
+  "final_results_not_used": true,
+  "seed": 2026101502
+}

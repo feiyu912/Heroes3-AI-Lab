@@ -1,0 +1,115 @@
+{
+  "scope": "Actual asynchronous/barrier CPU fake-engine regeneration; complete balanced batches, real Adam updates and atomic checkpoint resume",
+  "suffix": "04",
+  "inference_schedule": "barrier",
+  "synthetic": true,
+  "CUDA_tested": false,
+  "protocol_equal": true,
+  "first_update_model": {
+    "equal": true,
+    "max_abs": 0.0
+  },
+  "updates": [
+    {
+      "update": 1,
+      "rows": 32,
+      "other_rows": 32,
+      "comparisons": {
+        "request": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "action": {
+          "equal": true,
+          "max_abs": 0
+        },
+        "old_logprob": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "old_value": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "return": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "generator_seed": {
+          "equal": true,
+          "max_abs": 0
+        },
+        "policy_version": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "update": 2,
+      "rows": 32,
+      "other_rows": 32,
+      "comparisons": {
+        "request": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "action": {
+          "equal": true,
+          "max_abs": 0
+        },
+        "old_logprob": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "old_value": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "return": {
+          "equal": true,
+          "max_abs": 0.0
+        },
+        "generator_seed": {
+          "equal": true,
+          "max_abs": 0
+        },
+        "policy_version": {
+          "equal": true,
+          "max_abs": 0.0
+        }
+      }
+    }
+  ],
+  "final_comparisons": {
+    "state_dict": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "optimizer": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "torch_rng": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "cuda_rng": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "python_rng": {
+      "equal": true,
+      "max_abs": 0
+    },
+    "episode_generator_states": {
+      "equal": true,
+      "max_abs": 0.0
+    }
+  },
+  "full_optimizer_steps": 8,
+  "resume_optimizer_steps": 8,
+  "checkpoint_provenance_byte_sha_not_compared": "Parent lineage differs intentionally; tensor/Adam/RNG and complete rollout fields compared",
+  "all_declared_fields_bitwise_equal": true,
+  "passed_exact": true
+}

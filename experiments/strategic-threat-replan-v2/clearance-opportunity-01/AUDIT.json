@@ -1,0 +1,276 @@
+{
+  "passed": true,
+  "release_states": 17,
+  "coordinate_proxy_overrides": 12,
+  "decisions": [
+    {
+      "pair": 2,
+      "decision_id": 71,
+      "day": 9,
+      "proxy": {
+        "index": 49,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 26,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "pair": 2,
+      "decision_id": 103,
+      "day": 12,
+      "proxy": {
+        "index": 74,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 12,
+        "baseline_clearance": 11,
+        "eligible_alternatives": 6,
+        "selected_clearance": 13
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 18,
+      "day": 3,
+      "proxy": {
+        "index": 2,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 5,
+        "eligible_alternatives": 27,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 27,
+      "day": 4,
+      "proxy": {
+        "index": 2,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 7,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 17,
+        "selected_clearance": 8
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 34,
+      "day": 5,
+      "proxy": {
+        "index": 1,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 3,
+        "baseline_clearance": 3,
+        "eligible_alternatives": 19,
+        "selected_clearance": 4
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 43,
+      "day": 6,
+      "proxy": {
+        "index": 53,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 1,
+        "baseline_clearance": 1,
+        "eligible_alternatives": 3,
+        "selected_clearance": 2
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 52,
+      "day": 7,
+      "proxy": {
+        "index": 1,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 4,
+        "baseline_clearance": 3,
+        "eligible_alternatives": 19,
+        "selected_clearance": 5
+      }
+    },
+    {
+      "pair": 3,
+      "decision_id": 480,
+      "day": 51,
+      "proxy": {
+        "index": 3,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 7,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 384,
+      "day": 41,
+      "proxy": {
+        "index": 6,
+        "overridden": false,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "no_existing_nonmilitary_step_improves_clearance",
+        "origin_clearance": 6,
+        "baseline_clearance": 7,
+        "eligible_alternatives": 0
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 393,
+      "day": 42,
+      "proxy": {
+        "index": 1,
+        "overridden": false,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "no_existing_nonmilitary_step_improves_clearance",
+        "origin_clearance": 10,
+        "baseline_clearance": 9,
+        "eligible_alternatives": 0
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 403,
+      "day": 43,
+      "proxy": {
+        "index": 3,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 9,
+        "baseline_clearance": 8,
+        "eligible_alternatives": 27,
+        "selected_clearance": 10
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 412,
+      "day": 44,
+      "proxy": {
+        "index": 0,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 8,
+        "baseline_clearance": 7,
+        "eligible_alternatives": 22,
+        "selected_clearance": 9
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 430,
+      "day": 46,
+      "proxy": {
+        "index": 4,
+        "overridden": false,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "no_existing_nonmilitary_step_improves_clearance",
+        "origin_clearance": 12,
+        "baseline_clearance": 13,
+        "eligible_alternatives": 0
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 438,
+      "day": 47,
+      "proxy": {
+        "index": 1,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 10,
+        "baseline_clearance": 10,
+        "eligible_alternatives": 47,
+        "selected_clearance": 11
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 446,
+      "day": 48,
+      "proxy": {
+        "index": 5,
+        "overridden": false,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "no_existing_nonmilitary_step_improves_clearance",
+        "origin_clearance": 7,
+        "baseline_clearance": 8,
+        "eligible_alternatives": 0
+      }
+    },
+    {
+      "pair": 6,
+      "decision_id": 455,
+      "day": 49,
+      "proxy": {
+        "index": 3,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 12,
+        "baseline_clearance": 11,
+        "eligible_alternatives": 25,
+        "selected_clearance": 13
+      }
+    },
+    {
+      "pair": 7,
+      "decision_id": 141,
+      "day": 17,
+      "proxy": {
+        "index": 0,
+        "overridden": false,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "no_existing_nonmilitary_step_improves_clearance",
+        "origin_clearance": 4,
+        "baseline_clearance": 4,
+        "eligible_alternatives": 0
+      }
+    }
+  ],
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-00/b/native/agent/typed-broker.jsonl": "77f20ab2ff84be7c5d5b31406df468468039b745793c738c02ecbce2817b8259",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-01/b/native/agent/typed-broker.jsonl": "82d81d01f40523fd675e751362f3ef0a77946ca433645287a51f1a8c42c53e4e",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-02/b/native/agent/typed-broker.jsonl": "820758f2ba88ddd02eeb7d3ae51a836594a011815f752d02ea1a2be5960cab9f",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-02/b/native/strategy-trace.jsonl.replan.jsonl": "9c40627af112665fa47c1572f90441135a7230435a9ca905fcfdf923d65054fe",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-03/b/native/agent/typed-broker.jsonl": "bdee385e5505a24cf4145e951c1a5fd50f364e55ed7fe9c557533898c1d36e2a",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-03/b/native/strategy-trace.jsonl.replan.jsonl": "eeed14bbdaec12b4d4ca06d38e7bb520609bcc09c2f921b3436d4d7fcc64c7e9",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-04/b/native/agent/typed-broker.jsonl": "e1ef7c2e497e3ce6a802a1d6c89cdbc11087af8714b36cda5100558ba1e05ccc",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-05/b/native/agent/typed-broker.jsonl": "6ccfc9fa12763d6cac7114c83dd660308e351b2c2b2f44ea9a23fc93840f21d6",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-06/b/native/agent/typed-broker.jsonl": "d04b74f446198ca56185ebc3533d67c52ec39945e0236530801ffa40c291476e",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-06/b/native/strategy-trace.jsonl.replan.jsonl": "6f5719d7c1a92c9309915947e77423d086b6cb7ec212e7bc0c009532fbe81907",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-07/b/native/agent/typed-broker.jsonl": "5fb8944964f52191ef3e3f3fd0371b2b70af7d8c612bdcfb30301e862a48b4a1",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-paired-01/pair-07/b/native/strategy-trace.jsonl.replan.jsonl": "51c380989cd906c09a7ea7e2a7e440218c2b66cd57cc84290ebb34b3a94c34e1"
+  },
+  "proxy_sha256": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "limitation": "Only existing legal next-step coordinate opportunities in frozen historical states. No real proxy action, casualty, win or expert utility certification."
+}

@@ -1,0 +1,149 @@
+{
+  "source": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/adv-arena-01.vmap",
+  "source_sha256": "3dc4000d95becf97a888cedd4a6f5ddfd175f45c25f12ce333b7071be5155c99",
+  "generator_sha256": "e8b0cd2ff4ee322b8b8391994985c1a4c822bb39c45146e9be819c3db5da2806",
+  "engine_executed": false,
+  "status": "STATIC_CHECKED_ENGINE_LOAD_PENDING",
+  "maps": [
+    {
+      "name": "takeover-open-36-v1",
+      "resource_name": "Maps/adv/takeover-open-36-v1",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/adventure-takeover-v5/fixtures/maps/takeover-open-36-v1.vmap",
+      "sha256": "ba43fbcd2ff14c3525e82d42dad470ffa436018d323883cc6c1b7794c025fc89",
+      "dimensions": [
+        36,
+        36,
+        1
+      ],
+      "players": 2,
+      "heroes_per_player": 1,
+      "towns_per_player": 1,
+      "hero_anchor_positions": [
+        [
+          9,
+          18
+        ],
+        [
+          29,
+          18
+        ]
+      ],
+      "hero_visitable_positions": [
+        [
+          8,
+          18
+        ],
+        [
+          28,
+          18
+        ]
+      ],
+      "water_cells": 0,
+      "static_cardinal_terrain_distance": 20,
+      "static_distance_is_not_engine_path": true,
+      "engine_load_verified": false,
+      "resource_policy": "Engine normal-difficulty equal starting resources; no script grants",
+      "town_buildings": [
+        "core:fort",
+        "core:villageHall",
+        "core:tavern",
+        "core:dwellingLvl1"
+      ],
+      "installed_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-open-36-v1.vmap"
+    },
+    {
+      "name": "takeover-detour-36-v1",
+      "resource_name": "Maps/adv/takeover-detour-36-v1",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/adventure-takeover-v5/fixtures/maps/takeover-detour-36-v1.vmap",
+      "sha256": "0ad14bec18c0c9c3014f5de8ce8a6096167f8c5f736628bae230e3950009c975",
+      "dimensions": [
+        36,
+        36,
+        1
+      ],
+      "players": 2,
+      "heroes_per_player": 1,
+      "towns_per_player": 1,
+      "hero_anchor_positions": [
+        [
+          9,
+          18
+        ],
+        [
+          29,
+          18
+        ]
+      ],
+      "hero_visitable_positions": [
+        [
+          8,
+          18
+        ],
+        [
+          28,
+          18
+        ]
+      ],
+      "water_cells": 40,
+      "static_cardinal_terrain_distance": 40,
+      "static_distance_is_not_engine_path": true,
+      "engine_load_verified": false,
+      "resource_policy": "Engine normal-difficulty equal starting resources; no script grants",
+      "town_buildings": [
+        "core:fort",
+        "core:villageHall",
+        "core:tavern",
+        "core:dwellingLvl1"
+      ],
+      "installed_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-detour-36-v1.vmap"
+    },
+    {
+      "name": "takeover-economy-36-v1",
+      "resource_name": "Maps/adv/takeover-economy-36-v1",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/adventure-takeover-v5/fixtures/maps/takeover-economy-36-v1.vmap",
+      "sha256": "d533dab889c76fb2660f409b845b99dcc28f1b2d02367c218aea5b3ed8a1dacf",
+      "dimensions": [
+        36,
+        36,
+        1
+      ],
+      "players": 2,
+      "heroes_per_player": 1,
+      "towns_per_player": 1,
+      "hero_anchor_positions": [
+        [
+          7,
+          10
+        ],
+        [
+          31,
+          30
+        ]
+      ],
+      "hero_visitable_positions": [
+        [
+          6,
+          10
+        ],
+        [
+          30,
+          30
+        ]
+      ],
+      "water_cells": 0,
+      "static_cardinal_terrain_distance": 44,
+      "static_distance_is_not_engine_path": true,
+      "engine_load_verified": false,
+      "resource_policy": "Engine normal-difficulty equal starting resources; no script grants",
+      "town_buildings": [
+        "core:fort",
+        "core:villageHall",
+        "core:tavern",
+        "core:dwellingLvl1",
+        "core:townHall",
+        "core:dwellingLvl2"
+      ],
+      "installed_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-economy-36-v1.vmap"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/gcc-11",
+    "--sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot",
+    "-B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/",
+    "-B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/",
+    "-print-prog-name=as"
+  ],
+  "returncode": 0,
+  "seconds": 0.004089832305908203,
+  "stdout_sha256": "4a969180308e0a605b4bdf1b1b08706ae1578c88ad530c7a48114a1a2c681bdf",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

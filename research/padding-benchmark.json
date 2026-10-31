@@ -1,0 +1,269 @@
+{
+  "scope": "Same1024real validation states, GNN checkpoint; FP32 GPU inference including CPU collation/transfer and sorting;3 repeats; warmup effects retained in first repeat",
+  "rows": [
+    {
+      "batch_size": 32,
+      "scheme": "random-padded",
+      "repeat": 0,
+      "wall_seconds": 0.4994261850000008,
+      "states_per_second": 2050.353046666943,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 109888,
+      "padding_fraction": 0.530376383226558,
+      "logits_checksum": -76487.15740966797
+    },
+    {
+      "batch_size": 32,
+      "scheme": "random-padded",
+      "repeat": 1,
+      "wall_seconds": 0.08659372700000034,
+      "states_per_second": 11825.33695541244,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 109888,
+      "padding_fraction": 0.530376383226558,
+      "logits_checksum": -76487.15740966797
+    },
+    {
+      "batch_size": 32,
+      "scheme": "random-padded",
+      "repeat": 2,
+      "wall_seconds": 0.07863998599999888,
+      "states_per_second": 13021.365492104926,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 109888,
+      "padding_fraction": 0.530376383226558,
+      "logits_checksum": -76487.15740966797
+    },
+    {
+      "batch_size": 32,
+      "scheme": "candidate-count-buckets",
+      "repeat": 0,
+      "wall_seconds": 0.09843668100000258,
+      "states_per_second": 10402.626232389663,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 54048,
+      "padding_fraction": 0.04518206039076378,
+      "logits_checksum": -76487.16096496582
+    },
+    {
+      "batch_size": 32,
+      "scheme": "candidate-count-buckets",
+      "repeat": 1,
+      "wall_seconds": 0.08347857100000056,
+      "states_per_second": 12266.621094891445,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 54048,
+      "padding_fraction": 0.04518206039076378,
+      "logits_checksum": -76487.16096496582
+    },
+    {
+      "batch_size": 32,
+      "scheme": "candidate-count-buckets",
+      "repeat": 2,
+      "wall_seconds": 0.07823612900000043,
+      "states_per_second": 13088.582130641898,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 54048,
+      "padding_fraction": 0.04518206039076378,
+      "logits_checksum": -76487.16096496582
+    },
+    {
+      "batch_size": 64,
+      "scheme": "random-padded",
+      "repeat": 0,
+      "wall_seconds": 0.06301460599999942,
+      "states_per_second": 16250.200786782822,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 118720,
+      "padding_fraction": 0.5653133423180593,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 64,
+      "scheme": "random-padded",
+      "repeat": 1,
+      "wall_seconds": 0.06548461199999878,
+      "states_per_second": 15637.261468389232,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 118720,
+      "padding_fraction": 0.5653133423180593,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 64,
+      "scheme": "random-padded",
+      "repeat": 2,
+      "wall_seconds": 0.05494200400000082,
+      "states_per_second": 18637.834906786156,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 118720,
+      "padding_fraction": 0.5653133423180593,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 64,
+      "scheme": "candidate-count-buckets",
+      "repeat": 0,
+      "wall_seconds": 0.05157766499999994,
+      "states_per_second": 19853.554828432058,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 57280,
+      "padding_fraction": 0.09905726256983238,
+      "logits_checksum": -76487.16018676758
+    },
+    {
+      "batch_size": 64,
+      "scheme": "candidate-count-buckets",
+      "repeat": 1,
+      "wall_seconds": 0.051426242000001565,
+      "states_per_second": 19912.013014677774,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 57280,
+      "padding_fraction": 0.09905726256983238,
+      "logits_checksum": -76487.16018676758
+    },
+    {
+      "batch_size": 64,
+      "scheme": "candidate-count-buckets",
+      "repeat": 2,
+      "wall_seconds": 0.052660809999999,
+      "states_per_second": 19445.200330188985,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 57280,
+      "padding_fraction": 0.09905726256983238,
+      "logits_checksum": -76487.16018676758
+    },
+    {
+      "batch_size": 128,
+      "scheme": "random-padded",
+      "repeat": 0,
+      "wall_seconds": 0.06284160899999947,
+      "states_per_second": 16294.936051048737,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 127616,
+      "padding_fraction": 0.5956149699097292,
+      "logits_checksum": -76487.15625
+    },
+    {
+      "batch_size": 128,
+      "scheme": "random-padded",
+      "repeat": 1,
+      "wall_seconds": 0.05168644199999761,
+      "states_per_second": 19811.77191496461,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 127616,
+      "padding_fraction": 0.5956149699097292,
+      "logits_checksum": -76487.15625
+    },
+    {
+      "batch_size": 128,
+      "scheme": "random-padded",
+      "repeat": 2,
+      "wall_seconds": 0.05211104500000019,
+      "states_per_second": 19650.344758966094,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 127616,
+      "padding_fraction": 0.5956149699097292,
+      "logits_checksum": -76487.15625
+    },
+    {
+      "batch_size": 128,
+      "scheme": "candidate-count-buckets",
+      "repeat": 0,
+      "wall_seconds": 0.046335664000000776,
+      "states_per_second": 22099.607766492412,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 62976,
+      "padding_fraction": 0.18054496951219512,
+      "logits_checksum": -76487.15747070312
+    },
+    {
+      "batch_size": 128,
+      "scheme": "candidate-count-buckets",
+      "repeat": 1,
+      "wall_seconds": 0.04678536500000163,
+      "states_per_second": 21887.186302809954,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 62976,
+      "padding_fraction": 0.18054496951219512,
+      "logits_checksum": -76487.15747070312
+    },
+    {
+      "batch_size": 128,
+      "scheme": "candidate-count-buckets",
+      "repeat": 2,
+      "wall_seconds": 0.05241318099999859,
+      "states_per_second": 19537.070264825703,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 62976,
+      "padding_fraction": 0.18054496951219512,
+      "logits_checksum": -76487.15747070312
+    },
+    {
+      "batch_size": 256,
+      "scheme": "random-padded",
+      "repeat": 0,
+      "wall_seconds": 0.07285843000000014,
+      "states_per_second": 14054.653661902927,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 145408,
+      "padding_fraction": 0.6450951804577465,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 256,
+      "scheme": "random-padded",
+      "repeat": 1,
+      "wall_seconds": 0.06955432500000214,
+      "states_per_second": 14722.305190942023,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 145408,
+      "padding_fraction": 0.6450951804577465,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 256,
+      "scheme": "random-padded",
+      "repeat": 2,
+      "wall_seconds": 0.06578287700000018,
+      "states_per_second": 15566.360832774115,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 145408,
+      "padding_fraction": 0.6450951804577465,
+      "logits_checksum": -76487.158203125
+    },
+    {
+      "batch_size": 256,
+      "scheme": "candidate-count-buckets",
+      "repeat": 0,
+      "wall_seconds": 0.05315811699999884,
+      "states_per_second": 19263.285793212395,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 74752,
+      "padding_fraction": 0.3096372003424658,
+      "logits_checksum": -76487.1591796875
+    },
+    {
+      "batch_size": 256,
+      "scheme": "candidate-count-buckets",
+      "repeat": 1,
+      "wall_seconds": 0.053194724000000804,
+      "states_per_second": 19250.029382612916,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 74752,
+      "padding_fraction": 0.3096372003424658,
+      "logits_checksum": -76487.1591796875
+    },
+    {
+      "batch_size": 256,
+      "scheme": "candidate-count-buckets",
+      "repeat": 2,
+      "wall_seconds": 0.05322407799999951,
+      "states_per_second": 19239.412658308698,
+      "real_candidates": 51606,
+      "padded_candidate_slots": 74752,
+      "padding_fraction": 0.3096372003424658,
+      "logits_checksum": -76487.1591796875
+    }
+  ]
+}

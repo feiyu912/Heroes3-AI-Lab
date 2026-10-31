@@ -1,0 +1,57 @@
+{
+  "scenario": "balanced-20",
+  "split": "validation",
+  "role": "defender",
+  "seed": 2026101520,
+  "opponent": "MMAI_MODEL",
+  "opponent_model": "DATA/MMAI/models/lab-upstream-attacker.onnx",
+  "opponent_seed": 2026201520,
+  "policy": "upstream",
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/upstream-v15/defender.onnx",
+  "steps": 17,
+  "terminated": true,
+  "truncated": false,
+  "invalid_actions": 0,
+  "success": false,
+  "terminal_outcome": {
+    "result_type": 0,
+    "winner": 0,
+    "casualties": {
+      "0": {
+        "6": 27,
+        "8": 5,
+        "10": 9
+      },
+      "1": {
+        "6": 31,
+        "8": 25,
+        "10": 12
+      }
+    },
+    "initial_armies": [
+      {
+        "6": 33,
+        "8": 27,
+        "10": 14
+      },
+      {
+        "6": 31,
+        "8": 25,
+        "10": 12
+      }
+    ]
+  },
+  "action_types": {
+    "0": 3,
+    "4": 1,
+    "2": 2,
+    "3": 11
+  },
+  "trajectory_sha256": "93aaf3d24ba42645d2dc1aa4c794cdb4f653d524b4c8f8a42f0d86b027991943",
+  "wall_seconds": 2.698638548999952,
+  "policy_latency_ms": {
+    "p50": 57.71750700000666,
+    "p95": 91.65848260001894,
+    "p99": 97.45703811996009
+  }
+}

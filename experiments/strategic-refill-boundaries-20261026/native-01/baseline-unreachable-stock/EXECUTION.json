@@ -1,0 +1,117 @@
+{
+  "schema": "refill-boundary-native-execution-v1",
+  "game_completed": true,
+  "transport_drained": true,
+  "client_exit": 0,
+  "broker_exit": -15,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "final_test_touched": false,
+  "arm": "baseline",
+  "case": "unreachable-stock",
+  "thread_server_verification": {
+    "mode": "thread",
+    "settings_server_useProcess": false,
+    "client_library_verified": true,
+    "run_server_threads": [
+      {
+        "pid": 49839,
+        "tid": 49870,
+        "comm": "runServer",
+        "proc_comm_path": "/proc/49839/task/49870/comm"
+      }
+    ],
+    "native_server_log_markers": {
+      "CVCMIServer created!": true,
+      "Server gives turn to ": true
+    },
+    "passed": true
+  },
+  "drain": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 1,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 6,
+    "actual_director_ack_count": 6,
+    "registered_ids": [
+      2,
+      4,
+      5,
+      6,
+      8,
+      10
+    ],
+    "policy_and_auto_request_count": 4,
+    "marker_line": 8221,
+    "owned_terminal_line": 8211,
+    "cancellation_intention": {
+      "line": 8221,
+      "ids": []
+    },
+    "actual_termination": {
+      "line": 8222,
+      "ids": []
+    },
+    "foreign_waits_pending_at_termination": 0,
+    "actual_atomic_cleared_ids": [],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 0,
+    "verified_neutral_makeaction_acks": [],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "stop_reason": "native_completed_normal_drain",
+  "loaded_library_observations": [
+    {
+      "pid": 49839,
+      "executable": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Capsules-20261025-01/baseline/bin/vcmiclient",
+      "executable_sha256": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+      "executable_matches_capsule": true,
+      "libraries": [
+        {
+          "maps_line": "71a88fc00000-71a88fd99000 r--p 00000000 103:04 2762095                   /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Capsules-20261025-01/baseline/bin/libvcmi.so",
+          "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Capsules-20261025-01/baseline/bin/libvcmi.so",
+          "deleted": false,
+          "sha256": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5",
+          "inode_matches": true,
+          "device_matches": true,
+          "expected_path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Capsules-20261025-01/baseline/bin/libvcmi.so",
+          "path_matches": true,
+          "expected_sha256": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5",
+          "valid": true
+        }
+      ],
+      "valid": true,
+      "run_server_threads": [
+        {
+          "tid": 49870,
+          "comm": "runServer",
+          "proc_comm_path": "/proc/49839/task/49870/comm"
+        }
+      ]
+    }
+  ],
+  "native_inherited_fd_observations": [
+    {
+      "pid": 49839,
+      "fd": 3,
+      "device": 66308,
+      "inode": 2752519,
+      "target": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL迁出-20261025/files/root/heroes3-ai-lab/evaluations/.gpu-learner-lock"
+    },
+    {
+      "pid": 49839,
+      "fd": 4,
+      "device": 66308,
+      "inode": 2752520,
+      "target": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL迁出-20261025/files/root/heroes3-ai-lab/evaluations/.pool-lock"
+    }
+  ],
+  "optional_raw_target_logs": {},
+  "input_sha_unchanged": true,
+  "owned_children_cleaned_before_release": true,
+  "passed": true
+}

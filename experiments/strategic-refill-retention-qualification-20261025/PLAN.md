@@ -1,0 +1,26 @@
+# Refill retention diagnostic qualification, Ubuntu
+
+Prepared only. No compiled candidate, native game, PPO update, expert annotation or strength claim is implied by this directory. Every runtime invocation first validates the new paired-build contract and actual completed capsule. The original collectors, source, binaries and maps remain unchanged.
+
+Registered factor: schema6 compression retains the old admissible committed move and adds an already pathfinder-generated, receivable own-town refill move. Everything else stays the same. Build contract: `../strategic-refill-paired-build-20261026/build-contract-v1.json`, SHA `94fababf70089e1d944b17280c0d6e003ba39dc34c6a34fcb853316dc4308cf2`. No old shared-tree `accepted_sources_restored` or `accepted_binaries_restored` assertions are fabricated; new attestation instead proves protected inputs were never changed, exact source closure, toolchain and executable/library SHA.
+
+Four fixtures are deterministically derived by prepare_fixture.py. The full manifest records map SHA, source SHA, hero armies, shared seed 2026102601, blue player1, EmptyAI opponent, fixed 180s engineering limit and source terrain. Every fixture's bytes are identical across arms. Maps use real native daysPassed(value=3) victory to finish after day3; this calendar terminal is deliberately diagnostic and does not measure ability. No town production/resources are injected during runtime. The initial hero is placed at the town entrance with empty upper army; actual request must show that it became the real visiting hero. Failing loader/path/frontier conditions are uncovered; no silent fixture or seed replacement.
+
+Same deterministic selector for both arms: choose an actual kind5 frontier with distance>=4, make a real first step away from home, then remote Recruit amount1; observe whether the old move alone or old move plus refill is offered. If refill exists, select the original move once, then actual kind4 steps back to home; wait for the existing free transfer before ending. If absent, end and let the native calendar terminal drain normally. All subsequent responses are actual EndTurn. Selector phases are proposals, never ACK proofs. All data are diagnostic_only and cannot enter PPO.
+
+Coverage checks independently require exact request/action SHA and log mirrors, actual native server application, registered requests and successful real ACK, full recruit stock/offer/army/resource conservation, actual postmove coordinate snapshots, source/target transfer with complete conservation, actual loaded binary/library path/inode/SHA, actual runServer thread, successful native exit0, owned game_over, unchanged frozen inputs and the original atomic terminal registry drain. A positive candidate must preserve the exact original move, allow continuing it once, allow real return, then transfer stock; baseline must complete normally with only the expected refill omission. A timeout or missing frontier is engineering stop or uncovered, never success/loss/strength.
+
+`empty` has no recruitment and must not acquire a refill exception. `full-incompatible` starts with seven different non-Castle species and must not acquire the exception after actual Castle recruitment. `full-merge` starts with seven species including pikeman; actual amount1 recruitment must choose that same species, permit a refill, and merge via the real what=2 transaction. Native initial requests and post-state, not the fixture source alone, must prove these preconditions. Additional unreachable/nonowned/current-tile/duplicate-kind4/invalidated-commit/legacy boundaries are preregistered in the fixture manifest, remain unconstructed or unrun, and must not be reported as passed.
+
+Resource rules: existing canonical GPU lock followed by existing pool lock, both exclusive/nonblocking, held through cleanup. The collector passes both FDs to selector and native exec-wrapper; both independently verify inherited FD/inode and a conflicting independent open before proceeding. Native `/proc/PID/fd` observations must additionally match both lock inodes. Each owns a separate session; surviving descendants are killed and confirmed gone while locks remain held. No GPU learning or heavy competing CPU analysis. CPU diagnostic only; CUDA hidden.
+
+To execute after the root has qualified builds (not executed during preparation):
+
+```bash
+source /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/runtime/env.sh
+"$LAB_PYTHON" collect_mechanism.py --capsule /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Capsules-20261025-01/baseline --arm baseline --case positive --out /absolute/new/baseline-run --execute
+# Same registered case and seed, candidate arm, different fresh output directory.
+"$LAB_PYTHON" audit_pair.py --baseline /absolute/new/baseline-run --candidate /absolute/new/candidate-run --out /absolute/new/independent-pair
+```
+
+The collector is fail-closed if capsules are absent/incomplete. `--help` and Python syntax checks are preparation checks, not native qualification. Use a fresh output directory for every failed attempt and preserve its raw evidence. After any mechanism success, all deferred boundaries and whole strategic epoch qualification still precede new on-policy training; no automatic model promotion or final-test use.

@@ -1,0 +1,212 @@
+[
+  {
+    "name": "ppo-balanced-seed-20261014",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261014.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791982464027442324/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261014-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261014-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 76,
+      "win_rate": 0.475,
+      "wilson95": [
+        0.39911756557967737,
+        0.5520547862528241
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.975
+    }
+  },
+  {
+    "name": "ppo-balanced-seed-20261015",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261015.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791982790461240283/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261015-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261015-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 85,
+      "win_rate": 0.53125,
+      "wilson95": [
+        0.45410132271210635,
+        0.6069332374972666
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 81.7375
+    }
+  },
+  {
+    "name": "ppo-balanced-seed-20261016",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261016.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791983105632784633/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261016-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-seed-20261016-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 104,
+      "win_rate": 0.65,
+      "wilson95": [
+        0.5733626975304357,
+        0.7196031914745545
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 79.26875
+    }
+  },
+  {
+    "name": "ppo-balanced-shaped",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-shaped.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791983412477346470/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-shaped-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-shaped-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 94,
+      "win_rate": 0.5875,
+      "wilson95": [
+        0.5100398177030784,
+        0.660856950883166
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 82.975
+    }
+  },
+  {
+    "name": "ppo-balanced-mixed",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mixed.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984631266985978/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mixed-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mixed-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 63,
+      "win_rate": 0.39375,
+      "wilson95": [
+        0.32138625171760665,
+        0.4710962435705252
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 85.6
+    }
+  },
+  {
+    "name": "ppo-balanced-rollout64",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 88,
+      "win_rate": 0.55,
+      "wilson95": [
+        0.4726402740186129,
+        0.625015022316384
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.63125
+    }
+  },
+  {
+    "name": "ppo-balanced-batch128",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-batch128.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791985267993623266/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-batch128-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-batch128-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 60,
+      "win_rate": 0.375,
+      "wilson95": [
+        0.3037420039328711,
+        0.452119755229637
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 87.39375
+    }
+  },
+  {
+    "name": "ppo-balanced-epoch1",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-epoch1.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791985568044339795/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-epoch1-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-epoch1-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 77,
+      "win_rate": 0.48125,
+      "wilson95": [
+        0.4051800943622811,
+        0.558199169512095
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 86.0125
+    }
+  },
+  {
+    "name": "ppo-balanced-mlp",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mlp.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791985960003937206/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mlp-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-mlp-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 84,
+      "win_rate": 0.525,
+      "wilson95": [
+        0.4479452137471758,
+        0.6008824344203225
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.95625
+    }
+  },
+  {
+    "name": "ppo-balanced-attention",
+    "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-attention.json",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791986269467440577/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-attention-validation.json",
+    "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-attention-test.json",
+    "steps": 98304,
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 56,
+      "win_rate": 0.35,
+      "wilson95": [
+        0.28039680852544535,
+        0.42663730246956433
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.0125
+    }
+  }
+]

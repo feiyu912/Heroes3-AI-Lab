@@ -1,0 +1,104 @@
+--- v1/AI/DirectorAI/CDirectorAI.h
++++ v2/AI/DirectorAI/CDirectorAI.h
+@@ -54,7 +54,7 @@
+  int3 supplyStep;
+  std::set<std::tuple<int,int,int>> supplyVisited;
+  supply_v1::World supplyWorld() const;
+- void supplyTrace(const std::string & event,int id=-1) const;
++ void supplyTrace(const std::string & event,int id=-1,const std::string & actualRequest="") const;
+  void supplyQueueReply(QueryID q,int answer);
+  void supplyBegin(QueryID q);
+  void supplyAdvance();
+--- v1/AI/DirectorAI/SupplyAdapter.inc
++++ v2/AI/DirectorAI/SupplyAdapter.inc
+@@ -33,16 +33,17 @@
+  std::sort(w.heroes.begin(),w.heroes.end(),[](const auto&a,const auto&b){return a.id<b.id;});
+  std::sort(w.towns.begin(),w.towns.end(),[](const auto&a,const auto&b){return a.id<b.id;});return w;
+ }
+-void CDirectorAI::supplyTrace(const std::string&event,int id) const
+-{
+- const char*path=std::getenv("LAB_ADV_SUPPLY_TRACE");if(!path) return;
+- std::ofstream out(path,std::ios::app);
++void CDirectorAI::supplyTrace(const std::string&event,int id,const std::string&actualRequest) const
++{
++ const char*path=std::getenv("LAB_ADV_SUPPLY_TRACE");
++ const auto world=supplyWorld();
++ std::ostringstream out;
+  out<<"{\"schema\":\"scripted-supply-events-v1\",\"event\":\""<<event<<"\",\"native_request_id\":"<<id
+  <<",\"player\":"<<playerID.getNum()<<",\"day\":"<<cb->getCalendar().getCurrentDay()<<",\"own_turn\":"<<supply.turn
+  <<",\"main\":"<<supply.main<<",\"courier\":"<<supply.courier<<",\"home\":"<<supply.home<<",\"phase\":"<<int(supply.phase)
+  <<",\"query\":"<<supply.query<<",\"cursor\":"<<supply.cursor<<",\"cycles\":"<<supply.cycles
+  <<",\"delivery_exchange\":"<<(supply.exchangeDelivery?"true":"false")<<",\"policy_transition\":false,\"roster\":[";
+- bool first=true;for(const auto&h:supplyWorld().heroes)
++ bool first=true;for(const auto&h:world.heroes)
+  {
+   if(!first) out<<',';
+   first=false;
+@@ -51,6 +52,15 @@
+   auto spent=supply.spent.find(h.id);out<<(spent==supply.spent.end()?0:spent->second)<<",\"army\":[";
+   for(int i=0;i<7;++i) {if(i)out<<',';out<<'['<<h.army[i].creature<<','<<h.army[i].count<<']';}out<<"]}";
+  }
++ out<<"],\"towns\":[";
++ first=true;for(const auto&t:world.towns)
++ {
++  if(!first) out<<',';
++  first=false;
++  out<<"{\"id\":"<<t.id<<",\"visitor\":"<<t.visitor<<",\"position\":["<<t.pos.x<<','<<t.pos.y<<','<<t.pos.z<<"],\"army\":[";
++  for(int i=0;i<7;++i) {if(i)out<<',';out<<'['<<t.army[i].creature<<','<<t.army[i].count<<']';}
++  out<<"]}";
++ }
+  out<<"],\"pending\":";
+  if(!supply.pending) out<<"null";
+  else
+@@ -59,7 +69,10 @@
+   out<<"{\"op\":"<<int(c.op)<<",\"actor\":"<<c.actor<<",\"target\":"<<c.target<<",\"source\":"<<c.source
+   <<",\"from_slot\":"<<c.from<<",\"to_slot\":"<<c.to<<",\"destination\":["<<c.destination.x<<','<<c.destination.y<<','<<c.destination.z<<"]}";
+  }
+- out<<"}\n";out.flush();
++ out<<",\"actual_request\":"<<(actualRequest.empty()?"null":actualRequest)<<"}";
++ const auto json=out.str();
++ logGlobal->info("DirectorSupplyEvent %s",json);
++ if(path) {std::ofstream file(path,std::ios::app);file<<json<<'\n';file.flush();}
+ }
+ void CDirectorAI::supplyQueueReply(QueryID q,int answer)
+ {
+@@ -155,11 +168,29 @@
+   auto*reply=dynamic_cast<const QueryReply*>(pack);auto*end=dynamic_cast<const EndTurn*>(pack);
+   if(!move && !transfer && !reply && !end) return; // native battle requests stay in the owned ledger.
+   if(pack->player!=playerID || int(pack->requestID)!=id) throw std::runtime_error("supply_native_identity_mismatch");
++  // Observe the actual immutable pre-dispatch pack, independently of Command.
++  const int packType=move?CTypeList::getInstance().getTypeID<MoveHero>(nullptr):
++   transfer?CTypeList::getInstance().getTypeID<ArrangeStacks>(nullptr):
++   reply?CTypeList::getInstance().getTypeID<QueryReply>(nullptr):CTypeList::getInstance().getTypeID<EndTurn>(nullptr);
++  std::ostringstream actual;
++  actual<<"{\"request_id\":"<<pack->requestID<<",\"player\":"<<pack->player.getNum()<<",\"pack_type\":"<<packType;
++  if(move)
++  {
++   actual<<",\"op\":\"MoveHero\",\"hero\":"<<move->hid.getNum()<<",\"layer\":"<<int(move->layer)
++    <<",\"transit\":"<<(move->transit?"true":"false")<<",\"path\":[";
++   for(size_t i=0;i<move->path.size();++i) {if(i)actual<<',';const auto p=move->path[i];actual<<'['<<p.x<<','<<p.y<<','<<p.z<<']';}
++   actual<<"]";
++  }
++  else if(transfer) actual<<",\"op\":\"ArrangeStacks\",\"source\":"<<transfer->id1.getNum()<<",\"target\":"<<transfer->id2.getNum()
++   <<",\"from_slot\":"<<transfer->p1.getNum()<<",\"to_slot\":"<<transfer->p2.getNum()<<",\"what\":"<<int(transfer->what)<<",\"val\":"<<transfer->val;
++  else if(reply) {actual<<",\"op\":\"QueryReply\",\"query\":"<<reply->qid.getNum()<<",\"reply\":";if(reply->reply)actual<<*reply->reply;else actual<<"null";}
++  else actual<<",\"op\":\"EndTurn\",\"scope\":\"player\"";
++  actual<<'}';
+   if(supplyReplyRequest==0)
+   {
+    if(!reply || reply->qid.getNum()!=supplyReplyQuery || !reply->reply || *reply->reply!=supplyReplies.at(supplyReplyQuery))
+     throw std::runtime_error("supply_prompt_payload_mismatch");
+-   supplyReplyRequest=id;supplyTrace("prompt_native_sent",id);return;
++   supplyReplyRequest=id;supplyTrace("prompt_native_sent",id,actual.str());return;
+   }
+   if(!supply.pending) throw std::runtime_error("unprepared_supply_request");
+   const auto&c=*supply.pending;
+@@ -169,7 +200,7 @@
+   if(transfer && (transfer->id1.getNum()!=c.source || transfer->id2.getNum()!=c.target || transfer->p1.getNum()!=c.from || transfer->p2.getNum()!=c.to ||
+     transfer->what!=(c.recipientBefore[c.to].count?2:1))) throw std::runtime_error("supply_transfer_payload_mismatch");
+   if(reply && (reply->qid.getNum()!=c.query || !reply->reply || *reply->reply!=0)) throw std::runtime_error("supply_close_payload_mismatch");
+-  supply.bind(id,op);supplyTrace("native_sent",id);
++  supply.bind(id,op);supplyTrace("native_sent",id,actual.str());
+  }
+  catch(const std::exception&e) {typedFailure(e.what());}
+ }

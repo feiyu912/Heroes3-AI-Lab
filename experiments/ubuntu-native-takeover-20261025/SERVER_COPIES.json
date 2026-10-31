@@ -1,0 +1,162 @@
+[
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-scheduler-garrison-v4/build-evidence-04/filtered/bin/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "d864d9df6c402059580f6747698f9d805a2bc8988974eab780a47842af449c05"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-scheduler-garrison-v4/build-evidence-04/baseline/bin/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "d864d9df6c402059580f6747698f9d805a2bc8988974eab780a47842af449c05"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/native-evidence-01/multihero-capsules-03/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/native-evidence-01/multihero-capsules-03/transfer-close/bin/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "d864d9df6c402059580f6747698f9d805a2bc8988974eab780a47842af449c05"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/native-evidence-01/multihero-capsules-03/original-unhandled/bin/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "d864d9df6c402059580f6747698f9d805a2bc8988974eab780a47842af449c05"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/native-evidence-01/multihero-capsules-03/close-only/bin/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "d864d9df6c402059580f6747698f9d805a2bc8988974eab780a47842af449c05"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/native-capsule-evidence-01/typed-request-bind-director-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/native-capsule-evidence-01/typed-request-bind-director-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/native-capsule-evidence-01/typed-request-bind-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/native-capsule-evidence-01/typed-request-bind-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/cargo-capsule-evidence-01/scripted-supply-cargo-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/cargo-capsule-evidence-01/scripted-supply-cargo-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/capsule-evidence-01/scripted-supply-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/capsule-evidence-01/scripted-supply-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/independent-dev-01/delivery-01/frozen-inputs/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/bin/vcmiserver",
+    "bytes": 2125360,
+    "sha256": "d995f852f4706f694aee268e49519fc2e95543131c25a141259d251677ac6e5d"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/independent-dev-01/delivery-01/capsule02/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/independent-dev-01/delivery-01/capsule02/bin/vcmiserver",
+    "bytes": 2125360,
+    "sha256": "d995f852f4706f694aee268e49519fc2e95543131c25a141259d251677ac6e5d"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/takeover-20261023/strategic-delivery-01/archive/linux/evaluations/strategic-learned-recruitment-capsule-02/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/takeover-20261023/strategic-delivery-01/archive/linux/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiserver",
+    "bytes": 2129680,
+    "sha256": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/takeover-20261023/active-learning-delivery-01/frozen-inputs/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiserver",
+    "bytes": 2129680,
+    "sha256": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/native-evidence-phase-02/typed-schema4-ack-drain-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/native-evidence-phase-02/typed-schema4-ack-drain-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/native-evidence-01/typed-schema4-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/native-evidence-01/typed-schema4-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/native-evidence-01/typed-bounded-replan-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/native-evidence-01/typed-bounded-replan-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-03/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-03/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-02/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-02/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-01/accepted-backup/vcmiserver",
+    "bytes": 2116776,
+    "sha256": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/native-evidence-01/typed-director-terminal-drain-capsule-01/bin/vcmiserver",
+    "bytes": 2120952,
+    "sha256": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3"
+  }
+]

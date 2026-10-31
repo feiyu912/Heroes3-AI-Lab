@@ -1,0 +1,9 @@
+{
+  "files": {
+    "clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851",
+    "run_proxy_game.py": "05dd8efffbdfba759bd6e8371c76fd0640dac780726de150ebed877007806164"
+  },
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "meaning": "Scripted evaluation branch with recorded frozen-model recommendation; never an expert or PPO sampler"
+}

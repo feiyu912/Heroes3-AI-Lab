@@ -1,0 +1,9 @@
+# Same-optimizer continuation to a fixed update4
+
+The explicit exploration change has now generated actual building experience, including one native City Hall in fresh TRAIN. Its first120-step update did not improve the fixed eight-pair DEV outcome4/8→4/8. One income sample is insufficient to assess economic learning. Continue this changed method for three further fresh complete eight-cell batches, stopping at update4 for evaluation; do not endlessly increase iterations or use DEV labels as training.
+
+Parent is d27d282b after update1. Restore its actual Adam, parameters and Python/CPU/CUDA RNG; original learning protocol/global seed2800/source/runtime remain unchanged. This is a genuine continuation, unlike earlier weights-only new-Adam interventions. New sampler seeds are TRAIN3000..3007,3100..3107,3200..3207 and logical updates1,2,3. Every batch must be complete and exact on-policy with the current saved parent. No splicing, timeout scoring, retry hunting or partial update.
+
+The outer controller is newly recorded in a separate frozen PLAN, explicitly outside the already saved original policy protocol. Collector/admission/PPO/source gates are unchanged and check their full original sources; no claim that controller bytes were already included in the update1 protocol. Real update counts, per-update optimizer increments and final cumulative Adam step must be verified from saved state. Only one root-scheduled GPU learner; child stages acquire GPU then pool locks.
+
+Final update4 is chosen before further results; independent DEV after completion will use the calibrated initialization and fixed final model, eight fresh pairs with seeds3300..3307. Existing first-update DEV is not an independent final confirmation, and newer seeds cannot be compared across experiments as a causal win gain. Stop/diagnose on invalid execution or a new failure; no architecture/reward change in this continuation.

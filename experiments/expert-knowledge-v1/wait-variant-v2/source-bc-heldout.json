@@ -1,0 +1,94 @@
+{
+  "results": [
+    {
+      "case": "hallas-wait-ghost-v2-6-attacker",
+      "role": "attacker",
+      "policy": "baseline",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 0,
+      "window_verified": true,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-6-attacker-baseline-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-6-defender",
+      "role": "defender",
+      "policy": "baseline",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 3,
+      "window_verified": false,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-6-defender-baseline-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-7-attacker",
+      "role": "attacker",
+      "policy": "baseline",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 3,
+      "window_verified": false,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-7-attacker-baseline-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-7-defender",
+      "role": "defender",
+      "policy": "baseline",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 3,
+      "window_verified": false,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-7-defender-baseline-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-6-attacker",
+      "role": "attacker",
+      "policy": "source-bc",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 0,
+      "window_verified": true,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-6-attacker-source-bc-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-6-defender",
+      "role": "defender",
+      "policy": "source-bc",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 3,
+      "window_verified": false,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-6-defender-source-bc-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-7-attacker",
+      "role": "attacker",
+      "policy": "source-bc",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 0,
+      "window_verified": true,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-7-attacker-source-bc-no-wait-control.json"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-7-defender",
+      "role": "defender",
+      "policy": "source-bc",
+      "success": true,
+      "truncated": false,
+      "loss": 1,
+      "first_action": 3,
+      "window_verified": false,
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/model-evaluation/wait-runs/hallas-wait-ghost-v2-7-defender-source-bc-no-wait-control.json"
+    }
+  ],
+  "complete": true,
+  "limitations": "Four held-out conditions, same creature pair and controlled opponent. No claim of broad transfer or ordinary BattleAI retention. Model was frozen before test; no selection from these outcomes."
+}

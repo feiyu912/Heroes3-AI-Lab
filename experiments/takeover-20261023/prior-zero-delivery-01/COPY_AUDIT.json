@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/PLAN.json",
+      "copy": "run/PLAN.json",
+      "sha256": "59faeae1262058eddd373a31b2fe075f4085f64fb600d5a73a64e34a3bc44106",
+      "bytes": 147589
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/RESULT.json",
+      "copy": "run/RESULT.json",
+      "sha256": "dc56d26a78470d6623bc8c682c53cb3155358192fb24cb0c036529ba4b614fbd",
+      "bytes": 15080
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/RESULT.json",
+      "copy": "update/RESULT.json",
+      "sha256": "96ded87dd0a4ba214f8baa915d8ce13eea5775a2f41b24c4cf74d466b2399de4",
+      "bytes": 5613
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/PLAN.json",
+      "copy": "update/PLAN.json",
+      "sha256": "80db050f17605c1a864e102baedf89f50b18a9d7d38a4bf67774b71bfcdcb84f",
+      "bytes": 149072
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/TRAIN_CREDIT_DIAGNOSTIC.json",
+      "copy": "update/TRAIN_CREDIT_DIAGNOSTIC.json",
+      "sha256": "01e87359d9e9069e2b6972be39178bd070755f641a9adf719de29f8dd1d33a99",
+      "bytes": 1742
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/update-1.pt",
+      "copy": "update/update-1.pt",
+      "sha256": "1d1618bf6dd535e1e7d158ed6d194848eeaba4e8260e9e1cb5467f0db27cc81c",
+      "bytes": 403038
+    },
+    {
+      "source": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v3/initialization-02/recruitment-initialization.pt",
+      "copy": "registered-initialization/recruitment-initialization.pt",
+      "sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "bytes": 82541
+    },
+    {
+      "source": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v3/initialization-02/AUDIT.json",
+      "copy": "registered-initialization/AUDIT.json",
+      "sha256": "0b03b2b6445ed08e7f0b3fca604913bbca6feca8ac8fc7e576bcf1c9e267cef6",
+      "bytes": 545
+    },
+    {
+      "source": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v2/SOURCE_FREEZE.json",
+      "copy": "run/SOURCE_FREEZE.json",
+      "sha256": "6c882b314cd69b526644e4730691f4b3e7979780ff3b6f6efce96abb68cbe827",
+      "bytes": 4854
+    }
+  ],
+  "scope": "Complete recoverable model/Adam/RNG and registered initialization + reports; all raw native/admission/evaluation evidence retained at indexed Linux paths, not claimed copied here"
+}

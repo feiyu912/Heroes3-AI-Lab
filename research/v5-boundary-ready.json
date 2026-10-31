@@ -1,0 +1,5 @@
+{
+  "ready": true,
+  "complete_graph_contracts": true,
+  "goal_selection_plan": "/mnt/g/Heroes3-AI-Lab/research/goal-selection-plan.json"
+}

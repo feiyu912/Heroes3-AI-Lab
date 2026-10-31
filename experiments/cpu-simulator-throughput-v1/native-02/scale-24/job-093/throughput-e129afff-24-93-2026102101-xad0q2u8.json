@@ -1,0 +1,60 @@
+{
+  "schema": "adventure-run-v5",
+  "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/throughput-e129afff-24-93-2026102101-xad0q2u8",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "Nullkiller2",
+    "blue": "DirectorAI",
+    "seed": 2026102101,
+    "seconds": 90,
+    "tag": "throughput-e129afff-24-93",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "",
+    "pool_lock_fd": 3,
+    "pool_lock_dev": 2096,
+    "pool_lock_inode": 674895,
+    "report_dir": "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/native-02/scale-24/job-093",
+    "native_pid_file": "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/native-02/scale-24/job-093/native-pid.json",
+    "lab_root": "/root/heroes3-ai-lab"
+  },
+  "engine_exit": 0,
+  "timed_out": false,
+  "interrupted": false,
+  "crashed": false,
+  "completed": true,
+  "winner": "red",
+  "wrapper_exit": 0,
+  "actual_ai": {
+    "red": "Nullkiller2",
+    "blue": "DirectorAI"
+  },
+  "turns": 12,
+  "moves_requested": 98,
+  "move_replies": 98,
+  "changed_tile_replies": 98,
+  "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+  "displacement_replies": 94,
+  "blocking_visit_replies": 4,
+  "failed_move_replies": 0,
+  "inputs_unchanged": true,
+  "log_sha256": "993fee4bd9c460446bc44f5949f33ca61a1d7a5157336fc7e13d712cdcca582a",
+  "native_load_verified": null,
+  "load_markers": null,
+  "wall_seconds": 1.5190180459999283,
+  "limitations": "Scripted strategy; delegated native battles; no learned strategic model.",
+  "strategy_trace_sha256": "33434eab051b6792cb5e40d054f2f4d5860a7d699817a36946f2f5c99af6d1fc",
+  "strategy_trace_records": 237,
+  "native_calendar_last_day": 12,
+  "strategy_targets_sha256": "88e161cf42408d552d3a2d2627089e89dda1d8f56fcfb31f56be17f16af15a2d",
+  "strategy_targets_records": 149,
+  "strategy_decisions_sha256": "36486dfee142b5a9ebdd83c4db43504402357b029be0086ec0f7b4c94cc8ff0f",
+  "strategy_decision_records": 98,
+  "save_files": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/adv-runs/throughput-e129afff-24-93-2026102101-xad0q2u8/data/vcmi/Saves/director-v5-initial.vsgm1",
+      "bytes": 342551,
+      "sha256": "33812cb884aad5381ecd9a7fe6ff9814b2fe0e69fb0a400a112e0a52baaa952f"
+    }
+  ]
+}

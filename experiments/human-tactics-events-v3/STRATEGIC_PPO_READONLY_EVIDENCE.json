@@ -1,0 +1,46 @@
+{
+  "audit_mode": "CPU inference and file comparison only",
+  "game_started": false,
+  "gpu_started": false,
+  "optimizer_step_executed": false,
+  "frozen_trainer_sha256": "549f0c931882d2981113df2a76b2b8d23aedf8f8ef761504fd982cbc59dd7e5e",
+  "working_trainer_sha256_at_audit": "20b9122b1355ed7481be154d467971c5d4bf66fea4385d12dfac0a6d7cfc9ec3",
+  "failed_report_sha256": "3332ff8c84cac1d708b65bb9ae2b05fe6d97b80110c4942979d5658ad6b85c10",
+  "recorded_updates": 0,
+  "checkpoint_training_updates": 0,
+  "checkpoint_optimizer_entries": 0,
+  "checkpoint_model_identical_to_initial": true,
+  "checkpoint_load_weights_only_cpu_passed": true,
+  "episodes": [
+    {
+      "valid": true,
+      "reward": 1.0,
+      "decisions": 558,
+      "native_rows": 558,
+      "exact_native_intent_ack": true,
+      "max_abs_cpu_vs_saved_cuda_logprob": 9.5367431640625e-07,
+      "max_abs_cpu_vs_saved_cuda_value": 7.450580596923828e-08,
+      "max_padding_probability": 0.0,
+      "rollout_sha256": "d8929fb1566e20828295287c1329b343287f6aacddb407eecd8649072022498c",
+      "native_trace_sha256": "a86b36f663453fb171c4dd756178c0f82653a28a991ab382437dfc1894c2e162"
+    },
+    {
+      "valid": true,
+      "reward": -1.0,
+      "decisions": 36,
+      "native_rows": 36,
+      "exact_native_intent_ack": true,
+      "max_abs_cpu_vs_saved_cuda_logprob": 4.76837158203125e-07,
+      "max_abs_cpu_vs_saved_cuda_value": 3.725290298461914e-08,
+      "max_padding_probability": 0.0,
+      "rollout_sha256": "d2660722c2bde20171eefd58ebc7562cda287e610c3363da5403d6e2bf382f9a",
+      "native_trace_sha256": "d47a12d00dd186c939afa4a2daaf05b93cac3844e797783bd7bec5827a38ab27"
+    },
+    {
+      "valid": false,
+      "decisions": 7660,
+      "reward": null,
+      "invalid_not_counted_as_loss": true
+    }
+  ]
+}

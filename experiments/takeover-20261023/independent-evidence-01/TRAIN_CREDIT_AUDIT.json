@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "scope": "separate standard-library reconstruction of sealed TRAIN advantage normalization and groups; no DEV/native/GPU/NN replay",
+  "samples": 2089,
+  "episodes": 8,
+  "source_bindings_checked": 41,
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/raw-audit/AUDIT.json": "deceb2eb95e052ad4b6a5824e66c1280fede493ea45b761435be286aa6e9f462",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/native/agent/sampling-state.pt": "4a7cfc5fc3abe1220df5d62e3c09a2bb3cea3b4303108378f7c8d9b07e9b5c86",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/native/agent/typed-broker.jsonl": "c44bb29c16119ae3536ae8049f6f2d108bae549cb83f43f614321d6bdab2fdb1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/admit_episode_v5.py": "b5e4f78253f5ca31b1901df6695fb7c7fe5d3e450a2de70c349309ee950b62c7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/admitted/samples.jsonl": "5baf4e1238c772c60df4d96f34b7918c688b51128529fb5a19b55e5e31d3f8f7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/admitted/episode.json": "c1928122020a1c9c1266b4aa8b6c390766048de6e40a96566534985c53977cd7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/raw-audit/AUDIT.json": "294923cf5e0be35eeccdad0c5a124dc911fa22931cf7731fe8e328dc6caf9ed1",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/native/agent/sampling-state.pt": "827f06eb08802a893fc618d7acbb11ff513592e404e5eaf567b10f0ea2af89e6",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/native/agent/typed-broker.jsonl": "4d952ab724034061c7691b08e2b7fed364fbe610980ce32248de772e598c2375",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/admitted/samples.jsonl": "cd21c649f507faac1e6b12d7bcb1bb28a9e352ff7e64106fd0744b33fa2c3fd0",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/admitted/episode.json": "8a34865d1ae3b159b973f4198eaa528bfd2ea6d26e510f7e31bcacc35776c914",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/raw-audit/AUDIT.json": "dd910d58eba78d801c0222eb73d00b36029c341133b23c01fdb6c6b28a998e2d",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/native/agent/sampling-state.pt": "5031d3a96f7ed96307edfdb07b04be47ba5afefb5e8f66873601aef6d05b6420",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/native/agent/typed-broker.jsonl": "22d591d7d712bbb36f661c09fcbf63be223e8609a9233113c7ea642dc6ad77a7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/admitted/samples.jsonl": "398c82d23fcfef73610050b37272461c22a02059f758d2538587fcb748440d40",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/admitted/episode.json": "6c6fc1a007b15e1e237523beb84a1a429e1e3e9d089259436e9767269c6c0e88",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/raw-audit/AUDIT.json": "6dbb1cf77c0d3e66729ef1877401a0d733aefb1a418470163cd5f0e47e8935ee",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/native/agent/sampling-state.pt": "31426fef8ffc7702992b92f51e6dd8184701c81a3c4bf56c1196a8439530d778",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/native/agent/typed-broker.jsonl": "a7e930cffeb5dff95cbd39db1d96a81586ff354ccf59b78ec6f80165ffa418d2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/admitted/samples.jsonl": "445b3a8e7107b1945b3a4301f4f79d30feb5a615708a2e074d6016c0ec715c52",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/admitted/episode.json": "2dfe60ccd74cff59f03835d09f7b1f4f8665d84fda748a86ece3ca5c3fb07e1a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/raw-audit/AUDIT.json": "039efd330e9253773ed67a473fbd5e36e54dba427aee1097ac34b48142c27db7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/native/agent/sampling-state.pt": "48357708bdacf6042735d63ab8ef9ae2ef09ea01fa8f9115c2f65826b8ab321e",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/native/agent/typed-broker.jsonl": "1cc626c0151a1fe7ad8b517a3093ae98e350d4e8d4e1153f697df0633dd5e8ce",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/admitted/samples.jsonl": "a3d441fe63a4396ceaa2db664f63d55840e6d8d6976abedea40962ad460fdf29",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/admitted/episode.json": "04fd22d65f68fe193bd1dedd87860e9348162b72b18f9ae351eb794a581a97dd",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/raw-audit/AUDIT.json": "27884f953b92cf5337c6a7a457dc118a316696f18eae9c4ce39b05037a59e39e",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/native/agent/sampling-state.pt": "455fb01b31c94bff1da9365ee379bce3f416c1746c6161c7b9a2ac17b78ec08d",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/native/agent/typed-broker.jsonl": "f34b15c6d754feaf157c93cbd57982b2df888a75ef015976465a1e89192eabf0",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/admitted/samples.jsonl": "4bf0acc03a52c676ab3efbee2778fb7ded1991a5bfd8f812a7c2950291ee3a8b",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/admitted/episode.json": "b64db5c362ece536d1951ed56cdb40ffe49fbe0e76f1b674406a112878fe0ba5",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/raw-audit/AUDIT.json": "d33d0cf2e01cd457a91fe884e84cbf47839bd85c857def4723fa4e7c517ff109",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/native/agent/sampling-state.pt": "f0f6f670893847c656bf952e45ef0fb3c11ca8b4982c4e697fb8886127016ee9",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/native/agent/typed-broker.jsonl": "412b1f6cd7dc9fdb1fef646161730fb9c3d6f2483c09231e302e1c3a856ae215",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/admitted/samples.jsonl": "6587112b247ab90d66b7dcd2988eae650a0d7e34fa84e176cd88e056130e95a7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/admitted/episode.json": "b5b91a095938870d0b4881da0e892413a094ead305d159d83424acecd12b7b6a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/raw-audit/AUDIT.json": "3dc2f95ae96b8ea029daf27c37c6021381db94574db95488f0ffe68cb616619c",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/native/agent/sampling-state.pt": "f2aaddba922bea3ff39c0a1b08addfffaa35ee906d6ffb237bbfa347670d76a8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/native/agent/typed-broker.jsonl": "231bcd6ca17e863b95b6dee3aa9f8b1c6f0aa440a77221144730b3baa323c209",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/admitted/samples.jsonl": "c543181fef5b9689c0924089c23eff3612c613e57d2b4823d313c0db237adeaa",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/admitted/episode.json": "4eb983b3ef1593c15f209554ca944ba577c4806415737d535af005387b3e1d9c"
+  },
+  "weighted_advantage_mean": 0.21078976181935116,
+  "weighted_advantage_variance": 0.3305937513420675,
+  "action_groups": [
+    {
+      "opponent": "EmptyAI",
+      "group": "build",
+      "rows": 35,
+      "positive": 17,
+      "negative": 18,
+      "normalized_advantage_mean": 0.00677055296088968,
+      "actor_mass": 21.20470416545868,
+      "weighted_normalized_advantage_sum": 5.466685059014708
+    },
+    {
+      "opponent": "EmptyAI",
+      "group": "end_turn",
+      "rows": 158,
+      "positive": 73,
+      "negative": 85,
+      "normalized_advantage_mean": -0.01900357582394175,
+      "actor_mass": 90.67846944928169,
+      "weighted_normalized_advantage_sum": 19.455407351721078
+    },
+    {
+      "opponent": "EmptyAI",
+      "group": "mine",
+      "rows": 97,
+      "positive": 53,
+      "negative": 44,
+      "normalized_advantage_mean": 0.41611023358856664,
+      "actor_mass": 64.2620310485363,
+      "weighted_normalized_advantage_sum": 47.51700929965591
+    },
+    {
+      "opponent": "EmptyAI",
+      "group": "other_move",
+      "rows": 1369,
+      "positive": 640,
+      "negative": 729,
+      "normalized_advantage_mean": 0.06633705377712754,
+      "actor_mass": 823.5525864958763,
+      "weighted_normalized_advantage_sum": 269.54869095480535
+    },
+    {
+      "opponent": "EmptyAI",
+      "group": "own_town",
+      "rows": 79,
+      "positive": 26,
+      "negative": 53,
+      "normalized_advantage_mean": -0.29557518592646603,
+      "actor_mass": 44.80219915509224,
+      "weighted_normalized_advantage_sum": -5.492143478244543
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "build",
+      "rows": 6,
+      "positive": 1,
+      "negative": 5,
+      "normalized_advantage_mean": -0.680760977168878,
+      "actor_mass": 17.198641777038574,
+      "weighted_normalized_advantage_sum": -11.62192901968956
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "end_turn",
+      "rows": 22,
+      "positive": 5,
+      "negative": 17,
+      "normalized_advantage_mean": -0.3531539770562879,
+      "actor_mass": 66.12811875343323,
+      "weighted_normalized_advantage_sum": -21.50090827420354
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "mine",
+      "rows": 50,
+      "positive": 21,
+      "negative": 29,
+      "normalized_advantage_mean": -0.28433622263371944,
+      "actor_mass": 158.18821573257446,
+      "weighted_normalized_advantage_sum": -45.074353970587254
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "other_move",
+      "rows": 262,
+      "positive": 105,
+      "negative": 157,
+      "normalized_advantage_mean": -0.2943200636886146,
+      "actor_mass": 771.2797544002533,
+      "weighted_normalized_advantage_sum": -222.7507186960429
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "own_town",
+      "rows": 11,
+      "positive": 0,
+      "negative": 11,
+      "normalized_advantage_mean": -1.0990077744830737,
+      "actor_mass": 31.705273151397705,
+      "weighted_normalized_advantage_sum": -35.547741055488586
+    }
+  ],
+  "refill_strata": [
+    {
+      "opponent": "EmptyAI",
+      "group": "smaller_stock",
+      "rows": 29,
+      "positive": 1,
+      "negative": 28,
+      "normalized_advantage_mean": -0.9657658630789354,
+      "actor_mass": 16.08796638250351,
+      "weighted_normalized_advantage_sum": -12.99986737407744
+    },
+    {
+      "opponent": "EmptyAI",
+      "group": "stock_at_least_half_hero",
+      "rows": 50,
+      "positive": 25,
+      "negative": 25,
+      "normalized_advantage_mean": 0.09313540682196617,
+      "actor_mass": 28.71423277258873,
+      "weighted_normalized_advantage_sum": 7.507723895832896
+    },
+    {
+      "opponent": "Nullkiller2",
+      "group": "stock_at_least_half_hero",
+      "rows": 11,
+      "positive": 0,
+      "negative": 11,
+      "normalized_advantage_mean": -1.0990077744830737,
+      "actor_mass": 31.705273151397705,
+      "weighted_normalized_advantage_sum": -35.547741055488586
+    }
+  ],
+  "episode_actor_mass": [
+    {
+      "episode_id": "5aaeeaec56f0dce6752e6dee5d413ec45646697398979ea71c828d950faf3585",
+      "opponent": "EmptyAI",
+      "steps": 621,
+      "free_choices": 621,
+      "actor_mass": 261.1249912083149,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "29a22209ac6772bd5779e51ccab2b45f3730c6de2ce8fe183cca7e994daebecf",
+      "opponent": "EmptyAI",
+      "steps": 294,
+      "free_choices": 294,
+      "actor_mass": 261.1249952316284,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "377a44aeca72b736f7f39aa0a6d7f98e4bab3db219d78a649511f31e4dea914f",
+      "opponent": "Nullkiller2",
+      "steps": 77,
+      "free_choices": 77,
+      "actor_mass": 261.12499356269836,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "077ffc9db267668e65ca7a3b7085a030c425b893e5552a5282dab6504d229a69",
+      "opponent": "Nullkiller2",
+      "steps": 93,
+      "free_choices": 93,
+      "actor_mass": 261.1250059604645,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "dd7be8313acb26de8aac89a9ece3ec1a064632c24fc8c9d6b816dcf5a6534e7c",
+      "opponent": "EmptyAI",
+      "steps": 241,
+      "free_choices": 241,
+      "actor_mass": 261.12500059604645,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "f492d4d637cfebf94f1cbf12fab5194f5db9fcc7ed3dff9de886be8dd8ec392b",
+      "opponent": "EmptyAI",
+      "steps": 582,
+      "free_choices": 582,
+      "actor_mass": 261.12500327825546,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "bd676c6be3da41ce1b40ec5b9cf4d8e97cf899326783b59472e1f91327fb3949",
+      "opponent": "Nullkiller2",
+      "steps": 97,
+      "free_choices": 97,
+      "actor_mass": 261.125009059906,
+      "objective_mass_fraction": 0.125
+    },
+    {
+      "episode_id": "3202977671d4cb83eb27acdd7765686f0826aa4137b90de02d72902e5e586f75",
+      "opponent": "Nullkiller2",
+      "steps": 84,
+      "free_choices": 84,
+      "actor_mass": 261.1249952316284,
+      "objective_mass_fraction": 0.125
+    }
+  ],
+  "root_reports_match": true,
+  "nk_stock_ge_half_hero_11_all_negative": true,
+  "native_runs": 0,
+  "gpu_runs": 0,
+  "NN_replays": 0,
+  "optimizer_steps": 0
+}

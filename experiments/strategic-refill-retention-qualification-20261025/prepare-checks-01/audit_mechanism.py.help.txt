@@ -1,0 +1,6 @@
+usage: audit_mechanism.py [-h] --raw RAW --out OUT
+
+options:
+  -h, --help  show this help message and exit
+  --raw RAW
+  --out OUT

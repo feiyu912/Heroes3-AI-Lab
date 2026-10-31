@@ -1,0 +1,67 @@
+--- frozen-parent/evaluate_dev.py
++++ build-dev/evaluate_dev.py
+@@ -1,8 +1,12 @@
+ """Fresh paired DEV games on qualified native runtime; no expert proxy or training."""
+ import argparse,hashlib,json,subprocess,sys
+ from pathlib import Path
+-HERE=Path(__file__).resolve().parent;EXPERIMENTS=HERE.parent;LAB=Path('/root/heroes3-ai-lab')
+-DRAIN=EXPERIMENTS/'strategic-director-terminal-drain-v4'
++HERE=Path(__file__).resolve().parent;RUN=HERE.parent;EXPERIMENTS=RUN.parent;LAB=Path('/root/heroes3-ai-lab')
++sys.path.insert(0,str(RUN))
++from pipeline_common import source_inputs,capsule_inputs,validate_capsule
++INITIAL_SHA='0dbbc4735e217e39a55dcd2f398b945bcb9ea6490525c86645843a5f1ac313f6'
++TRAINED_SHA='34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc'
++DRAIN=RUN
+ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ def write(p,v):p.write_text(json.dumps(v,indent=2))
+ 
+@@ -13,28 +17,28 @@
+     p.add_argument('--out',type=Path);p.add_argument('--map');p.add_argument('--player',type=int);p.add_argument('--opponent');p.add_argument('--seed',type=int)
+     a=p.parse_args();a.seconds=120;a.load_save=None;a.logical_update=0;a.threat_replan='off';a.decision_policy='model'
+     assert a.map in ('takeover-v2-dev-01-river','takeover-v2-dev-02-reserves') and a.player in (0,1) and a.opponent in ('EmptyAI','Nullkiller2')
+-    sys.path.insert(0,str(DRAIN))
+-    from run_proxy_game_director_drain import run
++    sys.path.insert(0,str(HERE))
++    from collect_cpu import run
+     return run(a)
+ 
+ def main():
+-    p=argparse.ArgumentParser();p.add_argument('--baseline',type=Path,required=True);p.add_argument('--candidate',type=Path,required=True);p.add_argument('--out',type=Path,required=True)
++    p=argparse.ArgumentParser();p.add_argument('--baseline',type=Path,required=True);p.add_argument('--candidate',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--execute',action='store_true')
+     a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False)
+-    capsule=LAB/'evaluations/typed-director-terminal-drain-capsule-03'
++    capsule=LAB/'evaluations/strategic-learned-economy-build-capsule-01'
++    validate_capsule(capsule)
++    assert sha(a.baseline)==INITIAL_SHA and sha(a.candidate)==TRAINED_SHA,'Exact registered same-window models required'
+     models={'a':a.baseline.resolve(),'b':a.candidate.resolve()};jobs=[]
+     for m in ('takeover-v2-dev-01-river','takeover-v2-dev-02-reserves'):
+         for o in ('EmptyAI','Nullkiller2'):
+-            for player in (0,1):jobs.append(dict(map=m,opponent=o,player=player,seed=2026102100+len(jobs)))
+-    sources=[Path(__file__),HERE/'PLAN.md',DRAIN/'run_proxy_game_director_drain.py',DRAIN/'audit_game_v6.py',DRAIN/'director_registry_v1.py',DRAIN/'CANDIDATE_MANIFEST.json',
+-        EXPERIMENTS/'strategic-threat-replan-v2/clearance_broker.py',EXPERIMENTS/'strategic-threat-replan-v2/clearance_proxy.py',
+-        EXPERIMENTS/'strategic-typed-training-v1/model_io.py',EXPERIMENTS/'strategic-typed-training-v1/live_jsonl.py',EXPERIMENTS/'strategic-typed-native-v1/raw_events_v4.py',
+-        EXPERIMENTS/'multihero-mechanism-probe-v1/build-driver-frozen-03/capsule_support.py',capsule/'EXECUTION.json',capsule/'build-source-manifest.json']
+-    sources+=list((EXPERIMENTS/'strategic-policy-v3').glob('*.py'))+list(models.values())
++            for player in (0,1):jobs.append(dict(map=m,opponent=o,player=player,seed=2026102700+len(jobs)))
++    sources=source_inputs()+capsule_inputs(capsule)+sorted(HERE.glob('*.py'))+[HERE/'PLAN.md']+list(models.values())
+     sources +=[LAB/('data/vcmi/Maps/adv/'+j['map']+'.vmap') for j in jobs]
+     frozen={str(x):sha(x) for x in sources}
+     write(a.out/'PLAN.json',dict(jobs=jobs,model_paths={k:str(v) for k,v in models.items()},input_sha256=frozen,
+-        native_runtime=str(capsule),threat_replan='off',decision_policy='model',sampling='CPU argmax',training_samples=0,optimizer_steps=0,
++        native_runtime=str(capsule),execute=a.execute,evaluation_epoch='learned-build-same-window-cpu-dev-v1',threat_replan='off',decision_policy='model',sampling='CPU argmax',training_samples=0,optimizer_steps=0,
+         finaltest_touched=False,scope='Two historically seen DEV maps, eight fresh-seed pairs. No claim of hidden-world determinism or general strength. All invalid games abort; never drop a discordant pair.'))
++    if not a.execute:
++        print(json.dumps(dict(plan_only=True,games=16,pairs=8,native_runs=0,optimizer_steps=0)));return 0
+     pairs=[]
+     try:
+         for i,job in enumerate(jobs):
+@@ -52,7 +56,8 @@
+                 proposals=[json.loads(s) for s in (root/'native/agent/typed-broker.jsonl').read_text().splitlines()]
+                 pair['arms'][arm]={'win':audit['winner']==('red' if job['player']==0 else 'blue'),'counts':audit['counts'],
+                     'audit_sha256':sha(root/'raw-audit/AUDIT.json'),'initial_request_sha256':sha(root/'native/agent/request-00000001.json'),
+-                    'policy_end_turns':sum(x['response']['op']=='end_turn' for x in proposals)}
++                    'policy_end_turns':sum(x['response']['op']=='end_turn' for x in proposals),
++                    'policy_builds':sum(x['response']['op']=='build' for x in proposals)}
+             pair['initial_request_exact']=pair['arms']['a']['initial_request_sha256']==pair['arms']['b']['initial_request_sha256']
+             pair['win_delta']=int(pair['arms']['b']['win'])-int(pair['arms']['a']['win']);pairs.append(pair)
+             write(a.out/'PROGRESS.json',dict(pairs=pairs));print(json.dumps(pair),flush=True)

@@ -1,0 +1,10 @@
+{
+  "locks": {
+    ".gpu-learner-lock": "free_at_probe",
+    ".pool-lock": "free_at_probe"
+  },
+  "remaining_batch_processes": [],
+  "completed_collect_process_exited": true,
+  "optimizer_steps": 0,
+  "note": "Lease probes are immediately closed; this script does not hold a pool/GPU lease or allocate GPU memory."
+}

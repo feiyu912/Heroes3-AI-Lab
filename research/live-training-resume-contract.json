@@ -1,0 +1,20 @@
+{
+  "state": "completed",
+  "passed": true,
+  "source_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-128.pt",
+  "source_sha256": "6168c281abf6374f426b7d3462c4a9d406cc4355c92c5577d9eb2d0e49e37334",
+  "resumed_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792078409795783495/update-129.pt",
+  "resumed_sha256": "d961f7d5555b3d5b1f4e52f533c86bd16b1a4038967990965208be8fe1a2b00a",
+  "workers": 24,
+  "CUDA_training": true,
+  "optimizer_steps_increment_range": [
+    96.0,
+    96.0
+  ],
+  "environment_steps_increment": 768,
+  "all_workers_exit_zero": true,
+  "truncated_transitions": 0,
+  "probe_excluded_from_selection": true,
+  "no_concurrent_evaluation_or_learner": true,
+  "scope": "Optimizer/RNG continuation correctness, not playing strength. Legitimate time-cap truncations use the already checked bootstrap path and are recorded separately."
+}

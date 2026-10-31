@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "scope": "independent CPU qualification/migration/actual17-request forward replay and codec negatives only",
+  "native_runs": 0,
+  "GPU_calls": 0,
+  "optimizer_steps": 0,
+  "catalog_species": 150,
+  "initialization_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "parent_tensors_exact": true,
+  "actual_native_requests_replayed": 17,
+  "legacy_projection_exact": true,
+  "requests": [
+    {
+      "request_id": 1,
+      "recruit_candidates": 6,
+      "argmax": 2,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 2,
+      "recruit_candidates": 6,
+      "argmax": 2,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 3,
+      "recruit_candidates": 6,
+      "argmax": 2,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 4,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 5,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 6,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 7,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 8,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 9,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 10,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 11,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 12,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 13,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 14,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 15,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 16,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    },
+    {
+      "request_id": 17,
+      "recruit_candidates": 6,
+      "argmax": 0,
+      "legacy_logits_and_value_exact": true
+    }
+  ],
+  "resume_negative_cases": [
+    {
+      "name": "invalid_python_rng",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "invalid_CPU_rng_length",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "Adam_counter_mismatch",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "parameter_order",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "Adam_learning_rate",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "partial_update",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "synthetic_bad_moment_shape",
+      "rejected_without_pollution": true,
+      "error": "ValueError"
+    },
+    {
+      "name": "wrong_model_shape",
+      "rejected_without_pollution": true,
+      "error": "RuntimeError"
+    }
+  ],
+  "prelaunch": [
+    {
+      "entrypoint": "collect_episode_v5",
+      "prepared_input_hashes": 908,
+      "stopped_before_resources": true,
+      "native_runs": 0,
+      "GPU_calls": 0
+    },
+    {
+      "entrypoint": "collect_cpu",
+      "prepared_input_hashes": 908,
+      "stopped_before_resources": true,
+      "native_runs": 0,
+      "GPU_calls": 0
+    }
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/admit_episode_v5.py": "fced4b65232365b4a795d7ad5aa32bc1516aa00825526b4d74216f724b6766f3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/broker.py": "4582f1cb96752c28bf5f6cccca30b0190d82966cf245e48f3d3667788b0ffe0a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/check_actual_cpu.py": "5741a134899c73cf825494020e74e6aa576a9c1776ddf3f1d59782d6a70aa088",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/check_cpu.py": "269d063c6d255738a942e92d75027fe2a493fcd54eb5235433b5c9657dab2c3a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/encoder.py": "5bc83e5bc7fc137d37c45494fbb7c5518b0b0b2fa61e0b9147d47698e876c58f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/episode_balanced_ppo.py": "6eb06ecf004f60231d99c870282d9fb4ce883aad4f6c8253281ab9d40288922a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/load_admitted.py": "7b4300afbfc80b564f8b36a25980116915d7ca8ceed4586f582934a52f148422",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/migrate_init_cpu.py": "ca6a38f2b622a3878ed11c8c30f5fea0e6b95e10ffde9ca59b083d38a751bbc3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/model.py": "163b5e6a72badf47cae09b291bd5570bc3330bf1f31e06fe73acc901eb8799b3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/model_io.py": "007c17f39b1bbda4844ad884fcfabab3519390c303fb53e5d8383aa8ded1178f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/onpolicy_broker_v2.py": "f165e24c76a8b3f492fa13124e8aa82403938fb89d325568e7760e44ff42cbb2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/qualification.py": "ae2d2e9408dbe54152710db625bb320b4744b0558610fa15fc6975c713cf1aed",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/train_update_v3.py": "29af3aba5193bb15c16023cd033dacb9102b9a70945658b80124decc6652dba9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/audit_game_v6.py": "6bef0767c9f8c2ce6fc07d87bcc336ba19d3e7c7d8349cef99b70c2c31f47e78",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/bind_qualification.py": "0bf705bb7a61be1340b40d6504e529afef28d38e9d48463b7536fe33538a88d7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/collect_cpu.py": "b1c62ff66b7ebe3f9a62cd3fab74da38fe7b7ce51d09771712460d8f0ade62d2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/collect_episode_v5.py": "b906757c72c9fa83d4fbf956b10cd063f5ce0631247e94e6d8f49c6c08081b72",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/evaluate_dev.py": "48e7846cc7417c6ebd18f0130b86adf230cc1a76a7ed59db89b3f16434471f52",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/pipeline_common.py": "9a177f25542c045f51b4346f3b4715c05cdbe1161794b15870ddc8eed5d5b37b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-run-v1/run_pipeline.py": "86e76a83d89eded56548151ca28ddba88a8f7e85fd3caaa3f775f19d41798824"
+  },
+  "CPU_codec_file": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/independent-evidence-01/independent-policy-cpu-codec.pt",
+  "CPU_codec_never_training": true
+}

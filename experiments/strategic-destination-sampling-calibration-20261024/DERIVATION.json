@@ -1,0 +1,27 @@
+{
+  "parent_inputs": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/collect_episode_v5.py": "d4e2ad2c72846772148723e9bee2da19f2ef8b13f15ffebb5dd342251c521235",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-policy-v4/onpolicy_broker_v2.py": "a5ca1179c8fbca0e140f9ba4e29065023f331e86e527c369be63b0886a49ba32",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-policy-v4/admit_episode_v5.py": "08926af7aec7ad4b09d0be14ac7a4d2b0d80987039753bf59b50f69498926826",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/leases.py": "dcf9d092b5c61c202121678f8e483406c71646f2a421dbfe3215b37aea2625a7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/audit_game_v6.py": "69e23afa6e6436eed2a91913210664a1a1c68d4e254f3a4a7293a98671a98315",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-sampler-calibration-diagnostic-20261024/pipeline_common.py": "6ee8f9a11cf1dddc20e5b0e7531b96a8fff1f1708921f15bdba590c4c7c3dfaa",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/SOURCE_FREEZE.json": "c19ac372d22b3156172f02a65f8ad1ef4dc635a15737775eb8cf98c3b31467f7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-sampler-calibration-diagnostic-20261024/SOURCE_FREEZE.json": "e411f2112db82c4a1f2fa9bc734e6fbdc54c51deb26d4c0691c3bd2b0c36f73e"
+  },
+  "changes": [
+    "TRAIN-only four fixed initial1510149e NK x4 cells; no new admission",
+    "only conditional distribution within original distinct move candidates uses T=0.25",
+    "one inherited private CUDA multinomial draw per request; effective oldlogprob and unchanged critic",
+    "preserve raw/effective logits, probabilities, operation masses and manual-not-learning metadata",
+    "same schema6 capsule02/native identity, audit gates, locks and process cleanup",
+    "RAM>2GiB/swap<256MiB gate; --prepare-only returns before leases or GPU"
+  ],
+  "no_candidate_merge": true,
+  "no_PPO_or_expert_admission": true,
+  "source_freeze_created": false,
+  "existing_frozen_sources_modified": false,
+  "native_runs": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0
+}

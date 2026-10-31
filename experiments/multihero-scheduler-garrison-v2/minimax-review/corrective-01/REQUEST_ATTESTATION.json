@@ -1,0 +1,27 @@
+{
+  "interface": "DeepSeek Harness bundled headless CLI",
+  "session_file": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\sessions\\--G-Heroes3-AI-Lab-experiments-multihero-scheduler-garrison-v2-minimax-review-corrective-01--\\session-8f6e4376-5c91-44fa-9087-a987f3256799\\session.v4.jsonl.zstd",
+  "request_header_records": [
+    {
+      "type": "request/header",
+      "seq": 10,
+      "time": 1792769875548,
+      "data": {
+        "header": {
+          "config": {
+            "provider": "mini",
+            "model": "MiniMax-M3.1-Flash",
+            "maxTokens": 4096,
+            "reasoningEffort": "low"
+          },
+          "adapterDefaults": {
+            "reasoningEffort": true,
+            "maxTokens": true
+          }
+        },
+        "reason": "initial"
+      }
+    }
+  ],
+  "session_id": "session-8f6e4376-5c91-44fa-9087-a987f3256799"
+}

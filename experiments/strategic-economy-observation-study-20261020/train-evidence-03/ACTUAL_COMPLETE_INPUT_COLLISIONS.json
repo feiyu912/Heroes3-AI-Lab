@@ -1,0 +1,42 @@
+[
+  {
+    "first": {
+      "cell": "cell-01",
+      "request_id": 1,
+      "facts": [
+        {
+          "town_id": 13,
+          "faction_id": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ]
+        }
+      ]
+    },
+    "second": {
+      "cell": "cell-07",
+      "request_id": 1,
+      "facts": [
+        {
+          "town_id": 19,
+          "faction_id": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ]
+        }
+      ]
+    },
+    "same_complete_encoded_input": true,
+    "scope": "Actual requests, possibly different episodes; metadata/raw candidates may differ. Not a causal matched game."
+  }
+]

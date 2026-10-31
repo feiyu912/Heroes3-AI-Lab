@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "passed": true,
+  "independent_ability_evaluation": false,
+  "restored": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/restore-run-2026102401-l0speh_n",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102401,
+      "seconds": 120,
+      "tag": "restore-run",
+      "save_file": "/root/heroes3-ai-lab/workers/adv-runs/cleanprior-turnstart-2026102401-2026102401-br5nqeqw/data/vcmi/Saves/director-v5-initial.vsgm1",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/restore-v3-8qr4yqgl"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "EmptyAI"
+    },
+    "turns": 13,
+    "moves_requested": 117,
+    "move_replies": 117,
+    "changed_tile_replies": 117,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 112,
+    "blocking_visit_replies": 5,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "0da6b1ba4d4732fff7b609681a7e68cd0c8fa9613ef357e637bab9c122b69fd6",
+    "native_load_verified": true,
+    "load_markers": {
+      "Preparing to start loaded game": true,
+      "Game has been successfully loaded!": true,
+      "Game loaded, initialize interfaces.": true
+    },
+    "wall_seconds": 2.117138081000121,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "67cc7cac9d123aab04d7e7bb0b30a4cc3910491f5caa851fddfacb605aa0d0be",
+    "strategy_trace_records": 567,
+    "native_calendar_last_day": 13,
+    "turns_source": "native strategy state calendar day; not a count of sampled decisions",
+    "strategy_targets_sha256": "11690f85355eeba30d47a648e6de94ac7688f55c0c0ef941cc43cf67c1aaccbb",
+    "strategy_targets_records": 18,
+    "strategy_decisions_sha256": "4958c3e7639f84002fb0446d8b63c1fa85c3bc14c2c05fa224047e0d748f1e0d",
+    "strategy_decision_records": 117,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/restore-run-2026102401-l0speh_n/data/vcmi/Saves/takeover-resume-snapshot.vsgm1",
+        "bytes": 341263,
+        "sha256": "cab402d3f364c10b0d84867c7a9728b5175b98f05050f01194ddb8d771e4811f"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/restore-run-2026102401-l0speh_n/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 341272,
+        "sha256": "f3b1680366f01a3864aa610f13cfc7536a076908fb062627077f6cfe9ee0fb2b"
+      }
+    ]
+  },
+  "comparisons": {
+    "strategy-trace.jsonl": {
+      "original_sha256": "67cc7cac9d123aab04d7e7bb0b30a4cc3910491f5caa851fddfacb605aa0d0be",
+      "restored_sha256": "67cc7cac9d123aab04d7e7bb0b30a4cc3910491f5caa851fddfacb605aa0d0be",
+      "equal": true
+    },
+    "strategy-decisions.jsonl": {
+      "original_sha256": "4958c3e7639f84002fb0446d8b63c1fa85c3bc14c2c05fa224047e0d748f1e0d",
+      "restored_sha256": "4958c3e7639f84002fb0446d8b63c1fa85c3bc14c2c05fa224047e0d748f1e0d",
+      "equal": true
+    },
+    "strategy-trace.jsonl.targets.jsonl": {
+      "original_sha256": "11690f85355eeba30d47a648e6de94ac7688f55c0c0ef941cc43cf67c1aaccbb",
+      "restored_sha256": "11690f85355eeba30d47a648e6de94ac7688f55c0c0ef941cc43cf67c1aaccbb",
+      "equal": true
+    }
+  },
+  "request_action_pairs": 117,
+  "all_request_action_bytes_equal": true,
+  "inputs_unchanged": true,
+  "scope": "Native turn-start boundary only; not mid-action or mid-battle restore"
+}

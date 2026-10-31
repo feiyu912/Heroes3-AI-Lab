@@ -1,0 +1,571 @@
+{
+  "status": "completed",
+  "independent_of_optimizer": true,
+  "test_split_touched": false,
+  "rows": [
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026102800
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "EmptyAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/0/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/0",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026102800
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "EmptyAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/1/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/1",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026102800
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "EmptyAI",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/2/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/2",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026102800
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "EmptyAI",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/3/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/3",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026102900
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "Nullkiller2"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/4/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/4",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026102900
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "Nullkiller2"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/5/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/5",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026102900
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "Nullkiller2",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/6/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/6",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026102900
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "Nullkiller2",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/7/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/7",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026112800
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "EmptyAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/8/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/8",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026112800
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "EmptyAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/9/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/9",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026112800
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "EmptyAI",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/10/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/10",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026112800
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "EmptyAI",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/11/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/11",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026112900
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "Nullkiller2"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/12/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/12",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026112900
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "Nullkiller2"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/13/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/13",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026112900
+      },
+      "model": "candidate",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "Nullkiller2",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/14/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/14",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026112900
+      },
+      "model": "baseline",
+      "valid": true,
+      "win": false,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "Nullkiller2",
+          "blue": "DirectorAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/15/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018/mocked-game-fixtures/15",
+      "native_consumption_verified": true,
+      "native_decisions_verified": 1,
+      "verification_error": null
+    }
+  ],
+  "pairs": [
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026102800
+      },
+      "baseline_win": true,
+      "candidate_win": true,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026102800
+      },
+      "baseline_win": false,
+      "candidate_win": false,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026102900
+      },
+      "baseline_win": true,
+      "candidate_win": true,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026102900
+      },
+      "baseline_win": false,
+      "candidate_win": false,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026112800
+      },
+      "baseline_win": true,
+      "candidate_win": true,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "role": "blue",
+        "seed": 2026112800
+      },
+      "baseline_win": false,
+      "candidate_win": false,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "red",
+        "seed": 2026112900
+      },
+      "baseline_win": true,
+      "candidate_win": true,
+      "win_delta": 0
+    },
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "role": "blue",
+        "seed": 2026112900
+      },
+      "baseline_win": false,
+      "candidate_win": false,
+      "win_delta": 0
+    }
+  ],
+  "net_win_delta": 0,
+  "counts": {
+    "baseline": {
+      "games": 8,
+      "wins": 4
+    },
+    "candidate": {
+      "games": 8,
+      "wins": 4
+    }
+  },
+  "limitations": "Small fixed development set; maps/roles are clustered; no final-test claim.",
+  "discordant_pairs": {
+    "candidate_only_wins": 0,
+    "baseline_only_wins": 0
+  },
+  "by_opponent_role": {
+    "EmptyAI/red": {
+      "baseline": {
+        "games": 2,
+        "wins": 2
+      },
+      "candidate": {
+        "games": 2,
+        "wins": 2
+      }
+    },
+    "EmptyAI/blue": {
+      "baseline": {
+        "games": 2,
+        "wins": 0
+      },
+      "candidate": {
+        "games": 2,
+        "wins": 0
+      }
+    },
+    "Nullkiller2/red": {
+      "baseline": {
+        "games": 2,
+        "wins": 2
+      },
+      "candidate": {
+        "games": 2,
+        "wins": 2
+      }
+    },
+    "Nullkiller2/blue": {
+      "baseline": {
+        "games": 2,
+        "wins": 0
+      },
+      "candidate": {
+        "games": 2,
+        "wins": 0
+      }
+    }
+  }
+}

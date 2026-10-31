@@ -1,0 +1,8 @@
+{
+  "path": "/root/heroes3-ai-lab/src/vcmi-adv/client/NetPacksClient.cpp",
+  "changed": true,
+  "before_sha256": "285523efc7f5191a4a30daa6aa4009b3a0af34a11abac7cd1622c1f4b788495b",
+  "after_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+  "compiled": false,
+  "scope": "Only session.testsave OR condition for native allPlayersEndedGame auto-exit"
+}

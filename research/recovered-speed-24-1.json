@@ -1,0 +1,111 @@
+{
+  "config": {
+    "workers": 24,
+    "updates": 4,
+    "rollout": 8,
+    "seed": 20261018,
+    "opponents": [
+      "BattleAI"
+    ],
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "resume": false,
+    "step_cost": 0.002,
+    "output": "/mnt/g/Heroes3-AI-Lab/research/recovered-speed-24-1.json"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1791996281146879633/update-4.pt",
+  "records": [
+    {
+      "update": 1,
+      "samples": 192,
+      "steps_per_second": 130.86374168549287,
+      "episodes": 0,
+      "wins": 0,
+      "truncations": 0,
+      "metrics": {
+        "loss": 3.834988514582316,
+        "policy_loss": -0.0045104678720235825,
+        "value_loss": 7.697305308447944,
+        "entropy": 0.9153623647160001,
+        "approximate_kl": 0.00013973470777273178,
+        "gradient_norm": 13.194562806023491,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3
+      },
+      "free_mib": 6408.8515625,
+      "gpu_allocated_mib": 389.66943359375,
+      "gpu_telemetry": {
+        "temperature_c": 43.0,
+        "memory_used_mib": 2355.0,
+        "utilization_percent": 3.0
+      }
+    },
+    {
+      "update": 2,
+      "samples": 192,
+      "steps_per_second": 235.71544976986183,
+      "episodes": 10,
+      "wins": 10,
+      "truncations": 0,
+      "metrics": {
+        "loss": 3.9923822349972196,
+        "policy_loss": -0.004515072951714198,
+        "value_loss": 8.006953186459011,
+        "entropy": 0.6579262316226959,
+        "approximate_kl": 0.00023895653430372477,
+        "gradient_norm": 10.038442240820991,
+        "clip_fraction": 0.001736111111111111,
+        "epochs_completed": 3
+      },
+      "free_mib": 6397.10546875,
+      "gpu_allocated_mib": 389.66943359375
+    },
+    {
+      "update": 3,
+      "samples": 192,
+      "steps_per_second": 242.94542662228835,
+      "episodes": 19,
+      "wins": 19,
+      "truncations": 0,
+      "metrics": {
+        "loss": 5.126447253757053,
+        "policy_loss": -0.0020728459995653895,
+        "value_loss": 10.274402936299643,
+        "entropy": 0.8681441214349535,
+        "approximate_kl": 6.157346069812775e-05,
+        "gradient_norm": 15.315991507636177,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3
+      },
+      "free_mib": 6394.16015625,
+      "gpu_allocated_mib": 389.66943359375
+    },
+    {
+      "update": 4,
+      "samples": 192,
+      "steps_per_second": 242.2871898608177,
+      "episodes": 35,
+      "wins": 35,
+      "truncations": 0,
+      "metrics": {
+        "loss": 2.284330301814609,
+        "policy_loss": -0.002055709974633323,
+        "value_loss": 4.5910288492838545,
+        "entropy": 0.912842247221205,
+        "approximate_kl": 4.956002036730448e-05,
+        "gradient_norm": 9.78240172068278,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3
+      },
+      "free_mib": 6386.62890625,
+      "gpu_allocated_mib": 389.66943359375
+    }
+  ],
+  "completed": true,
+  "resumed_from_updates": 0,
+  "total_parameters": 8993178,
+  "trainable_parameters": 100356,
+  "reward": "Normal terminal win/loss +/-1, minus 0.002 per owned action; artificial truncation bootstraps final observation",
+  "wall_seconds": 26.265136010999413,
+  "source": "Official v15 attacker/defender, frozen graph encoder, head-only PPO",
+  "all_workers_exit_zero": true
+}

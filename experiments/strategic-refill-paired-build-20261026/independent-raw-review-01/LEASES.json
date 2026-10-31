@@ -1,0 +1,21 @@
+{
+  "order": [
+    "GPU",
+    "pool"
+  ],
+  "entries": [
+    {
+      "fd": 3,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.gpu-learner-lock",
+      "device": 66308,
+      "inode": 2752519
+    },
+    {
+      "fd": 4,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.pool-lock",
+      "device": 66308,
+      "inode": 2752520
+    }
+  ],
+  "independent_read_only": true
+}

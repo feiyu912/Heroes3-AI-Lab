@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "source": "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/update-01",
+  "files": {
+    "update-1.pt": "bb3417624bdb25023e1dbbb2e8eb49de140f2a4264c9de0444659f2b953803cc",
+    "RESULT.json": "f324244ac9967801e6a5e1f50d0fa6877b50819fdc6f559b8c71591a68578c31",
+    "PLAN.json": "df26e2970b3c5b3f933e034d7332c498876ee4a5957ac901f187d83ff5b5ba4e"
+  },
+  "ability_improvement_claim": false
+}

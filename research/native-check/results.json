@@ -1,0 +1,8 @@
+{
+  "smokeConfigure": 0,
+  "smokeBuild": 0,
+  "smokeRun": 0,
+  "posixHeaders": 2,
+  "trainingOsGate": 2,
+  "upstreamConfigure": 1
+}

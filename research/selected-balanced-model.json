@@ -1,0 +1,6 @@
+{
+  "architecture": "gnn",
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/bc-balanced-v1/gnn.pt",
+  "validation_report": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-gnn-validation.json",
+  "criterion": "Validation battle win rate, ties broken by mean casualties; test not used for selection"
+}

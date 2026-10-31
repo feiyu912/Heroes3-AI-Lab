@@ -1,0 +1,24 @@
+--- frozen/restore_learner.py
++++ isolated/restore_learner_ubuntu.py
+@@ -1,10 +1,10 @@
+ """CPU-only, boundary-bound battle learner restoration. Does not create native environments."""
+-import copy,hashlib,importlib.util,io,json,math,random
++import copy,hashlib,importlib.util,io,json,math,random,os
+ from pathlib import Path
+ import numpy as np
+ import torch
+ 
+-ROOT=Path('/mnt/g/Heroes3-AI-Lab')
++ROOT=Path(os.environ['HEROES3_PROJECT_ROOT']).resolve()
+ DEFAULT_CHECKPOINT=Path('/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/control-update-60.pt')
+ DEFAULT_SHA='443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20'
+ def require(condition,message):
+@@ -71,7 +71,7 @@
+     require(bundle.get('finetuning_mode')=='last' and bundle['config'].get('mode')=='last','Only the actual last-graph mode is supported')
+     sources={}
+     for p in (ROOT/'research/full_graph_policy.py',ROOT/'research/recovered-graph.py'):
+-        require(bundle['frozen_inputs']['input_sha256'].get(str(p))==sha(p),'Frozen graph source changed '+str(p));sources[str(p)]=sha(p)
++        require(bundle['frozen_inputs']['input_sha256'].get('/mnt/g/Heroes3-AI-Lab/research/'+p.name)==sha(p),'Frozen graph source changed '+str(p));sources[str(p)]=sha(p)
+     spec=importlib.util.spec_from_file_location('_battle_continuation_frozen_graph',ROOT/'research/full_graph_policy.py')
+     graph=importlib.util.module_from_spec(spec);spec.loader.exec_module(graph)
+     with torch.random.fork_rng(devices=[]):model=graph.FullGraphPair(path,'last').cpu().eval()

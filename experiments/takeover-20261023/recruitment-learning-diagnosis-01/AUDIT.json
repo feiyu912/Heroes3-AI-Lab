@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "train_rows": 3952,
+  "episodes": 8,
+  "initial_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "candidate_sha256": "85c5fdda76e1d98fcc157f86f08203e7f9db0e1774f5b0f254ad5b20f9b55a9a",
+  "initial_recruit_bias": -4.0,
+  "updated_recruit_bias": -3.99643611907959,
+  "cpu_vs_certified_CUDA_logprob_absolute_error": {
+    "n": 3952,
+    "mean": 3.472852863763508e-08,
+    "minimum": 0.0,
+    "median": 0.0,
+    "maximum": 9.5367431640625e-07
+  },
+  "normalized_advantage_protocol": {
+    "samples": 3952,
+    "episodes": 8,
+    "free_choices": 3928,
+    "forced_transitions": 24,
+    "active_actor_episodes": 8,
+    "actor_weight_sum": 3952.0,
+    "critic_weight_sum": 3951.99951171875,
+    "advantage_mean": 0.087090221942321,
+    "advantage_variance": 0.48229214872421067,
+    "per_episode": [
+      {
+        "episode_id": "85193eaa01a36e3b5e2d64762fafbd2011163a86b6264da52f04ed7cef8dec44",
+        "steps": 353,
+        "free_choices": 344,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "2150a3709707e9f50dd657d17083c4049ca5ade747bdc959bfa436da9f79dd35",
+        "steps": 1047,
+        "free_choices": 1044,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "41cb2cce90cfc01dba748c128a9de26fa41777b9b9e7b91b668b6bd46c33c277",
+        "steps": 291,
+        "free_choices": 287,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "767c34ff32ef201c0fcf9b0288825bc7d57b085542b9361920cea77484bac055",
+        "steps": 181,
+        "free_choices": 177,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "a5d1ab13eba7320f62f390f0885192bdd43b29b0c28e81a4dcbe2baaf73b1f00",
+        "steps": 1287,
+        "free_choices": 1287,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "2c4c9d851002a00f61d7e6c59c0226cce6ab963e08d58d45f6488cc12a24b1cd",
+        "steps": 478,
+        "free_choices": 477,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "0dd2d9967fe1d197d40fe0e4daef6884216be6432678d5493ae18c1a091a8258",
+        "steps": 149,
+        "free_choices": 146,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "f5004461ff5acc096bcdb5362497df0aa0842d8206629c75f671e7d163789a10",
+        "steps": 166,
+        "free_choices": 166,
+        "reward": -1.0
+      }
+    ],
+    "collector_manifest_verified": true
+  },
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "native_runs": 0,
+  "locks_acquired": false,
+  "DEV_read": false,
+  "logits_bias_sensitivity_scope": "Pure same-observation logit arithmetic removing initial manual offset or resetting updated offset; not a trained policy, teacher, native experiment or capability counterfactual.",
+  "interpretation_limits": [
+    "Only observed fixed TRAIN state support; no independent ability claim.",
+    "Advantages arise from terminal outcome plus stored critic and episode-normalization; correlation does not identify an individual action causal effect.",
+    "Initial manual bias effect on probabilities is calculable; it is not alone evidence of the cause of training outcome.",
+    "Unselected candidate opportunity rows have no demonstrated action success or per-candidate advantage label."
+  ],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/initialization-01/recruitment-initialization.pt": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/update-01/update-1.pt": "85c5fdda76e1d98fcc157f86f08203e7f9db0e1774f5b0f254ad5b20f9b55a9a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/diagnose_recruitment_learning.py": "b4d01b659bcc33517a579a95334e676e5fccd30d48618aa55676ca220f5e4320",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-00/raw-audit/AUDIT.json": "826ea1ed9ea03de64c00b7fee96a3f94bd7e2ae05c091ca72fc6bbbb954a0448",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-01/raw-audit/AUDIT.json": "06f6d573c7478187e1f1923879e4446eaa0b68957d7cade12b3962bcf633a9e8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-02/raw-audit/AUDIT.json": "d81521fc4d4e353e8900c566f6838e2c97ca01c213a3d343552a93c05d06e48f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-03/raw-audit/AUDIT.json": "9ca333c9344fd6c64b88963883bcfbf54a7a8719fadfe3a54623e14ba858c81f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-04/raw-audit/AUDIT.json": "cb5087f7e2df45421630c4be1bf1bc9561b8a6558700f73335f34fcb5338d936",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-05/raw-audit/AUDIT.json": "f321acaca53357cf20e999e413fd11338c98c5784ebf7840af6ea74370788024",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-06/raw-audit/AUDIT.json": "6af819d33852b37cf447771c6fc3be5e50084a6d66f9d8b6e161b9934236a0f8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-07/raw-audit/AUDIT.json": "cf76c8978c4fc5fea5dc5814531c117b93f40c49d4e76d243038f659c43b7459"
+  },
+  "output_sha256": {
+    "REQUEST_COMPARISON.jsonl": "a82cccdb12ed1a118731a08cd916205860317ec5c21a5d03a5af09f4c7cb80b0",
+    "AGGREGATES.json": "e1235a3e3b5ef394f5fee9c84034bb47eb24e6afa4723fd534c5812df1a1230f",
+    "EPISODES.json": "1546e7d1905a01d8109851efad56966ddfb1398d1c0f76f8ea1111d7fda51380"
+  }
+}

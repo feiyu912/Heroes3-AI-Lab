@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "same_capsule_same_seed_same_model": true,
+  "same_initial_264_move_decisions": true,
+  "all_275_normalized_move_decisions_match_V8_control": true,
+  "missing_native_script_layers": [
+    {
+      "line": 5339,
+      "message": "core:SCRIPTS/COMBAT/ARROWTOWERDAMAGE"
+    },
+    {
+      "line": 5342,
+      "message": "core:SCRIPTS/SPELLS/ATTACHCOMBATSCRIPT"
+    },
+    {
+      "line": 5345,
+      "message": "core:SCRIPTS/COMBAT/BALLISTADAMAGE"
+    },
+    {
+      "line": 5348,
+      "message": "core:SCRIPTS/SPELLS/CATAPULT"
+    },
+    {
+      "line": 5351,
+      "message": "core:SCRIPTS/SPELLS/CLONE"
+    },
+    {
+      "line": 5354,
+      "message": "core:SCRIPTS/SPELLS/DAMAGE"
+    },
+    {
+      "line": 5357,
+      "message": "core:SCRIPTS/DAMAGE/DAMAGECALCULATOR"
+    },
+    {
+      "line": 5358,
+      "message": "core:SCRIPTS/DAMAGE/MAGICELEMENTAL"
+    },
+    {
+      "line": 5359,
+      "message": "core:SCRIPTS/DAMAGE/PSYCHICELEMENTAL"
+    },
+    {
+      "line": 5360,
+      "message": "core:SCRIPTS/DAMAGE/VULNERABLEFROMBACK"
+    },
+    {
+      "line": 5361,
+      "message": "core:SCRIPTS/DAMAGE/HATESTRAIT"
+    },
+    {
+      "line": 5362,
+      "message": "core:SCRIPTS/DAMAGE/REVENGE"
+    },
+    {
+      "line": 5363,
+      "message": "core:SCRIPTS/DAMAGE/ENEMYATTACKREDUCTION"
+    },
+    {
+      "line": 5364,
+      "message": "core:SCRIPTS/DAMAGE/DAMAGERECEIVEDCAP"
+    },
+    {
+      "line": 5367,
+      "message": "core:SCRIPTS/COMBAT/DEATHSTARE"
+    },
+    {
+      "line": 5368,
+      "message": "core:SCRIPTS/COMBAT/DEATHSTARECOMMANDER"
+    },
+    {
+      "line": 5371,
+      "message": "core:SCRIPTS/SPELLS/DEMONSUMMON"
+    },
+    {
+      "line": 5374,
+      "message": "core:SCRIPTS/COMBAT/DESTRUCTION"
+    },
+    {
+      "line": 5377,
+      "message": "core:SCRIPTS/SPELLS/DISPEL"
+    },
+    {
+      "line": 5380,
+      "message": "core:SCRIPTS/COMBAT/ENCHANTED"
+    },
+    {
+      "line": 5383,
+      "message": "core:SCRIPTS/COMBAT/FIRESHIELD"
+    },
+    {
+      "line": 5386,
+      "message": "core:SCRIPTS/SPELLS/HEAL"
+    },
+    {
+      "line": 5389,
+      "message": "core:SCRIPTS/COMBAT/LIFEDRAIN"
+    },
+    {
+      "line": 5392,
+      "message": "core:SCRIPTS/SPELLS/MOAT"
+    },
+    {
+      "line": 5395,
+      "message": "core:SCRIPTS/SPELLS/OBSTACLE"
+    },
+    {
+      "line": 5398,
+      "message": "core:SCRIPTS/COMBAT/REBIRTH"
+    },
+    {
+      "line": 5401,
+      "message": "core:SCRIPTS/SPELLS/REMOVEOBSTACLE"
+    },
+    {
+      "line": 5404,
+      "message": "core:SCRIPTS/SPELLS/SACRIFICE"
+    },
+    {
+      "line": 5407,
+      "message": "core:SCRIPTS/COMBAT/SOULSTEAL"
+    },
+    {
+      "line": 5410,
+      "message": "core:SCRIPTS/SPELLS/SUMMON"
+    },
+    {
+      "line": 5413,
+      "message": "core:SCRIPTS/COMBAT/SUMMONGUARDIANS"
+    },
+    {
+      "line": 5416,
+      "message": "core:SCRIPTS/SPELLS/TELEPORT"
+    },
+    {
+      "line": 5419,
+      "message": "core:SCRIPTS/SPELLS/TIMED"
+    },
+    {
+      "line": 5420,
+      "message": "core:SCRIPTS/SPELLS/PATCHES/TIMEDSHIELD"
+    },
+    {
+      "line": 5421,
+      "message": "core:SCRIPTS/SPELLS/PATCHES/TIMEDBIND"
+    },
+    {
+      "line": 5424,
+      "message": "core:SCRIPTS/COMBAT/TRANSMUTATION"
+    }
+  ],
+  "restored_script_files": 41,
+  "normal_native_outcome": "red victory day30",
+  "ability_improvement_claim": false,
+  "failed_run_reward": null,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "interpretation": "Omitted native runtime scripts caused zero-damage battle behavior. Adding the compiled-epoch scripts restored normal game completion. Neither model nor battle AI algorithm was changed."
+}

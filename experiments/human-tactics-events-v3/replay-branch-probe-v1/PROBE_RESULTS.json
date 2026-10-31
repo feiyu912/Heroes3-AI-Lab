@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "new_games": 2,
+  "pivot_step": 12,
+  "matched_prefix_decisions": 13,
+  "exact_control_full_physical_replay": true,
+  "same_pivot_graph_and_legal_set": true,
+  "control_action": 168,
+  "intervened_action": 197,
+  "native_control_type": 8,
+  "native_intervened_type": 6,
+  "next_observation_diverged": true,
+  "control_success": false,
+  "branch_success": false,
+  "control_losses": {
+    "0": 2,
+    "6": 12
+  },
+  "branch_losses": {
+    "0": 2,
+    "6": 12
+  },
+  "source_archive_sha256": "73eaa40488fef4441b6d73934975a33151c6ea7fe1961ce00d856e1be4a00865",
+  "control_archive_sha256": "b5f64bc3322676415b941eb0333e1c383ec6cea3155bf37a1a96a3cb5215e444",
+  "branch_archive_sha256": "c5f9ba4a7b5e216a9064b5761e2097d332ea6c05641088a9b8b0da8a2ca719df",
+  "fair_search_teacher": false,
+  "eligible_for_bc": false,
+  "limitation": "Same-seed future outcomes are not deployable information; intervention changes RNG consumption"
+}

@@ -1,0 +1,61 @@
+{
+  "game_completed": false,
+  "winner": null,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "mechanics_qualified": false,
+  "restoration_qualified": false,
+  "stop_reason": "controlled_partial_turn_cap",
+  "native_exit": -15,
+  "loaded_library_observations": [
+    {
+      "pid": 779,
+      "executable": "/root/heroes3-ai-lab/evaluations/scripted-supply-cargo-capsule-01/bin/vcmiclient",
+      "executable_sha256": "9bfff27e8ca5f7e11918f026ec0757d76c638d12da75c35208266c339ae46171",
+      "executable_matches_capsule": true,
+      "libraries": [
+        {
+          "maps_line": "790fe0e00000-790fe0f99000 r--p 00000000 08:30 1246861                    /root/heroes3-ai-lab/evaluations/scripted-supply-cargo-capsule-01/bin/libvcmi.so",
+          "path": "/root/heroes3-ai-lab/evaluations/scripted-supply-cargo-capsule-01/bin/libvcmi.so",
+          "deleted": false,
+          "sha256": "58cef3dc1ef8b6a1206e53e4954495c6bcd1bdb50c27fa6ab7342416dc2d0731",
+          "inode_matches": true,
+          "device_matches": true,
+          "expected_path": "/root/heroes3-ai-lab/evaluations/scripted-supply-cargo-capsule-01/bin/libvcmi.so",
+          "path_matches": true,
+          "expected_sha256": "58cef3dc1ef8b6a1206e53e4954495c6bcd1bdb50c27fa6ab7342416dc2d0731",
+          "valid": true
+        }
+      ],
+      "valid": true,
+      "run_server_threads": [
+        {
+          "tid": 810,
+          "comm": "runServer",
+          "proc_comm_path": "/proc/779/task/810/comm"
+        }
+      ]
+    }
+  ],
+  "input_sha_unchanged": true,
+  "thread_server_verification": {
+    "mode": "thread",
+    "settings_server_useProcess": false,
+    "client_library_verified": true,
+    "run_server_threads": [
+      {
+        "pid": 779,
+        "tid": 810,
+        "comm": "runServer",
+        "proc_comm_path": "/proc/779/task/810/comm"
+      }
+    ],
+    "native_server_log_markers": {
+      "CVCMIServer created!": true,
+      "Server gives turn to ": true
+    },
+    "passed": true
+  },
+  "controlled_stop_is_not_safe_save_boundary": true
+}

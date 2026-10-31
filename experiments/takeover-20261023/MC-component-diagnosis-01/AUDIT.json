@@ -1,0 +1,249 @@
+{
+  "passed": true,
+  "checkpoint_sha256": {
+    "parent61": "4725dab0332ad93f3806084ce1fc01803e77f5e5ee6ca861d452b63892062840",
+    "reference62": "ec26fe4bcd0987a01821f2076a4d076589008a88f6a41a63d00d5c9c0cfd0eec",
+    "MC62": "5cd856b3221342c283899df126f4c50116d7779b3e0ea3b8d90125e243310354"
+  },
+  "cases": [
+    {
+      "opponent": "BattleAI",
+      "scenario": 198,
+      "role": "attacker",
+      "seed": 2026129200,
+      "win_delta": -1,
+      "step": 21,
+      "public_graph_sha256": "a6d1ac1981d9db1d8a26fccaccf7661b62acaec0e503686d9dd3aabfc4a9a2e3",
+      "variants": {
+        "reference_full": {
+          "action": 238,
+          "top3": [
+            {
+              "action": 238,
+              "logit": 33.61893844604492,
+              "probability": 0.1981150507926941
+            },
+            {
+              "action": 244,
+              "logit": 33.61256408691406,
+              "probability": 0.19685621559619904
+            },
+            {
+              "action": 239,
+              "logit": 33.561866760253906,
+              "probability": 0.18712489306926727
+            }
+          ],
+          "top2_margin": 0.006374359130859375
+        },
+        "MC_full": {
+          "action": 244,
+          "top3": [
+            {
+              "action": 244,
+              "logit": 33.63911819458008,
+              "probability": 0.1978731006383896
+            },
+            {
+              "action": 238,
+              "logit": 33.63591384887695,
+              "probability": 0.19724005460739136
+            },
+            {
+              "action": 239,
+              "logit": 33.58245849609375,
+              "probability": 0.18697337806224823
+            }
+          ],
+          "top2_margin": 0.003204345703125
+        },
+        "MC_head_reference_body": {
+          "action": 244,
+          "top3": [
+            {
+              "action": 244,
+              "logit": 33.6225700378418,
+              "probability": 0.19761480391025543
+            },
+            {
+              "action": 238,
+              "logit": 33.621620178222656,
+              "probability": 0.1974271982908249
+            },
+            {
+              "action": 239,
+              "logit": 33.56758499145508,
+              "probability": 0.1870422661304474
+            }
+          ],
+          "top2_margin": 0.000949859619140625
+        },
+        "MC_head_parent61_body": {
+          "action": 238,
+          "top3": [
+            {
+              "action": 238,
+              "logit": 33.89894104003906,
+              "probability": 0.199124276638031
+            },
+            {
+              "action": 244,
+              "logit": 33.87575912475586,
+              "probability": 0.19456128776073456
+            },
+            {
+              "action": 239,
+              "logit": 33.82931900024414,
+              "probability": 0.1857324242591858
+            }
+          ],
+          "top2_margin": 0.023181915283203125
+        },
+        "reference_head_MC_body": {
+          "action": 238,
+          "top3": [
+            {
+              "action": 238,
+              "logit": 33.63322830200195,
+              "probability": 0.19780701398849487
+            },
+            {
+              "action": 244,
+              "logit": 33.629112243652344,
+              "probability": 0.19699449837207794
+            },
+            {
+              "action": 239,
+              "logit": 33.57904052734375,
+              "probability": 0.18737353384494781
+            }
+          ],
+          "top2_margin": 0.004116058349609375
+        }
+      }
+    },
+    {
+      "opponent": "MMAI_MODEL",
+      "scenario": 195,
+      "role": "attacker",
+      "seed": 2026128900,
+      "win_delta": 1,
+      "step": 7,
+      "public_graph_sha256": "01b00e3469624b073bdac0eeed99bf3a20b47ed8463576e8fdd08c60c85fa857",
+      "variants": {
+        "reference_full": {
+          "action": 233,
+          "top3": [
+            {
+              "action": 233,
+              "logit": -19.883995056152344,
+              "probability": 0.17859625816345215
+            },
+            {
+              "action": 251,
+              "logit": -19.892745971679688,
+              "probability": 0.1770402044057846
+            },
+            {
+              "action": 246,
+              "logit": -20.37196159362793,
+              "probability": 0.10963549464941025
+            }
+          ],
+          "top2_margin": 0.00875091552734375
+        },
+        "MC_full": {
+          "action": 251,
+          "top3": [
+            {
+              "action": 251,
+              "logit": -19.788339614868164,
+              "probability": 0.17724229395389557
+            },
+            {
+              "action": 233,
+              "logit": -19.791370391845703,
+              "probability": 0.17670592665672302
+            },
+            {
+              "action": 246,
+              "logit": -20.266738891601562,
+              "probability": 0.10985028743743896
+            }
+          ],
+          "top2_margin": 0.0030307769775390625
+        },
+        "MC_head_reference_body": {
+          "action": 233,
+          "top3": [
+            {
+              "action": 233,
+              "logit": -19.81147575378418,
+              "probability": 0.17788223922252655
+            },
+            {
+              "action": 251,
+              "logit": -19.81658363342285,
+              "probability": 0.17697595059871674
+            },
+            {
+              "action": 246,
+              "logit": -20.294885635375977,
+              "probability": 0.10969588160514832
+            }
+          ],
+          "top2_margin": 0.005107879638671875
+        },
+        "MC_head_parent61_body": {
+          "action": 233,
+          "top3": [
+            {
+              "action": 233,
+              "logit": -19.66230010986328,
+              "probability": 0.17814858257770538
+            },
+            {
+              "action": 251,
+              "logit": -19.687976837158203,
+              "probability": 0.17363254725933075
+            },
+            {
+              "action": 246,
+              "logit": -20.163841247558594,
+              "probability": 0.1078861877322197
+            }
+          ],
+          "top2_margin": 0.025676727294921875
+        },
+        "reference_head_MC_body": {
+          "action": 233,
+          "top3": [
+            {
+              "action": 233,
+              "logit": -19.86385726928711,
+              "probability": 0.17741429805755615
+            },
+            {
+              "action": 251,
+              "logit": -19.86445426940918,
+              "probability": 0.17730841040611267
+            },
+            {
+              "action": 246,
+              "logit": -20.34377098083496,
+              "probability": 0.10979048907756805
+            }
+          ],
+          "top2_margin": 0.0005970001220703125
+        }
+      }
+    }
+  ],
+  "inference_only": true,
+  "new_checkpoint_files": 0,
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "GPU_operations": 0,
+  "PPO_teacher_rows": 0,
+  "scope": "Component effects on action rankings for a fixed public graph only. These hybrids are not resumable models or demonstrated battle outcomes; DEV graphs are never PPO data."
+}

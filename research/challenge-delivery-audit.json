@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "audited_unix": 1792081449.9013095,
+  "experiment_complete": true,
+  "goal_achieved": false,
+  "checkpoint_sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e",
+  "games": 3072,
+  "matchups": [
+    {
+      "name": "fresh-upstream-vs-battleai",
+      "wins": 457,
+      "games": 512,
+      "report_sha256": "32131e5979c9a4ade5044daa4fc84aef60988393a5b9afd0c31e0be73abb0a49"
+    },
+    {
+      "name": "fresh-v3-vs-battleai",
+      "wins": 214,
+      "games": 512,
+      "report_sha256": "4dd24316591193ec917ff4fc7d69375308a04f83dd7f59fdcf0790c378f67140"
+    },
+    {
+      "name": "fresh-selected-vs-battleai",
+      "wins": 434,
+      "games": 512,
+      "report_sha256": "9e7683edfe70a59a1395d4e1c0d55386959a12af134200f2a03e4aa7a70b01b0"
+    },
+    {
+      "name": "fresh-selected-vs-upstream",
+      "wins": 268,
+      "games": 512,
+      "report_sha256": "f067c90b1ffe28ce96b9d2a94cce5d11a8ab00c6ba5687767e4cfce255422f90"
+    },
+    {
+      "name": "fresh-v3-vs-upstream",
+      "wins": 84,
+      "games": 512,
+      "report_sha256": "f0de7a421485d7b9fa0f38f6cb653f6f988fc3a6286fd340b22cfa31ff3f96ea"
+    },
+    {
+      "name": "fresh-battleai-vs-battleai",
+      "wins": 254,
+      "games": 512,
+      "report_sha256": "a4c44bb1aff5795ae6afd29ba3c444becc5a978e9c8c83ec6bbc40a2f59bec18"
+    }
+  ],
+  "native_compatibility_passed": true,
+  "derived_policy_requires_fresh_ppo_optimizer": true,
+  "figure_visual_review": "Root viewed the generated PNG; labels and intervals readable.",
+  "limitation": "Audit of completed frozen V5 experiment. Subsequent methods need new independent confirmation."
+}

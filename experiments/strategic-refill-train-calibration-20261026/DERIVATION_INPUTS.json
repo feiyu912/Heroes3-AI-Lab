@@ -1,0 +1,8 @@
+{
+  "experiments/strategic-active-opponent-policy-v4/encoder.py": "077f138f3a7d102c6b4146ced44395f519afd01c9ae8527dc3d9ef5e197729fa",
+  "experiments/strategic-active-opponent-policy-v4/model.py": "0efc2461e7656e66edefe9d590b26b200522229c03825983a155fb481819e1f4",
+  "experiments/strategic-active-opponent-policy-v4/model_io.py": "709f4bfb7786842140685e1d232eebdf31d1721d5bb0d2aede7cee872f0de38a",
+  "experiments/strategic-active-opponent-policy-v4/broker.py": "a4d52bb3242fb50d5d878b4537a1d76a2c37736a53a7377886291f08366fb062",
+  "experiments/strategic-active-opponent-policy-v4/creature_vocabulary.json": "ab6c8073134d0c7eb05df8d2538e156ca4a46fd29d3fe643d4c6e37eb84baf74",
+  "experiments/strategic-active-opponent-policy-v4/onpolicy_broker_v2.py": "a5ca1179c8fbca0e140f9ba4e29065023f331e86e527c369be63b0886a49ba32"
+}

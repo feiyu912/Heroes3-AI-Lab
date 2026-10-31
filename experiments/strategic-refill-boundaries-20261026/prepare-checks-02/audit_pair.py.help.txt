@@ -1,0 +1,7 @@
+usage: audit_pair.py [-h] --baseline BASELINE --candidate CANDIDATE --out OUT
+
+options:
+  -h, --help            show this help message and exit
+  --baseline BASELINE
+  --candidate CANDIDATE
+  --out OUT

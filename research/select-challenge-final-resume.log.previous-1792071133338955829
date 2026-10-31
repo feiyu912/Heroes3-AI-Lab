@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/g/Heroes3-AI-Lab/research/select-challenge-final.py", line 12, in <module>
+    time.sleep(1);continue
+RuntimeError: Extended goal experiments failed; inspect goal-v5 logs

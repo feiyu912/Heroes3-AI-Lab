@@ -1,0 +1,306 @@
+[
+  {
+    "id": "hallas-wait-ghost-v2-0-attacker",
+    "map": "lab/hallas-wait-ghost-v2-0-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 4
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 80
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 0,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "aea56b10dc0eecd4ebeffc1f8b584d064b5a18f97e7bb76e8e69e5cd239bd028",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-0-defender",
+    "map": "lab/hallas-wait-ghost-v2-0-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 80
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 4
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 0,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "f2cf92094203832206435a1934ecda66b57c1afbecdb53fa34e3154710077dd9",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-1-attacker",
+    "map": "lab/hallas-wait-ghost-v2-1-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 100
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 1,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "26dca3ca816fe9c0384043fa3db7aa94562817ee6dcc83e3d68b6b01a669d86d",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-1-defender",
+    "map": "lab/hallas-wait-ghost-v2-1-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 100
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 1,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "35d9acfd18055a21df46128bfd7651b749fbc979dcfc848918cff6e45598ccea",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-2-attacker",
+    "map": "lab/hallas-wait-ghost-v2-2-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 8
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 120
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 2,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "f34c1254226e6e53f9d1f4a80e3935273b4613e38407b005e60f5abdaea6e6a6",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-2-defender",
+    "map": "lab/hallas-wait-ghost-v2-2-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 120
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 8
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 2,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "cdfb09db579f8559b7d687098a61e0c73a17934266ce1ce17769f7ea417831f7",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-3-attacker",
+    "map": "lab/hallas-wait-ghost-v2-3-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 10
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 140
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 3,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "e7ef41819eb789335d07b3f6d5bb73449985068e1a04c2bd002c3736b459c682",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  },
+  {
+    "id": "hallas-wait-ghost-v2-3-defender",
+    "map": "lab/hallas-wait-ghost-v2-3-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 140
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 10
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 3,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "abbe5ba95bb2acd05e52cdc39f118b5e907678800f0f48b3e6be55721789ec86",
+    "reconstruction": "Lab speed-14 flying undead versus speed-3 undead; not historical human state",
+    "side_effects": "Ghost Dragon aging is not disabled; may affect causal attribution. No dragon breath ability claimed.",
+    "morale_control": "Both stacks undead, avoiding positive morale. Verify actual order."
+  }
+]

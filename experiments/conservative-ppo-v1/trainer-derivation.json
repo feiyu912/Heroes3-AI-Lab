@@ -1,0 +1,9 @@
+{
+  "source": "/mnt/g/Heroes3-AI-Lab/research/train-recovered-heads.py",
+  "source_sha256": "e9380a3ebf806042fd901d45a6efe391bbda871ff9804a7cd5dd0783c4c121fa",
+  "derivative": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/train_conservative_heads.py",
+  "derivative_sha256": "fc360d51cfe05bdd27091429bc38ecff6eaf6dd0f313bf32f27d6304a5c53000",
+  "original_modified": false,
+  "trained": false,
+  "method": "Independent raw-observation public reference KL; frozen graph and 24-worker rollout recomputation"
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/bin/readelf",
+    "-d",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ninja"
+  ],
+  "returncode": 0,
+  "seconds": 0.004240512847900391,
+  "stdout_sha256": "59cf49413532b0bd6cd852af96f42b9a291b655a0b8147e320c7157b19033f9a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

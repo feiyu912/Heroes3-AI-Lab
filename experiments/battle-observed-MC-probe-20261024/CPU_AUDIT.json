@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "TRAIN_only": true,
+  "existing_admitted_rows": 512,
+  "existing_suffix_rows_zero_loss": 1024,
+  "fragment_rows": 253,
+  "target_rows_actually_changed": 253,
+  "max_abs_advantage_change": 1.2139406204223633,
+  "earlier_fragments_unchanged": true,
+  "MC_return_native_outcome_potential_identity_verified": true,
+  "independent_GAE_lambda1_agreement": true,
+  "parent61_sha256": "4725dab0332ad93f3806084ce1fc01803e77f5e5ee6ca861d452b63892062840",
+  "reference62_sha256": "ec26fe4bcd0987a01821f2076a4d076589008a88f6a41a63d00d5c9c0cfd0eec",
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0
+}

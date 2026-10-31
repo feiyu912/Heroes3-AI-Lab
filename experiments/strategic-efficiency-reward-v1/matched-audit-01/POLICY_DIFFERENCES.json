@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "TRAIN_rows": 2111,
+  "different_argmax": 0,
+  "argmax_stop_control_treatment": [
+    0,
+    0
+  ],
+  "full_distribution_KL_control_to_treatment_mean": 1.8688294040248143e-08,
+  "full_distribution_KL_max": 1.4647902247383925e-07,
+  "stop_probability_delta_mean": -1.7136474387543587e-05,
+  "changes": [],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/matched-audit-01/policy_differences.py": "e92d64ae3f86d85d0c97e51466d5f2b6c2a3fa3eef7f7c8a4b504b8b50d1836e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-00/admitted/AUDIT.json": "18c9bc297e1e9d07a21b5cb1ebfe6f1e0012b3a226a711f86eed89479cad44b2",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-01/admitted/AUDIT.json": "22eb4d067055db8d05559ee6f7844cc1a7fd3fba10d276f4470da14f04a5c364",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-02/admitted/AUDIT.json": "4d0eecb2b4bb9e455db2a4deb264776da9056671ce7f07e14ef3cdbcb366ea75",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-03/admitted/AUDIT.json": "a20e4c3f4704cb1b74808f702f7a514293188c7ad8b90d9d61d2b198496755b7",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-04/admitted/AUDIT.json": "617cea42b46a2c6157d67e75f234227aebcf6e820db3a0bc8b28001a077ba988",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-05/admitted/AUDIT.json": "aeb5f7a71c5b894c6feda67ade4dc80a07b42f91ad4481643ba498cb2a77adbd",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-06/admitted/AUDIT.json": "bf09740560dbb67015a5e4e90e5e2a78675104c6d06250a5274913f8db8ccc95",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-07/admitted/AUDIT.json": "f95fc76cc59e0f1b79c3af62d92cb8beb2ba55dec5af66d69a525da8579c2eee"
+  },
+  "new_games": 0,
+  "optimizer_steps": 0,
+  "ability_improvement_claim": false,
+  "scope": "CPU singleton inference on shared TRAIN states only. Tensor changes do not guarantee strategic choice changes or independent improvement."
+}

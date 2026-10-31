@@ -1,0 +1,79 @@
+{
+  "whole_game_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "red",
+  "owned_player": 1,
+  "actual_ai_assignment": {
+    "red": "Nullkiller2",
+    "blue": "DirectorAI"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 121,
+    "policy_end_turns": 0,
+    "automatic_end_turns": 13,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 121,
+    "blocking_visits": 7
+  },
+  "contract_errors": [],
+  "native_apply_markers": 134,
+  "battle_observation": {
+    "last_battle_start_line": 40078,
+    "round_start_count": 7,
+    "native_battle_actions": 80,
+    "unique_last1000_actions": 47,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '10', actionSubtype '-1', target {}}",
+        6
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '5', actionType '6', actionSubtype '-1', target {}}",
+        6
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '7', actionType '6', actionSubtype '-1', target {}}",
+        6
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '7', actionType '7', actionSubtype '-1', target {}}",
+        5
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '1', actionType '7', actionSubtype '-1', target {}}",
+        3
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '3', actionType '7', actionSubtype '-1', target {}}",
+        3
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '8', actionType '9', actionSubtype '-1', target {2@69,}}",
+        2
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '9', actionType '9', actionSubtype '-1', target {2@69,}}",
+        2
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "bf514681429160141b625ae05de51f6ffe46d9cb3dec3f992ce6e347fedac55e",
+    "typed.jsonl": "d508f27273d7c2e1be70321d6dac4c39a84ffef7d2358f0ec9494a52e68d4aeb",
+    "strategy-decisions.jsonl": "631e51fe4c770853656566c201d003dfe9c93de51b14e5ddd8f610789867137e",
+    "EXECUTION.json": "5e1826cbc527e3dd9ce84b0b0223754e85d93ad8558796de6aeed1c80d89ee3c",
+    "PLAN.json": "991fe3667c78df0da9acc7758ba4ff537fe7e3d139e438fb6ea9d2570dfa0a27"
+  },
+  "auditor_sha256": {
+    "audit_game_v5.py": "46e14bbea207255d3d6450c3f837863fbfa3c1b434b2d43f76bbdcd759ff6d6c",
+    "raw_events_v4.py": "f18c0c804788564e7eeeedb450cbcec5a39a7d6aea1dcbc6c4516117a67b371a"
+  },
+  "limitation": "Consistency of executed requests is separate from a completed strategic game. Timeout has no reward or optimizer update."
+}

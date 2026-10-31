@@ -1,0 +1,6 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "gpgv: Signature made Sun Oct 25 21:32:46 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+  "sha256": "b371d661986d2504a20356b60c83f8775c7ac264a18d430ac45400fd072e599a"
+}

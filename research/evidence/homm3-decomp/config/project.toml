@@ -1,0 +1,150 @@
+# Project facts consumed at operation boundaries, never inferred from sibling repos.
+[inputs.retail]
+name = "retail executable"
+path = "build/orig/HEROES3.EXE"
+size = 2732032
+sha256 = "057c9d88e7206f6669a4615de2c6e02ab6c4e2d570a9e2badf07fe0bd6247274"
+env = "HOMM3_EXE"
+option = "--exe"
+image_base = 0x400000
+
+[inputs.dreamcast]
+name = "Dreamcast executable"
+path = "build/orig/dreamcast/H3.EXE"
+size = 8425752
+sha256 = "cdbc7e75bd7d057171fa12b728aaaee01c1db133fff350b034950dd21dd07736"
+env = "HOMM3_DREAMCAST_EXE"
+option = "--dreamcast-exe"
+
+[inputs.mac]
+name = "Classic Mac PowerPC executable"
+path = "build/orig/mac/Heroes_III_raw.pef"
+size = 3418835
+sha256 = "650be8880cfda81ffa7704ce3bcdb9c5a6528f67afdf77c0c0c63e8259250d86"
+env = "HOMM3_MAC_EXE"
+option = "--mac-exe"
+
+# Further linked programs (`image = true`), selected with `homm3 --image KEY`.
+# The GOG Complete 4.0 map editor (identical in the Collector's and Platinum
+# pressings): VC6 SP3, /O1 /Ob2 /GR, MFC 4.2 (SP3 NAFXCW) linked statically.
+[inputs.h3maped]
+name = "GOG Complete map editor"
+image = true
+path = "build/orig/h3maped.exe"
+size = 2134016
+sha256 = "4480fba145c9f885942cc668d4bce430fe39c0fa482d1a6e58f96318ab857a37"
+env = "HOMM3_H3MAPED_EXE"
+option = "--exe"
+image_base = 0x400000
+# VC6 emits a catch block inside its function's COMDAT, after the body:
+# the census folds such a handler into its parent's extent, as the game's
+# hand-owned census does (homm3.census, funclets.tsv).
+census_folds_catch_handlers = true
+# A catch block may also sit in the middle of its function, which jumps on
+# past it: the parent's jumps over its catch funclets (and over weak data or
+# immediate seeds) are no tail calls, nor is a catch block's jump back into
+# its parent (homm3.census.functions.Census.tail_limit).
+census_joins_catch_bodies = true
+# A piece the census cut off at a jump target joins the function before it
+# when it directly follows it, that function's own instructions jump or fall
+# into it and nothing else references it (homm3.census.functions.merges).
+# /O1 pads no function to 16 bytes, so no alignment condition applies.
+census_joins_tails = true
+# A placed body's call past the first byte where it leaves retail names a
+# callee only when four bytes before it agree, the callee's own body equals
+# retail there, or nothing else names that callee or address
+# (homm3.census.placements).
+placements_prove_late_calls = true
+# Its own sources and headers: src/editor/ and include/editor/, the
+# original's `C:\Dev\Heroes 3 Exp 2\Editor\` (RTTI anonymous-namespace paths).
+sources = "editor"
+
+# The GOG Complete 4.0 campaign editor (identical in the Collector's and
+# Platinum pressings; the SoD 3.0 build differs): VC6 SP3, MFC 4.2 (SP3
+# NAFXCW) linked statically.
+[inputs.h3ccmped]
+name = "GOG Complete campaign editor"
+image = true
+path = "build/orig/h3ccmped.exe"
+size = 1212416
+sha256 = "93e98214c1d21d320281f3ef6b8db5bb2ab5a1056b84bf0cf34815d01f7533c1"
+env = "HOMM3_H3CCMPED_EXE"
+option = "--exe"
+image_base = 0x400000
+# VC6 emits a catch block inside its function's COMDAT, after the body:
+# the census folds such a handler into its parent's extent, as the game's
+# hand-owned census does (homm3.census, funclets.tsv).
+census_folds_catch_handlers = true
+# A piece the census cut off at a jump target (a tail-call start taken while
+# an embedded catch handler or a dropped weak seed bounded the body) joins the
+# function before it when it directly follows it, that function's own
+# instructions jump or fall into it and nothing else references it
+# (homm3.census.functions.merges); /O2 starts every function on a 16-byte
+# boundary, so a piece there stays a row.
+census_joins_tails = true
+census_tail_alignment = 16
+# A placed body's call past the first byte where it leaves retail names a
+# callee only when four bytes before it agree, the callee's own body equals
+# retail there, or nothing else names that callee or address
+# (homm3.census.placements).
+placements_prove_late_calls = true
+# Its own sources and headers: src/campaign_editor/ and
+# include/campaign_editor/, the original's
+# `C:\Dev\Heroes 3 Exp 2\CampaignEditor\` (RTTI anonymous-namespace paths).
+sources = "campaign_editor"
+
+# Positive CodeView/source spelling equivalences reviewed for this project.
+# Used only by the Dreamcast source-fact audit, never by the generic comparator.
+[type_aliases.dreamcast]
+TSpellBookEntry = "TSpellBookWindow::TSpellBookEntry"
+TRumour = "Game::TRumour"
+TWallTraits = "combatManager::TWallTraits"
+
+[toolchain]
+locations = ["build/homm3-toolchain-vc6-sp3/msvc", "build/toolchain/msvc"]
+
+# The VC6 SP3 MFC overlay the editor images compile and link against
+# (homm3.init.mfc_sp3): TNSB9908.iso, VSTUDIO/SP3/Vs6sp3_1.cab, vc98/mfc.
+# `homm3 --image h3maped init --mfc-sp3 DIR` stages it in build/mfc-sp3/.
+[toolchain.mfc_sp3.files]
+"include/afxbld_.h" = "622f4215d17479dccc82f971380ef3a52463655d85245f7915a49f52abe1ba67"
+"include/afxisapi.h" = "32fc64158900b8f5181e4ecb19786f34e55c7198f6560f75dd47fe5cc0efd16e"
+"include/afxodlgs.h" = "8d766ff1a320790f487143e096d4970cb01bf45bfd7ac524bcb2e51bee3b2367"
+"include/afxwin1.inl" = "0aac8da0f7e2df2ba770328696a61523cdc43c17a95d2e29161dceaca002cd37"
+"lib/nafxcw.lib" = "967ffe73dd6a8197bd30c7d5c481d51d31cf266c82cebd808db0f7edcf4307c8"
+
+# Units that name a non-default `compiler` in config/units.toml. `env` is
+# exported by `nix develop .#build`; `locations` are manually unpacked trees.
+# msvc5.0: Visual C++ 5.0 SP3 (C1XX/C2 11.00.7303), the compiler of the
+# statically linked Victor library objects (see docs/vc6/victor-library.md).
+[toolchain.compilers."msvc5.0"]
+env = "HOMM3_MSVC5_DIR"
+locations = ["build/homm3-toolchain-vc5-sp3/msvc"]
+
+# msvc6-rtm: Visual C++ 6.0 RTM (C1/C2 12.00.8168, LINK 6.00.8168), the compiler of the
+# statically linked zlib objects: retail's Rich header counts them under
+# Utc12_C 8168 and has no 8447 C entry (docs/reference/executable-libraries.md).
+# `homm3 init` (homm3.init.vc6_rtm) builds the overlay at `locations`: the
+# pinned SP3 tree with these RTM passes in bin/. The binaries are staged
+# outside the repository at `source` (VSE600EUN1.ISO VC98/BIN, provenance in
+# its PROVENANCE.txt); CL.EXE is byte-identical to the SP3 driver.
+[toolchain.compilers."msvc6-rtm"]
+env = "HOMM3_MSVC6_RTM_DIR"
+locations = ["build/homm3-toolchain-vc6-rtm/msvc"]
+source = "../orig/vc6-rtm"
+
+[toolchain.compilers."msvc6-rtm".files]
+"C1.DLL" = "ee14a2603a1339f95db2e396751f7e51b50e421731229fb2416a01f974689d80"
+"C2.DLL" = "45187b0b6288240f73272a7c61e6329c50048a76e57db3bb87b6f0229e09e27d"
+# LINK/LIB 6.00.8168: the linker that wrote retail's Linker600 8168 import
+# objects (homm3.build.import_libraries).
+"LINK.EXE" = "08d3a4c9701c8f6c871b2c48bd74d07422aa1f86e5d9a4ddb2c9bd6a88b857e7"
+
+# The C runtime LINK.EXE runs against for the game link (homm3.build.link):
+# LINK sorts each DLL's import thunks with this runtime's qsort, so it decides
+# the IAT order. VC6 SP3's MSVCRT.DLL 6.00.8397, from the pinned SP3 media's
+# cabinets (os/system/msvcrt.dll); staged in build/linker-runtime/.
+[toolchain.linker_runtime]
+media = "../orig/toolchain-media/sp3/cabs"
+member = "os/system/msvcrt.dll"
+sha256 = "2d5670881a6d13a100e37da297f6eeb876f68b63073a28eb5d650625c60f9bf7"

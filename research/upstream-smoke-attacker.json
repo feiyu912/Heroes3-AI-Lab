@@ -1,0 +1,57 @@
+{
+  "scenario": "balanced-20",
+  "split": "validation",
+  "role": "attacker",
+  "seed": 2026101520,
+  "opponent": "BattleAI",
+  "opponent_model": null,
+  "opponent_seed": 2026201520,
+  "policy": "upstream",
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/upstream-v15/attacker.onnx",
+  "steps": 17,
+  "terminated": true,
+  "truncated": false,
+  "invalid_actions": 0,
+  "success": true,
+  "terminal_outcome": {
+    "result_type": 0,
+    "winner": 0,
+    "casualties": {
+      "0": {
+        "6": 6,
+        "8": 27,
+        "10": 12
+      },
+      "1": {
+        "6": 31,
+        "8": 25,
+        "10": 12
+      }
+    },
+    "initial_armies": [
+      {
+        "6": 33,
+        "8": 27,
+        "10": 14
+      },
+      {
+        "6": 31,
+        "8": 25,
+        "10": 12
+      }
+    ]
+  },
+  "action_types": {
+    "0": 2,
+    "4": 1,
+    "2": 3,
+    "3": 11
+  },
+  "trajectory_sha256": "65e10d9ea914866934aecd65288d3674602ed14db4a98b9068e7a99f20638a2f",
+  "wall_seconds": 1.3391028350000056,
+  "policy_latency_ms": {
+    "p50": 68.53482299999314,
+    "p95": 96.74566579999464,
+    "p99": 101.44698996000898
+  }
+}

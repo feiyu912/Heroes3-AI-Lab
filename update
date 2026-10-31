@@ -1,0 +1,23 @@
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/RecruitHeroBehavior.cpp:172:			   aiNk.buildAnalyzer->isGoldPressureOverMax()))
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/GatherArmyBehavior.cpp:303:					   && !aiNk->buildAnalyzer->isGoldPressureOverMax())
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuildingBehavior.cpp:34:	TResources resourcesRequired = aiNk->buildAnalyzer->getMissingResourcesNow();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuildingBehavior.cpp:35:	TResources totalDevelopmentCost = aiNk->buildAnalyzer->getMissingResourcesInTotal();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuildingBehavior.cpp:37:	TResources dailyIncome = aiNk->buildAnalyzer->getDailyIncome();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuildingBehavior.cpp:49:	auto & developmentInfos = aiNk->buildAnalyzer->getDevelopmentInfo();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuildingBehavior.cpp:50:	auto isGoldPressureLow = !aiNk->buildAnalyzer->isGoldPressureOverMax();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Behaviors/BuyArmyBehavior.cpp:40:		if(closestThreat >= 2 && aiNk->buildAnalyzer->isGoldPressureOverMax() && !town->hasBuilt(BuildingID::CITY_HALL) &&
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/Nullkiller.cpp:340:	buildAnalyzer->update();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/Nullkiller.cpp:341:	methodToElapsedMs.emplace("buildAnalyzer->update", timeElapsed(startMethod));
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:412:	TResources requiredResources = aiNk->buildAnalyzer->getMissingResourcesNow();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:413:	TResources dailyIncome = aiNk->buildAnalyzer->getDailyIncome();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:427:	TResources requiredResources = aiNk->buildAnalyzer->getMissingResourcesInTotal();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:428:	TResources dailyIncome = aiNk->buildAnalyzer->getDailyIncome();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:505:		if(aiNk->buildAnalyzer->getDevelopmentInfo().empty())
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:569:		if (aiNk->buildAnalyzer->getDevelopmentInfo().empty())
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1006:		if(evaluationContext.evaluator.aiNk->buildAnalyzer->getDevelopmentInfo().size() == 1)
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1341:			auto goldPressure = evaluationContext.evaluator.aiNk->buildAnalyzer->getGoldPressure();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1357:	if(aiNk->buildAnalyzer->isBuilt(town->getFactionID(), bi.id))
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1736:					   && aiNk->buildAnalyzer->getDailyIncome()[EGameResID::WOOD] < 1)
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1748:					auto income = aiNk->buildAnalyzer->getDailyIncome();
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/Engine/PriorityEvaluator.cpp:1751:					if(aiNk->buildAnalyzer->isGoldPressureOverMax())
+/root/heroes3-ai-lab/src/vcmi-adv/AI/Nullkiller2/AIGateway.cpp:681:						|| nullkiller->buildAnalyzer->isGoldPressureOverMax()))

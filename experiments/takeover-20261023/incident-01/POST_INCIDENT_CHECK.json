@@ -1,0 +1,65 @@
+{
+  "schema": "post-incident-read-only-check-v1",
+  "stage": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-native-20261023-01/control-phase-1",
+  "not_a_stage_acceptance": true,
+  "resumption_authorized": false,
+  "stage_result_passed": false,
+  "stage_result_error": "AssertionError()",
+  "official_audit_exists": false,
+  "recorded_updates": [
+    63
+  ],
+  "update_64_checkpoint_sha256": "4ef6e7e27ffcc56f7b261a55c52e38505be24a162f8196d2ccd3a60be734cb59",
+  "update_64_checkpoint_bytes": 45109405,
+  "raw_and_target_recompute_passed": true,
+  "boundary_63_restore_passed": true,
+  "boundary_64_restore_passed": true,
+  "update_64_is_complete_update_boundary": true,
+  "update_64_phase_complete": true,
+  "update_64_actual_Adam_steps": 8192,
+  "update_64_environment_steps": 32768,
+  "targets_sha256": "029ab191077d9e4f3ef42f90b93d6c690daa3c452edc88ac2286f6e49a21e636",
+  "raw": {
+    "prefix_terminations": 35,
+    "suffix_terminations": 39,
+    "prefix_rows": 1024,
+    "suffix_rows": 1024,
+    "journal_files": 256
+  },
+  "eligible_workers": 14,
+  "reasons": [
+    "prefix_already_ended",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "real_terminal_extension",
+    "prefix_already_ended",
+    "real_terminal_extension",
+    "real_terminal_extension"
+  ],
+  "frozen_inputs_checked": 518,
+  "frozen_inputs_missing": [],
+  "frozen_inputs_mismatch": [],
+  "boundary_63": {
+    "path": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-native-20261023-01/control-phase-1/update-63.pt",
+    "sha256": "6d0a90c70ec642f31c0535f40c3d1977efc32c6c3667b28c8e86edbeddafa1ec",
+    "completed_updates": 63,
+    "environment_steps": 32256,
+    "actual_Adam_steps": 8064
+  },
+  "boundary_64": {
+    "path": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-native-20261023-01/control-phase-1/update-64.pt",
+    "sha256": "4ef6e7e27ffcc56f7b261a55c52e38505be24a162f8196d2ccd3a60be734cb59",
+    "completed_updates": 64,
+    "environment_steps": 32768,
+    "actual_Adam_steps": 8192
+  }
+}

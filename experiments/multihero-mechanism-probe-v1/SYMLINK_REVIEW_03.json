@@ -1,0 +1,38 @@
+[
+  {
+    "path": "defender-ipnkyfqb-best3.onnx",
+    "lexists": true,
+    "exists": false,
+    "is_dir": false,
+    "is_file": false,
+    "raw_target": "../export/defender-ipnkyfqb-best3.onnx",
+    "resolved_target": "/root/heroes3-ai-lab/src/export/defender-ipnkyfqb-best3.onnx"
+  },
+  {
+    "path": "data/Data",
+    "lexists": true,
+    "exists": true,
+    "is_dir": true,
+    "is_file": false,
+    "raw_target": "/root/heroes3-ai-lab/data/vcmi/Data",
+    "resolved_target": "/root/heroes3-ai-lab/data/vcmi/Data"
+  },
+  {
+    "path": "data/Maps",
+    "lexists": true,
+    "exists": true,
+    "is_dir": true,
+    "is_file": false,
+    "raw_target": "/root/heroes3-ai-lab/data/vcmi/Maps",
+    "resolved_target": "/root/heroes3-ai-lab/data/vcmi/Maps"
+  },
+  {
+    "path": "data/Mods",
+    "lexists": true,
+    "exists": true,
+    "is_dir": true,
+    "is_file": false,
+    "raw_target": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "resolved_target": "/root/heroes3-ai-lab/data/vcmi/Mods"
+  }
+]

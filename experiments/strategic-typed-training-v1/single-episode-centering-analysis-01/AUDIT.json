@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "analysis_only": true,
+  "native_outcome_unchanged": true,
+  "counterfactual_samples_admitted": 0,
+  "optimizer_steps": 0,
+  "float32_normalized_advantage_max_difference": 4.76837158203125e-07,
+  "algebra": "For one constant-terminal-return episode: (R-V)-mean(R-V)=mean(V)-V. Centering removes R from the actor advantage; critic still receives R.",
+  "consequence": "Single-episode update is engineering qualification only. Use fresh same-policy multicell episodes with mixed terminal outcomes before drawing learning conclusions.",
+  "excluded": "Do not combine the initial-parent win with a later-parent loss; that would be off-policy."
+}

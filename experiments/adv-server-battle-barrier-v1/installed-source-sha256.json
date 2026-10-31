@@ -1,0 +1,5 @@
+{
+  "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+  "server/CGameHandler.cpp": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+  "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+}

@@ -1,0 +1,2006 @@
+{
+  "valid": true,
+  "fixture_only": false,
+  "real_execution_certified": false,
+  "certification_limit": "Event-contract check only; raw native instrumentation/extraction needs independent real-run audit",
+  "errors": [],
+  "counts": {
+    "policy_moves": 47,
+    "policy_builds": 1,
+    "policy_end_turns": 0,
+    "automatic_end_turns": 5,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 48,
+    "blocking_visits": 3
+  },
+  "actions": [
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 1,
+        "native_request_id": 37,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "build",
+        "pack_type": "BuildStructure",
+        "selected_index": 47,
+        "request_sha256": "e7021494e673dc743d66e7dc65afc51ecd4fedac71b141e460016c4069a88762",
+        "candidate": {
+          "op": "build",
+          "actor": "player_town",
+          "town_id": 19,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        "classification": "new_policy",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 8,
+        "actual_request": {
+          "pack_type": "BuildStructure",
+          "player": 1,
+          "native_request_id": 37,
+          "town_id": 19,
+          "building_id": 8
+        },
+        "before_state": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 15,
+            "mercury": 4,
+            "ore": 15,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7500
+          }
+        }
+      },
+      "line": 4,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_build_requires_raw_evidence"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 2,
+        "native_request_id": 40,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 2,
+        "request_sha256": "8c5b7c8568566efaeb7d44cc45ac3d2b005e1650c37fc7796f0c62813ebac83e",
+        "candidate": {
+          "op": "move",
+          "kind": 4,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            29,
+            9,
+            0
+          ],
+          "path_cost": 0.192308,
+          "heuristic_score": 7.22222
+        },
+        "classification": "new_policy"
+      },
+      "line": 13,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 3,
+        "native_request_id": 41,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "fd1529fe50e53f04910dc3252864fa13f97f90fadfad493a343a4571e132f6d7",
+        "candidate": {
+          "op": "move",
+          "kind": 4,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            29,
+            8,
+            0
+          ],
+          "path_cost": 0.0961538,
+          "heuristic_score": 8.3871
+        },
+        "classification": "new_policy"
+      },
+      "line": 20,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 4,
+        "native_request_id": 44,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "27358f77fb95d48841da6a1b69e818acda6968b8be6e8280a8cebc5e45500424",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            13,
+            0
+          ],
+          "next": [
+            29,
+            9,
+            0
+          ],
+          "path_cost": 0.6,
+          "heuristic_score": 3.63636
+        },
+        "classification": "new_policy"
+      },
+      "line": 29,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 5,
+        "native_request_id": 45,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "739dcc761628ecfe2e2b71d36a9442fd6d97933d2074483e35bd1a7015853160",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            13,
+            0
+          ],
+          "next": [
+            29,
+            10,
+            0
+          ],
+          "path_cost": 0.503846,
+          "heuristic_score": 3.98467
+        },
+        "classification": "new_policy"
+      },
+      "line": 36,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 6,
+        "native_request_id": 46,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "455ebfd007eaa28afa1829c04541290e9aefa21506a22a7ef5976bfc19bf5764",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            13,
+            0
+          ],
+          "next": [
+            28,
+            11,
+            0
+          ],
+          "path_cost": 0.407692,
+          "heuristic_score": 4.40678
+        },
+        "classification": "new_policy"
+      },
+      "line": 43,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 7,
+        "native_request_id": 47,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "dea8b7825733c67465b1b3e3a906c4d063b06ea21a931af93fff58119b301a40",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            13,
+            0
+          ],
+          "next": [
+            27,
+            12,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 5.18272
+        },
+        "classification": "new_policy"
+      },
+      "line": 50,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 8,
+        "native_request_id": 48,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "232acf9a254acd7a8773eb667ea0a05b8366d88c52db9d049a4b4c9273419453",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            13,
+            0
+          ],
+          "next": [
+            26,
+            13,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 6.29032
+        },
+        "classification": "new_policy"
+      },
+      "line": 57,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 3,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 9,
+        "native_request_id": 49,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "dc028d517b0ceda980fef322ae637604c7f686c62ac21e291993c9c94d716e31",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            14,
+            0
+          ],
+          "next": [
+            26,
+            12,
+            0
+          ],
+          "path_cost": 0.575641,
+          "heuristic_score": 6.50775
+        },
+        "classification": "new_policy"
+      },
+      "line": 64,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 10,
+        "native_request_id": 50,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "13edc46141c9d1c934b8f5b3b5e3e4905cf0b25832ddab2ed5fbd7288aa20a09",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            14,
+            0
+          ],
+          "next": [
+            25,
+            13,
+            0
+          ],
+          "path_cost": 0.479487,
+          "heuristic_score": 7.1466
+        },
+        "classification": "new_policy"
+      },
+      "line": 71,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": null,
+        "native_request_id": 51,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 1,
+        "op": "end_turn",
+        "pack_type": "EndTurn",
+        "selected_index": null,
+        "request_sha256": null,
+        "candidate": {
+          "op": "end_turn"
+        },
+        "automatic_reason": "no_movable_hero"
+      },
+      "line": 78,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_end_turn"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 11,
+        "native_request_id": 93,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "721914bc1076074e25c955e9092f804e1d4d2dff642ababc1d2ac515b8734317",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            14,
+            0
+          ],
+          "next": [
+            25,
+            14,
+            0
+          ],
+          "path_cost": 0.367949,
+          "heuristic_score": 8.06499
+        },
+        "classification": "new_policy"
+      },
+      "line": 85,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 12,
+        "native_request_id": 94,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "9bc5b9f98e555ae5124a61355b66ffc93dc2e57bc8122178f3d5444a149570f4",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            14,
+            0
+          ],
+          "next": [
+            24,
+            15,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 9.06977
+        },
+        "classification": "new_policy"
+      },
+      "line": 92,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 13,
+        "native_request_id": 95,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "d602e7fceaf94350acb4df2ca95a96594503f71e24881455cc166dbcc54648f7",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            14,
+            0
+          ],
+          "next": [
+            23,
+            14,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 11.0081
+        },
+        "classification": "new_policy"
+      },
+      "line": 99,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 14,
+        "native_request_id": 96,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "48c6d1129f72cfdc54aab37081458a98df3df877681f08bbe1770abf94a50376",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            23,
+            15,
+            0
+          ],
+          "path_cost": 0.864103,
+          "heuristic_score": 5.13158
+        },
+        "classification": "new_policy"
+      },
+      "line": 106,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 15,
+        "native_request_id": 97,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "81d4d5f27e0371393fd85c4f59bb3bd3032d627aa3191193979a89c2be3b74b5",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            24,
+            16,
+            0
+          ],
+          "path_cost": 0.767949,
+          "heuristic_score": 5.52073
+        },
+        "classification": "new_policy"
+      },
+      "line": 113,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 16,
+        "native_request_id": 98,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "43cfc3305805c095fa7953d1c815b4040e6743358ca7552609ac10b17ce3e1c9",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            25,
+            17,
+            0
+          ],
+          "path_cost": 0.632051,
+          "heuristic_score": 6.18347
+        },
+        "classification": "new_policy"
+      },
+      "line": 120,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 17,
+        "native_request_id": 99,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "77f8132bd7644a81d96b53084b1a7dd8f94bcdf5907924156537597b4adb2e30",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            26,
+            18,
+            0
+          ],
+          "path_cost": 0.496154,
+          "heuristic_score": 7.02703
+        },
+        "classification": "new_policy"
+      },
+      "line": 127,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 18,
+        "native_request_id": 100,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "dcb100f18d6862d3cd0dead9018d504d8a78976e34b113cffff70fd39d4652ed",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            27,
+            18,
+            0
+          ],
+          "path_cost": 0.360256,
+          "heuristic_score": 8.13711
+        },
+        "classification": "new_policy"
+      },
+      "line": 134,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": null,
+        "native_request_id": 101,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 2,
+        "op": "end_turn",
+        "pack_type": "EndTurn",
+        "selected_index": null,
+        "request_sha256": null,
+        "candidate": {
+          "op": "end_turn"
+        },
+        "automatic_reason": "no_movable_hero"
+      },
+      "line": 141,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_end_turn"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 19,
+        "native_request_id": 148,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 1,
+        "request_sha256": "e2cb9d94a79ddfbeb08a7abf78d26b04b97c64726b05a4c63e6bfa19955ab6cf",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            28,
+            18,
+            0
+          ],
+          "path_cost": 0.232051,
+          "heuristic_score": 9.56217
+        },
+        "classification": "new_policy"
+      },
+      "line": 148,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 20,
+        "native_request_id": 149,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "1b405b179ad6425fad44b1d07bb0331ba8cc9200a6ac52d082ea6d2115d3e5f2",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            29,
+            17,
+            0
+          ],
+          "next": [
+            29,
+            17,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 11.0081
+        },
+        "classification": "new_policy"
+      },
+      "line": 155,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 21,
+        "native_request_id": 150,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "b015e58013436f91d422c8eb0d45a1737cfef746b7e9c8eab468a94fd2f1ae9c",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            29,
+            18,
+            0
+          ],
+          "path_cost": 0.903846,
+          "heuristic_score": 4.9863
+        },
+        "classification": "new_policy"
+      },
+      "line": 162,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 22,
+        "native_request_id": 151,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "292e44c228018d1b7be3a8faf8e8f360f7debbbd9ac4746deaf6bd47b04247e9",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            28,
+            19,
+            0
+          ],
+          "path_cost": 0.807692,
+          "heuristic_score": 5.35294
+        },
+        "classification": "new_policy"
+      },
+      "line": 169,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 23,
+        "native_request_id": 152,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "d28e372223639c7a15b4bfc1b1bd6937a371b650886d34a91aab451e859e2695",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            27,
+            20,
+            0
+          ],
+          "path_cost": 0.671795,
+          "heuristic_score": 5.97374
+        },
+        "classification": "new_policy"
+      },
+      "line": 176,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 24,
+        "native_request_id": 153,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "ca2d0f5abb54432a3413f9ca71c5786c29f109a2a270e3f5ee00225cc8f8ea6b",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            26,
+            21,
+            0
+          ],
+          "path_cost": 0.535897,
+          "heuristic_score": 6.75743
+        },
+        "classification": "new_policy"
+      },
+      "line": 183,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 25,
+        "native_request_id": 154,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "cd059e95d43a597ef14a3109134f97949e1b7557b53a1164d3390d1a586b136a",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            25,
+            22,
+            0
+          ],
+          "path_cost": 0.4,
+          "heuristic_score": 7.77778
+        },
+        "classification": "new_policy"
+      },
+      "line": 190,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 26,
+        "native_request_id": 155,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "5ef1eb2554e1b31fb1947dd6f2166996104759066790e7b069adf8b1b8dc13d0",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            24,
+            23,
+            0
+          ],
+          "path_cost": 0.264103,
+          "heuristic_score": 9.16107
+        },
+        "classification": "new_policy"
+      },
+      "line": 197,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": null,
+        "native_request_id": 156,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 3,
+        "op": "end_turn",
+        "pack_type": "EndTurn",
+        "selected_index": null,
+        "request_sha256": null,
+        "candidate": {
+          "op": "end_turn"
+        },
+        "automatic_reason": "no_movable_hero"
+      },
+      "line": 204,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_end_turn"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 27,
+        "native_request_id": 206,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 1,
+        "request_sha256": "173a14c560444fd2a270323fea2df598fb68f4b50b4e4d0783b9cd2155a2fdad",
+        "candidate": {
+          "op": "move",
+          "kind": 2,
+          "position": [
+            23,
+            22,
+            0
+          ],
+          "next": [
+            23,
+            22,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 11.0081
+        },
+        "classification": "new_policy"
+      },
+      "line": 211,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 28,
+        "native_request_id": 218,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "7a3de2f3fe7a9f380f1469f360f2bb34dfdec222518b4a444957061fcfd7f649",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            28,
+            25,
+            0
+          ],
+          "next": [
+            24,
+            23,
+            0
+          ],
+          "path_cost": 0.6,
+          "heuristic_score": 5.45455
+        },
+        "classification": "new_policy"
+      },
+      "line": 220,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 29,
+        "native_request_id": 219,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "3fc6ca6327b2cf727abf007270d8096e1376c053d115b2c273c94df35abf6e45",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            28,
+            25,
+            0
+          ],
+          "next": [
+            25,
+            23,
+            0
+          ],
+          "path_cost": 0.464103,
+          "heuristic_score": 6.2234
+        },
+        "classification": "new_policy"
+      },
+      "line": 227,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 30,
+        "native_request_id": 220,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "34485a35990bd52075b451b89c7211719d0f460e162cedd3a1c7038fa261eb26",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            28,
+            25,
+            0
+          ],
+          "next": [
+            26,
+            23,
+            0
+          ],
+          "path_cost": 0.367949,
+          "heuristic_score": 6.91285
+        },
+        "classification": "new_policy"
+      },
+      "line": 234,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 31,
+        "native_request_id": 221,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "2fa4a71dbe012288efe627640106bc449f32e31cb5bbd71c75fde0694fcd21f4",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            28,
+            25,
+            0
+          ],
+          "next": [
+            27,
+            24,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 7.77409
+        },
+        "classification": "new_policy"
+      },
+      "line": 241,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 32,
+        "native_request_id": 240,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "3bdcfc55b0a4c1747497a3c08d777615136dfdc8f280832669c44d2157fa1249",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            27,
+            23,
+            0
+          ],
+          "path_cost": 0.688462,
+          "heuristic_score": 3.3657
+        },
+        "classification": "new_policy"
+      },
+      "line": 249,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 33,
+        "native_request_id": 241,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "cbf3ce972fef51a4fb34c3fec978261999ad37cdea09c51a43cc4bf89cf90e89",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            27,
+            22,
+            0
+          ],
+          "path_cost": 0.592308,
+          "heuristic_score": 3.66197
+        },
+        "classification": "new_policy"
+      },
+      "line": 256,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 34,
+        "native_request_id": 242,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "838fa06d042d2655cea2698a19ec6a1342c537613e6c961800042edd84362f95",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            27,
+            21,
+            0
+          ],
+          "path_cost": 0.496154,
+          "heuristic_score": 4.01544
+        },
+        "classification": "new_policy"
+      },
+      "line": 263,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 35,
+        "native_request_id": 243,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "4df012d88b7574125b10beb19f7927431206efaad25bcc1b1f2b043fdec07418",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            26,
+            20,
+            0
+          ],
+          "path_cost": 0.4,
+          "heuristic_score": 4.44444
+        },
+        "classification": "new_policy"
+      },
+      "line": 270,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": null,
+        "native_request_id": 244,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 4,
+        "op": "end_turn",
+        "pack_type": "EndTurn",
+        "selected_index": null,
+        "request_sha256": null,
+        "candidate": {
+          "op": "end_turn"
+        },
+        "automatic_reason": "no_movable_hero"
+      },
+      "line": 277,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_end_turn"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 36,
+        "native_request_id": 294,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "5c514073326c4726cd7152eec65cca512f8598c23bfaa74294bf4604c6534631",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            26,
+            19,
+            0
+          ],
+          "path_cost": 0.288462,
+          "heuristic_score": 5.07317
+        },
+        "classification": "new_policy"
+      },
+      "line": 284,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 37,
+        "native_request_id": 295,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "7dea726a6beb3a634f41e58bd0f7a3fd53daba7b321d1edcc4480a083331d3ba",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            26,
+            18,
+            0
+          ],
+          "path_cost": 0.192308,
+          "heuristic_score": 5.77778
+        },
+        "classification": "new_policy"
+      },
+      "line": 291,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 38,
+        "native_request_id": 296,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "f3f63575dffa4c571a6aa1aa5e1d5f0ea5edd1bab9e76af86fe04a500e91edc6",
+        "candidate": {
+          "op": "move",
+          "kind": 3,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "next": [
+            26,
+            17,
+            0
+          ],
+          "path_cost": 0.0961538,
+          "heuristic_score": 6.70968
+        },
+        "classification": "new_policy"
+      },
+      "line": 298,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 3,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 39,
+        "native_request_id": 297,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 1,
+        "request_sha256": "cd7bb6b6c2de7e5783f57bbcd70a650f38d81020262801734482b84854588c28",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            17,
+            0
+          ],
+          "path_cost": 1.09615,
+          "heuristic_score": 5.01205
+        },
+        "classification": "new_policy"
+      },
+      "line": 305,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 40,
+        "native_request_id": 298,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "6726258c3ebaae0c0a38763f1c40678dc5dac7aa5c54d18bad9ec98bd1cfe8bb",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            16,
+            0
+          ],
+          "path_cost": 1,
+          "heuristic_score": 5.33333
+        },
+        "classification": "new_policy"
+      },
+      "line": 312,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 41,
+        "native_request_id": 299,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "2d8111d49ce24a70343669138a87aa51cc0df990629da832ccfe4ad5673aba27",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            15,
+            0
+          ],
+          "path_cost": 0.903846,
+          "heuristic_score": 5.69863
+        },
+        "classification": "new_policy"
+      },
+      "line": 319,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 42,
+        "native_request_id": 300,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "d480cb397d65a4526543313567102a1e751c3999e803d14f4638b883fdd650c4",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            14,
+            0
+          ],
+          "path_cost": 0.807692,
+          "heuristic_score": 6.11765
+        },
+        "classification": "new_policy"
+      },
+      "line": 326,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 43,
+        "native_request_id": 301,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "59080cd5a7d0c83ab824dbc8f45c56003413a0586cb142b8d752f69ef58499e1",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            13,
+            0
+          ],
+          "path_cost": 0.711538,
+          "heuristic_score": 6.60317
+        },
+        "classification": "new_policy"
+      },
+      "line": 333,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 44,
+        "native_request_id": 302,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "2e53d2468bfba59c4dd4c1f3d269b1d0016319fd5aebc58601c7243de1317fc5",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            12,
+            0
+          ],
+          "path_cost": 0.615385,
+          "heuristic_score": 7.17241
+        },
+        "classification": "new_policy"
+      },
+      "line": 340,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 45,
+        "native_request_id": 303,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "fbd04d3c6aebcd54c5e31aeab4a21c8bdb0bb4b830eefdb57074c4c749417173",
+        "candidate": {
+          "op": "move",
+          "kind": 0,
+          "position": [
+            26,
+            7,
+            0
+          ],
+          "next": [
+            26,
+            11,
+            0
+          ],
+          "path_cost": 0.519231,
+          "heuristic_score": 7.84906
+        },
+        "classification": "new_policy"
+      },
+      "line": 347,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": null,
+        "native_request_id": 304,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 5,
+        "op": "end_turn",
+        "pack_type": "EndTurn",
+        "selected_index": null,
+        "request_sha256": null,
+        "candidate": {
+          "op": "end_turn"
+        },
+        "automatic_reason": "no_movable_hero"
+      },
+      "line": 354,
+      "server_applied": true,
+      "ack": true,
+      "move_result": null,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_end_turn"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 46,
+        "native_request_id": 341,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 6,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 1,
+        "request_sha256": "d7828e3caeab6b726f1e19710238503ec9abe4c1574754d26951c2168d5f7f23",
+        "candidate": {
+          "op": "move",
+          "kind": 1,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            27,
+            10,
+            0
+          ],
+          "path_cost": 0.407692,
+          "heuristic_score": 13.2203
+        },
+        "classification": "new_policy"
+      },
+      "line": 361,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 47,
+        "native_request_id": 342,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 6,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "ab7f32425f428a1b6ec6bcf1b032e4852f14df7af841def57174efecac6f5c0b",
+        "candidate": {
+          "op": "move",
+          "kind": 1,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            28,
+            9,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 15.5482
+        },
+        "classification": "new_policy"
+      },
+      "line": 368,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 1,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    },
+    {
+      "sent": {
+        "event": "native_action_sent",
+        "decision_id": 48,
+        "native_request_id": 343,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 6,
+        "op": "move",
+        "pack_type": "MoveHero",
+        "selected_index": 0,
+        "request_sha256": "f9092640e2170ecd4bc73236e75a9c9df033c99896ed64516a087ac84e48d61f",
+        "candidate": {
+          "op": "move",
+          "kind": 1,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            29,
+            8,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 18.871
+        },
+        "classification": "new_policy"
+      },
+      "line": 375,
+      "server_applied": true,
+      "ack": true,
+      "move_result": 3,
+      "visit_proof": [],
+      "complete": true,
+      "classification": "complete_move"
+    }
+  ],
+  "win": null,
+  "reward": null,
+  "ppo_samples_admitted": 0,
+  "potential_verified_policy_decisions": 48,
+  "automatic_policy_samples": 0,
+  "diagnostic_policy_samples": 0
+}

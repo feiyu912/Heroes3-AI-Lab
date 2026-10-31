@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "samples_admitted": 195,
+  "policy_moves": 128,
+  "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+  "economy_epoch": "learned-economy-build-recruit-v1",
+  "policy_builds": 6,
+  "native_flow_epoch": "learned-economy-build-recruit-v1",
+  "threat_replan": "off",
+  "full_state_recruitment_verified": true,
+  "free_transfer_verified": true,
+  "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+  "policy_recruits": 41,
+  "policy_end_turns": 20,
+  "automatic_end_turns_excluded": 0,
+  "sampling_device": "cuda",
+  "replay_actions_logprobs_values_rng_exact": true,
+  "optimizer_steps": 0,
+  "native_episode_winner": "red",
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-07/raw-audit/AUDIT.json": "d9e022130cee16cbd5bcba2362f840ab03b3e51f96ae25f33553f8796519c8ca",
+    "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-07/native/agent/sampling-state.pt": "c5b5a2cfad039e97acb74ac60cbae4181a86f925d8c62756154698e4e3812148",
+    "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-07/native/agent/typed-broker.jsonl": "b31696cfa31fd38903c2e42f03419ad9e4c4c8743014497899013433494349c7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-policy-v4/admit_episode_v5.py": "08926af7aec7ad4b09d0be14ac7a4d2b0d80987039753bf59b50f69498926826"
+  },
+  "output_sha256": {
+    "samples.jsonl": "58666c1e504442b0a2702e575f7fa6d9955aa86cc9eb015ec135a01f1d2f407f",
+    "episode.json": "9ad686dafa04836be976596a69acdeca068d97ffc998369e5816691893ab3366"
+  }
+}

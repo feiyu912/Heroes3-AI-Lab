@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "CPU_read_only": true,
+  "optimizer_steps_in_audit": 0,
+  "new_native_games": 0,
+  "training_only_not_independent_evaluation": true,
+  "ability_improvement_claim": false,
+  "initial_checkpoint_sha256": "0dbbc4735e217e39a55dcd2f398b945bcb9ea6490525c86645843a5f1ac313f6",
+  "trained_checkpoint_sha256": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+  "episodes": 8,
+  "states": 3000,
+  "actual_policy_builds": 19,
+  "training_wins": 4,
+  "training_losses": 4,
+  "actual_build_categories": {
+    "infrastructure": 16,
+    "dwelling": 3
+  },
+  "actual_builds_by_cell": {
+    "cell-00": 4,
+    "cell-01": 5,
+    "cell-02": 3,
+    "cell-03": 1,
+    "cell-04": 3,
+    "cell-05": 2,
+    "cell-06": 1
+  },
+  "argmax_changes": 42,
+  "argmax_changes_with_build_candidates": 25,
+  "argmax_op_transitions": {
+    "move->move": 42
+  },
+  "mean_total_variation": 0.013942536784088588,
+  "mean_forward_kl": 0.0011232710436088382,
+  "max_abs_value_delta": 1.505397915840149,
+  "actual_build_candidate_states": 400,
+  "initial_mean_build_mass_on_available_states": 0.03254202743759379,
+  "trained_mean_build_mass_on_available_states": 0.036488468516618015,
+  "actual_19builds_mean_probability_before": 0.00991538801769677,
+  "actual_19builds_mean_probability_after": 0.01114110435408197,
+  "weights": [
+    {
+      "name": "prior_scale",
+      "l2": 0.0,
+      "max_abs": 0.0,
+      "changed": false
+    },
+    {
+      "name": "actor.stop_bias",
+      "l2": 0.019060730934143066,
+      "max_abs": 0.019060730934143066,
+      "changed": true
+    },
+    {
+      "name": "actor.0.weight",
+      "l2": 0.7618195707387273,
+      "max_abs": 0.039006046019494534,
+      "changed": true
+    },
+    {
+      "name": "actor.0.bias",
+      "l2": 0.07926385838094972,
+      "max_abs": 0.022576093673706055,
+      "changed": true
+    },
+    {
+      "name": "actor.2.weight",
+      "l2": 0.8531553288764865,
+      "max_abs": 0.0407739095389843,
+      "changed": true
+    },
+    {
+      "name": "actor.2.bias",
+      "l2": 0.08864740147521472,
+      "max_abs": 0.02321348339319229,
+      "changed": true
+    },
+    {
+      "name": "actor.4.weight",
+      "l2": 0.12684631923962958,
+      "max_abs": 0.03512305300682783,
+      "changed": true
+    },
+    {
+      "name": "actor.4.bias",
+      "l2": 0.0004082222003489733,
+      "max_abs": 0.0004082222003489733,
+      "changed": true
+    },
+    {
+      "name": "critic.0.weight",
+      "l2": 0.9793305064538756,
+      "max_abs": 0.0454119760543108,
+      "changed": true
+    },
+    {
+      "name": "critic.0.bias",
+      "l2": 0.058994856064706246,
+      "max_abs": 0.01155446469783783,
+      "changed": true
+    },
+    {
+      "name": "critic.2.weight",
+      "l2": 0.7768538512023225,
+      "max_abs": 0.04184897243976593,
+      "changed": true
+    },
+    {
+      "name": "critic.2.bias",
+      "l2": 0.05859526259524415,
+      "max_abs": 0.009121958166360855,
+      "changed": true
+    },
+    {
+      "name": "critic.4.weight",
+      "l2": 0.09281525722337519,
+      "max_abs": 0.02435345435515046,
+      "changed": true
+    },
+    {
+      "name": "critic.4.bias",
+      "l2": 0.007342427968978882,
+      "max_abs": 0.007342427968978882,
+      "changed": true
+    }
+  ],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-policy-v1/cpu-01/build-initialization.pt": "0dbbc4735e217e39a55dcd2f398b945bcb9ea6490525c86645843a5f1ac313f6",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/update-01/update-1.pt": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/RESULT.json": "699f10c2b481c84ac99d227331d3819fd4778edac38fdc70c0184c8284e49969",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00/admitted/AUDIT.json": "a4c738a962110a1d20cdb935d2c9ca0abd805aff4676e78d1cefb202972a0554",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01/admitted/AUDIT.json": "9f227051cd127c5cf32bc399c5c19c2faa13bc0c6d2623697bb016cde18721cb",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02/admitted/AUDIT.json": "3b1303e2eeeaa2b8c41b1a5e2db5446f11572c216b558db1d9bfc54d8c92027a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-03/admitted/AUDIT.json": "cd095709da62263a227b721f91095c4d553a5a6af30320db5b4421cb67522a98",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04/admitted/AUDIT.json": "a8c84032cddd91b5702014b5b2f5ebf9ca34b03cec7ff42a71a8899991f4771f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-05/admitted/AUDIT.json": "9fd5181e52da4490b124a5dfe6ed247d304acc5567dd5980037757bd8990ebdd",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-06/admitted/AUDIT.json": "fa0060dba5dd46232acb7df1a01b51b8be57a4ae5bb269575074b9eb18eaa7f2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-07/admitted/AUDIT.json": "775279507f08ae53ef0d889cc6cd44ded671cb5db3c515b06d2b3261b9b3d347"
+  },
+  "auditor_sha256": "e24ce976abbbfef6e808980322e61cc818788d00617a5bef01d34978e0dea38a",
+  "limitation": "Same collected TRAIN states, not counterfactual trajectories or DEV. Shared actor changes movement and building probabilities together; no isolated economic benefit or general strength claim."
+}

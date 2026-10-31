@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "translation_units": [
+    {
+      "source": "AI/DirectorAI/CDirectorAI.cpp",
+      "passed": true,
+      "exit_code": 0,
+      "compiler_command_sha256": "40c8b1b4e3bf70129c3bf2474326366b2a50a9cf6c4e0b4580236c72ac04a2f8"
+    },
+    {
+      "source": "server/CGameHandler.cpp",
+      "passed": true,
+      "exit_code": 0,
+      "compiler_command_sha256": "029114453568270fa2d6bc7550274ca214e5f084642ee5f37f1102dbe7a0fa95"
+    },
+    {
+      "source": "client/NetPacksClient.cpp",
+      "passed": true,
+      "exit_code": 0,
+      "compiler_command_sha256": "3376529e766216968a85ea6fbe599ee2ab8f794ae7d7e6a75f4380e9651f8213"
+    }
+  ],
+  "native_builds": 0,
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "Isolated syntax only; no linker/native runtime qualification",
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace"
+}

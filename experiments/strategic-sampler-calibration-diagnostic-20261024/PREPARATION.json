@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "registered_UTC": "2026-10-23T17:10:49.717249+00:00",
+  "trigger": "four archived stochastic NK TRAIN defeats",
+  "DEV_result_read": false,
+  "DEV_result_completed": false,
+  "prepared_cells": 4,
+  "jobs": [
+    {
+      "index": 2,
+      "TRAIN_episode_sha256": "828c0653c5b5bb8780c4dc2170ad0268f325db093bccdbb0ce8caff5b1abb345",
+      "TRAIN_reward": -1.0,
+      "seed": 2026104402
+    },
+    {
+      "index": 3,
+      "TRAIN_episode_sha256": "c70afa04f87b0db49afadc78a9e6e6ebc89c42261d809e67883109911d5a55aa",
+      "TRAIN_reward": -1.0,
+      "seed": 2026104403
+    },
+    {
+      "index": 6,
+      "TRAIN_episode_sha256": "aac71dee3451796ee6991979a744b127881807e1b1a0f60edb33ad938d34b79c",
+      "TRAIN_reward": -1.0,
+      "seed": 2026104406
+    },
+    {
+      "index": 7,
+      "TRAIN_episode_sha256": "9ad686dafa04836be976596a69acdeca068d97ffc998369e5816691893ab3366",
+      "TRAIN_reward": -1.0,
+      "seed": 2026104407
+    }
+  ],
+  "new_native_games": 0,
+  "new_optimizer_steps": 0
+}

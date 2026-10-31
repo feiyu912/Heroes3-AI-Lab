@@ -1,0 +1,9 @@
+{
+  "state": "failed_before_checkpoint",
+  "session_id": 56930,
+  "stage": "first_BC_gradient_step",
+  "error": "RuntimeError: Inference tensors cannot be saved for backward. reference_prob created in inference_mode is used in differentiable KL multiplication.",
+  "checkpoint_written": false,
+  "heldout_battles_run": 0,
+  "action": "Preserve evidence; replace reference capture with no_grad and verify actual CPU gradient before retry."
+}

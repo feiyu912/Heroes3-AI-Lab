@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-10-26T12:01:36.722989+00:00",
+  "status": "both-capsules-built-and-independent-readback-passed-four-native-pairs-passed",
+  "terminal_builds": {
+    "baseline-build-01": false,
+    "baseline-build-02": true,
+    "candidate-build-01": true
+  },
+  "all_exec_sessions_returned": true,
+  "native_games": 8,
+  "optimizer_steps": 0,
+  "next_work": "additional registered boundaries and whole strategic epoch qualification before TRAIN calibration/PPO"
+}

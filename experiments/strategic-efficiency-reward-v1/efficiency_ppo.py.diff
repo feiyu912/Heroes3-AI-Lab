@@ -1,0 +1,31 @@
+--- frozen/efficiency_ppo.py
++++ efficiency/efficiency_ppo.py
+@@ -4,6 +4,7 @@
+ The module rejects invalid/missing terminal samples before any optimizer step.
+ """
+ from collections import Counter, defaultdict
++from targets import validate_derived_sample, EPOCH, FORMULA
+ import importlib.util
+ import math
+ from pathlib import Path
+@@ -17,8 +18,8 @@
+ encoder=importlib.util.module_from_spec(spec);spec.loader.exec_module(encoder)
+ collate,validate=encoder.collate,encoder.validate
+ 
+-PROTOCOL = dict(schema='strategic-typed-episode-balanced-choice-ppo-v1', action_schema='strategy-candidates-v4', gamma=1.0,
+-    reward='Completed native terminal win +1/loss -1 only; invalid batch must abort before update.',
++PROTOCOL = dict(schema=EPOCH, action_schema='strategy-candidates-v4', gamma=1.0,
++    reward=FORMULA,
+     actor_sample_weight='N/(E*episode_free_choices) if candidate_count>1, otherwise 0; E includes zero-choice episodes',
+     critic_sample_weight='N/(E*episode_steps); E includes all valid episodes',
+     advantage='return-old_value; weighted mean/variance only over free choices, equal mass per active episode',
+@@ -71,8 +72,7 @@
+         if sample.get('valid') is False:
+             raise ValueError('Invalid episode transition; abort entire batch')
+         reward = sample.get('return')
+-        if isinstance(reward, bool) or reward not in (-1., 1.):
+-            raise ValueError('Only completed native +/-1 returns accepted; null timeout is not a loss')
++        validate_derived_sample(sample)
+         if identity in rewards and rewards[identity] != reward:
+             raise ValueError('Terminal returns disagree within one episode')
+         rewards[identity] = reward

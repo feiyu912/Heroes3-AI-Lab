@@ -1,0 +1,427 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 0,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 139,
+    "actual_director_ack_count": 139,
+    "registered_ids": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      359,
+      361,
+      363,
+      367,
+      369,
+      371,
+      375,
+      377,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      418,
+      420,
+      422,
+      426,
+      427,
+      429,
+      431,
+      434,
+      436,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      476,
+      478,
+      485,
+      492,
+      494,
+      501,
+      509,
+      511,
+      517,
+      518,
+      521,
+      524,
+      530,
+      535,
+      544,
+      555,
+      562,
+      563,
+      569,
+      574,
+      584
+    ],
+    "policy_and_auto_request_count": 93,
+    "marker_line": 48582,
+    "owned_terminal_line": 48546,
+    "cancellation_intention": {
+      "line": 48581,
+      "ids": [
+        585
+      ]
+    },
+    "actual_termination": {
+      "line": 48583,
+      "ids": [
+        585
+      ]
+    },
+    "foreign_waits_pending_at_termination": 1,
+    "actual_atomic_cleared_ids": [
+      585
+    ],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 17,
+    "verified_neutral_makeaction_acks": [
+      {
+        "native_request_id": 123,
+        "line": 16500,
+        "pack_type": 198,
+        "actual_request_line": 16444,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 126,
+        "line": 16659,
+        "pack_type": 198,
+        "actual_request_line": 16590,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 131,
+        "line": 16940,
+        "pack_type": 198,
+        "actual_request_line": 16878,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 134,
+        "line": 17097,
+        "pack_type": 198,
+        "actual_request_line": 17024,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 174,
+        "line": 19993,
+        "pack_type": 198,
+        "actual_request_line": 19931,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 181,
+        "line": 20346,
+        "pack_type": 198,
+        "actual_request_line": 20277,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 190,
+        "line": 21083,
+        "pack_type": 198,
+        "actual_request_line": 20796,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 221,
+        "line": 22794,
+        "pack_type": 198,
+        "actual_request_line": 22732,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 228,
+        "line": 23148,
+        "pack_type": 198,
+        "actual_request_line": 23078,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 291,
+        "line": 27561,
+        "pack_type": 198,
+        "actual_request_line": 27505,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 294,
+        "line": 27722,
+        "pack_type": 198,
+        "actual_request_line": 27651,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 299,
+        "line": 27999,
+        "pack_type": 198,
+        "actual_request_line": 27939,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 302,
+        "line": 28152,
+        "pack_type": 198,
+        "actual_request_line": 28085,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 321,
+        "line": 29481,
+        "pack_type": 198,
+        "actual_request_line": 29419,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 324,
+        "line": 29635,
+        "pack_type": 198,
+        "actual_request_line": 29565,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 329,
+        "line": 29915,
+        "pack_type": 198,
+        "actual_request_line": 29853,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 332,
+        "line": 30063,
+        "pack_type": 198,
+        "actual_request_line": 29999,
+        "actual_request_type": "10MakeAction"
+      }
+    ],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-learned-economy-build-v1",
+  "input_audit_epoch": "director-learned-economy-build-v1",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "blue",
+  "owned_player": 0,
+  "actual_ai_assignment": {
+    "red": "DirectorAI",
+    "blue": "Nullkiller2"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 82,
+    "policy_builds": 1,
+    "policy_end_turns": 3,
+    "automatic_end_turns": 7,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 86,
+    "blocking_visits": 1
+  },
+  "contract_errors": [],
+  "native_apply_markers": 93,
+  "battle_observation": {
+    "last_battle_start_line": 48094,
+    "round_start_count": 1,
+    "native_battle_actions": 2,
+    "unique_last1000_actions": 2,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '4294967295', actionType '4', actionSubtype '19', target {87,}}",
+        1
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "c5a5634cb8847b342cee31cf69329c1751f78759281bb6e50ed630545c85bb4b",
+    "typed.jsonl": "9b10ec2c7d7854285b8450597ace738773bc05479a732444961f920ff3e530b2",
+    "strategy-decisions.jsonl": "5a0bec4aba7705ab6dcc484aec777151fc604ce0136f63c63a85eba7b8f55905",
+    "EXECUTION.json": "6908d1361261cae99e7e12fe0df48fb8c03ef8dbd45f9327a37540e2363f6993",
+    "PLAN.json": "d79496173e10424ecc20410ba57dfdc5852bd1d39eeac313a2c4499e3557bcb7",
+    "agent/typed-broker.jsonl": "6e64a72e4bbb0e7c421ad5c687007fce90b17ba8076266e37318a05a0c5096f5",
+    "build-packs.jsonl": "08d5ccff96edbdac5bbaa96529b19575f75675945999181e3a20462bc892c789"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "c23cfc9d3f230ec5a4c4b1882c373209434cbe67de253e502eaa97ac765a2673",
+    "audit_contract.py": "807f5bd8b1b6ee020f912ca72840a5b3ae47c26a9fdaac3cc9219342b70f714e",
+    "raw_events_v5.py": "5cf48a8baf89517dce029a54134bdaad2112099726cba1969cc11385f7eb3493",
+    "build_evidence.py": "e549ef7d65f0376fac48705cd02660a2ef8ed72a6e409da365af6d3e3e786a12",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.",
+  "pipeline_epoch": "strategic-learned-economy-build-training-v1",
+  "action_schema": "strategy-candidates-v5",
+  "economy_epoch": "learned-economy-build-v1",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "build_evidence_verified": true,
+  "build_evidence": {
+    "passed": true,
+    "policy_builds": 1,
+    "received_packets": 40,
+    "builds": [
+      {
+        "native_request_id": 107,
+        "decision_id": 29,
+        "town_id": 18,
+        "building_id": 16,
+        "before": {
+          "town_id": 18,
+          "owner": 0,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 19,
+            "mercury": 4,
+            "ore": 10,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 8760
+          }
+        },
+        "after": {
+          "town_id": 18,
+          "owner": 0,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            16,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 14,
+            "mercury": 4,
+            "ore": 10,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7760
+          }
+        }
+      }
+    ]
+  }
+}

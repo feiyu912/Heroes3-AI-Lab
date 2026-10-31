@@ -1,0 +1,316 @@
+{
+  "passed": true,
+  "actual_raw_audits_rerun": 16,
+  "all_complete_raw_audits_equal": true,
+  "all_full_CPU_proposals_actually_recomputed": 3267,
+  "wins": {
+    "baseline": 4,
+    "candidate": 4
+  },
+  "summary": {
+    "baseline": {
+      "rows": 1715,
+      "actual_recruits": 0,
+      "actual_free_transfers": 0,
+      "builds": 147,
+      "recruited_quantity": 0
+    },
+    "candidate": {
+      "rows": 1552,
+      "actual_recruits": 0,
+      "actual_free_transfers": 0,
+      "builds": 130,
+      "recruited_quantity": 0
+    }
+  },
+  "pairs": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104000
+      },
+      "arms": {
+        "baseline": {
+          "win": true,
+          "rows": 211,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 27,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": true,
+          "rows": 210,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 25,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104001
+      },
+      "arms": {
+        "baseline": {
+          "win": true,
+          "rows": 222,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 26,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": true,
+          "rows": 236,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 25,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104002
+      },
+      "arms": {
+        "baseline": {
+          "win": false,
+          "rows": 206,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 13,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": false,
+          "rows": 188,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 11,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104003
+      },
+      "arms": {
+        "baseline": {
+          "win": false,
+          "rows": 235,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 12,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": false,
+          "rows": 261,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 13,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104004
+      },
+      "arms": {
+        "baseline": {
+          "win": true,
+          "rows": 218,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 25,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": true,
+          "rows": 209,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 23,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104005
+      },
+      "arms": {
+        "baseline": {
+          "win": true,
+          "rows": 238,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 23,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": true,
+          "rows": 195,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 17,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104006
+      },
+      "arms": {
+        "baseline": {
+          "win": false,
+          "rows": 185,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 9,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": false,
+          "rows": 58,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 4,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104007
+      },
+      "arms": {
+        "baseline": {
+          "win": false,
+          "rows": 200,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 12,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        },
+        "candidate": {
+          "win": false,
+          "rows": 195,
+          "actual_recruits": 0,
+          "actual_free_transfers": 0,
+          "builds": 12,
+          "recruited_quantity": 0,
+          "first_recruit_day": null,
+          "quantity_buckets": {}
+        }
+      },
+      "identical_public_request_prefix": 1,
+      "first_different_action_on_identical_request": 1
+    }
+  ],
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-00/baseline/raw-audit/AUDIT.json": "80973437b6b796a1ce26317a58e97da6fb9c4de7245a1dd999fe6548d897c122",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-00/candidate/raw-audit/AUDIT.json": "56a3b93bd7b3ece3eb84b18a4a7774d8953d7e7194563a026b00df24918b089a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-01/baseline/raw-audit/AUDIT.json": "2ede531191b119d8aa7ab364cdd3390c4d095f65bea13279e9f3ed39686743d0",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-01/candidate/raw-audit/AUDIT.json": "103702538f27084200d62a064bb2f03222f4e977075a5d08017bc69644b03b41",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-02/baseline/raw-audit/AUDIT.json": "60ab2eeb80e745bd0b6311f82f56e5a1a622950fa983164028bc178f593c413e",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-02/candidate/raw-audit/AUDIT.json": "9f40c54e15a634db09e9b3318267d1846547989b65d0e26be51c05d723404b1f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-03/baseline/raw-audit/AUDIT.json": "ad03efb80a4a2d05acfed457b64b4c364a946f5254e835dc558046d948442d3f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-03/candidate/raw-audit/AUDIT.json": "8abaaaf6611d3cc480998250372d87e5522cda1c506a3a75d47cfadca41d2bc7",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-04/baseline/raw-audit/AUDIT.json": "a0f09c582535f2cfb60019e32b760fbe45caf255a41349267f1dad41cd468fd4",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-04/candidate/raw-audit/AUDIT.json": "cfbb3fab413605d6b3c4d6fca99703cdd8dcd2302de8dfd131a99e123298d8f5",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-05/baseline/raw-audit/AUDIT.json": "be6a54bf267dd4fe1611b7d171a53cf372cd4642b62aef60cb170b88e9cbfe7b",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-05/candidate/raw-audit/AUDIT.json": "ef399cbbfb262ce1398844d4ff0dcd17dcc5e58faa82272d7e2cd89a08ec5400",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-06/baseline/raw-audit/AUDIT.json": "0cd7c9f1d6068eab9564c775bc1b5b4395801f964dcf193022f670e25a1685d2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-06/candidate/raw-audit/AUDIT.json": "ea79918e4210d6fdad175eab09a55d422eb05cda4b9dbd14df554b9c055327ca",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-07/baseline/raw-audit/AUDIT.json": "0adec1644146de4d18c2d1d24db99d89260b7e9b26bbd58b4cf50c4362a06c34",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-dev-20261023-01/pair-07/candidate/raw-audit/AUDIT.json": "f929626b57ef7e225fad36f639054a269fb72daff77a98b79c735ee137ecb71e"
+  },
+  "native_runs_by_reviewer": 0,
+  "GPU_calls": 0,
+  "optimizer_steps": 0,
+  "finaltest_touched": false,
+  "ability_improvement_claim": false,
+  "limitation": "Eight paired DEV cells are small and historically seen; no universal win-rate or single-action causality inference"
+}

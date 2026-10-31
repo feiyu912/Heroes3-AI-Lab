@@ -1,0 +1,104 @@
+[
+  {
+    "timeUtc": "2026-10-14T12:09:05.3744950Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12886.4921875,
+    "cpuPercent": 33
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:07.7676780Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12727.15234375,
+    "cpuPercent": 21
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:10.1356037Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12672.1796875,
+    "cpuPercent": 35
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:12.4779952Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12636.32421875,
+    "cpuPercent": 8
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:14.8310853Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12605.71875,
+    "cpuPercent": 32
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:17.1778089Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12560.9765625,
+    "cpuPercent": 31
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:19.5074631Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12508.45703125,
+    "cpuPercent": 25
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:21.8615590Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12457.10546875,
+    "cpuPercent": 35
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:24.2080028Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12419.01171875,
+    "cpuPercent": 17
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:26.5609225Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12378.7890625,
+    "cpuPercent": 29
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:28.8768684Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12350.484375,
+    "cpuPercent": 22
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:31.2344062Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12277.23046875,
+    "cpuPercent": 18
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:33.5853121Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12272.32421875,
+    "cpuPercent": 30
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:35.9388225Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12209.0234375,
+    "cpuPercent": 15
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:38.2957175Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12171.31640625,
+    "cpuPercent": 25
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:40.6353075Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12145.8046875,
+    "cpuPercent": 17
+  },
+  {
+    "timeUtc": "2026-10-14T12:09:42.9897698Z",
+    "totalMemoryMiB": 32581.22265625,
+    "availableMemoryMiB": 12090.76953125,
+    "cpuPercent": 28
+  }
+]

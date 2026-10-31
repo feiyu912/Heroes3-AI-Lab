@@ -1,0 +1,264 @@
+{
+  "source": "/root/heroes3-ai-lab/workers/adv-runs/replay-diagnostic-02-2026101930-gm0gcy_i/strategy-trace.jsonl.targets.jsonl",
+  "sha256": "d35c5c18db374d8b55a95ad94c193ecd42a7486b41f3330026d91b5fe82fb807",
+  "counts": {
+    "(0, 'info_unavailable')": 51,
+    "(1, 'no_current_turn_path')": 51
+  },
+  "first_by_status": {
+    "(0, 'info_unavailable')": {
+      "day": 170,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        23,
+        12,
+        0
+      ]
+    },
+    "(1, 'no_current_turn_path')": {
+      "day": 170,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        23,
+        12,
+        0
+      ]
+    }
+  },
+  "last_rows": [
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        13,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        13,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        14,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        14,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        13,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        13,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        12,
+        0
+      ]
+    },
+    {
+      "day": 175,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        19,
+        12,
+        0
+      ]
+    },
+    {
+      "day": 176,
+      "hero": 0,
+      "kind": 0,
+      "position": [
+        29,
+        10,
+        0
+      ],
+      "status": "info_unavailable",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        18,
+        11,
+        0
+      ]
+    },
+    {
+      "day": 176,
+      "hero": 0,
+      "kind": 1,
+      "position": [
+        29,
+        8,
+        0
+      ],
+      "status": "no_current_turn_path",
+      "strength": -1,
+      "own_strength": 39988,
+      "tile_visible": 0,
+      "turns": 255,
+      "accessibility": 0,
+      "from": [
+        18,
+        11,
+        0
+      ]
+    }
+  ]
+}

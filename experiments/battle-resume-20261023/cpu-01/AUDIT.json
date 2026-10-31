@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "CPU_model_Adam_Python_NumPy_Torch_RNG_exact": true,
+  "CUDA_payload_validated_only": true,
+  "CUDA_restore_executed": false,
+  "no_native_games": true,
+  "audit_Adam_steps": 0,
+  "checkpoint_sha256": "8d3169e85d51b0bf7d7247cc2d4bdc6949410d5262793f1729a6463dbd3976bf",
+  "restored": {
+    "previous_completed_updates": 57,
+    "previous_environment_steps": 29184,
+    "actual_Adam_steps_restored": 7296,
+    "CUDA_restore_executed": false,
+    "native_environment_restored": false,
+    "native_fresh_required": true,
+    "new_explicit_schedule_epoch_required": true,
+    "next_schedule_phase": null
+  },
+  "negative_cases": [
+    "partial",
+    "counter_reset",
+    "binding",
+    "moment_shape",
+    "CUDA_RNG",
+    "Python_RNG",
+    "NumPy_RNG"
+  ],
+  "invalid_boundaries_preserve_live_state": true,
+  "phase_schedule": [
+    13,
+    14,
+    14
+  ],
+  "fresh_phase13_seeds": [
+    2026118800,
+    2026118801,
+    2026118802,
+    2026118803,
+    2026118804,
+    2026118805,
+    2026118806,
+    2026118807,
+    2026118808,
+    2026118809,
+    2026118810,
+    2026118811,
+    2026118812,
+    2026118813,
+    2026118814,
+    2026118815
+  ],
+  "per_parameter_steps": {
+    "7272": 97,
+    "7266": 97
+  },
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/audit_restore_cuda.py": "142be8d54bd4d3ea7c366a8f406df74db7449a6da207d67423220baa075c407b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/check_cpu.py": "f458766d0f3e1e9bc4239f0f328539f59637c3def3cb11746685683350fccc4d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/curriculum.py": "eaff7e003e7d43d8c59e7559ba79dd84deeca822a8b5b6f9345ce4ef5d906fa5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/prepare_sources.py": "8eb8d802db82df286cb3e50821a7e7672870ac8c87af0525a71cb9c81e40555c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/restore_learner.py": "d07c1326a3458bbe0cd8786c32aa58b80eac01c48ced33c350a25cf81aaa143f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/run.py": "4adf941f2f884969f9f4face46a5661e570fc37b369abcd716eb08f50d5669a7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/support.py": "c329b89d5ffd8906d0254197154f266e534fe14587d70581e75a0fd57d6c7102",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-resume-20261023/train_last_graph.py": "c1e2182d5aeb12f32e1337802a6bbcae9426c84db06c3ffb199af938b25c7c8a"
+  }
+}

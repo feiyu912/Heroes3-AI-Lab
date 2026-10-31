@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "copies": {
+    "typed-clearance-proxy-paired-04": {
+      "regular_files": 14975,
+      "symlinks": 64
+    }
+  },
+  "no_asset_link_dereference": true
+}

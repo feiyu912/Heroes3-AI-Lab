@@ -1,0 +1,172 @@
+{
+  "passed": true,
+  "CPU_read_only": true,
+  "optimizer_steps_in_audit": 0,
+  "new_native_games": 0,
+  "training_only_not_independent_evaluation": true,
+  "ability_improvement_claim": false,
+  "initial_checkpoint_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+  "trained_checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2",
+  "episodes": 8,
+  "states": 1891,
+  "actual_policy_builds": 28,
+  "training_wins": 4,
+  "training_losses": 4,
+  "actual_build_categories": {
+    "infrastructure": 20,
+    "dwelling": 7,
+    "income": 1
+  },
+  "actual_builds_by_cell": {
+    "cell-00": 6,
+    "cell-01": 6,
+    "cell-03": 4,
+    "cell-04": 3,
+    "cell-05": 6,
+    "cell-06": 3
+  },
+  "argmax_changes": 40,
+  "argmax_changes_with_build_candidates": 22,
+  "initial_argmax_ops": {
+    "move": 1826,
+    "build": 65
+  },
+  "trained_argmax_ops": {
+    "move": 1823,
+    "build": 68
+  },
+  "income_candidate_states": 2,
+  "income_candidate_occurrences": 2,
+  "actual_build_candidate_categories": {
+    "infrastructure": 706,
+    "dwelling": 225,
+    "income": 2
+  },
+  "argmax_op_transitions": {
+    "move->move": 25,
+    "build->move": 6,
+    "move->build": 9
+  },
+  "mean_total_variation": 0.01615267996363681,
+  "mean_forward_kl": 0.0013936506965928172,
+  "max_abs_value_delta": 0.873316764831543,
+  "actual_build_candidate_states": 244,
+  "initial_mean_build_mass_on_available_states": 0.1567553594769513,
+  "trained_mean_build_mass_on_available_states": 0.1716778427362442,
+  "actual_28builds_mean_probability_before": 0.04532913484477571,
+  "actual_28builds_mean_probability_after": 0.049580066464841366,
+  "weights": [
+    {
+      "name": "prior_scale",
+      "l2": 0.0,
+      "max_abs": 0.0,
+      "changed": false
+    },
+    {
+      "name": "actor.stop_bias",
+      "l2": 0.009534955024719238,
+      "max_abs": 0.009534955024719238,
+      "changed": true
+    },
+    {
+      "name": "actor.build_bias",
+      "l2": 0.0026873350143432617,
+      "max_abs": 0.0026873350143432617,
+      "changed": true
+    },
+    {
+      "name": "actor.0.weight",
+      "l2": 0.4724658552354021,
+      "max_abs": 0.020959055051207542,
+      "changed": true
+    },
+    {
+      "name": "actor.0.bias",
+      "l2": 0.0417714476988565,
+      "max_abs": 0.013653255999088287,
+      "changed": true
+    },
+    {
+      "name": "actor.2.weight",
+      "l2": 0.42523145507634785,
+      "max_abs": 0.014270350337028503,
+      "changed": true
+    },
+    {
+      "name": "actor.2.bias",
+      "l2": 0.047235109050524235,
+      "max_abs": 0.015939481556415558,
+      "changed": true
+    },
+    {
+      "name": "actor.4.weight",
+      "l2": 0.0600210181724391,
+      "max_abs": 0.011101633310317993,
+      "changed": true
+    },
+    {
+      "name": "actor.4.bias",
+      "l2": 0.001138507854193449,
+      "max_abs": 0.001138507854193449,
+      "changed": true
+    },
+    {
+      "name": "critic.0.weight",
+      "l2": 0.6019518922817122,
+      "max_abs": 0.033194526098668575,
+      "changed": true
+    },
+    {
+      "name": "critic.0.bias",
+      "l2": 0.013853837631859635,
+      "max_abs": 0.005135059356689453,
+      "changed": true
+    },
+    {
+      "name": "critic.2.weight",
+      "l2": 0.5624043939770419,
+      "max_abs": 0.02094716578722,
+      "changed": true
+    },
+    {
+      "name": "critic.2.bias",
+      "l2": 0.011403740976734094,
+      "max_abs": 0.002520523965358734,
+      "changed": true
+    },
+    {
+      "name": "critic.4.weight",
+      "l2": 0.0799779251108732,
+      "max_abs": 0.01792295277118683,
+      "changed": true
+    },
+    {
+      "name": "critic.4.bias",
+      "l2": 0.0013431459665298462,
+      "max_abs": 0.0013431459665298462,
+      "changed": true
+    }
+  ],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-v1/calibration-01/build-offset-initialization.pt": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/update-01/update-1.pt": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/RESULT.json": "04737d93a697ebca14dcd01221924d184aab4bf2716804d56d3f8971775bdfc1",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-00/admitted/AUDIT.json": "0114c91ff5a6fd3bb798f9d23796f1dc54ca6d991370f8e9b64d05bbfcdcd359",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-01/admitted/AUDIT.json": "18c69f9ba66d59052b4a09a6ee4fe15a1d066a96a95055143ef510da23db9ab9",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-02/admitted/AUDIT.json": "3da2f545fce4ca23cd0b08d3b91e06424c53824c91057ba4ae331f594002ceb5",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-03/admitted/AUDIT.json": "9d024fa030685a19cfe229824a68cfb91b199e481f5269f3c535678848fecab9",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-04/admitted/AUDIT.json": "9a37274790d790978d31487286ba13f547443020840b1218caf010ebabd85fcf",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-05/admitted/AUDIT.json": "72aafa6e06fb04a5151aae5ee0913b55362cec72fa3381f49d14ff3ae60291c0",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-06/admitted/AUDIT.json": "fc4b02647ae561317686903f5ca11464ec916e2659ac2ab564b1ac4a2e7ff00c",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-07/admitted/AUDIT.json": "31b62b50ae3ff7b2a424f9484a61bc94804321430ccde1a7dbb98159e340ecb9"
+  },
+  "auditor_sha256": "2a77ee8bbd5af638d2c6aad8f7e46f11ed32f708fb14b45c246eaa245ab80456",
+  "raw_and_source_freeze_count": 2425,
+  "all_original_raw_source_runtime_inputs_rehashed": true,
+  "fresh_epoch_optimizer_steps": 120,
+  "ancestor_optimizer_steps_not_continuous": 188,
+  "optimizer_reset_at_calibrated_initialization": true,
+  "build_bias_before": 1.5,
+  "build_bias_after": 1.4973126649856567,
+  "limitation": "Same collected TRAIN states, not counterfactual trajectories or DEV. Shared actor changes movement and building probabilities together; no isolated economic benefit or general strength claim."
+}

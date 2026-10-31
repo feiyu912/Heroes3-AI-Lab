@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "attacker: batched graph equals independent graph, including active action offsets",
+    "defender: batched graph equals independent graph, including active action offsets",
+    "Backpropagation updates heads and preserves every frozen graph parameter"
+  ],
+  "initial_pair": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+  "gradient_probe_excluded": true
+}

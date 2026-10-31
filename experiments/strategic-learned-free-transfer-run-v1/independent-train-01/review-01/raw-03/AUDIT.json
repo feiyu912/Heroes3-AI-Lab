@@ -1,0 +1,682 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 1,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 106,
+    "actual_director_ack_count": 106,
+    "registered_ids": [
+      2,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      193,
+      194,
+      195,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      243,
+      244,
+      245,
+      246,
+      248,
+      249
+    ],
+    "policy_and_auto_request_count": 97,
+    "marker_line": 26175,
+    "owned_terminal_line": 26126,
+    "cancellation_intention": {
+      "line": 26175,
+      "ids": []
+    },
+    "actual_termination": {
+      "line": 26176,
+      "ids": []
+    },
+    "foreign_waits_pending_at_termination": 0,
+    "actual_atomic_cleared_ids": [],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 0,
+    "verified_neutral_makeaction_acks": [],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-learned-economy-free-stock-prewindow-v2",
+  "input_audit_epoch": "director-learned-economy-free-stock-prewindow-v2",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "red",
+  "owned_player": 1,
+  "actual_ai_assignment": {
+    "red": "Nullkiller2",
+    "blue": "DirectorAI"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 81,
+    "policy_builds": 3,
+    "policy_end_turns": 9,
+    "automatic_end_turns": 4,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 93,
+    "blocking_visits": 2
+  },
+  "contract_errors": [],
+  "native_apply_markers": 97,
+  "battle_observation": {
+    "last_battle_start_line": 18432,
+    "round_start_count": 1,
+    "native_battle_actions": 4,
+    "unique_last1000_actions": 4,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '1', stackNumber '4', actionType '9', actionSubtype '-1', target {2@137,}}",
+        1
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '10', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '1', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '2', actionType '9', actionSubtype '-1', target {3@100,}}",
+        1
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "608106eeb2399c21048fd044aec5717776d7db240d9abd0cd390d1232519374d",
+    "typed.jsonl": "4c2b6471764b89378f4ec1ee82edbf3491697c990b6f069b91c279b623425eab",
+    "strategy-decisions.jsonl": "e0ad304a45b9095a2a9d0fd05f8192061d895cea9201a874bfca32d0b96de2de",
+    "strategy-trace.jsonl": "1017d1803389b51ba2c5bf326cab835c07455e45464b2da8c453cda70f5b11d9",
+    "EXECUTION.json": "62baabd0841b9cfb396a6fc10233d66c043509d3f0bd398609c4d96dcab150cd",
+    "PLAN.json": "c07722601c3a885fc8793e7906dacd751266f93b233fbf2f0223ea3fe531ab30",
+    "agent/typed-broker.jsonl": "a7e930cffeb5dff95cbd39db1d96a81586ff354ccf59b78ec6f80165ffa418d2",
+    "build-packs.jsonl": "ecc08e637d50e413f5e1563befbe018c8d7996ac018cc85bcfdaa30d2a1d5927"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "52901de643850c1e5e465713e4536c190c16a1a0633368367a582076e1fdf52b",
+    "audit_contract.py": "c879efa9fedec3710aeaa5608f39a5c95daa9bc130bb9c2a834ea8dbd4d1d7f8",
+    "raw_events_v5.py": "fb8a4874125a7c26d38a71a0460aadc0b9d4dc75914692aa861b1dafd6b5b5bd",
+    "build_evidence.py": "4b7f21e548b68b319ed5d2871c2276408ea8bc81495088aca83a44d516ef6368",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68",
+    "free_transfer_evidence.py": "c89a67e24ae9f3f3578af77e88766f8f99450221ef16bf66a40d0c0ee9f44153",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/audit_game_v6.py": "898fefb947b88a070858c412a30ea0d29b6f863a7a16ea27293c1ac6575cfd7d",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/collect_mechanism.py": "4e21670ba4401555435eb22bc074ad1191bb45807ca3a210204f0272d2e92e5f",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/finalize_proof.py": "257897898e24a99749d22d91e1a335e9b2ef373ac7eb9f5a68ace6ce99e7d81f",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/flow_evidence.py": "0d263839dadd6d117d98acb305993e6b2dc167c4e66b0c088350375d97256e60",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/pipeline_common.py": "8d80f413d3d39beb1c3142559aa469daac2d12f3ac92ae560e50e1774492eb88",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/prepare_bootstrap.py": "092f11c218ff2778bcde7486fc0a9cc249fe09976cc7d78948d6ea63a0677ee4"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.",
+  "pipeline_epoch": "strategic-learned-free-transfer-training-v1",
+  "action_schema": "strategy-candidates-v5",
+  "economy_epoch": "learned-economy-build-v1",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "native_flow_epoch": "learned-economy-free-existing-stock-prewindow-v2",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "threat_replan": "off",
+  "build_evidence_verified": true,
+  "build_evidence": {
+    "passed": true,
+    "policy_builds": 3,
+    "received_packets": 31,
+    "builds": [
+      {
+        "native_request_id": 88,
+        "decision_id": 17,
+        "town_id": 13,
+        "building_id": 14,
+        "before": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 17,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7760
+          }
+        },
+        "after": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            14,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 12,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7260
+          }
+        }
+      },
+      {
+        "native_request_id": 113,
+        "decision_id": 23,
+        "town_id": 13,
+        "building_id": 8,
+        "before": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            14,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 12,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 8260
+          }
+        },
+        "after": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            8,
+            10,
+            11,
+            14,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 12,
+            "mercury": 4,
+            "ore": 12,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 5760
+          }
+        }
+      },
+      {
+        "native_request_id": 164,
+        "decision_id": 41,
+        "town_id": 13,
+        "building_id": 16,
+        "before": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            8,
+            10,
+            11,
+            14,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 12,
+            "mercury": 4,
+            "ore": 12,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7760
+          }
+        },
+        "after": {
+          "town_id": 13,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            8,
+            10,
+            11,
+            14,
+            16,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 7,
+            "mercury": 4,
+            "ore": 12,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 6760
+          }
+        }
+      }
+    ]
+  },
+  "prewindow_evidence_verified": true,
+  "prewindow_evidence": {
+    "passed": true,
+    "observed_transfers": 2,
+    "prewindow_transfers": 0,
+    "groups": [],
+    "transfers": [
+      {
+        "id": 121,
+        "player": 1,
+        "pack_type": 183,
+        "type": "ArrangeStacks",
+        "registered_line": 16294,
+        "callback_line": 16317,
+        "generic_ack_line": 16324,
+        "before": {
+          "event": "before_army_transfer",
+          "player": 1,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5760,
+          "wood": 12,
+          "ore": 12,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 29,
+              "y": 8,
+              "z": 0,
+              "movement": 386,
+              "army": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  2,
+                  10
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  2,
+                  9
+                ],
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "after": {
+          "event": "economy_applied",
+          "player": 1,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5760,
+          "wood": 12,
+          "ore": 12,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 29,
+              "y": 8,
+              "z": 0,
+              "movement": 386,
+              "army": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  2,
+                  19
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "hero": 1,
+        "town": 13,
+        "creature": 2,
+        "count": 9,
+        "before_first_policy": false,
+        "first_policy_request": 23,
+        "first_policy_sent_line": 15748,
+        "server_mutation": "Received CPack of type 15RebalanceStacks",
+        "payload_observation": "native ID/player/type directly logged; donor/recipient and whole-stack amount uniquely reconstructed from public state plus compiled helper; slot IDs/what not directly logged",
+        "resource_evidence": "gold/wood/ore exact unchanged; no own SetResources pack during actual transfer; first policy seven-resource state retained"
+      },
+      {
+        "id": 122,
+        "player": 1,
+        "pack_type": 183,
+        "type": "ArrangeStacks",
+        "registered_line": 16320,
+        "callback_line": 16343,
+        "generic_ack_line": 16354,
+        "before": {
+          "event": "before_army_transfer",
+          "player": 1,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5760,
+          "wood": 12,
+          "ore": 12,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 29,
+              "y": 8,
+              "z": 0,
+              "movement": 386,
+              "army": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  2,
+                  19
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "after": {
+          "event": "economy_applied",
+          "player": 1,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5760,
+          "wood": 12,
+          "ore": 12,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 29,
+              "y": 8,
+              "z": 0,
+              "movement": 386,
+              "army": [
+                [
+                  0,
+                  34
+                ],
+                [
+                  2,
+                  19
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                30,
+                31
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "hero": 1,
+        "town": 13,
+        "creature": 0,
+        "count": 14,
+        "before_first_policy": false,
+        "first_policy_request": 23,
+        "first_policy_sent_line": 15748,
+        "server_mutation": "Received CPack of type 15RebalanceStacks",
+        "payload_observation": "native ID/player/type directly logged; donor/recipient and whole-stack amount uniquely reconstructed from public state plus compiled helper; slot IDs/what not directly logged",
+        "resource_evidence": "gold/wood/ore exact unchanged; no own SetResources pack during actual transfer; first policy seven-resource state retained"
+      }
+    ],
+    "raw_sha256": {
+      "client.log": "608106eeb2399c21048fd044aec5717776d7db240d9abd0cd390d1232519374d",
+      "strategy-trace.jsonl": "1017d1803389b51ba2c5bf326cab835c07455e45464b2da8c453cda70f5b11d9",
+      "PLAN.json": "c07722601c3a885fc8793e7906dacd751266f93b233fbf2f0223ea3fe531ab30",
+      "agent/typed-broker.jsonl": "a7e930cffeb5dff95cbd39db1d96a81586ff354ccf59b78ec6f80165ffa418d2"
+    },
+    "directly_observed_complete_arrange_payload": false,
+    "training_samples": 0,
+    "optimizer_steps": 0
+  }
+}

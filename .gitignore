@@ -1,0 +1,126 @@
+# ---------------------------------------------------------------------------
+# Public repository policy for Heroes3-AI-Lab
+# The lab itself keeps raw evidence, game data, models and repairs on disk.
+# Git tracks source, reports, manifests and audit summaries only.
+# ---------------------------------------------------------------------------
+
+# Personal / unrelated material and the upstream engine checkout.
+.research/
+vcmi/
+handoff/
+
+# Model weights and exported runtimes (kept in the lab, listed by manifests).
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+**/*.pt
+**/*.pth
+**/*.onnx
+**/*.npz
+
+# Game data, maps, saves and media (copyrighted; never commit).
+**/*.vmap
+**/*.vsgm1
+**/*.sav
+**/*.mp3
+**/*.ogg
+**/*.wav
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.webp
+**/*.mp4
+**/*.mkv
+
+# Archives / compiled artifacts / packages.
+**/*.tar
+**/*.tar.gz
+**/*.tgz
+**/*.tar.zst
+**/*.zst
+**/*.gz
+**/*.zip
+**/*.7z
+**/*.whl
+**/*.deb
+**/*.so
+**/*.a
+**/*.o
+**/*.lod
+**/*.snd
+**/*.bin
+**/*.class
+**/*.pyc
+
+# Generated native run trees and copied configuration/data.
+experiments/**/native/
+experiments/**/agent/
+experiments/**/runs/
+experiments/**/data/
+experiments/**/cache/
+experiments/**/config/
+experiments/**/initial-config/
+experiments/**/initial-user-config/
+experiments/**/frozen-inputs/
+experiments/**/archive/
+experiments/**/evidence-package-*/
+experiments/**/delivery-*/
+experiments/**/verified-repair/
+experiments/**/restored-history/
+experiments/**/evidence-review/
+experiments/**/probe_inputs/
+experiments/**/raw/
+experiments/**/samples/
+experiments/**/models/
+experiments/**/checkpoints/
+
+# Large migration/recovery products.
+experiments/ubuntu-native-takeover-20261025/verified-repair/
+experiments/ubuntu-native-takeover-20261025/evidence-review/
+experiments/ubuntu-native-takeover-20261025/restored-history/
+experiments/ubuntu-native-takeover-20261025/migration-repair-source/
+experiments/ubuntu-native-takeover-20261025/toolchain-inputs/
+experiments/ubuntu-native-takeover-20261025/python-integrity/
+
+# Downloaded packages and third-party build caches.
+research/downloads/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/node_modules/
+**/build/
+**/rel/
+**/CMakeFiles/
+
+# Logs and line-delimited evidence are reproducible / huge; keep summaries.
+**/*.log
+**/*.jsonl
+**/*.jsonl.zst
+
+# Editors / OS.
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Raw native evidence/capsule directories (reports point to these; not uploaded).
+**/bin/
+**/accepted-backup/
+experiments/**/native-evidence-*/
+experiments/**/native-pilot-*/
+experiments/**/native-repro-*/
+experiments/**/native-*-audit-*/
+experiments/**/capsule-evidence-*/
+experiments/**/build-evidence-*/
+experiments/**/source-snapshot/
+
+# Toolchain/binary probes that are not source.
+experiments/ubuntu-native-toolchain-20261025/**/staging/
+experiments/ubuntu-native-toolchain-20261025/attempt-*/c
+experiments/ubuntu-native-toolchain-20261025/attempt-*/cxx20
+experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/threaded-check
+
+# Third-party review tooling and assistant-local memory.
+experiments/multihero-scheduler-garrison-v2/minimax-review/interface-inspection/
+.workbuddy-ai/

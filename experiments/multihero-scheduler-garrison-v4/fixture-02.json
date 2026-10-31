@@ -1,0 +1,13 @@
+{
+  "map_sha256": "13fdc822fcbe2bb3939c8382da6a16c05dd2726230a45f5da1f04b7641da35af",
+  "mobile_heroes": [
+    0,
+    2
+  ],
+  "control_hero": 3,
+  "runtime_setup": "Actual GarrisonHeroSwap request/ACK before any scheduler selection. Require real owned positive-MP garrison, visiting=null, matching town/hero references.",
+  "map_bytes": "Explicit v3 geometry change; see FIXTURE_DERIVATION.json",
+  "same_seed": 2026102501,
+  "policy_broker": false,
+  "optimizer_steps": 0
+}

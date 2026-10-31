@@ -1,0 +1,44 @@
+[
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-probe-v1\\NATIVE_RESULTS.md",
+    "sha256": "853199d928102a47e0e2e7756599e97dcf9c16f1b4e53b884ac2858420241fc8",
+    "bytes": 2882,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-probe-v1\\SOURCE_REVIEW.md",
+    "sha256": "8a282daa389f7ac18a96f06aa567e46a490b30a697afc90dd5f9ca3f90ed544c",
+    "bytes": 2234,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-probe-v1\\ENGINEERING_STOP.json",
+    "sha256": "65ada5664d91a3fc83750a5cc353bf4f424b864e78b6f967f28089e9494e28f5",
+    "bytes": 1380,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-probe-v1\\audit_scheduler.py",
+    "sha256": "6b861a4ed8deb4057020bfdb0bf0b380de68e60d4516eb728f4e6db0fbcb1c01",
+    "bytes": 9149,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\common-setup.diff",
+    "sha256": "1f70c5251b2ab4dca510ffe545c40b94bf64432e03db10453e13c729abfec6ac",
+    "bytes": 6802,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\single-factor.diff",
+    "sha256": "05118ef1a06e9d45e2c431b4e1d4ad13e6ec8dec9a50b31f5d3ab6d5e707ea3b",
+    "bytes": 406,
+    "provided": "full text"
+  },
+  {
+    "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\derive.py",
+    "sha256": "52934e6d356df1db8f182dd4c0f1b1b24938d14fda397baa556fce1ec583f324",
+    "bytes": 7899,
+    "provided": "full text"
+  }
+]

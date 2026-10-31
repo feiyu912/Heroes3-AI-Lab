@@ -1,0 +1,13 @@
+{
+  "run": "/root/heroes3-ai-lab/workers/adv-runs/replay-diagnostic-01-2026101930-xou8q3xj",
+  "rollout": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-3-episode-0-4edxrk4r/rollout.jsonl",
+  "diagnostic_only": true,
+  "native_packets_first_per_move": 11823,
+  "revealed_union_size": 963,
+  "packets_entirely_previously_revealed": 0,
+  "frontier_candidates_all_neighbors_previously_revealed": 0,
+  "examples": [],
+  "last_repeated_packet": null,
+  "enemy_hero_tile_ever_in_reveal": false,
+  "limitation": "Logged reveal union is monotonic audit reference, not proof engine never legitimately re-hid tiles; inspect FoWChange and snapshot replacement before causality claim."
+}

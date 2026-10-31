@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "fixture": false,
+  "native_games_reaudited": 16,
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "proposal_count": 3542,
+  "retained_commit_checks": 2482,
+  "releases": 17,
+  "original_result_sha256": "dd3ae40282e2c62e832f516fa859a4e26880469c912351f5ce426ca9ad5600e8",
+  "arms": [
+    {
+      "pair": 0,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 117,
+      "releases": 0,
+      "retained_commit_checks": 75,
+      "audit_sha256": "a3d336d1bf07efb5a047cbe87b42a462e9f4ff6ce1a5f471772e530bd4917c42"
+    },
+    {
+      "pair": 0,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 117,
+      "releases": 0,
+      "retained_commit_checks": 75,
+      "audit_sha256": "f1cadc457bd00f817b998efb80ec2716e73ae3bd25832452797ba2c0e1ffc2ab"
+    },
+    {
+      "pair": 1,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 189,
+      "releases": 0,
+      "retained_commit_checks": 122,
+      "audit_sha256": "2ff8cb50a1a6ef6067b596b7b467dcbe7b2103f8f57a45b2f986fff75a8654fe"
+    },
+    {
+      "pair": 1,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 189,
+      "releases": 0,
+      "retained_commit_checks": 122,
+      "audit_sha256": "dc45ea2e775b0371a309dc0ec1773e8787a0d6edf9d9e0170dc4c9b7060fe68e"
+    },
+    {
+      "pair": 2,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 107,
+      "releases": 0,
+      "retained_commit_checks": 72,
+      "audit_sha256": "6dc523f53982447b7ca43bb8e911bf104aa4c468b839356efde48fc64d8eaacd"
+    },
+    {
+      "pair": 2,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 107,
+      "releases": 2,
+      "retained_commit_checks": 72,
+      "audit_sha256": "5a41587f2331c793c0add8cadbd2f84c376f32daa93d6a8c038461818313dfe7"
+    },
+    {
+      "pair": 3,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 488,
+      "releases": 0,
+      "retained_commit_checks": 366,
+      "audit_sha256": "afc87706286c803af6164e1c553f2cb9a00e29fbbb1e4a5c1fa70a891447caf5"
+    },
+    {
+      "pair": 3,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 488,
+      "releases": 6,
+      "retained_commit_checks": 366,
+      "audit_sha256": "c9f50b7ce6ce11e62bfdda4292df50815ebd228c898759435163b2dfd33bad66"
+    },
+    {
+      "pair": 4,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 134,
+      "releases": 0,
+      "retained_commit_checks": 86,
+      "audit_sha256": "1c5ef2bb022bf3ba6dea38f61b439f3348a236beb26f89e4f9235028d14680f2"
+    },
+    {
+      "pair": 4,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 134,
+      "releases": 0,
+      "retained_commit_checks": 86,
+      "audit_sha256": "372cae65156538b863f855b7fcb451902ce83b16647776421ac69c89540cdfe9"
+    },
+    {
+      "pair": 5,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 130,
+      "releases": 0,
+      "retained_commit_checks": 87,
+      "audit_sha256": "95ce58055aa08017e47518976dfeab78ec7bc9327a93ee3fe0f1d20f37e4f5b8"
+    },
+    {
+      "pair": 5,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 130,
+      "releases": 0,
+      "retained_commit_checks": 87,
+      "audit_sha256": "6494678166c655f6b3008dae3f871a16b2efe2c6117492b35805caa16505ab85"
+    },
+    {
+      "pair": 6,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 460,
+      "releases": 0,
+      "retained_commit_checks": 339,
+      "audit_sha256": "48745e4dc168fa54dd8139a4917206991be9e869c4b0c6ad154932fda0d6c68b"
+    },
+    {
+      "pair": 6,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 460,
+      "releases": 8,
+      "retained_commit_checks": 339,
+      "audit_sha256": "84ddf17fc4cac0c5316a7f73b48bc9733eb43d96e59bd2f16c5088704ccd06a8"
+    },
+    {
+      "pair": 7,
+      "arm": "a",
+      "mode": "off",
+      "proposals": 146,
+      "releases": 0,
+      "retained_commit_checks": 94,
+      "audit_sha256": "52120fe57cd089aaf2bfbb186b225db41d113cc01436675ec4c609114c6dfeef"
+    },
+    {
+      "pair": 7,
+      "arm": "b",
+      "mode": "once",
+      "proposals": 146,
+      "releases": 1,
+      "retained_commit_checks": 94,
+      "audit_sha256": "db165708c4b67e92538f9fcaf3b27fb6af9a4759ffd9ce3942e3928530bd8e1e"
+    }
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/review_completed_pairs_v2.py": "2f85f4ded1a8266bf7fdf88c404916273fa8b96cf9093b781efb1815f2e3fa06"
+  },
+  "limitation": "Exact binding and exhaustive bounded-commit audit; no safety/causal superiority certification."
+}

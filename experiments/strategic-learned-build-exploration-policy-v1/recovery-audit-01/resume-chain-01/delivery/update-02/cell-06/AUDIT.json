@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "samples_admitted": 58,
+  "policy_moves": 52,
+  "pipeline_epoch": "strategic-learned-build-exploration-training-v1",
+  "economy_epoch": "learned-economy-build-v1",
+  "policy_builds": 2,
+  "policy_end_turns": 4,
+  "automatic_end_turns_excluded": 5,
+  "sampling_device": "cuda",
+  "replay_actions_logprobs_values_rng_exact": true,
+  "optimizer_steps": 0,
+  "native_episode_winner": "blue",
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-02/cell-06/raw-audit/AUDIT.json": "aaf8b6daae17a59c2a1af78718a9982fa9078bf2b1c912dd544b19f50a446341",
+    "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-02/cell-06/native/agent/sampling-state.pt": "9eabe981774ffababde5266ebfb3f2eb8fe61d1b6a9f53257f4f84d9511b34e0",
+    "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-02/cell-06/native/agent/typed-broker.jsonl": "6c6fe67006948e8a24c85af8439745ef11acc1d7141413423af7a59b9255ac9a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/admit_episode_v5.py": "2e8233767d589fb58e84a1fd27528ee0da1e0e90a1066a60de5da1092d1fd934"
+  },
+  "output_sha256": {
+    "samples.jsonl": "15e9685d106c69a6cc59412fca4a98fae6e6a1b736a15f6ebe52faed506c2c06",
+    "episode.json": "ea92a361024c131d9e5b932d4345500ac4a8df3abaad23066c8261de3ac67198"
+  }
+}

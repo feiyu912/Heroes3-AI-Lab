@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "mechanism_pass": true,
+      "normal_game": false,
+      "winner": null,
+      "query_removed_line": 7901,
+      "request_evidence": [
+        {
+          "op": "move",
+          "request_id": 3,
+          "sent_line": 7762,
+          "received_line": 7781,
+          "applied_line": 7825
+        },
+        {
+          "op": "move",
+          "request_id": 4,
+          "sent_line": 7833,
+          "received_line": 7836,
+          "applied_line": 7895
+        },
+        {
+          "op": "close",
+          "request_id": 5,
+          "sent_line": 7884,
+          "received_line": 7897,
+          "applied_line": 7916
+        },
+        {
+          "op": "endturn",
+          "request_id": 6,
+          "sent_line": 7939,
+          "received_line": 7942,
+          "applied_line": 7954
+        }
+      ],
+      "donor_before": {
+        "0": 10,
+        "2": 3
+      },
+      "donor_after": {
+        "0": 10,
+        "2": 3
+      },
+      "receiver_before": {
+        "0": 5
+      },
+      "receiver_after": {
+        "0": 5
+      },
+      "run": "multihero-probe-close-04",
+      "variant": "close-only",
+      "raw_sha256": {
+        "client.log": "3068c92f7b3802e26bac30d57d284bbd02596dc6ce3b5df5197d4a7d7a15701e",
+        "probe.jsonl": "91ef53a85cb00309ccbedcbf2be062e7aff098343140e7b302d58f7928472d5e",
+        "strategy-trace.jsonl": "26837cbe83909475d477988f8666e21a310d33dc129cb6eb6ee2fd6c951e5de1",
+        "execution.json": "cd88e3f4b85b3338645e09da26aac5d30c87e4e72cc1bd22ede9068851e85389",
+        "plan.json": "d5e70ffb7cbbbdbfb6d15ea504e96bad67373eb5989e4415279aa8164e1a9f2f"
+      }
+    },
+    {
+      "mechanism_pass": true,
+      "normal_game": false,
+      "winner": null,
+      "query_removed_line": 7926,
+      "request_evidence": [
+        {
+          "op": "move",
+          "request_id": 3,
+          "sent_line": 7762,
+          "received_line": 7766,
+          "applied_line": 7825
+        },
+        {
+          "op": "move",
+          "request_id": 4,
+          "sent_line": 7833,
+          "received_line": 7836,
+          "applied_line": 7892
+        },
+        {
+          "op": "transfer",
+          "request_id": 5,
+          "sent_line": 7893,
+          "received_line": 7897,
+          "applied_line": 7909
+        },
+        {
+          "op": "close",
+          "request_id": 6,
+          "sent_line": 7919,
+          "received_line": 7922,
+          "applied_line": 7949
+        },
+        {
+          "op": "endturn",
+          "request_id": 7,
+          "sent_line": 7960,
+          "received_line": 7963,
+          "applied_line": 7988
+        }
+      ],
+      "donor_before": {
+        "0": 10,
+        "2": 3
+      },
+      "donor_after": {
+        "2": 3
+      },
+      "receiver_before": {
+        "0": 5
+      },
+      "receiver_after": {
+        "0": 15
+      },
+      "run": "multihero-probe-transfer-01",
+      "variant": "transfer-close",
+      "raw_sha256": {
+        "client.log": "42337b27a880894c5cf6ef06af780ab596d6afd7594fdb3f14aa05df3508f045",
+        "probe.jsonl": "a60415da8895e006b3ac4e574bccd799f2af07b11a53cd7c9a2f13ac1b798c38",
+        "strategy-trace.jsonl": "806607cb9811b4a779beeeb8dc045265da394676963ad4b3e269cc75c66bb2c1",
+        "execution.json": "ab3e1f57de2582abf1e32d0cedccb7ff0f55786f886cb75b5756f6ec1ec5c314",
+        "plan.json": "10a76dfb49a40b9864cf9644d07f44346656a342a800310b922f877ee50b2849"
+      }
+    },
+    {
+      "negative_control_stalled_with_open_query": true,
+      "normal_game": false,
+      "winner": null,
+      "request_evidence": [
+        {
+          "op": "move",
+          "request_id": 3,
+          "sent_line": 7762,
+          "received_line": 7766,
+          "applied_line": 7825
+        },
+        {
+          "op": "move",
+          "request_id": 4,
+          "sent_line": 7833,
+          "received_line": 7835,
+          "applied_line": 7892
+        }
+      ],
+      "run": "multihero-probe-unhandled-01",
+      "variant": "original-unhandled",
+      "raw_sha256": {
+        "client.log": "8fed64ab337dac9a3efd44e9aa4f776929cc3c12d07537565fbb121f18ee4fd0",
+        "probe.jsonl": "6a25f388c5b541852e5d2681b92ecd29ad0d244aae9fc32e11d2d813a1227edd",
+        "strategy-trace.jsonl": "7960afb8b544016370db3db77c09e319933363570bc034dd0fc981afb7a5d70f",
+        "execution.json": "4063d8dca5a964ada08e5351f85d9b245f284c773cd7af1adce2128be7b1fa58",
+        "plan.json": "a14de4df4792b54b0db441e50d3b15bb6cfbd98f5aa6854f39567b757dbea026"
+      }
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "missing_native_transfer_apply",
+      "rejected": true
+    },
+    {
+      "case": "broken_army_conservation",
+      "rejected": true
+    },
+    {
+      "case": "wrong_transfer_ack_id",
+      "rejected": true
+    }
+  ],
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "scope": "Native two-owned-hero land meeting fixture only; no general courier AI or win-rate claim.",
+  "auditor_sha256": "0017d24adb4c65649102dafe7275be5d4cf5420fa0aeb10ab705ade4e0cd508b"
+}

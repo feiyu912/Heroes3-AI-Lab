@@ -1,0 +1,1538 @@
+[
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "amount": 44,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 12,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 26,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "amount": 44,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 12,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 26,
+          "type": "core:griffin"
+        }
+      ]
+    ],
+    "composition_index": 0,
+    "id": "confirmation-v2-00",
+    "map": "lab/confirmation-v2-00.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "5078e56a27962a898ce88bf5eb5a539e1709fda6b292331753d2752fcf565e5c",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 69,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 44,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {
+          "amount": 69,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 44,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 1,
+    "id": "confirmation-v2-01",
+    "map": "lab/confirmation-v2-01.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "9a737155275f845279fc8b635df30c4bccfb3fb1494871881ef05f802d4fe27b",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 16,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 37,
+          "type": "core:monk"
+        },
+        {
+          "amount": 26,
+          "type": "core:cavalier"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 16,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 37,
+          "type": "core:monk"
+        },
+        {
+          "amount": 26,
+          "type": "core:cavalier"
+        }
+      ]
+    ],
+    "composition_index": 2,
+    "id": "confirmation-v2-02",
+    "map": "lab/confirmation-v2-02.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "d6b3d7894659de3540df02dc7cdfd39f69332390bbd31c115a9a5fb84ce64c9d",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 71,
+          "type": "core:dwarf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 33,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {
+          "amount": 71,
+          "type": "core:dwarf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 33,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:unicorn"
+        }
+      ]
+    ],
+    "composition_index": 3,
+    "id": "confirmation-v2-03",
+    "map": "lab/confirmation-v2-03.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "be6f8573cd10d34b6c1e424145d2fda2d7c0570f255733cbd917bf60a6c99ba7",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 74,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 44,
+          "type": "core:monk"
+        },
+        {
+          "amount": 19,
+          "type": "core:pegasus"
+        },
+        {},
+        {}
+      ],
+      [
+        {},
+        {
+          "amount": 74,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 44,
+          "type": "core:monk"
+        },
+        {
+          "amount": 19,
+          "type": "core:pegasus"
+        },
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 4,
+    "id": "confirmation-v2-04",
+    "map": "lab/confirmation-v2-04.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "b796c414c33341f59168118d1c44ec16c562bcdae4b22dddc24fda4318e5db23",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 71,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {},
+        {
+          "amount": 47,
+          "type": "core:archer"
+        },
+        {
+          "amount": 4,
+          "type": "core:griffin"
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "amount": 71,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {},
+        {
+          "amount": 47,
+          "type": "core:archer"
+        },
+        {
+          "amount": 4,
+          "type": "core:griffin"
+        },
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 5,
+    "id": "confirmation-v2-05",
+    "map": "lab/confirmation-v2-05.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "4a0e1b2d60af82d03ef3e832bdbaba938818b2b810da7691d01c8422b79e78d8",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 58,
+          "type": "core:halberdier"
+        },
+        {},
+        {
+          "amount": 25,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 5,
+          "type": "core:royalGriffin"
+        }
+      ],
+      [
+        {
+          "amount": 58,
+          "type": "core:halberdier"
+        },
+        {},
+        {
+          "amount": 25,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 5,
+          "type": "core:royalGriffin"
+        }
+      ]
+    ],
+    "composition_index": 6,
+    "id": "confirmation-v2-06",
+    "map": "lab/confirmation-v2-06.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "9cd187006969e202f69d6c6c6f22a47881939d49309863e263e151abe96a3776",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 49,
+          "type": "core:centaurCaptain"
+        },
+        {
+          "amount": 46,
+          "type": "core:grandElf"
+        },
+        {},
+        {
+          "amount": 28,
+          "type": "core:silverPegasus"
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "amount": 49,
+          "type": "core:centaurCaptain"
+        },
+        {
+          "amount": 46,
+          "type": "core:grandElf"
+        },
+        {},
+        {
+          "amount": 28,
+          "type": "core:silverPegasus"
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 7,
+    "id": "confirmation-v2-07",
+    "map": "lab/confirmation-v2-07.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "4f60646ea54c204acf19d743f80ac2daa2172549c2b19f85214f895d3663e301",
+    "split": "confirmation-test-v2",
+    "variant_index": 0
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 23,
+          "type": "core:archer"
+        },
+        {},
+        {
+          "amount": 7,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 23,
+          "type": "core:archer"
+        },
+        {},
+        {
+          "amount": 7,
+          "type": "core:griffin"
+        }
+      ]
+    ],
+    "composition_index": 0,
+    "id": "confirmation-v2-08",
+    "map": "lab/confirmation-v2-08.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "a451750b4606a9657529c6747c11863413a19bba15c09249ccab099a4f202b47",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 18,
+          "type": "core:centaur"
+        },
+        {},
+        {},
+        {
+          "amount": 47,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 18,
+          "type": "core:centaur"
+        },
+        {},
+        {},
+        {
+          "amount": 47,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 1,
+    "id": "confirmation-v2-09",
+    "map": "lab/confirmation-v2-09.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "5be111f12e85328c2c11807c06cefaac95feb6a52208ccb6a4a64aecc205e8c4",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 20,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 21,
+          "type": "core:cavalier"
+        }
+      ],
+      [
+        {
+          "amount": 20,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 21,
+          "type": "core:cavalier"
+        }
+      ]
+    ],
+    "composition_index": 2,
+    "id": "confirmation-v2-10",
+    "map": "lab/confirmation-v2-10.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "7d365a9d4ae401d115c146aa587330dbb8e3025df64ee459784d51ac4be950bc",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 33,
+          "type": "core:dwarf"
+        },
+        {
+          "amount": 49,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:unicorn"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 33,
+          "type": "core:dwarf"
+        },
+        {
+          "amount": 49,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:unicorn"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 3,
+    "id": "confirmation-v2-11",
+    "map": "lab/confirmation-v2-11.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "a6c0c8057949cb183faf24d09daf84c8aa0ce68ea0b760cca258ead27ca9be0d",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 67,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 49,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 4,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 67,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 49,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 4,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 4,
+    "id": "confirmation-v2-12",
+    "map": "lab/confirmation-v2-12.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "87d9e9f3df84744ef446682fac44b76b1f7b7af155d3499c153b014b9fa97cc1",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:dendroidGuard"
+        },
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {
+          "amount": 29,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:dendroidGuard"
+        },
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {
+          "amount": 29,
+          "type": "core:griffin"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 5,
+    "id": "confirmation-v2-13",
+    "map": "lab/confirmation-v2-13.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "0df776788167e50fd024032ec7a35c8d400c22d87b068e2d62bddc8112a87534",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 25,
+          "type": "core:halberdier"
+        },
+        {
+          "amount": 29,
+          "type": "core:marksman"
+        },
+        {},
+        {
+          "amount": 26,
+          "type": "core:royalGriffin"
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "amount": 25,
+          "type": "core:halberdier"
+        },
+        {
+          "amount": 29,
+          "type": "core:marksman"
+        },
+        {},
+        {
+          "amount": 26,
+          "type": "core:royalGriffin"
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 6,
+    "id": "confirmation-v2-14",
+    "map": "lab/confirmation-v2-14.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "19eaa30d4b95c371d6253658f983a1cc0b05b889ea3ab689b89ea706f3d522dd",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 54,
+          "type": "core:centaurCaptain"
+        },
+        {},
+        {},
+        {
+          "amount": 49,
+          "type": "core:grandElf"
+        },
+        {
+          "amount": 10,
+          "type": "core:silverPegasus"
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "amount": 54,
+          "type": "core:centaurCaptain"
+        },
+        {},
+        {},
+        {
+          "amount": 49,
+          "type": "core:grandElf"
+        },
+        {
+          "amount": 10,
+          "type": "core:silverPegasus"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 7,
+    "id": "confirmation-v2-15",
+    "map": "lab/confirmation-v2-15.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "f51568ebcfac5dd573326abdf1b65a46b1b1f0589eb972662bb6bcc5b7a504b7",
+    "split": "confirmation-test-v2",
+    "variant_index": 1
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 48,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 13,
+          "type": "core:archer"
+        },
+        {
+          "amount": 10,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 48,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 13,
+          "type": "core:archer"
+        },
+        {
+          "amount": 10,
+          "type": "core:griffin"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 0,
+    "id": "confirmation-v2-16",
+    "map": "lab/confirmation-v2-16.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "c66663caf667554fb0a1b3e84b9f7d19d660051c66683b526e326e71c801bab8",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 40,
+          "type": "core:centaur"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 40,
+          "type": "core:centaur"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 1,
+    "id": "confirmation-v2-17",
+    "map": "lab/confirmation-v2-17.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "164a009a8688ad3fb7cfd07bb9f8b67a1978e83a0966d50f2199948f722c9073",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 10,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:monk"
+        },
+        {
+          "amount": 18,
+          "type": "core:cavalier"
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 10,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:monk"
+        },
+        {
+          "amount": 18,
+          "type": "core:cavalier"
+        }
+      ]
+    ],
+    "composition_index": 2,
+    "id": "confirmation-v2-18",
+    "map": "lab/confirmation-v2-18.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "e5cfd1c09298506982407de12fd826c57f4f5173dd9cbcc29c22ce28b81efb3f",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 48,
+          "type": "core:dwarf"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 48,
+          "type": "core:dwarf"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:unicorn"
+        }
+      ]
+    ],
+    "composition_index": 3,
+    "id": "confirmation-v2-19",
+    "map": "lab/confirmation-v2-19.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "8472f22073be774bbdb6b1df0a87e1ee492d9c54f82d12a93bf75518f4691f80",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 67,
+          "type": "core:pikeman"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {
+          "amount": 67,
+          "type": "core:pikeman"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 4,
+    "id": "confirmation-v2-20",
+    "map": "lab/confirmation-v2-20.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "983780c83ff17761d6b5102ae95bc2aa3d071c5cdb0d4a1c0cb812a94589d79d",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 29,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {
+          "amount": 6,
+          "type": "core:griffin"
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "amount": 29,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {
+          "amount": 6,
+          "type": "core:griffin"
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 5,
+    "id": "confirmation-v2-21",
+    "map": "lab/confirmation-v2-21.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "deae072de3ff328bcdc2902f046a27e8bf82e13987992d8d4c72395c65f4201e",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "amount": 69,
+          "type": "core:halberdier"
+        },
+        {
+          "amount": 6,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:royalGriffin"
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "amount": 69,
+          "type": "core:halberdier"
+        },
+        {
+          "amount": 6,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:royalGriffin"
+        }
+      ]
+    ],
+    "composition_index": 6,
+    "id": "confirmation-v2-22",
+    "map": "lab/confirmation-v2-22.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "25b1eeebe000a7a08d1ed8072d28714018fb25d327c09ec2fe7c81a7413f55e0",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 14,
+          "type": "core:centaurCaptain"
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "amount": 35,
+          "type": "core:grandElf"
+        },
+        {
+          "amount": 20,
+          "type": "core:silverPegasus"
+        }
+      ],
+      [
+        {
+          "amount": 14,
+          "type": "core:centaurCaptain"
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "amount": 35,
+          "type": "core:grandElf"
+        },
+        {
+          "amount": 20,
+          "type": "core:silverPegasus"
+        }
+      ]
+    ],
+    "composition_index": 7,
+    "id": "confirmation-v2-23",
+    "map": "lab/confirmation-v2-23.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "9c96b19bdd87bf357aa5f1cc1c836cd37b6333a05282c33af966d6d1cf1c5dbc",
+    "split": "confirmation-test-v2",
+    "variant_index": 2
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 23,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 19,
+          "type": "core:archer"
+        },
+        {
+          "amount": 22,
+          "type": "core:griffin"
+        },
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "amount": 23,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 19,
+          "type": "core:archer"
+        },
+        {
+          "amount": 22,
+          "type": "core:griffin"
+        },
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "composition_index": 0,
+    "id": "confirmation-v2-24",
+    "map": "lab/confirmation-v2-24.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "0d9d329c2014d5abe77013a55fa2a3c754661ad7777175259f0dc6bfcb9f5687",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "amount": 22,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 11,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "amount": 22,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 11,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 1,
+    "id": "confirmation-v2-25",
+    "map": "lab/confirmation-v2-25.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "ce335c6b751cc8ab9ca5e9cbfcb41676b90808f7414f61cdf5667a81f67dcf1f",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 65,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "amount": 28,
+          "type": "core:monk"
+        },
+        {
+          "amount": 20,
+          "type": "core:cavalier"
+        }
+      ],
+      [
+        {
+          "amount": 65,
+          "type": "core:swordsman"
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "amount": 28,
+          "type": "core:monk"
+        },
+        {
+          "amount": 20,
+          "type": "core:cavalier"
+        }
+      ]
+    ],
+    "composition_index": 2,
+    "id": "confirmation-v2-26",
+    "map": "lab/confirmation-v2-26.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "4507be05014f4bf0227ffbe1d8de3ceb86fa18f07bba297ce6bbf6020fa7362b",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 19,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 25,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 20,
+          "type": "core:unicorn"
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "amount": 19,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 25,
+          "type": "core:woodElf"
+        },
+        {},
+        {
+          "amount": 20,
+          "type": "core:unicorn"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 3,
+    "id": "confirmation-v2-27",
+    "map": "lab/confirmation-v2-27.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "e60267870944d2b36dc1650586f1c8b9bcd8ea1427e27ee96ada123e31d595c0",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 26,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 44,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 26,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 44,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "composition_index": 4,
+    "id": "confirmation-v2-28",
+    "map": "lab/confirmation-v2-28.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "b5cbfdc79a5400ed71dcb10519c91dd7f5313a0bbc803ae24ccaea5f3a2549e3",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {
+          "amount": 65,
+          "type": "core:dendroidGuard"
+        },
+        {
+          "amount": 20,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 9,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 65,
+          "type": "core:dendroidGuard"
+        },
+        {
+          "amount": 20,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {},
+        {
+          "amount": 9,
+          "type": "core:griffin"
+        },
+        {}
+      ]
+    ],
+    "composition_index": 5,
+    "id": "confirmation-v2-29",
+    "map": "lab/confirmation-v2-29.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "2ea8d3228ed193b2b86f19114cdab55171682b21a2dbe256a9fd79b685e6d721",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {},
+        {
+          "amount": 72,
+          "type": "core:halberdier"
+        },
+        {},
+        {
+          "amount": 10,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:royalGriffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 72,
+          "type": "core:halberdier"
+        },
+        {},
+        {
+          "amount": 10,
+          "type": "core:marksman"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:royalGriffin"
+        }
+      ]
+    ],
+    "composition_index": 6,
+    "id": "confirmation-v2-30",
+    "map": "lab/confirmation-v2-30.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "78cb35a75fd52617fe69db363704337fce4512d89132ef5aa1fdd6406c54f497",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  },
+  {
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 42,
+          "type": "core:centaurCaptain"
+        },
+        {
+          "amount": 16,
+          "type": "core:grandElf"
+        },
+        {},
+        {
+          "amount": 28,
+          "type": "core:silverPegasus"
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "amount": 42,
+          "type": "core:centaurCaptain"
+        },
+        {
+          "amount": 16,
+          "type": "core:grandElf"
+        },
+        {},
+        {
+          "amount": 28,
+          "type": "core:silverPegasus"
+        }
+      ]
+    ],
+    "composition_index": 7,
+    "id": "confirmation-v2-31",
+    "map": "lab/confirmation-v2-31.vmap",
+    "random_obstacles": 0,
+    "scope": "Fresh counts and slots in eight previously defined creature compositions; exact mirror, no active hero magic; not unseen-creature generalization",
+    "sha256": "576002865b6714caf7c642a9203ead110aab8fb1c6ac2dfc00ca9cec53df24ec",
+    "split": "confirmation-test-v2",
+    "variant_index": 3
+  }
+]

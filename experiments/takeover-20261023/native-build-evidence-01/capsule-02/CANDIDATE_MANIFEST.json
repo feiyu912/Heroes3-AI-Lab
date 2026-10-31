@@ -1,0 +1,79 @@
+{
+  "schema": "director-learned-recruitment-schema6-v1",
+  "status": "reviewed-source-ready-not-compiled-or-native-qualified",
+  "build_allowed": true,
+  "native_run_allowed": false,
+  "mode": "build_recruit_v1",
+  "action_schema": "strategy-candidates-v6",
+  "response_schema": "strategy-typed-action-response-v3",
+  "economy_epoch": "learned-economy-build-recruit-v1",
+  "preserved_draft_manifest_sha256": "1a04aafe7372ef1b738d1bd297128c8e225d2cc1151ac48f0c31b13576d56590",
+  "parent_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "actual_parent_capsule": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02",
+  "compiled_parent_source_manifest_sha256": "b6e8131d4955151c57b562aef40f69701ff6cf734900e22c766b7332f71d7812",
+  "contract_sha256": "1f3a9d3c0777e31787df5e8cd2a2af1614d326a04f9b0f85ac0e83c3e42d15a3",
+  "build_driver_sha256": "fcb44690e69fe7d59e1587c9d2f2706c5141efb5394484d0c79c288b48c99552",
+  "derive_sha256": "467d1be3539b2d59162a1f9b2d4c7fb723fa4abb21a71e61160357f6304e9e22",
+  "source_evidence_sha256": "487c9a96d5c47dc30f1285f8e9b890e8cac1deba8567f8589420d831a09e843b",
+  "files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "baseline_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+      "draft_candidate_sha256": "9709ca9e77a6cea33c9b5b25b4bf392640e8d7c4b8905535bae6880b86a92608",
+      "parent_compiled_candidate_sha256": "10d84f3f68712ad1a8fefe7be7c6bc4d63aca1b44602e4aa5d251e4aaf207ae7",
+      "candidate_sha256": "2d7180f8101d2f60e83d28b84b462e82cd6534b5ce85ac4e13a76c56b7b40eb2"
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "baseline_sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "draft_candidate_sha256": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c",
+      "parent_compiled_candidate_sha256": "ce3bc61ca062ed592643a0f2852c70d26bf346a299b8b1e48b06ea4ffdfdd2df",
+      "candidate_sha256": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c"
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "baseline_sha256": null,
+      "draft_candidate_sha256": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c",
+      "parent_compiled_candidate_sha256": "41e657ef23f74b56402ba1985b3311a931f0cbf660574a785242af86174f974c",
+      "candidate_sha256": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c"
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "baseline_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "draft_candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "parent_compiled_candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+    },
+    "server/CGameHandler.cpp": {
+      "baseline_sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+      "draft_candidate_sha256": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d",
+      "parent_compiled_candidate_sha256": "3b05d16d3cf3b8977dfa501e7f65c935b6f2ea167e8b8eab734c7869952e47af",
+      "candidate_sha256": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d"
+    },
+    "server/CGameHandler.h": {
+      "baseline_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "draft_candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "parent_compiled_candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9"
+    },
+    "client/Client.h": {
+      "baseline_sha256": "353b9e02b8796b0bd19f5a293c1f0dc1a6adf1f8175af37722e6a9f03a9099cb",
+      "draft_candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "parent_compiled_candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde"
+    },
+    "client/NetPacksClient.cpp": {
+      "baseline_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+      "draft_candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+      "parent_compiled_candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+      "candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e"
+    },
+    "client/Client.cpp": {
+      "baseline_sha256": "ac0a5d7b3b2d01807bebc99ad54e27ab35b9f1eb55917cc84560f7e68165b209",
+      "draft_candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "parent_compiled_candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+    }
+  },
+  "qualification_runner_required": true,
+  "native_builds": 0,
+  "native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0
+}

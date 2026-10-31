@@ -1,0 +1,91 @@
+{
+  "plan": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/b64-anchor-plan.json",
+  "plan_sha256": "0b51ff49e7dc32203a5362f83c99a024a9ce74be235e0f86931ec2d980223ff1",
+  "controller_sha256": "00d2ea00114b178265a0a10bf7e56f18d6977f1d0da6ed89dee8e88e78dd8192",
+  "evaluation_script_sha256": "bfe7f266a9ef3665b2f04640512de3088b67e0e0a50bc2828f85f514a7dca0e3",
+  "prerequisites": [
+    {
+      "control": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/pilot-control.json",
+      "done": "completed_BC_pilot",
+      "pid": 193903,
+      "script": "run_pilot.py"
+    },
+    {
+      "control": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source-bc-control.json",
+      "done": "completed",
+      "pid": 206353,
+      "script": "train_source_wait.py"
+    },
+    {
+      "control": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/control.json",
+      "done": "development_retention_complete",
+      "pid": 201423,
+      "script": "run_retention.py"
+    }
+  ],
+  "development_scenarios": [
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239
+  ],
+  "roles": 2,
+  "seeds": 2,
+  "opponents": [
+    "BattleAI",
+    "MMAI_MODEL"
+  ],
+  "candidates": [
+    "b64-baseline",
+    "mixed-16",
+    "mixed-32"
+  ],
+  "games_per_matchup": 192,
+  "total_development_games": 1152,
+  "independent_confirmation": false,
+  "new_confirmation_results_used": false
+}

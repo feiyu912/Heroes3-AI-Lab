@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "classification": "scripted_evaluation_only",
+  "policy": "model",
+  "proposals": 189,
+  "frozen_model_recommendations_and_values_exact": true,
+  "overrides": 0,
+  "details": [],
+  "native_execution_proof_sha256": "504237c42e52384f31ae4bf7bc9a11af228a5ccdb6b271cdf9bfda744783dc3c",
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-02/pair-01/a/replan-audit/AUDIT.json": "504237c42e52384f31ae4bf7bc9a11af228a5ccdb6b271cdf9bfda744783dc3c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-02/pair-01/a/native/agent/typed-broker.jsonl": "4629033592750a10dfe3b068e3c7bbb8ee00e31dd9acab68cc0a42e5e0bd0699",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_proxy.py": "376c63d19cc66038d9002da371d60a37f805e7e8a80ef436da32fb05767fc80c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851"
+  },
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "limitation": "Real scripted actions and coordinate changes only. No safety, overall utility, human tactics or learning gain certification."
+}

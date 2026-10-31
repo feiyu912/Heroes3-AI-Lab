@@ -1,0 +1,10 @@
+{
+  "reason": "User explicitly requested 24 parallel environments during the running comparison",
+  "pids": {
+    "supervisor": 16589,
+    "trainer": 42236
+  },
+  "checkpoint_preserved": true,
+  "original_partial_report": "/mnt/g/Heroes3-AI-Lab/research/unlinked-v4-partial-12.json",
+  "note": "Intentional interruption, not a completed experiment; continuation records actual budget and changed rollout horizon"
+}

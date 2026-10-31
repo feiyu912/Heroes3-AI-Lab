@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "batched_and_independent_forward_equal": true,
+  "finite_graph_gradients": true,
+  "last_graph_layer_changes": true,
+  "frozen_earlier_layers_unchanged": true,
+  "potential_shaping_telescopes": true,
+  "probe_weights_excluded": true,
+  "total_parameters": 8993178,
+  "trainable_parameters": 1084450
+}

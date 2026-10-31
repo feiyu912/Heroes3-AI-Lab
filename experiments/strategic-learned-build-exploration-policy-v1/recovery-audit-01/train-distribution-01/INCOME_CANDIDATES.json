@@ -1,0 +1,50 @@
+[
+  {
+    "cell": "cell-03",
+    "decision_id": 126,
+    "candidates": [
+      {
+        "op": "build",
+        "actor": "player_town",
+        "town_id": 13,
+        "building_id": 12,
+        "category": "income",
+        "cost": {
+          "wood": 0,
+          "mercury": 0,
+          "ore": 0,
+          "sulfur": 0,
+          "crystal": 0,
+          "gems": 0,
+          "gold": 5000
+        }
+      }
+    ],
+    "initial_income_mass": 0.04444144666194916,
+    "trained_income_mass": 0.04887204244732857
+  },
+  {
+    "cell": "cell-05",
+    "decision_id": 160,
+    "candidates": [
+      {
+        "op": "build",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 12,
+        "category": "income",
+        "cost": {
+          "wood": 0,
+          "mercury": 0,
+          "ore": 0,
+          "sulfur": 0,
+          "crystal": 0,
+          "gems": 0,
+          "gold": 5000
+        }
+      }
+    ],
+    "initial_income_mass": 0.04052247479557991,
+    "trained_income_mass": 0.04560087248682976
+  }
+]

@@ -1,0 +1,607 @@
+{
+  "actual_model_freeze_created": false,
+  "all_128_hero_records_neutral": true,
+  "all_32_zip_readbacks_passed": true,
+  "amount_lower_inclusive": [
+    9,
+    5,
+    3
+  ],
+  "amount_upper_exclusive": [
+    75,
+    50,
+    30
+  ],
+  "candidate_model_selected": false,
+  "candidate_rejections": [],
+  "composition_counts": {
+    "0": 4,
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4
+  },
+  "duplicate_rule": "Reject candidate if its sorted creature/type-and-stack-count multiset occurs on either side of any listed fixture, ignoring slot positions; also reject duplicate new composition/counts",
+  "excluded_distinct_nonpositional_armies": 415,
+  "exclusion_manifest_sha256": {
+    "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/evidence/scenarios.json": "81d072df5f2d4796802e087f6ac1e154513ea50a2b7c38a05482a531f89e3a89",
+    "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/scenarios.json": "81d072df5f2d4796802e087f6ac1e154513ea50a2b7c38a05482a531f89e3a89",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/source-wait-scenarios.json": "0abd969a5836e84eb52846eed47978bf5c6b708a2b2910845bc350db885f0813",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/all-source-wait-scenarios.json": "3911afc99823d682c8c7b5cc868bb2f02030e989145a79f7cb2e9304af25e639",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/heldout-scenarios.json": "9e6c8f9bb2c7b55787e51ccf66c1401f74535a1d23e8b6c369bf260c42d77f6e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source-wait-scenarios.json": "e4e8531f007849558ad3d08c69f8598ea6e1801605d1941e8e6f784214c26fe2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v3/source-wait-scenarios.json": "5b06fb2f1e9dedb24963e0319eb4b85df3569f06ce51757fae32e66d69d812c7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json": "42ac6a8be298ba3f95a3c6d67ceccc52c9304aebe62dd0eb7bf9adb77a9bb0dc",
+    "/mnt/g/Heroes3-AI-Lab/research/challenge-holdout.json": "0f85e26f9a06faa7317ad462066f5013339a562af0e9eb9c84ee798a8039bdc5",
+    "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json": "8af02c4b126a4bc59abb837ca6e67f0d5c9b3f7bf40207209a132f43b89162e1",
+    "/mnt/g/Heroes3-AI-Lab/research/scenarios-v1.json": "8d635d7a3656f2349bef19c951bde54e38ea45088b296d758ccec2c4bc6f12fe",
+    "/mnt/g/Heroes3-AI-Lab/research/scenarios-v2.json": "db1cf126b7fc04358bda8de221232c169c8078944286968bc420be1e59db8f53"
+  },
+  "exclusion_records_with_manifest_repetitions": 404,
+  "fixture_seed": 2026101601,
+  "generator_sha256": "d2a7956222b9dfcebf4b8b409a1a1c7994aaa9c55ec6cc64031ba36c5b714043",
+  "hero_definitions": {
+    "path": "/root/heroes3-ai-lab/data/vcmi/Mods/ML/Content/heroes.json",
+    "sha256": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+    "skills_specialty_spells_empty": true,
+    "used_ids": [
+      "hero_0",
+      "hero_1",
+      "hero_2",
+      "hero_3"
+    ]
+  },
+  "known_army_overlap": 0,
+  "maps": [
+    {
+      "case": "confirmation-v2-00",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "af3fc77795a19a99f09a8cb34b928957b5ac49da009ae521f224ef35e63badcf",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-00.vmap",
+      "sha256": "5078e56a27962a898ce88bf5eb5a539e1709fda6b292331753d2752fcf565e5c",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-01",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "6651a76c9b5cdf65c60a612c86a14e40590c2b06ccf65117f5a8922f635e977b",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-01.vmap",
+      "sha256": "9a737155275f845279fc8b635df30c4bccfb3fb1494871881ef05f802d4fe27b",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-02",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "698ca99aa98d61d3fce3685f6bab826a87edf96f17c2cc539cf36efa6f14c89f",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-02.vmap",
+      "sha256": "d6b3d7894659de3540df02dc7cdfd39f69332390bbd31c115a9a5fb84ce64c9d",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-03",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "89e393d53698a0483d0ecc870154d08f982c2e46c791f66757414885de3745b4",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-03.vmap",
+      "sha256": "be6f8573cd10d34b6c1e424145d2fda2d7c0570f255733cbd917bf60a6c99ba7",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-04",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "c1234e979f95be3c4c751436d10a91c5154547e1163db6703b414a53de9a7416",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-04.vmap",
+      "sha256": "b796c414c33341f59168118d1c44ec16c562bcdae4b22dddc24fda4318e5db23",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-05",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "05548d60773e43ebe225203ea2ef3654bd7945c67f7e2ad8c18e5a72e6d33925",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-05.vmap",
+      "sha256": "4a0e1b2d60af82d03ef3e832bdbaba938818b2b810da7691d01c8422b79e78d8",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-06",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "7566862e0dbfbdf3b7862259e2655bd2564fe3b645ed8829239d78eee3d9315f",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-06.vmap",
+      "sha256": "9cd187006969e202f69d6c6c6f22a47881939d49309863e263e151abe96a3776",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-07",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "3b9240a043fb52e2d650e7ad4af441fca136db132405f6724dd68828cc7e3295",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-07.vmap",
+      "sha256": "4f60646ea54c204acf19d743f80ac2daa2172549c2b19f85214f895d3663e301",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-08",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "ae87d2afd7799188a02753be5f1b3607ba3f9af27995c810489e2aeada46b116",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-08.vmap",
+      "sha256": "a451750b4606a9657529c6747c11863413a19bba15c09249ccab099a4f202b47",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-09",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "3d6ae1e6d38ba498d0e36f09a4a091cfd8d811924f1cead9d711c3baca7c95bc",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-09.vmap",
+      "sha256": "5be111f12e85328c2c11807c06cefaac95feb6a52208ccb6a4a64aecc205e8c4",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-10",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "11bd84153f5f679ecd652606d191df4c2bb9ab9e1ad8f3d4c511a3287daedae5",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-10.vmap",
+      "sha256": "7d365a9d4ae401d115c146aa587330dbb8e3025df64ee459784d51ac4be950bc",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-11",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "d2ef2bd5ee2728bd781ef9b76b874827e8f88f8198c692a38b8cb47df8e71416",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-11.vmap",
+      "sha256": "a6c0c8057949cb183faf24d09daf84c8aa0ce68ea0b760cca258ead27ca9be0d",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-12",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "cfe15f2bb8b77546942b4386491ede3079fc515bbe6c5dcbfd30e5ea36fda03d",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-12.vmap",
+      "sha256": "87d9e9f3df84744ef446682fac44b76b1f7b7af155d3499c153b014b9fa97cc1",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-13",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "d73d839e9019da0b322de5a362548f58f459360d84521220feb94883c2ec5da4",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-13.vmap",
+      "sha256": "0df776788167e50fd024032ec7a35c8d400c22d87b068e2d62bddc8112a87534",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-14",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "778136df038ab5f9184792a613d753a2713f25b814aca23615a6f58646db7aae",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-14.vmap",
+      "sha256": "19eaa30d4b95c371d6253658f983a1cc0b05b889ea3ab689b89ea706f3d522dd",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-15",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "5d90b683f9b87aeef646c1cfd67ae2a054367458ec97ba478588701d1dce4937",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-15.vmap",
+      "sha256": "f51568ebcfac5dd573326abdf1b65a46b1b1f0589eb972662bb6bcc5b7a504b7",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-16",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "e3bf7da7fa76cad2eada6b2d4be459e9e8f0a168ca459feeda86252be7642e1c",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-16.vmap",
+      "sha256": "c66663caf667554fb0a1b3e84b9f7d19d660051c66683b526e326e71c801bab8",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-17",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "44fb0f4e6995cf702a0ee8dd95734fb96835f88dc23f7e179137f62ac00db269",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-17.vmap",
+      "sha256": "164a009a8688ad3fb7cfd07bb9f8b67a1978e83a0966d50f2199948f722c9073",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-18",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "b89a6a9617a317d9629a4b468dd05227350f0ef4c01af769b29b002b5cb1ff40",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-18.vmap",
+      "sha256": "e5cfd1c09298506982407de12fd826c57f4f5173dd9cbcc29c22ce28b81efb3f",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-19",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "97deb14224e8afed55ec92623dcf5e020e7e400ea15fd05ab01898e5e6f638d7",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-19.vmap",
+      "sha256": "8472f22073be774bbdb6b1df0a87e1ee492d9c54f82d12a93bf75518f4691f80",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-20",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "cc201a1ac959a6923c267cbd2f5347537c5834b09fe944e14c464e1d02196611",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-20.vmap",
+      "sha256": "983780c83ff17761d6b5102ae95bc2aa3d071c5cdb0d4a1c0cb812a94589d79d",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-21",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "dff2f79ccbd854e1fe9fcdf860c5d168bdde57b3a1ae2b9b2cccde4bbfcf755c",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-21.vmap",
+      "sha256": "deae072de3ff328bcdc2902f046a27e8bf82e13987992d8d4c72395c65f4201e",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-22",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "42087fde8080fb31ef5f32a4b3b3f9ec46be6791fda8a9868d511f932ed6a339",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-22.vmap",
+      "sha256": "25b1eeebe000a7a08d1ed8072d28714018fb25d327c09ec2fe7c81a7413f55e0",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-23",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "ff3961b9804fc9f63c27ce98d75338e3bed4fcf5fef56f42de477e146c4e7e10",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-23.vmap",
+      "sha256": "9c96b19bdd87bf357aa5f1cc1c836cd37b6333a05282c33af966d6d1cf1c5dbc",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-24",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "8fd0ba76a51d8ab5717341a7d393b0e0fa3dc78b129b39e6ef9ccab42aa2ce28",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-24.vmap",
+      "sha256": "0d9d329c2014d5abe77013a55fa2a3c754661ad7777175259f0dc6bfcb9f5687",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-25",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "aca8b92c727a384d572a97219c3a67feaa983d2f3f719f1496294f0c6dfd0973",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-25.vmap",
+      "sha256": "ce335c6b751cc8ab9ca5e9cbfcb41676b90808f7414f61cdf5667a81f67dcf1f",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-26",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "9c137c233542be540f977823afb385c16b6bf959c53dfdf8a89affa7b2d83465",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-26.vmap",
+      "sha256": "4507be05014f4bf0227ffbe1d8de3ceb86fa18f07bba297ce6bbf6020fa7362b",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-27",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "18c0a3216b02827f57d5cebf92965d8c17d135552c41bfdad06ed16cccada97c",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-27.vmap",
+      "sha256": "e60267870944d2b36dc1650586f1c8b9bcd8ea1427e27ee96ada123e31d595c0",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-28",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "0334621a4b92c0c5fb5fb1179609b0bc32e8e12328d8a8fbd87bd966e6557140",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-28.vmap",
+      "sha256": "b5cbfdc79a5400ed71dcb10519c91dd7f5313a0bbc803ae24ccaea5f3a2549e3",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-29",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "988142af8da04634f15acfca6b56601cdc47eb45438568ce07ab6843d22ce2c0",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-29.vmap",
+      "sha256": "2ea8d3228ed193b2b86f19114cdab55171682b21a2dbe256a9fd79b685e6d721",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-30",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "11c335059fa360924fd5f29be857303aaa9621304cf1f35b3d1ed02c9ba32fc2",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-30.vmap",
+      "sha256": "78cb35a75fd52617fe69db363704337fce4512d89132ef5aa1fdd6406c54f497",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    },
+    {
+      "case": "confirmation-v2-31",
+      "exact_armies_and_slots_mirror": true,
+      "hero_count": 4,
+      "no_artifacts_or_preset_spells": true,
+      "non_objects_entries_identical_to_template": {
+        "header.json": "f8218b9cf1ba0e70301bfb953cc5b05adfd4e925d154c0bc1f281f27f87ab871",
+        "surface_terrain.json": "bc2ca4fb5eedf112b6821f7054f2a3b57002fd724697fa372efd8c8aaa5ce54c"
+      },
+      "objects_sha256": "b0ec517ad4ce61d0bba3179e732fd0822542f0e86a787cad6bf9ca8706f67b54",
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/confirmation-v2-31.vmap",
+      "sha256": "576002865b6714caf7c642a9203ead110aab8fb1c6ac2dfc00ca9cec53df24ec",
+      "zero_hero_primary_secondary_experience": true,
+      "zip_readback_passed": true
+    }
+  ],
+  "native_execution_performed": false,
+  "new_distinct_nonpositional_armies": 32,
+  "new_internal_duplicate_armies": 0,
+  "non_overwrite_policy": "Exclusive create if absent; if present require exact bytes and leave untouched",
+  "numpy_version": "2.2.6",
+  "original_rules_entries_preserved": true,
+  "pools": [
+    [
+      "pikeman",
+      "archer",
+      "griffin"
+    ],
+    [
+      "centaur",
+      "woodElf",
+      "pegasus"
+    ],
+    [
+      "swordsman",
+      "monk",
+      "cavalier"
+    ],
+    [
+      "dwarf",
+      "woodElf",
+      "unicorn"
+    ],
+    [
+      "pikeman",
+      "monk",
+      "pegasus"
+    ],
+    [
+      "dendroidGuard",
+      "archer",
+      "griffin"
+    ],
+    [
+      "halberdier",
+      "marksman",
+      "royalGriffin"
+    ],
+    [
+      "centaurCaptain",
+      "grandElf",
+      "silverPegasus"
+    ]
+  ],
+  "reference_generator": {
+    "path": "/mnt/g/Heroes3-AI-Lab/research/make-challenge-holdout.py",
+    "sha256": "d772c52b7cc244653c5a65cbf4543cd75cf8e89ae7d23dc3e9523ac3ba199b08"
+  },
+  "results_read": false,
+  "rng": "numpy default_rng PCG64",
+  "scenarios_sha256": "4959d4d0b711c6a552a6d61b636bc19d5971625058900adfcf10510e88d2cf3c",
+  "schema": "heroes3-confirmation-v2-fixture-audit",
+  "status": "static_fixture_checks_passed_not_native_executed",
+  "template": {
+    "path": "/root/heroes3-ai-lab/src/gym/maps/gym/ml-mini.vmap",
+    "sha256": "a12f0e0d1a4ac51c587b7ffd5d62a837e396e680a0adadcc27f9a04ec05a92f8"
+  },
+  "unknowns": [
+    "Native execution compatibility has not been tested",
+    "Public-model pretraining exposure to these creatures is unknown",
+    "Same template and eight known compositions; no new-creature or new-source generalization claim",
+    "Morale, luck, terrain and creature abilities follow the preserved engine/template, not newly controlled event-level experiments"
+  ]
+}

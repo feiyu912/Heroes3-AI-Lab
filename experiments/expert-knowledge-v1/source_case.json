@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case_id": "hallas-2001-dragon-retaliation-friendly-fire",
+  "status": "source_extracted_not_yet_engine_validated",
+  "source": {
+    "title": "Heroes III Complete Strategy Guide",
+    "author": "Richard Hallas",
+    "published_at": "2001-08-27",
+    "url": "https://www.insidemacgames.com/historical/features/view.php%3FID%3D64%26Page%3D5.html",
+    "resolved_url": "https://www.insidemacgames.com/historical/features/view.php%3FID=64&Page=5.html",
+    "type": "original_authored_text_tutorial",
+    "game_version_claimed": "Heroes III Complete; exact executable build unknown",
+    "location": {"page": 5, "section": "General combat tips / Make retaliation count", "paragraph_locator": "paragraph beginning If there's only one hex's gap"},
+    "short_quote": "attack on that side so that the blast also takes out some of the enemy's other creatures",
+    "quote_word_count": 17,
+    "accessed_at": "2026-10-15",
+    "access": "full_text_read_through_web_tool; no video or full text redistributed",
+    "rights": "publicly accessible copyrighted tutorial; retain link, metadata and brief quotation only; no reuse licence established",
+    "reliability": "first_person_authored_strategy_guide; named author and dated publication; not a game-engine specification; actual historical gameplay trace unavailable",
+    "expert_identity_limit": "Author provides a substantive contemporary strategy guide; tournament ranking or professional-player identity was not verified. Do not describe as authenticated tournament replay."
+  },
+  "tactic": {
+    "name": "Induce enemy dragon retaliation to damage its own rear stack",
+    "goal": "Trade a small legal melee attack for collateral damage to the dragon's allied stack",
+    "mechanism_claim": "A breath-capable dragon can damage a stack behind its melee target while retaliating",
+    "preconditions": ["Breath-capable dragon; not Bone/Ghost/Crystal/Faerie dragon merely because its name contains dragon", "The dragon can retaliate and survives the provoking strike", "Attacker permits retaliation; a no-enemy-retaliation creature is not a valid trigger", "Legal adjacent attack destination lies between dragon and the dragon's allied rear stack", "Correct axial attack vector and two-hex footprint; enumerate rather than guess from screenshot", "No required active hero spell"],
+    "operation_order": ["Construct a legal battle state containing enemy dragon, enemy rear stack and a provoking allied stack", "Enumerate legal AMOVE attacks and inspect actual affected stack IDs", "Execute the candidate attack; require a retaliation event and damage on dragon's own rear stack", "Replay identical seed with a geometry control that moves the rear stack outside the breath vector", "Compare own casualty value and enemy collateral damage; do not assume the tactic improves the entire battle"],
+    "failure_conditions": ["Retaliation exhausted or blocked", "Dragon dies on first hit", "Wrong breath vector or two-hex side ambiguity", "Friendly rear stack is absent from second hex", "Counterdamage costs more than the collateral benefit", "Opponent moves rear stack or attacks proactively"],
+    "offense": "Choose legal geometry that induces advantageous enemy friendly fire",
+    "defense": "Keep vulnerable allied stacks outside own dragon retaliation vectors, or deny the provoking attack",
+    "generality": "Rule-based tactical mechanism; distinct from a particular legacy AI valuation exploit",
+    "countermeasure_source_location": "same section, following paragraph beginning Conversely, when using your own dragons",
+    "source_unknowns": ["Exact historical battlefield coordinates", "Creature counts", "Dragon colour in demonstrated case", "Hero primary and secondary skills", "Seed", "Historical executable build"],
+    "reconstruction_policy": "Coordinates, counts, heroes and seeds supplied by the lab are experimental reconstructions, never presented as extracted human actions",
+    "vcmi_difference_status": "unknown_pending_pinned_engine_execution",
+    "confidence": {"source_interpretation": "high", "vcmi_compatibility": "unverified", "strategy_superiority": "unverified"}
+  },
+  "related_explicit_cases": [
+    {"name": "Protect ranged stacks while avoiding dragon or lich splash", "location": "General combat tips / Range-attacking troops, paragraphs beginning However, note and In reality", "claim_summary": "Bodyguards can protect shooters but clustered formations can expose multiple stacks to enemy area attacks", "needs_unknown": "Exact historical coordinates, unit counts and outcome", "status": "explicit_text_rule_and_advice_not_human_trajectory"},
+    {"name": "Offensive dragon placement avoids induced collateral", "location": "Make retaliation count / Conversely paragraph", "claim_summary": "When using one's own dragons, arrange allied troops so opposing attacks cannot exploit the retaliation breath vector", "status": "explicit_defensive_advice_not_best_action_label"}
+  ],
+  "integration_gate": "Do not place any sample into BC until actual pinned-VCMI execution verifies legality, event semantics and objective improvement; keep source claim, reconstructed state and measured result separate."
+}

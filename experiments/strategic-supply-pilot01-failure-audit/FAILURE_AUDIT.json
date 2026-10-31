@@ -1,0 +1,428 @@
+{
+  "schema": "stopped-supply-pilot-failure-audit-v1",
+  "registered_inputs_unchanged": true,
+  "execution_sha256": "84e304a816d9044c5b7778c695a886ab155076bc9cc1434abf0e4b0bddb5cb65",
+  "failure_episode": "map1-red-2026101852-legacy-policy",
+  "failed_native_complete": true,
+  "smoke_protocol_passed": true,
+  "failure_records": [
+    {
+      "line": 385,
+      "state": {
+        "event": "move_failed",
+        "player": 0,
+        "day": 18,
+        "own_turn": 18,
+        "gold": 17020,
+        "wood": 19,
+        "ore": 29,
+        "heroes": [
+          {
+            "id": 2,
+            "x": 11,
+            "y": 30,
+            "z": 0,
+            "movement": 1348,
+            "army": [
+              [
+                2,
+                48
+              ]
+            ]
+          }
+        ],
+        "towns": [
+          {
+            "id": 18,
+            "buildings": [
+              0,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              16,
+              30,
+              31
+            ],
+            "army": [],
+            "available": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": 10,
+            "buildings": [
+              0,
+              5,
+              10,
+              11,
+              12,
+              14,
+              16,
+              30
+            ],
+            "army": [],
+            "available": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "previous": [
+        384,
+        {
+          "event": "before_move",
+          "player": 0,
+          "day": 18,
+          "own_turn": 18,
+          "gold": 17020,
+          "wood": 19,
+          "ore": 29,
+          "heroes": [
+            {
+              "id": 2,
+              "x": 11,
+              "y": 30,
+              "z": 0,
+              "movement": 1348,
+              "army": [
+                [
+                  2,
+                  48
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 18,
+              "buildings": [
+                0,
+                5,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                30,
+                31
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 10,
+              "buildings": [
+                0,
+                5,
+                10,
+                11,
+                12,
+                14,
+                16,
+                30
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "next": [
+        386,
+        {
+          "event": "turn_end",
+          "player": 0,
+          "day": 18,
+          "own_turn": 18,
+          "gold": 17020,
+          "wood": 19,
+          "ore": 29,
+          "heroes": [
+            {
+              "id": 2,
+              "x": 11,
+              "y": 30,
+              "z": 0,
+              "movement": 1348,
+              "army": [
+                [
+                  2,
+                  48
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 18,
+              "buildings": [
+                0,
+                5,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                30,
+                31
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "id": 10,
+              "buildings": [
+                0,
+                5,
+                10,
+                11,
+                12,
+                14,
+                16,
+                30
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "log_failure_context": [],
+  "failed_evidence": {
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101852-legacy-policy-2026101852-zmo6lhma/strategy-trace.jsonl": "d188a6d1358ed7bdcf08b43a3f0e3a1bfaf9f282cf836cb16c53ba1e1c3c572a",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101852-legacy-policy-2026101852-zmo6lhma/client.log": "a1007c3afbec80b42fa7c06f1e69e790bc3c1eb1cea6824d1b8bbb4a88f6c35f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map1-red-2026101852-legacy-policy/smoke-result.json": "e2069d0af4e8435fc57ae84359959025da9c7534a30ad2cd6556c821dfd742e6"
+  },
+  "valid_audited_episodes": 10,
+  "first10": [
+    {
+      "tag": "map0-red-2026101851-legacy-policy",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-red-2026101851-legacy-policy/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101851,
+      "mode": "legacy-policy",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 24,
+      "delivered_count": 149,
+      "delivered_to_main_count": 103,
+      "override_count": 0,
+      "single_candidate_decisions": 196,
+      "trace_sha256": "7f7901cad37e445dfc77f49901ee5e3f1367518eb55ee5c1a035187e60443ef5"
+    },
+    {
+      "tag": "map0-red-2026101851-supply-aware",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-red-2026101851-supply-aware/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101851,
+      "mode": "supply-aware",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 24,
+      "delivered_count": 149,
+      "delivered_to_main_count": 103,
+      "override_count": 0,
+      "single_candidate_decisions": 196,
+      "trace_sha256": "7f7901cad37e445dfc77f49901ee5e3f1367518eb55ee5c1a035187e60443ef5"
+    },
+    {
+      "tag": "map0-red-2026101852-legacy-policy",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-red-2026101852-legacy-policy/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101852,
+      "mode": "legacy-policy",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 28,
+      "delivered_count": 149,
+      "delivered_to_main_count": 149,
+      "override_count": 0,
+      "single_candidate_decisions": 155,
+      "trace_sha256": "5bc1b1b3562babc49faf3ccb477ea1a1dd9c4db6501fdf60608b09e0524e1ae6"
+    },
+    {
+      "tag": "map0-red-2026101852-supply-aware",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-red-2026101852-supply-aware/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101852,
+      "mode": "supply-aware",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 28,
+      "delivered_count": 149,
+      "delivered_to_main_count": 149,
+      "override_count": 0,
+      "single_candidate_decisions": 155,
+      "trace_sha256": "5bc1b1b3562babc49faf3ccb477ea1a1dd9c4db6501fdf60608b09e0524e1ae6"
+    },
+    {
+      "tag": "map0-blue-2026101851-legacy-policy",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-blue-2026101851-legacy-policy/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101851,
+      "mode": "legacy-policy",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 8,
+      "delivered_count": 57,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 86,
+      "trace_sha256": "dbd31cdb0c8f02d71d3e76d278bfada2a6955d2d1f4da4fb98de097f8a29649a"
+    },
+    {
+      "tag": "map0-blue-2026101851-supply-aware",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-blue-2026101851-supply-aware/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101851,
+      "mode": "supply-aware",
+      "won": 0,
+      "original_main_status": "native_removed",
+      "original_main_loss_day": 8,
+      "delivered_count": 57,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 86,
+      "trace_sha256": "dbd31cdb0c8f02d71d3e76d278bfada2a6955d2d1f4da4fb98de097f8a29649a"
+    },
+    {
+      "tag": "map0-blue-2026101852-legacy-policy",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-blue-2026101852-legacy-policy/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101852,
+      "mode": "legacy-policy",
+      "won": 0,
+      "original_main_status": "terminal_betrayal_not_combat_death",
+      "original_main_loss_day": 11,
+      "delivered_count": 23,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 59,
+      "trace_sha256": "d17e3bbc36028382fb8fa717caf4aa0b4f47a3a36b4e4979ff18d4560e8f6b03"
+    },
+    {
+      "tag": "map0-blue-2026101852-supply-aware",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-blue-2026101852-supply-aware/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101852,
+      "mode": "supply-aware",
+      "won": 0,
+      "original_main_status": "terminal_betrayal_not_combat_death",
+      "original_main_loss_day": 11,
+      "delivered_count": 23,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 59,
+      "trace_sha256": "d17e3bbc36028382fb8fa717caf4aa0b4f47a3a36b4e4979ff18d4560e8f6b03"
+    },
+    {
+      "tag": "map1-red-2026101851-legacy-policy",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map1-red-2026101851-legacy-policy/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101851,
+      "mode": "legacy-policy",
+      "won": 0,
+      "original_main_status": "terminal_betrayal_not_combat_death",
+      "original_main_loss_day": 11,
+      "delivered_count": 23,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 70,
+      "trace_sha256": "e710fc141aa5eed825b33fd2f785f09565e3100d23a2eb6d0a0a85fd24fbad6b"
+    },
+    {
+      "tag": "map1-red-2026101851-supply-aware",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map1-red-2026101851-supply-aware/RAW_AUDIT.json",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101851,
+      "mode": "supply-aware",
+      "won": 0,
+      "original_main_status": "terminal_betrayal_not_combat_death",
+      "original_main_loss_day": 11,
+      "delivered_count": 23,
+      "delivered_to_main_count": 23,
+      "override_count": 0,
+      "single_candidate_decisions": 70,
+      "trace_sha256": "e710fc141aa5eed825b33fd2f785f09565e3100d23a2eb6d0a0a85fd24fbad6b"
+    }
+  ],
+  "supply_method_audited_decisions": 859,
+  "supply_method_single_candidate_decisions": 566,
+  "supply_candidate_opportunities": 99,
+  "reason_counts": {
+    "supply-aware-visible-v1:baseline_already_preferred_supply": 66,
+    "supply-aware-visible-v1:baseline_unknown_or_unprofitable": 793
+  },
+  "performance_claim": false,
+  "bc_eligible": 0
+}

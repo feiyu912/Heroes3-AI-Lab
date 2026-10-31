@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "actual legacy Q2 accepted only for exploratory BC",
+      "passed": true,
+      "samples": 15
+    },
+    {
+      "case": "actual legacy Q2 rejected by verified Q3 gate",
+      "passed": true
+    },
+    {
+      "case": "synthetic human JSONL illegal action rejected",
+      "passed": true
+    },
+    {
+      "case": "video-guessed action rejected as structured trajectory",
+      "passed": true
+    },
+    {
+      "case": "unknown terminal outcome rejected by BC Q3 gate",
+      "passed": true
+    }
+  ],
+  "real_human_trajectories_used": false,
+  "limitations": "Gate checks integrity and required evidence; no game replay, teacher optimality or human identity authentication occurs here."
+}

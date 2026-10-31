@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "workers": 12,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 342.60254368216863,
+      "peak_pss_mib": 5659.54296875,
+      "minimum_free_mib": 9876.6171875,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 12,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 335.53637674473714,
+      "peak_pss_mib": 5657.26953125,
+      "minimum_free_mib": 9877.40625,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 16,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 386.9323069398466,
+      "peak_pss_mib": 6897.1162109375,
+      "minimum_free_mib": 8625.546875,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 16,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 400.4685091693575,
+      "peak_pss_mib": 6909.6650390625,
+      "minimum_free_mib": 8615.53515625,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 20,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 407.54086496353386,
+      "peak_pss_mib": 8076.7041015625,
+      "minimum_free_mib": 7437.7578125,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 20,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 428.0305868035108,
+      "peak_pss_mib": 8105.15234375,
+      "minimum_free_mib": 7411.2421875,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 24,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 465.7102646328376,
+      "peak_pss_mib": 9283.5048828125,
+      "minimum_free_mib": 6222.50390625,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 24,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 464.5204912978578,
+      "peak_pss_mib": 9290.3623046875,
+      "minimum_free_mib": 6213.0,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 32,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 481.2819093346866,
+      "peak_pss_mib": 11725.373046875,
+      "minimum_free_mib": 3751.3515625,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 32,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 497.7745727816757,
+      "peak_pss_mib": 11742.5361328125,
+      "minimum_free_mib": 3734.9453125,
+      "swap_mib": 0.0
+    },
+    {
+      "workers": 40,
+      "repeat": 0,
+      "failed": true,
+      "returncode": 1
+    },
+    {
+      "workers": 48,
+      "failed": true,
+      "not_started": true,
+      "reason": "Smaller configuration already hit resource/startup guard; larger count not safe in current WSL memory limit"
+    }
+  ],
+  "completed": true,
+  "medians": {
+    "12": 339.0694602134529,
+    "16": 393.70040805460206,
+    "20": 417.78572588352233,
+    "24": 465.1153779653477,
+    "32": 489.52824105818115
+  },
+  "recommended_workers": 24,
+  "fixture": "Same linked model and real three-stack balanced-10 battle, CPU rules, GPU inference/update; two repetitions, warm first two updates omitted",
+  "selection": "Smallest tested count within 5% of fastest; no memory/swap/worker failures accepted"
+}

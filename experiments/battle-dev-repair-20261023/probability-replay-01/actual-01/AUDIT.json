@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "unique_games": 96,
+  "actual_full_NN_CPU_probability_replay": true,
+  "decisions": 2395,
+  "maximum_logit_error": 0.0,
+  "maximum_value_error": 0.0,
+  "maximum_probability_error": 0.0,
+  "absolute_tolerance": 1e-06,
+  "records": [
+    {
+      "model": "parent30",
+      "opponent": "BattleAI",
+      "games": 16,
+      "real_graph_decisions": 304,
+      "checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa"
+    },
+    {
+      "model": "parent30",
+      "opponent": "MMAI_MODEL",
+      "games": 16,
+      "real_graph_decisions": 477,
+      "checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa"
+    },
+    {
+      "model": "control",
+      "opponent": "BattleAI",
+      "games": 16,
+      "real_graph_decisions": 307,
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    },
+    {
+      "model": "control",
+      "opponent": "MMAI_MODEL",
+      "games": 16,
+      "real_graph_decisions": 488,
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    },
+    {
+      "model": "candidate",
+      "opponent": "BattleAI",
+      "games": 16,
+      "real_graph_decisions": 310,
+      "checkpoint_sha256": "cbac78e2f60e0d4942e6d689ca9878dd7288d9b4faa2dbdd5d7efcb104199bc7"
+    },
+    {
+      "model": "candidate",
+      "opponent": "MMAI_MODEL",
+      "games": 16,
+      "real_graph_decisions": 509,
+      "checkpoint_sha256": "cbac78e2f60e0d4942e6d689ca9878dd7288d9b4faa2dbdd5d7efcb104199bc7"
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "elapsed_seconds": 73.90587796900002,
+  "source_sha256": "1a72c7bf2e75dd4fbc74a9fa4428ef0a4f6ec178a854428db1c746bea1d1a11b"
+}

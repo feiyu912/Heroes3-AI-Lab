@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "clean_gradient_audit_passed": true,
+  "structural_and_nonzero_support_fields_exact": true,
+  "complete_numeric_metrics_bit_exact": false,
+  "differing_norm_fields": 20,
+  "max_norm_absolute_difference": 3.1102231901058985e-11,
+  "max_norm_relative_difference": 7.467469948056936e-11,
+  "norm_differences": [
+    {
+      "path": "parameters/models.defender.weights.gnn__convs__2__29__lin_src__weight/actor_max_norm",
+      "old": 0.18771727929978688,
+      "new": 0.1877172793138046,
+      "absolute_difference": 1.4017731420068458e-11,
+      "relative_difference": 7.467469948056936e-11
+    },
+    {
+      "path": "rows/23/actor_norm",
+      "old": 9.304945196913163,
+      "new": 9.304945196882061,
+      "absolute_difference": 3.1102231901058985e-11,
+      "relative_difference": 3.3425486386934214e-12
+    },
+    {
+      "path": "rows/26/actor_norm",
+      "old": 7.89019605018415,
+      "new": 7.890196050184149,
+      "absolute_difference": 8.881784197001252e-16,
+      "relative_difference": 1.1256734484809106e-16
+    },
+    {
+      "path": "rows/29/actor_norm",
+      "old": 1.354226608427756,
+      "new": 1.3542266084277592,
+      "absolute_difference": 3.1086244689504383e-15,
+      "relative_difference": 2.295497998344246e-15
+    },
+    {
+      "path": "rows/41/actor_norm",
+      "old": 1.295255330426193,
+      "new": 1.29525533042619,
+      "absolute_difference": 2.886579864025407e-15,
+      "relative_difference": 2.2285797990698885e-15
+    },
+    {
+      "path": "rows/43/actor_norm",
+      "old": 3.121978515169293,
+      "new": 3.1219785151675836,
+      "absolute_difference": 1.709299368712891e-12,
+      "relative_difference": 5.475051671264312e-13
+    },
+    {
+      "path": "rows/47/actor_norm",
+      "old": 0.8444144684333468,
+      "new": 0.8444144684335069,
+      "absolute_difference": 1.6009416015094757e-13,
+      "relative_difference": 1.895919197689045e-13
+    },
+    {
+      "path": "rows/53/actor_norm",
+      "old": 0.8274394070672629,
+      "new": 0.8274394070673313,
+      "absolute_difference": 6.838973831690964e-14,
+      "relative_difference": 8.265226158287691e-14
+    },
+    {
+      "path": "rows/55/actor_norm",
+      "old": 1.93165698049023,
+      "new": 1.9316569804902661,
+      "absolute_difference": 3.6193270602780103e-14,
+      "relative_difference": 1.873690358502162e-14
+    },
+    {
+      "path": "rows/57/actor_norm",
+      "old": 0.7183538752896035,
+      "new": 0.7183538752896034,
+      "absolute_difference": 1.1102230246251565e-16,
+      "relative_difference": 1.5455098981370033e-16
+    },
+    {
+      "path": "rows/62/actor_norm",
+      "old": 1.7885486202641567,
+      "new": 1.7885486202640077,
+      "absolute_difference": 1.48991929904696e-13,
+      "relative_difference": 8.33032595349244e-14
+    },
+    {
+      "path": "rows/87/actor_norm",
+      "old": 9.146222505658356,
+      "new": 9.146222505658644,
+      "absolute_difference": 2.877698079828406e-13,
+      "relative_difference": 3.1463241551886726e-14
+    },
+    {
+      "path": "rows/90/actor_norm",
+      "old": 7.028847888547597,
+      "new": 7.028847888547629,
+      "absolute_difference": 3.197442310920451e-14,
+      "relative_difference": 4.549027609674362e-15
+    },
+    {
+      "path": "rows/93/actor_norm",
+      "old": 1.3375398919393613,
+      "new": 1.3375398919393768,
+      "absolute_difference": 1.554312234475219e-14,
+      "relative_difference": 1.1620679456681711e-14
+    },
+    {
+      "path": "rows/105/actor_norm",
+      "old": 1.7649348826265405,
+      "new": 1.7649348826265399,
+      "absolute_difference": 6.661338147750939e-16,
+      "relative_difference": 3.7742685088968667e-16
+    },
+    {
+      "path": "rows/111/actor_norm",
+      "old": 1.2725191534054363,
+      "new": 1.2725191534054148,
+      "absolute_difference": 2.1538326677728037e-14,
+      "relative_difference": 1.692573869720429e-14
+    },
+    {
+      "path": "rows/117/actor_norm",
+      "old": 1.753801105861897,
+      "new": 1.7538011058618375,
+      "absolute_difference": 5.950795411990839e-14,
+      "relative_difference": 3.393084536268638e-14
+    },
+    {
+      "path": "rows/119/actor_norm",
+      "old": 3.061730605190704,
+      "new": 3.061730605190706,
+      "absolute_difference": 1.7763568394002505e-15,
+      "relative_difference": 5.801806456742809e-16
+    },
+    {
+      "path": "rows/121/actor_norm",
+      "old": 0.9843474502373957,
+      "new": 0.9843474502373962,
+      "absolute_difference": 5.551115123125783e-16,
+      "relative_difference": 5.639385891421788e-16
+    },
+    {
+      "path": "rows/126/actor_norm",
+      "old": 1.6346032769484908,
+      "new": 1.6346032769479448,
+      "absolute_difference": 5.46007683510652e-13,
+      "relative_difference": 3.3403070409227963e-13
+    }
+  ],
+  "clean_environment_root": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Ubuntu/native-gpu-verified-20261025",
+  "PROFILE_CERTIFICATE_sha256": "dea055f406486efebd49f864ad44f52258fb0f7195e670cf587fe416cd189e06",
+  "old_audit_sha256": "becbb5846903a11fe39d7d1175c4d6e8b1e68447b67ed6fb708e0bef97bb8834",
+  "new_audit_sha256": "4cf0f06ef5d3da8d8c2bc54ae69a2229504c516e4162a90fa59ec9d38413c2c2",
+  "source_checkpoint_and_TRAIN_SHA_exact": true,
+  "CPU_analyses_completed": true,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "initial_extra_bit_exact_comparison": "An additional unregistered all-metric Python equality check raised AssertionError; main registered CPU audit passed without changing gates. Only tiny norm-reduction differences were found.",
+  "scope": "Clean-environment repetition of exactly the same script and original SHA-bound TRAIN inputs. No change to the registered nonzero-support or behavior-logp gates; no new optimizer/native/GPU activity."
+}

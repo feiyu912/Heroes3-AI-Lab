@@ -1,0 +1,10 @@
+--- preserved-v1/qualify.py
++++ reviewed-v2/qualify.py
+@@ -103,6 +103,7 @@
+         count = dict(calls=0)
+         def forbidden_step(*unused, **unused_kwargs):
+             count['calls'] += 1
++            result['optimizer_step_calls'] = count['calls']
+             raise AssertionError('Qualification must never call optimizer.step')
+         cpu_optimizer.step = forbidden_step
+         cpu_counter = restore.install_counter(cpu_optimizer)

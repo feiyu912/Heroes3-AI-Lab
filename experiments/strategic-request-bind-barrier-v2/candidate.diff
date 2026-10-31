@@ -1,0 +1,23 @@
+--- global-bind/client/Client.cpp
++++ director-bind/client/Client.cpp
+@@ -533,11 +533,16 @@
+ 	waitingRequest.pushBack(requestID);
+ 	request.requestID = requestID;
+ 	request.player = player;
+-	// Bind the allocated request identity before another thread may apply it.
+-	// waitingRequest already owns this ID; actual server apply/ACK remain mandatory.
+-	if(vstd::contains(playerint, player))
+-		playerint[player]->requestSent(&request, requestID);
++	// Only the experimental Director registers its allocated request before transport.
++	// Other interfaces retain their original post-send callback ordering.
++	const auto interfaceIt=playerint.find(player);
++	const auto receiver=interfaceIt==playerint.end() ? nullptr : interfaceIt->second;
++	const bool bindBeforeSend=receiver && receiver->dllName=="DirectorAI";
++	if(bindBeforeSend)
++		receiver->requestSent(&request, requestID);
+ 	GAME->server().sendGamePack(request);
++	if(receiver && !bindBeforeSend)
++		receiver->requestSent(&request, requestID);
+ 
+ 	if(waitTillRealize)
+ 	{

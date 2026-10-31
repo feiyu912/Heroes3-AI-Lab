@@ -1,0 +1,5 @@
+{
+  "state": "failed",
+  "error": "CalledProcessError(1, ['bash', '/mnt/g/Heroes3-AI-Lab/research/run-lab.sh', '/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/train_bc.py', '--checkpoint', '/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt', '--output', '/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/models/bc-policy.pt', '--steps', '60'])",
+  "original_pipeline_unchanged": true
+}

@@ -1,0 +1,106 @@
+{
+  "name": "continuous-2",
+  "command": [
+    "/root/heroes3-ai-lab/gpu-venv/bin/python",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/train_ppo_pilot.py",
+    "--out",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2",
+    "--updates",
+    "2",
+    "--initialize-from",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "wall_seconds": 28.032361275000085,
+  "peak_tree_rss_bytes": 2349527040,
+  "peak_device_gpu_memory_mib": 1817.0,
+  "resource_scope": "Tree RSS sums shared pages; GPU memory is device-wide, includes other desktop processes.",
+  "leftover_owned_processes_after_exit": [],
+  "survivors_after_cleanup": [],
+  "training": {
+    "CUDA_training": true,
+    "optimizer_steps_this_run": 132,
+    "optimizer_steps_total": 132,
+    "lineage": {
+      "mode": "weights-only-migration",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+      "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+      "parent_training_updates": 2,
+      "reset_optimizer": true,
+      "reset_rng": true
+    },
+    "updates": [
+      {
+        "update": 1,
+        "samples": 846,
+        "changed_tensors": 12,
+        "changed_tensors_basis": "Cumulative versus this run starting weights; not current-update actor change",
+        "parameter_delta_from_previous_update": {
+          "actor": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.22461541730428358,
+            "max_abs_delta": 0.010767832398414612
+          },
+          "critic": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.5917951114959833,
+            "max_abs_delta": 0.01598414033651352
+          }
+        },
+        "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2/update-1.pt",
+        "sha256": "5509b7240092d422b366e8dd2ebd59fa6f6e764b7aa7d39e9f6ff25d5a1d4ef5",
+        "metrics": {
+          "optimizer_steps": 56,
+          "minibatches": 56,
+          "completed": true,
+          "early_stop_kl": false,
+          "last": {
+            "loss": 0.7381623983383179,
+            "actor": 0.5012441873550415,
+            "critic": 0.48342543840408325,
+            "entropy": 0.9588988423347473,
+            "kl": 8.259501100837952e-07
+          }
+        }
+      },
+      {
+        "update": 2,
+        "samples": 1173,
+        "changed_tensors": 12,
+        "changed_tensors_basis": "Cumulative versus this run starting weights; not current-update actor change",
+        "parameter_delta_from_previous_update": {
+          "actor": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.33765414593325394,
+            "max_abs_delta": 0.017237186431884766
+          },
+          "critic": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.6082464506645917,
+            "max_abs_delta": 0.026849225163459778
+          }
+        },
+        "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2/update-2.pt",
+        "sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+        "metrics": {
+          "optimizer_steps": 76,
+          "minibatches": 76,
+          "completed": true,
+          "early_stop_kl": false,
+          "last": {
+            "loss": -0.1464604139328003,
+            "actor": -0.30504217743873596,
+            "critic": 0.3226756751537323,
+            "entropy": 0.5512155890464783,
+            "kl": 1.713491656119004e-05
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "stages": [
+    {
+      "environments": 8,
+      "gates": {
+        "raw": true,
+        "simultaneous": true,
+        "checkpoint_identity": true,
+        "zero_optimizer": true,
+        "no_remaining": true,
+        "locks_free": true,
+        "available": true,
+        "swap": true,
+        "disk": true,
+        "rss": true,
+        "next_prediction": true
+      },
+      "passed": true,
+      "samples": 2188,
+      "seconds": 35.37094349099971,
+      "peaks": {
+        "native": 8,
+        "workers": 8,
+        "simultaneous_pairs": 8,
+        "rss": 970510336,
+        "pss": 694292480,
+        "gpu_torch_allocated_sampled": 34665984,
+        "gpu_torch_reserved_sampled": 35651584,
+        "system_swap_used": 0
+      },
+      "forward_seconds": 3.058712652007671,
+      "forward_fraction": 0.08647529158463002,
+      "checkpoint_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+      "source_sha256": {
+        "plan.json": "9656bc5e8f2123ddd920771616bcd9d93cae78f3d0b4067e4441df370fd031ee",
+        "batch.json": "051feaa5ddb5ed59369c10f387d7020177993d7af97691401f5846828289ef9e",
+        "resources.jsonl": "6171d1836e731957de5281741c941587e8a30eb4f5fecbf913c691cac2bdf763",
+        "inference-batches.jsonl": "6b5a674da56569ddd3b177815a3527b42941b83c1c3797c15aa03c88036c565b"
+      }
+    },
+    {
+      "environments": 12,
+      "gates": {
+        "raw": true,
+        "simultaneous": true,
+        "checkpoint_identity": true,
+        "zero_optimizer": true,
+        "no_remaining": true,
+        "locks_free": true,
+        "available": true,
+        "swap": true,
+        "disk": true,
+        "rss": true,
+        "next_prediction": true
+      },
+      "passed": true,
+      "samples": 3482,
+      "seconds": 59.26571403200069,
+      "peaks": {
+        "native": 12,
+        "workers": 12,
+        "simultaneous_pairs": 12,
+        "rss": 1436344320,
+        "pss": 1006380032,
+        "gpu_torch_allocated_sampled": 34665984,
+        "gpu_torch_reserved_sampled": 37748736,
+        "system_swap_used": 0
+      },
+      "forward_seconds": 4.52086941302241,
+      "forward_fraction": 0.07628136245150703,
+      "checkpoint_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+      "source_sha256": {
+        "plan.json": "6841812dd4977c02c275ab9c8f9840d14db1580d8cbaeb1d298061ca87ff97a5",
+        "batch.json": "942b2a801ff9cc1df2ab81a83a1d7a81810fa871750797de4c646e18d3110f61",
+        "resources.jsonl": "d3b4430c2a83faac09659bdde89790ac8f3a9d27a4dee81d61c058ebbedaa371",
+        "inference-batches.jsonl": "a0dc5fc7f25630326ea37f6b56d576494a885dcc45f962316b39025221aedc1e"
+      }
+    },
+    {
+      "environments": 24,
+      "gates": {
+        "raw": true,
+        "simultaneous": true,
+        "checkpoint_identity": true,
+        "zero_optimizer": true,
+        "no_remaining": true,
+        "locks_free": true,
+        "available": true,
+        "swap": true,
+        "disk": true,
+        "rss": true,
+        "balanced_8cells_3_each": true,
+        "unique_24_seeds": true
+      },
+      "passed": true,
+      "samples": 6237,
+      "seconds": 51.95697377600027,
+      "peaks": {
+        "native": 24,
+        "workers": 24,
+        "simultaneous_pairs": 24,
+        "rss": 2750189568,
+        "pss": 1855221760,
+        "gpu_torch_allocated_sampled": 34665984,
+        "gpu_torch_reserved_sampled": 39845888,
+        "system_swap_used": 0
+      },
+      "forward_seconds": 6.682206235003832,
+      "forward_fraction": 0.12861038180962045,
+      "checkpoint_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+      "source_sha256": {
+        "plan.json": "089dfab37b189450575148a25ba36803fb891c014a057e417a8543ca0b9f5da5",
+        "batch.json": "f2870c6119a7cf35711b1c0d9ba23d9192503952362998e93e3408be15399beb",
+        "resources.jsonl": "d280aa52c1b845de0adabfadb4d2bc37e2ff4b19f64adb771aa1ebdb1bfc1b85",
+        "inference-batches.jsonl": "3903ac0678919f08fef470b557705083aa49b5db30d1a822b4fa7c686d207b2b"
+      }
+    }
+  ],
+  "passed": true,
+  "actual_optimizer_steps": 0,
+  "learning_improvement_claimed": false,
+  "archive": {
+    "original_linux_run": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24",
+    "files": 18268,
+    "manifest_sha256": "19018fc3a2910b1bdf15f052f28dab2abdc2cc1d048d0a0bc096d10f445d1bdf"
+  },
+  "caveats": [
+    "12-env workload unbalanced",
+    "24-env output filesystem differs; no matched IO causal claim",
+    "Torch memory sampled, not hardware VRAM peak",
+    "Capacity jobs are not independent ability tests"
+  ]
+}

@@ -1,0 +1,574 @@
+{
+  "schema": "supply-native-episode-audit-v1",
+  "passed": true,
+  "mode": "supply-aware",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-02-development",
+    "red": "DirectorAI",
+    "blue": "Nullkiller2",
+    "seed": 2026101851,
+    "seconds": 90,
+    "tag": "supply-map1-red-2026101851-supply-aware",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv"
+  },
+  "won": 0,
+  "winner": "blue",
+  "normal": true,
+  "decisions": 96,
+  "original_main_id": 2,
+  "original_main_status": "terminal_betrayal_not_combat_death",
+  "original_main_loss_day": 11,
+  "original_main_last_present": {
+    "line": 231,
+    "day": 11,
+    "event": "defeat"
+  },
+  "original_main_first_absent": null,
+  "original_main_removal_log": [
+    {
+      "line": 25980,
+      "text": "removing object id=2; address=7f145d685c90; name=heroClass.core.knight.name"
+    },
+    {
+      "line": 25998,
+      "text": "removing object id=2; address=7f1464314f90; name=heroClass.core.knight.name"
+    }
+  ],
+  "deliveries": [
+    {
+      "before_line": 12,
+      "after_line": 13,
+      "day": 1,
+      "hero": 2,
+      "town": 18,
+      "creatures": {
+        "2": 9
+      },
+      "count": 9,
+      "to_original_main": true
+    },
+    {
+      "before_line": 14,
+      "after_line": 15,
+      "day": 1,
+      "hero": 2,
+      "town": 18,
+      "creatures": {
+        "0": 14
+      },
+      "count": 14,
+      "to_original_main": true
+    }
+  ],
+  "delivered_by_creature": {
+    "2": 9,
+    "0": 14
+  },
+  "delivered_to_main_by_creature": {
+    "2": 9,
+    "0": 14
+  },
+  "delivered_count": 23,
+  "delivered_to_main_count": 23,
+  "single_candidate_decisions": 70,
+  "supply_candidate_decisions": 2,
+  "overrides": [],
+  "override_count": 0,
+  "request_manifest": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000001.json",
+      "sha256": "8c68ca10b380b5ce569b85c43d715e81e8731a9de672d246e1c6628f160e755f",
+      "action_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000002.json",
+      "sha256": "eda19cf436590d96e7d2091db48b7f70e41c5cf6e103363237206c8badb088c7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000003.json",
+      "sha256": "c9f38b083548d8f06e9bdf4b166457b623136ef1f91026359a696038a6d5bb74",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000004.json",
+      "sha256": "c683e5bdeb288dd6666e145dcaff333205844aaabd5f77a195aa57caa0d05abb",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000005.json",
+      "sha256": "9f6b5c966ea138ab619f68711d3c34f9db51d2314156e7a9941c2bf5d5084175",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000006.json",
+      "sha256": "96383d53b6a8a36d549764be2e9b44196ffe8ca17bc4f6b8378fcd1d1a36f22e",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000007.json",
+      "sha256": "ec396765376b52e3401ac5df34f47eb187cee3fca569fc82990bcc6575cf3e70",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000008.json",
+      "sha256": "336abc0cd8e20ea8367a8ece38912dfb7f944b86094a0c0b519d85d2bd120d58",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000009.json",
+      "sha256": "8ff56bf466c93bb82a098bba2549f87e940ea40518e5bb50ed569079b967365c",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000010.json",
+      "sha256": "69e43a87a3a5a227f8157aa0e4d392a5c1b966f007603fbc80b6f1763dd351c9",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000011.json",
+      "sha256": "280e79271e23e5521883ce1fe1bc656e05e67f26d43ef610feab2d8187fad1a1",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000012.json",
+      "sha256": "b1d1d74fe9cfee00ee0d3e67027e6c71e3f40ae55b2372b97263c229f55bd559",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000013.json",
+      "sha256": "2196bafc3c7fdd860155b7d80ce7cf70f9ae6650d58842734fd4c05e1136d984",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000014.json",
+      "sha256": "43d1322bd73733be84bf9dcd243316c8aa4d49f5f74d4f232902bc48116f4dc1",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000015.json",
+      "sha256": "ac23b598b246bcd58a95237b580fd5131742dbce27046f5abffcfcb3f2424620",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000016.json",
+      "sha256": "054f817522ae2c2392ffc15cf657f27831dc8fb52065201f850872cbedfd0ec5",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000017.json",
+      "sha256": "6f47edae40d59af2e0436260327fc804aba9f1ce43d27cf918550d590dd1fc9c",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000018.json",
+      "sha256": "6cd8d630da42e727e4b53278699614fc73bb502211aa2612237c2f82f8e84aae",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000019.json",
+      "sha256": "42a028713fc879feef5cae5ae899b6924cc9c843fc56b1680c8185fda1da7ec0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000020.json",
+      "sha256": "063b0274df4245d6de55acfeb853d9a4f915e97b569151007ea0d0f012340507",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000021.json",
+      "sha256": "d71774fb7f858940fb7cc5e08207303002194b76f237602a0f2bb4cbd1be6295",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000022.json",
+      "sha256": "74caedd0d74c1d4409df3daf2168c5869fd3d1d0b99b2199cc67eadf786fc724",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000023.json",
+      "sha256": "8e92f9cfc7a8d62d1bdaaac130287daf8afed43fc5fce03818a69a22579fbb1f",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000024.json",
+      "sha256": "ca80eb8b9029955a2fbcd06e1327f4eab5240776a7db7cd8b2cbdfe84e9c7001",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000025.json",
+      "sha256": "e5070f455062dea4f6ebaaed255702bd2a9866f2ffea24df254cc316ae250bdc",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000026.json",
+      "sha256": "1ce2c5fe1dc147ffb9afccf092d95bb84d08a47947d9de2d5f817043a737219a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000027.json",
+      "sha256": "c583f90a0af47791e50cee54b6b65958e5a8e976847100cd0faadfe78d566557",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000028.json",
+      "sha256": "7f645dad854efc017f20d40fe6e0f467bf46b41b671f36b3060aa7c1052484e0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000029.json",
+      "sha256": "f0c09c4386211c12eafecf81b4de238bf092b9f5c8f8fd045873fe92ba7a1b8b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000030.json",
+      "sha256": "be549f4acfaad92033fdfe55960350193b192b6b437ae83e027ca778d6d4b2e5",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000031.json",
+      "sha256": "6cb9dcd7272e5df0514ce1e4937a82955f2848414ea308df2f3f4e76881813f9",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000032.json",
+      "sha256": "67241c8da599b437f3124be179c2f2f5051e5c62aa07dd2a37aba90cdc6612d1",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000033.json",
+      "sha256": "42ca894000334613aed7d36e0350bd5f882e889bfdf3ab1df6d140290529c7ff",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000034.json",
+      "sha256": "2c8c97517045f8aedf58ae517a2177fe7fa8613d7065aa295fd5b7fe46dc01ef",
+      "action_sha256": "64459cd36006fa4bb2f5314f2a1ad69c8cbbb95f319c5459b32a9cdc870b54aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000035.json",
+      "sha256": "1eb5fc17424a3d05bdefab01597ba40f06cdc632817decfdf626c35d049c184c",
+      "action_sha256": "1a62e878f334291869f88f4b71f8c157ee774b6bdb11d2ca86cccf2b48cef87b"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000036.json",
+      "sha256": "c04e72f9b58fe4ab124be77076f3a46846846aa6b84d9d621e854a57e5cc3a63",
+      "action_sha256": "be4ba010e48e7d5c7c60457e7f40538407a26f4ead94b392beff67a3a5546b8a"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000037.json",
+      "sha256": "ec8ec60d335daa708019694cfddc3d406fac34e39f91c4eb778e0cf6997805d3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000038.json",
+      "sha256": "3434c1be32b2055bfc8f6b07ccbe46c9c6adb77738d91e746fcea0e369377e1a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000039.json",
+      "sha256": "7a1bd0b29684d8e382bb8c78f1dc477485480c7839c179fe0633875e838b9ae7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000040.json",
+      "sha256": "d7cbe5b0bf473d6492003a1405cc03bd6c10283bcca5b14ece1e15f7b07f6c06",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000041.json",
+      "sha256": "6b879b69f2fccc70f62bcef9175fb1c3a5a28ae0cf0826fd7bd589da419d5c72",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000042.json",
+      "sha256": "a65ec8423b97c0b6aae331d750166fdd23ca13510068ee4c149c9596b114ed61",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000043.json",
+      "sha256": "4162d4786b9c082ab86e68f65a8d86367296731036ab9ec327af62cdbc76ab7a",
+      "action_sha256": "89e56b272669de11431602f3c77e560ecf6c61512fa8db5ac0006606e88d5282"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000044.json",
+      "sha256": "3e00383072db5dc68a9385f36f8d3eddb031cbdb14f311b9bff6dd7e4a727975",
+      "action_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000045.json",
+      "sha256": "504ee2b077641b193b1fc75eb2493b38f8b9c99124e6edefe4f91cbb313f15a0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000046.json",
+      "sha256": "54a6f95eed02d04e424ff5e68c09b14577be0b7dcb6889bd57b8f1f0cf3ab0f3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000047.json",
+      "sha256": "f603a2c543919f5c85eeaf0a1555e42feb4f8eec595cf927f70f3e00b25771f8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000048.json",
+      "sha256": "5ce9a0de2d7ce929b3c987513c1736416b1cf5052fcf84f1fb7ada2f0abbb6e1",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000049.json",
+      "sha256": "788f9b9dda4cac5b8b041c0db6067a802e7cb93464bd392c6a34125eba3defba",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000050.json",
+      "sha256": "7fc60ed5a3ba3738291ac92738308d010b08a4cfab378c8d037457ae4d3dbf4f",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000051.json",
+      "sha256": "30db60f47f85ede913a35ccf0044b55216abce3e113873756d0b699d37ddef10",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000052.json",
+      "sha256": "fbca94d24111168406501dc347a4b3b3191b083edd7efefab57e7af5e41ce725",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000053.json",
+      "sha256": "a89782f79f5e5dac2751a4dd414b1a7d7b2a576a3265057919af07e67fc88b5f",
+      "action_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000054.json",
+      "sha256": "403f9f7536440f19659e56bff637daf9c3dd144d8fc45ddf4c82ae9c134be978",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000055.json",
+      "sha256": "6dd90b8d4a3558077cb59a297a499c68fb97bce8ea25dc20155484d990a75035",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000056.json",
+      "sha256": "3ba60f768da592260366466833ebaec29b10ceafd18b46bb6a5c9e9014ddd5b6",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000057.json",
+      "sha256": "c3b06635348ac8c95c4d3ab3fe79fc5a9cbbe91e28ff8fb9c57f8c24169ae6ef",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000058.json",
+      "sha256": "03810ecb067b793d886c3c6a4670832ef807713fa12e26961fcbfdec2047be9b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000059.json",
+      "sha256": "0039fff62152548be125a04ea755f7a363a986c14615f6d06299dbc95844452f",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000060.json",
+      "sha256": "017b773cda7377374bb8ea30190c2edd79f68932537497ce0ccf367ca4c9adcc",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000061.json",
+      "sha256": "70ff7348aa223535559be98ab4615f14382bfee2fc1517ff98d7f4e38bf9a615",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000062.json",
+      "sha256": "08c70cda9625f76689473f90d804973a6e867a6b02e9de9f81b63062b09afe09",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000063.json",
+      "sha256": "d20e1f7bfad550ebfcc847e383fb9f96290404c6662367d47882c0f3a662329e",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000064.json",
+      "sha256": "053bcb0221e200c72995694c17c08efa95df84a33c79fb0f6400de7b501483de",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000065.json",
+      "sha256": "6a44afdf8035e284cd2c70557858b729bd44593a7a1dd58f23a7c9d3ca313913",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000066.json",
+      "sha256": "86890fd43aec7f12b4d4c531521576666a5196b9af1baaf34756c4b5abf906e2",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000067.json",
+      "sha256": "32d60e48f6721da8f794bda4a7690629d6f91be2d4561f76974f906ca23b2a1f",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000068.json",
+      "sha256": "6138d9e49ba935bcfb2cf61b46af37ad1efaa21c3d03e6ae7a0215800ce98ced",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000069.json",
+      "sha256": "d3d1195f9c4f2122e159043d877c661e66423130a41dac215c872ae6ace4e03f",
+      "action_sha256": "6950980e3aca96f4dc400eb2e47cc5c343e0d3f483a4e70adcae1d7e6bb22d9c"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000070.json",
+      "sha256": "429e8b2e3750383db868e40dcbd070c6421f196634f446367035238bcf472b0a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000071.json",
+      "sha256": "7b9a9472d3241d92fed1f61d4130dae2bb72bd73474312925fa8de94aeaced96",
+      "action_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000072.json",
+      "sha256": "1d44af09353ceca3f5e6d375d619609244f6a209e31bc8e4c7284b10d3707b94",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000073.json",
+      "sha256": "fe25d2ca2241a1c1f4bad368d8e3ad04e96934ee039133eb1c84aea35ad66049",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000074.json",
+      "sha256": "8cb18925791b9e84cfc116300f6c03ae8c66d510d8d758b33a33c72dec5144d6",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000075.json",
+      "sha256": "c1b5b5e393e9f0ac1ae09f2d9ffe97236374c324ba1b3c12972b269478617d23",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000076.json",
+      "sha256": "6324a36b9b5309e44a0994c09f2abdf4c8b721126d881075e2a2a46ba31575ff",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000077.json",
+      "sha256": "0c0f1db474823c9990c0f586b5279f13c645edc3e0beedfcfd5a8c68a28fb079",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000078.json",
+      "sha256": "1de87c3a3c5a974b2e0599b27dfcc0e03ecfa74693e2717bc5c16ea6dc568831",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000079.json",
+      "sha256": "08675b71a31d0a6998de8208cf1cca7013508640a71d31e0f3e6caf158ec0e3f",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000080.json",
+      "sha256": "f44653b9231d328b69f4f379bde23f1ab21a410c995fccc9ba89dbfd879de3bc",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000081.json",
+      "sha256": "d9387cb88f73fb2032df52bb91dfdeb284ed036d71f69d105f05f6c04e98b658",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000082.json",
+      "sha256": "1590a0e1c6c8bb9b385d17fa04206cfa6d35f904ad161da52795286efa28ec79",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000083.json",
+      "sha256": "a76f5c320b523ddbb69265079ab7688573a9ad45917343e6e06a4a9d22a8abe0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000084.json",
+      "sha256": "0e11154c17cc11939a284213446aa8dc65d282f6d89103ae933dc5ca0f1275e4",
+      "action_sha256": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000085.json",
+      "sha256": "3ad0c0c345fcee4083667bbc872e508ea9a95bec4ee50364d03cf547c5763b69",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000086.json",
+      "sha256": "b4ab5d0068d7a3e564d410b1003ca6afdc77f248377cca03f6b3807fd7f581b9",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000087.json",
+      "sha256": "13378d77fe7daf0387ccb6311dd090f5bd3d41813758415345b8ac8006e4bcf9",
+      "action_sha256": "0e55092af0746630c98d1b2e0d960617c33f8ea7b55739fd18cb7cd5342a28ca"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000088.json",
+      "sha256": "52232e6c67fe02350318f516f5381d2be5ba651790663588d4a8b82d97d4e988",
+      "action_sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000089.json",
+      "sha256": "764b3e5b195346df927d1fe1a214610d6d0c87d831d7e04c2f823df9fdaf9fde",
+      "action_sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000090.json",
+      "sha256": "0ffbc3369c0839849ae094110eab412672b2ab13df203689e890e93d9df222b3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000091.json",
+      "sha256": "134dfdc61d38d9353bdd896d94fc1759b8b164a82c1b5a6590ba330692cbfd28",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000092.json",
+      "sha256": "d40d251c8c93e35412dabc90d2c70cedc6c9fcd5f71bbc45b6c3599d442f0587",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000093.json",
+      "sha256": "6a4936d2053522249070adc9f4d4709ef2889ee6fb5bcb833e35f4c69f1d7709",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000094.json",
+      "sha256": "3b5f97f2970ef1f9d2cdee630c9b0763b7c277206576d0a7105583fb0ad9611d",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000095.json",
+      "sha256": "e7e2e1f434c3ae131538e4f4f89a3036cf8139b2b1b9858fcab0c33f6695da20",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/request-00000096.json",
+      "sha256": "d690bfa675c482172e42aeb08f3ec6325edc6c31187d44b9c8f4fadc5c46c36a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    }
+  ],
+  "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101851-supply-aware-2026101851-191dqr79",
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv",
+  "native_days": 11,
+  "initial_state_sha256": "d4c63d70cd0d9e2d442cc73fb32c5c09a86e5424b988ce6029decf60d13b2d1b",
+  "evidence_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map1-red-2026101851-supply-aware/smoke-result.json": "a63cc84e210de004703130c24a4d6e4f5967795d107a6eb7909f65da178fc159",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101851-supply-aware-2026101851-191dqr79/client.log": "3d30a9d581e9e28bd1cff8b46f1405390c4dec3a57d73c3d169e6d2a56cc93b9",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101851-supply-aware-2026101851-191dqr79/strategy-trace.jsonl": "e710fc141aa5eed825b33fd2f785f09565e3100d23a2eb6d0a0a85fd24fbad6b",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map1-red-2026101851-supply-aware-2026101851-191dqr79/strategy-decisions.jsonl": "dff8205214342781b8fbf2028a43873ef6624e2caf953f475f4d48300362dea1",
+    "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101851-supply-aware-3cab2uzv/broker-trace.jsonl": "54d4e326ba4881579dced61d750da4c2c401d28bae587a960fff48332419c0bb"
+  },
+  "bc_eligible": false,
+  "independent_capability_test": false
+}

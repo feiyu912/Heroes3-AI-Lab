@@ -1,0 +1,16 @@
+{
+  "source": "/mnt/g/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/fixture-01.vmap",
+  "source_sha256": "ab20ed070f644a545947e1c55ce39af5326b815fbbfab7cad4fe9e39f82b6d39",
+  "map": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/supply-stock-01.vmap",
+  "map_sha256": "c2aa18bfef86cd58dc74cb498f482cb38c74f54d7f3087de9b417e92f665269d",
+  "script_sha256": "114b8558cee3ff3233822744d1b4e10333e062c33661bbc5fd7849a59cc1eee0",
+  "installed": false,
+  "native_loaded": false,
+  "initial_total_armies": {
+    "pikeman": 15,
+    "archer": 3
+  },
+  "role_rule": "Actual minimum owned hero ID is main; maximum is courier. Actual runtime roster must verify fixture assignment.",
+  "stock_schema_source": "Actual CGTownInstance::serializeJsonOptions calls CArmedInstance::serializeJsonOptions. Native loaded army still requires observation.",
+  "qualification_scope": "One real town pickup, one compatible delivery with reserve, query/ACK close, sustained control across two own turns. Finite initial stock; no repeat recruitment or normal-game score claim."
+}

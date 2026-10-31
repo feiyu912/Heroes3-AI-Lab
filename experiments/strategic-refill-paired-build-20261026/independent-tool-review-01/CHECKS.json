@@ -1,0 +1,60 @@
+{
+  "scope": "read-only frozen tools static/import/admission review; no native or invented fixture execution",
+  "syntax_modules": 9,
+  "source_freeze_checked": 60,
+  "contract_sha256": "94fababf70089e1d944b17280c0d6e003ba39dc34c6a34fcb853316dc4308cf2",
+  "registrations": [
+    {
+      "line": 64,
+      "argument": "broker.pid"
+    },
+    {
+      "line": 72,
+      "argument": "child.pid"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/audit_mechanism.py",
+      "sha256": "7c5079739fc39302454e59dd8774ca8a6cbbb38107fc0739406f18923bf7bd83"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/audit_pair.py",
+      "sha256": "58cdfc290276e1ca1b355372e488e271b62bde261187cd9c0c37990e42055a41"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/collect_mechanism.py",
+      "sha256": "40d7c6abb3742e6b809c23441d722e05fbd0d24a8e9c0c4d022781141f00ae71"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/common.py",
+      "sha256": "dadedff77e183b82dd2b6e37a36b75bb6059f763a9c4ae4e2ec0611cfbc6d782"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/lease_exec.py",
+      "sha256": "7b6a6273e0e2b4b7c420362edbc97813597971e2e07d1899a352091024430fc6"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/prepare_checks.py",
+      "sha256": "ab382a5d744cb9f72c12ef2e5c1f584c27b6186e8fca1b68199810f3ca26d9de"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/prepare_fixture.py",
+      "sha256": "61de326d4fa4527ad79a3d6f938f776d8418dad58b4287a083a30c830a9b019b"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/raw_contract_auditor.py",
+      "sha256": "486bd89520a865364f9233d4387ba068a71200bbbe20383cd8a3315ddfbf27df"
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/selector.py",
+      "sha256": "043e384fc65d075f8314088e631139859e8b21759110ddd02bc3449ea5e7a708"
+    }
+  ],
+  "confirmed_startup_blockers": [],
+  "confirmed_false_passes": [],
+  "native_runs": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "source_files_modified": false
+}

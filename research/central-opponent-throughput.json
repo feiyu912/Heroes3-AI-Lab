@@ -1,0 +1,73 @@
+{
+  "completed": true,
+  "results": [
+    {
+      "central_gpu": false,
+      "repeat": 0,
+      "workers": 24,
+      "returncode": 0,
+      "wall_seconds": 50.56628529199952,
+      "probe_weights_excluded": true,
+      "warm_decisions_per_second": 70.71169216331184,
+      "startup_seconds": 39.313316513001155,
+      "estimated_16update_wall_seconds": 213.08938697699614,
+      "minimum_available_mib": 4828.25390625,
+      "maximum_gpu_allocated_mib": 303.98486328125
+    },
+    {
+      "central_gpu": true,
+      "repeat": 0,
+      "workers": 24,
+      "returncode": 0,
+      "wall_seconds": 30.376099783999962,
+      "probe_weights_excluded": true,
+      "warm_decisions_per_second": 112.58502817129815,
+      "startup_seconds": 23.661133729999165,
+      "estimated_16update_wall_seconds": 132.80530857804206,
+      "minimum_available_mib": 6382.15234375,
+      "maximum_gpu_allocated_mib": 338.4833984375,
+      "peer": {
+        "requests": 406,
+        "batches": 113,
+        "inference_seconds": 3.7694295210003474,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "central_gpu": false,
+      "repeat": 1,
+      "workers": 24,
+      "returncode": 0,
+      "wall_seconds": 50.54968900699987,
+      "probe_weights_excluded": true,
+      "warm_decisions_per_second": 79.66509008569015,
+      "startup_seconds": 39.557899568999346,
+      "estimated_16update_wall_seconds": 193.80362987298395,
+      "minimum_available_mib": 4809.5,
+      "maximum_gpu_allocated_mib": 370.13671875
+    },
+    {
+      "central_gpu": true,
+      "repeat": 1,
+      "workers": 24,
+      "returncode": 0,
+      "wall_seconds": 28.914743680000356,
+      "probe_weights_excluded": true,
+      "warm_decisions_per_second": 128.02236465362702,
+      "startup_seconds": 22.537029925999377,
+      "estimated_16update_wall_seconds": 118.52025936599603,
+      "minimum_available_mib": 6364.08203125,
+      "maximum_gpu_allocated_mib": 403.54736328125,
+      "peer": {
+        "requests": 391,
+        "batches": 105,
+        "inference_seconds": 3.5367640670010587,
+        "weights_unchanged": true
+      }
+    }
+  ],
+  "use_central_gpu": true,
+  "estimated_end_to_end_speedup": 1.6189877543242308,
+  "criterion": "Both repetitions complete at24 with memory reserve, live exact-trajectory contracts and >=10% amortized whole-loop improvement. Probe checkpoints excluded.",
+  "bootstrap": "Both comparison modes start from first connected battle; final evaluation remains the original native CPU protocol"
+}

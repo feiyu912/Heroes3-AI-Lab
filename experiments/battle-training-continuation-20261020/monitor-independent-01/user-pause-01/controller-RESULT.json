@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "training_completed": false,
+  "ability_improvement_claim": false,
+  "arms": {
+    "control": {
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/control/models/1792508024116623978/update-60.pt",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+      "actual_Adam_steps_total": 7680,
+      "actual_Adam_steps_this_stage": 3840
+    }
+  },
+  "observed_stage_counters": {
+    "control": {
+      "actual_Adam_steps_total": 7680,
+      "actual_Adam_steps_this_stage": 3840,
+      "training_report": "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/control/training.json",
+      "returncode": 0
+    },
+    "candidate": {
+      "actual_Adam_steps_total": 7296,
+      "actual_Adam_steps_this_stage": 3456,
+      "training_report": "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/candidate/training.json",
+      "returncode": -2
+    }
+  },
+  "error": "AssertionError('Training exited candidate/-2')"
+}

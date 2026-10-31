@@ -1,0 +1,22 @@
+{
+  "started_unix": 1792071133.269109,
+  "children": [
+    {
+      "script": "run-goal-v5.py",
+      "pid": 382,
+      "log": "/mnt/g/Heroes3-AI-Lab/research/run-goal-v5-recovery-1792071133233743450.log"
+    },
+    {
+      "script": "resume-paused-challenge.py",
+      "pid": 383,
+      "log": "/mnt/g/Heroes3-AI-Lab/research/resume-paused-challenge-recovery-1792071133233743450.log"
+    },
+    {
+      "script": "verify-live-training-resume.py",
+      "pid": 384,
+      "log": "/mnt/g/Heroes3-AI-Lab/research/verify-live-training-resume-recovery-1792071133233743450.log"
+    }
+  ],
+  "successful_stages_preserved": 3,
+  "reason": "Verified numerical-recomputation repair"
+}

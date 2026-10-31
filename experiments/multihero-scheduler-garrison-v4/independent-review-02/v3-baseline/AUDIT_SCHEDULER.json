@@ -1,0 +1,638 @@
+{
+  "engineering_pass": false,
+  "blockers": [
+    "move_sent_without_one_successful_ack",
+    "strict:move_request_ack_bijection",
+    "strict:only_mobile_heroes_selected"
+  ],
+  "winner": null,
+  "game_completed": false,
+  "controlled_boundary": "real native positive-MP garrison and each mobile hero moves in each of turns 1 and 2; garrison never selected",
+  "audit_gate": "real-garrison-and-two-mobile-heroes-each-of-two-turns",
+  "mobile_heroes": [
+    0,
+    2
+  ],
+  "control_hero": 3,
+  "mobile_move_sequences": {
+    "0": [
+      {
+        "request_id": 4,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 6,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 8,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 10,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 12,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 14,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 16,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 18,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 20,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 22,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 26,
+        "own_turn": 2,
+        "ack_turn": 2
+      },
+      {
+        "request_id": 28,
+        "own_turn": 2,
+        "ack_turn": 2
+      },
+      {
+        "request_id": 30,
+        "own_turn": 2,
+        "ack_turn": 2
+      }
+    ],
+    "2": [
+      {
+        "request_id": 5,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 7,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 9,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 11,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 13,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 15,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 17,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 19,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 21,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 23,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 27,
+        "own_turn": 2,
+        "ack_turn": 2
+      },
+      {
+        "request_id": 29,
+        "own_turn": 2,
+        "ack_turn": 2
+      }
+    ]
+  },
+  "mobile_move_turns": [
+    1,
+    2
+  ],
+  "mobile_positions": {
+    "0": [
+      [
+        7,
+        10,
+        0
+      ],
+      [
+        7,
+        11,
+        0
+      ],
+      [
+        7,
+        12,
+        0
+      ],
+      [
+        6,
+        12,
+        0
+      ],
+      [
+        5,
+        12,
+        0
+      ],
+      [
+        5,
+        13,
+        0
+      ],
+      [
+        5,
+        14,
+        0
+      ],
+      [
+        5,
+        15,
+        0
+      ],
+      [
+        5,
+        16,
+        0
+      ],
+      [
+        5,
+        17,
+        0
+      ],
+      [
+        5,
+        18,
+        0
+      ],
+      [
+        5,
+        19,
+        0
+      ],
+      [
+        5,
+        20,
+        0
+      ]
+    ],
+    "2": [
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        10,
+        0
+      ],
+      [
+        12,
+        10,
+        0
+      ],
+      [
+        13,
+        10,
+        0
+      ],
+      [
+        14,
+        10,
+        0
+      ],
+      [
+        15,
+        10,
+        0
+      ],
+      [
+        16,
+        10,
+        0
+      ],
+      [
+        17,
+        10,
+        0
+      ],
+      [
+        18,
+        10,
+        0
+      ],
+      [
+        19,
+        10,
+        0
+      ],
+      [
+        20,
+        11,
+        0
+      ],
+      [
+        21,
+        11,
+        0
+      ],
+      [
+        21,
+        12,
+        0
+      ]
+    ]
+  },
+  "control_positions": [
+    [
+      6,
+      8,
+      0
+    ]
+  ],
+  "turn_open_count": 2,
+  "successful_endturn_ack_count": 1,
+  "failed_move_acks": [],
+  "changed_inputs": [],
+  "thread_server_verification": {
+    "mode": "thread",
+    "settings_server_useProcess": false,
+    "client_library_verified": true,
+    "run_server_threads": [
+      {
+        "pid": 368,
+        "tid": 399,
+        "comm": "runServer",
+        "proc_comm_path": "/proc/368/task/399/comm"
+      }
+    ],
+    "native_server_log_markers": {
+      "CVCMIServer created!": true,
+      "Server gives turn to ": true
+    },
+    "passed": true
+  },
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "execution": {
+    "controlled_stop": true,
+    "timed_out": false,
+    "game_completed": false,
+    "winner": null,
+    "optimizer_steps": 0,
+    "stop_reason": "observed_two_mobile_heroes_two_turns",
+    "engine_exit": -15,
+    "wall_seconds": 0.5507267159999856,
+    "loaded_library_observations": [
+      {
+        "pid": 368,
+        "executable": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-02/baseline/bin/vcmiclient",
+        "executable_sha256": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+        "executable_matches_capsule": true,
+        "libraries": [
+          {
+            "maps_line": "7dc61d600000-7dc61d799000 r--p 00000000 08:30 1504207                    /root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-02/baseline/bin/libvcmi.so",
+            "path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-02/baseline/bin/libvcmi.so",
+            "deleted": false,
+            "sha256": "c18ad21005dc37eff927dc6d5d1f71fb4d938f12814719dfcf6e141c2859a96e",
+            "inode_matches": true,
+            "device_matches": true,
+            "expected_path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-02/baseline/bin/libvcmi.so",
+            "path_matches": true,
+            "expected_sha256": "c18ad21005dc37eff927dc6d5d1f71fb4d938f12814719dfcf6e141c2859a96e",
+            "valid": true
+          }
+        ],
+        "valid": true,
+        "run_server_threads": [
+          {
+            "tid": 399,
+            "comm": "runServer",
+            "proc_comm_path": "/proc/368/task/399/comm"
+          }
+        ]
+      }
+    ],
+    "loaded_library_errors": [],
+    "loaded_library_verified": true,
+    "thread_server_verification": {
+      "mode": "thread",
+      "settings_server_useProcess": false,
+      "client_library_verified": true,
+      "run_server_threads": [
+        {
+          "pid": 368,
+          "tid": 399,
+          "comm": "runServer",
+          "proc_comm_path": "/proc/368/task/399/comm"
+        }
+      ],
+      "native_server_log_markers": {
+        "CVCMIServer created!": true,
+        "Server gives turn to ": true
+      },
+      "passed": true
+    }
+  },
+  "raw_sha256": {
+    "probe.jsonl": "1dc9502fe4b8d00341d1942e6cd4dd8b93448c21db113833e7afa3c304bb0529",
+    "strategy-trace.jsonl": "be1ec946a93344d8387fea761c6fe7c9620013368a596296d53825f3d5e3332c",
+    "client.log": "518c1ffa474342400e37acec2633437e34cdfabecc7627cdde81acffb59bd6d2"
+  },
+  "strict_checks": {
+    "one_native_setup_handshake": true,
+    "setup_order_and_request_tuple": true,
+    "setup_before_any_selection": true,
+    "one_before_after_state": true,
+    "native_visiting_to_real_positive_mp_garrison": true,
+    "setup_seven_resources_conserved": true,
+    "setup_hero_identity_position_mp_conserved": true,
+    "setup_army_conserved_deduplicated": true,
+    "setup_town_buildings_stock_conserved": true,
+    "garrison_remains_fixed": true,
+    "only_mobile_heroes_selected": false,
+    "mobile_0_turn_1_native_motion": true,
+    "mobile_2_turn_1_native_motion": true,
+    "mobile_0_turn_2_native_motion": true,
+    "mobile_2_turn_2_native_motion": true,
+    "move_request_ack_bijection": false
+  },
+  "strict_detail": {
+    "motion": {
+      "0:1": {
+        "successful_requests": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "positions": [
+          [
+            5,
+            12,
+            0
+          ],
+          [
+            5,
+            13,
+            0
+          ],
+          [
+            5,
+            14,
+            0
+          ],
+          [
+            5,
+            15,
+            0
+          ],
+          [
+            5,
+            16,
+            0
+          ],
+          [
+            5,
+            17,
+            0
+          ],
+          [
+            6,
+            12,
+            0
+          ],
+          [
+            7,
+            10,
+            0
+          ],
+          [
+            7,
+            11,
+            0
+          ],
+          [
+            7,
+            12,
+            0
+          ]
+        ]
+      },
+      "2:1": {
+        "successful_requests": [
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23
+        ],
+        "positions": [
+          [
+            10,
+            10,
+            0
+          ],
+          [
+            11,
+            10,
+            0
+          ],
+          [
+            12,
+            10,
+            0
+          ],
+          [
+            13,
+            10,
+            0
+          ],
+          [
+            14,
+            10,
+            0
+          ],
+          [
+            15,
+            10,
+            0
+          ],
+          [
+            16,
+            10,
+            0
+          ],
+          [
+            17,
+            10,
+            0
+          ],
+          [
+            18,
+            10,
+            0
+          ],
+          [
+            19,
+            10,
+            0
+          ],
+          [
+            20,
+            11,
+            0
+          ]
+        ]
+      },
+      "0:2": {
+        "successful_requests": [
+          26,
+          28,
+          30
+        ],
+        "positions": [
+          [
+            5,
+            17,
+            0
+          ],
+          [
+            5,
+            18,
+            0
+          ],
+          [
+            5,
+            19,
+            0
+          ],
+          [
+            5,
+            20,
+            0
+          ]
+        ]
+      },
+      "2:2": {
+        "successful_requests": [
+          27,
+          29
+        ],
+        "positions": [
+          [
+            20,
+            11,
+            0
+          ],
+          [
+            21,
+            11,
+            0
+          ],
+          [
+            21,
+            12,
+            0
+          ]
+        ]
+      }
+    },
+    "setup_request_id": 3,
+    "control_selections": [
+      {
+        "schema": "multihero-scheduler-garrison-v2",
+        "variant": "garrison-v2",
+        "event": "scheduler_selected",
+        "request_id": -1,
+        "result": -1,
+        "query_id": -1,
+        "pending_move": 0,
+        "pending_queries": 0,
+        "query_requests": 0,
+        "courier": -1,
+        "receiver": -1,
+        "failed": 0,
+        "own_turn": 1,
+        "hero": 3
+      },
+      {
+        "schema": "multihero-scheduler-garrison-v2",
+        "variant": "garrison-v2",
+        "event": "scheduler_selected",
+        "request_id": -1,
+        "result": -1,
+        "query_id": -1,
+        "pending_move": 0,
+        "pending_queries": 0,
+        "query_requests": 0,
+        "courier": -1,
+        "receiver": -1,
+        "failed": 0,
+        "own_turn": 2,
+        "hero": 3
+      }
+    ],
+    "setup_army_totals_before": {
+      "0": 33,
+      "2": 16
+    },
+    "setup_army_totals_after": {
+      "0": 33,
+      "2": 16
+    }
+  }
+}

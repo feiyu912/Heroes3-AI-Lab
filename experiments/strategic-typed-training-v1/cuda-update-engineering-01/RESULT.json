@@ -1,0 +1,81 @@
+{
+  "completed_update": true,
+  "cuda_optimizer_steps": 8,
+  "ability_improvement_claim": false,
+  "training_updates": 1,
+  "optimizer_steps_total": 8,
+  "checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1",
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-update-engineering-01/update-1.pt",
+  "stop_bias_before": -4.0,
+  "stop_bias_after": -4.0008697509765625,
+  "stop_bias_adam_step": 8,
+  "progress": {
+    "optimizer_steps": 8,
+    "minibatches": 8,
+    "completed": true,
+    "early_stop_kl": false,
+    "forced_only_minibatches": 0,
+    "algorithm_schema": "strategic-typed-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 127,
+      "episodes": 1,
+      "free_choices": 127,
+      "forced_transitions": 0,
+      "active_actor_episodes": 1,
+      "actor_weight_sum": 127.0,
+      "critic_weight_sum": 127.0,
+      "advantage_mean": 0.8940831821734512,
+      "advantage_variance": 0.02776121445470295,
+      "per_episode": [
+        {
+          "episode_id": "e4899e201819821214e0d41edccb0d8f5f1719aaa5b1ba6aec330171241b40a2",
+          "steps": 127,
+          "free_choices": 127,
+          "reward": 1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.004837740212678909,
+      "critic": 0.19448012113571167,
+      "entropy": 1.0897170305252075,
+      "kl": 5.472120960803295e-07,
+      "conditional_kl": 5.472120960803295e-07,
+      "loss": 0.08695373684167862
+    },
+    "epoch": 4,
+    "full_batch_post_epoch": {
+      "actor": -0.0001969736392103405,
+      "critic": 0.17040281461214457,
+      "entropy": 0.9813938253507839,
+      "kl": 6.929641327179689e-07,
+      "conditional_kl": 6.929641327179689e-07,
+      "loss": 0.0800974556780237
+    },
+    "group_optimizer_steps": {
+      "actor": 8,
+      "critic": 8
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 7,
+        "total_tensors": 7,
+        "l2_delta": 0.12115378564732837,
+        "max_abs_delta": 0.0023915821220725775
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.19168280469877838,
+        "max_abs_delta": 0.002424284815788269
+      }
+    }
+  },
+  "episodes": 1,
+  "samples": 127,
+  "training_wins": 1,
+  "training_losses": 0,
+  "purpose": "engineering_boundary",
+  "checkpoint_model_readback_exact": true
+}

@@ -1,0 +1,98 @@
+{
+  "synthetic_only": true,
+  "game_started": false,
+  "GPU_initialized": false,
+  "module_sha256": "be4084fd073ec6a60b9b805b4cff43209d0f05e87dd7517a855870517376be65",
+  "warmup_actual_optimizer_steps": 1,
+  "actor_momentum_max_abs": 0.0074667795561254025,
+  "forced_actor_objective": 0.0,
+  "forced_actor_changed": true,
+  "forced_actual_parameter_delta": {
+    "actor": {
+      "changed_tensors": 6,
+      "total_tensors": 6,
+      "l2_delta": 0.01617935760318316,
+      "max_abs_delta": 0.0002010175958275795
+    },
+    "critic": {
+      "changed_tensors": 6,
+      "total_tensors": 6,
+      "l2_delta": 0.009359524062807474,
+      "max_abs_delta": 0.0003002174198627472
+    }
+  },
+  "before_actor_steps": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "after_actor_steps": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "forced_metrics": {
+    "optimizer_steps": 1,
+    "minibatches": 1,
+    "completed": true,
+    "early_stop_kl": false,
+    "algorithm_schema": "strategic-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 1,
+      "episodes": 1,
+      "free_choices": 0,
+      "forced_transitions": 1,
+      "active_actor_episodes": 0,
+      "actor_weight_sum": 0.0,
+      "critic_weight_sum": 1.0,
+      "advantage_mean": 0.0,
+      "advantage_variance": 0.0,
+      "per_episode": [
+        {
+          "episode_id": "forced",
+          "steps": 1,
+          "free_choices": 0,
+          "reward": 1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.0,
+      "critic": 0.036436863243579865,
+      "entropy": 0.0,
+      "kl": 0.0,
+      "conditional_kl": 0.0,
+      "loss": 0.018218431621789932
+    },
+    "epoch": 1,
+    "full_batch_post_epoch": {
+      "actor": 0.0,
+      "critic": 0.03514886647462845,
+      "entropy": 0.0,
+      "kl": 0.0,
+      "conditional_kl": 0.0,
+      "loss": 0.017574433237314224
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.01617935760318316,
+        "max_abs_delta": 0.0002010175958275795
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.009359524062807474,
+        "max_abs_delta": 0.0003002174198627472
+      }
+    }
+  }
+}

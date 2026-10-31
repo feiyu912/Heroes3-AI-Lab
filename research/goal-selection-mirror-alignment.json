@@ -1,0 +1,58 @@
+{
+  "rule_version": 2,
+  "declared_unix": 1792075292.4111533,
+  "basis": [
+    {
+      "name": "v5-diverse-last-64",
+      "old_battleai_wins": 32,
+      "old_author_wins": 23,
+      "mirror_battleai_wins": 44,
+      "mirror_author_wins": 33,
+      "battles_per_condition": 48
+    },
+    {
+      "name": "v5-diverse-last-128",
+      "old_battleai_wins": 36,
+      "old_author_wins": 25,
+      "mirror_battleai_wins": 40,
+      "mirror_author_wins": 35,
+      "battles_per_condition": 48
+    }
+  ],
+  "old_validation_stress_cases": [
+    {
+      "case": "balanced-20",
+      "same_creature_counts": false
+    },
+    {
+      "case": "balanced-21",
+      "same_creature_counts": true
+    },
+    {
+      "case": "balanced-22",
+      "same_creature_counts": false
+    },
+    {
+      "case": "balanced-23",
+      "same_creature_counts": false
+    },
+    {
+      "case": "balanced-24",
+      "same_creature_counts": true
+    },
+    {
+      "case": "balanced-25",
+      "same_creature_counts": false
+    }
+  ],
+  "final_outcomes_read": false,
+  "prior_rule": "goal-selection-plan.json retained; initially all old/diverse constraints entered the minimum",
+  "primary": "Diverse equal-army development only: BattleAI >=.95 and author scenario-cluster95 lower >.50",
+  "ranking": "Both goals met first; if met prefer higher BattleAI rate; otherwise maximize worst normalized mirror progress. Old unequal-army stress only diagnostic/tie-breaker.",
+  "final_thresholds_unchanged": true,
+  "final_scenarios": 32,
+  "battles_per_final_matchup": 512,
+  "holdout_definition_sha256": "0f85e26f9a06faa7317ad462066f5013339a562af0e9eb9c84ee798a8039bdc5",
+  "rank_semantics_contract_passed": true,
+  "scope": "Validation-driven rule correction after B trade-off, before final test; not preregistered at experiment start. Existing training lineages remain unchanged."
+}

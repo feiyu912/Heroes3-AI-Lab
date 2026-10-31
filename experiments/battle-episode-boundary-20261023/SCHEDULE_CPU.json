@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "stage": "synthetic CPU scheduler events only",
+  "first_update_barrier": true,
+  "no_updates_during_suffix": true,
+  "update2_only_after64_suffix": true,
+  "early_terminals_do_not_reduce_native_budget": true,
+  "partial_failure_preserves_counts_and_no_loss_relabel": true,
+  "budgets": [
+    {
+      "arm": "control",
+      "native": 8192,
+      "admitted": 4096,
+      "suffix": 4096,
+      "simulated_slot_updates": 128
+    },
+    {
+      "arm": "candidate",
+      "native": 8192,
+      "admitted": 4096,
+      "suffix": 4096,
+      "simulated_slot_updates": 128
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "actual_optimizer_steps": 0,
+  "resource_locks_taken": false,
+  "source_sha256": "02489bf76105e83683d6623b4dff34e6023a04e3c1453c26ede6616a15651b27"
+}

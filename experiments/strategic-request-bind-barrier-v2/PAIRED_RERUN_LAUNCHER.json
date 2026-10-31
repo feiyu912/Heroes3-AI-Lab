@@ -1,0 +1,7 @@
+{
+  "original_unchanged_sha256": "20605c9f34e7df6d868888aed174da8f02e38f8d0338c569817b50acc0d7ea9b",
+  "new_launcher_sha256": "dbd6ca5ce8d949c87d3f4055dee08d24242cfd305f85c74661e6dd1dc2755219",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "Same seeds/method/score endpoints; repaired native epoch and explicit prerequisite"
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/usr/bin/ldd",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ld"
+  ],
+  "returncode": 0,
+  "seconds": 0.016111135482788086,
+  "stdout_sha256": "5478472e07a13335a7359e220208da4408da8138157ad0eac786b38c120cdf3b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case_id": "hallas-2001-wait-cross-round-action-window",
+  "status": "explicit_source_claim_extracted_engine_and_learning_verification_pending",
+  "source_id": "hallas2001",
+  "source": {
+    "title": "Heroes III Complete Strategy Guide",
+    "author": "Richard Hallas",
+    "published_at": "2001-08-27",
+    "url": "https://www.insidemacgames.com/historical/features/view.php%3FID%3D64%26Page%3D5.html",
+    "game_version_claimed": "Heroes III Complete; exact executable build unknown",
+    "material_type": "original_authored_text_tutorial",
+    "locator": "Page 5 / General combat tips / Waiting to attack; paragraph beginning 'Waited' troops",
+    "text_actually_read": true,
+    "direct_quote": null,
+    "quote_policy": "No additional quotation; same source already quoted 17 words in source_case.json",
+    "video_watched": false,
+    "human_replay_or_state_trace_obtained": false,
+    "author_identity_limit": "Named author of substantive published strategy guide; professional or tournament ranking not verified",
+    "rights": "Publicly accessible copyrighted tutorial; source link and concise paraphrase only; no full text/video redistributed",
+    "accessed_at": "2026-10-15"
+  },
+  "tactic": {
+    "name": "等待制造跨轮连续行动窗口",
+    "source_claim_paraphrase": "等待队列按速度反序行动。严格最快的队伍可以本轮最后行动，再于下轮最先行动，形成连续行动窗口。",
+    "goal": "Choose timing that improves exchange value while accounting for the opponent's intervening opportunities",
+    "key_mechanics": ["WAIT postpones this stack's turn to the waiting phase", "Waiting phase uses reverse speed order", "Next round restores normal initiative ordering"],
+    "preconditions": ["A legal WAIT action exists", "Chosen stack is strictly faster than every other surviving stack", "No morale extra action, speed-changing effect, hidden action or battle termination disrupts this minimal test", "The stack survives until the delayed action"],
+    "operation_order": ["Build a legal minimal state with one faster and one slower opposing stack", "Execute WAIT for faster stack", "Trace round and active-stack transitions through the slower stack's action", "Require faster stack's delayed action followed by its next-round normal action with no opposing action between", "Compare full battle or finite-window casualty value to a same-seed legal non-WAIT control"],
+    "success_reason": "Delaying can create a two-action window across the round boundary, while allowing the opponent to act earlier this round",
+    "failure_conditions": ["Slower stack can inflict decisive damage before delayed action", "Enemy shooter gains a free effective shot", "Speed is tied or modified", "Morale/creature abilities alter initiative", "A terminal battle never reaches the next round", "Waiting produces no strategic benefit despite correct ordering"],
+    "offense": "Exploit a verified speed advantage to attack late and reposition or attack first next round",
+    "defense": "Deny profitable targets or preserve an answer instead of making the desired delayed attack available",
+    "opponent_responses_status": "Lab hypotheses for testing; not attributed to an observed Hallas opponent",
+    "scope": "v15 battle candidate; no active hero magic required",
+    "source_unknowns": ["Actual historical creature types and counts", "Historical battlefield coordinates", "Hero skills and artifacts", "Historical random seed", "Exact game build"],
+    "reconstruction_disclosure": "Lab-generated armies, positions, seeds and response policies are a new experiment, not a recovered human demonstration",
+    "version_difference_status": "Pinned VCMI turn-order behavior must be verified against actual execution; cannot assume equivalence from names",
+    "evidence_confidence": {"interpretation_of_source": "high", "vcmi_rule_equivalence": "pending", "best_action_label": "pending", "trained_model_benefit": "pending"}
+  },
+  "required_evidence": ["Fixed engine and fixture hashes", "Legal action masks and chosen IDs", "Actor and round trace showing actual delayed/next-round order", "Same-seed control and randomized independent variants", "Expert labeling based on measured advantage, including reject/no-benefit cases", "Before/after model and ordinary-battle regression results"],
+  "integration_gate": "Rule replication is distinct from tactic advantage, demonstration quality, BC success and independent generalization; report each separately."
+}

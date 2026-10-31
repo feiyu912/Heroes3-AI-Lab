@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-10-26T11:42:39.620448+00:00",
+  "controller_pids": [
+    17964
+  ],
+  "unified_exec_session_id": 48885,
+  "last_ninja_progress": [
+    "212",
+    "727"
+  ],
+  "terminal_result_present": false,
+  "status": "running",
+  "do_not_restart_based_on_observation_timeout": true,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

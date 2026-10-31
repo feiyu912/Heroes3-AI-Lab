@@ -1,0 +1,130 @@
+{
+  "scope": "Completed development reports only. No training, evaluation, or process changes.",
+  "baseline_roles": {
+    "attacker": {
+      "games": 96,
+      "wins": 89,
+      "losses": 7,
+      "scenarios": 48
+    },
+    "defender": {
+      "games": 96,
+      "wins": 83,
+      "losses": 13,
+      "scenarios": 48
+    }
+  },
+  "family_role": {
+    "archer+griffin+pikeman|attacker": {
+      "games": 16,
+      "wins": 16,
+      "losses": 0,
+      "scenarios": 8
+    },
+    "archer+griffin+pikeman|defender": {
+      "games": 16,
+      "wins": 16,
+      "losses": 0,
+      "scenarios": 8
+    },
+    "centaur+pegasus+woodElf|attacker": {
+      "games": 16,
+      "wins": 14,
+      "losses": 2,
+      "scenarios": 8
+    },
+    "centaur+pegasus+woodElf|defender": {
+      "games": 16,
+      "wins": 12,
+      "losses": 4,
+      "scenarios": 8
+    },
+    "cavalier+monk+swordsman|attacker": {
+      "games": 16,
+      "wins": 15,
+      "losses": 1,
+      "scenarios": 8
+    },
+    "cavalier+monk+swordsman|defender": {
+      "games": 16,
+      "wins": 12,
+      "losses": 4,
+      "scenarios": 8
+    },
+    "dwarf+unicorn+woodElf|attacker": {
+      "games": 16,
+      "wins": 15,
+      "losses": 1,
+      "scenarios": 8
+    },
+    "dwarf+unicorn+woodElf|defender": {
+      "games": 16,
+      "wins": 16,
+      "losses": 0,
+      "scenarios": 8
+    },
+    "monk+pegasus+pikeman|attacker": {
+      "games": 16,
+      "wins": 13,
+      "losses": 3,
+      "scenarios": 8
+    },
+    "monk+pegasus+pikeman|defender": {
+      "games": 16,
+      "wins": 11,
+      "losses": 5,
+      "scenarios": 8
+    },
+    "archer+dendroidGuard+griffin|attacker": {
+      "games": 16,
+      "wins": 16,
+      "losses": 0,
+      "scenarios": 8
+    },
+    "archer+dendroidGuard+griffin|defender": {
+      "games": 16,
+      "wins": 16,
+      "losses": 0,
+      "scenarios": 8
+    }
+  },
+  "mechanism_groups": {
+    "ranged_and_flying|attacker": {
+      "games": 64,
+      "wins": 59,
+      "losses": 5,
+      "scenarios": 32
+    },
+    "ranged_and_flying|defender": {
+      "games": 64,
+      "wins": 55,
+      "losses": 9,
+      "scenarios": 32
+    },
+    "ranged_and_ground_mounted|attacker": {
+      "games": 32,
+      "wins": 30,
+      "losses": 2,
+      "scenarios": 16
+    },
+    "ranged_and_ground_mounted|defender": {
+      "games": 32,
+      "wins": 28,
+      "losses": 4,
+      "scenarios": 16
+    }
+  },
+  "baseline_losses": 20,
+  "losses_also_lost_by_public": 12,
+  "public_only_recoveries": 8,
+  "retrospective_oracle_union": {
+    "wins": 180,
+    "games": 192,
+    "meaning": "Per-completed-battle oracle union of two fixed policies; not an upper bound on imitation, PPO, or action-level search."
+  },
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/b64-baseline-BattleAI-development.json": "064ccba94fc3a53e986df2713c50b598e230150177d470aa0f694a122a2f3c18",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-b64-run-v2/public-original-BattleAI-development.json": "6be89984456bbfec74d1bad6162415fd8ca863ce65941ed0bc1652cb3619ea34",
+    "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json": "8af02c4b126a4bc59abb837ca6e67f0d5c9b3f7bf40207209a132f43b89162e1"
+  }
+}

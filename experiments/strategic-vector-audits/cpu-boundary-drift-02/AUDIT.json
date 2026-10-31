@@ -1,0 +1,745 @@
+{
+  "readonly": true,
+  "game_started": false,
+  "optimizer_steps": 0,
+  "CUDA_initialized": false,
+  "update1_continuous_vs_independent_split": {
+    "samples": 32,
+    "field_difference_counts": {
+      "old_value": 10
+    },
+    "max_abs_difference": {
+      "old_value": 5.960464477539063e-08
+    },
+    "inference_context_differences": 22,
+    "first_difference_examples": [
+      {
+        "wave": 1,
+        "env": 0,
+        "request_id": 2,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.6786514520645142
+        },
+        "right": {
+          "old_value": 0.6786513924598694
+        },
+        "left_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 1,
+        "env": 0,
+        "request_id": 3,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.39174795150756836
+        },
+        "right": {
+          "old_value": 0.3917478919029236
+        },
+        "left_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            0
+          ]
+        }
+      },
+      {
+        "wave": 1,
+        "env": 0,
+        "request_id": 4,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.680854856967926
+        },
+        "right": {
+          "old_value": 0.6808547973632812
+        },
+        "left_inference_batch": {
+          "batch_index": 4,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 1,
+        "env": 1,
+        "request_id": 1,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.2701962888240814
+        },
+        "right": {
+          "old_value": 0.27019625902175903
+        },
+        "left_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 2,
+        "env": 0,
+        "request_id": 3,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.39174795150756836
+        },
+        "right": {
+          "old_value": 0.3917478919029236
+        },
+        "left_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            0
+          ]
+        }
+      },
+      {
+        "wave": 2,
+        "env": 0,
+        "request_id": 4,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.680854856967926
+        },
+        "right": {
+          "old_value": 0.6808547973632812
+        },
+        "left_inference_batch": {
+          "batch_index": 4,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 2,
+        "env": 1,
+        "request_id": 1,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.2701962888240814
+        },
+        "right": {
+          "old_value": 0.27019625902175903
+        },
+        "left_inference_batch": {
+          "batch_index": 0,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 3,
+        "env": 0,
+        "request_id": 3,
+        "changed_fields": [
+          "old_value"
+        ],
+        "left": {
+          "old_value": 0.3917478919029236
+        },
+        "right": {
+          "old_value": 0.39174795150756836
+        },
+        "left_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "update2_continuous_vs_split_resumed": {
+    "samples": 32,
+    "field_difference_counts": {
+      "action": 6,
+      "old_logprob": 6,
+      "generator_seed": 32,
+      "episode_id": 32,
+      "policy_version": 32,
+      "policy_tensor_sha256": 32,
+      "checkpoint_sha256": 32,
+      "request": 6,
+      "old_value": 10
+    },
+    "max_abs_difference": {
+      "old_logprob": 0.0009431838989257812,
+      "old_value": 0.046417236328125
+    },
+    "inference_context_differences": 16,
+    "first_difference_examples": [
+      {
+        "wave": 0,
+        "env": 0,
+        "request_id": 1,
+        "changed_fields": [
+          "action",
+          "old_logprob",
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "action": 1,
+          "old_logprob": -0.6927171349525452,
+          "generator_seed": 178638500376628222,
+          "episode_id": "b47fd695e0ca3bfad2099caf9c37800c24d04f4eeb7efffd41e19b22fe4371cc",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "action": 0,
+          "old_logprob": -0.6935773491859436,
+          "generator_seed": 8315975314131055950,
+          "episode_id": "2808fa9f829870a660ab131f821c7d5a1f612498f4ecc88e13fc1876a8e9e01a",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 0,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 0,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            0
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 0,
+        "request_id": 2,
+        "changed_fields": [
+          "request",
+          "old_value",
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "old_value": 0.4610975384712219,
+          "generator_seed": 178638500376628222,
+          "episode_id": "b47fd695e0ca3bfad2099caf9c37800c24d04f4eeb7efffd41e19b22fe4371cc",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "old_value": 0.5075147151947021,
+          "generator_seed": 8315975314131055950,
+          "episode_id": "2808fa9f829870a660ab131f821c7d5a1f612498f4ecc88e13fc1876a8e9e01a",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 0,
+        "request_id": 3,
+        "changed_fields": [
+          "action",
+          "old_logprob",
+          "old_value",
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "action": 1,
+          "old_logprob": -0.6926757097244263,
+          "old_value": 0.23769722878932953,
+          "generator_seed": 178638500376628222,
+          "episode_id": "b47fd695e0ca3bfad2099caf9c37800c24d04f4eeb7efffd41e19b22fe4371cc",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "action": 0,
+          "old_logprob": -0.693618893623352,
+          "old_value": 0.2376972883939743,
+          "generator_seed": 8315975314131055950,
+          "episode_id": "2808fa9f829870a660ab131f821c7d5a1f612498f4ecc88e13fc1876a8e9e01a",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            0
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 0,
+        "request_id": 4,
+        "changed_fields": [
+          "request",
+          "old_value",
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "old_value": 0.5068903565406799,
+          "generator_seed": 178638500376628222,
+          "episode_id": "b47fd695e0ca3bfad2099caf9c37800c24d04f4eeb7efffd41e19b22fe4371cc",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "old_value": 0.5532103180885315,
+          "generator_seed": 8315975314131055950,
+          "episode_id": "2808fa9f829870a660ab131f821c7d5a1f612498f4ecc88e13fc1876a8e9e01a",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            0
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 1,
+        "request_id": 1,
+        "changed_fields": [
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "generator_seed": 2539256945809914443,
+          "episode_id": "43f6def25aa9681f351dd8fff2742433ab91cdea202387fd419cad80db3e04a9",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "generator_seed": 8937712840684732858,
+          "episode_id": "73f162da7420a5bb08d3c6d61986698a2ef1160274a82b355ac45d5752363871",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 0,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 1,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            2
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 1,
+        "request_id": 2,
+        "changed_fields": [
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "generator_seed": 2539256945809914443,
+          "episode_id": "43f6def25aa9681f351dd8fff2742433ab91cdea202387fd419cad80db3e04a9",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "generator_seed": 8937712840684732858,
+          "episode_id": "73f162da7420a5bb08d3c6d61986698a2ef1160274a82b355ac45d5752363871",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 2,
+          "batch_size": 2,
+          "candidate_counts": [
+            2,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 3,
+          "batch_size": 2,
+          "candidate_counts": [
+            1,
+            1
+          ],
+          "env_indices": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 1,
+        "request_id": 3,
+        "changed_fields": [
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "generator_seed": 2539256945809914443,
+          "episode_id": "43f6def25aa9681f351dd8fff2742433ab91cdea202387fd419cad80db3e04a9",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "generator_seed": 8937712840684732858,
+          "episode_id": "73f162da7420a5bb08d3c6d61986698a2ef1160274a82b355ac45d5752363871",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 4,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 4,
+          "batch_size": 1,
+          "candidate_counts": [
+            2
+          ],
+          "env_indices": [
+            1
+          ]
+        }
+      },
+      {
+        "wave": 0,
+        "env": 1,
+        "request_id": 4,
+        "changed_fields": [
+          "generator_seed",
+          "episode_id",
+          "policy_version",
+          "policy_tensor_sha256",
+          "checkpoint_sha256"
+        ],
+        "left": {
+          "generator_seed": 2539256945809914443,
+          "episode_id": "43f6def25aa9681f351dd8fff2742433ab91cdea202387fd419cad80db3e04a9",
+          "policy_version": "update-1:sha256:fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "policy_tensor_sha256": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+          "checkpoint_sha256": "1e898200ac9dfefa929a1aeaf2f610165a2ae13cf60f01475487dd69ffce3fc5"
+        },
+        "right": {
+          "generator_seed": 8937712840684732858,
+          "episode_id": "73f162da7420a5bb08d3c6d61986698a2ef1160274a82b355ac45d5752363871",
+          "policy_version": "update-1:sha256:a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "policy_tensor_sha256": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c",
+          "checkpoint_sha256": "e061cb4bb13e10d8a40fb2451310d2fd9f1761f29d8fe5829e2675b40900e4d4"
+        },
+        "left_inference_batch": {
+          "batch_index": 5,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            1
+          ]
+        },
+        "right_inference_batch": {
+          "batch_index": 5,
+          "batch_size": 1,
+          "candidate_counts": [
+            1
+          ],
+          "env_indices": [
+            1
+          ]
+        }
+      }
+    ]
+  },
+  "update1_resulting_policy_tensor_hashes": {
+    "trainer-cpu-continuous-02": "fb9ee698bc7da2c4fc838a6fe96d8478a2bb6de5a74a740fb9e37bbcb19ce4c8",
+    "trainer-cpu-split-02": "a3629a9067306ceaff31eefe380d42de1b3cc880cc6caf0fae0c3911421edc2c"
+  },
+  "update2_recomputed_first_job_generator_seeds": {
+    "trainer-cpu-continuous-02": 178638500376628222,
+    "trainer-cpu-split-02": 8315975314131055950
+  },
+  "confirmed": "First-update archival data differ slightly before the split checkpoint exists; different resulting tensor SHA changes all subsequent job RNG seeds. This confounds fresh repeated collection with serialization recovery. Exact same archived batches are needed to isolate save/restore.",
+  "inference_attribution": "Different dynamic microbatch contexts are observed. Corresponding CPU batch-shape numerical differences explain value/logp drift; a tiny tensor change then causes a cryptographic RNG seed change, not merely a small numeric perturbation.",
+  "audit_source_sha256": "c6510541c13cee82db6181dc81c02fb3e30cfebfbeda9ae75dfbc792ffcf6698"
+}

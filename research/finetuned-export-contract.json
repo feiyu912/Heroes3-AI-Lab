@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "role": "attacker",
+      "observations": 12,
+      "maximum_probability_error": 5.200505256652832e-06,
+      "near_tie_greedy_differences": 0
+    },
+    {
+      "role": "defender",
+      "observations": 12,
+      "maximum_probability_error": 1.0013580322265625e-05,
+      "near_tie_greedy_differences": 0
+    }
+  ],
+  "all_parameter_arrays_independently_perturbed": true,
+  "perturbation_not_a_training_candidate": true,
+  "training_observations_only": true,
+  "note": "Synthetic weights verify mapping of every learnable alias; selected real model still needs its own numerical/live verification"
+}

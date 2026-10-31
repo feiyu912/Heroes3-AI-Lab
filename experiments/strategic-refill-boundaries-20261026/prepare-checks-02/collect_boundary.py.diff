@@ -1,0 +1,66 @@
+--- /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/collect_mechanism.py
++++ /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/collect_boundary.py
+@@ -1,7 +1,7 @@
+ """One serial diagnostic native game. Explicit Ubuntu resources and inherited locks."""
+ import argparse,fcntl,json,os,shutil,signal,subprocess,time
+ from pathlib import Path
+-from common import HERE,PROFILE,RESOURCE,LEASE_SOURCE,REGISTRY_SOURCE,SUPPORT_SOURCE,CONTRACT,leases,support,registry,fixture,load,sha,write,validate_capsule,verify_native_fds,verify_source_freeze
++from boundary_common import HERE,PROFILE,RESOURCE,LEASE_SOURCE,REGISTRY_SOURCE,SUPPORT_SOURCE,CONTRACT,leases,support,registry,fixture,load,sha,write,validate_capsule,verify_native_fds,verify_source_freeze
+ 
+ def memory(out,phase,initial=False):
+  values={k:int(v.split()[0]) for k,v in (line.split(':',1) for line in Path('/proc/meminfo').read_text().splitlines())}
+@@ -19,10 +19,15 @@
+  assert Path(os.environ['HEROES3_LAB_ROOT']).resolve()==(PROFILE/'heroes3-ai-lab').resolve()
+  python=Path(os.environ['LAB_PYTHON']);assert python.is_file()
+  pin=validate_capsule(args.capsule,args.arm);manifest,f=fixture(args.case)
++ if args.execute:
++  admission=load(HERE/'RUN_ADMISSION.json')
++  assert admission['passed'] is True and admission['source_freeze_sha256']==sha(HERE/'SOURCE_FREEZE.json')
++  assert args.case in admission['allowed_cases'] and admission['fixture_sha256'][args.case]==f['sha256']
++  assert admission['capsule_attestation_sha256'][args.arm]==sha(args.capsule/'BUILD_ATTESTATION.json')
+  capsule=args.capsule.resolve();work=args.out.resolve();bins=capsule/'bin'
+  assert args.seconds==f['max_seconds'],'Timeout is preregistered; make a new experiment rather than relax it'
+  work.mkdir(parents=True,exist_ok=False)
+- result=dict(schema='refill-native-execution-v1',game_completed=False,transport_drained=False,client_exit=None,broker_exit=None,training_samples=0,optimizer_steps=0,final_test_touched=False,arm=args.arm,case=args.case)
++ result=dict(schema='refill-boundary-native-execution-v1',game_completed=False,transport_drained=False,client_exit=None,broker_exit=None,training_samples=0,optimizer_steps=0,final_test_touched=False,arm=args.arm,case=args.case)
+  handles=[];child=None;broker=None;loaded={};freeze={};entries=[];native_fd_proof=[]
+  try:
+   memory(work,'before',True)
+@@ -47,16 +52,17 @@
+    write(folder/'settings.json',settings);write(folder/'modSettings.json',dict(activePreset='adv',presets=dict(adv=dict(mods=['core','vcmi'],settings={}))))
+    for name in ('persistentStorage.json','keyBindingsConfig.json'):write(folder/name,{})
+   shutil.copytree(work/'config',work/'initial-config');shutil.copytree(work/'data/vcmi/config',work/'initial-user-config')
+-  inputs=set(pin['inputs']+[Path(manifest['source']),Path(manifest['creature_key_source']),source,HERE/'FIXTURE_MANIFEST.json',HERE/'SOURCE_FREEZE.json',HERE/'PLAN.md',LEASE_SOURCE,REGISTRY_SOURCE,SUPPORT_SOURCE,PROFILE/'runtime/env.sh',PROFILE/'runtime/native-paths.so'])
++  inputs=set(pin['inputs']+[Path(manifest['source']),Path(manifest['native_water_metadata']),source,HERE/'FIXTURE_MANIFEST.json',HERE/'SOURCE_FREEZE.json',HERE/'PLAN.md',LEASE_SOURCE,REGISTRY_SOURCE,SUPPORT_SOURCE,PROFILE/'runtime/env.sh',PROFILE/'runtime/native-paths.so'])
+   inputs.update(HERE.glob('*.py'))
++  if args.execute:inputs.add(HERE/'RUN_ADMISSION.json')
+   for root in (assets,PROFILE/'runtime/runtime-libs',PROFILE/'heroes3-ai-lab/onnxruntime/lib',work/'scripts',work/'initial-config',work/'initial-user-config'):
+    inputs.update(p for p in root.rglob('*') if p.is_file())
+   freeze={str(p):sha(p) for p in sorted(inputs)}
+-  plan=dict(schema='refill-mechanism-plan-v1',capsule=str(capsule),arm=args.arm,case=args.case,map=mapname,seed=f['seed'],owned_player=f['owned_player'],opponent=f['opponent'],classification='diagnostic_only',checkpoint=None,sampling='scripted_actual_candidates_no_PPO',training_samples=0,optimizer_steps=0,final_test_used=False,action_schema='strategy-candidates-v6',economy_epoch='learned-economy-build-recruit-v1',threat_replan='off',contract_sha256=sha(CONTRACT),hashes=freeze,resource_locks=entries,seconds=args.seconds)
++  plan=dict(schema='refill-boundary-plan-v1',capsule=str(capsule),arm=args.arm,case=args.case,map=mapname,seed=f['seed'],owned_player=f['owned_player'],opponent=f['opponent'],classification='diagnostic_only',checkpoint=None,sampling='scripted_actual_candidates_no_PPO',training_samples=0,optimizer_steps=0,final_test_used=False,action_schema=f['schema'],economy_epoch=('learned-economy-build-recruit-v1' if f['mode']=='build_recruit_v1' else 'learned-economy-build-v1' if f['mode']=='build_v1' else None),threat_replan='off',contract_sha256=sha(CONTRACT),hashes=freeze,resource_locks=entries,seconds=args.seconds)
+   write(work/'PLAN.json',plan)
+   if not args.execute:
+    result['stop_reason']='prepared_only_no_native_launch';return 0
+-  env=dict(os.environ,LD_LIBRARY_PATH=str(bins)+':'+str(PROFILE/'runtime/runtime-libs')+':'+str(PROFILE/'heroes3-ai-lab/onnxruntime/lib'),CUDA_VISIBLE_DEVICES='',SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',XDG_DATA_HOME=str(work/'data'),XDG_CONFIG_HOME=str(work),XDG_CACHE_HOME=str(work/'cache'),LAB_ADV_AI_0=f['opponent'],LAB_ADV_AI_1='DirectorAI',LAB_ADV_TRACE=str(work/'strategy-trace.jsonl'),LAB_ADV_DECISIONS=str(work/'strategy-decisions.jsonl'),LAB_ADV_AGENT_DIR=str(work/'agent'),LAB_ADV_TYPED_EVENTS=str(work/'typed.jsonl'),LAB_ADV_THREAT_REPLAN='off',LAB_ADV_LEARNED_ECONOMY='build_recruit_v1',LAB_ADV_BUILD_PACKS=str(work/'build-packs.jsonl'),TERMINAL_CREDIT_LEASES=json.dumps(entries),TERMINAL_CREDIT_POOL_LEASE=json.dumps(entries[1]),REFILL_NATIVE_LEASE_PROOF=str(work/'NATIVE_LEASES.json'))
++  env=dict(os.environ,LD_LIBRARY_PATH=str(bins)+':'+str(PROFILE/'runtime/runtime-libs')+':'+str(PROFILE/'heroes3-ai-lab/onnxruntime/lib'),CUDA_VISIBLE_DEVICES='',SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',XDG_DATA_HOME=str(work/'data'),XDG_CONFIG_HOME=str(work),XDG_CACHE_HOME=str(work/'cache'),LAB_ADV_AI_0=f['opponent'],LAB_ADV_AI_1='DirectorAI',LAB_ADV_TRACE=str(work/'strategy-trace.jsonl'),LAB_ADV_DECISIONS=str(work/'strategy-decisions.jsonl'),LAB_ADV_AGENT_DIR=str(work/'agent'),LAB_ADV_TYPED_EVENTS=str(work/'typed.jsonl'),LAB_ADV_THREAT_REPLAN='off',LAB_ADV_LEARNED_ECONOMY=f['mode'],LAB_ADV_BUILD_PACKS=str(work/'build-packs.jsonl'),TERMINAL_CREDIT_LEASES=json.dumps(entries),TERMINAL_CREDIT_POOL_LEASE=json.dumps(entries[1]),REFILL_NATIVE_LEASE_PROOF=str(work/'NATIVE_LEASES.json'))
+   (work/'build-packs.jsonl').touch(exist_ok=False)
+   pass_fds=tuple(h.fileno() for h in handles)
+   with (work/'broker.log').open('w') as blog,(work/'client.log').open('w') as clog:
+@@ -107,6 +113,7 @@
+   leases.finish_owned_groups()
+   result['client_exit']=None if child is None else child.returncode;result['broker_exit']=None if broker is None else broker.returncode
+   result['loaded_library_observations']=list(loaded.values());result['native_inherited_fd_observations']=native_fd_proof
++  result['optional_raw_target_logs']={str(p.relative_to(work)):sha(p) for p in sorted(work.glob('strategy-trace.jsonl.*')) if p.is_file()}
+   result['input_sha_unchanged']=bool(freeze) and all(sha(p)==h for p,h in freeze.items())
+   result['owned_children_cleaned_before_release']=all(p is None or not leases.live_group_members(p.pid) for p in (child,broker))
+   result['passed']=bool(args.execute and result.get('stop_reason')=='native_completed_normal_drain' and result['game_completed'] and result['transport_drained'] and result['input_sha_unchanged'] and result['owned_children_cleaned_before_release'])
+@@ -116,7 +123,7 @@
+ 
+ def interrupt(signum,frame):raise KeyboardInterrupt('Diagnostic collector interrupted')
+ def main():
+- p=argparse.ArgumentParser();p.add_argument('--capsule',type=Path,required=True);p.add_argument('--arm',choices=['baseline','candidate'],required=True);p.add_argument('--case',choices=['positive','empty','full-incompatible','full-merge'],required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--seconds',type=float,default=180);p.add_argument('--execute',action='store_true');a=p.parse_args()
++ p=argparse.ArgumentParser();p.add_argument('--capsule',type=Path,required=True);p.add_argument('--arm',choices=['baseline','candidate'],required=True);p.add_argument('--case',choices=['reachable-stock-control','unreachable-stock','nonowned-stock','arrive-incompatible-stock','consumed-pickup','legacy-build','legacy-v4'],required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--seconds',type=float,default=180);p.add_argument('--execute',action='store_true');a=p.parse_args()
+  return run(a)
+ if __name__=='__main__':
+  signal.signal(signal.SIGINT,interrupt);signal.signal(signal.SIGTERM,interrupt)

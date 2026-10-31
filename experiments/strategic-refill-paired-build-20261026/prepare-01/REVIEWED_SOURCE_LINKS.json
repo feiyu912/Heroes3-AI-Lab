@@ -1,0 +1,30 @@
+{
+  "defender-ipnkyfqb-best3.onnx": {
+    "symlink": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/src/export/defender-ipnkyfqb-best3.onnx",
+    "directory": false,
+    "lexists": true,
+    "target_exists": false,
+    "file": false
+  },
+  "data/Data": {
+    "symlink": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/data/vcmi/Data",
+    "directory": true,
+    "lexists": true,
+    "target_exists": true,
+    "file": false
+  },
+  "data/Maps": {
+    "symlink": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/data/vcmi/Maps",
+    "directory": true,
+    "lexists": true,
+    "target_exists": true,
+    "file": false
+  },
+  "data/Mods": {
+    "symlink": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/data/vcmi/Mods",
+    "directory": true,
+    "lexists": true,
+    "target_exists": true,
+    "file": false
+  }
+}

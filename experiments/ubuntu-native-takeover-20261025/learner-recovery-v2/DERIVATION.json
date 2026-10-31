@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "source_derivation_only": true,
+  "preserved_v1_source_freeze_sha256": "df7e6da4ab7b7e5e632a71ee6cea433db419f112d20a2067cbb35cc79a2e23d6",
+  "v1_qualify_sha256": "74c79ddc07fadbe124535a302edee6ac0b2ac2eacf9492dd9b5d70eb66d17b2f",
+  "v2_qualify_sha256": "32e27d2f3ccba978e64e43addb05fb106d422854236103496ff2b0b265484ae2",
+  "only_code_change": "Report attempted forbidden optimizer.step calls even on failure",
+  "derived_restore_helper_unchanged": true,
+  "lease_copy_unchanged": true,
+  "V1_DERIVATION_sha256": "6350cf90d6de451338e37dc2c4ffc569503be38aeaee1eaa45c343fa7c8553e1",
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "native_games": 0
+}

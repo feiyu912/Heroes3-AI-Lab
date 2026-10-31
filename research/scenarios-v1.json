@@ -1,0 +1,338 @@
+[
+  {
+    "id": "curriculum-00",
+    "map": "lab/curriculum-00.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 8,
+          "type": "core:pikeman"
+        }
+      ],
+      [
+        {
+          "amount": 13,
+          "type": "core:archer"
+        }
+      ]
+    ],
+    "sha256": "9294af4d19c5b8e79fefee348c363c91e78bca33fcd619592e1a93b8fab6404c"
+  },
+  {
+    "id": "curriculum-01",
+    "map": "lab/curriculum-01.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 11,
+          "type": "core:archer"
+        },
+        {
+          "amount": 18,
+          "type": "core:monk"
+        }
+      ],
+      [
+        {
+          "amount": 16,
+          "type": "core:griffin"
+        },
+        {
+          "amount": 23,
+          "type": "core:cavalier"
+        }
+      ]
+    ],
+    "sha256": "649fb51b60aa8219a46d451b074cf7fe32a4f553d1b0f0c48644e91bc32d3373"
+  },
+  {
+    "id": "curriculum-02",
+    "map": "lab/curriculum-02.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 14,
+          "type": "core:griffin"
+        },
+        {
+          "amount": 21,
+          "type": "core:cavalier"
+        },
+        {
+          "amount": 10,
+          "type": "core:woodElf"
+        }
+      ],
+      [
+        {
+          "amount": 19,
+          "type": "core:swordsman"
+        },
+        {
+          "amount": 8,
+          "type": "core:centaur"
+        },
+        {
+          "amount": 15,
+          "type": "core:pegasus"
+        }
+      ]
+    ],
+    "sha256": "9a658089a699777224ac5f2f38899af8f93558f78bcdabfa3db079e23fbc8e52"
+  },
+  {
+    "id": "curriculum-03",
+    "map": "lab/curriculum-03.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 17,
+          "type": "core:swordsman"
+        }
+      ],
+      [
+        {
+          "amount": 22,
+          "type": "core:monk"
+        }
+      ]
+    ],
+    "sha256": "675ddac06ee4cc621af97bcf06e9d4573e6e91d8bdaa41571e91e28464f2c981"
+  },
+  {
+    "id": "curriculum-04",
+    "map": "lab/curriculum-04.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 20,
+          "type": "core:monk"
+        },
+        {
+          "amount": 9,
+          "type": "core:dwarf"
+        }
+      ],
+      [
+        {
+          "amount": 25,
+          "type": "core:cavalier"
+        },
+        {
+          "amount": 14,
+          "type": "core:woodElf"
+        }
+      ]
+    ],
+    "sha256": "7ef1c44fcf77da1a373e8e6a3d57ba6e8bc251fcc79b1821873039325b75a788"
+  },
+  {
+    "id": "curriculum-05",
+    "map": "lab/curriculum-05.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 23,
+          "type": "core:cavalier"
+        },
+        {
+          "amount": 12,
+          "type": "core:woodElf"
+        },
+        {
+          "amount": 19,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {
+          "amount": 10,
+          "type": "core:centaur"
+        },
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        },
+        {
+          "amount": 24,
+          "type": "core:pikeman"
+        }
+      ]
+    ],
+    "sha256": "aa60f1ef6a3aa2b272a6451a6c1cd3dc28b9bc83c0a3f810c43da5d4ab5ca51a"
+  },
+  {
+    "id": "curriculum-06",
+    "map": "lab/curriculum-06.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 8,
+          "type": "core:centaur"
+        }
+      ],
+      [
+        {
+          "amount": 13,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "e4f33909709506db1512726774a08aec8272fca424eedc03f5bab3d094f8f071"
+  },
+  {
+    "id": "curriculum-07",
+    "map": "lab/curriculum-07.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 11,
+          "type": "core:dwarf"
+        },
+        {
+          "amount": 18,
+          "type": "core:dendroidGuard"
+        }
+      ],
+      [
+        {
+          "amount": 16,
+          "type": "core:woodElf"
+        },
+        {
+          "amount": 23,
+          "type": "core:unicorn"
+        }
+      ]
+    ],
+    "sha256": "6772ccadc1b0b2c8dfa32f7210b6a3b1a8f731aa808429095e3da5d6a1f80671"
+  },
+  {
+    "id": "curriculum-08",
+    "map": "lab/curriculum-08.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {
+          "amount": 14,
+          "type": "core:woodElf"
+        },
+        {
+          "amount": 21,
+          "type": "core:unicorn"
+        },
+        {
+          "amount": 10,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {
+          "amount": 19,
+          "type": "core:pegasus"
+        },
+        {
+          "amount": 8,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 15,
+          "type": "core:swordsman"
+        }
+      ]
+    ],
+    "sha256": "94580aea8ba20cc96202188de27e2da36bf5a3c1d9d234332da8dcb9f583f546"
+  },
+  {
+    "id": "curriculum-09",
+    "map": "lab/curriculum-09.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {
+          "amount": 22,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "1be58e08b4e0e6e33c723c9248f8998a21051d4cd1151bce53e6e0cf2296f896"
+  },
+  {
+    "id": "curriculum-10",
+    "map": "lab/curriculum-10.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 20,
+          "type": "core:dendroidGuard"
+        },
+        {
+          "amount": 9,
+          "type": "core:archer"
+        }
+      ],
+      [
+        {
+          "amount": 25,
+          "type": "core:unicorn"
+        },
+        {
+          "amount": 14,
+          "type": "core:griffin"
+        }
+      ]
+    ],
+    "sha256": "1746c86e1637b741be0d912dc96c3e3b3f2b598e8e245c4722f6b2af4a796194"
+  },
+  {
+    "id": "curriculum-11",
+    "map": "lab/curriculum-11.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 23,
+          "type": "core:unicorn"
+        },
+        {
+          "amount": 12,
+          "type": "core:griffin"
+        },
+        {
+          "amount": 19,
+          "type": "core:cavalier"
+        }
+      ],
+      [
+        {
+          "amount": 10,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 17,
+          "type": "core:swordsman"
+        },
+        {
+          "amount": 24,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "a96e9079a5465d00f306576b5c771add854452ef64e52435f11af8f5507cd47a"
+  }
+]

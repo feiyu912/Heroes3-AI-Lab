@@ -1,0 +1,60 @@
+{
+  "recovery_boundary_verified": true,
+  "original_run_passed": false,
+  "original_resource_gate_passed": false,
+  "original_error": "post_update_resource reserve or swap gate failed; exact offending live metric was not saved",
+  "last_saved_resource_update63": {
+    "available_mib": 7142.6328125,
+    "swap_used_mib": 181.56640625,
+    "gpu_temperature": 50.0,
+    "gpu_memory_mib": 2416.0
+  },
+  "boundaries": {
+    "63": {
+      "path": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-phase-1/update-63.pt",
+      "sha256": "257f4fae5a1d63f1d4b1f18b343b052760d04f20a9618e4572bdcd6d65e70482",
+      "actual_Adam_steps": 8064,
+      "proof": {
+        "previous_completed_updates": 63,
+        "previous_environment_steps": 32256,
+        "actual_Adam_steps_restored": 8064,
+        "CUDA_restore_executed": false,
+        "native_environment_restored": false,
+        "native_fresh_required": true,
+        "new_explicit_schedule_epoch_required": true,
+        "next_schedule_phase": null
+      }
+    },
+    "64": {
+      "path": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-phase-1/update-64.pt",
+      "sha256": "20e084ff0c47b627d9e5d167af9abdc0f06bceeb756c77470a014089b03ed94a",
+      "actual_Adam_steps": 8192,
+      "proof": {
+        "previous_completed_updates": 64,
+        "previous_environment_steps": 32768,
+        "actual_Adam_steps_restored": 8192,
+        "CUDA_restore_executed": false,
+        "native_environment_restored": false,
+        "native_fresh_required": true,
+        "new_explicit_schedule_epoch_required": true,
+        "next_schedule_phase": null
+      }
+    }
+  },
+  "phase1_native_rows": 2048,
+  "admitted_rows": 1024,
+  "suffix_rows": 1024,
+  "all256_native_journals_verified": true,
+  "all_raw_targets_recomputed": true,
+  "normal_phase_native_resume_allowed": false,
+  "learner_only_resume_at_next_fresh_registered_phase": true,
+  "control_next_update": 65,
+  "candidate_completed_update": 62,
+  "candidate_next_update": 63,
+  "rerun_phase1_control_allowed": false,
+  "parent_reset_allowed": false,
+  "DEV_started": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0
+}

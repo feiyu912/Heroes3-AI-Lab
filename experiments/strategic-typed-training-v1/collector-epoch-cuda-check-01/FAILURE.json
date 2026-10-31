@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "error": "Fixture used old runtime and reached the earlier correct runtime rejection, before intended collector-source rejection",
+  "optimizer_steps": 0,
+  "corrected_in": "check_collector_epoch_cuda_v2.py"
+}

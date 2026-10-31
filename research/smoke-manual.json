@@ -1,0 +1,91 @@
+{
+  "run_id": "ae4a7d21-3e07-4255-8db9-3ee94631f82b",
+  "completed": true,
+  "seed": 20261013,
+  "role": "attacker",
+  "opponent": "BattleAI",
+  "map": "lab/smoke.vmap",
+  "schema": 15,
+  "boot_seconds": 0.7331585450000002,
+  "elapsed_seconds": 0.7647698480000003,
+  "policy": "deterministic attack-priority legal-action diagnostic",
+  "note": "Permanent loss counts come from server BattleResult for this normal no-magic fixture; schema army values retained for comparison.",
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 4,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 333
+      },
+      "final_value_permille": {
+        "0": 633,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 33,
+        "1": 333
+      },
+      "terminal_info": {
+        "side": 0,
+        "round": 4,
+        "step": 4,
+        "net_value": 300,
+        "is_success": true,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 1
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -4.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": 341.0,
+        "reward_term_mult": 301.0,
+        "reward_relval_mult": 364.0
+      },
+      "actions": [
+        70,
+        70,
+        70,
+        70
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 1
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 1,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 19,
+        "1": 0
+      },
+      "reward_sum": 1002.0,
+      "initial_observation_sha256": "e6028f39794b8d7433a7e7816d989afcd9b3d142a1121f6d5c29a05bc72f6b6f",
+      "trajectory_sha256": "c6ea24ecd03a8748d28cc68208503cae39f664e13a42748d3846027b4ed5f380"
+    }
+  ]
+}

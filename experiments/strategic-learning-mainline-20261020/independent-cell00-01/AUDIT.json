@@ -1,0 +1,498 @@
+{
+  "passed": true,
+  "scope": "Completed TRAIN cell00 only; CPU/source/native re-audit, no new CUDA replay or optimization",
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps_performed": 0,
+  "policy_sha256": "d5908330038444107ed9ba00585fb068e453a5d1636856ba994d9aa3eb68df72",
+  "native_winner": "red",
+  "terminal_day": 115,
+  "own_turns": 115,
+  "counts": {
+    "moves": 752,
+    "stops": 59
+  },
+  "opportunity_groups": {
+    "one_move": {
+      "rows": 638,
+      "stops": 59,
+      "non_argmax": 59,
+      "stop_probability_summary": {
+        "mean": 0.08885443754851235,
+        "median": 0.09470620302140081,
+        "min": 0.000276418552353042,
+        "max": 0.10974912181955314
+      },
+      "entropy_summary": {
+        "mean": 0.2957040087674747,
+        "median": 0.31329310323985055,
+        "min": 0.002541241833170901,
+        "max": 0.34599049393230724
+      }
+    },
+    "multiple_moves": {
+      "rows": 173,
+      "stops": 0,
+      "non_argmax": 163,
+      "stop_probability_summary": {
+        "mean": 0.0014223401908288783,
+        "median": 0.0013704851532800957,
+        "min": 0.000925198841822383,
+        "max": 0.002190587251774528
+      },
+      "entropy_summary": {
+        "mean": 4.167228530609036,
+        "median": 4.212898053873735,
+        "min": 2.66097223077076,
+        "max": 4.459942365501758
+      }
+    },
+    "no_move": {
+      "rows": 0,
+      "stops": 0,
+      "non_argmax": 0,
+      "stop_probability_summary": null,
+      "entropy_summary": null
+    }
+  },
+  "automatic_end_turns": 55,
+  "automatic_reasons": {
+    "no_movable_hero": 55
+  },
+  "stop_observed_fraction": 0.07274969173859433,
+  "all_policy_stops_had_positive_movement": true,
+  "movement_at_stop_summary": {
+    "min": 174,
+    "median": 810,
+    "max": 1410
+  },
+  "sampled_logprob_max_abs_CPU_error": 4.2022469060043477e-07,
+  "CUDA_exact_replay_report_verified": true,
+  "CUDA_replay_independently_rerun": false,
+  "native_execution_independently_reaudited": true,
+  "owned_register_count": 988,
+  "owned_ACK_count": 988,
+  "actual_foreign_atomic_cleared_ids": [],
+  "per_turn_policy_counts": {
+    "1": {
+      "moves": 9
+    },
+    "2": {
+      "moves": 6,
+      "stops": 1
+    },
+    "3": {
+      "moves": 7,
+      "stops": 1
+    },
+    "4": {
+      "moves": 5,
+      "stops": 1
+    },
+    "5": {
+      "moves": 4,
+      "stops": 1
+    },
+    "6": {
+      "moves": 9
+    },
+    "7": {
+      "moves": 8
+    },
+    "8": {
+      "moves": 8
+    },
+    "9": {
+      "moves": 1,
+      "stops": 1
+    },
+    "10": {
+      "moves": 9
+    },
+    "11": {
+      "moves": 9
+    },
+    "12": {
+      "moves": 9
+    },
+    "13": {
+      "moves": 9
+    },
+    "14": {
+      "moves": 9
+    },
+    "15": {
+      "moves": 7,
+      "stops": 1
+    },
+    "16": {
+      "moves": 4,
+      "stops": 1
+    },
+    "17": {
+      "moves": 9
+    },
+    "18": {
+      "moves": 7,
+      "stops": 1
+    },
+    "19": {
+      "moves": 10
+    },
+    "20": {
+      "moves": 6,
+      "stops": 1
+    },
+    "21": {
+      "moves": 5,
+      "stops": 1
+    },
+    "22": {
+      "moves": 5,
+      "stops": 1
+    },
+    "23": {
+      "moves": 4,
+      "stops": 1
+    },
+    "24": {
+      "moves": 8
+    },
+    "25": {
+      "moves": 8
+    },
+    "26": {
+      "moves": 1,
+      "stops": 1
+    },
+    "27": {
+      "moves": 1,
+      "stops": 1
+    },
+    "28": {
+      "moves": 9
+    },
+    "29": {
+      "moves": 8,
+      "stops": 1
+    },
+    "30": {
+      "moves": 8
+    },
+    "31": {
+      "moves": 8
+    },
+    "32": {
+      "moves": 9
+    },
+    "33": {
+      "moves": 6,
+      "stops": 1
+    },
+    "34": {
+      "moves": 9
+    },
+    "35": {
+      "moves": 1,
+      "stops": 1
+    },
+    "36": {
+      "moves": 5,
+      "stops": 1
+    },
+    "37": {
+      "moves": 4,
+      "stops": 1
+    },
+    "38": {
+      "moves": 7,
+      "stops": 1
+    },
+    "39": {
+      "moves": 10
+    },
+    "40": {
+      "moves": 1,
+      "stops": 1
+    },
+    "41": {
+      "moves": 10
+    },
+    "42": {
+      "moves": 6,
+      "stops": 1
+    },
+    "43": {
+      "moves": 1,
+      "stops": 1
+    },
+    "44": {
+      "moves": 4,
+      "stops": 1
+    },
+    "45": {
+      "moves": 5,
+      "stops": 1
+    },
+    "46": {
+      "moves": 8,
+      "stops": 1
+    },
+    "47": {
+      "moves": 3,
+      "stops": 1
+    },
+    "48": {
+      "moves": 6,
+      "stops": 1
+    },
+    "49": {
+      "moves": 6,
+      "stops": 1
+    },
+    "50": {
+      "moves": 5,
+      "stops": 1
+    },
+    "51": {
+      "moves": 9
+    },
+    "52": {
+      "moves": 9
+    },
+    "53": {
+      "moves": 8
+    },
+    "54": {
+      "moves": 8
+    },
+    "55": {
+      "moves": 9
+    },
+    "56": {
+      "moves": 4,
+      "stops": 1
+    },
+    "57": {
+      "moves": 7,
+      "stops": 1
+    },
+    "58": {
+      "moves": 8
+    },
+    "59": {
+      "moves": 8
+    },
+    "60": {
+      "moves": 2,
+      "stops": 1
+    },
+    "61": {
+      "moves": 4,
+      "stops": 1
+    },
+    "62": {
+      "moves": 10
+    },
+    "63": {
+      "moves": 1,
+      "stops": 1
+    },
+    "64": {
+      "moves": 9
+    },
+    "65": {
+      "moves": 9
+    },
+    "66": {
+      "moves": 9
+    },
+    "67": {
+      "moves": 6,
+      "stops": 1
+    },
+    "68": {
+      "moves": 8
+    },
+    "69": {
+      "moves": 8
+    },
+    "70": {
+      "moves": 8,
+      "stops": 1
+    },
+    "71": {
+      "moves": 8
+    },
+    "72": {
+      "moves": 9
+    },
+    "73": {
+      "moves": 2,
+      "stops": 1
+    },
+    "74": {
+      "moves": 5,
+      "stops": 1
+    },
+    "75": {
+      "moves": 9
+    },
+    "76": {
+      "moves": 3,
+      "stops": 1
+    },
+    "77": {
+      "moves": 5,
+      "stops": 1
+    },
+    "78": {
+      "moves": 8
+    },
+    "79": {
+      "moves": 9
+    },
+    "80": {
+      "moves": 3,
+      "stops": 1
+    },
+    "81": {
+      "moves": 10
+    },
+    "82": {
+      "moves": 4,
+      "stops": 1
+    },
+    "83": {
+      "moves": 3,
+      "stops": 1
+    },
+    "84": {
+      "moves": 10
+    },
+    "85": {
+      "moves": 7,
+      "stops": 1
+    },
+    "86": {
+      "moves": 7,
+      "stops": 1
+    },
+    "87": {
+      "moves": 6,
+      "stops": 1
+    },
+    "88": {
+      "moves": 5,
+      "stops": 1
+    },
+    "89": {
+      "moves": 8
+    },
+    "90": {
+      "moves": 4,
+      "stops": 1
+    },
+    "91": {
+      "moves": 9
+    },
+    "92": {
+      "moves": 9
+    },
+    "93": {
+      "moves": 7,
+      "stops": 1
+    },
+    "94": {
+      "moves": 8
+    },
+    "95": {
+      "moves": 8
+    },
+    "96": {
+      "moves": 2,
+      "stops": 1
+    },
+    "97": {
+      "moves": 3,
+      "stops": 1
+    },
+    "98": {
+      "moves": 2,
+      "stops": 1
+    },
+    "99": {
+      "moves": 9
+    },
+    "100": {
+      "moves": 1,
+      "stops": 1
+    },
+    "101": {
+      "moves": 8
+    },
+    "102": {
+      "moves": 3,
+      "stops": 1
+    },
+    "103": {
+      "moves": 5,
+      "stops": 1
+    },
+    "104": {
+      "moves": 9
+    },
+    "105": {
+      "moves": 1,
+      "stops": 1
+    },
+    "106": {
+      "moves": 10
+    },
+    "107": {
+      "moves": 9
+    },
+    "108": {
+      "moves": 10
+    },
+    "109": {
+      "moves": 7,
+      "stops": 1
+    },
+    "110": {
+      "moves": 8
+    },
+    "111": {
+      "moves": 9
+    },
+    "112": {
+      "moves": 8
+    },
+    "113": {
+      "moves": 9
+    },
+    "114": {
+      "moves": 4,
+      "stops": 1
+    },
+    "115": {
+      "moves": 9
+    }
+  },
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-cell00-01/review.py": "aa65ccda32fe74f4b68f767de7cff90739686d8f0d4669040962145f2f02294a",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/native/PLAN.json": "4ff79c9b164c66df5e9713fb81202f9a0abbef8092c0305c5d72d00f5d904e34",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/native/EXECUTION.json": "3a91813071ae93f25e4d7105d8f642caf64de48c4dfbfa67d135ba44cf420915",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/native/client.log": "3083d4c124d38e65700b7057cb6f7d9fc782d45e7610f354563a44b5e593845d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/native/typed.jsonl": "0c34b8a476d959f5a18cf83168ff42ff3d16f2bdc09a4f7d5bb02ae089cc707c",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/native/strategy-trace.jsonl": "0bdd2122794b7251993d2f40f5f20b6c4fc8dd936e7491b0eccd80d04c0ce273",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/raw-audit/AUDIT.json": "e9de5eb45f94ac618e149f712f56490fc165859a853d53150e8d99a3ca983ad9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/admitted/AUDIT.json": "9265dd52bb602a7b1f0c569fcdcab2f5f527fcc566a2e945844b79882bdacc4d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/admitted/episode.json": "9319acf9235c49b5ca1af5493a480326bc5c5c90fbc031778f49f1dda075779c",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-00/admitted/samples.jsonl": "fb73faa94e496877f5d4557d6bcb1d2836eb7c56080dd69dad3c2497e53ae911",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-cell00-01/raw-audit/AUDIT.json": "e9de5eb45f94ac618e149f712f56490fc165859a853d53150e8d99a3ca983ad9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/PLAN.json": "da8fd3bcca8e1f5091be242f37ede4138e4c6cbc90ac7209c4956afe3150a0b7"
+  },
+  "ability_improvement_claim": false,
+  "limitation": "One EmptyAI TRAIN win and a changed stochastic trajectory do not establish learned waiting, improved strength or temperature benefit. Historical cell has a different seed; do not treat it as a paired control."
+}

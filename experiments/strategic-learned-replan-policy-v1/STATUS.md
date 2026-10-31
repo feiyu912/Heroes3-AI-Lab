@@ -1,0 +1,9 @@
+# Draft only — hold for the verified economic-window transfer defect
+
+Root redirected the next experiment after concrete source/native evidence showed that opening the economic policy window also skips free town→hero army transfers. A hero can make its first move away from its own town before receiving its large garrison. That specific flow defect is the current priority; an optional threat-replan intervention is not presented as its fix.
+
+This directory contains an isolated, unfinished future once-only replan epoch draft. No final policy/source/runtime protocol is frozen here. No native build, game, GPU sampler, optimizer update or expert demonstration was produced. Historical policies/capsules remain unchanged. Do not start training these hooks as the current off-mode transfer qualification.
+
+Only the weights/codec part has CPU evidence: initialization-01/replan-initialization.pt SHA256 `69086d69cfa7e881bc95215db9da124a3c6565451a8d874fcc9772f1dd9e65c6`, exact weights from final24b8… with explicit fresh Adam/RNG/rollout. Ancestor504 optimizer steps are not carried forward. Architecture/35state/43candidate/build_bias are unchanged. Logits and critic are bitwise equal on3000 historical TRAIN states, including400 build windows. Empty-Adam binding/save/load and CPU/Python RNG recovery pass; old-format, off-protocol, partial and wrong-architecture checkpoints are rejected.
+
+The nine broker/admission/PPO/training adapter drafts were prepared before root's redirect. They reference a not-yet-qualified new run sibling and hypothetical once-only source/admission metadata. They have not been admitted as a native training package. Native schema5/build contract remains unchanged in the draft; actual replan evidence and resource/source gates would need root's final new epoch validation later. Replan diagnostic logs never become extra PPO transitions and no clearance script override is introduced.

@@ -1,0 +1,35 @@
+{
+  "status": "failed",
+  "rows": [
+    {
+      "job": {
+        "map": "Maps/adv/takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "role": "red",
+        "seed": 2026102800
+      },
+      "model": "baseline",
+      "valid": false,
+      "win": null,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true,
+        "actual_ai": {
+          "red": "DirectorAI",
+          "blue": "EmptyAI"
+        },
+        "winner": "red",
+        "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018-v2/mocked-game-fixtures/16/synthetic-native",
+        "SYNTHETIC_ONLY": true
+      },
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018-v2/mocked-game-fixtures/16",
+      "native_consumption_verified": false,
+      "native_decisions_verified": null,
+      "verification_error": "ValueError('Native consumption mismatch at request 1')"
+    }
+  ],
+  "independent_of_optimizer": true,
+  "test_split_touched": false,
+  "error": "RuntimeError('Invalid evaluation game; stop and diagnose, no loss imputation')",
+  "scores_certified": false
+}

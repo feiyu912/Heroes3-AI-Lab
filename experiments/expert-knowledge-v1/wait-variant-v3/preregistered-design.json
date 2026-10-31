@@ -1,0 +1,35 @@
+{
+  "parameter_groups": [
+    [
+      4,
+      25,
+      25,
+      25
+    ],
+    [
+      6,
+      35,
+      35,
+      35
+    ]
+  ],
+  "roles": [
+    "attacker",
+    "defender"
+  ],
+  "split": "train",
+  "slow_slots": [
+    2,
+    3,
+    4
+  ],
+  "seed_indices": [
+    20,
+    21
+  ],
+  "source": "hallas2001",
+  "reason": "One-on-one controls permit additional fast-stack retaliations; source specifically warns of multiple enemies attacking an isolated flyer",
+  "selection": "Fixed before observing any v3 outcomes; no development/test battle outcomes inspected",
+  "source_script_sha256": "6bf6e21b5681940dbcfca40ed7c0bb80810a64819642e7e8bdec7bbfce7b9609",
+  "scenario_manifest_sha256": "5b06fb2f1e9dedb24963e0319eb4b85df3569f06ce51757fae32e66d69d812c7"
+}

@@ -1,0 +1,99 @@
+--- a/vcmi/AI/MMAI/schema/v15/types.h
++++ b/vcmi/AI/MMAI/schema/v15/types.h
+@@ -89,6 +89,8 @@
+ 	virtual Type getType() const = 0;
+ 	virtual const Graph::IGraph * getGraph() const = 0;
+ 	virtual AttackLogs getAttackLogs() const = 0;
++	virtual int getTeacherAction() const = 0;
++	virtual std::string getTeacherDescription() const = 0;
+ 	virtual const TerminalOutcome & getTerminalOutcome() const = 0;
+ 	virtual std::string getAnsiRender() const = 0;
+ 	virtual ~ISupplementaryData() = default;
+--- a/vcmi/AI/MMAI/BAI/v15/supplementary_data_v15.h
++++ b/vcmi/AI/MMAI/BAI/v15/supplementary_data_v15.h
+@@ -74,6 +74,10 @@
+ 		return terminalOutcome;
+ 	}
+ 
++	int teacherAction = -1;
++	std::string teacherDescription;
++	int getTeacherAction() const override { return teacherAction; }
++	std::string getTeacherDescription() const override { return teacherDescription; }
+ 	S15::TerminalOutcome terminalOutcome;
+ 
+ 	std::string getAnsiRender() const override
+--- a/vcmi_gym/connectors/v15/threadconnector.cpp
++++ b/vcmi_gym/connectors/v15/threadconnector.cpp
+@@ -314,7 +314,9 @@
+             py::arg("nodes") = p_nodesdict,
+             py::arg("edges") = p_edgesdict,
+             py::arg("active_action_ids") = p_activeids,
+-            py::arg("terminal_outcome") = p_outcome
++            py::arg("terminal_outcome") = p_outcome,
++            py::arg("teacher_action_id") = sup->getTeacherAction(),
++            py::arg("teacher_action_description") = sup->getTeacherDescription()
+         );
+     }
+ 
+--- a/vcmi/AI/BattleAI/BattleEvaluator.h
++++ b/vcmi/AI/BattleAI/BattleEvaluator.h
+@@ -16,6 +16,11 @@
+ class CSpell;
+ class CBattleCallback;
+ class BattleAction;
++
++class StartInfo;
++class CBattleInfoCallback;
++DLL_EXPORT float getStrengthRatio(std::shared_ptr<CBattleInfoCallback> cb, BattleSide side);
++DLL_EXPORT int getSimulationTurnsCount(const StartInfo * startInfo);
+ 
+ struct CachedAttack
+ {
+--- a/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
++++ b/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
+@@ -11,6 +11,8 @@
+ #include "BAI/v15/BAI_v15.h"
+ 
+ #include "AI/BattleAI/BattleEvaluator.h"
++#include "callback/IGameInfoCallback.h"
++#include "StartInfo.h"
+ #include "BAI/v15/graph/nodes/action_v15.h"
+ #include "battle/BattleAction.h"
+ #include "battle/BattleHex.h"
+--- a/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
++++ b/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
+@@ -381,6 +381,34 @@
+ 
+ 	state->onActiveStack(astack, roundcounter);
+ 
++	const char * collectTeacher = std::getenv("LAB_BATTLEAI_TEACHER");
++	if(collectTeacher && std::strcmp(collectTeacher, "1") == 0)
++	{
++		auto evaluator = BattleEvaluator(env, cb, astack, *cb->getPlayerID(), bid,
++			battle->battleGetMySide(), getStrengthRatio(cb->getBattle(bid), battle->battleGetMySide()),
++			getSimulationTurnsCount(env->game()->getStartInfo()));
++		const auto teacher = evaluator.selectStackAction(astack);
++		state->supdata->teacherDescription = teacher.toString();
++		for(const int id : state->G->getActiveActionIds())
++		{
++			const auto candidate = ToBattleAction(*battle, state->G->getById<N::Action>(id), astack);
++			if(candidate.side != teacher.side || candidate.stackNumber != teacher.stackNumber
++				|| candidate.actionType != teacher.actionType || candidate.spell != teacher.spell
++				|| candidate.target.size() != teacher.target.size())
++				continue;
++			bool matches = true;
++			for(std::size_t i = 0; i < teacher.target.size(); ++i)
++				matches = matches && candidate.target.at(i).unitValue == teacher.target.at(i).unitValue
++					&& candidate.target.at(i).hexValue == teacher.target.at(i).hexValue;
++			if(matches)
++			{
++				state->supdata->teacherAction = id;
++				break;
++			}
++		}
++	}
++
++
+ #ifndef ENABLE_ML
+ 	if(maybeCastSpell(astack, bid))
+ 		return;

@@ -1,0 +1,23 @@
+--- a/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
++++ b/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
+@@ -396,10 +396,17 @@
+ 				|| candidate.actionType != teacher.actionType || candidate.spell != teacher.spell
+ 				|| candidate.target.size() != teacher.target.size())
+ 				continue;
++			const auto candidateTargets = candidate.getTarget(battle.get());
++			const auto teacherTargets = teacher.getTarget(battle.get());
+ 			bool matches = true;
+-			for(std::size_t i = 0; i < teacher.target.size(); ++i)
+-				matches = matches && candidate.target.at(i).unitValue == teacher.target.at(i).unitValue
+-					&& candidate.target.at(i).hexValue == teacher.target.at(i).hexValue;
++			for(std::size_t i = 0; i < teacherTargets.size(); ++i)
++			{
++				if(teacher.actionType == EActionType::WALK_AND_ATTACK && i == 1)
++					matches = matches && battle->battleGetUnitByPos(candidateTargets.at(i).hexValue)
++						== battle->battleGetUnitByPos(teacherTargets.at(i).hexValue);
++				else
++					matches = matches && candidateTargets.at(i).hexValue == teacherTargets.at(i).hexValue;
++			}
+ 			if(matches)
+ 			{
+ 				state->supdata->teacherAction = id;

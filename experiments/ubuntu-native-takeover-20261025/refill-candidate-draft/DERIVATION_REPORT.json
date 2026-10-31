@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "scope": "Exact source derivation and unchanged-payload verification only",
+  "parent_payloads_checked": 9,
+  "changed_payloads": [
+    "AI/DirectorAI/CDirectorAI.cpp"
+  ],
+  "other_eight_payloads_byte_exact": true,
+  "parent_sources_unchanged": true,
+  "CXX_syntax_checked": false,
+  "native_builds": 0,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "native_qualification_passed": false,
+  "inputs": {
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/AI/DirectorAI/CDirectorAI.cpp": "2d7180f8101d2f60e83d28b84b462e82cd6534b5ce85ac4e13a76c56b7b40eb2",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/AI/DirectorAI/CDirectorAI.h": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/AI/DirectorAI/TypedPolicyProtocol.h": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/server/CGameHandler.cpp": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/client/NetPacksClient.cpp": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/candidate/client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/CANDIDATE_MANIFEST.json": "bec33627673811f3d995fa29bad836f23eee1f47aa70c2f5241af745f6e918c6",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/refill-candidate-draft/derive.py": "339ebcf744db07858be7fcfa34f9d6f76bf48e39e617077590f4667a21e17bea"
+  },
+  "candidate_manifest_sha256": "5998b87f9ed0b7bacd3405e08bf1fd5f59db5297a8c659cf12c5fb527fbb0e46"
+}

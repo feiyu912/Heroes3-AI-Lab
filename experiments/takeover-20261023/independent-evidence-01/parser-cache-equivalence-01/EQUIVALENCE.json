@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "complete_report_equal": true,
+  "cell": "/root/heroes3-ai-lab/evaluations/strategic-active-calibration-v2-native-01/cell-10",
+  "cache_hits": 4529,
+  "cache_misses": 4,
+  "cached_audit_wall_seconds": 12.265306072000158,
+  "source_sha256": "606ff73f2d6da2824a8b6c7bcfa39e6cc83e04562c6bf958a3e6d33c96dd0a4b",
+  "original_entry_sha256": "77c6655bb20ff0d1ed1613747b1a6e4408ec3877ba2c770476be5ae59e19e3d4",
+  "original_auditor_modified": false,
+  "original_running_process_modified": false,
+  "all_original_checks_executed": true,
+  "prototype_only": true,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0
+}

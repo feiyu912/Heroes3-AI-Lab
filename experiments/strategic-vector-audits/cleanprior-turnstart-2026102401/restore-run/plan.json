@@ -1,0 +1,73 @@
+{
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/verify_native_restore_v3.py": "a9266f26c7294e2ad07e29218ff80a50b8372b2c399baf55f3ee22a045eaaa19",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+    "/root/heroes3-ai-lab/workers/adv-runs/cleanprior-turnstart-2026102401-2026102401-br5nqeqw/data/vcmi/Saves/director-v5-initial.vsgm1": "cab402d3f364c10b0d84867c7a9728b5175b98f05050f01194ddb8d771e4811f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/broker.py": "0785d8d5acfed5dd59f3a278fed9a3e875a3d5c1bd7280924e834454a6e24ad3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply_policy.py": "20b3bb7c3797b311bbda315fe9d5f2c911bea8ed3a5b8c39668c47311ffb88fa",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a"
+  },
+  "original_agent": "/root/heroes3-ai-lab/workers/strategy-agent-runs/cleanprior-turnstart-2026102401-_91neko_",
+  "original_native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/cleanprior-turnstart-2026102401-2026102401-br5nqeqw",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102401,
+      "seconds": 120,
+      "tag": "cleanprior-turnstart-2026102401",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/cleanprior-turnstart-2026102401-_91neko_"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "EmptyAI"
+    },
+    "turns": 13,
+    "moves_requested": 117,
+    "move_replies": 117,
+    "changed_tile_replies": 117,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 112,
+    "blocking_visit_replies": 5,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "543d2abfc6d2f5b60200ef729ec19a6f20f72e6747f97817581f6aaf1211aab2",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 2.331166718000077,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "67cc7cac9d123aab04d7e7bb0b30a4cc3910491f5caa851fddfacb605aa0d0be",
+    "strategy_trace_records": 567,
+    "native_calendar_last_day": 13,
+    "turns_source": "native strategy state calendar day; not a count of sampled decisions",
+    "strategy_targets_sha256": "11690f85355eeba30d47a648e6de94ac7688f55c0c0ef941cc43cf67c1aaccbb",
+    "strategy_targets_records": 18,
+    "strategy_decisions_sha256": "4958c3e7639f84002fb0446d8b63c1fa85c3bc14c2c05fa224047e0d748f1e0d",
+    "strategy_decision_records": 117,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/cleanprior-turnstart-2026102401-2026102401-br5nqeqw/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 341263,
+        "sha256": "cab402d3f364c10b0d84867c7a9728b5175b98f05050f01194ddb8d771e4811f"
+      }
+    ]
+  },
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/restore-v3-8qr4yqgl",
+  "scope": "Native turn-start boundary only; not mid-action or mid-battle restore"
+}

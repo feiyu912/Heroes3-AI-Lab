@@ -1,0 +1,62 @@
+--- /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/raw_contract_auditor.py
++++ /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/boundary_raw_contract.py
+@@ -1,4 +1,4 @@
+-"""Independent schema6 raw auditor. Never invokes native/torch/optimizer."""
++"""Boundary raw auditor supporting strict original schema4/5/6 response versions. Never invokes native/torch/optimizer."""
+ import argparse,collections,hashlib,json,re,importlib.util
+ from pathlib import Path
+ RES=set('wood mercury ore sulfur crystal gems gold'.split())
+@@ -90,13 +90,18 @@
+  # Full compiled snapshot/payload closure is checked above against new immutable build contract.
+  for p in [CONTRACT,capsule/'BUILD_ATTESTATION.json',capsule/'build-source-manifest.json',capsule/'EXECUTION.json']:
+   assert str(p) in plan['hashes'] and sha(p)==plan['hashes'][str(p)]
+- catpath=work/'agent/creature-catalog.json';cat=load(catpath);catsha=sha(catpath);raw=catpath.read_bytes();assert raw.endswith(b'\n')
+- assert set(cat)=={'schema','entries'} and cat['schema']=='strategy-runtime-creature-catalog-v1' and cat['entries']
+- ids=[e['creature_id'] for e in cat['entries']];keys=[e['canonical_key'] for e in cat['entries']]
+- assert all(set(e)=={'creature_id','canonical_key'} for e in cat['entries'])
+- assert ids==sorted(set(ids)) and len(keys)==len(set(keys)) and all(type(i)is int and i>=0 for i in ids) and all(isinstance(k,str) and k for k in keys)
+- mirrors=[line.split('DirectorCreatureCatalog ',1)[1] for line in log.splitlines() if 'DirectorCreatureCatalog ' in line]
+- assert len(mirrors)==1 and mirrors[0]=='sha256='+catsha+' json='+raw[:-1].decode()
++ catpath=work/'agent/creature-catalog.json';catsha=None;ids=[]
++ schema=plan['action_schema'];assert schema in ('strategy-candidates-v4','strategy-candidates-v5','strategy-candidates-v6')
++ if schema=='strategy-candidates-v6':
++  catpath=work/'agent/creature-catalog.json';cat=load(catpath);catsha=sha(catpath);raw=catpath.read_bytes();assert raw.endswith(b'\n')
++  assert set(cat)=={'schema','entries'} and cat['schema']=='strategy-runtime-creature-catalog-v1' and cat['entries']
++  ids=[e['creature_id'] for e in cat['entries']];keys=[e['canonical_key'] for e in cat['entries']]
++  assert all(set(e)=={'creature_id','canonical_key'} for e in cat['entries'])
++  assert ids==sorted(set(ids)) and len(keys)==len(set(keys)) and all(type(i)is int and i>=0 for i in ids) and all(isinstance(k,str) and k for k in keys)
++  mirrors=[line.split('DirectorCreatureCatalog ',1)[1] for line in log.splitlines() if 'DirectorCreatureCatalog ' in line]
++  assert len(mirrors)==1 and mirrors[0]=='sha256='+catsha+' json='+raw[:-1].decode()
++ else:
++  assert not catpath.exists() and 'DirectorCreatureCatalog ' not in log,'Legacy runtime unexpectedly emitted schema6 catalog'
+  if mechanism:records=lines(work/'agent/mechanism-selector.jsonl')
+  else:
+   records=[]
+@@ -108,9 +113,13 @@
+  for record in records:
+   q=record['request'];response=record['response'];rid=q['request_id'];reqpath=work/'agent'/f'request-{rid:08d}.json';actpath=work/'agent'/f'action-{rid:08d}.json'
+   assert load(reqpath)==q and load(actpath)==response and sha(reqpath)==response['request_sha256']
+-  assert q['schema']=='strategy-candidates-v6' and q['economy_epoch']=='learned-economy-build-recruit-v1' and q['player']==plan['owned_player']
+-  assert response['schema']=='strategy-typed-action-response-v3' and response['decision_id']==rid and response['player']==q['player'] and response['hero']==q['hero'] and response['own_turn']==q['own_turn']
+-  assert q['creature_catalog_sha256']==catsha
++  assert q['schema']==schema and q['player']==plan['owned_player']
++  if schema=='strategy-candidates-v6':assert q['economy_epoch']=='learned-economy-build-recruit-v1'
++  elif schema=='strategy-candidates-v5':assert q['economy_epoch']=='learned-economy-build-v1'
++  else:assert 'economy_epoch' not in q and 'creature_catalog_sha256' not in q
++  assert response['schema']=={'strategy-candidates-v4':'strategy-typed-action-response-v1','strategy-candidates-v5':'strategy-typed-action-response-v2','strategy-candidates-v6':'strategy-typed-action-response-v3'}[schema] and response['decision_id']==rid and response['player']==q['player'] and response['hero']==q['hero'] and response['own_turn']==q['own_turn']
++  if schema=='strategy-candidates-v6':assert q['creature_catalog_sha256']==catsha
++  else:assert 'creature_catalog_sha256' not in q
+   if mechanism:
+    assert response['classification']=='diagnostic_only' and record['mechanism_only'] and not record['neural_network'] and record['coverage_incomplete'] is None
+   c=q['candidates'][response['selected_index']];assert c['op']==response['op'];selected.append((q,c,record))
+@@ -166,8 +175,8 @@
+   second_ack,_=unique(events,lambda e:e['event']=='package_applied' and e.get('decision_id')==second_rid)
+   end_sent,_=unique(events,lambda e:e['event']=='native_action_sent' and e.get('decision_id')==end_rid)
+   assert any(second_ack<si<ai<end_sent and s['creature_id']==c2['creature_id'] for si,ai,s in transfers),'no real same-species free transfer after second recruit before End'
+- rawhashes={str(p.relative_to(work)):sha(p) for p in [work/'PLAN.json',work/'EXECUTION.json',work/'typed.jsonl',work/'client.log',catpath]+sorted((work/'agent').glob('request-*.json'))+sorted((work/'agent').glob('action-*.json'))}
+- return dict(passed=True,whole_game_valid=True,native_game_completed=True,transport_drained=True,full_state_recruitment_verified=True,free_transfer_verified=True,mechanism_coverage_verified=mechanism,same_turn_build_recruit_move_recruit_return_end_verified=mechanism,catalog_runtime_bound=True,scope='raw native contract and state proof; no ability claim',raw=str(work),catalog_sha256=catsha,compiled_manifest_sha256=load_json(CONTRACT)['parent_manifest' if plan['arm']=='baseline' else 'candidate_manifest']['sha256'],actual_decisions_checked=len(checks),actual_recruits_checked=sum(c['op']=='recruit' for c in checks),actual_transfers_checked=len(transfers),one_turn_sequence=ops,checks=checks,drain=drain,source_sha256=plan['hashes'],raw_sha256=rawhashes,native_runs_by_auditor=0,gpu_runs=0,optimizer_steps=0)
++ rawhashes={str(p.relative_to(work)):sha(p) for p in [work/'PLAN.json',work/'EXECUTION.json',work/'typed.jsonl',work/'client.log']+([catpath] if catpath.exists() else [])+sorted((work/'agent').glob('request-*.json'))+sorted((work/'agent').glob('action-*.json'))}
++ return dict(passed=True,whole_game_valid=True,native_game_completed=True,transport_drained=True,full_state_recruitment_verified=True,free_transfer_verified=True,mechanism_coverage_verified=mechanism,same_turn_build_recruit_move_recruit_return_end_verified=mechanism,catalog_runtime_bound=(schema=='strategy-candidates-v6'),scope='raw native contract and state proof; no ability claim',raw=str(work),catalog_sha256=catsha,compiled_manifest_sha256=load_json(CONTRACT)['parent_manifest' if plan['arm']=='baseline' else 'candidate_manifest']['sha256'],actual_decisions_checked=len(checks),actual_recruits_checked=sum(c['op']=='recruit' for c in checks),actual_transfers_checked=len(transfers),one_turn_sequence=ops,checks=checks,drain=drain,source_sha256=plan['hashes'],raw_sha256=rawhashes,native_runs_by_auditor=0,gpu_runs=0,optimizer_steps=0)
+ if __name__=='__main__':
+  p=argparse.ArgumentParser();p.add_argument('--raw',type=Path,required=True);p.add_argument('--native',type=Path,required=True);p.add_argument('--whole-game',action='store_true');p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(exist_ok=False,parents=True)
+  try:result=audit_game(a.raw,a.native,mechanism=not a.whole_game)

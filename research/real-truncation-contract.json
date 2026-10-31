@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "terminated": false,
+  "truncated": true,
+  "reward": 0,
+  "final_state_value": 167.58700561523438,
+  "reset_state_value": 362.25,
+  "bootstrap_return": 165.9111328125,
+  "scope": "Real one-step VCMI time-limit transition preserves final state separately from reset state"
+}

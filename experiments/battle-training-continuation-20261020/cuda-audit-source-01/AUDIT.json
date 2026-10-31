@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa",
+  "source_inspection_passed": true,
+  "CUDA_restore_executed": false,
+  "audit_optimizer_steps": 0,
+  "new_native_games": 0,
+  "native_environment_restored": false,
+  "auditor_sha256": "0763ea33fbc25e5a5ad0640b45352431f287351b169e91d06b8557309db463b8",
+  "helper_sha256": "f596f49ddfde136f2e820fe5ae4a0346c758c700b7b5ecf0c34676acde194f36",
+  "plan_only": true,
+  "saved_actual_Adam_steps": 3840,
+  "native_fresh_required": true
+}

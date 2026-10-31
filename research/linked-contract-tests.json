@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "samples": 3,
+  "checks": [
+    "Actor link maps to actual unit attributes",
+    "Links stay within entity set",
+    "Padding does not alter logits/value",
+    "Candidate permutation permutes logits"
+  ],
+  "multi_target_limitation": "Primary target and first landing embeddings; aggregate attributes cover additional targets"
+}

@@ -1,0 +1,185 @@
+{
+  "passed": false,
+  "error": "AssertionError('Invalid arm; unscored and abort: /root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-02/pair-03/b')",
+  "completed_pairs": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026111000
+      },
+      "arms": {
+        "a": {
+          "policy": "model",
+          "win": true,
+          "winner": "red",
+          "day": 13,
+          "counts": {
+            "policy_moves": 117,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 12,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 117,
+            "blocking_visits": 5
+          },
+          "releases": 0,
+          "overrides": 0
+        },
+        "b": {
+          "policy": "clearance",
+          "win": true,
+          "winner": "red",
+          "day": 13,
+          "counts": {
+            "policy_moves": 117,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 12,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 117,
+            "blocking_visits": 5
+          },
+          "releases": 0,
+          "overrides": 0
+        }
+      },
+      "win_delta": 0,
+      "first_override": null,
+      "first_request_difference": null,
+      "request_counts": [
+        117,
+        117
+      ],
+      "movement_counts": [
+        117,
+        117
+      ],
+      "observed_request_difference_before_override": false,
+      "candidate_preoverride_movement_prefix_difference": null,
+      "limitation": "Prefix difference can be ordering only; absence is not full hidden state equality. EOF differences retained."
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026111001
+      },
+      "arms": {
+        "a": {
+          "policy": "model",
+          "win": true,
+          "winner": "blue",
+          "day": 20,
+          "counts": {
+            "policy_moves": 189,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 19,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 189,
+            "blocking_visits": 5
+          },
+          "releases": 0,
+          "overrides": 0
+        },
+        "b": {
+          "policy": "clearance",
+          "win": true,
+          "winner": "blue",
+          "day": 20,
+          "counts": {
+            "policy_moves": 189,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 19,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 189,
+            "blocking_visits": 5
+          },
+          "releases": 0,
+          "overrides": 0
+        }
+      },
+      "win_delta": 0,
+      "first_override": null,
+      "first_request_difference": null,
+      "request_counts": [
+        189,
+        189
+      ],
+      "movement_counts": [
+        189,
+        189
+      ],
+      "observed_request_difference_before_override": false,
+      "candidate_preoverride_movement_prefix_difference": null,
+      "limitation": "Prefix difference can be ordering only; absence is not full hidden state equality. EOF differences retained."
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026111002
+      },
+      "arms": {
+        "a": {
+          "policy": "model",
+          "win": false,
+          "winner": "blue",
+          "day": 49,
+          "counts": {
+            "policy_moves": 489,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 48,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 489,
+            "blocking_visits": 10
+          },
+          "releases": 3,
+          "overrides": 0
+        },
+        "b": {
+          "policy": "clearance",
+          "win": false,
+          "winner": "blue",
+          "day": 58,
+          "counts": {
+            "policy_moves": 601,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 58,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 601,
+            "blocking_visits": 10
+          },
+          "releases": 10,
+          "overrides": 5
+        }
+      },
+      "win_delta": 0,
+      "first_override": 442,
+      "first_request_difference": 443,
+      "request_counts": [
+        489,
+        601
+      ],
+      "movement_counts": [
+        917,
+        1100
+      ],
+      "observed_request_difference_before_override": false,
+      "candidate_preoverride_movement_prefix_difference": null,
+      "limitation": "Prefix difference can be ordering only; absence is not full hidden state equality. EOF differences retained."
+    }
+  ],
+  "optimizer_steps": 0,
+  "training_samples": 0
+}

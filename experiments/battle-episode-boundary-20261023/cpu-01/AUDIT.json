@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "actual_CPU_parent_restore": true,
+  "parent_checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+  "parent_update": 60,
+  "parent_environment_steps": 30720,
+  "parent_Adam_steps": 7680,
+  "LR_heads_body": [
+    1e-05,
+    1e-06
+  ],
+  "CUDA_RNG_payload_validated_only": true,
+  "CUDA_restore_executed": false,
+  "tests": [
+    "terminal_win_and_loss_both_propagate",
+    "post_terminal_reset_rewards_do_not_leak",
+    "prefix_terminal_unchanged",
+    "nonterminal_truncation_original_bootstrap",
+    "cap_original_bootstrap",
+    "exact_prefix512_suffix0_loss_rows",
+    "earlier_prefix_episode_unchanged",
+    "original_last_row_next_value_bootstrap",
+    "control_reference_matches_original_float32_GAE",
+    "drain_private_generator_preserves_learning_RNG",
+    "equal64_per_case_role_opponent_admission_equal64_suffix_budget"
+  ],
+  "budget_per_arm": {
+    "phases": 4,
+    "admitted": 4096,
+    "suffix_observed": 4096,
+    "native": 8192,
+    "loss_rows": 4096,
+    "global_updates": [
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "planned_Adam_calls": 1024,
+    "actual_Adam_calls_not_certified": true
+  },
+  "synthetic_arrays_are_not_native_qualification": true,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "resource_locks_taken": false,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-episode-boundary-20261023/check_cpu.py": "008530cf1379107af1bbae1a50383ad16af27b7cba3f0de73a5e8073f51de918",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-episode-boundary-20261023/credit_extension.py": "b45a2540f1ee7b06b641cbca69206137c4a260798fcf656e14984ef513c62b2c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/restore_learner.py": "cb0f7a5a268f4e7e5a8b5b8c368c8927a528d9ac86d190f06457d1b159429cc7"
+  }
+}

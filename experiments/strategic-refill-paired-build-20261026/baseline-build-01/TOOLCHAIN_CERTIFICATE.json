@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "toolchain_root": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01",
+  "actual_executable_compilations": 2,
+  "source_sha256": "b4e16ecaaa29b389ed6be0cf06ba160461221fbaa1ab5c5d2f23a6c153bc6fa4",
+  "environment_sha256": "774807e2392f12e0bc4ef537e8a305af844f79b9844629c0f3b8466347d44dbe",
+  "actual_inherited_flocks": true,
+  "scope": "C/C++20 executable compile/link/run and compiler ELF closure; VCMI configure/build not yet qualified",
+  "qualification_evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02",
+  "result_sha256": "f6e9beefd133c2310f2569f72f28fe0599cf680fc50603ab13d12c3d5b3aef08",
+  "environment": {
+    "PATH": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin:/usr/bin:/bin",
+    "HOME": "/home/kaicheng",
+    "LANG": "C",
+    "LC_ALL": "C",
+    "LD_LIBRARY_PATH": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/compiler-runtime",
+    "COMPILER_PATH": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11:/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin",
+    "PKG_CONFIG_SYSROOT_DIR": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot",
+    "PKG_CONFIG_LIBDIR": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/pkgconfig:/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/share/pkgconfig",
+    "HEROES3_LAB_ROOT": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab",
+    "HEROES3_RESOURCE_ROOT": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations"
+  },
+  "search_path_audit": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/SEARCH_PATH_AUDIT.json",
+  "search_path_audit_sha256": "e69e4b5e50ec513ad4572a5998616840cf086d7cf604ea87ff31bcc012db0a55",
+  "vcmi_target_dependency_closure_qualified": false,
+  "target_dependency_closure_evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/target-closure-01/RESULT.json"
+}

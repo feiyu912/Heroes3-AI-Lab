@@ -1,0 +1,66 @@
+{
+  "completed": true,
+  "CUDA_training": true,
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/models/bc-policy.pt",
+  "sha256": "bde72571e0555a41c0696e17179ea42a47c15e3ba7170e3e1be612e92f32f4d4",
+  "initial_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+  "initial_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+  "samples": 185,
+  "source_episodes": [
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-dragon-breath-train-0-attacker.json",
+      "sha256": "de7a5e1ec5f5c560f3fe5f57113ce9c22ba8a6f69fd276ddbd1ca9c3a7cfdd9d",
+      "samples": 15,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-dragon-breath-train-1-attacker.json",
+      "sha256": "15c51e64b710985c80a2fcc33f20866cd651dc35236bde05d5079e4ab95c26d0",
+      "samples": 35,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-retaliation-bait-train-8-attacker.json",
+      "sha256": "8f123d9a866d8eb9d890e71788260c5b4f16184e7509ae88b947ae0dc8521926",
+      "samples": 39,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-retaliation-bait-train-9-defender.json",
+      "sha256": "d1504066bcb3eb8b414083bcd59e1607d65e8bdfb5718fd8943bac1a2bdba6f5",
+      "samples": 29,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-death-cloud-train-16-attacker.json",
+      "sha256": "967fc331e82fe2f74054300336956d0be6dd26d583be6246a0377f3da537dc78",
+      "samples": 35,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-death-cloud-train-17-attacker.json",
+      "sha256": "d3bd5c266d051801bad8f63a116d35b341221e6878e258dcf8a221addccf52fa",
+      "samples": 32,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    }
+  ],
+  "gradient_steps": 60,
+  "initial_training_nll": 12.508869078352644,
+  "final_training_nll": 8.337525978603878,
+  "changed_policy_parameters": 16,
+  "graph_and_value_weights_unchanged": true,
+  "wall_seconds": 3.5249825400005648,
+  "recovery_version": "human-tactics-recovery-v2",
+  "recovery_artifacts": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/check_recovery.py": "69043a4b135c9bbe1aef21d75f21714c15d4cdecb508aff3c91bd9c047c9cb41",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/recovery_utils.py": "83db354c2f72bb71c1a0e61e2ccc682978d76057143c5399bc4b47f495e90926",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/run_pilot.py": "1647c99287a174b15783ccff1d16dafb9672732ea24593274babb36387394862",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/train_bc.py": "656011ef5190fb1eb060a0f69dfbe3b751311f3f2df4d0827260b45a79d298ff",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/graph_observation_codec.py": "6e6cb83ba122e375383726dd9fd6462850ee4f409ba506ca3340e10ab612fcb5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/audit_human_pilot.py": "6ddc7fbf1efb59a9a690af92bf8558be9848d5021f8997d71f41d62bb3c78104"
+  },
+  "generalization_proven": false,
+  "human_video_trajectories_used": false,
+  "quality_tier": "Q2-exploratory",
+  "limitations": "Label fit only, not Q3 teacher strength or tactic competence; original failure preserved."
+}

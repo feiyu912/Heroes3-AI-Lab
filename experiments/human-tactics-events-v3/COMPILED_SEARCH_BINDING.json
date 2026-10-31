@@ -1,0 +1,16 @@
+{
+  "inspected_without_game": true,
+  "public_bound_methods": [
+    "connect",
+    "getLogs",
+    "render",
+    "reset",
+    "shutdown",
+    "start",
+    "step"
+  ],
+  "clone_exposed": false,
+  "snapshot_exposed": false,
+  "save_exposed": false,
+  "load_exposed": false
+}

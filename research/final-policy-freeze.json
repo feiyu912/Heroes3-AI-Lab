@@ -1,0 +1,98 @@
+{
+  "frozen_unix": 1792079198.0977895,
+  "name": "v6-role-portfolio",
+  "policy": "recovered",
+  "source_checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+  "backup_checkpoint": "/mnt/g/Heroes3-AI-Lab/models/goal-final-freeze/policy.pt",
+  "sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e",
+  "selection": {
+    "name": "v6-role-portfolio",
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+    "policy": "recovered",
+    "iteration": 0,
+    "finetuning_mode": "derived",
+    "derivation_manifest": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.json",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-validation.json",
+    "validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 34,
+      "win_rate": 0.7083333333333334,
+      "wilson95": [
+        0.5682047226383246,
+        0.8175858393813663
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 59.270833333333336
+    },
+    "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-upstream_validation.json",
+    "upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 22,
+      "win_rate": 0.4583333333333333,
+      "wilson95": [
+        0.3257502185455351,
+        0.5970916690505266
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 66.29166666666667
+    },
+    "development_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-development_validation.json",
+    "development_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 45,
+      "win_rate": 0.9375,
+      "wilson95": [
+        0.8316430233725778,
+        0.9785171568687727
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 82.58333333333333
+    },
+    "development_upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-development_upstream_validation.json",
+    "development_upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 32,
+      "win_rate": 0.6666666666666666,
+      "wilson95": [
+        0.5253984633247204,
+        0.783233986291032
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.5625
+    },
+    "goal_selection_metrics": {
+      "author_cluster95_lower": 0.375,
+      "development_author_cluster95_lower": 0.5416666666666666,
+      "rule_version": 2,
+      "normalized_constraints": [
+        0.986842105263158,
+        1.0833333333333333
+      ],
+      "rule": "Fair mirror development primary: both goals met first; otherwise worst normalized progress (BattleAI/.95, author cluster95 lower/.50). Once both met prefer higher BattleAI rate. Old unequal-army stress only breaks ties. Final thresholds unchanged."
+    },
+    "selection": "Validation only, fair-mirror primary normalized goal score v2. Old unequal-army stress retained as diagnostic/tie-breaker. Added independently verified role combinations and three interpolations before any final test; final criteria unchanged and fresh outcomes never inspected.",
+    "validation_score": [
+      0.0,
+      0.986842105263,
+      0.9375,
+      0.541666666667,
+      0.666666666667,
+      1.166666666667,
+      -82.583333333333
+    ]
+  },
+  "validation_sha256": "445118e7dbf41bca99e7746ba4faac94de9c714bbd0e31c11c78aa5d4fc1a8b9",
+  "final_test_read": false
+}

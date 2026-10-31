@@ -1,0 +1,56 @@
+{
+  "scenario": "balanced-29",
+  "split": "test",
+  "role": "attacker",
+  "seed": 2026104302,
+  "opponent": "MMAI_RANDOM",
+  "opponent_seed": 2026204302,
+  "policy": "model",
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+  "steps": 105,
+  "terminated": false,
+  "truncated": true,
+  "invalid_actions": 0,
+  "success": false,
+  "terminal_outcome": null,
+  "action_types": {
+    "0": 45,
+    "4": 12,
+    "2": 45,
+    "3": 3
+  },
+  "trajectory_sha256": "3b76f008b2e62f2bb953d6b21ff126915b189fb67f55c3bba58382a2fca5daa3",
+  "wall_seconds": 0.6859464759999998,
+  "policy_latency_ms": {
+    "p50": 0.9656879999999646,
+    "p95": 1.2209602000002207,
+    "p99": 1.3874510799998416
+  },
+  "failure_final_round": 30,
+  "failure_units": [
+    {
+      "IS_ENEMY": 1,
+      "SHOTS": 0,
+      "IS_SLEEPING": 0,
+      "HAS_FLYING": 0,
+      "HAS_BIND": 0,
+      "VALUE_REL": 424
+    },
+    {
+      "IS_ENEMY": 0,
+      "SHOTS": 0,
+      "IS_SLEEPING": 0,
+      "HAS_FLYING": 0,
+      "HAS_BIND": 0,
+      "VALUE_REL": 484
+    },
+    {
+      "IS_ENEMY": 0,
+      "SHOTS": 0,
+      "IS_SLEEPING": 0,
+      "HAS_FLYING": 0,
+      "HAS_BIND": 0,
+      "VALUE_REL": 90
+    }
+  ]
+}

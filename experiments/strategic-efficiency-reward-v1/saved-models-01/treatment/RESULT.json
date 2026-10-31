@@ -1,0 +1,123 @@
+{
+  "completed_update": true,
+  "cuda_optimizer_steps": 132,
+  "ability_improvement_claim": false,
+  "training_updates": 1,
+  "optimizer_steps_total": 132,
+  "checkpoint_sha256": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15",
+  "checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-treatment-update-01/update-1.pt",
+  "stop_bias_before": -1.9977545738220215,
+  "stop_bias_after": -2.0023770332336426,
+  "stop_bias_adam_step": 132,
+  "progress": {
+    "optimizer_steps": 132,
+    "minibatches": 132,
+    "completed": true,
+    "early_stop_kl": false,
+    "forced_only_minibatches": 0,
+    "algorithm_schema": "strategic-efficiency-reward-matched-data-v1",
+    "weighting": {
+      "samples": 2111,
+      "episodes": 8,
+      "free_choices": 2111,
+      "forced_transitions": 0,
+      "active_actor_episodes": 8,
+      "actor_weight_sum": 2111.0,
+      "critic_weight_sum": 2111.0,
+      "advantage_mean": 0.01250696698364618,
+      "advantage_variance": 0.5592824191702598,
+      "per_episode": [
+        {
+          "episode_id": "a481228c6d3a62f642f5b046cd8fa616b6c2dc2bc924aca68695f54985ae377a",
+          "steps": 689,
+          "free_choices": 689,
+          "reward": 0.9708333333333333
+        },
+        {
+          "episode_id": "327d2df19204977d329a6132ced564c8fe3c98f14e09052806b136ff2f14ac5e",
+          "steps": 307,
+          "free_choices": 307,
+          "reward": 0.9817796610169491
+        },
+        {
+          "episode_id": "803da278866cc7c317ec56ea1b9cae995f23634ae24886a0f0fb3b579926b25e",
+          "steps": 85,
+          "free_choices": 85,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "d7b0310c4122c4ff2563c6644c4eb57a0f966c40fff56d1722d29afc23fd1a58",
+          "steps": 64,
+          "free_choices": 64,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "12ce8add5831e15b472aa7bb33c5c6f388cebddae66163fc0f10aea2f03c015e",
+          "steps": 313,
+          "free_choices": 313,
+          "reward": 0.9823275862068965
+        },
+        {
+          "episode_id": "11e715da656bfea5abcb2365e102c813a8c8a932803cffc13509ce810792efcf",
+          "steps": 252,
+          "free_choices": 252,
+          "reward": 0.9834821428571429
+        },
+        {
+          "episode_id": "317fb792a6d39bd5e314d988575ba2271371dd8cea5c051d7e5a467a81a90433",
+          "steps": 190,
+          "free_choices": 190,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "81a12f3f5b6644c7bef1cce3fa75fc158687da740df2adf8f4edf641238765cb",
+          "steps": 211,
+          "free_choices": 211,
+          "reward": -1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.06986702233552933,
+      "critic": 0.20075541734695435,
+      "entropy": 1.0665868520736694,
+      "kl": 0.00016440027684438974,
+      "conditional_kl": 0.00016440027684438974,
+      "loss": 0.02517775259912014
+    },
+    "epoch": 4,
+    "full_batch_post_epoch": {
+      "actor": -0.0014165543877417593,
+      "critic": 0.18849058595738774,
+      "entropy": 1.1772850932017822,
+      "kl": 0.0003413922049157887,
+      "conditional_kl": 0.0003413922049157887,
+      "loss": 0.08694230351104716
+    },
+    "group_optimizer_steps": {
+      "actor": 132,
+      "critic": 132
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 7,
+        "total_tensors": 7,
+        "l2_delta": 0.7010774223238784,
+        "max_abs_delta": 0.02236756542697549
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.9214173785832054,
+        "max_abs_delta": 0.04638031171634793
+      }
+    }
+  },
+  "episodes": 8,
+  "samples": 2111,
+  "training_wins": 4,
+  "training_losses": 4,
+  "purpose": "curriculum_training",
+  "checkpoint_model_readback_exact": true
+}

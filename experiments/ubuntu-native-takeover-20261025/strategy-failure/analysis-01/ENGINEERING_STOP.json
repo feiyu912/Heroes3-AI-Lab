@@ -1,0 +1,4 @@
+{
+  "passed": false,
+  "error": "Terminal trace label assumption failed; inspect original labels and retain failed diagnostic. No native/GPU/optimizer, input files unchanged."
+}

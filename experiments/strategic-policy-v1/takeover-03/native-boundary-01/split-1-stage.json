@@ -1,0 +1,71 @@
+{
+  "name": "split-1",
+  "command": [
+    "/root/heroes3-ai-lab/gpu-venv/bin/python",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/train_ppo_pilot.py",
+    "--out",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/split-1",
+    "--updates",
+    "1",
+    "--initialize-from",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "wall_seconds": 12.405948780000017,
+  "peak_tree_rss_bytes": 2167873536,
+  "peak_device_gpu_memory_mib": 1816.0,
+  "resource_scope": "Tree RSS sums shared pages; GPU memory is device-wide, includes other desktop processes.",
+  "leftover_owned_processes_after_exit": [],
+  "survivors_after_cleanup": [],
+  "training": {
+    "CUDA_training": true,
+    "optimizer_steps_this_run": 56,
+    "optimizer_steps_total": 56,
+    "lineage": {
+      "mode": "weights-only-migration",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+      "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+      "parent_training_updates": 2,
+      "reset_optimizer": true,
+      "reset_rng": true
+    },
+    "updates": [
+      {
+        "update": 1,
+        "samples": 846,
+        "changed_tensors": 12,
+        "changed_tensors_basis": "Cumulative versus this run starting weights; not current-update actor change",
+        "parameter_delta_from_previous_update": {
+          "actor": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.22461541730428358,
+            "max_abs_delta": 0.010767832398414612
+          },
+          "critic": {
+            "changed_tensors": 6,
+            "total_tensors": 6,
+            "l2_delta": 0.5917951114959833,
+            "max_abs_delta": 0.01598414033651352
+          }
+        },
+        "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/split-1/update-1.pt",
+        "sha256": "84d176d5ec43c34d6af5da3bd845109e5a281a2c12a3480c98a2c98f933b6dc7",
+        "metrics": {
+          "optimizer_steps": 56,
+          "minibatches": 56,
+          "completed": true,
+          "early_stop_kl": false,
+          "last": {
+            "loss": 0.7381623983383179,
+            "actor": 0.5012441873550415,
+            "critic": 0.48342543840408325,
+            "entropy": 0.9588988423347473,
+            "kl": 8.259501100837952e-07
+          }
+        }
+      }
+    ]
+  }
+}

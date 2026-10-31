@@ -1,0 +1,158 @@
+{
+  "passed": true,
+  "counts": {
+    "rows": 2742,
+    "one_move_plus_stop": 2123,
+    "multiple_moves_plus_stop": 619,
+    "sampled_end_turns": 173,
+    "learned_argmax_changes": 13,
+    "one_move_argmax_changes": 0,
+    "multiple_move_argmax_changes": 13,
+    "initial_argmax_stop": 0,
+    "trained_argmax_stop": 0,
+    "parent_temperature_argmax_changes": 0
+  },
+  "exact_full_distribution_forward_KL_mean": 0.0005137990443175541,
+  "exact_full_distribution_forward_KL_max": 0.0024067037113239985,
+  "stop_probability_delta_mean": 0.0056987962449310215,
+  "learned_changes": [
+    {
+      "episode_id": "39a35c6ed1ed699021fb648692225374f66adc067ddcc98626bc4d1f95422a37",
+      "decision_id": 120,
+      "day": 17,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "39a35c6ed1ed699021fb648692225374f66adc067ddcc98626bc4d1f95422a37",
+      "decision_id": 130,
+      "day": 19,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "39a35c6ed1ed699021fb648692225374f66adc067ddcc98626bc4d1f95422a37",
+      "decision_id": 275,
+      "day": 42,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "e6efd5f087a6013930864f5af82c3e19a45fc9f15c17d052304f5599c002f08f",
+      "decision_id": 126,
+      "day": 15,
+      "initial": 2,
+      "trained": 3,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "e6efd5f087a6013930864f5af82c3e19a45fc9f15c17d052304f5599c002f08f",
+      "decision_id": 177,
+      "day": 23,
+      "initial": 1,
+      "trained": 2,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "e6efd5f087a6013930864f5af82c3e19a45fc9f15c17d052304f5599c002f08f",
+      "decision_id": 294,
+      "day": 39,
+      "initial": 2,
+      "trained": 3,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "a5b680476a6cc6aa4682aa11a4bd8ac35f8ab50d03bdff55eb38665dc15aa874",
+      "decision_id": 39,
+      "day": 5,
+      "initial": 5,
+      "trained": 0,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "ba5c3c00f7827926b35b46c2f46881ece2bcee48f2c6deaa053380617c154d63",
+      "decision_id": 309,
+      "day": 45,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "cd2886824da580533bf8462bbc16e40c52e295f60fc05b074fcde03d6c957046",
+      "decision_id": 259,
+      "day": 36,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "cd2886824da580533bf8462bbc16e40c52e295f60fc05b074fcde03d6c957046",
+      "decision_id": 280,
+      "day": 40,
+      "initial": 0,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "cd2886824da580533bf8462bbc16e40c52e295f60fc05b074fcde03d6c957046",
+      "decision_id": 526,
+      "day": 77,
+      "initial": 1,
+      "trained": 0,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "cd2886824da580533bf8462bbc16e40c52e295f60fc05b074fcde03d6c957046",
+      "decision_id": 695,
+      "day": 101,
+      "initial": 2,
+      "trained": 1,
+      "initial_op": "move",
+      "trained_op": "move"
+    },
+    {
+      "episode_id": "efec97fcd71d78bdc587f8b0500bd88cb96ca3f114345a265cd6503a151fa86a",
+      "decision_id": 49,
+      "day": 7,
+      "initial": 0,
+      "trained": 3,
+      "initial_op": "move",
+      "trained_op": "move"
+    }
+  ],
+  "optimizer_steps_in_saved_model": 172,
+  "trained_sha256": "bb3417624bdb25023e1dbbb2e8eb49de140f2a4264c9de0444659f2b953803cc",
+  "initial_sha256": "d5908330038444107ed9ba00585fb068e453a5d1636856ba994d9aa3eb68df72",
+  "parent_sha256": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/compare_policies.py": "055817aa4f8262b6edd1467ce05b339059577fe7a5652f5116a805047e707209",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/update-01/update-1.pt": "bb3417624bdb25023e1dbbb2e8eb49de140f2a4264c9de0444659f2b953803cc",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/temperature-initialization-01/temperature-2-initialization.pt": "d5908330038444107ed9ba00585fb068e453a5d1636856ba994d9aa3eb68df72",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-00/admitted/AUDIT.json": "c9d355e3fcd639978f33bb6c55b11a66424ea37ba5de62a622d0624cc14d9244",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-01/admitted/AUDIT.json": "a7e67d1817911912de096161bed8d606edffe1c9024e44e02579922a45039051",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-02/admitted/AUDIT.json": "2816d596d5a97b666d8e92cad25ed245cdfa74c9d29be7b5520e849aa5c33d8c",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-03/admitted/AUDIT.json": "7c920bf70ec90bc4774343762cfd83d0a4c61364dfe81ea88fd3cfe19d012534",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-04/admitted/AUDIT.json": "cd77a8acfb78d630f92c6cfb15f1232c4613ba3d29d7eed5ac3fa68a884f4e61",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-05/admitted/AUDIT.json": "4fd6a5fe0a71325bf325544c54c0fdacfd1c731d680a5a5cc729cc8a47e4f78e",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-06/admitted/AUDIT.json": "92e086728a855f0abc06c1ae1c47584a24fee28b9524020513192736ca60bc8d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/cell-07/admitted/AUDIT.json": "7331a37c3c39c0c07b61f0a37dab50e2a18f77f08235097a1c3f89642105d99b"
+  },
+  "audit_optimizer_steps": 0,
+  "ability_improvement_claim": false,
+  "scope": "Actual fresh training states: learned changes and probability shifts only. Not independent ability evidence; paired DEV still required."
+}

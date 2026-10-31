@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "maps_verified": 120,
+  "train_cases": 96,
+  "development_cases": 24,
+  "mixed_training_cases": 288,
+  "seed": 2026102601,
+  "families": [
+    "guard-shooters",
+    "expendable-retaliation",
+    "split-focus"
+  ],
+  "final_fixtures_read": false,
+  "final_results_read": false,
+  "expert_demonstrations": false,
+  "trained_on_these_maps": false,
+  "interpretation": "Prepared only. Bait splitting is initial deployment, not an available policy action. No claim that any tactic has been learned or that any action is optimal."
+}

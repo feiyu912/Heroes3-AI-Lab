@@ -1,0 +1,560 @@
+--- base/AI/DirectorAI/CDirectorAI.cpp
++++ candidate/AI/DirectorAI/CDirectorAI.cpp
+@@ -396,6 +396,7 @@
+ 
+ void CDirectorAI::yourTurn(QueryID queryID)
+ {
++ if(supplyMode()) {supplyBegin(queryID);return;}
+  // The immutable typed tuple survives even if old EndTurn ACK is still in flight.
+  if(!outstandingTyped)
+  {
+@@ -413,6 +414,7 @@
+ 
+ void CDirectorAI::advanceTurn()
+ {
++ if(supplyMode()) {supplyAdvance();return;}
+  emitTypedBusy();
+  if(!turnActive || typedProtocolFailed || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+     !pendingQueries.empty() || !queryRequests.empty() || outstandingTyped || preparedTyped) return;
+@@ -442,6 +444,7 @@
+ 
+ void CDirectorAI::heroMoved(const TryMoveHero & details, bool verbose)
+ {
++ if(supplyMode()) {supplyMoved(details);return;}
+  if(!outstandingTyped || outstandingTyped->op!="move" || details.id.getNum()!=outstandingTyped->hero) return;
+  if(outstandingTyped->moveResultSeen) { typedFailure("duplicate_move_result");return; }
+  outstandingTyped->moveResultSeen=true;
+@@ -456,6 +459,7 @@
+ 
+ void CDirectorAI::requestRealized(PackageApplied * pa)
+ {
++ if(supplyMode()) {supplyAck(pa);return;}
+  if(pa->player!=playerID) return;
+  if(pendingEconomy && static_cast<int>(pa->requestID)==economyRequest)
+  {
+@@ -491,6 +495,7 @@
+ 
+ void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)
+ {
++ if(supplyMode()) {supplySent(pack,requestID);return;}
+  if(auto reply=dynamic_cast<const QueryReply *>(pack)) queryRequests[requestID]=reply->qid;
+  if(pendingEconomy && (dynamic_cast<const BuildStructure *>(pack) || dynamic_cast<const RecruitCreatures *>(pack) ||
+     dynamic_cast<const ArrangeStacks *>(pack) || dynamic_cast<const HireHero *>(pack))) economyRequest=requestID;
+@@ -513,6 +518,7 @@
+ 
+ void CDirectorAI::queryResolved(QueryID queryID)
+ {
++ if(supplyMode()) {supplyTrace("native_query_resolved");return;}
+ 	pendingQueries.erase(queryID);
+ 	// Chained level-up prompts follow QueryResolved but precede the reply ACK.
+ 	// requestRealized resumes only after those preceding packs are consumed.
+@@ -809,18 +815,21 @@
+ 
+ void CDirectorAI::heroGotLevel(const CGHeroInstance *hero, PrimarySkill pskill, std::vector<SecondarySkill> &skills, QueryID queryID)
+ {
++ if(supplyMode()) {supplyQueueReply(queryID,0);return;}
+ 	pendingQueries.insert(queryID);
+ 	cb->selectionMade(0, queryID);
+ }
+ 
+ void CDirectorAI::commanderGotLevel(const CCommanderInstance * commander, std::vector<ui32> skills, QueryID queryID)
+ {
++ if(supplyMode()) {supplyQueueReply(queryID,0);return;}
+ 	pendingQueries.insert(queryID);
+ 	cb->selectionMade(0, queryID);
+ }
+ 
+ void CDirectorAI::showBlockingDialog(const std::string &text, const std::vector<Component> &components, QueryID askID, const int soundID, bool selection, bool cancel, bool safeToAutoaccept)
+ {
++ if(supplyMode()) {supplyQueueReply(askID,(selection && !components.empty()) || (!selection && cancel) ? 1 : 0);return;}
+ 	pendingQueries.insert(askID);
+ 	// Native yes/no uses 1=yes, 0=no; selection components are indexed 1..N.
+ 	// The macro policy already chose this visit. A zero reply silently cancels it.
+@@ -832,18 +841,21 @@
+ 
+ void CDirectorAI::showTeleportDialog(const CGHeroInstance * hero, TeleportChannelID channel, TTeleportExitsList exits, bool impassable, QueryID askID)
+ {
++ if(supplyMode()) {supplyQueueReply(askID,0);return;}
+ 	pendingQueries.insert(askID);
+ 	cb->selectionMade(0, askID);
+ }
+ 
+ void CDirectorAI::showGarrisonDialog(const CArmedInstance * up, const CGHeroInstance * down, bool removableUnits, QueryID queryID, const MetaString & customTitle)
+ {
++ if(supplyMode()) {supplyQueueReply(queryID,0);return;}
+ 	pendingQueries.insert(queryID);
+ 	cb->selectionMade(0, queryID);
+ }
+ 
+ void CDirectorAI::showMapObjectSelectDialog(QueryID askID, const Component & icon, const MetaString & title, const MetaString & description, const std::vector<ObjectInstanceID> & objects)
+ {
++ if(supplyMode()) {supplyQueueReply(askID,0);return;}
+ 	pendingQueries.insert(askID);
+ 	cb->selectionMade(0, askID);
+ }
+@@ -915,3 +927,5 @@
+  else out << ",\"classification\":\"" << ctx.classification << '"';
+  out << extra << '}';emitTyped(out.str());
+ }
++
++#include "SupplyAdapter.inc"
+--- base/AI/DirectorAI/CDirectorAI.h
++++ candidate/AI/DirectorAI/CDirectorAI.h
+@@ -13,6 +13,7 @@
+  * This is a baseline, not a trained policy, and must not be reported as a learned strategy.
+  */
+ #pragma once
++#include "SupplyController.h"
+ 
+ #include "../../lib/callback/CAdventureAI.h"
+ #include "../../lib/pathfinder/CGPathNode.h"
+@@ -43,6 +44,25 @@
+ 	void battleEnded() override;
+ 	void gameOver(PlayerColor player, const EVictoryLossCheckResult & result) override;
+ 
++private:
++ bool supplyMode() const;
++ supply_v1::Controller supply;
++ supply_v1::TurnBoundaryGate supplyTurnGate;
++ std::map<int,int> supplyReplies;
++ int supplyReplyRequest=-1,supplyReplyQuery=-1;
++ bool supplyMoveSeen=false;
++ int3 supplyStep;
++ std::set<std::tuple<int,int,int>> supplyVisited;
++ supply_v1::World supplyWorld() const;
++ void supplyTrace(const std::string & event,int id=-1) const;
++ void supplyQueueReply(QueryID q,int answer);
++ void supplyBegin(QueryID q);
++ void supplyAdvance();
++ void supplySent(const CPackForServer * pack,int id);
++ void supplyAck(PackageApplied * pa);
++ void supplyMoved(const TryMoveHero & details);
++public:
++ void heroExchangeStarted(ObjectInstanceID a,ObjectInstanceID b,QueryID q) override;
+ private:
+ 	static constexpr int MAX_MOVES_PER_TURN = 128;
+ 
+--- base/AI/DirectorAI/SupplyAdapter.inc
++++ candidate/AI/DirectorAI/SupplyAdapter.inc
+@@ -0,0 +1,214 @@
++// Included at end of CDirectorAI.cpp by prepare.py. No engine source is written by preparation.
++namespace
++{
++ supply_v1::Pos supplyPos(const int3&p) {return {p.x,p.y,p.z};}
++ int3 enginePos(const supply_v1::Pos&p) {return int3(p.x,p.y,p.z);}
++ supply_v1::Army supplyArmy(const CArmedInstance*a)
++ {
++  supply_v1::Army result{};
++  for(const auto&s:a->Slots()) result.at(s.first.getNum())={s.second->getCreatureID().getNum(),s.second->getCount()};
++  return result;
++ }
++}
++bool CDirectorAI::supplyMode() const
++{ const char*mode=std::getenv("LAB_ADV_MODE");return mode && std::string(mode)=="scripted_supply_v1"; }
++supply_v1::World CDirectorAI::supplyWorld() const
++{
++ supply_v1::World w;
++ for(const auto*h:cb->getHeroesInfo())
++ {
++  supply_v1::Hero s;s.id=h->id.getNum();s.movement=h->movementPointsRemaining();
++  s.garrison=false;
++  for(const auto*t:cb->getTownsInfo()) if(t->getGarrisonHero()==h) s.garrison=true;
++  s.boat=h->getBoat()!=nullptr;s.pos=supplyPos(h->visitablePos());s.army=supplyArmy(h);w.heroes.push_back(s);
++ }
++ for(const auto*t:cb->getTownsInfo())
++ {
++  // This first candidate never treats a garrison hero's army as the town army.
++  if(t->getUpperArmy()!=t) continue;
++  supply_v1::Town s;s.id=t->id.getNum();s.pos=supplyPos(t->visitablePos());s.army=supplyArmy(t->getUpperArmy());
++  if(t->getVisitingHero()) s.visitor=t->getVisitingHero()->id.getNum();
++  w.towns.push_back(s);
++ }
++ std::sort(w.heroes.begin(),w.heroes.end(),[](const auto&a,const auto&b){return a.id<b.id;});
++ std::sort(w.towns.begin(),w.towns.end(),[](const auto&a,const auto&b){return a.id<b.id;});return w;
++}
++void CDirectorAI::supplyTrace(const std::string&event,int id) const
++{
++ const char*path=std::getenv("LAB_ADV_SUPPLY_TRACE");if(!path) return;
++ std::ofstream out(path,std::ios::app);
++ out<<"{\"schema\":\"scripted-supply-events-v1\",\"event\":\""<<event<<"\",\"native_request_id\":"<<id
++ <<",\"player\":"<<playerID.getNum()<<",\"day\":"<<cb->getCalendar().getCurrentDay()<<",\"own_turn\":"<<supply.turn
++ <<",\"main\":"<<supply.main<<",\"courier\":"<<supply.courier<<",\"home\":"<<supply.home<<",\"phase\":"<<int(supply.phase)
++ <<",\"query\":"<<supply.query<<",\"cursor\":"<<supply.cursor<<",\"cycles\":"<<supply.cycles
++ <<",\"delivery_exchange\":"<<(supply.exchangeDelivery?"true":"false")<<",\"policy_transition\":false,\"roster\":[";
++ bool first=true;for(const auto&h:supplyWorld().heroes)
++ {
++  if(!first) out<<',';
++  first=false;
++  out<<"{\"id\":"<<h.id<<",\"position\":["<<h.pos.x<<','<<h.pos.y<<','<<h.pos.z<<"],\"movement\":"<<h.movement
++  <<",\"garrison\":"<<(h.garrison?"true":"false")<<",\"boat\":"<<(h.boat?"true":"false")<<",\"budget_used\":";
++  auto spent=supply.spent.find(h.id);out<<(spent==supply.spent.end()?0:spent->second)<<",\"army\":[";
++  for(int i=0;i<7;++i) {if(i)out<<',';out<<'['<<h.army[i].creature<<','<<h.army[i].count<<']';}out<<"]}";
++ }
++ out<<"],\"pending\":";
++ if(!supply.pending) out<<"null";
++ else
++ {
++  const auto&c=*supply.pending;
++  out<<"{\"op\":"<<int(c.op)<<",\"actor\":"<<c.actor<<",\"target\":"<<c.target<<",\"source\":"<<c.source
++  <<",\"from_slot\":"<<c.from<<",\"to_slot\":"<<c.to<<",\"destination\":["<<c.destination.x<<','<<c.destination.y<<','<<c.destination.z<<"]}";
++ }
++ out<<"}\n";out.flush();
++}
++void CDirectorAI::supplyQueueReply(QueryID q,int answer)
++{
++ if(supplyReplies.count(q.getNum())) {typedFailure("duplicate_supply_prompt");return;}
++ supplyReplies[q.getNum()]=answer;supplyAdvance();
++}
++void CDirectorAI::supplyBegin(QueryID q)
++{
++ try
++ {
++  const bool oldEndPending=supply.pending && supply.pending->op==supply_v1::Op::End;
++  if(supplyTurnGate.defer(oldEndPending,q.getNum())) {supplyTrace("new_turn_deferred_for_old_end_ack");return;}
++  // Native load integration is deliberately disabled until save/sidecar/load proof exists.
++  if(std::getenv("LAB_ADV_SUPPLY_RESTORE")) throw std::runtime_error("supply_native_restore_not_qualified");
++  if(supply.main<0) supply.start(supplyWorld());
++  supply.beginTurn(supplyWorld());turnActive=true;endingTurn=false;
++  supplyMoveSeen=false;supplyTrace("turn_start");
++  if(q!=QueryID(-1)) supplyQueueReply(q,0);else supplyAdvance();
++ }
++ catch(const std::exception&e) {typedFailure(e.what());}
++}
++void CDirectorAI::supplyAdvance()
++{
++ try
++ {
++  if(!turnActive || typedProtocolFailed || supply.failed || endingTurn || supply.pending || supplyReplyRequest>=0) return;
++  // A queued genuine prompt is answered only after the previous scripted request ACK.
++  if(!supplyReplies.empty())
++  {
++   auto it=supplyReplies.begin();supplyReplyQuery=it->first;
++   supplyReplyRequest=0; // pre-dispatch reservation; requestSent binds the actual positive ID.
++   cb->selectionMade(it->second,QueryID(it->first));return;
++  }
++  // Friendly exchange is inside the live movement query. It must be drained
++  // while ONGOING_MOVEMENT stays blocked; only fresh movement waits for unblock.
++  if(battleBusy || (movementBusy && supply.query<0)) return;
++  auto w=supplyWorld();supply.validate(w);
++  std::optional<supply_v1::Pos> mainGoal;
++  // Fixed visible frontier patrol. Deterministic script, not the frozen model or expert data.
++  const auto*mainHero=dynamic_cast<const CGHeroInstance*>(cb->getObj(ObjectInstanceID(supply.main)));
++  if(!mainHero) throw std::runtime_error("main_hero_unavailable");
++  pathfinder->invalidatePaths();auto paths=pathfinder->getPathsInfo(mainHero);
++  const auto size=cb->getMapSize();double best=-1;
++  for(int y=0;y<size.y;y+=3) for(int x=0;x<size.x;x+=3)
++  {
++   int3 p(x,y,mainHero->visitablePos().z);if(p==mainHero->visitablePos()) continue;
++   CGPath path;if(!paths->getPath(path,p) || !path.hasNextNode() || path.nextNode().turns!=0) continue;
++   double score=(cb->isVisible(p)?1.0:4.0)/(0.5+path.lastNode().cost);
++   if(supplyVisited.count({x,y,p.z})) score*=0.05;
++   if(score>best) {best=score;mainGoal=supplyPos(p);}
++  }
++  // Only internal yields may loop here. At most the two real actors are tried.
++  for(int attempt=0;attempt<3;++attempt)
++  {
++   auto command=supply.next(w,mainGoal);if(!command) return;auto c=*command;
++   if(c.op==supply_v1::Op::Move)
++   {
++    const auto*h=dynamic_cast<const CGHeroInstance*>(cb->getObj(ObjectInstanceID(c.actor)));
++    if(!h) throw std::runtime_error("actor_unavailable");
++    CGPath path;pathfinder->invalidatePaths();
++    if(!pathfinder->getPathsInfo(h)->getPath(path,enginePos(c.destination)) || !path.hasNextNode() || path.nextNode().turns!=0)
++    {supply.yield(c.actor,"no_current_turn_path");supplyTrace("actor_yield");continue;}
++    supplyStep=h->convertFromVisitablePos(path.nextNode().coord);
++    supplyMoveSeen=false;supply.prepare(c);supplyTrace("prepared");
++    cb->moveHero(h,supplyStep,false,EPathfindingLayer::LAND);return;
++   }
++   supply.prepare(c);supplyTrace("prepared");
++   if(c.op==supply_v1::Op::Transfer)
++   {
++    const auto*source=dynamic_cast<const CArmedInstance*>(cb->getObj(ObjectInstanceID(c.source)));
++    const auto*target=dynamic_cast<const CArmedInstance*>(cb->getObj(ObjectInstanceID(c.target)));
++    if(!source || !target) throw std::runtime_error("transfer_army_unavailable");
++    cb->mergeOrSwapStacks(source,target,SlotID(c.from),SlotID(c.to));return;
++   }
++   if(c.op==supply_v1::Op::Close) {cb->selectionMade(0,QueryID(c.query));return;}
++   endingTurn=true;cb->endTurn();return;
++  }
++  throw std::runtime_error("scheduler_internal_bound_exceeded");
++ }
++ catch(const std::exception&e) {typedFailure(e.what());}
++}
++void CDirectorAI::heroExchangeStarted(ObjectInstanceID a,ObjectInstanceID b,QueryID q)
++{
++ if(!supplyMode()) {typedFailure("exchange_requires_scripted_supply_mode");return;}
++ try {supply.exchangeStarted(a.getNum(),b.getNum(),q.getNum());supplyTrace("exchange_open");supplyAdvance();}
++ catch(const std::exception&e) {typedFailure(e.what());}
++}
++void CDirectorAI::supplySent(const CPackForServer*pack,int id)
++{
++ try
++ {
++  auto*move=dynamic_cast<const MoveHero*>(pack);auto*transfer=dynamic_cast<const ArrangeStacks*>(pack);
++  auto*reply=dynamic_cast<const QueryReply*>(pack);auto*end=dynamic_cast<const EndTurn*>(pack);
++  if(!move && !transfer && !reply && !end) return; // native battle requests stay in the owned ledger.
++  if(pack->player!=playerID || int(pack->requestID)!=id) throw std::runtime_error("supply_native_identity_mismatch");
++  if(supplyReplyRequest==0)
++  {
++   if(!reply || reply->qid.getNum()!=supplyReplyQuery || !reply->reply || *reply->reply!=supplyReplies.at(supplyReplyQuery))
++    throw std::runtime_error("supply_prompt_payload_mismatch");
++   supplyReplyRequest=id;supplyTrace("prompt_native_sent",id);return;
++  }
++  if(!supply.pending) throw std::runtime_error("unprepared_supply_request");
++  const auto&c=*supply.pending;
++  supply_v1::Op op=move?supply_v1::Op::Move:transfer?supply_v1::Op::Transfer:reply?supply_v1::Op::Close:supply_v1::Op::End;
++  if(move && (move->hid.getNum()!=c.actor || move->path.size()!=1 || move->path.front()!=supplyStep))
++   throw std::runtime_error("supply_move_payload_mismatch");
++  if(transfer && (transfer->id1.getNum()!=c.source || transfer->id2.getNum()!=c.target || transfer->p1.getNum()!=c.from || transfer->p2.getNum()!=c.to ||
++    transfer->what!=(c.recipientBefore[c.to].count?2:1))) throw std::runtime_error("supply_transfer_payload_mismatch");
++  if(reply && (reply->qid.getNum()!=c.query || !reply->reply || *reply->reply!=0)) throw std::runtime_error("supply_close_payload_mismatch");
++  supply.bind(id,op);supplyTrace("native_sent",id);
++ }
++ catch(const std::exception&e) {typedFailure(e.what());}
++}
++void CDirectorAI::supplyAck(PackageApplied*pa)
++{
++ if(pa->player!=playerID) return;
++ try
++ {
++  if(int(pa->requestID)==supplyReplyRequest)
++  {
++   if(pa->packType!=CTypeList::getInstance().getTypeID<QueryReply>(nullptr) || !pa->result)
++    throw std::runtime_error("supply_prompt_ack_failed");
++   supplyTrace("prompt_real_ack",pa->requestID);supplyReplies.erase(supplyReplyQuery);supplyReplyQuery=-1;supplyReplyRequest=-1;supplyAdvance();return;
++  }
++  if(!supply.pending || int(pa->requestID)!=supply.request) return; // e.g. native BattleAI MakeAction ACK
++  const auto c=*supply.pending;
++  int expected=c.op==supply_v1::Op::Move?CTypeList::getInstance().getTypeID<MoveHero>(nullptr):
++   c.op==supply_v1::Op::Transfer?CTypeList::getInstance().getTypeID<ArrangeStacks>(nullptr):
++   c.op==supply_v1::Op::Close?CTypeList::getInstance().getTypeID<QueryReply>(nullptr):CTypeList::getInstance().getTypeID<EndTurn>(nullptr);
++  if(pa->packType!=expected) throw std::runtime_error("supply_ack_type_mismatch");
++  if(c.op==supply_v1::Op::Move && !supplyMoveSeen) throw std::runtime_error("supply_ack_without_move_result");
++  supplyTrace(pa->result?"real_ack":"real_rejection",pa->requestID);supply.ack(pa->requestID,c.op,pa->result,supplyWorld());
++  if(c.op==supply_v1::Op::End)
++  {
++   turnActive=false;endingTurn=false;
++   auto queued=supplyTurnGate.afterEndAck();if(queued) supplyBegin(QueryID(*queued));return;
++  }
++  supplyAdvance();
++ }
++ catch(const std::exception&e) {typedFailure(e.what());}
++}
++void CDirectorAI::supplyMoved(const TryMoveHero&d)
++{
++ if(!supply.pending || supply.pending->op!=supply_v1::Op::Move || d.id.getNum()!=supply.pending->actor) return;
++ if(supplyMoveSeen) {typedFailure("duplicate_supply_move_result");return;}
++ supplyMoveSeen=true;
++ if(d.result==TryMoveHero::FAILED) supply.yield(d.id.getNum(),"native_move_failed");
++ else if(d.start==d.end && supply.query<0) supply.yield(d.id.getNum(),"no_displacement_without_exchange");
++ const auto*h=dynamic_cast<const CGHeroInstance*>(cb->getObj(d.id));
++ if(h) {const auto p=h->visitablePos();supplyVisited.insert({p.x,p.y,p.z});}
++ supplyTrace("real_move_result");
++}
+--- base/AI/DirectorAI/SupplyController.h
++++ candidate/AI/DirectorAI/SupplyController.h
+@@ -0,0 +1,204 @@
++#pragma once
++// scripted_supply-v1: deterministic research controller, no learned transitions.
++// Inputs are owned state only. The adapter alone may issue native requests.
++#include <algorithm>
++#include <array>
++#include <map>
++#include <optional>
++#include <stdexcept>
++#include <string>
++#include <vector>
++
++namespace supply_v1
++{
++struct Pos { int x=-1,y=-1,z=-1; bool operator==(const Pos &p) const { return x==p.x && y==p.y && z==p.z; } };
++struct Stack { int creature=-1; long long count=0; bool operator==(const Stack &s) const { return creature==s.creature && count==s.count; } };
++using Army=std::array<Stack,7>;
++struct Hero { int id=-1,movement=0; bool garrison=false,boat=false; Pos pos; Army army; };
++struct Town { int id=-1,visitor=-1; Pos pos; Army army; };
++struct World { std::vector<Hero> heroes; std::vector<Town> towns; };
++enum class Phase { Return, Pickup, Meeting, Exchange };
++enum class Op { Move, Transfer, Close, End };
++struct Command
++{
++ Op op=Op::Move; int actor=-1,target=-1,source=-1,from=-1,to=-1,query=-1;
++ Pos destination; bool delivery=false; Army donorBefore{},recipientBefore{};
++};
++// NewTurn may precede the ACK of the previous EndTurn. Preserve that immutable
++// request and delay beginTurn; the old ACK must never end the newly started turn.
++class TurnBoundaryGate
++{
++ std::optional<int> queued;
++public:
++ bool defer(bool endPending,int query)
++ {
++  if(queued) throw std::runtime_error("duplicate_queued_own_turn");
++  if(!endPending) return false;
++  queued=query;return true;
++ }
++ std::optional<int> afterEndAck() {auto q=queued;queued.reset();return q;}
++ bool waiting() const {return queued.has_value();}
++};
++inline int occupied(const Army&a) { return std::count_if(a.begin(),a.end(),[](const Stack&s){return s.count>0;}); }
++inline int compatible(const Army&a,int creature)
++{
++ for(int i=0;i<7;++i) if(a[i].count>0 && a[i].creature==creature) return i;
++ for(int i=0;i<7;++i) if(a[i].count==0) return i;
++ return -1;
++}
++inline std::map<int,long long> totals(const Army&a)
++{ std::map<int,long long> out;for(const auto&s:a) if(s.count>0) out[s.creature]+=s.count;return out; }
++class Controller
++{
++public:
++ int main=-1,courier=-1,home=-1,turn=0,cursor=0,cycles=0;
++ Phase phase=Phase::Return;
++ Phase phaseBeforeExchange=Phase::Return;
++ bool exchangeDelivery=false;
++ std::map<int,int> spent;
++ std::map<int,std::string> blocked;
++ std::map<int,Pos> goals;
++ std::optional<Command> pending;
++ int request=-1,query=-1;
++ bool failed=false;
++ std::string failure;
++ static constexpr int budget=48;
++
++ void require(bool ok,const std::string &why)
++ { if(!ok) {failed=true;failure=why;throw std::runtime_error(why);} }
++ const Hero &hero(const World&w,int id) const
++ { auto it=std::find_if(w.heroes.begin(),w.heroes.end(),[&](const Hero&h){return h.id==id;});if(it==w.heroes.end()) throw std::runtime_error("role_missing");return *it; }
++ const Town &town(const World&w) const
++ { auto it=std::find_if(w.towns.begin(),w.towns.end(),[&](const Town&t){return t.id==home;});if(it==w.towns.end()) throw std::runtime_error("home_missing");return *it; }
++ void validate(const World&w)
++ {
++  require(w.heroes.size()==2,"exactly_two_owned_required");
++  require(w.heroes[0].id!=w.heroes[1].id,"duplicate_hero_id");
++  require(main!=courier && main>=0 && courier>=0,"invalid_roles");
++  try { (void)hero(w,main);(void)hero(w,courier);(void)town(w); }
++  catch(const std::exception&e) { require(false,e.what()); }
++  for(const auto&h:w.heroes) for(const auto&s:h.army) require(s.count>=0 && (s.count==0 || s.creature>=0),"bad_army");
++ }
++ void start(const World&w)
++ {
++  require(main<0 && courier<0,"roles_already_initialized");
++  require(w.heroes.size()==2 && !w.towns.empty(),"two_heroes_and_owned_town_required");
++  main=std::min(w.heroes[0].id,w.heroes[1].id);courier=std::max(w.heroes[0].id,w.heroes[1].id);
++  home=std::min_element(w.towns.begin(),w.towns.end(),[](const Town&a,const Town&b){return a.id<b.id;})->id;
++  validate(w);
++ }
++ void beginTurn(const World&w)
++ {
++  require(!pending && query<0,"turn_started_with_live_transaction");validate(w);
++  ++turn;spent.clear();blocked.clear(); // roles, goals, home, phase and cycles survive own turns.
++ }
++ bool eligible(const Hero&h) const
++ { auto s=spent.find(h.id);return h.movement>0 && !h.garrison && !h.boat && !blocked.count(h.id) && (s==spent.end() || s->second<budget); }
++ void yield(int actor,const std::string&why) { require(actor==main || actor==courier,"unknown_yield_actor");blocked[actor]=why; }
++ void exchangeStarted(int a,int b,int q)
++ {
++  require(query<0 && q>=0 && ((a==main && b==courier)||(a==courier && b==main)),"unexpected_exchange");
++  phaseBeforeExchange=phase;
++  exchangeDelivery=phase==Phase::Meeting && pending && pending->op==Op::Move && pending->actor==courier && pending->target==main;
++  // TryMoveHero with zero displacement may arrive before ExchangeDialog. The
++  // genuine dialog proves a successful interaction; only that provisional
++  // blocked reason is removed, without resetting the actor's request budget.
++  if(pending && pending->op==Op::Move)
++  {
++   auto reason=blocked.find(pending->actor);
++   if(reason!=blocked.end() && reason->second=="no_displacement_without_exchange") blocked.erase(reason);
++  }
++  query=q;phase=Phase::Exchange;
++ }
++ std::optional<Command> transfer(const Army&donor,const Army&recipient,int source,int target,bool delivery)
++ {
++  if(delivery && occupied(donor)<2) return {};
++  for(int i=0;i<7;++i) if(donor[i].count>0)
++  {
++   int slot=compatible(recipient,donor[i].creature);if(slot<0) continue;
++   Command c;c.op=Op::Transfer;c.actor=courier;c.source=source;c.target=target;c.from=i;c.to=slot;
++   c.query=query;c.delivery=delivery;c.donorBefore=donor;c.recipientBefore=recipient;return c;
++  }
++  return {};
++ }
++ // mainGoal comes from a deterministic visible/pathfinder adapter. It never uses schema4.
++ std::optional<Command> next(const World&w,const std::optional<Pos>&mainGoal)
++ {
++  require(!failed,"controller_failed");validate(w);if(pending) return {};
++  const auto&c=hero(w,courier);const auto&m=hero(w,main);const auto&t=town(w);
++  if(query>=0)
++  {
++   require(phase==Phase::Exchange,"query_phase_mismatch");
++   if(exchangeDelivery) {auto cmd=transfer(c.army,m.army,courier,main,true);if(cmd) return cmd;}
++   Command close;close.op=Op::Close;close.query=query;return close;
++  }
++  for(int attempt=0;attempt<2;++attempt)
++  {
++   int id=cursor==0?main:courier;cursor=1-cursor;const auto&h=hero(w,id);
++   if(!eligible(h)) continue;
++   Command cmd;cmd.actor=id;cmd.op=Op::Move;
++   if(id==main)
++   {
++    if(!mainGoal) { yield(id,"no_main_goal");continue; }
++    cmd.destination=*mainGoal;
++   }
++   else
++   {
++    if(phase==Phase::Return && t.visitor==courier) phase=Phase::Pickup;
++    if(phase==Phase::Pickup)
++    {
++     require(t.visitor==courier,"pickup_requires_actual_town_visitor");
++     auto pickup=transfer(t.army,c.army,home,courier,false);
++     if(pickup) return pickup;
++     if(occupied(c.army)<2) { yield(id,"no_deliverable_cargo_preserving_reserve");continue; }
++     phase=Phase::Meeting;
++    }
++    if(phase==Phase::Meeting) {cmd.target=main;cmd.destination=m.pos;}
++    else {cmd.target=home;cmd.destination=t.pos;}
++   }
++   if(cmd.destination==h.pos) { yield(id,"same_tile_without_real_exchange");continue; }
++   goals[id]=cmd.destination;return cmd;
++  }
++  Command end;end.op=Op::End;return end;
++ }
++ void prepare(const Command&c)
++ {
++  require(!pending && request<0,"second_global_pending_request");pending=c;
++  if(c.actor>=0) ++spent[c.actor];
++ }
++ void bind(int id,Op actual)
++ { require(pending && request<0 && id>0 && pending->op==actual,"bad_native_request_binding");request=id; }
++ // Only real PackageApplied calls this method; it never invents an ACK.
++ void ack(int id,Op actual,bool success,const World&w)
++ {
++  require(pending && request==id && pending->op==actual,"unmatched_native_ack");
++  require(success,"native_request_rejected");const Command c=*pending;
++  if(c.op==Op::Transfer)
++  {
++   const Army &donor=c.delivery?hero(w,courier).army:town(w).army;
++   const Army &recipient=c.delivery?hero(w,main).army:hero(w,courier).army;
++   auto expectedDonor=c.donorBefore,expectedRecipient=c.recipientBefore;
++   const auto stack=expectedDonor[c.from];
++   require(stack.count>0 && (expectedRecipient[c.to].count==0 || expectedRecipient[c.to].creature==stack.creature),"unsafe_transfer");
++   expectedDonor[c.from]=Stack{};expectedRecipient[c.to].creature=stack.creature;expectedRecipient[c.to].count+=stack.count;
++   // Empty native slots may carry a stale creature identifier; compare nonempty totals and slots.
++   for(int i=0;i<7;++i)
++   {
++    require(donor[i].count==expectedDonor[i].count && (!donor[i].count || donor[i].creature==expectedDonor[i].creature),"donor_delta_mismatch");
++    require(recipient[i].count==expectedRecipient[i].count && (!recipient[i].count || recipient[i].creature==expectedRecipient[i].creature),"recipient_delta_mismatch");
++   }
++   if(c.delivery) require(occupied(donor)>=1,"courier_reserve_lost");
++  }
++  if(c.op==Op::Close)
++  {
++   require(c.query==query,"close_query_mismatch");query=-1;
++   if(exchangeDelivery) {phase=Phase::Return;++cycles;}
++   else phase=phaseBeforeExchange; // legal accidental meeting: close only, no delivery/cycle claim.
++   exchangeDelivery=false;
++  }
++  pending.reset();request=-1;
++ }
++ bool boundary(bool movement,bool battle,bool nativeQueries,bool ownedRequests) const
++ { return !failed && !pending && request<0 && query<0 && !movement && !battle && !nativeQueries && !ownedRequests; }
++};
++}

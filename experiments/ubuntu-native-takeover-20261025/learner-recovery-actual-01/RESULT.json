@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "optimizer_step_calls": 0,
+  "native_games": 0,
+  "DEV_rows_used": 0,
+  "model_promoted": false,
+  "final_test_touched": false,
+  "resource_lease": {
+    "passed": true,
+    "PID": 32601,
+    "entries": [
+      {
+        "fd": 3,
+        "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.gpu-learner-lock",
+        "device": 66308,
+        "inode": 2752519
+      },
+      {
+        "fd": 4,
+        "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.pool-lock",
+        "device": 66308,
+        "inode": 2752520
+      }
+    ],
+    "inherited_flock_verified": true
+  },
+  "Python_profile": {
+    "certificate_path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/python-integrity/PROFILE_CERTIFICATE.json",
+    "certificate_sha256": "dea055f406486efebd49f864ad44f52258fb0f7195e670cf587fe416cd189e06",
+    "environment_root": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Ubuntu/native-gpu-verified-20261025",
+    "audit_sha256": "3bf1027f95acc0b4e3f9066ccf618503f1952eeb8f7e6baf71bfa868208ad344",
+    "all_41_installed_RECORD_checks_passed": true
+  },
+  "GPU_not_initialized_before_lease_verification": true,
+  "actual_Adam_steps": 7936,
+  "completed_updates": 62,
+  "environment_steps": 31744,
+  "CPU_restoration": {
+    "previous_completed_updates": 62,
+    "previous_environment_steps": 31744,
+    "actual_Adam_steps_restored": 7936,
+    "CUDA_restore_executed": false,
+    "native_environment_restored": false,
+    "native_fresh_required": true,
+    "new_explicit_schedule_epoch_required": true,
+    "next_schedule_phase": null
+  },
+  "CUDA_restoration": {
+    "CUDA_restore_executed": true,
+    "actual_Adam_steps_restored": 7936,
+    "native_environment_restored": false
+  },
+  "CPU_CUDA_NN_comparison": {
+    "TRAIN_graphs": 8,
+    "roles": {
+      "attacker": 4,
+      "defender": 4
+    },
+    "source_prefix_sha256": "fd86a735a7e8597fd3329c999169dfb538cb484743b952bbced04f39751b0d16",
+    "maximum_logit_error": 7.2479248046875e-05,
+    "maximum_value_error": 3.5762786865234375e-07,
+    "absolute_tolerance": 0.0002,
+    "relative_tolerance": 0.0,
+    "passed": true
+  },
+  "four_RNG_actual_draw_recovery": {
+    "passed": true,
+    "actual_CPU_draws": 13,
+    "actual_CUDA_draws": 13,
+    "actual_Python_draws": 5,
+    "actual_NumPy_draws": 5,
+    "repeated_draws_exact": true,
+    "original_full_rng_restored": true,
+    "full_rng_digest": "47fe41c7f37147e8d1767f2b7f35d7353d852613f8556b44995f829499e7fa99"
+  },
+  "roundtrip_checkpoint": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01/zero-update-roundtrip.pt",
+  "roundtrip_sha256": "939eb65da3d335a1b928ae6ddb193e68ab73df66bb4f8c6817920d096e84bdb3",
+  "complete_original_payload_digest": "984fe79e7a31ae8aeb2ecedecaa27cc03a466b18d49274918e3a261e1427fc4a",
+  "reload_complete_payload_digest": "984fe79e7a31ae8aeb2ecedecaa27cc03a466b18d49274918e3a261e1427fc4a",
+  "full_payload_exact": true,
+  "reloaded_CPU_restoration": {
+    "previous_completed_updates": 62,
+    "previous_environment_steps": 31744,
+    "actual_Adam_steps_restored": 7936,
+    "CUDA_restore_executed": false,
+    "native_environment_restored": false,
+    "native_fresh_required": true,
+    "new_explicit_schedule_epoch_required": true,
+    "next_schedule_phase": null
+  },
+  "reloaded_CUDA_restoration": {
+    "CUDA_restore_executed": true,
+    "actual_Adam_steps_restored": 7936,
+    "native_environment_restored": false
+  },
+  "model_digest": "e60b9e5e7ab8a9c915d44adb39bff64b7124ba67e29c26cad4ae6dd18c8b5a2f",
+  "named_Adam_digest": "b3cddf5609b15c18ec0506c4652aac7a9898b5cffff8b6ae360c03b54c488b31",
+  "original_checkpoint_unchanged": true,
+  "original_prefix_unchanged": true,
+  "saved_metadata_unchanged": true,
+  "source_freeze_sha256": "3fba908ab0cedb19e2f5b1f24b913dd293ba4d514271813283334c6a937cc80b",
+  "native_in_flight_state_restored": false,
+  "scope": "Zero-update learner-state migration qualification only. Canonical full-payload digests are exact; serialization file bytes can differ. Eight archived TRAIN graphs exercise real CPU/CUDA inference. No rollout continuation, training update, strength assessment, DEV use, or model promotion."
+}

@@ -1,0 +1,470 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 1,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 95,
+    "actual_director_ack_count": 95,
+    "registered_ids": [
+      2,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      206,
+      207,
+      208,
+      210,
+      212,
+      213,
+      214,
+      215,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      224,
+      226,
+      228,
+      230,
+      232,
+      234,
+      236,
+      238,
+      240,
+      241,
+      242,
+      243,
+      244,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      341,
+      342,
+      343,
+      345,
+      347,
+      354,
+      362,
+      364,
+      370,
+      378,
+      380,
+      393,
+      395,
+      408,
+      410,
+      424,
+      426,
+      439,
+      454,
+      469,
+      476,
+      484
+    ],
+    "policy_and_auto_request_count": 53,
+    "marker_line": 41825,
+    "owned_terminal_line": 41763,
+    "cancellation_intention": {
+      "line": 41824,
+      "ids": [
+        485
+      ]
+    },
+    "actual_termination": {
+      "line": 41826,
+      "ids": [
+        485
+      ]
+    },
+    "foreign_waits_pending_at_termination": 1,
+    "actual_atomic_cleared_ids": [
+      485
+    ],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 26,
+    "verified_neutral_makeaction_acks": [
+      {
+        "native_request_id": 61,
+        "line": 11698,
+        "pack_type": 198,
+        "actual_request_line": 11639,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 65,
+        "line": 11902,
+        "pack_type": 198,
+        "actual_request_line": 11835,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 71,
+        "line": 12243,
+        "pack_type": 198,
+        "actual_request_line": 12187,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 75,
+        "line": 12452,
+        "pack_type": 198,
+        "actual_request_line": 12383,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 112,
+        "line": 15404,
+        "pack_type": 198,
+        "actual_request_line": 15344,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 116,
+        "line": 15604,
+        "pack_type": 198,
+        "actual_request_line": 15540,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 122,
+        "line": 15948,
+        "pack_type": 198,
+        "actual_request_line": 15892,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 126,
+        "line": 16151,
+        "pack_type": 198,
+        "actual_request_line": 16088,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 167,
+        "line": 19259,
+        "pack_type": 198,
+        "actual_request_line": 19189,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 175,
+        "line": 19667,
+        "pack_type": 198,
+        "actual_request_line": 19598,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 182,
+        "line": 20113,
+        "pack_type": 198,
+        "actual_request_line": 20012,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 209,
+        "line": 22433,
+        "pack_type": 198,
+        "actual_request_line": 22376,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 211,
+        "line": 22535,
+        "pack_type": 198,
+        "actual_request_line": 22470,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 216,
+        "line": 22851,
+        "pack_type": 198,
+        "actual_request_line": 22756,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 223,
+        "line": 23441,
+        "pack_type": 198,
+        "actual_request_line": 23384,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 225,
+        "line": 23536,
+        "pack_type": 198,
+        "actual_request_line": 23477,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 227,
+        "line": 23642,
+        "pack_type": 198,
+        "actual_request_line": 23580,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 229,
+        "line": 23768,
+        "pack_type": 198,
+        "actual_request_line": 23695,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 231,
+        "line": 23861,
+        "pack_type": 198,
+        "actual_request_line": 23804,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 233,
+        "line": 23956,
+        "pack_type": 198,
+        "actual_request_line": 23897,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 235,
+        "line": 24065,
+        "pack_type": 198,
+        "actual_request_line": 24000,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 237,
+        "line": 24191,
+        "pack_type": 198,
+        "actual_request_line": 24115,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 239,
+        "line": 24428,
+        "pack_type": 198,
+        "actual_request_line": 24246,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 268,
+        "line": 26601,
+        "pack_type": 198,
+        "actual_request_line": 26540,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 276,
+        "line": 27013,
+        "pack_type": 198,
+        "actual_request_line": 26949,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 283,
+        "line": 27461,
+        "pack_type": 198,
+        "actual_request_line": 27363,
+        "actual_request_type": "10MakeAction"
+      }
+    ],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-learned-economy-build-v1",
+  "input_audit_epoch": "director-learned-economy-build-v1",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "red",
+  "owned_player": 1,
+  "actual_ai_assignment": {
+    "red": "Nullkiller2",
+    "blue": "DirectorAI"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 47,
+    "policy_builds": 1,
+    "policy_end_turns": 0,
+    "automatic_end_turns": 5,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 48,
+    "blocking_visits": 3
+  },
+  "contract_errors": [],
+  "native_apply_markers": 53,
+  "battle_observation": {
+    "last_battle_start_line": 31958,
+    "round_start_count": 10,
+    "native_battle_actions": 161,
+    "unique_last1000_actions": 36,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '10', actionSubtype '-1', target {}}",
+        10
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '3', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '4', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '5', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '6', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '7', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '8', actionType '6', actionSubtype '-1', target {}}",
+        9
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '8', actionType '7', actionSubtype '-1', target {}}",
+        9
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "650d326526f52dfbf1582c90a344b9aaf800078af1087e2632d8954cbc3a172d",
+    "typed.jsonl": "e1e216933fb259add513759381792db075d377aa856175a675352ae4d7bd8052",
+    "strategy-decisions.jsonl": "8e6be2768a97e64e30c036bb30ce9d98d9f1ef6883b9da9040ad785ecdc757ec",
+    "EXECUTION.json": "300c546dbf0c5b1271d83f022aca3af121c4cfa676baf7737ab4bb757b9340dc",
+    "PLAN.json": "9d890793cf41628b5aebacabc9259bc94ad6fdd023641b7fee0aaa60698a5489",
+    "agent/typed-broker.jsonl": "e91ad9ce0cfef275f1ef7c9d3840162eacefbbcc9606e9815776035578560770",
+    "build-packs.jsonl": "4e621993fc6a4c44170e44a96a4664e7e70fae9d81077522b3454b448b1281a7"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "c23cfc9d3f230ec5a4c4b1882c373209434cbe67de253e502eaa97ac765a2673",
+    "audit_contract.py": "ae62edb3186960053069c45fc0967366b422b300c1a5248f234b219da987743c",
+    "raw_events_v5.py": "5cf48a8baf89517dce029a54134bdaad2112099726cba1969cc11385f7eb3493",
+    "build_evidence.py": "e549ef7d65f0376fac48705cd02660a2ef8ed72a6e409da365af6d3e3e786a12",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.",
+  "pipeline_epoch": "strategic-learned-build-exploration-training-v1",
+  "action_schema": "strategy-candidates-v5",
+  "economy_epoch": "learned-economy-build-v1",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "build_evidence_verified": true,
+  "build_evidence": {
+    "passed": true,
+    "policy_builds": 1,
+    "received_packets": 22,
+    "builds": [
+      {
+        "native_request_id": 37,
+        "decision_id": 1,
+        "town_id": 19,
+        "building_id": 8,
+        "before": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 15,
+            "mercury": 4,
+            "ore": 15,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 7500
+          }
+        },
+        "after": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            8,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 15,
+            "mercury": 4,
+            "ore": 10,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 5000
+          }
+        }
+      }
+    ]
+  }
+}

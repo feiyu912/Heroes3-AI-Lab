@@ -1,0 +1,246 @@
+{
+  "schema": "heroes3-model-manifest-v1",
+  "note": "Weights are kept in the lab; this manifest is the public identity index.",
+  "files": [
+    {
+      "path": "models/bc-balanced-v1/attention.pt",
+      "bytes": 4962763,
+      "sha256": "281e741f3fc29e2ae99adc11a308a8bded99b60332b3289d47afcb757b68e2a0"
+    },
+    {
+      "path": "models/bc-balanced-v1/gnn.pt",
+      "bytes": 2544347,
+      "sha256": "d4f91d992db7306199888bb38d5900513cc3978fa6705fc9fefc81300e5be98a"
+    },
+    {
+      "path": "models/bc-balanced-v1/mlp.pt",
+      "bytes": 1750987,
+      "sha256": "8951a8cb09e8ad23cdd652c0c9febcb17d548b17f58a2d81d2a1814ac9f35106"
+    },
+    {
+      "path": "models/challenge-paused/recovered-latest.pt",
+      "bytes": 37011659,
+      "sha256": "ef5ac9218666154d0322bd0aeb61d8dda6cc934f8d0ac38954b9eb6210bbc6bd"
+    },
+    {
+      "path": "models/challenge-v4/manifest.json",
+      "bytes": 34698,
+      "sha256": "1c5dc29c5e4b453a6d272b0b97784ed8978f030e6983ba1e606f6b889c9b129b"
+    },
+    {
+      "path": "models/challenge-v4/policy.pt",
+      "bytes": 36188043,
+      "sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e"
+    },
+    {
+      "path": "models/derived-candidates/lerp-88a604a714acf5a8.json",
+      "bytes": 964,
+      "sha256": "a7aa91bf6c8d5aa961834ac8082a71b256567cf5aeda99f0272de0d310eefb67"
+    },
+    {
+      "path": "models/derived-candidates/lerp-88a604a714acf5a8.pt",
+      "bytes": 36187379,
+      "sha256": "198eca34aba717d2de06e6f368a74da6649343fc57f8fc3e91dc1a3667045e1e"
+    },
+    {
+      "path": "models/derived-candidates/lerp-a4e4d9f3ff899008.json",
+      "bytes": 963,
+      "sha256": "c4903a980ef2d7f6c9b61181004b0a11815cb6d0e0158ea1e688a89951f2438f"
+    },
+    {
+      "path": "models/derived-candidates/lerp-a4e4d9f3ff899008.pt",
+      "bytes": 36187379,
+      "sha256": "2a4a2e78b569a6ebef3c6fdd32439d60a5b45d6068c42d98251bc34444a03dba"
+    },
+    {
+      "path": "models/derived-candidates/lerp-e83651b37e55d246.json",
+      "bytes": 964,
+      "sha256": "cc83912341b8c780f413424463000b9d02a9d22dc18dc9f18e525301b660a8be"
+    },
+    {
+      "path": "models/derived-candidates/lerp-e83651b37e55d246.pt",
+      "bytes": 36187379,
+      "sha256": "059d1af38c79206b050bc5217b707a5adad323ed3fb576c38e5b300e3256ca2e"
+    },
+    {
+      "path": "models/derived-candidates/lerp-fe240786716bc772.json",
+      "bytes": 964,
+      "sha256": "60342cab54e9244907443053a472ba4a084954cfbc08681e00b5dda9d9e3ba19"
+    },
+    {
+      "path": "models/derived-candidates/lerp-fe240786716bc772.pt",
+      "bytes": 36187379,
+      "sha256": "38d7e09386fe953f0b155c654b7edb801e4b70fa72c2bc48122ec93ae5f73211"
+    },
+    {
+      "path": "models/derived-candidates/roles-25daa7b00b793932.json",
+      "bytes": 966,
+      "sha256": "6205eed5f4ca3ea169be2fb820da95555a86e831518d0de2dd6833d87028bd8b"
+    },
+    {
+      "path": "models/derived-candidates/roles-25daa7b00b793932.pt",
+      "bytes": 36188043,
+      "sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e"
+    },
+    {
+      "path": "models/derived-candidates/roles-c869b7c967c5b332.json",
+      "bytes": 967,
+      "sha256": "b9287344bcbefdd3fd2d8bacdf5fb9c0f8c596543a7f2d92585469fdd64e77bb"
+    },
+    {
+      "path": "models/derived-candidates/roles-c869b7c967c5b332.pt",
+      "bytes": 36188043,
+      "sha256": "261438bac0b76564b63609bbbb1ca8b1b95622d6424e5ca41e087a2b909dc811"
+    },
+    {
+      "path": "models/goal-final-freeze/policy.pt",
+      "bytes": 36188043,
+      "sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e"
+    },
+    {
+      "path": "models/goal-v5-native-candidate-a128/attacker.onnx",
+      "bytes": 19266002,
+      "sha256": "110f5ddb432d410bd255a2ccac5c30fe77e8ce8946e86618dfcbb551c9b0f7e7"
+    },
+    {
+      "path": "models/goal-v5-native-candidate-a128/defender.onnx",
+      "bytes": 19266002,
+      "sha256": "7f66e2ef15292857b8925c1b6a5576c7dc7ae88cffe1779ef09d01379ac97fed"
+    },
+    {
+      "path": "models/goal-v5-native-candidate-a128/manifest.json",
+      "bytes": 6456,
+      "sha256": "6209a151f52848ab1dd24a61d4db465dcc9139c849696ef101f21711520f437b"
+    },
+    {
+      "path": "models/goal-v5-native-selected/attacker.onnx",
+      "bytes": 19266004,
+      "sha256": "18561cd9c29a1edc1310c959473e389ae7c6976562ff3cc9ac596c3f26195b84"
+    },
+    {
+      "path": "models/goal-v5-native-selected/defender.onnx",
+      "bytes": 19266004,
+      "sha256": "fb09d14d1142667890e7e2b176976323dc30e540bd4d8ae31975bfa1ee19451b"
+    },
+    {
+      "path": "models/goal-v5-native-selected/manifest.json",
+      "bytes": 6398,
+      "sha256": "ce7650f43684525e7a3ee9e3919cb2acad91fb3848e52b491fbfa2abcb5aaa44"
+    },
+    {
+      "path": "models/goal-v5-recovery/latest.json",
+      "bytes": 1813,
+      "sha256": "b06b5c23b43142d6148e8cba506f79b220e1380ab30cf6e07dda8ff441b41d13"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-112.json",
+      "bytes": 1813,
+      "sha256": "c6e574dc76b34b8e3a47e9fa32c1e2c06ecb81b501d50ceda7746e0fb104c6d5"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-112.pt",
+      "bytes": 108694957,
+      "sha256": "5af7fd5b8557b2b883baa7b7fefdbcd63d9875ea81df354124558c898149bc69"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-128.json",
+      "bytes": 1813,
+      "sha256": "b06b5c23b43142d6148e8cba506f79b220e1380ab30cf6e07dda8ff441b41d13"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-128.pt",
+      "bytes": 108694957,
+      "sha256": "6168c281abf6374f426b7d3462c4a9d406cc4355c92c5577d9eb2d0e49e37334"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-16.json",
+      "bytes": 1810,
+      "sha256": "5e53717c7d4337cdd2c7e4b965fccf0ac0e2a3ffd92152f0f9b9fd78a3a22109"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-16.pt",
+      "bytes": 108692317,
+      "sha256": "460c09493835d438c1ab37c99cac2115676a02a4249020a1f724484aefea75df"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-96.json",
+      "bytes": 1810,
+      "sha256": "cdcb172bef22983486804845906b9d51199cae7b48e930a124d3f7630160ad8a"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-all-1792071854422674308-update-96.pt",
+      "bytes": 108692317,
+      "sha256": "423ba26a640985ec36ac1c6f6da090c78b7bf1fdc8e423b3d57aff5fcd739ab3"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-heads-1792064038645299702-update-112.json",
+      "bytes": 1186,
+      "sha256": "efb34aef6ecbe1d63daae6138c16e2e4998e214bf008dece89de33511e5fc29a"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-heads-1792064038645299702-update-112.pt",
+      "bytes": 37012677,
+      "sha256": "6daf9bc0246f193c890e80ae63a635f526cb7ea9a54899ed14de58105969921c"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-112.json",
+      "bytes": 1681,
+      "sha256": "4f0558c65d28ccf9f3bade00e481b73b1e5050c5b3f84a89f5fb9e275078f8d5"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-112.pt",
+      "bytes": 45026685,
+      "sha256": "170e31785096aa6c229542dbd8a73d81edd60c63727e9388a5e5eaf9f267e6ee"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-32.json",
+      "bytes": 1678,
+      "sha256": "5e82471bff7a84ece8b9c466f218e63ba0665bc7d764afd75f437675e23e1a70"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-32.pt",
+      "bytes": 45025437,
+      "sha256": "b1d88b600bd576306d8a72e8a6a9999bdc3246ddec84ca8fda4cf2bdd92216f3"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-96.json",
+      "bytes": 1678,
+      "sha256": "2c1e3e5395c9e43cb67f4bfa1a51eed683231eb08204ae08e00af80cc72e695b"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-96.pt",
+      "bytes": 45025437,
+      "sha256": "a412ff1f621c49be968f448938d81b153bb190a2fe28c7320be77324d08cd6d5"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792071138532938178-update-128.json",
+      "bytes": 1814,
+      "sha256": "1b6aec1ee1efcba7538b1bbab7ca29f54f6a427b94b6e5131977e5368e2ec363"
+    },
+    {
+      "path": "models/goal-v5-recovery/v5-diverse-last-1792071138532938178-update-128.pt",
+      "bytes": 45026877,
+      "sha256": "c0702d40994207ff63df5747e4d4d7d135e267d2cca2213aef47856d5455e990"
+    },
+    {
+      "path": "models/selected-v3/manifest.json",
+      "bytes": 1080,
+      "sha256": "fec43bc01aaae78ddf3dab691770c4664b2c6f73a27b04d763d8d00507b95828"
+    },
+    {
+      "path": "models/selected-v3/policy.pt",
+      "bytes": 2550809,
+      "sha256": "4b957f913befe6a0cc03817cc5bd734b7894bc6448e80b77bdf106f87f7546d4"
+    },
+    {
+      "path": "models/upstream-v15/attacker.onnx",
+      "bytes": 19255061,
+      "sha256": "62adf45ea34a323d72e9ce953a0c8b6740e60c3cec3651f282bfacee785d3151"
+    },
+    {
+      "path": "models/upstream-v15/defender.onnx",
+      "bytes": 19255061,
+      "sha256": "73bca79446ebdcab01e47fbbfada0162380df907bc86b19a21d0c502500cfaa9"
+    }
+  ]
+}

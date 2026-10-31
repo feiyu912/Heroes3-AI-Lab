@@ -1,0 +1,327 @@
+{
+  "passed": true,
+  "episodes": [
+    {
+      "episode_id": "a01ae5260a91ccb2aa75029a0b0c834d3f014169a856a47a9bb029dead815fb0",
+      "valid": true,
+      "reward": 1.0,
+      "decisions": 419,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-00/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "b1b4246bd5d1e26a50f1438873941866309a75a7469d010593284fa9e8a8c6bf",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 4602235435442382978,
+      "job": {
+        "seed": 2026103900,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 0,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 88,
+      "policy_builds": 7
+    },
+    {
+      "episode_id": "748860afc90191ec32a26e8b0b09404e2a391e1619f593716ad5c865d5997ebb",
+      "valid": true,
+      "reward": 1.0,
+      "decisions": 806,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-01/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "439460b0ecba7c95000020f865703ca477590a9772dcfd4e990a1e3e94f733c0",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 1461421021550727977,
+      "job": {
+        "seed": 2026103901,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 1,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 163,
+      "policy_builds": 14
+    },
+    {
+      "episode_id": "5bac0294033259d7f204424ea89b2e27249844a324a02a9149d47aae45cfb23d",
+      "valid": true,
+      "reward": -1.0,
+      "decisions": 111,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-02/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "d824adc495f09d93f9f64317d42df7ce3cdfed7e2a8e232e9aa232b9797b4211",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 3593909634874467156,
+      "job": {
+        "seed": 2026103902,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 0,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 8,
+      "policy_builds": 5
+    },
+    {
+      "episode_id": "6f204b61fdfc268bbffa023e858df41887d038eab630fe9359a863e9a5f1457c",
+      "valid": true,
+      "reward": -1.0,
+      "decisions": 76,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-03/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "00b4b76084887c486787fe21887e1eca7fa1de5fd99c154651c49474093e6a37",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 3919577739104875424,
+      "job": {
+        "seed": 2026103903,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 1,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 11,
+      "policy_builds": 3
+    },
+    {
+      "episode_id": "958b99f906f7fbf1146c77693a600ed3f556563a6eda44f513d069b1b5301971",
+      "valid": true,
+      "reward": 1.0,
+      "decisions": 512,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-04/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "ad1348b71667ee411836a903ba6893dfafab46b1759cde37237a514ede01ed93",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 3326292324519618602,
+      "job": {
+        "seed": 2026103904,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 0,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 141,
+      "policy_builds": 13
+    },
+    {
+      "episode_id": "ba1ffa88f4dd692e07f8d62874545fb60553d080abda86cb4a25c2865aa0e946",
+      "valid": true,
+      "reward": 1.0,
+      "decisions": 1028,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-05/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "b432d673917a61a58b8be0146c67b573fab214e101b10fe563f238d3410020ce",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 677911278491941988,
+      "job": {
+        "seed": 2026103905,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 1,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 312,
+      "policy_builds": 39
+    },
+    {
+      "episode_id": "cf23fc5b14d6c748f65860c2df8969cd113e73224611effa8c2faca48c2acaa1",
+      "valid": true,
+      "reward": -1.0,
+      "decisions": 249,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-06/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "fab6023ec1ef612c90f574406b34d2f8bcc308da721c48b1d93eddcef0bf4b8a",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 2933180571246120507,
+      "job": {
+        "seed": 2026103906,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 0,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 64,
+      "policy_builds": 7
+    },
+    {
+      "episode_id": "9d58d81f3f9c9581669443b33689e7452c02d37237d4e7f4de94f75b506c8ff0",
+      "valid": true,
+      "reward": -1.0,
+      "decisions": 125,
+      "native_consumption_verified": true,
+      "native": {
+        "completed": true,
+        "inputs_unchanged": true
+      },
+      "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-07/raw-audit/AUDIT.json",
+      "raw_audit_sha256": "e584beced57f6a852c7cde27dfdb138a5af9400f776dc1336f71e04c57e0679a",
+      "sampling_replay_exact": true,
+      "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+      "sampling_seed": 7855771044958435974,
+      "job": {
+        "seed": 2026103907,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 1,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+      },
+      "runtime": {
+        "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+        "native_artifacts": {
+          "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+          "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+          "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+        }
+      },
+      "transport_drained": true,
+      "pipeline_epoch": "strategic-learned-recruitment-prior-zero-training-v1",
+      "economy_epoch": "learned-economy-build-recruit-v1",
+      "native_flow_epoch": "learned-economy-build-recruit-v1",
+      "threat_replan": "off",
+      "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+      "policy_recruits": 8,
+      "policy_builds": 4
+    }
+  ],
+  "training_result": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/RESULT.json",
+  "ability_improvement_claim": false
+}

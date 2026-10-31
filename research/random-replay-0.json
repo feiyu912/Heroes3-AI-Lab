@@ -1,0 +1,61 @@
+{
+  "scenario": "balanced-26",
+  "split": "test",
+  "role": "attacker",
+  "seed": 2026101403,
+  "opponent": "MMAI_RANDOM",
+  "opponent_seed": 2026201403,
+  "policy": "teacher",
+  "checkpoint": null,
+  "steps": 19,
+  "terminated": true,
+  "truncated": false,
+  "invalid_actions": 0,
+  "success": true,
+  "terminal_outcome": {
+    "result_type": 0,
+    "winner": 0,
+    "casualties": {
+      "0": {
+        "6": 1,
+        "10": 5
+      },
+      "1": {
+        "6": 37,
+        "8": 31,
+        "10": 15
+      }
+    },
+    "initial_armies": [
+      {
+        "6": 39,
+        "8": 33,
+        "10": 17
+      },
+      {
+        "6": 37,
+        "8": 31,
+        "10": 15
+      }
+    ]
+  },
+  "action_types": {
+    "0": 5,
+    "4": 5,
+    "2": 1,
+    "3": 8
+  },
+  "trajectory_sha256": "93395099402fa78a0ddbb3821c49085cf8277a5dca9916e359bcb392db985746",
+  "wall_seconds": 0.25957442800000763,
+  "policy_latency_ms": {
+    "p50": 0.010365999997929976,
+    "p95": 0.024402400011069678,
+    "p99": 0.08552607999860132
+  },
+  "teacher_engine_latency_ms": {
+    "p50": 1.31,
+    "p95": 2.0278999999999994,
+    "p99": 2.19998
+  },
+  "teacher_python_selection_latency_only": true
+}

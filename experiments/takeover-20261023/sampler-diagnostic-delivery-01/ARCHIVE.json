@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "ordinary_files": 15692,
+  "ordinary_bytes": 485642537,
+  "archive_bytes": 59901464,
+  "archive_sha256": "28b61b1b53f4c7dad5b93278c56549f511aa6c3a7a7d8d6e3b56713867399ac3",
+  "all_archive_members_and_source_SHA_equal": true,
+  "symlink_targets_recorded_not_traversed": {
+    "run/cell-03/native/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-03/native/vcmiclient": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiclient",
+    "run/cell-03/native/data/vcmi/Data": "/root/heroes3-ai-lab/data/vcmi/Data",
+    "run/cell-03/native/data/vcmi/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-02/native/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-02/native/vcmiclient": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiclient",
+    "run/cell-02/native/data/vcmi/Data": "/root/heroes3-ai-lab/data/vcmi/Data",
+    "run/cell-02/native/data/vcmi/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-06/native/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-06/native/vcmiclient": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiclient",
+    "run/cell-06/native/data/vcmi/Data": "/root/heroes3-ai-lab/data/vcmi/Data",
+    "run/cell-06/native/data/vcmi/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-07/native/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods",
+    "run/cell-07/native/vcmiclient": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/bin/vcmiclient",
+    "run/cell-07/native/data/vcmi/Data": "/root/heroes3-ai-lab/data/vcmi/Data",
+    "run/cell-07/native/data/vcmi/Mods": "/root/heroes3-ai-lab/data/vcmi/Mods"
+  },
+  "seconds": 13.51529076,
+  "max_rss_kib": 87240,
+  "source": "/root/heroes3-ai-lab/evaluations/strategic-sampler-diagnostic-native-01",
+  "review": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/sampler-diagnostic-independent-01",
+  "package": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-sampler-calibration-diagnostic-20261024",
+  "new_native_games": 0,
+  "optimizer_steps": 0
+}

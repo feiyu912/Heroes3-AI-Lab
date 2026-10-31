@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "device": "cuda",
+  "deterministic": true,
+  "records": [
+    {
+      "role": "attacker",
+      "scenario": 0,
+      "steps": 96,
+      "trajectory_sha256": "a079aa780276626c1af781b8219ebd94b901449f8764d1bb7b5712a7f22bd147",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    },
+    {
+      "role": "attacker",
+      "scenario": 7,
+      "steps": 44,
+      "trajectory_sha256": "33094baae8d8a00179d1ac8a13cdd2d6edf7d0565879eedada595c07686aab16",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    },
+    {
+      "role": "attacker",
+      "scenario": 14,
+      "steps": 51,
+      "trajectory_sha256": "a2264ff325d775bb0d4106f413d628dbf7ebeb08e88aa6b02972ab0fd8e06e7a",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    },
+    {
+      "role": "defender",
+      "scenario": 0,
+      "steps": 88,
+      "trajectory_sha256": "08b261cd6f0e5b88e71ce7db7441f48a0d75e13cca76c995e414ae65195e7483",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    },
+    {
+      "role": "defender",
+      "scenario": 7,
+      "steps": 42,
+      "trajectory_sha256": "7ae9697254a9d9e0fd7af62df16a6cf558bc36a3f7688bb8edf07146efc2a792",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    },
+    {
+      "role": "defender",
+      "scenario": 14,
+      "steps": 45,
+      "trajectory_sha256": "bf97f2ed0c9d4c06c06bd404fbdc4cf0a6461b671065e3d3eb553ff4f3d4d5ae",
+      "battles_per_mode": 3,
+      "trajectory_equal": true,
+      "passed": true
+    }
+  ],
+  "observation_hash_version": 2,
+  "opponent_requests": 369,
+  "all_workers_exit_zero": true,
+  "real_role_probability_checks": 369,
+  "scope": "Both modes start directly from first connect state; three successive games per role/case, real role Torch/ONNX probabilities checked; any trajectory difference excludes formal use"
+}

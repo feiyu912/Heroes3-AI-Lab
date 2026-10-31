@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "train_rows": 3326,
+  "episodes": 8,
+  "initial_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+  "candidate_sha256": "1d1618bf6dd535e1e7d158ed6d194848eeaba4e8260e9e1cb5467f0db27cc81c",
+  "minus_four_initial_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "observation_support": "Only this complete prior-zero TRAIN rollout distribution; never compare its state mean directly with old 3952-state means as a pure model effect",
+  "initial_recruit_bias": 0.0,
+  "updated_recruit_bias": -0.007780167274177074,
+  "cpu_vs_certified_CUDA_logprob_absolute_error": {
+    "n": 3326,
+    "mean": 2.8204009322179634e-08,
+    "minimum": 0.0,
+    "median": 0.0,
+    "maximum": 4.76837158203125e-07
+  },
+  "cpu_vs_certified_CUDA_value_absolute_error": {
+    "n": 3326,
+    "mean": 7.97532458514674e-08,
+    "minimum": 0.0,
+    "median": 5.960464477539063e-08,
+    "maximum": 4.76837158203125e-07
+  },
+  "previous_TRAIN_observations_read": false,
+  "normalized_advantage_protocol": {
+    "samples": 3326,
+    "episodes": 8,
+    "free_choices": 3168,
+    "forced_transitions": 158,
+    "active_actor_episodes": 8,
+    "actor_weight_sum": 3326.000244140625,
+    "critic_weight_sum": 3325.999755859375,
+    "advantage_mean": 0.2751575607242452,
+    "advantage_variance": 0.4397916976104434,
+    "per_episode": [
+      {
+        "episode_id": "a01ae5260a91ccb2aa75029a0b0c834d3f014169a856a47a9bb029dead815fb0",
+        "steps": 419,
+        "free_choices": 394,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "748860afc90191ec32a26e8b0b09404e2a391e1619f593716ad5c865d5997ebb",
+        "steps": 806,
+        "free_choices": 770,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "5bac0294033259d7f204424ea89b2e27249844a324a02a9149d47aae45cfb23d",
+        "steps": 111,
+        "free_choices": 106,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "6f204b61fdfc268bbffa023e858df41887d038eab630fe9359a863e9a5f1457c",
+        "steps": 76,
+        "free_choices": 73,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "958b99f906f7fbf1146c77693a600ed3f556563a6eda44f513d069b1b5301971",
+        "steps": 512,
+        "free_choices": 486,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "ba1ffa88f4dd692e07f8d62874545fb60553d080abda86cb4a25c2865aa0e946",
+        "steps": 1028,
+        "free_choices": 989,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "cf23fc5b14d6c748f65860c2df8969cd113e73224611effa8c2faca48c2acaa1",
+        "steps": 249,
+        "free_choices": 235,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "9d58d81f3f9c9581669443b33689e7452c02d37237d4e7f4de94f75b506c8ff0",
+        "steps": 125,
+        "free_choices": 115,
+        "reward": -1.0
+      }
+    ],
+    "collector_manifest_verified": true
+  },
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "native_runs": 0,
+  "locks_acquired": false,
+  "DEV_read": false,
+  "logits_bias_sensitivity_scope": "Frozen minus4 init versus zero init on identical new zero-rollout observations differs only by manual bias. Zero init versus zero update on those same observations measures learned model change. Neither establishes independent ability; old/new rollout state means are different supports.",
+  "interpretation_limits": [
+    "Only observed fixed TRAIN state support; no independent ability claim.",
+    "Advantages arise from terminal outcome plus stored critic and episode-normalization; correlation does not identify an individual action causal effect.",
+    "Initial manual bias effect on probabilities is calculable; it is not alone evidence of the cause of training outcome.",
+    "Unselected candidate opportunity rows have no demonstrated action success or per-candidate advantage label."
+  ],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v2/initialization-01/recruitment-initialization.pt": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-policy-v3/initialization-02/recruitment-initialization.pt": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/update-01/update-1.pt": "1d1618bf6dd535e1e7d158ed6d194848eeaba4e8260e9e1cb5467f0db27cc81c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/diagnose_prior_zero_learning.py": "f810ce79b0c7c7bd6e76996ef258923cdec47ab3339035562663106a0ccc1455",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-00/raw-audit/AUDIT.json": "b1b4246bd5d1e26a50f1438873941866309a75a7469d010593284fa9e8a8c6bf",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-01/raw-audit/AUDIT.json": "439460b0ecba7c95000020f865703ca477590a9772dcfd4e990a1e3e94f733c0",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-02/raw-audit/AUDIT.json": "d824adc495f09d93f9f64317d42df7ce3cdfed7e2a8e232e9aa232b9797b4211",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-03/raw-audit/AUDIT.json": "00b4b76084887c486787fe21887e1eca7fa1de5fd99c154651c49474093e6a37",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-04/raw-audit/AUDIT.json": "ad1348b71667ee411836a903ba6893dfafab46b1759cde37237a514ede01ed93",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-05/raw-audit/AUDIT.json": "b432d673917a61a58b8be0146c67b573fab214e101b10fe563f238d3410020ce",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-06/raw-audit/AUDIT.json": "fab6023ec1ef612c90f574406b34d2f8bcc308da721c48b1d93eddcef0bf4b8a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-train-20261023-01/cell-07/raw-audit/AUDIT.json": "e584beced57f6a852c7cde27dfdb138a5af9400f776dc1336f71e04c57e0679a"
+  },
+  "output_sha256": {
+    "REQUEST_COMPARISON.jsonl": "0132024734c432caa3d4e97f3a7769c8cade687b2e1cab6822c77a67510e0f13",
+    "AGGREGATES.json": "d31cd743836609a5c8860f5dcea24f01b468676b9a80705e8ec510a74bddf83a",
+    "EPISODES.json": "03e6208c933bee42689fdddc609883cadf15088ac6b956a76af62793953485ab"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "structurally_valid": true,
+  "legal_actions_complete": true,
+  "normal_terminal": true,
+  "bc_exploratory_eligible": true,
+  "bc_q3_eligible": false,
+  "errors": [],
+  "unknown": [],
+  "q3_denials": [
+    "Source not verified; source kind/name alone grants no expert quality",
+    "Below Q3; exploratory Q2 must not be called verified expert learning",
+    "source: no evidence artifact",
+    "tactic: no evidence artifact"
+  ],
+  "samples": 15,
+  "source_kind": "script",
+  "trajectory_origin": "engine_execution",
+  "quality_tier": "Q2",
+  "input": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-dragon-breath-train-0-attacker.json.gz",
+  "input_sha256": "5cd9161269e69656e148ad366ca1015bb49b1be2d3bffa3abe28cae6803ee05c",
+  "legacy_adapted": true,
+  "mode": "bc-exploratory",
+  "evidence_limit": "This gate verifies records and hashed audit attestations; it does not itself simulate/replay the battle or authenticate a human identity.",
+  "passed": true
+}

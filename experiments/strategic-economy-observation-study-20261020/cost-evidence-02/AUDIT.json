@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "loader_source": "/root/heroes3-ai-lab/src/vcmi-adv/lib/entities/faction/CTownHandler.cpp",
+  "loader_sha256": "2994c87c6d645a4da3ebccb8273d24326f696552e2a9889cae1747c9ecb13950",
+  "compiled_manifest_verified": true,
+  "loader_excerpt": [
+    {
+      "line": 80,
+      "text": "\tCLegacyConfigParser parser(TextPath::builtin(\"DATA/BUILDING.TXT\"));"
+    },
+    {
+      "line": 100,
+      "text": "\t// Common buildings"
+    },
+    {
+      "line": 111,
+      "text": "\t\t\tgetBuild(town, buildID) = building;"
+    }
+  ],
+  "legacy_entries": [
+    {
+      "archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3bitmap.lod",
+      "archive_sha256": "269f7ea566ece25d0e24371deb70ea160d61af4b0848a6ae630cb640d626a6c9",
+      "entry_sha256": "3be629f3f16af234e005eeae7c4fb8a563db88cafb04baf2b3269eff934e1186",
+      "entry_offset": 7738625,
+      "entry_uncompressed_bytes": 7696,
+      "cost_rows": {
+        "TAVERN_ID": {
+          "line": 110,
+          "raw": "5\t0\t0\t0\t0\t0\t500\t TAVERN_ID\t\t\t\t\t\t",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        "MARKETPLACE_ID": {
+          "line": 119,
+          "raw": "5\t0\t0\t0\t0\t0\t500\t MARKETPLACE_ID",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        }
+      },
+      "costs_equal": true
+    },
+    {
+      "archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3ab_bmp.lod",
+      "archive_sha256": "4f47df78371e6127c4888c117865e1bf9730d5dd14c4e27037c678ef6bfe97f4",
+      "entry_sha256": "3be629f3f16af234e005eeae7c4fb8a563db88cafb04baf2b3269eff934e1186",
+      "entry_offset": 6116148,
+      "entry_uncompressed_bytes": 7696,
+      "cost_rows": {
+        "TAVERN_ID": {
+          "line": 110,
+          "raw": "5\t0\t0\t0\t0\t0\t500\t TAVERN_ID\t\t\t\t\t\t",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        "MARKETPLACE_ID": {
+          "line": 119,
+          "raw": "5\t0\t0\t0\t0\t0\t500\t MARKETPLACE_ID",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        }
+      },
+      "costs_equal": true
+    }
+  ],
+  "conclusion": "Core Tavern5 and Marketplace14 share 5wood/500gold legacy cost but have different shared building definitions. This does not create an actual TRAIN candidate collision: Tavern5 was not offered in the2089 requests.",
+  "auditor_sha256": "111fd28fcd7addeb44ecff45e92c672df2d99b756749c22a8f77bedb75d89143"
+}

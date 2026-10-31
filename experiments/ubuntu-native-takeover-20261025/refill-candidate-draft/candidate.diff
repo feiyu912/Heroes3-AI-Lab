@@ -1,0 +1,58 @@
+--- qualified-schema6-source/AI/DirectorAI/CDirectorAI.cpp
++++ refill-retention-draft/AI/DirectorAI/CDirectorAI.cpp
+@@ -136,6 +136,7 @@
+ 	if(!std::getenv("LAB_ADV_AGENT_DIR")) { typedFailure("missing_agent_directory");return false; }
+ 	bool found = false;
+ 	candidates.clear();
++	std::vector<int3> refillTargets;
+ 	visibleThreats.clear();
+ 	selectedCandidate = -1;
+ 	double bestScore = -1;
+@@ -240,7 +241,27 @@
+ 		{
+ 			const auto * town = dynamic_cast<const CGTownInstance *>(obj);
+ 			if(town && town->getUpperArmy()->stacksCount() > 0)
++			{
++				const auto candidateCount = candidates.size();
+ 				consider(obj->visitablePos(), 5, "own town reinforcements", 4);
++				const auto * army = town->getUpperArmy();
++				const auto * visitor = town->getVisitingHero();
++				if(learnedRecruitEnabled && candidates.size() != candidateCount && army != hero &&
++					army->getOwner() == playerID && (!visitor || visitor == hero) &&
++					!(army->needsLastStack() && army->stacksCount() < 2))
++				{
++					for(const auto & slot : army->Slots())
++					{
++						const auto count = slot.second->getCount();
++						if(count > 0 && count <= std::numeric_limits<int>::max() &&
++							hero->getSlotFor(slot.second->getCreatureID()).validSlot())
++						{
++							refillTargets.push_back(obj->visitablePos());
++							break;
++						}
++					}
++				}
++			}
+ 		}
+ 		else if(obj->ID == Obj::RESOURCE || obj->ID == Obj::TREASURE_CHEST || obj->ID == Obj::ARTIFACT)
+ 			consider(obj->visitablePos(), 4, "visible pickup", 3);
+@@ -304,6 +325,19 @@
+                     logGlobal->info("DirectorThreatReplan %s",record.str());
+                     if(const auto * trace=std::getenv("LAB_ADV_TRACE"))
+                     { std::ofstream file(std::string(trace)+".replan.jsonl",std::ios::app);file << record.str() << '\n'; }
++                }
++                else if(learnedRecruitEnabled)
++                {
++                    std::vector<Candidate> retainedMoves{committed};
++                    for(const auto & candidate : candidates)
++                    {
++                        if(candidate.kind != 4 ||
++                            (candidate.destination == committed.destination && candidate.kind == committed.kind) ||
++                            std::find(refillTargets.begin(), refillTargets.end(), candidate.destination) == refillTargets.end())
++                            continue;
++                        retainedMoves.push_back(candidate);
++                    }
++                    candidates = std::move(retainedMoves);
+                 }
+                 else candidates.assign(1, committed);
+ 			}

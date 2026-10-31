@@ -1,0 +1,566 @@
+{
+  "schema": "economy-v4-acceptance-execution-v1",
+  "status": "completed",
+  "episodes": [
+    {
+      "tag": "engineering-map0-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/engineering-map0-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 19,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 169,
+      "delivered_to_main_count": 169,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 158,
+        "after_line": 159,
+        "day": 5,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 204,
+        "after_line": 205,
+        "day": 6,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "engineering-map0-blue-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/engineering-map0-blue-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 33,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 148,
+      "delivered_to_main_count": 148,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 13,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 124,
+        "after_line": 125,
+        "day": 4,
+        "town": 13,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "engineering-map1-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/engineering-map1-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 29,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 268,
+      "delivered_to_main_count": 268,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 158,
+        "after_line": 159,
+        "day": 5,
+        "town": 18,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 202,
+        "after_line": 203,
+        "day": 6,
+        "town": 18,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "tag": "engineering-map1-blue-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/engineering-map1-blue-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 15,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 74,
+      "delivered_to_main_count": 74,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 19,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 118,
+        "after_line": 119,
+        "day": 4,
+        "town": 19,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "nk-development-map0-red-2026101861",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101861,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map0-red-2026101861/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 41,
+      "original_main_loss_day": 40,
+      "original_main_status": "native_removed",
+      "delivered_count": 206,
+      "delivered_to_main_count": 206,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 78,
+        "after_line": 79,
+        "day": 3,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 120,
+        "after_line": 121,
+        "day": 4,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "nk-development-map0-red-2026101862",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101862,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map0-red-2026101862/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 46,
+      "original_main_loss_day": 34,
+      "original_main_status": "native_removed",
+      "delivered_count": 196,
+      "delivered_to_main_count": 196,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 78,
+        "after_line": 79,
+        "day": 3,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 120,
+        "after_line": 121,
+        "day": 4,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "tag": "nk-development-map0-blue-2026101861",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101861,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map0-blue-2026101861/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 44,
+      "original_main_loss_day": 44,
+      "original_main_status": "terminal_betrayal_not_combat_death",
+      "delivered_count": 245,
+      "delivered_to_main_count": 245,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 13,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 124,
+        "after_line": 125,
+        "day": 4,
+        "town": 13,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "nk-development-map0-blue-2026101862",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101862,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map0-blue-2026101862/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 75,
+      "original_main_loss_day": 72,
+      "original_main_status": "native_removed",
+      "delivered_count": 421,
+      "delivered_to_main_count": 421,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 13,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 124,
+        "after_line": 125,
+        "day": 4,
+        "town": 13,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "nk-development-map1-red-2026101861",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101861,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map1-red-2026101861/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 105,
+      "original_main_loss_day": 91,
+      "original_main_status": "native_removed",
+      "delivered_count": 1240,
+      "delivered_to_main_count": 1061,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 78,
+        "after_line": 79,
+        "day": 3,
+        "town": 18,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 120,
+        "after_line": 121,
+        "day": 4,
+        "town": 18,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "transferred_types": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "tag": "nk-development-map1-red-2026101862",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101862,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map1-red-2026101862/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 18,
+      "original_main_loss_day": 13,
+      "original_main_status": "native_removed",
+      "delivered_count": 34,
+      "delivered_to_main_count": 34,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 78,
+        "after_line": 79,
+        "day": 3,
+        "town": 18,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 120,
+        "after_line": 121,
+        "day": 4,
+        "town": 18,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "tag": "nk-development-map1-blue-2026101861",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101861,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map1-blue-2026101861/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 48,
+      "original_main_loss_day": 48,
+      "original_main_status": "native_removed",
+      "delivered_count": 316,
+      "delivered_to_main_count": 316,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 19,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 126,
+        "after_line": 127,
+        "day": 4,
+        "town": 19,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "nk-development-map1-blue-2026101862",
+      "stage": "nk-development",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101862,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06/nk-development-map1-blue-2026101862/RAW_AUDIT.json",
+      "won": 0,
+      "native_days": 37,
+      "original_main_loss_day": 23,
+      "original_main_status": "native_removed",
+      "delivered_count": 304,
+      "delivered_to_main_count": 206,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 19,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 118,
+        "after_line": 119,
+        "day": 4,
+        "town": 19,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    }
+  ],
+  "scripted_economy": true,
+  "learned_improvement": false,
+  "bc_eligible": 0,
+  "wall_seconds": 154.89338702199984,
+  "engineering_games": 4,
+  "nk_games": 8,
+  "nk_wins": 1
+}

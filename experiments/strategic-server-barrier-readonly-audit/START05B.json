@@ -1,0 +1,8 @@
+{
+  "interpreter": "/root/heroes3-ai-lab/venv/bin/python",
+  "torch": "2.14.1+cpu",
+  "device": "legacy broker CPU; no optimizer or training",
+  "failed_initial_launch": "acceptance-05 system python3 missing torch before game/pool",
+  "active_run": "acceptance-05b",
+  "native_lib_sha256": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a"
+}

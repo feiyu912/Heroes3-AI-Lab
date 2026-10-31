@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "device": "cpu",
+  "torch_version": "2.10.0+cu128",
+  "parameter_count": 11906,
+  "checks": [
+    "variable_candidate_padding_mask",
+    "argmax_legal",
+    "nan_padding_ignored",
+    "candidate_permutation_equivariance",
+    "actor_critic_gradients_finite_nonzero",
+    "atomic_file_protocol_heuristic_argmax",
+    "invalid_request_no_action",
+    "io_id_audit"
+  ],
+  "game_executed": false,
+  "cuda_training_started": false,
+  "synthetic_backward_only": true,
+  "training_gain_claimed": false
+}

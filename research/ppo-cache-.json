@@ -1,0 +1,125 @@
+{
+  "run_id": "1791982400750863052",
+  "config": {
+    "workers": 12,
+    "rollout": 32,
+    "updates": 2,
+    "epochs": 3,
+    "batch_size": 64,
+    "seed": 20261014,
+    "resume": false,
+    "inference_device": "cuda",
+    "training_device": "cuda",
+    "scenarios": "/mnt/g/Heroes3-AI-Lab/research/scenarios-v2.json",
+    "worker_python": "/root/heroes3-ai-lab/venv/bin/python",
+    "rotate_every": 0,
+    "loss_shaping": 0.0,
+    "opponents": [
+      "BattleAI"
+    ],
+    "cache_next_value": false,
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/bc-balanced-v1/gnn.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-gnn-validation.json",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/ppo-cache-.json"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791982400750863052/latest.pt",
+  "source_checkpoint_sha256": "d4f91d992db7306199888bb38d5900513cc3978fa6705fc9fefc81300e5be98a",
+  "boot_seconds": 1.2784757030000264,
+  "resumed_from_updates": 0,
+  "worker_torch_imported": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "wall_seconds": 2.8929996140000185,
+  "parent_cpu_seconds": 1.5272164499999998,
+  "sampled_peak_total_pss_mib": 5623.240234375,
+  "torch_version": "2.10.0+cu128",
+  "gpu_peak_allocated_mib": 138.71240234375,
+  "reward": "0 except +1/-1 at authoritative normal battle termination, optional terminal casualty-rate shaping weight 0.0; truncation bootstraps final state",
+  "records": [
+    {
+      "update": 1,
+      "steps": 384,
+      "rollout_seconds": 1.3750884779999524,
+      "actions_sha256": "29e2ddf9bb6e73e0c56d7bf5feaab65fe61f8f417aed7c3c71027cec6f03407c",
+      "returns_sha256": "785c3bc8012c7eb5f01359f7291214bd7f97a0ae1ecc0c215555aa8129793bf4",
+      "inference_seconds": 0.6348004609997133,
+      "environment_ipc_seconds": 0.6508460359996207,
+      "update_seconds": 0.40937072799999896,
+      "effective_steps_per_second": 215.1912460138416,
+      "episodes_total": 9,
+      "wins_total": 8,
+      "truncations_total": 0,
+      "sampled_peak_total_pss_mib": 5185.0556640625,
+      "metrics": {
+        "loss": 0.012877519759866927,
+        "policy_loss": -0.014852699306276109,
+        "value_loss": 0.07439643310176002,
+        "entropy": 0.9468000067604913,
+        "approximate_kl": 0.0031465597243772615,
+        "gradient_norm": 2.9559063381618924,
+        "clip_fraction": 0.03819444444444445,
+        "epochs_completed": 3
+      },
+      "action_types_total": {
+        "0": 134,
+        "4": 84,
+        "2": 61,
+        "3": 105
+      },
+      "wsl_min_available_mib": 10372.16796875,
+      "wsl_max_swap_used_mib": 0.0,
+      "gpu_telemetry": {
+        "temperature_c": 50.0,
+        "memory_used_mib": 1835.0,
+        "utilization_percent": 4.0
+      }
+    },
+    {
+      "update": 2,
+      "steps": 384,
+      "rollout_seconds": 0.8727809870000556,
+      "actions_sha256": "e842ca7978599f3b6af2eda941b53ddc5e28f1da86a42a63de2c49ffa2b40823",
+      "returns_sha256": "030abb667aa976df3e84a1fbde11ff680c8bc297e7122b9a606cbd47ef7adb4d",
+      "inference_seconds": 0.1525011279999262,
+      "environment_ipc_seconds": 0.6308206130001963,
+      "update_seconds": 0.1809272839999494,
+      "effective_steps_per_second": 364.4272428796359,
+      "episodes_total": 26,
+      "wins_total": 22,
+      "truncations_total": 0,
+      "sampled_peak_total_pss_mib": 5623.240234375,
+      "metrics": {
+        "loss": 0.053844768502232104,
+        "policy_loss": -0.010838147045837509,
+        "value_loss": 0.1488315463066101,
+        "entropy": 0.9732858571741316,
+        "approximate_kl": 0.0019654195703979996,
+        "gradient_norm": 3.329776426156362,
+        "clip_fraction": 0.026041666666666668,
+        "epochs_completed": 3
+      },
+      "action_types_total": {
+        "0": 263,
+        "4": 176,
+        "2": 127,
+        "3": 202
+      },
+      "wsl_min_available_mib": 9965.4921875,
+      "wsl_max_swap_used_mib": 0.0
+    }
+  ],
+  "completed": true,
+  "all_workers_exit_zero": true,
+  "checkpoint_sha256": "c7120bc5e1e068360b60b50bdd305b3564e24b0f2f2661fd6c35663ce2ab7e70"
+}

@@ -1,0 +1,1 @@
+Admission fixtures only. No game, GPU, real model or save loading occurred.

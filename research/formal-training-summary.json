@@ -1,0 +1,372 @@
+[
+  {
+    "name": "ppo-balanced-seed-20261014",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 24,
+      "win_rate": 0.5,
+      "wilson95": [
+        0.36389098932037767,
+        0.6361090106796223
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 64.14583333333333
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 76,
+      "win_rate": 0.475,
+      "wilson95": [
+        0.39911756557967737,
+        0.5520547862528241
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.975
+    },
+    "wall_seconds": 294.678510031,
+    "effective_steps_per_second": 333.5974516419894,
+    "pss_peak_mib": 5716.056640625,
+    "gpu_peak_allocated_mib": 140.509765625,
+    "episodes": 5131,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-seed-20261015",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 25,
+      "win_rate": 0.5208333333333334,
+      "wilson95": [
+        0.3832899563598438,
+        0.6552890998421255
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 65.0625
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 85,
+      "win_rate": 0.53125,
+      "wilson95": [
+        0.45410132271210635,
+        0.6069332374972666
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 81.7375
+    },
+    "wall_seconds": 286.48480146199995,
+    "effective_steps_per_second": 343.1386220083277,
+    "pss_peak_mib": 5709.20703125,
+    "gpu_peak_allocated_mib": 141.201171875,
+    "episodes": 4897,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-seed-20261016",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 29,
+      "win_rate": 0.6041666666666666,
+      "wilson95": [
+        0.4631015459693511,
+        0.7297937350404942
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 64.8125
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 104,
+      "win_rate": 0.65,
+      "wilson95": [
+        0.5733626975304357,
+        0.7196031914745545
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 79.26875
+    },
+    "wall_seconds": 278.2528156279998,
+    "effective_steps_per_second": 353.29022557465885,
+    "pss_peak_mib": 5677.8935546875,
+    "gpu_peak_allocated_mib": 140.5146484375,
+    "episodes": 4540,
+    "training_truncations": 2
+  },
+  {
+    "name": "ppo-balanced-shaped",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 29,
+      "win_rate": 0.6041666666666666,
+      "wilson95": [
+        0.4631015459693511,
+        0.7297937350404942
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 66.04166666666667
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 94,
+      "win_rate": 0.5875,
+      "wilson95": [
+        0.5100398177030784,
+        0.660856950883166
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 82.975
+    },
+    "wall_seconds": 281.4867799880001,
+    "effective_steps_per_second": 349.23132093162866,
+    "pss_peak_mib": 5696.3447265625,
+    "gpu_peak_allocated_mib": 141.4736328125,
+    "episodes": 4815,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-mixed",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 23,
+      "win_rate": 0.4791666666666667,
+      "wilson95": [
+        0.34471090015787464,
+        0.6167100436401562
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 65.85416666666667
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 63,
+      "win_rate": 0.39375,
+      "wilson95": [
+        0.32138625171760665,
+        0.4710962435705252
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 85.6
+    },
+    "wall_seconds": 293.647799319,
+    "effective_steps_per_second": 334.76838657731224,
+    "pss_peak_mib": 5705.0400390625,
+    "gpu_peak_allocated_mib": 141.84130859375,
+    "episodes": 4651,
+    "training_truncations": 6
+  },
+  {
+    "name": "ppo-balanced-rollout64",
+    "samples": 98304,
+    "updates": 128,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 29,
+      "win_rate": 0.6041666666666666,
+      "wilson95": [
+        0.4631015459693511,
+        0.7297937350404942
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 62.9375
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 88,
+      "win_rate": 0.55,
+      "wilson95": [
+        0.4726402740186129,
+        0.625015022316384
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.63125
+    },
+    "wall_seconds": 280.028297049,
+    "effective_steps_per_second": 351.0502368365956,
+    "pss_peak_mib": 5760.9326171875,
+    "gpu_peak_allocated_mib": 141.576171875,
+    "episodes": 5163,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-batch128",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 17,
+      "win_rate": 0.3541666666666667,
+      "wilson95": [
+        0.23433457112685735,
+        0.4956120354593591
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 67.35416666666667
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 60,
+      "win_rate": 0.375,
+      "wilson95": [
+        0.3037420039328711,
+        0.452119755229637
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 87.39375
+    },
+    "wall_seconds": 269.92906540900003,
+    "effective_steps_per_second": 364.1845677161461,
+    "pss_peak_mib": 5705.4375,
+    "gpu_peak_allocated_mib": 257.15966796875,
+    "episodes": 4624,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-epoch1",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 23,
+      "win_rate": 0.4791666666666667,
+      "wilson95": [
+        0.34471090015787464,
+        0.6167100436401562
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 66.54166666666667
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 77,
+      "win_rate": 0.48125,
+      "wilson95": [
+        0.4051800943622811,
+        0.558199169512095
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 86.0125
+    },
+    "wall_seconds": 257.6050213650001,
+    "effective_steps_per_second": 381.6074682050287,
+    "pss_peak_mib": 5686.7900390625,
+    "gpu_peak_allocated_mib": 141.7275390625,
+    "episodes": 4992,
+    "training_truncations": 0
+  },
+  {
+    "name": "ppo-balanced-mlp",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 27,
+      "win_rate": 0.5625,
+      "wilson95": [
+        0.4227477150100165,
+        0.6929894535958907
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 65.08333333333333
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 84,
+      "win_rate": 0.525,
+      "wilson95": [
+        0.4479452137471758,
+        0.6008824344203225
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 84.95625
+    },
+    "wall_seconds": 269.536708732,
+    "effective_steps_per_second": 364.7147005039063,
+    "pss_peak_mib": 5679.71484375,
+    "gpu_peak_allocated_mib": 107.59619140625,
+    "episodes": 4952,
+    "training_truncations": 1
+  },
+  {
+    "name": "ppo-balanced-attention",
+    "samples": 98304,
+    "updates": 256,
+    "validation": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 20,
+      "win_rate": 0.4166666666666667,
+      "wilson95": [
+        0.28849459734577015,
+        0.5571891778463536
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 68.91666666666667
+    },
+    "test": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 56,
+      "win_rate": 0.35,
+      "wilson95": [
+        0.28039680852544535,
+        0.42663730246956433
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.0125
+    },
+    "wall_seconds": 302.14059113700006,
+    "effective_steps_per_second": 325.3584684866982,
+    "pss_peak_mib": 5720.048828125,
+    "gpu_peak_allocated_mib": 227.0078125,
+    "episodes": 5097,
+    "training_truncations": 0
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "episode_id": "f52cb2c5ea3fcbeec82b3f8dfb2d46f464074ea9e2c81c6a10d2605ae1402421",
+  "valid": true,
+  "reward": -1.0,
+  "decisions": 386,
+  "native_consumption_verified": true,
+  "native": {
+    "completed": true,
+    "inputs_unchanged": true
+  },
+  "raw_audit_path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/native-episode-raw-audit-02/AUDIT.json",
+  "raw_audit_sha256": "3f3cce43e70c7d87ad6d99fb1b2dec85979fe94df18bba19ed0336c37f2bbe4b",
+  "sampling_replay_exact": true,
+  "checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1",
+  "sampling_seed": 4900705963006546187,
+  "job": {
+    "seed": 2026102802,
+    "map": "takeover-v2-train-02-development",
+    "owned_player": 1,
+    "opponent": "Nullkiller2",
+    "logical_update": 1,
+    "checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1"
+  }
+}

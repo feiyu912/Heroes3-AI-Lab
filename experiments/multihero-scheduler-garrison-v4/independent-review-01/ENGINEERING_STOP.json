@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "failure": "Direct Python audit dict equality compared tuple positions to JSON array positions",
+  "native_games_started": 0,
+  "raw_evidence_modified": false,
+  "remedy": "independent-review-02 normalizes through JSON before value equality; both original audits then reproduce without changing native evidence or audit gates"
+}

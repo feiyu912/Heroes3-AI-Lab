@@ -1,0 +1,461 @@
+{
+  "scenario": "diverse-192",
+  "split": "development",
+  "role": "attacker",
+  "seed": 2026128600,
+  "engine_seed": 2026128600,
+  "opponent": "MMAI_MODEL",
+  "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx",
+  "opponent_seed": 2026128600,
+  "opponent_temperature": 0,
+  "policy": "recovered",
+  "checkpoint": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/control-update-60.pt",
+  "steps": 38,
+  "terminated": true,
+  "truncated": false,
+  "invalid_actions": 0,
+  "success": true,
+  "terminal_outcome": {
+    "result_type": 0,
+    "winner": 0,
+    "casualties": {
+      "0": {
+        "0": 18,
+        "2": 42,
+        "4": 25
+      },
+      "1": {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      }
+    },
+    "initial_armies": [
+      {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      },
+      {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      }
+    ]
+  },
+  "action_types": {
+    "0": 10,
+    "4": 4,
+    "2": 8,
+    "3": 13,
+    "1": 3
+  },
+  "trajectory_sha256": "004361e2e005bb8c22f00cdea05e50557072b96389931577bb071f96c8fd63fb",
+  "trajectory_hash_version": 2,
+  "wall_seconds": 5.069942656999956,
+  "policy_latency_ms": {
+    "p50": 21.180108999942604,
+    "p95": 29.21113300021716,
+    "p99": 31.984700889911448
+  },
+  "step_evidence": {
+    "schema": "battle-step-evidence-v1",
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps",
+    "identity": {
+      "scenario_index": 192,
+      "scenario": "diverse-192",
+      "role": "attacker",
+      "seed": 2026128600,
+      "checkpoint": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/control-update-60.pt",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+      "opponent": "MMAI_MODEL",
+      "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx"
+    },
+    "complete": true,
+    "decisions": 38,
+    "native_step_returns": 38,
+    "files": [
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000001.pt",
+        "sha256": "bbc8ddaebae3b54299993570031658a4a248f776559b77e494d53c231ebf7829",
+        "bytes": 214916
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000001.pt",
+        "sha256": "0ea5454d1c062efa0e83e7fec352dc1ff79da314289026258e4c9e3d9a8b79f7",
+        "bytes": 250875
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000002.pt",
+        "sha256": "42b9407356b174b482cc499a5bd64282b8dd72b8c2f07f8a13d3a32a63fec673",
+        "bytes": 252292
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000002.pt",
+        "sha256": "bc45e37f71f2deac2e7c5003b1409c5383b4f3e0a4e302e50b65b7b2656d8bdf",
+        "bytes": 142715
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000003.pt",
+        "sha256": "5ac41ab02d7058a5e11cc2c018fc4b31e4ff6e5c5f03baa47d65807eb4456960",
+        "bytes": 143940
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000003.pt",
+        "sha256": "b28762296a9b10167f3b2c1fb92743f8b7149ee54cfb2eff68b027a4e98a1bbf",
+        "bytes": 216379
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000004.pt",
+        "sha256": "9570ea4a74b66eac8edc701e0974e5206b01cf0eff2e17cf6aa9e903dd7b802d",
+        "bytes": 218180
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000004.pt",
+        "sha256": "201a814c5612e925f4c203476084f52804b832b4bb8f5b43715a4f9ede210b77",
+        "bytes": 301371
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000005.pt",
+        "sha256": "044c11591ff160e267bd3abbeed8e51dc9e542561b52f9f785c3de49c068fffd",
+        "bytes": 303748
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000005.pt",
+        "sha256": "c433ec63eaefad0da81bfbf0987d28e4aa2d9d62c8fd7800c29af0d57976949e",
+        "bytes": 287483
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000006.pt",
+        "sha256": "5a92ac8d797ec8b1308f75ed43d2564c400dcb260d0fe017c2faf372527674fa",
+        "bytes": 288900
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000006.pt",
+        "sha256": "4bd253ad5e411220b5eef72f6d0f4f54a55d9da240efbc963fc8cf8dafe07d72",
+        "bytes": 193787
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000007.pt",
+        "sha256": "70dead5c950020138339d94dabe3c3c40d109ab6800701b1a91f18eb6b779b07",
+        "bytes": 195524
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000007.pt",
+        "sha256": "c6b873a2476b0055f160afdfcf34b0bd398784d79554374e82f68682320d4e9b",
+        "bytes": 295355
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000008.pt",
+        "sha256": "6ce4a41f39e4280b4ba187f6897d41629037349826dc2e2d7cf104d57ad948b9",
+        "bytes": 297732
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000008.pt",
+        "sha256": "0cef26f120b920a8ba8c0240800aaf347cd99b8d307571d478ed71c28fc8e462",
+        "bytes": 253883
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000009.pt",
+        "sha256": "a4c0b0033554650fb29e8a75df89d1558bd7b076f2cd7142d536b59fbdb754c4",
+        "bytes": 255876
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000009.pt",
+        "sha256": "b6e29c72190af4cf31fcd97114924bf4530d616917e57159fe552fd123294aaf",
+        "bytes": 274811
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000010.pt",
+        "sha256": "c935c130d042af49a8cfe7a48b2cc094e8687cbc02dc2cb76e868b1714754983",
+        "bytes": 276228
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000010.pt",
+        "sha256": "b27cdaf350a02a712ba81e9b5391600147495b853770000d99f5a98838507c0f",
+        "bytes": 187323
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000011.pt",
+        "sha256": "91a64ad8678c830057f2005ffd482cc134958ec65d0b0fb8971ac512818644e7",
+        "bytes": 188996
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000011.pt",
+        "sha256": "4a48cfa42b8b35694376d623368017a609605448dd3c6ead8e982fdda15b70ca",
+        "bytes": 249403
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000012.pt",
+        "sha256": "b6e0d93c1866068e92d59d65ae135a32d62bfbec851edecf682f2d9d3dbe2648",
+        "bytes": 251332
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000012.pt",
+        "sha256": "cff089fb44c7e7a7c6df0962435c6d86334ae47bd73712bf94493e88615c4211",
+        "bytes": 258747
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000013.pt",
+        "sha256": "b43ab640a55859b59342bfc8eaa407301d307b0784df48e02f314e6e6d59f72b",
+        "bytes": 260804
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000013.pt",
+        "sha256": "b4c18416c38ea6bda35498fa0a1b4d32bede5a21a396e371d952e76c3aa8b219",
+        "bytes": 268603
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000014.pt",
+        "sha256": "1d5e0496c1286010dfe6299e8745a16b247fb5f1d4ad9c34d2e2e1a9c9af55aa",
+        "bytes": 270020
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000014.pt",
+        "sha256": "76654da2106e79649a0d31663e71f872b5430fd1d53e15ad5fc42a7e4bb4fff4",
+        "bytes": 187195
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000015.pt",
+        "sha256": "b036f88a9b2f22da66d09776c3aaa9e17b0aab32cce24d2fa4cfa7bd6a247b6b",
+        "bytes": 188932
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000015.pt",
+        "sha256": "6de18130456206d91531ee2d3144f07d2eb1b24cf4aee4bcd87aa5f9e7aaad8e",
+        "bytes": 272763
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000016.pt",
+        "sha256": "48f23a34238b8d963561c4d7478bf33f92ada4cd93006610d6dd88d85a3bc178",
+        "bytes": 274820
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000016.pt",
+        "sha256": "bdfe36768dc92af800cd4424fe1889f80484561b0dbf99ff23081480c00d9403",
+        "bytes": 307195
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000017.pt",
+        "sha256": "b750b5c57dbe632058cf27339322d881883b6fd936c3d391f59ebc30710601e7",
+        "bytes": 309444
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000017.pt",
+        "sha256": "a306bd9cb02f7462984db4ac04e9142f24425a1161be83935a84676cf4ad0ae0",
+        "bytes": 229883
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000018.pt",
+        "sha256": "f6e61c671561cee1bf858227a9f90386f694ad2bd389ef11c158c81f3c084e2f",
+        "bytes": 231172
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000018.pt",
+        "sha256": "f136b31675982ae6adaf775ec43566d38302d2d17f107e0fd23e2ddabbd9209a",
+        "bytes": 198971
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000019.pt",
+        "sha256": "970c11c54127185270e10f279cf2a0b97ab1ec07a2ef976e6ae92cd865020c37",
+        "bytes": 200644
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000019.pt",
+        "sha256": "1808e185cf8888e1bc9cee4198d01a579bc480cdf4e52e4b9f02903c951f9712",
+        "bytes": 236155
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000020.pt",
+        "sha256": "3757cfe29207d0f749d5a30f67cbdcb3eb8cd5c4712844256bd8aa0ab4c39123",
+        "bytes": 237892
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000020.pt",
+        "sha256": "731df7eb86c1726f959fc8f635e5ec6706303838e2ec9e1d024e34e114cefb03",
+        "bytes": 272315
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000021.pt",
+        "sha256": "df43b1eab4a4a3f672ff57871c65277e34f259723cdee2a9e7ad12e4ef3042c5",
+        "bytes": 273860
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000021.pt",
+        "sha256": "619834a17b9d5e0eb7ae216a26ad64f85fe6f6912e71fe746d1b9675cf6be00b",
+        "bytes": 156667
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000022.pt",
+        "sha256": "56ab11a5cbe132614fbe20afa029c1dd7fba7cad05d08c2fff81748c6c764d66",
+        "bytes": 158148
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000022.pt",
+        "sha256": "665a393467e62f125801cbcbb6d0b8a4ae695c35f2df750ca3c1641957c1b94b",
+        "bytes": 203835
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000023.pt",
+        "sha256": "ddd0812d850b1c32309fb4330bf4941338caa1f4ff4bdfee14356f89eb461a29",
+        "bytes": 205572
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000023.pt",
+        "sha256": "9d9d975a694fff32b19b31e0b6b31323a51ecf48a629e155c5d2096e2a3ec744",
+        "bytes": 243771
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000024.pt",
+        "sha256": "37d1f4d3bfca769542ac699924371b306b763d2a1e0e2c7b038ede4a76ad6707",
+        "bytes": 245828
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000024.pt",
+        "sha256": "1ce2bf78513c412993371ff0deec483388894acd1596b91115ab491db040387b",
+        "bytes": 228859
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000025.pt",
+        "sha256": "0f6bf75d85aaa4d8d82cbd709b7eeedf70f37e00dd18c5ab9abfe045f07a29fd",
+        "bytes": 230916
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000025.pt",
+        "sha256": "3aa35ea7171802cee899542383d4be0bf09670c2028edee73d978a60525d3819",
+        "bytes": 241147
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000026.pt",
+        "sha256": "9ca42921555b4592a5bf531f266aae8a4c4ee90cf9f6a240d2d05fa2e0b14e4a",
+        "bytes": 243204
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000026.pt",
+        "sha256": "947134c4e15dd9a0b374af3c051b4b8a9b457e57534001c13005b2a44e6b744c",
+        "bytes": 238459
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000027.pt",
+        "sha256": "3cfd531f08ef194298ec22a3c7aee515482cfbb555b1114917f95ec77a2dc4f8",
+        "bytes": 240516
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000027.pt",
+        "sha256": "375f6ffbdb1be4dfc38251cf0fae0758bfb5b03d9284f85bcf049b0dd1efb8ea",
+        "bytes": 237947
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000028.pt",
+        "sha256": "9fa384b4cc1d832ba63aa61be0f4565a816f2acc8140d7cb75ba107c8560265c",
+        "bytes": 240004
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000028.pt",
+        "sha256": "5e8cf4e75340100fd41d14049d78835ae08285825068567f0755d50153d3e059",
+        "bytes": 235259
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000029.pt",
+        "sha256": "ed31fe1e528af6b7ad45336c0588ba8a7878ba57b9f278a7108af6ee47593cc9",
+        "bytes": 237316
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000029.pt",
+        "sha256": "b175f8a4923f7f76982676727fc6fc9b46ba61674f17ddeb71f44be1812b2187",
+        "bytes": 237947
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000030.pt",
+        "sha256": "1a486b51e17e09287d35d3311fa7ef070db7580d8b2ed07bec9e2e45ce74d657",
+        "bytes": 240004
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000030.pt",
+        "sha256": "da7ae46a6c17562f98c6c0f640e8c4c9b041771d551571b12aae141946bf4e9a",
+        "bytes": 235259
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000031.pt",
+        "sha256": "3bb9ccdbc1aed0b4e1a156a3e720a70de2925ac59a97d1bbdae90ddcb526f359",
+        "bytes": 237316
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000031.pt",
+        "sha256": "f550abdd35c02042993dbb6f17701ef6cc711b39d6321953336fce67939cd806",
+        "bytes": 237947
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000032.pt",
+        "sha256": "7cec4e4f9cc079ff876a1c8b66bf1bc15877a3bfe73ef516cdb699a25122c003",
+        "bytes": 240004
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000032.pt",
+        "sha256": "d8be91a28c74ef2a66b291439634ca2b43f85057789fc15b471f9657a7d911ae",
+        "bytes": 235259
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000033.pt",
+        "sha256": "c5c70dd501c2cccea0369e9b3f01626c486a3c86b63da6bf075ab2b7550274f2",
+        "bytes": 237316
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000033.pt",
+        "sha256": "ba55c4562126211d6bc87284e02b0600f31866b48c6202667afc3ecd6a067269",
+        "bytes": 217467
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000034.pt",
+        "sha256": "5ad9f19dd8e6b5c6ebcfaff0c2a5d5a8b6cfa12c732a27dee2b841d0d1ff2dc2",
+        "bytes": 219396
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000034.pt",
+        "sha256": "a93ac8b97aad4dce3526d3ee91de1e69c7a0a87485986ade4e8f83c2017bc8fe",
+        "bytes": 197307
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000035.pt",
+        "sha256": "929dea22da0aed728d91a6fca830a78c9eb4442d70a4dd79d9d7498cd0473d05",
+        "bytes": 199236
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000035.pt",
+        "sha256": "ac4627d13a1be67b0648dee642d110fc22404cf49dbc197381283176726acb66",
+        "bytes": 168379
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000036.pt",
+        "sha256": "fa62ba6687be5f28167866be4cb7a4c233496b38783e0e849fdf8abf47c18803",
+        "bytes": 169988
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000036.pt",
+        "sha256": "62894597fb93e72652372f331c005f2b97ede037f8e4d124ab77181cccd6de4d",
+        "bytes": 159675
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000037.pt",
+        "sha256": "315498e55f16fdae0e7c37d3067925ab7196f5eb5b4b18260b1b6b6b06be54a5",
+        "bytes": 161156
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000037.pt",
+        "sha256": "28e138a61a21f8f6c3e490dc43d4266b4137cef10a65bd351282c229844153e7",
+        "bytes": 187643
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/decision-000038.pt",
+        "sha256": "ab139270c27e8358c25a3bd6c75c382365f40db28e67e2a58f1e11af19f8a6dc",
+        "bytes": 189380
+      },
+      {
+        "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.steps/transition-000038.pt",
+        "sha256": "c8627df96e741335a370d20f6d4efae06db85127af36df68fa60034afe3f9341",
+        "bytes": 87419
+      }
+    ],
+    "unreturned_decision": 0
+  }
+}

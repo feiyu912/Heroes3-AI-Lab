@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "arms": {
+    "control": {
+      "update-1.pt": "1cb4da8f816983831665069b880ea262b2af0d854cb87ccb2c2c408ed834006f",
+      "RESULT.json": "513a141f36f76ca6e9d16f576faa980083629d93ccecbf74f4612fff15cdc3aa",
+      "PLAN.json": "b7e99d55a840907ee9a756b91a87e9a6dd65f71251886dc9fe239cd9a85af9e3"
+    },
+    "treatment": {
+      "update-1.pt": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15",
+      "RESULT.json": "97108279268467b8fa346ccf4d4aa099303db3bc53f27963b67acda31d360237",
+      "PLAN.json": "2b2acbd48de9a07cb57566040751be82786e4b4d0bde7d9395c0b28d1d949397"
+    }
+  },
+  "targets_sha256": "b5fc0fba63fafc6c62513777b10ce92a5eefd4fe8b9a05b9da826746af123ce9",
+  "ability_improvement_claim": false
+}

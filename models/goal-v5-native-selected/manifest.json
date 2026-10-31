@@ -1,0 +1,245 @@
+{
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+  "checkpoint_sha256": "14f5c4fca8c804c125eebabeb06a8483a137653ea54594321e9ca60cbb9cbb2e",
+  "models": [
+    {
+      "role": "attacker",
+      "path": "/mnt/g/Heroes3-AI-Lab/models/goal-v5-native-selected/attacker.onnx",
+      "sha256": "18561cd9c29a1edc1310c959473e389ae7c6976562ff3cc9ac596c3f26195b84",
+      "parameter_arrays": 329,
+      "materialized_aliases": 15,
+      "transposed_matrices": 208
+    },
+    {
+      "role": "defender",
+      "path": "/mnt/g/Heroes3-AI-Lab/models/goal-v5-native-selected/defender.onnx",
+      "sha256": "fb09d14d1142667890e7e2b176976323dc30e540bd4d8ae31975bfa1ee19451b",
+      "parameter_arrays": 329,
+      "materialized_aliases": 15,
+      "transposed_matrices": 208
+    }
+  ],
+  "interface": "Original v15 typed graph inputs and action/probabilities/value/legal-ID outputs",
+  "needs_numeric_and_live_validation": false,
+  "validation": {
+    "passed": true,
+    "records": [
+      {
+        "role": "attacker",
+        "training_scenario": 0,
+        "steps": 44,
+        "maximum_probability_error": 2.199411392211914e-05,
+        "outcome": {
+          "result_type": 0,
+          "winner": 1,
+          "casualties": {
+            "0": {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            },
+            "1": {
+              "0": 4,
+              "2": 3,
+              "4": 3
+            }
+          },
+          "initial_armies": [
+            {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            },
+            {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            }
+          ]
+        },
+        "full_observation_sha256": "4eab01d7e980edf4708b6917459b3bb5c95a5fce4607b9be3606f564f2258e18",
+        "observation_hash_version": 2
+      },
+      {
+        "role": "attacker",
+        "training_scenario": 7,
+        "steps": 14,
+        "maximum_probability_error": 8.225440979003906e-06,
+        "outcome": {
+          "result_type": 0,
+          "winner": 1,
+          "casualties": {
+            "0": {
+              "14": 18,
+              "18": 12,
+              "20": 5
+            },
+            "1": {
+              "18": 9,
+              "20": 4
+            }
+          },
+          "initial_armies": [
+            {
+              "14": 18,
+              "18": 12,
+              "20": 5
+            },
+            {
+              "14": 20,
+              "18": 14,
+              "20": 7
+            }
+          ]
+        },
+        "full_observation_sha256": "deb1f2022d4fbb2cb79341946c9fd06993f0c9070835b4f834c30d5a510ddabd",
+        "observation_hash_version": 2
+      },
+      {
+        "role": "attacker",
+        "training_scenario": 14,
+        "steps": 20,
+        "maximum_probability_error": 4.470348358154297e-05,
+        "outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "6": 14,
+              "8": 4,
+              "10": 11
+            },
+            "1": {
+              "6": 25,
+              "8": 19,
+              "10": 9
+            }
+          },
+          "initial_armies": [
+            {
+              "6": 27,
+              "8": 21,
+              "10": 11
+            },
+            {
+              "6": 25,
+              "8": 19,
+              "10": 9
+            }
+          ]
+        },
+        "full_observation_sha256": "890eb3651d4a314e7b3936860fc38ec49d0b4a41f9d28bacd8bae859980a0a89",
+        "observation_hash_version": 2
+      },
+      {
+        "role": "defender",
+        "training_scenario": 0,
+        "steps": 44,
+        "maximum_probability_error": 6.720423698425293e-06,
+        "outcome": {
+          "result_type": 0,
+          "winner": 1,
+          "casualties": {
+            "0": {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            },
+            "1": {
+              "0": 4,
+              "2": 3,
+              "4": 3
+            }
+          },
+          "initial_armies": [
+            {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            },
+            {
+              "0": 12,
+              "2": 6,
+              "4": 3
+            }
+          ]
+        },
+        "full_observation_sha256": "d5180258c07422d921ad124de801e01e2e66d28613c1e497a30682ec1d7af9e0",
+        "observation_hash_version": 2
+      },
+      {
+        "role": "defender",
+        "training_scenario": 7,
+        "steps": 15,
+        "maximum_probability_error": 1.5914440155029297e-05,
+        "outcome": {
+          "result_type": 0,
+          "winner": 1,
+          "casualties": {
+            "0": {
+              "14": 18,
+              "18": 12,
+              "20": 5
+            },
+            "1": {
+              "18": 9,
+              "20": 4
+            }
+          },
+          "initial_armies": [
+            {
+              "14": 18,
+              "18": 12,
+              "20": 5
+            },
+            {
+              "14": 20,
+              "18": 14,
+              "20": 7
+            }
+          ]
+        },
+        "full_observation_sha256": "ce0b91b397d6bb891499f732fbd21a91155c40f6abba21c6975ab3512cf1f7fb",
+        "observation_hash_version": 2
+      },
+      {
+        "role": "defender",
+        "training_scenario": 14,
+        "steps": 26,
+        "maximum_probability_error": 1.245737075805664e-05,
+        "outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "6": 14,
+              "8": 4,
+              "10": 11
+            },
+            "1": {
+              "6": 25,
+              "8": 19,
+              "10": 9
+            }
+          },
+          "initial_armies": [
+            {
+              "6": 27,
+              "8": 21,
+              "10": 11
+            },
+            {
+              "6": 25,
+              "8": 19,
+              "10": 9
+            }
+          ]
+        },
+        "full_observation_sha256": "d7d5aa0f8c167cfd0a63ead65b53e11f247a6c13d094b4eff65895b4b7dca43b",
+        "observation_hash_version": 2
+      }
+    ],
+    "all_workers_exit_zero": true,
+    "scope": "Six training-scenario native battles with the exported opposing role; every controlled decision compares Torch and ONNX probabilities, values and greedy action. Deployment compatibility only, not strength evaluation."
+  }
+}

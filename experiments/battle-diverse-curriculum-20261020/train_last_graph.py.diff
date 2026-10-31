@@ -1,0 +1,77 @@
+--- frozen-family/train_last_graph.py
++++ diverse-60case/train_last_graph.py
+@@ -39,6 +39,7 @@
+     p.add_argument('--experiment-initial-checkpoint')
+     p.add_argument('--first-battle',action='store_true')
+     args=p.parse_args()
++    args.torch_version=str(torch.__version__);args.numpy_version=np.__version__;args.cuda_version=torch.version.cuda
+     support.validate_args(args)
+     frozen=support.verify_freeze(args.freeze)
+     assert 0<args.gamma<=1 and 0<=args.gae_lambda<=1 and 0<=args.entropy_coef<=.1
+@@ -76,7 +77,7 @@
+     source_snapshot=capture_source(folder,'train-graph-finetune.py')
+     support.capture_local(folder,frozen)
+     started=time.monotonic();records=[];episodes=wins=cuts=0;vector=None
+-    phase_close_events=[];live_steps=[]
++    phase_close_events=[];live_steps=[];phase_resource_events=[]
+     latest=str(args.checkpoint)
+     try:
+         for iteration in range(args.updates):
+@@ -85,7 +86,7 @@
+                     phase_close_events.append(curriculum.close_evidence(phase,live_steps,configs,'phase_switch'))
+                     vector.close();vector=None
+                 phase=(previous+iteration)//args.rotate_every
+-                curriculum.resource_gate()
++                phase_resource_events.append(dict(phase=phase,**curriculum.resource_gate()))
+                 configs=curriculum.configs(args.scenario_file,args.seed,phase,run)
+                 live_steps=[0]*args.workers
+                 vector=(OpponentVector(configs,'/root/heroes3-ai-lab/venv/bin/python',fixed_opponent) if fixed_opponent
+@@ -135,7 +136,7 @@
+                 wins+=sum(s['terminated'] and s['outcome']['winner']==int(config['role']=='defender') for s,config in zip(transitions,configs))
+                 cuts+=sum(s['truncated'] and not s['terminated'] for s in transitions)
+             advantage,returns=gae(rewards,values,next_values,terminated,truncated,gamma=args.gamma,lam=args.gae_lambda)
+-            support.save_rollout(folder,previous+iteration+1,dict(samples=samples,actions=actions,old_logp=old_logp,values=values,next_values=next_values,rewards=rewards,terminated=terminated,truncated=truncated,configs=configs))
++            rollout_evidence=support.save_rollout(folder,previous+iteration+1,dict(samples=samples,actions=actions,old_logp=old_logp,values=values,next_values=next_values,rewards=rewards,terminated=terminated,truncated=truncated,configs=configs))
+             stamp=time.monotonic()
+             metrics=update(model,optimizer,samples,actions,old_logp,np.asarray(values).reshape(-1),advantage.reshape(-1),returns.reshape(-1),
+                 epochs=args.epochs,batch_size=args.microbatch,entropy_coef=args.entropy_coef,target_kl=.02,
+@@ -150,7 +151,7 @@
+             record=dict(update=previous+iteration+1,samples=len(samples),steps_per_second=len(samples)/(time.monotonic()-tick),
+                 episodes=episodes,wins=wins,truncations=cuts,metrics=metrics,timing_seconds=timings,
+                 free_mib=mem['MemAvailable']/1024,gpu_peak_mib=torch.cuda.max_memory_allocated()/1024**2)
+-            record.update(actual_Adam_steps=counter['steps']-step_before,actual_Adam_steps_total=counter['steps'],parameter_delta=parameter_delta,delta_from_B64=support.delta(model,initial_parameters))
++            record.update(phase=phase,rollout=rollout_evidence,actual_Adam_steps=counter['steps']-step_before,actual_Adam_steps_total=counter['steps'],parameter_delta=parameter_delta,delta_from_B64=support.delta(model,initial_parameters))
+             records.append(record)
+             if fixed_opponent:
+                 fixed_opponent.assert_unchanged()
+@@ -166,25 +167,25 @@
+                     environment_steps=steps+(iteration+1)*args.workers*args.rollout,config=vars(args),
+                     optimizer_state_dict=optimizer.state_dict(),torch_rng_state=torch.get_rng_state(),cuda_rng_states=torch.cuda.get_rng_state_all(),
+                     python_rng_state=__import__('random').getstate(),numpy_rng_state=support.numpy_rng(),
+-                    actual_Adam_steps=counter['steps'],complete_update_boundary=True,frozen_inputs=frozen,
+-                    native_environment_restorable=False,phase_close_events=phase_close_events)
++                    actual_Adam_steps=counter['steps'],complete_update_boundary=True,frozen_inputs=frozen,rollout_evidence=rollout_evidence,
++                    native_environment_restorable=False,phase_close_events=phase_close_events,phase_resource_events=phase_resource_events)
+                 record['checkpoint_readback']=support.check_readback(latest,model,optimizer,graph,counter['steps'])
+                 record['checkpoint_sha256']=support.sha(latest)
+             report=dict(config=vars(args),checkpoint=latest,completed=False,resumed_from_updates=previous,
+                 experiment_initial_checkpoint=args.experiment_initial_checkpoint,source_snapshot=source_snapshot,
+-                records=records,phase_close_events=phase_close_events,wall_seconds=time.monotonic()-started,policy='recovered',
++                records=records,phase_close_events=phase_close_events,phase_resource_events=phase_resource_events,wall_seconds=time.monotonic()-started,policy='recovered',
+                 total_parameters=sum(p.numel() for p in model.parameters()),trainable_parameters=sum(p.numel() for p in model.parameters() if p.requires_grad),
+                 reward='Normal terminal +/-1, step cost, gamma-correct army-value potential with zero terminal potential',
+                 CUDA_training=True)
+             atomic_json(args.output,report);print(record,flush=True)
+         phase_close_events.append(curriculum.close_evidence(phase,live_steps,configs,'final_budget_stop'))
+         vector.close();vector=None
+-        report.update(completed=True,all_workers_exit_zero=True,phase_close_events=phase_close_events)
++        report.update(completed=True,all_workers_exit_zero=True,phase_close_events=phase_close_events,phase_resource_events=phase_resource_events)
+         atomic_json(args.output,report)
+     except BaseException as error:
+         atomic_json(args.output,dict(completed=False,error=repr(error),actual_Adam_steps=counter['steps'],
+             CUDA_training=counter['steps']>0,checkpoint=latest,checkpoint_exists=Path(latest).is_file(),records=records,
+-            source_snapshot=source_snapshot,partial_live_state_not_resumable=True,config=vars(args),phase_close_events=phase_close_events))
++            source_snapshot=source_snapshot,partial_live_state_not_resumable=True,config=vars(args),phase_close_events=phase_close_events,phase_resource_events=phase_resource_events))
+         raise
+     finally:
+         if vector:vector.abort()

@@ -1,0 +1,17 @@
+{
+  "parent_directory": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023",
+  "parent_collector_sha256": "e19ba85d1bc30969f5a9004558681105acf40c5703cbcc5e4f51bfac5a8f3367",
+  "collector_sha256": "3d609c5f6f5f6a558591a8a53ebccc948866cdf63a3a1f506489bb379153240d",
+  "driver_sha256": "2f56cc5a798e4c6503ba0c3896289aa9fce2dbe16d42ff4ec3ebff817fd3aa07",
+  "leases_sha256": "dcf9d092b5c61c202121678f8e483406c71646f2a421dbfe3215b37aea2625a7",
+  "changes": [
+    "native inherits real GPU/pool flock descriptors",
+    "stop checks independent-session descendants before lease release",
+    "controller owns collector sessions and waits cleanup",
+    "SIGTERM triggers controlled finally cleanup"
+  ],
+  "scientific_changes": false,
+  "maps_models_seeds_selection_unchanged": true,
+  "native_runs": 0,
+  "optimizer_steps": 0
+}

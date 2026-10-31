@@ -1,0 +1,10 @@
+{
+  "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/collect_cpu.py",
+  "changes": [
+    "only canonical original TRAIN names admitted",
+    "fixed initial1510149e only; NK and curriculum x4 only",
+    "same private canonical map basename/bytes as archived stochastic cells",
+    "zero optimization/admission; independent diagnostic metadata"
+  ],
+  "native_runtime_unchanged": true
+}

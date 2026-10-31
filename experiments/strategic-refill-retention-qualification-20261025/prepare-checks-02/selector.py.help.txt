@@ -1,0 +1,9 @@
+usage: selector.py [-h] --agent-dir AGENT_DIR
+                   --case {positive,empty,full-incompatible,full-merge}
+                   [--idle-seconds IDLE_SECONDS]
+
+options:
+  -h, --help            show this help message and exit
+  --agent-dir AGENT_DIR
+  --case {positive,empty,full-incompatible,full-merge}
+  --idle-seconds IDLE_SECONDS

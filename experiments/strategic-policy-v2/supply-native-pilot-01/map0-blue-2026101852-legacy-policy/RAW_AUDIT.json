@@ -1,0 +1,574 @@
+{
+  "schema": "supply-native-episode-audit-v1",
+  "passed": true,
+  "mode": "legacy-policy",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "Nullkiller2",
+    "blue": "DirectorAI",
+    "seed": 2026101852,
+    "seconds": 90,
+    "tag": "supply-map0-blue-2026101852-legacy-policy",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl"
+  },
+  "won": 0,
+  "winner": "red",
+  "normal": true,
+  "decisions": 96,
+  "original_main_id": 1,
+  "original_main_status": "terminal_betrayal_not_combat_death",
+  "original_main_loss_day": 11,
+  "original_main_last_present": {
+    "line": 231,
+    "day": 11,
+    "event": "defeat"
+  },
+  "original_main_first_absent": null,
+  "original_main_removal_log": [
+    {
+      "line": 31113,
+      "text": "removing object id=1; address=7218d5782600; name=heroClass.core.knight.name"
+    },
+    {
+      "line": 31131,
+      "text": "removing object id=1; address=7218d0311750; name=heroClass.core.knight.name"
+    }
+  ],
+  "deliveries": [
+    {
+      "before_line": 12,
+      "after_line": 13,
+      "day": 1,
+      "hero": 1,
+      "town": 13,
+      "creatures": {
+        "2": 9
+      },
+      "count": 9,
+      "to_original_main": true
+    },
+    {
+      "before_line": 14,
+      "after_line": 15,
+      "day": 1,
+      "hero": 1,
+      "town": 13,
+      "creatures": {
+        "0": 14
+      },
+      "count": 14,
+      "to_original_main": true
+    }
+  ],
+  "delivered_by_creature": {
+    "2": 9,
+    "0": 14
+  },
+  "delivered_to_main_by_creature": {
+    "2": 9,
+    "0": 14
+  },
+  "delivered_count": 23,
+  "delivered_to_main_count": 23,
+  "single_candidate_decisions": 59,
+  "supply_candidate_decisions": 2,
+  "overrides": [],
+  "override_count": 0,
+  "request_manifest": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000001.json",
+      "sha256": "02db8cd9159c4b1a107c97d8770d6d9e350e0b92200806af03ac2a422aec29a8",
+      "action_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000002.json",
+      "sha256": "e291c1c7ae33fe027e50b77898fe679c6a9e6a280220d6cee8e273f10fc0c6e6",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000003.json",
+      "sha256": "a10443a8720e1f86bdd28d09e157cbed1fd89f10aed6ee00bf3d881a4256c47a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000004.json",
+      "sha256": "6353d0a96f656272eee24957bd8dd60818fc97212c217bbe0404b814315c0ebf",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000005.json",
+      "sha256": "373586e231f7318d06cd07de9f0fda15170ebe745248086bab8567b5981fa0c8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000006.json",
+      "sha256": "b6f1513a683f408ae83f8b14afdf6cb9c6a13a5884dc75446828b5d8175f8964",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000007.json",
+      "sha256": "0b25626a99a835e016411faf74ecc2c3c973f8604b7053ee43bb24df0127bc70",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000008.json",
+      "sha256": "2a45780927f63c239b9adc3ed391b8171374e8974e991085619ae34f63a09504",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000009.json",
+      "sha256": "0c6c9d93598916cfb8229f91a6622b29f9ec75e0a2e1c315ab9750ac472a42e6",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000010.json",
+      "sha256": "69508d09387fd819bc3edae03c356e2b2d22f16a04dbd517eca02864201cd436",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000011.json",
+      "sha256": "aee9ee5281b0c7c52fe5d0ceb286d7bdd93930e971259a8a8ac8764455828558",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000012.json",
+      "sha256": "2efcceb4515bda13e66b914883a00ed4154e34b8ba9db6d5094c3ff678ba05d8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000013.json",
+      "sha256": "07c5b37f6fb3f5be6f75fa27564289e4a6b52ae2aec4c9edce152f7d31d6e9f1",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000014.json",
+      "sha256": "91cbc66e165dd39c666df6b47f448ec3129c200820f5cbbfdf3b81bee770d9dc",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000015.json",
+      "sha256": "ca19f1517589ef3e773e1b9d8453ecd5f3217261e21f495f9dceb84e91cd6cb8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000016.json",
+      "sha256": "9be97175429f7c4575750a115e5b45cdb69077652facf3c6c05295025ed42bd4",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000017.json",
+      "sha256": "4b68dc6695376d40e52287fc28ebe46e4502a8d1d31a6de98c796f2fdbbba454",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000018.json",
+      "sha256": "b4f82ef5e56275c49828d22379f15ad64b7a7650a4547b7ec50148b5671e6ca3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000019.json",
+      "sha256": "6578b87ce4701418202ac0f7d392f314fd87580423f0cb4d275e5cdf6dcbbde8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000020.json",
+      "sha256": "ad4832afad3cbb0f494dc23e8dd6fa693c29e872163ab12b9ae084d21edbb778",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000021.json",
+      "sha256": "3f85d845668d863a10e5544c30df79d6230f7bd9004c01c44468dfff2d67b8d2",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000022.json",
+      "sha256": "0291ba57ae9ba2ae7a17c58ffb90544043b6f141cc3c83ce11a7dfc4b84a6952",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000023.json",
+      "sha256": "800645af850db9a9e052bec9b37c6cd9d468568d3f5ab58a9f35a1b5cfb7584d",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000024.json",
+      "sha256": "ce90706a6b6e95f966ea96b131446df2bbd2d7680c9f09e9cf368b64a8ee61fa",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000025.json",
+      "sha256": "52c17335bc36f8dae2bfbd8ce5c814060688e62b94e6ad9086670b855dcfb8e0",
+      "action_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000026.json",
+      "sha256": "c73e2e354379f8a25fb7794e0ffab8b3159fa76e15e2bd0d4a6ab127418f0e9d",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000027.json",
+      "sha256": "dea6fb1431dd7fed7b5f3f9dce15fe73f0938a44f2151b6096ea9f769dee7f46",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000028.json",
+      "sha256": "317930db66089fa5fd6f59b7e66e2125c9006ea56c255ed41a6c2ef108dcfaee",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000029.json",
+      "sha256": "b462130b18de70d463faed1c4cb7f45b8332ef69e815a5fbb6929431baf2ec74",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000030.json",
+      "sha256": "70fee599534b961daa6ea3dba7fb41cecc712804eebe0cf045ae63fb8311feeb",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000031.json",
+      "sha256": "cf37e12656d0f582d43731b2169d6776e6fa88b8a3762cb6171e97f3643851f7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000032.json",
+      "sha256": "302f3a37b4e4064f2770ec25eaa5c5808d42fde1c7879e9d308af71e6e84f97b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000033.json",
+      "sha256": "bf4dd68deb219f392efb32e9a4933ec83835e7d507bfbb182e22596f9df374b8",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000034.json",
+      "sha256": "120f7bba269cd67ea7f31c76af6386db9fd397190e8fdd5244711358edab75ac",
+      "action_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000035.json",
+      "sha256": "d44ffee22f3bb535b3765c79b3bb7c56564aa1d91f283112fd09d9034cf34c96",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000036.json",
+      "sha256": "78b69f946dea710cee4fdbbb57472a425fb64666346b4125538ea19227eeb5f3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000037.json",
+      "sha256": "393e4358d7b8087e5fb937da2fdd8aaec39c5468bb90c141cd2399b8111aa63e",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000038.json",
+      "sha256": "86db457d7951236934c9e48d669c1cbb2ae43bab55e8f9435b05119ae49135a0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000039.json",
+      "sha256": "f78dbf1a4feb24fba6df53a224576fdd279a6e09276bed37c356f07c0a760008",
+      "action_sha256": "1326faec3eb42dc72ddffe46daf3940b932f48b9799f6cbf28e80504e7b34958"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000040.json",
+      "sha256": "8aa861c897355222b74ff3ba092c9d2088280ba90ad6493f33219a98a277cf7d",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000041.json",
+      "sha256": "6850cfd36aebe85a405aec31f2c1112f5539862d1f72388855c24440e0f19b8e",
+      "action_sha256": "8e37bed9dff3949ffd23ae638260dff869f5cc26e551f2a9e5e289a8888949fa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000042.json",
+      "sha256": "bc9ba1ecc79351efeb250d6637c171aaa3a38005709a76791f5c732662087497",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000043.json",
+      "sha256": "bb9ceee1ea8b77d0db1e772689d5690ecbdcbd9840b9870487265ec51f4b36f9",
+      "action_sha256": "bd5fa6e75f0ddfcd9ff32e0a2297554cd81188f177f14d7ce416310efa0b5c77"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000044.json",
+      "sha256": "dad703ad2e762b6532ec0340b57e1eaef8da7b4a4a7a5309f94c81a02ed961ff",
+      "action_sha256": "93a73825c1b761d11bf2b3f4dff760d07888d3fde05dcf55f1da84aa6041a5a8"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000045.json",
+      "sha256": "e008880cea22042683e19ecdddd40210e9af8fba554372e189c5a435e48eff85",
+      "action_sha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000046.json",
+      "sha256": "5f60b01464faebb6ad9bf25f41fbc760ef92bd8e138b98689c724777734cdba5",
+      "action_sha256": "b03c70ff0d641a363f1a021413a098dce02e4c68b75f3a47aa10044f42ee1784"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000047.json",
+      "sha256": "a3c1a07051fe0d32c18387f2c693bca11d656b6056f462de32dac140543fc08c",
+      "action_sha256": "95aebc97bc646c67fdcd923a5965b001f3c8a5c4d3a77075112e12a3a311d760"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000048.json",
+      "sha256": "7b79557dbab9fcf57df7cd1c1078a20aa6a471a47d924b413ad2126a56139c13",
+      "action_sha256": "461144ccfd56ee3cf0f9a9d80e520c5b872166b23092d5fd838ecbdb46d64dab"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000049.json",
+      "sha256": "6c8e037efdc43454b2442af48e384ec4c6f37066ac5cff4e7eddf2c4a6a4480b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000050.json",
+      "sha256": "9f3af9dd3bcc1068c69ccb327f869923d0792df843e87f78aaa1a82ada635367",
+      "action_sha256": "816c83d0ac08a94e91547a30df27dbbe88c7643cfa3c99d33120fd361173759a"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000051.json",
+      "sha256": "b9c6810c0d0fa13d0c69a09023e6ad2701a6dcb11306b848952a2b72d64a3caa",
+      "action_sha256": "4393447bd3c1d55ea7f97417ecb1b36a691ccaacaaf2ebd21c59a5acf825fb7b"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000052.json",
+      "sha256": "488c9f0499614c6a0eb2c47805fe962402c78dffbf93ad03b3fd2fed17840a47",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000053.json",
+      "sha256": "51d3a59c17b17d4e98aa6c5d604c12f90aa038cb9b83dd9978c4962f903c919b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000054.json",
+      "sha256": "c4dfa1d14efd396d56ea7e4f9a990727f4238452c7ae086aee178f7c519e2917",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000055.json",
+      "sha256": "c8b59fce352327c9a8758132456b6fd596ff227ccdf9b639001a5c81871b188a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000056.json",
+      "sha256": "e312f696b79189311ceea634bfe5116d4f303bdf524daf23ba0c43123f405bc0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000057.json",
+      "sha256": "913b389f62441b1c4b5d77e3f90c2b6c2da768169560ad838dd417ab67953aa3",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000058.json",
+      "sha256": "ed1b4beeb02a4cf4a16bdfaf3924ec9a6be9dbc3e1650d7c853b662af9299bf5",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000059.json",
+      "sha256": "703b89e353e529c3cd705ebb5f1c11b5c4de88dbaa0690c3991e573fed8b8865",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000060.json",
+      "sha256": "d4250767c050949d25c4ac8d8ddf1cea0cd9dc614c9e89c2405f88fa5d46ce01",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000061.json",
+      "sha256": "35ffb8270596567d76187499860e1b40457bc4d89474d5e9e0980b32abcc8766",
+      "action_sha256": "8e37bed9dff3949ffd23ae638260dff869f5cc26e551f2a9e5e289a8888949fa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000062.json",
+      "sha256": "1a5081bc3a791281a1f112b0f735b00cd99180fc1ba58e78f3c329156bea3803",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000063.json",
+      "sha256": "e36cd56f9d2c803d85a78c7fdcb1164e515324b78e687b8643f7e3563f693543",
+      "action_sha256": "be4ba010e48e7d5c7c60457e7f40538407a26f4ead94b392beff67a3a5546b8a"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000064.json",
+      "sha256": "07dce29cd6440e7662424296814559beb001c8f6ed72d7e2e5cf1cd8365323cf",
+      "action_sha256": "1a62e878f334291869f88f4b71f8c157ee774b6bdb11d2ca86cccf2b48cef87b"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000065.json",
+      "sha256": "f83bfa41d9b204658841cfdae086e0f7bc3cfb78079f7e2a23c616d61c1ac728",
+      "action_sha256": "bd5fa6e75f0ddfcd9ff32e0a2297554cd81188f177f14d7ce416310efa0b5c77"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000066.json",
+      "sha256": "d3776a893fbdae4c65c3015cc4693b681a320dbb9c15de8e75d4750e53304137",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000067.json",
+      "sha256": "9aacd7569965e83e83803425c0b72de8b7ebcad2ceab221aa56c245b35ee7fc7",
+      "action_sha256": "b03c70ff0d641a363f1a021413a098dce02e4c68b75f3a47aa10044f42ee1784"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000068.json",
+      "sha256": "9e828ca49237cba68fd601fe048bfe37cea2f8d2d3dbca86558bf77b1088daaa",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000069.json",
+      "sha256": "1afaac46e808eeebf914925f7ffcdf423fbf495147f0c56bd664de82513ce393",
+      "action_sha256": "ff393127b5a059b172af9b9eed820368071cf24d46df1b8326623c8e79178379"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000070.json",
+      "sha256": "f844a918f7f99e7b4ac0949f3caaea9059d09f0c251e61015ec594b28a8dd3fb",
+      "action_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000071.json",
+      "sha256": "b810fa91383c395a4e557929d728baaea5827f36ce9b36bbee95d252b5a24e8a",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000072.json",
+      "sha256": "5af22135593ea43282e1dd787828fb180bb7f2d20db8eeb96af645e0c094035c",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000073.json",
+      "sha256": "4e358b0928ac83d143325d4b5253a83cdab3ad25ed3991a70be6d0d001b610e7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000074.json",
+      "sha256": "fc0bece00745ac574b238ba6fade79b0e3b41360e32eac4dfff57325e97078f7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000075.json",
+      "sha256": "c26d449931c2ed6c32ee1b816ca99ad36535106ab87e920930f0cb4eeaa2b0a7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000076.json",
+      "sha256": "ab8004ae5844c0608ed9b57fd7397f7faeeea7f563adcac1bc2cb861c2e77e74",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000077.json",
+      "sha256": "f047b027218183bd5276197cfd0b6d3f403afa759de7c13b5ffb9c61ba57d034",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000078.json",
+      "sha256": "5e157f853c25b9de6a9ebf232a2b7e33cde2204ba865ff4513c72bea16599d35",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000079.json",
+      "sha256": "ad5a72edd7d8eb944227f8501e719c9bcc82f53b67676aea9d757f7e408c2790",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000080.json",
+      "sha256": "830d337e11c5377d026ff24e7302275cf321a8c7ea8e34f913075a92428068e2",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000081.json",
+      "sha256": "e0059861236e5546b07a358ab69a30e7d9d055ea5ed952e9df5903ad237baee7",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000082.json",
+      "sha256": "e54c8fa13c38d8b17e28d4b75f0584ebcb8a25e9ae75affe41b98b0c95417968",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000083.json",
+      "sha256": "e263e068f8e59ea42511aae282465d52fed1eed850be32b90ffebdab1fdc87f2",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000084.json",
+      "sha256": "383c4549d29d8864ffd8ca15707bfc9038ed096e633a52f4471f049865bfec45",
+      "action_sha256": "eedb85ab90d324a555a45560d75c88cecf23721990c3b6353697d707e6465c74"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000085.json",
+      "sha256": "663a81825b351b31765b0fecf038bcafd984776313555a9f864a1b60c8580a40",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000086.json",
+      "sha256": "c7c71fb5377c3fca3078c0da70eb4a0aefcc04c22d5a31234c366f81e3e13eb4",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000087.json",
+      "sha256": "5ac61efce4f9c1195583c664617f0f8efea4b3b447540c102d037a1853c786da",
+      "action_sha256": "040316eca5e77dbb2212c1efe8b81cb23bc67ce0ac8cb5c9d902d98bd45ddfa1"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000088.json",
+      "sha256": "95e38d2c9a375a09c473d06ed3fd2530537df37eb0b262977cde1e1991355f45",
+      "action_sha256": "eedb85ab90d324a555a45560d75c88cecf23721990c3b6353697d707e6465c74"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000089.json",
+      "sha256": "37e671ae35c9d9945513109a531515625a9a58823ba75b567aec6fcbd0d2094d",
+      "action_sha256": "eedb85ab90d324a555a45560d75c88cecf23721990c3b6353697d707e6465c74"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000090.json",
+      "sha256": "496ecfc317276a16a2d4648c3cba9f814c1390a7a3d4ddbd3125788a51499136",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000091.json",
+      "sha256": "c96ae073acd3024bf6658bddac4f5a57d3129f26f8b1b222d26f2b13eb4a08a9",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000092.json",
+      "sha256": "832d5ded0c6a45f5649dfaa5eb64f86c255e7c651822ad631064c84f11d08d63",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000093.json",
+      "sha256": "00703f801f9f00d52c46aaf5e7b1546c0498383022a4a18b6349fe32697f7032",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000094.json",
+      "sha256": "9dea28812e8bcf947158fe921b3c231565d1b9908f36ae5b1f994bd7d8e6cd6b",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000095.json",
+      "sha256": "3ffafab051cc400fc2f5b3758c689a969beaec9782a8856ba2fa6efbeebd7b44",
+      "action_sha256": "2a57042a43991d2ca310938e6802d7283954e38c825a548c4bee89c45238b43b"
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/request-00000096.json",
+      "sha256": "8875e7440d85376e186a84cbc1c488abb26e5d732ded77af92147f6e586cb4e0",
+      "action_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    }
+  ],
+  "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/supply-map0-blue-2026101852-legacy-policy-2026101852-9mli2ja1",
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl",
+  "native_days": 11,
+  "initial_state_sha256": "02e933f67cdc997c2ca816ddf2271800c980d7642f2e4fb94ba8c199d9ee187d",
+  "evidence_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply-native-pilot-01/map0-blue-2026101852-legacy-policy/smoke-result.json": "ce439199d50074f7a6d61999b03f150dd701311007ad66f2364bc8cdf368a816",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map0-blue-2026101852-legacy-policy-2026101852-9mli2ja1/client.log": "7a999607be59e2b9821cb0d75147e9164dc9566af89842e1359e36115e7f50b0",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map0-blue-2026101852-legacy-policy-2026101852-9mli2ja1/strategy-trace.jsonl": "d17e3bbc36028382fb8fa717caf4aa0b4f47a3a36b4e4979ff18d4560e8f6b03",
+    "/root/heroes3-ai-lab/workers/adv-runs/supply-map0-blue-2026101852-legacy-policy-2026101852-9mli2ja1/strategy-decisions.jsonl": "7c0af6d160df35c23a1daafb40751879224b56c44845f8bfa44502ba921df6ee",
+    "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map0-blue-2026101852-legacy-policy-nyyxxhgl/broker-trace.jsonl": "e0f7ff30af82108260ad30d6823a61f976e89642e0b5dcc4a87de844395c2f7c"
+  },
+  "bc_eligible": false,
+  "independent_capability_test": false
+}

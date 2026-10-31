@@ -1,0 +1,396 @@
+{
+  "scope": "paired cross-run comparison; unchanged arms reproduced byte-for-byte, zero_updated changed",
+  "current_run": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-curriculum-x4-dev-20261023-01",
+  "prior_run": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-prior-zero-four-arm-dev-20261023-01",
+  "current_result_sha256": "6efdbd24b76ec5c8b4649a57248de75ca22947614ebfb5d1722aa62bdcb831d8",
+  "prior_result_sha256": "e0d12ad19080e9e016915448a5911119a60320da19ba1052331f12eec0dad6eb",
+  "current_audit_sha256": "281ef51d331ebd2db490e6d8a937548d90913cbde640a07bfa48fb1e91c8b5b2",
+  "prior_audit_sha256": "aab8df470ab451c1c97ff9626005940423a1051cb4c613278f5fce80bc463bfa",
+  "unchanged_arms": {
+    "minus4_initial": {
+      "byte_identical": true,
+      "mismatches": []
+    },
+    "minus4_updated": {
+      "byte_identical": true,
+      "mismatches": []
+    },
+    "zero_initial": {
+      "byte_identical": true,
+      "mismatches": []
+    }
+  },
+  "all_unchanged_arms_byte_identical": true,
+  "prior_zero_updated_model": "1d1618bf6dd535e1e7d158ed6d194848eeaba4e8260e9e1cb5467f0db27cc81c",
+  "current_x4_zero_updated_model": "6a0bd8f7c800157258e77cdbdece7fdb4da183ae2a86c103ed050fb6af6e876e",
+  "current_arm_wins": {
+    "minus4_initial": 4,
+    "minus4_updated": 4,
+    "zero_initial": 4,
+    "zero_updated": 4
+  },
+  "prior_arm_wins": {
+    "minus4_initial": 4,
+    "minus4_updated": 4,
+    "zero_initial": 4,
+    "zero_updated": 4
+  },
+  "current_wins_by_opponent": {
+    "minus4_initial": {
+      "EmptyAI": {
+        "wins": 4,
+        "games": 4
+      },
+      "Nullkiller2": {
+        "wins": 0,
+        "games": 4
+      }
+    },
+    "minus4_updated": {
+      "EmptyAI": {
+        "wins": 4,
+        "games": 4
+      },
+      "Nullkiller2": {
+        "wins": 0,
+        "games": 4
+      }
+    },
+    "zero_initial": {
+      "EmptyAI": {
+        "wins": 4,
+        "games": 4
+      },
+      "Nullkiller2": {
+        "wins": 0,
+        "games": 4
+      }
+    },
+    "zero_updated": {
+      "EmptyAI": {
+        "wins": 4,
+        "games": 4
+      },
+      "Nullkiller2": {
+        "wins": 0,
+        "games": 4
+      }
+    }
+  },
+  "current_wins_by_role": {
+    "minus4_initial": {
+      "0": {
+        "wins": 2,
+        "games": 4
+      },
+      "1": {
+        "wins": 2,
+        "games": 4
+      }
+    },
+    "minus4_updated": {
+      "0": {
+        "wins": 2,
+        "games": 4
+      },
+      "1": {
+        "wins": 2,
+        "games": 4
+      }
+    },
+    "zero_initial": {
+      "0": {
+        "wins": 2,
+        "games": 4
+      },
+      "1": {
+        "wins": 2,
+        "games": 4
+      }
+    },
+    "zero_updated": {
+      "0": {
+        "wins": 2,
+        "games": 4
+      },
+      "1": {
+        "wins": 2,
+        "games": 4
+      }
+    }
+  },
+  "prior_zero_updated_by_opponent": {
+    "EmptyAI": {
+      "wins": 4,
+      "games": 4
+    },
+    "Nullkiller2": {
+      "wins": 0,
+      "games": 4
+    }
+  },
+  "current_zero_updated_by_opponent": {
+    "EmptyAI": {
+      "wins": 4,
+      "games": 4
+    },
+    "Nullkiller2": {
+      "wins": 0,
+      "games": 4
+    }
+  },
+  "prior_zero_updated": {
+    "wins": 4,
+    "rows": 4288,
+    "recruits": 422,
+    "recruited_quantity": 3124,
+    "free_transfers": 283,
+    "builds": 111,
+    "income_builds": 14,
+    "town_moves": 856
+  },
+  "current_x4_zero_updated": {
+    "wins": 4,
+    "rows": 5512,
+    "recruits": 1673,
+    "recruited_quantity": 3945,
+    "free_transfers": 259,
+    "builds": 116,
+    "income_builds": 18,
+    "town_moves": 813
+  },
+  "current_zero_updated_counts": {
+    "move": 3372,
+    "income_builds": 18,
+    "build": 116,
+    "recruit": 1673,
+    "end_turn": 351
+  },
+  "prior_zero_updated_counts": {
+    "move": 3409,
+    "income_builds": 14,
+    "build": 111,
+    "recruit": 422,
+    "end_turn": 346
+  },
+  "cross_run_zero_updated_flips": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104200
+      },
+      "prior_zero_updated_win": true,
+      "current_x4_zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104201
+      },
+      "prior_zero_updated_win": true,
+      "current_x4_zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104202
+      },
+      "prior_zero_updated_win": false,
+      "current_x4_zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104203
+      },
+      "prior_zero_updated_win": false,
+      "current_x4_zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104204
+      },
+      "prior_zero_updated_win": true,
+      "current_x4_zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104205
+      },
+      "prior_zero_updated_win": true,
+      "current_x4_zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104206
+      },
+      "prior_zero_updated_win": false,
+      "current_x4_zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104207
+      },
+      "prior_zero_updated_win": false,
+      "current_x4_zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    }
+  ],
+  "within_current_zero_update_flips": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104200
+      },
+      "zero_initial_win": true,
+      "zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104201
+      },
+      "zero_initial_win": true,
+      "zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104202
+      },
+      "zero_initial_win": false,
+      "zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104203
+      },
+      "zero_initial_win": false,
+      "zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104204
+      },
+      "zero_initial_win": true,
+      "zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104205
+      },
+      "zero_initial_win": true,
+      "zero_updated_win": true,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104206
+      },
+      "zero_initial_win": false,
+      "zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104207
+      },
+      "zero_initial_win": false,
+      "zero_updated_win": false,
+      "changed": false,
+      "direction": "unchanged"
+    }
+  ],
+  "cross_run_zero_updated_net_wins": 0,
+  "within_current_zero_update_net_wins": 0,
+  "changed_factor": "TRAIN-only owned-hero starting army x4 during one fresh PPO update; evaluation maps/seeds/models for the other three arms are unchanged",
+  "limitation": "The two zero_updated checkpoints are each one update from the same initialization but were trained on different curriculum trajectories and have different Adam-step counts (208 vs 272), so their difference is not an equal-Adam causal estimate. The three control arms are byte-identical, which rules out evaluator drift for this comparison. Eight paired DEV cells are a small developmental sample, not a population win rate.",
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "finaltest_touched": false,
+  "ability_improvement_claim": false
+}

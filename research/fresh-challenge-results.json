@@ -1,0 +1,122 @@
+[
+  {
+    "name": "fresh-upstream-vs-battleai",
+    "summary": [
+      {
+        "policy": "upstream",
+        "battles": 512,
+        "wins": 457,
+        "win_rate": 0.892578125,
+        "wilson95": [
+          0.8627731358966663,
+          0.9165358612838636
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 60.4296875
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-upstream-vs-battleai.json"
+  },
+  {
+    "name": "fresh-v3-vs-battleai",
+    "summary": [
+      {
+        "policy": "model",
+        "battles": 512,
+        "wins": 214,
+        "win_rate": 0.41796875,
+        "wilson95": [
+          0.37601122287668953,
+          0.4611480911452893
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 75.333984375
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-v3-vs-battleai.json"
+  },
+  {
+    "name": "fresh-selected-vs-battleai",
+    "summary": [
+      {
+        "policy": "recovered",
+        "battles": 512,
+        "wins": 434,
+        "win_rate": 0.84765625,
+        "wilson95": [
+          0.813947967766721,
+          0.8761863680448925
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 61.787109375
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-selected-vs-battleai.json"
+  },
+  {
+    "name": "fresh-selected-vs-upstream",
+    "summary": [
+      {
+        "policy": "recovered",
+        "battles": 512,
+        "wins": 268,
+        "win_rate": 0.5234375,
+        "wilson95": [
+          0.480161314640071,
+          0.5663645956393636
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 71.533203125
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-selected-vs-upstream.json"
+  },
+  {
+    "name": "fresh-v3-vs-upstream",
+    "summary": [
+      {
+        "policy": "model",
+        "battles": 512,
+        "wins": 84,
+        "win_rate": 0.1640625,
+        "wilson95": [
+          0.13450780937794646,
+          0.19862080995015738
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 79.89453125
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-v3-vs-upstream.json"
+  },
+  {
+    "name": "fresh-battleai-vs-battleai",
+    "summary": [
+      {
+        "policy": "teacher",
+        "battles": 512,
+        "wins": 254,
+        "win_rate": 0.49609375,
+        "wilson95": [
+          0.4529754300729721,
+          0.5392702515471222
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 72.42578125
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-battleai-vs-battleai.json"
+  }
+]

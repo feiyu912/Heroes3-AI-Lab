@@ -1,0 +1,33 @@
+{
+  "episode_id": "3bcae5594df687da504473f473f36f927c3ec2ed004f09d9cd2797124c669bcd",
+  "valid": true,
+  "reward": -1.0,
+  "decisions": 100,
+  "native_consumption_verified": true,
+  "native": {
+    "completed": true,
+    "inputs_unchanged": true
+  },
+  "raw_audit_path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-terminal-ack-drain-v1/native-repro-raw-audit-01/AUDIT.json",
+  "raw_audit_sha256": "65efde508adc450c5e322fb50f07f30c5cff793eb1963a6b64434cbc786972b5",
+  "sampling_replay_exact": true,
+  "checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1",
+  "sampling_seed": 8132616857929401546,
+  "job": {
+    "seed": 2026102812,
+    "map": "takeover-v2-train-01-mines",
+    "owned_player": 0,
+    "opponent": "Nullkiller2",
+    "logical_update": 1,
+    "checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1"
+  },
+  "runtime": {
+    "capsule_manifest_sha256": "9c4829e9fe0af9c0a0f93384909cc0b9f647250cfda34361fa6e359e47a3be00",
+    "native_artifacts": {
+      "vcmiclient": "332e985b214ff3fc5fd77f88aa6ea062df5d9dbeee89749e6933faaf7e63aae0",
+      "vcmiserver": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3",
+      "libvcmi.so": "9c33166b06716dc647ca26470b7df04a36f8fc44deab9d9082087a1ae383fea2"
+    }
+  },
+  "transport_drained": true
+}

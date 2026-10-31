@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "certificate_sha256": "d716b5712fd774c70924b6a44a8d0aff040b98bf7b145e9b232a8452811d84b3",
+  "files_sha256_rechecked": 4279,
+  "symlink_targets_rechecked": 168,
+  "raw_oldloader_rows_checked": 138,
+  "zero_stderr_and_external": true,
+  "new_loader_invocations": 0,
+  "scope": "independent full readback and original raw-row consistency, not a second native game"
+}

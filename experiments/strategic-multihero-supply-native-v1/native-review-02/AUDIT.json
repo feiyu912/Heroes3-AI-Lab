@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "error": "ValueError('Ambiguous/missing actual server receive id=21 type=7EndTurn')",
+  "game_completed": false,
+  "winner": null,
+  "training_samples": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "challenge-mirror-00",
+    "map": "lab/challenge-mirror-00.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 21
+        },
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {
+          "type": "core:griffin",
+          "amount": 6
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 21
+        },
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {
+          "type": "core:griffin",
+          "amount": 6
+        }
+      ]
+    ],
+    "sha256": "d5f3e360cd8c81e4b0086091bb5c9dba58157f760ef235dd1349865f21522901",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-01",
+    "map": "lab/challenge-mirror-01.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 54
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 28
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 25
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 54
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 28
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 25
+        },
+        {}
+      ]
+    ],
+    "sha256": "dd4b6666dade8c6b300f2aaf5791ee22f494a8001136dd1399b11e803917da11",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-02",
+    "map": "lab/challenge-mirror-02.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 74
+        },
+        {
+          "type": "core:monk",
+          "amount": 25
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 13
+        },
+        {},
+        {}
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 74
+        },
+        {
+          "type": "core:monk",
+          "amount": 25
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 13
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "b38da74149f42e517b2a8beca41b9500815e0a71bd8dc4642fe8437643c1fe12",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-03",
+    "map": "lab/challenge-mirror-03.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 61
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 26
+        },
+        {
+          "type": "core:unicorn",
+          "amount": 20
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 61
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 26
+        },
+        {
+          "type": "core:unicorn",
+          "amount": 20
+        },
+        {}
+      ]
+    ],
+    "sha256": "931d0d44ea9cfa4ad96a40b6434ccaae2af8c7a02f22dfc835fbb30eeee7b67d",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-04",
+    "map": "lab/challenge-mirror-04.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 74
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 25
+        },
+        {},
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 8
+        }
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 74
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 25
+        },
+        {},
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 8
+        }
+      ]
+    ],
+    "sha256": "11fc5259994e842c0e17d742c96a7fe33512c2a905395decbf0fcc3285b6481a",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-05",
+    "map": "lab/challenge-mirror-05.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 11
+        },
+        {
+          "type": "core:archer",
+          "amount": 41
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 20
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 11
+        },
+        {
+          "type": "core:archer",
+          "amount": 41
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 20
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "06fcd40373bfcba4066948a43109133927e8d0017df47b7fb2372e113d9fc4f6",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-06",
+    "map": "lab/challenge-mirror-06.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:halberdier",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:marksman",
+          "amount": 16
+        },
+        {
+          "type": "core:royalGriffin",
+          "amount": 25
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:halberdier",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:marksman",
+          "amount": 16
+        },
+        {
+          "type": "core:royalGriffin",
+          "amount": 25
+        }
+      ]
+    ],
+    "sha256": "a76d8ac3f89c0b436bebf15ecafbec4bd01e25a2d9b276c61064a6d566e8cef5",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-07",
+    "map": "lab/challenge-mirror-07.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaurCaptain",
+          "amount": 29
+        },
+        {
+          "type": "core:grandElf",
+          "amount": 18
+        },
+        {
+          "type": "core:silverPegasus",
+          "amount": 27
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaurCaptain",
+          "amount": 29
+        },
+        {
+          "type": "core:grandElf",
+          "amount": 18
+        },
+        {
+          "type": "core:silverPegasus",
+          "amount": 27
+        },
+        {}
+      ]
+    ],
+    "sha256": "4a09066350bd1c8e336238c424d15501eede02007b1252c4649272262a807847",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-08",
+    "map": "lab/challenge-mirror-08.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 25
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 44
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 5
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 25
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 44
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 5
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "c4ab891437045275e9795abc5352e3a60ee61e29974bcdf55fc5031785f3b9be",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-09",
+    "map": "lab/challenge-mirror-09.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:centaur",
+          "amount": 51
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 10
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 11
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:centaur",
+          "amount": 51
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 10
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 11
+        },
+        {}
+      ]
+    ],
+    "sha256": "ee01d2672bc4016ccde786160dc64cc0a00e0cad425908fdd900edfb8d7adcdf",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-10",
+    "map": "lab/challenge-mirror-10.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 6
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 28
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 6
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 28
+        },
+        {}
+      ]
+    ],
+    "sha256": "4e93681f111afc6b59107f3af3beba2c012702f372f0fd7c9c8561bc964ee7fe",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-11",
+    "map": "lab/challenge-mirror-11.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 43
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 11
+        },
+        {},
+        {
+          "type": "core:unicorn",
+          "amount": 7
+        },
+        {},
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 43
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 11
+        },
+        {},
+        {
+          "type": "core:unicorn",
+          "amount": 7
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "b7c39dab89fddd532a210cbee934193e2774238d57c44948492fd1d80c707a42",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-12",
+    "map": "lab/challenge-mirror-12.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 24
+        },
+        {
+          "type": "core:monk",
+          "amount": 33
+        },
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 19
+        },
+        {},
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 24
+        },
+        {
+          "type": "core:monk",
+          "amount": 33
+        },
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 19
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "37af8df8e960dcbb72094a4f9f46f60907e4f231c70e3c4abed573be646bde2e",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-13",
+    "map": "lab/challenge-mirror-13.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 43
+        },
+        {
+          "type": "core:archer",
+          "amount": 43
+        },
+        {},
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 6
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 43
+        },
+        {
+          "type": "core:archer",
+          "amount": 43
+        },
+        {},
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 6
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "1c9c27adbd79ba68da46feb1b2218835691530abef9a4e78e64ceb06359da4a8",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-14",
+    "map": "lab/challenge-mirror-14.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:halberdier",
+          "amount": 66
+        },
+        {
+          "type": "core:marksman",
+          "amount": 8
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 25
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:halberdier",
+          "amount": 66
+        },
+        {
+          "type": "core:marksman",
+          "amount": 8
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 25
+        }
+      ]
+    ],
+    "sha256": "a949549d8586d45eeacf8689ced14f061ad4ced7baec5d53c21557793160be88",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-15",
+    "map": "lab/challenge-mirror-15.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 23
+        },
+        {},
+        {
+          "type": "core:grandElf",
+          "amount": 13
+        },
+        {},
+        {},
+        {
+          "type": "core:silverPegasus",
+          "amount": 24
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 23
+        },
+        {},
+        {
+          "type": "core:grandElf",
+          "amount": 13
+        },
+        {},
+        {},
+        {
+          "type": "core:silverPegasus",
+          "amount": 24
+        },
+        {}
+      ]
+    ],
+    "sha256": "a77c0dd3e7e123e0fb606ff40194b9d246e22f1340d2cdd626b5f1e12c74ac24",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-16",
+    "map": "lab/challenge-mirror-16.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 48
+        },
+        {
+          "type": "core:archer",
+          "amount": 40
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 16
+        },
+        {}
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 48
+        },
+        {
+          "type": "core:archer",
+          "amount": 40
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 16
+        },
+        {}
+      ]
+    ],
+    "sha256": "0a8dc1e0d8f1206b0de58c7317869b004245e09d49ac4606a0a01a1085e6512b",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-17",
+    "map": "lab/challenge-mirror-17.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 50
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 43
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 10
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 50
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 43
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 10
+        }
+      ]
+    ],
+    "sha256": "8301ef267236776f98aebf7b8d4a082a8c005e1c5695b24fda466c486553dff2",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-18",
+    "map": "lab/challenge-mirror-18.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:swordsman",
+          "amount": 39
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 33
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 20
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:swordsman",
+          "amount": 39
+        },
+        {},
+        {},
+        {
+          "type": "core:monk",
+          "amount": 33
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 20
+        },
+        {},
+        {}
+      ]
+    ],
+    "sha256": "b5ec6cf006e7d27d1c996dbf9b377d3a34f04b76aa7107e295fd65c8e9ca054b",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-19",
+    "map": "lab/challenge-mirror-19.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 17
+        },
+        {},
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 9
+        },
+        {
+          "type": "core:unicorn",
+          "amount": 8
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 17
+        },
+        {},
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 9
+        },
+        {
+          "type": "core:unicorn",
+          "amount": 8
+        },
+        {}
+      ]
+    ],
+    "sha256": "5d694a30a2fd8b42481958f98afb4b9002b32eed47062948623197e4fd4f9e26",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-20",
+    "map": "lab/challenge-mirror-20.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {
+          "type": "core:monk",
+          "amount": 19
+        },
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 11
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {
+          "type": "core:monk",
+          "amount": 19
+        },
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 11
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "627a32146a5abbc81b1ca75f4d955dc7c01fc85fdafeb1b82819e7fdad59f14b",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-21",
+    "map": "lab/challenge-mirror-21.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 37
+        },
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 15
+        }
+      ],
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 37
+        },
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 15
+        }
+      ]
+    ],
+    "sha256": "ddd27066a469d84c8e530b8fff8a1fe851c6a9ac75e1a7184e06ee11f69241c2",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-22",
+    "map": "lab/challenge-mirror-22.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:halberdier",
+          "amount": 29
+        },
+        {
+          "type": "core:marksman",
+          "amount": 39
+        },
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 7
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:halberdier",
+          "amount": 29
+        },
+        {
+          "type": "core:marksman",
+          "amount": 39
+        },
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 7
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "1d32beadd46646fa38adf50fc7e07779d6878a2fc993758b22ef24fa4d852f38",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-23",
+    "map": "lab/challenge-mirror-23.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 73
+        },
+        {
+          "type": "core:grandElf",
+          "amount": 8
+        },
+        {
+          "type": "core:silverPegasus",
+          "amount": 14
+        },
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 73
+        },
+        {
+          "type": "core:grandElf",
+          "amount": 8
+        },
+        {
+          "type": "core:silverPegasus",
+          "amount": 14
+        },
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "6ea780b0efdb4c72cffda5205d93faa53e88acd5d117535a21016e83245ffc86",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-24",
+    "map": "lab/challenge-mirror-24.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 17
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 21
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 17
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:griffin",
+          "amount": 21
+        }
+      ]
+    ],
+    "sha256": "c28ea4cd5c7b5bd50c7fb8cb03dfe996bbfcea997c45c4805dd17386ef4ffad1",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-25",
+    "map": "lab/challenge-mirror-25.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 59
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 9
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 23
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 59
+        },
+        {
+          "type": "core:woodElf",
+          "amount": 9
+        },
+        {
+          "type": "core:pegasus",
+          "amount": 23
+        }
+      ]
+    ],
+    "sha256": "8171520e4ac456e9a2b69bb8e4a73d8e054d48d65b1a4c83ce75f0fe1ea4c217",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-26",
+    "map": "lab/challenge-mirror-26.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:swordsman",
+          "amount": 40
+        },
+        {},
+        {
+          "type": "core:monk",
+          "amount": 37
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 9
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:swordsman",
+          "amount": 40
+        },
+        {},
+        {
+          "type": "core:monk",
+          "amount": 37
+        },
+        {
+          "type": "core:cavalier",
+          "amount": 9
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "bfebf6feede07c942378b71c9f2c778488332b6fc39e334fe27ce073bb7533dc",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-27",
+    "map": "lab/challenge-mirror-27.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 49
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 43
+        },
+        {},
+        {},
+        {
+          "type": "core:unicorn",
+          "amount": 17
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:dwarf",
+          "amount": 49
+        },
+        {},
+        {
+          "type": "core:woodElf",
+          "amount": 43
+        },
+        {},
+        {},
+        {
+          "type": "core:unicorn",
+          "amount": 17
+        }
+      ]
+    ],
+    "sha256": "f798e11f305bb7b906903d4a084353b6760acc61bed56a977e8c1a986563bbe0",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-28",
+    "map": "lab/challenge-mirror-28.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 58
+        },
+        {},
+        {
+          "type": "core:monk",
+          "amount": 34
+        },
+        {},
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 12
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 58
+        },
+        {},
+        {
+          "type": "core:monk",
+          "amount": 34
+        },
+        {},
+        {},
+        {
+          "type": "core:pegasus",
+          "amount": 12
+        }
+      ]
+    ],
+    "sha256": "a38ab1e6a570dd5bfe82c4cf4aa57695ba453068e858c75c9b7eef8113beef3a",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-29",
+    "map": "lab/challenge-mirror-29.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 66
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 26
+        },
+        {
+          "type": "core:griffin",
+          "amount": 19
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dendroidGuard",
+          "amount": 66
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 26
+        },
+        {
+          "type": "core:griffin",
+          "amount": 19
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "sha256": "cbc4dd4fb21795739f612cb30855f3fc55a4967eb45cf4e5bfa46e2271f6cdae",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-30",
+    "map": "lab/challenge-mirror-30.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:halberdier",
+          "amount": 31
+        },
+        {
+          "type": "core:marksman",
+          "amount": 36
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "type": "core:halberdier",
+          "amount": 31
+        },
+        {
+          "type": "core:marksman",
+          "amount": 36
+        },
+        {},
+        {},
+        {},
+        {},
+        {
+          "type": "core:royalGriffin",
+          "amount": 10
+        }
+      ]
+    ],
+    "sha256": "f98efbefa4c6f0de216e38bb7b73d099b52d1a5613aea5ebdd6ad444a2b87be7",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  },
+  {
+    "id": "challenge-mirror-31",
+    "map": "lab/challenge-mirror-31.vmap",
+    "split": "challenge-test",
+    "armies": [
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 52
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:grandElf",
+          "amount": 13
+        },
+        {},
+        {
+          "type": "core:silverPegasus",
+          "amount": 26
+        }
+      ],
+      [
+        {
+          "type": "core:centaurCaptain",
+          "amount": 52
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:grandElf",
+          "amount": 13
+        },
+        {},
+        {
+          "type": "core:silverPegasus",
+          "amount": 26
+        }
+      ]
+    ],
+    "sha256": "51c069c03e674183324e3716f391151e8c7c88724a3dfce9c2db4000bd75d6e6",
+    "scope": "32 fresh exact mirror three-stack armies; two upgraded compositions unseen in training; no active magic"
+  }
+]

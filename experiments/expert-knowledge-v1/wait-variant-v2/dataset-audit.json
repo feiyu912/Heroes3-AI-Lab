@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "paired_cases": 8,
+  "actual_battles": 16,
+  "normal_battles": 16,
+  "invalid_actions": 0,
+  "verified_first_step_bc_samples": 4,
+  "negative_or_no_benefit_pairs": 4,
+  "fixture_splits": {
+    "train": 8,
+    "development": 4,
+    "test": 4
+  },
+  "holdout_battles_run": 0,
+  "dataset_sha256": "54a40ca76e7a2bf578d3381d8a50df1238a4433f265a176541064c8400910eb1",
+  "comparison_sha256": "e04d262d0edfcdbcb0edd31b7d511fc7c5511fb8434e2a5c1dd0b1e4a5996c38",
+  "checks": [
+    {
+      "case": "hallas-wait-ghost-v2-0-attacker",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-ghost-v2-0-defender",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-ghost-v2-1-attacker",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-ghost-v2-1-defender",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-ghost-v2-2-attacker",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": true
+    },
+    {
+      "case": "hallas-wait-ghost-v2-2-defender",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": true
+    },
+    {
+      "case": "hallas-wait-ghost-v2-3-attacker",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": true
+    },
+    {
+      "case": "hallas-wait-ghost-v2-3-defender",
+      "normal_pair": true,
+      "window_verified": true,
+      "benefit_verified": true
+    }
+  ],
+  "limitation": "Ghost Dragon aging and stochastic damage not event-level isolated; scope is paired observed benefit and timing, not broad tactical mastery"
+}

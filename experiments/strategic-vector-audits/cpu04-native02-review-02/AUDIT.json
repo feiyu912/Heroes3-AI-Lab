@@ -1,0 +1,505 @@
+{
+  "passed": true,
+  "audit_GPU_initialized": false,
+  "audit_game_started": false,
+  "audit_optimizer_steps": 0,
+  "cpu04": {
+    "passed": true,
+    "scope": "CPU fake-engine barrier end-to-end, independently regenerated environments; no CUDA/native strategic-strength claim",
+    "optimizer_steps_this_process": {
+      "trainer-cpu-continuous-04": 8,
+      "trainer-cpu-split-04": 4,
+      "trainer-cpu-resume-04": 4
+    },
+    "unique_fake_environments": 32,
+    "unique_agent_directories": 32,
+    "unique_wave_batch_tokens": 16,
+    "unique_fake_lab_roots": 16,
+    "independent_environment_evidence": [
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-v4vm20cs/workers/adv-runs/vector-2e2cc305-0-2026103300-qt42cn6v",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-00/env-000/agent",
+        "pid": 501,
+        "batch_token": "2e2cc3054cf449dfa496a148ed114547",
+        "worker_log_sha256": "c47efd21b0c18d2d6bb683d235943e88a730f6992190dca4ae702833e45780c7",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-v4vm20cs/workers/adv-runs/vector-2e2cc305-1-2026103301-rum4n04n",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-00/env-001/agent",
+        "pid": 504,
+        "batch_token": "2e2cc3054cf449dfa496a148ed114547",
+        "worker_log_sha256": "370412000eae0f4708fcd1e2fac652843a109ff11fa3a87342daf5b674504a9c",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-qnt1xa3c/workers/adv-runs/vector-c970eabe-0-2026103302-925ykgus",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-01/env-000/agent",
+        "pid": 518,
+        "batch_token": "c970eabe93e44ea8ae602543b4c68902",
+        "worker_log_sha256": "27e015d5e10b301c730be1ce03e1b12332a11fa249396cfa68944bd52fd463ab",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-qnt1xa3c/workers/adv-runs/vector-c970eabe-1-2026103303-2f5fgd_j",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-01/env-001/agent",
+        "pid": 517,
+        "batch_token": "c970eabe93e44ea8ae602543b4c68902",
+        "worker_log_sha256": "c8a57487f62a6f1977823747c3906e0734b06388820f19e9a7307c4eab9a9ed9",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-5i9yedgw/workers/adv-runs/vector-38f69beb-0-2026103304-82w7ihmd",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-02/env-000/agent",
+        "pid": 533,
+        "batch_token": "38f69beb246f4479920fb49f9d1cccc5",
+        "worker_log_sha256": "a28fd67876e580cdceed65f315ef5dd0976a8c8e3b955b5c4ba465e4f2a25f5d",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-5i9yedgw/workers/adv-runs/vector-38f69beb-1-2026103305-n9s37wmv",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-02/env-001/agent",
+        "pid": 534,
+        "batch_token": "38f69beb246f4479920fb49f9d1cccc5",
+        "worker_log_sha256": "58f653f64e6e66638241e45d4a96cbdb0452a1ac7bd5a6ca9a53b9f9c32a2141",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-z74avbsy/workers/adv-runs/vector-1f45cc1e-0-2026103306-q71rtm7t",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-03/env-000/agent",
+        "pid": 547,
+        "batch_token": "1f45cc1e7f5940aa8a068bde570f5d25",
+        "worker_log_sha256": "7ba0c2325799d6c8de715f3c7554094e688e5c7e645f6006521910ca45759e33",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-001-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-z74avbsy/workers/adv-runs/vector-1f45cc1e-1-2026103307-0rjanpbb",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-001-wave-03/env-001/agent",
+        "pid": 548,
+        "batch_token": "1f45cc1e7f5940aa8a068bde570f5d25",
+        "worker_log_sha256": "8ecd736c09cb2b1e85826394aae11c9c4282d2f3de0c11155c4a4d617f3082c0",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-_vl8qvx8/workers/adv-runs/vector-930e50f6-0-2026104300-om8lx7fu",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-00/env-000/agent",
+        "pid": 557,
+        "batch_token": "930e50f64f464567b80f262459146061",
+        "worker_log_sha256": "a58d70276c8a18aa1904beb8a703ee2288ff3527af66e345e6ed67a25c1df9c9",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-_vl8qvx8/workers/adv-runs/vector-930e50f6-1-2026104301-n3rqum7y",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-00/env-001/agent",
+        "pid": 558,
+        "batch_token": "930e50f64f464567b80f262459146061",
+        "worker_log_sha256": "4acb21259494602f39e95fea193637aeddba7fbbeb05475423e74b8a1a76528f",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-53gvyl37/workers/adv-runs/vector-60c60381-0-2026104302-h1m_ebj0",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-01/env-000/agent",
+        "pid": 570,
+        "batch_token": "60c603810f154b56a7e339b1fd779567",
+        "worker_log_sha256": "a1a9de96bff0c017d44e2a84815333eb391e92488c3e94673143870f4695a79a",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-53gvyl37/workers/adv-runs/vector-60c60381-1-2026104303-lr1pbifp",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-01/env-001/agent",
+        "pid": 569,
+        "batch_token": "60c603810f154b56a7e339b1fd779567",
+        "worker_log_sha256": "364456552c8bf156d450c97bcdd602ab76296527e2b53544180d2ce105068960",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-azfabz5n/workers/adv-runs/vector-b6d56a61-0-2026104304-ghicw0ez",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-02/env-000/agent",
+        "pid": 575,
+        "batch_token": "b6d56a6127214ee190696d697480e789",
+        "worker_log_sha256": "d3e7786b4b2e4dfd0050a5b317f89bee9d969507592d214b9e8fde5ef9bde0c3",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-azfabz5n/workers/adv-runs/vector-b6d56a61-1-2026104305-f2ay0ya_",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-02/env-001/agent",
+        "pid": 576,
+        "batch_token": "b6d56a6127214ee190696d697480e789",
+        "worker_log_sha256": "22ceb945ce7a08106501676b1bd2edcd896e86c0a2f83065aba8ba36ff5f1973",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-szyoi_ki/workers/adv-runs/vector-a8a39397-0-2026104306-pfpen835",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-03/env-000/agent",
+        "pid": 584,
+        "batch_token": "a8a39397df3a4b13a75fb7dce79c4c51",
+        "worker_log_sha256": "1dfeff0d3ce2697ce3011ed6b539fc5f3cb9bbe70140f382efae9c434f6cbeb4",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-continuous-04",
+        "wave": "update-002-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-szyoi_ki/workers/adv-runs/vector-a8a39397-1-2026104307-o3723n6z",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-continuous-04/update-002-wave-03/env-001/agent",
+        "pid": 583,
+        "batch_token": "a8a39397df3a4b13a75fb7dce79c4c51",
+        "worker_log_sha256": "733188d9d4b665fda22e855ee369db25a0264d87075d37113f7a0e5a34d6073c",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-v08tzo9j/workers/adv-runs/vector-722e0a94-0-2026103300-4lrnq0v7",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-00/env-000/agent",
+        "pid": 500,
+        "batch_token": "722e0a94a7c14584811c0612f529e8d0",
+        "worker_log_sha256": "f572fa5a6a669d094b0f1e0b77ef12b0f0389d75b31005ca9735e9b1b050e355",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-v08tzo9j/workers/adv-runs/vector-722e0a94-1-2026103301-qyv3m_e2",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-00/env-001/agent",
+        "pid": 503,
+        "batch_token": "722e0a94a7c14584811c0612f529e8d0",
+        "worker_log_sha256": "0438c78fdfba85ea35d707b2fa429904c1cd0ed5f1403f41002efc4c57fb2b4e",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-o52ti7_0/workers/adv-runs/vector-94d2baaa-0-2026103302-z3m0_x_4",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-01/env-000/agent",
+        "pid": 515,
+        "batch_token": "94d2baaafa6045979e58ff36a68982ee",
+        "worker_log_sha256": "dcaceb2aee33640975a4ba4636dea4ffb0841b1f71655b8f88c854406c27cab7",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-o52ti7_0/workers/adv-runs/vector-94d2baaa-1-2026103303-6ff7_y1t",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-01/env-001/agent",
+        "pid": 514,
+        "batch_token": "94d2baaafa6045979e58ff36a68982ee",
+        "worker_log_sha256": "bbb47771ee2ffeb72aac6e3d1335b277309e109b39b753f3425cad8369af2c8d",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-kuuhd96_/workers/adv-runs/vector-2b3739e4-0-2026103304-zx2adwlf",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-02/env-000/agent",
+        "pid": 529,
+        "batch_token": "2b3739e4689f4c1289a91af2cac15311",
+        "worker_log_sha256": "a21405ddb032b89071b68ff15a3f0ba4e8adb6424ce66444962948d5f17d4b48",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-kuuhd96_/workers/adv-runs/vector-2b3739e4-1-2026103305-wu9_ujho",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-02/env-001/agent",
+        "pid": 530,
+        "batch_token": "2b3739e4689f4c1289a91af2cac15311",
+        "worker_log_sha256": "1738497b1ea01682acbcff833f00185cd6a9e28a300edf6f99717ee30d9ff144",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-81kos56j/workers/adv-runs/vector-81e4e8fa-0-2026103306-t2_amoqs",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-03/env-000/agent",
+        "pid": 541,
+        "batch_token": "81e4e8faaf6946108c0f0b522bc0f7d6",
+        "worker_log_sha256": "07e2d0b20d16c04ffcbd183d6dbeacab8422d9a4bbbc12238e186ad651397f03",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-split-04",
+        "wave": "update-001-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-81kos56j/workers/adv-runs/vector-81e4e8fa-1-2026103307-va5dhfv0",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-001-wave-03/env-001/agent",
+        "pid": 542,
+        "batch_token": "81e4e8faaf6946108c0f0b522bc0f7d6",
+        "worker_log_sha256": "db20642534f82a05b6b9f7df1a7d1964eda7d547a1a0d3f0d3540d2089cb1579",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-llfj6z65/workers/adv-runs/vector-bbb5ae05-0-2026104300-34xq4rb3",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-00/env-000/agent",
+        "pid": 471,
+        "batch_token": "bbb5ae0593e744d7969737fd604d0ffb",
+        "worker_log_sha256": "6ee4290a87891e5d08dae49fb2177643ff5d4a6d1884c18b2144024afaaf7996",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-00",
+        "run_dir": "/tmp/throughput-synthetic-llfj6z65/workers/adv-runs/vector-bbb5ae05-1-2026104301-yr7rwex9",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-00/env-001/agent",
+        "pid": 474,
+        "batch_token": "bbb5ae0593e744d7969737fd604d0ffb",
+        "worker_log_sha256": "c2072d74a8716a27bc0ad6d985ad9a05e26b61ea36997d1c55b4a3e719752cd0",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-v8u5buez/workers/adv-runs/vector-b2372c33-0-2026104302-maktg_du",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-01/env-000/agent",
+        "pid": 487,
+        "batch_token": "b2372c33b7064bfdb7f9017fac48afb5",
+        "worker_log_sha256": "89029332fbdea57473e2b7fe62ca5bcef088ebc0b2c52ea290b36defdff50c5a",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-01",
+        "run_dir": "/tmp/throughput-synthetic-v8u5buez/workers/adv-runs/vector-b2372c33-1-2026104303-mm_yxexl",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-01/env-001/agent",
+        "pid": 488,
+        "batch_token": "b2372c33b7064bfdb7f9017fac48afb5",
+        "worker_log_sha256": "8c1835c70845ae279c88dc098c854a7561ebdc27d70570231f211c5f6da83c45",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-j4kk6fy2/workers/adv-runs/vector-a8149b9d-0-2026104304-_7o6xj38",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-02/env-000/agent",
+        "pid": 500,
+        "batch_token": "a8149b9d830b41fba52c17486253f1cc",
+        "worker_log_sha256": "8fc58b616b76ca09413c0a2253ba43c46e627b77aef074f5788af700c71210c1",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-02",
+        "run_dir": "/tmp/throughput-synthetic-j4kk6fy2/workers/adv-runs/vector-a8149b9d-1-2026104305-5i24wrnc",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-02/env-001/agent",
+        "pid": 499,
+        "batch_token": "a8149b9d830b41fba52c17486253f1cc",
+        "worker_log_sha256": "c47a2b9a181324dd0158f75538c96c0c8d1d77c6743b85cf734fac392069761d",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-o6m22roi/workers/adv-runs/vector-46ad3e21-0-2026104306-nxb0vemg",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-03/env-000/agent",
+        "pid": 511,
+        "batch_token": "46ad3e212b1949a689eac8d96a04d55b",
+        "worker_log_sha256": "00f10f87e50cc9c85a00f24f017fca7774af98681990473dc13b5fcba333070e",
+        "temporary_native_directory_still_available": false
+      },
+      {
+        "stage": "trainer-cpu-resume-04",
+        "wave": "update-002-wave-03",
+        "run_dir": "/tmp/throughput-synthetic-o6m22roi/workers/adv-runs/vector-46ad3e21-1-2026104307-89wcg8ig",
+        "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-resume-04/update-002-wave-03/env-001/agent",
+        "pid": 512,
+        "batch_token": "46ad3e212b1949a689eac8d96a04d55b",
+        "worker_log_sha256": "fe29a8b0b4f89e4164f9c31b48be9310b442087d4cedba16d9df4efcef26fee3",
+        "temporary_native_directory_still_available": false
+      }
+    ],
+    "comparisons": {
+      "update1_rollout": {
+        "request": true,
+        "action": true,
+        "old_logprob": true,
+        "old_value": true,
+        "return": true,
+        "generator_seed": true,
+        "policy_version": true,
+        "episode_id": true,
+        "policy_tensor_sha256": true
+      },
+      "update1_checkpoint": {
+        "state_dict": true,
+        "optimizer": true,
+        "torch_rng": true,
+        "cuda_rng": true,
+        "python_rng": true,
+        "protocol": true,
+        "protocol_sha256": true,
+        "optimizer_steps_total": true,
+        "episode_generator_states": true
+      },
+      "update2_rollout": {
+        "request": true,
+        "action": true,
+        "old_logprob": true,
+        "old_value": true,
+        "return": true,
+        "generator_seed": true,
+        "policy_version": true,
+        "episode_id": true,
+        "policy_tensor_sha256": true
+      },
+      "update2_checkpoint": {
+        "state_dict": true,
+        "optimizer": true,
+        "torch_rng": true,
+        "cuda_rng": true,
+        "python_rng": true,
+        "protocol": true,
+        "protocol_sha256": true,
+        "optimizer_steps_total": true,
+        "episode_generator_states": true
+      }
+    },
+    "partial_rejected_complete_flag": false,
+    "partial_actual_steps": 1,
+    "protocol_sha256": "92300ac26aaba79be857c27d0ca3ba7896eaeb1f39d8c1198755b44e4d46a17f",
+    "archived_batch_substitution_used": false
+  },
+  "native02": {
+    "passed": true,
+    "scope": "Actual 2-environment CUDA inference/native collection, no optimizer",
+    "samples": 572,
+    "episodes": [
+      {
+        "episode_id": "db7dc5135a3bdc4244710cdbd977b20ffe9e728ad54c2ea00875f966f3e612d3",
+        "role": "red",
+        "decisions": 156,
+        "actual_move_result_1_displacements": 152,
+        "actual_move_result_3_blocking_visits": 4,
+        "move_applied_ACKs": 156,
+        "unconfirmed_final_actions": 0,
+        "server_rejections": 0,
+        "winner": "red",
+        "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-0-2026102200-1slf3a_m",
+        "client_log_sha256": "a1d7da02d7b19e7800801876ffae1e693b2d6a2d8e9baefc2eb1ed8d33bcebc9",
+        "source_snapshot": [
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-0-2026102200-1slf3a_m/source-snapshot/StdInc.h",
+            "sha256": "de34f54eb11972628e60657e86b7555817838978ae8a6bd3641b4e237cb14103"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-0-2026102200-1slf3a_m/source-snapshot/worker_runner.py",
+            "sha256": "5b477b4e69dd6d9f17e0cc53ad66c8e89d2878496e8c5377344f29f77db454d5"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-0-2026102200-1slf3a_m/source-snapshot/CDirectorAI.cpp",
+            "sha256": "c5565aa403b140f12f9b14420f3c0139d3e3530cb56cf0f21d6c07ae2cd62a6d"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-0-2026102200-1slf3a_m/source-snapshot/CDirectorAI.h",
+            "sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca"
+          }
+        ]
+      },
+      {
+        "episode_id": "85d8ddd48f616d69109973c318c3323fc1ed0a1f37afa5dcd0516b6bad1a3313",
+        "role": "blue",
+        "decisions": 416,
+        "actual_move_result_1_displacements": 412,
+        "actual_move_result_3_blocking_visits": 4,
+        "move_applied_ACKs": 416,
+        "unconfirmed_final_actions": 0,
+        "server_rejections": 0,
+        "winner": "blue",
+        "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-1-2026102201-fqr1ikql",
+        "client_log_sha256": "4bebd45b6c36bc4a32f7c4bdbc66c9eab1687a489776bb030a53b0655a021445",
+        "source_snapshot": [
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-1-2026102201-fqr1ikql/source-snapshot/StdInc.h",
+            "sha256": "de34f54eb11972628e60657e86b7555817838978ae8a6bd3641b4e237cb14103"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-1-2026102201-fqr1ikql/source-snapshot/worker_runner.py",
+            "sha256": "5b477b4e69dd6d9f17e0cc53ad66c8e89d2878496e8c5377344f29f77db454d5"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-1-2026102201-fqr1ikql/source-snapshot/CDirectorAI.cpp",
+            "sha256": "c5565aa403b140f12f9b14420f3c0139d3e3530cb56cf0f21d6c07ae2cd62a6d"
+          },
+          {
+            "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-97c3d073-1-2026102201-fqr1ikql/source-snapshot/CDirectorAI.h",
+            "sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca"
+          }
+        ]
+      }
+    ],
+    "checkpoint_sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+    "policy_tensor_sha256": "27fdd2c35a938c798a10b462c3ab499cb5e15c1f409f01265e27af83d32f1ba3",
+    "actual_optimizer_steps": 0,
+    "manager_policy_unchanged_at_collection_boundary": true,
+    "live_owned_batch_processes": [],
+    "recorded_remaining_processes": [],
+    "old_plan_frozen_hashes": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/collect_vector.py": "bbb8d4b6247fe366f673c0fab954b78108744d276a3d16d7d115feb1db3f258c",
+      "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/worker_runner.py": "5b477b4e69dd6d9f17e0cc53ad66c8e89d2878496e8c5377344f29f77db454d5",
+      "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/measure.py": "fa84bf34d75aee88f11f1780fbcee6ea5614f9ef198e8e68d97c542bc26b06bf",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+      "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+      "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "589f5bc54ca1b6147446f6faf2fb28b326e77075ecb8c6df77b9ea8089939980",
+      "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "e4a768e2780e22878b685c12e57a7cd9745b427d43bccd3ae60032a0ea7a5144",
+      "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/StdInc.h": "de34f54eb11972628e60657e86b7555817838978ae8a6bd3641b4e237cb14103",
+      "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.cpp": "c5565aa403b140f12f9b14420f3c0139d3e3530cb56cf0f21d6c07ae2cd62a6d",
+      "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.h": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036"
+    },
+    "unchanged_parent_checkpoint_verified_now": true,
+    "limitations": "Blocking visits are executed interactions, not tile displacements. Only EmptyAI paired roles; no NK or independent strength claim. Manager unchanged is supported by its before/after digest gate and saved boundary, not an after-exit RAM observation. This old native snapshot precedes later query-ACK gate changes; no assertion that newer runtime files have the old hashes."
+  },
+  "clean_prior": {
+    "sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+    "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+    "trained": false,
+    "optimizer_steps": 0,
+    "training_updates": 0,
+    "actor_residual_output_zero": true,
+    "lineage": {
+      "mode": "explicit-v1-to-v2-visible-weight-migration",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/checkpoints/prior-initial-v2.pt",
+      "parent_sha256": "8dd2cc8eeb09c2e83421fd0ec6c2958ba64716580e2dac74086bbb8d92f7e5d3",
+      "parent_training_updates": 0,
+      "parent_lineage": null,
+      "parent_protocol_sha256": null,
+      "parent_optimizer_steps_total": null,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "source_optimizer_reused": false
+    },
+    "historical_learned_checkpoint_preserved": true
+  },
+  "audit_source_sha256": "e2ea277d5c67a6bf60242491c7fb97cb27fb6a200018bfab7772a3f8adc422ed"
+}

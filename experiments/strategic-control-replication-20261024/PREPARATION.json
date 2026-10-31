@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "registered_UTC": "2026-10-23T17:23:21.527093+00:00",
+  "prepared_cells": 16,
+  "post_pilot_followup": true,
+  "no_new_result_seen": true,
+  "new_native_games": 0,
+  "new_optimizer_steps": 0,
+  "jobs": [
+    {
+      "rep": 0,
+      "cell": 2,
+      "map": "takeover-v2-dev-01-river",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "seed": 2026108802
+    },
+    {
+      "rep": 0,
+      "cell": 3,
+      "map": "takeover-v2-dev-01-river",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "seed": 2026108803
+    },
+    {
+      "rep": 0,
+      "cell": 6,
+      "map": "takeover-v2-dev-02-reserves",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "seed": 2026108806
+    },
+    {
+      "rep": 0,
+      "cell": 7,
+      "map": "takeover-v2-dev-02-reserves",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "seed": 2026108807
+    },
+    {
+      "rep": 1,
+      "cell": 2,
+      "map": "takeover-v2-dev-01-river",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "seed": 2026108902
+    },
+    {
+      "rep": 1,
+      "cell": 3,
+      "map": "takeover-v2-dev-01-river",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "seed": 2026108903
+    },
+    {
+      "rep": 1,
+      "cell": 6,
+      "map": "takeover-v2-dev-02-reserves",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "seed": 2026108906
+    },
+    {
+      "rep": 1,
+      "cell": 7,
+      "map": "takeover-v2-dev-02-reserves",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "seed": 2026108907
+    }
+  ]
+}

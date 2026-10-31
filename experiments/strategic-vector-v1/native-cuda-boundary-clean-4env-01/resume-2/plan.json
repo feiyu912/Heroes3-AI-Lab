@@ -1,0 +1,10 @@
+{
+  "schema": "strategic-parallel-episode-balanced-ppo-v1",
+  "protocol_sha256": "ec27935151703a7c02e9645a21de37397b3e245feba70b3f862cca5dbf7f96df",
+  "target_total_updates": 2,
+  "resumed_from": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/split-1/update-1.pt",
+  "origin_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/split-1/update-1.pt",
+  "origin_sha256": "6644caecf42e5b776eca182f5ddc3d9ed9b532772be4eeb0ccd98b5bd98e51ac",
+  "device": "cuda",
+  "independent_evaluation": false
+}

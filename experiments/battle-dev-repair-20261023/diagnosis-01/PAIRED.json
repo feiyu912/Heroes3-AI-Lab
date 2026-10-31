@@ -1,0 +1,126 @@
+{
+  "BattleAI": {
+    "control_vs_parent": {
+      "positive_flips": [],
+      "negative_flips": [],
+      "shared_losses": [
+        {
+          "map": 194,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": 0.0,
+      "identical_sequences": 5
+    },
+    "candidate_vs_parent": {
+      "positive_flips": [],
+      "negative_flips": [],
+      "shared_losses": [
+        {
+          "map": 194,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": -1.0,
+      "identical_sequences": 8
+    },
+    "candidate_vs_control": {
+      "positive_flips": [],
+      "negative_flips": [],
+      "shared_losses": [
+        {
+          "map": 194,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": -1.0,
+      "identical_sequences": 3
+    }
+  },
+  "MMAI_MODEL": {
+    "control_vs_parent": {
+      "positive_flips": [
+        {
+          "map": 193,
+          "role": "defender"
+        },
+        {
+          "map": 195,
+          "role": "defender"
+        },
+        {
+          "map": 197,
+          "role": "attacker"
+        }
+      ],
+      "negative_flips": [],
+      "shared_losses": [
+        {
+          "map": 196,
+          "role": "defender"
+        },
+        {
+          "map": 199,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": -7.1875,
+      "identical_sequences": 5
+    },
+    "candidate_vs_parent": {
+      "positive_flips": [
+        {
+          "map": 193,
+          "role": "defender"
+        },
+        {
+          "map": 195,
+          "role": "defender"
+        },
+        {
+          "map": 197,
+          "role": "attacker"
+        }
+      ],
+      "negative_flips": [
+        {
+          "map": 194,
+          "role": "attacker"
+        }
+      ],
+      "shared_losses": [
+        {
+          "map": 196,
+          "role": "defender"
+        },
+        {
+          "map": 199,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": 0.3125,
+      "identical_sequences": 1
+    },
+    "candidate_vs_control": {
+      "positive_flips": [],
+      "negative_flips": [
+        {
+          "map": 194,
+          "role": "attacker"
+        }
+      ],
+      "shared_losses": [
+        {
+          "map": 196,
+          "role": "defender"
+        },
+        {
+          "map": 199,
+          "role": "defender"
+        }
+      ],
+      "paired_mean_units_lost_delta": 7.5,
+      "identical_sequences": 0
+    }
+  }
+}

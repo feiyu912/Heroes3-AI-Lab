@@ -1,0 +1,720 @@
+{
+  "rows": [
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "needed": []
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libFLAC.so.8.3.0",
+      "needed": [
+        "libogg.so.0",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+      "needed": [
+        "libasound.so.2",
+        "libm.so.6",
+        "libpulse.so.0",
+        "libX11.so.6",
+        "libXext.so.6",
+        "libXcursor.so.1",
+        "libXinerama.so.1",
+        "libXi.so.6",
+        "libXfixes.so.3",
+        "libXrandr.so.2",
+        "libXss.so.1",
+        "libXxf86vm.so.1",
+        "libdrm.so.2",
+        "libgbm.so.1",
+        "libwayland-egl.so.1",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0",
+        "libdecor-0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0.2.3",
+      "needed": [
+        "libpng16.so.16",
+        "libjpeg.so.8",
+        "libtiff.so.5",
+        "libwebp.so.7",
+        "libSDL2-2.0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libSDL2_mixer-2.0.so.0.2.2",
+      "needed": [
+        "libSDL2-2.0.so.0",
+        "libmodplug.so.1",
+        "libfluidsynth.so.3",
+        "libvorbisfile.so.3",
+        "libFLAC.so.8",
+        "libmpg123.so.0",
+        "libopusfile.so.0",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0.18.0",
+      "needed": [
+        "libfreetype.so.6",
+        "libharfbuzz.so.0",
+        "libSDL2-2.0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libX11.so.6.4.0",
+      "needed": [
+        "libxcb.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2",
+      "needed": [
+        "libXrender.so.1",
+        "libXfixes.so.3",
+        "libX11.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXext.so.6.4.0",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXi.so.6.1.0",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXinerama.so.1.0.0",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXrandr.so.2.2.0",
+      "needed": [
+        "libXext.so.6",
+        "libXrender.so.1",
+        "libX11.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXss.so.1.0.0",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libXxf86vm.so.1.0.0",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libanl.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libasan.so.6.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libasound.so.2.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libatomic.so.1.2.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libbfd-2.38-system.so",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0",
+      "needed": []
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "needed": [
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libcc1.so.0.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libctf-nobfd.so.0.0.0",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libctf.so.0.0.0",
+      "needed": [
+        "libbfd-2.38-system.so",
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libdecor-0.so.0.100.0",
+      "needed": [
+        "libwayland-client.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libdl.so.2",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libdrm.so.2.4.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libfluidsynth.so.3.0.5",
+      "needed": [
+        "libglib-2.0.so.0",
+        "libgmodule-2.0.so.0",
+        "libjack.so.0",
+        "libasound.so.2",
+        "libpulse-simple.so.0",
+        "libsndfile.so.1",
+        "libSDL2-2.0.so.0",
+        "libdbus-1.so.3",
+        "libreadline.so.8",
+        "libgomp.so.1",
+        "libinstpatch-1.0.so.2",
+        "libgobject-2.0.so.0",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libfreetype.so.6.18.1",
+      "needed": [
+        "libpng16.so.16",
+        "libz.so.1",
+        "libbrotlidec.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0",
+      "needed": [
+        "libdrm.so.2",
+        "libwayland-server.so.0",
+        "libexpat.so.1",
+        "libxcb-randr.so.0",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libgmp.so.10.4.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0.20704.0",
+      "needed": [
+        "libglib-2.0.so.0",
+        "libfreetype.so.6",
+        "libgraphite2.so.3",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libisl.so.23.1.0",
+      "needed": [
+        "libgmp.so.10",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libitm.so.1.0.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libjpeg.so.8.2.2",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/liblsan.so.0.0.0",
+      "needed": [
+        "libc.so.6",
+        "ld-linux-x86-64.so.2",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libluajit-5.1.so.2.1.0",
+      "needed": [
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "needed": [
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libminizip.so.1.0.0",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libmodplug.so.1.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libmpc.so.3.2.1",
+      "needed": [
+        "libmpfr.so.6",
+        "libgmp.so.10",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libmpfr.so.6.1.0",
+      "needed": [
+        "libgmp.so.10",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libmpg123.so.0.46.7",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libmvec.so.1",
+      "needed": [
+        "libm.so.6",
+        "ld-linux-x86-64.so.2",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libopcodes-2.38-system.so",
+      "needed": [
+        "libbfd-2.38-system.so",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libpng16.so.16.37.0",
+      "needed": [
+        "libz.so.1",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libpthread.so.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libpulse-simple.so.0.1.1",
+      "needed": [
+        "libpulse.so.0",
+        "libpulsecommon-15.99.so",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libpulse.so.0.24.1",
+      "needed": [
+        "libpulsecommon-15.99.so",
+        "libm.so.6",
+        "libdbus-1.so.3",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libresolv.so.2",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/librt.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libsquish.so.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgomp.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libtbb.so.12.5",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libtbbmalloc.so.2.5",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libtbbmalloc_proxy.so.2.5",
+      "needed": [
+        "libtbbmalloc.so.2",
+        "libstdc++.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libtiff.so.5.7.0",
+      "needed": [
+        "libwebp.so.7",
+        "libzstd.so.1",
+        "liblzma.so.5",
+        "libjbig.so.0",
+        "libjpeg.so.8",
+        "libdeflate.so.0",
+        "libz.so.1",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libtsan.so.0.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libutil.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libvorbisfile.so.3.3.8",
+      "needed": [
+        "libvorbis.so.0",
+        "libogg.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libwayland-client.so.0.20.0",
+      "needed": [
+        "libffi.so.8",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libwayland-cursor.so.0.20.0",
+      "needed": [
+        "libwayland-client.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libwayland-egl.so.1.20.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libwebp.so.7.1.3",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0.0.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libz.so.1.2.11",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "path": "sysroot/usr/lib/x86_64-linux-gnu/pulseaudio/libpulsecommon-15.99.so",
+      "needed": [
+        "libm.so.6",
+        "libsndfile.so.1",
+        "libdbus-1.so.3",
+        "libX11-xcb.so.1",
+        "libX11.so.6",
+        "libxcb.so.1",
+        "libsystemd.so.0",
+        "libasyncns.so.0",
+        "libapparmor.so.1",
+        "libc.so.6"
+      ]
+    }
+  ],
+  "missing": {
+    "libogg.so.0": [
+      "libFLAC.so.8.3.0",
+      "libvorbisfile.so.3.3.8"
+    ],
+    "libopusfile.so.0": [
+      "libSDL2_mixer-2.0.so.0.2.2"
+    ],
+    "libxcb.so.1": [
+      "libX11.so.6.4.0",
+      "libpulsecommon-15.99.so"
+    ],
+    "libXrender.so.1": [
+      "libXcursor.so.1.0.2",
+      "libXrandr.so.2.2.0"
+    ],
+    "libglib-2.0.so.0": [
+      "libfluidsynth.so.3.0.5",
+      "libharfbuzz.so.0.20704.0"
+    ],
+    "libgmodule-2.0.so.0": [
+      "libfluidsynth.so.3.0.5"
+    ],
+    "libjack.so.0": [
+      "libfluidsynth.so.3.0.5"
+    ],
+    "libsndfile.so.1": [
+      "libfluidsynth.so.3.0.5",
+      "libpulsecommon-15.99.so"
+    ],
+    "libdbus-1.so.3": [
+      "libfluidsynth.so.3.0.5",
+      "libpulse.so.0.24.1",
+      "libpulsecommon-15.99.so"
+    ],
+    "libreadline.so.8": [
+      "libfluidsynth.so.3.0.5"
+    ],
+    "libinstpatch-1.0.so.2": [
+      "libfluidsynth.so.3.0.5"
+    ],
+    "libgobject-2.0.so.0": [
+      "libfluidsynth.so.3.0.5"
+    ],
+    "libbrotlidec.so.1": [
+      "libfreetype.so.6.18.1"
+    ],
+    "libwayland-server.so.0": [
+      "libgbm.so.1.0.0"
+    ],
+    "libexpat.so.1": [
+      "libgbm.so.1.0.0"
+    ],
+    "libxcb-randr.so.0": [
+      "libgbm.so.1.0.0"
+    ],
+    "libgraphite2.so.3": [
+      "libharfbuzz.so.0.20704.0"
+    ],
+    "liblzma.so.5": [
+      "libtiff.so.5.7.0"
+    ],
+    "libjbig.so.0": [
+      "libtiff.so.5.7.0"
+    ],
+    "libdeflate.so.0": [
+      "libtiff.so.5.7.0"
+    ],
+    "libvorbis.so.0": [
+      "libvorbisfile.so.3.3.8"
+    ],
+    "libffi.so.8": [
+      "libwayland-client.so.0.20.0"
+    ],
+    "libX11-xcb.so.1": [
+      "libpulsecommon-15.99.so"
+    ],
+    "libsystemd.so.0": [
+      "libpulsecommon-15.99.so"
+    ],
+    "libasyncns.so.0": [
+      "libpulsecommon-15.99.so"
+    ],
+    "libapparmor.so.1": [
+      "libpulsecommon-15.99.so"
+    ]
+  },
+  "required_packages": [
+    "libapparmor1",
+    "libasyncns0",
+    "libbrotli1",
+    "libdbus-1-3",
+    "libdeflate0",
+    "libexpat1",
+    "libffi8",
+    "libglib2.0-0",
+    "libgraphite2-3",
+    "libinstpatch-1.0-2",
+    "libjack-jackd2-0",
+    "libjbig0",
+    "liblzma5",
+    "libogg0",
+    "libreadline8",
+    "libsndfile1",
+    "libsystemd0",
+    "libvorbis0a",
+    "libwayland-server0",
+    "libx11-xcb1",
+    "libxcb-randr0",
+    "libxcb1",
+    "libxrender1"
+  ]
+}

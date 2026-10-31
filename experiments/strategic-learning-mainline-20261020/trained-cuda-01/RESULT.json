@@ -1,0 +1,123 @@
+{
+  "completed_update": true,
+  "cuda_optimizer_steps": 172,
+  "ability_improvement_claim": false,
+  "training_updates": 1,
+  "optimizer_steps_total": 172,
+  "checkpoint_sha256": "bb3417624bdb25023e1dbbb2e8eb49de140f2a4264c9de0444659f2b953803cc",
+  "checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-02/update-01/update-1.pt",
+  "stop_bias_before": -1.9977545738220215,
+  "stop_bias_after": -1.9918773174285889,
+  "stop_bias_adam_step": 172,
+  "progress": {
+    "optimizer_steps": 172,
+    "minibatches": 172,
+    "completed": true,
+    "early_stop_kl": false,
+    "forced_only_minibatches": 0,
+    "algorithm_schema": "strategic-typed-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 2742,
+      "episodes": 8,
+      "free_choices": 2742,
+      "forced_transitions": 0,
+      "active_actor_episodes": 8,
+      "actor_weight_sum": 2742.0,
+      "critic_weight_sum": 2742.0,
+      "advantage_mean": -0.11223837112582373,
+      "advantage_variance": 0.4479879755407672,
+      "per_episode": [
+        {
+          "episode_id": "39a35c6ed1ed699021fb648692225374f66adc067ddcc98626bc4d1f95422a37",
+          "steps": 672,
+          "free_choices": 672,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "e6efd5f087a6013930864f5af82c3e19a45fc9f15c17d052304f5599c002f08f",
+          "steps": 363,
+          "free_choices": 363,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "647a7da2d753b2037c4b148a2532c138fca19aa46882923dcb2cf8335db4b118",
+          "steps": 58,
+          "free_choices": 58,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "a5b680476a6cc6aa4682aa11a4bd8ac35f8ab50d03bdff55eb38665dc15aa874",
+          "steps": 223,
+          "free_choices": 223,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "ba5c3c00f7827926b35b46c2f46881ece2bcee48f2c6deaa053380617c154d63",
+          "steps": 400,
+          "free_choices": 400,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "cd2886824da580533bf8462bbc16e40c52e295f60fc05b074fcde03d6c957046",
+          "steps": 829,
+          "free_choices": 829,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "947d0d6c676aa45e9e076cd2b58d12ddfa20592a99086fd77da3e95c1430523d",
+          "steps": 50,
+          "free_choices": 50,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "efec97fcd71d78bdc587f8b0500bd88cb96ca3f114345a265cd6503a151fa86a",
+          "steps": 147,
+          "free_choices": 147,
+          "reward": -1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.03468470647931099,
+      "critic": 0.2005743533372879,
+      "entropy": 0.7690727710723877,
+      "kl": 0.0009630571003071964,
+      "conditional_kl": 0.0009630571003071964,
+      "loss": 0.061757102608680725
+    },
+    "epoch": 4,
+    "full_batch_post_epoch": {
+      "actor": -0.0021083703187153614,
+      "critic": 0.16864915245520334,
+      "entropy": 1.1583250330626573,
+      "kl": 0.0005218398157455554,
+      "conditional_kl": 0.0005218398157455554,
+      "loss": 0.07642458286883619
+    },
+    "group_optimizer_steps": {
+      "actor": 172,
+      "critic": 172
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 7,
+        "total_tensors": 7,
+        "l2_delta": 0.8309891031138528,
+        "max_abs_delta": 0.03704182058572769
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.8946032986197834,
+        "max_abs_delta": 0.03940262133255601
+      }
+    }
+  },
+  "episodes": 8,
+  "samples": 2742,
+  "training_wins": 4,
+  "training_losses": 4,
+  "purpose": "curriculum_training",
+  "checkpoint_model_readback_exact": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v2",
+  "parent_manifest_sha256": "865988a27bc8de8f257b767ac5b10927e76da96fe974e37414fe7519f38e7830",
+  "failed_capsule": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01",
+  "failure": "LIBRARY was not declared in exportCreatureCatalog; add GameLibrary.h only"
+}

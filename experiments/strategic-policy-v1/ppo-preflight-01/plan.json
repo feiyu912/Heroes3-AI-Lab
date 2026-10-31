@@ -1,0 +1,129 @@
+{
+  "schema": "strategic-ppo-pilot-v1",
+  "updates": 4,
+  "jobs": [
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101910
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101911
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101912
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101913
+      }
+    ],
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101920
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101921
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101922
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101923
+      }
+    ],
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101930
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101931
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101932
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101933
+      }
+    ],
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101940
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101941
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101942
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101943
+      }
+    ]
+  ],
+  "initial_sha256": "8dd2cc8eeb09c2e83421fd0ec6c2958ba64716580e2dac74086bbb8d92f7e5d3",
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/train_ppo_pilot.py": "6ebf6e1a0aca43916c05ed6013cf5c99318daf16c4d102912cfcbf043d80fee0",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/encoder.py": "d2da88b66aaff85359526e990a09d49255ec14b0a498d801c3268d46b40419f2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/model.py": "385d3a2c75013f1e35defb3ebf41643c2630feba5be6a698d2554c2cd5b199f5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "767d0509ea5dd4ac9200e070a099e865ae912b60b15d489e012e6c2710e86993",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "ccaade9a2a59fd0eb66d574f3f47c8c4815c38acbf0771697d03956a6ff2cb2e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/checkpoints/prior-initial-v2.pt": "8dd2cc8eeb09c2e83421fd0ec6c2958ba64716580e2dac74086bbb8d92f7e5d3"
+  },
+  "lr": 0.0003,
+  "clip": 0.2,
+  "gamma": 1.0,
+  "entropy": 0.005,
+  "episodes_per_update": 4,
+  "simultaneous_environments": 1,
+  "reward": "Native terminal win +1/loss -1. No shaping. Invalid episodes abort pilot.",
+  "evaluation": "Training curriculum only; dev/test not touched. No promotion from training wins."
+}

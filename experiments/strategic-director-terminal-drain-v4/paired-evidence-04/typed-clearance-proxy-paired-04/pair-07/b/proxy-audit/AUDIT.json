@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "classification": "scripted_evaluation_only",
+  "policy": "clearance",
+  "proposals": 397,
+  "frozen_model_recommendations_and_values_exact": true,
+  "overrides": 5,
+  "details": [
+    {
+      "decision_id": 63,
+      "day": 8,
+      "native_request_id": 312,
+      "request_sha256": "ca9a5d031aa8a1b94cf343ba8bceff41a3fdd6974b397bc733336858db9ffc59",
+      "model_candidate": {
+        "op": "move",
+        "kind": 0,
+        "position": [
+          16,
+          11,
+          0
+        ],
+        "next": [
+          26,
+          9,
+          0
+        ],
+        "path_cost": 1.11282,
+        "heuristic_score": 4.96025
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 3,
+        "position": [
+          31,
+          12,
+          0
+        ],
+        "next": [
+          28,
+          9,
+          0
+        ],
+        "path_cost": 0.503846,
+        "heuristic_score": 3.98467
+      },
+      "proxy": {
+        "index": 0,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 12,
+        "baseline_clearance": 11,
+        "eligible_alternatives": 13,
+        "selected_clearance": 13
+      }
+    },
+    {
+      "decision_id": 143,
+      "day": 16,
+      "native_request_id": 509,
+      "request_sha256": "838f14169a8256577b0f5e544bea8b57ac2187c6c3696e6de519d0bd368af964",
+      "model_candidate": {
+        "op": "move",
+        "kind": 2,
+        "position": [
+          12,
+          12,
+          0
+        ],
+        "next": [
+          10,
+          14,
+          0
+        ],
+        "path_cost": 0.367949,
+        "heuristic_score": 8.06499
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 3,
+        "position": [
+          9,
+          15,
+          0
+        ],
+        "next": [
+          9,
+          15,
+          0
+        ],
+        "path_cost": 0.0961538,
+        "heuristic_score": 6.70968
+      },
+      "proxy": {
+        "index": 1,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 20,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "decision_id": 233,
+      "day": 25,
+      "native_request_id": 733,
+      "request_sha256": "540c07b0adf9fe54ace5820529af035ec1738def459807a0523439a05fc7a560",
+      "model_candidate": {
+        "op": "move",
+        "kind": 4,
+        "position": [
+          29,
+          8,
+          0
+        ],
+        "next": [
+          17,
+          19,
+          0
+        ],
+        "path_cost": 1.76795,
+        "heuristic_score": 2.20464
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 5,
+        "position": [
+          18,
+          25,
+          0
+        ],
+        "next": [
+          16,
+          21,
+          0
+        ],
+        "path_cost": 0.535897,
+        "heuristic_score": 1.15842
+      },
+      "proxy": {
+        "index": 39,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 12,
+        "baseline_clearance": 11,
+        "eligible_alternatives": 19,
+        "selected_clearance": 13
+      }
+    },
+    {
+      "decision_id": 239,
+      "day": 26,
+      "native_request_id": 751,
+      "request_sha256": "104c7dad35ac4bac0dcd220d26622f447247e097e793934c184d9609ef81ed9d",
+      "model_candidate": {
+        "op": "move",
+        "kind": 1,
+        "position": [
+          6,
+          8,
+          0
+        ],
+        "next": [
+          16,
+          19,
+          0
+        ],
+        "path_cost": 1.54359,
+        "heuristic_score": 5.87202
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 4,
+        "position": [
+          29,
+          8,
+          0
+        ],
+        "next": [
+          18,
+          19,
+          0
+        ],
+        "path_cost": 1.58333,
+        "heuristic_score": 2.4
+      },
+      "proxy": {
+        "index": 2,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 37,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "decision_id": 332,
+      "day": 36,
+      "native_request_id": 998,
+      "request_sha256": "3109153bd4475fdb8799a049133448f1ac2a15a58e35887e6420550cc6f6015a",
+      "model_candidate": {
+        "op": "move",
+        "kind": 1,
+        "position": [
+          6,
+          8,
+          0
+        ],
+        "next": [
+          20,
+          13,
+          0
+        ],
+        "path_cost": 1.71154,
+        "heuristic_score": 5.42609
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 4,
+        "position": [
+          29,
+          8,
+          0
+        ],
+        "next": [
+          22,
+          13,
+          0
+        ],
+        "path_cost": 0.983333,
+        "heuristic_score": 3.37079
+      },
+      "proxy": {
+        "index": 1,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 12,
+        "baseline_clearance": 11,
+        "eligible_alternatives": 10,
+        "selected_clearance": 13
+      }
+    }
+  ],
+  "native_execution_proof_sha256": "614ab8abc4baf704778f21e568768fb72d93b6ea996288c2b4b9e405bab45f6e",
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-07/b/replan-audit/AUDIT.json": "614ab8abc4baf704778f21e568768fb72d93b6ea996288c2b4b9e405bab45f6e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-07/b/native/agent/typed-broker.jsonl": "8bcc5a4f51c33caa8adb04eaf52090062016e39be3152fb69bbcc17d19887651",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_proxy.py": "376c63d19cc66038d9002da371d60a37f805e7e8a80ef436da32fb05767fc80c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851"
+  },
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "limitation": "Real scripted actions and coordinate changes only. No safety, overall utility, human tactics or learning gain certification."
+}

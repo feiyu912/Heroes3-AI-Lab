@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "nonzero_gradients": 12,
+  "game_started": false,
+  "cuda_training_started": false,
+  "lineage": {
+    "mode": "weights-only-migration",
+    "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+    "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+    "parent_training_updates": 2,
+    "reset_optimizer": true,
+    "reset_rng": true
+  },
+  "cuda_rng_restored": false,
+  "optimizer_steps": 0
+}

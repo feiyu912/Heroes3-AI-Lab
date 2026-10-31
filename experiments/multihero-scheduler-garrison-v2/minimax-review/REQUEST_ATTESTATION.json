@@ -1,0 +1,39 @@
+{
+  "interface": "DeepSeek Harness bundled headless CLI",
+  "session_file": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\sessions\\--G-Heroes3-AI-Lab-experiments-multihero-scheduler-garrison-v2-minimax-review--\\session-180f38c5-19e6-46db-8200-4d454c7d5c84\\session.v4.jsonl.zstd",
+  "request_header_records": [
+    {
+      "type": "request/header",
+      "seq": 10,
+      "time": 1792769245425,
+      "data": {
+        "header": {
+          "config": {
+            "provider": "mini",
+            "model": "MiniMax-M3.1-Flash"
+          },
+          "tools": [
+            {
+              "name": "exit_plan_mode",
+              "description": "Use only in plan mode. Present your plan for the user's review and, on approval, leave plan mode. The user may approve (carry out the plan from your next step) or keep planning — their feedback comes back in the tool result; revise and present again.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "plan": {
+                    "type": "string",
+                    "description": "The complete plan, as markdown, starting with a # heading that names it."
+                  }
+                },
+                "required": [
+                  "plan"
+                ]
+              }
+            }
+          ]
+        },
+        "reason": "initial"
+      }
+    }
+  ],
+  "session_id": "session-180f38c5-19e6-46db-8200-4d454c7d5c84"
+}

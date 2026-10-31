@@ -1,0 +1,59 @@
+{
+  "synthetic_cpu_only": true,
+  "cases": [
+    {
+      "name": "synthetic-order-a",
+      "samples": 16,
+      "episodes": 4,
+      "batch_sizes": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "max_abs_logprob_replay_error": 0.0,
+      "max_abs_value_replay_error": 5.960464477539063e-08,
+      "complete": true,
+      "policy_unchanged": true,
+      "native_consumption_all": true,
+      "remaining": []
+    },
+    {
+      "name": "synthetic-order-b",
+      "samples": 16,
+      "episodes": 4,
+      "batch_sizes": [
+        2,
+        4,
+        2,
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_abs_logprob_replay_error": 0.0,
+      "max_abs_value_replay_error": 5.960464477539063e-08,
+      "complete": true,
+      "policy_unchanged": true,
+      "native_consumption_all": true,
+      "remaining": []
+    }
+  ],
+  "per_env_action_request_seed_sequences_equal": true,
+  "final_per_environment_generator_states_equal": true,
+  "global_torch_rng_unchanged_by_sampling": true,
+  "invalid_batch_rejected": true,
+  "actual_optimizer_steps": 0,
+  "cuda_execution_verified": false,
+  "real_native_vector_collection_verified": false,
+  "passed": true
+}

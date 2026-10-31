@@ -1,0 +1,678 @@
+{
+  "scope": "direct missing DT_NEEDED of every extracted old target shared ELF; recursive dependencies of missing libraries still need package closure",
+  "original_status": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/\u73af\u5883\u8bb0\u5f55/dpkg-status.txt",
+  "original_status_sha256": "3732f6ced064135e8b3579c509b333e7e8353a3ddebce3758d25822ebf676d39",
+  "rows": [
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+      "needed": []
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.18.2",
+      "needed": [
+        "libasound.so.2",
+        "libm.so.6",
+        "libpulse.so.0",
+        "libX11.so.6",
+        "libXext.so.6",
+        "libXcursor.so.1",
+        "libXinerama.so.1",
+        "libXi.so.6",
+        "libXfixes.so.3",
+        "libXrandr.so.2",
+        "libXss.so.1",
+        "libXxf86vm.so.1",
+        "libdrm.so.2",
+        "libgbm.so.1",
+        "libwayland-egl.so.1",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0",
+        "libdecor-0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libSDL2_image-2.0.so.0.2.3",
+      "needed": [
+        "libpng16.so.16",
+        "libjpeg.so.8",
+        "libtiff.so.5",
+        "libwebp.so.7",
+        "libSDL2-2.0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libSDL2_mixer-2.0.so.0.2.2",
+      "needed": [
+        "libSDL2-2.0.so.0",
+        "libmodplug.so.1",
+        "libfluidsynth.so.3",
+        "libvorbisfile.so.3",
+        "libFLAC.so.8",
+        "libmpg123.so.0",
+        "libopusfile.so.0",
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libSDL2_ttf-2.0.so.0.18.0",
+      "needed": [
+        "libfreetype.so.6",
+        "libharfbuzz.so.0",
+        "libSDL2-2.0.so.0",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libanl.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libasan.so.6.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libatomic.so.1.2.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libbfd-2.38-system.so",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.74.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.74.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libboost_system.so.1.74.0",
+      "needed": []
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libc.so.6",
+      "needed": [
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libcc1.so.0.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libctf-nobfd.so.0.0.0",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libctf.so.0.0.0",
+      "needed": [
+        "libbfd-2.38-system.so",
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libdl.so.2",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libgmp.so.10.4.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libisl.so.23.1.0",
+      "needed": [
+        "libgmp.so.10",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libitm.so.1.0.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/liblsan.so.0.0.0",
+      "needed": [
+        "libc.so.6",
+        "ld-linux-x86-64.so.2",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libluajit-5.1.so.2.1.0",
+      "needed": [
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libm.so.6",
+      "needed": [
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libminizip.so.1.0.0",
+      "needed": [
+        "libz.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libmpc.so.3.2.1",
+      "needed": [
+        "libmpfr.so.6",
+        "libgmp.so.10",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libmpfr.so.6.1.0",
+      "needed": [
+        "libgmp.so.10",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libmvec.so.1",
+      "needed": [
+        "libm.so.6",
+        "ld-linux-x86-64.so.2",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libopcodes-2.38-system.so",
+      "needed": [
+        "libbfd-2.38-system.so",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libpthread.so.0",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libresolv.so.2",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/librt.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libsquish.so.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgomp.so.1",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libtbb.so.12.5",
+      "needed": [
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libtbbmalloc.so.2.5",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libtbbmalloc_proxy.so.2.5",
+      "needed": [
+        "libtbbmalloc.so.2",
+        "libstdc++.so.6",
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libtsan.so.0.0.0",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0",
+      "needed": [
+        "libstdc++.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libutil.so.1",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libz.so.1.2.11",
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    {
+      "file": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/libzstd.so.1.4.8",
+      "needed": [
+        "libc.so.6"
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "soname": "libFLAC.so.8",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libflac8",
+      "original_version": "1.3.3-2ubuntu0.2",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.33), libogg0 (>= 1.0rc3)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libX11.so.6",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libx11-6",
+      "original_version": "2:1.7.5-1ubuntu0.4",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.34), libxcb1 (>= 1.11.1), libx11-data",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXcursor.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxcursor1",
+      "original_version": "1:1.2.0-2build4",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.4), libx11-6 (>= 2:1.4.99.1), libxfixes3, libxrender1",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXext.so.6",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxext6",
+      "original_version": "2:1.3.4-1build1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXfixes.so.3",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxfixes3",
+      "original_version": "1:6.0.0-1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXi.so.6",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxi6",
+      "original_version": "2:1.8-1build1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXinerama.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxinerama1",
+      "original_version": "2:1.1.4-3",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXrandr.so.2",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxrandr2",
+      "original_version": "2:1.5.2-1build1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6, libxrender1",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXss.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxss1",
+      "original_version": "1:1.2.3-1build2",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.4), libx11-6 (>= 2:1.4.99.1), libxext6, x11-common",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libXxf86vm.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxxf86vm1",
+      "original_version": "1:1.1.4-1build3",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libasound.so.2",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libasound2",
+      "original_version": "1.2.6.1-1ubuntu1.2",
+      "original_arch": "amd64",
+      "original_depends": "libasound2-data (>= 1.2.6.1-1ubuntu1.2), libc6 (>= 2.34)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libdecor-0.so.0",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libdecor-0-0",
+      "original_version": "0.1.0-3build1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.34), libwayland-client0 (>= 1.20.0)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libdrm.so.2",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libdrm2",
+      "original_version": "2.4.113-2~ubuntu0.22.04.1",
+      "original_arch": "amd64",
+      "original_depends": "libdrm-common (>= 2.4.113-2~ubuntu0.22.04.1), libc6 (>= 2.33)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libfluidsynth.so.3",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libfluidsynth3",
+      "original_version": "2.2.5-1",
+      "original_arch": "amd64",
+      "original_depends": "libasound2 (>= 1.0.16), libc6 (>= 2.33), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.31.8), libgomp1 (>= 4.9), libinstpatch-1.0-2 (>= 1.1.2), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libpulse0 (>= 0.99.1), libreadline8 (>= 6.0), libsdl2-2.0-0 (>= 2.0.12), libsndfile1 (>= 1.0.20), libstdc++6 (>= 11), timgm6mb-soundfont (>= 1.3-3~) | sf3-soundfont-gm",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libfreetype.so.6",
+      "required_by": [
+        "libSDL2_ttf-2.0.so.0.18.0"
+      ],
+      "original_package": "libfreetype6",
+      "original_version": "2.11.1+dfsg-1ubuntu0.4",
+      "original_arch": "amd64",
+      "original_depends": "libbrotli1 (>= 0.6.0), libc6 (>= 2.33), libpng16-16 (>= 1.6.2-1), zlib1g (>= 1:1.1.4)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libgbm.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libgbm1",
+      "original_version": "23.2.1-1ubuntu3.1~22.04.4",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.34), libdrm2 (>= 2.4.75), libexpat1 (>= 2.0.1), libwayland-server0 (>= 1.15.0), libxcb-randr0",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libharfbuzz.so.0",
+      "required_by": [
+        "libSDL2_ttf-2.0.so.0.18.0"
+      ],
+      "original_package": "libharfbuzz0b",
+      "original_version": "2.7.4-1ubuntu3.2",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.33), libfreetype6 (>= 2.9.1), libglib2.0-0 (>= 2.31.8), libgraphite2-3 (>= 1.2.2)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libjpeg.so.8",
+      "required_by": [
+        "libSDL2_image-2.0.so.0.2.3"
+      ],
+      "original_package": "libjpeg-turbo8",
+      "original_version": "2.1.2-0ubuntu1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libmodplug.so.1",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libmodplug1",
+      "original_version": "1:0.8.9.0-3",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.29), libstdc++6 (>= 5)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libmpg123.so.0",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libmpg123-0",
+      "original_version": "1.29.3-1ubuntu0.1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.29)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libopusfile.so.0",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libopusfile0",
+      "original_version": "0.9+20170913-1.1build1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.28), libogg0 (>= 1.1.0), libopus0 (>= 1.1), libssl3 (>= 3.0.0~~alpha1)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libpng16.so.16",
+      "required_by": [
+        "libSDL2_image-2.0.so.0.2.3"
+      ],
+      "original_package": "libpng16-16",
+      "original_version": "1.6.37-3ubuntu0.7",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.29), zlib1g (>= 1:1.2.11)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libpulse.so.0",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libpulse0",
+      "original_version": "1:15.99.1+dfsg1-1ubuntu2.2",
+      "original_arch": "amd64",
+      "original_depends": "libapparmor1 (>= 2.7.0~beta1+bzr1772), libasyncns0 (>= 0.3), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libsndfile1 (>= 1.0.20), libsystemd0, libx11-6, libx11-xcb1 (>= 2:1.7.5), libxcb1",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libtiff.so.5",
+      "required_by": [
+        "libSDL2_image-2.0.so.0.2.3"
+      ],
+      "original_package": "libtiff5",
+      "original_version": "4.3.0-6ubuntu0.13",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.33), libdeflate0 (>= 1.0), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20120614), libwebp7, libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libvorbisfile.so.3",
+      "required_by": [
+        "libSDL2_mixer-2.0.so.0.2.2"
+      ],
+      "original_package": "libvorbisfile3",
+      "original_version": "1.3.7-1build2",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.14), libogg0 (>= 1.1.0), libvorbis0a (= 1.3.7-1build2)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libwayland-client.so.0",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libwayland-client0",
+      "original_version": "1.20.0-1ubuntu0.1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.28), libffi8 (>= 3.4)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libwayland-cursor.so.0",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libwayland-cursor0",
+      "original_version": "1.20.0-1ubuntu0.1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.28), libwayland-client0 (>= 1.20.0)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libwayland-egl.so.1",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libwayland-egl1",
+      "original_version": "1.20.0-1ubuntu0.1",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.2.5)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libwebp.so.7",
+      "required_by": [
+        "libSDL2_image-2.0.so.0.2.3"
+      ],
+      "original_package": "libwebp7",
+      "original_version": "1.2.2-2ubuntu0.22.04.2",
+      "original_arch": "amd64",
+      "original_depends": "libc6 (>= 2.34)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    },
+    {
+      "soname": "libxkbcommon.so.0",
+      "required_by": [
+        "libSDL2-2.0.so.0.18.2"
+      ],
+      "original_package": "libxkbcommon0",
+      "original_version": "1.4.0-1",
+      "original_arch": "amd64",
+      "original_depends": "xkb-data, libc6 (>= 2.33)",
+      "mapping_basis": "SONAME/known Ubuntu package name, exact version from saved original dpkg status; file ownership not separately certified"
+    }
+  ]
+}

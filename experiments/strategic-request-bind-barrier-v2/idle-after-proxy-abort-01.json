@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "time_unix": 1792336044.146451,
+  "accepted_sha256": {
+    "src/vcmi-adv/AI/DirectorAI/CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "src/vcmi-adv-build/bin/vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+    "src/vcmi-adv-build/bin/vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac",
+    "src/vcmi-adv-build/bin/libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a"
+  },
+  "locks": "both acquired exclusively for this snapshot",
+  "native_or_learning_processes": [],
+  "frozen_battle": "OK    libvcmi.so\nOK    libmlclient.so\nOK    libmlserverplugin.so\nOK    vcmiserver\nOK    vcmiclient\nfrozen_intact=true\n",
+  "gpu": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "memory": {
+    "MemAvailable": "15571300 kB",
+    "SwapTotal": "4194304 kB",
+    "SwapFree": "4194304 kB"
+  },
+  "optimizer_steps": 0,
+  "goal_complete": false
+}

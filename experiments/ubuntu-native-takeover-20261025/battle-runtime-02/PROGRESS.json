@@ -1,0 +1,60 @@
+{
+  "passed": false,
+  "games": [
+    {
+      "name": "BattleAI-attacker",
+      "report": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/BattleAI-attacker.json",
+      "sha256": "d9157aa90ee12627846bb156744436a6d3f30d7868239b33c457ac7406705e2a",
+      "steps": 19,
+      "historical_comparison": {
+        "trajectory_sha256": true,
+        "steps": true,
+        "success": true,
+        "terminal_outcome": true,
+        "action_types": true
+      }
+    },
+    {
+      "name": "BattleAI-defender",
+      "report": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/BattleAI-defender.json",
+      "sha256": "4f9e3d876fe29f7f5fa29448e2e722045254ede4fba6abdfab1bf211efac9664",
+      "steps": 18,
+      "historical_comparison": {
+        "trajectory_sha256": true,
+        "steps": true,
+        "success": true,
+        "terminal_outcome": true,
+        "action_types": true
+      }
+    },
+    {
+      "name": "MMAI_MODEL-attacker",
+      "report": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-attacker.json",
+      "sha256": "5b9a84d5563a3171c4a01a2c4eeb38a5fbfe1490b4183defaa00e4c2555e12b8",
+      "steps": 38,
+      "historical_comparison": {
+        "trajectory_sha256": true,
+        "steps": true,
+        "success": true,
+        "terminal_outcome": true,
+        "action_types": true
+      }
+    },
+    {
+      "name": "MMAI_MODEL-defender",
+      "report": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-02/MMAI_MODEL-defender.json",
+      "sha256": "88e654fa651cbc82585848ad511a3b5efbdaf62e096156788a98f5b6a6fff6af",
+      "steps": 27,
+      "historical_comparison": {
+        "trajectory_sha256": true,
+        "steps": true,
+        "success": true,
+        "terminal_outcome": true,
+        "action_types": true
+      }
+    }
+  ],
+  "optimizer_steps": 0,
+  "model_promoted": false,
+  "final_test_touched": false
+}

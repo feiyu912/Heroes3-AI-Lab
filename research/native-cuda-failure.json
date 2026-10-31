@@ -1,0 +1,6 @@
+{
+  "error": "AssertionError('attacker-0-1 failed: /root/heroes3-ai-lab/evaluations/native-cuda-contract-1792063418937821828/attacker-0-1.log')",
+  "records": [],
+  "evaluation_folder": "/root/heroes3-ai-lab/evaluations/native-cuda-contract-1792063418937821828",
+  "formal_use": false
+}

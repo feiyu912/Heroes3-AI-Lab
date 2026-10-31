@@ -1,0 +1,1162 @@
+{
+  "schema": "expert-mixed-ppo-plan-v1",
+  "initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+  "initial_sha256": "2ff877ab85bb451bc2cd71c3d1c25258e5fe1de6b132ea38d2bd600da75f26cc",
+  "reference_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+  "reference_sha256": "2ff877ab85bb451bc2cd71c3d1c25258e5fe1de6b132ea38d2bd600da75f26cc",
+  "branch_commit": "5e3a7152d3ea8d3cc4626f4802480c3e50ac1fbf",
+  "dependency_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/cpu-math-check.json": "2abf3d3d124eda365db177c6db755a539f7a4288edf517164704c70512960886",
+    "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/reference_ppo.py": "3a1309004ddedce074c189a302966f6c7879dcf1f9056c37cd3acf7f01ac79f5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/graph_observation_codec.py": "6e6cb83ba122e375383726dd9fd6462850ee4f409ba506ca3340e10ab612fcb5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/check_mixed.py": "f477941676fb2a61e444846fc22d355efc5eaa3eb713d07c7ade52b273a45554",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/common.py": "98f07b4b99990526200b28d8a1eb3e904e4b9ffb238cb72d737a2e017cc0e91a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/run_experiment.py": "ba2dff684236172cd2dddc6029d63c03824a177b2fad75503204c5c2d888c12c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/train_mixed_heads.py": "503a4b572b31b7626091381d202406fd984bfd6d0ec4261953ec16bae028252c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/experts.py": "cc89c06495f50919a450a0896b3de68cfcdc736b7bdb6c93fef67eddcd8d8c20",
+    "/mnt/g/Heroes3-AI-Lab/research/battle_features.py": "12f4af2cf215351d50ca8349ab4335f3cc31a1e60b76969a052a0bc57d7216c5",
+    "/mnt/g/Heroes3-AI-Lab/research/decision_model.py": "e575adac208d2509d14a16cb2f7828eb3c708f1e6c3b6d3ae1d8dd2b69cedcb2",
+    "/mnt/g/Heroes3-AI-Lab/research/full_graph_policy.py": "fed70e1d268e2aa201ce8dea7536a574a2841b1985a70ee71bcbe69be7ef2a7c",
+    "/mnt/g/Heroes3-AI-Lab/research/gpu_opponent.py": "badddcc1a729d1dad7aea4bca4f42dfadcb642d73d321aded5c6243afc8f8285",
+    "/mnt/g/Heroes3-AI-Lab/research/lab-env.py": "bdb325ee5cad7d5df952a35f7d357ef9f3bad4d624fe5bd2233b46a11f0b0dee",
+    "/mnt/g/Heroes3-AI-Lab/research/masked_ppo.py": "16e279f9b1cd9a74644f0905dfa103e8502ca81664a79ecd747d24c0cd826829",
+    "/mnt/g/Heroes3-AI-Lab/research/prepare-worker.py": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c",
+    "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485",
+    "/mnt/g/Heroes3-AI-Lab/research/run-lab.sh": "a5ba679e61c27f244143b90645a4baf4c54267a167ebcc4f797dee997a4301d4",
+    "/mnt/g/Heroes3-AI-Lab/research/vector_env.py": "ffea0f0edfc0c62049e9a8469acbf41cc64448fcf3c9be6bf1708f10ebe7e5d6",
+    "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/bootstrap.py": "19f4af6ca59564b31398d930e49e10751d1e92797ff00e0133d1b85cd8d08370",
+    "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/opponents.py": "ae7434f485b184af20dbdb8e5fca229a3bb5178d13155889e6ac355ac6453344",
+    "/root/heroes3-ai-lab/data/vcmi/Mods/ML/Content/heroes.json": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+    "/root/heroes3-ai-lab/onnxruntime/lib/libonnxruntime.so": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so": "8beb54df4e29651f2bfff902a353847485cd2431fc5ddd1019ba399e398a6ba0",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/exporter_v15.so": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/envs/v15/decode.py": "75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/envs/v15/pyconnector.py": "3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/envs/v15/vcmi_env.py": "cd609f1ac8bb0224e63ba473dec1b8b3363771bad33e31e4cd9dee16ee205ae6"
+  },
+  "scenario_sources": {
+    "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json": "8af02c4b126a4bc59abb837ca6e67f0d5c9b3f7bf40207209a132f43b89162e1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json": "42ac6a8be298ba3f95a3c6d67ceccc52c9304aebe62dd0eb7bf9adb77a9bb0dc"
+  },
+  "public_onnx_sha256": {
+    "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-attacker.onnx": "62adf45ea34a323d72e9ce953a0c8b6740e60c3cec3651f282bfacee785d3151",
+    "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-defender.onnx": "73bca79446ebdcab01e47fbbfada0162380df907bc86b19a21d0c502500cfaa9"
+  },
+  "phases": [
+    [
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-153",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "e1af78ea460a5fbb1f601b1e351f30b9fbe0a9f671b04505e39aaa442d4ebf0f",
+        "config": {
+          "map": "lab/diverse-153.vmap",
+          "role": "attacker",
+          "seed": 2026101604,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-0"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-130",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "e72145ea84e0c417f3b983b625cdcd24cfab2e044d96c1dc246b804b635a495c",
+        "config": {
+          "map": "lab/diverse-130.vmap",
+          "role": "defender",
+          "seed": 2026101605,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-1"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-114",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "4502242656d00b9d1f84d8f6c5d211bf225059dd914c5d40e6567e1cc54c48e3",
+        "config": {
+          "map": "lab/diverse-114.vmap",
+          "role": "attacker",
+          "seed": 2026101606,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-2"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-066",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "2fcb8e11994c79a87af824cc1dc1154b5fc2f2a93372a6db3d19cad58b529d2d",
+        "config": {
+          "map": "lab/diverse-066.vmap",
+          "role": "defender",
+          "seed": 2026101607,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-3"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-149",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "b7d14957bf59590517d8967ea4c69e91f36e721f38a0f2a3d9ae9fe4dbfc2ef3",
+        "config": {
+          "map": "lab/diverse-149.vmap",
+          "role": "attacker",
+          "seed": 2026101608,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-4"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-060",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "d12484b31549e6271309d7ca9889c8de96be112ed5d824780f49c0097924839a",
+        "config": {
+          "map": "lab/diverse-060.vmap",
+          "role": "defender",
+          "seed": 2026101609,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-5"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-126",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "27c1472fdd5cbda7be866f156ec93bffc193c57efe00df69ca225143f6fb5e50",
+        "config": {
+          "map": "lab/diverse-126.vmap",
+          "role": "attacker",
+          "seed": 2026101610,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-6"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-154",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "b332c99ab47c7dce4408fadae2ff41548fa9ee2b928daea4b9c7439c54fab0cb",
+        "config": {
+          "map": "lab/diverse-154.vmap",
+          "role": "defender",
+          "seed": 2026101611,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-7"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-153",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "e1af78ea460a5fbb1f601b1e351f30b9fbe0a9f671b04505e39aaa442d4ebf0f",
+        "config": {
+          "map": "lab/diverse-153.vmap",
+          "role": "attacker",
+          "seed": 2026101612,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-8"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-080",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "ee455f20c2e4bcb8baa2dbbb935e5193939f62f0eb4c4f363d895fc8d0ca3989",
+        "config": {
+          "map": "lab/diverse-080.vmap",
+          "role": "defender",
+          "seed": 2026101613,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-9"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-102",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "6e4c7ccaf39180ccc5fee08b8d6568404314ee57528a008aae610151d5c3525c",
+        "config": {
+          "map": "lab/diverse-102.vmap",
+          "role": "attacker",
+          "seed": 2026101614,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-10"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-093",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "d7c1bf13b8e1e9ff6641e074bc78639936f8e5f797b9f97aec4f596e866214c4",
+        "config": {
+          "map": "lab/diverse-093.vmap",
+          "role": "defender",
+          "seed": 2026101615,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-11"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-03",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c7d26d1a78bcc416100038fbe9e4acea8a775a6f2d96bbb6ab6721e5f0a3e618",
+        "config": {
+          "map": "lab/human-v1-death-cloud-03.vmap",
+          "role": "attacker",
+          "seed": 2026101616,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-12"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-01",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "1187ef9c87991bdd40f237bd98ec86cae62f94745d48dbb7130a469b2ab59167",
+        "config": {
+          "map": "lab/human-v1-death-cloud-01.vmap",
+          "role": "defender",
+          "seed": 2026101617,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-13"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-03",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c7d26d1a78bcc416100038fbe9e4acea8a775a6f2d96bbb6ab6721e5f0a3e618",
+        "config": {
+          "map": "lab/human-v1-death-cloud-03.vmap",
+          "role": "attacker",
+          "seed": 2026101618,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-14"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-retaliation-bait-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "8a79609be89b8eb89a1a65b9f821481b9b54b5f1346c238b472bc6b6d3f85592",
+        "config": {
+          "map": "lab/human-v1-retaliation-bait-02.vmap",
+          "role": "defender",
+          "seed": 2026101619,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-15"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-retaliation-bait-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "8a79609be89b8eb89a1a65b9f821481b9b54b5f1346c238b472bc6b6d3f85592",
+        "config": {
+          "map": "lab/human-v1-retaliation-bait-02.vmap",
+          "role": "attacker",
+          "seed": 2026101620,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-16"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c9ebb7cfe49178d8009f5a8acd731ba631bf71456eda0f55d40076356c23cf01",
+        "config": {
+          "map": "lab/human-v1-death-cloud-02.vmap",
+          "role": "defender",
+          "seed": 2026101621,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-17"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-retaliation-bait-01",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "7629f382ed881dde6673e173e96807724b2a52efc30bc2b98a1d638702d29e65",
+        "config": {
+          "map": "lab/human-v1-retaliation-bait-01.vmap",
+          "role": "attacker",
+          "seed": 2026101622,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-18"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-01",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "1187ef9c87991bdd40f237bd98ec86cae62f94745d48dbb7130a469b2ab59167",
+        "config": {
+          "map": "lab/human-v1-death-cloud-01.vmap",
+          "role": "defender",
+          "seed": 2026101623,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-19"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-110",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "57b63f4ea764df5ec8c00f8861435868b72fdb33dff02e9425fe38c28afd229c",
+        "config": {
+          "map": "lab/diverse-110.vmap",
+          "role": "attacker",
+          "seed": 2026101624,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-20",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-074",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "3e6f1cc74f3d3cad74a6d622d0f4a2a5d16af81537700d98ac37edb6ea4d0e56",
+        "config": {
+          "map": "lab/diverse-074.vmap",
+          "role": "defender",
+          "seed": 2026101625,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-21",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-attacker.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-123",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "b66cccd1236677f51067beec3170a9637125b6e401370781ed992f7f94503082",
+        "config": {
+          "map": "lab/diverse-123.vmap",
+          "role": "attacker",
+          "seed": 2026101626,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-22",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-039",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "0b549a21cf3dde7f2e0fe204310f973b28e0f8338f150ab8b5d1ca6584034f46",
+        "config": {
+          "map": "lab/diverse-039.vmap",
+          "role": "defender",
+          "seed": 2026101627,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/0-23",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-attacker.onnx"
+        }
+      }
+    ],
+    [
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-105",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "99a40c604f14aedab2854540cd73e2fe6a5accf93bf028aabe9d28a524d99a8a",
+        "config": {
+          "map": "lab/diverse-105.vmap",
+          "role": "attacker",
+          "seed": 2026102604,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-0"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-054",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2",
+        "config": {
+          "map": "lab/diverse-054.vmap",
+          "role": "defender",
+          "seed": 2026102605,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-1"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-160",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "422e50b79d0f7b09936158e5188edbbb4d435350521c2f76629ef5b8089ae2a0",
+        "config": {
+          "map": "lab/diverse-160.vmap",
+          "role": "attacker",
+          "seed": 2026102606,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-2"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-044",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "5be189bb672270c3e83ad5575ed7887107793be40f34f7acc29908724f9ccda6",
+        "config": {
+          "map": "lab/diverse-044.vmap",
+          "role": "defender",
+          "seed": 2026102607,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-3"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-094",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "9f8acfafab66319c4a870465139b1ac2ae47fd6945dfd3d13a6f874add2bd0ca",
+        "config": {
+          "map": "lab/diverse-094.vmap",
+          "role": "attacker",
+          "seed": 2026102608,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-4"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-138",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "2b7c3a33be3971518a8a330d59508bab027ff6da786f08117f1dc3031c8bbf95",
+        "config": {
+          "map": "lab/diverse-138.vmap",
+          "role": "defender",
+          "seed": 2026102609,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-5"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-010",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "f2350bd3f1fffc16da3189881b1784609fa58a6701ce4d085396c966e1cb0eab",
+        "config": {
+          "map": "lab/diverse-010.vmap",
+          "role": "attacker",
+          "seed": 2026102610,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-6"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-023",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc",
+        "config": {
+          "map": "lab/diverse-023.vmap",
+          "role": "defender",
+          "seed": 2026102611,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-7"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-118",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "480f9287d428d5295b7cdf417c947f4a698f471480915e107fc7633dfe788b6d",
+        "config": {
+          "map": "lab/diverse-118.vmap",
+          "role": "attacker",
+          "seed": 2026102612,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-8"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-181",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "da6597f8d0652d3306f39ff72317c76a0cb9a76bdca8d2d7b87f668acefe7f43",
+        "config": {
+          "map": "lab/diverse-181.vmap",
+          "role": "defender",
+          "seed": 2026102613,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-9"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-124",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "11a19c20fd9319f2287a3da7c59357c38bca79a9ffdb7a0b4178ee18261828b3",
+        "config": {
+          "map": "lab/diverse-124.vmap",
+          "role": "attacker",
+          "seed": 2026102614,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-10"
+        }
+      },
+      {
+        "category": "ordinary",
+        "scenario_id": "diverse-101",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "86b16d25587dba276a23ce475e2f1f000264e23586976df3cce3b778cb8a0d29",
+        "config": {
+          "map": "lab/diverse-101.vmap",
+          "role": "defender",
+          "seed": 2026102615,
+          "opponent": "BattleAI",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-11"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-01",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "1187ef9c87991bdd40f237bd98ec86cae62f94745d48dbb7130a469b2ab59167",
+        "config": {
+          "map": "lab/human-v1-death-cloud-01.vmap",
+          "role": "attacker",
+          "seed": 2026102616,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-12"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c9ebb7cfe49178d8009f5a8acd731ba631bf71456eda0f55d40076356c23cf01",
+        "config": {
+          "map": "lab/human-v1-death-cloud-02.vmap",
+          "role": "defender",
+          "seed": 2026102617,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-13"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c9ebb7cfe49178d8009f5a8acd731ba631bf71456eda0f55d40076356c23cf01",
+        "config": {
+          "map": "lab/human-v1-death-cloud-02.vmap",
+          "role": "attacker",
+          "seed": 2026102618,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-14"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-01",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "1187ef9c87991bdd40f237bd98ec86cae62f94745d48dbb7130a469b2ab59167",
+        "config": {
+          "map": "lab/human-v1-death-cloud-01.vmap",
+          "role": "defender",
+          "seed": 2026102619,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-15"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-dragon-breath-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "dfb14d1c8094015afbb391f4a6ba55c47c9418f329093dfbdb564f8191cdbbfa",
+        "config": {
+          "map": "lab/human-v1-dragon-breath-02.vmap",
+          "role": "attacker",
+          "seed": 2026102620,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-16"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-retaliation-bait-03",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "54cf2ba714b0b200a244c9bac855e3725ca814236bea23f827484429e79f4359",
+        "config": {
+          "map": "lab/human-v1-retaliation-bait-03.vmap",
+          "role": "defender",
+          "seed": 2026102621,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-17"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-02",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "c9ebb7cfe49178d8009f5a8acd731ba631bf71456eda0f55d40076356c23cf01",
+        "config": {
+          "map": "lab/human-v1-death-cloud-02.vmap",
+          "role": "attacker",
+          "seed": 2026102622,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-18"
+        }
+      },
+      {
+        "category": "expert",
+        "scenario_id": "human-v1-death-cloud-00",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/scenarios.json",
+        "map_sha256": "395259ebc2f0d62fe55dbe2593f6126673f1aac135046742a09c2270630b67ee",
+        "config": {
+          "map": "lab/human-v1-death-cloud-00.vmap",
+          "role": "defender",
+          "seed": 2026102623,
+          "opponent": "MMAI_GPU",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-19"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-139",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "7f27d34a477714e523a84ade2dd7e5706e0c8e780d83e70103fd4dd86fb789b1",
+        "config": {
+          "map": "lab/diverse-139.vmap",
+          "role": "attacker",
+          "seed": 2026102624,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-20",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-083",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "7890fcf9078a46c95f8816e75e41673e67f726f5ec7c4b8e3f3f7e82acf0c0cf",
+        "config": {
+          "map": "lab/diverse-083.vmap",
+          "role": "defender",
+          "seed": 2026102625,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-21",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-attacker.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-034",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "b91e82a7036badcc00d6bdab7451d348b9dad28d44798627b17a98fd40085fa1",
+        "config": {
+          "map": "lab/diverse-034.vmap",
+          "role": "attacker",
+          "seed": 2026102626,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-22",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-defender.onnx"
+        }
+      },
+      {
+        "category": "history",
+        "scenario_id": "diverse-037",
+        "split": "train",
+        "source_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+        "map_sha256": "39a49e7d93051469a6f94d6a93600e5281738042b8e883266f5de8550d1c37cf",
+        "config": {
+          "map": "lab/diverse-037.vmap",
+          "role": "defender",
+          "seed": 2026102627,
+          "opponent": "MMAI_MODEL",
+          "feature_version": "upstream-graph-v15",
+          "step_cost": 0.0,
+          "loss_shaping": 0.0,
+          "max_steps": 400,
+          "initial_reset_once": true,
+          "worker_root": "/root/heroes3-ai-lab/workers/expert-mixed-v1/1-23",
+          "opponent_model": "DATA/MMAI/models/lab-upstream-attacker.onnx"
+        }
+      }
+    ]
+  ],
+  "workers": 24,
+  "updates": 32,
+  "rollout": 32,
+  "phase_updates": 16,
+  "seed": 2026101604,
+  "learning_rate": 1e-05,
+  "gamma": 1.0,
+  "gae_lambda": 0.95,
+  "step_cost": 0.0,
+  "shaping": 0.5,
+  "entropy_coef": 0.005,
+  "reference_coef": 0.1,
+  "finetuning_mode": "heads",
+  "categories": {
+    "ordinary": 12,
+    "expert": 8,
+    "history": 4
+  },
+  "reference": "Independent frozen reference pair; default public, never ExpertOpponent.pair",
+  "source_quality": "Q2 biased weak script opponent; no expert BC or human replay imported",
+  "finalized_for_execution": false,
+  "limitations": "Prepared method, no training yet; mixed data and objective choices are not a single-factor ablation. Worker formation follows existing loose settings, not tight tactical fixtures.",
+  "rules_audit": {
+    "maps": {
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-153.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-130.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-114.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-066.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-149.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-060.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-126.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-154.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-080.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-102.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-093.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-death-cloud-03.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-death-cloud-01.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-retaliation-bait-02.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-death-cloud-02.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-retaliation-bait-01.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-110.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-074.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-123.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-039.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-105.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-054.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-160.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-044.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-094.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-138.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-010.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-023.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-118.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-181.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-124.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-101.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-dragon-breath-02.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-retaliation-bait-03.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-death-cloud-00.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-139.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-083.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-034.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      },
+      "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-037.vmap": {
+        "neutral_heroes": 4,
+        "primary_and_secondary_zero": true
+      }
+    },
+    "worker_random_obstacles": 0,
+    "mana_min": 0,
+    "mana_max": 0,
+    "formation": "Existing worker default loose; tight_formation_chance not forwarded",
+    "active_magic_supported": false,
+    "arbitrary_hex_positions_supported": false
+  }
+}

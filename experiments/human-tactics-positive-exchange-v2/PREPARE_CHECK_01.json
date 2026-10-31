@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "python_sources_compiled": 11,
+  "shell_syntax": true,
+  "default_launcher_plan": {
+    "mode": "plan-only",
+    "games": 16,
+    "seeds": [
+      2026111801,
+      2026111802
+    ],
+    "roles": [
+      "attacker",
+      "defender"
+    ],
+    "policies": [
+      "teacher",
+      "positive-exchange"
+    ],
+    "scenarios": [
+      0,
+      1
+    ],
+    "optimizer_steps": 0,
+    "bc_eligible": false,
+    "frozen_artifacts": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/FROZEN_SOURCES.json": "7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/PREREGISTRATION.md": "2b1ef5147d9d5c1c58d3a076246273da75d6551b147989f289166c1a5cba7c07",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/audit_native.py": "6557b006f23bdaa63324ed1821b28af0f52cb98d63919552e68aaa8f52323cd4",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/check_prepare.py": "813369b904f7357ba2a81b8ceb45ce8d5d010cdbf64c6fdd3e7a59cc7a050008",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/cpu_review.py": "9b8a7d593896fb2ddf03f142e4a91c93f462bc912d908c8f41c1b171ee8b4886",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/event_audit.py": "2402686201a5d44925bf1d7eb9b1f0ed7f24372f722471033e3491f4db0a55f6",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/events_provenance.py": "a5c51dec170882b4cc72573609d9fe8c276a351a83869d31020251a8e24ece48",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/experts_events.py": "bab325ac375fa1c7b290ebed503862dfb94c34321a0c7ff1e25a323e973d1ddb",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/launch.py": "c9840737df83439d627da4e3cf0bdec34089837a9d64701597060fb51892be44",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/prepare_events_worker.py": "73c2008f68413480de7a21cda6b0303074e020ba667d2165213a9bcaa07aa121",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run-events-lab.sh": "92b266fd598db0b808d036a59b30b3c9ea23e1e7b34e87c222cda95c851521b5",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run_episode.py": "6613a80edd9d3f67170deda1983caf04f41a2e1d52438ddd26659572e2f70efc",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run_pilot.py": "17d911452acbbe687f4b10896c02150b9eb742108c8b533d83c2faf7085b5f44",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/scenarios.json": "a2ab14d3853865e9b6a900cce13bbc335af7f1f8c586fc0177df478bac7b3c42",
+      "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/visible_exchange.py": "ee3435a83369ff799534b3ce99fe3b92688e713e542d98db18e2f873d0f13801",
+      "/mnt/g/Heroes3-AI-Lab/research/battle_outcome_audit.py": "d3304239001e4c83a0ada242a90b0c7ae1b6072ebde9c92a228d4dc370ed27b7",
+      "/root/heroes3-ai-lab-events-v2/data/vcmi/Mods/ML/Content/heroes.json": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+      "/root/heroes3-ai-lab-events-v2/onnxruntime/lib/libonnxruntime.so": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlclient.so": "a1f288a2ed50dc70469bc21e58d5506592a491cb134db5eb2f97914e91974f82",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlserverplugin.so": "50091d0b3f1c8d4c5b1d3158e553370e89f640ea2ef616d7ae8b261be058490f",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libvcmi.so": "a3516f9dd4749558a8a9cff72a76a319099d8d2c2790e659191e4c5472cfebf6",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/vcmiserver": "c6bd532bc5da513ade18c0eacd420b7db1e7250e92320b5646b85d72cfd44e88",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/connectors/rel/connector_v15.so": "f7d2426d0886fee4ef043e79ad2dcb0ea22d3d23c63648ecc5fbce8cfe14c893",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/connectors/rel/exporter_v15.so": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/__init__.py": "4bbd4a442823923d12d50e86b453e732b28ddf77e26de2434635d9ffb89c5464",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/decode.py": "75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/pyconnector.py": "3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/test_helper.py": "7afff489c0c3bab9e8e204fe8c489d1d44b29021ea3d3675fc06c6d4f12acafe",
+      "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/vcmi_env.py": "cd609f1ac8bb0224e63ba473dec1b8b3363771bad33e31e4cd9dee16ee205ae6",
+      "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-00.vmap": "51c61d237d7958c7e195357b1d0cd026b17c1f7c7988c7dd92ddd6b7f2e3b7a3",
+      "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-01.vmap": "60a51ac219a515a39da1435522894842e5f368c38c2bc582e5cb81608c115aad"
+    }
+  },
+  "no_native_run_directory": true,
+  "manifest_sha256": "7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c"
+}

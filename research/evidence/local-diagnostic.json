@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-13",
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i7-14700KF",
+    "NumberOfCores": 20,
+    "NumberOfLogicalProcessors": 28
+  },
+  "ramBytes": 34163888128,
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200",
+    "FreePhysicalMemory": 20762884
+  },
+  "disks": [
+    {
+      "DriveLetter": "G",
+      "SizeRemaining": 86956986368,
+      "Size": 536870907904
+    },
+    {
+      "DriveLetter": "F",
+      "SizeRemaining": 206538285056,
+      "Size": 303967178752
+    }
+  ],
+  "vcmiHead": "0883081b31dc97f326075f7b0326abaa8161b18e",
+  "vcmiStatus": null,
+  "heroesExe": {
+    "Algorithm": "SHA256",
+    "Hash": "55DE13886018C220B6F2FA3106F9C620CB7F682B47BB73CFE82064D8B501CDBE",
+    "Path": "F:\\heroes3\\Heroes3.exe"
+  },
+  "gameReadOnly": true,
+  "engineBuildRun": false,
+  "trainingRun": false
+}

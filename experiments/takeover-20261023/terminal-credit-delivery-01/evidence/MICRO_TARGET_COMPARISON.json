@@ -1,0 +1,29 @@
+{
+  "same_native_data_before_first_differing_update": {
+    "admitted-0": {
+      "arrays": true,
+      "raw": true
+    },
+    "admitted-1": {
+      "arrays": true,
+      "raw": true
+    },
+    "suffix": {
+      "arrays": true,
+      "raw": true
+    }
+  },
+  "all_common_data_exact": true,
+  "extension_eligible_workers": 16,
+  "target_changed_rows": 253,
+  "target_max_abs_difference": 0.9555966854095459,
+  "update62_parameter_difference": {
+    "changed_tensors": 182,
+    "l2": 0.0313002843649799,
+    "max_abs": 0.0006112456321716309
+  },
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "strength_improvement_claim": false
+}

@@ -1,0 +1,31 @@
+{
+  "structurally_valid": false,
+  "legal_actions_complete": true,
+  "normal_terminal": true,
+  "bc_exploratory_eligible": false,
+  "bc_q3_eligible": false,
+  "errors": [
+    "bundle.decisions[0].action_origin: schema enum mismatch",
+    "decision-0: video-guessed or unsupported action origin",
+    "decision-0: human trace lacks recorded human action"
+  ],
+  "unknown": [],
+  "q3_denials": [
+    "Synthetic validator fixture cannot enter training",
+    "Source not verified; source kind/name alone grants no expert quality",
+    "Below Q3; exploratory Q2 must not be called verified expert learning",
+    "Human source lacks identity/reference/permission",
+    "source: no evidence artifact",
+    "tactic: no evidence artifact"
+  ],
+  "samples": 15,
+  "source_kind": "human_structured",
+  "trajectory_origin": "human_recorded",
+  "quality_tier": "Q2",
+  "input": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/synthetic-video-guess-example.json",
+  "input_sha256": "af709be1cd031752167e133931dc5c3f782f9c1072d185f1d066954979e95bfc",
+  "legacy_adapted": false,
+  "mode": "audit",
+  "evidence_limit": "This gate verifies records and hashed audit attestations; it does not itself simulate/replay the battle or authenticate a human identity.",
+  "passed": false
+}

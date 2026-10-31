@@ -1,0 +1,16 @@
+{
+  "status": "prepared-not-executed",
+  "files": {
+    "DERIVATION.json": "6350cf90d6de451338e37dc2c4ffc569503be38aeaee1eaa45c343fa7c8553e1",
+    "derive_restore.py": "8d53ce4bbb0f1132267a6c217c68595e1f1f03b862e0a3863b776d1ca4006fc6",
+    "leases.py": "fd3f808b612067180636555df3237dd89693e2f76b375598eed17075f447edc7",
+    "path-adaptation.diff": "efb09819ec82fa4d8494e971d0841182bec639ca536808a423367d8800a0ba6c",
+    "PLAN.md": "7e50e01fb6d8324aa667cd2b188f404b60383794e923a32d0595b54dcf1a6a9d",
+    "qualify.py": "74c79ddc07fadbe124535a302edee6ac0b2ac2eacf9492dd9b5d70eb66d17b2f",
+    "restore_learner_ubuntu.py": "6096cd59ad6d0bd53527535289734d6d456185e3060e071e918db59f3d0ad4a2"
+  },
+  "Torch_imported_for_preparation": false,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "native_games": 0
+}

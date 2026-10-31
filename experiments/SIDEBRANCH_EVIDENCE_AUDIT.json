@@ -1,0 +1,517 @@
+{
+  "status": "passed_with_scope_limits",
+  "date": "2026-10-16",
+  "worktree": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1",
+  "commit": "5e3a7152d3ea8d3cc4626f4802480c3e50ac1fbf",
+  "audit_mode": "Read only; no games, GPU, training, source edits or large-data copies",
+  "episodes": 21,
+  "transitions": 401,
+  "record_chain_and_graph_checks": true,
+  "normal_terminal_outcomes": 21,
+  "human_actions": 0,
+  "native_event_records": 0,
+  "actor_origins": [
+    "model",
+    "script"
+  ],
+  "train_unique_states": 63,
+  "test_unique_states": 237,
+  "state_intersection": 0,
+  "training": {
+    "samples": 63,
+    "algorithm": "script-BC",
+    "device": "cpu",
+    "steps": 40,
+    "initial_nll": 23.518069585164387,
+    "final_nll": 16.13281019907149,
+    "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03",
+    "initial_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+  },
+  "independent_condition_pairs": 8,
+  "before": {
+    "wins": 4,
+    "battles": 8,
+    "mean_units_lost": 87.875
+  },
+  "after": {
+    "wins": 4,
+    "battles": 8,
+    "mean_units_lost": 93.125
+  },
+  "paired_total_units_lost_increase": 42,
+  "paired_mean_units_lost_increase": 5.25,
+  "replay": {
+    "verified_against_saved_raw_data": true,
+    "new_reexecution_performed": false,
+    "original": "train-0-attacker.json",
+    "replay": "replay.json",
+    "transitions": 12,
+    "all_pre_and_post_graphs_actions_and_terminal_equal": true
+  },
+  "sample_integrity_verified": true,
+  "frozen_code_files_verified": 19,
+  "current_vs_frozen_code_differences": [
+    "audit_split.py"
+  ],
+  "manifest_artifacts": [
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/comparison.json",
+      "sha256": "153cba0ec00538894c1d4ec59b118e19f7ed8fb4feb7fe6fd0638fe88c8c386c",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/protocol.json",
+      "sha256": "76dc70108bdfc88076c7bc7fabcc722a774c9e920cb6b6fdae0b7e87e26557c1",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/scenarios.json",
+      "sha256": "81d072df5f2d4796802e087f6ac1e154513ea50a2b7c38a05482a531f89e3a89",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/policy-freeze.json",
+      "sha256": "af0c15a14a67aec380322f4c9f08d435748dfdc26cdd96190809849da4217dfc",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/script-bc.training.json",
+      "sha256": "7d4de136b7495fc653a7e46e0198e922f2d8acbdbfe1c38dbc9677000888891d",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/rule-policy-check-v11.json",
+      "sha256": "9ba7dc141500b473033745397333793ee70cc69bb64d12c32bc42abd3d3fe0a2",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/ppo-smoke-v11.json",
+      "sha256": "7d710af63a348faf0c6550a68ae70cecc71ad0ae3e448907bc32c3127d0a80bc",
+      "packaged_copy_matches": true
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/mixed-curriculum.json",
+      "sha256": "f352d322ee9d0d7ccf087879441554b3b28099cbd0dc6aadea64877ae3d822ee",
+      "packaged_copy_matches": true
+    }
+  ],
+  "episodes_checked": [
+    {
+      "name": "after-2-attacker-BattleAI.json",
+      "sha256": "fb6091a60f54ee18a99e86461205a90b940dfc5197d4bdbab0c9e1bdd413ab47",
+      "split": "test",
+      "records": 18,
+      "normal": true,
+      "success": true,
+      "units_lost": 38,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-2-attacker-MMAI_MODEL.json",
+      "sha256": "6eda0ef2e805c688abf1ac6b0c2333858eda70d3f2c133719fb1d5e055c29aa9",
+      "split": "test",
+      "records": 25,
+      "normal": true,
+      "success": true,
+      "units_lost": 97,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-2-defender-BattleAI.json",
+      "sha256": "eb59ce62ce54e78e2ac2c41462c33cf4125f58926db259068ffc9d50f8b86e59",
+      "split": "test",
+      "records": 20,
+      "normal": true,
+      "success": true,
+      "units_lost": 83,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-2-defender-MMAI_MODEL.json",
+      "sha256": "a259fc9ea96916055e55c72e9889016387ec244f1987b0f43baea997eb11b6f9",
+      "split": "test",
+      "records": 15,
+      "normal": true,
+      "success": false,
+      "units_lost": 98,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-3-attacker-BattleAI.json",
+      "sha256": "65b818ed25cd35384e90adae7d318cf064c2e85f3bf517ebef6f2affc49ad5ef",
+      "split": "test",
+      "records": 18,
+      "normal": true,
+      "success": false,
+      "units_lost": 108,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-3-attacker-MMAI_MODEL.json",
+      "sha256": "9f69bf85ac0f25208fda1ab42efb8df838765d64ed51e1f7048f0c7bbff3e1d0",
+      "split": "test",
+      "records": 28,
+      "normal": true,
+      "success": false,
+      "units_lost": 108,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-3-defender-BattleAI.json",
+      "sha256": "92ecb0c7927211831ec36f1dd4e5bd0d9e9903571da49686d9d1d42f491f402b",
+      "split": "test",
+      "records": 16,
+      "normal": true,
+      "success": true,
+      "units_lost": 105,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "after-3-defender-MMAI_MODEL.json",
+      "sha256": "0b579aa60ef4e79b80f9ae9289a9f77a9fe3ad1218f4d05f130f41d261240ae3",
+      "split": "test",
+      "records": 24,
+      "normal": true,
+      "success": false,
+      "units_lost": 108,
+      "model_sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+    },
+    {
+      "name": "before-2-attacker-BattleAI.json",
+      "sha256": "13ffe04cb945f74fab17fdc1a5a6d540778d6e96e247ff3018cde3a74e1c4215",
+      "split": "test",
+      "records": 18,
+      "normal": true,
+      "success": true,
+      "units_lost": 38,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-2-attacker-MMAI_MODEL.json",
+      "sha256": "90a2ab78ab66591f05a6cc15379b34f2fd0213c1eb65969271010405b36a5695",
+      "split": "test",
+      "records": 19,
+      "normal": true,
+      "success": false,
+      "units_lost": 98,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-2-defender-BattleAI.json",
+      "sha256": "a41af9d02274913fe13b5bda5f51a2fd0e4cb93b3a783ffd51da6aa12d4bd4e8",
+      "split": "test",
+      "records": 20,
+      "normal": true,
+      "success": true,
+      "units_lost": 83,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-2-defender-MMAI_MODEL.json",
+      "sha256": "014ecd537b59d09bd91e3a5a5db46e56850179a7aa69a934cc495974cc0e8b2b",
+      "split": "test",
+      "records": 21,
+      "normal": true,
+      "success": false,
+      "units_lost": 98,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-3-attacker-BattleAI.json",
+      "sha256": "c754f83f3c46c8c4b05e048a5e7c17286623c3239482508f3b7a77f813d799b9",
+      "split": "test",
+      "records": 15,
+      "normal": true,
+      "success": false,
+      "units_lost": 108,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-3-attacker-MMAI_MODEL.json",
+      "sha256": "6e7a30564ca1ea8e5262f22f49de556e3e1886a7e551bd830919fbd00f9bff77",
+      "split": "test",
+      "records": 28,
+      "normal": true,
+      "success": false,
+      "units_lost": 108,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-3-defender-BattleAI.json",
+      "sha256": "31bfde6b36907e887756b04e85aa0f62aa4a46de5c4bc2e1787e8e947bd4deab",
+      "split": "test",
+      "records": 17,
+      "normal": true,
+      "success": true,
+      "units_lost": 104,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "before-3-defender-MMAI_MODEL.json",
+      "sha256": "390a4d0fef8957dc7fc6e5264b334bcf83355b3faa452be325ccb9a7be739f85",
+      "split": "test",
+      "records": 24,
+      "normal": true,
+      "success": true,
+      "units_lost": 66,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "replay.json",
+      "sha256": "8b5f41033d4eb2a4edd40467426207fb1654c423237cf59dace51260f1db81d0",
+      "split": "train",
+      "records": 12,
+      "normal": true,
+      "success": false,
+      "units_lost": 60,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "train-0-attacker.json",
+      "sha256": "9b1a50bdf381b639f28a7d11708ad2df520ba9b0428f9edb95e949fc57a4efed",
+      "split": "train",
+      "records": 12,
+      "normal": true,
+      "success": false,
+      "units_lost": 60,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "train-0-defender.json",
+      "sha256": "88b1c6a38a0eeb968be8f303c5fea83aca96fe7b2ef3308da6f4f9a6c2116fad",
+      "split": "train",
+      "records": 16,
+      "normal": true,
+      "success": false,
+      "units_lost": 60,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "train-1-attacker.json",
+      "sha256": "7707b27c3d0683b1ea53e4b3ebcd9e4534f3336515a06a35ac09a04fa1d5c7f6",
+      "split": "train",
+      "records": 21,
+      "normal": true,
+      "success": false,
+      "units_lost": 73,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    {
+      "name": "train-1-defender.json",
+      "sha256": "96a88f76b9b2dab36b084a75cfbc46b8b0ad82c903c70b51f74560dc0d5ee129",
+      "split": "train",
+      "records": 14,
+      "normal": true,
+      "success": false,
+      "units_lost": 73,
+      "model_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    }
+  ],
+  "limitations": [
+    "Only two related local test families and eight paired conditions, not broad independence or population superiority",
+    "No recorded human actions; script labels provisional and unapproved as human expert actions",
+    "Native collateral and retaliation events absent; graph multi-target proxy is not actual tactical success",
+    "Recorded replay evidence verified offline; this audit did not rerun the engine",
+    "state_after is next decision for the same player and may include intervening opponent actions",
+    "Array shape/dtype metadata essential for empty edge arrays",
+    "Exact observed-state disjointness does not prove source-level generalization",
+    "Some postprocessing source differs from frozen execution snapshot; use frozen-code hashes when reproducing"
+  ],
+  "all_raw_frozen_artifacts": {
+    "unique_count": 45,
+    "current_hashes_verified": 44,
+    "current_mismatches_with_matching_archived_code": [
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/audit_split.py",
+        "expected": "2e5c0060676c1bc0b83c124357f80b6579b02eede4b2e4497d51589035f03059",
+        "current": "7b236e97c8161180d1ebdf292019bd59da5f9b39094ed7a2c41c295d0bc97d16",
+        "frozen_snapshot_matches": true
+      }
+    ],
+    "verified_artifacts": [
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/scenarios.json",
+        "sha256": "81d072df5f2d4796802e087f6ac1e154513ea50a2b7c38a05482a531f89e3a89"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/runs/pilot-04/script-bc.pt",
+        "sha256": "8a31f7aa8fc71bb65cd4cde4b8bd0fd67238596a97d82425b1a08d891ddf8b03"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/bootstrap.py",
+        "sha256": "19f4af6ca59564b31398d930e49e10751d1e92797ff00e0133d1b85cd8d08370"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/curriculum.py",
+        "sha256": "c7265507e7aef246ea526a899c3c2cd62cbe0ce75bb5f509e9ff507fbb4be006"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/episode.py",
+        "sha256": "c19f3a59b625a86807db51068abfe927a6cb212df5577ab7d21520e52ca38e48"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/experiment.py",
+        "sha256": "0272505e6b0993541af24bb76c063acf81aabd5bdeda8d9a456c711195b02b42"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/import_existing.py",
+        "sha256": "18e20cf05987d3d30dd215949d87a9ef295fc09eb499abf200995be8ff13c549"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/opponents.py",
+        "sha256": "ae7434f485b184af20dbdb8e5fca229a3bb5178d13155889e6ac355ac6453344"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/package_evidence.py",
+        "sha256": "3c7de6a3f027774661877a7078b3a307e7b4b917e868adf2e151064f4a395b29"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/ppo_adapter.py",
+        "sha256": "46493814b876c10a39d1d07ae3d4308e06c8b1ae03fbec9609d6a3533391a9ca"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/protocol.py",
+        "sha256": "1499278872e67024ca818cd2f41280bfc046f156edc01f9f2357047bf05b002b"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/registry.py",
+        "sha256": "024fa1d4d7244c630ba56bfd1f64517d5251884ba02943c065c404dc5a9ebaab"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/regression.py",
+        "sha256": "4761c7d484cd03f52893b8c54a7725cfda137f9e050a59be3b6e20bb43ce8754"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/scenarios.py",
+        "sha256": "6a1b9cfab619e70f7b7306fa148194c71aefa7aade537ee45c6adb7e0e34318e"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/tactic_probe.py",
+        "sha256": "e30a0345bc2c46bb301fcb040a367b1befba581529339b5af063f0090ee875f6"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/test_curriculum.py",
+        "sha256": "3909472336591f08bcd415be136b127da86093c654e9ca5115bb11d95b0f5fb7"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/test_pipeline.py",
+        "sha256": "7740a200bcd346eb7349b12934d5f7894c2538e758409e346ce0fa8da6b29878"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/test_protocol_layout.py",
+        "sha256": "8fea937a2fe407184f571cad94c3169ac3b4e27c29c4d1baf10ffc22c20dd385"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/train.py",
+        "sha256": "67c4ee0805572ea3fefc78bcc62811db96fc3fc69360c82ab3f9794d423b825f"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab-worktrees/human-expert-learning-v1/tools/human_expert/validate_evidence.py",
+        "sha256": "387c74fc2048b352e4d7de8a19ae88b01dc8c1fd6e5a1a3884c3b4e5f278109d"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/battle_features.py",
+        "sha256": "12f4af2cf215351d50ca8349ab4335f3cc31a1e60b76969a052a0bc57d7216c5"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/decision_model.py",
+        "sha256": "e575adac208d2509d14a16cb2f7828eb3c708f1e6c3b6d3ae1d8dd2b69cedcb2"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/evaluate-battles.py",
+        "sha256": "bfe7f266a9ef3665b2f04640512de3088b67e0e0a50bc2828f85f514a7dca0e3"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/evaluate-policy.py",
+        "sha256": "347ab3e157812cd7bdb1df6b5e5baa512c3ddeffa7cbbd61e29e0e48a5bff019"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/evaluation_provenance.py",
+        "sha256": "3f195c726dcd29d5229d550ce9c0c334c998d739201c699c3642cf0897ae47b9"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/lab-env.py",
+        "sha256": "bdb325ee5cad7d5df952a35f7d357ef9f3bad4d624fe5bd2233b46a11f0b0dee"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/observation_digest.py",
+        "sha256": "c6010c7dca141957628731b772126411dbc536cae11e8fa320a42e486dea2d10"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/prepare-worker.py",
+        "sha256": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py",
+        "sha256": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485"
+      },
+      {
+        "path": "/mnt/g/Heroes3-AI-Lab/research/run-lab.sh",
+        "sha256": "a5ba679e61c27f244143b90645a4baf4c54267a167ebcc4f797dee997a4301d4"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/he-pipeline-v1/heldout-0.vmap",
+        "sha256": "bf3ef164dffbe946fee80fd5333cabd228b319218c19c0da96ba55100a0f1062"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Mods/ML/Content/heroes.json",
+        "sha256": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/onnxruntime/lib/libonnxruntime.so",
+        "sha256": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "sha256": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "sha256": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "sha256": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so",
+        "sha256": "8beb54df4e29651f2bfff902a353847485cd2431fc5ddd1019ba399e398a6ba0"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/exporter_v15.so",
+        "sha256": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-attacker.onnx",
+        "sha256": "62adf45ea34a323d72e9ce953a0c8b6740e60c3cec3651f282bfacee785d3151"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-defender.onnx",
+        "sha256": "73bca79446ebdcab01e47fbbfada0162380df907bc86b19a21d0c502500cfaa9"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/he-pipeline-v1/heldout-1.vmap",
+        "sha256": "3b380f6e9347717b2330855c28f055cb56a3b0f48ea0f69cbf3200255d0b73d8"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+        "sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-dragon-breath-00.vmap",
+        "sha256": "002ad30a666ff64611f5057fd722ad893883165aefc22cce8b4d26ec824ec571"
+      },
+      {
+        "path": "/root/heroes3-ai-lab/data/vcmi/Maps/lab/human-v1-dragon-breath-01.vmap",
+        "sha256": "821df926916c9af8dfd10bd4db9bd17a9fc786b10cdc1cd07494603f825a3196"
+      }
+    ]
+  },
+  "actual_checkpoint_tensor_audit": {
+    "device": "CPU read-only load; no training or GPU calls",
+    "graph_and_value_tensors_unchanged": 642,
+    "changed_policy_head_tensors": 16,
+    "role_metadata_identical": true
+  },
+  "source_training_episode_hashes_verified": true
+}

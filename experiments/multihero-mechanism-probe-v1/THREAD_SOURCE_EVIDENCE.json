@@ -1,0 +1,47 @@
+{
+  "client/CServerHandler.cpp": {
+    "sha256": "00aec05dc1d74e88cb024e6c5e341aef438bd2a72a469797d735a2078015f229",
+    "lines": {
+      "205": "void CServerHandler::startLocalServerAndConnect(bool connectToLobby)",
+      "206": "{",
+      "207": "\tlogNetwork->trace(\"\\tLocal server startup has been requested\");",
+      "208": "#ifdef VCMI_MOBILE",
+      "209": "\t// mobile apps can't spawn separate processes - only thread mode is available",
+      "210": "\tserverRunner.reset(new ServerThreadRunner());",
+      "211": "#else",
+      "212": "\tif (settings[\"server\"][\"useProcess\"].Bool())",
+      "213": "\t\tserverRunner.reset(new ServerProcessRunner());",
+      "214": "\telse",
+      "215": "\t\tserverRunner.reset(new ServerThreadRunner());"
+    }
+  },
+  "client/ServerRunner.cpp": {
+    "sha256": "f9a7236d740cf26fa460ce934083d3083dba7c9d35a7cae3ba9ec2357244bf1c",
+    "lines": {
+      "38": "void ServerThreadRunner::start(bool listenForConnections, bool connectToLobby, std::shared_ptr<StartInfo> startingInfo)",
+      "39": "{",
+      "40": "\t// cfgport may be 0 -- the real port is returned after calling prepare()",
+      "41": "\tuint16_t port = settings[\"server\"][\"localPort\"].Integer();",
+      "42": "\tserver = std::make_unique<CVCMIServer>(port, true);",
+      "43": "\tlobbyMode = connectToLobby;",
+      "44": "",
+      "45": "\tif (startingInfo)",
+      "46": "\t{",
+      "47": "\t\tserver->si = startingInfo; //Else use default",
+      "48": "\t}",
+      "49": "",
+      "50": "\tstd::promise<uint16_t> promise;",
+      "51": "",
+      "52": "\tthreadRunLocalServer = std::thread([this, connectToLobby, listenForConnections, &promise]{",
+      "53": "\t\tsetThreadName(\"runServer\");",
+      "54": "\t\tuint16_t port = server->prepare(connectToLobby, listenForConnections);",
+      "55": "\t\tpromise.set_value(port);",
+      "56": "\t\tserver->run();",
+      "57": "\t});",
+      "58": "",
+      "59": "\tlogNetwork->trace(\"Waiting for server port...\");",
+      "60": "\tserverPort = promise.get_future().get();",
+      "61": "\tlogNetwork->debug(\"Server port: %d\", serverPort);"
+    }
+  }
+}

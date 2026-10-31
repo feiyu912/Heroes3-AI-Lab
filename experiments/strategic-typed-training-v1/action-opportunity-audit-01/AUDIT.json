@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "groups": {
+    "a": {
+      "rows": 2103,
+      "counts": {
+        "multiple_move_choices": 587,
+        "one_move_plus_stop": 1516,
+        "visible_threat_rows": 923,
+        "visible_threat_one_move_rows": 682
+      },
+      "one_move_fraction": 0.7208749405611032,
+      "multi_move_fraction": 0.2791250594388968,
+      "by_pair": [
+        {
+          "pair": 0,
+          "rows": 269,
+          "counts": {
+            "multiple_move_choices": 77,
+            "one_move_plus_stop": 192,
+            "visible_threat_rows": 8,
+            "visible_threat_one_move_rows": 5
+          }
+        },
+        {
+          "pair": 1,
+          "rows": 134,
+          "counts": {
+            "multiple_move_choices": 46,
+            "one_move_plus_stop": 88,
+            "visible_threat_rows": 8,
+            "visible_threat_one_move_rows": 6
+          }
+        },
+        {
+          "pair": 2,
+          "rows": 199,
+          "counts": {
+            "multiple_move_choices": 57,
+            "one_move_plus_stop": 142,
+            "visible_threat_rows": 44,
+            "visible_threat_one_move_rows": 36
+          }
+        },
+        {
+          "pair": 3,
+          "rows": 357,
+          "counts": {
+            "multiple_move_choices": 81,
+            "one_move_plus_stop": 276,
+            "visible_threat_rows": 272,
+            "visible_threat_one_move_rows": 210
+          }
+        },
+        {
+          "pair": 4,
+          "rows": 242,
+          "counts": {
+            "multiple_move_choices": 69,
+            "one_move_plus_stop": 173,
+            "visible_threat_rows": 5,
+            "visible_threat_one_move_rows": 4
+          }
+        },
+        {
+          "pair": 5,
+          "rows": 129,
+          "counts": {
+            "multiple_move_choices": 38,
+            "one_move_plus_stop": 91,
+            "visible_threat_rows": 7,
+            "visible_threat_one_move_rows": 6
+          }
+        },
+        {
+          "pair": 6,
+          "rows": 95,
+          "counts": {
+            "multiple_move_choices": 40,
+            "one_move_plus_stop": 55,
+            "visible_threat_rows": 70,
+            "visible_threat_one_move_rows": 38
+          }
+        },
+        {
+          "pair": 7,
+          "rows": 678,
+          "counts": {
+            "multiple_move_choices": 179,
+            "one_move_plus_stop": 499,
+            "visible_threat_rows": 509,
+            "visible_threat_one_move_rows": 377
+          }
+        }
+      ]
+    },
+    "b": {
+      "rows": 2467,
+      "counts": {
+        "multiple_move_choices": 646,
+        "one_move_plus_stop": 1821,
+        "visible_threat_rows": 1161,
+        "visible_threat_one_move_rows": 897
+      },
+      "one_move_fraction": 0.7381434941224159,
+      "multi_move_fraction": 0.26185650587758413,
+      "by_pair": [
+        {
+          "pair": 0,
+          "rows": 269,
+          "counts": {
+            "multiple_move_choices": 77,
+            "one_move_plus_stop": 192,
+            "visible_threat_rows": 8,
+            "visible_threat_one_move_rows": 5
+          }
+        },
+        {
+          "pair": 1,
+          "rows": 144,
+          "counts": {
+            "multiple_move_choices": 46,
+            "one_move_plus_stop": 98,
+            "visible_threat_rows": 8,
+            "visible_threat_one_move_rows": 5
+          }
+        },
+        {
+          "pair": 2,
+          "rows": 200,
+          "counts": {
+            "multiple_move_choices": 57,
+            "one_move_plus_stop": 143,
+            "visible_threat_rows": 45,
+            "visible_threat_one_move_rows": 37
+          }
+        },
+        {
+          "pair": 3,
+          "rows": 266,
+          "counts": {
+            "multiple_move_choices": 61,
+            "one_move_plus_stop": 205,
+            "visible_threat_rows": 157,
+            "visible_threat_one_move_rows": 132
+          }
+        },
+        {
+          "pair": 4,
+          "rows": 242,
+          "counts": {
+            "multiple_move_choices": 69,
+            "one_move_plus_stop": 173,
+            "visible_threat_rows": 5,
+            "visible_threat_one_move_rows": 4
+          }
+        },
+        {
+          "pair": 5,
+          "rows": 136,
+          "counts": {
+            "multiple_move_choices": 43,
+            "one_move_plus_stop": 93,
+            "visible_threat_rows": 7,
+            "visible_threat_one_move_rows": 5
+          }
+        },
+        {
+          "pair": 6,
+          "rows": 95,
+          "counts": {
+            "multiple_move_choices": 40,
+            "one_move_plus_stop": 55,
+            "visible_threat_rows": 70,
+            "visible_threat_one_move_rows": 38
+          }
+        },
+        {
+          "pair": 7,
+          "rows": 1115,
+          "counts": {
+            "multiple_move_choices": 253,
+            "one_move_plus_stop": 862,
+            "visible_threat_rows": 861,
+            "visible_threat_one_move_rows": 671
+          }
+        }
+      ]
+    }
+  },
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-00/a/native/agent/typed-broker.jsonl": "84d5118e092fcbfb5178749131aaef58d0a66fd06494b382a31e0f36abdf1896",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-01/a/native/agent/typed-broker.jsonl": "611a73037233515f782b6d914af832e2122f9fc8c659a0905d2193fd6090250e",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-02/a/native/agent/typed-broker.jsonl": "9199f4a7f79d86e1cd70b3dea0eb14d64936304eb0eafc8458d9467d4b4c505e",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/a/native/agent/typed-broker.jsonl": "8cbef917639f4ff5ac7316c6ace4292ceb05267b36539120dd9670d5c6b3a376",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-04/a/native/agent/typed-broker.jsonl": "01cf511e0e113cdf0f8cbce823ba81f8e39c38e1dbcaeded46f293e97cb019d8",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-05/a/native/agent/typed-broker.jsonl": "f0c0b02d5f2079f06f0ec74ec280875d8a7d00e5bdd1d066d94f85070c7197b5",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-06/a/native/agent/typed-broker.jsonl": "ae70266f724e1b8b6d14fe6ed249a7e8d7213fb01f44f1956c5c53d6f3b38a63",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/a/native/agent/typed-broker.jsonl": "1cde5eea1eb4b71872f7384cb63d52a6d36725d9630789cdc6a3cdd8ef022f3b",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-00/b/native/agent/typed-broker.jsonl": "b4bd86cb3aab40af7e3aa4431e8060b0f3b3f9f6064bb092872c9be53b927c92",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-01/b/native/agent/typed-broker.jsonl": "109cca7eca32380821b3c550817344d1aa50b2c80d9e7ed1f51ad7941e5964bc",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-02/b/native/agent/typed-broker.jsonl": "d7ed7bfeb8e0dc544d4adff88d81d31436cf4ffbac394b57ecdc79c5af5f9859",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/b/native/agent/typed-broker.jsonl": "382bf371cf289c208e20bdedd961742e0ceebf64926bcb329801d9aa929cddde",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-04/b/native/agent/typed-broker.jsonl": "807a6c5e2ff2a1ccc0c05a9f644fa18dfb29f0add48fd930158be6844d187e8d",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-05/b/native/agent/typed-broker.jsonl": "78ad9c1f93ce127d00a4964c7335dec7e4922816be80844fc8e8793247876ea9",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-06/b/native/agent/typed-broker.jsonl": "dc539f43a1b62fb626c62426c83264a31f8af6b6cfa2036299151d6a6b370108",
+    "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/b/native/agent/typed-broker.jsonl": "c5f81a7078f44adece829c1858def941876be7d72fc52b931a4f3b556e8e57af"
+  },
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "training_samples": 0,
+  "limitation": "A one-move candidate set is observed evidence; it does not alone prove commitment pruning caused that row. Move-plus-stop is mathematically a free PPO row, but offers no alternative destination. No proposal to remove target commitment without a looping regression."
+}

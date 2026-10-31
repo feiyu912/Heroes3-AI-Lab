@@ -1,0 +1,37 @@
+{
+  "source": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-3-episode-0-4edxrk4r/rollout.jsonl",
+  "source_sha256": "327f6b6fa1761149c98d3d2620aa5f1335982fec7a928c01d5cb6aba6f5c6313",
+  "source_rows": 11823,
+  "script_sha256": "7231aab5142d174f9fa530e3007b19bb759fc125ee357f22273ba19914c5eb52",
+  "command": [
+    "/root/heroes3-ai-lab/venv/bin/python",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py",
+    "--map",
+    "Maps/adv/takeover-v2-train-01-mines",
+    "--red",
+    "DirectorAI",
+    "--blue",
+    "EmptyAI",
+    "--seed",
+    "2026101930",
+    "--seconds",
+    "100",
+    "--agent-dir",
+    "/root/heroes3-ai-lab/workers/strategy-agent-runs/exact-replay-ek8xf7e7",
+    "--tag",
+    "replay-diagnostic-02"
+  ],
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/exact-replay-ek8xf7e7",
+  "config": {
+    "source": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-3-episode-0-4edxrk4r/rollout.jsonl",
+    "out": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/replay-diagnostic-02",
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "DirectorAI",
+    "blue": "EmptyAI",
+    "seed": 2026101930,
+    "seconds": 100,
+    "max_decisions": 0,
+    "max_day": 175
+  },
+  "limitation": "Exact original-action diagnostic replay; no gradient updates or effectiveness claims"
+}

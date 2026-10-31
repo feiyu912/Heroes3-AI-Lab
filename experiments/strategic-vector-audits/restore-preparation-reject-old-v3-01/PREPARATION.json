@@ -1,0 +1,9 @@
+{
+  "preparation_passed": false,
+  "game_started": false,
+  "uses_shared_pool": false,
+  "restore_test_passed": false,
+  "error": "AssertionError('Fresh original native log does not prove the new server battle barrier ran; v6/v7 are unsupported')",
+  "context": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-audits/prepare_native_turnstart_restore.py\", line 94, in main\n    report=prepare(args.original_agent,args.checkpoint,args.out,args.server_manifest,args.source_tree)\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-audits/prepare_native_turnstart_restore.py\", line 41, in prepare\n    assert marker in log,'Fresh original native log does not prove the new server battle barrier ran; v6/v7 are unsupported'\nAssertionError: Fresh original native log does not prove the new server battle barrier ran; v6/v7 are unsupported\n",
+  "preparer_sha256": "49234da93a95bd72d39c14492794cd8881bfc20932191c4fdb8e64fcb3c6a496"
+}

@@ -1,0 +1,27 @@
+{
+  "execute": false,
+  "driver_sha256": "b5a2ce34750647b0bc37719c70f807bfe066db496312744b82fb2f347eab8de6",
+  "candidate_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "flow_epoch": "learned-economy-free-existing-stock-prewindow-v2",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "action_contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "nine_payload_inputs_checked": true,
+  "candidate_files": {
+    "AI/DirectorAI/CDirectorAI.cpp": "10d84f3f68712ad1a8fefe7be7c6bc4d63aca1b44602e4aa5d251e4aaf207ae7",
+    "AI/DirectorAI/CDirectorAI.h": "ce3bc61ca062ed592643a0f2852c70d26bf346a299b8b1e48b06ea4ffdfdd2df",
+    "AI/DirectorAI/TypedPolicyProtocol.h": "41e657ef23f74b56402ba1985b3311a931f0cbf660574a785242af86174f974c",
+    "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+    "server/CGameHandler.cpp": "3b05d16d3cf3b8977dfa501e7f65c935b6f2ea167e8b8eab734c7869952e47af",
+    "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "client/NetPacksClient.cpp": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+    "client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+  },
+  "lock_order": [
+    "gpu learner NB",
+    "pool NB"
+  ],
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "restore_requires_recompile": true
+}

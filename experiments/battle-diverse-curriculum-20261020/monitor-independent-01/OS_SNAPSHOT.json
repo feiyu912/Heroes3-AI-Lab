@@ -1,0 +1,2068 @@
+{
+  "captured_UTC": "2026-10-20T14:05:09.250353+00:00",
+  "read_window_seconds": 0.12654409500009933,
+  "launcher_pid": 305,
+  "learner_pid": 400,
+  "worker_pids": [
+    3057,
+    3093,
+    3132,
+    3171,
+    3207,
+    3246,
+    3309,
+    3345,
+    3381,
+    3417,
+    3456
+  ],
+  "worker_count": 11,
+  "locks": {
+    ".gpu-learner-lock": {
+      "device_inode": "08:30:841516",
+      "actual_kernel_record": "4: FLOCK  ADVISORY  WRITE 305 08:30:841516 0 EOF",
+      "holder_pid": 305
+    },
+    ".pool-lock": {
+      "device_inode": "08:30:674895",
+      "actual_kernel_record": "3: FLOCK  ADVISORY  WRITE 305 08:30:674895 0 EOF",
+      "holder_pid": 305
+    }
+  },
+  "owned_process_tree": [
+    {
+      "pid": 305,
+      "ppid": 304,
+      "comm": "python3",
+      "cmdline": [
+        "/usr/bin/python3",
+        "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/run.py",
+        "--out",
+        "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02",
+        "--execute",
+        "--evaluate"
+      ],
+      "memory": {
+        "Rss_KiB": 52824,
+        "Pss_KiB": 42624,
+        "Private_Clean_KiB": 6912,
+        "Private_Dirty_KiB": 35052,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 305,
+          "comm": "python3"
+        },
+        {
+          "tid": 373,
+          "comm": "python3"
+        },
+        {
+          "tid": 374,
+          "comm": "python3"
+        },
+        {
+          "tid": 375,
+          "comm": "python3"
+        },
+        {
+          "tid": 376,
+          "comm": "python3"
+        },
+        {
+          "tid": 377,
+          "comm": "python3"
+        },
+        {
+          "tid": 378,
+          "comm": "python3"
+        },
+        {
+          "tid": 379,
+          "comm": "python3"
+        },
+        {
+          "tid": 380,
+          "comm": "python3"
+        },
+        {
+          "tid": 381,
+          "comm": "python3"
+        },
+        {
+          "tid": 382,
+          "comm": "python3"
+        },
+        {
+          "tid": 383,
+          "comm": "python3"
+        },
+        {
+          "tid": 384,
+          "comm": "python3"
+        },
+        {
+          "tid": 385,
+          "comm": "python3"
+        },
+        {
+          "tid": 386,
+          "comm": "python3"
+        },
+        {
+          "tid": 387,
+          "comm": "python3"
+        },
+        {
+          "tid": 388,
+          "comm": "python3"
+        },
+        {
+          "tid": 389,
+          "comm": "python3"
+        },
+        {
+          "tid": 390,
+          "comm": "python3"
+        },
+        {
+          "tid": 391,
+          "comm": "python3"
+        },
+        {
+          "tid": 392,
+          "comm": "python3"
+        },
+        {
+          "tid": 393,
+          "comm": "python3"
+        },
+        {
+          "tid": 394,
+          "comm": "python3"
+        },
+        {
+          "tid": 395,
+          "comm": "python3"
+        },
+        {
+          "tid": 396,
+          "comm": "python3"
+        },
+        {
+          "tid": 397,
+          "comm": "python3"
+        },
+        {
+          "tid": 398,
+          "comm": "python3"
+        },
+        {
+          "tid": 399,
+          "comm": "python3"
+        }
+      ],
+      "native_mapped_libraries": []
+    },
+    {
+      "pid": 400,
+      "ppid": 305,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/train_last_graph.py",
+        "--checkpoint",
+        "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+        "--output",
+        "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/training.json",
+        "--models-dir",
+        "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/models",
+        "--freeze",
+        "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/FREEZE.json",
+        "--mode",
+        "last",
+        "--workers",
+        "16",
+        "--updates",
+        "30",
+        "--rollout",
+        "32",
+        "--epochs",
+        "2",
+        "--microbatch",
+        "8",
+        "--no-auto-microbatch",
+        "--learning-rate",
+        "1e-6",
+        "--head-learning-rate",
+        "1e-5",
+        "--gamma",
+        "1",
+        "--step-cost",
+        "0",
+        "--shaping",
+        ".5",
+        "--entropy-coef",
+        ".005",
+        "--seed",
+        "2026102016",
+        "--native-opponent-device",
+        "cpu",
+        "--first-battle",
+        "--rotate-every",
+        "2",
+        "--opponents",
+        "BattleAI",
+        "MMAI_MODEL",
+        "--scenario-file",
+        "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json"
+      ],
+      "memory": {
+        "Rss_KiB": 2829548,
+        "Pss_KiB": 2811631,
+        "Private_Clean_KiB": 383084,
+        "Private_Dirty_KiB": 2427016,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 400,
+          "comm": "python"
+        },
+        {
+          "tid": 402,
+          "comm": "python"
+        },
+        {
+          "tid": 403,
+          "comm": "cuda00001800007"
+        },
+        {
+          "tid": 405,
+          "comm": "cuda-EvtHandlr"
+        },
+        {
+          "tid": 406,
+          "comm": "python"
+        },
+        {
+          "tid": 1014,
+          "comm": "pt_autograd_0"
+        }
+      ],
+      "native_mapped_libraries": []
+    },
+    {
+      "pid": 407,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.resource_tracker import main;main(22)"
+      ],
+      "memory": {
+        "Rss_KiB": 11060,
+        "Pss_KiB": 5362,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 5044,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 407,
+          "comm": "python"
+        }
+      ],
+      "native_mapped_libraries": []
+    },
+    {
+      "pid": 3057,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=25)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 344076,
+        "Pss_KiB": 300482,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 296588,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3057,
+          "comm": "python"
+        },
+        {
+          "tid": 3059,
+          "comm": "python"
+        },
+        {
+          "tid": 3060,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3061,
+          "comm": "python"
+        },
+        {
+          "tid": 3062,
+          "comm": "python"
+        },
+        {
+          "tid": 3063,
+          "comm": "python"
+        },
+        {
+          "tid": 3064,
+          "comm": "python"
+        },
+        {
+          "tid": 3065,
+          "comm": "python"
+        },
+        {
+          "tid": 3066,
+          "comm": "python"
+        },
+        {
+          "tid": 3067,
+          "comm": "python"
+        },
+        {
+          "tid": 3068,
+          "comm": "python"
+        },
+        {
+          "tid": 3069,
+          "comm": "python"
+        },
+        {
+          "tid": 3070,
+          "comm": "python"
+        },
+        {
+          "tid": 3071,
+          "comm": "python"
+        },
+        {
+          "tid": 3072,
+          "comm": "python"
+        },
+        {
+          "tid": 3073,
+          "comm": "python"
+        },
+        {
+          "tid": 3074,
+          "comm": "python"
+        },
+        {
+          "tid": 3075,
+          "comm": "python"
+        },
+        {
+          "tid": 3076,
+          "comm": "python"
+        },
+        {
+          "tid": 3077,
+          "comm": "python"
+        },
+        {
+          "tid": 3078,
+          "comm": "python"
+        },
+        {
+          "tid": 3079,
+          "comm": "python"
+        },
+        {
+          "tid": 3080,
+          "comm": "python"
+        },
+        {
+          "tid": 3081,
+          "comm": "python"
+        },
+        {
+          "tid": 3082,
+          "comm": "python"
+        },
+        {
+          "tid": 3083,
+          "comm": "python"
+        },
+        {
+          "tid": 3084,
+          "comm": "python"
+        },
+        {
+          "tid": 3085,
+          "comm": "python"
+        },
+        {
+          "tid": 3086,
+          "comm": "python"
+        },
+        {
+          "tid": 3087,
+          "comm": "python"
+        },
+        {
+          "tid": 3088,
+          "comm": "0x71ff4c067530:"
+        },
+        {
+          "tid": 3091,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3093,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=28)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 430844,
+        "Pss_KiB": 379229,
+        "Private_Clean_KiB": 24,
+        "Private_Dirty_KiB": 373336,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3093,
+          "comm": "python"
+        },
+        {
+          "tid": 3095,
+          "comm": "python"
+        },
+        {
+          "tid": 3096,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3097,
+          "comm": "python"
+        },
+        {
+          "tid": 3098,
+          "comm": "python"
+        },
+        {
+          "tid": 3099,
+          "comm": "python"
+        },
+        {
+          "tid": 3100,
+          "comm": "python"
+        },
+        {
+          "tid": 3101,
+          "comm": "python"
+        },
+        {
+          "tid": 3102,
+          "comm": "python"
+        },
+        {
+          "tid": 3103,
+          "comm": "python"
+        },
+        {
+          "tid": 3104,
+          "comm": "python"
+        },
+        {
+          "tid": 3105,
+          "comm": "python"
+        },
+        {
+          "tid": 3106,
+          "comm": "python"
+        },
+        {
+          "tid": 3107,
+          "comm": "python"
+        },
+        {
+          "tid": 3108,
+          "comm": "python"
+        },
+        {
+          "tid": 3109,
+          "comm": "python"
+        },
+        {
+          "tid": 3110,
+          "comm": "python"
+        },
+        {
+          "tid": 3111,
+          "comm": "0x7a89dfc81a40:"
+        },
+        {
+          "tid": 3113,
+          "comm": "python"
+        },
+        {
+          "tid": 3114,
+          "comm": "python"
+        },
+        {
+          "tid": 3115,
+          "comm": "python"
+        },
+        {
+          "tid": 3116,
+          "comm": "python"
+        },
+        {
+          "tid": 3117,
+          "comm": "python"
+        },
+        {
+          "tid": 3118,
+          "comm": "python"
+        },
+        {
+          "tid": 3119,
+          "comm": "python"
+        },
+        {
+          "tid": 3120,
+          "comm": "python"
+        },
+        {
+          "tid": 3121,
+          "comm": "python"
+        },
+        {
+          "tid": 3122,
+          "comm": "python"
+        },
+        {
+          "tid": 3123,
+          "comm": "python"
+        },
+        {
+          "tid": 3124,
+          "comm": "python"
+        },
+        {
+          "tid": 3125,
+          "comm": "python"
+        },
+        {
+          "tid": 3127,
+          "comm": "runServer"
+        },
+        {
+          "tid": 3129,
+          "comm": "0x7a89dfca2320:"
+        },
+        {
+          "tid": 3130,
+          "comm": "0x7a89dfca2320:"
+        },
+        {
+          "tid": 3131,
+          "comm": "0x7a89dfca2320:"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3132,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=31)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 474460,
+        "Pss_KiB": 422446,
+        "Private_Clean_KiB": 36,
+        "Private_Dirty_KiB": 416048,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3132,
+          "comm": "python"
+        },
+        {
+          "tid": 3134,
+          "comm": "python"
+        },
+        {
+          "tid": 3135,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3136,
+          "comm": "python"
+        },
+        {
+          "tid": 3137,
+          "comm": "python"
+        },
+        {
+          "tid": 3138,
+          "comm": "python"
+        },
+        {
+          "tid": 3139,
+          "comm": "python"
+        },
+        {
+          "tid": 3140,
+          "comm": "python"
+        },
+        {
+          "tid": 3141,
+          "comm": "python"
+        },
+        {
+          "tid": 3142,
+          "comm": "0x709f5c28aa10:"
+        },
+        {
+          "tid": 3144,
+          "comm": "python"
+        },
+        {
+          "tid": 3145,
+          "comm": "python"
+        },
+        {
+          "tid": 3146,
+          "comm": "python"
+        },
+        {
+          "tid": 3147,
+          "comm": "python"
+        },
+        {
+          "tid": 3148,
+          "comm": "python"
+        },
+        {
+          "tid": 3149,
+          "comm": "python"
+        },
+        {
+          "tid": 3150,
+          "comm": "python"
+        },
+        {
+          "tid": 3151,
+          "comm": "python"
+        },
+        {
+          "tid": 3152,
+          "comm": "python"
+        },
+        {
+          "tid": 3153,
+          "comm": "python"
+        },
+        {
+          "tid": 3154,
+          "comm": "python"
+        },
+        {
+          "tid": 3155,
+          "comm": "python"
+        },
+        {
+          "tid": 3156,
+          "comm": "python"
+        },
+        {
+          "tid": 3157,
+          "comm": "python"
+        },
+        {
+          "tid": 3158,
+          "comm": "python"
+        },
+        {
+          "tid": 3159,
+          "comm": "python"
+        },
+        {
+          "tid": 3160,
+          "comm": "python"
+        },
+        {
+          "tid": 3161,
+          "comm": "python"
+        },
+        {
+          "tid": 3162,
+          "comm": "python"
+        },
+        {
+          "tid": 3163,
+          "comm": "python"
+        },
+        {
+          "tid": 3164,
+          "comm": "python"
+        },
+        {
+          "tid": 3166,
+          "comm": "runServer"
+        },
+        {
+          "tid": 3168,
+          "comm": "0x709ff522bd30:"
+        },
+        {
+          "tid": 3169,
+          "comm": "0x709ff522bd30:"
+        },
+        {
+          "tid": 3170,
+          "comm": "0x709ff522bd30:"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3171,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=34)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 343808,
+        "Pss_KiB": 300190,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 296284,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3171,
+          "comm": "python"
+        },
+        {
+          "tid": 3173,
+          "comm": "python"
+        },
+        {
+          "tid": 3174,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3175,
+          "comm": "python"
+        },
+        {
+          "tid": 3176,
+          "comm": "python"
+        },
+        {
+          "tid": 3177,
+          "comm": "python"
+        },
+        {
+          "tid": 3178,
+          "comm": "python"
+        },
+        {
+          "tid": 3179,
+          "comm": "python"
+        },
+        {
+          "tid": 3180,
+          "comm": "python"
+        },
+        {
+          "tid": 3181,
+          "comm": "python"
+        },
+        {
+          "tid": 3182,
+          "comm": "python"
+        },
+        {
+          "tid": 3183,
+          "comm": "python"
+        },
+        {
+          "tid": 3184,
+          "comm": "python"
+        },
+        {
+          "tid": 3185,
+          "comm": "python"
+        },
+        {
+          "tid": 3186,
+          "comm": "python"
+        },
+        {
+          "tid": 3187,
+          "comm": "python"
+        },
+        {
+          "tid": 3188,
+          "comm": "python"
+        },
+        {
+          "tid": 3189,
+          "comm": "0x7bf81c0bf770:"
+        },
+        {
+          "tid": 3191,
+          "comm": "python"
+        },
+        {
+          "tid": 3192,
+          "comm": "python"
+        },
+        {
+          "tid": 3193,
+          "comm": "python"
+        },
+        {
+          "tid": 3194,
+          "comm": "python"
+        },
+        {
+          "tid": 3195,
+          "comm": "python"
+        },
+        {
+          "tid": 3196,
+          "comm": "python"
+        },
+        {
+          "tid": 3197,
+          "comm": "python"
+        },
+        {
+          "tid": 3198,
+          "comm": "python"
+        },
+        {
+          "tid": 3199,
+          "comm": "python"
+        },
+        {
+          "tid": 3200,
+          "comm": "python"
+        },
+        {
+          "tid": 3201,
+          "comm": "python"
+        },
+        {
+          "tid": 3202,
+          "comm": "python"
+        },
+        {
+          "tid": 3203,
+          "comm": "python"
+        },
+        {
+          "tid": 3205,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3207,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=37)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 424504,
+        "Pss_KiB": 372987,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 367140,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3207,
+          "comm": "python"
+        },
+        {
+          "tid": 3209,
+          "comm": "python"
+        },
+        {
+          "tid": 3210,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3211,
+          "comm": "python"
+        },
+        {
+          "tid": 3212,
+          "comm": "python"
+        },
+        {
+          "tid": 3213,
+          "comm": "python"
+        },
+        {
+          "tid": 3214,
+          "comm": "python"
+        },
+        {
+          "tid": 3215,
+          "comm": "python"
+        },
+        {
+          "tid": 3216,
+          "comm": "python"
+        },
+        {
+          "tid": 3217,
+          "comm": "python"
+        },
+        {
+          "tid": 3218,
+          "comm": "python"
+        },
+        {
+          "tid": 3219,
+          "comm": "0x7a150c0bdfc0:"
+        },
+        {
+          "tid": 3221,
+          "comm": "python"
+        },
+        {
+          "tid": 3222,
+          "comm": "python"
+        },
+        {
+          "tid": 3223,
+          "comm": "python"
+        },
+        {
+          "tid": 3224,
+          "comm": "python"
+        },
+        {
+          "tid": 3225,
+          "comm": "python"
+        },
+        {
+          "tid": 3226,
+          "comm": "python"
+        },
+        {
+          "tid": 3227,
+          "comm": "python"
+        },
+        {
+          "tid": 3228,
+          "comm": "python"
+        },
+        {
+          "tid": 3229,
+          "comm": "python"
+        },
+        {
+          "tid": 3230,
+          "comm": "python"
+        },
+        {
+          "tid": 3231,
+          "comm": "python"
+        },
+        {
+          "tid": 3232,
+          "comm": "python"
+        },
+        {
+          "tid": 3233,
+          "comm": "python"
+        },
+        {
+          "tid": 3234,
+          "comm": "python"
+        },
+        {
+          "tid": 3235,
+          "comm": "python"
+        },
+        {
+          "tid": 3236,
+          "comm": "python"
+        },
+        {
+          "tid": 3237,
+          "comm": "python"
+        },
+        {
+          "tid": 3238,
+          "comm": "python"
+        },
+        {
+          "tid": 3239,
+          "comm": "python"
+        },
+        {
+          "tid": 3241,
+          "comm": "runServer"
+        },
+        {
+          "tid": 3243,
+          "comm": "0x7a150c0bee90:"
+        },
+        {
+          "tid": 3244,
+          "comm": "0x7a150c0bee90:"
+        },
+        {
+          "tid": 3245,
+          "comm": "0x7a150c0bee90:"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3246,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=40)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 448664,
+        "Pss_KiB": 396574,
+        "Private_Clean_KiB": 20,
+        "Private_Dirty_KiB": 390176,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3246,
+          "comm": "python"
+        },
+        {
+          "tid": 3248,
+          "comm": "python"
+        },
+        {
+          "tid": 3249,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3250,
+          "comm": "python"
+        },
+        {
+          "tid": 3251,
+          "comm": "python"
+        },
+        {
+          "tid": 3252,
+          "comm": "python"
+        },
+        {
+          "tid": 3253,
+          "comm": "python"
+        },
+        {
+          "tid": 3254,
+          "comm": "python"
+        },
+        {
+          "tid": 3255,
+          "comm": "python"
+        },
+        {
+          "tid": 3256,
+          "comm": "python"
+        },
+        {
+          "tid": 3257,
+          "comm": "python"
+        },
+        {
+          "tid": 3258,
+          "comm": "0x7919e828ca30:"
+        },
+        {
+          "tid": 3260,
+          "comm": "python"
+        },
+        {
+          "tid": 3261,
+          "comm": "python"
+        },
+        {
+          "tid": 3262,
+          "comm": "python"
+        },
+        {
+          "tid": 3263,
+          "comm": "python"
+        },
+        {
+          "tid": 3264,
+          "comm": "python"
+        },
+        {
+          "tid": 3265,
+          "comm": "python"
+        },
+        {
+          "tid": 3266,
+          "comm": "python"
+        },
+        {
+          "tid": 3267,
+          "comm": "python"
+        },
+        {
+          "tid": 3268,
+          "comm": "python"
+        },
+        {
+          "tid": 3269,
+          "comm": "python"
+        },
+        {
+          "tid": 3270,
+          "comm": "python"
+        },
+        {
+          "tid": 3271,
+          "comm": "python"
+        },
+        {
+          "tid": 3272,
+          "comm": "python"
+        },
+        {
+          "tid": 3273,
+          "comm": "python"
+        },
+        {
+          "tid": 3274,
+          "comm": "python"
+        },
+        {
+          "tid": 3275,
+          "comm": "python"
+        },
+        {
+          "tid": 3276,
+          "comm": "python"
+        },
+        {
+          "tid": 3277,
+          "comm": "python"
+        },
+        {
+          "tid": 3278,
+          "comm": "python"
+        },
+        {
+          "tid": 3280,
+          "comm": "runServer"
+        },
+        {
+          "tid": 3282,
+          "comm": "0x791a5bc7e3d0:"
+        },
+        {
+          "tid": 3283,
+          "comm": "0x791a5bc7e3d0:"
+        },
+        {
+          "tid": 3284,
+          "comm": "0x791a5bc7e3d0:"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3309,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=43)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 343944,
+        "Pss_KiB": 300279,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 296372,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3309,
+          "comm": "python"
+        },
+        {
+          "tid": 3311,
+          "comm": "python"
+        },
+        {
+          "tid": 3312,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3313,
+          "comm": "python"
+        },
+        {
+          "tid": 3314,
+          "comm": "python"
+        },
+        {
+          "tid": 3315,
+          "comm": "python"
+        },
+        {
+          "tid": 3316,
+          "comm": "python"
+        },
+        {
+          "tid": 3317,
+          "comm": "python"
+        },
+        {
+          "tid": 3318,
+          "comm": "python"
+        },
+        {
+          "tid": 3319,
+          "comm": "0x7d7a440bf530:"
+        },
+        {
+          "tid": 3321,
+          "comm": "python"
+        },
+        {
+          "tid": 3322,
+          "comm": "python"
+        },
+        {
+          "tid": 3323,
+          "comm": "python"
+        },
+        {
+          "tid": 3324,
+          "comm": "python"
+        },
+        {
+          "tid": 3325,
+          "comm": "python"
+        },
+        {
+          "tid": 3326,
+          "comm": "python"
+        },
+        {
+          "tid": 3327,
+          "comm": "python"
+        },
+        {
+          "tid": 3328,
+          "comm": "python"
+        },
+        {
+          "tid": 3329,
+          "comm": "python"
+        },
+        {
+          "tid": 3330,
+          "comm": "python"
+        },
+        {
+          "tid": 3331,
+          "comm": "python"
+        },
+        {
+          "tid": 3332,
+          "comm": "python"
+        },
+        {
+          "tid": 3333,
+          "comm": "python"
+        },
+        {
+          "tid": 3334,
+          "comm": "python"
+        },
+        {
+          "tid": 3335,
+          "comm": "python"
+        },
+        {
+          "tid": 3336,
+          "comm": "python"
+        },
+        {
+          "tid": 3337,
+          "comm": "python"
+        },
+        {
+          "tid": 3338,
+          "comm": "python"
+        },
+        {
+          "tid": 3339,
+          "comm": "python"
+        },
+        {
+          "tid": 3340,
+          "comm": "python"
+        },
+        {
+          "tid": 3341,
+          "comm": "python"
+        },
+        {
+          "tid": 3343,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3345,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=46)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 343324,
+        "Pss_KiB": 299719,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 295836,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3345,
+          "comm": "python"
+        },
+        {
+          "tid": 3347,
+          "comm": "python"
+        },
+        {
+          "tid": 3348,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3349,
+          "comm": "python"
+        },
+        {
+          "tid": 3350,
+          "comm": "python"
+        },
+        {
+          "tid": 3351,
+          "comm": "python"
+        },
+        {
+          "tid": 3352,
+          "comm": "python"
+        },
+        {
+          "tid": 3353,
+          "comm": "python"
+        },
+        {
+          "tid": 3354,
+          "comm": "python"
+        },
+        {
+          "tid": 3355,
+          "comm": "0x78c154067530:"
+        },
+        {
+          "tid": 3357,
+          "comm": "python"
+        },
+        {
+          "tid": 3358,
+          "comm": "python"
+        },
+        {
+          "tid": 3359,
+          "comm": "python"
+        },
+        {
+          "tid": 3360,
+          "comm": "python"
+        },
+        {
+          "tid": 3361,
+          "comm": "python"
+        },
+        {
+          "tid": 3362,
+          "comm": "python"
+        },
+        {
+          "tid": 3363,
+          "comm": "python"
+        },
+        {
+          "tid": 3364,
+          "comm": "python"
+        },
+        {
+          "tid": 3365,
+          "comm": "python"
+        },
+        {
+          "tid": 3366,
+          "comm": "python"
+        },
+        {
+          "tid": 3367,
+          "comm": "python"
+        },
+        {
+          "tid": 3368,
+          "comm": "python"
+        },
+        {
+          "tid": 3369,
+          "comm": "python"
+        },
+        {
+          "tid": 3370,
+          "comm": "python"
+        },
+        {
+          "tid": 3371,
+          "comm": "python"
+        },
+        {
+          "tid": 3372,
+          "comm": "python"
+        },
+        {
+          "tid": 3373,
+          "comm": "python"
+        },
+        {
+          "tid": 3374,
+          "comm": "python"
+        },
+        {
+          "tid": 3375,
+          "comm": "python"
+        },
+        {
+          "tid": 3376,
+          "comm": "python"
+        },
+        {
+          "tid": 3377,
+          "comm": "python"
+        },
+        {
+          "tid": 3379,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3381,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=49)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 344416,
+        "Pss_KiB": 300728,
+        "Private_Clean_KiB": 0,
+        "Private_Dirty_KiB": 296836,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3381,
+          "comm": "python"
+        },
+        {
+          "tid": 3383,
+          "comm": "python"
+        },
+        {
+          "tid": 3384,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3385,
+          "comm": "python"
+        },
+        {
+          "tid": 3386,
+          "comm": "python"
+        },
+        {
+          "tid": 3387,
+          "comm": "python"
+        },
+        {
+          "tid": 3388,
+          "comm": "python"
+        },
+        {
+          "tid": 3389,
+          "comm": "python"
+        },
+        {
+          "tid": 3390,
+          "comm": "python"
+        },
+        {
+          "tid": 3391,
+          "comm": "python"
+        },
+        {
+          "tid": 3392,
+          "comm": "python"
+        },
+        {
+          "tid": 3393,
+          "comm": "python"
+        },
+        {
+          "tid": 3394,
+          "comm": "python"
+        },
+        {
+          "tid": 3395,
+          "comm": "0x7cb9e0067530:"
+        },
+        {
+          "tid": 3397,
+          "comm": "python"
+        },
+        {
+          "tid": 3398,
+          "comm": "python"
+        },
+        {
+          "tid": 3399,
+          "comm": "python"
+        },
+        {
+          "tid": 3400,
+          "comm": "python"
+        },
+        {
+          "tid": 3401,
+          "comm": "python"
+        },
+        {
+          "tid": 3402,
+          "comm": "python"
+        },
+        {
+          "tid": 3403,
+          "comm": "python"
+        },
+        {
+          "tid": 3404,
+          "comm": "python"
+        },
+        {
+          "tid": 3405,
+          "comm": "python"
+        },
+        {
+          "tid": 3406,
+          "comm": "python"
+        },
+        {
+          "tid": 3407,
+          "comm": "python"
+        },
+        {
+          "tid": 3408,
+          "comm": "python"
+        },
+        {
+          "tid": 3409,
+          "comm": "python"
+        },
+        {
+          "tid": 3410,
+          "comm": "python"
+        },
+        {
+          "tid": 3411,
+          "comm": "python"
+        },
+        {
+          "tid": 3412,
+          "comm": "python"
+        },
+        {
+          "tid": 3413,
+          "comm": "python"
+        },
+        {
+          "tid": 3415,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3417,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=52)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 426820,
+        "Pss_KiB": 375238,
+        "Private_Clean_KiB": 4,
+        "Private_Dirty_KiB": 369360,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3417,
+          "comm": "python"
+        },
+        {
+          "tid": 3419,
+          "comm": "python"
+        },
+        {
+          "tid": 3420,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3421,
+          "comm": "python"
+        },
+        {
+          "tid": 3422,
+          "comm": "python"
+        },
+        {
+          "tid": 3423,
+          "comm": "python"
+        },
+        {
+          "tid": 3424,
+          "comm": "python"
+        },
+        {
+          "tid": 3425,
+          "comm": "python"
+        },
+        {
+          "tid": 3426,
+          "comm": "python"
+        },
+        {
+          "tid": 3427,
+          "comm": "python"
+        },
+        {
+          "tid": 3428,
+          "comm": "python"
+        },
+        {
+          "tid": 3429,
+          "comm": "python"
+        },
+        {
+          "tid": 3430,
+          "comm": "python"
+        },
+        {
+          "tid": 3431,
+          "comm": "python"
+        },
+        {
+          "tid": 3432,
+          "comm": "python"
+        },
+        {
+          "tid": 3433,
+          "comm": "python"
+        },
+        {
+          "tid": 3434,
+          "comm": "python"
+        },
+        {
+          "tid": 3435,
+          "comm": "0x7d8243f92e80:"
+        },
+        {
+          "tid": 3437,
+          "comm": "python"
+        },
+        {
+          "tid": 3438,
+          "comm": "python"
+        },
+        {
+          "tid": 3439,
+          "comm": "python"
+        },
+        {
+          "tid": 3440,
+          "comm": "python"
+        },
+        {
+          "tid": 3441,
+          "comm": "python"
+        },
+        {
+          "tid": 3442,
+          "comm": "python"
+        },
+        {
+          "tid": 3443,
+          "comm": "python"
+        },
+        {
+          "tid": 3444,
+          "comm": "python"
+        },
+        {
+          "tid": 3445,
+          "comm": "python"
+        },
+        {
+          "tid": 3446,
+          "comm": "python"
+        },
+        {
+          "tid": 3447,
+          "comm": "python"
+        },
+        {
+          "tid": 3448,
+          "comm": "python"
+        },
+        {
+          "tid": 3449,
+          "comm": "python"
+        },
+        {
+          "tid": 3451,
+          "comm": "runServer"
+        },
+        {
+          "tid": 3453,
+          "comm": "0x7d82400bf7a0:"
+        },
+        {
+          "tid": 3454,
+          "comm": "0x7d82400bf7a0:"
+        },
+        {
+          "tid": 3455,
+          "comm": "0x7d82400bf7a0:"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    },
+    {
+      "pid": 3456,
+      "ppid": 400,
+      "comm": "python",
+      "cmdline": [
+        "/root/heroes3-ai-lab/venv/bin/python",
+        "-c",
+        "from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=23, pipe_handle=55)",
+        "--multiprocessing-fork"
+      ],
+      "memory": {
+        "Rss_KiB": 336776,
+        "Pss_KiB": 294105,
+        "Private_Clean_KiB": 8,
+        "Private_Dirty_KiB": 290316,
+        "Swap_KiB": 0,
+        "SwapPss_KiB": 0
+      },
+      "threads": [
+        {
+          "tid": 3456,
+          "comm": "python"
+        },
+        {
+          "tid": 3458,
+          "comm": "python"
+        },
+        {
+          "tid": 3459,
+          "comm": "consoleHandler"
+        },
+        {
+          "tid": 3460,
+          "comm": "python"
+        },
+        {
+          "tid": 3461,
+          "comm": "python"
+        },
+        {
+          "tid": 3462,
+          "comm": "python"
+        },
+        {
+          "tid": 3463,
+          "comm": "python"
+        },
+        {
+          "tid": 3464,
+          "comm": "python"
+        },
+        {
+          "tid": 3465,
+          "comm": "python"
+        },
+        {
+          "tid": 3466,
+          "comm": "python"
+        },
+        {
+          "tid": 3467,
+          "comm": "python"
+        },
+        {
+          "tid": 3468,
+          "comm": "runNetwork"
+        },
+        {
+          "tid": 3470,
+          "comm": "python"
+        },
+        {
+          "tid": 3471,
+          "comm": "python"
+        },
+        {
+          "tid": 3472,
+          "comm": "python"
+        },
+        {
+          "tid": 3473,
+          "comm": "python"
+        },
+        {
+          "tid": 3474,
+          "comm": "python"
+        },
+        {
+          "tid": 3475,
+          "comm": "python"
+        },
+        {
+          "tid": 3476,
+          "comm": "python"
+        },
+        {
+          "tid": 3477,
+          "comm": "python"
+        },
+        {
+          "tid": 3478,
+          "comm": "python"
+        },
+        {
+          "tid": 3479,
+          "comm": "python"
+        },
+        {
+          "tid": 3480,
+          "comm": "python"
+        },
+        {
+          "tid": 3481,
+          "comm": "python"
+        },
+        {
+          "tid": 3482,
+          "comm": "python"
+        },
+        {
+          "tid": 3483,
+          "comm": "python"
+        },
+        {
+          "tid": 3484,
+          "comm": "python"
+        },
+        {
+          "tid": 3485,
+          "comm": "python"
+        },
+        {
+          "tid": 3486,
+          "comm": "python"
+        },
+        {
+          "tid": 3487,
+          "comm": "python"
+        },
+        {
+          "tid": 3488,
+          "comm": "python"
+        },
+        {
+          "tid": 3490,
+          "comm": "runServer"
+        }
+      ],
+      "native_mapped_libraries": [
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so",
+        "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so"
+      ]
+    }
+  ],
+  "mem_available_MiB": 9171.77734375,
+  "host_swap_used_MiB": 0.0,
+  "owned_PSS_MiB": 6446.869140625,
+  "owned_swap_MiB": 0.0,
+  "gpu": {
+    "device": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 5070 Ti, 2125, 16303, 1, 38",
+      "stderr": ""
+    },
+    "compute_apps": {
+      "returncode": 0,
+      "stdout": "400, [Not Found], [N/A]",
+      "stderr": ""
+    }
+  },
+  "other_training_commands": [],
+  "report_snapshot_original_sha256": "fc17f404df08fc52a01f19b5c3bbd0de8b481a4c4c8533d075f183964d7ab9ed",
+  "report_snapshot_stable_copy": "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/monitor-independent-01/TRAINING_REPORT_SNAPSHOT.json"
+}

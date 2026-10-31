@@ -1,0 +1,17 @@
+{
+  "previous_run": "battle-runtime-01",
+  "previous_run_passed": false,
+  "actual_native_games_in_previous_run": 0,
+  "failure": "runpy does not add target script parent to sys.path; step_evidence import failed before env initialization",
+  "old_sources_unchanged": true,
+  "sole_change": "new worker entry adds frozen evaluator parent directory to module path after injecting qualified leases",
+  "sources": {
+    "experiments/ubuntu-native-takeover-20261025/worker_entry.py": "eb334fd20989ff4a5bbe4c0351b20e02105fde301a3c384f5c4d005e82aa50e2",
+    "experiments/ubuntu-native-takeover-20261025/worker_entry_v2.py": "2c4bdfa38f16ce12c451bc7eca4a4df3b1ab9003d44170631360e79d31f0d26d",
+    "experiments/ubuntu-native-takeover-20261025/qualify_battle.py": "640046d95f668e1333447d4abbaae59cd7684a22b60bb1b40ff77b7bd4be0c6a",
+    "experiments/ubuntu-native-takeover-20261025/qualify_battle_v2.py": "4d4808d2bd454572fcb155a18ff1546ed3089ca4d72e1fae634ce8a271cb8726"
+  },
+  "fixed_cells_unchanged": true,
+  "new_seeds": false,
+  "gates_unchanged": true
+}

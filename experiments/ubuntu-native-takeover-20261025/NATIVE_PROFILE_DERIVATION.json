@@ -1,0 +1,7 @@
+{
+  "qualifier_original_sha256": "5b40959d22d76c1fabc2e0626c3988d1825d2d54711c0075312eb5b90aa60656",
+  "profile_change": "Select explicitly named corrected lab/runtime; retain every existing expected frozen SHA, FD/inode gate, fixed game/seed/outcome test. Resource root stays canonical across profiles.",
+  "native_games_started": 0,
+  "derived_qualifier_sha256": "bba505a308ceea3aaeeec2496aba63b57174a87d52274cef94930804338787ec",
+  "derived_leases_sha256": "fd3f808b612067180636555df3237dd89693e2f76b375598eed17075f447edc7"
+}

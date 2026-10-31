@@ -1,0 +1,20 @@
+{
+  "status": "frozen_CPU_verified_executable_hooks_no_native_GPU_optimizer",
+  "sources": {
+    "admit_episode_v5.py": "2e8233767d589fb58e84a1fd27528ee0da1e0e90a1066a60de5da1092d1fd934",
+    "broker.py": "3ce568fc288922c9fedbf80cd5f3a8622d652cbe7cce48f35895b411d6ac0c52",
+    "check_cpu.py": "cc2a8b179546bfd6e9ae01518d271d07ff5525cd7850bb67c5eae7006e91a011",
+    "encoder.py": "961569f6405f7bda03dd678182024413cc1d489c856293db4e339673fbd0a62e",
+    "episode_balanced_ppo.py": "5e5bf696fca79aa567e79b2bc527c006a6fe8a84a8c2b3cb597317483e300951",
+    "load_admitted.py": "3a7897a3c00953a904c351068ccd73e2129625f1e0cc8861da9a1c298f995ee6",
+    "model_io.py": "418c3ef37822609ccb70e819d3077b60960043d21e0a08f5eb310ec6208f2707",
+    "model.py": "e4794d74cbffe6a86e011e5dc092ee03e8191720b2a27aad6bae3c973a784821",
+    "onpolicy_broker_v2.py": "b81f641f546e2af1b4f2de8e2e10a0f0f0c5a0c0e2e324ebd58d455fcc15dbae",
+    "train_update_v3.py": "35ca62ad3c6deb6ed6cf6d139dcfa7e004ff340eea38c87dd9bc342f5d6af302"
+  },
+  "initialization_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+  "training_epoch": "strategic-learned-build-exploration-training-v1",
+  "architecture_version": "schema5-build-logit-offset-v1",
+  "final_cpu": "cpu-02/AUDIT.json",
+  "optimizer_steps": 0
+}

@@ -1,0 +1,25 @@
+{
+  "status": "failed_gate",
+  "synthetic": true,
+  "stages": [
+    {
+      "scale": 1,
+      "jobs": [],
+      "peak_batch_rss": 5046272,
+      "peak_batch_pss": 1701888,
+      "min_available": 15931043840,
+      "max_swap_growth": 0,
+      "wall_seconds": 0.26283374499996626,
+      "remaining_processes": [],
+      "inputs_unchanged": true,
+      "valid_jobs": 0,
+      "completed_all": false,
+      "failure": "supervisor_interrupted",
+      "games_per_second": null
+    }
+  ],
+  "competitor_excluded": true,
+  "reason": "supervisor_interrupted",
+  "all_batch_processes_gone": true,
+  "claim": "CPU native-game throughput only; no GPU learner, no parallel PPO, no policy-quality inference"
+}

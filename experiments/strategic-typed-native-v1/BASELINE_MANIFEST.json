@@ -1,0 +1,18 @@
+{
+  "origin": {
+    "AI/DirectorAI/CDirectorAI.cpp": "experiments\\strategic-threat-response-v1\\baseline-CDirectorAI.cpp",
+    "AI/DirectorAI/CDirectorAI.h": "experiments\\strategic-threat-response-v1\\native-pilot-02\\source-snapshot\\053-CDirectorAI.h",
+    "server/CGameHandler.cpp": "experiments\\adv-server-battle-barrier-v1\\source-after\\server\\CGameHandler.cpp",
+    "server/CGameHandler.h": "experiments\\adv-server-battle-barrier-v1\\source-after\\server\\CGameHandler.h",
+    "server/battles/BattleProcessor.cpp": "experiments\\adv-server-battle-barrier-v1\\source-after\\server\\battles\\BattleProcessor.cpp"
+  },
+  "sha256": {
+    "AI/DirectorAI/CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "AI/DirectorAI/CDirectorAI.h": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+    "server/CGameHandler.cpp": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+    "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+  },
+  "installed": false,
+  "compiled": false
+}

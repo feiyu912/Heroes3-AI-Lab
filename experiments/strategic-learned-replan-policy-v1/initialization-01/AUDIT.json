@@ -1,0 +1,35 @@
+{
+  "passed_CPU": true,
+  "status": "draft only; once intervention shelved pending actual free-transfer flow diagnosis/fix",
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "final_source_protocol_frozen": false,
+  "parent_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+  "parent_optimizer_steps_not_continued": 504,
+  "initialization_sha256": "69086d69cfa7e881bc95215db9da124a3c6565451a8d874fcc9772f1dd9e65c6",
+  "architecture_unchanged": true,
+  "weights_exact": true,
+  "logits_and_critic_exact_on_historical_TRAIN": 3000,
+  "included_old_build_windows": 400,
+  "empty_Adam_binding_CPU_Python_RNG_recovery": true,
+  "rejected": [
+    "old_format",
+    "off_protocol",
+    "partial",
+    "wrong_architecture"
+  ],
+  "current_source_sha256": {
+    "admit_episode_v5.py": "324c7d74c48e8f4442e094fa02e9b55d89be385c1badf5b0c5f60d7d0475ac69",
+    "broker.py": "5a5ec9ce3c779649d933062d0aed685f4f65f24560ae336d7f9e3ceda4b7f37f",
+    "encoder.py": "eff4ed9ba88c3070d162a2c6ee16f002e21c4ec2287c7c9ca48a11a47e12fb72",
+    "episode_balanced_ppo.py": "2ea802c5cb804fa0275e83cbcd2cba2acf2afb9d465a4d9cc5e514d162aa19db",
+    "load_admitted.py": "c08b019806aed56eda013ad353003d74eee1af14f7e416e7a6ebb3642b15a4bc",
+    "migrate_init_cpu.py": "2da043298229fec0fb608a471eb6024f12c806d373eeee25bfe136060b2b2570",
+    "model.py": "643fd35392c4ce5d1029a7bb63e734ac1c57807108a17ef027b0d9e013e55720",
+    "model_io.py": "cdf24514e644ff65c5a5374beeeabf7bfcb9b8855b2f1d831ae443973b40b240",
+    "onpolicy_broker_v2.py": "a45055cc1949ba048355097578f5753a3d06ee0ac4416ae9f941d8457397c8b5",
+    "train_update_v3.py": "9e41a08f9611d1a3a22e441c105e9665dbb5339780f2662530ccb3561b64df88"
+  },
+  "ability_improvement_claim": false
+}

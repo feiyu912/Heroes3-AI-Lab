@@ -1,0 +1,7 @@
+{
+  "state": "replaced_at_completed_training_boundary",
+  "old_pid": 7815,
+  "new_pid": 83186,
+  "head_training_completed": true,
+  "weights_and_optimizer_preserved": true
+}

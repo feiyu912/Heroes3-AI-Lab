@@ -1,0 +1,965 @@
+{
+  "passed": true,
+  "episodes": 16,
+  "steps": 340,
+  "overrides": 2,
+  "rows": [
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-positive-exchange.json.gz",
+      "sha256": "732a26c8da46326c1ef6bcabbe5a344856caeb174724731bbc0ff314410b9aee",
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 10,
+      "total_loss": 12,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-teacher.json.gz",
+      "sha256": "46402c739174bcedd294f2dd999ea1c7db3e0a7a8401ef1f4a650ca33dd25dc8",
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 10,
+      "total_loss": 12,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-positive-exchange.json.gz",
+      "sha256": "8ed4ef234bee3c933db1696f3605b9fae3abfefc474659b31baffffb98d21d62",
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-teacher.json.gz",
+      "sha256": "b270c8db2507248ffa08bb2fa3a33b2f7c31fe1542d4f9a2b607aca9e9b2d2e3",
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-positive-exchange.json.gz",
+      "sha256": "664738d47abefb24d62fe95d958bf82a62ca54eb64326ee1bf2ad8df037170a4",
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-teacher.json.gz",
+      "sha256": "46432337c4f10f0bbbdabe7df908c841fc85416ec7b4fb991a92e172a7d61405",
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-positive-exchange.json.gz",
+      "sha256": "54bd34bfb63fb014b7559c6a2865497c508f5cd03b7f4849d03210ae9a85662e",
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 9,
+      "total_loss": 11,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-teacher.json.gz",
+      "sha256": "3071aa934b434096c35d1fbf5988ad182fc0cd9796fac97530c4293fc83a61e7",
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 9,
+      "total_loss": 11,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-positive-exchange.json.gz",
+      "sha256": "3d9cb0d47b23095b2e00ce98f214c5c9c6ab9da20bc7632983969055e44690a8",
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-teacher.json.gz",
+      "sha256": "8ae5aa91a950ccef9f82935dac0d66603cfff213ad9adeb1d8bec1d1c4047194",
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-positive-exchange.json.gz",
+      "sha256": "22f949cb7d9fe41516540ad1f796d2873eb36dd2b9ce2ab14386b30b5bb56fe2",
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-teacher.json.gz",
+      "sha256": "54232f96c2435d85973097a8426b4c3c6ff178017db69f9bcf98f14f49a594b3",
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-positive-exchange.json.gz",
+      "sha256": "a2f57f5ba8086a2e3221fa1399e48144c87c882b83b0673a4aaccff08854ecee",
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "overrides": [
+        {
+          "step": 11,
+          "before": 0.0,
+          "after": 4.999999888241291,
+          "events": [
+            {
+              "kind": 0,
+              "action_type": 8,
+              "side": 1,
+              "stack_number": 5,
+              "stack_node": 1,
+              "target_hexes": [
+                27,
+                26
+              ],
+              "target_unit_value": [
+                -1000,
+                0
+              ],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": -1,
+              "attacker_side": -1,
+              "attacker_node": -1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": -1,
+              "targets": []
+            },
+            {
+              "kind": 2,
+              "action_type": -1,
+              "side": -1,
+              "stack_number": -1,
+              "stack_node": -1,
+              "target_hexes": [],
+              "target_unit_value": [],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": 5,
+              "attacker_side": 1,
+              "attacker_node": 1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": 26,
+              "targets": [
+                {
+                  "defender_id": 0,
+                  "defender_side": 0,
+                  "defender_node": -1,
+                  "attacker_id": 5,
+                  "attacker_side": 1,
+                  "attacker_node": 1,
+                  "damage": 9,
+                  "killed": 1,
+                  "flags": 1,
+                  "spell_id": -1
+                }
+              ]
+            },
+            {
+              "kind": 1,
+              "action_type": 8,
+              "side": 1,
+              "stack_number": 5,
+              "stack_node": 1,
+              "target_hexes": [
+                27,
+                26
+              ],
+              "target_unit_value": [
+                -1000,
+                0
+              ],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": -1,
+              "attacker_side": -1,
+              "attacker_node": -1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": -1,
+              "targets": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-teacher.json.gz",
+      "sha256": "a8c579b52749e6c4ba0985d6e054389997e2c0190a86738ac01c1caedaee11fb",
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 15,
+      "total_loss": 17,
+      "overrides": []
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-positive-exchange.json.gz",
+      "sha256": "8dbd6541b0c52d852d0a524038289bd36d97b3cb46f8554a45c053d1e5f8aac0",
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 15,
+      "total_loss": 17,
+      "overrides": [
+        {
+          "step": 11,
+          "before": 0.0,
+          "after": 4.999999888241291,
+          "events": [
+            {
+              "kind": 0,
+              "action_type": 8,
+              "side": 1,
+              "stack_number": 5,
+              "stack_node": 1,
+              "target_hexes": [
+                27,
+                26
+              ],
+              "target_unit_value": [
+                -1000,
+                0
+              ],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": -1,
+              "attacker_side": -1,
+              "attacker_node": -1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": -1,
+              "targets": []
+            },
+            {
+              "kind": 2,
+              "action_type": -1,
+              "side": -1,
+              "stack_number": -1,
+              "stack_node": -1,
+              "target_hexes": [],
+              "target_unit_value": [],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": 5,
+              "attacker_side": 1,
+              "attacker_node": 1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": 26,
+              "targets": [
+                {
+                  "defender_id": 0,
+                  "defender_side": 0,
+                  "defender_node": -1,
+                  "attacker_id": 5,
+                  "attacker_side": 1,
+                  "attacker_node": 1,
+                  "damage": 9,
+                  "killed": 1,
+                  "flags": 1,
+                  "spell_id": -1
+                }
+              ]
+            },
+            {
+              "kind": 1,
+              "action_type": 8,
+              "side": 1,
+              "stack_number": 5,
+              "stack_node": 1,
+              "target_hexes": [
+                27,
+                26
+              ],
+              "target_unit_value": [
+                -1000,
+                0
+              ],
+              "result_type": -1,
+              "winner": -1,
+              "attacker_id": -1,
+              "attacker_side": -1,
+              "attacker_node": -1,
+              "attack_flags": 0,
+              "attack_spell_id": -1,
+              "attack_tile": -1,
+              "targets": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-teacher.json.gz",
+      "sha256": "927a07dacf794ea8e1556bf469fdd2a46c1f1a4f3aa2092a8f42ed76491f444c",
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 14,
+      "total_loss": 16,
+      "overrides": []
+    }
+  ],
+  "pairs": [
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111801,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026111802,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111801,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026111802,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111801,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026111802,
+      "win_delta": 0,
+      "main_delta": 0,
+      "total_delta": 0,
+      "overrides": 0,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": null
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111801,
+      "win_delta": -1,
+      "main_delta": 3,
+      "total_delta": 3,
+      "overrides": 1,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": {
+        "step": 11,
+        "baseline_executed": 211,
+        "candidate_executed": 210,
+        "candidate_teacher": 211,
+        "baseline_facts": {
+          "ability": false,
+          "actor_node": 1,
+          "primary": [
+            4
+          ],
+          "secondary": [],
+          "targets": [
+            4
+          ],
+          "enemy_targets": 1,
+          "friendly_targets": 0,
+          "enemy_secondary": [],
+          "friendly_secondary": [],
+          "coverage_value": 491,
+          "est_primary_net_rel_bf": 0.0,
+          "est_attacker_hp_rel_self": -167.9999977350235
+        },
+        "candidate_facts": {
+          "ability": false,
+          "actor_node": 1,
+          "primary": [
+            2
+          ],
+          "secondary": [],
+          "targets": [
+            2
+          ],
+          "enemy_targets": 1,
+          "friendly_targets": 0,
+          "enemy_secondary": [],
+          "friendly_secondary": [],
+          "coverage_value": 5,
+          "est_primary_net_rel_bf": 4.999999888241291,
+          "est_attacker_hp_rel_self": 0.0
+        },
+        "baseline_events": [
+          {
+            "kind": 0,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              42,
+              25
+            ],
+            "target_unit_value": [
+              -1000,
+              2
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 5,
+            "attacker_side": 1,
+            "attacker_node": 1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": 25,
+            "targets": [
+              {
+                "defender_id": 2,
+                "defender_side": 0,
+                "defender_node": 4,
+                "attacker_id": 5,
+                "attacker_side": 1,
+                "attacker_node": 1,
+                "damage": 122,
+                "killed": 3,
+                "flags": 0,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 2,
+            "attacker_side": 0,
+            "attacker_node": 4,
+            "attack_flags": 2,
+            "attack_spell_id": -1,
+            "attack_tile": 42,
+            "targets": [
+              {
+                "defender_id": 5,
+                "defender_side": 1,
+                "defender_node": 1,
+                "attacker_id": 2,
+                "attacker_side": 0,
+                "attacker_node": 4,
+                "damage": 108,
+                "killed": 3,
+                "flags": 0,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 1,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              42,
+              25
+            ],
+            "target_unit_value": [
+              -1000,
+              2
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          }
+        ],
+        "candidate_events": [
+          {
+            "kind": 0,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              27,
+              26
+            ],
+            "target_unit_value": [
+              -1000,
+              0
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 5,
+            "attacker_side": 1,
+            "attacker_node": 1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": 26,
+            "targets": [
+              {
+                "defender_id": 0,
+                "defender_side": 0,
+                "defender_node": -1,
+                "attacker_id": 5,
+                "attacker_side": 1,
+                "attacker_node": 1,
+                "damage": 9,
+                "killed": 1,
+                "flags": 1,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 1,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              27,
+              26
+            ],
+            "target_unit_value": [
+              -1000,
+              0
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026111802,
+      "win_delta": 0,
+      "main_delta": 1,
+      "total_delta": 1,
+      "overrides": 1,
+      "exact_event_prefix_before_first_override": true,
+      "exact_action_prefix_before_first_override": true,
+      "exact_graph_prefix_through_first_override": true,
+      "first_override": {
+        "step": 11,
+        "baseline_executed": 211,
+        "candidate_executed": 210,
+        "candidate_teacher": 211,
+        "baseline_facts": {
+          "ability": false,
+          "actor_node": 1,
+          "primary": [
+            4
+          ],
+          "secondary": [],
+          "targets": [
+            4
+          ],
+          "enemy_targets": 1,
+          "friendly_targets": 0,
+          "enemy_secondary": [],
+          "friendly_secondary": [],
+          "coverage_value": 491,
+          "est_primary_net_rel_bf": 0.0,
+          "est_attacker_hp_rel_self": -167.9999977350235
+        },
+        "candidate_facts": {
+          "ability": false,
+          "actor_node": 1,
+          "primary": [
+            2
+          ],
+          "secondary": [],
+          "targets": [
+            2
+          ],
+          "enemy_targets": 1,
+          "friendly_targets": 0,
+          "enemy_secondary": [],
+          "friendly_secondary": [],
+          "coverage_value": 5,
+          "est_primary_net_rel_bf": 4.999999888241291,
+          "est_attacker_hp_rel_self": 0.0
+        },
+        "baseline_events": [
+          {
+            "kind": 0,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              42,
+              25
+            ],
+            "target_unit_value": [
+              -1000,
+              2
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 5,
+            "attacker_side": 1,
+            "attacker_node": 1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": 25,
+            "targets": [
+              {
+                "defender_id": 2,
+                "defender_side": 0,
+                "defender_node": 4,
+                "attacker_id": 5,
+                "attacker_side": 1,
+                "attacker_node": 1,
+                "damage": 128,
+                "killed": 3,
+                "flags": 0,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 2,
+            "attacker_side": 0,
+            "attacker_node": 4,
+            "attack_flags": 2,
+            "attack_spell_id": -1,
+            "attack_tile": 42,
+            "targets": [
+              {
+                "defender_id": 5,
+                "defender_side": 1,
+                "defender_node": 1,
+                "attacker_id": 2,
+                "attacker_side": 0,
+                "attacker_node": 4,
+                "damage": 112,
+                "killed": 3,
+                "flags": 0,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 1,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              42,
+              25
+            ],
+            "target_unit_value": [
+              -1000,
+              2
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          }
+        ],
+        "candidate_events": [
+          {
+            "kind": 0,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              27,
+              26
+            ],
+            "target_unit_value": [
+              -1000,
+              0
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          },
+          {
+            "kind": 2,
+            "action_type": -1,
+            "side": -1,
+            "stack_number": -1,
+            "stack_node": -1,
+            "target_hexes": [],
+            "target_unit_value": [],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": 5,
+            "attacker_side": 1,
+            "attacker_node": 1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": 26,
+            "targets": [
+              {
+                "defender_id": 0,
+                "defender_side": 0,
+                "defender_node": -1,
+                "attacker_id": 5,
+                "attacker_side": 1,
+                "attacker_node": 1,
+                "damage": 9,
+                "killed": 1,
+                "flags": 1,
+                "spell_id": -1
+              }
+            ]
+          },
+          {
+            "kind": 1,
+            "action_type": 8,
+            "side": 1,
+            "stack_number": 5,
+            "stack_node": 1,
+            "target_hexes": [
+              27,
+              26
+            ],
+            "target_unit_value": [
+              -1000,
+              0
+            ],
+            "result_type": -1,
+            "winner": -1,
+            "attacker_id": -1,
+            "attacker_side": -1,
+            "attacker_node": -1,
+            "attack_flags": 0,
+            "attack_spell_id": -1,
+            "attack_tile": -1,
+            "targets": []
+          }
+        ]
+      }
+    }
+  ],
+  "net_win_delta": -1,
+  "main_casualty_delta": 4,
+  "total_casualty_delta": 4,
+  "map_main_deltas": {
+    "wait-bait-v1-00": 0,
+    "wait-bait-v1-01": 4
+  },
+  "gate_recomputed": false,
+  "wins": {
+    "teacher": 4,
+    "positive-exchange": 3
+  },
+  "event_kills_match_terminal_permanent_totals": true,
+  "policy_core_independently_reimplemented": true,
+  "bc_eligible": false,
+  "independent_capability_test": false,
+  "limitation": "Teacher fallback action is archived metadata, not independently recomputed native BattleAI; creature-specific casualties use native terminal fields. No full-world determinism claim."
+}

@@ -1,0 +1,500 @@
+{
+  "analysis_version": "v2-owned-action-round",
+  "episodes": 16,
+  "pairs": 8,
+  "normal": 16,
+  "mean_delta_main_loss": 0.5,
+  "mean_delta_total_loss": 0.5,
+  "net_wins": -2,
+  "wait_overrides": 0,
+  "variant_mechanism": 4,
+  "teacher_mechanism": 6,
+  "certified": false,
+  "bc_eligible": false,
+  "paired": [
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026101811,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 0,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 0
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "attacker",
+      "seed": 2026101812,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 0,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 0
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026101811,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 0
+    },
+    {
+      "scenario": "wait-bait-v1-00",
+      "role": "defender",
+      "seed": 2026101812,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 0
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026101811,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 2,
+      "teacher_mechanism": 2
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "attacker",
+      "seed": 2026101812,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0,
+      "delta_wins": 0,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 2,
+      "teacher_mechanism": 2
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026101811,
+      "delta_main_loss": 2,
+      "delta_total_loss": 2,
+      "delta_wins": -1,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 1
+    },
+    {
+      "scenario": "wait-bait-v1-01",
+      "role": "defender",
+      "seed": 2026101812,
+      "delta_main_loss": 2,
+      "delta_total_loss": 2,
+      "delta_wins": -1,
+      "variant_overrides": 1,
+      "wait_overrides": 0,
+      "variant_mechanism": 0,
+      "teacher_mechanism": 1
+    }
+  ],
+  "runs": [
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101811-teacher.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101811,
+      "policy": "teacher",
+      "success": true,
+      "main_loss": 11,
+      "total_loss": 13,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101811-wait-bait.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101811,
+      "policy": "wait-bait",
+      "success": true,
+      "main_loss": 11,
+      "total_loss": 13,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101812-teacher.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101812,
+      "policy": "teacher",
+      "success": false,
+      "main_loss": 12,
+      "total_loss": 14,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101812-wait-bait.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101812,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 12,
+      "total_loss": 14,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101811-teacher.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101811,
+      "policy": "teacher",
+      "success": false,
+      "main_loss": 12,
+      "total_loss": 14,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101811-wait-bait.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101811,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 12,
+      "total_loss": 14,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101812-teacher.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101812,
+      "policy": "teacher",
+      "success": true,
+      "main_loss": 9,
+      "total_loss": 11,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101812-wait-bait.json",
+      "scenario": "wait-bait-v1-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101812,
+      "policy": "wait-bait",
+      "success": true,
+      "main_loss": 9,
+      "total_loss": 11,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101811-teacher.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101811,
+      "policy": "teacher",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 5,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 0
+          },
+          "main_step": 15,
+          "main_id": 2,
+          "batch_id": 16,
+          "event_index": 1
+        },
+        {
+          "round": 4,
+          "subject_id": 5,
+          "bait": {
+            "step": 17,
+            "batch_id": 18,
+            "event_index": 1,
+            "bait_id": 1
+          },
+          "main_step": 18,
+          "main_id": 2,
+          "batch_id": 19,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101811-wait-bait.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101811,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 5,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 0
+          },
+          "main_step": 15,
+          "main_id": 2,
+          "batch_id": 16,
+          "event_index": 1
+        },
+        {
+          "round": 4,
+          "subject_id": 5,
+          "bait": {
+            "step": 17,
+            "batch_id": 18,
+            "event_index": 1,
+            "bait_id": 1
+          },
+          "main_step": 18,
+          "main_id": 2,
+          "batch_id": 19,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101812-teacher.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101812,
+      "policy": "teacher",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 5,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 0
+          },
+          "main_step": 15,
+          "main_id": 2,
+          "batch_id": 16,
+          "event_index": 1
+        },
+        {
+          "round": 4,
+          "subject_id": 5,
+          "bait": {
+            "step": 17,
+            "batch_id": 18,
+            "event_index": 1,
+            "bait_id": 1
+          },
+          "main_step": 18,
+          "main_id": 2,
+          "batch_id": 19,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101812-wait-bait.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101812,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 5,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 0
+          },
+          "main_step": 15,
+          "main_id": 2,
+          "batch_id": 16,
+          "event_index": 1
+        },
+        {
+          "round": 4,
+          "subject_id": 5,
+          "bait": {
+            "step": 17,
+            "batch_id": 18,
+            "event_index": 1,
+            "bait_id": 1
+          },
+          "main_step": 18,
+          "main_id": 2,
+          "batch_id": 19,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101811-teacher.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101811,
+      "policy": "teacher",
+      "success": true,
+      "main_loss": 16,
+      "total_loss": 18,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 2,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 4
+          },
+          "main_step": 14,
+          "main_id": 5,
+          "batch_id": 15,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101811-wait-bait.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101811,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101812-teacher.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101812,
+      "policy": "teacher",
+      "success": true,
+      "main_loss": 16,
+      "total_loss": 18,
+      "normal": true,
+      "overrides": 0,
+      "wait_overrides": 0,
+      "mechanism_examples": [
+        {
+          "round": 3,
+          "subject_id": 2,
+          "bait": {
+            "step": 13,
+            "batch_id": 14,
+            "event_index": 1,
+            "bait_id": 4
+          },
+          "main_step": 14,
+          "main_id": 5,
+          "batch_id": 15,
+          "event_index": 1
+        }
+      ]
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101812-wait-bait.json",
+      "scenario": "wait-bait-v1-01",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101812,
+      "policy": "wait-bait",
+      "success": false,
+      "main_loss": 18,
+      "total_loss": 20,
+      "normal": true,
+      "overrides": 1,
+      "wait_overrides": 0,
+      "mechanism_examples": []
+    }
+  ]
+}

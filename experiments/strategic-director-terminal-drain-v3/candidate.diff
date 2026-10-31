@@ -1,0 +1,37 @@
+--- atomic-v2/client/Client.h
++++ closed-v3/client/Client.h
+@@ -73,9 +73,9 @@
+ 
+ 	void pushBack(const T & item)
+ 	{
+-		assert(!isTerminating);
+-
+-		TLock lock(mx);
++		TLock lock(mx);
++		if(isTerminating)
++			throw TerminationRequestedException();
+ 		items.push_back(item);
+ 		cond.notify_all();
+ 	}
+@@ -95,7 +95,7 @@
+ 	void waitWhileContains(const T & item)
+ 	{
+ 		TLock lock(mx);
+-		cond.wait(lock, [this, &item](){ return !vstd::contains(items, item);});
++		cond.wait(lock, [this, &item](){ return isTerminating || !vstd::contains(items, item);});
+ 
+ 		if (isTerminating)
+ 			throw TerminationRequestedException();
+@@ -103,9 +103,9 @@
+ 
+ 	bool tryRemovingElement(const T & item) //returns false if element was not present
+ 	{
+-		assert(!isTerminating);
+-
+-		TLock lock(mx);
++		TLock lock(mx);
++		if(isTerminating)
++			return false;
+ 		auto itr = vstd::find(items, item);
+ 		if(itr == items.end()) //not in container
+ 		{

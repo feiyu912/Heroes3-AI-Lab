@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "new_native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "final_test_used": false,
+  "strength_claim": false,
+  "games": [
+    {
+      "raw": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/native-01/candidate-positive",
+      "existing_game_reaudited": true,
+      "whole_native_contract_passed": true,
+      "actual_whole_terminal_and_drain": true,
+      "deduplicated_committed_town": {
+        "covered": true,
+        "initial_return_decision_id": 4,
+        "continuation_decision_id": 5,
+        "continuation_position": [
+          28,
+          9,
+          0
+        ],
+        "town_position": [
+          29,
+          8,
+          0
+        ],
+        "actual_move_count": 1,
+        "stock_positive_at_continuation": true,
+        "real_arrival_move_request_id": 9
+      },
+      "current_tile_after_transfer": {
+        "covered": true,
+        "transfer_request_id": 10,
+        "positive_stock_and_real_visitor_before_transfer": true,
+        "full_transfer_conservation_verified": true,
+        "next_policy_request_id": 6,
+        "town_stock_empty_at_policy": true,
+        "zero_length_town_candidate_absent": true
+      },
+      "invalidated_town_commit_after_arrival_and_depletion": {
+        "covered": true,
+        "same_own_turn": true,
+        "old_goal_absent": true,
+        "free_movement_choices": 44,
+        "limitation": "Arrival at current tile and stock depletion co-occur; these two causes are not separately identified."
+      },
+      "receivable_positive_stock_at_current_tile_policy": {
+        "covered": false,
+        "reason": "Existing automatic transfer executes before the next policy request. Positive stock is observed only in the real pre-transfer transaction state; no policy observation with positive receivable stock was exposed."
+      },
+      "raw_sha256": {
+        "PLAN.json": "f44233085ceec6679f15ff29a1de91bb1b7b0399c99a561439fe18db96b4186f",
+        "EXECUTION.json": "30a72205be620fcd79efc7de6286591dac963a1664ab01e337a632827e427195",
+        "typed.jsonl": "2129f05375ac04bb043091a61af7667c5fa1c0d6e289e9a858fb9cd59313c475",
+        "client.log": "6f2001c19166250e8c94540e1f7f14f6078cc6a9ce65fe1379d3e5d7583415b0",
+        "strategy-trace.jsonl": "e25defb0190cb79bec882046e8be819a1779b05a006f8b023fef41a29ede31a3",
+        "agent/mechanism-selector.jsonl": "bdc8e322fe05bb2891e0b12f2c0e92d3872346150ec5eda936d48e86b31dbc7a",
+        "agent/request-00000001.json": "e9e156af2f520b874d5fa2e67cdd1398b29bab802a5be3898ae4038f0bc84ea6",
+        "agent/request-00000002.json": "dee13fb7001944e6a40f675b310b9a77cb7a87ad206003899b4dc7088c03f844",
+        "agent/request-00000003.json": "6b44976c121f55ae17f266bb283a9a3b71dc6979af71c23d892a34e93346962b",
+        "agent/request-00000004.json": "6788f123683486579bd62d9ea0edc52adaf9d2a43b20473d76665364d091d255",
+        "agent/request-00000005.json": "4c2730f13041c7772d327da2fcd92df9779d74bd26e076139620a337dda3b45a",
+        "agent/request-00000006.json": "dbf3d87671e3444c61c6c77c69b35f98e979aa296cc9f06648e171ff7a746808",
+        "agent/request-00000007.json": "8ecd687189f4de1ab000c080e86e2f5c9ee3a914d363bc076bad92a79135aa3d",
+        "agent/request-00000008.json": "144071ff88e1f1d953d314a9eceb7c3e11a27794ee5cae6d32612eea462ced39",
+        "agent/action-00000001.json": "926dfb5dcf05c3cc0eb83fddbf1d9a2d3c0677abb97900bd6f55987dc3d90648",
+        "agent/action-00000002.json": "3a547745a8e9b6e5992dc4617923b4e781697a84b2fb922b61f8cf8400f7cebc",
+        "agent/action-00000003.json": "bbb969a8bf3672813575b64fb862e17598b7e1dc247aac64f09ba2502608da35",
+        "agent/action-00000004.json": "ab3b6fbbe70b21229e978e14ca5a04b7a1b664038bb4d07556f5ac51eee8a5f7",
+        "agent/action-00000005.json": "e7f1c8b5a07faf8d673fcbc338909b552b1c820c02da9f0fa4dd446429c35fcb",
+        "agent/action-00000006.json": "5a1f209edb28847b6e9cf63b48162378aaa6449e0e37c30e39736c101d52bfa1",
+        "agent/action-00000007.json": "4bf5ec4b9c2c60fc565621724a6588c6888a5359a2153c8092a0183ba6172eb8",
+        "agent/action-00000008.json": "ab014d7e31d39750b6eef86eb6018b0d9d0a3d2917a14faca0e7eb2ec7d46910"
+      }
+    },
+    {
+      "raw": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/native-01/candidate-full-merge",
+      "existing_game_reaudited": true,
+      "whole_native_contract_passed": true,
+      "actual_whole_terminal_and_drain": true,
+      "deduplicated_committed_town": {
+        "covered": true,
+        "initial_return_decision_id": 4,
+        "continuation_decision_id": 5,
+        "continuation_position": [
+          28,
+          9,
+          0
+        ],
+        "town_position": [
+          29,
+          8,
+          0
+        ],
+        "actual_move_count": 1,
+        "stock_positive_at_continuation": true,
+        "real_arrival_move_request_id": 9
+      },
+      "current_tile_after_transfer": {
+        "covered": true,
+        "transfer_request_id": 10,
+        "positive_stock_and_real_visitor_before_transfer": true,
+        "full_transfer_conservation_verified": true,
+        "next_policy_request_id": 6,
+        "town_stock_empty_at_policy": true,
+        "zero_length_town_candidate_absent": true
+      },
+      "invalidated_town_commit_after_arrival_and_depletion": {
+        "covered": true,
+        "same_own_turn": true,
+        "old_goal_absent": true,
+        "free_movement_choices": 44,
+        "limitation": "Arrival at current tile and stock depletion co-occur; these two causes are not separately identified."
+      },
+      "receivable_positive_stock_at_current_tile_policy": {
+        "covered": false,
+        "reason": "Existing automatic transfer executes before the next policy request. Positive stock is observed only in the real pre-transfer transaction state; no policy observation with positive receivable stock was exposed."
+      },
+      "raw_sha256": {
+        "PLAN.json": "738dff7eefccf7c1f2acf86f2a64b50690653f02c3ef62890a39f8189dcfd1db",
+        "EXECUTION.json": "a16c7d5fc4dfa82fd1493a404773fc70272e5c76b21270c18ef6d824b8fc4e89",
+        "typed.jsonl": "d7aae8a2baf2f1a2caddbe21bc2e0c59bc12c1490496b8e9a0a0f90721540d57",
+        "client.log": "21b621007c944b102027156277ac484501dba7502267678d77441526d451733b",
+        "strategy-trace.jsonl": "2d29f11b602e0509741f07b482968664df1641388b119379de5637fcbc6f6ecd",
+        "agent/mechanism-selector.jsonl": "06fc662fca777822fa07c3e55811338b575e199113f5e24803d6ed95ce37a560",
+        "agent/request-00000001.json": "5d60e7a35a5a452191b78179e34f191d433c2497967468f2f2ea2977126a2550",
+        "agent/request-00000002.json": "715826ebf6634a27edc2e0e2e8f24954a3c1b9c232ece1a638ae2374cbc7f0bd",
+        "agent/request-00000003.json": "f095ff76f2cb8c5f2f911226101f40c8b4114dc42ff21c2e5a46c0d9281a84ef",
+        "agent/request-00000004.json": "d0e1902199a46eae8c3405c15b6f464c3690368e2624acc61ab850dc8f88530e",
+        "agent/request-00000005.json": "3649642df6a5ae5c8d5a648df8eeac033f5e44042e91715f37affc8cd72f68f3",
+        "agent/request-00000006.json": "1a43f24696550eca25f3900ae67806760fd907b1c424c8b6afba329246236fd0",
+        "agent/request-00000007.json": "1144b826b45d7ce80be11474a79ae25bd2e4599d5017091ed6b196d44cabf0e1",
+        "agent/request-00000008.json": "5c269320667a84394438229a15c3122146d947a490d966990754c73399b054e6",
+        "agent/action-00000001.json": "b84e952f7656ac051cab0f16c452441753a2e731f3bf5e9634d716cb6fd1e673",
+        "agent/action-00000002.json": "ae0568f3999efcb3754a3b715b18f76b52339753049184aa24197b0972d66cb6",
+        "agent/action-00000003.json": "3dee7c51b601203012c19a2c242a17e52c02e195a0001962ba30e0e82e63801b",
+        "agent/action-00000004.json": "ac12a04aa699f5ffe5cf8fce068552cc139e4a6cc44dea2da057e18e66a507ff",
+        "agent/action-00000005.json": "9867135c346a987d2969ec589ce376c3ff2851c7e67d0e9b3fbe4ed4803027c0",
+        "agent/action-00000006.json": "2ccef5285016d4a73c5ca8abc5b95443a24cfc90675a567afdbad7f597a1133a",
+        "agent/action-00000007.json": "6d51bca37ad0107223d7dbbbc84db8e0feb935eec5db892bc3ca5e49f6559112",
+        "agent/action-00000008.json": "42fdae13cc8cace39a64fd69cc76ea3fbd36cb41e2573e3a9e8ccfd8c7ddaa6f"
+      }
+    }
+  ],
+  "auditor_source_sha256": {
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/audit_natural_boundaries.py": "db43c33052df66e40f922442f6dd7ae068f6d7457ddf60ab329a0e96bc354e89",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/SOURCE_FREEZE.json": "c00acca3de5db3e2a560359e6cbe4b3920d7b31101284da965a9de79acf39393",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/audit_mechanism.py": "7c5079739fc39302454e59dd8774ca8a6cbbb38107fc0739406f18923bf7bd83",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/raw_contract_auditor.py": "486bd89520a865364f9233d4387ba068a71200bbbe20383cd8a3315ddfbf27df",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/common.py": "dadedff77e183b82dd2b6e37a36b75bb6059f763a9c4ae4e2ec0611cfbc6d782"
+  }
+}

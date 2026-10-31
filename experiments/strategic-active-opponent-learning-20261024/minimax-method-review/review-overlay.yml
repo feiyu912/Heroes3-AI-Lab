@@ -1,0 +1,79 @@
+- id: llm-pi-ai
+  name: '@deepseek-ai/dsh-llm-pi-ai'
+  config:
+    providers:
+      mini:
+        displayName: mini
+        apiKeyEnv: MINI_API_KEY
+        api: openai-completions
+        baseURL: https://api.minimaxi.com/v1
+        models:
+        - id: MiniMax-M3.1-Flash
+          name: MiniMax-M3.1-Flash
+          maxTokens: 4096
+          reasoningEfforts:
+            low: low
+          compat:
+            supportsReasoningEffort: true
+            thinkingFormat: openai
+            maxTokensField: max_tokens
+        reasoning: low
+- id: agent-default-model
+  config:
+    provider: mini
+    model: MiniMax-M3.1-Flash
+- id: tool-plugin-manager
+  disabled: true
+- id: session-title-llm
+  disabled: true
+- id: tool-working-directory
+  disabled: true
+- id: tool-bash
+  disabled: true
+- id: tool-pwsh
+  disabled: true
+- id: tool-jobs
+  disabled: true
+- id: tool-fs
+  disabled: true
+- id: tool-fs-search
+  disabled: true
+- id: agent-instructions
+  disabled: true
+- id: skill-filesystem
+  disabled: true
+- id: tool-skill
+  disabled: true
+- id: tool-subagent-control
+  disabled: true
+- id: tool-subagent-list-agents
+  disabled: true
+- id: tool-subagent
+  disabled: true
+- id: tool-subagent-fork
+  disabled: true
+- id: tool-workflow
+  disabled: true
+- id: tool-result-pruner
+  disabled: true
+- id: tool-todo
+  disabled: true
+- id: tool-goal
+  disabled: true
+- id: web-search-deepseek
+  disabled: true
+- id: web-deepseek-api
+  disabled: true
+- id: web-fetch-http
+  disabled: true
+- id: tool-web
+  disabled: true
+- id: mcp-resources
+  disabled: true
+- id: credentials
+  disabled: false
+- id: session-persistence-jsonl
+  config:
+    root: G:\Heroes3-AI-Lab\experiments\strategic-active-opponent-learning-20261024\minimax-method-review\sessions
+- id: plan-mode
+  disabled: true

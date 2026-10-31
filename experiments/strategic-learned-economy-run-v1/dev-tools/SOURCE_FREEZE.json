@@ -1,0 +1,14 @@
+{
+  "frozen": true,
+  "inputs": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/PARENT_SOURCES.json": "58c53b052211f1d9823603f4e9ad4500ea96d634bf16e1b93a16828c709422ef",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/PLAN.md": "8007c3417e4a1bc73c6450dd44478d2be0deee8356e1fef48176055e8128cd22",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/check_cpu.py": "9b95c6e3964392277b1bc1389ed39bbf586d5ddfc4ce26a29fb5f82a5fd7fb16",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/collect_cpu.py": "178d58902c99261522862b12bf7a5b128fa5cf33c4ebd6645a6d008675da8231",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/evaluate_dev.py": "d0f548f6ddaba205204d31eafd72764fd8ab50d79bb1c37e1652033f6b9c7d76",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/prepare.py": "74264707798ccac4bee44ff3989b292e28b03166099d47244fcb5f3c2da28fd0"
+  },
+  "root_sources_unchanged": true,
+  "native_runs": 0,
+  "gpu_runs": 0
+}

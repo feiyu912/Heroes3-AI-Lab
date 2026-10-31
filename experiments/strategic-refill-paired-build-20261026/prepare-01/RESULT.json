@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "action": "prepare",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "protected_inputs_before_and_after_equal": true
+}

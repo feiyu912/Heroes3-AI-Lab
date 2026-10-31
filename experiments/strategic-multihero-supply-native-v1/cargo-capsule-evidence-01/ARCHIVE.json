@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "copies": {
+    "scripted-supply-cargo-capsule-01": {
+      "regular_files": 240,
+      "symlinks": 0
+    }
+  },
+  "no_asset_link_dereference": true
+}

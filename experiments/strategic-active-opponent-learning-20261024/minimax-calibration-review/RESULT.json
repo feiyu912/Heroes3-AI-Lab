@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "session_id": "session-892a677b-b1d5-4d35-96be-f144171ca6e0",
+  "provider": "mini",
+  "model": "MiniMax-M3.1-Flash",
+  "reasoning_effort": "low",
+  "max_output_tokens": 4096,
+  "model_request_count": 1,
+  "tools": [],
+  "usage": {
+    "inputTokens": 853,
+    "outputTokens": 623,
+    "totalTokens": 1476
+  },
+  "source_access": "implementation-agent report in TASK.md only; no raw evidence access",
+  "final_character_count": 453,
+  "final_chinese_character_count": 247,
+  "artifacts": [
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\TASK.md",
+      "sha256": "4b786eb6b1b4675992a20b99f77ed68be14a37f676e695d0e12977030f627362",
+      "bytes": 1958
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\review-overlay.yml",
+      "sha256": "a59de6b680d36c2b35533ad6f868e1923b59695bd4d0f8e73ad2ba9a74e8e16a",
+      "bytes": 1858
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\RUN.json",
+      "sha256": "be83abab0f44c0326562346f20672b63c4fec67aa24fd796ea5449cb9bb016ea",
+      "bytes": 945
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\REQUEST_ATTESTATION.json",
+      "sha256": "9fc3cc168191e7879e01a2f821aa59b92c07d31e32e097c9a5fea9966e6ae0f8",
+      "bytes": 954
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\events.jsonl",
+      "sha256": "b5cc26741bebfef47c46a8545f8992f7382772a5f49e5a3e2efdfb4768af91cb",
+      "bytes": 4600
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\REVIEW.md",
+      "sha256": "7b1f14232610c7abe872d559e4d24e326ad36cacf8db3ad724988cbe0b6fc540",
+      "bytes": 1308
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\sessions\\--G-Heroes3-AI-Lab-experiments-strategic-active-opponent-learning-20261024-minimax-calibration-review--\\session-892a677b-b1d5-4d35-96be-f144171ca6e0\\session.v4.jsonl.zstd",
+      "sha256": "d5275a283ad1e309ff070209f89f073c0e99696e6a34eaf0b39a734895445695",
+      "bytes": 8125
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\REVIEWER_LIMITATIONS.md",
+      "sha256": "3df1d90ef90f1d880100f815f30e849ef93f222f1d4ffd4f7a87b1451ec59c14",
+      "bytes": 1443
+    }
+  ]
+}

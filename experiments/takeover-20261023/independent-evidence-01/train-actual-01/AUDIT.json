@@ -1,0 +1,369 @@
+{
+  "passed": true,
+  "actual_raw_audits_rerun": 8,
+  "all_complete_raw_audits_equal": true,
+  "CUDA_onpolicy_certificates_read_and_hash_verified": 8,
+  "CUDA_replay_independently_rerun": false,
+  "CPU_proposals_independently_recomputed": false,
+  "samples": 3952,
+  "episodes": 8,
+  "wins": 4,
+  "losses": 4,
+  "actual_recruits": 658,
+  "actual_free_transfers": 70,
+  "recruited_quantity": 5311,
+  "cells": [
+    {
+      "cell": 0,
+      "rows": 353,
+      "reward": 1.0,
+      "job": {
+        "seed": 2026103900,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 0,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 43,
+      "actual_free_transfers": 3,
+      "builds": 9,
+      "recruited_quantity": 221,
+      "recruit_quantity_buckets": {
+        "affordable_all": 18,
+        "one": 18,
+        "half": 7
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 29900
+      },
+      "creatures": {
+        "0": 110,
+        "2": 33,
+        "6": 14,
+        "4": 49,
+        "8": 15
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 1,
+      "rows": 1047,
+      "reward": 1.0,
+      "job": {
+        "seed": 2026103901,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 1,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 151,
+      "actual_free_transfers": 20,
+      "builds": 17,
+      "recruited_quantity": 1451,
+      "recruit_quantity_buckets": {
+        "half": 49,
+        "affordable_all": 53,
+        "one": 49
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 241260
+      },
+      "creatures": {
+        "0": 576,
+        "2": 411,
+        "6": 104,
+        "8": 92,
+        "4": 213,
+        "10": 55
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 2,
+      "rows": 291,
+      "reward": -1.0,
+      "job": {
+        "seed": 2026103902,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 0,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 16,
+      "actual_free_transfers": 6,
+      "builds": 8,
+      "recruited_quantity": 135,
+      "recruit_quantity_buckets": {
+        "one": 4,
+        "half": 5,
+        "affordable_all": 7
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 14320
+      },
+      "creatures": {
+        "2": 35,
+        "0": 77,
+        "6": 16,
+        "4": 7
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 3,
+      "rows": 181,
+      "reward": -1.0,
+      "job": {
+        "seed": 2026103903,
+        "map": "takeover-v2-train-01-mines",
+        "owned_player": 1,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 13,
+      "actual_free_transfers": 4,
+      "builds": 3,
+      "recruited_quantity": 56,
+      "recruit_quantity_buckets": {
+        "half": 7,
+        "one": 4,
+        "affordable_all": 2
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 4200
+      },
+      "creatures": {
+        "0": 35,
+        "2": 21
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 4,
+      "rows": 1287,
+      "reward": 1.0,
+      "job": {
+        "seed": 2026103904,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 0,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 338,
+      "actual_free_transfers": 16,
+      "builds": 47,
+      "recruited_quantity": 2866,
+      "recruit_quantity_buckets": {
+        "affordable_all": 109,
+        "one": 112,
+        "half": 117
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 464340
+      },
+      "creatures": {
+        "0": 1104,
+        "4": 477,
+        "2": 787,
+        "6": 262,
+        "8": 151,
+        "10": 85
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 5,
+      "rows": 478,
+      "reward": 1.0,
+      "job": {
+        "seed": 2026103905,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 1,
+        "opponent": "EmptyAI",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 72,
+      "actual_free_transfers": 11,
+      "builds": 12,
+      "recruited_quantity": 467,
+      "recruit_quantity_buckets": {
+        "one": 29,
+        "affordable_all": 17,
+        "half": 26
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 74760
+      },
+      "creatures": {
+        "0": 196,
+        "2": 113,
+        "4": 64,
+        "6": 47,
+        "8": 37,
+        "10": 10
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 6,
+      "rows": 149,
+      "reward": -1.0,
+      "job": {
+        "seed": 2026103906,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 0,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 7,
+      "actual_free_transfers": 1,
+      "builds": 6,
+      "recruited_quantity": 37,
+      "recruit_quantity_buckets": {
+        "affordable_all": 3,
+        "one": 2,
+        "half": 2
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 3740
+      },
+      "creatures": {
+        "0": 14,
+        "2": 18,
+        "6": 1,
+        "4": 4
+      },
+      "all_raw_audits_equal": true
+    },
+    {
+      "cell": 7,
+      "rows": 166,
+      "reward": -1.0,
+      "job": {
+        "seed": 2026103907,
+        "map": "takeover-v2-train-02-development",
+        "owned_player": 1,
+        "opponent": "Nullkiller2",
+        "logical_update": 0,
+        "checkpoint_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79"
+      },
+      "actual_recruits": 18,
+      "actual_free_transfers": 9,
+      "builds": 5,
+      "recruited_quantity": 78,
+      "recruit_quantity_buckets": {
+        "half": 6,
+        "one": 7,
+        "affordable_all": 5
+      },
+      "recruit_resource_spending": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 12440
+      },
+      "creatures": {
+        "0": 9,
+        "6": 16,
+        "2": 35,
+        "4": 18
+      },
+      "all_raw_audits_equal": true
+    }
+  ],
+  "checkpoint_sha256": "85c5fdda76e1d98fcc157f86f08203e7f9db0e1774f5b0f254ad5b20f9b55a9a",
+  "initial_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "actual_reported_CUDA_Adam_steps": 248,
+  "full_saved_Adam_checked": true,
+  "CPU_final_model_loaded": true,
+  "parameter_delta": {
+    "actor": {
+      "changed_tensors": 9,
+      "l2": 0.7455639476122454,
+      "max_abs": 0.031660061329603195
+    },
+    "critic": {
+      "changed_tensors": 6,
+      "l2": 1.1667085454330413,
+      "max_abs": 0.05789031274616718
+    },
+    "recruit_actor": {
+      "changed_tensors": 1,
+      "l2": 0.03715064609710946,
+      "max_abs": 0.016542118042707443
+    },
+    "recruit_critic": {
+      "changed_tensors": 1,
+      "l2": 0.11394810759451239,
+      "max_abs": 0.05193529278039932
+    }
+  },
+  "recruit_bias_initial": -4.0,
+  "recruit_bias_final": -3.99643611907959,
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-00/admitted/AUDIT.json": "8ba08b1999ce5b9fd636e219c52ae7cee0af0c6021f21e4b04974ec56b7b5591",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-01/admitted/AUDIT.json": "650d70da6f410dca3b1d8dbc4dc9f9b0790fc1fcc633949716402a727021a8a8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-02/admitted/AUDIT.json": "8c4ebaadaf290ce0c18ae30013492f4d998a46791dc4f14d346a2684e720bc1f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-03/admitted/AUDIT.json": "f71d927644642a71fbb05933d1b90e7f8ca0ac0de24222c16b2828e10ef8e295",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-04/admitted/AUDIT.json": "4f03d100b337d25351803937eef59a27ba0355593ee48eb0d272c9f9632fc9a2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-05/admitted/AUDIT.json": "e62fdb76463f06824ae61304ac7243b492bbdab69093139b78015710dc4de232",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-06/admitted/AUDIT.json": "5222ca861b6eeb18ec4239022e8bdf45a6d87687f3051b759ac230fe13bac559",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-train-20261023-01/cell-07/admitted/AUDIT.json": "a437d0a60b360d4b6be622d723dfad6cf75e7ef880db943a9885bee9d7cf0c4c"
+  },
+  "native_runs_by_reviewer": 0,
+  "GPU_calls": 0,
+  "optimizer_steps_by_reviewer": 0,
+  "ability_improvement_claim": false
+}

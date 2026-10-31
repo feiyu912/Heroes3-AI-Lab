@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "all_eight_TRAIN_jobs_identical": true,
+  "training_global_seed": 2026103900,
+  "first_actual_collector_sampler_seed_identical": 4602235435442382978,
+  "zero_policy_PREPARED": {
+    "passed": true,
+    "source_inputs": 936,
+    "native_runs": 0,
+    "GPU_steps": 0,
+    "optimizer_steps": 0,
+    "locks_acquired": false,
+    "input_sha_unchanged": true
+  },
+  "zero_DEV_PREPARED": {
+    "passed": true,
+    "source_inputs": 936,
+    "native_runs": 0,
+    "GPU_steps": 0,
+    "optimizer_steps": 0,
+    "locks_acquired": false,
+    "input_sha_unchanged": true
+  },
+  "minus4_DEV_PREPARED": {
+    "passed": true,
+    "source_inputs": 936,
+    "native_runs": 0,
+    "GPU_steps": 0,
+    "optimizer_steps": 0,
+    "locks_acquired": false,
+    "input_sha_unchanged": true
+  },
+  "native_runs": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "locks_acquired": false
+}

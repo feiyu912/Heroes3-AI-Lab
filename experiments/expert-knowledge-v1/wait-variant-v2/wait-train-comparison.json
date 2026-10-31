@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "case": "hallas-wait-ghost-v2-0-attacker",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-0-defender",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-1-attacker",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-1-defender",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-2-attacker",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 2,
+      "benefit_verified": true,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-2-defender",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 2,
+      "benefit_verified": true,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-3-attacker",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 2,
+      "benefit_verified": true,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    },
+    {
+      "case": "hallas-wait-ghost-v2-3-defender",
+      "split": "train",
+      "normal_pair": true,
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 2,
+      "benefit_verified": true,
+      "first_followup_action_type": 3,
+      "possible_confound": "Undead avoids positive morale; Ghost Dragon aging and stochastic damage remain possible"
+    }
+  ],
+  "benefit_cases": 4,
+  "source_human_replay_obtained": false,
+  "source_claim_verified": true,
+  "full_event_level_aging_trace": false,
+  "provenance": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/run_variants.py": "28478844ffa645c46deb1cbe80c3bbb8498ddbc6b9bf583f859bd7b85e6e3461",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/reconstruct_wait.py": "636f70858ec85d96be988532eaaaccfce7655ba0747ee59de4f9ad5025964109",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source_wait_case.json": "b7d67f1a38f7d191b676f58670d149fd90d6c5ab1e7f094f9c18843e2a6583eb"
+  }
+}

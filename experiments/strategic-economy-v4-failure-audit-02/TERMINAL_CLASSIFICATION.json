@@ -1,0 +1,41 @@
+{
+  "schema": "terminal-action-classification-v1",
+  "classification": "spurious_move_rejected_after_server_terminal_before_client_gameover",
+  "terminal_ack_only": false,
+  "terminal_visit_proof": false,
+  "allow_as_valid_transition": false,
+  "action_request_id": 286,
+  "native_request_id": 496,
+  "server_received": [
+    {
+      "line": 33887,
+      "text": "Received CPack of type 8MoveHero"
+    }
+  ],
+  "server_rejected": [
+    {
+      "line": 33893,
+      "text": "Player is not allowed to perform this action!"
+    },
+    {
+      "line": 33897,
+      "text": "Got false in applying 8MoveHero... that request must have been fishy!"
+    }
+  ],
+  "postrequest_native_execution_evidence": [],
+  "server_terminal": [
+    {
+      "line": 33869,
+      "text": "\tSending to all clients: 14PlayerEndsGame"
+    }
+  ],
+  "client_terminal": [
+    {
+      "line": 33902,
+      "text": "DirectorAI: native gameOver player=red victory=1 loss=0"
+    }
+  ],
+  "evidence_sha256": "78c67eef4d4990b9c773e1fc729017fb7b15be335f998bb027733ef152f0e231",
+  "no_new_native_or_audit_rule_applied": true,
+  "required_change": "Do not release strategic scheduling merely because movement query unblocks while a preceding QueryReply ACK and terminal pack are still pending. This is not solvable by accepting late terminal ACKs."
+}

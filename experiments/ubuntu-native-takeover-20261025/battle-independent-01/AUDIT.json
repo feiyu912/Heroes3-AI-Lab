@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Technical regression on four repeated historical games; no independent strength estimate.",
+  "games": 4,
+  "decisions": 102,
+  "raw_chain_complete": true,
+  "full_CPU_NN_replay": true,
+  "maximum_logit_error": 0.0,
+  "maximum_value_error": 0.0,
+  "maximum_probability_error": 0.0,
+  "absolute_tolerance": 1e-06,
+  "records": [
+    {
+      "name": "BattleAI-attacker",
+      "normal_terminal": true,
+      "raw_decisions": 19,
+      "trajectory_sha256": "50076cb6156ba20380bce2e2e5a46a9c4a35378fde4a1d5a0ba31f9f0974a877",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    },
+    {
+      "name": "BattleAI-defender",
+      "normal_terminal": true,
+      "raw_decisions": 18,
+      "trajectory_sha256": "efe3e5d041d339004bd3cbcc2b1a8745020cfb2cfabe68ed732cbe9ca9370cf3",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    },
+    {
+      "name": "MMAI_MODEL-attacker",
+      "normal_terminal": true,
+      "raw_decisions": 38,
+      "trajectory_sha256": "004361e2e005bb8c22f00cdea05e50557072b96389931577bb071f96c8fd63fb",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    },
+    {
+      "name": "MMAI_MODEL-defender",
+      "normal_terminal": true,
+      "raw_decisions": 27,
+      "trajectory_sha256": "ea50d17620ed074862670a16d630ab3d0496a4866adafb5fd2a6334d21051581",
+      "checkpoint_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20"
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "final_test_touched": false,
+  "seconds": 3.145650748999742,
+  "script_sha256": "fb5d6de80e0c8afb866ffe1b6d98e783fbf08b0b3ca309e9a8231abb50ea1a12"
+}

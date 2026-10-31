@@ -1,0 +1,20 @@
+{
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/lerp-88a604a714acf5a8.pt",
+  "sha256": "198eca34aba717d2de06e6f368a74da6649343fc57f8fc3e91dc1a3667045e1e",
+  "recipe": {
+    "kind": "lerp",
+    "left": {
+      "path": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    "right": {
+      "path": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt",
+      "sha256": "c0702d40994207ff63df5747e4d4d7d135e267d2cca2213aef47856d5455e990"
+    },
+    "alpha": 0.5
+  },
+  "arithmetic_roundtrip_verified": true,
+  "normal_game_evaluation_required": true,
+  "optimizer_reset_on_continuation": true,
+  "explanation": "Weights can be reloaded and all layers trained with a fresh optimizer. Parent checkpoints retain their own original optimizer histories; there is no fictitious combined optimizer trajectory."
+}

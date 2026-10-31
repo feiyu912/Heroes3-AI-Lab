@@ -1,0 +1,27 @@
+{
+  "interface": "DeepSeek Harness bundled headless CLI",
+  "session_file": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\sessions\\--G-Heroes3-AI-Lab-experiments-strategic-active-opponent-learning-20261024-minimax-calibration-review--\\session-892a677b-b1d5-4d35-96be-f144171ca6e0\\session.v4.jsonl.zstd",
+  "request_header_records": [
+    {
+      "type": "request/header",
+      "seq": 10,
+      "time": 1792775194539,
+      "data": {
+        "header": {
+          "config": {
+            "provider": "mini",
+            "model": "MiniMax-M3.1-Flash",
+            "maxTokens": 4096,
+            "reasoningEffort": "low"
+          },
+          "adapterDefaults": {
+            "reasoningEffort": true,
+            "maxTokens": true
+          }
+        },
+        "reason": "initial"
+      }
+    }
+  ],
+  "session_id": "session-892a677b-b1d5-4d35-96be-f144171ca6e0"
+}

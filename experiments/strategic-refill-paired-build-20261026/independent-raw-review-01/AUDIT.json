@@ -1,0 +1,1043 @@
+{
+  "passed": true,
+  "scope": "eight existing diagnostic native games/four matched cases; raw independent mechanism proof, no ability/strength claim",
+  "games": [
+    {
+      "game": "baseline-positive",
+      "arm": "baseline",
+      "case": "positive",
+      "decision_count": 5,
+      "selected_ops": {
+        "move": 1,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 5,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 2,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 7,
+        "actual_director_ack_count": 7,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11
+        ],
+        "policy_and_auto_request_count": 5,
+        "marker_line": 8298,
+        "owned_terminal_line": 8288,
+        "cancellation_intention": {
+          "line": 8298,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8299,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5"
+      },
+      "compiled_source_manifest_sha256": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-positive"
+    },
+    {
+      "game": "baseline-empty",
+      "arm": "baseline",
+      "case": "empty",
+      "decision_count": 4,
+      "selected_ops": {
+        "move": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 4,
+      "recruit_ack_states": 0,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 2,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 6,
+        "actual_director_ack_count": 6,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          10
+        ],
+        "policy_and_auto_request_count": 4,
+        "marker_line": 8252,
+        "owned_terminal_line": 8242,
+        "cancellation_intention": {
+          "line": 8252,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8253,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5"
+      },
+      "compiled_source_manifest_sha256": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-empty"
+    },
+    {
+      "game": "baseline-full-incompatible",
+      "arm": "baseline",
+      "case": "full-incompatible",
+      "decision_count": 5,
+      "selected_ops": {
+        "move": 1,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 5,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 7,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 7,
+        "actual_director_ack_count": 7,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11
+        ],
+        "policy_and_auto_request_count": 5,
+        "marker_line": 8298,
+        "owned_terminal_line": 8288,
+        "cancellation_intention": {
+          "line": 8298,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8299,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5"
+      },
+      "compiled_source_manifest_sha256": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-full-incompatible"
+    },
+    {
+      "game": "baseline-full-merge",
+      "arm": "baseline",
+      "case": "full-merge",
+      "decision_count": 5,
+      "selected_ops": {
+        "move": 1,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 5,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 7,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 7,
+        "actual_director_ack_count": 7,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11
+        ],
+        "policy_and_auto_request_count": 5,
+        "marker_line": 8298,
+        "owned_terminal_line": 8288,
+        "cancellation_intention": {
+          "line": 8298,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8299,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "880df6ab699216feb54f7d61c34a3f465473f2a5bbfd430747d64a5e93193ad5"
+      },
+      "compiled_source_manifest_sha256": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-full-merge"
+    },
+    {
+      "game": "candidate-positive",
+      "arm": "candidate",
+      "case": "positive",
+      "decision_count": 8,
+      "selected_ops": {
+        "move": 4,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 4,
+      "typed_action_acks": 8,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 1,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "move",
+        "move",
+        "move",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        },
+        {
+          "decision_id": 3,
+          "native_request_id": 7,
+          "from_position": [
+            28,
+            9,
+            0
+          ],
+          "to_position": [
+            27,
+            9,
+            0
+          ],
+          "kind": 5
+        },
+        {
+          "decision_id": 4,
+          "native_request_id": 8,
+          "from_position": [
+            27,
+            9,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 4
+        },
+        {
+          "decision_id": 5,
+          "native_request_id": 9,
+          "from_position": [
+            28,
+            9,
+            0
+          ],
+          "to_position": [
+            29,
+            8,
+            0
+          ],
+          "kind": 4
+        }
+      ],
+      "transfers": [
+        {
+          "native_request_id": 10,
+          "creature_id": 0,
+          "amount": 1,
+          "what": 2,
+          "source_before": {
+            "0": 1
+          },
+          "source_after": {},
+          "target_before": {
+            "0": 20,
+            "2": 10
+          },
+          "target_after": {
+            "0": 21,
+            "2": 10
+          },
+          "occupied_slots_before": 2,
+          "occupied_slots_after": 2
+        }
+      ],
+      "initial_occupied_slots": 2,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 11,
+        "actual_director_ack_count": 11,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15
+        ],
+        "policy_and_auto_request_count": 8,
+        "marker_line": 8599,
+        "owned_terminal_line": 8589,
+        "cancellation_intention": {
+          "line": 8599,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8600,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "25de2bded42150eb2703355c63ab44959c736c809835c9425cbbb19f9df1bb32"
+      },
+      "compiled_source_manifest_sha256": "8d4c46e9b116d5644191edf05dad3726010176c4ceb32955187f7b317444e265",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-positive"
+    },
+    {
+      "game": "candidate-empty",
+      "arm": "candidate",
+      "case": "empty",
+      "decision_count": 4,
+      "selected_ops": {
+        "move": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 4,
+      "recruit_ack_states": 0,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 2,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 6,
+        "actual_director_ack_count": 6,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          10
+        ],
+        "policy_and_auto_request_count": 4,
+        "marker_line": 8252,
+        "owned_terminal_line": 8242,
+        "cancellation_intention": {
+          "line": 8252,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8253,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "25de2bded42150eb2703355c63ab44959c736c809835c9425cbbb19f9df1bb32"
+      },
+      "compiled_source_manifest_sha256": "8d4c46e9b116d5644191edf05dad3726010176c4ceb32955187f7b317444e265",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-empty"
+    },
+    {
+      "game": "candidate-full-incompatible",
+      "arm": "candidate",
+      "case": "full-incompatible",
+      "decision_count": 5,
+      "selected_ops": {
+        "move": 1,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 1,
+      "typed_action_acks": 5,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 0,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        }
+      ],
+      "transfers": [],
+      "initial_occupied_slots": 7,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 7,
+        "actual_director_ack_count": 7,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          9,
+          11
+        ],
+        "policy_and_auto_request_count": 5,
+        "marker_line": 8298,
+        "owned_terminal_line": 8288,
+        "cancellation_intention": {
+          "line": 8298,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8299,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "25de2bded42150eb2703355c63ab44959c736c809835c9425cbbb19f9df1bb32"
+      },
+      "compiled_source_manifest_sha256": "8d4c46e9b116d5644191edf05dad3726010176c4ceb32955187f7b317444e265",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-full-incompatible"
+    },
+    {
+      "game": "candidate-full-merge",
+      "arm": "candidate",
+      "case": "full-merge",
+      "decision_count": 8,
+      "selected_ops": {
+        "move": 4,
+        "recruit": 1,
+        "end_turn": 3
+      },
+      "actual_move_results": 4,
+      "typed_action_acks": 8,
+      "recruit_ack_states": 1,
+      "free_transfer_acks": 1,
+      "first_turn_sequence": [
+        "move",
+        "recruit",
+        "move",
+        "move",
+        "move",
+        "end_turn"
+      ],
+      "move_proof": [
+        {
+          "decision_id": 1,
+          "native_request_id": 5,
+          "from_position": [
+            29,
+            8,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 5
+        },
+        {
+          "decision_id": 3,
+          "native_request_id": 7,
+          "from_position": [
+            28,
+            9,
+            0
+          ],
+          "to_position": [
+            27,
+            9,
+            0
+          ],
+          "kind": 5
+        },
+        {
+          "decision_id": 4,
+          "native_request_id": 8,
+          "from_position": [
+            27,
+            9,
+            0
+          ],
+          "to_position": [
+            28,
+            9,
+            0
+          ],
+          "kind": 4
+        },
+        {
+          "decision_id": 5,
+          "native_request_id": 9,
+          "from_position": [
+            28,
+            9,
+            0
+          ],
+          "to_position": [
+            29,
+            8,
+            0
+          ],
+          "kind": 4
+        }
+      ],
+      "transfers": [
+        {
+          "native_request_id": 10,
+          "creature_id": 0,
+          "amount": 1,
+          "what": 2,
+          "source_before": {
+            "0": 1
+          },
+          "source_after": {},
+          "target_before": {
+            "14": 1,
+            "0": 1,
+            "28": 1,
+            "42": 1,
+            "56": 1,
+            "70": 1,
+            "98": 1
+          },
+          "target_after": {
+            "14": 1,
+            "0": 2,
+            "28": 1,
+            "42": 1,
+            "56": 1,
+            "70": 1,
+            "98": 1
+          },
+          "occupied_slots_before": 7,
+          "occupied_slots_after": 7
+        }
+      ],
+      "initial_occupied_slots": 7,
+      "terminal": {
+        "event": "game_over",
+        "completed": true,
+        "player": 1,
+        "own_turn": 3
+      },
+      "drain": {
+        "passed": true,
+        "terminal_ack_scope": "director",
+        "owned_player": 1,
+        "audit_epoch": "director-neutral-makeaction-ack-v4",
+        "registered_count": 11,
+        "actual_director_ack_count": 11,
+        "registered_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          15
+        ],
+        "policy_and_auto_request_count": 8,
+        "marker_line": 8599,
+        "owned_terminal_line": 8589,
+        "cancellation_intention": {
+          "line": 8599,
+          "ids": []
+        },
+        "actual_termination": {
+          "line": 8600,
+          "ids": []
+        },
+        "foreign_waits_pending_at_termination": 0,
+        "actual_atomic_cleared_ids": [],
+        "exact_cancelled_id_count_certified": true,
+        "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+        "foreign_acks_between_intention_and_termination": [],
+        "director_requests_cancelled": 0,
+        "verified_neutral_makeaction_ack_count": 0,
+        "verified_neutral_makeaction_acks": [],
+        "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+      },
+      "binary_sha256": {
+        "vcmiclient": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+        "vcmiserver": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+        "libvcmi.so": "25de2bded42150eb2703355c63ab44959c736c809835c9425cbbb19f9df1bb32"
+      },
+      "compiled_source_manifest_sha256": "8d4c46e9b116d5644191edf05dad3726010176c4ceb32955187f7b317444e265",
+      "loaded_observation_count": 1,
+      "seed": 2026102601,
+      "map": "refill-full-merge"
+    }
+  ],
+  "pairs": [
+    {
+      "case": "positive",
+      "passed": true,
+      "exact_prefix": true,
+      "added_candidate": {
+        "op": "move",
+        "kind": 4,
+        "position": [
+          29,
+          8,
+          0
+        ],
+        "next": [
+          29,
+          8,
+          0
+        ],
+        "path_cost": 0.135897,
+        "heuristic_score": 7.8629
+      },
+      "positive_transfer": true
+    },
+    {
+      "case": "empty",
+      "passed": true,
+      "exact_prefix": true,
+      "added_candidate": null,
+      "positive_transfer": false
+    },
+    {
+      "case": "full-incompatible",
+      "passed": true,
+      "exact_prefix": true,
+      "added_candidate": null,
+      "positive_transfer": false
+    },
+    {
+      "case": "full-merge",
+      "passed": true,
+      "exact_prefix": true,
+      "added_candidate": {
+        "op": "move",
+        "kind": 4,
+        "position": [
+          29,
+          8,
+          0
+        ],
+        "next": [
+          29,
+          8,
+          0
+        ],
+        "path_cost": 0.135897,
+        "heuristic_score": 7.8629
+      },
+      "positive_transfer": true
+    }
+  ],
+  "source_changes": [
+    "AI/DirectorAI/CDirectorAI.cpp"
+  ],
+  "totals": {
+    "existing_games": 8,
+    "actual_decisions": 44,
+    "selected_ops": {
+      "move": 14,
+      "recruit": 6,
+      "end_turn": 24
+    },
+    "successful_move_results": 14,
+    "typed_action_acks": 44,
+    "recruit_ack_states": 6,
+    "free_transfer_acks": 2,
+    "completed_calendar_games": 8
+  },
+  "frozen_auditors_reexecuted": [
+    {
+      "game": "baseline-positive",
+      "actual_decisions_checked": 5,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "baseline-empty",
+      "actual_decisions_checked": 4,
+      "actual_recruits_checked": 0,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "baseline-full-incompatible",
+      "actual_decisions_checked": 5,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "baseline-full-merge",
+      "actual_decisions_checked": 5,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "candidate-positive",
+      "actual_decisions_checked": 8,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 1
+    },
+    {
+      "game": "candidate-empty",
+      "actual_decisions_checked": 4,
+      "actual_recruits_checked": 0,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "candidate-full-incompatible",
+      "actual_decisions_checked": 5,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 0
+    },
+    {
+      "game": "candidate-full-merge",
+      "actual_decisions_checked": 8,
+      "actual_recruits_checked": 1,
+      "actual_transfers_checked": 1
+    }
+  ],
+  "deferred_boundaries": {
+    "unreachable-own-town": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    },
+    "non-owned-town": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    },
+    "current-tile": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    },
+    "committed-kind4-deduplication": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    },
+    "invalidated-old-commit": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    },
+    "legacy-build-only": {
+      "status": "registered-not-constructed-or-run",
+      "coverage": false
+    }
+  },
+  "new_native_games": 0,
+  "new_optimizer_steps": 0,
+  "torch_imported": false,
+  "final_test_used": false,
+  "strength_claim": false,
+  "model_promoted": false
+}

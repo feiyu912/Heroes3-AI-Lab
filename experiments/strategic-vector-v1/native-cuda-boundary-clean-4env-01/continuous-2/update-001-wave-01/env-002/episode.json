@@ -1,0 +1,97 @@
+{
+  "episode_index": 2,
+  "episode_id": "0d8cff1f270bdc2c262a6b974a14cd1c4a3aeb5c6b940e481192e4f50381f121",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-02-development",
+    "red": "DirectorAI",
+    "blue": "Nullkiller2",
+    "seed": 2026103306
+  },
+  "valid": true,
+  "reward": -1.0,
+  "decisions": 340,
+  "native_consumption_verified": true,
+  "native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-2-2026103306-_hm7ayyi",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "red": "DirectorAI",
+      "blue": "Nullkiller2",
+      "seed": 2026103306,
+      "seconds": 120,
+      "tag": "vector-e9aec523-2",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/continuous-2/update-001-wave-01/env-002/agent",
+      "pool_lock_fd": 23,
+      "pool_lock_dev": 2096,
+      "pool_lock_inode": 674895,
+      "report_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/continuous-2/update-001-wave-01/env-002",
+      "native_pid_file": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/continuous-2/update-001-wave-01/env-002/native-pid.json",
+      "lab_root": "/root/heroes3-ai-lab"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "blue",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    "turns": 36,
+    "moves_requested": 340,
+    "move_replies": 340,
+    "changed_tile_replies": 340,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 332,
+    "blocking_visit_replies": 8,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "0e78f1922a0790cef71886d694dc886fa6df109b0e512ddbdc9b301b9175ac73",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 15.187585789999957,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "38cbf86ae150cbf09b6c237839d7002b0bb9bbda0ca663da273963380d06fbdc",
+    "strategy_trace_records": 1564,
+    "native_calendar_last_day": 36,
+    "strategy_targets_sha256": "679b1ad3fbcc4ba41c18466b916e2a94e22687bbf4d0e55fb372ed5fd5fc7d7d",
+    "strategy_targets_records": 1491,
+    "strategy_decisions_sha256": "f5fd2fa32012f7547139a9d2ac669daea1206403faae6140dcc31abce64d6e50",
+    "strategy_decision_records": 340,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-2-2026103306-_hm7ayyi/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 345316,
+        "sha256": "f6a52ac83ea110fee484e0dfbd3ffbea579f7d8d03afeebb36332fa426e04c91"
+      }
+    ]
+  },
+  "rollout_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/continuous-2/update-001-wave-01/env-002/agent",
+  "generator_seed": 3922676329235631927,
+  "native_event_audit": {
+    "valid": true,
+    "counts": {
+      "move_applied": 340,
+      "move_failed": 0,
+      "economy_failed": 0,
+      "query_failed": 0,
+      "server_rejected": 0
+    },
+    "evidence": [],
+    "move_reply_count": 340,
+    "failed_move_reply_count": 0,
+    "blocking_visit_reply_count": 8,
+    "expected_actions": 340,
+    "missing_ack_count": 0,
+    "missing_execution_reply_count": 0,
+    "terminal_ack_missing_after_execution": false,
+    "terminal_native_visit_execution_proof": null,
+    "terminal_unconfirmed_action_indices": [],
+    "classification": "complete_execution"
+  }
+}

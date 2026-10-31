@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "Protocol exercise: one forced legal DEFEND then real BattleAI actions; not teacher supervision",
+  "episodes": [
+    {
+      "episode": 0,
+      "forced_defend_action": 182,
+      "steps": 35,
+      "winner": 0
+    },
+    {
+      "episode": 1,
+      "forced_defend_action": 182,
+      "steps": 42,
+      "winner": 0
+    },
+    {
+      "episode": 2,
+      "forced_defend_action": 182,
+      "steps": 29,
+      "winner": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://archive.ubuntu.com/ubuntu/dists/jammy-updates/InRelease",
+  "sha256": "dbe2987f3a702dd4d2d466a07a8361d812b40b3a8b7b2639a5a7992993d8833d",
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "gpgv: Signature made Sun Oct 25 21:35:05 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+  "bytes": 128049,
+  "verified_at": "2026-10-26T11:32:30.935556+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "pair": 0,
+      "first_choice_difference": 134,
+      "first_movement_difference": null,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-00/a/native/client.log": "92589547d492fbf65459bb39ae3f0616936a481ed4a7d5df382b6d4b24231dcd",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-00/b/native/client.log": "1520b24b5d64cb2d5ec4967c81c0222211c74a8a89a7e91422f0cbac9583f6c5"
+      },
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 1,
+      "first_choice_difference": 37,
+      "first_movement_difference": 38,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-01/a/native/client.log": "3f806163593bd42c75c7380ebe3f43550b1716dce0697c79a99c0dc45bcf4a61",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-01/b/native/client.log": "d33db02b18d4ddd9936a37d4d045963b0067dbfa85c740db20d5333b28d1ae21"
+      },
+      "first_movement_context": [
+        {
+          "movement": [
+            "blue strategic hero",
+            "27 16 0",
+            "27 15 0"
+          ],
+          "line": 12948,
+          "last_policy_decision": 38
+        },
+        {
+          "movement": [
+            "blue strategic hero",
+            "27 16 0",
+            "28 15 0"
+          ],
+          "line": 12947,
+          "last_policy_decision": 38
+        }
+      ],
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 2,
+      "first_choice_difference": 38,
+      "first_movement_difference": 177,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-02/a/native/client.log": "3533cd01178bd3b705b1a8d4dec9ee26d9c6e6c2005fefd778b58986151e94cc",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-02/b/native/client.log": "c84968df6b60eb41144c548ca4f4c5b9f9a17495399604491330d24155283ac4"
+      },
+      "first_movement_context": [
+        {
+          "movement": [
+            "red strategic hero",
+            "7 8 0",
+            "8 9 0"
+          ],
+          "line": 30444,
+          "last_policy_decision": 75
+        },
+        {
+          "movement": [
+            "red strategic hero",
+            "7 8 0",
+            "7 9 0"
+          ],
+          "line": 30444,
+          "last_policy_decision": 75
+        }
+      ],
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 3,
+      "first_choice_difference": 18,
+      "first_movement_difference": 3,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/a/native/client.log": "04f6f1e1991e4ace7b89cc22fa2f7aad657577433775728a6170b9e8b39d5721",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/b/native/client.log": "5925067a6c79a136ac61b6ed37032058d66854f526f5481b7c6c3775a1f55b4f"
+      },
+      "first_movement_context": [
+        {
+          "movement": [
+            "hero.core.caitlin.name",
+            "7 8 0",
+            "6 9 0"
+          ],
+          "line": 8526,
+          "last_policy_decision": 0
+        },
+        {
+          "movement": [
+            "red strategic hero",
+            "7 9 0",
+            "6 10 0"
+          ],
+          "line": 8524,
+          "last_policy_decision": 0
+        }
+      ],
+      "movement_diverged_before_first_choice": true
+    },
+    {
+      "pair": 4,
+      "first_choice_difference": 69,
+      "first_movement_difference": null,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-04/a/native/client.log": "6205134886f67f6345c94b93724992b70aae995296862a75662c66de1eb324dd",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-04/b/native/client.log": "083139a0b09de215643ff9ed82bdcb52e344cd33b853b325ad30c9b838b12ccc"
+      },
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 5,
+      "first_choice_difference": 72,
+      "first_movement_difference": 79,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-05/a/native/client.log": "61e83294e3d757650fb34cb7c8300ea340833f06e4af380d0d427df2399c9938",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-05/b/native/client.log": "c8c57c6156842b863fe41f48ccc6e10f29ba0637592f4b172f90467bd6d75923"
+      },
+      "first_movement_context": [
+        {
+          "movement": [
+            "blue strategic hero",
+            "28 9 0",
+            "27 8 0"
+          ],
+          "line": 17050,
+          "last_policy_decision": 79
+        },
+        {
+          "movement": [
+            "blue strategic hero",
+            "28 9 0",
+            "27 9 0"
+          ],
+          "line": 17053,
+          "last_policy_decision": 79
+        }
+      ],
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 6,
+      "first_choice_difference": null,
+      "first_movement_difference": null,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-06/a/native/client.log": "4243dd31ceb71cc6bf3a21aad97f89db5f95b80f3ae12d8965144369747fa81f",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-06/b/native/client.log": "0437531952975293f18d08e17f9cdc95a6beff505d2fe48b89e235f6f9a4f43f"
+      },
+      "movement_diverged_before_first_choice": false
+    },
+    {
+      "pair": 7,
+      "first_choice_difference": 121,
+      "first_movement_difference": 38,
+      "input_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/a/native/client.log": "6c6f0a282df3bfcad97c60f714a5b0d80772d35623a9f43c56e5ab3ccb1464e1",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/b/native/client.log": "b9861d27eb0256c99a4ddf7e94e38fbe9fc44941afa7877bdaa3b66fd57bd020"
+      },
+      "first_movement_context": [
+        {
+          "movement": [
+            "hero.core.shakti.name",
+            "14 7 0",
+            "15 8 0"
+          ],
+          "line": 11549,
+          "last_policy_decision": 9
+        },
+        {
+          "movement": [
+            "red strategic hero",
+            "7 17 0",
+            "8 18 0"
+          ],
+          "line": 11551,
+          "last_policy_decision": 9
+        }
+      ],
+      "movement_diverged_before_first_choice": true
+    }
+  ],
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "limitation": "A different server movement prefix can be harmless hero ordering or a substantive world difference. No same-visible-request assertion proves all hidden history is controlled. No result is discarded."
+}

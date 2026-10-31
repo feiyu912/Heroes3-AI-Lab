@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "plan_only": true,
+  "planned_games": 16,
+  "planned_pairs": 8,
+  "native_runs": 0,
+  "gpu_runs": 0,
+  "optimizer_steps": 0,
+  "cpu_models_loaded_and_argmax_checked": true,
+  "archived_training_request_only": true,
+  "actions": [
+    {
+      "model_sha256": "0dbbc4735e217e39a55dcd2f398b945bcb9ea6490525c86645843a5f1ac313f6",
+      "op": "move",
+      "selected_index": 1
+    },
+    {
+      "model_sha256": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+      "op": "move",
+      "selected_index": 1
+    }
+  ],
+  "frozen_input_count": 356,
+  "root_inputs_unchanged": true,
+  "plan": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-run-v1/dev-tools/plan-01/PLAN.json"
+}

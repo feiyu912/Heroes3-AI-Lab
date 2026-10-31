@@ -1,0 +1,5 @@
+﻿{
+    "detail":  "Training/evaluation pipeline failed; preserve logs and do not publish partial results.",
+    "updated_at":  "2026-10-15T21:25:02.5866670+08:00",
+    "state":  "failed"
+}

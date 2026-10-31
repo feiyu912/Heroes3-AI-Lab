@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/python-packages/cmake/data/bin/cmake",
+    "--version"
+  ],
+  "returncode": 0,
+  "seconds": 0.032755136489868164,
+  "stdout_sha256": "246a2f1394c1f89d947b498ec32196bac864589d0a4aa532c7990a6e011e9fa8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

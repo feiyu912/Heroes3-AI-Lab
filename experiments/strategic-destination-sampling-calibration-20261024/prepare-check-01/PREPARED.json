@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "source_inputs": 971,
+  "native_runs": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "locks_acquired": false,
+  "input_sha_unchanged": true
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checked_files": 22,
+  "files": {
+    "/mnt/g/Heroes3-AI-Lab/research/battle_features.py": "12f4af2cf215351d50ca8349ab4335f3cc31a1e60b76969a052a0bc57d7216c5",
+    "/mnt/g/Heroes3-AI-Lab/research/decision_model.py": "e575adac208d2509d14a16cb2f7828eb3c708f1e6c3b6d3ae1d8dd2b69cedcb2",
+    "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json": "8af02c4b126a4bc59abb837ca6e67f0d5c9b3f7bf40207209a132f43b89162e1",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluate-battles.py": "bfe7f266a9ef3665b2f04640512de3088b67e0e0a50bc2828f85f514a7dca0e3",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluate-policy.py": "0a0f96498e8cd6c71c821a684301f9236572e6493638a68897b216a125597a7e",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluation_provenance.py": "3f195c726dcd29d5229d550ce9c0c334c998d739201c699c3642cf0897ae47b9",
+    "/mnt/g/Heroes3-AI-Lab/research/lab-env.py": "bdb325ee5cad7d5df952a35f7d357ef9f3bad4d624fe5bd2233b46a11f0b0dee",
+    "/mnt/g/Heroes3-AI-Lab/research/observation_digest.py": "c6010c7dca141957628731b772126411dbc536cae11e8fa320a42e486dea2d10",
+    "/mnt/g/Heroes3-AI-Lab/research/prepare-worker.py": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c",
+    "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485",
+    "/mnt/g/Heroes3-AI-Lab/research/run-lab.sh": "a5ba679e61c27f244143b90645a4baf4c54267a167ebcc4f797dee997a4301d4",
+    "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-attacker.onnx": "62adf45ea34a323d72e9ce953a0c8b6740e60c3cec3651f282bfacee785d3151",
+    "/root/heroes3-ai-lab/data/vcmi/Data/MMAI/models/lab-upstream-defender.onnx": "73bca79446ebdcab01e47fbbfada0162380df907bc86b19a21d0c502500cfaa9",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/lab/diverse-192.vmap": "ad5e0295ed944d228aebb8261b3f6689b3089eed58fd4c6becc6b8d6d784c500",
+    "/root/heroes3-ai-lab/data/vcmi/Mods/ML/Content/heroes.json": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+    "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+    "/root/heroes3-ai-lab/onnxruntime/lib/libonnxruntime.so": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so": "8beb54df4e29651f2bfff902a353847485cd2431fc5ddd1019ba399e398a6ba0",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/exporter_v15.so": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7"
+  },
+  "scope": "Current freeze and verification only; historical evaluations retain their earlier smaller freeze sets"
+}

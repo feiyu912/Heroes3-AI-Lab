@@ -1,0 +1,17 @@
+{
+  "test_scope": "Identical archived full-terminal batches; isolates serialization/optimizer/RNG, not asynchronous native regeneration",
+  "CPU_only": true,
+  "CUDA_rng_restored": false,
+  "real_file_saved_loaded": true,
+  "update1_reproduces_actual_checkpoint_exactly": true,
+  "after_next_update_bitwise_comparisons": {
+    "model": true,
+    "Adam": true,
+    "CPU_RNG": true,
+    "Python_RNG": true,
+    "collection_episode_RNG": true
+  },
+  "optimizer_steps": 8,
+  "original_async_audit_remains_failed": "TRAINER_CPU_AUDIT_02.json",
+  "passed": true
+}

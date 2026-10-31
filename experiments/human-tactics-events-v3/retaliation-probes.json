@@ -1,0 +1,114 @@
+[
+  {
+    "id": "retaliation-probe-swordsman",
+    "tactic_id": "retaliation-mechanism-probe",
+    "split": "engineering-probe-not-test",
+    "map": "events-v3-probes/swordsman.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/swordsman.vmap",
+    "sha256": "ca8d89f3f595db9e895c195a896c3c169630e60762e303387b9b452cf710b7a3",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 160
+        }
+      ],
+      [
+        {
+          "type": "core:swordsman",
+          "amount": 40
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "subject_creature": "swordsman",
+    "expected_rule": "one per round",
+    "human_demonstration": false
+  },
+  {
+    "id": "retaliation-probe-royalGriffin",
+    "tactic_id": "retaliation-mechanism-probe",
+    "split": "engineering-probe-not-test",
+    "map": "events-v3-probes/royalGriffin.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/royalGriffin.vmap",
+    "sha256": "35aa50978be26ab3f5d279f18b13fac6c929ea4958860a6b7f2c2059d5cd6317",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 160
+        }
+      ],
+      [
+        {
+          "type": "core:royalGriffin",
+          "amount": 30
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "subject_creature": "royalGriffin",
+    "expected_rule": "unlimited",
+    "human_demonstration": false
+  }
+]

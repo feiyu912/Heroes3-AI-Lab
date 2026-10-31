@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "contract_sha256": "94fababf70089e1d944b17280c0d6e003ba39dc34c6a34fcb853316dc4308cf2",
+  "configured_sha256": "dc806a32c438e6c5a9e53c33639771b2ec08d8de443c768a59f7a2e95ebc1b3e",
+  "build_ninja_sha256": "3239eacb53c89d5b1ee2df673b0e306fd104503e2e0369adc7a01c10b024afd7",
+  "compile_commands_sha256": "98670b8a4c529662f50ddcfd063c5d0fc65ed920cbae70689939e7d6f095b242",
+  "dependency_closure_sha256": "d716b5712fd774c70924b6a44a8d0aff040b98bf7b145e9b232a8452811d84b3",
+  "independent_graph_audit_sha256": "443bf2a3fd588c78ecc5b6123d4b20907574dc807c85bf2d9b43793b39702ed9",
+  "independent_closure_readback_sha256": "1872b8ae2870a7f679b2c64ae9688b3947aab01964df929616c68f2c8c2627f4",
+  "scope": "internal -j2 build admission; not native mechanism or model promotion"
+}

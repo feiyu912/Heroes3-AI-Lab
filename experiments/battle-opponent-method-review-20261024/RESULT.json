@@ -1,0 +1,94 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "session_id": "session-a2cfea51-3810-40fb-8766-2566046c6516",
+  "provider": "mini",
+  "model": "MiniMax-M3.1-Flash",
+  "reasoning_effort": "low",
+  "max_output_tokens": 4096,
+  "model_request_count": 1,
+  "tools": [],
+  "usage": {
+    "inputTokens": 3045,
+    "outputTokens": 476,
+    "totalTokens": 3521
+  },
+  "input_below_6000_tokens": true,
+  "source_access": "minimal source excerpts and certificate summary in TASK.md only; no direct source/raw evidence access",
+  "final_chinese_character_count": 373,
+  "artifacts": [
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\TASK.md",
+      "sha256": "2337f8318b0dd84fa7a3fe8dd4f4fa538ab894e2247c481ab08c60c68aad5324",
+      "bytes": 9154
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\MINIMAL_SOURCE_EXCERPTS.md",
+      "sha256": "7b13c585d3af069307ab2c8a4ef7e23f7d5e8301508154517059f690509791ad",
+      "bytes": 6832
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\SOURCE_EXCERPTS.md",
+      "sha256": "93ec001a80c8d51ee64a659b823db8dcc043d96364d7a6f242bb91553418f029",
+      "bytes": 19395
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\SOURCE_EVIDENCE.json",
+      "sha256": "5d9533a30ee451e289983fbfa41b359b33ef7e7d3e3320bbe32f00edc054f346",
+      "bytes": 1211084
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\review-overlay.yml",
+      "sha256": "31671e03b2cd53fe7e3f39a688073d469da11e6f1d082024b16bc1ee227472b1",
+      "bytes": 1826
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\RUN.json",
+      "sha256": "1d20052453468a56d4acf164ac288e4e9a93722d015e50085e0996827262bfdd",
+      "bytes": 914
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\REQUEST_ATTESTATION.json",
+      "sha256": "7013ffde218c2d133bbb39e28933496c63f986a6aebc9f023878746a4678c18e",
+      "bytes": 889
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\events.jsonl",
+      "sha256": "86d2a621c255674de1bfda8f8dd9ebd5fbcf0dd68e6df6ffb2356262c7c5d3e9",
+      "bytes": 4202
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\MINIMAX_REVIEW.md",
+      "sha256": "2e242bc70bdd479762ef7202b6b849c28bd78ea596a22484d16e49b7dc03ac44",
+      "bytes": 1829
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\sessions\\--G-Heroes3-AI-Lab-experiments-battle-opponent-method-review-20261024--\\session-a2cfea51-3810-40fb-8766-2566046c6516\\session.v4.jsonl.zstd",
+      "sha256": "64db6b49ac7c67c41929e55c89d4bf7b383d73de9e89b81b09595c8e997ebd04",
+      "bytes": 14815
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\SOURCE_FINDINGS.md",
+      "sha256": "3c69ed0d8b2410624a5f4d2a6dec452c33567d418a90535418c31bca4ec04feb",
+      "bytes": 8130
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\REVIEWER_LIMITATIONS.md",
+      "sha256": "b6314ea6946030a809a826dade7f6a948c0d94cb8d22a01141b0656e0c857bba",
+      "bytes": 1345
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\CURRENT_RUN_BINDING.json",
+      "sha256": "6fa6b9faf53e672b7df356ce931f4e705543f7d3a2adb31c0c65ac728a2ff91f",
+      "bytes": 2261564
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\bind_current_readonly.py",
+      "sha256": "8e382c4e90651089e6a683ab89dc648703938aeea8e113c2fa933329053b983f",
+      "bytes": 2400
+    }
+  ],
+  "historical_run_reviewed_by_minimax": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-20261023-02",
+  "current_run_binding": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01",
+  "identity_correction": "Separate runs, different PLAN/FREEZE/RESULT/checkpoint hashes. Original MiniMax input/output/session unchanged."
+}

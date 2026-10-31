@@ -1,0 +1,14 @@
+{
+  "scope": "restoration helper only; does not freeze trainer or select schedule",
+  "files": {
+    "restore_learner.py": "cb0f7a5a268f4e7e5a8b5b8c368c8927a528d9ac86d190f06457d1b159429cc7",
+    "check_restore_cpu.py": "4afdfc35806dee830ce698ec0912a2549c4b22de6038aa1588c09137d250f884",
+    "audit_restore_cuda.py": "0763ea33fbc25e5a5ad0640b45352431f287351b169e91d06b8557309db463b8"
+  },
+  "checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa",
+  "final_CPU_evidence": "restore-cpu-final-01/AUDIT.json",
+  "actual_counter": 3840,
+  "GPU_restore_executed_by_helper_owner": false,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

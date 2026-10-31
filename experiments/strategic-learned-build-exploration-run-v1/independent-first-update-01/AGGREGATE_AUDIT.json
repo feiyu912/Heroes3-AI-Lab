@@ -1,0 +1,1533 @@
+{
+  "passed": true,
+  "totals": {
+    "train": {
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "builds": 28,
+      "policy_end_turns": 114,
+      "income": 1
+    },
+    "a": {
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "builds": 87,
+      "policy_end_turns": 0,
+      "income": 12
+    },
+    "b": {
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "builds": 47,
+      "policy_end_turns": 0,
+      "income": 3
+    }
+  },
+  "pairs": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102900
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "builds": 30,
+          "income": 6,
+          "calendar": {
+            "native_day": 48,
+            "own_turn": 48,
+            "client_line": 54353,
+            "first_policy_day": 1,
+            "elapsed_days": 47
+          },
+          "policy_moves": 439
+        },
+        "b": {
+          "win": true,
+          "builds": 5,
+          "income": 0,
+          "calendar": {
+            "native_day": 12,
+            "own_turn": 12,
+            "client_line": 19845,
+            "first_policy_day": 1,
+            "elapsed_days": 11
+          },
+          "policy_moves": 99
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102901
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "builds": 8,
+          "income": 0,
+          "calendar": {
+            "native_day": 14,
+            "own_turn": 14,
+            "client_line": 22078,
+            "first_policy_day": 1,
+            "elapsed_days": 13
+          },
+          "policy_moves": 116
+        },
+        "b": {
+          "win": true,
+          "builds": 8,
+          "income": 0,
+          "calendar": {
+            "native_day": 14,
+            "own_turn": 14,
+            "client_line": 22078,
+            "first_policy_day": 1,
+            "elapsed_days": 13
+          },
+          "policy_moves": 116
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102902
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "builds": 1,
+          "income": 0,
+          "calendar": {
+            "native_day": 12,
+            "own_turn": 12,
+            "client_line": 27344,
+            "first_policy_day": 1,
+            "elapsed_days": 11
+          },
+          "policy_moves": 102
+        },
+        "b": {
+          "win": false,
+          "builds": 1,
+          "income": 0,
+          "calendar": {
+            "native_day": 12,
+            "own_turn": 12,
+            "client_line": 28107,
+            "first_policy_day": 1,
+            "elapsed_days": 11
+          },
+          "policy_moves": 102
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102903
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "builds": 9,
+          "income": 0,
+          "calendar": {
+            "native_day": 32,
+            "own_turn": 31,
+            "client_line": 123268,
+            "first_policy_day": 1,
+            "elapsed_days": 31
+          },
+          "policy_moves": 252
+        },
+        "b": {
+          "win": false,
+          "builds": 12,
+          "income": 2,
+          "calendar": {
+            "native_day": 54,
+            "own_turn": 54,
+            "client_line": 229865,
+            "first_policy_day": 1,
+            "elapsed_days": 53
+          },
+          "policy_moves": 478
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102904
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "builds": 23,
+          "income": 6,
+          "calendar": {
+            "native_day": 44,
+            "own_turn": 44,
+            "client_line": 58798,
+            "first_policy_day": 1,
+            "elapsed_days": 43
+          },
+          "policy_moves": 394
+        },
+        "b": {
+          "win": true,
+          "builds": 8,
+          "income": 0,
+          "calendar": {
+            "native_day": 17,
+            "own_turn": 17,
+            "client_line": 25638,
+            "first_policy_day": 1,
+            "elapsed_days": 16
+          },
+          "policy_moves": 150
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102905
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "builds": 9,
+          "income": 0,
+          "calendar": {
+            "native_day": 24,
+            "own_turn": 24,
+            "client_line": 31061,
+            "first_policy_day": 1,
+            "elapsed_days": 23
+          },
+          "policy_moves": 220
+        },
+        "b": {
+          "win": true,
+          "builds": 10,
+          "income": 1,
+          "calendar": {
+            "native_day": 25,
+            "own_turn": 25,
+            "client_line": 32894,
+            "first_policy_day": 1,
+            "elapsed_days": 24
+          },
+          "policy_moves": 243
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102906
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "builds": 5,
+          "income": 0,
+          "calendar": {
+            "native_day": 34,
+            "own_turn": 34,
+            "client_line": 118067,
+            "first_policy_day": 1,
+            "elapsed_days": 33
+          },
+          "policy_moves": 288
+        },
+        "b": {
+          "win": false,
+          "builds": 1,
+          "income": 0,
+          "calendar": {
+            "native_day": 11,
+            "own_turn": 11,
+            "client_line": 30111,
+            "first_policy_day": 1,
+            "elapsed_days": 10
+          },
+          "policy_moves": 98
+        }
+      },
+      "win_delta": 0
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102907
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "builds": 2,
+          "income": 0,
+          "calendar": {
+            "native_day": 15,
+            "own_turn": 15,
+            "client_line": 67463,
+            "first_policy_day": 1,
+            "elapsed_days": 14
+          },
+          "policy_moves": 130
+        },
+        "b": {
+          "win": false,
+          "builds": 2,
+          "income": 0,
+          "calendar": {
+            "native_day": 15,
+            "own_turn": 15,
+            "client_line": 66873,
+            "first_policy_day": 1,
+            "elapsed_days": 14
+          },
+          "policy_moves": 129
+        }
+      },
+      "win_delta": 0
+    }
+  ],
+  "income_transactions": [
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-05",
+      "native_request_id": 217,
+      "decision_id": 160,
+      "town_id": 19,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          10,
+          11,
+          14,
+          16,
+          30,
+          31
+        ],
+        "resources": {
+          "wood": 38,
+          "mercury": 4,
+          "ore": 17,
+          "sulfur": 4,
+          "crystal": 4,
+          "gems": 4,
+          "gold": 19840
+        }
+      },
+      "after": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30,
+          31
+        ],
+        "resources": {
+          "wood": 38,
+          "mercury": 4,
+          "ore": 17,
+          "sulfur": 4,
+          "crystal": 4,
+          "gems": 4,
+          "gold": 14840
+        }
+      },
+      "phase": "train",
+      "arm": "train",
+      "request_day": 23,
+      "own_turn": 23
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 260,
+      "decision_id": 152,
+      "town_id": 10,
+      "building_id": 11,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 2500
+      },
+      "before": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 8,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 2500
+        }
+      },
+      "after": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 8,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 0
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 17,
+      "own_turn": 17
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 302,
+      "decision_id": 182,
+      "town_id": 10,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 14,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 5480
+        }
+      },
+      "after": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 14,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 480
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 20,
+      "own_turn": 20
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 378,
+      "decision_id": 234,
+      "town_id": 18,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 2,
+          "mercury": 2,
+          "ore": 24,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 6060
+        }
+      },
+      "after": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 2,
+          "mercury": 2,
+          "ore": 24,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 1060
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 25,
+      "own_turn": 25
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 408,
+      "decision_id": 259,
+      "town_id": 18,
+      "building_id": 13,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 10000
+      },
+      "before": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 28,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 11060
+        }
+      },
+      "after": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 28,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 1060
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 27,
+      "own_turn": 27
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 550,
+      "decision_id": 341,
+      "town_id": 11,
+      "building_id": 11,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 2500
+      },
+      "before": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 39,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 42700
+        }
+      },
+      "after": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 39,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 40200
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 35,
+      "own_turn": 35
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-00/a",
+      "native_request_id": 618,
+      "decision_id": 379,
+      "town_id": 11,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 16,
+          "mercury": 2,
+          "ore": 55,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 60940
+        }
+      },
+      "after": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 16,
+          "mercury": 2,
+          "ore": 55,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 55940
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 39,
+      "own_turn": 39
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-03/b",
+      "native_request_id": 822,
+      "decision_id": 173,
+      "town_id": 19,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 10,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 5100
+        }
+      },
+      "after": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 10,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 100
+        }
+      },
+      "phase": "dev",
+      "arm": "b",
+      "request_day": 20,
+      "own_turn": 20
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-03/b",
+      "native_request_id": 1410,
+      "decision_id": 298,
+      "town_id": 19,
+      "building_id": 13,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 10000
+      },
+      "before": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "resources": {
+          "wood": 38,
+          "mercury": 2,
+          "ore": 57,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 19940
+        }
+      },
+      "after": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "resources": {
+          "wood": 38,
+          "mercury": 2,
+          "ore": 57,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 9940
+        }
+      },
+      "phase": "dev",
+      "arm": "b",
+      "request_day": 34,
+      "own_turn": 34
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 266,
+      "decision_id": 162,
+      "town_id": 10,
+      "building_id": 11,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 2500
+      },
+      "before": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 8,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 4080
+        }
+      },
+      "after": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 8,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 1580
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 18,
+      "own_turn": 18
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 431,
+      "decision_id": 238,
+      "town_id": 10,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 14640
+        }
+      },
+      "after": {
+        "town_id": 10,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 7,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 9640
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 26,
+      "own_turn": 26
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 461,
+      "decision_id": 259,
+      "town_id": 11,
+      "building_id": 11,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 2500
+      },
+      "before": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 23,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 20140
+        }
+      },
+      "after": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 6,
+          "mercury": 2,
+          "ore": 23,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 17640
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 28,
+      "own_turn": 28
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 613,
+      "decision_id": 308,
+      "town_id": 11,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 11,
+          "mercury": 2,
+          "ore": 33,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 34380
+        }
+      },
+      "after": {
+        "town_id": 11,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30
+        ],
+        "resources": {
+          "wood": 11,
+          "mercury": 2,
+          "ore": 33,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 29380
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 33,
+      "own_turn": 33
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 686,
+      "decision_id": 337,
+      "town_id": 18,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          16,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 12,
+          "mercury": 2,
+          "ore": 39,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 49880
+        }
+      },
+      "after": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 12,
+          "mercury": 2,
+          "ore": 39,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 44880
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 36,
+      "own_turn": 36
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-04/a",
+      "native_request_id": 710,
+      "decision_id": 347,
+      "town_id": 18,
+      "building_id": 13,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 10000
+      },
+      "before": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 14,
+          "mercury": 2,
+          "ore": 41,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 40120
+        }
+      },
+      "after": {
+        "town_id": 18,
+        "owner": 0,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 14,
+          "mercury": 2,
+          "ore": 41,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 30120
+        }
+      },
+      "phase": "dev",
+      "arm": "a",
+      "request_day": 37,
+      "own_turn": 37
+    },
+    {
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-dev-01/pair-05/b",
+      "native_request_id": 321,
+      "decision_id": 209,
+      "town_id": 19,
+      "building_id": 12,
+      "cost": {
+        "wood": 0,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 5000
+      },
+      "before": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 0,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 12,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 5900
+        }
+      },
+      "after": {
+        "town_id": 19,
+        "owner": 1,
+        "built_today": 1,
+        "buildings": [
+          0,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          16,
+          21,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "resources": {
+          "wood": 12,
+          "mercury": 2,
+          "ore": 19,
+          "sulfur": 2,
+          "crystal": 2,
+          "gems": 2,
+          "gold": 900
+        }
+      },
+      "phase": "dev",
+      "arm": "b",
+      "request_day": 21,
+      "own_turn": 21
+    }
+  ],
+  "all_result_labels_match_reaudited_native_winners": true,
+  "all_frozen_input_hashes_unchanged": true,
+  "calibration_certificate_only": {
+    "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-v1/calibration-01/AUDIT.json",
+    "sha256": "57200b680752be4298f7a6553f117b3e646911ec79ff233d75181b96ed6901cf",
+    "gradient_updates": 0,
+    "initial_build_bias": 1.5
+  },
+  "gpu_restore_certificate_only": {
+    "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/recovery-audit-01/native-cuda-01/AUDIT.json",
+    "sha256": "9ce44b0b0e68cf0f7699f6c5ffdbfeb125ee24d54a82e5ec75ae1cc1b7247fd4",
+    "steps": 120,
+    "invalid_cases": 6
+  },
+  "source_protocol_scope": "First-update frozen protocol only; no claim that separately frozen continuation controller is contained in it. No live logical-update1..3 directory read.",
+  "report_sha256": "733afa1b74b9f3f3b857042eeb5163f6b2fa4dd04d48a4a1cfbf39a2614c9649",
+  "build_transactions_sha256": "5c17517aaf9467faa7f55835c3adfdb04f5e04811d2b19d2ad3ea5f4a95e4b31",
+  "new_native_runs": 0,
+  "new_gpu_runs": 0,
+  "new_optimizer_steps": 0
+}

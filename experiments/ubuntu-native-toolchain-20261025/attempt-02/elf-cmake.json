@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/usr/bin/ldd",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/python-packages/cmake/data/bin/cmake"
+  ],
+  "returncode": 0,
+  "seconds": 0.017595529556274414,
+  "stdout_sha256": "44757bc8d3c54de8cd02d8e2b06040801b2691a94971d4b4c5cd8950d239ce64",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,82 @@
+--- frozen-v2/train_last_graph.py
++++ family-curriculum/train_last_graph.py
+@@ -14,6 +14,7 @@
+     from vector_env import VectorEnv
+     import decision_model
+     import support
++    import curriculum
+     import full_graph_policy as graph
+     from masked_ppo import gae,distribution,update
+     from lab_io import atomic_json,capture_source
+@@ -75,25 +76,18 @@
+     source_snapshot=capture_source(folder,'train-graph-finetune.py')
+     support.capture_local(folder,frozen)
+     started=time.monotonic();records=[];episodes=wins=cuts=0;vector=None
++    phase_close_events=[];live_steps=[]
+     latest=str(args.checkpoint)
+     try:
+         for iteration in range(args.updates):
+             if iteration%args.rotate_every==0:
+-                if vector:vector.close();vector=None
++                if vector:
++                    phase_close_events.append(curriculum.close_evidence(phase,live_steps,configs,'phase_switch'))
++                    vector.close();vector=None
+                 phase=(previous+iteration)//args.rotate_every
+-                rng=np.random.default_rng(args.seed+phase*1777)
+-                # Each phase covers every role/opponent combination equally;
+-                # troop size is independent of both, unlike paired index schemes.
+-                order=rng.permutation(args.workers);configs=[]
+-                for slot in range(args.workers):
+-                    i=int(order[slot]);role='attacker' if i%2==0 else 'defender'
+-                    opponent=args.opponents[(i//2)%len(args.opponents)]
+-                    case=cases[int(rng.integers(len(cases)))]
+-                    configs.append(dict(map=case['map'],role=role,opponent=opponent,
+-                        initial_reset_once=args.first_battle,
+-                        opponent_model='DATA/MMAI/models/lab-upstream-'+('defender' if role=='attacker' else 'attacker')+'.onnx' if opponent=='MMAI_MODEL' else None,
+-                        seed=args.seed+phase*1000+slot,feature_version='upstream-graph-v15',step_cost=args.step_cost,
+-                        worker_root=f'/root/heroes3-ai-lab/workers/graph-{run}/{phase}-{slot}'))
++                curriculum.resource_gate()
++                configs=curriculum.configs(args.scenario_file,args.seed,phase,run)
++                live_steps=[0]*args.workers
+                 vector=(OpponentVector(configs,'/root/heroes3-ai-lab/venv/bin/python',fixed_opponent) if fixed_opponent
+                         else VectorEnv(configs,executable='/root/heroes3-ai-lab/venv/bin/python'))
+                 current=[s['features'] for s in vector.states]
+@@ -131,6 +125,9 @@
+                 for old,s in zip(current,transitions):
+                     nxt=0. if s['terminated'] else graph.potential(s['final_features'] if s['truncated'] else s['features'])
+                     shaped.append(s['reward']+args.shaping*(args.gamma*nxt-graph.potential(old)))
++                for worker,s in enumerate(transitions):
++                    live_steps[worker]+=1
++                    if s['terminated'] or s['truncated']:live_steps[worker]=0
+                 current=next_obs
+                 next_values.append(nv);rewards.append(shaped)
+                 terminated.append([s['terminated'] for s in transitions]);truncated.append([s['truncated'] for s in transitions])
+@@ -170,23 +167,24 @@
+                     optimizer_state_dict=optimizer.state_dict(),torch_rng_state=torch.get_rng_state(),cuda_rng_states=torch.cuda.get_rng_state_all(),
+                     python_rng_state=__import__('random').getstate(),numpy_rng_state=support.numpy_rng(),
+                     actual_Adam_steps=counter['steps'],complete_update_boundary=True,frozen_inputs=frozen,
+-                    native_environment_restorable=False)
++                    native_environment_restorable=False,phase_close_events=phase_close_events)
+                 record['checkpoint_readback']=support.check_readback(latest,model,optimizer,graph,counter['steps'])
+                 record['checkpoint_sha256']=support.sha(latest)
+             report=dict(config=vars(args),checkpoint=latest,completed=False,resumed_from_updates=previous,
+                 experiment_initial_checkpoint=args.experiment_initial_checkpoint,source_snapshot=source_snapshot,
+-                records=records,wall_seconds=time.monotonic()-started,policy='recovered',
++                records=records,phase_close_events=phase_close_events,wall_seconds=time.monotonic()-started,policy='recovered',
+                 total_parameters=sum(p.numel() for p in model.parameters()),trainable_parameters=sum(p.numel() for p in model.parameters() if p.requires_grad),
+                 reward='Normal terminal +/-1, step cost, gamma-correct army-value potential with zero terminal potential',
+                 CUDA_training=True)
+             atomic_json(args.output,report);print(record,flush=True)
++        phase_close_events.append(curriculum.close_evidence(phase,live_steps,configs,'final_budget_stop'))
+         vector.close();vector=None
+-        report.update(completed=True,all_workers_exit_zero=True)
++        report.update(completed=True,all_workers_exit_zero=True,phase_close_events=phase_close_events)
+         atomic_json(args.output,report)
+     except BaseException as error:
+         atomic_json(args.output,dict(completed=False,error=repr(error),actual_Adam_steps=counter['steps'],
+             CUDA_training=counter['steps']>0,checkpoint=latest,checkpoint_exists=Path(latest).is_file(),records=records,
+-            source_snapshot=source_snapshot,partial_live_state_not_resumable=True,config=vars(args)))
++            source_snapshot=source_snapshot,partial_live_state_not_resumable=True,config=vars(args),phase_close_events=phase_close_events))
+         raise
+     finally:
+         if vector:vector.abort()

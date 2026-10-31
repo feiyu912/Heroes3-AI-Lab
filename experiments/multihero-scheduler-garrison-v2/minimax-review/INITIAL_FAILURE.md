@@ -1,0 +1,1 @@
+实际 dsh MiniMax 调用失败，不能作为独立审核：session-180f38c5-19e6-46db-8200-4d454c7d5c84；provider mini，model MiniMax-M3.1-Flash；exit 1；turn_end=max-tokens；input 9487、output 32768、total 42446；final.text 为空。原始 events.jsonl 和 session 保留；thinking 字段不是最终审核结论。

@@ -1,0 +1,371 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 0,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 133,
+    "actual_director_ack_count": 133,
+    "registered_ids": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      220,
+      221,
+      222,
+      223,
+      224,
+      226,
+      227,
+      228,
+      229,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      285,
+      286,
+      287,
+      288,
+      290,
+      292,
+      293,
+      295,
+      296,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      306,
+      308,
+      309,
+      311,
+      312,
+      314,
+      315,
+      316,
+      317,
+      318,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352
+    ],
+    "policy_and_auto_request_count": 106,
+    "marker_line": 34042,
+    "owned_terminal_line": 33971,
+    "cancellation_intention": {
+      "line": 34042,
+      "ids": []
+    },
+    "actual_termination": {
+      "line": 34043,
+      "ids": []
+    },
+    "foreign_waits_pending_at_termination": 0,
+    "actual_atomic_cleared_ids": [],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 17,
+    "verified_neutral_makeaction_acks": [
+      {
+        "native_request_id": 265,
+        "line": 27826,
+        "pack_type": 198,
+        "actual_request_line": 27764,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 268,
+        "line": 27983,
+        "pack_type": 198,
+        "actual_request_line": 27910,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 273,
+        "line": 28268,
+        "pack_type": 198,
+        "actual_request_line": 28198,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 276,
+        "line": 28413,
+        "pack_type": 198,
+        "actual_request_line": 28344,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 289,
+        "line": 29488,
+        "pack_type": 198,
+        "actual_request_line": 29428,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 291,
+        "line": 29584,
+        "pack_type": 198,
+        "actual_request_line": 29522,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 294,
+        "line": 29756,
+        "pack_type": 198,
+        "actual_request_line": 29699,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 297,
+        "line": 29905,
+        "pack_type": 198,
+        "actual_request_line": 29840,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 305,
+        "line": 30574,
+        "pack_type": 198,
+        "actual_request_line": 30515,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 307,
+        "line": 30675,
+        "pack_type": 198,
+        "actual_request_line": 30609,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 310,
+        "line": 30840,
+        "pack_type": 198,
+        "actual_request_line": 30786,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 313,
+        "line": 30991,
+        "pack_type": 198,
+        "actual_request_line": 30927,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 323,
+        "line": 31921,
+        "pack_type": 198,
+        "actual_request_line": 31856,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 325,
+        "line": 32015,
+        "pack_type": 198,
+        "actual_request_line": 31953,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 327,
+        "line": 32119,
+        "pack_type": 198,
+        "actual_request_line": 32050,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 329,
+        "line": 32229,
+        "pack_type": 198,
+        "actual_request_line": 32163,
+        "actual_request_type": "10MakeAction"
+      },
+      {
+        "native_request_id": 333,
+        "line": 32519,
+        "pack_type": 198,
+        "actual_request_line": 32418,
+        "actual_request_type": "10MakeAction"
+      }
+    ],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-neutral-makeaction-ack-v4",
+  "input_audit_epoch": "director-neutral-makeaction-ack-v4",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "638945535d6878723ac42adf2147f0d0c0e6054523ccf655f1ee2e7f389252c0",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "blue",
+  "owned_player": 0,
+  "actual_ai_assignment": {
+    "red": "DirectorAI",
+    "blue": "Nullkiller2"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 95,
+    "policy_end_turns": 0,
+    "automatic_end_turns": 11,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 95,
+    "blocking_visits": 4
+  },
+  "contract_errors": [],
+  "native_apply_markers": 106,
+  "battle_observation": {
+    "last_battle_start_line": 31735,
+    "round_start_count": 2,
+    "native_battle_actions": 14,
+    "unique_last1000_actions": 13,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '1', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '3', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '4', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '2', actionType '6', actionSubtype '-1', target {}}",
+        1
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '3', actionType '5', actionSubtype '-1', target {29,}}",
+        1
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '5', actionSubtype '-1', target {4,}}",
+        1
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '4', actionType '5', actionSubtype '-1', target {81,}}",
+        1
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "d753810e731d8689e8a8fd405c15000f014d8d19bed0e4983b1c79615f54f573",
+    "typed.jsonl": "1f1d8a08aa5f89ccf874fb14bb311da974314597776cfcf591f5ae93fe8d6801",
+    "strategy-decisions.jsonl": "8eebca8526b20dcff3d2698b99476d3b406396e7de30a7cfc62935c216f128ab",
+    "EXECUTION.json": "23c8eda5b6e5f37a17fa6f89e530de95f6181becda04135691ba8f4f0983f6f9",
+    "PLAN.json": "0795ce897421e18482474803d7715eacaf763331dea3c7e280a2432d20c53830"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "93a1184a554df5039211f43a2694c657b8228fa62235e931870f381b86b06a86",
+    "raw_events_v4.py": "f18c0c804788564e7eeeedb450cbcec5a39a7d6aea1dcbc6c4516117a67b371a",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update."
+}

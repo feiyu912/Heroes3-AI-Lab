@@ -1,0 +1,404 @@
+{
+  "hero_0": {
+    "l": 0,
+    "options": {
+      "army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "experience": 0,
+      "name": "red strategic hero",
+      "owner": "red",
+      "primarySkills": {
+        "attack": 0,
+        "defence": 0,
+        "knowledge": 0,
+        "spellpower": 0
+      },
+      "secondarySkills": [],
+      "spellBook": [
+        "preset"
+      ],
+      "type": "core:christian"
+    },
+    "subtype": "core:knight",
+    "template": {
+      "animation": "AH01_",
+      "editorAnimation": "AH01_E",
+      "mask": [
+        "VVV",
+        "VAV"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "hero",
+    "x": 7,
+    "y": 10
+  },
+  "hero_1": {
+    "l": 0,
+    "options": {
+      "army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "experience": 0,
+      "name": "blue strategic hero",
+      "owner": "blue",
+      "primarySkills": {
+        "attack": 0,
+        "defence": 0,
+        "knowledge": 0,
+        "spellpower": 0
+      },
+      "secondarySkills": [],
+      "spellBook": [
+        "preset"
+      ],
+      "type": "core:sorsha"
+    },
+    "subtype": "core:knight",
+    "template": {
+      "animation": "AH01_",
+      "editorAnimation": "AH01_E",
+      "mask": [
+        "VVV",
+        "VAV"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "hero",
+    "x": 30,
+    "y": 10
+  },
+  "town_0": {
+    "l": 0,
+    "options": {
+      "buildings": {
+        "allOf": [
+          "core:fort",
+          "core:villageHall",
+          "core:tavern",
+          "core:dwellingLvl1",
+          "core:townHall",
+          "core:dwellingLvl2"
+        ]
+      },
+      "owner": "red",
+      "tightFormation": "wide"
+    },
+    "subtype": "castle",
+    "template": {
+      "animation": "AVCCAST0.DEF",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVVV",
+        "VVVVVV",
+        "VVVVVV",
+        "VVBBBV",
+        "VBBBBB",
+        "VBBABB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "town",
+    "x": 8,
+    "y": 8
+  },
+  "town_1": {
+    "l": 0,
+    "options": {
+      "buildings": {
+        "allOf": [
+          "core:fort",
+          "core:villageHall",
+          "core:tavern",
+          "core:dwellingLvl1",
+          "core:townHall",
+          "core:dwellingLvl2"
+        ]
+      },
+      "owner": "blue",
+      "tightFormation": "wide"
+    },
+    "subtype": "castle",
+    "template": {
+      "animation": "AVCCAST0.DEF",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVVV",
+        "VVVVVV",
+        "VVVVVV",
+        "VVBBBV",
+        "VBBBBB",
+        "VBBABB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "town",
+    "x": 31,
+    "y": 8
+  },
+  "resource_left_gold": {
+    "type": "resource",
+    "subtype": "core:gold",
+    "l": 0,
+    "x": 9,
+    "y": 11,
+    "template": {
+      "animation": "AVTgold0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 600
+    }
+  },
+  "resource_left_wood": {
+    "type": "resource",
+    "subtype": "core:wood",
+    "l": 0,
+    "x": 4,
+    "y": 12,
+    "template": {
+      "animation": "AVTwood0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 6
+    }
+  },
+  "resource_left_ore": {
+    "type": "resource",
+    "subtype": "core:ore",
+    "l": 0,
+    "x": 9,
+    "y": 15,
+    "template": {
+      "animation": "AVTore0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 6
+    }
+  },
+  "mine_left_sawmill": {
+    "type": "mine",
+    "subtype": "core:sawmill",
+    "l": 0,
+    "x": 7,
+    "y": 15,
+    "template": {
+      "animation": "AVMsawd0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVV",
+        "VVVBB",
+        "VBBAB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ],
+      "zIndex": 0
+    },
+    "options": {
+      "owner": null,
+      "army": []
+    }
+  },
+  "mine_left_orePit": {
+    "type": "mine",
+    "subtype": "core:orePit",
+    "l": 0,
+    "x": 13,
+    "y": 12,
+    "template": {
+      "animation": "AVMordr0.def",
+      "editorAnimation": "",
+      "mask": [
+        "BBB",
+        "BAB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ],
+      "zIndex": 100
+    },
+    "options": {
+      "owner": null,
+      "army": []
+    }
+  },
+  "resource_right_gold": {
+    "type": "resource",
+    "subtype": "core:gold",
+    "l": 0,
+    "x": 26,
+    "y": 11,
+    "template": {
+      "animation": "AVTgold0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 600
+    }
+  },
+  "resource_right_wood": {
+    "type": "resource",
+    "subtype": "core:wood",
+    "l": 0,
+    "x": 31,
+    "y": 12,
+    "template": {
+      "animation": "AVTwood0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 6
+    }
+  },
+  "resource_right_ore": {
+    "type": "resource",
+    "subtype": "core:ore",
+    "l": 0,
+    "x": 26,
+    "y": 15,
+    "template": {
+      "animation": "AVTore0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "options": {
+      "amount": 6
+    }
+  },
+  "mine_right_sawmill": {
+    "type": "mine",
+    "subtype": "core:sawmill",
+    "l": 0,
+    "x": 30,
+    "y": 15,
+    "template": {
+      "animation": "AVMsawd0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVV",
+        "VVVBB",
+        "VBBAB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ],
+      "zIndex": 0
+    },
+    "options": {
+      "owner": null,
+      "army": []
+    }
+  },
+  "mine_right_orePit": {
+    "type": "mine",
+    "subtype": "core:orePit",
+    "l": 0,
+    "x": 24,
+    "y": 12,
+    "template": {
+      "animation": "AVMordr0.def",
+      "editorAnimation": "",
+      "mask": [
+        "BBB",
+        "BAB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ],
+      "zIndex": 100
+    },
+    "options": {
+      "owner": null,
+      "army": []
+    }
+  }
+}

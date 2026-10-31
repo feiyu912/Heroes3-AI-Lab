@@ -1,0 +1,96 @@
+{
+  "schema": "threat-response-phase-a-binding-template-v1",
+  "binding_complete": false,
+  "execution_enabled": false,
+  "purpose": "Mechanism development, no learning updates; future root-only installation/compile",
+  "stages": [
+    "baseline_all_8",
+    "candidate_all_matching_8"
+  ],
+  "jobs_per_stage": [
+    {
+      "pair_index": 0,
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101881,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "pair_index": 1,
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101882,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "pair_index": 2,
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101881,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "pair_index": 3,
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101882,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "pair_index": 4,
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101881,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "pair_index": 5,
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101882,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "pair_index": 6,
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101881,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "pair_index": 7,
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101882,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    }
+  ],
+  "timeout_seconds": 120,
+  "broker_mode": "new-policy",
+  "action_selection": "CPU argmax",
+  "checkpoint_path": null,
+  "checkpoint_sha256": null,
+  "broker_sha256": null,
+  "encoder_sha256": null,
+  "model_sha256": null,
+  "baseline_binary_sha256": null,
+  "candidate_binary_sha256": null,
+  "map_sha256": null,
+  "baseline_source_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+  "candidate_source_sha256": "9a8dda3d323691f597ee5ffea70dcd82a9aa4f8f5081cb0e4231b7cabfdd0541",
+  "prereg_sha256": "0c9b88cd46ff5606e83f09b376e7db8b1e6d3bb87926407cde44633548a40378",
+  "candidate_manifest_sha256": "67f39cb10151184b30dbe7294536269140df82f9641e69920871f3ec276f2ee3",
+  "policy_override": false,
+  "hold_added": false,
+  "request_schema": "strategy-candidates-v3",
+  "optimizer_steps": 0,
+  "unresolved": "All null bindings must be frozen before baseline; compiled candidate binaries only after all baseline raw audits and compile boundary."
+}

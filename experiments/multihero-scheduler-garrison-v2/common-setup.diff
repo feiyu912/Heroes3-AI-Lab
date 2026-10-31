@@ -1,0 +1,146 @@
+--- preserved-v1
++++ garrison-common-setup
+@@ -313,6 +313,9 @@
+ 		return false;
+ 	}
+ 
++    probeHero = hero->id.getNum();
++    traceState("scheduler_selection");
++    probeEvent("scheduler_selected");
+ 	int3 destination(-1, -1, -1);
+ 	std::string reason;
+ 	if(!findTarget(hero, destination, reason))
+@@ -401,6 +404,12 @@
+ 	if(!turnActive || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+ 		!pendingQueries.empty() || !queryRequests.empty())
+ 		return;
++    if(!garrisonSetupDone)
++    {
++        if(garrisonSetupPending) return;
++        setupGarrisonControl();
++        return;
++    }
+ 	if(issueEconomy())
+ 		return;
+ 	if(!issueMove())
+@@ -435,6 +444,24 @@
+ 
+ void CDirectorAI::requestRealized(PackageApplied * pa)
+ {
++    if(pa->player == playerID && pa->packType == CTypeList::getInstance().getTypeID<GarrisonHeroSwap>(nullptr))
++    {
++        if(!garrisonSetupPending || static_cast<int>(pa->requestID) != garrisonSetupRequest)
++            throw std::runtime_error("Garrison setup ACK tuple mismatch");
++        const auto * town = cb->getTown(ObjectInstanceID(garrisonSetupTown));
++        const auto * hero = cb->getHero(ObjectInstanceID(3));
++        traceState("garrison_setup_ack_state");
++        const bool verified = pa->result && town && hero && hero->getOwner() == playerID &&
++            town->getOwner() == playerID && town->getGarrisonHero() == hero &&
++            town->getVisitingHero() == nullptr && hero->isGarrisoned() &&
++            hero->getVisitedTown() == town && hero->movementPointsRemaining() > 0;
++        probeEvent("garrison_setup_ack", static_cast<int>(pa->requestID), verified ? 1 : 0);
++        if(!verified) throw std::runtime_error("Garrison setup lacks real positive-MP garrison state");
++        garrisonSetupPending = false;
++        garrisonSetupDone = true;
++        advanceTurn();
++        return;
++    }
+     if(pa->player == playerID && pa->packType == CTypeList::getInstance().getTypeID<MoveHero>(nullptr))
+         probeEvent("move_ack", static_cast<int>(pa->requestID), pa->result);
+     if(pa->player == playerID && probeTransferPending && static_cast<int>(pa->requestID) == probeTransferRequest)
+@@ -503,6 +530,14 @@
+ 
+ void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)
+ {
++    if(const auto * swap = dynamic_cast<const GarrisonHeroSwap *>(pack))
++    {
++        if(!garrisonSetupPending || garrisonSetupRequest != -1 ||
++           swap->tid.getNum() != garrisonSetupTown || pack->player != playerID || requestID < 1)
++            throw std::runtime_error("Garrison setup request tuple mismatch");
++        garrisonSetupRequest = requestID;
++        probeEvent("garrison_setup_sent", requestID);
++    }
+     if(dynamic_cast<const MoveHero *>(pack)) probeEvent("move_sent", requestID, -1);
+     if(dynamic_cast<const EndTurn *>(pack)) probeEvent("endturn_sent", requestID, -1);
+     if(probeTransferPending && dynamic_cast<const ArrangeStacks *>(pack))
+@@ -560,6 +595,28 @@
+ 		traceState(result.victory() ? "victory" : "defeat");
+ 		turnActive = false;
+ 	}
++}
++
++
++bool CDirectorAI::setupGarrisonControl()
++{
++    const auto * hero = cb->getHero(ObjectInstanceID(3));
++    if(!hero || hero->getOwner() != playerID || hero->isGarrisoned())
++        throw std::runtime_error("Garrison fixture requires an actual owned visitor hero3");
++    for(const auto * town : cb->getTownsInfo())
++    {
++        if(town->getOwner() != playerID || town->getVisitingHero() != hero) continue;
++        if(town->getGarrisonHero() || hero->getVisitedTown() != town)
++            throw std::runtime_error("Garrison fixture town identity mismatch");
++        garrisonSetupTown = town->id.getNum();
++        garrisonSetupPending = true;
++        probeHero = 3;
++        traceState("garrison_setup_before");
++        probeEvent("garrison_setup_requested");
++        cb->swapGarrisonHero(town);
++        return true;
++    }
++    throw std::runtime_error("Fixture hero3 is not a real town visitor");
+ }
+ 
+ bool CDirectorAI::issueEconomy()
+@@ -575,7 +632,15 @@
+ 		<< ",\"day\":" << cb->getCalendar().getCurrentDay()
+ 		<< ",\"own_turn\":" << ownTurns << ",\"gold\":" << cb->getResourceAmount(GameResID::GOLD)
+ 		<< ",\"wood\":" << cb->getResourceAmount(GameResID::WOOD)
+-		<< ",\"ore\":" << cb->getResourceAmount(GameResID::ORE) << ",\"heroes\":[";
++		<< ",\"ore\":" << cb->getResourceAmount(GameResID::ORE) << ",\"resources\":[";
++    bool firstResource = true;
++    for(auto res : {GameResID::WOOD, GameResID::MERCURY, GameResID::ORE, GameResID::SULFUR, GameResID::CRYSTAL, GameResID::GEMS, GameResID::GOLD})
++    {
++        if(!firstResource) out << ',';
++        firstResource = false;
++        out << cb->getResourceAmount(res);
++    }
++    out << "],\"heroes\":[";
+ 	bool first = true;
+ 	for(const auto * hero : cb->getHeroesInfo())
+ 	{
+@@ -583,7 +648,10 @@
+ 		first = false;
+ 		out << "{\"id\":" << hero->id.getNum() << ",\"x\":" << hero->visitablePos().x
+ 			<< ",\"y\":" << hero->visitablePos().y << ",\"z\":" << hero->visitablePos().z
+-			<< ",\"movement\":" << hero->movementPointsRemaining() << ",\"army\":[";
++			<< ",\"owner\":" << hero->getOwner().getNum()
++            << ",\"garrisoned\":" << (hero->isGarrisoned() ? "true" : "false")
++            << ",\"town_id\":" << (hero->getVisitedTown() ? hero->getVisitedTown()->id.getNum() : -1)
++            << ",\"movement\":" << hero->movementPointsRemaining() << ",\"army\":[";
+ 		bool firstStack = true;
+ 		for(const auto & slot : hero->Slots())
+ 		{
+@@ -599,7 +667,12 @@
+ 	{
+ 		if(!first) out << ',';
+ 		first = false;
+-		out << "{\"id\":" << town->id.getNum() << ",\"buildings\":[";
++		out << "{\"id\":" << town->id.getNum()
++            << ",\"owner\":" << town->getOwner().getNum()
++            << ",\"visitor_id\":" << (town->getVisitingHero() ? town->getVisitingHero()->id.getNum() : -1)
++            << ",\"garrison_id\":" << (town->getGarrisonHero() ? town->getGarrisonHero()->id.getNum() : -1)
++            << ",\"upper_army_id\":" << town->getUpperArmy()->id.getNum()
++            << ",\"buildings\":[";
+ 		bool firstBuilding = true;
+ 		for(int b = 0; b < 44; ++b)
+ 			if(town->hasBuilt(BuildingID(b)))
+@@ -686,7 +759,7 @@
+     const char * path = std::getenv("LAB_HERO_PROBE_LOG");
+     if(!path) return;
+     std::ofstream out(path, std::ios::app);
+-    out << "{\"schema\":\"multihero-scheduler-probe-v1\",\"variant\":\"scheduler\",\"event\":\"" << event
++    out << "{\"schema\":\"multihero-scheduler-garrison-v2\",\"variant\":\"garrison-v2\",\"event\":\"" << event
+         << "\",\"request_id\":" << request << ",\"result\":" << result
+         << ",\"query_id\":" << probeQuery.getNum() << ",\"pending_move\":" << pendingMove
+         << ",\"pending_queries\":" << pendingQueries.size() << ",\"query_requests\":" << queryRequests.size()

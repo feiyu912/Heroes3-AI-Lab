@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "translation_unit": "AI/DirectorAI/CDirectorAI.cpp",
+      "exit_code": 0,
+      "passed": true,
+      "flags_sha256": "40c8b1b4e3bf70129c3bf2474326366b2a50a9cf6c4e0b4580236c72ac04a2f8"
+    },
+    {
+      "translation_unit": "client/Client.cpp",
+      "exit_code": 0,
+      "passed": true,
+      "flags_sha256": "6a15063598effb1337209f078f91268e4da59e5fc2eaf9e5b15365b90161c2ac"
+    }
+  ],
+  "native_built": false,
+  "native_games": 0,
+  "scope": "two translation units syntax only, temporary overlay; no objects/link/game",
+  "candidate_files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "baseline_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+      "candidate_sha256": "8b70b9a46d17af837d02d0d9ab7157c06a278afe39c6ea23a46d7040a89c34ef"
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "baseline_sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "candidate_sha256": "bc9565462052adcd5d0a200dd17c9ef015640e9eff3be63dd1e32b0208ec1eaf"
+    },
+    "AI/DirectorAI/SupplyAdapter.inc": {
+      "baseline_sha256": null,
+      "candidate_sha256": "274acdf7abd6306d1539ac72fc3b9a95ccbd7aeb57469295d02159a514f9feee"
+    },
+    "AI/DirectorAI/SupplyController.h": {
+      "baseline_sha256": null,
+      "candidate_sha256": "773c3263378a643f16af9386104fa9a40f57e91de1787bb7417a1d168defd989"
+    },
+    "AI/DirectorAI/SupplyRecovery.h": {
+      "baseline_sha256": null,
+      "candidate_sha256": "994faad9705d407550c4e30665955b0ef30dfbecb2c610015beafdbce5fab6f3"
+    },
+    "AI/DirectorAI/SupplyRecovery.inc": {
+      "baseline_sha256": null,
+      "candidate_sha256": "fddf9fec8a25395de705794d9876df139334cae5b68e7d078a50c2e93ca93c00"
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "baseline_sha256": null,
+      "candidate_sha256": "9aef11e358269b4e42212b895595ecf953a474ab3e392ccbb80c9f6c218ab310"
+    },
+    "client/Client.cpp": {
+      "baseline_sha256": "ac0a5d7b3b2d01807bebc99ad54e27ab35b9f1eb55917cc84560f7e68165b209",
+      "candidate_sha256": "3d517b72d1c9840d332235e316dd6e4e9b9dbafffee88b6a70a7c4b3eeeb860a"
+    },
+    "client/Client.h": {
+      "baseline_sha256": "353b9e02b8796b0bd19f5a293c1f0dc1a6adf1f8175af37722e6a9f03a9099cb",
+      "candidate_sha256": "d7896f5c5c32902250615f319481248e23aacd6657abe593a13dcabee12bd096"
+    },
+    "client/NetPacksClient.cpp": {
+      "baseline_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+      "candidate_sha256": "4bcd30eb5621dad894f0b1564c989fb43101820b3c1201193d09bc32a291eba3"
+    },
+    "server/CGameHandler.cpp": {
+      "baseline_sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+      "candidate_sha256": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865"
+    },
+    "server/CGameHandler.h": {
+      "baseline_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9"
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "baseline_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+    }
+  },
+  "source_token": "8bf43fd2ed69367a411d74bbf0b7b3bd152d9d6c63890c429900e0826cce1049"
+}

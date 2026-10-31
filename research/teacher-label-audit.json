@@ -1,0 +1,62 @@
+{
+  "states": 17666,
+  "duplicated_states": 744,
+  "conflicting_teacher_action_states": 2,
+  "decisions_in_conflicting_groups": 6,
+  "outcome_variation_states": 187,
+  "action_types": {
+    "0": 5858,
+    "4": 4008,
+    "2": 2639,
+    "3": 7910
+  },
+  "conflict_examples": [
+    [
+      "b2e9292ba7c71920be396263154dee353c95a2f0519321a4c85cdd6be8e8ad5e",
+      [
+        {
+          "action": 197,
+          "value": 1.0,
+          "battle_id": "balanced-12-attacker-s202610164-b6",
+          "split": "train"
+        },
+        {
+          "action": 202,
+          "value": 1.0,
+          "battle_id": "balanced-12-attacker-s202610164-b11",
+          "split": "train"
+        },
+        {
+          "action": 202,
+          "value": 1.0,
+          "battle_id": "balanced-12-attacker-s202610164-b2",
+          "split": "train"
+        },
+        {
+          "action": 202,
+          "value": 1.0,
+          "battle_id": "balanced-12-attacker-s202610164-b9",
+          "split": "train"
+        }
+      ]
+    ],
+    [
+      "9ea5f2ffc5205de85a2bbc76e94a7199329dfc3474f237f7a7b0e74734cf8eef",
+      [
+        {
+          "action": 387,
+          "value": 1.0,
+          "battle_id": "balanced-19-defender-s202610179-b5",
+          "split": "train"
+        },
+        {
+          "action": 388,
+          "value": 1.0,
+          "battle_id": "balanced-19-defender-s202610179-b9",
+          "split": "train"
+        }
+      ]
+    ]
+  ],
+  "note": "Different future outcomes at identical observations can be legitimate stochastic value targets; conflicting action labels would need explicit alias/tie analysis"
+}

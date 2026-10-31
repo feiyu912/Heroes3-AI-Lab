@@ -1,0 +1,108 @@
+{
+  "source_objects_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3bitmap.lod",
+  "objects_txt_sha256": "03baa3de63d0bc28976c412f82e4d83265c1fb9efc09336db5475030faea2099",
+  "method": "ObjectTemplate.cpp readTxt/readMsk/writeJson mask orientation",
+  "templates": {
+    "goldMine": {
+      "object_class": 53,
+      "object_subtype_index": 6,
+      "legacy_animation": "AVMgodr0.def",
+      "msk_source_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3sprite.lod",
+      "template": {
+        "animation": "AVMgodr0.def",
+        "editorAnimation": "",
+        "mask": [
+          "VVVV",
+          "VBAB"
+        ],
+        "visitableFrom": [
+          "---",
+          "+-+",
+          "+++"
+        ],
+        "zIndex": 0
+      }
+    },
+    "orePit": {
+      "object_class": 53,
+      "object_subtype_index": 2,
+      "legacy_animation": "AVMordr0.def",
+      "msk_source_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3sprite.lod",
+      "template": {
+        "animation": "AVMordr0.def",
+        "editorAnimation": "",
+        "mask": [
+          "BBB",
+          "BAB"
+        ],
+        "visitableFrom": [
+          "---",
+          "+-+",
+          "+++"
+        ],
+        "zIndex": 100
+      }
+    },
+    "sawmill": {
+      "object_class": 53,
+      "object_subtype_index": 0,
+      "legacy_animation": "AVMsawd0.def",
+      "msk_source_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3sprite.lod",
+      "template": {
+        "animation": "AVMsawd0.def",
+        "editorAnimation": "",
+        "mask": [
+          "VVVVV",
+          "VVVBB",
+          "VBBAB"
+        ],
+        "visitableFrom": [
+          "---",
+          "+-+",
+          "+++"
+        ],
+        "zIndex": 0
+      }
+    },
+    "pikeman": {
+      "object_class": 54,
+      "object_subtype_index": 0,
+      "legacy_animation": "AvWPike.def",
+      "msk_source_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3sprite.lod",
+      "template": {
+        "animation": "AvWPike.def",
+        "editorAnimation": "",
+        "mask": [
+          "VV",
+          "VA"
+        ],
+        "visitableFrom": [
+          "+++",
+          "+-+",
+          "+++"
+        ],
+        "zIndex": 0
+      }
+    },
+    "centaur": {
+      "object_class": 54,
+      "object_subtype_index": 14,
+      "legacy_animation": "AVWcent0.def",
+      "msk_source_archive": "/root/heroes3-ai-lab/data/vcmi/Data/H3sprite.lod",
+      "template": {
+        "animation": "AVWcent0.def",
+        "editorAnimation": "",
+        "mask": [
+          "VV",
+          "VA"
+        ],
+        "visitableFrom": [
+          "+++",
+          "+-+",
+          "+++"
+        ],
+        "zIndex": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "passed": true,
+  "copied_files": 0,
+  "root": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2",
+  "summaries": 16,
+  "gzip_archives": 16,
+  "source_snapshots": 21,
+  "frozen_inputs_verified": 31,
+  "matches_pre_execution_plan": true,
+  "all_files": 97,
+  "total_bytes": 5892806,
+  "archive_bindings": [
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-positive-exchange.json",
+      "summary_sha256": "fa6691147fdb610d23e86c37b2cae02d576b5db10c7294645fd203566d5a82fe",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-positive-exchange.json.gz",
+      "archive_sha256": "732a26c8da46326c1ef6bcabbe5a344856caeb174724731bbc0ff314410b9aee"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-teacher.json",
+      "summary_sha256": "272a19fe52bd17dd01c40e5f3a5a97c75663dd6a81dfe341ee9fdbb47d7bacd7",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-teacher.json.gz",
+      "archive_sha256": "46402c739174bcedd294f2dd999ea1c7db3e0a7a8401ef1f4a650ca33dd25dc8"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-positive-exchange.json",
+      "summary_sha256": "c10c6c9a88b9f41813e62c912bf085967838a00c45c3b54a1f4ff66d17def26f",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-positive-exchange.json.gz",
+      "archive_sha256": "8ed4ef234bee3c933db1696f3605b9fae3abfefc474659b31baffffb98d21d62"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-teacher.json",
+      "summary_sha256": "4937d9459a6e98678f41e0522b56faee04f2b0dd43a0c6230f112aad8d085125",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-teacher.json.gz",
+      "archive_sha256": "b270c8db2507248ffa08bb2fa3a33b2f7c31fe1542d4f9a2b607aca9e9b2d2e3"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-positive-exchange.json",
+      "summary_sha256": "b66544419757aef7969c30536e653e33adced4f07bff567dc507986d75bbfd8c",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-positive-exchange.json.gz",
+      "archive_sha256": "664738d47abefb24d62fe95d958bf82a62ca54eb64326ee1bf2ad8df037170a4"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-teacher.json",
+      "summary_sha256": "43a8ccd890ff0c7bf24e74d26c971fbc8a898312d4fd2cd1550185d8b3bbf8ae",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-teacher.json.gz",
+      "archive_sha256": "46432337c4f10f0bbbdabe7df908c841fc85416ec7b4fb991a92e172a7d61405"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-positive-exchange.json",
+      "summary_sha256": "695e3fb88f07d68531219ca8469a9574b0f971df4e5bffcd18c234bca6d5153c",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-positive-exchange.json.gz",
+      "archive_sha256": "54bd34bfb63fb014b7559c6a2865497c508f5cd03b7f4849d03210ae9a85662e"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-teacher.json",
+      "summary_sha256": "70d52fac2fadb6a15f378355592dc29b5d9f75c1c5bde4ec7e69ad49f89daf32",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-teacher.json.gz",
+      "archive_sha256": "3071aa934b434096c35d1fbf5988ad182fc0cd9796fac97530c4293fc83a61e7"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-positive-exchange.json",
+      "summary_sha256": "ed3a4d43f0da561ea9efd8773fbc4ca36f8a865c97e7472f7b47cf978558f93f",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-positive-exchange.json.gz",
+      "archive_sha256": "3d9cb0d47b23095b2e00ce98f214c5c9c6ab9da20bc7632983969055e44690a8"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-teacher.json",
+      "summary_sha256": "459027fe551becce120712d2daa88cc56c2c2f038e0a6835dd2de5cc88f67e1c",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-teacher.json.gz",
+      "archive_sha256": "8ae5aa91a950ccef9f82935dac0d66603cfff213ad9adeb1d8bec1d1c4047194"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-positive-exchange.json",
+      "summary_sha256": "fd108406a772e2bc9d044da4f3a5312c3cefdbf54d318e24456d9e627d9dedae",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-positive-exchange.json.gz",
+      "archive_sha256": "22f949cb7d9fe41516540ad1f796d2873eb36dd2b9ce2ab14386b30b5bb56fe2"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-teacher.json",
+      "summary_sha256": "7756e6ece6f5a1661deb23aa95d15aea2876d90977b56c42b0c1bb718b4a6325",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-teacher.json.gz",
+      "archive_sha256": "54232f96c2435d85973097a8426b4c3c6ff178017db69f9bcf98f14f49a594b3"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-positive-exchange.json",
+      "summary_sha256": "738d4b847994ab8eb8331dd857fd56b14da3910a0c12f4f32dd1af9d2dcba0fc",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-positive-exchange.json.gz",
+      "archive_sha256": "a2f57f5ba8086a2e3221fa1399e48144c87c882b83b0673a4aaccff08854ecee"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-teacher.json",
+      "summary_sha256": "6afec41eaf21f6296c942e7a3fa5ff9bc284246e2c9c1740ca91bc9e87ee825d",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-teacher.json.gz",
+      "archive_sha256": "a8c579b52749e6c4ba0985d6e054389997e2c0190a86738ac01c1caedaee11fb"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-positive-exchange.json",
+      "summary_sha256": "76d205aa24b245cabb53a8a2ab6c4a025d6453a7da3f1c9d683d1bce5116664e",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-positive-exchange.json.gz",
+      "archive_sha256": "8dbd6541b0c52d852d0a524038289bd36d97b3cb46f8554a45c053d1e5f8aac0"
+    },
+    {
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-teacher.json",
+      "summary_sha256": "6cd0ca5e36943e79bdb4518b6a8bb6f6cf4f2bbfe117c4650487d66cc9f78b26",
+      "archive": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-teacher.json.gz",
+      "archive_sha256": "927a07dacf794ea8e1556bf469fdd2a46c1f1a4f3aa2092a8f42ed76491f444c"
+    }
+  ],
+  "frozen_inputs": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/FROZEN_SOURCES.json": "7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/PREREGISTRATION.md": "2b1ef5147d9d5c1c58d3a076246273da75d6551b147989f289166c1a5cba7c07",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/audit_native.py": "6557b006f23bdaa63324ed1821b28af0f52cb98d63919552e68aaa8f52323cd4",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/check_prepare.py": "813369b904f7357ba2a81b8ceb45ce8d5d010cdbf64c6fdd3e7a59cc7a050008",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/cpu_review.py": "9b8a7d593896fb2ddf03f142e4a91c93f462bc912d908c8f41c1b171ee8b4886",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/event_audit.py": "2402686201a5d44925bf1d7eb9b1f0ed7f24372f722471033e3491f4db0a55f6",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/events_provenance.py": "a5c51dec170882b4cc72573609d9fe8c276a351a83869d31020251a8e24ece48",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/experts_events.py": "bab325ac375fa1c7b290ebed503862dfb94c34321a0c7ff1e25a323e973d1ddb",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/launch.py": "c9840737df83439d627da4e3cf0bdec34089837a9d64701597060fb51892be44",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/prepare_events_worker.py": "73c2008f68413480de7a21cda6b0303074e020ba667d2165213a9bcaa07aa121",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run-events-lab.sh": "92b266fd598db0b808d036a59b30b3c9ea23e1e7b34e87c222cda95c851521b5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run_episode.py": "6613a80edd9d3f67170deda1983caf04f41a2e1d52438ddd26659572e2f70efc",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/run_pilot.py": "17d911452acbbe687f4b10896c02150b9eb742108c8b533d83c2faf7085b5f44",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/scenarios.json": "a2ab14d3853865e9b6a900cce13bbc335af7f1f8c586fc0177df478bac7b3c42",
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/visible_exchange.py": "ee3435a83369ff799534b3ce99fe3b92688e713e542d98db18e2f873d0f13801",
+    "/mnt/g/Heroes3-AI-Lab/research/battle_outcome_audit.py": "d3304239001e4c83a0ada242a90b0c7ae1b6072ebde9c92a228d4dc370ed27b7",
+    "/root/heroes3-ai-lab-events-v2/data/vcmi/Mods/ML/Content/heroes.json": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+    "/root/heroes3-ai-lab-events-v2/onnxruntime/lib/libonnxruntime.so": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlclient.so": "a1f288a2ed50dc70469bc21e58d5506592a491cb134db5eb2f97914e91974f82",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlserverplugin.so": "50091d0b3f1c8d4c5b1d3158e553370e89f640ea2ef616d7ae8b261be058490f",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libvcmi.so": "a3516f9dd4749558a8a9cff72a76a319099d8d2c2790e659191e4c5472cfebf6",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/vcmiserver": "c6bd532bc5da513ade18c0eacd420b7db1e7250e92320b5646b85d72cfd44e88",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/connectors/rel/connector_v15.so": "f7d2426d0886fee4ef043e79ad2dcb0ea22d3d23c63648ecc5fbce8cfe14c893",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/connectors/rel/exporter_v15.so": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/__init__.py": "4bbd4a442823923d12d50e86b453e732b28ddf77e26de2434635d9ffb89c5464",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/decode.py": "75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/pyconnector.py": "3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/test_helper.py": "7afff489c0c3bab9e8e204fe8c489d1d44b29021ea3d3675fc06c6d4f12acafe",
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi_gym/envs/v15/vcmi_env.py": "cd609f1ac8bb0224e63ba473dec1b8b3363771bad33e31e4cd9dee16ee205ae6",
+    "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-00.vmap": "51c61d237d7958c7e195357b1d0cd026b17c1f7c7988c7dd92ddd6b7f2e3b7a3",
+    "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-01.vmap": "60a51ac219a515a39da1435522894842e5f368c38c2bc582e5cb81608c115aad"
+  },
+  "files": [
+    {
+      "path": "AUDIT.json",
+      "bytes": 18744,
+      "sha256": "0bd0e6e81a3a3f6204df7a601e13d2a6b7fcf966499dc08589a399d742e1a7e5"
+    },
+    {
+      "path": "CPU_REVIEW_01.json",
+      "bytes": 19233,
+      "sha256": "f57616c02e7ee8ab2bf8ae6426000d19dcb0047dd3e2bde1680376f908c41d4f"
+    },
+    {
+      "path": "CPU_REVIEW_02.json",
+      "bytes": 25831,
+      "sha256": "be41c68ec320ff8fd1653af308e7991ec8628cdc9a11f35e48db411ffd56c85a"
+    },
+    {
+      "path": "FROZEN_SOURCES.json",
+      "bytes": 1275,
+      "sha256": "7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c"
+    },
+    {
+      "path": "PILOT_RESULTS.json",
+      "bytes": 8220,
+      "sha256": "883989978810d0ea79259317c7f9a0bbed18b52e2f875175adff5e3c59a7e2cb"
+    },
+    {
+      "path": "PREPARE_CHECK_01.json",
+      "bytes": 5388,
+      "sha256": "1887878f1e83c73c003a5d699ce613bafa88b9666d5d0fd0c285b05a55198a94"
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "bytes": 3121,
+      "sha256": "2b1ef5147d9d5c1c58d3a076246273da75d6551b147989f289166c1a5cba7c07"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 4841,
+      "sha256": "ab846706857d702acd51f3ab601bf1c7e7f4a650c8e90cc7759d66c030c2bd60"
+    },
+    {
+      "path": "__pycache__/audit_native.cpython-310.pyc",
+      "bytes": 7012,
+      "sha256": "25cf43b421bdee3dd72937e510a6b5061aa2973a8771f87966305154fe10b3c7"
+    },
+    {
+      "path": "__pycache__/event_audit.cpython-310.pyc",
+      "bytes": 6698,
+      "sha256": "28efbf366372b7930276954ed130a936f9b59d68f6456c6f919646fc53650fb4"
+    },
+    {
+      "path": "__pycache__/events_provenance.cpython-310.pyc",
+      "bytes": 2282,
+      "sha256": "621d7c7d053ac13df3510c0e92927fb3bbe7638c424f5e92898b3577351de8f6"
+    },
+    {
+      "path": "__pycache__/experts_events.cpython-310.pyc",
+      "bytes": 15948,
+      "sha256": "c6a23e2240564b940ca70a2def495b19612e64a91c054c0e5ed6a7e3cfc9a3db"
+    },
+    {
+      "path": "__pycache__/run_pilot.cpython-310.pyc",
+      "bytes": 4708,
+      "sha256": "7a8f83972c6312bc2b560df2c4090c47127a5e823774530ce1d2fb5a5f1e5d0d"
+    },
+    {
+      "path": "__pycache__/visible_exchange.cpython-310.pyc",
+      "bytes": 3096,
+      "sha256": "d62b18e4d21b4195572e8aeef63409659d2fb89bbee248c4384a2a373df18250"
+    },
+    {
+      "path": "audit_native.py",
+      "bytes": 5509,
+      "sha256": "6557b006f23bdaa63324ed1821b28af0f52cb98d63919552e68aaa8f52323cd4"
+    },
+    {
+      "path": "check_prepare.py",
+      "bytes": 1391,
+      "sha256": "813369b904f7357ba2a81b8ceb45ce8d5d010cdbf64c6fdd3e7a59cc7a050008"
+    },
+    {
+      "path": "cpu_review.py",
+      "bytes": 7524,
+      "sha256": "9b8a7d593896fb2ddf03f142e4a91c93f462bc912d908c8f41c1b171ee8b4886"
+    },
+    {
+      "path": "event_audit.py",
+      "bytes": 7440,
+      "sha256": "2402686201a5d44925bf1d7eb9b1f0ed7f24372f722471033e3491f4db0a55f6"
+    },
+    {
+      "path": "events_provenance.py",
+      "bytes": 1522,
+      "sha256": "a5c51dec170882b4cc72573609d9fe8c276a351a83869d31020251a8e24ece48"
+    },
+    {
+      "path": "experts_events.py",
+      "bytes": 17174,
+      "sha256": "bab325ac375fa1c7b290ebed503862dfb94c34321a0c7ff1e25a323e973d1ddb"
+    },
+    {
+      "path": "launch.py",
+      "bytes": 1414,
+      "sha256": "c9840737df83439d627da4e3cf0bdec34089837a9d64701597060fb51892be44"
+    },
+    {
+      "path": "prepare_events_worker.py",
+      "bytes": 1838,
+      "sha256": "73c2008f68413480de7a21cda6b0303074e020ba667d2165213a9bcaa07aa121"
+    },
+    {
+      "path": "run-events-lab.sh",
+      "bytes": 841,
+      "sha256": "92b266fd598db0b808d036a59b30b3c9ea23e1e7b34e87c222cda95c851521b5"
+    },
+    {
+      "path": "run_episode.py",
+      "bytes": 10499,
+      "sha256": "6613a80edd9d3f67170deda1983caf04f41a2e1d52438ddd26659572e2f70efc"
+    },
+    {
+      "path": "run_pilot.py",
+      "bytes": 5101,
+      "sha256": "17d911452acbbe687f4b10896c02150b9eb742108c8b533d83c2faf7085b5f44"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-positive-exchange.json",
+      "bytes": 5844,
+      "sha256": "fa6691147fdb610d23e86c37b2cae02d576b5db10c7294645fd203566d5a82fe"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-positive-exchange.json.gz",
+      "bytes": 241265,
+      "sha256": "732a26c8da46326c1ef6bcabbe5a344856caeb174724731bbc0ff314410b9aee"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-positive-exchange.log",
+      "bytes": 313,
+      "sha256": "b67070207ff465f54f4fab230c3dcb4a63caa207b8a4a2aca62884df573ea3e2"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-teacher.json",
+      "bytes": 5814,
+      "sha256": "272a19fe52bd17dd01c40e5f3a5a97c75663dd6a81dfe341ee9fdbb47d7bacd7"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-teacher.json.gz",
+      "bytes": 239594,
+      "sha256": "46402c739174bcedd294f2dd999ea1c7db3e0a7a8401ef1f4a650ca33dd25dc8"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111801-teacher.log",
+      "bytes": 303,
+      "sha256": "70c7a54f7b498a9c47c26444167fae9f47deed48a90c0c45417ab72838065318"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-positive-exchange.json",
+      "bytes": 5844,
+      "sha256": "c10c6c9a88b9f41813e62c912bf085967838a00c45c3b54a1f4ff66d17def26f"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-positive-exchange.json.gz",
+      "bytes": 251476,
+      "sha256": "8ed4ef234bee3c933db1696f3605b9fae3abfefc474659b31baffffb98d21d62"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-positive-exchange.log",
+      "bytes": 314,
+      "sha256": "c74876a98b330e4207ce036105cbc1b64a1dee6d6a5414c22fe0ca3432d9c1c1"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-teacher.json",
+      "bytes": 5815,
+      "sha256": "4937d9459a6e98678f41e0522b56faee04f2b0dd43a0c6230f112aad8d085125"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-teacher.json.gz",
+      "bytes": 249629,
+      "sha256": "b270c8db2507248ffa08bb2fa3a33b2f7c31fe1542d4f9a2b607aca9e9b2d2e3"
+    },
+    {
+      "path": "runs/train/0-attacker-2026111802-teacher.log",
+      "bytes": 304,
+      "sha256": "97563c1e3349e26b85f47cd0c08978a7a9a35e15b27ea8b8578b6b0cfb7dab71"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-positive-exchange.json",
+      "bytes": 5847,
+      "sha256": "b66544419757aef7969c30536e653e33adced4f07bff567dc507986d75bbfd8c"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-positive-exchange.json.gz",
+      "bytes": 245152,
+      "sha256": "664738d47abefb24d62fe95d958bf82a62ca54eb64326ee1bf2ad8df037170a4"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-positive-exchange.log",
+      "bytes": 315,
+      "sha256": "13cd4d7aacc0a2e9918e8e4010c8127571a7a8844b8c5dc0c1a350739d751cba"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-teacher.json",
+      "bytes": 5817,
+      "sha256": "43a8ccd890ff0c7bf24e74d26c971fbc8a898312d4fd2cd1550185d8b3bbf8ae"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-teacher.json.gz",
+      "bytes": 243295,
+      "sha256": "46432337c4f10f0bbbdabe7df908c841fc85416ec7b4fb991a92e172a7d61405"
+    },
+    {
+      "path": "runs/train/0-defender-2026111801-teacher.log",
+      "bytes": 305,
+      "sha256": "9ee41c81433e297e5bf1b844494cb6c8f87ea6ebbf84e37f9d7f516a81d5a4ba"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-positive-exchange.json",
+      "bytes": 5844,
+      "sha256": "695e3fb88f07d68531219ca8469a9574b0f971df4e5bffcd18c234bca6d5153c"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-positive-exchange.json.gz",
+      "bytes": 254643,
+      "sha256": "54bd34bfb63fb014b7559c6a2865497c508f5cd03b7f4849d03210ae9a85662e"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-positive-exchange.log",
+      "bytes": 313,
+      "sha256": "e47a51309a17914425d5579703449a3c1a9d7c3fbed0b652c0ec33c143c238ef"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-teacher.json",
+      "bytes": 5814,
+      "sha256": "70d52fac2fadb6a15f378355592dc29b5d9f75c1c5bde4ec7e69ad49f89daf32"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-teacher.json.gz",
+      "bytes": 252694,
+      "sha256": "3071aa934b434096c35d1fbf5988ad182fc0cd9796fac97530c4293fc83a61e7"
+    },
+    {
+      "path": "runs/train/0-defender-2026111802-teacher.log",
+      "bytes": 303,
+      "sha256": "671f226ff2a519738b22335bf148871557afa933369472362c7577f9ece18992"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-positive-exchange.json",
+      "bytes": 5847,
+      "sha256": "ed3a4d43f0da561ea9efd8773fbc4ca36f8a865c97e7472f7b47cf978558f93f"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-positive-exchange.json.gz",
+      "bytes": 288146,
+      "sha256": "3d9cb0d47b23095b2e00ce98f214c5c9c6ab9da20bc7632983969055e44690a8"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-positive-exchange.log",
+      "bytes": 315,
+      "sha256": "6dbe0d830fc012b07f4e782ae89a72a9d30e789d77572c7d3aac8dd124acf4d1"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-teacher.json",
+      "bytes": 5817,
+      "sha256": "459027fe551becce120712d2daa88cc56c2c2f038e0a6835dd2de5cc88f67e1c"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-teacher.json.gz",
+      "bytes": 286105,
+      "sha256": "8ae5aa91a950ccef9f82935dac0d66603cfff213ad9adeb1d8bec1d1c4047194"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111801-teacher.log",
+      "bytes": 305,
+      "sha256": "2fd129492d5595ef2b23681f14b6092d24a5f6eb2d48389fb5d2be19497d259c"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-positive-exchange.json",
+      "bytes": 5847,
+      "sha256": "fd108406a772e2bc9d044da4f3a5312c3cefdbf54d318e24456d9e627d9dedae"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-positive-exchange.json.gz",
+      "bytes": 298678,
+      "sha256": "22f949cb7d9fe41516540ad1f796d2873eb36dd2b9ce2ab14386b30b5bb56fe2"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-positive-exchange.log",
+      "bytes": 315,
+      "sha256": "616ac9c410b6ea7e46b54c81b9345f222846925672ed4017e7aa00fd71992801"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-teacher.json",
+      "bytes": 5816,
+      "sha256": "7756e6ece6f5a1661deb23aa95d15aea2876d90977b56c42b0c1bb718b4a6325"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-teacher.json.gz",
+      "bytes": 296555,
+      "sha256": "54232f96c2435d85973097a8426b4c3c6ff178017db69f9bcf98f14f49a594b3"
+    },
+    {
+      "path": "runs/train/1-attacker-2026111802-teacher.log",
+      "bytes": 305,
+      "sha256": "5f25a9f36189652b2110fb6a01c6a4b1752a2773c3eb5b571097526c89ffde2b"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-positive-exchange.json",
+      "bytes": 5847,
+      "sha256": "738d4b847994ab8eb8331dd857fd56b14da3910a0c12f4f32dd1af9d2dcba0fc"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-positive-exchange.json.gz",
+      "bytes": 260915,
+      "sha256": "a2f57f5ba8086a2e3221fa1399e48144c87c882b83b0673a4aaccff08854ecee"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-positive-exchange.log",
+      "bytes": 315,
+      "sha256": "22f5f2dda4ac4b361fa9d42379d6636afdd4687c9037d775b5367b08f6987b28"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-teacher.json",
+      "bytes": 5815,
+      "sha256": "6afec41eaf21f6296c942e7a3fa5ff9bc284246e2c9c1740ca91bc9e87ee825d"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-teacher.json.gz",
+      "bytes": 259663,
+      "sha256": "a8c579b52749e6c4ba0985d6e054389997e2c0190a86738ac01c1caedaee11fb"
+    },
+    {
+      "path": "runs/train/1-defender-2026111801-teacher.log",
+      "bytes": 303,
+      "sha256": "c114fdaedad00fd15f7f8828a6a212fe2bba4a8421802ce05dfcc7fd2379fa41"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-positive-exchange.json",
+      "bytes": 5846,
+      "sha256": "76d205aa24b245cabb53a8a2ab6c4a025d6453a7da3f1c9d683d1bce5116664e"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-positive-exchange.json.gz",
+      "bytes": 250925,
+      "sha256": "8dbd6541b0c52d852d0a524038289bd36d97b3cb46f8554a45c053d1e5f8aac0"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-positive-exchange.log",
+      "bytes": 315,
+      "sha256": "5d0fbfdb7931f9fc5e352ecb0b7f317de985f03327d3b1793459eb7efe5298e0"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-teacher.json",
+      "bytes": 5814,
+      "sha256": "6cd0ca5e36943e79bdb4518b6a8bb6f6cf4f2bbfe117c4650487d66cc9f78b26"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-teacher.json.gz",
+      "bytes": 268104,
+      "sha256": "927a07dacf794ea8e1556bf469fdd2a46c1f1a4f3aa2092a8f42ed76491f444c"
+    },
+    {
+      "path": "runs/train/1-defender-2026111802-teacher.log",
+      "bytes": 303,
+      "sha256": "f363e09164db100a74383d8e187c51ad37c60e11133d81e5ab2c944171c2184a"
+    },
+    {
+      "path": "runs/train/PROTOCOL.json",
+      "bytes": 2566,
+      "sha256": "583d2b228212702f8b451f384b658d70820666cd50321cc6e9bbea5d4bd4b3c6"
+    },
+    {
+      "path": "runs/train/source-snapshots/17d911452acbbe687f4b10896c02150b9eb742108c8b533d83c2faf7085b5f44-run_pilot.py",
+      "bytes": 5101,
+      "sha256": "17d911452acbbe687f4b10896c02150b9eb742108c8b533d83c2faf7085b5f44"
+    },
+    {
+      "path": "runs/train/source-snapshots/2402686201a5d44925bf1d7eb9b1f0ed7f24372f722471033e3491f4db0a55f6-event_audit.py",
+      "bytes": 7440,
+      "sha256": "2402686201a5d44925bf1d7eb9b1f0ed7f24372f722471033e3491f4db0a55f6"
+    },
+    {
+      "path": "runs/train/source-snapshots/3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26-pyconnector.py",
+      "bytes": 8776,
+      "sha256": "3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26"
+    },
+    {
+      "path": "runs/train/source-snapshots/4bbd4a442823923d12d50e86b453e732b28ddf77e26de2434635d9ffb89c5464-__init__.py",
+      "bytes": 165,
+      "sha256": "4bbd4a442823923d12d50e86b453e732b28ddf77e26de2434635d9ffb89c5464"
+    },
+    {
+      "path": "runs/train/source-snapshots/6557b006f23bdaa63324ed1821b28af0f52cb98d63919552e68aaa8f52323cd4-audit_native.py",
+      "bytes": 5509,
+      "sha256": "6557b006f23bdaa63324ed1821b28af0f52cb98d63919552e68aaa8f52323cd4"
+    },
+    {
+      "path": "runs/train/source-snapshots/6613a80edd9d3f67170deda1983caf04f41a2e1d52438ddd26659572e2f70efc-run_episode.py",
+      "bytes": 10499,
+      "sha256": "6613a80edd9d3f67170deda1983caf04f41a2e1d52438ddd26659572e2f70efc"
+    },
+    {
+      "path": "runs/train/source-snapshots/7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c-FROZEN_SOURCES.json",
+      "bytes": 1275,
+      "sha256": "7367b184534c013a56be8f9c44bc6819b289512cb29af864ff08a459d5f3d20c"
+    },
+    {
+      "path": "runs/train/source-snapshots/73c2008f68413480de7a21cda6b0303074e020ba667d2165213a9bcaa07aa121-prepare_events_worker.py",
+      "bytes": 1838,
+      "sha256": "73c2008f68413480de7a21cda6b0303074e020ba667d2165213a9bcaa07aa121"
+    },
+    {
+      "path": "runs/train/source-snapshots/75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9-decode.py",
+      "bytes": 4237,
+      "sha256": "75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9"
+    },
+    {
+      "path": "runs/train/source-snapshots/7afff489c0c3bab9e8e204fe8c489d1d44b29021ea3d3675fc06c6d4f12acafe-test_helper.py",
+      "bytes": 3146,
+      "sha256": "7afff489c0c3bab9e8e204fe8c489d1d44b29021ea3d3675fc06c6d4f12acafe"
+    },
+    {
+      "path": "runs/train/source-snapshots/813369b904f7357ba2a81b8ceb45ce8d5d010cdbf64c6fdd3e7a59cc7a050008-check_prepare.py",
+      "bytes": 1391,
+      "sha256": "813369b904f7357ba2a81b8ceb45ce8d5d010cdbf64c6fdd3e7a59cc7a050008"
+    },
+    {
+      "path": "runs/train/source-snapshots/92b266fd598db0b808d036a59b30b3c9ea23e1e7b34e87c222cda95c851521b5-run-events-lab.sh",
+      "bytes": 841,
+      "sha256": "92b266fd598db0b808d036a59b30b3c9ea23e1e7b34e87c222cda95c851521b5"
+    },
+    {
+      "path": "runs/train/source-snapshots/9b8a7d593896fb2ddf03f142e4a91c93f462bc912d908c8f41c1b171ee8b4886-cpu_review.py",
+      "bytes": 7524,
+      "sha256": "9b8a7d593896fb2ddf03f142e4a91c93f462bc912d908c8f41c1b171ee8b4886"
+    },
+    {
+      "path": "runs/train/source-snapshots/a2ab14d3853865e9b6a900cce13bbc335af7f1f8c586fc0177df478bac7b3c42-scenarios.json",
+      "bytes": 5912,
+      "sha256": "a2ab14d3853865e9b6a900cce13bbc335af7f1f8c586fc0177df478bac7b3c42"
+    },
+    {
+      "path": "runs/train/source-snapshots/a5c51dec170882b4cc72573609d9fe8c276a351a83869d31020251a8e24ece48-events_provenance.py",
+      "bytes": 1522,
+      "sha256": "a5c51dec170882b4cc72573609d9fe8c276a351a83869d31020251a8e24ece48"
+    },
+    {
+      "path": "runs/train/source-snapshots/ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe-heroes.json",
+      "bytes": 1296215,
+      "sha256": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe"
+    },
+    {
+      "path": "runs/train/source-snapshots/bab325ac375fa1c7b290ebed503862dfb94c34321a0c7ff1e25a323e973d1ddb-experts_events.py",
+      "bytes": 17174,
+      "sha256": "bab325ac375fa1c7b290ebed503862dfb94c34321a0c7ff1e25a323e973d1ddb"
+    },
+    {
+      "path": "runs/train/source-snapshots/c9840737df83439d627da4e3cf0bdec34089837a9d64701597060fb51892be44-launch.py",
+      "bytes": 1414,
+      "sha256": "c9840737df83439d627da4e3cf0bdec34089837a9d64701597060fb51892be44"
+    },
+    {
+      "path": "runs/train/source-snapshots/cd609f1ac8bb0224e63ba473dec1b8b3363771bad33e31e4cd9dee16ee205ae6-vcmi_env.py",
+      "bytes": 25584,
+      "sha256": "cd609f1ac8bb0224e63ba473dec1b8b3363771bad33e31e4cd9dee16ee205ae6"
+    },
+    {
+      "path": "runs/train/source-snapshots/d3304239001e4c83a0ada242a90b0c7ae1b6072ebde9c92a228d4dc370ed27b7-battle_outcome_audit.py",
+      "bytes": 1418,
+      "sha256": "d3304239001e4c83a0ada242a90b0c7ae1b6072ebde9c92a228d4dc370ed27b7"
+    },
+    {
+      "path": "runs/train/source-snapshots/ee3435a83369ff799534b3ce99fe3b92688e713e542d98db18e2f873d0f13801-visible_exchange.py",
+      "bytes": 2812,
+      "sha256": "ee3435a83369ff799534b3ce99fe3b92688e713e542d98db18e2f873d0f13801"
+    },
+    {
+      "path": "scenarios.json",
+      "bytes": 5912,
+      "sha256": "a2ab14d3853865e9b6a900cce13bbc335af7f1f8c586fc0177df478bac7b3c42"
+    },
+    {
+      "path": "visible_exchange.py",
+      "bytes": 2812,
+      "sha256": "ee3435a83369ff799534b3ce99fe3b92688e713e542d98db18e2f873d0f13801"
+    }
+  ],
+  "experiment_benefit_passed": false,
+  "bc_eligible": false,
+  "note": "Integrity inventory of existing evidence, not a capability or benefit acceptance."
+}

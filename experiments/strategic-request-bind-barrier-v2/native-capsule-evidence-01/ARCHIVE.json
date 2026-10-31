@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "copies": {
+    "typed-request-bind-capsule-01": {
+      "regular_files": 238,
+      "symlinks": 0
+    },
+    "typed-request-bind-director-capsule-01": {
+      "regular_files": 238,
+      "symlinks": 0
+    }
+  },
+  "no_asset_link_dereference": true
+}

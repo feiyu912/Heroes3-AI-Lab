@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/usr/bin/readelf",
+    "-d",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/gcc-11"
+  ],
+  "returncode": 0,
+  "seconds": 0.0010557174682617188,
+  "stdout_sha256": "b0ab75f9241682d6012616fa5c1ad4d3ba7364ce26a9b6b38dfb492017dc39a8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

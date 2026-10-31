@@ -1,0 +1,94 @@
+{
+  "config": {
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-full-graph-capacity.json",
+    "mode": "last",
+    "workers": 24,
+    "updates": 2,
+    "rollout": 8,
+    "microbatch": 4,
+    "epochs": 2,
+    "seed": 20261020,
+    "learning_rate": 1e-05,
+    "head_learning_rate": 5e-05,
+    "opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "shaping": 0.5,
+    "step_cost": 0.002,
+    "resume": false,
+    "rotate_every": 16,
+    "native_opponent_device": "cpu"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792063972428169976/update-2.pt",
+  "completed": true,
+  "resumed_from_updates": 0,
+  "records": [
+    {
+      "update": 1,
+      "samples": 192,
+      "steps_per_second": 14.583483265023634,
+      "episodes": 0,
+      "wins": 0,
+      "truncations": 0,
+      "metrics": {
+        "loss": 5.223223293510576,
+        "policy_loss": -0.013650989276356995,
+        "value_loss": 10.484573349356651,
+        "entropy": 1.0824795033646903,
+        "approximate_kl": 0.004160096558431785,
+        "gradient_norm": 94.87881735960643,
+        "clip_fraction": 0.041666666666666664,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 6.103515625e-05
+      },
+      "timing_seconds": {
+        "inference": 1.3172820930003581,
+        "environment": 2.3329193380000106,
+        "update": 9.051865929000087
+      },
+      "free_mib": 4877.53125,
+      "gpu_peak_mib": 359.9697265625,
+      "gpu_telemetry": {
+        "temperature_c": 47.0,
+        "memory_mib": 1965.0,
+        "utilization_percent": 23.0
+      }
+    },
+    {
+      "update": 2,
+      "samples": 192,
+      "steps_per_second": 15.030776720145319,
+      "episodes": 5,
+      "wins": 3,
+      "truncations": 0,
+      "metrics": {
+        "loss": 4.362576606062551,
+        "policy_loss": -0.01780861111668249,
+        "value_loss": 8.769594294174263,
+        "entropy": 0.8823903016746044,
+        "approximate_kl": 0.025883251956353586,
+        "gradient_norm": 63.43627266089121,
+        "clip_fraction": 0.08333333333333333,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 9.1552734375e-05
+      },
+      "timing_seconds": {
+        "inference": 0.44285430199988696,
+        "environment": 2.823806472000342,
+        "update": 9.083873001000029
+      },
+      "free_mib": 4733.43359375,
+      "gpu_peak_mib": 359.9697265625
+    }
+  ],
+  "wall_seconds": 64.29337059099998,
+  "policy": "recovered",
+  "total_parameters": 8993178,
+  "trainable_parameters": 1084450,
+  "reward": "Normal terminal +/-1, step cost, gamma-correct army-value potential with zero terminal potential",
+  "CUDA_training": true,
+  "all_workers_exit_zero": true
+}

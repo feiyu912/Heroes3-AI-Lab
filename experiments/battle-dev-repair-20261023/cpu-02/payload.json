@@ -1,0 +1,244 @@
+{
+  "scenario": "diverse-192",
+  "split": "development",
+  "role": "attacker",
+  "seed": 2026122800,
+  "engine_seed": 2026122800,
+  "opponent": "BattleAI",
+  "opponent_model": null,
+  "opponent_seed": null,
+  "opponent_temperature": null,
+  "policy": "recovered",
+  "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/models/1792504676114060650/update-30.pt",
+  "steps": 16,
+  "terminated": true,
+  "truncated": false,
+  "invalid_actions": 0,
+  "success": true,
+  "terminal_outcome": {
+    "result_type": 0,
+    "winner": 0,
+    "casualties": {
+      "0": {
+        "0": 18,
+        "2": 42,
+        "4": 18
+      },
+      "1": {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      }
+    },
+    "initial_armies": [
+      {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      },
+      {
+        "0": 18,
+        "2": 42,
+        "4": 33
+      }
+    ]
+  },
+  "action_types": {
+    "0": 2,
+    "4": 2,
+    "2": 2,
+    "3": 10
+  },
+  "trajectory_sha256": "7512d358a590a9e018bf5fcada7c29cad029f93acc501a14d765607c8f44ab47",
+  "trajectory_hash_version": 2,
+  "wall_seconds": null,
+  "policy_latency_ms": null,
+  "step_evidence": {
+    "schema": "battle-step-evidence-v1",
+    "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps",
+    "identity": {
+      "scenario_index": 192,
+      "scenario": "diverse-192",
+      "role": "attacker",
+      "seed": 2026122800,
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/models/1792504676114060650/update-30.pt",
+      "checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa",
+      "opponent": "BattleAI",
+      "opponent_model": null
+    },
+    "complete": true,
+    "decisions": 16,
+    "native_step_returns": 16,
+    "files": [
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000001.pt",
+        "sha256": "617586d0efd1610ff6fc29a48417a989ab50d4d0244e381592b3f75425c4ab1e",
+        "bytes": 214788
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000001.pt",
+        "sha256": "e8ceaebd1a405495f56dc003d4163b4b323f8cbc2fb577e8b9ac6dc18e05b5b7",
+        "bytes": 250811
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000002.pt",
+        "sha256": "5a4a47f0f0c627bfc5a74bd8e823aa14fde75ce4abffa7156a7548befe97b4a0",
+        "bytes": 252228
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000002.pt",
+        "sha256": "996e8fdf08e31b3476a72c51fdee212af994eb58c5cf9793d7cedad8bf0e45ce",
+        "bytes": 142587
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000003.pt",
+        "sha256": "6221fde21172ad579181f9f36d654a6d115a896bd3c34e1cf87d0d09a2ada586",
+        "bytes": 143876
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000003.pt",
+        "sha256": "38149b4996c6b5f47a655c7d4869d2c3eb4d849e77668466c5e4305d8afca3d3",
+        "bytes": 215355
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000004.pt",
+        "sha256": "93de92e6f87103899642be1100eb34adc92346427d3e351213e8bc2652d7f4f2",
+        "bytes": 217156
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000004.pt",
+        "sha256": "9a8ee831e178e92f7835ebea7be047e2478f8aed070a97977a05e4d9b3a32fa5",
+        "bytes": 331131
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000005.pt",
+        "sha256": "b9e2dc76b4489944592278808192a824da9ba4c042777c6748cd42f0c5071a0d",
+        "bytes": 333636
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000005.pt",
+        "sha256": "58f5353e8f2c4078b486a02c7947f7f0cc77ba01b6d20861e8f7c74626414f5a",
+        "bytes": 309243
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000006.pt",
+        "sha256": "1bbe6fa492f14ca037a569e6a19eb77cae6e046d711f3ebe414664650b0486c9",
+        "bytes": 310660
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000006.pt",
+        "sha256": "cc0857de52a7e2f303b171f152dd41569363047db8404147862517d2caf2bb2b",
+        "bytes": 214779
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000007.pt",
+        "sha256": "1a0665c76e8910992067483f00a8b5018aee6bc3534f4651a49098b5a5b80a82",
+        "bytes": 216516
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000007.pt",
+        "sha256": "641273a80d1bb2f10ee6c69f43fdae3d7345548d07a6769d408b9a0f47de6849",
+        "bytes": 330811
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000008.pt",
+        "sha256": "267c64e52350b85a4912f4edc8536aca54572bf28006594b327cc42cd289fa7a",
+        "bytes": 333316
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000008.pt",
+        "sha256": "55116847e478c77cfb29e5482c33cacb5aee7b7d49d58c76070094545c1c923c",
+        "bytes": 352059
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000009.pt",
+        "sha256": "e0a0c3a1e8d934b804a929bb2874f64c5841a0c25706fae7a811db4dc637ac37",
+        "bytes": 354820
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000009.pt",
+        "sha256": "a1507a0260976cdcbbbf8a43369f20cab18e1c6a3502d016d2ee168a67636feb",
+        "bytes": 228603
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000010.pt",
+        "sha256": "a57c67efcf9b854619a912d2424ce211c2f37378bac0094f2bad0769a50af7eb",
+        "bytes": 230020
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000010.pt",
+        "sha256": "b6d226c2cf3441a9b55f48477ccd527592006acccd94f720708ba14cd0b158d4",
+        "bytes": 217659
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000011.pt",
+        "sha256": "cc5f7aad48262449071fb94b7cbdbf1b09e32f542e2dea7b0965f91688e700a6",
+        "bytes": 219396
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000011.pt",
+        "sha256": "3382b34259395d67edb7783f064e2388ea519093a55386b699ac2c3c9b2f81fc",
+        "bytes": 264827
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000012.pt",
+        "sha256": "11ad22d61d8e3ef48b235df00f57d8bad88e9c7e276d243f8ca21786b891f738",
+        "bytes": 266372
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000012.pt",
+        "sha256": "b7ecc22b2c1329e17f9628331abccaa9fb4af6db288f7c91c132a5bb3f14e748",
+        "bytes": 224379
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000013.pt",
+        "sha256": "939d76a4fbca140a8408b765ba518a6ef86083f56f85c5016845061302428b89",
+        "bytes": 226372
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000013.pt",
+        "sha256": "6edf5e6c4cad6012e9c6e7d488107a57ecfe81b0b5257327b71f5b1b022b9779",
+        "bytes": 238779
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000014.pt",
+        "sha256": "028203b064dfe1ac473a971fb48b6c99bce47b189e041fd8b0de88499540223b",
+        "bytes": 240772
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000014.pt",
+        "sha256": "1935dfb6cbf3e6ab47fc55b6d28652c21eb0500a9f8875cb1f0b09342ba71e4a",
+        "bytes": 232315
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000015.pt",
+        "sha256": "341e2af738c66a59dc4c21ae0e342187e21db61b6981a7a56065cdf1c10853ec",
+        "bytes": 234308
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000015.pt",
+        "sha256": "faa571826405fc04e3d56dd5d854245e23431fb5bdeeb8872f95483a8c74605e",
+        "bytes": 204859
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/decision-000016.pt",
+        "sha256": "5fa32265b7ce27530b5e469a418bb600195b99f2e2b920267f4cf3a55e30ee6f",
+        "bytes": 206788
+      },
+      {
+        "path": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.steps/transition-000016.pt",
+        "sha256": "5197180aceb0017c016c98a55e8a4677b19e95343657e1ea9d3f7528fd74a1c1",
+        "bytes": 84539
+      }
+    ],
+    "unreturned_decision": 0
+  },
+  "recovery": {
+    "source_log": "/root/heroes3-ai-lab/evaluations/1792726710179968280/192-attacker-2026122800-recovered.log",
+    "source_log_sha256": "4468835a7a0aa237c0f2d0ff39604d23b8f300889d8e52e4a0bbd502559a2776",
+    "original_game_replayed": false,
+    "timing_not_reconstructable": true,
+    "individual_exit_code_not_recorded": true,
+    "normal_shutdown_and_complete_terminal_evidence_verified": true
+  }
+}

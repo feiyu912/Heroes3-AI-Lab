@@ -1,0 +1,32 @@
+{
+  "prepared_only": true,
+  "source_tree": "/root/heroes3-ai-lab/src/vcmi-adv",
+  "build_tree": "/root/heroes3-ai-lab/src/vcmi-adv-build",
+  "candidates": "/mnt/g/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/candidates-02",
+  "lock_order": [
+    "GPU learner NB",
+    "pool NB"
+  ],
+  "variants": [
+    "original-unhandled",
+    "close-only",
+    "transfer-close"
+  ],
+  "native_games_started": 0,
+  "optimizer_steps": 0,
+  "explicit_execution_required": true,
+  "restore_requires_new_mtime_then_ninja": true,
+  "fallback_published_binaries_if_restore_rebuild_fails": true,
+  "build_kind": "incremental_from_accepted_shared_tree",
+  "driver_sha256": "1544ddc44f19425214ccc4796fe862f8127ea856c21ed7f179c0ba7e3cd84272",
+  "candidate_sha256": {
+    "original-unhandled/CDirectorAI.cpp": "a89571ec68198f0e02c0e678afc986e4d69ad8eea04c3047c37620f54a61b1dc",
+    "original-unhandled/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+    "close-only/CDirectorAI.cpp": "2c8f5f6beca7c843cabbde13dcd85806fb7748198bae3b69d57063bbf8963f75",
+    "close-only/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+    "transfer-close/CDirectorAI.cpp": "8c4f57cdc8f9e5f2a1aaabf1501908d2ce6e05d9a993af7f80a9673f2fae98a7",
+    "transfer-close/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8"
+  },
+  "support_sha256": "8718cd8c62ad734f26dd3503f0a301c116c208b6f56347256b410d774d653170",
+  "native_inputs_written": false
+}

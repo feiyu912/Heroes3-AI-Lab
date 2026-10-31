@@ -1,0 +1,19 @@
+{
+  "status": "configure04-passed-await-root-build-admission",
+  "parent_driver_sha256": "90d4b8ec29e401c1d493a2d3ef7bd67ff2ad143faddcf596fd0010c30b9ab3b2",
+  "new_driver_sha256": "788841c993847251b5ca536e04286a7c6425244ce8c944947ceadb9abb59c224",
+  "prior_failed_stage": "baseline-build-01",
+  "prior_stage_exit_code": 1,
+  "prior_observed_compilations": 720,
+  "compile_commands_identical": true,
+  "new_configuration": "configure-04",
+  "factor_source_change": false,
+  "optimization_change": false,
+  "toolchain_prefix_change": false,
+  "link_adaptation": "EXE link flags add only explicit profile ONNX indirect -rpath-link",
+  "telemetry_cleanup_adaptation": "owned SID enumeration including all Ninja-created child process groups; sampled session RSS; do not reinterpret prior process-group RSS as total build peak",
+  "prior_admission_archive": "configure-04/prior-state/BUILD_ADMISSION.json",
+  "new_full_builds": 0,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

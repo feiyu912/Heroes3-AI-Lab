@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -382,6 +382,10 @@
+ 	blockedHeroes.clear();
+ 	committedTargets.clear();
+ 	recruitedThisTurn.clear();
++    schedulerTurnStart.clear();
++    for(const auto * hero : cb->getHeroesInfo())
++        if(hero->getOwner() == playerID && (hero->id.getNum() == 0 || hero->id.getNum() == 2))
++            schedulerTurnStart[hero->id.getNum()] = hero->visitablePos();
+ 	++ownTurns;
+ 	traceState("turn_start");
+ 	if(!savedInitial)
+@@ -404,6 +408,20 @@
+ 	if(!turnActive || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+ 		!pendingQueries.empty() || !queryRequests.empty())
+ 		return;
++    if(schedulerHeld) return;
++    if(ownTurns == 2 && schedulerTurnStart.size() == 2)
++    {
++        const auto * a = cb->getHero(ObjectInstanceID(0));
++        const auto * b = cb->getHero(ObjectInstanceID(2));
++        if(a && b && a->visitablePos() != schedulerTurnStart.at(0) &&
++           b->visitablePos() != schedulerTurnStart.at(2))
++        {
++            schedulerHeld = true;
++            traceState("scheduler_quiescent_boundary");
++            probeEvent("scheduler_quiescent_boundary");
++            return;
++        }
++    }
+     if(!garrisonSetupDone)
+     {
+         if(garrisonSetupPending) return;

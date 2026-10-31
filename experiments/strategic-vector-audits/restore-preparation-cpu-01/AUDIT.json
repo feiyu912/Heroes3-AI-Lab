@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "game_started": false,
+  "GPU_initialized": false,
+  "positive_preparation": true,
+  "restore_executed": false,
+  "invalid_cases_rejected": [
+    {
+      "test": "legacy_mode",
+      "error": "Restore wrapper only supports fresh NEW-model policy smoke"
+    },
+    {
+      "test": "wrong_checkpoint",
+      "error": "Requested checkpoint differs from original smoke"
+    },
+    {
+      "test": "missing_barrier_marker",
+      "error": "Fresh original native log does not prove the new server battle barrier ran; v6/v7 are unsupported"
+    },
+    {
+      "test": "ambiguous_initial_save",
+      "error": "Restore tool currently selects first save; unique initial save must be first"
+    },
+    {
+      "test": "native_failure",
+      "error": "Original has native failed action/query events"
+    }
+  ],
+  "preparer_sha256": "49234da93a95bd72d39c14492794cd8881bfc20932191c4fdb8e64fcb3c6a496"
+}

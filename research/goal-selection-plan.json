@@ -1,0 +1,98 @@
+{
+  "declared_unix": 1792067935.7796664,
+  "adaptation_after_head128_validation": true,
+  "before_full_graph_training": true,
+  "before_final_test": true,
+  "unchanged_final_success_conditions": [
+    "BattleAI independent win rate >=95%",
+    "Direct public MMAI independent scenario-cluster95 lower bound >50%"
+  ],
+  "selection": "Maximize worst normalized progress over both validation sets: BattleAI/.95, direct-opponent cluster95 lower/.50; tie-break by BattleAI sum, source lower, source sum, casualties",
+  "validation_diagnostics": [
+    {
+      "name": "v5-public-original",
+      "score": [
+        0.6140350877192983,
+        1.3541666666666667,
+        0.5,
+        1.0,
+        -87.66666666666667
+      ],
+      "metrics": {
+        "author_cluster95_lower": 0.5,
+        "development_author_cluster95_lower": 0.5,
+        "normalized_constraints": [
+          0.6140350877192983,
+          0.8114035087719299,
+          1.0,
+          1.0
+        ],
+        "rule": "Goal-normalized worst progress across both validation sets; BattleAI/.95, author cluster95 lower/.50. Final thresholds unchanged."
+      }
+    },
+    {
+      "name": "v5-lab-v3",
+      "score": [
+        0.0,
+        1.0625,
+        0.0,
+        0.3958333333333333,
+        -95.14583333333333
+      ],
+      "metrics": {
+        "author_cluster95_lower": 0.14583333333333334,
+        "development_author_cluster95_lower": 0.0,
+        "normalized_constraints": [
+          0.6359649122807017,
+          0.4824561403508772,
+          0.2916666666666667,
+          0.0
+        ],
+        "rule": "Goal-normalized worst progress across both validation sets; BattleAI/.95, author cluster95 lower/.50. Final thresholds unchanged."
+      }
+    },
+    {
+      "name": "v5-restored-best-heads",
+      "score": [
+        0.5701754385964912,
+        1.2291666666666665,
+        0.3125,
+        1.0208333333333333,
+        -90.25
+      ],
+      "metrics": {
+        "author_cluster95_lower": 0.5,
+        "development_author_cluster95_lower": 0.3125,
+        "normalized_constraints": [
+          0.5701754385964912,
+          0.7236842105263158,
+          1.0,
+          0.625
+        ],
+        "rule": "Goal-normalized worst progress across both validation sets; BattleAI/.95, author cluster95 lower/.50. Final thresholds unchanged."
+      }
+    },
+    {
+      "name": "v5-diverse-heads-128",
+      "score": [
+        0.7017543859649122,
+        1.5208333333333333,
+        0.375,
+        1.0625,
+        -84.27083333333333
+      ],
+      "metrics": {
+        "author_cluster95_lower": 0.375,
+        "development_author_cluster95_lower": 0.4583333333333333,
+        "normalized_constraints": [
+          0.7017543859649122,
+          0.8991228070175439,
+          0.75,
+          0.9166666666666666
+        ],
+        "rule": "Goal-normalized worst progress across both validation sets; BattleAI/.95, author cluster95 lower/.50. Final thresholds unchanged."
+      }
+    }
+  ],
+  "reason": "Equal raw max-min wins can prefer balanced mediocre results over a model meeting unequal user thresholds. Success is still assessed only on untouched final games."
+}

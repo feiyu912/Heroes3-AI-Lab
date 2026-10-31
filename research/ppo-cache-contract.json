@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "actions_identical": true,
+  "returns_identical": true,
+  "worker_torch_imported": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "uncached_seconds": 2.8010328470001014,
+  "cached_seconds": 2.7035806310000225,
+  "cached_pss_mib": 5410.05859375
+}

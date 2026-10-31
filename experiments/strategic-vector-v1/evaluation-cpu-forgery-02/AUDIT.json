@@ -1,0 +1,61 @@
+{
+  "fabricated_CPU_only": true,
+  "game_started": false,
+  "optimizer_steps": 0,
+  "test_split_touched": false,
+  "cases": [
+    {
+      "case": "valid_blocking",
+      "accepted": true,
+      "error": null,
+      "expected_accept": true
+    },
+    {
+      "case": "wrong_checkpoint",
+      "accepted": false,
+      "error": "Broker checkpoint/mode differs from frozen new-policy evaluation",
+      "expected_accept": false
+    },
+    {
+      "case": "wrong_action_bytes",
+      "accepted": false,
+      "error": "Native/broker byte/content consumption mismatch at request 1",
+      "expected_accept": false
+    },
+    {
+      "case": "native_selected_mismatch",
+      "accepted": false,
+      "error": "Native/broker byte/content consumption mismatch at request 1",
+      "expected_accept": false
+    },
+    {
+      "case": "native_candidates_mismatch",
+      "accepted": false,
+      "error": "Native/broker byte/content consumption mismatch at request 1",
+      "expected_accept": false
+    },
+    {
+      "case": "strict_v3_missing_field",
+      "accepted": false,
+      "error": "Missing required visible observation field: own_towns",
+      "expected_accept": false
+    },
+    {
+      "case": "economy_failed",
+      "accepted": false,
+      "error": "Strict native execution/event gate failed: {\"valid\": false, \"counts\": {\"move_applied\": 1, \"move_failed\": 0, \"economy_failed\": 1, \"query_failed\": 0, \"server_rejected\": 0}, \"evidence\": [{\"file\": \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/evaluation-cpu-forgery-02/economy_failed/native/strategy-trace.jsonl\", \"line\": 2, \"event\": \"economy_failed\", \"text\": \"{\\\"event\\\": \\\"economy_failed\\\", \\\"day\\\": 7}\"}], \"move_reply_count\": 1, \"failed_move_reply_count\": 0, \"blocking_visit_reply_count\": 1, \"expected_actions\": 1, \"missing_ack_count\": 0, \"missing_execution_reply_count\": 0, \"terminal_ack_missing_after_execution\": false, \"terminal_native_visit_execution_proof\": null, \"terminal_unconfirmed_action_indices\": [], \"classification\": \"native_failure_or_unconfirmed_execution\"}",
+      "expected_accept": false
+    },
+    {
+      "case": "terminal_pending",
+      "accepted": false,
+      "error": "Strict native execution/event gate failed: {\"valid\": false, \"counts\": {\"move_applied\": 0, \"move_failed\": 0, \"economy_failed\": 0, \"query_failed\": 0, \"server_rejected\": 0}, \"evidence\": [], \"move_reply_count\": 0, \"failed_move_reply_count\": 0, \"blocking_visit_reply_count\": 0, \"expected_actions\": 1, \"missing_ack_count\": 1, \"missing_execution_reply_count\": 1, \"terminal_ack_missing_after_execution\": false, \"terminal_native_visit_execution_proof\": null, \"terminal_unconfirmed_action_indices\": [0], \"classification\": \"native_failure_or_unconfirmed_execution\"}",
+      "expected_accept": false
+    }
+  ],
+  "schedule_pairs": 8,
+  "map_count": 2,
+  "confidence_interval": null,
+  "passed": true,
+  "note": "Fabricated wins test summary accounting only and are not evaluation results."
+}

@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-24T01:06:33+0800",
+  "command": [
+    "H:\\DeepSeek Harness\\resources\\runtime\\cli\\bin\\dsh.cmd",
+    "headless",
+    "--patch",
+    "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review\\review-overlay.yml",
+    "--json",
+    "-"
+  ],
+  "cwd": "G:\\Heroes3-AI-Lab\\experiments\\strategic-active-opponent-learning-20261024\\minimax-calibration-review",
+  "provider": "mini",
+  "model": "MiniMax-M3.1-Flash",
+  "reasoning_effort": "low",
+  "max_output_tokens": 4096,
+  "interface": "bundled normal dsh headless CLI; ephemeral --patch; local credentials service",
+  "task_sha256": "4b786eb6b1b4675992a20b99f77ed68be14a37f676e695d0e12977030f627362",
+  "source_access": "implementation-agent report only; all tools disabled",
+  "max_model_calls": 1,
+  "status": "process_finished",
+  "exit_code": 0,
+  "finished_at": "2026-10-24T01:06:41+0800"
+}

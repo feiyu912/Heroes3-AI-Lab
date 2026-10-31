@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "source_binding_only": true,
+  "diagnostic_audit_sha256": "becbb5846903a11fe39d7d1175c4d6e8b1e68447b67ed6fb708e0bef97bb8834",
+  "script_matches_executed_hash": true,
+  "source_files": [
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/gradient-support/diagnose.py",
+      "sha256": "07e8c84de14ba899ef146ee35b2c665b141e49358a6dae0e654fdfe30a8c2c72",
+      "historical_MC_probe_freeze_path": null,
+      "historical_freeze_equal": null
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/research/full_graph_policy.py",
+      "sha256": "fed70e1d268e2aa201ce8dea7536a574a2841b1985a70ee71bcbe69be7ef2a7c",
+      "historical_MC_probe_freeze_path": "/mnt/g/Heroes3-AI-Lab/research/full_graph_policy.py",
+      "historical_freeze_equal": true
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/research/recovered-graph.py",
+      "sha256": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485",
+      "historical_MC_probe_freeze_path": "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py",
+      "historical_freeze_equal": true
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/research/masked_ppo.py",
+      "sha256": "16e279f9b1cd9a74644f0905dfa103e8502ca81664a79ecd747d24c0cd826829",
+      "historical_MC_probe_freeze_path": "/mnt/g/Heroes3-AI-Lab/research/masked_ppo.py",
+      "historical_freeze_equal": true
+    },
+    {
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/restore_learner.py",
+      "sha256": "e06151039e1665742897e9381cab1f51b3598d51db1e2f050d4315b0de5b7df9",
+      "historical_MC_probe_freeze_path": "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/restore_learner.py",
+      "historical_freeze_equal": true
+    }
+  ],
+  "scope": "Additional source binding after the completed CPU-only audit; not a new replay or optimizer operation."
+}

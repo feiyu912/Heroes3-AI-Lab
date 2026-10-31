@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "tests": 8,
+  "threshold_cases": 210,
+  "compiled": false,
+  "native_runs": 0,
+  "pool_used": false,
+  "scope": "Source identity and CPU branch model only; not C++ compilation or native legality verification",
+  "sources": {
+    "baseline-CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "candidate-CDirectorAI.cpp": "9a8dda3d323691f597ee5ffea70dcd82a9aa4f8f5081cb0e4231b7cabfdd0541",
+    "candidate.diff": "01efead124d800a3c58d295b46fa38b1a9d6c4e8a36450275c0f2c6955573679",
+    "CANDIDATE_MANIFEST.json": "67f39cb10151184b30dbe7294536269140df82f9641e69920871f3ec276f2ee3",
+    "prepare_candidate.py": "d180b17e046b1394c6e1252c164c1b105a14c37d886ecef82dd8d54dfb1a51ee",
+    "test_candidate_cpu.py": "afdcedb65ea845fe4b766ddeea223fd6e3dd5b9d08b636020a9bec290d739293",
+    "threat_contract.py": "90b47b6e57caa284a8f91944bbaac661bfecb74cd7375e0b6eb5be3b3012d320"
+  }
+}

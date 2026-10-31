@@ -1,0 +1,594 @@
+[
+  {
+    "id": "hallas-wait-0-attacker",
+    "map": "lab/hallas-wait-0-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 10
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 80
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 0,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "f74844d0d5884d801546b369901c29e5453378715d3c758f6b741a3beb56f229",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-0-defender",
+    "map": "lab/hallas-wait-0-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 80
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 10
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 0,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "0749ee8f0637ad9970bc1a76361c06545707247bb59c8bb190ddcff2043d35fe",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-1-attacker",
+    "map": "lab/hallas-wait-1-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 11
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 87
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 1,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "cc3fb103f5ac7cf899fb39843df2f7f6fd86699c71edea7e141f00d9b8740502",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-1-defender",
+    "map": "lab/hallas-wait-1-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 87
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 11
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 1,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "501380ad8dc498e28f020df1d23c3791e217051b772bf5fc08b2e48b06059133",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-2-attacker",
+    "map": "lab/hallas-wait-2-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 12
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 94
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 2,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "d7e6ae8a16a524b88eea26eb2bf5c0720adb0aeea099bd41af80bd191a149f88",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-2-defender",
+    "map": "lab/hallas-wait-2-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 94
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 12
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 2,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "a97d4c5bc1695ad6e87bfd3d34481c5352ecf5bfc9d4888c0b8905fc4430b485",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-3-attacker",
+    "map": "lab/hallas-wait-3-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 13
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 101
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 3,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "19b54f9afb3380bbefdedac3237c4f1e524ac679fa41504e13dbfb84fc739648",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-3-defender",
+    "map": "lab/hallas-wait-3-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 101
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 13
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 3,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "ae7fdc493b2508ed345b4801a9c23fae6e0c3f0fd064417ba6456d22d126469b",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-4-attacker",
+    "map": "lab/hallas-wait-4-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 14
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 108
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 4,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "fb33761091da476daa074c03e5d729973ff3b294c2153cf950e4ec6eefa8c1b4",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-4-defender",
+    "map": "lab/hallas-wait-4-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 108
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 14
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 4,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "eca0ff65ca0af22057a13eff5e24368ec4eb5b3ed13f78aeacbda5c6ecb8ce05",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-5-attacker",
+    "map": "lab/hallas-wait-5-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 15
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 115
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 5,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "631540f122e0652b516280a50b299265bf826a6e7efabbad9186aee8c8f6ae97",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-5-defender",
+    "map": "lab/hallas-wait-5-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 115
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 15
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 5,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "74dd1ff8795e8ac56cd4fa42fcc820ecc1d54a6f5c5dedb4b9670947615259ba",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-6-attacker",
+    "map": "lab/hallas-wait-6-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 16
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 122
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 6,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "83fa213c21c78f5972e78e19889e4a106c2db543e85daac9b2a70da08427ad46",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-6-defender",
+    "map": "lab/hallas-wait-6-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 122
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 16
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 6,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "d531d2c90b38ca8ae08b0207699b66667430fe6e8f3a2869e4edb2c77ad893c0",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-7-attacker",
+    "map": "lab/hallas-wait-7-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 17
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 129
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 7,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "bacfa616eea273fe8dbf800423061bc50b1c09c0b4d86de19261607ed09bcabd",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  },
+  {
+    "id": "hallas-wait-7-defender",
+    "map": "lab/hallas-wait-7-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 129
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:dreadKnight",
+          "amount": 17
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 7,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "85377ffe6d32170da99572688159590ca6fdcab7c8acf001dbe2cea5b6160c4d",
+    "reconstruction": "Lab counts/slots/heroes/seed; not extracted historical state",
+    "morale_control": "Both stacks undead; no positive-morale extra turns expected, verify actual order"
+  }
+]

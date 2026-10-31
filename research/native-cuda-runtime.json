@@ -1,0 +1,33 @@
+{
+  "runtime": "1.22.0",
+  "library_directory": "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib",
+  "wheel": "/root/heroes3-ai-lab/downloads/onnxruntime_gpu-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "wheel_sha256": "965da7d33a54917e8e5176f292cc22640819f328370f4fb86087908745b03708",
+  "extracted": [
+    "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib/libonnxruntime.so.1.22.0",
+    "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib/libonnxruntime_providers_cuda.so",
+    "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib/libonnxruntime_providers_shared.so",
+    "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib/libonnxruntime_providers_tensorrt.so"
+  ],
+  "library_paths": [
+    "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cublas/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cuda_cupti/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cuda_nvrtc/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cuda_runtime/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cudnn/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cufft/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cufile/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/curand/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cusolver/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cusparse/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/cusparselt/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/nccl/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/nvjitlink/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/nvshmem/lib",
+    "/root/heroes3-ai-lab/gpu-venv/lib/python3.10/site-packages/nvidia/nvtx/lib"
+  ],
+  "shim": "/root/heroes3-ai-lab/onnxruntime-gpu-1.22/lib/lab-cuda-options.so",
+  "source": "https://onnxruntime.ai/docs/execution-providers/CUDA-ExecutionProvider.html",
+  "formal_use_approved_by_contract": false
+}

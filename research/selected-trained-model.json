@@ -1,0 +1,22 @@
+{
+  "name": "ppo-balanced-rollout64",
+  "training_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64.json",
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+  "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64-validation.json",
+  "test_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64-test.json",
+  "steps": 98304,
+  "summary": {
+    "policy": "model",
+    "battles": 160,
+    "wins": 88,
+    "win_rate": 0.55,
+    "wilson95": [
+      0.4726402740186129,
+      0.625015022316384
+    ],
+    "truncated": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 84.63125
+  },
+  "selection": "Highest validation win rate, then lowest validation unit casualties; held-out test excluded from selection"
+}

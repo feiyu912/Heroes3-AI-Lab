@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "human-v1-dragon-breath-00",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-00.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 5
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 5
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "002ad30a666ff64611f5057fd722ad893883165aefc22cce8b4d26ec824ec571",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-01",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-01.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {
+          "type": "core:archer",
+          "amount": 36
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 9
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {
+          "type": "core:archer",
+          "amount": 36
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 9
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "821df926916c9af8dfd10bd4db9bd17a9fc786b10cdc1cd07494603f825a3196",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-02",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-02.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 62
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 5
+        },
+        {
+          "type": "core:archer",
+          "amount": 27
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 19
+        },
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 62
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 5
+        },
+        {
+          "type": "core:archer",
+          "amount": 27
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 19
+        },
+        {},
+        {},
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "dfb14d1c8094015afbb391f4a6ba55c47c9418f329093dfbdb564f8191cdbbfa",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-03",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-03.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 9
+        },
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 4
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 25
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 33
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 9
+        },
+        {},
+        {
+          "type": "core:greenDragon",
+          "amount": 4
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 25
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 33
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "152dee36ffd5e4be02132db4fe529b84c7eb7048a23bc41023d482a83c9c1f83",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-04",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-04.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 13
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 51
+        },
+        {
+          "type": "core:archer",
+          "amount": 20
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 13
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 51
+        },
+        {
+          "type": "core:archer",
+          "amount": 20
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "34541a71c87d51432aaf3d66b8f803f6f3b38d6269242a991492343b3b8a5ed7",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-05",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-05.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 13
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 24
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 13
+        },
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 24
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "f88e6a72b48546ae15bab3538def252115f586bd2bff457578f8ebee729573f8",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-06",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-06.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 48
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 28
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 11
+        }
+      ],
+      [
+        {
+          "type": "core:greenDragon",
+          "amount": 2
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 48
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 28
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 11
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "c02a08d2a79f725a9ca157d4fbc4bc4dfee5b57aab09b24b30127879d9b9ea88",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-dragon-breath-07",
+    "tactic_id": "dragon-breath",
+    "map": "lab/human-v1-dragon-breath-07.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "type": "core:greenDragon",
+          "amount": 3
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 21
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 63
+        },
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 16
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:greenDragon",
+          "amount": 3
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 21
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 63
+        },
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 16
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "1b624bc1b59fe78594e2c3161541d486e3d9c2c266418a05dc7efa199ab40eb8",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-00",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-00.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 25
+        },
+        {
+          "type": "core:archer",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 25
+        },
+        {
+          "type": "core:archer",
+          "amount": 20
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "630681c754fba38da53ba444979fac1d6d7bfdf49340ee49670476e65ffe4b6f",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-01",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-01.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 38
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:archer",
+          "amount": 41
+        },
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 38
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:archer",
+          "amount": 41
+        },
+        {},
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "7629f382ed881dde6673e173e96807724b2a52efc30bc2b98a1d638702d29e65",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-02",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-02.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 38
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 44
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 38
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 44
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "8a79609be89b8eb89a1a65b9f821481b9b54b5f1346c238b472bc6b6d3f85592",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-03",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-03.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 56
+        },
+        {
+          "type": "core:archer",
+          "amount": 52
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:swordsman",
+          "amount": 56
+        },
+        {
+          "type": "core:archer",
+          "amount": 52
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "54cf2ba714b0b200a244c9bac855e3725ca814236bea23f827484429e79f4359",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-04",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-04.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 52
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 39
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 52
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 39
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "521561ab74e581f82f047563a1f8466639241bfc6991732404778e1192139cae",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-05",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-05.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {
+          "type": "core:archer",
+          "amount": 42
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 27
+        }
+      ],
+      [
+        {
+          "type": "core:archer",
+          "amount": 42
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 27
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "ef595b5061490e1848dfccdb6e714720d29a1d35819441f256536b63f5a34676",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-06",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-06.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 26
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {
+          "type": "core:archer",
+          "amount": 30
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 26
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {
+          "type": "core:archer",
+          "amount": 30
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "d5b3948c9671317f30572d147921564455196d50cafd22c69cc7e763a1156fb3",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-retaliation-bait-07",
+    "tactic_id": "retaliation-bait",
+    "map": "lab/human-v1-retaliation-bait-07.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "type": "core:archer",
+          "amount": 47
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 35
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:archer",
+          "amount": 47
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 35
+        },
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "8a96cd85725472f812c98171d32b1a3b54f9be8c379c5805d93d490b568f594d",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-00",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-00.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 19
+        },
+        {
+          "type": "core:skeleton",
+          "amount": 65
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 13
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 24
+        }
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:archer",
+          "amount": 19
+        },
+        {
+          "type": "core:skeleton",
+          "amount": 65
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 13
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 24
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "395259ebc2f0d62fe55dbe2593f6126673f1aac135046742a09c2270630b67ee",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-01",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-01.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 21
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 26
+        },
+        {
+          "type": "core:archer",
+          "amount": 26
+        },
+        {
+          "type": "core:lich",
+          "amount": 20
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 21
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 26
+        },
+        {
+          "type": "core:archer",
+          "amount": 26
+        },
+        {
+          "type": "core:lich",
+          "amount": 20
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "1187ef9c87991bdd40f237bd98ec86cae62f94745d48dbb7130a469b2ab59167",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-02",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-02.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 63
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 27
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 13
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 28
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 63
+        },
+        {},
+        {
+          "type": "core:archer",
+          "amount": 27
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 13
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 28
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "c9ebb7cfe49178d8009f5a8acd731ba631bf71456eda0f55d40076356c23cf01",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-03",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-03.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 52
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 14
+        },
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 61
+        },
+        {
+          "type": "core:archer",
+          "amount": 37
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 52
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 14
+        },
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 61
+        },
+        {
+          "type": "core:archer",
+          "amount": 37
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "c7d26d1a78bcc416100038fbe9e4acea8a775a6f2d96bbb6ab6721e5f0a3e618",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-04",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-04.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:archer",
+          "amount": 32
+        },
+        {
+          "type": "core:lich",
+          "amount": 24
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 66
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:archer",
+          "amount": 32
+        },
+        {
+          "type": "core:lich",
+          "amount": 24
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 66
+        }
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "201856981b861c04402f3b1f4dad8ca803e0a134fe420a1a4e219c4f57a1c4e4",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-05",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-05.vmap",
+    "split": "development",
+    "armies": [
+      [
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {
+          "type": "core:lich",
+          "amount": 24
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 62
+        }
+      ],
+      [
+        {
+          "type": "core:archer",
+          "amount": 18
+        },
+        {
+          "type": "core:lich",
+          "amount": 24
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 26
+        },
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 62
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "2971b9a45bf16f8a5593c946aa03079e0183de6254ac0c2985462acefd4a5093",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-06",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-06.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "type": "core:archer",
+          "amount": 36
+        },
+        {
+          "type": "core:skeleton",
+          "amount": 63
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 23
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:archer",
+          "amount": 36
+        },
+        {
+          "type": "core:skeleton",
+          "amount": 63
+        },
+        {},
+        {
+          "type": "core:lich",
+          "amount": 18
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 23
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100,
+    "sha256": "fd0a9d56bf411eb138349970edcf52171599233e279e26f49c84a4698288ed8f",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  },
+  {
+    "id": "human-v1-death-cloud-07",
+    "tactic_id": "death-cloud",
+    "map": "lab/human-v1-death-cloud-07.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 37
+        },
+        {
+          "type": "core:archer",
+          "amount": 35
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {
+          "type": "core:lich",
+          "amount": 15
+        }
+      ],
+      [
+        {},
+        {},
+        {},
+        {
+          "type": "core:skeleton",
+          "amount": 37
+        },
+        {
+          "type": "core:archer",
+          "amount": 35
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 53
+        },
+        {
+          "type": "core:lich",
+          "amount": 15
+        }
+      ]
+    ],
+    "tight_formation_chance": 0,
+    "sha256": "a34bb3ded140d53b366a17e1a15c24db035b59360378f6cc9d1cab962f68f0c5",
+    "supported_variations": [
+      "troop counts",
+      "slots",
+      "tight/loose formation",
+      "roles",
+      "engine seeds"
+    ],
+    "pending_variations": [
+      "arbitrary initial hexes",
+      "independent facing",
+      "obstacles",
+      "hero skills",
+      "unseen creature families"
+    ]
+  }
+]

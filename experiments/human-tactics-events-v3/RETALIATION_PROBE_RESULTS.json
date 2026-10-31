@@ -1,0 +1,379 @@
+{
+  "swordsman_default_one": {
+    "sequences": [
+      {
+        "round": 3,
+        "subject_id": 7,
+        "attacks": [
+          {
+            "batch_id": 29,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 1,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 30,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 2,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 31,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 32,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ],
+        "counters": 1,
+        "survived_no_counter_after_prior_counter": [
+          {
+            "batch_id": 30,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 2,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 31,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 32,
+            "event_index": 1,
+            "round": 3,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "subject_id": 7,
+        "attacks": [
+          {
+            "batch_id": 37,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 2,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 38,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 39,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 40,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ],
+        "counters": 1,
+        "survived_no_counter_after_prior_counter": [
+          {
+            "batch_id": 38,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 39,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 40,
+            "event_index": 1,
+            "round": 4,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "subject_id": 7,
+        "attacks": [
+          {
+            "batch_id": 42,
+            "event_index": 1,
+            "round": 5,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 43,
+            "event_index": 1,
+            "round": 5,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 44,
+            "event_index": 1,
+            "round": 5,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ],
+        "counters": 1,
+        "survived_no_counter_after_prior_counter": [
+          {
+            "batch_id": 43,
+            "event_index": 1,
+            "round": 5,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 44,
+            "event_index": 1,
+            "round": 5,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ]
+      },
+      {
+        "round": 6,
+        "subject_id": 7,
+        "attacks": [
+          {
+            "batch_id": 46,
+            "event_index": 1,
+            "round": 6,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 47,
+            "event_index": 1,
+            "round": 6,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ],
+        "counters": 1,
+        "survived_no_counter_after_prior_counter": [
+          {
+            "batch_id": 47,
+            "event_index": 1,
+            "round": 6,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          }
+        ]
+      }
+    ],
+    "unknown_round_batches": [
+      0,
+      14,
+      28,
+      36,
+      41,
+      45,
+      48,
+      49,
+      50,
+      51
+    ],
+    "explanation": "Only same-round strict own-action primary pikeman melee; subject is the single enemy stack"
+  },
+  "royal_griffin_unlimited": {
+    "sequences": [
+      {
+        "round": 2,
+        "subject_id": 7,
+        "attacks": [
+          {
+            "batch_id": 16,
+            "event_index": 1,
+            "round": 2,
+            "subject_id": 7,
+            "attacker_id": 2,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 17,
+            "event_index": 1,
+            "round": 2,
+            "subject_id": 7,
+            "attacker_id": 3,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 2,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 18,
+            "event_index": 1,
+            "round": 2,
+            "subject_id": 7,
+            "attacker_id": 4,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          },
+          {
+            "batch_id": 19,
+            "event_index": 1,
+            "round": 2,
+            "subject_id": 7,
+            "attacker_id": 5,
+            "counter_event_indices": [
+              2
+            ],
+            "subject_killed": false,
+            "damage": 1,
+            "killed_count": 0
+          }
+        ],
+        "counters": 4,
+        "survived_no_counter_after_prior_counter": []
+      }
+    ],
+    "unknown_round_batches": [
+      0,
+      14,
+      22
+    ],
+    "explanation": "Only same-round strict own-action primary pikeman melee; subject is the single enemy stack"
+  },
+  "finite_observed": true,
+  "unlimited_control_observed": true,
+  "expert_certified": false,
+  "bc_eligible": false
+}

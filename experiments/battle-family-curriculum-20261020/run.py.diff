@@ -1,0 +1,44 @@
+--- frozen-v2/run.py
++++ family-curriculum/run.py
+@@ -1,6 +1,7 @@
+ """Plan by default. Root alone explicitly executes under GPU/pool leases."""
+ import argparse,collections,fcntl,hashlib,json,os,subprocess,sys,time
+ from pathlib import Path
++import curriculum
+ HERE=Path(__file__).resolve().parent;R=HERE.parent.parent/'research';LAB=Path('/root/heroes3-ai-lab')
+ B64=LAB/'models/graph-finetune/1792068859379237126/update-64.pt';SCENARIOS=R/'diverse-curriculum.json'
+ sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+@@ -19,26 +20,26 @@
+     return {str(p):sha(p) for p in sorted(paths)}
+ def training(out):
+     return ['bash',str(R/'run-lab.sh'),str(HERE/'train_last_graph.py'),'--checkpoint',str(B64),'--output',str(out/'training.json'),
+-        '--models-dir',str(out/'models'),'--freeze',str(out/'FREEZE.json'),'--mode','last','--workers','8','--updates','4','--rollout','32',
++        '--models-dir',str(out/'models'),'--freeze',str(out/'FREEZE.json'),'--mode','last','--workers','12','--updates','4','--rollout','32',
+         '--epochs','2','--microbatch','8','--no-auto-microbatch','--learning-rate','1e-6','--head-learning-rate','1e-5',
+-        '--gamma','1','--step-cost','0','--shaping','.5','--entropy-coef','.005','--seed','2026102008',
+-        '--native-opponent-device','cpu','--first-battle','--rotate-every','16','--opponents','BattleAI','MMAI_MODEL',
++        '--gamma','1','--step-cost','0','--shaping','.5','--entropy-coef','.005','--seed','2026102012',
++        '--native-opponent-device','cpu','--first-battle','--rotate-every','2','--opponents','BattleAI','MMAI_MODEL',
+         '--scenario-file',str(SCENARIOS)]
+ def evaluate(out,name,checkpoint,opponent):
+     command=['bash',str(R/'run-lab.sh'),str(HERE/'evaluate_bounded.py'),'--checkpoint',str(checkpoint),'--policies','recovered',
+-        '--scenario-file',str(SCENARIOS),'--scenarios',*map(str,range(192,200)),'--seeds','1','--seed-base','2026102500',
++        '--scenario-file',str(SCENARIOS),'--scenarios',*map(str,range(192,200)),'--seeds','1','--seed-base','2026102600',
+         '--workers','8','--opponent',opponent,'--output',str(out/(name+'-'+opponent+'-DEV.json'))]
+     if opponent=='MMAI_MODEL':command+=['--opponent-model-template','DATA/MMAI/models/lab-upstream-{role}.onnx']
+     return command
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--execute',action='store_true');p.add_argument('--evaluate',action='store_true');a=p.parse_args()
+     assert not any(os.environ.get(v) not in (None,'','0') for v in ['LAB_NATIVE_ONNX_CUDA','LAB_ONNX_CUDA','LAB_BATTLEAI_TEACHER'])
+-    a.out.mkdir(parents=True,exist_ok=False);frozen=dict(schema='battle-resume-bounded-last-v1',input_sha256=inputs())
++    a.out.mkdir(parents=True,exist_ok=False);frozen=dict(schema='battle-family-balanced-last-v1',input_sha256=inputs())
+     assert sha(B64)=='1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936'
+     write(a.out/'FREEZE.json',frozen)
+-    plan=dict(schema=frozen['schema'],execute=a.execute,train_command=training(a.out),workers=8,updates=4,owned_transitions_budget=1024,
++    plan=dict(schema=frozen['schema'],execute=a.execute,train_command=training(a.out),workers=12,updates=4,owned_transitions_budget=1536,
+         optimizer='New Adam, B64 weights only',TRAIN_indices=list(range(192)),DEV_indices=list(range(192,200)),DEV_games=64,
+-        evaluation=a.evaluate,opponents=['BattleAI','MMAI_MODEL'],MMAI_GPU_used=False,expert_labels_used=False,
++        evaluation=a.evaluate,registered_curriculum=curriculum.registered(SCENARIOS),opponents=['BattleAI','MMAI_MODEL'],MMAI_GPU_used=False,expert_labels_used=False,
+         native_environment_restorable=False,confirmation_v2_touched=False,freeze_sha256=sha(a.out/'FREEZE.json'))
+     write(a.out/'PLAN.json',plan)
+     if not a.execute:print(json.dumps(dict(plan_only=True,plan=str(a.out/'PLAN.json'),input_count=len(frozen['input_sha256']))));return 0

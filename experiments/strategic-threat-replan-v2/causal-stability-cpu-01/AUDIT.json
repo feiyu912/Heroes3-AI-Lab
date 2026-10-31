@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "checks": [
+    "empty_equal",
+    "equal_nonempty",
+    "off_eof_tail_not_lost",
+    "once_eof_tail_not_lost",
+    "missing_tail_not_equal_to_json_null",
+    "first_semantic_difference",
+    "prefix_uses_true_release_line",
+    "movement_length_tail_not_lost",
+    "within_turn_goal_switch",
+    "selected_step_reversal",
+    "turn_boundary_does_not_count_as_immediate_reversal",
+    "native_cap_events_counted"
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/check_causal_stability_v2.py": "c5c440af49c4733f8d218f5c5326eb73be066fb22b0351e05460da6e2bf32290",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/causal_stability_audit_v2.py": "ecc5ab25e8224dafa395764f8fc34e2809e963ea5e37c12f8a49ff6372c1293d"
+  }
+}

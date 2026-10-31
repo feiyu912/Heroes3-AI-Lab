@@ -1,0 +1,72 @@
+{
+  "workers": 24,
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+  "validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-validation.json",
+  "training_report": "/mnt/g/Heroes3-AI-Lab/research/CHALLENGE_RESULTS.json",
+  "completed_updates": 0,
+  "seed": 20261025,
+  "scenarios": "/mnt/g/Heroes3-AI-Lab/research/scenarios-v2.json",
+  "rollout": 32,
+  "batch_size": 64,
+  "epochs": 3,
+  "rotate_every": 32,
+  "inference_device": "cuda",
+  "training_device": "cuda",
+  "selection": "Validation only, fair-mirror primary normalized goal score v2. Old unequal-army stress retained as diagnostic/tie-breaker. Added independently verified role combinations and three interpolations before any final test; final criteria unchanged and fresh outcomes never inspected.",
+  "note": "24 workers selected explicitly by user. Validation-selected competitive policy; fresh test excluded from selection. New battles start on continuation, not exact in-battle replay.",
+  "policy": "recovered",
+  "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-upstream_validation.json",
+  "resume_available": false,
+  "opponents": [
+    "BattleAI",
+    "MMAI_GPU"
+  ],
+  "trainer_family": "graph",
+  "finetuning_mode": "all",
+  "selected_derivation": {
+    "kind": "roles",
+    "left": {
+      "path": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    "right": {
+      "path": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-64.pt",
+      "sha256": "a6999d155232cc757ef17318c55f4b9e65cd44a65b50fa0d4ceef94105057ecf"
+    },
+    "alpha": null
+  },
+  "training_config": {
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last.json",
+    "mode": "all",
+    "workers": 24,
+    "updates": 128,
+    "rollout": 32,
+    "microbatch": 32,
+    "epochs": 2,
+    "seed": 20261025,
+    "learning_rate": 1e-05,
+    "head_learning_rate": 5e-05,
+    "opponents": [
+      "BattleAI",
+      "MMAI_GPU"
+    ],
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "shaping": 0.5,
+    "step_cost": 0.002,
+    "resume": false,
+    "rotate_every": 16,
+    "native_opponent_device": "cpu",
+    "no_auto_microbatch": false,
+    "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+    "first_battle": false,
+    "requested_opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "fixed_opponent_inference": "central-cuda",
+    "fixed_opponent_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "requested_microbatch": 4
+  },
+  "training_scenarios": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json"
+}

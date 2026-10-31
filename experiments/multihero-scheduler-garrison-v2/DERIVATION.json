@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "parent_cpp_sha256": "a5ddb88cd663199efdad72e70503db475b9d176924e5cdff46d2aefa52122003",
+  "fixture_map_sha256": "aa50587cb8ced39df3f1e1a476a00bde5cdfbb16c6a8dc12ddfdebbff5498e13",
+  "fixture_semantics": "Unchanged map bytes plus actual GarrisonHeroSwap before any scheduling, positive-MP postnative garrison required",
+  "candidate_sha256": {
+    "baseline": {
+      "CDirectorAI.cpp": "757fa41ca4ecd0a2c8bf7977d0f8f16f8b125395d99cb28ebffac6f482c0bf5c",
+      "CDirectorAI.h": "597d44c8bd34461605367d89d8e01dfd0c2925dafe1423424f740042b0257582"
+    },
+    "filtered": {
+      "CDirectorAI.cpp": "4ddbe599bcaaa3566712ff1f526537ede44512fae6d60242b3324b477e3e8be0",
+      "CDirectorAI.h": "597d44c8bd34461605367d89d8e01dfd0c2925dafe1423424f740042b0257582"
+    }
+  },
+  "factor": "Only eligibility hero->isGarrisoned() rejection; setup/instrumentation/fixture identical",
+  "native_runs": 0,
+  "optimizer_steps": 0
+}

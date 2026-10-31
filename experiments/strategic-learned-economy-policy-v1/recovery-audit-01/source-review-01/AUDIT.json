@@ -1,0 +1,11 @@
+{
+  "source_review_passed": true,
+  "checkpoint_sha256": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+  "format": "strategic-learned-build-ppo-checkpoint-v1",
+  "optimizer_steps_saved": 188,
+  "training_updates": 1,
+  "all_protocol_sources_native_artifacts_unchanged": true,
+  "actual_CUDA_restore_executed": false,
+  "audit_optimizer_steps": 0,
+  "auditor_sha256": "1ace4490a3935f0b5bc6a71c786b85ec877b96462f50c4bbcbcba441667ab74d"
+}

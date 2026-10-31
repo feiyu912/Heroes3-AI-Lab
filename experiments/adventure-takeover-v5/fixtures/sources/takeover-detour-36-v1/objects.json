@@ -1,0 +1,166 @@
+{
+  "hero_0": {
+    "type": "hero",
+    "subtype": "core:knight",
+    "x": 9,
+    "y": 18,
+    "l": 0,
+    "options": {
+      "experience": 0,
+      "name": "red strategic hero",
+      "owner": "red",
+      "type": "core:christian",
+      "army": [
+        {
+          "type": "core:pikeman",
+          "amount": 20
+        },
+        {
+          "type": "core:archer",
+          "amount": 10
+        }
+      ],
+      "primarySkills": {
+        "attack": 0,
+        "defence": 0,
+        "knowledge": 0,
+        "spellpower": 0
+      },
+      "secondarySkills": [],
+      "spellBook": [
+        "preset"
+      ]
+    },
+    "template": {
+      "animation": "AH01_",
+      "editorAnimation": "AH01_E",
+      "mask": [
+        "VVV",
+        "VAV"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    }
+  },
+  "town_0": {
+    "l": 0,
+    "options": {
+      "buildings": {
+        "allOf": [
+          "core:fort",
+          "core:villageHall",
+          "core:tavern",
+          "core:dwellingLvl1"
+        ]
+      },
+      "owner": "red",
+      "tightFormation": "wide"
+    },
+    "subtype": "castle",
+    "template": {
+      "animation": "AVCCAST0.DEF",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVVV",
+        "VVVVVV",
+        "VVVVVV",
+        "VVBBBV",
+        "VBBBBB",
+        "VBBABB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "town",
+    "x": 8,
+    "y": 8
+  },
+  "hero_1": {
+    "type": "hero",
+    "subtype": "core:knight",
+    "x": 29,
+    "y": 18,
+    "l": 0,
+    "options": {
+      "experience": 0,
+      "name": "blue strategic hero",
+      "owner": "blue",
+      "type": "core:sorsha",
+      "army": [
+        {
+          "type": "core:pikeman",
+          "amount": 20
+        },
+        {
+          "type": "core:archer",
+          "amount": 10
+        }
+      ],
+      "primarySkills": {
+        "attack": 0,
+        "defence": 0,
+        "knowledge": 0,
+        "spellpower": 0
+      },
+      "secondarySkills": [],
+      "spellBook": [
+        "preset"
+      ]
+    },
+    "template": {
+      "animation": "AH01_",
+      "editorAnimation": "AH01_E",
+      "mask": [
+        "VVV",
+        "VAV"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    }
+  },
+  "town_1": {
+    "l": 0,
+    "options": {
+      "buildings": {
+        "allOf": [
+          "core:fort",
+          "core:villageHall",
+          "core:tavern",
+          "core:dwellingLvl1"
+        ]
+      },
+      "owner": "blue",
+      "tightFormation": "wide"
+    },
+    "subtype": "castle",
+    "template": {
+      "animation": "AVCCAST0.DEF",
+      "editorAnimation": "",
+      "mask": [
+        "VVVVVV",
+        "VVVVVV",
+        "VVVVVV",
+        "VVBBBV",
+        "VBBBBB",
+        "VBBABB"
+      ],
+      "visitableFrom": [
+        "---",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "town",
+    "x": 32,
+    "y": 28
+  }
+}

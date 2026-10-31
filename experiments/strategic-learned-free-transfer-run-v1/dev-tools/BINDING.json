@@ -1,0 +1,9 @@
+{
+  "parent_sources": {
+    "collect_cpu.py": "fc20e16d622b805177c1b29eea485bb3c9900e59a38523240f20e377eb739403",
+    "evaluate_dev.py": "9f896874effc5764b071d9545c13293ea5a15605381ca7100e83cee8d03116f7"
+  },
+  "candidate_checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/update-01/update-1.pt",
+  "candidate_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+  "preselected_training_updates": 1
+}

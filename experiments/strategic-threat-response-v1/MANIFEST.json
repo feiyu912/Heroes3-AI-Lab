@@ -1,0 +1,10 @@
+{
+  "CPU_REPLAY.json": "d24d86fb9db95f34bb506439808728d1b3240fa216cf03ae7704ed2a3ea054da",
+  "PLAN.md": "4ea26fe812d3fc2da8cef9940f2d9b79a3c51c066d64298b2cfd35ae6ff69f6c",
+  "replay_visible_cpu.py": "bbb08df80648f5604314f64d8b5ea9df2608020342ec1fa15a150afb078c797c",
+  "RESULTS.md": "2ec6718c3eef39066d30c94d154ed484c98c6d27c96b842e6c9f2b1c2f55dc51",
+  "SOURCE_EVIDENCE.json": "59acd589b5dcaa7243dcf83d2fbe0424d3e5813b561d49f5cb1a2f00fec38b53",
+  "TACTICAL_GAIN_PREREG.md": "b5e57e29bcb048c3b83aeaf10d30577a6df0ccc4d5bb561f7b0fdcd8987a79f1",
+  "test_contract.py": "a20d36153462a0c2fc2057706d7b710493b86415ac65e02f173321bb51a92e68",
+  "threat_contract.py": "90b47b6e57caa284a8f91944bbaac661bfecb74cd7375e0b6eb5be3b3012d320"
+}

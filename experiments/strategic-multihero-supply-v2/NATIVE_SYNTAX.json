@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "native_built": false,
+  "native_games": 0,
+  "scope": "one isolated Director translation unit syntax only; no link/runtime certification",
+  "candidate_files": {
+    "AI/DirectorAI/CDirectorAI.cpp": "64c11304b1a234cd0a266fb2d8226c34b5dbc2d3063cc2d7216b5dc70a5516ad",
+    "AI/DirectorAI/CDirectorAI.h": "b76c5fc840c4135f9fa2a036f30c0d849368cc1b803519bf3b697794ff3693f9",
+    "AI/DirectorAI/SupplyAdapter.inc": "867424fb9715aa53a809812262dd0b109c4eb4f4645bb8ce695ab016846ddecc",
+    "AI/DirectorAI/SupplyController.h": "4384397927bcccf5dc145853467b0062c4c574b626252b0b3c2fb5b0b2dcdda1",
+    "AI/DirectorAI/TypedPolicyProtocol.h": "9aef11e358269b4e42212b895595ecf953a474ab3e392ccbb80c9f6c218ab310",
+    "client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+    "client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "client/NetPacksClient.cpp": "4bcd30eb5621dad894f0b1564c989fb43101820b3c1201193d09bc32a291eba3",
+    "server/CGameHandler.cpp": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865",
+    "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+  },
+  "compiler_flags_sha256": "40c8b1b4e3bf70129c3bf2474326366b2a50a9cf6c4e0b4580236c72ac04a2f8"
+}

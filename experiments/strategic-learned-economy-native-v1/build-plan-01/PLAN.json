@@ -1,0 +1,12 @@
+{
+  "execute": false,
+  "driver_sha256": "0c245d5867f5dab3c7cf4ecf89e5e2bfd5b829f07887a6a165e51e5c5e7cd7e5",
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "lock_order": [
+    "gpu learner NB",
+    "pool NB"
+  ],
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "restore_requires_recompile": true
+}

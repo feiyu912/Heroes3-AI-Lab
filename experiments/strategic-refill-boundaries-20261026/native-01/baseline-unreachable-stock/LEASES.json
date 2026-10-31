@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "PID": 49835,
+  "entries": [
+    {
+      "fd": 3,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL迁出-20261025/files/root/heroes3-ai-lab/evaluations/.gpu-learner-lock",
+      "device": 66308,
+      "inode": 2752519
+    },
+    {
+      "fd": 4,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL迁出-20261025/files/root/heroes3-ai-lab/evaluations/.pool-lock",
+      "device": 66308,
+      "inode": 2752520
+    }
+  ],
+  "inherited_flock_verified": true
+}

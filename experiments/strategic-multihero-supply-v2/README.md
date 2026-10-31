@@ -1,0 +1,52 @@
+# Scripted two-hero supply candidate v2 (observability only)
+
+Implemented isolated research candidate; **not native-qualified, not resumable in the engine, not a learned strategic policy**. No native game, shared build, GPU work, optimizer step, expert label, or pool-lock acquisition was performed for this branch.
+
+## Implemented scope
+
+The controller/behavior epoch remains scripted-supply-v1; v2 adds observation only. `v1-to-v2.diff` shows the exact candidate delta and `V1_RESTORATION.json` records restoration of v1 after a crossed instruction. `SupplyController.h` is the actual deterministic C++ controller; `SupplyAdapter.inc` connects it to Director callbacks. `prepare.py` copies the preserved terminal-drain-v3 candidate's nine files into this branch, patches only Director.cpp/.h, and adds those two files. It never edits the nine upstream files, the accepted engine tree, old schema4 encoders, models, optimizers, or evidence.
+
+Enable a later built capsule explicitly with `LAB_ADV_MODE=scripted_supply_v1` and an absolute `LAB_ADV_SUPPLY_TRACE` output path. This is a distinct scripted event epoch, `scripted-supply-events-v1`. It does not emit strategy-policy requests, count scheduler switches as moves, or send economic/transfer actions to PPO. Existing typed-policy mode remains behind its original branch. Old typed runner/auditor cannot certify this new event epoch without a separate supply auditor.
+
+The first fixture must start with exactly two actual owned heroes and at least one own town whose upper army is the town, not a garrison hero. Lower hero object ID becomes main; higher becomes courier; lowest eligible own town ID is home. All IDs come from the engine's own roster. The code never claims count1. A missing role/home or a third hero fails closed; there is no silent replacement or role rebinding. Scheduling excludes currently garrisoned, naval, exhausted and blocked actors. Each hero has a 48-request ordinary scheduling threshold per own turn and persistent goals. A live exchange bypasses that eligibility threshold so its already-open query can drain; at most six additional whole-stack transfer requests are possible while preserving one courier stack. Round robin alternates actual hero actions; yielding an unreachable/capped hero does not end the other hero's turn. Only when both actors cannot act does it send genuine player EndTurn.
+
+The courier persists `Return -> Pickup -> Meeting -> Exchange -> Return` across own turns. Pickup requires the courier to be the actual native town visitor. Transfer selects a matching or empty recipient slot, moves a whole stack, and requires exact donor/recipient slot changes after the real positive ACK. Hero delivery stops before removing the courier's last occupied stack. Town stock may all be picked up. Seven incompatible receiver slots cause a real query close, never a swap. Meeting target remains main's object ID and refreshes the position from current own state. Supply mode uses actual pathfinder next nodes and coordinate conversion; it never teleports or synthesizes an ACK.
+
+The main hero follows a deterministic frontier patrol from legal current-turn paths. It reselects a goal per step and has no long-horizon commitment. It may wander, reverse direction, outrun the courier or fail to achieve any strategic benefit. The candidate does not proactively hire, build or recruit; it starts from real existing town stock. Supply mode does not call the old economy routine, whose deduplication/priority rules were not designed for two heroes. Repeat deliveries consequently require new real stock (for example a separately reviewed future recruitment stage). These limitations are intentional first-scope restrictions, not implemented full strategic AI.
+
+## Callback and request boundaries
+
+One scripted adventure command is prepared globally, then bound by Director-only pre-dispatch notification to the actual positive native ID, player, pack type and exact payload. Actual PackageApplied ID/type/player/success clears it. Native delegated BattleAI requests and interface initialization requests are not hero scheduling actions; the inherited client owned-request ledger still records their genuine lifecycles. The branch makes no claim that all network activity has only one outstanding packet.
+
+The real `heroExchangeStarted(hero1, hero2, queryID)` callback opens the transaction. A courier-to-main command in Meeting phase permits delivery. Other legal contacts between those two heroes are closed without transfer and restore the previous job phase, without incrementing a delivery-attempt cycle. Other participants fail closed. Transfer waits for the original MoveHero ACK. During an exchange, the native ONGOING_MOVEMENT barrier may remain set until query closure; transfer/close may proceed while fresh moves stay blocked. The exact positive QueryReply ACK drains this exchange: **CGarrisonDialogQuery does not send QueryResolved**. Chained generic prompts are queued separately, bound to their real IDs, and are never mistaken for exchange closure. Native ordering and deadlock freedom still need a real run.
+
+NewTurn may arrive before the old EndTurn ACK. The shared `TurnBoundaryGate` preserves the old tuple and queues the new native query ID, including the -1 sentinel. Only the exact old ACK starts that deferred turn. It cannot clear or end the new turn accidentally.
+
+`cycles` counts closed intended delivery attempts, including an intended meeting with no compatible delivery. It is **not a successful delivery count**. Only positive transfer ACK plus exact army deltas can establish a delivery.
+
+## Recovery findings and restriction
+
+Actual `/root/heroes3-ai-lab/src/vcmi-adv` was read, rather than the different workspace vcmi tree. `CClient::loadGame` reconstructs interfaces; `CGameInterface`/`CAdventureAI` provide no automatic serialization of new Director members. `CCallback::saveLocalState` sends SaveLocalState, whose server visitor writes only `playerLocalSettings`; this alone does not load a courier state into a fresh C++ Director.
+
+`control_sidecar.py` implements atomic temporary-write, file fsync, replace and directory fsync, binding a native-save SHA, source-manifest SHA, run identity, actual own-state snapshot and explicit role/job/turn/budget/goal/visited state. It rejects pending movement, battle, query, owned requests or deferred own turn. It checks the loaded-world snapshot, roles, epoch and own-turn boundary before returning validated metadata. CPU tests use an openly labelled synthetic save stand-in, including a fresh Python process. They prove metadata gates only.
+
+There is **no native SaveGame -> sidecar -> fresh-process C++ hydration integration or proof**. `LAB_ADV_SUPPLY_RESTORE` is explicitly rejected by the adapter. Loading a game through a different runner without that flag remains an unsupported use, not a verified recovery. Do not promote this as resumable until the native runner binds the actual save/sidecar at a no-request boundary and proves fresh-process matching continuation.
+
+## Review/build artifacts and checks
+
+- `MANIFEST.json`: nine parent file hashes and eleven candidate hashes; `candidate.diff`: reviewable delta.
+- `CANDIDATE_MANIFEST.json`: eleven install inputs, with baseline hashes inherited from terminal-drain-v3's **accepted V8**, not its candidate source.
+- `build_capsule.py`: plan by default. Explicit execution is for root only when the shared environment is idle under its two locks. It pins the complete source manifest and three accepted binaries to capsule03's accepted-backup; builds, snapshots artifacts, restores source, recompiles accepted V8, and requires exact original three SHA values. Normal/fallback deletion is restricted to `TypedPolicyProtocol.h`, `SupplyController.h`, `SupplyAdapter.inc` under the exact Director directory; symlinks are rejected.
+- `build-plan-01/PLAN.json` is an earlier plan-only record; final v2 inputs are in `build-plan-06/PLAN.json`. Neither is a build result.
+- `CPU_REPORT.json`: 58 synthetic C++ controller checks plus 33 sidecar/builder checks. The latter include actual extracted deletion-helper negative tests and a fresh-process metadata roundtrip. No native success is inferred.
+- `NATIVE_SYNTAX.json`/`.log`: real Director translation unit syntax-check in a temporary overlay against actual engine headers/compiler flags. No object was produced, no shared tree/build output was written, no link/runtime certification.
+
+Reproduce CPU-only checks in WSL: run `prepare.py`, `check_cpu.py`, then `check_native_syntax.py` with the existing CPU Python. Preparation regenerates only this branch. Do not run a shared build while another experiment holds the pool.
+
+## Required native acceptance still outstanding
+
+Build the capsule and exact restore first, then a dedicated supply runner/auditor must bind all eleven candidate inputs, actual loaded binaries, real owned ledger and raw native server application. Require both real hero IDs to move, at least two own turns of persistent task state, real pickup and meeting, exact transfer conservation/reserve, actual query pop and QueryReply ACK, and continued courier movement after delivery. Include no-compatible-slot, accidental meeting, hero death/home loss, early-NewTurn/late-EndACK and open-query movement-barrier cases. Full game and separate paired supply-benefit tests come later. Successful mechanics do not establish learned economy, stronger play, an expert demonstration, or restorable strategic AI.
+
+
+V2 constructs each event once, mirrors the exact JSON as DirectorSupplyEvent in client.log, and appends the same bytes plus newline to the trace file. It includes actual own town ID, actual visitor, visitable position and all seven army slots. native_sent/prompt_native_sent additionally expose actual_request with request_id, player, pack_type and native op. MoveHero records actual hero/object-coordinate path/layer/transit; ArrangeStacks records actual source/target/slots/what/val; QueryReply records actual query/reply; EndTurn has player scope. Prepared and ACK events have actual_request=null; their pending expected command remains present until exact ACK processing. TRACE_CPU_REPORT.json exercises the extracted production trace function with explicitly synthetic owned state and logger stubs (9 checks), including exact mirror/file equality and town/hero pickup deltas. It is not native proof.
+

@@ -1,0 +1,110 @@
+[
+  {
+    "iteration": 16,
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1791996309533046811/update-16.pt",
+    "policy": "recovered",
+    "name": "recovered-adapted-v4",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update16-battleai-validation.json",
+    "validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 26,
+      "win_rate": 0.5416666666666666,
+      "wilson95": [
+        0.4029083309494732,
+        0.6742497814544648
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 62.0
+    },
+    "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update16-upstream-validation.json",
+    "upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 26,
+      "win_rate": 0.5416666666666666,
+      "wilson95": [
+        0.4029083309494732,
+        0.6742497814544648
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 64.83333333333333
+    }
+  },
+  {
+    "iteration": 64,
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792061459501224104/update-64.pt",
+    "policy": "recovered",
+    "name": "recovered-adapted-v4",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update64-battleai-validation.json",
+    "validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 26,
+      "win_rate": 0.5416666666666666,
+      "wilson95": [
+        0.4029083309494732,
+        0.6742497814544648
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 61.229166666666664
+    },
+    "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update64-upstream-validation.json",
+    "upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 25,
+      "win_rate": 0.5208333333333334,
+      "wilson95": [
+        0.3832899563598438,
+        0.6552890998421255
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 64.60416666666667
+    }
+  },
+  {
+    "iteration": 128,
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792062931505749162/update-128.pt",
+    "policy": "recovered",
+    "name": "recovered-adapted-v4",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update128-battleai-validation.json",
+    "validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 32,
+      "win_rate": 0.6666666666666666,
+      "wilson95": [
+        0.5253984633247204,
+        0.783233986291032
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 57.0625
+    },
+    "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/recovered-adapted-update128-upstream-validation.json",
+    "upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 25,
+      "win_rate": 0.5208333333333334,
+      "wilson95": [
+        0.3832899563598438,
+        0.6552890998421255
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 64.35416666666667
+    }
+  }
+]

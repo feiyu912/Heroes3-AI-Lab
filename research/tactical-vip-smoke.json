@@ -1,0 +1,430 @@
+{
+  "run_id": "1792076915653318382",
+  "workers": 1,
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+  "opponent": "VIPBot",
+  "opponent_model_dir": null,
+  "opponent_model_template": null,
+  "upstream_model_dir": "/mnt/g/Heroes3-AI-Lab/models/upstream-v15",
+  "teacher_turns": 2,
+  "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/tactical-curriculum.json",
+  "independent_battle_seed": true,
+  "scenario_ids": [
+    0,
+    40,
+    80
+  ],
+  "wall_seconds": 17.42526475500017,
+  "summary": [
+    {
+      "policy": "recovered",
+      "battles": 6,
+      "wins": 4,
+      "win_rate": 0.6666666666666666,
+      "wilson95": [
+        0.29998832134152864,
+        0.9032306674407831
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 78.5
+    }
+  ],
+  "battles": [
+    {
+      "scenario": "tactical-guard-shooters-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026101400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026101400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 28,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 23,
+            "4": 9,
+            "6": 18
+          },
+          "1": {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          },
+          {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          }
+        ]
+      },
+      "action_types": {
+        "2": 7,
+        "0": 2,
+        "4": 8,
+        "3": 11
+      },
+      "trajectory_sha256": "cf58c6060cbf29fbd688785474f9afdff6e6c3821dc481ab2829adf59f914672",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 0.8615223039996636,
+      "policy_latency_ms": {
+        "p50": 20.954980500391684,
+        "p95": 30.35675305031872,
+        "p99": 45.38297449025777
+      }
+    },
+    {
+      "scenario": "tactical-guard-shooters-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026101400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026101400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 31,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 1,
+        "casualties": {
+          "0": {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          },
+          "1": {
+            "0": 33,
+            "2": 8,
+            "4": 9,
+            "6": 19
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          },
+          {
+            "0": 43,
+            "2": 36,
+            "4": 9,
+            "6": 28
+          }
+        ]
+      },
+      "action_types": {
+        "2": 9,
+        "0": 4,
+        "4": 7,
+        "3": 11
+      },
+      "trajectory_sha256": "06146f2cb9a088a6de0699ed1f9c456996edc0a20e380bec72ae2d67ffba8353",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 0.9735983720001968,
+      "policy_latency_ms": {
+        "p50": 22.083621000092535,
+        "p95": 27.076142499936395,
+        "p99": 28.35924789951605
+      }
+    },
+    {
+      "scenario": "tactical-expendable-retaliation-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026105400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026105400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 36,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 2,
+            "2": 28,
+            "6": 43
+          },
+          "1": {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          },
+          {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 10,
+        "2": 11,
+        "3": 10
+      },
+      "trajectory_sha256": "73be6b0b39758bc584d197a8b8b591262f822661cfb984a7a3801c90f5d6dfaf",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 1.0658697360004226,
+      "policy_latency_ms": {
+        "p50": 20.652641000197036,
+        "p95": 27.318422750113314,
+        "p99": 28.37815545053672
+      }
+    },
+    {
+      "scenario": "tactical-expendable-retaliation-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026105400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026105400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 32,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 2,
+            "2": 42,
+            "6": 47
+          },
+          "1": {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          },
+          {
+            "0": 2,
+            "2": 42,
+            "6": 50
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 5,
+        "2": 10,
+        "3": 12
+      },
+      "trajectory_sha256": "f833b48431f6a847443a5a339031bb980b538f236816b9e695104b4c539ae7c6",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 0.9406816309992792,
+      "policy_latency_ms": {
+        "p50": 19.47977300005732,
+        "p95": 26.342182299868,
+        "p99": 29.425264639658057
+      }
+    },
+    {
+      "scenario": "tactical-split-focus-00",
+      "split": "train",
+      "role": "attacker",
+      "seed": 2026109400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026109400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 45,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 27,
+            "2": 4,
+            "10": 15
+          },
+          "1": {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          },
+          {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 6,
+        "2": 5,
+        "4": 20,
+        "1": 5,
+        "3": 9
+      },
+      "trajectory_sha256": "e48a5244c8bc164a7573619e967737574a4779e31207bb7796df6b9c4d1c1b6a",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 1.792870971999946,
+      "policy_latency_ms": {
+        "p50": 28.17389399933745,
+        "p95": 38.247499999852145,
+        "p99": 42.100463960341585
+      }
+    },
+    {
+      "scenario": "tactical-split-focus-00",
+      "split": "train",
+      "role": "defender",
+      "seed": 2026109400,
+      "opponent": "VIPBot",
+      "opponent_model": null,
+      "engine_seed": 2026109400,
+      "opponent_seed": null,
+      "opponent_temperature": null,
+      "policy": "recovered",
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "steps": 51,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 68,
+            "2": 56,
+            "10": 7
+          },
+          "1": {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          },
+          {
+            "0": 68,
+            "2": 56,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 17,
+        "2": 13,
+        "4": 12,
+        "3": 9
+      },
+      "trajectory_sha256": "37ea9b16a08a1249efbb378b1e404ceeaa49751c51c0da0b9a943a607983586b",
+      "trajectory_hash_version": 2,
+      "wall_seconds": 1.941467689000092,
+      "policy_latency_ms": {
+        "p50": 27.284996999696887,
+        "p95": 46.253303999492346,
+        "p99": 48.86162399998284
+      }
+    }
+  ],
+  "frozen_artifacts": {
+    "/mnt/g/Heroes3-AI-Lab/research/battle_features.py": "12f4af2cf215351d50ca8349ab4335f3cc31a1e60b76969a052a0bc57d7216c5",
+    "/mnt/g/Heroes3-AI-Lab/research/decision_model.py": "e575adac208d2509d14a16cb2f7828eb3c708f1e6c3b6d3ae1d8dd2b69cedcb2",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluate-battles.py": "bfe7f266a9ef3665b2f04640512de3088b67e0e0a50bc2828f85f514a7dca0e3",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluate-policy.py": "347ab3e157812cd7bdb1df6b5e5baa512c3ddeffa7cbbd61e29e0e48a5bff019",
+    "/mnt/g/Heroes3-AI-Lab/research/evaluation_provenance.py": "3f195c726dcd29d5229d550ce9c0c334c998d739201c699c3642cf0897ae47b9",
+    "/mnt/g/Heroes3-AI-Lab/research/lab-env.py": "bdb325ee5cad7d5df952a35f7d357ef9f3bad4d624fe5bd2233b46a11f0b0dee",
+    "/mnt/g/Heroes3-AI-Lab/research/observation_digest.py": "c6010c7dca141957628731b772126411dbc536cae11e8fa320a42e486dea2d10",
+    "/mnt/g/Heroes3-AI-Lab/research/prepare-worker.py": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c",
+    "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485",
+    "/mnt/g/Heroes3-AI-Lab/research/run-lab.sh": "a5ba679e61c27f244143b90645a4baf4c54267a167ebcc4f797dee997a4301d4",
+    "/mnt/g/Heroes3-AI-Lab/research/tactical-curriculum.json": "462cc3d91580c3d47fd3107714722763189003cddceeb7b3abb6649972db9c61",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/lab/tactical-expendable-retaliation-00.vmap": "760841113f3e570b5b43393684993f57a8e90c77a4ab1b09098df3049bd78ba6",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/lab/tactical-guard-shooters-00.vmap": "49119f70b6816b039d6320796ae44b900b4e88babeb492b5e5eba00f2238fff4",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/lab/tactical-split-focus-00.vmap": "203514c8890af748450433714a34138e7c3006a7d259392d8aac0a770ca2ab25",
+    "/root/heroes3-ai-lab/data/vcmi/Mods/ML/Content/heroes.json": "ab4a4a49a10336c434af636ebd5741d7ef61e4a5245d9607abbdbdab6fe263fe",
+    "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+    "/root/heroes3-ai-lab/onnxruntime/lib/libonnxruntime.so": "3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/connector_v15.so": "8beb54df4e29651f2bfff902a353847485cd2431fc5ddd1019ba399e398a6ba0",
+    "/root/heroes3-ai-lab/src/gym/vcmi_gym/connectors/rel/exporter_v15.so": "93760fc550c60b042b090488a1036165440304101c575805fba35d29688c2ff7"
+  },
+  "artifacts_checked_before_and_after": true,
+  "protocol_snapshot": "/root/heroes3-ai-lab/evaluations/1792076915653318382/protocol"
+}

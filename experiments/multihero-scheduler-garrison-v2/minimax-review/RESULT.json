@@ -1,0 +1,58 @@
+{
+  "initial_call": {
+    "outcome": "failed_max_tokens_empty_final",
+    "review_delivered": false
+  },
+  "corrective_call": {
+    "outcome": "completed",
+    "session_id": "session-8f6e4376-5c91-44fa-9087-a987f3256799",
+    "provider": "mini",
+    "model": "MiniMax-M3.1-Flash",
+    "reasoning_effort": "low",
+    "max_tokens": 4096,
+    "tools": [],
+    "input_tokens": 720,
+    "output_tokens": 476,
+    "total_tokens": 1395,
+    "cache_read_tokens": 199,
+    "review_delivered": true,
+    "conclusion": "v2 remains failed; v3 acceptable as narrow engineering counterfactual subject to preregistered gates; no claim of passed qualification"
+  },
+  "limitations": [
+    "corrective task provided implementation-agent report only",
+    "no source/native raw logs provided in corrective call",
+    "initial long code review produced no final answer; do not cite its thinking as findings"
+  ],
+  "artifacts": [
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\TASK.md",
+      "sha256": "687bbdc6a4cccdd6d9310a95a78ac2e6dd40129e4e65dd576a69fccf961f34af",
+      "bytes": 2280
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\RUN.json",
+      "sha256": "28cb714ae179bd64b8ad771b014101d74119fec3fd5376941596df086ad6746b",
+      "bytes": 917
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\review-overlay.yml",
+      "sha256": "1ffc122a91de3296ebf4d394876887ba5bc32e33a04d0d79ad9694f5c5b88449",
+      "bytes": 1848
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\REQUEST_ATTESTATION.json",
+      "sha256": "c9f5fb66beb8bfe2be6154bbb55fd8f406cee7599e833f3c307e3903a72c98d2",
+      "bytes": 935
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\events.jsonl",
+      "sha256": "179985d1f9131eecf2fb87515506f533c3dfd466087883b3cb125f62231c4636",
+      "bytes": 4124
+    },
+    {
+      "path": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\corrective-01\\REVIEW.md",
+      "sha256": "ccbfa7c425f59b6944861add0bdea6d497c95fa1a7ac97a3f7cca3d06be55a00",
+      "bytes": 1481
+    }
+  ]
+}

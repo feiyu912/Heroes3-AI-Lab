@@ -1,0 +1,11 @@
+{
+  "archive_passed": true,
+  "experiment_passed": false,
+  "records": 8055,
+  "no_matching_live_processes": true,
+  "no_asset_link_dereference": true,
+  "native_outcome_scored": false,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "source_result_preserved": true
+}

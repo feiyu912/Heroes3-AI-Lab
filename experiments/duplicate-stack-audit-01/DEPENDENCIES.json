@@ -1,0 +1,186 @@
+{
+  "strategic-vector-v1/collect_vector.py": {
+    "sha256": "88d657206c1603643f72deed36fdf50eb91db5a8bf628e2b69b6c0410e07122a",
+    "imports": [
+      "import argparse",
+      "from contextlib import contextmanager, ExitStack",
+      "import fcntl",
+      "import hashlib",
+      "import io",
+      "import json",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import signal",
+      "import subprocess",
+      "import sys",
+      "import tempfile",
+      "import time",
+      "import uuid",
+      "import torch",
+      "from encoder import collate, validate, ENCODER_VERSION",
+      "from model import load_checkpoint_bundle, atomic_torch_save",
+      "from measure import batch_processes, clean, memory, synthetic_lab, write, sha"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/parallel_trainer.py": {
+    "sha256": "74dcbb58fecbc366a3a1834c9cb70bd500a82b0f1f45994d2a3913f887933df3",
+    "imports": [
+      "import argparse",
+      "from contextlib import ExitStack",
+      "import hashlib",
+      "import io",
+      "import json",
+      "import os",
+      "from pathlib import Path",
+      "import random",
+      "import shutil",
+      "import sys",
+      "from collect_vector import torch, V2, HERE, THROUGHPUT, LAB, DEFAULT_CHECKPOINT, WORKER, collect_parallel, lease, tensor_sha, BatchAbort, write, sha",
+      "from encoder import ENCODER_VERSION, STATE_DIM, CANDIDATE_DIM",
+      "from model import model_from_bundle, PRIOR_FORMAT, atomic_torch_save",
+      "from episode_balanced_ppo import PROTOCOL, ppo_update, optimizer_steps, parameter_snapshot, parameter_delta"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/episode_balanced_ppo.py": {
+    "sha256": "05477bfef29bb4b91c107b43a514c8284fa76e7817947f6f9e276354ed1bf088",
+    "imports": [
+      "from collections import Counter, defaultdict",
+      "import math",
+      "from pathlib import Path",
+      "import sys",
+      "import torch",
+      "from torch.distributions import Categorical",
+      "from encoder import collate, validate"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/audit_collection_raw.py": {
+    "sha256": "155cd37475ab5f0cb27ba76c27f71fad9030258b80b906960431ff87464d2d6c",
+    "imports": [
+      "import argparse",
+      "import json",
+      "from pathlib import Path",
+      "from collect_vector import validate, audit_native_events, sha"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/audit_dev_results.py": {
+    "sha256": "6a267bd8b38993fbdd9a2621e08f88f8d965fc97e47b3e25b77ba950d1acf2cf",
+    "imports": [
+      "import argparse",
+      "import json",
+      "from pathlib import Path",
+      "from evaluate_dev import verify_native_consumption, summarize, sha"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/evaluate_dev.py": {
+    "sha256": "13a50d85a2cd9c22a1fde4c56425feb1b0d5b2a7a08a76031fa5ce3491a233a2",
+    "imports": [
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import shutil",
+      "import signal",
+      "import subprocess",
+      "import sys",
+      "import time",
+      "import uuid",
+      "from collect_vector import V2, LAB, THROUGHPUT, audit_native_events, validate, sha, write",
+      "from measure import clean, batch_processes"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-v1/audit_capacity_ladder.py": {
+    "sha256": "c85ebdbe27571a438e6d2aff91c247fd54af081aba59cebba08ff7ee38187b6c",
+    "imports": [
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "from pathlib import Path"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-vector-audits/compare_parallel_boundaries.py": {
+    "sha256": "b2518be6f859641f3577035a28d66eee9d22402cb9c03b5eb658c09f833c2f2d",
+    "imports": [
+      "import argparse",
+      "from collections import Counter",
+      "import hashlib",
+      "import io",
+      "import json",
+      "import math",
+      "from pathlib import Path",
+      "import re",
+      "import traceback",
+      "import torch"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "verify_native_restore_v3.py": {
+    "sha256": "a9266f26c7294e2ad07e29218ff80a50b8372b2c399baf55f3ee22a045eaaa19",
+    "imports": [
+      "import argparse",
+      "import hashlib",
+      "import json",
+      "import os",
+      "from pathlib import Path",
+      "import re",
+      "import signal",
+      "import subprocess",
+      "import sys",
+      "import tempfile",
+      "import time"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-policy-v2-audits/audit_native_visible.py": {
+    "sha256": "b61dd1b9f9a9035c0e8176ce0dacd7016293eb33bd29c1c7548dfa142cbb4271",
+    "imports": [
+      "import argparse",
+      "from collections import Counter, defaultdict",
+      "import hashlib",
+      "import json",
+      "import re",
+      "from pathlib import Path",
+      "import struct",
+      "import sys",
+      "import zipfile",
+      "import zlib",
+      "import torch",
+      "from encoder import validate, encode, collate, STATE_DIM, CANDIDATE_DIM",
+      "from model import load_checkpoint_bundle",
+      "from legacy import load_legacy_checkpoint"
+    ],
+    "references_audit_supply_raw": false,
+    "references_army_function": false
+  },
+  "strategic-economy-v4/audit_economy_raw.py": {
+    "sha256": "51ad5b5c806652a043df81d4dc7eb614e91fafcfd74ee21d71ba08ae3440d2f9",
+    "imports": [
+      "import collections",
+      "import json",
+      "from pathlib import Path",
+      "import re",
+      "import sys",
+      "from audit_supply_raw import audit_episode, records, army, sha"
+    ],
+    "references_audit_supply_raw": true,
+    "references_army_function": true
+  }
+}

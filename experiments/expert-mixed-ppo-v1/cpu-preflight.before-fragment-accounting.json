@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "plan_sha256": "b13fbea108edb811b8ee1d99dc48c86d4c06ba6a52e24e57cd18f274f8f34d82",
+  "plan": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/draft-plan.json",
+  "finalized_for_execution": false,
+  "device": "cpu",
+  "curriculum_counts": [
+    {
+      "phase": 0,
+      "counts": {
+        "ordinary": {
+          "attacker": 6,
+          "defender": 6
+        },
+        "expert": {
+          "attacker": 4,
+          "defender": 4
+        },
+        "history": {
+          "attacker": 2,
+          "defender": 2
+        }
+      },
+      "expert_family_roles": {
+        "death-cloud": {
+          "attacker": 2,
+          "defender": 2
+        },
+        "dragon-breath": {
+          "attacker": 1,
+          "defender": 1
+        },
+        "retaliation-bait": {
+          "attacker": 1,
+          "defender": 1
+        }
+      }
+    },
+    {
+      "phase": 1,
+      "counts": {
+        "ordinary": {
+          "attacker": 6,
+          "defender": 6
+        },
+        "expert": {
+          "attacker": 4,
+          "defender": 4
+        },
+        "history": {
+          "attacker": 2,
+          "defender": 2
+        }
+      },
+      "expert_family_roles": {
+        "death-cloud": {
+          "attacker": 1,
+          "defender": 1
+        },
+        "dragon-breath": {
+          "attacker": 2,
+          "defender": 2
+        },
+        "retaliation-bait": {
+          "attacker": 1,
+          "defender": 1
+        }
+      }
+    }
+  ],
+  "train_only": true,
+  "expert_legal_actions_checked": 24,
+  "real_graph_forward_backward": true,
+  "metrics": {
+    "loss": -0.02187708020210266,
+    "policy_loss": -0.0116786261399587,
+    "value_loss": 0.008746445955087742,
+    "entropy": 1.4571734269460042,
+    "approximate_kl": 0.00031188130378723145,
+    "gradient_norm": 20.232360521952312,
+    "clip_fraction": 0.0,
+    "reference_kl": 5.567198968492448e-07,
+    "epochs_completed": 1,
+    "maximum_recompute_logp_error": 0.0,
+    "recompute_batch_size": 24,
+    "reference_coef": 0.1
+  },
+  "frozen_body_unchanged": true,
+  "independent_reference_unchanged": true,
+  "dependency_gate_rejected_changed_sha": true,
+  "simulator_started": false,
+  "CUDA_started": false,
+  "optimization_scope": "One CPU mathematical preflight update only; no trained candidate saved",
+  "training_effectiveness_proven": false
+}

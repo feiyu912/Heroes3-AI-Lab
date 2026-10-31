@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "checks": [
+    {
+      "name": "coef0 bitwise original-PPO weights and exact common metrics",
+      "passed": true
+    },
+    {
+      "name": "positive KL and gradient toward detached reference",
+      "passed": true,
+      "before": 1.404219150543213,
+      "after": 1.2985700368881226
+    },
+    {
+      "name": "illegal padding NaN/inf/huge logits do not affect legal KL or gradients",
+      "passed": true
+    },
+    {
+      "name": "reference independently encodes raw observations with different frozen body",
+      "passed": true
+    },
+    {
+      "name": "full cached-feature PPO finite gradients, unchanged reference, rollout-size recompute",
+      "passed": true,
+      "metrics": {
+        "loss": -0.04219410568475723,
+        "policy_loss": -0.07013073563575745,
+        "value_loss": 0.03793663531541824,
+        "entropy": 0.8735658526420593,
+        "approximate_kl": 0.0010755695402622223,
+        "gradient_norm": 4.125287771224976,
+        "clip_fraction": 0.0,
+        "reference_kl": 0.17703986540436745,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 3,
+        "reference_coef": 0.1
+      }
+    },
+    {
+      "name": "strict failures preserve learner weights",
+      "passed": true,
+      "rejections": [
+        "recompute error above 2e-4",
+        "loosened absolute recompute gate",
+        "relative recompute tolerance",
+        "candidate identity/order mismatch",
+        "reference parameters in optimizer",
+        "bad reference length rejected before any update"
+      ]
+    },
+    {
+      "name": "empty masks and nonfinite legal logits rejected",
+      "passed": true
+    },
+    {
+      "name": "reused GAE truncation bootstraps while ending recurrence",
+      "passed": true
+    }
+  ],
+  "training_effectiveness_proven": false,
+  "limitations": "Synthetic mathematical contracts only; no GPU, game, ordinary-winrate or independent-generalization experiment."
+}

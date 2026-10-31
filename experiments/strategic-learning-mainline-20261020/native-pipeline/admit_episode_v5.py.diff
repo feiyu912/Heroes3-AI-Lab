@@ -1,0 +1,35 @@
+--- frozen/admit_episode_v5.py
++++ mainline/admit_episode_v5.py
+@@ -1,21 +1,29 @@
++import sys
++from pathlib import Path
++LOCAL=Path(__file__).resolve().parent
++BASE=LOCAL.parent.parent/'strategic-typed-training-v1'
++sys.path.append(str(BASE))
++from pipeline_common import source_inputs,capsule_inputs,validate_capsule,audit_metadata,validate_native_epoch,validate_cells,clean_environment,AUDITOR,NATIVE,MARKER,EPOCH,BASE
+ """Admit only complete raw-certified episodes after exact CUDA sampling replay."""
+ import argparse,hashlib,json,math
+ from pathlib import Path
+ from collect_episode_v5 import owned_resources,sha,write
+ from onpolicy_broker_v2 import OnPolicyBroker
+-HERE=Path(__file__).resolve().parent
++HERE=BASE
+ 
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--native-audit',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
+     run=a.run.resolve();native=json.loads(a.native_audit.read_text());plan=json.loads((run/'PLAN.json').read_text());execution=json.loads((run/'EXECUTION.json').read_text())
++    validate_native_epoch(native,plan,execution)
+     assert native['whole_game_valid'] and native['native_game_completed'] and not native['contract_errors']
+     assert native['native_game_completed'] and native['transport_drained'] and execution['input_sha_unchanged'] and execution['client_exit']==0
+     assert execution.get('transport_drained') is True or native.get('wrapper_terminal_observation_corrected') is True
+     assert native['owned_player']==plan['owned_player'] and plan['sampling']=='onpolicy CUDA multinomial'
+     assert all(sha(run/name)==h for name,h in native['raw_sha256'].items())
+     assert all(sha(Path(path))==h for path,h in plan['hashes'].items())
+-    native_sources=HERE.parent/'strategic-typed-native-v1'
+-    assert all(sha(native_sources/name)==h for name,h in native['auditor_sha256'].items())
++    # Exact three-key source resolution is enforced by validate_native_epoch.
++    # audit_game_v6 + director_registry live in director-terminal-drain-v4;
++    # raw_events_v4 remains in the frozen typed-native directory.
+     ready=json.loads((run/'agent/broker-ready.json').read_text());checkpoint=Path(plan['checkpoint'])
+     assert ready['model_sha256']==sha(checkpoint) and ready['device']=='cuda' and ready['mode']=='onpolicy_cuda'
+     proposals=[json.loads(s) for s in (run/'agent/typed-broker.jsonl').read_text().splitlines()]

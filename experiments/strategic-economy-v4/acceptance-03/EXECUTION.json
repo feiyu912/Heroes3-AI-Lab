@@ -1,0 +1,194 @@
+{
+  "schema": "economy-v4-acceptance-execution-v1",
+  "status": "failed",
+  "episodes": [
+    {
+      "tag": "engineering-map0-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-03/engineering-map0-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 19,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 169,
+      "delivered_to_main_count": 169,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 158,
+        "after_line": 159,
+        "day": 5,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 204,
+        "after_line": 205,
+        "day": 6,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "engineering-map0-blue-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "blue",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-03/engineering-map0-blue-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 33,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 148,
+      "delivered_to_main_count": 148,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 13,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 124,
+        "after_line": 125,
+        "day": 4,
+        "town": 13,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "tag": "engineering-map1-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-03/engineering-map1-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 29,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 268,
+      "delivered_to_main_count": 268,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 158,
+        "after_line": 159,
+        "day": 5,
+        "town": 18,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 200,
+        "after_line": 201,
+        "day": 6,
+        "town": 18,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10
+      ]
+    },
+    {
+      "tag": "engineering-map1-blue-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "role": "blue",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-03/engineering-map1-blue-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 15,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 74,
+      "delivered_to_main_count": 74,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 82,
+        "after_line": 83,
+        "day": 3,
+        "town": 19,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 116,
+        "after_line": 117,
+        "day": 4,
+        "town": 19,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  ],
+  "scripted_economy": true,
+  "learned_improvement": false,
+  "bc_eligible": 0,
+  "failed_episode": "nk-development-map0-red-2026101861",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/run_acceptance.py\", line 76, in main\n    assert code==0,f'Native/protocol game failed: {game}'\nAssertionError: Native/protocol game failed: /mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-03/nk-development-map0-red-2026101861\n",
+  "wall_seconds": 145.25545001399996
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "train_coverage_exact": true,
+  "train_actual_native_wins": 4,
+  "train_actual_native_losses": 4,
+  "dev_actual_native_wins": {
+    "a": 4,
+    "b": 4
+  },
+  "all_root_result_labels_match_native_reaudits": true,
+  "all_24_inputs_remain_unchanged": true,
+  "report_sha256": "a246a3951170a46dee4642be9a5de4661a3119aa765f50257fc078d1c7666a01",
+  "build_transactions_sha256": "e2a9cf6be8963e9301c018e4214d5c6bda9668de652942a29a483e8920b4f0d1",
+  "native_runs": 0,
+  "gpu_runs": 0
+}

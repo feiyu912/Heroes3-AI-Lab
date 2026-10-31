@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "device": "cuda",
+  "cases": [
+    {
+      "case": "legacy_runtime",
+      "rejected": "Mixed or uncertified native runtime epoch",
+      "optimizer_step_calls": 0
+    },
+    {
+      "case": "legacy_admission",
+      "rejected": "Collector/source epoch differs",
+      "optimizer_step_calls": 0
+    },
+    {
+      "case": "new_collector_old_resume",
+      "rejected": "Resume protocol/source/runtime changed",
+      "optimizer_step_calls": 0
+    }
+  ],
+  "optimizer_steps": 0,
+  "actual_entrypoint": true,
+  "limitation": "Rejection and source-epoch gates only; no continuous-vs-split native training equivalence claim."
+}

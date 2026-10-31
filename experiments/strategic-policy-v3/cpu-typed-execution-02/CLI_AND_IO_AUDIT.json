@@ -1,0 +1,14 @@
+{
+  "responses": 2,
+  "native_started": false,
+  "passed": true,
+  "gpu_started": false,
+  "persisted_io_valid": true,
+  "operations": [
+    "move",
+    "end_turn"
+  ],
+  "actual_broker_cli_cpu_exit0": true,
+  "persisted_mismatch_rejected": true,
+  "optimizer_steps": 0
+}

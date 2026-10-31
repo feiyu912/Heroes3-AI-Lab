@@ -1,0 +1,438 @@
+{
+  "schema": "x4-owned-start-army-TRAIN-map-derivation-v1",
+  "parent_manifest": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023/MAP_MANIFEST.json",
+  "parent_manifest_sha256": "88eae3414ec9d7d7dae9bd8390eb4bf3a6ae5dd59fcb87e807d7d45a51702327",
+  "parent_deriver_sha256": "f4b5a5b368e5f8329b8336f4c585f31899924bf86b306c8ba614b08a364ccfe2",
+  "source_maps": {
+    "takeover-v2-train-01-mines": {
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+      "sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "ZIP_entries": {
+        "header.json": {
+          "content_sha256": "6d7ba5ac016df1daf4465d1401d80b6e4656831cb4bb17dc93caf23b23119b56",
+          "compressed_payload_sha256": "ea278044cfc7da3293d2d9a2998c72a2ad49cdd90bcac3161533bdf8517532b4",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 1017005851,
+            "size": 1226,
+            "compressed_size": 519
+          },
+          "local_header_offset": 0
+        },
+        "objects.json": {
+          "content_sha256": "9ba3eb75bec51fd086a8c0d060955086f2b4b898a9930dda7e76c9f0b68d9468",
+          "compressed_payload_sha256": "e2eb16b13ca44902a94548d68e45d2aaf081b23f591fe0d52669b6c4b50d1f83",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 4234819747,
+            "size": 4046,
+            "compressed_size": 697
+          },
+          "local_header_offset": 560
+        },
+        "surface_terrain.json": {
+          "content_sha256": "b1cd936ceea73ab77d762f1e4a4e4da49e81a0dba67c6a469993008882fa2fdc",
+          "compressed_payload_sha256": "a01c75f3f68ff15bc0adb7fed18891afefc633257aeacc35e6562ba56eb90f63",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 2996500498,
+            "size": 9145,
+            "compressed_size": 74
+          },
+          "local_header_offset": 1299
+        }
+      },
+      "role_heroes": {
+        "0": {
+          "key": "hero_0",
+          "colour": "red",
+          "army": [
+            {
+              "amount": 20,
+              "type": "core:pikeman"
+            },
+            {
+              "amount": 10,
+              "type": "core:archer"
+            }
+          ]
+        },
+        "1": {
+          "key": "hero_1",
+          "colour": "blue",
+          "army": [
+            {
+              "amount": 20,
+              "type": "core:pikeman"
+            },
+            {
+              "amount": 10,
+              "type": "core:archer"
+            }
+          ]
+        }
+      }
+    },
+    "takeover-v2-train-02-development": {
+      "path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-02-development.vmap",
+      "sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+      "ZIP_entries": {
+        "header.json": {
+          "content_sha256": "ee9104540bd471686a841aa255a597229aec387335d867ac68e0b50384e7178e",
+          "compressed_payload_sha256": "aa767fcaae77a28e9305ebd11d7d28f164298c99fffeceea6ac7e73ae65d9053",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 3693986090,
+            "size": 1232,
+            "compressed_size": 519
+          },
+          "local_header_offset": 0
+        },
+        "objects.json": {
+          "content_sha256": "5e2389872ad3db96f5a5c31b9ff84c5eb01ab9243a8fedf6de3c2e8894fbdeb5",
+          "compressed_payload_sha256": "daf8ccff036bc74c9b1ab043abf793231fb2469f72e3660e3d73e8f9febd695a",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 3475675212,
+            "size": 6026,
+            "compressed_size": 893
+          },
+          "local_header_offset": 560
+        },
+        "surface_terrain.json": {
+          "content_sha256": "b1cd936ceea73ab77d762f1e4a4e4da49e81a0dba67c6a469993008882fa2fdc",
+          "compressed_payload_sha256": "a01c75f3f68ff15bc0adb7fed18891afefc633257aeacc35e6562ba56eb90f63",
+          "metadata": {
+            "date_time": [
+              2026,
+              10,
+              18,
+              0,
+              0,
+              0
+            ],
+            "compression": 8,
+            "flags": 0,
+            "create_system": 3,
+            "create_version": 20,
+            "extract_version": 20,
+            "internal_attr": 0,
+            "external_attr": 25165824,
+            "extra": "",
+            "comment": "",
+            "CRC": 2996500498,
+            "size": 9145,
+            "compressed_size": 74
+          },
+          "local_header_offset": 1495
+        }
+      },
+      "role_heroes": {
+        "0": {
+          "key": "hero_0",
+          "colour": "red",
+          "army": [
+            {
+              "amount": 20,
+              "type": "core:pikeman"
+            },
+            {
+              "amount": 10,
+              "type": "core:archer"
+            }
+          ]
+        },
+        "1": {
+          "key": "hero_1",
+          "colour": "blue",
+          "army": [
+            {
+              "amount": 20,
+              "type": "core:pikeman"
+            },
+            {
+              "amount": 10,
+              "type": "core:archer"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "variants": [
+    {
+      "map": "active-calibration-train-01-owned0-hero-x4",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023/maps/active-calibration-train-01-owned0-hero-x4.vmap",
+      "sha256": "3bc4252d9030262d4614217ea3c1694aee09f6e5464f0061c87544bb1215fec3",
+      "source_map": "takeover-v2-train-01-mines",
+      "source_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+      "source_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "owned_player": 0,
+      "owned_hero_key": "hero_0",
+      "owner_colour": "red",
+      "multiplier": 4,
+      "original_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "modified_army": [
+        {
+          "amount": 80,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 40,
+          "type": "core:archer"
+        }
+      ],
+      "JSON_semantic_changes": [
+        {
+          "path": "/hero_0/options/army/0/amount",
+          "before": 20,
+          "after": 80
+        },
+        {
+          "path": "/hero_0/options/army/1/amount",
+          "before": 10,
+          "after": 40
+        }
+      ],
+      "all_other_objects_semantically_identical": true,
+      "header_and_terrain_content_and_compressed_payload_exact": true,
+      "original_archive_exact": false
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x4",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023/maps/active-calibration-train-01-owned1-hero-x4.vmap",
+      "sha256": "0af160fde5ab790faabfe7a895a49fbb858fd583995b3c237e6d24a5fce7e0c3",
+      "source_map": "takeover-v2-train-01-mines",
+      "source_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+      "source_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "owned_player": 1,
+      "owned_hero_key": "hero_1",
+      "owner_colour": "blue",
+      "multiplier": 4,
+      "original_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "modified_army": [
+        {
+          "amount": 80,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 40,
+          "type": "core:archer"
+        }
+      ],
+      "JSON_semantic_changes": [
+        {
+          "path": "/hero_1/options/army/0/amount",
+          "before": 20,
+          "after": 80
+        },
+        {
+          "path": "/hero_1/options/army/1/amount",
+          "before": 10,
+          "after": 40
+        }
+      ],
+      "all_other_objects_semantically_identical": true,
+      "header_and_terrain_content_and_compressed_payload_exact": true,
+      "original_archive_exact": false
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x4",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023/maps/active-calibration-train-02-owned0-hero-x4.vmap",
+      "sha256": "8d239f03822bb884583a116e065695880f2e1bc35ed1e697935ae50f5f893425",
+      "source_map": "takeover-v2-train-02-development",
+      "source_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-02-development.vmap",
+      "source_sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+      "owned_player": 0,
+      "owned_hero_key": "hero_0",
+      "owner_colour": "red",
+      "multiplier": 4,
+      "original_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "modified_army": [
+        {
+          "amount": 80,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 40,
+          "type": "core:archer"
+        }
+      ],
+      "JSON_semantic_changes": [
+        {
+          "path": "/hero_0/options/army/0/amount",
+          "before": 20,
+          "after": 80
+        },
+        {
+          "path": "/hero_0/options/army/1/amount",
+          "before": 10,
+          "after": 40
+        }
+      ],
+      "all_other_objects_semantically_identical": true,
+      "header_and_terrain_content_and_compressed_payload_exact": true,
+      "original_archive_exact": false
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x4",
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-curriculum-20261023/maps/active-calibration-train-02-owned1-hero-x4.vmap",
+      "sha256": "9c66b2810e2aa841514b8d7043e05d2478f472df39586a1e64eada8995de10cc",
+      "source_map": "takeover-v2-train-02-development",
+      "source_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-02-development.vmap",
+      "source_sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+      "owned_player": 1,
+      "owned_hero_key": "hero_1",
+      "owner_colour": "blue",
+      "multiplier": 4,
+      "original_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "modified_army": [
+        {
+          "amount": 80,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 40,
+          "type": "core:archer"
+        }
+      ],
+      "JSON_semantic_changes": [
+        {
+          "path": "/hero_1/options/army/0/amount",
+          "before": 20,
+          "after": 80
+        },
+        {
+          "path": "/hero_1/options/army/1/amount",
+          "before": 10,
+          "after": 40
+        }
+      ],
+      "all_other_objects_semantically_identical": true,
+      "header_and_terrain_content_and_compressed_payload_exact": true,
+      "original_archive_exact": false
+    }
+  ],
+  "factor": "only the actual owned hero starting army is multiplied by 4; opponent armies, header, terrain, resources, towns and all other objects are unchanged",
+  "private_only": true,
+  "shared_runtime_maps_written": false,
+  "derived_from_completed_TRAIN_calibration": true,
+  "training_samples": 0,
+  "optimizer_steps": 0
+}

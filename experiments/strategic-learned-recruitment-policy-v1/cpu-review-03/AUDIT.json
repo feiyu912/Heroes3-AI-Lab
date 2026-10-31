@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "models_saved": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "parent_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+  "weights_only": true,
+  "reset_Adam": true,
+  "reset_RNG_required": true,
+  "discard_rollout": true,
+  "actual_TRAIN_projection_fixtures": 4,
+  "added_recruit_state_is_synthetic": true,
+  "no_recruit_logits_critic_softmax_bitwise_equal": true,
+  "expanded_candidates_total_distribution_equivalence_claimed": false,
+  "manual_recruit_bias": -4.0,
+  "manual_prior_is_learning": false,
+  "new_feature_gradient_abs_sum": {
+    "actor.recruit_bias": 0.9997007846832275,
+    "recruit_actor.weight": 6.674764633178711,
+    "recruit_critic.weight": 0.14514702558517456
+  },
+  "new_Adam_state_empty": true,
+  "rejected_cases": [
+    "oldschema",
+    "badop",
+    "wrongdestination",
+    "wrongstock",
+    "wrongbucket",
+    "closedwindow",
+    "extraresponsefield",
+    "badamount",
+    "occupiedslot",
+    "wrong_catalog_SHA",
+    "request_catalog_mismatch",
+    "all_unknown_coverage",
+    "training_draft_gate",
+    "duplicate_catalog_id",
+    "duplicate_catalog_key",
+    "ordinal_catalog_key"
+  ],
+  "real_catalog_available": false,
+  "training_gate": "unconditionally closed",
+  "source_sha256": {
+    "check_cpu.py": "e5c6c9f3a52549a63ac9e3d0c182b1037583f94045b7ced82da759107b1238e1",
+    "encoder.py": "9f465499f643c1569b8e2bf0957f6f1dde2c48a427c73b2ce1ec79729743504a",
+    "model.py": "23d14bb366c14a940953726ce3b88b6fe9dca9376560e5a157dc52c6be5d7c5a"
+  }
+}

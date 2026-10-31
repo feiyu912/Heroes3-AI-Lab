@@ -1,0 +1,134 @@
+{
+  "schema": "x4-owned-start-army-TRAIN-selection-v1",
+  "selected_by": "completed TRAIN-only difficulty calibration",
+  "calibration_directory": "/root/heroes3-ai-lab/evaluations/strategic-active-opponent-calibration-20261023-01",
+  "calibration_result": "/root/heroes3-ai-lab/evaluations/strategic-active-opponent-calibration-20261023-01/RESULT.json",
+  "calibration_result_sha256": "1ed4f490450919b5da36da3a28fb8e50c5dd43ccc2fac0c6308783745baf327c",
+  "selection": {
+    "qualified": true,
+    "selected_multiplier": 4,
+    "wins_by_multiplier": {
+      "1": 0,
+      "2": 1,
+      "4": 2
+    },
+    "criterion": "first boosted level x2 then x4 with at least2/4 normal-terminal NK wins",
+    "reason": "Registered threshold met"
+  },
+  "calibration_wins": [
+    {
+      "map": "active-calibration-train-01-owned0-hero-x1",
+      "multiplier": 1,
+      "player": 0,
+      "seed": 2026104300,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "f3c271cf5a0beaab982b92c788fcca17db721013c9286881166c210574590eb4"
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x1",
+      "multiplier": 1,
+      "player": 1,
+      "seed": 2026104301,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "a218771a7f8cbc368899c34e9cb9feb27f8298795eb216639dbb1c5ba2d9b7a6"
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x1",
+      "multiplier": 1,
+      "player": 0,
+      "seed": 2026104302,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "292178f7f692caba9026176406f1310f82c2d9c117731fab5111479310d143e9"
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x1",
+      "multiplier": 1,
+      "player": 1,
+      "seed": 2026104303,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "514c57caaed46183eda756469d1e65045d22ab4e025608ca40a977981d18cb44"
+    },
+    {
+      "map": "active-calibration-train-01-owned0-hero-x2",
+      "multiplier": 2,
+      "player": 0,
+      "seed": 2026104300,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "570cfb4c9f450f57c1d8015c3a91f191cdc3a3db62dc922a66a65503c2f873df"
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x2",
+      "multiplier": 2,
+      "player": 1,
+      "seed": 2026104301,
+      "win": true,
+      "valid": true,
+      "audit_sha256": "201dd50e4f2829c155e8f2cf794b8936e79e16d0dfed80aae25d4acbc60a374b"
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x2",
+      "multiplier": 2,
+      "player": 0,
+      "seed": 2026104302,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "f871730ed1804257c93ea23619a583db5cf82be18069805e7cc2fb5927a9160e"
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x2",
+      "multiplier": 2,
+      "player": 1,
+      "seed": 2026104303,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "c2c1c89f0753fa859187773ab916d9696ec4869b2b1436077aea2c6e9dc7d64c"
+    },
+    {
+      "map": "active-calibration-train-01-owned0-hero-x4",
+      "multiplier": 4,
+      "player": 0,
+      "seed": 2026104300,
+      "win": true,
+      "valid": true,
+      "audit_sha256": "33b22fa6dc95af78d4b83a16772e9f318aa48b0e214ff940982230fb2724a9a6"
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x4",
+      "multiplier": 4,
+      "player": 1,
+      "seed": 2026104301,
+      "win": true,
+      "valid": true,
+      "audit_sha256": "d4896367cb07074e09bcff54e876012db794396aca2e1104128c2ae39ebfa2fd"
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x4",
+      "multiplier": 4,
+      "player": 0,
+      "seed": 2026104302,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "9fe37c4dc0b308159482d258094cf963d09eb5cf2bfdb53c8a51377247c3dec8"
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x4",
+      "multiplier": 4,
+      "player": 1,
+      "seed": 2026104303,
+      "win": false,
+      "valid": true,
+      "audit_sha256": "6ec97709f36fb990c1255c1f53e1bf94e0b2de90e149219a837b6d946dce93e1"
+    }
+  ],
+  "scope": "TRAIN-only difficulty selection; not an independent win-rate estimate, not DEV evidence, not an expert label",
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "native_runs_for_selection": 12,
+  "DEV_read": false,
+  "finaltest_touched": false
+}

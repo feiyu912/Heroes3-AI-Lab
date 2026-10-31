@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "nonzero_gradients": 12,
+  "game_started": false,
+  "cuda_training_started": false,
+  "lineage": {
+    "mode": "weights-only-migration",
+    "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/cpu-selfcheck-01/migrated-test.pt",
+    "parent_sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+    "parent_training_updates": 0,
+    "parent_lineage": {
+      "mode": "explicit-v1-to-v2-visible-weight-migration",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2/update-2.pt",
+      "parent_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+      "parent_training_updates": 2,
+      "parent_lineage": {
+        "mode": "weights-only-migration",
+        "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+        "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+        "parent_training_updates": 2,
+        "reset_optimizer": true,
+        "reset_rng": true
+      },
+      "parent_protocol_sha256": "816b047f277c75eafa876afaee7489e13349427195336f6705787c1e9e1c44c4",
+      "parent_optimizer_steps_total": 132,
+      "reset_optimizer": true,
+      "reset_rng": true,
+      "source_optimizer_reused": false
+    },
+    "parent_migration_protocol_sha256": "2f7f43c21a201dffda0858ee7e9da3fded4e30b031487e288b572e8ef2960aeb",
+    "reset_optimizer": true,
+    "reset_rng": true
+  },
+  "cuda_rng_restored": false,
+  "optimizer_steps": 0,
+  "request_path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/fixtures/visible-request.json",
+  "request_sha256": "ea8973ea840b210e8e6c8baa86415225c31f6f900c9d3b7cf6ad1a72ecc87f6b",
+  "request_schema": "strategy-candidates-v3",
+  "optimizer_steps_total": 0
+}

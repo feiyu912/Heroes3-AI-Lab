@@ -1,0 +1,1071 @@
+{
+  "passed": true,
+  "episodes": 7,
+  "total_steps": 206,
+  "total_event_verified": 115,
+  "normal_terminal": 7,
+  "illegal": 0,
+  "truncated": 0,
+  "deterministic_actual_reexecution": true,
+  "bc_eligible_decisions": 0,
+  "rows": [
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/bait-attacker.json",
+      "steps": 34,
+      "event_verified": 16,
+      "unknown_identities": 0,
+      "trace_sha256": "d1e5285311648bdfc8d7b16d14625f62bc0f8401ce07d42519a36ddb367f9354",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 2,
+            "unit_id": 0,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 4,
+                "killed": 0,
+                "damage": 1
+              }
+            ],
+            "counter_targets": [
+              4
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 0,
+                "damage": 2
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 0,
+                "damage": 2
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 0,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 1,
+                "damage": 9
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 4,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 5,
+                "damage": 203
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 3,
+                "killed": 0,
+                "damage": 19
+              }
+            ],
+            "counter_targets": [
+              3
+            ]
+          },
+          {
+            "round": 13,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 7,
+                "killed": 0,
+                "damage": 3
+              }
+            ],
+            "counter_targets": [
+              7
+            ]
+          },
+          {
+            "round": 13,
+            "unit_id": 7,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 11,
+                "damage": 110
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          }
+        ],
+        "unknown_round_attacks": 28,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/bait-defender.json",
+      "steps": 37,
+      "event_verified": 22,
+      "unknown_identities": 0,
+      "trace_sha256": "e95efeb31d399e1c01cf953ef0b1a3817635d3a18e86e1bc913af167ad1c3631",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 2,
+            "unit_id": 0,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 4,
+                "killed": 0,
+                "damage": 1
+              }
+            ],
+            "counter_targets": [
+              4
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 0,
+                "damage": 2
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 1,
+                "damage": 8
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 3,
+            "unit_id": 0,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 1,
+                "damage": 9
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 3,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 0,
+                "damage": 2
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 7,
+                "damage": 242
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 5,
+                "damage": 203
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 14,
+                "damage": 144
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 3,
+                "killed": 0,
+                "damage": 19
+              }
+            ],
+            "counter_targets": [
+              3
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 4,
+                "damage": 38
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 7,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 4,
+                "damage": 137
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          },
+          {
+            "round": 8,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 1,
+                "damage": 14
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 13,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 7,
+                "killed": 0,
+                "damage": 3
+              }
+            ],
+            "counter_targets": [
+              7
+            ]
+          }
+        ],
+        "unknown_round_attacks": 26,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/cloud-attacker.json",
+      "steps": 32,
+      "event_verified": 19,
+      "unknown_identities": 0,
+      "trace_sha256": "20eaa71181efb33cf0a0c427b79d323cebb879377c9e42155bc3cb870c59b3dc",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 3,
+            "unit_id": 7,
+            "primary_melee_received": 2,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 8,
+                "damage": 79
+              },
+              {
+                "attacker_id": 3,
+                "killed": 4,
+                "damage": 44
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 2,
+                "damage": 16
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 3,
+                "damage": 37
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 5,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 4,
+                "killed": 6,
+                "damage": 31
+              }
+            ],
+            "counter_targets": [
+              4
+            ]
+          },
+          {
+            "round": 5,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 0,
+                "damage": 7
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 4,
+                "killed": 2,
+                "damage": 14
+              }
+            ],
+            "counter_targets": [
+              4
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 3,
+                "killed": 1,
+                "damage": 22
+              }
+            ],
+            "counter_targets": []
+          }
+        ],
+        "unknown_round_attacks": 8,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/cloud-defender.json",
+      "steps": 26,
+      "event_verified": 17,
+      "unknown_identities": 0,
+      "trace_sha256": "691d74c4087cc178b8b34f1fbdc9bc85ba7f2fe3f692ead88168f5bd2d7bfa74",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 3,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 7,
+                "killed": 2,
+                "damage": 12
+              }
+            ],
+            "counter_targets": [
+              7
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 7,
+            "primary_melee_received": 2,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 7,
+                "damage": 62
+              },
+              {
+                "attacker_id": 3,
+                "killed": 6,
+                "damage": 61
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 3,
+                "damage": 30
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 8,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 4,
+                "killed": 0,
+                "damage": 5
+              }
+            ],
+            "counter_targets": [
+              4
+            ]
+          }
+        ],
+        "unknown_round_attacks": 19,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-attacker.json",
+      "steps": 26,
+      "event_verified": 14,
+      "unknown_identities": 0,
+      "trace_sha256": "1359e06244f362d3bfe5fd954d1c9a670186a1a60a2acdeac1ced72aca4f2048",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 2,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 81
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 11,
+                "damage": 110
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 2,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 0,
+                "killed": 0,
+                "damage": 15
+              }
+            ],
+            "counter_targets": [
+              0
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 51
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 1,
+                "damage": 51
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 4,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 2,
+                "damage": 53
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 5,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 3,
+                "killed": 0,
+                "damage": 3
+              }
+            ],
+            "counter_targets": [
+              3
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 2,
+                "damage": 54
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 0,
+                "damage": 114
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          }
+        ],
+        "unknown_round_attacks": 13,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-defender.json",
+      "steps": 25,
+      "event_verified": 13,
+      "unknown_identities": 0,
+      "trace_sha256": "8011ce88800c34086c2a4f589118ec8491662a9d9be9837d027892ed287ed00d",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 1,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 21,
+                "damage": 210
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 81
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 6,
+            "primary_melee_received": 2,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 0,
+                "killed": 0,
+                "damage": 15
+              },
+              {
+                "attacker_id": 1,
+                "killed": 1,
+                "damage": 115
+              }
+            ],
+            "counter_targets": [
+              0
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 51
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 0,
+                "damage": 96
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 1,
+                "damage": 51
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 5,
+            "unit_id": 3,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 8,
+                "damage": 75
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 6,
+            "unit_id": 7,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 17,
+                "damage": 170
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 7,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 2,
+                "damage": 54
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 0,
+                "damage": 114
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          }
+        ],
+        "unknown_round_attacks": 12,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    },
+    {
+      "file": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-repeat-attacker.json",
+      "steps": 26,
+      "event_verified": 14,
+      "unknown_identities": 0,
+      "trace_sha256": "1359e06244f362d3bfe5fd954d1c9a670186a1a60a2acdeac1ced72aca4f2048",
+      "terminal_events": 1,
+      "retaliation_audit": {
+        "subjects": [
+          {
+            "round": 2,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 81
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 2,
+            "unit_id": 4,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 11,
+                "damage": 110
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 2,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 0,
+                "killed": 0,
+                "damage": 15
+              }
+            ],
+            "counter_targets": [
+              0
+            ]
+          },
+          {
+            "round": 3,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 5,
+                "killed": 0,
+                "damage": 51
+              }
+            ],
+            "counter_targets": [
+              5
+            ]
+          },
+          {
+            "round": 4,
+            "unit_id": 2,
+            "primary_melee_received": 1,
+            "counters_emitted": 0,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 1,
+                "damage": 51
+              }
+            ],
+            "counter_targets": []
+          },
+          {
+            "round": 4,
+            "unit_id": 5,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 2,
+                "killed": 2,
+                "damage": 53
+              }
+            ],
+            "counter_targets": [
+              2
+            ]
+          },
+          {
+            "round": 5,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 3,
+                "killed": 0,
+                "damage": 3
+              }
+            ],
+            "counter_targets": [
+              3
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 1,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 6,
+                "killed": 2,
+                "damage": 54
+              }
+            ],
+            "counter_targets": [
+              6
+            ]
+          },
+          {
+            "round": 7,
+            "unit_id": 6,
+            "primary_melee_received": 1,
+            "counters_emitted": 1,
+            "primary_hits": [
+              {
+                "attacker_id": 1,
+                "killed": 0,
+                "damage": 114
+              }
+            ],
+            "counter_targets": [
+              1
+            ]
+          }
+        ],
+        "unknown_round_attacks": 13,
+        "finite_retaliation_proven": false,
+        "limitation": "Correct subjects and same-round observations only; eligibility/remaining counters unknown"
+      }
+    }
+  ]
+}

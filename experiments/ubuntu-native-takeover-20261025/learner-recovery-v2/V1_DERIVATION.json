@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_derivation_only": true,
+  "parent_path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/restore_learner.py",
+  "parent_sha256": "e06151039e1665742897e9381cab1f51b3598d51db1e2f050d4315b0de5b7df9",
+  "parent_unchanged": true,
+  "derived_path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery/restore_learner_ubuntu.py",
+  "derived_sha256": "6096cd59ad6d0bd53527535289734d6d456185e3060e071e918db59f3d0ad4a2",
+  "substitutions": [
+    [
+      "import copy,hashlib,importlib.util,io,json,math,random",
+      "import copy,hashlib,importlib.util,io,json,math,random,os"
+    ],
+    [
+      "ROOT=Path('/mnt/g/Heroes3-AI-Lab')",
+      "ROOT=Path(os.environ['HEROES3_PROJECT_ROOT']).resolve()"
+    ],
+    [
+      "bundle['frozen_inputs']['input_sha256'].get(str(p))==sha(p)",
+      "bundle['frozen_inputs']['input_sha256'].get('/mnt/g/Heroes3-AI-Lab/research/'+p.name)==sha(p)"
+    ]
+  ],
+  "legacy_frozen_source_keys_preserved": true,
+  "lease_source": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/leases.py",
+  "lease_source_sha256": "fd3f808b612067180636555df3237dd89693e2f76b375598eed17075f447edc7",
+  "lease_copy_sha256": "fd3f808b612067180636555df3237dd89693e2f76b375598eed17075f447edc7",
+  "derive_script_sha256": "8d53ce4bbb0f1132267a6c217c68595e1f1f03b862e0a3863b776d1ca4006fc6",
+  "optimizer_steps": 0,
+  "GPU_operations": 0,
+  "native_games": 0
+}

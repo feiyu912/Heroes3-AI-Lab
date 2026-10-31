@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "arm": "candidate",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "independent source/binary readback and host-loader --list; not a game or capability test",
+  "full_source_manifest_readback": true,
+  "source_entries": 3701,
+  "compiled_director_command_observed": true,
+  "protected_before_after_equal": true,
+  "elf": [
+    {
+      "name": "vcmiclient",
+      "sha256": "692fc134fd13445c858e328556aaef4d6e2088f2aa548335554e71f94901c235",
+      "hostloader_dependencies_resolved": true
+    },
+    {
+      "name": "vcmiserver",
+      "sha256": "9ebd385189a06c336cfd43dbe2139a32c215a9f3630cf45a523861ef11a51dc3",
+      "hostloader_dependencies_resolved": true
+    },
+    {
+      "name": "libvcmi.so",
+      "sha256": "25de2bded42150eb2703355c63ab44959c736c809835c9425cbbb19f9df1bb32",
+      "hostloader_dependencies_resolved": true
+    }
+  ],
+  "attestation_sha256": "a172af5c7cefaf8f2022e8a3fc9e399fabbe752705eb7298c3fce241435e4567",
+  "toolchain_certificate_sha256": "0a73fe1a0097053450154b0b0b506d73d479d5b84915e5e039e6429ae9d8fccb",
+  "dependency_closure_sha256": "d716b5712fd774c70924b6a44a8d0aff040b98bf7b145e9b232a8452811d84b3",
+  "qualification_freeze_sha256": "c00acca3de5db3e2a560359e6cbe4b3920d7b31101284da965a9de79acf39393"
+}

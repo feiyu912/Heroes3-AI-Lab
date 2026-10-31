@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": {
+    "independent_copy_future_write_preserves_source": true,
+    "refuse_overwrite": true,
+    "refuse_output_symlink_ancestor": true,
+    "refuse_symlink_source": true,
+    "reject_bad_migration_select_corrected_expected_SHA": true,
+    "reject_all_wrong_source_copies": true,
+    "relative_cross_lab_target_mapped": true,
+    "project_absolute_target_mapped": true,
+    "prefix_collision_is_external_unchanged": true,
+    "certificate_requires_stage_count_and_journal_binding": true,
+    "certificate_rejects_tampered_journal": true,
+    "generated_env_syntax_canonical_lock_and_worker_syntax": true
+  },
+  "builder_sha256": "efeb0c0b73c84124633201bdca5a64900d6a4ca3addb20b0e10938c0eec960c9",
+  "self_check_sha256": "b331269c4f019dd9bd68e0e2c50ccf83a65411b462635a57fd024675750345a7",
+  "real_profile_built": false,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "scope": "Synthetic file fixtures and shell syntax only; does not qualify the real VHDX source, new Python environment, native engines or full games."
+}

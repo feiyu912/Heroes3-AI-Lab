@@ -1,0 +1,38 @@
+{
+  "plan": "Parent-requested exact counts fixed before inspecting any variant outcome; no heldout battles run",
+  "parameter_groups": {
+    "development": [
+      [
+        5,
+        90
+      ],
+      [
+        7,
+        110
+      ]
+    ],
+    "test": [
+      [
+        9,
+        130
+      ],
+      [
+        11,
+        150
+      ]
+    ]
+  },
+  "scenario_manifest_sha256": "9e6c8f9bb2c7b55787e51ccf66c1401f74535a1d23e8b6c369bf260c42d77f6e",
+  "generator_sha256": "6832ee457bde29ada39678b8918d7f3f8b8bedd3607c91b6ed85f094f81500e8",
+  "fixture_sha256": {
+    "lab/hallas-wait-ghost-v2-4-attacker.vmap": "a9174440e6768f92a2d84e0887a561930d58cc5219c5203184bdb81529fff606",
+    "lab/hallas-wait-ghost-v2-4-defender.vmap": "b9dfee56a2704a72b3da5d2c0172811295d7e9ca99870599a7005a2c98aa0d37",
+    "lab/hallas-wait-ghost-v2-5-attacker.vmap": "cbc5d2710e46ec9c17ae2b0b0fad490ef7ef1d220197f0ba68da502f39d604df",
+    "lab/hallas-wait-ghost-v2-5-defender.vmap": "2d8d7e9bf3a2c9a942870ae4469fb823cb7f535513caf4b63737c3bbc1bfc275",
+    "lab/hallas-wait-ghost-v2-6-attacker.vmap": "ffbdd325c7825f04838669157810abdc945298fa32fdffe72ed8fb3131b323bc",
+    "lab/hallas-wait-ghost-v2-6-defender.vmap": "1b69256a0ac3d5d560005b019ebe7f776a036def76b15186379adc013efb7c77",
+    "lab/hallas-wait-ghost-v2-7-attacker.vmap": "d5809959a10d144d32ad09ad8a3e38f037a57590a8d31877128abb53f5643c78",
+    "lab/hallas-wait-ghost-v2-7-defender.vmap": "9ca7b54cdd41c7a039b87da3e70d4374e531d1ff44517d0b956324620df0579b"
+  },
+  "scope_limit": "Same creature matchup and opponent script; not an independent test of broad BattleAI strength"
+}

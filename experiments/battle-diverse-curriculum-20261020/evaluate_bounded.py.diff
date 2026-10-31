@@ -1,0 +1,11 @@
+--- frozen-family/evaluate_bounded.py
++++ diverse-60case/evaluate_bounded.py
+@@ -16,7 +16,7 @@
+ parser.add_argument('--policies', nargs='+', default=['teacher', 'heuristic', 'model'])
+ parser.add_argument('--scenarios', nargs='+', type=int, default=[10, 11])
+ parser.add_argument('--seeds', type=int, default=5)
+-parser.add_argument('--seed-base',type=int,default=2026102500)
++parser.add_argument('--seed-base',type=int,default=2026103400)
+ parser.add_argument('--workers', type=int, default=12)
+ parser.add_argument('--output', default='/mnt/g/Heroes3-AI-Lab/research/battle-evaluation-v1.json')
+ parser.add_argument('--scenario-file', default='/mnt/g/Heroes3-AI-Lab/research/scenarios-v1.json')

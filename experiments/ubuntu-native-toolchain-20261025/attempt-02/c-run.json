@@ -1,0 +1,9 @@
+{
+  "returncode": 0,
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+    "--library-path",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/x86_64-linux-gnu:/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02/c"
+  ]
+}

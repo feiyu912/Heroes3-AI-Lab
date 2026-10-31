@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "status": "draft_only_not_frozen",
+  "parent_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+  "parent_saved_Adam_steps": 504,
+  "old_protocol_sha256": "64d424b904251d38f43249527c246208062da4539f62230c55757034b57137ff",
+  "changed_schema_test_protocol_sha256": "9886c49276e0495152c858c6eabc82fcb75bce69b3256b38cc9c3779055c5a93",
+  "old_resume_rejected": true,
+  "rejection_reason": "Resume protocol/source/runtime changed",
+  "model_optimizer_CPU_Python_RNG_unchanged": true,
+  "chosen_transition": "same-architecture exact weights-only migration; reset Adam/RNG/rollout; new source/runtime epoch",
+  "native_v2_capsule_pins_pending": true,
+  "new_initialization_not_generated": true,
+  "inspected_codec_sha256": "418c3ef37822609ccb70e819d3077b60960043d21e0a08f5eb310ec6208f2707"
+}

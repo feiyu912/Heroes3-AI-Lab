@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "role": "attacker",
+      "observations": 12,
+      "maximum_probability_error": 1.7255544662475586e-05,
+      "parameters": 4496589,
+      "passed": true
+    },
+    {
+      "role": "defender",
+      "observations": 12,
+      "maximum_probability_error": 6.660819053649902e-06,
+      "parameters": 4496589,
+      "passed": true
+    }
+  ],
+  "limitation": "Both side networks checked on attacker observation corpus; live role-specific validation required before training"
+}

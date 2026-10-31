@@ -1,0 +1,57 @@
+{
+  "schema": "learned-economy-native-flow-contract-v1",
+  "flow_epoch": "learned-economy-free-existing-stock-prewindow-v2",
+  "action_contract": "../strategic-learned-economy-native-v1/CONTRACT.md",
+  "action_contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "action_schema": "strategy-candidates-v5",
+  "native_economy_epoch": "learned-economy-build-v1",
+  "enabled_only": {"learned_build_enabled": true, "build_window_open": true},
+  "precondition": {
+    "turn_active": true,
+    "typed_protocol_failed": false,
+    "ending_turn": false,
+    "pending_move": false,
+    "pending_economy": false,
+    "battle_busy": false,
+    "movement_busy": false,
+    "pending_queries_empty": true,
+    "query_requests_empty": true,
+    "outstanding_typed_absent": true,
+    "prepared_typed_absent": true
+  },
+  "free_existing_stock": {
+    "source": "own town getUpperArmy",
+    "recipient": "same town own getVisitingHero, distinct army object",
+    "order": "unchanged getTownsInfo then Slots iteration",
+    "slot_rule": "unchanged hero getSlotFor: existing same creature or free slot",
+    "operation": "unchanged mergeOrSwapStacks, whole legal source stack",
+    "legacy_key": "(town_id,1000+creature_id), inserted before dispatch",
+    "legacy_key_lifetime": "existing recruitedThisTurn behavior, unchanged",
+    "pending": "existing pendingEconomy/economyRequest with actual owned native ArrangeStacks identity",
+    "completion": "only actual requestRealized PackageApplied with matching economyRequest clears pending",
+    "reentry": "actual ACK calls advanceTurn, reevaluates free helper before publishing first policy request",
+    "first_policy_request_before_matching_actual_ack": "forbidden",
+    "stop": "no remaining legacy-eligible transfer; no unconditional empty-town guarantee",
+    "cost": "no resource spend",
+    "ppo_action": false,
+    "synthetic_ack_or_wait_or_end_turn": false
+  },
+  "preserved": [
+    "original issueEconomy body and per-town spending order",
+    "recruit order and once/per-creature keys, including prior limitations",
+    "build window opens once per own turn and only a policy selection closes it",
+    "original scripted rescue hire when no hero exists",
+    "ordinary recruitment and all optional spending remain after the policy window",
+    "no scripted building in learned build mode",
+    "single policy pending tuple, immutable native identity, late EndTurn ACK, query and battle guards",
+    "action contract, schema5 encoder, native economy epoch string, reward and PPO math"
+  ],
+  "qualification_required": [
+    "actual ArrangeStacks payload, unique native request identity, server apply and matching real ACK",
+    "actual donor/recipient army conservation and unchanged resources",
+    "first policy request reflects acknowledged transferred army",
+    "no first policy request while free transfer is pending",
+    "new compiled capsule and fresh on-policy collection; old episodes remain immutable"
+  ],
+  "qualification_status": "source-ready-not-native-qualified"
+}

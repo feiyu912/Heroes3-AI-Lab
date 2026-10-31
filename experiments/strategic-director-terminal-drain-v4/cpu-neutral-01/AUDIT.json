@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "positive_neutral_ack_case": true,
+  "rejected": [
+    "unverified_owner_-2",
+    "unverified_owner_-3",
+    "unverified_owner_-4",
+    "unverified_owner_-5",
+    "unverified_owner_-99",
+    "unverified_owner_8",
+    "unverified_owner_255",
+    "unverified_owner_-0",
+    "unverified_owner_-01",
+    "unverified_owner_+1",
+    "neutral_unverified_packet",
+    "neutral_wrong_actual_request_type",
+    "neutral_without_actual_send",
+    "neutral_send_after_ack",
+    "neutral_claimed_owned_registration",
+    "neutral_claimed_owned_ack",
+    "owned_ack_replaced_by_neutral"
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/check_neutral_ack_cpu.py": "196018e2b27a6f7eea930cd3ce31173bead0e3ebb48aedf56c79f8881af2e5e7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "DirectorAI",
+    "blue": "EmptyAI",
+    "seed": 2026102200,
+    "seconds": 120,
+    "tag": "vector-da7383a7-0",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-000/agent",
+    "pool_lock_fd": 22,
+    "pool_lock_dev": 2096,
+    "pool_lock_inode": 674895,
+    "report_dir": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-000",
+    "native_pid_file": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-000/native-pid.json",
+    "lab_root": "/root/heroes3-ai-lab"
+  },
+  "hashes": {
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/StdInc.h": "de34f54eb11972628e60657e86b7555817838978ae8a6bd3641b4e237cb14103",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.h": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+    "/root/heroes3-ai-lab/workers/adv-runs/vector-da7383a7-0-2026102200-hpco_v17/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+    "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/worker_runner.py": "5b477b4e69dd6d9f17e0cc53ad66c8e89d2878496e8c5377344f29f77db454d5"
+  }
+}

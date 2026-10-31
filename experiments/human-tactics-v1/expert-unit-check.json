@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": [
+    "friendly fire reverses a tempting two-target attack",
+    "two-hex targets deduplicated",
+    "enemy-only secondary target increases coverage"
+  ],
+  "scope": "Arithmetic safety fixtures only; real legal action and outcome tests still required before expert strength claims"
+}

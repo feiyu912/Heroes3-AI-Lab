@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "episodes": [
+    {
+      "cell": 0,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102900,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-00/admitted",
+      "admission_sha256": "890cbb78fc16bca20b98cbea9e40de1e01d998ff674d330df8dc122163f511dd",
+      "episode_id": "54b1dbf1faa190269c772c523dd30e5475f4e1a98c7acb6703a90bfbe17abab8",
+      "reward": 1.0,
+      "decisions": 341,
+      "policy_end_turns": 4
+    },
+    {
+      "cell": 1,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102901,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-01/admitted",
+      "admission_sha256": "ab9d48ff236397f23b223e475b4fda37533817f1c6b4fd3e8dbcd456c29ef377",
+      "episode_id": "19d116ea298f0cff93c683d9c2e51e997418109f70c73f88acbd77de91f4f45f",
+      "reward": 1.0,
+      "decisions": 268,
+      "policy_end_turns": 3
+    },
+    {
+      "cell": 2,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102902,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-02/admitted",
+      "admission_sha256": "cffa8e15658645835f3bdd6e6c40220aa67c4e88402f586b3bdf40e871eb887f",
+      "episode_id": "cd6449806834f24291a4d112571c8ae022f57039da16fa176a0e09aeb8adf6e0",
+      "reward": -1.0,
+      "decisions": 76,
+      "policy_end_turns": 0
+    },
+    {
+      "cell": 3,
+      "job": {
+        "map": "takeover-v2-train-01-mines",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102903,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-03/admitted",
+      "admission_sha256": "a6f2e881eafe5f26f33ecb729ba59c08ee6d580fd148f971011dba981d418798",
+      "episode_id": "ba8b961816a337b6d15149ffefc452e201e54e7ad1b3ae11315ec59c18670191",
+      "reward": -1.0,
+      "decisions": 276,
+      "policy_end_turns": 3
+    },
+    {
+      "cell": 4,
+      "job": {
+        "map": "takeover-v2-train-02-development",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102904,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-04/admitted",
+      "admission_sha256": "9a550874983f395beb71454a3f80cc9744e141a046bb2c5d24799673fb9fc71b",
+      "episode_id": "ba9d371c49b7c53b9d7cd8ff55dac033ece26b4d3cf83dba9e546040054de5ab",
+      "reward": 1.0,
+      "decisions": 207,
+      "policy_end_turns": 1
+    },
+    {
+      "cell": 5,
+      "job": {
+        "map": "takeover-v2-train-02-development",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102905,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-05/admitted",
+      "admission_sha256": "440feacc661b13a9993b4519c306aa7e2c256220a874e8b49517f51281d9d0f2",
+      "episode_id": "1e5f45bd957a146089f89be3e105a2e09c3629f31a427266946ec2b7207b2cb3",
+      "reward": 1.0,
+      "decisions": 420,
+      "policy_end_turns": 5
+    },
+    {
+      "cell": 6,
+      "job": {
+        "map": "takeover-v2-train-02-development",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102906,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-06/admitted",
+      "admission_sha256": "91531998643d9c1936c3c686b9944610a9936610c350ae5a49932d63ccd9efca",
+      "episode_id": "edd19a4936925053c1fb6995d092f3095848e5d074892346ef8efc7b92184b17",
+      "reward": -1.0,
+      "decisions": 413,
+      "policy_end_turns": 3
+    },
+    {
+      "cell": 7,
+      "job": {
+        "map": "takeover-v2-train-02-development",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102907,
+        "logical_update": 0
+      },
+      "admission": "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-reconcile-01/admitted",
+      "admission_sha256": "acbf7ff42058d6ee4e295e187cb7dfe9d46844627c60c9bac2e72dd4e780cabb",
+      "episode_id": "4676d85425a63831c0ad3145fcc35b3093ee971c9b19847b82a80ec7bd2b534e",
+      "reward": -1.0,
+      "decisions": 587,
+      "policy_end_turns": 2
+    }
+  ],
+  "rows": 2588,
+  "policy_end_turns": 21,
+  "wins": 4,
+  "losses": 4,
+  "same_parent_policy": true,
+  "same_runtime_epoch": true,
+  "last_cell_final_event_reconciled_from_original_raw": true,
+  "additional_native_games": 0,
+  "optimizer_steps": 0,
+  "original_failed_batch_result_sha256": "5445c7b9662b4c6c4fdb53213d5ad370ab30c79442a85295f0602a2d5ad37a8b"
+}

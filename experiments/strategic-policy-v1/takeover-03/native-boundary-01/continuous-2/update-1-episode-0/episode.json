@@ -1,0 +1,69 @@
+{
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "DirectorAI",
+    "blue": "EmptyAI",
+    "seed": 2026101910
+  },
+  "valid": true,
+  "reward": 1.0,
+  "decisions": 300,
+  "native_consumption_verified": true,
+  "native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-0-2026101910-j75djce7",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026101910,
+      "seconds": 90,
+      "tag": "update-1-episode-0",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-0-j9tiptgq"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "EmptyAI"
+    },
+    "turns": 35,
+    "moves_requested": 300,
+    "move_replies": 300,
+    "changed_tile_replies": 300,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 296,
+    "blocking_visit_replies": 4,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "10c89969be697311ad27c7ea9081c64a6dce0813a505fd25ce43f07db896d534",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 2.7290727659999447,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "9f09390ec83806ad43ebd1e77c0e100d09ea3f1c52ea565d91c7df53fec1bc41",
+    "strategy_trace_records": 711,
+    "native_calendar_last_day": 35,
+    "turns_source": "native strategy state calendar day; not a count of sampled decisions",
+    "strategy_targets_sha256": "21a8d702487fadd4d525255e8849d880a2c9a7cc0e7872a6574c7ca0c1e179cb",
+    "strategy_targets_records": 189,
+    "strategy_decisions_sha256": "6943d6dac75ecb53bcef44d22b0349213e65a4c8a1d3dab097a4a69f74b72ea7",
+    "strategy_decision_records": 300,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-0-2026101910-j75djce7/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 341371,
+        "sha256": "77d59ddec71b17d74b3ac55954ad279482a682c9989ecd3007bb4657a69c613c"
+      }
+    ]
+  },
+  "rollout_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-0-j9tiptgq",
+  "wall_seconds": 2.8399368460000005
+}

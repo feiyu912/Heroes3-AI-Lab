@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "read_only_interpretation": true,
+  "files": {
+    "AUDIT.json": "983823183e0522c01c4f89c5130bd90f28586b3b51fb39fb732e3e5a7f43c0a0",
+    "AGGREGATES.json": "e1235a3e3b5ef394f5fee9c84034bb47eb24e6afa4723fd534c5812df1a1230f",
+    "EPISODES.json": "1546e7d1905a01d8109851efad56966ddfb1398d1c0f76f8ea1111d7fda51380",
+    "REQUEST_COMPARISON.jsonl": "a82cccdb12ed1a118731a08cd916205860317ec5c21a5d03a5af09f4c7cb80b0",
+    "REPORT.md": "bf220b6acd2d68d3d2fc1ca5f169580f98694555bacd5446a4b1bcc3f8c08a5d",
+    "FINDINGS.md": "68db35e8755b4937e1e84005498800cc0bd154e5f3597cfb17b0d3e24727ec14"
+  },
+  "diagnostic_script_sha256": "b4d01b659bcc33517a579a95334e676e5fccd30d48618aa55676ca220f5e4320",
+  "DEV_read": false,
+  "optimizer_steps": 0,
+  "GPU_steps": 0,
+  "native_runs": 0,
+  "policy_run_sources_modified": false
+}

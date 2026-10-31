@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "game_started": false,
+  "GPU_initialized": false,
+  "synthetic_only": true,
+  "checks": {
+    "paired_order_and_aggregation": {
+      "passed": true,
+      "synthetic_pairs": 8
+    },
+    "consumption_mismatch_fails_without_loss_imputation": true,
+    "synthetic_boundary_equal": true,
+    "changed_weights_and_native_decisions_detected": true
+  },
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/audit_recovery_tools_cpu.py": "05fb1679cadf80aada75cb54d1935f5487d6f3ae0793dbea79e6cde296f799fb",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/evaluate_pairs.py": "a95fca92a27239fee0d0efc42832beeb9e93a9a8d59747c00cfd7457ab995a1c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/verify_training_boundary.py": "f1df5372fd7e03a8e76ea095e38a4ef1063198d591687156e707780084b182b4"
+  }
+}

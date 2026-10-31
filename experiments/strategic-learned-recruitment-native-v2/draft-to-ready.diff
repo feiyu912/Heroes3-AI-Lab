@@ -1,0 +1,11 @@
+--- preserved-draft/AI/DirectorAI/CDirectorAI.cpp
++++ reviewed-source-ready/AI/DirectorAI/CDirectorAI.cpp
+@@ -86,8 +86,6 @@
+  if(learnedRecruitEnabled) logGlobal->info("DirectorLearnedEconomyEpoch player=%d epoch=learned-economy-build-recruit-v1 schema=strategy-candidates-v6",playerID.getNum());
+  else if(learnedBuildEnabled) logGlobal->info("DirectorLearnedEconomyEpoch player=%d epoch=learned-economy-build-v1 schema=strategy-candidates-v5",playerID.getNum());
+  if(learnedRecruitEnabled && !exportCreatureCatalog()) return;
+- // Deliberate source-level draft gate. Remove only in a reviewed, new qualified source epoch.
+- if(learnedRecruitEnabled) { typedFailure("recruitment_draft_execution_disabled");return; }
+  const auto * replanMode=std::getenv("LAB_ADV_THREAT_REPLAN");
+  const std::string mode=replanMode ? replanMode : "off";
+  if(mode!="off" && mode!="once") { typedFailure("invalid_threat_replan_mode");return; }

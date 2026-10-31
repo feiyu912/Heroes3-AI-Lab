@@ -1,0 +1,1201 @@
+[
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00",
+    "native_request_id": 34,
+    "decision_id": 24,
+    "town_id": 12,
+    "building_id": 16,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 1000
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 10,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 8760
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 5,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 7760
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00",
+    "native_request_id": 268,
+    "decision_id": 212,
+    "town_id": 12,
+    "building_id": 33,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2000
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 45,
+        "mercury": 4,
+        "ore": 62,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 29140
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 45,
+        "mercury": 4,
+        "ore": 57,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 27140
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00",
+    "native_request_id": 371,
+    "decision_id": 291,
+    "town_id": 13,
+    "building_id": 8,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2500
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 67,
+        "mercury": 4,
+        "ore": 89,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 31780
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 67,
+        "mercury": 4,
+        "ore": 84,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 29280
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00",
+    "native_request_id": 395,
+    "decision_id": 306,
+    "town_id": 12,
+    "building_id": 32,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 1000
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 73,
+        "mercury": 4,
+        "ore": 96,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 29780
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31,
+        32,
+        33
+      ],
+      "resources": {
+        "wood": 73,
+        "mercury": 4,
+        "ore": 91,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 28780
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01",
+    "native_request_id": 92,
+    "decision_id": 66,
+    "town_id": 13,
+    "building_id": 16,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 1000
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 24,
+        "mercury": 4,
+        "ore": 16,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 12020
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 19,
+        "mercury": 4,
+        "ore": 16,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 11020
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01",
+    "native_request_id": 360,
+    "decision_id": 278,
+    "town_id": 13,
+    "building_id": 8,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2500
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 79,
+        "mercury": 4,
+        "ore": 16,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 34060
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 79,
+        "mercury": 4,
+        "ore": 11,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 31560
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01",
+    "native_request_id": 498,
+    "decision_id": 389,
+    "town_id": 13,
+    "building_id": 33,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2000
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 107,
+        "mercury": 4,
+        "ore": 11,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 41040
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 107,
+        "mercury": 4,
+        "ore": 6,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 39040
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01",
+    "native_request_id": 893,
+    "decision_id": 699,
+    "town_id": 13,
+    "building_id": 0,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2000
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 229,
+        "mercury": 4,
+        "ore": 110,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 56680
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        0,
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 224,
+        "mercury": 4,
+        "ore": 105,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 54680
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01",
+    "native_request_id": 968,
+    "decision_id": 758,
+    "town_id": 13,
+    "building_id": 9,
+    "cost": {
+      "wood": 10,
+      "mercury": 0,
+      "ore": 10,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 5000
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        0,
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 256,
+        "mercury": 4,
+        "ore": 137,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 58320
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        0,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        30,
+        31,
+        33
+      ],
+      "resources": {
+        "wood": 246,
+        "mercury": 4,
+        "ore": 127,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 53320
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02",
+    "native_request_id": 262,
+    "decision_id": 75,
+    "town_id": 12,
+    "building_id": 8,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2500
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 16,
+        "mercury": 4,
+        "ore": 14,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 15520
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 16,
+        "mercury": 4,
+        "ore": 9,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 13020
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02",
+    "native_request_id": 296,
+    "decision_id": 94,
+    "town_id": 12,
+    "building_id": 16,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 1000
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 18,
+        "mercury": 4,
+        "ore": 13,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 15020
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 13,
+        "mercury": 4,
+        "ore": 13,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 14020
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02",
+    "native_request_id": 410,
+    "decision_id": 117,
+    "town_id": 12,
+    "building_id": 9,
+    "cost": {
+      "wood": 10,
+      "mercury": 0,
+      "ore": 10,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 5000
+    },
+    "before": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 21,
+        "mercury": 4,
+        "ore": 21,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 10160
+      }
+    },
+    "after": {
+      "town_id": 12,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 11,
+        "mercury": 4,
+        "ore": 11,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 5160
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-03",
+    "native_request_id": 33,
+    "decision_id": 1,
+    "town_id": 13,
+    "building_id": 14,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 500
+    },
+    "before": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 10,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 8300
+      }
+    },
+    "after": {
+      "town_id": 13,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        14,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 5,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 7800
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04",
+    "native_request_id": 4,
+    "decision_id": 1,
+    "town_id": 18,
+    "building_id": 8,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2500
+    },
+    "before": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 18,
+        "mercury": 4,
+        "ore": 18,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 7500
+      }
+    },
+    "after": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 18,
+        "mercury": 4,
+        "ore": 13,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 5000
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04",
+    "native_request_id": 152,
+    "decision_id": 95,
+    "town_id": 18,
+    "building_id": 14,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 500
+    },
+    "before": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 42,
+        "mercury": 4,
+        "ore": 20,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 21700
+      }
+    },
+    "after": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        14,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 37,
+        "mercury": 4,
+        "ore": 20,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 21200
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04",
+    "native_request_id": 183,
+    "decision_id": 119,
+    "town_id": 18,
+    "building_id": 9,
+    "cost": {
+      "wood": 10,
+      "mercury": 0,
+      "ore": 10,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 5000
+    },
+    "before": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        14,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 43,
+        "mercury": 4,
+        "ore": 20,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 24640
+      }
+    },
+    "after": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 33,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 19640
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-05",
+    "native_request_id": 148,
+    "decision_id": 111,
+    "town_id": 19,
+    "building_id": 0,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 5,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 2000
+    },
+    "before": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 10,
+        "mercury": 4,
+        "ore": 17,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 20080
+      }
+    },
+    "after": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 5,
+        "mercury": 4,
+        "ore": 12,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 18080
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-05",
+    "native_request_id": 183,
+    "decision_id": 139,
+    "town_id": 19,
+    "building_id": 14,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 500
+    },
+    "before": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 5,
+        "mercury": 4,
+        "ore": 12,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 22080
+      }
+    },
+    "after": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        14,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 0,
+        "mercury": 4,
+        "ore": 12,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 21580
+      }
+    }
+  },
+  {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-06",
+    "native_request_id": 107,
+    "decision_id": 29,
+    "town_id": 18,
+    "building_id": 16,
+    "cost": {
+      "wood": 5,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 1000
+    },
+    "before": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 0,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 19,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 8760
+      }
+    },
+    "after": {
+      "town_id": 18,
+      "owner": 0,
+      "built_today": 1,
+      "buildings": [
+        5,
+        7,
+        10,
+        11,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 14,
+        "mercury": 4,
+        "ore": 10,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 7760
+      }
+    }
+  }
+]

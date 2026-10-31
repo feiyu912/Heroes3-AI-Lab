@@ -1,0 +1,169 @@
+{
+  "passed": true,
+  "scope": "Actual archived behavior checkpoint on its certified TRAIN samples; CPU probability replay, not CUDA generator replay or new on-policy collection.",
+  "behavior_checkpoint_sha256": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1",
+  "prior_scale": 64.0,
+  "stop_bias": -4.0008697509765625,
+  "counts": {
+    "rows": 2588,
+    "multiple_moves_plus_stop": 571,
+    "sampled_stop": 21,
+    "sampled_non_argmax": 466,
+    "one_distinct_move_next": 2017,
+    "multiple_candidates_but_one_next": 0,
+    "one_move_plus_stop": 2017
+  },
+  "episodes": [
+    {
+      "cell": 0,
+      "reward": 1.0,
+      "counts": {
+        "rows": 341,
+        "multiple_moves_plus_stop": 71,
+        "sampled_stop": 4,
+        "sampled_non_argmax": 63,
+        "one_distinct_move_next": 270,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 270
+      },
+      "mean_stop_probability": 0.006770069316701129,
+      "median_move_conditional_entropy": 3.921031777011559
+    },
+    {
+      "cell": 1,
+      "reward": 1.0,
+      "counts": {
+        "rows": 268,
+        "multiple_moves_plus_stop": 72,
+        "sampled_stop": 3,
+        "sampled_non_argmax": 67,
+        "one_distinct_move_next": 196,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 196
+      },
+      "mean_stop_probability": 0.006183254156734948,
+      "median_move_conditional_entropy": 4.138256324704863
+    },
+    {
+      "cell": 2,
+      "reward": -1.0,
+      "counts": {
+        "rows": 76,
+        "multiple_moves_plus_stop": 20,
+        "sampled_stop": 0,
+        "sampled_non_argmax": 16,
+        "one_distinct_move_next": 56,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 56
+      },
+      "mean_stop_probability": 0.005137993487584176,
+      "median_move_conditional_entropy": 3.5356018914431218
+    },
+    {
+      "cell": 3,
+      "reward": -1.0,
+      "counts": {
+        "rows": 276,
+        "multiple_moves_plus_stop": 62,
+        "sampled_stop": 3,
+        "sampled_non_argmax": 46,
+        "one_distinct_move_next": 214,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 214
+      },
+      "mean_stop_probability": 0.004259126865124353,
+      "median_move_conditional_entropy": 3.8273788734112744
+    },
+    {
+      "cell": 4,
+      "reward": 1.0,
+      "counts": {
+        "rows": 207,
+        "multiple_moves_plus_stop": 49,
+        "sampled_stop": 1,
+        "sampled_non_argmax": 43,
+        "one_distinct_move_next": 158,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 158
+      },
+      "mean_stop_probability": 0.005013139651134532,
+      "median_move_conditional_entropy": 3.797701438671841
+    },
+    {
+      "cell": 5,
+      "reward": 1.0,
+      "counts": {
+        "rows": 420,
+        "multiple_moves_plus_stop": 94,
+        "sampled_stop": 5,
+        "sampled_non_argmax": 79,
+        "one_distinct_move_next": 326,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 326
+      },
+      "mean_stop_probability": 0.006765580238242539,
+      "median_move_conditional_entropy": 4.2943071618616155
+    },
+    {
+      "cell": 6,
+      "reward": -1.0,
+      "counts": {
+        "rows": 413,
+        "multiple_moves_plus_stop": 92,
+        "sampled_stop": 3,
+        "sampled_non_argmax": 73,
+        "one_distinct_move_next": 321,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 321
+      },
+      "mean_stop_probability": 0.004129852743086071,
+      "median_move_conditional_entropy": 3.2681254695847786
+    },
+    {
+      "cell": 7,
+      "reward": -1.0,
+      "counts": {
+        "rows": 587,
+        "multiple_moves_plus_stop": 111,
+        "sampled_stop": 2,
+        "sampled_non_argmax": 79,
+        "one_distinct_move_next": 476,
+        "multiple_candidates_but_one_next": 0,
+        "one_move_plus_stop": 476
+      },
+      "mean_stop_probability": 0.003749757222149895,
+      "median_move_conditional_entropy": 3.1870097525995487
+    }
+  ],
+  "sampled_logprob_max_absolute_CPU_error": 5.483137517359182e-07,
+  "mean_stop_probability": 0.005145947662663841,
+  "median_stop_probability": 0.0018412056864076556,
+  "episode_balanced_mean_stop_probability": 0.0052510967100947055,
+  "median_top_probability": 0.9901842601160111,
+  "median_multiple_move_conditional_entropy": 3.7441871075169133,
+  "median_multi_candidate_next_coordinate_entropy": 1.3029739851627584,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent_behavior_probability.py": "37ffae2de4197e29cc2cfc649087fdc1a06cbc0c810677fb6dea8380424e33ca",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/balanced-ack-certified-01/RESULT.json": "a3db7158e290b4220f1196e6560c7f8d1ef4bc4286142f83ac07325c9760dac3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-update-engineering-01/update-1.pt": "74158291dbf4213d4282a96fc620ba6d720707737c79dad01db84e3ac12308e1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/model_io.py": "fbe6d5764c440a53432d3f2c8c5e057dd0f78a9f8ac70a1d4a472353f5c864b3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/load_admitted.py": "5f018f7b03f64179be0c102ad473f8b541b3c0f4570ccc35d6113af9e38c6817",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/episode_balanced_ppo.py": "dcdc00522406c6b03e3efa1279910ddd95749dd2efc3ceceae3fbb95285b0b6d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/model.py": "a221490d49501939e2634aa1e67b2aed46b84fcd7c1862bdbe5a60a4b2f2f072",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/encoder.py": "3c613ab07b3d3a4d09bef544c34883e2ba07c04d9114d55a929ebfbd9b4f5056",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-00/admitted/AUDIT.json": "890cbb78fc16bca20b98cbea9e40de1e01d998ff674d330df8dc122163f511dd",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-01/admitted/AUDIT.json": "ab9d48ff236397f23b223e475b4fda37533817f1c6b4fd3e8dbcd456c29ef377",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-02/admitted/AUDIT.json": "cffa8e15658645835f3bdd6e6c40220aa67c4e88402f586b3bdf40e871eb887f",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-03/admitted/AUDIT.json": "a6f2e881eafe5f26f33ecb729ba59c08ee6d580fd148f971011dba981d418798",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-04/admitted/AUDIT.json": "9a550874983f395beb71454a3f80cc9744e141a046bb2c5d24799673fb9fc71b",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-05/admitted/AUDIT.json": "440feacc661b13a9993b4519c306aa7e2c256220a874e8b49517f51281d9d0f2",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-06/admitted/AUDIT.json": "91531998643d9c1936c3c686b9944610a9936610c350ae5a49932d63ccd9efca",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-reconcile-01/admitted/AUDIT.json": "acbf7ff42058d6ee4e295e187cb7dfe9d46844627c60c9bac2e72dd4e780cabb"
+  },
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "training_samples_admitted": 0,
+  "DEV_labels_used": 0,
+  "limitation": "CPU floating-point logprob check is tolerance-based, not exact original CUDA sampling replay. Distinct immediate next coordinates do not measure long-term destination diversity or action quality."
+}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/runtime/python-heroes3.sh",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-v2/qualify.py",
+    "--checkpoint",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/restored-history/root/heroes3-ai-lab/evaluations/battle-observed-MC-probe-01/MC-update-62.pt",
+    "--prefix",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/verified-repair/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/phase-0/admitted-1.pt",
+    "--profile-certificate",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/python-integrity/PROFILE_CERTIFICATE.json",
+    "--out",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01"
+  ],
+  "worker_exit": 0,
+  "optimizer_step_calls": 0,
+  "leases": [
+    {
+      "fd": 3,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.gpu-learner-lock",
+      "device": 66308,
+      "inode": 2752519
+    },
+    {
+      "fd": 4,
+      "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/WSL\u8fc1\u51fa-20261025/files/root/heroes3-ai-lab/evaluations/.pool-lock",
+      "device": 66308,
+      "inode": 2752520
+    }
+  ],
+  "owned_group_drained": true,
+  "result_sha256": "28d25da4081a354cfa94ccf0cbf70da2a969fa8cce0a155e3204c3e6c66584fe",
+  "controller_sha256": "49002f0547e99cd1b4e1ceeaf929569eac1d8aecbf56adca572012298f8e85a3"
+}

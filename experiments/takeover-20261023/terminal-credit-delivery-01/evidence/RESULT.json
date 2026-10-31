@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "original_run_passed": false,
+  "recovered_comparison": true,
+  "arms": {
+    "control": {
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/update-68.pt",
+      "checkpoint_sha256": "7fc48da22b317d597ef3156670d22b8cd5c901d324b5e039bf5e7aaad6f6d702",
+      "actual_Adam_steps": 8704,
+      "admitted_stage_rows": 4096,
+      "suffix_stage_rows": 4096,
+      "total_native_stage_rows": 8192,
+      "new_Adam_steps": 1024
+    },
+    "candidate": {
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/update-68.pt",
+      "checkpoint_sha256": "e9f7c15cfcf05bbcb37690e40804e2da952094427d38ce60cf4f7753069fbf64",
+      "actual_Adam_steps": 8704,
+      "admitted_stage_rows": 4096,
+      "suffix_stage_rows": 4096,
+      "total_native_stage_rows": 8192,
+      "new_Adam_steps": 1024
+    }
+  },
+  "ability_promotion": false,
+  "DEV": [
+    {
+      "model": "parent60",
+      "opponent": "BattleAI",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/parent60-BattleAI.json",
+      "sha256": "1d36f280f015adcbd336781010ed61c777f47e7bd842f96cf6a28d22449e33f0",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 15,
+        "win_rate": 0.9375,
+        "mean_permanent_units_lost": 93.0,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    },
+    {
+      "model": "parent60",
+      "opponent": "MMAI_MODEL",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/parent60-MMAI_MODEL.json",
+      "sha256": "b94e105385662c72c522752d230781e94e66da0741ce28c48925741fef287b8f",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 14,
+        "win_rate": 0.875,
+        "mean_permanent_units_lost": 91.625,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    },
+    {
+      "model": "control",
+      "opponent": "BattleAI",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/control-BattleAI.json",
+      "sha256": "eaf9e60818b1fb48565ec43040c1e395eb84431ff8d5f9fb34a70025a6e45b96",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 15,
+        "win_rate": 0.9375,
+        "mean_permanent_units_lost": 92.9375,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    },
+    {
+      "model": "control",
+      "opponent": "MMAI_MODEL",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/control-MMAI_MODEL.json",
+      "sha256": "daee18edc98d6f5491b0fa4a4fe5f2483ac2841c2e5614390bd299af7bef1fe2",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 13,
+        "win_rate": 0.8125,
+        "mean_permanent_units_lost": 97.375,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    },
+    {
+      "model": "candidate",
+      "opponent": "BattleAI",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/candidate-BattleAI.json",
+      "sha256": "ae48cd1aa4fe573017cdd9cfeb132109dad1cee74b56ee4c4cf7757e42e187dc",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 15,
+        "win_rate": 0.9375,
+        "mean_permanent_units_lost": 92.9375,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    },
+    {
+      "model": "candidate",
+      "opponent": "MMAI_MODEL",
+      "report": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/dev/candidate-MMAI_MODEL.json",
+      "sha256": "18a4141e8e8ecb5771689734404727dad3cd635d9d94cc8b5220a6a972b08623",
+      "summary": {
+        "policy": "recovered",
+        "battles": 16,
+        "wins": 13,
+        "win_rate": 0.8125,
+        "mean_permanent_units_lost": 96.875,
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0
+      }
+    }
+  ]
+}

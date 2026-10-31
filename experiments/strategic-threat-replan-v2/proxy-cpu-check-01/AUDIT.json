@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "real_archived_states": 17,
+  "scripted_overrides": 12,
+  "model_recommendation_exact": true,
+  "input_immutability": true,
+  "absent_release_and_stop_and_absent_or_weak_threat_fallbacks": true,
+  "source_sha256": {
+    "clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851",
+    "clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29"
+  },
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0
+}

@@ -1,0 +1,21 @@
+{
+  "completed_update": 61,
+  "actual_Adam_each": 7808,
+  "first_target_difference_update": 62,
+  "exact_cross_arm_fields": {
+    "models": true,
+    "optimizer_state_dict": true,
+    "torch_rng_state": true,
+    "cuda_rng_states": true,
+    "python_rng_state": true,
+    "numpy_rng_state": true
+  },
+  "same_first_update_confirmed": true,
+  "native_runs": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "checkpoint_sha256": {
+    "control": "cde6ecccc49e14c3aef4081956768bc6f2d86e4073ee9357f0743c2b22326da7",
+    "candidate": "4725dab0332ad93f3806084ce1fc01803e77f5e5ee6ca861d452b63892062840"
+  }
+}

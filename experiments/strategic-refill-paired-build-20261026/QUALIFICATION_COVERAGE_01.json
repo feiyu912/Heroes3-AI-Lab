@@ -1,0 +1,95 @@
+{
+  "schema": "mechanism-requirement-evidence-map-v1",
+  "full_goal_complete": false,
+  "training_admission_granted": false,
+  "existing_native_games": 8,
+  "new_native_games_by_this_audit": 0,
+  "optimizer_steps": 0,
+  "natural_audit_sha256": "794fe239aaadca0177b530a434b5f604a09f974d57b3165c12244a3ba9e9bfba",
+  "requirements": [
+    {
+      "requirement": "preserve_old_commit_and_optional_refill",
+      "status": "proved_in_registered_contexts",
+      "evidence": "positive-pair-independent-01/AUDIT.json",
+      "scope": "Same native prefix; only one kind4 added. Original commit chosen once before real return."
+    },
+    {
+      "requirement": "seven_slots_incompatible",
+      "status": "proved_in_registered_contexts",
+      "evidence": "full-incompatible-pair-independent-01/AUDIT.json",
+      "scope": "Real remote recruit leaves positive stock; no extra refill move."
+    },
+    {
+      "requirement": "seven_slots_merge",
+      "status": "proved_in_registered_contexts",
+      "evidence": "full-merge-pair-independent-01/AUDIT.json",
+      "scope": "Seven slots remain seven; real what2 merge changes count1 to2."
+    },
+    {
+      "requirement": "empty_town",
+      "status": "proved_in_registered_contexts",
+      "evidence": "empty-pair-independent-01/AUDIT.json",
+      "scope": "No recruit and no stock/refill exception."
+    },
+    {
+      "requirement": "committed_kind4_deduplication",
+      "status": "proved_in_registered_contexts",
+      "evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/natural-independent-01/AUDIT.json",
+      "scope": "Town chosen at request4; request5 has exactly one Town move while still away and stock remains positive."
+    },
+    {
+      "requirement": "current_tile_normal_auto_transfer",
+      "status": "proved_as_joint_arrival_depletion_context",
+      "evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/natural-independent-01/AUDIT.json",
+      "scope": "Actual pre-transfer state positive; full transfer ACK; next policy at town has empty stock and no zero-length Town move."
+    },
+    {
+      "requirement": "current_tile_receivable_positive_stock_at_policy",
+      "status": "not_observable_under_existing_auto_transfer",
+      "evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/natural-independent-01/AUDIT.json",
+      "scope": "Cannot claim isolated positive receivable-stock policy test; native auto-transfer precedes request. Do not disable executor to manufacture it."
+    },
+    {
+      "requirement": "old_town_goal_invalid_after_arrival_and_depletion",
+      "status": "proved_as_joint_arrival_depletion_context",
+      "evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/natural-independent-01/AUDIT.json",
+      "scope": "Old Town goal absent and 44 free movement choices in same turn; individual causes not identified."
+    },
+    {
+      "requirement": "unreachable_owned_town",
+      "status": "pending_native_boundary",
+      "evidence": "../strategic-refill-boundaries-20261026/FIXTURE_MANIFEST.json",
+      "scope": "Prepared water ring is not runtime path proof; require same reachable-stock control."
+    },
+    {
+      "requirement": "nonowned_town",
+      "status": "pending_native_boundary",
+      "evidence": "../strategic-refill-boundaries-20261026/FIXTURE_MANIFEST.json",
+      "scope": "Prepared owner-only change needs actual visibility/owner distinction and no own-town exception."
+    },
+    {
+      "requirement": "old_consumed_pickup_goal",
+      "status": "pending_native_boundary",
+      "evidence": "../strategic-refill-boundaries-20261026/FIXTURE_MANIFEST.json",
+      "scope": "Actual pickup consumption and free reselection still require native evidence."
+    },
+    {
+      "requirement": "legacy_v4_buildonly_v5",
+      "status": "pending_native_boundary",
+      "evidence": "../strategic-refill-boundaries-20261026/FIXTURE_MANIFEST.json",
+      "scope": "Mode-specific real protocol and complete terminal/drain still pending."
+    },
+    {
+      "requirement": "learned_recruitment_strength",
+      "status": "not_achieved",
+      "evidence": null,
+      "scope": "No PPO or strength games. Diagnostic scripted selectors are not a learned policy."
+    },
+    {
+      "requirement": "multihero_and_garrison_transfer",
+      "status": "outside_current_singlehero_epoch_not_achieved",
+      "evidence": null,
+      "scope": "schema6 entry admits one owned hero; do not pass an invalid multihero fixture as a boundary test."
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-13",
+  "files": [
+    {
+      "path": "gym-issues.json",
+      "bytes": 12575,
+      "sha256": "34227d7605b9803e05fac136b8fd341f7ce1ca678b54f4466f8cd3136921a0f2"
+    },
+    {
+      "path": "homm3-decomp/config/project.toml",
+      "bytes": 7226,
+      "sha256": "07b78bcb25bdedf2236f6c093023a9b8f25cd2f537ab37bc5299fa22a262d492"
+    },
+    {
+      "path": "homm3-decomp/README.md",
+      "bytes": 12475,
+      "sha256": "4b15fdb5b9f2113591b30e83e5fee55d9e179f8134659f9da1b0ed2308f18ba0"
+    },
+    {
+      "path": "homm3-decomp/src/philai.cpp",
+      "bytes": 168180,
+      "sha256": "f507320e015f24bbc6de0f1885593bf41bc24f041f1a1c0d878ce736a62a397e"
+    },
+    {
+      "path": "homm3-decomp-metadata.json",
+      "bytes": 623017,
+      "sha256": "53e767bdf65ddb99f544df69a8b97c511b8b36a172a68bacc9535f3cb434a364"
+    },
+    {
+      "path": "local-diagnostic.json",
+      "bytes": 878,
+      "sha256": "4a8c5a9f9c46df5f407d2e8d8a62752dd37e622af3080d07b4ca2363e532e8de"
+    },
+    {
+      "path": "rea/README.md",
+      "bytes": 20692,
+      "sha256": "eaa7f452a3d5aa557fa10789dd1dc3e986e2857f41bf3d3f1507822be32c0f6a"
+    },
+    {
+      "path": "rea-metadata.json",
+      "bytes": 1195369,
+      "sha256": "32123300b92fb12dcd19796d9fbd853f2bd29efc8f9e67a4297d28395a8add47"
+    },
+    {
+      "path": "strategic-metadata.json",
+      "bytes": 141,
+      "sha256": "aea43cf3f906603ac5e23ebf542a743d7dfb4a4a1c198499854ede2feff635c4"
+    },
+    {
+      "path": "strategic-README.md",
+      "bytes": 4280,
+      "sha256": "a6c0ac8c89ae23bc2c207aae36ed9cf5bc884dba2bf997c894a94f650a9cbb68"
+    },
+    {
+      "path": "torch-smoke.json",
+      "bytes": 444,
+      "sha256": "e934f93ebaabe46bf9e418759e33badf26e5a91a0546e2b15244740bb6476074"
+    },
+    {
+      "path": "training-fork/AI/MMAI/BAI/v15/BAI_v15.cpp",
+      "bytes": 13439,
+      "sha256": "595f6467240c39c31d8102c53232af806a866c6353c3ceaeb8f32d25e45b3ef6"
+    },
+    {
+      "path": "training-fork/AI/MMAI/BAI/v15/graph/graph_v15.cpp",
+      "bytes": 11924,
+      "sha256": "8f906d522ec83e07a95adb2ddd030482ccf55f9349044955f295a489ea7f4ead"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/constants.h",
+      "bytes": 25801,
+      "sha256": "b931b851a6ce07a71658ee7d98f915681b7629a75efa8304fb69ef800510d1b0"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/encoding.h",
+      "bytes": 805,
+      "sha256": "5bd0e20d01a3b48791fe1de89d26be9bdf9ff61d0c7bc9b4c35be1b86987c907"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/graph.h",
+      "bytes": 8512,
+      "sha256": "35d52711e64fa3713f233486b3b15a3e1e4bd619274bc4498000a3f1223c8c1b"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/schema.h",
+      "bytes": 301,
+      "sha256": "550e035ce36aa4aedd7d5f761bab7e040f07e77f90b9ab69526b7323087b4608"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/types.h",
+      "bytes": 1500,
+      "sha256": "28b9e68bd50b46865518081325e3a359829bfaaf7354aca897dad8d77a919c78"
+    },
+    {
+      "path": "training-fork/AI/MMAI/schema/v15/util.h",
+      "bytes": 1673,
+      "sha256": "77a9e5e4b9073a05ea91b3a1134456d7eba6ea706a8284adb5c8238f3ad91379"
+    },
+    {
+      "path": "training-fork/ML/CMakeLists.txt",
+      "bytes": 1351,
+      "sha256": "7a1e9a03657572f52903e48dc35ea713a02b7ae52d9adab0c97cf6969f50370c"
+    },
+    {
+      "path": "training-fork/ML/MLClient.cpp",
+      "bytes": 25311,
+      "sha256": "f5c06987c3d88ae4d27b2cf7ef507d6a29c56587122a000c7a7e62f9aaa4db59"
+    },
+    {
+      "path": "training-fork/ML/README.md",
+      "bytes": 100,
+      "sha256": "156c98e978f60d26c084c514ee741798cb620c890b9ee1631ba86714db366125"
+    },
+    {
+      "path": "training-fork/server/ML/Config.h",
+      "bytes": 4761,
+      "sha256": "54c6484877c1a24cd7b2602361455f38227d45ad7595c65d936d9d6f3fee6f85"
+    },
+    {
+      "path": "training-fork/server/ML/ServerPlugin.cpp",
+      "bytes": 59904,
+      "sha256": "288b75e72cceab9ad9eb8f5680499b962e4f1429cc75af0df933cf9d765ceded"
+    },
+    {
+      "path": "training-fork-tree.json",
+      "bytes": 1249074,
+      "sha256": "02385f1412c8509be68b3e6b6091456927df8b77c79ca00348431f1f7b635144"
+    },
+    {
+      "path": "vcmi-gym/.gitmodules",
+      "bytes": 504,
+      "sha256": "8a7bf438af60d80bef624740f9ead0fec5190991f54f95bf0655a8cc0056f330"
+    },
+    {
+      "path": "vcmi-gym/README.md",
+      "bytes": 4930,
+      "sha256": "6da2aa05cfb8ba4f839ead87341c0a0f2bcb42f342d52239d63350c99261f52b"
+    },
+    {
+      "path": "vcmi-gym/rl/algos/mppo_dna_gnn/dual_vec_env.py",
+      "bytes": 20988,
+      "sha256": "c2176d5b9befff16c29da3ad8554b5d062ebb819099d65a0dd8a001090595327"
+    },
+    {
+      "path": "vcmi-gym/rl/v15/gnn_model.py",
+      "bytes": 19280,
+      "sha256": "1591d596e54c5eaf8bac59e622dbe111e4bdbfd1fc746e4836fd1bd0845c025f"
+    },
+    {
+      "path": "vcmi-gym/rl/v15/ppo_gnn.py",
+      "bytes": 52916,
+      "sha256": "064a401686e3f51560a55e2a177f68a4880255ca96d2b046441b432b8449502d"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/connectors/CMakeLists.txt",
+      "bytes": 2873,
+      "sha256": "e48e2c6d7d84be4e67aa4a2a33c0abbb13211bd60d08964c90801988b8c45bb3"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/connectors/CMakeUserPresets.json",
+      "bytes": 174,
+      "sha256": "1fe3047a1bf5058c01c43743ba722147bd104e137079fd09a6c310893f130973"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/connectors/v15/threadconnector.cpp",
+      "bytes": 23222,
+      "sha256": "e20e2710c3b0ab7c7c4299544b17cf3abbf8126c71dc83ae56c7717b3e71fb44"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v13/pyconnector.py",
+      "bytes": 9668,
+      "sha256": "2df6a10af6fe7df6d18e5a72bfecfdcde28e38b83858835e8669d96f8a60ed3a"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v13/vcmi_env.py",
+      "bytes": 25544,
+      "sha256": "274d1b1d2a7d3ef15f8bc0130290ec925e71015d25dce5d990e1878e97f151ea"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v15/__init__.py",
+      "bytes": 165,
+      "sha256": "4bbd4a442823923d12d50e86b453e732b28ddf77e26de2434635d9ffb89c5464"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v15/decode.py",
+      "bytes": 4237,
+      "sha256": "75e80e75ad3ff685fb95261b2fd0e1bc07ff7926deefb2d8d16a76798c6fc0d9"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v15/pyconnector.py",
+      "bytes": 8776,
+      "sha256": "3de5d7f300fcd99dd7abae077015cbd9e0297ceba6ddcf5328f1847fc5ed2c26"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v15/test_helper.py",
+      "bytes": 3146,
+      "sha256": "7afff489c0c3bab9e8e204fe8c489d1d44b29021ea3d3675fc06c6d4f12acafe"
+    },
+    {
+      "path": "vcmi-gym/vcmi_gym/envs/v15/vcmi_env.py",
+      "bytes": 25526,
+      "sha256": "9f282fbe36d09afec7b3a8171c6901e2875c0777b3e596b99f41c67368cc880d"
+    },
+    {
+      "path": "vcmi-gym-metadata.json",
+      "bytes": 157632,
+      "sha256": "63c2b324e17e6c3f5516a7f3cae327b9f6d2a253b4b6d4d86b2581107fc6d9eb"
+    },
+    {
+      "path": "vcmi-mmai-issues.json",
+      "bytes": 55151,
+      "sha256": "f5ccf277274c0b0ce44a0868274a24b839e1a197e1ec2e6bc3987bcd198a2857"
+    }
+  ]
+}

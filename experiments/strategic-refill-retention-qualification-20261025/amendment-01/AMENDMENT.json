@@ -1,0 +1,7 @@
+{
+  "reason": "Before any native launch: correct report count ten to nine modules and explicitly bind the archived raw state input already hashed by prepare checks.",
+  "old_freeze_sha256": "b9dfe89abd6cdec2fe0082cc9365dec780046d4da3e0ba8ed37981f7246d5c4e",
+  "new_native_runs": 0,
+  "optimizer_steps": 0,
+  "preserved_original_report_sha256": "152069a4a492e706d937141d6a85fa081292fca78b8d64ff888fde5ba1a9e6b1"
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "actual_original_games_recoverable": 11,
+  "recovered_ids": [
+    {
+      "scenario": "diverse-192",
+      "role": "attacker",
+      "seed": 2026122800
+    },
+    {
+      "scenario": "diverse-192",
+      "role": "defender",
+      "seed": 2026122800
+    },
+    {
+      "scenario": "diverse-193",
+      "role": "attacker",
+      "seed": 2026122900
+    },
+    {
+      "scenario": "diverse-193",
+      "role": "defender",
+      "seed": 2026122900
+    },
+    {
+      "scenario": "diverse-194",
+      "role": "attacker",
+      "seed": 2026123000
+    },
+    {
+      "scenario": "diverse-194",
+      "role": "defender",
+      "seed": 2026123000
+    },
+    {
+      "scenario": "diverse-195",
+      "role": "attacker",
+      "seed": 2026123100
+    },
+    {
+      "scenario": "diverse-195",
+      "role": "defender",
+      "seed": 2026123100
+    },
+    {
+      "scenario": "diverse-196",
+      "role": "attacker",
+      "seed": 2026123200
+    },
+    {
+      "scenario": "diverse-196",
+      "role": "defender",
+      "seed": 2026123200
+    },
+    {
+      "scenario": "diverse-197",
+      "role": "attacker",
+      "seed": 2026123300
+    }
+  ],
+  "CPU_close_exit_regression": true,
+  "missing_shutdown_nonzero_traceback_rejected": [
+    "nonzero",
+    "no_shutdown",
+    "traceback"
+  ],
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "GPU_operations": 0
+}

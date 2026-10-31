@@ -1,0 +1,428 @@
+{
+  "cpu_fake_only": true,
+  "cases": [
+    {
+      "case": "none",
+      "expected_accept": true,
+      "actual_accept": true,
+      "accepted_samples": 8,
+      "update_allowed": true,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "move",
+      "expected_accept": false,
+      "actual_accept": false,
+      "accepted_samples": 0,
+      "update_allowed": false,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": false,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 1,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [
+            {
+              "file": "/tmp/throughput-synthetic-7gtg_cy3/workers/adv-runs/vector-4630c1cb-0-2026102600-o5z4brxp/strategy-trace.jsonl",
+              "line": 1,
+              "event": "move_failed",
+              "text": "{\"event\": \"move_failed\", \"day\": 1}"
+            }
+          ],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "native_failure_or_unconfirmed_execution"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 3,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 3,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "economy",
+      "expected_accept": false,
+      "actual_accept": false,
+      "accepted_samples": 0,
+      "update_allowed": false,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": false,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 0,
+            "economy_failed": 1,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [
+            {
+              "file": "/tmp/throughput-synthetic-uhgs8fe7/workers/adv-runs/vector-0421ed40-0-2026102600-41tvnwv7/strategy-trace.jsonl",
+              "line": 1,
+              "event": "economy_failed",
+              "text": "{\"event\": \"economy_failed\", \"day\": 1}"
+            }
+          ],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 1,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": true,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution_terminal_ack_missing"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "query",
+      "expected_accept": false,
+      "actual_accept": false,
+      "accepted_samples": 0,
+      "update_allowed": false,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": false,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 1,
+            "server_rejected": 1
+          },
+          "evidence": [
+            {
+              "file": "/tmp/throughput-synthetic-j87v1osl/workers/adv-runs/vector-0e3e643a-0-2026102600-0hh92219/client.log",
+              "line": 5,
+              "event": "server_rejected",
+              "text": "Got false in applying 10QueryReply... that request must have been fishy!"
+            }
+          ],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "native_failure_or_unconfirmed_execution"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 3,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 3,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "terminal_ack",
+      "expected_accept": true,
+      "actual_accept": true,
+      "accepted_samples": 8,
+      "update_allowed": true,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 1,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": true,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution_terminal_ack_missing"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "terminal_pending",
+      "expected_accept": false,
+      "actual_accept": false,
+      "accepted_samples": 0,
+      "update_allowed": false,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": false,
+          "counts": {
+            "move_applied": 3,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 3,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 1,
+          "missing_execution_reply_count": 1,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [
+            3
+          ],
+          "classification": "native_failure_or_unconfirmed_execution"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 0,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    },
+    {
+      "case": "blocking",
+      "expected_accept": true,
+      "actual_accept": true,
+      "accepted_samples": 8,
+      "update_allowed": true,
+      "remaining": [],
+      "event_audits": [
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 4,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        },
+        {
+          "valid": true,
+          "counts": {
+            "move_applied": 4,
+            "move_failed": 0,
+            "economy_failed": 0,
+            "query_failed": 0,
+            "server_rejected": 0
+          },
+          "evidence": [],
+          "move_reply_count": 4,
+          "failed_move_reply_count": 0,
+          "blocking_visit_reply_count": 4,
+          "expected_actions": 4,
+          "missing_ack_count": 0,
+          "missing_execution_reply_count": 0,
+          "terminal_ack_missing_after_execution": false,
+          "terminal_native_visit_execution_proof": null,
+          "terminal_unconfirmed_action_indices": [],
+          "classification": "complete_execution"
+        }
+      ]
+    }
+  ],
+  "terminal_battle_proof": {
+    "valid": true,
+    "counts": {
+      "move_applied": 3,
+      "move_failed": 0,
+      "economy_failed": 0,
+      "query_failed": 0,
+      "server_rejected": 0
+    },
+    "evidence": [],
+    "move_reply_count": 3,
+    "failed_move_reply_count": 0,
+    "blocking_visit_reply_count": 0,
+    "expected_actions": 4,
+    "missing_ack_count": 1,
+    "missing_execution_reply_count": 1,
+    "terminal_ack_missing_after_execution": false,
+    "terminal_native_visit_execution_proof": {
+      "action_index": 3,
+      "server_request_line": 5,
+      "native_hero": "fixture hero",
+      "hero_visit_line": 7,
+      "battle_or_capture_outcome_line": 8,
+      "target": [
+        11,
+        10,
+        0
+      ],
+      "kind": 0,
+      "note": "Last military target request was received, this hero visited it, and native battle/capture outcome preceded terminal; no move reply/ACK is required to infer a nonexistent displacement."
+    },
+    "terminal_unconfirmed_action_indices": [],
+    "classification": "terminal_native_visit_execution_confirmed"
+  },
+  "optimizer_steps": 0,
+  "passed": true
+}

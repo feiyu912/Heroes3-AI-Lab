@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "new_native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "DEV_inputs_used": false,
+  "actual_TRAIN_requests": 2089,
+  "requests_with_build_candidates": 288,
+  "total_build_candidates": 806,
+  "exact_row_collision_groups": 0,
+  "requests_with_collisions": 0,
+  "same_town_distinct_building_collision_groups": 0,
+  "same_town_tavern_market_collision_groups": 0,
+  "candidate_counts_by_building_id": {
+    "0": 122,
+    "8": 138,
+    "14": 96,
+    "16": 88,
+    "9": 23,
+    "33": 110,
+    "12": 62,
+    "13": 24,
+    "21": 63,
+    "32": 29,
+    "34": 24,
+    "35": 27
+  },
+  "observed_tavern_market_costs": {
+    "14": [
+      {
+        "wood": 5,
+        "mercury": 0,
+        "ore": 0,
+        "sulfur": 0,
+        "crystal": 0,
+        "gems": 0,
+        "gold": 500
+      }
+    ]
+  },
+  "collision_pair_counts": [],
+  "actual_building_state_change_pairs": 41,
+  "actual_change_pairs_with_identical_encoder": 0,
+  "actual_complete_input_collisions_differing_town_facts": 1,
+  "constructed_discarded_input_checks": [
+    {
+      "field": "buildings",
+      "town_id": 12,
+      "before": [
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "after": [
+        1,
+        5,
+        7,
+        10,
+        11,
+        30,
+        31
+      ],
+      "complete_encoded_input_identical": true,
+      "CPU_constructed_not_native": true,
+      "altered_candidates_not_native_legality_certified": true
+    },
+    {
+      "field": "faction_id",
+      "town_id": 12,
+      "before": 0,
+      "after": 1,
+      "complete_encoded_input_identical": true,
+      "CPU_constructed_not_native": true,
+      "altered_candidates_not_native_legality_certified": true
+    }
+  ],
+  "native_semantics": {
+    "tavern": {
+      "building_id": 5,
+      "shared_definition": {
+        "id": 5,
+        "bonuses": [
+          {
+            "type": "MORALE",
+            "val": 1
+          },
+          {
+            "propagator": "PLAYER",
+            "type": "THIEVES_GUILD_ACCESS",
+            "val": 1
+          }
+        ]
+      },
+      "castle_definition": {}
+    },
+    "marketplace": {
+      "building_id": 14,
+      "shared_definition": {
+        "id": 14,
+        "marketModes": [
+          "resource-resource",
+          "resource-player"
+        ],
+        "bonuses": [
+          {
+            "propagator": "PLAYER",
+            "type": "MARKETPLACE_ACCESS",
+            "val": 1
+          }
+        ]
+      },
+      "castle_definition": {}
+    }
+  },
+  "enum_excerpts": [
+    {
+      "line": 302,
+      "text": "\t\tTAVERN,             SHIPYARD,        FORT,              CITADEL,         CASTLE,"
+    },
+    {
+      "line": 303,
+      "text": "\t\tVILLAGE_HALL,       TOWN_HALL,       CITY_HALL,         CAPITOL,         MARKETPLACE,"
+    },
+    {
+      "line": 306,
+      "text": "\t\tHORDE_2_UPGR,       GRAIL,           EXTRA_TOWN_HALL,   EXTRA_CITY_HALL, EXTRA_CAPITOL,"
+    },
+    {
+      "line": 520,
+      "text": "\t\tTAVERN = 95,"
+    }
+  ],
+  "native_sources": {
+    "config/buildingsLibrary.json": {
+      "path": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/bin/config/buildingsLibrary.json",
+      "sha256": "6a0ceada7ae3619abf8a840b6a04265ad7a1b64b63a0233b2e5790b2e17528e4",
+      "manifest_verified": true
+    },
+    "config/factions/castle.json": {
+      "path": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/bin/config/factions/castle.json",
+      "sha256": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b",
+      "manifest_verified": true
+    },
+    "lib/constants/EntityIdentifiers.h": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/constants/EntityIdentifiers.h",
+      "sha256": "9f4f444764b164868c3fa4541d57768d8d057a93c9ca88183de03738a1605208",
+      "manifest_verified": true
+    }
+  },
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/build-source-manifest.json": "b6e8131d4955151c57b562aef40f69701ff6cf734900e22c766b7332f71d7812",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/EXECUTION.json": "20beb0992220e287864226c72069591db8420a7caf54502be7c4a6b1d91d2453",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/bin/config/buildingsLibrary.json": "6a0ceada7ae3619abf8a840b6a04265ad7a1b64b63a0233b2e5790b2e17528e4",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02/bin/config/factions/castle.json": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/constants/EntityIdentifiers.h": "9f4f444764b164868c3fa4541d57768d8d057a93c9ca88183de03738a1605208",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/admitted/AUDIT.json": "204d81a9d0a783dbed1f29ea602dff9fb0a0b6cd68558a8884caabbaac3362bc",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/admitted/AUDIT.json": "582b5fb964f32718449dff0e4115374312d3477fc4971537836fa03f059c86ff",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/admitted/AUDIT.json": "673a47ae97e7acd018538e578f4f9461405ec885bcf711cb3ed5cf20400708e8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/admitted/AUDIT.json": "68e9426a5275e8508aa6501ae3ca0c285298cef725943346fc23a721d8a91a15",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/admitted/AUDIT.json": "65fa4ecbb7ca83da47ec31cf03db9496824a9c109cd43d17faade7999df3b6bf",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/admitted/AUDIT.json": "f4206abbfe263d755fdc2922439af706ba310e7c8301b31ce9842d32c135b1ff",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/admitted/AUDIT.json": "fcb34a83809e7083ad48ef03d704dd92dfd53fdc0452ff6e81d77058dd4c251c",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/admitted/AUDIT.json": "ef62f029e70fc4cfa5cf1e5c7afe81cc8fff158eb0189c098ec355e48ae520cd"
+  },
+  "rechecked_original_raw_source_runtime_inputs": 2460,
+  "encoder_wrapper_sha256": "eff4ed9ba88c3070d162a2c6ee16f002e21c4ec2287c7c9ca48a11a47e12fb72",
+  "actual_encoder_sha256": "77210fd938d0e114e64f6d302f7749dc2a28e76c99e30d1a2488bd7afd02a259",
+  "auditor_sha256": "55dd02deffbb62e66bf409d086f838811066248974063bb35b54beb6fe3003a9",
+  "limitation": "Identifiability evidence on this TRAIN set only. It is separate from the q4 return-home branch and does not establish any game outcome cause or an improvement."
+}

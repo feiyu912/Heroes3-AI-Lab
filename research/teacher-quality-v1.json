@@ -1,0 +1,39 @@
+{
+  "dataset": "/root/heroes3-ai-lab/datasets/teacher-balanced-v1",
+  "run_id": "1791980945936628152",
+  "schema": "lab-teacher-v1/vcmi-v15",
+  "episodes": 864,
+  "steps": 20415,
+  "splits": {
+    "train": {
+      "battles": 480,
+      "steps": 11124,
+      "unique_states": 9496
+    },
+    "validation": {
+      "battles": 144,
+      "steps": 3442,
+      "unique_states": 3005
+    },
+    "test": {
+      "battles": 240,
+      "steps": 5849,
+      "unique_states": 5165
+    }
+  },
+  "action_types": {
+    "0": 5858,
+    "4": 4008,
+    "2": 2639,
+    "3": 7910
+  },
+  "exact_state_overlap": {
+    "train/validation": 0,
+    "train/test": 0,
+    "validation/test": 0
+  },
+  "failures": 0,
+  "wall_seconds": 41.42500788800001,
+  "workers": 12,
+  "teacher_patch_sha256": "ef6d92c62a4fa6e93b8a3c464ff13519d1cc6813f37e24003794033c219c1570"
+}

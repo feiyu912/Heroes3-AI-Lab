@@ -1,0 +1,1710 @@
+{
+  "passed_completed_prefix": true,
+  "CPU_read_only": true,
+  "no_polling": true,
+  "audit_optimizer_steps": 0,
+  "new_native_games": 0,
+  "inspected_complete_updates": [
+    {
+      "update": 2,
+      "parent_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2",
+      "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b",
+      "protocol_sha256": "64d424b904251d38f43249527c246208062da4539f62230c55757034b57137ff",
+      "explicit_optimizer_reset": false,
+      "new_CUDA_optimizer_steps": 148,
+      "cumulative_same_optimizer_steps": 268,
+      "parameter_step_increments": {
+        "actor.stop_bias": 148,
+        "actor.build_bias": 148,
+        "actor.0.weight": 148,
+        "actor.0.bias": 148,
+        "actor.2.weight": 148,
+        "actor.2.bias": 148,
+        "actor.4.weight": 148,
+        "actor.4.bias": 148,
+        "critic.0.weight": 148,
+        "critic.0.bias": 148,
+        "critic.2.weight": 148,
+        "critic.2.bias": 148,
+        "critic.4.weight": 148,
+        "critic.4.bias": 148
+      },
+      "parameter_moments": {
+        "actor.stop_bias": {
+          "step": 268,
+          "exp_avg_l2": 0.0027244100347161293,
+          "exp_avg_sq_l2": 0.00025360932340845466
+        },
+        "actor.build_bias": {
+          "step": 268,
+          "exp_avg_l2": 0.002734478795900941,
+          "exp_avg_sq_l2": 9.339598909718916e-05
+        },
+        "actor.0.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.002360348413605589,
+          "exp_avg_sq_l2": 8.027156719390056e-06
+        },
+        "actor.0.bias": {
+          "step": 268,
+          "exp_avg_l2": 0.00011013281775148105,
+          "exp_avg_sq_l2": 5.446757549005906e-08
+        },
+        "actor.2.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.0007120377845157697,
+          "exp_avg_sq_l2": 5.126697315793221e-07
+        },
+        "actor.2.bias": {
+          "step": 268,
+          "exp_avg_l2": 3.0250173581240886e-05,
+          "exp_avg_sq_l2": 9.834092267165458e-09
+        },
+        "actor.4.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.003709732216511092,
+          "exp_avg_sq_l2": 0.00018018218607199416
+        },
+        "actor.4.bias": {
+          "step": 268,
+          "exp_avg_l2": 5.161634231143353e-09,
+          "exp_avg_sq_l2": 6.958009716991084e-17
+        },
+        "critic.0.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.04789513944355455,
+          "exp_avg_sq_l2": 0.0006109982668605165
+        },
+        "critic.0.bias": {
+          "step": 268,
+          "exp_avg_l2": 0.011085259211301922,
+          "exp_avg_sq_l2": 0.0003693416533863417
+        },
+        "critic.2.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.01615657453383918,
+          "exp_avg_sq_l2": 2.7241137385171103e-05
+        },
+        "critic.2.bias": {
+          "step": 268,
+          "exp_avg_l2": 0.004288485112887028,
+          "exp_avg_sq_l2": 6.899393884988027e-05
+        },
+        "critic.4.weight": {
+          "step": 268,
+          "exp_avg_l2": 0.011050217450361149,
+          "exp_avg_sq_l2": 0.00015734262453712217
+        },
+        "critic.4.bias": {
+          "step": 268,
+          "exp_avg_l2": 0.003728599986061454,
+          "exp_avg_sq_l2": 0.0006403674487955868
+        }
+      },
+      "samples": 2363,
+      "policy_builds": 41,
+      "actual_build_categories": {
+        "infrastructure": 30,
+        "dwelling": 8,
+        "income": 3
+      },
+      "candidate_categories": {
+        "infrastructure": 622,
+        "dwelling": 117,
+        "income": 27
+      },
+      "training_wins": 4,
+      "training_losses": 4,
+      "build_bias": 1.4930193424224854,
+      "CPU_model_load_exact": true,
+      "cells": [
+        {
+          "cell": 0,
+          "rows": 333,
+          "builds": {
+            "infrastructure": 4,
+            "dwelling": 2
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103000,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 1,
+          "rows": 961,
+          "builds": {
+            "infrastructure": 6,
+            "dwelling": 2
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103001,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 2,
+          "rows": 167,
+          "builds": {
+            "infrastructure": 3,
+            "dwelling": 1,
+            "income": 1
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103002,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 3,
+          "rows": 88,
+          "builds": {
+            "infrastructure": 3
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103003,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 4,
+          "rows": 261,
+          "builds": {
+            "infrastructure": 4
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103004,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 5,
+          "rows": 390,
+          "builds": {
+            "infrastructure": 6,
+            "dwelling": 3,
+            "income": 2
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103005,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 6,
+          "rows": 58,
+          "builds": {
+            "infrastructure": 2
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103006,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        },
+        {
+          "cell": 7,
+          "rows": 105,
+          "builds": {
+            "infrastructure": 2
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103007,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 1,
+            "checkpoint_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2"
+          }
+        }
+      ],
+      "builds": [
+        {
+          "cell": "cell-00",
+          "decision_id": 9,
+          "native_request_id": 16,
+          "day": 2,
+          "town_id": 12,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 49,
+          "native_request_id": 66,
+          "day": 7,
+          "town_id": 12,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 54,
+          "native_request_id": 72,
+          "day": 8,
+          "town_id": 12,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 116,
+          "native_request_id": 152,
+          "day": 16,
+          "town_id": 12,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 119,
+          "native_request_id": 156,
+          "day": 17,
+          "town_id": 12,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 240,
+          "native_request_id": 323,
+          "day": 34,
+          "town_id": 12,
+          "building_id": 32,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 46,
+          "native_request_id": 63,
+          "day": 7,
+          "town_id": 13,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 76,
+          "native_request_id": 99,
+          "day": 11,
+          "town_id": 13,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 109,
+          "native_request_id": 139,
+          "day": 15,
+          "town_id": 13,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 129,
+          "native_request_id": 166,
+          "day": 18,
+          "town_id": 13,
+          "building_id": 32,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 175,
+          "native_request_id": 227,
+          "day": 27,
+          "town_id": 13,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 225,
+          "native_request_id": 292,
+          "day": 34,
+          "town_id": 13,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 254,
+          "native_request_id": 334,
+          "day": 40,
+          "town_id": 13,
+          "building_id": 21,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 618,
+          "native_request_id": 844,
+          "day": 98,
+          "town_id": 13,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 1,
+          "native_request_id": 4,
+          "day": 1,
+          "town_id": 12,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 52,
+          "native_request_id": 237,
+          "day": 8,
+          "town_id": 12,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 65,
+          "native_request_id": 315,
+          "day": 11,
+          "town_id": 12,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 99,
+          "native_request_id": 442,
+          "day": 15,
+          "town_id": 12,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 109,
+          "native_request_id": 482,
+          "day": 16,
+          "town_id": 12,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-03",
+          "decision_id": 12,
+          "native_request_id": 81,
+          "day": 3,
+          "town_id": 13,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-03",
+          "decision_id": 22,
+          "native_request_id": 110,
+          "day": 4,
+          "town_id": 13,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-03",
+          "decision_id": 40,
+          "native_request_id": 237,
+          "day": 6,
+          "town_id": 13,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 10,
+          "native_request_id": 17,
+          "day": 2,
+          "town_id": 18,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 64,
+          "native_request_id": 88,
+          "day": 9,
+          "town_id": 18,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 150,
+          "native_request_id": 197,
+          "day": 22,
+          "town_id": 18,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 169,
+          "native_request_id": 221,
+          "day": 24,
+          "town_id": 18,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 10,
+          "native_request_id": 18,
+          "day": 2,
+          "town_id": 19,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 59,
+          "native_request_id": 79,
+          "day": 9,
+          "town_id": 19,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 111,
+          "native_request_id": 144,
+          "day": 16,
+          "town_id": 19,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 121,
+          "native_request_id": 168,
+          "day": 17,
+          "town_id": 19,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 160,
+          "native_request_id": 214,
+          "day": 22,
+          "town_id": 19,
+          "building_id": 34,
+          "category": "dwelling",
+          "cost": {
+            "wood": 5,
+            "mercury": 2,
+            "ore": 5,
+            "sulfur": 2,
+            "crystal": 2,
+            "gems": 2,
+            "gold": 3000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 179,
+          "native_request_id": 245,
+          "day": 24,
+          "town_id": 19,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 185,
+          "native_request_id": 252,
+          "day": 25,
+          "town_id": 19,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 202,
+          "native_request_id": 272,
+          "day": 27,
+          "town_id": 19,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 299,
+          "native_request_id": 407,
+          "day": 41,
+          "town_id": 19,
+          "building_id": 32,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 361,
+          "native_request_id": 494,
+          "day": 49,
+          "town_id": 19,
+          "building_id": 21,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 381,
+          "native_request_id": 527,
+          "day": 51,
+          "town_id": 19,
+          "building_id": 13,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 10000
+          }
+        },
+        {
+          "cell": "cell-06",
+          "decision_id": 13,
+          "native_request_id": 64,
+          "day": 3,
+          "town_id": 18,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-06",
+          "decision_id": 22,
+          "native_request_id": 95,
+          "day": 4,
+          "town_id": 18,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-07",
+          "decision_id": 13,
+          "native_request_id": 120,
+          "day": 4,
+          "town_id": 19,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-07",
+          "decision_id": 32,
+          "native_request_id": 244,
+          "day": 8,
+          "town_id": 19,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        }
+      ]
+    },
+    {
+      "update": 3,
+      "parent_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b",
+      "checkpoint_sha256": "317b0b527aa765b51533a7ffaade92240bac4e739d1ee4227480a2d8890d664d",
+      "protocol_sha256": "64d424b904251d38f43249527c246208062da4539f62230c55757034b57137ff",
+      "explicit_optimizer_reset": false,
+      "new_CUDA_optimizer_steps": 108,
+      "cumulative_same_optimizer_steps": 376,
+      "parameter_step_increments": {
+        "actor.stop_bias": 108,
+        "actor.build_bias": 108,
+        "actor.0.weight": 108,
+        "actor.0.bias": 108,
+        "actor.2.weight": 108,
+        "actor.2.bias": 108,
+        "actor.4.weight": 108,
+        "actor.4.bias": 108,
+        "critic.0.weight": 108,
+        "critic.0.bias": 108,
+        "critic.2.weight": 108,
+        "critic.2.bias": 108,
+        "critic.4.weight": 108,
+        "critic.4.bias": 108
+      },
+      "parameter_moments": {
+        "actor.stop_bias": {
+          "step": 376,
+          "exp_avg_l2": 0.0037841873709112406,
+          "exp_avg_sq_l2": 0.00039243511855602264
+        },
+        "actor.build_bias": {
+          "step": 376,
+          "exp_avg_l2": 0.0013942164368927479,
+          "exp_avg_sq_l2": 0.00012062931637046859
+        },
+        "actor.0.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.0046957049070695134,
+          "exp_avg_sq_l2": 1.620304513619073e-05
+        },
+        "actor.0.bias": {
+          "step": 376,
+          "exp_avg_l2": 0.0001763058327898582,
+          "exp_avg_sq_l2": 1.2019710615113166e-07
+        },
+        "actor.2.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.0014701271790139188,
+          "exp_avg_sq_l2": 9.011967866791572e-07
+        },
+        "actor.2.bias": {
+          "step": 376,
+          "exp_avg_l2": 5.414411009188271e-05,
+          "exp_avg_sq_l2": 2.0604286062487456e-08
+        },
+        "actor.4.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.0038349835885404635,
+          "exp_avg_sq_l2": 0.0003035939405312154
+        },
+        "actor.4.bias": {
+          "step": 376,
+          "exp_avg_l2": 4.778250684012164e-09,
+          "exp_avg_sq_l2": 8.990170135885219e-17
+        },
+        "critic.0.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.04900205500022528,
+          "exp_avg_sq_l2": 0.0008263066823162182
+        },
+        "critic.0.bias": {
+          "step": 376,
+          "exp_avg_l2": 0.01713272520161892,
+          "exp_avg_sq_l2": 0.000500971296466583
+        },
+        "critic.2.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.013741501249032066,
+          "exp_avg_sq_l2": 3.345382097840515e-05
+        },
+        "critic.2.bias": {
+          "step": 376,
+          "exp_avg_l2": 0.0069951811681499415,
+          "exp_avg_sq_l2": 8.585868973687591e-05
+        },
+        "critic.4.weight": {
+          "step": 376,
+          "exp_avg_l2": 0.02003749720347298,
+          "exp_avg_sq_l2": 0.0001916962904496471
+        },
+        "critic.4.bias": {
+          "step": 376,
+          "exp_avg_l2": 0.007587609346956015,
+          "exp_avg_sq_l2": 0.0007752686506137252
+        }
+      },
+      "samples": 1724,
+      "policy_builds": 25,
+      "actual_build_categories": {
+        "infrastructure": 23,
+        "dwelling": 2
+      },
+      "candidate_categories": {
+        "infrastructure": 546,
+        "dwelling": 189,
+        "income": 52
+      },
+      "training_wins": 4,
+      "training_losses": 4,
+      "build_bias": 1.488717794418335,
+      "CPU_model_load_exact": true,
+      "cells": [
+        {
+          "cell": 0,
+          "rows": 276,
+          "builds": {
+            "infrastructure": 5
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103100,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 1,
+          "rows": 204,
+          "builds": {
+            "infrastructure": 3
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103101,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 2,
+          "rows": 247,
+          "builds": {
+            "infrastructure": 2
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103102,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 3,
+          "rows": 41,
+          "builds": {
+            "infrastructure": 1
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103103,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 4,
+          "rows": 343,
+          "builds": {
+            "infrastructure": 5,
+            "dwelling": 1
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103104,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 5,
+          "rows": 353,
+          "builds": {
+            "infrastructure": 4
+          },
+          "reward": 1.0,
+          "job": {
+            "seed": 2026103105,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 6,
+          "rows": 161,
+          "builds": {
+            "infrastructure": 2,
+            "dwelling": 1
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103106,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        },
+        {
+          "cell": 7,
+          "rows": 99,
+          "builds": {
+            "infrastructure": 1
+          },
+          "reward": -1.0,
+          "job": {
+            "seed": 2026103107,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 2,
+            "checkpoint_sha256": "01b4cb5e4d5cb10e3d0a39ae858ec3dbca5bcab1c8eb948d2dc35581e487d81b"
+          }
+        }
+      ],
+      "builds": [
+        {
+          "cell": "cell-00",
+          "decision_id": 59,
+          "native_request_id": 81,
+          "day": 10,
+          "town_id": 12,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 69,
+          "native_request_id": 93,
+          "day": 11,
+          "town_id": 12,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 86,
+          "native_request_id": 113,
+          "day": 14,
+          "town_id": 12,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 126,
+          "native_request_id": 163,
+          "day": 20,
+          "town_id": 12,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-00",
+          "decision_id": 205,
+          "native_request_id": 262,
+          "day": 33,
+          "town_id": 12,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 27,
+          "native_request_id": 39,
+          "day": 4,
+          "town_id": 13,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 63,
+          "native_request_id": 86,
+          "day": 10,
+          "town_id": 13,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-01",
+          "decision_id": 121,
+          "native_request_id": 156,
+          "day": 17,
+          "town_id": 13,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 104,
+          "native_request_id": 626,
+          "day": 15,
+          "town_id": 12,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-02",
+          "decision_id": 170,
+          "native_request_id": 922,
+          "day": 25,
+          "town_id": 12,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-03",
+          "decision_id": 1,
+          "native_request_id": 29,
+          "day": 1,
+          "town_id": 13,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 33,
+          "native_request_id": 47,
+          "day": 5,
+          "town_id": 18,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 45,
+          "native_request_id": 62,
+          "day": 7,
+          "town_id": 18,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 132,
+          "native_request_id": 183,
+          "day": 19,
+          "town_id": 18,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 141,
+          "native_request_id": 194,
+          "day": 21,
+          "town_id": 18,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 234,
+          "native_request_id": 328,
+          "day": 34,
+          "town_id": 18,
+          "building_id": 21,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-04",
+          "decision_id": 327,
+          "native_request_id": 448,
+          "day": 49,
+          "town_id": 18,
+          "building_id": 9,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 10,
+            "mercury": 0,
+            "ore": 10,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 9,
+          "native_request_id": 17,
+          "day": 2,
+          "town_id": 19,
+          "building_id": 14,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 500
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 16,
+          "native_request_id": 25,
+          "day": 3,
+          "town_id": 19,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 84,
+          "native_request_id": 116,
+          "day": 13,
+          "town_id": 19,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-05",
+          "decision_id": 191,
+          "native_request_id": 275,
+          "day": 33,
+          "town_id": 19,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-06",
+          "decision_id": 1,
+          "native_request_id": 4,
+          "day": 1,
+          "town_id": 18,
+          "building_id": 8,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2500
+          }
+        },
+        {
+          "cell": "cell-06",
+          "decision_id": 58,
+          "native_request_id": 327,
+          "day": 9,
+          "town_id": 18,
+          "building_id": 16,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 1000
+          }
+        },
+        {
+          "cell": "cell-06",
+          "decision_id": 71,
+          "native_request_id": 433,
+          "day": 12,
+          "town_id": 18,
+          "building_id": 33,
+          "category": "dwelling",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        },
+        {
+          "cell": "cell-07",
+          "decision_id": 11,
+          "native_request_id": 83,
+          "day": 3,
+          "town_id": 19,
+          "building_id": 0,
+          "category": "infrastructure",
+          "cost": {
+            "wood": 5,
+            "mercury": 0,
+            "ore": 5,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 2000
+          }
+        }
+      ]
+    }
+  ],
+  "not_yet_complete": [
+    {
+      "target_update": 4,
+      "state": "No stable complete update RESULT published at inspection; no process status inferred"
+    }
+  ],
+  "all3_updates_completed_and_verified": false,
+  "fixed_parent_sha256": "d27d282bbcdaf1f1bf47f13b4b44c40ee1cd82639bedd47db90da5fd6c0da1d2",
+  "protocol_sha256": "64d424b904251d38f43249527c246208062da4539f62230c55757034b57137ff",
+  "raw_source_runtime_hashes_rechecked": 4492,
+  "cumulative_steps_last_verified": 376,
+  "ancestor188_not_in_this_optimizer_epoch": true,
+  "controller_explicitly_external_to_original_checkpoint_protocol": true,
+  "ability_improvement_claim": false,
+  "auditor_sha256": "08eaeb3a0297e762be8b1aeda53c137274863c5b3e7a4c34a0579caafbbadb21",
+  "limitation": "CPU saved-state/parent/source/native-admission audit only. No new CUDA restoration or continuous-vs-split equivalence claim; independent DEV remains separate."
+}

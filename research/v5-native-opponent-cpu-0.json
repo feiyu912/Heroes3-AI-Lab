@@ -1,0 +1,121 @@
+{
+  "config": {
+    "workers": 24,
+    "updates": 4,
+    "rollout": 8,
+    "seed": 20261031,
+    "opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "resume": false,
+    "step_cost": 0.002,
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "balanced_configs": true,
+    "shaping": 0.0,
+    "learning_rate": 0.0001,
+    "entropy_coef": 0.01,
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-native-opponent-cpu-0.json"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792063808588198577/update-4.pt",
+  "records": [
+    {
+      "update": 1,
+      "samples": 192,
+      "steps_per_second": 61.02939058859493,
+      "episodes": 0,
+      "wins": 0,
+      "truncations": 0,
+      "metrics": {
+        "loss": 4.087456650204128,
+        "policy_loss": -0.006363086402416229,
+        "value_loss": 8.208393891652426,
+        "entropy": 1.03772195842531,
+        "approximate_kl": 0.00049390426526467,
+        "gradient_norm": 9.75297654999627,
+        "clip_fraction": 0.006944444444444444,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 2.288818359375e-05
+      },
+      "free_mib": 4944.58203125,
+      "gpu_allocated_mib": 378.4072265625,
+      "gpu_telemetry": {
+        "temperature_c": 43.0,
+        "memory_used_mib": 2211.0,
+        "utilization_percent": 7.0
+      }
+    },
+    {
+      "update": 2,
+      "samples": 192,
+      "steps_per_second": 72.51779061299786,
+      "episodes": 3,
+      "wins": 2,
+      "truncations": 0,
+      "metrics": {
+        "loss": 4.080227745903863,
+        "policy_loss": -0.002911629776159922,
+        "value_loss": 8.185637050204807,
+        "entropy": 0.9679106010331048,
+        "approximate_kl": 0.00016652709907955595,
+        "gradient_norm": 8.379697640736898,
+        "clip_fraction": 0.001736111111111111,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 7.62939453125e-06
+      },
+      "free_mib": 4891.10546875,
+      "gpu_allocated_mib": 378.4072265625
+    },
+    {
+      "update": 3,
+      "samples": 192,
+      "steps_per_second": 83.3208916871044,
+      "episodes": 12,
+      "wins": 6,
+      "truncations": 0,
+      "metrics": {
+        "loss": 5.596017466651069,
+        "policy_loss": -0.002486208660735024,
+        "value_loss": 11.21575599246555,
+        "entropy": 0.9374382164743211,
+        "approximate_kl": 6.463865025175942e-05,
+        "gradient_norm": 12.057207319471571,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 1.1444091796875e-05
+      },
+      "free_mib": 4860.85546875,
+      "gpu_allocated_mib": 378.4072265625
+    },
+    {
+      "update": 4,
+      "samples": 192,
+      "steps_per_second": 81.50285304514894,
+      "episodes": 21,
+      "wins": 14,
+      "truncations": 0,
+      "metrics": {
+        "loss": 7.204826460944282,
+        "policy_loss": -0.0012143392943673665,
+        "value_loss": 14.428223927815756,
+        "entropy": 0.8071224821938409,
+        "approximate_kl": 1.6352161765098572e-05,
+        "gradient_norm": 16.349610222710503,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 3.814697265625e-06
+      },
+      "free_mib": 4814.09375,
+      "gpu_allocated_mib": 378.4072265625
+    }
+  ],
+  "completed": true,
+  "resumed_from_updates": 0,
+  "total_parameters": 8993178,
+  "trainable_parameters": 100356,
+  "reward": "Normal terminal win/loss +/-1, minus 0.002 per owned action; gamma-correct potential coefficient 0.0; artificial truncation bootstraps final observation",
+  "wall_seconds": 49.44127388700008,
+  "source": "Official v15 attacker/defender, frozen graph encoder, head-only PPO",
+  "all_workers_exit_zero": true
+}

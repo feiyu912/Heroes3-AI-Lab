@@ -1,0 +1,41 @@
+{
+  "passed_exact": true,
+  "checkpoint_load_device": "cpu",
+  "policy": "frozen schema4 argmax",
+  "native_load_verified": true,
+  "save_sha256": "e4cd26674bcc10c2d7448c35adfff25b00a4446cb970362a9a2eb65b8956e1ad",
+  "checks": {
+    "strategy-decisions.jsonl": {
+      "exact_bytes": true,
+      "sha256": "572b64292e3bd2d070ffbea9e428dcd901f09abc5b337740e0bda94df58fdc2d"
+    },
+    "strategy-trace.jsonl": {
+      "exact_bytes": true,
+      "sha256": "fff1feea00e9018db6c6764277a8cc8c50de35d1c3030b88eea75e37912bcae2"
+    },
+    "strategy-trace.jsonl.targets.jsonl": {
+      "exact_bytes": true,
+      "sha256": "78c3fc7ec38faf00a6f7525dd090389b0819e8b3d42bbb3e17761560782c7271"
+    },
+    "typed.jsonl": {
+      "exact_bytes": true,
+      "sha256": "b8d24118590ec9d59ad3b1919a8c9f16c4d1e926e1b3f3d05d9059089e34af61"
+    },
+    "agent/typed-broker.jsonl": {
+      "exact_bytes": true,
+      "sha256": "c4a2307f6ba6f53ea8a7f6361b8aed577f67f90a8d0d8bebfc89e42815a4c5c8"
+    },
+    "request-????????.json": {
+      "files": 275,
+      "exact_bytes": true
+    },
+    "action-????????.json": {
+      "files": 275,
+      "exact_bytes": true
+    }
+  },
+  "actions_each": 304,
+  "policy_decisions_each": 275,
+  "optimizer_steps": 0,
+  "scope": "Native day1 own-turn-start save. Not arbitrary midturn/battle or new-schema PPO optimizer/RNG resume."
+}

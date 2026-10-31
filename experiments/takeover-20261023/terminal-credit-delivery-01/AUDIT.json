@@ -1,0 +1,277 @@
+{
+  "passed": true,
+  "scope": "Recovered bounded development comparison; original resource-stopped run remains failed. No promotion or population win-rate certification.",
+  "original_run_passed": false,
+  "recovered_comparison": true,
+  "phases": {
+    "control": [
+      {
+        "phase": 0,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 16,
+        "target_reasons": {
+          "real_terminal_extension": 16
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-micro/AUDIT.json"
+      },
+      {
+        "phase": 1,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "recovered_after_resource_failure": true,
+        "normal_stage_resource_pass": false,
+        "certificate": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/terminal-credit-recovery-review-01/AUDIT.json"
+      },
+      {
+        "phase": 2,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 16,
+        "target_reasons": {
+          "real_terminal_extension": 16
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-2/AUDIT.json"
+      },
+      {
+        "phase": 3,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 16,
+        "target_reasons": {
+          "real_terminal_extension": 16
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/AUDIT.json"
+      }
+    ],
+    "candidate": [
+      {
+        "phase": 0,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 16,
+        "target_reasons": {
+          "real_terminal_extension": 16
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/AUDIT.json"
+      },
+      {
+        "phase": 1,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 14,
+        "target_reasons": {
+          "prefix_already_ended": 2,
+          "real_terminal_extension": 14
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-1/AUDIT.json"
+      },
+      {
+        "phase": 2,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 15,
+        "target_reasons": {
+          "real_terminal_extension": 15,
+          "prefix_already_ended": 1
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-2/AUDIT.json"
+      },
+      {
+        "phase": 3,
+        "admitted": 1024,
+        "suffix": 1024,
+        "native": 2048,
+        "actual_Adam": 256,
+        "eligible_workers": 16,
+        "target_reasons": {
+          "real_terminal_extension": 16
+        },
+        "certificate": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/AUDIT.json"
+      }
+    ]
+  },
+  "new_Adam_per_arm": {
+    "control": 1024,
+    "candidate": 1024
+  },
+  "cumulative_Adam_each": 8704,
+  "training_admitted_rows_each": 4096,
+  "suffix_zero_loss_native_rows_each": 4096,
+  "native_training_transitions_both_arms": 16384,
+  "additional_zero_optimizer_qualification_transitions": 2048,
+  "DEV_unique_games": 96,
+  "DEV_full_CPU_decisions_recomputed": 2347,
+  "DEV_summary": {
+    "parent60/BattleAI": {
+      "games": 16,
+      "wins": 15,
+      "mean_units_lost": 93.0
+    },
+    "parent60/MMAI_MODEL": {
+      "games": 16,
+      "wins": 14,
+      "mean_units_lost": 91.625
+    },
+    "control/BattleAI": {
+      "games": 16,
+      "wins": 15,
+      "mean_units_lost": 92.9375
+    },
+    "control/MMAI_MODEL": {
+      "games": 16,
+      "wins": 13,
+      "mean_units_lost": 97.375
+    },
+    "candidate/BattleAI": {
+      "games": 16,
+      "wins": 15,
+      "mean_units_lost": 92.9375
+    },
+    "candidate/MMAI_MODEL": {
+      "games": 16,
+      "wins": 13,
+      "mean_units_lost": 96.875
+    }
+  },
+  "candidate_vs_control": {
+    "BattleAI": {
+      "candidate_positive_flips": 0,
+      "candidate_negative_flips": 0,
+      "same_result": 16,
+      "mean_candidate_minus_control_units_lost": 0.0
+    },
+    "MMAI_MODEL": {
+      "candidate_positive_flips": 1,
+      "candidate_negative_flips": 1,
+      "same_result": 14,
+      "mean_candidate_minus_control_units_lost": -0.5
+    }
+  },
+  "recovery_minimum_available_mib": 6000.82421875,
+  "recovery_maximum_swap_mib": 39.484375,
+  "checkpoint_sha256": {
+    "control": "7fc48da22b317d597ef3156670d22b8cd5c901d324b5e039bf5e7aaad6f6d702",
+    "candidate": "e9f7c15cfcf05bbcb37690e40804e2da952094427d38ce60cf4f7753069fbf64"
+  },
+  "raw_training_journals_preserved_WSL": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01 and /root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01",
+  "full_training_journals_copied": false,
+  "raw_DEV_artifacts_rehashed": 4892,
+  "stage_certificate_sha256": {
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-micro/RESULT.json": "32192214cb26096b9759eafd3928844416611089146229313b2a29889949798d",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-micro/AUDIT.json": "84a0677dd79ca696b68437eb0e783ce3a5cb47fb7c84eece9b4bfd76520d94ef",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/control-micro/RESTORATION.json": "7291c5c6f6e8fd26395ad747a05be87072b71a2a35edad091b4eff00fd21caf5",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-2/RESULT.json": "81eafb39916ed850e2853f4c9b0eaa9c12794409f1fef02e370b4f75d3d90544",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-2/AUDIT.json": "49a6aad518ebe43edf8bf4b768d957b0eb6250ee4c3c96e4410e935dbf608bd9",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-2/RESTORATION.json": "1f8c61180e4989143fbd052f912cc98cad5962596142bc398f3a35e04cff0c74",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/RESULT.json": "3d949c6c4c1ca9bbdbc0c2938b4e417e27c3e230a2394f9ff3ae4a8c51e68b53",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/AUDIT.json": "f2f0f38749b1d96abe590d7c09dba32da8a517b828aa236136e151593b48357e",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/RESTORATION.json": "0e8c4fe89ef58c6003dc491cf0ccef2a7b3eca479056b45c6ce4f96daa1455be",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/RESULT.json": "e98631370a3bda6d30e140a39935843b83c5d62d771aab87d6321ec747f62cbf",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/AUDIT.json": "d4189011ad924770c3c0fb207290c0c893a8305a830fed61df4f15ef828091ef",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/RESTORATION.json": "c2028976f4e11d95d0d1ab2d3bf9ac2abdcc7bd69c9e2161e12d879eb8251305",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-1/RESULT.json": "a4434b900daa11bfe6899e8a6f6d46d7e21705d66c865072e4a9974c93b42481",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-1/AUDIT.json": "19ff910b6979f77354ce140cbd9e083c8abf6333fbe0bcbba1d9ef60d56360e5",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-1/RESTORATION.json": "0b39f9bf613c09eb097102911c390687c11c4cf60a7bba6d654aebe4ba702a61",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-2/RESULT.json": "ef1d5a9b3b6379fa1e04e8c38ea2bc90a4ff6daad126c66c2daa14a18e2c89c8",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-2/AUDIT.json": "dafc1ad77eaade78479d8143dbff97340061bdf7405a3dfdc732a278ceb8742d",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-2/RESTORATION.json": "7c531b174cced596fc6eddff27c50f201c003f5ec6beb02af182af2ebfa4a12a",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/RESULT.json": "aebc2f91e55dbad5051cdcbcbb814ef1cc450b288634c074872eb3b340b85389",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/AUDIT.json": "7ca07edac3e26c6835ca049b71936096ffb51aa32f61d64ef4b3ccb82d269e43",
+    "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/RESTORATION.json": "2279e3807747e8160910b1aae65f4e9c717e2efaf9d96e51ac6a2bec1c91a99f"
+  },
+  "model_promoted": false,
+  "final_test_touched": false,
+  "archive_files": {
+    "control-update-68.pt": {
+      "sha256": "7fc48da22b317d597ef3156670d22b8cd5c901d324b5e039bf5e7aaad6f6d702",
+      "bytes": 45109405
+    },
+    "candidate-update-68.pt": {
+      "sha256": "e9f7c15cfcf05bbcb37690e40804e2da952094427d38ce60cf4f7753069fbf64",
+      "bytes": 45109405
+    },
+    "evidence/PLAN.json": {
+      "sha256": "6f43223eb904519b653d4b282b40119a17124a6e19e26eab636613765629bb0a",
+      "bytes": 1044
+    },
+    "evidence/FREEZE.json": {
+      "sha256": "25e7a81bb35ff630854086f399854319c7f15ba1d5b78cc6dbf4b308b4033c03",
+      "bytes": 72661
+    },
+    "evidence/RESULT.json": {
+      "sha256": "a70bf041a8ce6c8a1dd765e35dbe4cdd90a95bf8654f8573425251a239b8779d",
+      "bytes": 4174
+    },
+    "evidence/RESULT.partial.json": {
+      "sha256": "f35fde1b72cee4a092dd8e72ee2612369ccc406a642565834dd85154164554a7",
+      "bytes": 951
+    },
+    "evidence/DEV-RESULT.json": {
+      "sha256": "0555da2cc031720623c96e1210f13206a6c6804b1490ae33db9240754d2b7cbd",
+      "bytes": 3300
+    },
+    "evidence/DEV-RAW-AUDIT.json": {
+      "sha256": "cddae355574b91e8d71333366d674c8397cec50d64d58fb1907992834c35b006",
+      "bytes": 973583
+    },
+    "evidence/MEMORY.jsonl": {
+      "sha256": "ef311c9bd3c77de51f2621c71633dc4fd530744d470b0f6c9d06f4c9f6e26be0",
+      "bytes": 50498
+    },
+    "evidence/DEV-NN-REPLAY/AUDIT.json": {
+      "sha256": "58137c86e672fa42ff0b730e430cad1b466ba8c2fd66a46961e0ea16c463247b",
+      "bytes": 1772
+    },
+    "evidence/dev/parent60-BattleAI.json": {
+      "sha256": "1d36f280f015adcbd336781010ed61c777f47e7bd842f96cf6a28d22449e33f0",
+      "bytes": 285715
+    },
+    "evidence/dev/parent60-MMAI_MODEL.json": {
+      "sha256": "b94e105385662c72c522752d230781e94e66da0741ce28c48925741fef287b8f",
+      "bytes": 364294
+    },
+    "evidence/dev/control-BattleAI.json": {
+      "sha256": "eaf9e60818b1fb48565ec43040c1e395eb84431ff8d5f9fb34a70025a6e45b96",
+      "bytes": 284642
+    },
+    "evidence/dev/control-MMAI_MODEL.json": {
+      "sha256": "daee18edc98d6f5491b0fa4a4fe5f2483ac2841c2e5614390bd299af7bef1fe2",
+      "bytes": 382197
+    },
+    "evidence/dev/candidate-BattleAI.json": {
+      "sha256": "ae48cd1aa4fe573017cdd9cfeb132109dad1cee74b56ee4c4cf7757e42e187dc",
+      "bytes": 286930
+    },
+    "evidence/dev/candidate-MMAI_MODEL.json": {
+      "sha256": "18a4141e8e8ecb5771689734404727dad3cd635d9d94cc8b5220a6a972b08623",
+      "bytes": 372745
+    },
+    "evidence/CONTROL64_RECOVERY.json": {
+      "sha256": "bdd6c14e4d1c509fe158a645306301ef4abc60ff400b866a66e67b5592d9f8bd",
+      "bytes": 2178
+    },
+    "evidence/COMMON_FIRST_UPDATE.json": {
+      "sha256": "2984024a5bc97fad79fb00e0c76a7d5f1986ac8759d70b23973cc1152cedc188",
+      "bytes": 604
+    },
+    "evidence/MICRO_TARGET_COMPARISON.json": {
+      "sha256": "5f8180120f303789fcd7e5922edb470c1e27215fc444fe6ed88cb2b34532d814",
+      "bytes": 655
+    }
+  }
+}

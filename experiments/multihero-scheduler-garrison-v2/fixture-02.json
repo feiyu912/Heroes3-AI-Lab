@@ -1,0 +1,13 @@
+{
+  "map_sha256": "aa50587cb8ced39df3f1e1a476a00bde5cdfbb16c6a8dc12ddfdebbff5498e13",
+  "mobile_heroes": [
+    0,
+    2
+  ],
+  "control_hero": 3,
+  "runtime_setup": "Actual GarrisonHeroSwap request/ACK before any scheduler selection. Require real owned positive-MP garrison, visiting=null, matching town/hero references.",
+  "map_bytes": "Unchanged from fixture-01; map alone does not establish garrison.",
+  "same_seed": 2026102501,
+  "policy_broker": false,
+  "optimizer_steps": 0
+}

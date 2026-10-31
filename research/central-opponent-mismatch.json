@@ -1,0 +1,148 @@
+{
+  "role": "attacker",
+  "scenario": 14,
+  "trajectories": [
+    {
+      "digest": "e5bafc639b17be79eaea455f67b27032233b2c0813481ba717347f2e7e0441c1",
+      "states": [
+        "59c1035635cd85823cfef516036850e4a7404c063e28c060d1905aa0d808ddc9",
+        "b4eb2dfec05f49eb4e9223d59617c065056984097a9ab4d3a5e4b05c99d5b2db",
+        "1acf4daf468de7fc6516fee76afee31d8a7042994b887eac80af69463e4353b2",
+        "9d2748cef963e960250f5ca851c5b96b10242016dc077749ec47382be7c73a36",
+        "3ce3eaa7b14097323a729810cfe8cc230880cc64bf9cb71c177615600d636492",
+        "996299909e67ecf395fcb98c3be3c778a92df06eff0b369f7a3d6bcc3ec68b85",
+        "3939e67b04786cbf9dd44da980714ddcfcc98f4cb664d9566c9e69daf2fdc27a",
+        "7fdd241ac916a24dc326bfecefbc7da0e708bf15925a1adec0d8831959661f61",
+        "86540babbe236ef1078303f0700fa1d49344cb2fb25c646d9f408df8ca0020b7",
+        "8487b65458885336e620dce09c5de23c926e8c9d5a69d07bd04678da31eb8ceb",
+        "67a6ef8c3d5ed25a9a97cb692443b99f4e0892860b944c9b85baeec9f3b6aeae",
+        "9ae7d6ecb5477df17bdf02d9ad512c1ae91a5e7a2a2c25c96bd98f721eccfa3c",
+        "15e8e3e791404d23f3ce41086336ff13ddba9e0486008264549102e9d8db9c8f",
+        "83afeea42a992d383d1a5f8a2a624e9813b2ce0dd2f6ef780c2f5b18b606fe74",
+        "b8998ce2fec841ea2deb3b9a84fecf52aa126746263830836ff90581b1501e93",
+        "aaa4b7551b4558759238e783dd6851abd9459b19e18931941707735d01bef8b7",
+        "ddc026d8aafd93467f19ea70c8f175da2acdc119f3ad6b7d967b1ec13ee41b1d",
+        "e5bafc639b17be79eaea455f67b27032233b2c0813481ba717347f2e7e0441c1"
+      ],
+      "actions": [
+        284,
+        143,
+        303,
+        306,
+        355,
+        145,
+        278,
+        275,
+        228,
+        238,
+        236,
+        230,
+        249,
+        251,
+        208,
+        207,
+        142,
+        235
+      ],
+      "outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 10,
+            "8": 4,
+            "10": 10
+          },
+          "1": {
+            "6": 25,
+            "8": 19,
+            "10": 9
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 27,
+            "8": 21,
+            "10": 11
+          },
+          {
+            "6": 25,
+            "8": 19,
+            "10": 9
+          }
+        ]
+      }
+    },
+    {
+      "digest": "e66dd6ae33754b0c7cd05600ffbc7f6ae425b0114e3940750ea4a999fd0e7c87",
+      "states": [
+        "59c1035635cd85823cfef516036850e4a7404c063e28c060d1905aa0d808ddc9",
+        "b4eb2dfec05f49eb4e9223d59617c065056984097a9ab4d3a5e4b05c99d5b2db",
+        "cd909e9595a288c0c1804983c3c176f24c66a86fdd599524f58b8268035fdfa3",
+        "2f3ac5650555e23b43357ea5f2014507ac22dba394c7d9da0b70befe54e12696",
+        "625f58c5714aa10819dec52ad63e43655f5c9116d13e70a02c66bc96057e4b07",
+        "fb476d3c344028efaece35eabf644852cbd63975bbe382358d8518e23553b6e1",
+        "bc6f785720f6f76062283ec8c75e8e1b60f6edaedab476fd385901bcca6dbe50",
+        "cd87158898050fcc87401f2b6171df35f6cca87e8bf7f7851f34d1074ec159e7",
+        "87a5a3ba89b30b58b29d5efc0d2c9e64a26187b6f90c4abd0339e326fdcf015d",
+        "7d6d34f5b538c555c56d489eff2a58a6ebf63756bd73b68f937a745d141a6dad",
+        "4912b0657c2bce176727a1bc7b518d5b22552261284a222241bd337f0aeed7a3",
+        "1c619ed292c51bedbdccdfa3a0237912af7a1455f221e85515286842ec377881",
+        "108cc4b7b45e21a11d0e1a3088de935d424e1bb2131c6e1b7f2cbeb636d19802",
+        "5486f2284e5b888ace5c47d89a1053bd8566c040bdef79631a62ace6e60b89b2",
+        "dfa7614e7ee594fad05424f5fb5c0129e5ba210a1df51a1b0278ae6ef70b0740",
+        "ce15d038c6abc7c0f4a0a37c3fc0724414f864092d1ab324b3257bbf8f5a84c3",
+        "c9ae45f4bbc4fa3867ce472212ab37076c6821c4e9087834278ddb19c9a0183c",
+        "e66dd6ae33754b0c7cd05600ffbc7f6ae425b0114e3940750ea4a999fd0e7c87"
+      ],
+      "actions": [
+        284,
+        143,
+        303,
+        306,
+        355,
+        145,
+        278,
+        275,
+        228,
+        238,
+        236,
+        230,
+        249,
+        155,
+        256,
+        269,
+        232,
+        254
+      ],
+      "outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 10,
+            "8": 4,
+            "10": 10
+          },
+          "1": {
+            "6": 25,
+            "8": 19,
+            "10": 9
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 27,
+            "8": 21,
+            "10": 11
+          },
+          {
+            "6": 25,
+            "8": 19,
+            "10": 9
+          }
+        ]
+      }
+    }
+  ]
+}

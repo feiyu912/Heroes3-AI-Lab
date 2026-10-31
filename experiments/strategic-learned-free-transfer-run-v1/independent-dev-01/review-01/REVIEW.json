@@ -1,0 +1,431 @@
+{
+  "passed": true,
+  "actual_raw_audits_rerun": 16,
+  "full_cpu_proposals_actually_recomputed": 5090,
+  "all_frozen_source_capsule_raw_hashes_passed": true,
+  "summary": {
+    "a": {
+      "wins": 5,
+      "builds": 95,
+      "income_builds": 16,
+      "policy_end_turns": 0,
+      "prewindow_transfers": 17
+    },
+    "b": {
+      "wins": 4,
+      "builds": 70,
+      "income_builds": 11,
+      "policy_end_turns": 0,
+      "prewindow_transfers": 8
+    }
+  },
+  "cases": [
+    {
+      "pair": 0,
+      "arm": "a",
+      "win": true,
+      "terminal_day": 29,
+      "counts": {
+        "policy_moves": 248,
+        "policy_builds": 14,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 28,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 262,
+        "blocking_visits": 7
+      },
+      "income_builds": 3,
+      "prewindow_transfers": 0,
+      "decisions": 262,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 0,
+      "arm": "b",
+      "win": true,
+      "terminal_day": 22,
+      "counts": {
+        "policy_moves": 203,
+        "policy_builds": 8,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 21,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 211,
+        "blocking_visits": 8
+      },
+      "income_builds": 2,
+      "prewindow_transfers": 0,
+      "decisions": 211,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 1,
+      "arm": "a",
+      "win": true,
+      "terminal_day": 48,
+      "counts": {
+        "policy_moves": 449,
+        "policy_builds": 25,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 47,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 474,
+        "blocking_visits": 8
+      },
+      "income_builds": 6,
+      "prewindow_transfers": 0,
+      "decisions": 474,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 1,
+      "arm": "b",
+      "win": true,
+      "terminal_day": 37,
+      "counts": {
+        "policy_moves": 356,
+        "policy_builds": 21,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 36,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 377,
+        "blocking_visits": 8
+      },
+      "income_builds": 5,
+      "prewindow_transfers": 0,
+      "decisions": 377,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 2,
+      "arm": "a",
+      "win": false,
+      "terminal_day": 12,
+      "counts": {
+        "policy_moves": 101,
+        "policy_builds": 0,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 12,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 101,
+        "blocking_visits": 5
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 0,
+      "decisions": 101,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 2,
+      "arm": "b",
+      "win": false,
+      "terminal_day": 30,
+      "counts": {
+        "policy_moves": 313,
+        "policy_builds": 7,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 30,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 320,
+        "blocking_visits": 13
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 4,
+      "decisions": 320,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 3,
+      "arm": "a",
+      "win": false,
+      "terminal_day": 26,
+      "counts": {
+        "policy_moves": 235,
+        "policy_builds": 4,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 26,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 239,
+        "blocking_visits": 6
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 0,
+      "decisions": 239,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 3,
+      "arm": "b",
+      "win": false,
+      "terminal_day": 11,
+      "counts": {
+        "policy_moves": 95,
+        "policy_builds": 2,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 10,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 97,
+        "blocking_visits": 6
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 0,
+      "decisions": 97,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 4,
+      "arm": "a",
+      "win": true,
+      "terminal_day": 38,
+      "counts": {
+        "policy_moves": 336,
+        "policy_builds": 20,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 37,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 356,
+        "blocking_visits": 8
+      },
+      "income_builds": 5,
+      "prewindow_transfers": 0,
+      "decisions": 356,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 4,
+      "arm": "b",
+      "win": true,
+      "terminal_day": 29,
+      "counts": {
+        "policy_moves": 249,
+        "policy_builds": 12,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 28,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 261,
+        "blocking_visits": 8
+      },
+      "income_builds": 2,
+      "prewindow_transfers": 0,
+      "decisions": 261,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 5,
+      "arm": "a",
+      "win": true,
+      "terminal_day": 20,
+      "counts": {
+        "policy_moves": 184,
+        "policy_builds": 10,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 19,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 194,
+        "blocking_visits": 4
+      },
+      "income_builds": 1,
+      "prewindow_transfers": 0,
+      "decisions": 194,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 5,
+      "arm": "b",
+      "win": true,
+      "terminal_day": 16,
+      "counts": {
+        "policy_moves": 135,
+        "policy_builds": 8,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 15,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 143,
+        "blocking_visits": 6
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 0,
+      "decisions": 143,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 6,
+      "arm": "a",
+      "win": true,
+      "terminal_day": 131,
+      "counts": {
+        "policy_moves": 1261,
+        "policy_builds": 13,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 130,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 1274,
+        "blocking_visits": 69
+      },
+      "income_builds": 1,
+      "prewindow_transfers": 11,
+      "decisions": 1274,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 6,
+      "arm": "b",
+      "win": false,
+      "terminal_day": 32,
+      "counts": {
+        "policy_moves": 286,
+        "policy_builds": 5,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 32,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 291,
+        "blocking_visits": 13
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 4,
+      "decisions": 291,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 7,
+      "arm": "a",
+      "win": false,
+      "terminal_day": 27,
+      "counts": {
+        "policy_moves": 254,
+        "policy_builds": 9,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 26,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 263,
+        "blocking_visits": 8
+      },
+      "income_builds": 0,
+      "prewindow_transfers": 6,
+      "decisions": 263,
+      "model_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 7,
+      "arm": "b",
+      "win": false,
+      "terminal_day": 26,
+      "counts": {
+        "policy_moves": 220,
+        "policy_builds": 7,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 25,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 227,
+        "blocking_visits": 7
+      },
+      "income_builds": 2,
+      "prewindow_transfers": 0,
+      "decisions": 227,
+      "model_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    }
+  ],
+  "pairs": [
+    {
+      "pair": 0,
+      "first_request_equal": true,
+      "same_request_prefix": 1,
+      "first_different_selection_on_equal_request": 1
+    },
+    {
+      "pair": 1,
+      "first_request_equal": true,
+      "same_request_prefix": 55,
+      "first_different_selection_on_equal_request": 55
+    },
+    {
+      "pair": 2,
+      "first_request_equal": true,
+      "same_request_prefix": 1,
+      "first_different_selection_on_equal_request": 1
+    },
+    {
+      "pair": 3,
+      "first_request_equal": true,
+      "same_request_prefix": 55,
+      "first_different_selection_on_equal_request": 55
+    },
+    {
+      "pair": 4,
+      "first_request_equal": true,
+      "same_request_prefix": 4,
+      "first_different_selection_on_equal_request": 4
+    },
+    {
+      "pair": 5,
+      "first_request_equal": true,
+      "same_request_prefix": 4,
+      "first_different_selection_on_equal_request": 4
+    },
+    {
+      "pair": 6,
+      "first_request_equal": true,
+      "same_request_prefix": 4,
+      "first_different_selection_on_equal_request": 4
+    },
+    {
+      "pair": 7,
+      "first_request_equal": true,
+      "same_request_prefix": 4,
+      "first_different_selection_on_equal_request": 4
+    }
+  ],
+  "qualification_fixture_excluded": true,
+  "gpu_restore_rerun": false,
+  "native_runs": 0,
+  "gpu_runs": 0,
+  "optimizer_steps_executed": 0
+}

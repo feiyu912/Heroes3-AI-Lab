@@ -1,0 +1,57 @@
+{
+  "schema": "economy-v4-acceptance-execution-v1",
+  "status": "failed",
+  "episodes": [
+    {
+      "tag": "engineering-map0-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-01/engineering-map0-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 19,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 169,
+      "delivered_to_main_count": 169,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 92,
+        "after_line": 93,
+        "day": 5,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 118,
+        "after_line": 119,
+        "day": 6,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  ],
+  "scripted_economy": true,
+  "learned_improvement": false,
+  "bc_eligible": 0,
+  "failed_episode": "engineering-map0-blue-2026101860",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/run_acceptance.py\", line 78, in main\n    audit=audit_economy(game/'smoke-result.json')\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/audit_economy_raw.py\", line 21, in audit_economy\n    raw=audit_episode(summary)\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/audit_supply_raw.py\", line 36, in audit_episode\n    assert not any(s['event'] in ('economy_failed','move_failed') for _,s in states)\nAssertionError\n",
+  "wall_seconds": 13.183266069999945
+}

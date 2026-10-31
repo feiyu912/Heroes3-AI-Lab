@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "status": "reviewable source draft; native-v2 exact qualification pins and flow auditor pending; not frozen",
+  "parent_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+  "parent_optimizer_steps_not_continued": 504,
+  "initialization_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+  "same_architecture_exact_weights": true,
+  "logits_and_critic_bitwise_exact_rows": 3000,
+  "included_historical_build_windows": 400,
+  "new_Adam_state_empty": true,
+  "new_Adam_step": 0,
+  "new_Adam_binding_includes_build_bias": true,
+  "unqualified_native_gates_rejected": [
+    "source_closure",
+    "capsule",
+    "qualification"
+  ],
+  "source_sha256": {
+    "admit_episode_v5.py": "3dfe67146ef0d04825815a004c82337ffc489f34aa5b2a757734be86ad57d286",
+    "broker.py": "5a5ec9ce3c779649d933062d0aed685f4f65f24560ae336d7f9e3ceda4b7f37f",
+    "draft_resume_guard_cpu.py": "f20d14b6f75f284ee540a640be4f488f02028b9f04ef25db72503e72da2c02b0",
+    "encoder.py": "eff4ed9ba88c3070d162a2c6ee16f002e21c4ec2287c7c9ca48a11a47e12fb72",
+    "episode_balanced_ppo.py": "9dd3274974d859758a78332d17c21f7c2c3a394e29ecfaf5871a0664969247fe",
+    "load_admitted.py": "2025502a3c3cb45b6c46dab6d30f406dd2074ce8090ed7cffe3e964bf6a731a1",
+    "migrate_init_cpu.py": "14f08d5ff8a9fc42f211484470877dfb795e6317a19d5152f0f3699ca52a73b4",
+    "model.py": "643fd35392c4ce5d1029a7bb63e734ac1c57807108a17ef027b0d9e013e55720",
+    "model_io.py": "8811ead4f3c6bca0f5b97240711ad9a0b75badf2a9a42513b2bf7015efa1020d",
+    "onpolicy_broker_v2.py": "a45055cc1949ba048355097578f5753a3d06ee0ac4416ae9f941d8457397c8b5",
+    "train_update_v3.py": "010470a88baaaf6780ba00e65fc452263695eb6395b0ad97154314ac6113e7cf"
+  }
+}

@@ -1,0 +1,12 @@
+usage: collect_mechanism.py [-h] --capsule CAPSULE --arm {baseline,candidate}
+                            --case {positive,empty,full-incompatible,full-merge}
+                            --out OUT [--seconds SECONDS] [--execute]
+
+options:
+  -h, --help            show this help message and exit
+  --capsule CAPSULE
+  --arm {baseline,candidate}
+  --case {positive,empty,full-incompatible,full-merge}
+  --out OUT
+  --seconds SECONDS
+  --execute

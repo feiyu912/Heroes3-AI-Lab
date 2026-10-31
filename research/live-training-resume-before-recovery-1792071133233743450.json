@@ -1,0 +1,6 @@
+{
+  "state": "failed",
+  "passed": false,
+  "error": "AssertionError('Scheduled training failed; do not launch probe')",
+  "probe_excluded_from_selection": true
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "TRAIN-calibration-collector-derivation-v1",
+  "parent_collector": "experiments\\strategic-learned-recruitment-run-v2\\collect_cpu.py",
+  "parent_collector_sha256": "03c65c6d8a983b26e06af63e216ff98ec063ffe109458703f0c8852280d7cbb9",
+  "parent_auditor": "experiments\\strategic-learned-recruitment-run-v2\\audit_game_v6.py",
+  "parent_auditor_sha256": "77c6655bb20ff0d1ed1613747b1a6e4408ec3877ba2c770476be5ae59e19e3d4",
+  "edits": [
+    "Only registered local TRAIN variant paths instead of shared DEV paths",
+    "Exact zero151014 initialization and NK only",
+    "Fixed4300..4303 per map/role shared across hero-count multipliers",
+    "Separate calibration epoch, no sampling/admission/PPO",
+    "Existing locks/readiness/native identity/terminal/drain guards preserved"
+  ],
+  "native_changes": []
+}

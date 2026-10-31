@@ -1,0 +1,5 @@
+{
+  "state": "failed",
+  "error": "JSONDecodeError('Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)')",
+  "old_pipeline_unchanged": true
+}

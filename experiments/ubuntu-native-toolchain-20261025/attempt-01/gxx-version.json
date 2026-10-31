@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/g++-11",
+    "--version"
+  ],
+  "returncode": 0,
+  "seconds": 0.0010514259338378906,
+  "stdout_sha256": "70b669a52443f1c53c878e5ea5b7d3d834f99e5eaa6faf1b60201f6a90e176e0",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

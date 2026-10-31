@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "pair": 3,
+      "before_policy_decision": 18,
+      "counts": [
+        65,
+        65
+      ],
+      "ordered_prefix_same": false,
+      "movement_multiset_same": false,
+      "only_baseline": [
+        [
+          [
+            0,
+            "hero.core.caitlin.name",
+            "6 9 0",
+            "5 10 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "hero.core.caitlin.name",
+            "5 10 0",
+            "5 11 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "hero.core.caitlin.name",
+            "5 11 0",
+            "5 12 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "hero.core.caitlin.name",
+            "5 12 0",
+            "6 13 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "hero.core.caitlin.name",
+            "6 13 0",
+            "7 14 0"
+          ],
+          1
+        ]
+      ],
+      "only_candidate": [
+        [
+          [
+            0,
+            "red strategic hero",
+            "6 10 0",
+            "5 11 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "red strategic hero",
+            "5 11 0",
+            "5 12 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "red strategic hero",
+            "5 12 0",
+            "6 13 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "red strategic hero",
+            "6 13 0",
+            "7 14 0"
+          ],
+          1
+        ],
+        [
+          [
+            0,
+            "red strategic hero",
+            "7 14 0",
+            "6 15 0"
+          ],
+          1
+        ]
+      ],
+      "raw_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/a/native/client.log": "04f6f1e1991e4ace7b89cc22fa2f7aad657577433775728a6170b9e8b39d5721",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-03/b/native/client.log": "5925067a6c79a136ac61b6ed37032058d66854f526f5481b7c6c3775a1f55b4f"
+      }
+    },
+    {
+      "pair": 7,
+      "before_policy_decision": 121,
+      "counts": [
+        320,
+        320
+      ],
+      "ordered_prefix_same": false,
+      "movement_multiset_same": true,
+      "only_baseline": [],
+      "only_candidate": [],
+      "raw_sha256": {
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/a/native/client.log": "6c6f0a282df3bfcad97c60f714a5b0d80772d35623a9f43c56e5ab3ccb1464e1",
+        "/root/heroes3-ai-lab/evaluations/typed-curriculum-paired-dev-02/pair-07/b/native/client.log": "b9861d27eb0256c99a4ddf7e94e38fbe9fc44941afa7877bdaa3b66fd57bd020"
+      }
+    }
+  ],
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "limitation": "Pair7 recorded movement multiset equality allows an ordering-only explanation for this prefix. It does not establish full hidden state/RNG equality or a causal win gain. Pair3 has genuinely different recorded movement sets."
+}

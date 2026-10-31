@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "eight_full_training_cells_seed_order",
+      "passed": true
+    },
+    {
+      "case": "seven_cells",
+      "rejected": true
+    },
+    {
+      "case": "nine_cells",
+      "rejected": true
+    },
+    {
+      "case": "duplicate_coverage_cell",
+      "rejected": true
+    },
+    {
+      "case": "mixed_parent_policy",
+      "rejected": true
+    },
+    {
+      "case": "mixed_logical_update",
+      "rejected": true
+    },
+    {
+      "case": "nontraining_map",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_transport_drained",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_compiled_native_epoch_proven",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_event_contract_valid",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_whole_game_valid",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_native_game_completed",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_input_audit_epoch",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_read_only_legacy_reaudit",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_audit_epoch",
+      "rejected": true
+    },
+    {
+      "case": "native_metadata_candidate_manifest_sha256",
+      "rejected": true
+    },
+    {
+      "case": "old_auditor_source_key",
+      "rejected": true
+    },
+    {
+      "case": "changed_actual_auditor_helper",
+      "rejected": true
+    },
+    {
+      "case": "wrong_plan_native_epoch",
+      "rejected": true
+    },
+    {
+      "case": "wrong_execution_native_epoch",
+      "rejected": true
+    },
+    {
+      "case": "entire_original_cuda_replay_block_byte_identical",
+      "passed": true
+    },
+    {
+      "case": "original_terminal_reward_and_ppo_call_unchanged",
+      "passed": true
+    },
+    {
+      "case": "sampler_reuses_frozen_original_onpolicy_broker_v2",
+      "passed": true
+    },
+    {
+      "case": "actual_capsule03_all_artifacts_nine_payload_and_initial_sha_read_only_verified",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/collect_episode_v5.py": "cf259a97bf3e9ca20c6625e06bf28fbe52190bcb7d438d13f680172c8a289be3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/train_update_v3.py": "59330f1ff9683e5633fe82d6efd3e0ae94028ee4c03c1e657c7c144147bfdbea",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/run_pipeline.py": "663b9da968f88ce8726900d6bb8d362da1bb8c0ffb69c9eddf7f1bdc9e0180b6",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/pipeline_common.py": "4a6d4e0a22d761c911ce71998d5db4d219316e90d20b1ace353fe1d1bc3f2eb4"
+  },
+  "native_runs": 0,
+  "cuda_inference": false,
+  "optimizer_steps": 0,
+  "scope": "CPU syntax, unchanged replay/PPO source checks and synthetic rejection guards; not native/CUDA training certification"
+}

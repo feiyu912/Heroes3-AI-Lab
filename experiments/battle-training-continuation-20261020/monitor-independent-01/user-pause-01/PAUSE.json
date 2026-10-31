@@ -1,0 +1,35 @@
+{
+  "user_requested_pause": true,
+  "stopped": true,
+  "active_native_or_learner_processes": [],
+  "GPU_compute_apps": "",
+  "locks_verified_available": [
+    ".gpu-learner-lock",
+    ".pool-lock"
+  ],
+  "saved": {
+    "control": {
+      "global_update": 60,
+      "stage_updates": 30,
+      "new_Adam_steps": 3840,
+      "cumulative_Adam_steps": 7680,
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/control/models/1792508024116623978/update-60.pt",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/control-update-60.pt",
+      "sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+      "native_environment_restorable": false
+    },
+    "candidate": {
+      "global_update": 57,
+      "stage_updates": 27,
+      "new_Adam_steps": 3456,
+      "cumulative_Adam_steps": 7296,
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/candidate/models/1792509605969861627/update-57.pt",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/candidate-update-57.pt",
+      "sha256": "8d3169e85d51b0bf7d7247cc2d4bdc6949410d5262793f1729a6463dbd3976bf",
+      "native_environment_restorable": false
+    }
+  },
+  "final_DEV_games_run": 0,
+  "ability_improvement_claim": false,
+  "note": "KeyboardInterrupt is a user pause, not a game defeat. In-flight sample is not a completed update; last complete checkpoints retained. Resume requires an explicit remaining schedule, not blindly replaying this fixed-parent controller."
+}

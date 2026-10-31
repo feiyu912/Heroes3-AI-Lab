@@ -1,0 +1,155 @@
+{
+  "passed": true,
+  "controller": {
+    "passed": true,
+    "checks": 58,
+    "evidence": "CPU synthetic controller tests only",
+    "native_games": 0
+  },
+  "sidecar_checks": [
+    {
+      "case": "builder_nonwhitelisted_source_delete",
+      "rejected": true
+    },
+    {
+      "case": "builder_outside_parent_delete",
+      "rejected": true
+    },
+    {
+      "case": "builder_symlink_delete",
+      "rejected": true
+    },
+    {
+      "case": "builder_exact_accepted_V8_baseline_and_three_binary_recompile_gates",
+      "passed": true
+    },
+    {
+      "case": "fresh_process_atomic_metadata_roundtrip",
+      "passed": true,
+      "native_restore": false
+    },
+    {
+      "case": "dirty_boundary_pending_request_42",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_movement_busy_True",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_battle_busy_True",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_native_query_open_True",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_owned_request_count_1",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_queued_own_turn_True",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_owned_request_count_False",
+      "rejected": true
+    },
+    {
+      "case": "dirty_boundary_movement_busy_0",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_main_19",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_courier_99",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_cursor_2",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_turn_0",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_phase_3",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_spent_{'19': 55}",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_spent_{'99': 1}",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_goals_{'19': [-1, 4, 0]}",
+      "rejected": true
+    },
+    {
+      "case": "bad_control_cycles_True",
+      "rejected": true
+    },
+    {
+      "case": "missing_control_field",
+      "rejected": true
+    },
+    {
+      "case": "missing_boundary_field",
+      "rejected": true
+    },
+    {
+      "case": "wrong_run",
+      "rejected": true
+    },
+    {
+      "case": "wrong_own_turn",
+      "rejected": true
+    },
+    {
+      "case": "loaded_world_position_differs",
+      "rejected": true
+    },
+    {
+      "case": "loaded_world_army_differs",
+      "rejected": true
+    },
+    {
+      "case": "changed_native_save_bytes",
+      "rejected": true
+    },
+    {
+      "case": "changed_source_epoch",
+      "rejected": true
+    },
+    {
+      "case": "sidecar_payload_checksum",
+      "rejected": true
+    },
+    {
+      "case": "dishonest_epoch",
+      "rejected": true
+    },
+    {
+      "case": "dishonest_native_restore_qualified",
+      "rejected": true
+    }
+  ],
+  "native_games": 0,
+  "native_built": false,
+  "native_restore_qualified": false,
+  "optimizer_steps": 0,
+  "scope": "synthetic CPU C++ controller and atomic metadata gates; not native execution/restoration",
+  "source_sha256": {
+    "SupplyController.h": "4384397927bcccf5dc145853467b0062c4c574b626252b0b3c2fb5b0b2dcdda1",
+    "test_controller.cpp": "3ac46512ae6412b435e3b824fa8fcfef6af7db11185f928401304574d996e993",
+    "control_sidecar.py": "502dec3a630e1f9cdcacd311eae9875bf18a64e86212dd448a1510781d2c7d03",
+    "check_cpu.py": "215512624c4c6c4ee466aca23eecf484e89f6aeb9956ce7814ad115948182309"
+  }
+}

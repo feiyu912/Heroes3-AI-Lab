@@ -1,0 +1,786 @@
+{
+  "passed": true,
+  "unavailable_packages": [
+    {
+      "package": "liblzma5",
+      "version": "5.2.5-2ubuntu1.1",
+      "found": false
+    }
+  ],
+  "packages": [
+    {
+      "package": "libapparmor1",
+      "version": "3.0.4-2ubuntu2.4",
+      "deb_sha256": "56cc62bd6359ee97d8017c2894bf1fbc328543f9d1cc2274af0ed4623a6b8386",
+      "control": "Package: libapparmor1\nVersion: 3.0.4-2ubuntu2.4\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libasyncns0",
+      "version": "0.8-6build2",
+      "deb_sha256": "6d223a97b434026e50fb9fcb237d45ed26fd272bb139f0bd793315d55a79901a",
+      "control": "Package: libasyncns0\nVersion: 0.8-6build2\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libbrotli1",
+      "version": "1.0.9-2build6",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "control": "Package: libbrotli1\nVersion: 1.0.9-2build6\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libdbus-1-3",
+      "version": "1.12.20-2ubuntu4.1",
+      "deb_sha256": "6a5171696c3b05aca273d637d9c0501c8033fda64a971e09fd545bc1ab72ca1e",
+      "control": "Package: libdbus-1-3\nVersion: 1.12.20-2ubuntu4.1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libdeflate0",
+      "version": "1.10-2",
+      "deb_sha256": "a64f7f93a487e57e1a01404d378a8ef1428b1c6b0ecf24fc484c89b681a051c9",
+      "control": "Package: libdeflate0\nVersion: 1.10-2\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libexpat1",
+      "version": "2.4.7-1ubuntu0.9",
+      "deb_sha256": "0ee31596316d2275ab351d11290c63e7547fff0ecd7f431e56855cb7c5f18588",
+      "control": "Package: libexpat1\nVersion: 2.4.7-1ubuntu0.9\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libffi8",
+      "version": "3.4.2-4",
+      "deb_sha256": "b4f88c91fa6f4c942097be6abfc365fb133c5e147640168cbb7704fd855eac10",
+      "control": "Package: libffi8\nVersion: 3.4.2-4\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libglib2.0-0",
+      "version": "2.72.4-0ubuntu2.10",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "control": "Package: libglib2.0-0\nVersion: 2.72.4-0ubuntu2.10\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libgraphite2-3",
+      "version": "1.3.14-1ubuntu0.1",
+      "deb_sha256": "fefc2bc510b80a7a2a8570352be4f0bf9e2d36d122d2c8316cfa008103a2a7e5",
+      "control": "Package: libgraphite2-3\nVersion: 1.3.14-1ubuntu0.1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libinstpatch-1.0-2",
+      "version": "1.1.6-1",
+      "deb_sha256": "64aa673ea5420613a1ca109fbbce6b570d8a2282c5e1eb9b5e9e4f103353948d",
+      "control": "Package: libinstpatch-1.0-2\nVersion: 1.1.6-1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libjack-jackd2-0",
+      "version": "1.9.20~dfsg-1",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "control": "Package: libjack-jackd2-0\nVersion: 1.9.20~dfsg-1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libjbig0",
+      "version": "2.1-3.1ubuntu0.22.04.1",
+      "deb_sha256": "4666c37d8620b6d17a2d4acf2cb1459f071e74881dc490a159e90244d7a98cc6",
+      "control": "Package: libjbig0\nVersion: 2.1-3.1ubuntu0.22.04.1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libogg0",
+      "version": "1.3.5-0ubuntu3",
+      "deb_sha256": "116a95c2ef71057d86f1e20c378247d34a0c8cfa257aecd0f4f36f75fc338de2",
+      "control": "Package: libogg0\nVersion: 1.3.5-0ubuntu3\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libreadline8",
+      "version": "8.1.2-1",
+      "deb_sha256": "51fd16f608efa710c987e4b071ffba0bec63a9ac8e55eddd5770f5e5252edc09",
+      "control": "Package: libreadline8\nVersion: 8.1.2-1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libsndfile1",
+      "version": "1.0.31-2ubuntu0.2",
+      "deb_sha256": "169b8d8c8c7790586e4a107beda8bf4a5dc397e236744749f11c92f1c0fcd59b",
+      "control": "Package: libsndfile1\nVersion: 1.0.31-2ubuntu0.2\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libsystemd0",
+      "version": "249.11-0ubuntu3.23",
+      "deb_sha256": "ff02a85ba73f850cf7958d2867b34947c67a1072e2b2d1c108a8c6e23715624d",
+      "control": "Package: libsystemd0\nVersion: 249.11-0ubuntu3.23\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libvorbis0a",
+      "version": "1.3.7-1build2",
+      "deb_sha256": "1c4195ccfe75a82c0989300762124b2371d34d8e1f99a968032fde64395a23ec",
+      "control": "Package: libvorbis0a\nVersion: 1.3.7-1build2\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libwayland-server0",
+      "version": "1.20.0-1ubuntu0.1",
+      "deb_sha256": "b5d514dc17edac6b93ba2476d90806337ca4afcc914952a7e78af2e5cd0c4a7b",
+      "control": "Package: libwayland-server0\nVersion: 1.20.0-1ubuntu0.1\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libx11-xcb1",
+      "version": "2:1.7.5-1ubuntu0.4",
+      "deb_sha256": "00260321d5b74fb472e830f5a5feeb521f43917948f1511a5bfb2ffead06e1ae",
+      "control": "Package: libx11-xcb1\nVersion: 2:1.7.5-1ubuntu0.4\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libxcb-randr0",
+      "version": "1.14-3ubuntu3",
+      "deb_sha256": "39dc0f73fa3bd43f3f7755cb7d12bfd1cd59dd8966f747d66fba47dfc8652f62",
+      "control": "Package: libxcb-randr0\nVersion: 1.14-3ubuntu3\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libxcb1",
+      "version": "1.14-3ubuntu3",
+      "deb_sha256": "9258f04136434e7a0ccd76041505421934284209693373cfa9c24acb3a641ec5",
+      "control": "Package: libxcb1\nVersion: 1.14-3ubuntu3\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libxrender1",
+      "version": "1:0.9.10-1build4",
+      "deb_sha256": "a68f6db4320b5963dd499b83b6cc8c7b5cd39b05e84862d5945da9244e4c96d6",
+      "control": "Package: libxrender1\nVersion: 1:0.9.10-1build4\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libopus0",
+      "version": "1.3.1-0.1build2",
+      "deb_sha256": "73225bff2be1b5ef888d00d680f44741e67a096932bd0854db8da7d5488603b5",
+      "control": "Package: libopus0\nVersion: 1.3.1-0.1build2\nArchitecture: amd64\n"
+    },
+    {
+      "package": "libssl3",
+      "version": "3.0.2-0ubuntu1.30",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "control": "Package: libssl3\nVersion: 3.0.2-0ubuntu1.30\nArchitecture: amd64\n"
+    }
+  ],
+  "authenticated_indexes": [
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security.InRelease",
+      "sha256": "b371d661986d2504a20356b60c83f8775c7ac264a18d430ac45400fd072e599a",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Sun Oct 25 21:32:46 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security-main-Packages.xz",
+          "sha256": "652955367a29bde1cdd879701cfb34d7c317720e0ac23b56633b47bbd2187d6f",
+          "size": 3642768
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security-universe-Packages.xz",
+          "sha256": "e178af12be3c4537cdf62a12177851a729acb1933eea92080a72c8b9e8a93750",
+          "size": 1054700
+        }
+      ]
+    },
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates.InRelease",
+      "sha256": "dbe2987f3a702dd4d2d466a07a8361d812b40b3a8b7b2639a5a7992993d8833d",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Sun Oct 25 21:35:05 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates-main-Packages.xz",
+          "sha256": "ec13bc6f169c23d971706342c72e788515c01906a533e4d2fc9021dce7ebb5a9",
+          "size": 3908812
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates-universe-Packages.xz",
+          "sha256": "d2e8a26ba9b0f9bc73ad2d26c28a87db54441c30875e68d9de316455fd9cfff7",
+          "size": 1288820
+        }
+      ]
+    },
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy.InRelease",
+      "sha256": "c14060cd8c6d625874dfcb9523a35a395bf4865c28b6b6a82569ef326fe92dc6",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Fri Apr 22 01:16:39 2022 CST\ngpgv:                using RSA key 871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-main-Packages.xz",
+          "sha256": "37cb57f1554cbfa71c5a29ee9ffee18a9a8c1782bb0568e0874b7ff4ce8f9c11",
+          "size": 1394768
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-universe-Packages.xz",
+          "sha256": "d29cb24c93fec5f43255706bce7eb46d4779952039d8c68ac1bb14a6f3655ce2",
+          "size": 14090084
+        }
+      ]
+    }
+  ],
+  "staged": 71,
+  "added": [
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libapparmor.so.1.8.2",
+      "package": "libapparmor1",
+      "deb_sha256": "56cc62bd6359ee97d8017c2894bf1fbc328543f9d1cc2274af0ed4623a6b8386",
+      "kind": "file",
+      "sha256": "38b0a49583fb87e09825e0d8b43c5a18eb7d51684a23a41b23c109d53cbe314b",
+      "bytes": 80768
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libapparmor.so.1",
+      "package": "libapparmor1",
+      "deb_sha256": "56cc62bd6359ee97d8017c2894bf1fbc328543f9d1cc2274af0ed4623a6b8386",
+      "kind": "link",
+      "target": "libapparmor.so.1.8.2",
+      "original_target": "libapparmor.so.1.8.2"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libasyncns.so.0.3.1",
+      "package": "libasyncns0",
+      "deb_sha256": "6d223a97b434026e50fb9fcb237d45ed26fd272bb139f0bd793315d55a79901a",
+      "kind": "file",
+      "sha256": "a8c1d3161ac5b18145578742218d8c7c1b6cea692ffffddc3088c955c4199327",
+      "bytes": 26616
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libasyncns.so.0",
+      "package": "libasyncns0",
+      "deb_sha256": "6d223a97b434026e50fb9fcb237d45ed26fd272bb139f0bd793315d55a79901a",
+      "kind": "link",
+      "target": "libasyncns.so.0.3.1",
+      "original_target": "libasyncns.so.0.3.1"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "file",
+      "sha256": "abf86ae9362dbb413c740a55b194c74adb09a7bd92d8fbd96a293c797a4a6d08",
+      "bytes": 137560
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlidec.so.1.0.9",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "file",
+      "sha256": "db9dbda709a46c3ae124433f47c4db71167db8aaba4eafdfd99c8a3a14584463",
+      "bytes": 51512
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlienc.so.1.0.9",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "file",
+      "sha256": "b88bfc462f83859a0324e2035f10bfd277e6073bb211b8ca29d95d2a5be8290d",
+      "bytes": 587944
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "link",
+      "target": "libbrotlicommon.so.1.0.9",
+      "original_target": "libbrotlicommon.so.1.0.9"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlidec.so.1",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "link",
+      "target": "libbrotlidec.so.1.0.9",
+      "original_target": "libbrotlidec.so.1.0.9"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libbrotlienc.so.1",
+      "package": "libbrotli1",
+      "deb_sha256": "8e6aa2dfd44df287b9fb227862f3b6062ec074dd39a247874edfe12e1dcc3841",
+      "kind": "link",
+      "target": "libbrotlienc.so.1.0.9",
+      "original_target": "libbrotlienc.so.1.0.9"
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libdbus-1.so.3.19.13",
+      "package": "libdbus-1-3",
+      "deb_sha256": "6a5171696c3b05aca273d637d9c0501c8033fda64a971e09fd545bc1ab72ca1e",
+      "kind": "file",
+      "sha256": "a3d53f7215af9860f3466b94cd8fe3e95c253c46df164dea62af9b9def93dcea",
+      "bytes": 313656
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libdbus-1.so.3",
+      "package": "libdbus-1-3",
+      "deb_sha256": "6a5171696c3b05aca273d637d9c0501c8033fda64a971e09fd545bc1ab72ca1e",
+      "kind": "link",
+      "target": "libdbus-1.so.3.19.13",
+      "original_target": "libdbus-1.so.3.19.13"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libdeflate.so.0",
+      "package": "libdeflate0",
+      "deb_sha256": "a64f7f93a487e57e1a01404d378a8ef1428b1c6b0ecf24fc484c89b681a051c9",
+      "kind": "file",
+      "sha256": "dce39e00c986632f7d83199f2e5f2b89d7e11c8f311c6e9f204595f899785fa6",
+      "bytes": 141344
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libexpat.so.1.8.7",
+      "package": "libexpat1",
+      "deb_sha256": "0ee31596316d2275ab351d11290c63e7547fff0ecd7f431e56855cb7c5f18588",
+      "kind": "file",
+      "sha256": "683e2e41db14581194bf1f6616e95a8f02cd4ab599f0fba807e46325ec01d21f",
+      "bytes": 198968
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libexpatw.so.1.8.7",
+      "package": "libexpat1",
+      "deb_sha256": "0ee31596316d2275ab351d11290c63e7547fff0ecd7f431e56855cb7c5f18588",
+      "kind": "file",
+      "sha256": "a836702cc187899ac123d73a87c4ac2cab5b4ce43c2cebec8ed3b0749592f66c",
+      "bytes": 198968
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libexpat.so.1",
+      "package": "libexpat1",
+      "deb_sha256": "0ee31596316d2275ab351d11290c63e7547fff0ecd7f431e56855cb7c5f18588",
+      "kind": "link",
+      "target": "libexpat.so.1.8.7",
+      "original_target": "libexpat.so.1.8.7"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libexpatw.so.1",
+      "package": "libexpat1",
+      "deb_sha256": "0ee31596316d2275ab351d11290c63e7547fff0ecd7f431e56855cb7c5f18588",
+      "kind": "link",
+      "target": "libexpatw.so.1.8.7",
+      "original_target": "libexpatw.so.1.8.7"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libffi.so.8.1.0",
+      "package": "libffi8",
+      "deb_sha256": "b4f88c91fa6f4c942097be6abfc365fb133c5e147640168cbb7704fd855eac10",
+      "kind": "file",
+      "sha256": "247da4d5d34a91cadcdd6282be4c4644fcb8af001334d2b8a82ecda435418cbf",
+      "bytes": 47688
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libffi.so.8",
+      "package": "libffi8",
+      "deb_sha256": "b4f88c91fa6f4c942097be6abfc365fb133c5e147640168cbb7704fd855eac10",
+      "kind": "link",
+      "target": "libffi.so.8.1.0",
+      "original_target": "libffi.so.8.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.7200.4",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "file",
+      "sha256": "b63a477916c1f95de4b2c80bb4f5940a59ebc5860793d93b271448e90edbfe52",
+      "bytes": 1932688
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "file",
+      "sha256": "86acf2c843bcfaf5e8c24ab959737960c797da53b41658dc8ec6f257c786048c",
+      "bytes": 1281808
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.7200.4",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "file",
+      "sha256": "1019fc28ced6829f22b446a091ecb5b76b9fa3b3c458bc6ea936c1d328302cb5",
+      "bytes": 22736
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.7200.4",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "file",
+      "sha256": "05a94d6be0a50dba15a579f3ad1f5c6ec12c8d303f3b715a665fd27824ca523e",
+      "bytes": 387464
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.7200.4",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "file",
+      "sha256": "a3189a3c7efcd13c2efc3552ae2f9d7348debdbfb2b95882f72adad996dfcacc",
+      "bytes": 14488
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgio-2.0.so.0",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "link",
+      "target": "libgio-2.0.so.0.7200.4",
+      "original_target": "libgio-2.0.so.0.7200.4"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libglib-2.0.so.0",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "link",
+      "target": "libglib-2.0.so.0.7200.4",
+      "original_target": "libglib-2.0.so.0.7200.4"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "link",
+      "target": "libgmodule-2.0.so.0.7200.4",
+      "original_target": "libgmodule-2.0.so.0.7200.4"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "link",
+      "target": "libgobject-2.0.so.0.7200.4",
+      "original_target": "libgobject-2.0.so.0.7200.4"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0",
+      "package": "libglib2.0-0",
+      "deb_sha256": "b82973c5d9698e48297000e74d2dc7431e726db8f0f948ea56be7f9e4c9e66fb",
+      "kind": "link",
+      "target": "libgthread-2.0.so.0.7200.4",
+      "original_target": "libgthread-2.0.so.0.7200.4"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgraphite2.so.3.2.1",
+      "package": "libgraphite2-3",
+      "deb_sha256": "fefc2bc510b80a7a2a8570352be4f0bf9e2d36d122d2c8316cfa008103a2a7e5",
+      "kind": "file",
+      "sha256": "1d9215d0099e87da7ed9e1a9c2064fdb1da270253b869721ea0580a00657b723",
+      "bytes": 158000
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgraphite2.so.2.0.0",
+      "package": "libgraphite2-3",
+      "deb_sha256": "fefc2bc510b80a7a2a8570352be4f0bf9e2d36d122d2c8316cfa008103a2a7e5",
+      "kind": "link",
+      "target": "libgraphite2.so.3",
+      "original_target": "libgraphite2.so.3"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libgraphite2.so.3",
+      "package": "libgraphite2-3",
+      "deb_sha256": "fefc2bc510b80a7a2a8570352be4f0bf9e2d36d122d2c8316cfa008103a2a7e5",
+      "kind": "link",
+      "target": "libgraphite2.so.3.2.1",
+      "original_target": "libgraphite2.so.3.2.1"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libinstpatch-1.0.so.2.2.0",
+      "package": "libinstpatch-1.0-2",
+      "deb_sha256": "64aa673ea5420613a1ca109fbbce6b570d8a2282c5e1eb9b5e9e4f103353948d",
+      "kind": "file",
+      "sha256": "a34c2adfcaf7f00908aff4941676692b68598773617d65d1af149a90317a334c",
+      "bytes": 765184
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libinstpatch-1.0.so.2",
+      "package": "libinstpatch-1.0-2",
+      "deb_sha256": "64aa673ea5420613a1ca109fbbce6b570d8a2282c5e1eb9b5e9e4f103353948d",
+      "kind": "link",
+      "target": "libinstpatch-1.0.so.2.2.0",
+      "original_target": "libinstpatch-1.0.so.2.2.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjack.so.0.1.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "file",
+      "sha256": "9912303f5297814a9f0fa1a12c3c36b30b948e9065e4bd76e7b3baf76a09feb9",
+      "bytes": 339912
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjacknet.so.0.1.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "file",
+      "sha256": "62e6f535feca4d827980e69142c4381fc86593972c00d8febe2593d54bc56f89",
+      "bytes": 122008
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjackserver.so.0.1.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "file",
+      "sha256": "5d90693759025e30bb3df92226090ddf4f6a176521fbadeeed13ce2bb49a408d",
+      "bytes": 655856
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjack.so.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "link",
+      "target": "libjack.so.0.1.0",
+      "original_target": "libjack.so.0.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjacknet.so.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "link",
+      "target": "libjacknet.so.0.1.0",
+      "original_target": "libjacknet.so.0.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjackserver.so.0",
+      "package": "libjack-jackd2-0",
+      "deb_sha256": "8fd0298d320bf8fa0af334367e797c9db930225d26962e89acf46e0fc7975e88",
+      "kind": "link",
+      "target": "libjackserver.so.0.1.0",
+      "original_target": "libjackserver.so.0.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libjbig.so.0",
+      "package": "libjbig0",
+      "deb_sha256": "4666c37d8620b6d17a2d4acf2cb1459f071e74881dc490a159e90244d7a98cc6",
+      "kind": "file",
+      "sha256": "32ed19ff3065742c392e018840ed59a0b2a17817adf94ba409708f16d8cf234b",
+      "bytes": 66568
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libogg.so.0.8.5",
+      "package": "libogg0",
+      "deb_sha256": "116a95c2ef71057d86f1e20c378247d34a0c8cfa257aecd0f4f36f75fc338de2",
+      "kind": "file",
+      "sha256": "a499308d738035e86cec230c6eb0a19e895f3b197c9399107a63706253e0c737",
+      "bytes": 38872
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libogg.so.0",
+      "package": "libogg0",
+      "deb_sha256": "116a95c2ef71057d86f1e20c378247d34a0c8cfa257aecd0f4f36f75fc338de2",
+      "kind": "link",
+      "target": "libogg.so.0.8.5",
+      "original_target": "libogg.so.0.8.5"
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libhistory.so.8.1",
+      "package": "libreadline8",
+      "deb_sha256": "51fd16f608efa710c987e4b071ffba0bec63a9ac8e55eddd5770f5e5252edc09",
+      "kind": "file",
+      "sha256": "e36034e9f78d65e14e65d77e7f70dddbcce99258979c03c3c7160cc55b29d4d3",
+      "bytes": 51648
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libreadline.so.8.1",
+      "package": "libreadline8",
+      "deb_sha256": "51fd16f608efa710c987e4b071ffba0bec63a9ac8e55eddd5770f5e5252edc09",
+      "kind": "file",
+      "sha256": "57419e3b177639246ecf7ffd2eba170bde779b7369d70e68b9b4c5fc3051cbc1",
+      "bytes": 335936
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libhistory.so.8",
+      "package": "libreadline8",
+      "deb_sha256": "51fd16f608efa710c987e4b071ffba0bec63a9ac8e55eddd5770f5e5252edc09",
+      "kind": "link",
+      "target": "libhistory.so.8.1",
+      "original_target": "libhistory.so.8.1"
+    },
+    {
+      "path": "lib/x86_64-linux-gnu/libreadline.so.8",
+      "package": "libreadline8",
+      "deb_sha256": "51fd16f608efa710c987e4b071ffba0bec63a9ac8e55eddd5770f5e5252edc09",
+      "kind": "link",
+      "target": "libreadline.so.8.1",
+      "original_target": "libreadline.so.8.1"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsndfile.so.1.0.31",
+      "package": "libsndfile1",
+      "deb_sha256": "169b8d8c8c7790586e4a107beda8bf4a5dc397e236744749f11c92f1c0fcd59b",
+      "kind": "file",
+      "sha256": "ca86c8366be4cca11811f5338757439d9cb65db6728b4276083aad211b4fbf7f",
+      "bytes": 508456
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsndfile.so.1",
+      "package": "libsndfile1",
+      "deb_sha256": "169b8d8c8c7790586e4a107beda8bf4a5dc397e236744749f11c92f1c0fcd59b",
+      "kind": "link",
+      "target": "libsndfile.so.1.0.31",
+      "original_target": "libsndfile.so.1.0.31"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsystemd.so.0.32.0",
+      "package": "libsystemd0",
+      "deb_sha256": "ff02a85ba73f850cf7958d2867b34947c67a1072e2b2d1c108a8c6e23715624d",
+      "kind": "file",
+      "sha256": "40c7e0a11f089d712f0462df20e75e968c734a5813c4546f149c11a2f837d88c",
+      "bytes": 807936
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libsystemd.so.0",
+      "package": "libsystemd0",
+      "deb_sha256": "ff02a85ba73f850cf7958d2867b34947c67a1072e2b2d1c108a8c6e23715624d",
+      "kind": "link",
+      "target": "libsystemd.so.0.32.0",
+      "original_target": "libsystemd.so.0.32.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libvorbis.so.0.4.9",
+      "package": "libvorbis0a",
+      "deb_sha256": "1c4195ccfe75a82c0989300762124b2371d34d8e1f99a968032fde64395a23ec",
+      "kind": "file",
+      "sha256": "09ea7bba29ecd10714d85d8de184955e04e37112c8528319ccff25a4013bd30a",
+      "bytes": 178248
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libvorbis.so.0",
+      "package": "libvorbis0a",
+      "deb_sha256": "1c4195ccfe75a82c0989300762124b2371d34d8e1f99a968032fde64395a23ec",
+      "kind": "link",
+      "target": "libvorbis.so.0.4.9",
+      "original_target": "libvorbis.so.0.4.9"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libwayland-server.so.0.20.0",
+      "package": "libwayland-server0",
+      "deb_sha256": "b5d514dc17edac6b93ba2476d90806337ca4afcc914952a7e78af2e5cd0c4a7b",
+      "kind": "file",
+      "sha256": "ce73bdce7d0953f4f045a232f5351ba386be24d3a4aa5f00149f346e4d639003",
+      "bytes": 85448
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libwayland-server.so.0",
+      "package": "libwayland-server0",
+      "deb_sha256": "b5d514dc17edac6b93ba2476d90806337ca4afcc914952a7e78af2e5cd0c4a7b",
+      "kind": "link",
+      "target": "libwayland-server.so.0.20.0",
+      "original_target": "libwayland-server.so.0.20.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libX11-xcb.so.1.0.0",
+      "package": "libx11-xcb1",
+      "deb_sha256": "00260321d5b74fb472e830f5a5feeb521f43917948f1511a5bfb2ffead06e1ae",
+      "kind": "file",
+      "sha256": "d7f9e86161421311a1023c44295a88b4a00b6ecbd20c416fc71895f43e358a0a",
+      "bytes": 14048
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libX11-xcb.so.1",
+      "package": "libx11-xcb1",
+      "deb_sha256": "00260321d5b74fb472e830f5a5feeb521f43917948f1511a5bfb2ffead06e1ae",
+      "kind": "link",
+      "target": "libX11-xcb.so.1.0.0",
+      "original_target": "libX11-xcb.so.1.0.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libxcb-randr.so.0.1.0",
+      "package": "libxcb-randr0",
+      "deb_sha256": "39dc0f73fa3bd43f3f7755cb7d12bfd1cd59dd8966f747d66fba47dfc8652f62",
+      "kind": "file",
+      "sha256": "942a242b33c80ab4a5ce6d3db62d12f8856589860fa1986248b046850e58a80e",
+      "bytes": 71912
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libxcb-randr.so.0",
+      "package": "libxcb-randr0",
+      "deb_sha256": "39dc0f73fa3bd43f3f7755cb7d12bfd1cd59dd8966f747d66fba47dfc8652f62",
+      "kind": "link",
+      "target": "libxcb-randr.so.0.1.0",
+      "original_target": "libxcb-randr.so.0.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0",
+      "package": "libxcb1",
+      "deb_sha256": "9258f04136434e7a0ccd76041505421934284209693373cfa9c24acb3a641ec5",
+      "kind": "file",
+      "sha256": "aabc489094abd96c876d1c989a2da8a8aa6d28f5a676c4a84dd6d0a0c34aec5d",
+      "bytes": 166504
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libxcb.so.1",
+      "package": "libxcb1",
+      "deb_sha256": "9258f04136434e7a0ccd76041505421934284209693373cfa9c24acb3a641ec5",
+      "kind": "link",
+      "target": "libxcb.so.1.1.0",
+      "original_target": "libxcb.so.1.1.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0",
+      "package": "libxrender1",
+      "deb_sha256": "a68f6db4320b5963dd499b83b6cc8c7b5cd39b05e84862d5945da9244e4c96d6",
+      "kind": "file",
+      "sha256": "2415c0b512d332522625bc65bcc5e05dba93c2e3418329ded2855111fb0cf723",
+      "bytes": 47728
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libXrender.so.1",
+      "package": "libxrender1",
+      "deb_sha256": "a68f6db4320b5963dd499b83b6cc8c7b5cd39b05e84862d5945da9244e4c96d6",
+      "kind": "link",
+      "target": "libXrender.so.1.3.0",
+      "original_target": "libXrender.so.1.3.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libopus.so.0.8.0",
+      "package": "libopus0",
+      "deb_sha256": "73225bff2be1b5ef888d00d680f44741e67a096932bd0854db8da7d5488603b5",
+      "kind": "file",
+      "sha256": "f63e3597e52b57f8957bafb309e9f4d91108a3987136ace5f386f269a0947e55",
+      "bytes": 378952
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libopus.so.0",
+      "package": "libopus0",
+      "deb_sha256": "73225bff2be1b5ef888d00d680f44741e67a096932bd0854db8da7d5488603b5",
+      "kind": "link",
+      "target": "libopus.so.0.8.0",
+      "original_target": "libopus.so.0.8.0"
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/engines-3/afalg.so",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "87fe061f6cad7f4d28bbfa127be66791ad863e59d002ca005cc0cbaa0d4fb471",
+      "bytes": 23000
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/engines-3/loader_attic.so",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "bcef1a0d46dcec5f85a78d22c446a5dc22cc25edce1ed79f5966cddf6b1d61f1",
+      "bytes": 52088
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/engines-3/padlock.so",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "d042444a0c1c71664f1121c8fec8925d8ca24e0b87c0289bdd1b85c46fd280ce",
+      "bytes": 26840
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "7cc817ff1841b59516d684f357bc0c3fc2cc52c3fa9b4ffb8ce8bdc215f02915",
+      "bytes": 4455728
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libssl.so.3",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "51fc92556f11ddce62f3f988d3fe973fab8fb4742032e61a713688581c924262",
+      "bytes": 671960
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/ossl-modules/legacy.so",
+      "package": "libssl3",
+      "deb_sha256": "d1b4636e32ac6d3b95d583ac05ac548b1aa248414bae1c51b14f54be0f8fd7bc",
+      "kind": "file",
+      "sha256": "940b6057e683c1748b90f6dce8b8cbcc42993a48b477fb845c119e5108579064",
+      "bytes": 104672
+    }
+  ],
+  "overlap_equal": [],
+  "old4186_unchanged": true,
+  "system_installed": false
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "real_action": 152,
+  "reward": -0.002,
+  "rule_state_unchanged": true,
+  "worker_exit_zero": true,
+  "scope": "One nonterminal legal action: light per-step training cost, no altered game rules or outcome"
+}

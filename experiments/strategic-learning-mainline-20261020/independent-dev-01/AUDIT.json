@@ -1,0 +1,645 @@
+{
+  "passed": true,
+  "scope": "Independent CPU source/raw replay and recorded movement/action diagnosis, not full world determinism",
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "raw_games_independently_reaudited": 16,
+  "CPU_argmax_replayed_all_proposals": true,
+  "baseline_wins": 6,
+  "candidate_wins": 6,
+  "net_wins": 0,
+  "argmax_end_turns": 0,
+  "pairs": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102100
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 35,
+          "own_turn": 35,
+          "policy_decisions": 327,
+          "counts": {
+            "multiple_moves": 96,
+            "stop": 0,
+            "one_move": 231
+          },
+          "native_counts": {
+            "policy_moves": 327,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 34,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 327,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 36,
+          "own_turn": 36,
+          "policy_decisions": 354,
+          "counts": {
+            "multiple_moves": 93,
+            "stop": 0,
+            "one_move": 261
+          },
+          "native_counts": {
+            "policy_moves": 354,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 35,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 354,
+            "blocking_visits": 8
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 35,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 34,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "7fcf902ac72b73e930f69b4195f37f5061fd1b39802e53f7f44ae8d7dd1989ea"
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102101
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 15,
+          "own_turn": 15,
+          "policy_decisions": 144,
+          "counts": {
+            "multiple_moves": 46,
+            "stop": 0,
+            "one_move": 98
+          },
+          "native_counts": {
+            "policy_moves": 144,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 144,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 15,
+          "own_turn": 15,
+          "policy_decisions": 140,
+          "counts": {
+            "multiple_moves": 42,
+            "stop": 0,
+            "one_move": 98
+          },
+          "native_counts": {
+            "policy_moves": 140,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 140,
+            "blocking_visits": 6
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 38,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 37,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "c43b272e3814da7e6c2e836addf220ccaf92280666229b72aea8a860cb363b06"
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102102
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 35,
+          "own_turn": 35,
+          "policy_decisions": 353,
+          "counts": {
+            "multiple_moves": 95,
+            "stop": 0,
+            "one_move": 258
+          },
+          "native_counts": {
+            "policy_moves": 353,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 34,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 353,
+            "blocking_visits": 13
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 56,
+          "own_turn": 56,
+          "policy_decisions": 531,
+          "counts": {
+            "multiple_moves": 131,
+            "stop": 0,
+            "one_move": 400
+          },
+          "native_counts": {
+            "policy_moves": 531,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 55,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 531,
+            "blocking_visits": 22
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 54,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 53,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "6d97646aca4b1681ebd27555da84be63631e97bae0275de7ad2541c8d3c65f0b"
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102103
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 46,
+          "own_turn": 46,
+          "policy_decisions": 412,
+          "counts": {
+            "multiple_moves": 106,
+            "stop": 0,
+            "one_move": 306
+          },
+          "native_counts": {
+            "policy_moves": 412,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 45,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 412,
+            "blocking_visits": 24
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 201,
+          "own_turn": 201,
+          "policy_decisions": 2496,
+          "counts": {
+            "multiple_moves": 412,
+            "stop": 0,
+            "one_move": 2084
+          },
+          "native_counts": {
+            "policy_moves": 2496,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 200,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 2496,
+            "blocking_visits": 94
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 38,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 37,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "bd805c11b769f5c885cb2fc630a5ffaf2030f3a61122805a227b83d898bc237e"
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102104
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 16,
+          "own_turn": 16,
+          "policy_decisions": 152,
+          "counts": {
+            "multiple_moves": 50,
+            "stop": 0,
+            "one_move": 102
+          },
+          "native_counts": {
+            "policy_moves": 152,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 15,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 152,
+            "blocking_visits": 7
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 14,
+          "own_turn": 14,
+          "policy_decisions": 126,
+          "counts": {
+            "multiple_moves": 45,
+            "stop": 0,
+            "one_move": 81
+          },
+          "native_counts": {
+            "policy_moves": 126,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 13,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 126,
+            "blocking_visits": 6
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 29,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 28,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "a96bfee2e6bdfd5980df868da69f9d3a1f8cd77a67aa0c3a2725454ff07d1a86"
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102105
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "terminal_day": 23,
+          "own_turn": 23,
+          "policy_decisions": 223,
+          "counts": {
+            "multiple_moves": 64,
+            "stop": 0,
+            "one_move": 159
+          },
+          "native_counts": {
+            "policy_moves": 223,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 22,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 223,
+            "blocking_visits": 6
+          }
+        },
+        "b": {
+          "win": true,
+          "terminal_day": 14,
+          "own_turn": 14,
+          "policy_decisions": 118,
+          "counts": {
+            "multiple_moves": 41,
+            "stop": 0,
+            "one_move": 77
+          },
+          "native_counts": {
+            "policy_moves": 118,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 13,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 118,
+            "blocking_visits": 7
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 78,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 77,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "b681ee37bddc0705765cc2d64e8cb08b81486d594502232be87f1df87cecde41"
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102106
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "terminal_day": 11,
+          "own_turn": 11,
+          "policy_decisions": 95,
+          "counts": {
+            "multiple_moves": 40,
+            "stop": 0,
+            "one_move": 55
+          },
+          "native_counts": {
+            "policy_moves": 95,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 11,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 95,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": false,
+          "terminal_day": 11,
+          "own_turn": 11,
+          "policy_decisions": 94,
+          "counts": {
+            "multiple_moves": 37,
+            "stop": 0,
+            "one_move": 57
+          },
+          "native_counts": {
+            "policy_moves": 94,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 11,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 94,
+            "blocking_visits": 4
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 29,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 28,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "e37939097a22a58635a7b322c4a30bf984b8780e6384ed667831d5136c890b41"
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102107
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "terminal_day": 78,
+          "own_turn": 78,
+          "policy_decisions": 809,
+          "counts": {
+            "multiple_moves": 177,
+            "stop": 0,
+            "one_move": 632
+          },
+          "native_counts": {
+            "policy_moves": 809,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 77,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 809,
+            "blocking_visits": 39
+          }
+        },
+        "b": {
+          "win": false,
+          "terminal_day": 60,
+          "own_turn": 59,
+          "policy_decisions": 545,
+          "counts": {
+            "multiple_moves": 127,
+            "stop": 0,
+            "one_move": 418
+          },
+          "native_counts": {
+            "policy_moves": 545,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 59,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 545,
+            "blocking_visits": 31
+          }
+        }
+      },
+      "first_request_difference": {
+        "index": 84,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "first_choice_difference": {
+        "index": 83,
+        "a_eof": false,
+        "b_eof": false
+      },
+      "win_delta": 0,
+      "diagnosis_sha256": "d9d8404b547313cb38b14cb027b0bf759ee791630efc0c6786b3050e0dc18abc"
+    }
+  ],
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/review.py": "87470bf7ea5a53d8343582f2c7a2b374e07d007ce47bc5c7cdc423ff851c8193",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/PLAN.json": "45772172a93f15edddabfd2004894349c9ebfcc7ee74f25452c7579bf1eac54c",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/RESULT.json": "28cfd73bd98220e76d2ebcab55a809a8ef3e7e96f028b97abe0f7bf7c02ca11f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/PLAN.json": "c07fcb04914619e85e33aee0448f23a031fd0d28294627f89ce1f1ca3511eabc",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/EXECUTION.json": "586dffbd34b04b2f6d6e824040eef7205722ee08427f6bbf7a05beb18511d798",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/client.log": "769f9098301f45155f3d2c29734dfd91c5e4a8c55cd2b93407e328616fc65d50",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/typed.jsonl": "2e95e1a12ca56489b576cbbcd21e3e9df143c758b106a132eea4a044d89bba5e",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/strategy-trace.jsonl": "23e74bc6b02e68d8bce1fcd4adf12c36e72fb9b35c2f98e99314177e4c1dcb96",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/a/native/agent/typed-broker.jsonl": "caf71d6182c51b52fac431ffc6aba5b6e33404cf46a041e4bd8ed25c767b86bc",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-00/a/raw-audit/AUDIT.json": "b5a710977265bf6ca27b867aff8f16db72f80ffe27144aa7206b38c22c609422",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/PLAN.json": "850119ed51e912eb3c85a30fd7ecf834c7371aa9c65c88423a600b1402f0e313",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/EXECUTION.json": "e0e183de5a736c122fa82e480b80734eadcd637b53d19b8853fe5b82187f263d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/client.log": "001c78ce02da64a91d86b8c55a498a587ef05d2fdba512ffa63fc1640bde79c0",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/typed.jsonl": "1b3a99beb6bbdbbd7b2e85b9899684b391728f45518798b564bc5b5bbe572dfc",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/strategy-trace.jsonl": "4e96ff8924127db197528b58bab847a1b1a16d816b5f110e95147687b8023716",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-00/b/native/agent/typed-broker.jsonl": "814ac117aa5f22e4df472fd56b5af5557eb9e4a627091c3dbb2fcc944271581c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-00/b/raw-audit/AUDIT.json": "63a7eeca4cd03a5dc2c5bbba37005bdfbc8a114bc93fc6229ed9c8241ff3d958",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-00/DIAGNOSIS.json": "7fcf902ac72b73e930f69b4195f37f5061fd1b39802e53f7f44ae8d7dd1989ea",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/PLAN.json": "80484f94e6098a4cc25afc2e4aa8826cbf127e2ef3a781d6575adc8240465b2f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/EXECUTION.json": "0f38ca08975f523a294d8b29568dd5ed55ad680c98ba888864d2af5e15d04e2f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/client.log": "68ce11094a1a358db366fc1a95d476f511fb04cb4b482bdb45faeab7a22a04de",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/typed.jsonl": "1271a0a234f587a77fbbb36dd73b71ffcd2884ad11ce408a2e123da504f5c50a",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/strategy-trace.jsonl": "a77b261e748322b8717b7ce091b081c69c4fc586e3fcefb3be03ccd201099197",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/a/native/agent/typed-broker.jsonl": "86bb0d59e4030d02abc871fcb646faccb27209c0c6e90d86611f7aa95a54ee85",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-01/a/raw-audit/AUDIT.json": "2b80eca89bd1301de0723c253599bb1ad99d91e532a26fd9d798b58068d56d77",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/PLAN.json": "a812b3decdfc1bfc429153e35f02edb10d00984d96b6a3f3475b22dd425c8dd9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/EXECUTION.json": "b82246d3f6f6caf7704d0ab780c20e6e95e71d91bc15557484e8c7c38d6bdf2c",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/client.log": "c52091c2d6805c6aff5637ebff35cba673b9ee27b5272051c9d740083ab9452b",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/typed.jsonl": "4202381b72386d6e00cd8767c4edda49c72eed5b6b6a1d59a86002fb07ac7d17",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/strategy-trace.jsonl": "074f835812c86d5f1f5fffc493d8af553e2dc69294b350472fe4649bd8e57ce3",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-01/b/native/agent/typed-broker.jsonl": "ac648da4796eb3f4aa40fb53db2df94911fbd857704f0da29532649b5dc1acb1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-01/b/raw-audit/AUDIT.json": "d2e806867b0a656e5c93320ce0df49d7c579f549bb68b48f8472903cac821ebf",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-01/DIAGNOSIS.json": "c43b272e3814da7e6c2e836addf220ccaf92280666229b72aea8a860cb363b06",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/PLAN.json": "558355623b8b179baa848b656d67ae7e4c3ecd6de1e46c6d48cec47a0dad1731",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/EXECUTION.json": "ff0a3c679d4413e2b2907bd8b6659c6d5bd159e4ee433981259f42c5919e60fe",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/client.log": "8841c47c1cf21a923ed620d8c18d72f5af4a79a955e80e56516adb15d7443163",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/typed.jsonl": "c3a039dcac88bb72531373f906312bab4dbc3a6c4a376b8e7f6cec201c443847",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/strategy-trace.jsonl": "fb4f6c9408ce047334bdc89f4aeb71d064b1308b0f5b3c4a7844ff7b7c93447f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/a/native/agent/typed-broker.jsonl": "c0fc3b66cc292080ce0f770b638fb13f3a5b533080720d9bb9f5f78f54624143",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-02/a/raw-audit/AUDIT.json": "a631c077de376445e5c810dbae84b3df91f6956de1449713f7dc98c35f56599e",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/PLAN.json": "a9c00b56ecdefc16411f3a739328a4e3bd08ea88150d44480f3650a203a89ef5",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/EXECUTION.json": "e0cf5eb022f9d7b1fc26678c071f88c272bf008a7a12cfcc5236a4841e914cc1",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/client.log": "8c84684cfae6cb3bfae7310c9182f286d3877b00bdca72f715ddc1b00015555a",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/typed.jsonl": "2e9d4ab26675761e7faefe6dc0a2235dc4a156a7fcf72a27d9bb28fe6374c0e0",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/strategy-trace.jsonl": "902efd3d8497a73edaf2c16f372d49edb6a96b179b6973c24a3da4b3dc44acf7",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-02/b/native/agent/typed-broker.jsonl": "3e718337645ce364914d0498720a9eed81259ee1df42927a6c5bc3a5c062fcdc",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-02/b/raw-audit/AUDIT.json": "ad7324d5ab4f1d76e3573257a161ef45f28f8b18b88b06aec74a68f462d57c1b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-02/DIAGNOSIS.json": "6d97646aca4b1681ebd27555da84be63631e97bae0275de7ad2541c8d3c65f0b",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/PLAN.json": "cd0a9a4d50bfcaf1576c97862cad9885392caaa2025139b00714980ead523971",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/EXECUTION.json": "226db85858d45a5d8947f187b3f654763df8557678f77d52a008c83bcc1f6666",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/client.log": "802aa145c9b04735e3a9e2880232f7bd5d1e6d73f3fc0c8c722ee8a70759a934",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/typed.jsonl": "126d00e02641625037290e770e82f1cfb33ea8b3df31fba6946a99ef76c0aa7d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/strategy-trace.jsonl": "69ede818c732a12c881e058dd7dc6640ca804ede2e98ca70b85b6bb533bdeabf",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/a/native/agent/typed-broker.jsonl": "e5dee1ecbf1b6e363575c0443846adcae0e39b4504538a2d70c0f0c9a58dd20d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-03/a/raw-audit/AUDIT.json": "948a7acf373ebdfcd91295784cdd6e3be5b873160d07eadb342de6c1f4ef77e4",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/PLAN.json": "90009fd3974829317d26c678dcdfc6d6f5796ead8540a163582048fcea285963",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/EXECUTION.json": "2c8b31bf738460861557a828b6d7ca9c80ff520aacbc3045f0ef14c1d8170e8e",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/client.log": "39e151ae932635af0d0d3b48502ff014b3fc4abdb89f20906bca7b888137aa7f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/typed.jsonl": "a8002d511ef83b6381202cb786d1d210d9a51e945d480306bda19bed02d22542",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/strategy-trace.jsonl": "00aeec8e72e3565870c560178ce9f5ba4e84afd493a783603c6284fc1271f77b",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-03/b/native/agent/typed-broker.jsonl": "3f937d34ea96c140f7ea378a4d3c73205e78131ccb1aa18f275848fdfaf7e7c0",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-03/b/raw-audit/AUDIT.json": "25e2d7531bfd8eefd7350094cb89def34270b1297dbfb5b8ce592f59564696bd",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-03/DIAGNOSIS.json": "bd805c11b769f5c885cb2fc630a5ffaf2030f3a61122805a227b83d898bc237e",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/PLAN.json": "9bc2f2d8b50317b828907c1c279dc127ffdeac57547b7742016bc9d0364b6764",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/EXECUTION.json": "a05b39194a92b888424a318cceefb77600d04a69bd1cf97f0f7ad116efa9c7cc",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/client.log": "7b2fbb6b181df7f378f2fb6e36b599e5cd633af5ae2b42a6e2deed0ff11a0306",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/typed.jsonl": "8de2dc6b694b7294aadf603b4098bc2bb90c8bd5299d95e2e3e5aaa751fc285f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/strategy-trace.jsonl": "5f8f357620ae163431206a1ea4afb042581b270a9c5fc3ea96224ffeed71a15b",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/a/native/agent/typed-broker.jsonl": "9923a71f9579c4b558d3454cfaced8048d1455fa91fb7e52cf8cd608ae4a487c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-04/a/raw-audit/AUDIT.json": "cf7de4d1a9a4c727e9ebaf8eda6bfacb37beced50e5538111d5684f4a66517d5",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/PLAN.json": "eb1afd3726e618614ebca3bc675dfb647c2a1d5a3f5a29191ecbbf11d342b2f9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/EXECUTION.json": "ad4574dc27aa6e8b2d84827bc5c6d7ea8a9527b687e8cd1190e20538df349b49",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/client.log": "102ad08da9fa5488afa68777bd6d80f8ac146bdd68584be3015f427853816e03",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/typed.jsonl": "e049e9edc0ebb792f03fe16ed35e66c1296d9f6803d87df05bae7ee1b445df07",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/strategy-trace.jsonl": "4f33525542d225d3027ef7657a7c1b7c310f2d73415f09fb4f83244b17a0ca98",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-04/b/native/agent/typed-broker.jsonl": "e2bba3fa0760e52f80fe6cbb4251f70ffacfca1e7bd589bcfbe8136ec5fb51e3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-04/b/raw-audit/AUDIT.json": "3aac5c18a222c821ef1826146a080064994597cf4be5cdfa0cef7e6ce92d6a2d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-04/DIAGNOSIS.json": "a96bfee2e6bdfd5980df868da69f9d3a1f8cd77a67aa0c3a2725454ff07d1a86",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/PLAN.json": "8a409116b5e28b8a0be600f42e59f70ce7d86d3cf8a070f850b6fabb1a78d4b4",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/EXECUTION.json": "dc72094f542a0d6aed73fb42e19a2c97dc995fbd4f6da2874fa4dbbe9ed3ace0",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/client.log": "954217e0d75a0791a03e7e42042be16bdad36215ab568554b9f0c8bfda8ec802",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/typed.jsonl": "cbe9a14ecced56de2bbe0169c26ad80b3e9f68db1dbb852df6ea6edd360c9913",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/strategy-trace.jsonl": "dd55f6ffd16185ee5b7e454a89b9f755f798f4e8ba188ade1f4fe75d0ae8e5dc",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/a/native/agent/typed-broker.jsonl": "7ddf22ff4e29fffd9765fe08331a4e524b5219868a3590b4c49dd2f6c8c9f63d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-05/a/raw-audit/AUDIT.json": "354f9588d62cf440b4f5ade0580e44ac6b29f780107592583eb9208a81ce5b7d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/PLAN.json": "bcf1a3cf3123eccac92af88f804ef7baa876924777ebec30244899ec2e5eba15",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/EXECUTION.json": "6f91a6c523f24c26b8f69b4b366b3b9ac9fbcd69c76e3fa6560b64ac0b9aa423",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/client.log": "d5acbad4cc70919e82eaf9ed9a04d66aa8c741ae5abf7c57b06dd8a02282574d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/typed.jsonl": "4a138bc9bbc415225fd344df981efcaba0ae826778b464242ca2964f7a746eed",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/strategy-trace.jsonl": "7443074c69ace74fe0e90db2b58fc030330cc6eea64d078684ed98c2b4eec6e5",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-05/b/native/agent/typed-broker.jsonl": "f97b1a5197fe40625e5d98bf9783721d0fbcdadc6af07d3a90422a7d4a6db457",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-05/b/raw-audit/AUDIT.json": "66b970b926c6db27dbc56c2415972709ab814e1033efa20fa7b21b590b0dfd3f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-05/DIAGNOSIS.json": "b681ee37bddc0705765cc2d64e8cb08b81486d594502232be87f1df87cecde41",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/PLAN.json": "0795ce897421e18482474803d7715eacaf763331dea3c7e280a2432d20c53830",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/EXECUTION.json": "23c8eda5b6e5f37a17fa6f89e530de95f6181becda04135691ba8f4f0983f6f9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/client.log": "d753810e731d8689e8a8fd405c15000f014d8d19bed0e4983b1c79615f54f573",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/typed.jsonl": "1f1d8a08aa5f89ccf874fb14bb311da974314597776cfcf591f5ae93fe8d6801",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/strategy-trace.jsonl": "da36123d629f363b2397e5142fcc950bc200a99794c57c80b38e52f42a4a430d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/a/native/agent/typed-broker.jsonl": "b99bbdb6d2c9330b5c447a6c01e0b9677d398af426f11196963f9b6095195492",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-06/a/raw-audit/AUDIT.json": "0b53e73a57e5847e1609086552c4a7f22a248c9121b9da4a780c8244537c7a13",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/PLAN.json": "9e64f0e5bc4db53187f7de53e059a04b3800bc299b54d8baec6c4e7485e0e062",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/EXECUTION.json": "5a493d63bf6921a23a721fa82a98494c7c3a0d02c061ad832374c38c7a289ca9",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/client.log": "0b0fee2366d0e3762682a757dcb20f0a6c44b5cd21b4ef9de8b8c6e544050815",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/typed.jsonl": "374b01b78f7d2540f8da290c2ffc0507d23b2a9323c1cce2751c3a5470c9c4a4",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/strategy-trace.jsonl": "48db564d2dda2bd0193c2d926f066ca59228c20f81cde82408cfa5dc17c1591f",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-06/b/native/agent/typed-broker.jsonl": "bf479bab026a10da74f063da53e13078d1e46b1206958dfa07a90486276849d3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-06/b/raw-audit/AUDIT.json": "4484e35427de0df42bbf83994e7f3235100bb2018309e6342d523bb5d47e995f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-06/DIAGNOSIS.json": "e37939097a22a58635a7b322c4a30bf984b8780e6384ed667831d5136c890b41",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/PLAN.json": "421e4bf7c362ebf7aabda5701bc225f484efe3b283bce0ce1acb66f6358ddd44",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/EXECUTION.json": "4e2cd86d4bcb67847a148d386180fc7be3281f8613ebb89b3482b0986a4af912",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/client.log": "9d00e1043c969c13adab4c53945d76e0210cca529f659a5ccbd894655e565756",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/typed.jsonl": "01470f1212c778e08fa5dbecc15d6f5d8429e3afd7be4b783db9da788c205417",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/strategy-trace.jsonl": "8598e3fd80740b330c44907e0b30e96734966996aa066768b8ca1e2954b7cb20",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/a/native/agent/typed-broker.jsonl": "b9494044f6be16231398b6e766452901cdaf9dfee338e79f0f2d8ac84eba73a9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-07/a/raw-audit/AUDIT.json": "1468cddfffb718a442cde0b24d2c95e7343ac5bd70b38e7c119266cdae577cce",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/PLAN.json": "408e5cd3164cbde547e77eee1f70b5d3709b41d4dc612966c23c41d9143dfc31",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/EXECUTION.json": "dff490e73394c352c44ca7ae71b1d5abc6141d77ee6e95310f9023e2a09cd2a6",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/client.log": "bfd4ce924296b1658305dee9044951cbe368bcaa7576f40f6cb27948a63c3902",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/typed.jsonl": "b26ac8a53a6b4eb92c3d2165fa69c79f5507457c68180dcc21116d38a698c49b",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/strategy-trace.jsonl": "8d28303c3096de421d849a1950d96f01a241c489ffee6af8d7ad3b413dd55886",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-dev-01/pair-07/b/native/agent/typed-broker.jsonl": "a5979d0752415ad98f3d348a83d6ba39f2abe556d6d90924c8dc9eeb5e719f19",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-07/b/raw-audit/AUDIT.json": "407ed96fa031400cb65f7e0038005f76db68d3f75a30d786d1f9c71ef8d33795",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-dev-01/pair-07/DIAGNOSIS.json": "d9d8404b547313cb38b14cb027b0bf759ee791630efc0c6786b3050e0dc18abc"
+  }
+}

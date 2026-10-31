@@ -1,0 +1,27 @@
+--- frozen/evaluate-battles.py
++++ isolated/evaluate_bounded.py
+@@ -16,6 +16,7 @@
+ parser.add_argument('--policies', nargs='+', default=['teacher', 'heuristic', 'model'])
+ parser.add_argument('--scenarios', nargs='+', type=int, default=[10, 11])
+ parser.add_argument('--seeds', type=int, default=5)
++parser.add_argument('--seed-base',type=int,default=2026102500)
+ parser.add_argument('--workers', type=int, default=12)
+ parser.add_argument('--output', default='/mnt/g/Heroes3-AI-Lab/research/battle-evaluation-v1.json')
+ parser.add_argument('--scenario-file', default='/mnt/g/Heroes3-AI-Lab/research/scenarios-v1.json')
+@@ -31,6 +32,7 @@
+ lock_stream=pool_lock.open('a')
+ fcntl.flock(lock_stream,fcntl.LOCK_EX)
+ frozen=freeze(args)
++frozen[str(Path(__file__).resolve())]=__import__('hashlib').sha256(Path(__file__).read_bytes()).hexdigest()
+ if Path(args.output).exists():
+     prior=json.loads(Path(args.output).read_text())
+     expected=len(args.scenarios)*2*args.seeds*len(args.policies)
+@@ -81,7 +83,7 @@
+     return json.loads(output.read_text())
+ 
+ 
+-jobs = [(scenario, role, 2026101400 + scenario * 100 + seed, policy)
++jobs = [(scenario, role, args.seed_base + scenario * 100 + seed, policy)
+         for scenario in args.scenarios for role in ['attacker', 'defender']
+         for seed in range(args.seeds) for policy in args.policies]
+ with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as pool:

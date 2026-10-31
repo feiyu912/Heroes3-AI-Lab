@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "removes_draft_init_gate_and_adds_GameLibrary_declaration": true,
+  "other_eight_payload_bytes_exact": true,
+  "preserved_draft_current_SHA_verified": true,
+  "actual_compiled_parent_nine_payloads_SHA_verified": true,
+  "build_allowed": true,
+  "native_run_allowed": false,
+  "CXX_syntax_checked": false,
+  "native_builds": 0,
+  "native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "inputs": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/derive.py": "467d1be3539b2d59162a1f9b2d4c7fb723fa4abb21a71e61160357f6304e9e22",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v1/CANDIDATE_MANIFEST.json": "1a04aafe7372ef1b738d1bd297128c8e225d2cc1151ac48f0c31b13576d56590",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/CONTRACT.md": "1f3a9d3c0777e31787df5e8cd2a2af1614d326a04f9b0f85ac0e83c3e42d15a3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/build_capsule.py": "fcb44690e69fe7d59e1587c9d2f2706c5141efb5394484d0c79c288b48c99552",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/CANDIDATE_MANIFEST.json": "bec33627673811f3d995fa29bad836f23eee1f47aa70c2f5241af745f6e918c6"
+  }
+}

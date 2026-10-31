@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "scope": "Isolated deterministic pickHero garrison exclusion plus two independent mobile heroes; not learned strategy or general scheduling/strength.",
+  "baseline_pass": false,
+  "baseline_blockers": [
+    "strict:only_mobile_heroes_selected"
+  ],
+  "filtered_pass": true,
+  "both_raw_audits_recomputed_exact": true,
+  "only_scheduler_predicate_differs": true,
+  "fixture_and_seed_identical": true,
+  "mobile_successful_sequences_each_arm": {
+    "baseline": {
+      "0": 11,
+      "2": 11
+    },
+    "filtered": {
+      "0": 11,
+      "2": 11
+    }
+  },
+  "all17_frozen_artifacts_exact": true,
+  "negative_controls": {
+    "false_garrison": true,
+    "resource_mutation": true,
+    "duplicate_ack": true,
+    "hero2_turn2_no_actual_motion": true,
+    "action_after_boundary": true
+  },
+  "archive": {
+    "v3-baseline": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-baseline-03",
+      "files": {
+        "probe.jsonl": "1dc9502fe4b8d00341d1942e6cd4dd8b93448c21db113833e7afa3c304bb0529",
+        "strategy-trace.jsonl": "be1ec946a93344d8387fea761c6fe7c9620013368a596296d53825f3d5e3332c",
+        "client.log": "518c1ffa474342400e37acec2633437e34cdfabecc7627cdde81acffb59bd6d2",
+        "plan.json": "3deed98b53cc1c194b8861158cd58f73014b012df004f04a2e3c54f28ee656f2",
+        "execution.json": "6a4b301877f33874c9c968b6a2964e71b4b438eb15a5206913a48932f995086e",
+        "AUDIT_SCHEDULER.json": "7d6d47568d996fdc74f74d9f3f43835c41a402da7bea85782e87233ef805d0fb"
+      }
+    },
+    "v3-filtered": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-filtered-03",
+      "files": {
+        "probe.jsonl": "19446e4f2c9b2811984f42aac38fd7418384b8ca51d5d3f65c1f5a892e8d9933",
+        "strategy-trace.jsonl": "46a470ca54f0a2221fca004f78c41d7abe5a8c2bd7c02b81172d4600a45254d6",
+        "client.log": "6537cdca4ea3630045b42fe097c44b5193c52c7a8852d84fc7c39266863cae6e",
+        "plan.json": "e09b3e89cd35110427fc38861f4d37b4526b0c8ff7c278ea82628fa1cb465bde",
+        "execution.json": "4d505a2200a8f76c816115e18da1b1b4bad7278068c31e358918c9047bbf1eb7",
+        "AUDIT_SCHEDULER.json": "3c64c0284182b90e7d1b15e07e9c348543651c932f08d0c19d0b07f050f18ac1"
+      }
+    },
+    "v4-baseline": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-baseline-04",
+      "files": {
+        "probe.jsonl": "ec9e72b06c69d7b43e3dae071aedc821ca17d204a4b421f5442b1a2d6d40afea",
+        "strategy-trace.jsonl": "5455a57303970cb77ddf1bcfcf121bd62c9055e6e1d2a31b95a789452440881f",
+        "client.log": "b416b8048ad575cb0738fb7f91686a39af4b7f93ee152936f73f7fc94c8dbc46",
+        "plan.json": "be3dd2ef284301c465ffb63100380b4cd4d99cf3c70a90b4ac838e88765c96fb",
+        "execution.json": "544e0d75298e9c36e8968d7ed478956b7eb228c6e60f872be0be522a2b53432c",
+        "AUDIT_SCHEDULER.json": "7d98a6b8c1984d89005a2bd50727f4a9b5af6add73b78c6b233c7fecce046435"
+      }
+    },
+    "v4-filtered": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-filtered-04",
+      "files": {
+        "probe.jsonl": "ed3a79114a14fde1e8166d1dbbc918fb18281efdf1b1706021473abc98405e32",
+        "strategy-trace.jsonl": "5f993edcf8b831edb5fa0cdf0ca0be30fbea679779952900dc5b1bbe1a24754e",
+        "client.log": "f0945bed5e113f08908d32321c468422ba6881497362b057c8c187d9bd8a8939",
+        "plan.json": "c256b1625842dcb0148c7a801f9b60c301e51023b48511baf416c7f7f725e4ad",
+        "execution.json": "83ecf0fb88ff6e2612641527a910bcd17eb2bd2986530ef8b197aad5eec51f58",
+        "AUDIT_SCHEDULER.json": "48570e18de0bf59d5999db95fbea27279ee15c6a8f95432c5cf246c33b727a92"
+      }
+    }
+  },
+  "minimax_review": "Actual dsh MiniMax-M3.1-Flash reviewed reported v2 failure and v3 plan only, not v4 source or raw results. See ../multihero-scheduler-garrison-v2/minimax-review/RESULT.json.",
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "final_test_touched": false
+}

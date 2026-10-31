@@ -1,0 +1,22 @@
+{
+  "restore_learner.py": {
+    "source": "G:\\Heroes3-AI-Lab\\experiments\\battle-training-continuation-20261020\\restore_learner.py",
+    "sha256": "cb0f7a5a268f4e7e5a8b5b8c368c8927a528d9ac86d190f06457d1b159429cc7"
+  },
+  "support.py": {
+    "source": "G:\\Heroes3-AI-Lab\\experiments\\battle-training-continuation-20261020\\support.py",
+    "sha256": "6ea344ab7ba0f6bc20e44284206155be170ce182e302608ef47d9bcef1256708"
+  },
+  "curriculum.py": {
+    "source": "G:\\Heroes3-AI-Lab\\experiments\\battle-training-continuation-20261020\\curriculum.py",
+    "sha256": "8ed90d362faa7c1d1b4edb0d12ee343ddf4f841669509ce95603f1f153d7cbb5"
+  },
+  "audit_restore_cuda.py": {
+    "source": "G:\\Heroes3-AI-Lab\\experiments\\battle-training-continuation-20261020\\audit_restore_cuda.py",
+    "sha256": "0763ea33fbc25e5a5ad0640b45352431f287351b169e91d06b8557309db463b8"
+  },
+  "train_last_graph.py": {
+    "source": "G:\\Heroes3-AI-Lab\\experiments\\battle-training-continuation-20261020\\train_last_graph.py",
+    "sha256": "8b3ece30c67fbcc04273b25538e0fbbc70e2a99f139973aab3dad89399e8acd0"
+  }
+}

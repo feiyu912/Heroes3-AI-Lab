@@ -1,0 +1,36 @@
+{
+  "name": "challenge-mixed-v4",
+  "iteration": 128,
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791994215374348079/latest.pt",
+  "validation_report": "/mnt/g/Heroes3-AI-Lab/research/challenge-mixed-v4-validation.json",
+  "validation": {
+    "policy": "model",
+    "battles": 48,
+    "wins": 25,
+    "win_rate": 0.5208333333333334,
+    "wilson95": [
+      0.3832899563598438,
+      0.6552890998421255
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 64.60416666666667
+  },
+  "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/challenge-mixed-v4-update128-vs-upstream-validation.json",
+  "upstream_validation": {
+    "policy": "model",
+    "battles": 48,
+    "wins": 16,
+    "win_rate": 0.3333333333333333,
+    "wilson95": [
+      0.2167660137089678,
+      0.47460153667527943
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 69.47916666666667
+  },
+  "selection": "Validation only: maximize lower of BattleAI and upstream win rates, then sum, then lower BattleAI casualties; no test selection"
+}

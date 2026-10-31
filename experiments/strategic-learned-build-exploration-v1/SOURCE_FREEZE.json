@@ -1,0 +1,13 @@
+{
+  "status": "CPU_calibration_complete_no_native_GPU_optimizer",
+  "sources": {
+    "calibrate_cpu.py": "29187be87fd06c9ed874781c490adf73fe864a5952969a55736a42e980329c6b",
+    "model_io.py": "cadbe644db1ce31d68376b822c0ae69ec20ff512d1f690fc88a160c71abc3ae6",
+    "model.py": "893c045f9787a1afbe1fe32de6205f947da4e045220969dcd68b0d664e3e6700"
+  },
+  "plan_sha256": "abc8ac5bec1f5c946e15a169add91a567fb02012b31aa0ff0ca77c83a36375d8",
+  "parent_sha256": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+  "new_initialization_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+  "selected_bias": 1.5,
+  "optimizer_steps": 0
+}

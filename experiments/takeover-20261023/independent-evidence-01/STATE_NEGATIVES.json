@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "source_raw": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-mechanism-20261023-01",
+  "actual_baseline_recruit_and_transfer_accepted": true,
+  "negative_cases": [
+    {
+      "name": "wrong_resource_crystal",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_gems",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_gold",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_mercury",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_ore",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_sulfur",
+      "rejected": true
+    },
+    {
+      "name": "wrong_resource_wood",
+      "rejected": true
+    },
+    {
+      "name": "recruit_stock_not_decreased",
+      "rejected": true
+    },
+    {
+      "name": "offer_list_changed",
+      "rejected": true
+    },
+    {
+      "name": "destination_extra_soldier",
+      "rejected": true
+    },
+    {
+      "name": "visitor_identity_changed",
+      "rejected": true
+    },
+    {
+      "name": "free_transfer_spends_resource",
+      "rejected": true
+    },
+    {
+      "name": "partial_stack_transfer",
+      "rejected": true
+    }
+  ],
+  "native_runs": 0,
+  "gpu_runs": 0,
+  "optimizer_steps": 0,
+  "original_evidence_modified": false
+}

@@ -1,0 +1,15 @@
+{
+  "stage": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/baseline-build-01",
+  "passed": false,
+  "actual_exit_code": 1,
+  "actual_compile_commands_observed": 720,
+  "evidence_sha256": {
+    "COMMAND.json": "60eb28162649b92e344ba4bc79cab0be622188cfeec78fdd3172e954769e7238",
+    "RESULT.json": "decd5075806eb322d47ef4193a702aac9810168030002666b950641953c4f876",
+    "command.log": "b1304b55dec0a68a1b1bf0faccf753bc803248f1b507666490b2dbd3b7a20c71",
+    "BUILD_SOURCE_BEFORE.json": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f"
+  },
+  "prior_compile_commands_sha256": "98670b8a4c529662f50ddcfd063c5d0fc65ed920cbae70689939e7d6f095b242",
+  "source_manifest_sha256": "ad778715b1313896505f7ec1bef64c152c92ebcc029e84fee4429ff16d4b5b1f",
+  "note": "Only unchanged objects/PCH created in this isolated failed baseline stage are reused; stage itself failed at executable links."
+}

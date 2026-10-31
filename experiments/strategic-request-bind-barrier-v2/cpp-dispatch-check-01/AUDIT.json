@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "actual_source_fragment_sha256": "9a8164cdc36327d55fa6dcf22dc7d8ef0e3e69b2bb49656523a93187c7f39732",
+  "candidate_sha256": "746322002b86b337c59438ff22f92126504ee9ab4727f30a735300bb457e01f2",
+  "cases": [
+    "Director pre-transport exactly once",
+    "NK post-transport exactly once",
+    "MMAI post-transport exactly once",
+    "no interface",
+    "observer throws before transport"
+  ],
+  "fixture": true,
+  "real_execution_certified": false,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

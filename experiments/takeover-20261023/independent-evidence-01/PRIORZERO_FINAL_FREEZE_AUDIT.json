@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "freeze_sha256": "6c882b314cd69b526644e4730691f4b3e7979780ff3b6f6efce96abb68cbe827",
+  "files": 26,
+  "independent_CPU_source_snapshot_exact": true,
+  "native_runs": 0,
+  "GPU_calls": 0,
+  "optimizer_steps": 0,
+  "locks_acquired": false
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "rejected": [
+    "mirror_mismatch",
+    "missing_registration",
+    "missing_unified_ack",
+    "wrong_ack_type",
+    "false_server_apply",
+    "missing_server_receive",
+    "missing_exact_move_apply",
+    "query_not_popped",
+    "query_not_destroyed",
+    "wrong_move_coordinates",
+    "wrong_payload_owner",
+    "wrong_payload_source",
+    "army_delta_tamper",
+    "role_drift",
+    "policy_claim"
+  ],
+  "partial_tail_preserved": true,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/check_audit_supply_cpu.py": "8d5a336ff147018cd32ef393b2003cc8f5395aa46f53aea0c60c8e75cc37507b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/audit_supply.py": "bf2931bb001ecf590be46fbd75d4dbd2909206b1e2b61539b082d1332232d17f"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "new_native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "final_test_used": false,
+  "scope": "CPU map/tool preparation and rechecking existing raw, not new native qualification",
+  "syntax_checked": [
+    "audit_boundary.py",
+    "audit_natural_boundaries.py",
+    "audit_pair.py",
+    "boundary_common.py",
+    "boundary_raw_contract.py",
+    "collect_boundary.py",
+    "lease_exec.py",
+    "prepare_checks.py",
+    "prepare_fixtures.py",
+    "selector.py"
+  ],
+  "CLI_help_checks": [
+    {
+      "script": "collect_boundary.py",
+      "exit_code": 0
+    },
+    {
+      "script": "selector.py",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_boundary.py",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_pair.py",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_natural_boundaries.py",
+      "exit_code": 0
+    }
+  ],
+  "fixture_checks": [
+    {
+      "case": "reachable-stock-control",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "unreachable-stock",
+      "sha256": "d85288d47032f44ff3dd93fcfe02f4acb28bda4be89539454849fd1a4ae19a68",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "nonowned-stock",
+      "sha256": "811a9ee350f5f44a6818c43267b9ee51d11a797dfa1e66e51b51b81812c72550",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "arrive-incompatible-stock",
+      "sha256": "14c29703f5501e94d49b3f587037329db6718d819e2d233a09c1b7b03c2eb638",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "consumed-pickup",
+      "sha256": "e11b8a8a3d16492f597657b33c78ae8200d23dbf70af8000160ad174f1e1fd99",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "legacy-build",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    },
+    {
+      "case": "legacy-v4",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "single_factor_structure_passed": true,
+      "native_qualified": false
+    }
+  ],
+  "existing_schema6_raw_regression": {
+    "passed": true,
+    "source": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/native-01/candidate-positive",
+    "actual_decisions_checked": 8,
+    "existing_game_not_recounted": true,
+    "legacy_runtime_qualification_claimed": false
+  }
+}

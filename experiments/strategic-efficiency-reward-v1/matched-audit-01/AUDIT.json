@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "actual_saved_branches": 2,
+  "cuda_steps_per_branch": 132,
+  "same_parent": true,
+  "same_optimizer_config": true,
+  "same_source_runtime_protocol_except_arm": true,
+  "same_complete_shared_training_data": true,
+  "saved_CPU_CUDA_Python_RNG_exact_between_branches": true,
+  "saved_episode_sampling_states_exact_between_branches": true,
+  "parameter_differences": {
+    "actor": {
+      "l2": 0.012095500870235715,
+      "max_abs": 0.0019416932482272387
+    },
+    "critic": {
+      "l2": 0.018067364379101978,
+      "max_abs": 0.0015514791011810303
+    }
+  },
+  "checkpoint_sha256": {
+    "control": "1cb4da8f816983831665069b880ea262b2af0d854cb87ccb2c2c408ed834006f",
+    "treatment": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15"
+  },
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-control-update-01/update-1.pt": "1cb4da8f816983831665069b880ea262b2af0d854cb87ccb2c2c408ed834006f",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-treatment-update-01/update-1.pt": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-targets-01/TARGETS.json": "b5fc0fba63fafc6c62513777b10ce92a5eefd4fe8b9a05b9da826746af123ce9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/matched-audit-01/audit.py": "39546fe863f11643d81b3a35034a717c6dccc3fda8d6e666e3aac23301253cd7"
+  },
+  "audit_optimizer_steps": 0,
+  "new_games": 0,
+  "ability_improvement_claim": false,
+  "scope": "Matched saved-state comparison. This verifies one-factor execution, not independent native strength or continuous-vs-split training equivalence."
+}

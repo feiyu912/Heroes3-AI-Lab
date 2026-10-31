@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "status": "reviewable_unqualified_draft_not_frozen",
+  "CPU_only": true,
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "initialization_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+  "initialization_numeric_check_reused_not_rerun": true,
+  "training_and_admission_imports": true,
+  "PPO_function_AST_exact": true,
+  "native_guards": [
+    {
+      "gate": "source_inputs",
+      "rejected": true,
+      "error": "Native free-stock capsule/flow audit is not qualified; draft execution is disabled"
+    },
+    {
+      "gate": "validate_capsule",
+      "rejected": true,
+      "error": "Native free-stock capsule/flow audit is not qualified; draft execution is disabled"
+    },
+    {
+      "gate": "require_qualification",
+      "rejected": true,
+      "error": "Native free-stock capsule/flow audit is not qualified; draft execution is disabled"
+    }
+  ],
+  "source_diff_sha256": "61ad9b68ddbeb300a927be367af793b4c8d5fab3a7357ba011b98e73dd1c2a8d",
+  "files": [
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/admit_episode_v5.py",
+      "sha256": "3dfe67146ef0d04825815a004c82337ffc489f34aa5b2a757734be86ad57d286",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/admit_episode_v5.py",
+      "parent_sha256": "2e8233767d589fb58e84a1fd27528ee0da1e0e90a1066a60de5da1092d1fd934"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/broker.py",
+      "sha256": "5a5ec9ce3c779649d933062d0aed685f4f65f24560ae336d7f9e3ceda4b7f37f",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/broker.py",
+      "parent_sha256": "3ce568fc288922c9fedbf80cd5f3a8622d652cbe7cce48f35895b411d6ac0c52"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/draft_resume_guard_cpu.py",
+      "sha256": "f20d14b6f75f284ee540a640be4f488f02028b9f04ef25db72503e72da2c02b0",
+      "parent": null,
+      "parent_sha256": null
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/encoder.py",
+      "sha256": "eff4ed9ba88c3070d162a2c6ee16f002e21c4ec2287c7c9ca48a11a47e12fb72",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/encoder.py",
+      "parent_sha256": "961569f6405f7bda03dd678182024413cc1d489c856293db4e339673fbd0a62e"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/episode_balanced_ppo.py",
+      "sha256": "9dd3274974d859758a78332d17c21f7c2c3a394e29ecfaf5871a0664969247fe",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/episode_balanced_ppo.py",
+      "parent_sha256": "5e5bf696fca79aa567e79b2bc527c006a6fe8a84a8c2b3cb597317483e300951"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/load_admitted.py",
+      "sha256": "2025502a3c3cb45b6c46dab6d30f406dd2074ce8090ed7cffe3e964bf6a731a1",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/load_admitted.py",
+      "parent_sha256": "3a7897a3c00953a904c351068ccd73e2129625f1e0cc8861da9a1c298f995ee6"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/migrate_init_cpu.py",
+      "sha256": "14f08d5ff8a9fc42f211484470877dfb795e6317a19d5152f0f3699ca52a73b4",
+      "parent": null,
+      "parent_sha256": null
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/model.py",
+      "sha256": "643fd35392c4ce5d1029a7bb63e734ac1c57807108a17ef027b0d9e013e55720",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/model.py",
+      "parent_sha256": "e4794d74cbffe6a86e011e5dc092ee03e8191720b2a27aad6bae3c973a784821"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/model_io.py",
+      "sha256": "8811ead4f3c6bca0f5b97240711ad9a0b75badf2a9a42513b2bf7015efa1020d",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/model_io.py",
+      "parent_sha256": "418c3ef37822609ccb70e819d3077b60960043d21e0a08f5eb310ec6208f2707"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/onpolicy_broker_v2.py",
+      "sha256": "a45055cc1949ba048355097578f5753a3d06ee0ac4416ae9f941d8457397c8b5",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/onpolicy_broker_v2.py",
+      "parent_sha256": "b81f641f546e2af1b4f2de8e2e10a0f0f0c5a0c0e2e324ebd58d455fcc15dbae"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/train_update_v3.py",
+      "sha256": "010470a88baaaf6780ba00e65fc452263695eb6395b0ad97154314ac6113e7cf",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/train_update_v3.py",
+      "parent_sha256": "35ca62ad3c6deb6ed6cf6d139dcfa7e004ff340eea38c87dd9bc342f5d6af302"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/audit_contract.py",
+      "sha256": "c879efa9fedec3710aeaa5608f39a5c95daa9bc130bb9c2a834ea8dbd4d1d7f8",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/audit_contract.py",
+      "parent_sha256": "ae62edb3186960053069c45fc0967366b422b300c1a5248f234b219da987743c"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/audit_game_v6.py",
+      "sha256": "4f8af120417c02632fc82f956bbd74eecff973e51cc4e7e66527f9a17168a20a",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/audit_game_v6.py",
+      "parent_sha256": "c23cfc9d3f230ec5a4c4b1882c373209434cbe67de253e502eaa97ac765a2673"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/build_evidence.py",
+      "sha256": "4b7f21e548b68b319ed5d2871c2276408ea8bc81495088aca83a44d516ef6368",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/build_evidence.py",
+      "parent_sha256": "e549ef7d65f0376fac48705cd02660a2ef8ed72a6e409da365af6d3e3e786a12"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/collect_episode_v5.py",
+      "sha256": "2f398231cd4cd18d949ed870a12ddb9a81af8746eb55be43ad57e7e6fd3bb1d1",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/collect_episode_v5.py",
+      "parent_sha256": "861ff973614548d70c2d35e0b18f4546f72bf5e973e4338c3cce7fc981159e72"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/free_transfer_evidence.py",
+      "sha256": "ea44ee30777de258463b6b347999270dce37d704aa598537f4d3690a789b0666",
+      "parent": null,
+      "parent_sha256": null
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/pipeline_common.py",
+      "sha256": "b71383088f165fe1de0ed6b16f098d17ae15b051874bb82af9b21f780a0703e0",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/pipeline_common.py",
+      "parent_sha256": "05b31eda294fcb643b7b1b69049a4b755f414962f2dd5a26cb309a9a696f3569"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/raw_events_v5.py",
+      "sha256": "fb8a4874125a7c26d38a71a0460aadc0b9d4dc75914692aa861b1dafd6b5b5bd",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/raw_events_v5.py",
+      "parent_sha256": "5cf48a8baf89517dce029a54134bdaad2112099726cba1969cc11385f7eb3493"
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/run_pipeline.py",
+      "sha256": "5b7b884a23c4d3388675df3c47191ef7e48708d717eb8e23c5c15b75e2f06cfe",
+      "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/run_pipeline.py",
+      "parent_sha256": "05a2791cf022d8d19d9c2d9fb5ce6f5708ca16348e72a724d101821982873f16"
+    }
+  ],
+  "pending": "Root exact native-v2 capsule/source/proof pins plus actual per-game free-transfer verifier; no native permission is implied by this draft"
+}

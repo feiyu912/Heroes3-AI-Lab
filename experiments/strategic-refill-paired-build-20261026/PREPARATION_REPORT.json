@@ -1,0 +1,27 @@
+{
+  "status": "prepared-configure02-passed-await-final-target-closure-and-build-admission",
+  "prepare": "prepare-01/RESULT.json",
+  "configure": "configure-02/RESULT.json",
+  "actual_configure_commands": 2,
+  "actual_full_VCMI_builds": 0,
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "protected_input_changes": 0,
+  "scratch_root": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01",
+  "source_payload_arm": "baseline",
+  "source_files": 3701,
+  "notes": [
+    "Original configure-01 driver hash is in PROTECTED_BEFORE; current driver adds complete source snapshots for subsequent stages.",
+    "500ms process-group sampling is an observed RSS peak, not a proof of instantaneous aggregate peak.",
+    "No accepted source/binaries modified, no restoration booleans emitted.",
+    "Core toolchain certificate does not certify target SDL transitive dependency closure."
+  ],
+  "full_VCMI_builds": 0,
+  "missing_input_resolved": "Exact BoostDetectToolset helper supplied by toolchain agent; configure-02 succeeds",
+  "source_snapshot_files": 3701,
+  "current_driver_sha256": {
+    "build_pair.py": "e6b6464150474d37d2b167321ffec6a8644e1d4d61440e6596e5599883bee177",
+    "stage_entry.py": "2007001ac337728129a858c5bf827a5fa93e3a324892d4baeb8330d2e236ac39",
+    "build-contract-v1.json": "94fababf70089e1d944b17280c0d6e003ba39dc34c6a34fcb853316dc4308cf2"
+  }
+}

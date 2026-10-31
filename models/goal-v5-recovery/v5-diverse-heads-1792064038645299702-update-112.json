@@ -1,0 +1,32 @@
+{
+  "source_checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-112.pt",
+  "backup_checkpoint": "/mnt/g/Heroes3-AI-Lab/models/goal-v5-recovery/v5-diverse-heads-1792064038645299702-update-112.pt",
+  "sha256": "6daf9bc0246f193c890e80ae63a635f526cb7ea9a54899ed14de58105969921c",
+  "completed_updates": 112,
+  "environment_steps": 86016,
+  "config": {
+    "workers": 24,
+    "updates": 256,
+    "rollout": 32,
+    "seed": 20261020,
+    "opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "resume": false,
+    "step_cost": 0.002,
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "balanced_configs": true,
+    "shaping": 0.5,
+    "learning_rate": 5e-05,
+    "entropy_coef": 0.005,
+    "native_opponent_device": "cpu",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads.json"
+  },
+  "resume_available": true,
+  "weights_finite": true,
+  "zip_crc_verified": true,
+  "source_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads.json",
+  "validation_status": "Not yet evaluated; backup is not evidence of playing strength"
+}

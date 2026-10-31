@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "synthetic_catalog_and_added_facts": true,
+  "native_qualification_claim": false,
+  "models_saved": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "parent_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+  "weights_only": true,
+  "projection_rows": 4,
+  "no_recruit_logits_critic_softmax_bitwise_equal": true,
+  "new_feature_gradient_abs_sum": {
+    "actor.recruit_bias": 0.9839199781417847,
+    "recruit_actor.weight": 6.569400310516357,
+    "recruit_critic.weight": 0.14514702558517456
+  },
+  "new_Adam_state_empty": true,
+  "rejected_cases": [
+    "wrong_destination",
+    "wrong_stock",
+    "wrong_bucket",
+    "closed_window",
+    "wrong_schema",
+    "wrong_catalog",
+    "nonfinite_amount",
+    "foreign_resource",
+    "occupied_slot",
+    "duplicate_candidate",
+    "synthetic_training_catalog",
+    "all_unknown"
+  ]
+}

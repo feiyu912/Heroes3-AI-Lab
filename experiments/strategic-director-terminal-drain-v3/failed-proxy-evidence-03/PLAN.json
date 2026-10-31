@@ -1,0 +1,84 @@
+{
+  "jobs": [
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "EmptyAI",
+      "player": 0,
+      "seed": 2026111000
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "EmptyAI",
+      "player": 1,
+      "seed": 2026111001
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "Nullkiller2",
+      "player": 0,
+      "seed": 2026111002
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "Nullkiller2",
+      "player": 1,
+      "seed": 2026111003
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "EmptyAI",
+      "player": 0,
+      "seed": 2026111004
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "EmptyAI",
+      "player": 1,
+      "seed": 2026111005
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "Nullkiller2",
+      "player": 0,
+      "seed": 2026111006
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "Nullkiller2",
+      "player": 1,
+      "seed": 2026111007
+    }
+  ],
+  "modes": "once in both arms",
+  "arms": {
+    "a": "model",
+    "b": "clearance"
+  },
+  "terminal_ack_scope": "director",
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/paired_proxy_drain_v3.py": "440f157ad2549d77fde3d19455f32269109be500b1bed1dc786c5305c83f4862",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/paired_diagnostic.py": "cb4e2602c60692a4bc93bd9f0de4f38eb00352743a6e05825122444b74d1f602",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/run_proxy_game_director_drain.py": "3bdd8e6b1939e100a6cc28aa84161bf3e4887c9d6c542091a3e1de5476ff922d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/audit_replan_v3.py": "64410449ff82803a4c2e1b92cb83e524205202f25ba84ef622f58d159d0e9713",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_proxy.py": "376c63d19cc66038d9002da371d60a37f805e7e8a80ef436da32fb05767fc80c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/PROXY_PLAN.md": "f66b8f332c6041abb29d60df480c129e83ebf7cc8385029233a7a6501cdca68d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/PLAN.md": "df33f98951509a3ccc3bffe44a095090b07f720f41ce7fe445a98fa017356c7a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-capsule-03/EXECUTION.json": "4cc52c5130ec69710879e8a31912ebccff5e92a1a5f8d31d9bb98bd03890a76f",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-capsule-03/build-source-manifest.json": "2972318d45d8d69683eb869bd13f36781baa00bad123c06a76b8f549a10eeb9c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/PLAN.md": "07824fe5267fdc3cd3fed66cb30dc38fb4473f8bb3db223c2f268a3bae5c142d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/CANDIDATE_MANIFEST.json": "638945535d6878723ac42adf2147f0d0c0e6054523ccf655f1ee2e7f389252c0",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/director_registry_v1.py": "7a81a7d4c229e1a90bf9246c1dc68a58787cd9e6bd81744b92e3919f620e4a69",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/audit_game_v6.py": "31fc8cd89685d63dfb6bc0df80fd1a537fc77e44223dfce235292d3ee61eba99",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-qualification-01/RESULT.json": "34aeab1bf53c0c9e080c1ce5160b0f17fd278bd9a4f72749d0f50f8d749ea0e5",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-qualification-01/PLAN.json": "a9f5443da8f9b0827a7dbe64b6c6cff578339da49dbe1708f5add62bbbcedea2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-request-bind-barrier-v2/native-repro-comparison-01/AUDIT.json": "2fdcbba1714d6367e29938320d1f3eeb81131a630e24943876652a7e28eddc15"
+  },
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "finaltest_touched": false
+}

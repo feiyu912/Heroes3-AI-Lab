@@ -1,0 +1,255 @@
+{
+  "schema": "positive-exchange-pilot-result-v2",
+  "episodes": 16,
+  "pairs": [
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111801,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111802,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111801,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111802,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111801,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111802,
+      "delta_wins": 0,
+      "delta_main_loss": 0,
+      "delta_total_loss": 0
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111801,
+      "delta_wins": -1,
+      "delta_main_loss": 3,
+      "delta_total_loss": 3
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111802,
+      "delta_wins": 0,
+      "delta_main_loss": 1,
+      "delta_total_loss": 1
+    }
+  ],
+  "net_wins": -1,
+  "mean_delta_main_loss": 0.5,
+  "mean_delta_total_loss": 0.5,
+  "wall_seconds": 47.18605969099997,
+  "bc_eligible": false,
+  "certified": false,
+  "independent_improvement_proven": false,
+  "rows": [
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 10,
+      "total_loss": 12,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-teacher.json",
+      "archive_sha256": "46402c739174bcedd294f2dd999ea1c7db3e0a7a8401ef1f4a650ca33dd25dc8"
+    },
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 10,
+      "total_loss": 12,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111801-positive-exchange.json",
+      "archive_sha256": "732a26c8da46326c1ef6bcabbe5a344856caeb174724731bbc0ff314410b9aee"
+    },
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-teacher.json",
+      "archive_sha256": "b270c8db2507248ffa08bb2fa3a33b2f7c31fe1542d4f9a2b607aca9e9b2d2e3"
+    },
+    {
+      "scenario": 0,
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-attacker-2026111802-positive-exchange.json",
+      "archive_sha256": "8ed4ef234bee3c933db1696f3605b9fae3abfefc474659b31baffffb98d21d62"
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-teacher.json",
+      "archive_sha256": "46432337c4f10f0bbbdabe7df908c841fc85416ec7b4fb991a92e172a7d61405"
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 12,
+      "total_loss": 14,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111801-positive-exchange.json",
+      "archive_sha256": "664738d47abefb24d62fe95d958bf82a62ca54eb64326ee1bf2ad8df037170a4"
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 9,
+      "total_loss": 11,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-teacher.json",
+      "archive_sha256": "3071aa934b434096c35d1fbf5988ad182fc0cd9796fac97530c4293fc83a61e7"
+    },
+    {
+      "scenario": 0,
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 9,
+      "total_loss": 11,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/0-defender-2026111802-positive-exchange.json",
+      "archive_sha256": "54bd34bfb63fb014b7559c6a2865497c508f5cd03b7f4849d03210ae9a85662e"
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-teacher.json",
+      "archive_sha256": "8ae5aa91a950ccef9f82935dac0d66603cfff213ad9adeb1d8bec1d1c4047194"
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111801-positive-exchange.json",
+      "archive_sha256": "3d9cb0d47b23095b2e00ce98f214c5c9c6ab9da20bc7632983969055e44690a8"
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-teacher.json",
+      "archive_sha256": "54232f96c2435d85973097a8426b4c3c6ff178017db69f9bcf98f14f49a594b3"
+    },
+    {
+      "scenario": 1,
+      "role": "attacker",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-attacker-2026111802-positive-exchange.json",
+      "archive_sha256": "22f949cb7d9fe41516540ad1f796d2873eb36dd2b9ce2ab14386b30b5bb56fe2"
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 15,
+      "total_loss": 17,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-teacher.json",
+      "archive_sha256": "a8c579b52749e6c4ba0985d6e054389997e2c0190a86738ac01c1caedaee11fb"
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111801,
+      "policy": "positive-exchange",
+      "won": 0,
+      "main_loss": 18,
+      "total_loss": 20,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111801-positive-exchange.json",
+      "archive_sha256": "a2f57f5ba8086a2e3221fa1399e48144c87c882b83b0673a4aaccff08854ecee"
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "teacher",
+      "won": 1,
+      "main_loss": 14,
+      "total_loss": 16,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-teacher.json",
+      "archive_sha256": "927a07dacf794ea8e1556bf469fdd2a46c1f1a4f3aa2092a8f42ed76491f444c"
+    },
+    {
+      "scenario": 1,
+      "role": "defender",
+      "seed": 2026111802,
+      "policy": "positive-exchange",
+      "won": 1,
+      "main_loss": 15,
+      "total_loss": 17,
+      "summary": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/runs/train/1-defender-2026111802-positive-exchange.json",
+      "archive_sha256": "8dbd6541b0c52d852d0a524038289bd36d97b3cb46f8554a45c053d1e5f8aac0"
+    }
+  ]
+}

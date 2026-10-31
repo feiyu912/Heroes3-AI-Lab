@@ -1,0 +1,59 @@
+[
+  {
+    "name": "upstream-v15-vs-battleai",
+    "summary": [
+      {
+        "policy": "upstream",
+        "battles": 160,
+        "wins": 99,
+        "win_rate": 0.61875,
+        "wilson95": [
+          0.5415420671016985,
+          0.6903892616939188
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 73.7125
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/upstream-v15-vs-battleai.json"
+  },
+  {
+    "name": "lab-v3-vs-upstream-v15",
+    "summary": [
+      {
+        "policy": "model",
+        "battles": 160,
+        "wins": 47,
+        "win_rate": 0.29375,
+        "wilson95": [
+          0.22867364459504114,
+          0.3684982580230973
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 89.30625
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/lab-v3-vs-upstream-v15.json"
+  },
+  {
+    "name": "upstream-v15-vs-upstream-v15",
+    "summary": [
+      {
+        "policy": "upstream",
+        "battles": 160,
+        "wins": 80,
+        "win_rate": 0.5,
+        "wilson95": [
+          0.42343787383759396,
+          0.576562126162406
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 83.71875
+      }
+    ],
+    "report": "/mnt/g/Heroes3-AI-Lab/research/upstream-v15-vs-upstream-v15.json"
+  }
+]

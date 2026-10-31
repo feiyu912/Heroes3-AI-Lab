@@ -1,0 +1,12 @@
+{
+  "synthetic_only": true,
+  "no_real_pool_or_game_or_gpu": true,
+  "blocked_during": true,
+  "free_after": true,
+  "remaining_processes": [],
+  "supervisor_exit": 1,
+  "result_status": "failed_gate",
+  "wrong_inode_rejected": true,
+  "unlocked_fd_rejected": true,
+  "passed": true
+}

@@ -1,0 +1,39 @@
+{
+  "compiled": false,
+  "installed": false,
+  "games_started": 0,
+  "optimizer_steps": 0,
+  "parent_source_sha256": {
+    "AI/DirectorAI/CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "AI/DirectorAI/CDirectorAI.h": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+    "lib/mapObjects/CGHeroInstance.cpp": "198ab295fca36c429727900527a144156ff47687b13ad9bcc686e2924631f0c5",
+    "lib/mapObjects/CGTownInstance.cpp": "430d61204532dcaad217e4108adb13f585ed3bee150314624099a666cfcb7e7e",
+    "lib/callback/IGameEventsReceiver.h": "e4668700c40b209a74baf934d13b7822c58306d987d4fa2dd62e9ac274bbeace",
+    "lib/callback/CAdventureAI.h": "0a833677b057ca32e87186ac24e309903756f97877971124232ce8f21d738b16",
+    "lib/callback/CAdventureAI.cpp": "270d5879018b462c3f71ebc3e35adb4a33afe8a8241fce23c0c1a0b9f4fd37e4",
+    "lib/callback/CCallback.cpp": "acfadeb43555667dc421cf882f097622ac9389ebc2b02fbab692c958066ab7d0",
+    "lib/callback/IGameActionCallback.h": "dfaf41d5bd78fbf246a28375805a1f29f0dd8bbfdca2eba9f1fd87ef78f6bb95",
+    "lib/networkPacks/PacksForClient.h": "f0fb1ea6c7e8a0728cb08f6fc04562ca885d480121e393e869b8692545d83b2d",
+    "client/NetPacksClient.cpp": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+    "server/CGameHandler.cpp": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+    "server/queries/MapQueries.cpp": "affe91e0a73d7ee27a532d295b5886dc2a9e565adae494e8b84640aa238a4e73",
+    "server/queries/MapQueries.h": "2096e61e2c66f1f70647963df9ce3afd1beb1e62eb4f5f6f641d2fb5887ce1a9",
+    "server/NetPacksServer.cpp": "3b70ad9a109c1cf41bd34cfc5767d6ea6c5dc5cbafba54e35515358d1ea8de3b",
+    "lib/callback/CGlobalAI.h": "dbb31642667c23353f15408863ee7e367d1f86da72e279bedbd3645e7b27b5ec",
+    "lib/callback/CGameInterface.h": "0022ec73570e191c0c0f41a717650b5debd2eb9d7f4608679ab12714a68b29a4",
+    "lib/callback/CPlayerSpecificInfoCallback.cpp": "b4d80f9e4852ee544943c7f07cc8bc938d1e3932b7d25bf186ab8b531b7be66d",
+    "server/queries/CQuery.cpp": "702feebd49b63af7fe2cc0a0c22d64fc27556413ee304725f830704f416a936b",
+    "server/queries/CQuery.h": "bd573b336ec1ef7b8c2c87cc34e421a620a17cb78009afc532927cc8ad14cc01"
+  },
+  "artifacts": {
+    "close-only/CDirectorAI.cpp": "2c8f5f6beca7c843cabbde13dcd85806fb7748198bae3b69d57063bbf8963f75",
+    "close-only/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+    "close-only/source.diff": "a92debb1d1dbce6b96dbf8765317f087dc2f60cb2fe3012a76f94764b9f8b190",
+    "original-unhandled/CDirectorAI.cpp": "a89571ec68198f0e02c0e678afc986e4d69ad8eea04c3047c37620f54a61b1dc",
+    "original-unhandled/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+    "original-unhandled/source.diff": "c33df4dcfd37d3d7fa33dd5f71b8fc68dc91b736c05e62e4a0f57e45b18fe5de",
+    "transfer-close/CDirectorAI.cpp": "8c4f57cdc8f9e5f2a1aaabf1501908d2ce6e05d9a993af7f80a9673f2fae98a7",
+    "transfer-close/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+    "transfer-close/source.diff": "cac6738cb9bb4e0e966ca06cade698cd465fa2362382bbec6879b83cb21239ac"
+  }
+}

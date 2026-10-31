@@ -1,0 +1,561 @@
+{
+  "passed": true,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "registered_curriculum": {
+    "schema": "normal-TRAIN-six-family-24-cell-v1",
+    "seed": 2026102012,
+    "families": [
+      {
+        "family": 0,
+        "species": [
+          "core:archer",
+          "core:dendroidGuard",
+          "core:griffin"
+        ],
+        "scenario_index": 23,
+        "scenario_id": "diverse-023",
+        "map": "lab/diverse-023.vmap",
+        "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc"
+      },
+      {
+        "family": 1,
+        "species": [
+          "core:archer",
+          "core:griffin",
+          "core:pikeman"
+        ],
+        "scenario_index": 54,
+        "scenario_id": "diverse-054",
+        "map": "lab/diverse-054.vmap",
+        "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2"
+      },
+      {
+        "family": 2,
+        "species": [
+          "core:cavalier",
+          "core:monk",
+          "core:swordsman"
+        ],
+        "scenario_index": 56,
+        "scenario_id": "diverse-056",
+        "map": "lab/diverse-056.vmap",
+        "map_sha256": "e50ab5823ef7d32e2dc9c40332bed4eb74ae8609f7ac5da93f8de30e6a65fe50"
+      },
+      {
+        "family": 3,
+        "species": [
+          "core:centaur",
+          "core:pegasus",
+          "core:woodElf"
+        ],
+        "scenario_index": 163,
+        "scenario_id": "diverse-163",
+        "map": "lab/diverse-163.vmap",
+        "map_sha256": "87dc20832716e6d1920bba541b9c8e35fea00a601bd63f6db0f0dfcfa2b59c33"
+      },
+      {
+        "family": 4,
+        "species": [
+          "core:dwarf",
+          "core:unicorn",
+          "core:woodElf"
+        ],
+        "scenario_index": 51,
+        "scenario_id": "diverse-051",
+        "map": "lab/diverse-051.vmap",
+        "map_sha256": "fe90b7b20439beec6ca6316dddf799fe9ed05f4f36a1a1d7ed624f190a8ef80f"
+      },
+      {
+        "family": 5,
+        "species": [
+          "core:monk",
+          "core:pegasus",
+          "core:pikeman"
+        ],
+        "scenario_index": 88,
+        "scenario_id": "diverse-088",
+        "map": "lab/diverse-088.vmap",
+        "map_sha256": "d5dd61ac1334de48e3b3617f1a8a8a036e4c8fd3f86e6f25b71ba8ddbaff5f79"
+      }
+    ],
+    "phases": [
+      [
+        {
+          "family": 3,
+          "species": [
+            "core:centaur",
+            "core:pegasus",
+            "core:woodElf"
+          ],
+          "scenario_index": 163,
+          "scenario_id": "diverse-163",
+          "map": "lab/diverse-163.vmap",
+          "map_sha256": "87dc20832716e6d1920bba541b9c8e35fea00a601bd63f6db0f0dfcfa2b59c33",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 0,
+          "seed": 2026102012
+        },
+        {
+          "family": 2,
+          "species": [
+            "core:cavalier",
+            "core:monk",
+            "core:swordsman"
+          ],
+          "scenario_index": 56,
+          "scenario_id": "diverse-056",
+          "map": "lab/diverse-056.vmap",
+          "map_sha256": "e50ab5823ef7d32e2dc9c40332bed4eb74ae8609f7ac5da93f8de30e6a65fe50",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 1,
+          "seed": 2026102013
+        },
+        {
+          "family": 5,
+          "species": [
+            "core:monk",
+            "core:pegasus",
+            "core:pikeman"
+          ],
+          "scenario_index": 88,
+          "scenario_id": "diverse-088",
+          "map": "lab/diverse-088.vmap",
+          "map_sha256": "d5dd61ac1334de48e3b3617f1a8a8a036e4c8fd3f86e6f25b71ba8ddbaff5f79",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 2,
+          "seed": 2026102014
+        },
+        {
+          "family": 1,
+          "species": [
+            "core:archer",
+            "core:griffin",
+            "core:pikeman"
+          ],
+          "scenario_index": 54,
+          "scenario_id": "diverse-054",
+          "map": "lab/diverse-054.vmap",
+          "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 3,
+          "seed": 2026102015
+        },
+        {
+          "family": 5,
+          "species": [
+            "core:monk",
+            "core:pegasus",
+            "core:pikeman"
+          ],
+          "scenario_index": 88,
+          "scenario_id": "diverse-088",
+          "map": "lab/diverse-088.vmap",
+          "map_sha256": "d5dd61ac1334de48e3b3617f1a8a8a036e4c8fd3f86e6f25b71ba8ddbaff5f79",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 4,
+          "seed": 2026102016
+        },
+        {
+          "family": 4,
+          "species": [
+            "core:dwarf",
+            "core:unicorn",
+            "core:woodElf"
+          ],
+          "scenario_index": 51,
+          "scenario_id": "diverse-051",
+          "map": "lab/diverse-051.vmap",
+          "map_sha256": "fe90b7b20439beec6ca6316dddf799fe9ed05f4f36a1a1d7ed624f190a8ef80f",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 5,
+          "seed": 2026102017
+        },
+        {
+          "family": 2,
+          "species": [
+            "core:cavalier",
+            "core:monk",
+            "core:swordsman"
+          ],
+          "scenario_index": 56,
+          "scenario_id": "diverse-056",
+          "map": "lab/diverse-056.vmap",
+          "map_sha256": "e50ab5823ef7d32e2dc9c40332bed4eb74ae8609f7ac5da93f8de30e6a65fe50",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 6,
+          "seed": 2026102018
+        },
+        {
+          "family": 0,
+          "species": [
+            "core:archer",
+            "core:dendroidGuard",
+            "core:griffin"
+          ],
+          "scenario_index": 23,
+          "scenario_id": "diverse-023",
+          "map": "lab/diverse-023.vmap",
+          "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 7,
+          "seed": 2026102019
+        },
+        {
+          "family": 3,
+          "species": [
+            "core:centaur",
+            "core:pegasus",
+            "core:woodElf"
+          ],
+          "scenario_index": 163,
+          "scenario_id": "diverse-163",
+          "map": "lab/diverse-163.vmap",
+          "map_sha256": "87dc20832716e6d1920bba541b9c8e35fea00a601bd63f6db0f0dfcfa2b59c33",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 8,
+          "seed": 2026102020
+        },
+        {
+          "family": 4,
+          "species": [
+            "core:dwarf",
+            "core:unicorn",
+            "core:woodElf"
+          ],
+          "scenario_index": 51,
+          "scenario_id": "diverse-051",
+          "map": "lab/diverse-051.vmap",
+          "map_sha256": "fe90b7b20439beec6ca6316dddf799fe9ed05f4f36a1a1d7ed624f190a8ef80f",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 9,
+          "seed": 2026102021
+        },
+        {
+          "family": 0,
+          "species": [
+            "core:archer",
+            "core:dendroidGuard",
+            "core:griffin"
+          ],
+          "scenario_index": 23,
+          "scenario_id": "diverse-023",
+          "map": "lab/diverse-023.vmap",
+          "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 10,
+          "seed": 2026102022
+        },
+        {
+          "family": 1,
+          "species": [
+            "core:archer",
+            "core:griffin",
+            "core:pikeman"
+          ],
+          "scenario_index": 54,
+          "scenario_id": "diverse-054",
+          "map": "lab/diverse-054.vmap",
+          "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 11,
+          "seed": 2026102023
+        }
+      ],
+      [
+        {
+          "family": 0,
+          "species": [
+            "core:archer",
+            "core:dendroidGuard",
+            "core:griffin"
+          ],
+          "scenario_index": 23,
+          "scenario_id": "diverse-023",
+          "map": "lab/diverse-023.vmap",
+          "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 0,
+          "seed": 2026103012
+        },
+        {
+          "family": 1,
+          "species": [
+            "core:archer",
+            "core:griffin",
+            "core:pikeman"
+          ],
+          "scenario_index": 54,
+          "scenario_id": "diverse-054",
+          "map": "lab/diverse-054.vmap",
+          "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 1,
+          "seed": 2026103013
+        },
+        {
+          "family": 3,
+          "species": [
+            "core:centaur",
+            "core:pegasus",
+            "core:woodElf"
+          ],
+          "scenario_index": 163,
+          "scenario_id": "diverse-163",
+          "map": "lab/diverse-163.vmap",
+          "map_sha256": "87dc20832716e6d1920bba541b9c8e35fea00a601bd63f6db0f0dfcfa2b59c33",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 2,
+          "seed": 2026103014
+        },
+        {
+          "family": 1,
+          "species": [
+            "core:archer",
+            "core:griffin",
+            "core:pikeman"
+          ],
+          "scenario_index": 54,
+          "scenario_id": "diverse-054",
+          "map": "lab/diverse-054.vmap",
+          "map_sha256": "408fe6012a0b0eaf9a08780318f80562ded815b027b2d97dee7770e7e46541e2",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 3,
+          "seed": 2026103015
+        },
+        {
+          "family": 4,
+          "species": [
+            "core:dwarf",
+            "core:unicorn",
+            "core:woodElf"
+          ],
+          "scenario_index": 51,
+          "scenario_id": "diverse-051",
+          "map": "lab/diverse-051.vmap",
+          "map_sha256": "fe90b7b20439beec6ca6316dddf799fe9ed05f4f36a1a1d7ed624f190a8ef80f",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 4,
+          "seed": 2026103016
+        },
+        {
+          "family": 2,
+          "species": [
+            "core:cavalier",
+            "core:monk",
+            "core:swordsman"
+          ],
+          "scenario_index": 56,
+          "scenario_id": "diverse-056",
+          "map": "lab/diverse-056.vmap",
+          "map_sha256": "e50ab5823ef7d32e2dc9c40332bed4eb74ae8609f7ac5da93f8de30e6a65fe50",
+          "opponent": "MMAI_MODEL",
+          "role": "defender",
+          "slot": 5,
+          "seed": 2026103017
+        },
+        {
+          "family": 5,
+          "species": [
+            "core:monk",
+            "core:pegasus",
+            "core:pikeman"
+          ],
+          "scenario_index": 88,
+          "scenario_id": "diverse-088",
+          "map": "lab/diverse-088.vmap",
+          "map_sha256": "d5dd61ac1334de48e3b3617f1a8a8a036e4c8fd3f86e6f25b71ba8ddbaff5f79",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 6,
+          "seed": 2026103018
+        },
+        {
+          "family": 0,
+          "species": [
+            "core:archer",
+            "core:dendroidGuard",
+            "core:griffin"
+          ],
+          "scenario_index": 23,
+          "scenario_id": "diverse-023",
+          "map": "lab/diverse-023.vmap",
+          "map_sha256": "d9f43e34471e7c4dbee8936a76ad12ceb2f8255b2c7a2a880d440dff3c7e75dc",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 7,
+          "seed": 2026103019
+        },
+        {
+          "family": 3,
+          "species": [
+            "core:centaur",
+            "core:pegasus",
+            "core:woodElf"
+          ],
+          "scenario_index": 163,
+          "scenario_id": "diverse-163",
+          "map": "lab/diverse-163.vmap",
+          "map_sha256": "87dc20832716e6d1920bba541b9c8e35fea00a601bd63f6db0f0dfcfa2b59c33",
+          "opponent": "BattleAI",
+          "role": "defender",
+          "slot": 8,
+          "seed": 2026103020
+        },
+        {
+          "family": 2,
+          "species": [
+            "core:cavalier",
+            "core:monk",
+            "core:swordsman"
+          ],
+          "scenario_index": 56,
+          "scenario_id": "diverse-056",
+          "map": "lab/diverse-056.vmap",
+          "map_sha256": "e50ab5823ef7d32e2dc9c40332bed4eb74ae8609f7ac5da93f8de30e6a65fe50",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 9,
+          "seed": 2026103021
+        },
+        {
+          "family": 4,
+          "species": [
+            "core:dwarf",
+            "core:unicorn",
+            "core:woodElf"
+          ],
+          "scenario_index": 51,
+          "scenario_id": "diverse-051",
+          "map": "lab/diverse-051.vmap",
+          "map_sha256": "fe90b7b20439beec6ca6316dddf799fe9ed05f4f36a1a1d7ed624f190a8ef80f",
+          "opponent": "MMAI_MODEL",
+          "role": "attacker",
+          "slot": 10,
+          "seed": 2026103022
+        },
+        {
+          "family": 5,
+          "species": [
+            "core:monk",
+            "core:pegasus",
+            "core:pikeman"
+          ],
+          "scenario_index": 88,
+          "scenario_id": "diverse-088",
+          "map": "lab/diverse-088.vmap",
+          "map_sha256": "d5dd61ac1334de48e3b3617f1a8a8a036e4c8fd3f86e6f25b71ba8ddbaff5f79",
+          "opponent": "BattleAI",
+          "role": "attacker",
+          "slot": 11,
+          "seed": 2026103023
+        }
+      ]
+    ]
+  },
+  "unique_cells": 24,
+  "phases": [
+    {
+      "phase": 0,
+      "counts": {
+        "('MMAI_MODEL', 'attacker')": 3,
+        "('BattleAI', 'attacker')": 3,
+        "('MMAI_MODEL', 'defender')": 3,
+        "('BattleAI', 'defender')": 3
+      },
+      "fake_fragment_accounting": {
+        "phase": 0,
+        "reason": "CPU_FAKE_BOUNDARY_NOT_NATIVE",
+        "terminated": false,
+        "truncated": false,
+        "reward_assigned": false,
+        "unfinished_fragments": [
+          {
+            "slot": 1,
+            "owned_steps": 1,
+            "family": 2,
+            "role": "attacker",
+            "opponent": "BattleAI"
+          },
+          {
+            "slot": 2,
+            "owned_steps": 2,
+            "family": 5,
+            "role": "defender",
+            "opponent": "MMAI_MODEL"
+          }
+        ],
+        "zero_step_post_reset_or_unacted_battles": 10,
+        "meaning": "Close of native environments, not extra sampled transitions or outcomes; previous rollout returns already used valid bootstrap."
+      }
+    },
+    {
+      "phase": 1,
+      "counts": {
+        "('MMAI_MODEL', 'defender')": 3,
+        "('BattleAI', 'attacker')": 3,
+        "('BattleAI', 'defender')": 3,
+        "('MMAI_MODEL', 'attacker')": 3
+      },
+      "fake_fragment_accounting": {
+        "phase": 1,
+        "reason": "CPU_FAKE_BOUNDARY_NOT_NATIVE",
+        "terminated": false,
+        "truncated": false,
+        "reward_assigned": false,
+        "unfinished_fragments": [
+          {
+            "slot": 1,
+            "owned_steps": 1,
+            "family": 1,
+            "role": "attacker",
+            "opponent": "BattleAI"
+          },
+          {
+            "slot": 2,
+            "owned_steps": 2,
+            "family": 3,
+            "role": "attacker",
+            "opponent": "BattleAI"
+          }
+        ],
+        "zero_step_post_reset_or_unacted_battles": 10,
+        "meaning": "Close of native environments, not extra sampled transitions or outcomes; previous rollout returns already used valid bootstrap."
+      }
+    }
+  ],
+  "negative_cases": {
+    "wrong_seed": true,
+    "wrong_fragment_shape": true,
+    "nonmirror_TRAIN_rejected": true,
+    "DEV_only_rejected": true
+  },
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/check_cpu.py": "3c8f1244223aa48bfe97f5b03775c0cc6eef79a56f5f37a5c013959031560c11",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/curriculum.py": "8ab53b97727bb7040067d7670f6cd22abf19e201469fd93b7d583d5d1c2fe3ec",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/evaluate_bounded.py": "2b4ea8c6713ca06d9df966e2dde257965d09e39113060e9f8e86fdee8a96603b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/prepare.py": "20497ce14ec964d142b8e29458c667263f825b2841a9e302f4aee0aa41b6238f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/run.py": "5d0a86e9e27b520cd2a72d760914fda31aae4bec844d8bc2dae961d4f3e5c03d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/support.py": "d3d06d74f49520c4d02b972c39bf4b3336206428247ee3f48917fe6e8cc8a0d7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-family-curriculum-20261020/train_last_graph.py": "c25e799dfab69892cd39fdb547718cd47b7548281f97e43a63a294d69a328157"
+  },
+  "scope": "CPU exact registration/syntax/path/fixture fragment checks; no actual phase close or native training yet"
+}

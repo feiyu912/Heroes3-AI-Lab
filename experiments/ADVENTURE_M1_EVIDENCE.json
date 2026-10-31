@@ -1,0 +1,98 @@
+{
+  "schema": "adventure-milestone-v1",
+  "recorded_at": "2026-10-18T00:45+08:00",
+  "milestone": "M1",
+  "claim": "Native VCMI AIs complete a full adventure-map game headlessly and produce a native victory/defeat, on an isolated ENABLE_ML=OFF build that leaves the frozen battle environment byte-identical.",
+  "not_claimed": [
+    "No custom strategic policy is involved; both sides are the native Nullkiller2 AI.",
+    "This map is a battle fixture derived into an adventure map, not an exploration/economy benchmark.",
+    "M2 (our policy controlling one side), M3 (structured trajectory) and M4 (baseline comparison) are not started."
+  ],
+  "build": {
+    "source": "/root/heroes3-ai-lab/src/vcmi-adv (copy of src/gym/vcmi, excluding rel/)",
+    "build_dir": "/root/heroes3-ai-lab/src/vcmi-adv-build",
+    "bin": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin",
+    "cmake": "/root/heroes3-ai-lab/python-packages/cmake/data/bin/cmake 3.31.10",
+    "generator": "Ninja",
+    "build_type": "Release",
+    "ENABLE_ML": "OFF",
+    "ENABLE_MMAI": "ON",
+    "ENABLE_BATTLE_AI": "ON",
+    "ENABLE_STUPID_AI": "ON",
+    "ENABLE_NULLKILLER2_AI": "ON",
+    "onnxruntime_root": "/root/heroes3-ai-lab/onnxruntime",
+    "jobs": 8,
+    "log": "/root/heroes3-ai-lab/src/vcmi-adv-build.log",
+    "patches": [
+      "server/battles/BattleProcessor.cpp: wrap unguarded gameHandler->mlplugin access in #ifdef ENABLE_ML",
+      "client/Client.cpp: always create CMapHandler (upstream skipped it in headless mode unless IS_ML)"
+    ],
+    "dependency_check": "readelf -d vcmiserver shows no libmlserverplugin.so"
+  },
+  "frozen_battle_env": {
+    "checked_before_and_after": true,
+    "files": {
+      "libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+      "libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+      "vcmiserver": "26ab58b469584dfd58f5ce2fe3502503409962f6c928c59ad7c63d46c8999a05",
+      "vcmiclient": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+      "libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae"
+    },
+    "result": "all 5 unchanged"
+  },
+  "map": {
+    "name": "Maps/adv/adv-arena-01",
+    "source": "derived from lab/diverse-192.vmap by experiments/make-adv-map.py",
+    "change": "hero template ml:hero_* replaced with core heroes; armies, coordinates, towns, terrain, victory conditions unchanged",
+    "surface": "72x72, red heroes y=2, blue towns y=70"
+  },
+  "runs": [
+    {
+      "seed": null,
+      "ai": ["Nullkiller2", "Nullkiller2"],
+      "days": 91,
+      "winner": "blue (player 1)",
+      "loser": "red (player 0)",
+      "exit_code": 0,
+      "crashes": 0,
+      "log_sha256": "840bd63751ccfd66f2d9b523866523adf01469b85dae47a2175f1854110f3c8a",
+      "log_bytes": 42614895
+    },
+    {
+      "seed": 2026101801,
+      "ai": ["Nullkiller2", "Nullkiller2"],
+      "days": 21,
+      "winner": "red (player 0)",
+      "loser": "blue (player 1)",
+      "exit_code": 0,
+      "crashes": 0,
+      "log_sha256": "3c7302c30efb6c8d8d04b5de868baf5206ebaeb630a028804cc27002eaf831e1"
+    },
+    {
+      "seed": 2026101801,
+      "ai": ["Nullkiller2", "Nullkiller2"],
+      "days": 21,
+      "winner": "red (player 0)",
+      "loser": "blue (player 1)",
+      "exit_code": 0,
+      "crashes": 0,
+      "repeat_of_previous": true,
+      "note": "same seed reproduces the same winner and turn; log SHA differs only in timestamps"
+    }
+  ],
+  "observed_evidence": [
+    "Gamestate initialized!",
+    "Player 0 (red) starting turn, day 1 ... day 91",
+    "AIGateway: Player 1 (blue) won. I won! Incredible!",
+    "Turn nr 91",
+    "All players have ended the game. Ending game.",
+    "0 occurrences of 'Disaster happened' in the completed run"
+  ],
+  "limitations": [
+    "No autosave file was produced (--savefrequency 1 did not emit a .vsv in the worker Saves dir); save/resume is not yet demonstrated.",
+    "Only one map and one AI pairing were exercised; multi-map/multi-seed coverage is not done.",
+    "The derived map keeps the arena layout (armies adjacent), so it does not yet exercise exploration, economy, town building or long-range pathing.",
+    "MMAI/BattleAI are built into this binary but their use inside adventure battles has not been verified."
+  ],
+  "reproduce": "bash experiments/adv-run2.sh Maps/adv/adv-arena-01 Nullkiller2 Nullkiller2 240 2026101801"
+}

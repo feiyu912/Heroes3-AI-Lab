@@ -1,0 +1,45 @@
+{
+  "source_summary": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-05b/nk-development-map0-red-2026101862/smoke-result.json",
+  "native_run": "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101862-2026101862-0ckyyrdt",
+  "native_completed": true,
+  "native_winner": "blue",
+  "move_requests": 314,
+  "move_replies": 314,
+  "log_sha256": "4f42199d61ec700b9db84420f1cfb8cef7b1c1b1f2aa75ce678241dafc35e403",
+  "trace_sha256": "0dc2ae6b3e6a5582eecce17caace4666d5c6c357a6f17a7f2d8294b052b5a9e2",
+  "runner_recorded_hashes_match": true,
+  "terminal_line": 1572,
+  "terminal_event": {
+    "event": "defeat",
+    "player": 0,
+    "day": 46,
+    "own_turn": 46,
+    "gold": 40,
+    "wood": 63,
+    "ore": 76,
+    "heroes": [],
+    "towns": []
+  },
+  "post_terminal_rows": [
+    {
+      "line": 1573,
+      "record": {
+        "event": "native_battle_ready",
+        "player": 0,
+        "day": 46,
+        "own_turn": 46,
+        "gold": 40,
+        "wood": 63,
+        "ore": 76,
+        "heroes": [],
+        "towns": []
+      }
+    }
+  ],
+  "post_terminal_rows_are_only_passive_same_state_readiness": true,
+  "own_gameover_log_lines": [
+    120311
+  ],
+  "new_director_actions_after_own_gameover": [],
+  "diagnosis": "A raw audit requiring the literal final record to be terminal can reject passive readiness telemetry. Preserve the real terminal and separately prove no post-terminal action/resource change; this diagnostic does not authorize acceptance or training."
+}

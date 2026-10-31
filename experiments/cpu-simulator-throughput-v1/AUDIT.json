@@ -1,0 +1,476 @@
+{
+  "native_only": true,
+  "inputs": [
+    {
+      "name": "native-01",
+      "protocol_sha256": "0f22ba60aa16e02ca4e3bac17097c50e286ca456eb66cd85528272c55fa5a892",
+      "result_sha256": "99998b415779e041b6bf73d5c4d753138b643e36e58815110890e2bec203bca6",
+      "current_inputs_match": true,
+      "synthetic": false,
+      "execute": true,
+      "status": "completed_requested_scales",
+      "competitor_excluded": true,
+      "current_batch_processes": [],
+      "recorded_all_batch_processes_gone": true
+    },
+    {
+      "name": "native-02",
+      "protocol_sha256": "73b9107320475a55af9daa1931e6f7cc389b22fb13ca0d7b4be3736ad4d8578d",
+      "result_sha256": "7eb54478d680dc4e7d9a679ab49ca2df0c29214daa028d2f10ba50c219d30415",
+      "current_inputs_match": true,
+      "synthetic": false,
+      "execute": true,
+      "status": "completed_requested_scales",
+      "competitor_excluded": true,
+      "current_batch_processes": [],
+      "recorded_all_batch_processes_gone": true
+    }
+  ],
+  "stage_audits": [
+    {
+      "batch": "native-01",
+      "scale": 1,
+      "valid_jobs": 4,
+      "sample_count": 44,
+      "max_simultaneous_native_pids": 1,
+      "max_simultaneous_worker_sessions": 1,
+      "max_simultaneous_native_and_workers": 1,
+      "simultaneous_witness": {
+        "seconds": 0.2500626050000392,
+        "native_pids": [
+          374
+        ],
+        "worker_session_pids": [
+          373
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "ed52a45b986a2c2fb349abac1d586a421e0df9f53d1c51475150294825ac1aa3",
+      "resource_samples_sha256": "c28fd9a7975eb94e50abc1d3c8bfd010c400389b8e62b030dcb7bc423fb7bd4c",
+      "peak_rss": 139980800,
+      "peak_pss": 131873792,
+      "max_system_swap_used": 0,
+      "min_system_available": 15871340544,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 10.006107520999876,
+      "games_per_second": 0.399755848276183
+    },
+    {
+      "batch": "native-01",
+      "scale": 2,
+      "valid_jobs": 8,
+      "sample_count": 47,
+      "max_simultaneous_native_pids": 2,
+      "max_simultaneous_worker_sessions": 2,
+      "max_simultaneous_native_and_workers": 2,
+      "simultaneous_witness": {
+        "seconds": 0.25075517699997363,
+        "native_pids": [
+          514,
+          515
+        ],
+        "worker_session_pids": [
+          512,
+          513
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "9b31be442348d53b3994319b4383cc8e0ad5dfe6b25324da688ddac7b5f183c2",
+      "resource_samples_sha256": "093430edacda05c93ce9badf06cfd50714546ffa8706944eee8d2200d1f59f3f",
+      "peak_rss": 255148032,
+      "peak_pss": 209840128,
+      "max_system_swap_used": 0,
+      "min_system_available": 15821221888,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 10.658905293000089,
+      "games_per_second": 0.7505461189578029
+    },
+    {
+      "batch": "native-02",
+      "scale": 1,
+      "valid_jobs": 4,
+      "sample_count": 44,
+      "max_simultaneous_native_pids": 1,
+      "max_simultaneous_worker_sessions": 1,
+      "max_simultaneous_native_and_workers": 1,
+      "simultaneous_witness": {
+        "seconds": 0.2519160800000009,
+        "native_pids": [
+          368
+        ],
+        "worker_session_pids": [
+          367
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "e5f7a65646d7bafa342683479c2a9156093c4b1eda29aaf87a6b9aacb3095bb3",
+      "resource_samples_sha256": "dc6811ac5a3bb35b6618f141ee8e887972e2d14730cf9b6926193c672d1c424c",
+      "peak_rss": 143458304,
+      "peak_pss": 134575104,
+      "max_system_swap_used": 0,
+      "min_system_available": 15863451648,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 9.939534160999983,
+      "games_per_second": 0.40243334699677447
+    },
+    {
+      "batch": "native-02",
+      "scale": 2,
+      "valid_jobs": 8,
+      "sample_count": 47,
+      "max_simultaneous_native_pids": 2,
+      "max_simultaneous_worker_sessions": 2,
+      "max_simultaneous_native_and_workers": 2,
+      "simultaneous_witness": {
+        "seconds": 0.24753045700003895,
+        "native_pids": [
+          508,
+          509
+        ],
+        "worker_session_pids": [
+          506,
+          507
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "588132d76d490cc4458b182818f3acb54013e6d568834d4a15482a819dc26f0c",
+      "resource_samples_sha256": "395d6e44de36e1eadcd09a0289837e7b8a87a0c76c2b57c53811c63bf0010eef",
+      "peak_rss": 253145088,
+      "peak_pss": 208327680,
+      "max_system_swap_used": 0,
+      "min_system_available": 15816036352,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 10.618029257999979,
+      "games_per_second": 0.7534354827636712
+    },
+    {
+      "batch": "native-02",
+      "scale": 4,
+      "valid_jobs": 16,
+      "sample_count": 50,
+      "max_simultaneous_native_pids": 4,
+      "max_simultaneous_worker_sessions": 4,
+      "max_simultaneous_native_and_workers": 4,
+      "simultaneous_witness": {
+        "seconds": 0.25395570699993186,
+        "native_pids": [
+          782,
+          783,
+          784,
+          787
+        ],
+        "worker_session_pids": [
+          778,
+          779,
+          780,
+          781
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "b4bdf0bddfde67a1ea2446daf7415f1726aa6c99bc6d8a86d17aa104749ad5b4",
+      "resource_samples_sha256": "bea744f660a4fac82af7896b80c14d6fef145d62c2d52cf60b8d6ffc66dc597f",
+      "peak_rss": 498003968,
+      "peak_pss": 373105664,
+      "max_system_swap_used": 0,
+      "min_system_available": 15644098560,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 11.480895572000009,
+      "games_per_second": 1.3936195046509554
+    },
+    {
+      "batch": "native-02",
+      "scale": 8,
+      "valid_jobs": 32,
+      "sample_count": 56,
+      "max_simultaneous_native_pids": 8,
+      "max_simultaneous_worker_sessions": 8,
+      "max_simultaneous_native_and_workers": 8,
+      "simultaneous_witness": {
+        "seconds": 0.27499051099994176,
+        "native_pids": [
+          1342,
+          1343,
+          1344,
+          1345,
+          1346,
+          1347,
+          1354,
+          1355
+        ],
+        "worker_session_pids": [
+          1334,
+          1335,
+          1336,
+          1337,
+          1338,
+          1339,
+          1340,
+          1341
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "c8ce2488e77579f4dd198c7e67ad308c363d1b974fca3d51141ed68a4fd2830d",
+      "resource_samples_sha256": "6743d3a2e1211e87de3b94e7c04583fffa35d67ebc68b99b227cf5febbf932bf",
+      "peak_rss": 978751488,
+      "peak_pss": 703595520,
+      "max_system_swap_used": 0,
+      "min_system_available": 15089737728,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 12.923013195000067,
+      "games_per_second": 2.476202687186054
+    },
+    {
+      "batch": "native-02",
+      "scale": 12,
+      "valid_jobs": 48,
+      "sample_count": 59,
+      "max_simultaneous_native_pids": 12,
+      "max_simultaneous_worker_sessions": 12,
+      "max_simultaneous_native_and_workers": 12,
+      "simultaneous_witness": {
+        "seconds": 0.3013554789999944,
+        "native_pids": [
+          2466,
+          2468,
+          2470,
+          2471,
+          2472,
+          2473,
+          2474,
+          2492,
+          2493,
+          2494,
+          2495,
+          2496
+        ],
+        "worker_session_pids": [
+          2454,
+          2455,
+          2456,
+          2457,
+          2458,
+          2459,
+          2460,
+          2461,
+          2462,
+          2463,
+          2464,
+          2465
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "fa768e63578859da57365c86a0f30b616f20e68f08b11bfa34e3bca7e6bd508a",
+      "resource_samples_sha256": "ec085677bbe4aa365c9db0528c7825a7b22c8ef2d559589347882198db81bf76",
+      "peak_rss": 1485893632,
+      "peak_pss": 1052207104,
+      "max_system_swap_used": 0,
+      "min_system_available": 14929346560,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 14.01882916600016,
+      "games_per_second": 3.423966397737003
+    },
+    {
+      "batch": "native-02",
+      "scale": 24,
+      "valid_jobs": 96,
+      "sample_count": 66,
+      "max_simultaneous_native_pids": 24,
+      "max_simultaneous_worker_sessions": 24,
+      "max_simultaneous_native_and_workers": 24,
+      "simultaneous_witness": {
+        "seconds": 0.39317076099996484,
+        "native_pids": [
+          4120,
+          4121,
+          4123,
+          4127,
+          4128,
+          4130,
+          4132,
+          4133,
+          4137,
+          4138,
+          4139,
+          4152,
+          4182,
+          4183,
+          4213,
+          4235,
+          4238,
+          4254,
+          4264,
+          4319,
+          4323,
+          4324,
+          4371,
+          4523
+        ],
+        "worker_session_pids": [
+          4097,
+          4098,
+          4099,
+          4100,
+          4101,
+          4102,
+          4103,
+          4104,
+          4105,
+          4106,
+          4107,
+          4108,
+          4109,
+          4110,
+          4111,
+          4112,
+          4113,
+          4114,
+          4115,
+          4116,
+          4117,
+          4118,
+          4119,
+          4122
+        ]
+      },
+      "all_job_evidence_ok": true,
+      "result_sha256": "73c95d9e76775cc69db711b886e1b8f6edc52bfe4c0fedb6f571eaa6e7ac352f",
+      "resource_samples_sha256": "6c3c19d986437828ac4e853f97d1fc56727f83c91e924c4c87732c9560965d95",
+      "peak_rss": 2806906880,
+      "peak_pss": 1910371328,
+      "max_system_swap_used": 0,
+      "min_system_available": 13981724672,
+      "recorded_remaining_processes": [],
+      "metrics_match": true,
+      "wall_seconds": 17.533108371000026,
+      "games_per_second": 5.475355422931462
+    }
+  ],
+  "errors": [],
+  "repeated_workloads": [
+    {
+      "config": [
+        "Maps/adv/takeover-v2-train-01-mines",
+        "DirectorAI",
+        "Nullkiller2",
+        2026102100
+      ],
+      "count": 54,
+      "equal": {
+        "winner": true,
+        "turns": true,
+        "moves": true,
+        "state_sha": true,
+        "decisions_sha": true,
+        "targets_sha": true
+      },
+      "reference": {
+        "batch": "native-01",
+        "scale": 1,
+        "job": "job-000",
+        "winner": "blue",
+        "turns": 7,
+        "moves": 60,
+        "state_sha": "8847431fa976cb3f10f943f6da704f01f19da9d3e729f60f29e08ae9e698b249",
+        "decisions_sha": "23018e7bb22ef8603a17fca4e8ed5d2dcf191a93ec3ab43758cd542550ba2cef",
+        "targets_sha": "45a263a7527e0eb4f7150f13476d9957ca3967fd562a43b14690008388d5f826",
+        "evidence_ok": true
+      }
+    },
+    {
+      "config": [
+        "Maps/adv/takeover-v2-train-01-mines",
+        "Nullkiller2",
+        "DirectorAI",
+        2026102101
+      ],
+      "count": 54,
+      "equal": {
+        "winner": true,
+        "turns": true,
+        "moves": true,
+        "state_sha": true,
+        "decisions_sha": true,
+        "targets_sha": true
+      },
+      "reference": {
+        "batch": "native-01",
+        "scale": 1,
+        "job": "job-001",
+        "winner": "red",
+        "turns": 12,
+        "moves": 98,
+        "state_sha": "33434eab051b6792cb5e40d054f2f4d5860a7d699817a36946f2f5c99af6d1fc",
+        "decisions_sha": "36486dfee142b5a9ebdd83c4db43504402357b029be0086ec0f7b4c94cc8ff0f",
+        "targets_sha": "88e161cf42408d552d3a2d2627089e89dda1d8f56fcfb31f56be17f16af15a2d",
+        "evidence_ok": true
+      }
+    },
+    {
+      "config": [
+        "Maps/adv/takeover-v2-train-02-development",
+        "DirectorAI",
+        "Nullkiller2",
+        2026102102
+      ],
+      "count": 54,
+      "equal": {
+        "winner": true,
+        "turns": true,
+        "moves": true,
+        "state_sha": true,
+        "decisions_sha": true,
+        "targets_sha": true
+      },
+      "reference": {
+        "batch": "native-01",
+        "scale": 1,
+        "job": "job-002",
+        "winner": "blue",
+        "turns": 20,
+        "moves": 175,
+        "state_sha": "eccdf688219a783810c858b22d693257893e39a257f1c63dea9d81385dc597b2",
+        "decisions_sha": "8b587c762f5c29342d80e7d1baefbdc8c853cfb3ee1363682f80d4f224415701",
+        "targets_sha": "f9c9ebb88a4356dcdd69f125bdadf288a2ec84feffb201de681013058e02f246",
+        "evidence_ok": true
+      }
+    },
+    {
+      "config": [
+        "Maps/adv/takeover-v2-train-02-development",
+        "Nullkiller2",
+        "DirectorAI",
+        2026102103
+      ],
+      "count": 54,
+      "equal": {
+        "winner": true,
+        "turns": true,
+        "moves": true,
+        "state_sha": true,
+        "decisions_sha": true,
+        "targets_sha": true
+      },
+      "reference": {
+        "batch": "native-01",
+        "scale": 1,
+        "job": "job-003",
+        "winner": "red",
+        "turns": 33,
+        "moves": 271,
+        "state_sha": "dc70c6bdfbea9f5a38fa7085a6cdc6f4d7ffda12b8e459fd44ac976e8fddf29b",
+        "decisions_sha": "caf0d39ad7e065af8d8d2c97cd064998b98c5c8af7e0ef61b42475b2387c259d",
+        "targets_sha": "30d6799959283800646a1d919df00bb8927b7332f37a7b117566516d21345f30",
+        "evidence_ok": true
+      }
+    }
+  ],
+  "pool_lock_at_audit": "free_at_probe",
+  "passed": true
+}

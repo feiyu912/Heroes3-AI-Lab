@@ -1,0 +1,28 @@
+# Income coverage: visible prerequisites explain the missing candidates
+
+Read-only diagnosis passed. The batch contains 3000 requests, **421 open economic windows, of which 400 have legal build candidates**, and 1473 build candidates (1291 infrastructure / 182 dwelling / 0 income). Distinguish 400 nonempty build windows from all 421 open windows. Those windows contain 430 published own-town snapshots, all actual Castle faction 0. No hidden map or save state was read; no engine/GPU run or frozen source edit occurred.
+
+| Income building | Exact observed explanation at those 430 own-town windows |
+| --- | --- |
+| Town Hall, ID11 | Already present in 410. In the remaining 20, Village Hall ID10 is present but required Tavern ID5 is absent. Tavern is actually offered in all 20. |
+| City Hall, ID12 | Present in zero. Every town window lacks at least one of Mage Guild1 ID0, Marketplace ID14, Blacksmith ID16. No town ever has the complete prerequisites at a sampled economic window. The 20 towns without ID11 additionally lack that upgrade prerequisite. |
+| Capitol, ID13 | Present in zero; all 430 lack required City Hall ID12. Castle ID9 is another direct requirement, with Citadel/Fort inherited through its upgrade chain. No income-building candidate is currently legal merely because its gold cost might be affordable. |
+
+Missing City Hall infrastructure combinations (Mage/Market/Blacksmith IDs) are `[0,14,16]`:114, `[0,14]`:164, `[14]`:17, `[0,16]`:68, `[14,16]`:4, `[16]`:63. All town built_today counters are zero. Thus this is not a daily counter being consumed by an earlier scripted build. Ordinary missing prerequisites are already in the candidate space: Mage Guild1 offered330/selected2; Marketplace offered296/selected3; Blacksmith offered246/selected4. Some missing prerequisites are not offered in some windows; their exact omitted-candidate enum/resource/forbidden reason was not logged and is not invented here.
+
+Concrete bound examples in `TOWN_WINDOWS.json`:
+
+- Cell01 request708, day99, town13: buildings include Mage0, TownHall11 and Blacksmith16, but no Market14. Gold55680, built_today0; actual candidates include Market14, not CityHall12. This is one prerequisite short despite plentiful observed gold.
+- Cell04 request403, day56, town11: buildings only10/30, gold77760, built_today0. Tavern5 is a real candidate; TownHall11 still requires that Tavern. No fake Town Hall action is justified by the balance alone.
+
+Actual compiled source/config proof (all full SHAs matched capsule01 `build-source-manifest.json`; modified Director read from capsule `source-snapshot`, ordinary library files from actual WSL source only after full-SHA match):
+
+- Capsule `source-snapshot/AI/DirectorAI/CDirectorAI.cpp:959`–`:991`: explicitly offers TOWN_HALL/CITY_HALL/CAPITOL; only BUILD_NORMAL + native ALLOWED survive. Category uses those exact identifiers, so there is no observed ID/category mismatch. Dwelling prerequisite expansion is not needed to expose these income prerequisites: Mage/Market/Blacksmith/Tavern already appear in its finite priority set.
+- Capsule `bin/config/buildingsLibrary.json:64`–`:80`: Town Hall id11 upgrades Village Hall and requires Tavern; City Hall id12 upgrades Town Hall and requires all MageGuild1/Market/Blacksmith; Capitol id13 upgrades City Hall and requires Castle. The corresponding Castle faction definitions at `bin/config/factions/castle.json:172`–`:174` are empty overrides and inherit the core definitions.
+- SHA-matched WSL `lib/entities/faction/CTownHandler.cpp:270`–`:272`, `:920`–`:949`: missing mode defaults BUILD_NORMAL, and faction buildings inherit buildingsLibrary. Income11/12/13 have no special/auto mode override in those capsule configs. The separate extra-income IDs27/28/29 are explicitly auto and should not become fake selectable income actions.
+- SHA-matched WSL `lib/constants/EntityIdentifiers.h:301`–`:306`: numeric building identity agrees with the actual request IDs. `lib/mapObjects/CGTownInstance.cpp:952`–`:1003` folds upgrade predecessors into requirements.
+- SHA-matched WSL `lib/callback/CGameInfoCallback.cpp:533`–`:599`: already-present returns first; forbidden/unsatisfiable and special Capitol ownership checks can precede the prerequisite result; missing prerequisites are checked before daily limit and resources. The visible missing prerequisite proves **not ALLOWED**, even when the precise returned enum could be an earlier forbidden result. We did not execute this function or recover an unlogged enum.
+
+The 14% fresh-train build-mass initialization has a real route to new income coverage: choose already-legal prerequisite buildings more often, retain them across turns, and then encounter an income building in a later still-affordable window. It cannot directly select an income action absent from the current candidate list. No candidate repair is supported by this batch's absence alone; no guarantee of unlocking income or improving play follows. If a future published town window contains all prerequisites, is unbuilt and has sufficient actual resources but still lacks income, that is the appropriate place to inspect native ALLOWED/forbidden/mode evidence. Do not bypass native legality or add scripted income construction to force coverage.
+
+`REPORT.json` records compiled-source/config hashes, original raw-audit/broker hashes and counts; `TOWN_WINDOWS.json` records all 430 own-town observations with request SHA, actual buildings/resources and exact missing direct prerequisites. Exact legacy resolved building prices, forbidden-building flags and returned canBuild enums are unobserved boundaries, not silently reconstructed facts.

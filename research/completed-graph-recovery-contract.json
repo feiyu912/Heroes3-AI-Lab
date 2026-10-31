@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "source_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-112.pt",
+  "source_sha256": "170e31785096aa6c229542dbd8a73d81edd60c63727e9388a5e5eaf9f267e6ee",
+  "completed_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt",
+  "completed_sha256": "c0702d40994207ff63df5747e4d4d7d135e267d2cca2213aef47856d5455e990",
+  "workers": 24,
+  "optimizer_parameter_groups_preserved": true,
+  "optimizer_step_increments": [
+    768.0,
+    768.0
+  ],
+  "resumed_updates": 16,
+  "new_environment_steps": 12288,
+  "all_workers_exit_zero": true,
+  "CUDA_training": true,
+  "all_recompute_errors_zero": true,
+  "checkpoint_history": {
+    "112": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-112.pt",
+    "48": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-48.pt",
+    "32": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-32.pt",
+    "80": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-80.pt",
+    "64": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+    "96": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-96.pt",
+    "16": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-16.pt",
+    "128": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt"
+  },
+  "scope": "Actual completed CUDA continuation with preserved optimizer and RNG payloads. New games start on resume; not an exact replay of an interrupted in-battle simulator state."
+}

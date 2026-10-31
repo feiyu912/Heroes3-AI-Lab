@@ -1,0 +1,17 @@
+Provenance: copied verbatim traceback excerpt from root tool session 78732 terminal output, which returned exit_code=1 after reporting all 16 completed games. This is a transcript excerpt, not a redirected original stderr file. No game was rerun and no frozen input was edited.
+
+Traceback (most recent call last):
+  File "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/launch.py", line 35, in <module>
+    main()
+  File "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/launch.py", line 31, in main
+    audit()
+  File "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/audit_native.py", line 57, in main
+    action,quality=choose(obs)
+  File "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/visible_exchange.py", line 44, in choose
+    from vcmi_gym.envs.v15.vcmi_env import Action, Unit, ACTION_TYPES
+ModuleNotFoundError: No module named 'vcmi_gym'
+
+Root then ran the SAME frozen audit_native.py directly with explicit environment and observed exit_code=0, without native games:
+wsl -d Ubuntu-22.04 -u root -- env PYTHONPATH=/root/heroes3-ai-lab-events-v2/src/gym:/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2:/mnt/g/Heroes3-AI-Lab/research LD_LIBRARY_PATH=/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin:/root/heroes3-ai-lab-events-v2/onnxruntime/lib /root/heroes3-ai-lab/venv/bin/python /mnt/g/Heroes3-AI-Lab/experiments/human-tactics-positive-exchange-v2/audit_native.py
+
+The output is retained in ../human-tactics-positive-exchange-v2/AUDIT.json. It reports all 16 normal games, 340 matched steps, zero illegal/truncated, teacher 4 wins versus candidate 3, net -1, main/total permanent losses +4, progression gate false. The outer launcher remains an exit1 run; successful independent CPU re-audit is a separate result.

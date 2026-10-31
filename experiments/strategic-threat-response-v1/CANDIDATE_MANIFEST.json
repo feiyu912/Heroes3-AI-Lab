@@ -1,0 +1,23 @@
+{
+  "schema": "threat-response-source-candidate-v1",
+  "status": "review_only_not_installed_or_compiled",
+  "source_origin": "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.cpp",
+  "thresholds": {
+    "enemy_to_own_min_ratio": 1.5,
+    "own_denominator_floor": 1.0,
+    "same_level": true,
+    "chebyshev_max": 12
+  },
+  "behavior": "Only erase an existing same-turn commit under current visible pressure; then keep all existing native legal candidates",
+  "trace": "threat_commit_released only when an existing commit is actually erased",
+  "request_schema": "strategy-candidates-v3",
+  "all_actions": "MoveHero",
+  "hold_added": false,
+  "source_sha256": {
+    "baseline-CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "candidate-CDirectorAI.cpp": "9a8dda3d323691f597ee5ffea70dcd82a9aa4f8f5081cb0e4231b7cabfdd0541",
+    "candidate.diff": "01efead124d800a3c58d295b46fa38b1a9d6c4e8a36450275c0f2c6955573679",
+    "prepare_candidate.py": "d180b17e046b1394c6e1252c164c1b105a14c37d886ecef82dd8d54dfb1a51ee",
+    "threat_contract.py": "90b47b6e57caa284a8f91944bbaac661bfecb74cd7375e0b6eb5be3b3012d320"
+  }
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "id": "wait-bait-v1-00",
+    "tactic_id": "wait-bait-ordering",
+    "split": "train",
+    "map": "events-v3-probes/wait-bait-00.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-00.vmap",
+    "sha256": "51c61d237d7958c7e195357b1d0cd026b17c1f7c7988c7dd92ddd6b7f2e3b7a3",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 12
+        },
+        {}
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 12
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100
+  },
+  {
+    "id": "wait-bait-v1-01",
+    "tactic_id": "wait-bait-ordering",
+    "split": "train",
+    "map": "events-v3-probes/wait-bait-01.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-01.vmap",
+    "sha256": "60a51ac219a515a39da1435522894842e5f368c38c2bc582e5cb81608c115aad",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 18
+        }
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 18
+        }
+      ]
+    ],
+    "tight_formation_chance": 0
+  },
+  {
+    "id": "wait-bait-v1-02",
+    "tactic_id": "wait-bait-ordering",
+    "split": "development",
+    "map": "events-v3-probes/wait-bait-02.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-02.vmap",
+    "sha256": "000019dfc8288786943730e6276d371f885367bd582e1636ad7087fe2995ee9a",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 15
+        }
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 15
+        }
+      ]
+    ],
+    "tight_formation_chance": 0
+  },
+  {
+    "id": "wait-bait-v1-03",
+    "tactic_id": "wait-bait-ordering",
+    "split": "development",
+    "map": "events-v3-probes/wait-bait-03.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-03.vmap",
+    "sha256": "1e7de399385c20e72939f738efdd673cf9b65bd5efdc0715418bfd02ef1a2d1a",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 23
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 23
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 100
+  },
+  {
+    "id": "wait-bait-v1-04",
+    "tactic_id": "wait-bait-ordering",
+    "split": "locked-test",
+    "map": "events-v3-probes/wait-bait-04.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-04.vmap",
+    "sha256": "ae26aa9430599513366226e9d5d063940063ed85c4af2b5f9f9ae6b8d249f8bf",
+    "armies": [
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        }
+      ],
+      [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {},
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 17
+        }
+      ]
+    ],
+    "tight_formation_chance": 100
+  },
+  {
+    "id": "wait-bait-v1-05",
+    "tactic_id": "wait-bait-ordering",
+    "split": "locked-test",
+    "map": "events-v3-probes/wait-bait-05.vmap",
+    "map_path": "/root/heroes3-ai-lab-events-v3/data/vcmi/Maps/events-v3-probes/wait-bait-05.vmap",
+    "sha256": "279298a57d500279c800f0cd1349ec87165b52be6a4b54970f2e7adef9edcfb8",
+    "armies": [
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 21
+        },
+        {}
+      ],
+      [
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        },
+        {},
+        {
+          "type": "core:swordsman",
+          "amount": 21
+        },
+        {}
+      ]
+    ],
+    "tight_formation_chance": 0
+  }
+]

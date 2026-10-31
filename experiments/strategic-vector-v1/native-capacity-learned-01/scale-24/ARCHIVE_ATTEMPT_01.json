@@ -1,0 +1,6 @@
+{
+  "status": "failed_archive_attempt_preserved",
+  "reason": "Native run has Data/Mods symbolic links; first archiver dereferenced them then rejected symlink verification. Corrected archiver records external asset link metadata and copies regular raw evidence files only.",
+  "native_originals_unchanged": true,
+  "collection_unchanged": true
+}

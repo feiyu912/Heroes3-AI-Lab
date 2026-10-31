@@ -1,0 +1,54 @@
+{
+  "protocol": {
+    "schema": "strategic-parallel-episode-balanced-ppo-v1",
+    "encoder_version": "strategy-visible-threat-supply-encoder-v2",
+    "algorithm": {
+      "schema": "strategic-episode-balanced-choice-ppo-v2",
+      "gamma": 1.0,
+      "reward": "Completed native terminal win +1/loss -1 only; invalid batch must abort before update.",
+      "actor_sample_weight": "N/(E*episode_free_choices) if candidate_count>1, otherwise 0; E includes zero-choice episodes",
+      "critic_sample_weight": "N/(E*episode_steps); E includes all valid episodes",
+      "advantage": "return-old_value; weighted mean/variance only over free choices, equal mass per active episode",
+      "entropy": "Same weights as actor, zero for forced transitions",
+      "KL": "Report objective-weighted and conditional free-choice KL; gate conditional KL to avoid zero-choice dilution",
+      "minibatches": "Uniform random transitions; global N/E weights retained, not renormalized within minibatch",
+      "forced_actor_optimizer": "If current minibatch has no free choices, set actor gradients to None; skip actor momentum/decay/state advance",
+      "epochs": 2,
+      "minibatch_size": 16,
+      "clip": 0.2,
+      "value_coefficient": 0.5,
+      "entropy_coefficient": 0.005,
+      "max_gradient_norm": 0.5,
+      "max_conditional_KL": 0.05,
+      "limitations": "Weighted target choice optimization only. No ability improvement implied; native battles/economics delegated."
+    },
+    "lr": 0.0003,
+    "environments": 2,
+    "synthetic": true,
+    "seed_base": 2026102300,
+    "seconds": 90,
+    "batch_wait_ms": 2,
+    "initialization": {
+      "mode": "migrated-v3-initial",
+      "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt",
+      "sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0"
+    },
+    "hashes": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py": "74dcbb58fecbc366a3a1834c9cb70bd500a82b0f1f45994d2a3913f887933df3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/collect_vector.py": "88d657206c1603643f72deed36fdf50eb91db5a8bf628e2b69b6c0410e07122a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/episode_balanced_ppo.py": "05477bfef29bb4b91c107b43a514c8284fa76e7817947f6f9e276354ed1bf088",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+      "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/worker_runner.py": "5b477b4e69dd6d9f17e0cc53ad66c8e89d2878496e8c5377344f29f77db454d5",
+      "/mnt/g/Heroes3-AI-Lab/experiments/cpu-simulator-throughput-v1/measure.py": "fa84bf34d75aee88f11f1780fbcee6ea5614f9ef198e8e68d97c542bc26b06bf",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/fixtures/visible-request.json": "ea8973ea840b210e8e6c8baa86415225c31f6f900c9d3b7cf6ad1a72ecc87f6b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0"
+    },
+    "inference_schedule": "async",
+    "random_stream": "job seed + logical update version; parameter digest is provenance only",
+    "schedule": "8=2map*2opponent*2role, one seed; 24=three seed*8; seed=base+update*1000+seed_index*16+map*4+opponent*2+role",
+    "collection": "Synchronous complete-terminal waves; fixed policy across all waves; all invalid abort before PPO",
+    "scalar_reward": "native terminal win +1/loss -1; no shaping"
+  },
+  "sha256": "6f09f6764897455afc0fdb0ca4669151056d754ac3b37c72fe34ee6856b71857"
+}

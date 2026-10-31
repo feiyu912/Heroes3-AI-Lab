@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "total": 30,
+  "train_dev": 24,
+  "locked_test_v3": 6,
+  "rng_seed": 2026101802,
+  "locked_never_used_before": true,
+  "note": "only indices 24..29 (split=locked-test-v3) may be used as independent tests"
+}

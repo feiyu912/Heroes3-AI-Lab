@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792061459501224104/update-96.pt",
+  "real_observations": 128,
+  "rollout_batch_size": 24,
+  "results": [
+    {
+      "batch_size": 1,
+      "maximum_log_probability_error": 2.288818359375e-05
+    },
+    {
+      "batch_size": 4,
+      "maximum_log_probability_error": 2.288818359375e-05
+    },
+    {
+      "batch_size": 8,
+      "maximum_log_probability_error": 2.288818359375e-05
+    },
+    {
+      "batch_size": 32,
+      "maximum_log_probability_error": 2.288818359375e-05
+    },
+    {
+      "batch_size": 64,
+      "maximum_log_probability_error": 2.288818359375e-05
+    }
+  ],
+  "tolerance_absolute": 0.0002,
+  "tolerance_relative": 0.0,
+  "maximum_relative_ratio_error_bound": 0.00020002000133340002,
+  "justification": "Float32 head logits have large common offsets; different GEMM batch shapes introduce rounding. Bound is 0.0201% in PPO ratio, far below 20% clipping. No optimizer update performed."
+}

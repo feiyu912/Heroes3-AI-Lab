@@ -1,0 +1,15 @@
+{
+  "source": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+  "source_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+  "map": "/mnt/g/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/fixture-01.vmap",
+  "sha256": "ab20ed070f644a545947e1c55ce39af5326b815fbbfab7cad4fe9e39f82b6d39",
+  "installed": false,
+  "loaded_by_native": false,
+  "red_heroes": 2,
+  "intended_stack_totals": {
+    "core:pikeman": 15,
+    "core:archer": 3
+  },
+  "positions_are_object_coordinates": true,
+  "native_pathfinding_still_required": true
+}

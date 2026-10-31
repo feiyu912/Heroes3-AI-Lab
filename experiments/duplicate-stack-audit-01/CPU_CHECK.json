@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": [
+    "reproduce_16_to_52_actual_slot_pattern",
+    "reproduce_old_6_to_6_false_ambiguity",
+    "sum_mixed_duplicate_creatures",
+    "slot_order_invariance",
+    "36_conserved_replacement_delivery_not_original_main"
+  ],
+  "native_games_started": 0,
+  "optimizer_steps": 0
+}

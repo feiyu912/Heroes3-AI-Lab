@@ -1,0 +1,390 @@
+{
+  "run_id": "b3688c7c-a595-4e63-b34c-9c47b4f05961",
+  "completed": true,
+  "seed": 20261013,
+  "role": "defender",
+  "opponent": "BattleAI",
+  "map": "lab/smoke.vmap",
+  "schema": 15,
+  "boot_seconds": 0.697392249,
+  "elapsed_seconds": 0.8261274729999997,
+  "policy": "deterministic attack-priority legal-action diagnostic",
+  "note": "Permanent loss counts come from server BattleResult for this normal no-magic fixture; schema army values retained for comparison.",
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 600,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 66,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -200,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 2
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -224.0,
+        "reward_term_mult": -201.0,
+        "reward_relval_mult": -246.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 2
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 2,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 18,
+        "1": 0
+      },
+      "reward_sum": -674.0,
+      "initial_observation_sha256": "4b64733b1b3d89914d9e391a6c24ec6bd834c703abe55c1a8b389ab0de34afed",
+      "trajectory_sha256": "007d6482aa7b44594162ccb5718e8f072d44bc8fff07fc746b54c0d8925c23fe"
+    },
+    {
+      "episode": 1,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 633,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 33,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -233,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 1
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -232.0,
+        "reward_term_mult": -234.0,
+        "reward_relval_mult": -292.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 1
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 1,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 19,
+        "1": 0
+      },
+      "reward_sum": -761.0,
+      "initial_observation_sha256": "2f536eb9b430f98de959db3753bd31a8085c950671ac4c0f416fabf6722f122f",
+      "trajectory_sha256": "334fcb5e0a84de1b00900ca95d999c38a0becc941697c829228f25db51996da3"
+    },
+    {
+      "episode": 2,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 600,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 66,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -200,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 2
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -220.0,
+        "reward_term_mult": -201.0,
+        "reward_relval_mult": -245.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 2
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 2,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 18,
+        "1": 0
+      },
+      "reward_sum": -669.0,
+      "initial_observation_sha256": "f231540c5396333ab9f234546c3c9183db378e4469d2cbbb4d1230eb89d3c4a2",
+      "trajectory_sha256": "32e8e30fd613c5bdb1155b700c72e9c36332f7a9d04239658c65017e89ad643e"
+    },
+    {
+      "episode": 3,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 633,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 33,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -233,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 1
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -230.0,
+        "reward_term_mult": -234.0,
+        "reward_relval_mult": -292.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 1
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 1,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 19,
+        "1": 0
+      },
+      "reward_sum": -759.0,
+      "initial_observation_sha256": "f231540c5396333ab9f234546c3c9183db378e4469d2cbbb4d1230eb89d3c4a2",
+      "trajectory_sha256": "1b027f456174d33954a2442207f1a32dc8f1c8c5f02e0fc645f6159687f952c4"
+    },
+    {
+      "episode": 4,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 633,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 33,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -233,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 1
+            },
+            "1": {
+              "2": 10
+            }
+          },
+          "initial_armies": [
+            {
+              "2": 20
+            },
+            {
+              "2": 10
+            }
+          ]
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -229.0,
+        "reward_term_mult": -234.0,
+        "reward_relval_mult": -292.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 1
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 1,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 19,
+        "1": 0
+      },
+      "reward_sum": -758.0,
+      "initial_observation_sha256": "4b64733b1b3d89914d9e391a6c24ec6bd834c703abe55c1a8b389ab0de34afed",
+      "trajectory_sha256": "2b1e3abd4c276a17957356489468edc09e06db361942644d83bb3c451689c824"
+    }
+  ]
+}

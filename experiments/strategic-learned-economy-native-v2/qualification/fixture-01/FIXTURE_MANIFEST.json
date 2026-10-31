@@ -1,0 +1,158 @@
+{
+  "mechanism_only": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "source_map": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-02-development.vmap",
+  "source_map_sha256": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+  "fixture_map": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/fixture-01/free-stock-rescue-stock-mechanism-v2-01.vmap",
+  "fixture_map_sha256": "466b2bac6dcd89975191f9745d9f7b951c26d50f81da91d751954e87bd59e1c5",
+  "fixed_seed": 2026103501,
+  "owned_player": 1,
+  "opponent": "Nullkiller2",
+  "changed_zip_entries": [
+    "objects.json"
+  ],
+  "unchanged_zip_entry_sha256": {
+    "header.json": "ee9104540bd471686a841aa255a597229aec387335d867ac68e0b50384e7178e",
+    "surface_terrain.json": "b1cd936ceea73ab77d762f1e4a4e4da49e81a0dba67c6a469993008882fa2fdc"
+  },
+  "removed_own_hero": {
+    "hero_1": {
+      "l": 0,
+      "options": {
+        "army": [
+          {
+            "amount": 20,
+            "type": "core:pikeman"
+          },
+          {
+            "amount": 10,
+            "type": "core:archer"
+          }
+        ],
+        "experience": 0,
+        "name": "blue strategic hero",
+        "owner": "blue",
+        "primarySkills": {
+          "attack": 0,
+          "defence": 0,
+          "knowledge": 0,
+          "spellpower": 0
+        },
+        "secondarySkills": [],
+        "spellBook": [
+          "preset"
+        ],
+        "type": "core:sorsha"
+      },
+      "subtype": "core:knight",
+      "template": {
+        "animation": "AH01_",
+        "editorAnimation": "AH01_E",
+        "mask": [
+          "VVV",
+          "VAV"
+        ],
+        "visitableFrom": [
+          "+++",
+          "+-+",
+          "+++"
+        ]
+      },
+      "type": "hero",
+      "x": 30,
+      "y": 10
+    }
+  },
+  "modified_own_town": {
+    "object_key": "town_1",
+    "before": {
+      "l": 0,
+      "options": {
+        "buildings": {
+          "allOf": [
+            "core:fort",
+            "core:villageHall",
+            "core:tavern",
+            "core:dwellingLvl1",
+            "core:townHall",
+            "core:dwellingLvl2"
+          ]
+        },
+        "owner": "blue",
+        "tightFormation": "wide"
+      },
+      "subtype": "castle",
+      "template": {
+        "animation": "AVCCAST0.DEF",
+        "editorAnimation": "",
+        "mask": [
+          "VVVVVV",
+          "VVVVVV",
+          "VVVVVV",
+          "VVBBBV",
+          "VBBBBB",
+          "VBBABB"
+        ],
+        "visitableFrom": [
+          "---",
+          "+-+",
+          "+++"
+        ]
+      },
+      "type": "town",
+      "x": 31,
+      "y": 8
+    },
+    "after": {
+      "l": 0,
+      "options": {
+        "buildings": {
+          "allOf": [
+            "core:fort",
+            "core:villageHall",
+            "core:tavern",
+            "core:dwellingLvl1",
+            "core:townHall",
+            "core:dwellingLvl2"
+          ]
+        },
+        "owner": "blue",
+        "tightFormation": "wide",
+        "army": [
+          {
+            "amount": 20,
+            "type": "core:pikeman"
+          },
+          {
+            "amount": 10,
+            "type": "core:archer"
+          }
+        ]
+      },
+      "subtype": "castle",
+      "template": {
+        "animation": "AVCCAST0.DEF",
+        "editorAnimation": "",
+        "mask": [
+          "VVVVVV",
+          "VVVVVV",
+          "VVVVVV",
+          "VVBBBV",
+          "VBBBBB",
+          "VBBABB"
+        ],
+        "visitableFrom": [
+          "---",
+          "+-+",
+          "+++"
+        ]
+      },
+      "type": "town",
+      "x": 31,
+      "y": 8
+    }
+  },
+  "all_other_objects_structurally_identical": true,
+  "header_resources_factions_tavern_preserved": true
+}

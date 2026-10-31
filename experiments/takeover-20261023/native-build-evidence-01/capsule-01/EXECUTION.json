@@ -1,0 +1,33 @@
+{
+  "passed": false,
+  "native_runs": 0,
+  "optimizer_steps": 0,
+  "incremental_from_accepted_shared_tree": true,
+  "flow_epoch": "learned-economy-build-recruit-v1",
+  "flow_contract_sha256": "1f3a9d3c0777e31787df5e8cd2a2af1614d326a04f9b0f85ac0e83c3e42d15a3",
+  "candidate_manifest_sha256": "865988a27bc8de8f257b767ac5b10927e76da96fe974e37414fe7519f38e7830",
+  "error": "AssertionError('Build failed; preserve log')",
+  "context": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v2/build_capsule.py\", line 110, in execute\n    build(BUILD,out/'build.log')\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v2/build_capsule.py\", line 70, in build\n    assert code==0,'Build failed; preserve log'\nAssertionError: Build failed; preserve log\n",
+  "accepted_sources_restored": true,
+  "restored_binary_hashes": {
+    "vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+    "vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac",
+    "libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a"
+  },
+  "accepted_loader_resolution": [
+    {
+      "executable": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient",
+      "ldd_libvcmi": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so",
+      "library_sha256": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a",
+      "scope": "dynamic loader resolution; no native game or /proc process proof claimed"
+    },
+    {
+      "executable": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver",
+      "ldd_libvcmi": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so",
+      "library_sha256": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a",
+      "scope": "dynamic loader resolution; no native game or /proc process proof claimed"
+    }
+  ],
+  "accepted_binaries_restored": true,
+  "rebuild_required": false
+}

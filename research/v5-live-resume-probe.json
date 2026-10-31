@@ -1,0 +1,92 @@
+{
+  "config": {
+    "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-128.pt",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-live-resume-probe.json",
+    "mode": "all",
+    "workers": 24,
+    "updates": 1,
+    "rollout": 32,
+    "microbatch": 16,
+    "epochs": 2,
+    "seed": 20261022,
+    "learning_rate": 3e-06,
+    "head_learning_rate": 2e-05,
+    "opponents": [
+      "BattleAI",
+      "MMAI_GPU"
+    ],
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "shaping": 0.5,
+    "step_cost": 0.002,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "entropy_coef": 0.005,
+    "resume": true,
+    "rotate_every": 16,
+    "native_opponent_device": "cpu",
+    "no_auto_microbatch": true,
+    "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-128.pt",
+    "first_battle": false,
+    "deterministic_cuda": true,
+    "recompute_batch_size": 24,
+    "requested_opponents": [
+      "BattleAI",
+      "MMAI_GPU"
+    ],
+    "fixed_opponent_inference": "central-cuda",
+    "fixed_opponent_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "requested_microbatch": 16
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792078409795783495/update-129.pt",
+  "completed": true,
+  "resumed_from_updates": 128,
+  "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-128.pt",
+  "source_snapshot": "/root/heroes3-ai-lab/models/graph-finetune/1792078409795783495/source",
+  "records": [
+    {
+      "update": 129,
+      "samples": 768,
+      "steps_per_second": 15.542862702631576,
+      "episodes": 20,
+      "wins": 14,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.04262093699314088,
+        "policy_loss": -0.011950103876491388,
+        "value_loss": 0.11846859792907101,
+        "entropy": 0.9326516004900137,
+        "approximate_kl": 0.013561606014263816,
+        "gradient_norm": 13.380149627725283,
+        "clip_fraction": 0.050130208333333336,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.6129952209985277,
+        "environment": 8.894961394001257,
+        "update": 33.246251094999934
+      },
+      "free_mib": 5912.18359375,
+      "gpu_peak_mib": 2214.939453125,
+      "fixed_opponent": {
+        "requests": 419,
+        "batches": 120,
+        "inference_seconds": 8.565124743004162,
+        "weights_unchanged": true
+      },
+      "gpu_telemetry": {
+        "temperature_c": 42.0,
+        "memory_mib": 4587.0,
+        "utilization_percent": 34.0
+      }
+    }
+  ],
+  "wall_seconds": 72.56023370799994,
+  "policy": "recovered",
+  "total_parameters": 8993178,
+  "trainable_parameters": 8993178,
+  "reward": "Normal terminal +/-1, step cost, gamma-correct army-value potential with zero terminal potential",
+  "CUDA_training": true,
+  "all_workers_exit_zero": true
+}

@@ -1,0 +1,127 @@
+{
+  "config": {
+    "workers": 24,
+    "updates": 4,
+    "rollout": 8,
+    "seed": 20261102,
+    "opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "resume": false,
+    "step_cost": 0.002,
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "balanced_configs": true,
+    "shaping": 0.0,
+    "learning_rate": 0.0001,
+    "entropy_coef": 0.01,
+    "native_opponent_device": "cpu",
+    "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "first_battle": true,
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-central-peer-cpu-1.json"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792068663063791842/update-4.pt",
+  "latest_update": 4,
+  "records": [
+    {
+      "update": 1,
+      "samples": 192,
+      "steps_per_second": 59.27040277182705,
+      "episodes": 0,
+      "wins": 0,
+      "truncations": 0,
+      "metrics": {
+        "loss": 4.863907602098253,
+        "policy_loss": -0.00413055345416069,
+        "value_loss": 9.759936014811197,
+        "entropy": 1.1929860909779866,
+        "approximate_kl": 0.0006966058216575119,
+        "gradient_norm": 6.31193478902181,
+        "clip_fraction": 0.006944444444444444,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 1.52587890625e-05
+      },
+      "free_mib": 4958.84375,
+      "gpu_allocated_mib": 370.13671875,
+      "gpu_telemetry": {
+        "temperature_c": 49.0,
+        "memory_used_mib": 2457.0,
+        "utilization_percent": 6.0
+      }
+    },
+    {
+      "update": 2,
+      "samples": 192,
+      "steps_per_second": 65.10797268986948,
+      "episodes": 5,
+      "wins": 4,
+      "truncations": 0,
+      "metrics": {
+        "loss": 6.238078276316325,
+        "policy_loss": -0.0036419096092383065,
+        "value_loss": 12.502761946784126,
+        "entropy": 0.9660803013377719,
+        "approximate_kl": 0.00012964600076278052,
+        "gradient_norm": 16.551348368326824,
+        "clip_fraction": 0.001736111111111111,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 1.9073486328125e-06
+      },
+      "free_mib": 4892.1171875,
+      "gpu_allocated_mib": 370.13671875
+    },
+    {
+      "update": 3,
+      "samples": 192,
+      "steps_per_second": 80.22189858479635,
+      "episodes": 14,
+      "wins": 11,
+      "truncations": 0,
+      "metrics": {
+        "loss": 5.645861413743761,
+        "policy_loss": -0.003857241322596868,
+        "value_loss": 11.319505903455946,
+        "entropy": 1.0034315122498407,
+        "approximate_kl": 0.00010214901218811671,
+        "gradient_norm": 9.585525618659126,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 1.1444091796875e-05
+      },
+      "free_mib": 4862.921875,
+      "gpu_allocated_mib": 370.13671875
+    },
+    {
+      "update": 4,
+      "samples": 192,
+      "steps_per_second": 79.66509008569015,
+      "episodes": 25,
+      "wins": 16,
+      "truncations": 0,
+      "metrics": {
+        "loss": 11.849724716610378,
+        "policy_loss": -0.0015669378141562145,
+        "value_loss": 23.72362666659885,
+        "entropy": 1.0521491037474737,
+        "approximate_kl": 4.9024768587615756e-05,
+        "gradient_norm": 25.3029662238227,
+        "clip_fraction": 0.0,
+        "epochs_completed": 3,
+        "maximum_recompute_logp_error": 2.288818359375e-05
+      },
+      "free_mib": 4809.5,
+      "gpu_allocated_mib": 370.13671875
+    }
+  ],
+  "completed": true,
+  "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+  "source_snapshot": "/root/heroes3-ai-lab/models/recovered-ppo/1792068663063791842/source",
+  "resumed_from_updates": 0,
+  "total_parameters": 8993178,
+  "trainable_parameters": 100356,
+  "reward": "Normal terminal win/loss +/-1, minus 0.002 per owned action; gamma-correct potential coefficient 0.0; artificial truncation bootstraps final observation",
+  "wall_seconds": 48.5553122780002,
+  "source": "Official v15 attacker/defender, frozen graph encoder, head-only PPO",
+  "all_workers_exit_zero": true
+}

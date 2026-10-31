@@ -1,0 +1,16 @@
+{
+  "parent_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/evaluate_policy_steps.py": "391bc0ced75e5c73e7c62e51d0dd65ff1f0aa29f8211220c391e9f9d53d3d7ef",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/step_evidence.py": "2811111ea8a54489244d005acc72dca2af312f7b085c659930768013149fd48a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/dev_utils.py": "667d3eb42426af3748aecd0f96522ede10e2fc10d104040bd7a4493fc17105a7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/dev_raw_auditor.py": "49ecfa7755130174238a6eff44b4c64b56d717d829a92e03300b3666ffe2f016",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/replay_dev.py": "d2352790b59ca7bc3bd784ed8ac895e5a2c55eccd342441bc08a89e662587e5a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/leases.py": "dcf9d092b5c61c202121678f8e483406c71646f2a421dbfe3215b37aea2625a7"
+  },
+  "raw_gate_changes": [
+    "expected seed base7600 to preregistered9400 only"
+  ],
+  "per_game_and_full_CPU_replay_unchanged": true,
+  "new_native_games": 0,
+  "optimizer_steps": 0
+}

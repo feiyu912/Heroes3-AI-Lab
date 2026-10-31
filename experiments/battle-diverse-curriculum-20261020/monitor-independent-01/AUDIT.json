@@ -1,0 +1,43 @@
+{
+  "snapshot_checks_passed": true,
+  "experiment_completed_at_snapshot": false,
+  "final_experiment_passed": false,
+  "new_native_games": 0,
+  "new_GPU_operations": 0,
+  "new_optimizer_steps": 0,
+  "observed_workers": 11,
+  "native_library_bound_workers": 11,
+  "native_worker_pids": [
+    3057,
+    3093,
+    3132,
+    3171,
+    3207,
+    3246,
+    3309,
+    3345,
+    3381,
+    3417,
+    3456
+  ],
+  "actual_scale_observed_is_24": false,
+  "native_scope": "Native engine embedded in worker processes; see task names/maps. Do not invent 16 separate native executable PIDs.",
+  "latest_completed_update": 8,
+  "actual_Adam_steps_total": 1024,
+  "sample_rows_through_saved_updates": 4096,
+  "checkpoint_sha256": "480919ee2b9aff968bde75efc6f69a2ef680d15d9e8b835d03ef0e0216e089ff",
+  "complete_rollout_sha256": "706310599a01c97d4c1eb1b12e0f10daa271d4ac50cf461aac098027ba8f9e18",
+  "source_freeze_current": true,
+  "OS_snapshot_file": "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/monitor-independent-01/OS_SNAPSHOT.json",
+  "final_30_updates_and_64_DEV_certified": false,
+  "limitations": "One bounded /proc and nvidia-smi read window, not simultaneous atomic process/resource accounting. No polling or CUDA replay; active experiment remains unqualified.",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/monitor-independent-01/snapshot.py": "cc7bd45f68a280a23953d1f2db07c8e28ed09c44ee91f9265aff2a0867e9895a",
+    "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/FREEZE.json": "5d7eebe77b65d2bd9e431e91cde6027048681a20a5eb5153dff909dae6db136e",
+    "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/PLAN.json": "c62d65f09f795058d15fcb9d9cea9d3e2ef0f1a6816fe6d9590a2f3d47a10466",
+    "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/models/1792504676114060650/update-8.pt": "480919ee2b9aff968bde75efc6f69a2ef680d15d9e8b835d03ef0e0216e089ff",
+    "/root/heroes3-ai-lab/evaluations/battle-diverse60-native-02/models/1792504676114060650/rollout-8.pt": "706310599a01c97d4c1eb1b12e0f10daa271d4ac50cf461aac098027ba8f9e18",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/monitor-independent-01/OS_SNAPSHOT.json": "7530043dd3def82ed1af7317289bee3ea88e4d309318d043d912527fa13d0cb6",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/monitor-independent-01/TRAINING_REPORT_SNAPSHOT.json": "db0e48d31c6837a4559d105241de239a3b7a7487b94a0372221e05f00ba3870c"
+  }
+}

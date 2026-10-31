@@ -1,0 +1,7 @@
+{
+  "original_unchanged_sha256": "eb72efc0d7c3d5fc30384169a7b2086098f5e2e85a40c2110c9441ad429a1cd0",
+  "new_cli_sha256": "a337c987bc5edd58261af1e9ae210cf75b926d70c763abe3fb9bae54420fa557",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "Fresh output argument and actual action-file glob; unchanged frozen learner/collector/algorithm"
+}

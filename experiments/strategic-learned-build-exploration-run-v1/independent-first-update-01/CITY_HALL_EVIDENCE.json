@@ -1,0 +1,349 @@
+{
+  "transaction": {
+    "case": "/root/heroes3-ai-lab/evaluations/strategic-learned-build-exploration-train-01/cell-05",
+    "native_request_id": 217,
+    "decision_id": 160,
+    "town_id": 19,
+    "building_id": 12,
+    "cost": {
+      "wood": 0,
+      "mercury": 0,
+      "ore": 0,
+      "sulfur": 0,
+      "crystal": 0,
+      "gems": 0,
+      "gold": 5000
+    },
+    "before": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 0,
+      "buildings": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        14,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 38,
+        "mercury": 4,
+        "ore": 17,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 19840
+      }
+    },
+    "after": {
+      "town_id": 19,
+      "owner": 1,
+      "built_today": 1,
+      "buildings": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        12,
+        14,
+        16,
+        30,
+        31
+      ],
+      "resources": {
+        "wood": 38,
+        "mercury": 4,
+        "ore": 17,
+        "sulfur": 4,
+        "crystal": 4,
+        "gems": 4,
+        "gold": 14840
+      }
+    },
+    "phase": "train",
+    "arm": "train",
+    "request_day": 23,
+    "own_turn": 23
+  },
+  "raw_client_sha256": "28df8f76855cf68e6f842ff1981d039f6b7a81dee0583feccae3888e60ef1497",
+  "evidence": [
+    {
+      "client_line": 21201,
+      "kind": "typed",
+      "payload": {
+        "event": "native_action_sent",
+        "decision_id": 160,
+        "native_request_id": 217,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 23,
+        "op": "build",
+        "pack_type": "BuildStructure",
+        "selected_index": 74,
+        "request_sha256": "17fd75b701a74627d5887cce8fce4094a09a4ad3201dccd11c4443ac286793bc",
+        "candidate": {
+          "op": "build",
+          "actor": "player_town",
+          "town_id": 19,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        "classification": "new_policy",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 12,
+        "actual_request": {
+          "pack_type": "BuildStructure",
+          "player": 1,
+          "native_request_id": 217,
+          "town_id": 19,
+          "building_id": 12
+        },
+        "before_state": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 0,
+          "buildings": [
+            0,
+            5,
+            7,
+            10,
+            11,
+            14,
+            16,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 38,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 19840
+          }
+        }
+      }
+    },
+    {
+      "client_line": 21221,
+      "kind": "received_pack",
+      "payload": {
+        "event": "set_resources_received",
+        "player": 1,
+        "mode": 0,
+        "resources": {
+          "wood": 0,
+          "mercury": 0,
+          "ore": 0,
+          "sulfur": 0,
+          "crystal": 0,
+          "gems": 0,
+          "gold": -5000
+        }
+      }
+    },
+    {
+      "client_line": 21237,
+      "kind": "received_pack",
+      "payload": {
+        "event": "new_structures_received",
+        "town_id": 19,
+        "built_today": 1,
+        "buildings": [
+          12
+        ]
+      }
+    },
+    {
+      "client_line": 21239,
+      "kind": "typed",
+      "payload": {
+        "event": "build_changed",
+        "decision_id": 160,
+        "native_request_id": 217,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 23,
+        "op": "build",
+        "pack_type": "BuildStructure",
+        "selected_index": 74,
+        "request_sha256": "17fd75b701a74627d5887cce8fce4094a09a4ad3201dccd11c4443ac286793bc",
+        "candidate": {
+          "op": "build",
+          "actor": "player_town",
+          "town_id": 19,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        "classification": "new_policy",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 12,
+        "observed_building_id": 12,
+        "what": 1,
+        "state": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            0,
+            5,
+            7,
+            10,
+            11,
+            12,
+            14,
+            16,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 38,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 14840
+          }
+        }
+      }
+    },
+    {
+      "client_line": 21242,
+      "kind": "actual_server_apply",
+      "text": "TypedBuildApplied player=1 native_request_id=217 town_id=19 building_id=12 success=1"
+    },
+    {
+      "client_line": 21247,
+      "kind": "typed",
+      "payload": {
+        "event": "build_ack_state",
+        "decision_id": 160,
+        "native_request_id": 217,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 23,
+        "op": "build",
+        "pack_type": "BuildStructure",
+        "selected_index": 74,
+        "request_sha256": "17fd75b701a74627d5887cce8fce4094a09a4ad3201dccd11c4443ac286793bc",
+        "candidate": {
+          "op": "build",
+          "actor": "player_town",
+          "town_id": 19,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        "classification": "new_policy",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 12,
+        "state": {
+          "town_id": 19,
+          "owner": 1,
+          "built_today": 1,
+          "buildings": [
+            0,
+            5,
+            7,
+            10,
+            11,
+            12,
+            14,
+            16,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 38,
+            "mercury": 4,
+            "ore": 17,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 14840
+          }
+        }
+      }
+    },
+    {
+      "client_line": 21248,
+      "kind": "typed",
+      "payload": {
+        "event": "package_applied",
+        "decision_id": 160,
+        "native_request_id": 217,
+        "player": 1,
+        "hero": 3,
+        "own_turn": 23,
+        "op": "build",
+        "pack_type": "BuildStructure",
+        "selected_index": 74,
+        "request_sha256": "17fd75b701a74627d5887cce8fce4094a09a4ad3201dccd11c4443ac286793bc",
+        "candidate": {
+          "op": "build",
+          "actor": "player_town",
+          "town_id": 19,
+          "building_id": 12,
+          "category": "income",
+          "cost": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 5000
+          }
+        },
+        "classification": "new_policy",
+        "actor": "player_town",
+        "town_id": 19,
+        "building_id": 12,
+        "source": "client",
+        "package": "PackageApplied",
+        "success": true
+      }
+    },
+    {
+      "client_line": 21259,
+      "kind": "actual_registry_ack",
+      "text": "DirectorNativeRequestAck id=217 player=1 pack_type=185 success=1"
+    }
+  ]
+}

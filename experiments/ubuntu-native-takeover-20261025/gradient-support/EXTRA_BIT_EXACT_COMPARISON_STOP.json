@@ -1,0 +1,13 @@
+{
+  "engineering_stop_scope": "Additional comparison only; no new audit execution",
+  "exact_all_metrics_check": false,
+  "main_clean_audit_passed": true,
+  "reason": "Tiny floating-point norm differences despite exact support sets; do not claim bit-exact numerical reproduction",
+  "first_difference": {
+    "path": "parameters/models.defender.weights.gnn__convs__2__29__lin_src__weight/actor_max_norm",
+    "old": 0.18771727929978688,
+    "new": 0.1877172793138046,
+    "absolute_difference": 1.4017731420068458e-11,
+    "relative_difference": 7.467469948056936e-11
+  }
+}

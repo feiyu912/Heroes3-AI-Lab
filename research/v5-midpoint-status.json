@@ -1,0 +1,5 @@
+{
+  "state": "completed",
+  "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+  "final_test_not_read": true
+}

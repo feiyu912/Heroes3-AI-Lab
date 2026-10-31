@@ -1,0 +1,5 @@
+{
+  "state": "failed",
+  "updated_unix": 1792070671.4787943,
+  "error": "AssertionError('v5-diverse-last.log: exit 1; inspect log before continuing')"
+}

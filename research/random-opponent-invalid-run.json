@@ -1,0 +1,5 @@
+{
+  "excluded": true,
+  "reason": "Native MMAI_RANDOM used random_device each action; original completed experiment excluded. Replacement rerun from BC with seeded generator and included in ppo-research-suite.json.",
+  "terminated_lab_pids": []
+}

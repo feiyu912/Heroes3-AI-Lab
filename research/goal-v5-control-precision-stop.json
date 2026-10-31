@@ -1,0 +1,5 @@
+{
+  "state": "failed",
+  "updated_unix": 1792062773.3154612,
+  "error": "AssertionError('Restored pipeline failed')"
+}

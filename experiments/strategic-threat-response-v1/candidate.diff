@@ -1,0 +1,25 @@
+--- baseline/AI/DirectorAI/CDirectorAI.cpp
++++ candidate/AI/DirectorAI/CDirectorAI.cpp
+@@ -237,6 +237,22 @@
+ 	{
+ 		// Keep a chosen destination within this turn while it remains an admissible goal.
+ 		auto previous = committedTargets.find(hero->id.getNum());
++		// Coordinate pressure only: no enemy reachability/interception prediction.
++		// Thresholds exactly match strategic-threat-response-v1/threat_contract.py.
++		const double ownArmyValue = static_cast<double>(ArmyDescriptor(hero, true).getStrength());
++		const int3 currentPosition = hero->visitablePos();
++		const bool visiblePressure = std::any_of(visibleThreats.begin(), visibleThreats.end(), [&](const auto & threat)
++		{
++			return threat.first.z == currentPosition.z &&
++				std::max(std::abs(threat.first.x - currentPosition.x), std::abs(threat.first.y - currentPosition.y)) <= 12 &&
++				threat.second >= 1.5 * std::max(1.0, ownArmyValue);
++		});
++		if(visiblePressure && previous != committedTargets.end())
++		{
++			committedTargets.erase(previous);
++			previous = committedTargets.end();
++			traceState("threat_commit_released");
++		}
+ 		if(previous != committedTargets.end())
+ 		{
+ 			auto retained = std::find_if(candidates.begin(), candidates.end(), [&](const Candidate & c)

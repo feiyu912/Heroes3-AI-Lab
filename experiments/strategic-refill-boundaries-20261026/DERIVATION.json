@@ -1,0 +1,19 @@
+{
+  "schema": "refill-boundary-tools-derivation-v1",
+  "parent_sources": {
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/SOURCE_FREEZE.json": "c00acca3de5db3e2a560359e6cbe4b3920d7b31101284da965a9de79acf39393",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/collect_mechanism.py": "40d7c6abb3742e6b809c23441d722e05fbd0d24a8e9c0c4d022781141f00ae71",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/lease_exec.py": "7b6a6273e0e2b4b7c420362edbc97813597971e2e07d1899a352091024430fc6",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/selector.py": "043e384fc65d075f8314088e631139859e8b21759110ddd02bc3449ea5e7a708",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/raw_contract_auditor.py": "486bd89520a865364f9233d4387ba068a71200bbbe20383cd8a3315ddfbf27df",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/audit_mechanism.py": "7c5079739fc39302454e59dd8774ca8a6cbbb38107fc0739406f18923bf7bd83",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/common.py": "dadedff77e183b82dd2b6e37a36b75bb6059f763a9c4ae4e2ec0611cfbc6d782"
+  },
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "original_v1_modified": false,
+  "natural_evidence": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/natural-independent-01/AUDIT.json",
+  "natural_evidence_sha256": "794fe239aaadca0177b530a434b5f604a09f974d57b3165c12244a3ba9e9bfba",
+  "prepare_checks": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/prepare-checks-02/RESULT.json",
+  "prepare_checks_sha256": "73bd9ca9e93aa1985ef20ca36ac5f7ff6efc081ca2acd7c836e3e676359bd6b7"
+}

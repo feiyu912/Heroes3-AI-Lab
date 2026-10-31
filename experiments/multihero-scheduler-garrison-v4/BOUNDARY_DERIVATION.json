@@ -1,0 +1,19 @@
+{
+  "map_sha256": "13fdc822fcbe2bb3939c8382da6a16c05dd2726230a45f5da1f04b7641da35af",
+  "parent_map_sha256": "13fdc822fcbe2bb3939c8382da6a16c05dd2726230a45f5da1f04b7641da35af",
+  "fixture_identical": true,
+  "common_change": "At original advanceTurn no-pending guard, hold after both mobile heroes actually changed position in own turn2; emit native boundary then no further actions.",
+  "single_factor": "Only filtered excludes isGarrisoned from pickHero",
+  "candidates": {
+    "baseline": {
+      "CDirectorAI.cpp": "b6383b7ca45606e7cf871baea1c6694c5365920d6f77b330af0f5a469af3e25b",
+      "CDirectorAI.h": "ce95fa72a98607b641478a57879d1132b356c158cef35e224946348775e66e55"
+    },
+    "filtered": {
+      "CDirectorAI.cpp": "89d91f7f700a31a6697fb65aef908f5d8266a7fc278cf26f4a7ae0edf8bf3047",
+      "CDirectorAI.h": "ce95fa72a98607b641478a57879d1132b356c158cef35e224946348775e66e55"
+    }
+  },
+  "native_runs": 0,
+  "optimizer_steps": 0
+}

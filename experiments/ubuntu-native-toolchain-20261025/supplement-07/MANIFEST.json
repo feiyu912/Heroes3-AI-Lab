@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "unavailable_packages": [],
+  "packages": [
+    {
+      "package": "libmd0",
+      "version": "1.0.4-1build1",
+      "deb_sha256": "bcdad5e400aeb660f0337a1c5c1a77e3effa91d0803e64ce2d000e9006f67cdb",
+      "control": "Package: libmd0\nVersion: 1.0.4-1build1\nArchitecture: amd64\n"
+    }
+  ],
+  "authenticated_indexes": [
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security.InRelease",
+      "sha256": "b371d661986d2504a20356b60c83f8775c7ac264a18d430ac45400fd072e599a",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Sun Oct 25 21:32:46 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security-main-Packages.xz",
+          "sha256": "652955367a29bde1cdd879701cfb34d7c317720e0ac23b56633b47bbd2187d6f",
+          "size": 3642768
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-security-universe-Packages.xz",
+          "sha256": "e178af12be3c4537cdf62a12177851a729acb1933eea92080a72c8b9e8a93750",
+          "size": 1054700
+        }
+      ]
+    },
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates.InRelease",
+      "sha256": "dbe2987f3a702dd4d2d466a07a8361d812b40b3a8b7b2639a5a7992993d8833d",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Sun Oct 25 21:35:05 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates-main-Packages.xz",
+          "sha256": "ec13bc6f169c23d971706342c72e788515c01906a533e4d2fc9021dce7ebb5a9",
+          "size": 3908812
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-updates-universe-Packages.xz",
+          "sha256": "d2e8a26ba9b0f9bc73ad2d26c28a87db54441c30875e68d9de316455fd9cfff7",
+          "size": 1288820
+        }
+      ]
+    },
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy.InRelease",
+      "sha256": "c14060cd8c6d625874dfcb9523a35a395bf4865c28b6b6a82569ef326fe92dc6",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Fri Apr 22 01:16:39 2022 CST\ngpgv:                using RSA key 871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-main-Packages.xz",
+          "sha256": "37cb57f1554cbfa71c5a29ee9ffee18a9a8c1782bb0568e0874b7ff4ce8f9c11",
+          "size": 1394768
+        },
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/jammy-universe-Packages.xz",
+          "sha256": "d29cb24c93fec5f43255706bce7eb46d4779952039d8c68ac1bb14a6f3655ce2",
+          "size": 14090084
+        }
+      ]
+    },
+    {
+      "release": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/snapshot-20261001/InRelease",
+      "sha256": "5d154c58ef3090c747267371cf34daf0e832e239460cb0a71babfd4a3150c512",
+      "gpgv_stdout": "",
+      "gpgv_stderr": "gpgv: Signature made Thu Oct  1 06:19:54 2026 CST\ngpgv:                using RSA key F6ECB3762474EDA9D21B7022871920D1991BC93C\ngpgv: Good signature from \"Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>\"\n",
+      "indexes": [
+        {
+          "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/snapshot-20261001/Packages.xz",
+          "sha256": "ffc71d80f7b53269a6477370d9159de3cb2af837d2262810572d3f3974971a8d",
+          "size": 3874796
+        }
+      ]
+    }
+  ],
+  "staged": 2,
+  "added": [
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libmd.so.0.0.5",
+      "package": "libmd0",
+      "deb_sha256": "bcdad5e400aeb660f0337a1c5c1a77e3effa91d0803e64ce2d000e9006f67cdb",
+      "kind": "file",
+      "sha256": "bb376813876bb214535bbbdac70f2c0c4b00baecb81557dab78a79518248df06",
+      "bytes": 47472
+    },
+    {
+      "path": "usr/lib/x86_64-linux-gnu/libmd.so.0",
+      "package": "libmd0",
+      "deb_sha256": "bcdad5e400aeb660f0337a1c5c1a77e3effa91d0803e64ce2d000e9006f67cdb",
+      "kind": "link",
+      "target": "libmd.so.0.0.5",
+      "original_target": "libmd.so.0.0.5"
+    }
+  ],
+  "overlap_equal": [],
+  "old4186_unchanged": true,
+  "system_installed": false
+}

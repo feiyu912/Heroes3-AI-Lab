@@ -1,0 +1,140 @@
+{
+  "status": "prepared_only_not_executed",
+  "prerequisites": [
+    "Parent confirms latest full 12-game explicit-server-readiness acceptance, raw audit and pool release",
+    "Parent schedules and audits 4-environment clean-prior zero-optimizer smoke",
+    "2-environment recovery comparison before 4-environment recovery comparison"
+  ],
+  "single_gpu_learner": true,
+  "parallel_dispatch": false,
+  "expected_balanced_games_per_update": 8,
+  "expected_total_update_count_per_environment_recipe": 4,
+  "cases": [
+    {
+      "environment_count": 2,
+      "kind": "continuous2",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-2env-continuous2-01",
+        "--execute",
+        "--environments",
+        "2",
+        "--updates",
+        "2",
+        "--inference-schedule",
+        "barrier",
+        "--initialize-from",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+        "--seconds",
+        "120"
+      ]
+    },
+    {
+      "environment_count": 2,
+      "kind": "split1",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-2env-split1-01",
+        "--execute",
+        "--environments",
+        "2",
+        "--updates",
+        "1",
+        "--inference-schedule",
+        "barrier",
+        "--initialize-from",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+        "--seconds",
+        "120"
+      ]
+    },
+    {
+      "environment_count": 2,
+      "kind": "resume2",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-2env-resume2-01",
+        "--execute",
+        "--environments",
+        "2",
+        "--updates",
+        "2",
+        "--inference-schedule",
+        "barrier",
+        "--resume",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-2env-split1-01/update-1.pt",
+        "--seconds",
+        "120"
+      ]
+    },
+    {
+      "environment_count": 4,
+      "kind": "continuous2",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-4env-continuous2-01",
+        "--execute",
+        "--environments",
+        "4",
+        "--updates",
+        "2",
+        "--inference-schedule",
+        "barrier",
+        "--initialize-from",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+        "--seconds",
+        "120"
+      ]
+    },
+    {
+      "environment_count": 4,
+      "kind": "split1",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-4env-split1-01",
+        "--execute",
+        "--environments",
+        "4",
+        "--updates",
+        "1",
+        "--inference-schedule",
+        "barrier",
+        "--initialize-from",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+        "--seconds",
+        "120"
+      ]
+    },
+    {
+      "environment_count": 4,
+      "kind": "resume2",
+      "argv": [
+        "/root/heroes3-ai-lab/gpu-venv/bin/python",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/parallel_trainer.py",
+        "--out",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-4env-resume2-01",
+        "--execute",
+        "--environments",
+        "4",
+        "--updates",
+        "2",
+        "--inference-schedule",
+        "barrier",
+        "--resume",
+        "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-boundary-clean-4env-split1-01/update-1.pt",
+        "--seconds",
+        "120"
+      ]
+    }
+  ]
+}

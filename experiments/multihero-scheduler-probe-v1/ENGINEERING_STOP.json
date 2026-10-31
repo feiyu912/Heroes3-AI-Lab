@@ -1,0 +1,29 @@
+{
+  "status": "scheduler_probe_not_qualified",
+  "reason": "intended town-tile control hero 3 was mobile and was scheduled",
+  "engineering_pass": false,
+  "raw_evidence": "/mnt/g/Heroes3-AI-Lab/experiments/multihero-scheduler-probe-v1/native-evidence-01",
+  "source_evidence": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-probe-v1-01",
+  "raw_sha256": {
+    "probe.jsonl": "25ea6914583c4b2ec2b58bfc29751c2d9e3f9964a41912eeadef50ffcb82acae",
+    "strategy-trace.jsonl": "0a6a4d3d42c451430b0c73dcec3eb8b6210d88fd0298b095e1ccb8ef7406ba46",
+    "client.log": "8365e92c034b91186773286e2ed9e2d29e2f9da3c08163450a8664eb9b9343d2",
+    "plan.json": "04978a018777b3eb3b660a0e9ed227f6d19284882f933948e38e486f290b3bad",
+    "execution.json": "4c5d1734be6c241ffb6cc56b7966d1ea51e883f0549dc979c7580aa6721850b7",
+    "AUDIT_SCHEDULER.json": "3cb5efcc20837e83e2612de54432d8d39269bba1a73fded656025ba7e0f0a17c"
+  },
+  "observations": {
+    "turn_open_count": 2,
+    "mobile_heroes_with_successful_acks": [
+      0,
+      2
+    ],
+    "mobile_moves_observed_in_turns": [
+      1,
+      2
+    ],
+    "control_hero_3_scheduled": true,
+    "failed_move_acks": 0
+  },
+  "next_step": "do not rerun silently; design a new fixture with a genuinely blocked or garrisoned control, or source-review and change the scheduler candidate to skip isGarrisoned heroes, as a new single-factor experiment"
+}

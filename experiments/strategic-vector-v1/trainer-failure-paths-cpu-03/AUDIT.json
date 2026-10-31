@@ -1,0 +1,14 @@
+{
+  "synthetic_CPU_only": true,
+  "invalid_second_wave_after_valid_first_wave": {
+    "passed": true,
+    "valid_episodes_preserved": 2,
+    "optimizer_steps": 0,
+    "completed_updates": 0,
+    "partial_resumable": false
+  },
+  "partial_resume_rejected": true,
+  "changed_environments_resume_rejected": true,
+  "harness_notice": "Invalid-wave test intentionally monkeypatches only this private CPU subprocess to inject a real fake-engine move_failed event on wave2. Production trainer/collector sources remain unchanged.",
+  "passed": true
+}

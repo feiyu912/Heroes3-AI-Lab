@@ -1,0 +1,145 @@
+{
+  "passed": true,
+  "scope": "Independent CPU load/digest/tree/NN recomputation of completed zero-update GPU recovery; no second GPU execution.",
+  "source_checkpoint_sha256": "5cd856b3221342c283899df126f4c50116d7779b3e0ea3b8d90125e243310354",
+  "roundtrip_checkpoint_sha256": "939eb65da3d335a1b928ae6ddb193e68ab73df66bb4f8c6817920d096e84bdb3",
+  "full_payload_direct_tree_exact": true,
+  "complete_payload_digest": "984fe79e7a31ae8aeb2ecedecaa27cc03a466b18d49274918e3a261e1427fc4a",
+  "model_digest": "e60b9e5e7ab8a9c915d44adb39bff64b7124ba67e29c26cad4ae6dd18c8b5a2f",
+  "named_Adam_digest": "b3cddf5609b15c18ec0506c4652aac7a9898b5cffff8b6ae360c03b54c488b31",
+  "named_Adam_slots": 194,
+  "metadata_digest": "5feb7b03c14ff0d18549b3e25863d938d261805ff4ee820aad34525f3378d536",
+  "metadata_keys": [
+    "complete_update_boundary",
+    "config",
+    "finetuning_mode",
+    "frozen_inputs",
+    "native_environment_restorable",
+    "rollout_evidence",
+    "source",
+    "terminal_credit_experiment"
+  ],
+  "counters": {
+    "completed_updates": 62,
+    "actual_Adam_steps": 7936,
+    "environment_steps": 31744
+  },
+  "four_RNG_payload_digest": "47fe41c7f37147e8d1767f2b7f35d7353d852613f8556b44995f829499e7fa99",
+  "four_RNG_payloads_exact": true,
+  "independently_replayed_private_RNGs": [
+    "Torch CPU 13",
+    "Python 5",
+    "NumPy 5"
+  ],
+  "CUDA_RNG_bytes_checked_without_GPU": true,
+  "TRAIN_graphs": [
+    {
+      "side": 1,
+      "graph_sha256": "0fb3873ab8ccdfe81cb0569ee01a6a6652137f584d56f5971e8674d00f928965",
+      "legal_actions": 22
+    },
+    {
+      "side": 1,
+      "graph_sha256": "cd1f5113651a2d0ea65652e432169017899d0510f30f8634d4f1844cca9bd4e2",
+      "legal_actions": 31
+    },
+    {
+      "side": 0,
+      "graph_sha256": "4ce0f906796a68167ae8c5c78cf4b2ba6184d54921df995f718a8f1e91a72b23",
+      "legal_actions": 31
+    },
+    {
+      "side": 0,
+      "graph_sha256": "fb525600b8c893c7fe93cf6689cc1b098ed17ebc0b2a789d431653efc7058566",
+      "legal_actions": 33
+    },
+    {
+      "side": 0,
+      "graph_sha256": "f9ccba92db9507a53a2a78c915a398419611ddb0d1e2f3691c04fd30e8d09834",
+      "legal_actions": 56
+    },
+    {
+      "side": 1,
+      "graph_sha256": "4763bda90a59bae5b37ce026d504745508c786276e17270053e7b2d3eede5759",
+      "legal_actions": 76
+    },
+    {
+      "side": 1,
+      "graph_sha256": "f0a17f998a523f90d703d2b1a94f12e80c91b5c7f94a94a1fc0f3d1788985e25",
+      "legal_actions": 49
+    },
+    {
+      "side": 0,
+      "graph_sha256": "019c6066ad2316be14279023ae8efd76206a6670e9ec620d3aec6f8430584407",
+      "legal_actions": 37
+    }
+  ],
+  "NN": {
+    "CPU_recomputed_graphs": 8,
+    "attacker": 4,
+    "defender": 4,
+    "absolute_tolerance": 0.0002,
+    "relative_tolerance": 0.0,
+    "stored_CPU_CUDA_max_logit_error": 7.2479248046875e-05,
+    "stored_CPU_CUDA_max_value_error": 3.5762786865234375e-07,
+    "fresh_CPU_vs_stored_CPU_max_logit_error": 0.0,
+    "fresh_CPU_vs_stored_CUDA_max_logit_error": 7.2479248046875e-05
+  },
+  "historical_lease_metadata_consistent": true,
+  "current_lock_inodes_retained": true,
+  "source_freeze_files_checked": 10,
+  "controller_normal_exit_and_group_drained": true,
+  "resource_samples": [
+    {
+      "phase": "before_restore",
+      "available_mib": 25490.109375,
+      "swap_mib": 1.1875,
+      "gpu_temperature": 45.0,
+      "gpu_memory_mib": 932.0
+    },
+    {
+      "phase": "after_roundtrip",
+      "available_mib": 23921.2578125,
+      "swap_mib": 1.1875,
+      "gpu_temperature": 46.0,
+      "gpu_memory_mib": 1422.0
+    }
+  ],
+  "resources_scope": "Two endpoint samples only, not a continuous peak measurement.",
+  "actual_GPU_execution_evidence": "Frozen v2 source performs CUDA object placement, inference, synchronization, real CUDA RNG draws and reload; completed worker RESULT/controller/telemetry agree. Auditor did not initialize CUDA or repeat GPU execution.",
+  "lease_scope": "Worker historical inherited-FD proof matches controller lease metadata and current retained inode. Dead worker FDs were not reinspected and locks were not reacquired by this auditor.",
+  "native_regression_reference": {
+    "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-independent-01/AUDIT.json",
+    "sha256": "e26c96d64cba3a59bde580cc2905fcbb3c8b15409fbe4067a73a07b3c2c40afe",
+    "games": 4,
+    "decisions": 102,
+    "scope": "Technical regression on four repeated historical games; no independent strength estimate."
+  },
+  "source_files_sha256": {
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/restored-history/root/heroes3-ai-lab/evaluations/battle-observed-MC-probe-01/MC-update-62.pt": "5cd856b3221342c283899df126f4c50116d7779b3e0ea3b8d90125e243310354",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01/zero-update-roundtrip.pt": "939eb65da3d335a1b928ae6ddb193e68ab73df66bb4f8c6817920d096e84bdb3",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/verified-repair/root/heroes3-ai-lab/evaluations/battle-terminal-credit-01/candidate-micro/phase-0/admitted-1.pt": "fd86a735a7e8597fd3329c999169dfb538cb484743b952bbced04f39751b0d16",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01/NN_COMPARISON.pt": "d76a7e572a40f407d4b921a976d00e64ca3593359e3eef7051c3eafef802b46f",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01/RESULT.json": "28d25da4081a354cfa94ccf0cbf70da2a969fa8cce0a155e3204c3e6c66584fe",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/LEARNER_RECOVERY_CONTROLLER.json": "6284235b4d31db514524a83ee125399d9a15149d9bdbd802f0aef40c648feb0a",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/run_learner_recovery.py": "49002f0547e99cd1b4e1ceeaf929569eac1d8aecbf56adca572012298f8e85a3",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-v2/SOURCE_FREEZE.json": "3fba908ab0cedb19e2f5b1f24b913dd293ba4d514271813283334c6a937cc80b",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/learner-recovery-actual-01/RESOURCES.jsonl": "5acccc7958f2d1d25b9a2bd1ea92020ed6833061238a5a7a9b9021918b06f34a",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/python-integrity/PROFILE_CERTIFICATE.json": "dea055f406486efebd49f864ad44f52258fb0f7195e670cf587fe416cd189e06",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-independent-01/AUDIT.json": "e26c96d64cba3a59bde580cc2905fcbb3c8b15409fbe4067a73a07b3c2c40afe",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/runtime/python-heroes3.sh": "61d54e1fed0fd44cb7afe45db99e4e0dad8c9f4e594e16de093bd2c9c60d4abb",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/runtime/env.sh": "4a923d9460c2ac2e5164c03a0e467b9b13fe71c0e3bb940ae332b73260307fd6",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/restore_learner.py": "e06151039e1665742897e9381cab1f51b3598d51db1e2f050d4315b0de5b7df9",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/research/full_graph_policy.py": "fed70e1d268e2aa201ce8dea7536a574a2841b1985a70ee71bcbe69be7ef2a7c",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/research/recovered-graph.py": "c6ec9d8bb0ed3e3c33df1e46c60859e0446dca92dec34aa4a090401aaa81d485"
+  },
+  "audit_script_sha256": "03bfaf154f055768c78740aeddb9084f8b602df2ed945ed5a1bb9070677ecf26",
+  "optimizer_objects_created": 0,
+  "optimizer_steps": 0,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "CUDA_initialized": false,
+  "DEV_rows_used": 0,
+  "final_test_touched": false,
+  "canonical_digest_scope": "Checks original helper canonical value/type/key/tensor shape-dtype-content identity; serialization bytes differ and native in-flight game state is not restored."
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "compile_commands_identical": true,
+  "new_hashes": {
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/CONFIGURED.json": "177436cebe6fe36a6ee875de660e37c8f7353cb8d3241be5f9f20b2f9cc5e416",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/build.ninja": "401eeffc46ab57b9c622c34175ea372dbde6d251b64fd7d442b565954ec9ed2b",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/compile_commands.json": "98670b8a4c529662f50ddcfd063c5d0fc65ed920cbae70689939e7d6f095b242",
+    "experiments/strategic-refill-paired-build-20261026/configure-04/prior-state/partial-outputs.json": "40e5f931f8adedb889b9fc9427da5572d2cba41144df3f5de61efd70fbc7f484",
+    "experiments/strategic-refill-paired-build-20261026/build_pair_link_v2.py": "788841c993847251b5ca536e04286a7c6425244ce8c944947ceadb9abb59c224"
+  },
+  "old_admission_archived": true,
+  "scratch_stale_admission_removed": true,
+  "prior_outputs_unchanged": 720,
+  "graph_diff": "experiments/strategic-refill-paired-build-20261026/configure-04/LINK_ONLY_GRAPH.diff"
+}

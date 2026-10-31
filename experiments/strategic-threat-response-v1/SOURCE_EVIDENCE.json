@@ -1,0 +1,53 @@
+{
+  "AI/DirectorAI/CDirectorAI.cpp": {
+    "sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "excerpts": [
+      {
+        "start": 145,
+        "end": 177,
+        "text": "145: \t// This callback itself filters by player visibility. Never inspect hidden object containers.\n146: \tfor(const auto * obj : cb->getAllVisitableObjs())\n147: \t{\n148: \t\tif(obj->getOwner().isValidPlayer() && obj->getOwner() != playerID &&\n149: \t\t\tcb->getPlayerRelations(playerID, obj->getOwner()) != PlayerRelations::ENEMIES)\n150: \t\t\tcontinue;\n151: \t\tif(obj->ID == Obj::MONSTER && cb->isVisible(obj->visitablePos()))\n152: \t\t{\n153: \t\t\tconst auto * monster = dynamic_cast<const CGCreature *>(obj);\n154: \t\t\tif(!monster) continue;\n155: \t\t\tconst double strength = ArmyDescriptor(monster, false).getStrength();\n156: \t\t\tif(strength > ArmyDescriptor(hero, true).getStrength() * 0.8)\n157: \t\t\t{\n158: \t\t\t\taudit(obj->visitablePos(), 0, \"neutral_strength_filter\", strength);\n159: \t\t\t\tcontinue;\n160: \t\t\t}\n161: \t\t\tconsider(obj->visitablePos(), 6, \"visible neutral army clearance\", 0);\n162: \t\t}\n163: \t\telse if(obj->ID == Obj::HERO && obj->getOwner() != playerID)\n164: \t\t{\n165: \t\t\tif(!cb->isVisible(obj->visitablePos()))\n166: \t\t\t{\n167: \t\t\t\taudit(obj->visitablePos(), 0, \"visitable_tile_not_visible\", -1);\n168: \t\t\t\tcontinue;\n169: \t\t\t}\n170: \t\t\tInfoAboutHero enemy;\n171: \t\t\tif(!cb->getHeroInfo(obj, enemy, hero))\n172: \t\t\t{\n173: \t\t\t\taudit(obj->visitablePos(), 0, \"info_unavailable\", -1);\n174: \t\t\t\tcontinue;\n175: \t\t\t}\n176: \t\t\t// Use the same approximate, disguise-aware army descriptor exposed to a player.\n177: \t\t\tvisibleThreats.emplace_back(obj->visitablePos(), enemy.army.getStrength());"
+      },
+      {
+        "start": 236,
+        "end": 261,
+        "text": "236: \tif(found && std::getenv(\"LAB_ADV_AGENT_DIR\"))\n237: \t{\n238: \t\t// Keep a chosen destination within this turn while it remains an admissible goal.\n239: \t\tauto previous = committedTargets.find(hero->id.getNum());\n240: \t\tif(previous != committedTargets.end())\n241: \t\t{\n242: \t\t\tauto retained = std::find_if(candidates.begin(), candidates.end(), [&](const Candidate & c)\n243: \t\t\t{\n244: \t\t\t\treturn c.destination == previous->second.first && c.kind == previous->second.second;\n245: \t\t\t});\n246: \t\t\tif(retained != candidates.end())\n247: \t\t\t{\n248: \t\t\t\tconst Candidate committed = *retained;\n249: \t\t\t\tcandidates.assign(1, committed);\n250: \t\t\t}\n251: \t\t}\n252: \t\tconst int selected = chooseExternalCandidate(hero);\n253: \t\tif(selected < 0 || selected >= static_cast<int>(candidates.size()))\n254: \t\t{\n255: \t\t\tlogGlobal->error(\"DirectorAI: external policy failed for hero %d\", hero->id.getNum());\n256: \t\t\treturn false;\n257: \t\t}\n258: \t\tselectedCandidate = selected;\n259: \t\tdestination = candidates[selected].destination;\n260: \t\tcommittedTargets[hero->id.getNum()] = {destination, candidates[selected].kind};\n261: \t\treason = \"local candidate policy\";"
+      },
+      {
+        "start": 289,
+        "end": 357,
+        "text": "289: bool CDirectorAI::issueMove()\n290: {\n291: \t// Hard cap per turn so a stuck target can never turn into an unbounded loop.\n292: \tif(movesThisTurn >= MAX_MOVES_PER_TURN)\n293: \t{\n294: \t\tlogGlobal->info(\"DirectorAI: move budget for this turn exhausted (%d)\", movesThisTurn);\n295: \t\treturn false;\n296: \t}\n297: \n298: \tstd::vector<const CGHeroInstance *> heroes = cb->getHeroesInfo();\n299: \tconst CGHeroInstance * hero = pickHero(heroes);\n300: \tif(!hero)\n301: \t{\n302: \t\tlogGlobal->info(\"DirectorAI: no hero with movement points\");\n303: \t\treturn false;\n304: \t}\n305: \n306: \tint3 destination(-1, -1, -1);\n307: \tstd::string reason;\n308: \tif(!findTarget(hero, destination, reason))\n309: \t{\n310: \t\tlogGlobal->info(\"DirectorAI: no target for hero %d\", hero->id.getNum());\n311: \t\tblockedHeroes.insert(hero->id.getNum());\n312: \t\treturn issueMove();\n313: \t}\n314: \n315: \tconst int3 here = hero->visitablePos();\n316: \tint3 step = destination;\n317: \tbool zeroLength = false;\n318: \n319: \tif(here == destination)\n320: \t{\n321: \t\t// A zero-length move is the legal way to visit / fight the object standing on the\n322: \t\t// current tile (this is what Nullkiller2 does too). It is not a failure.\n323: \t\tzeroLength = true;\n324: \t}\n325: \telse\n326: \t{\n327: \t\tCGPath path;\n328: \t\tpathfinder->invalidatePaths();\n329: \t\tpathfinder->getPathsInfo(hero)->getPath(path, destination);\n330: \t\tif(!path.hasNextNode())\n331: \t\t{\n332: \t\t\tlogGlobal->info(\"DirectorAI: hero %d cannot reach %s reason=%s\",\n333: \t\t\t\thero->id.getNum(), destination.toString(), reason);\n334: \t\t\treturn false;\n335: \t\t}\n336: \t\tconst CGPathNode next = path.nextNode();\n337: \t\tif(next.turns != 0)\n338: \t\t{\n339: \t\t\tlogGlobal->info(\"DirectorAI: %s not reachable this turn (turns=%d) reason=%s\",\n340: \t\t\t\tdestination.toString(), static_cast<int>(next.turns), reason);\n341: \t\t\treturn false;\n342: \t\t}\n343: \t\tstep = next.coord;\n344: \t}\n345: \n346: \t// Targets are in visitable coordinates; the request needs the hero's object coordinates.\n347: \tpendingHero = hero->id;\n348: \tpendingMove = true;\n349: \tlastStep = step;\n350: \t++movesThisTurn;\n351: \tlogGlobal->info(\"DirectorAI: step hero %d %s -> %s reason=%s%s\",\n352: \t\thero->id.getNum(), here.toString(), step.toString(), reason,\n353: \t\tzeroLength ? \" (interact with current tile)\" : \"\");\n354: \ttraceState(\"before_move\");\n355: \ttraceDecision(hero, destination, step);\n356: \tcb->moveHero(hero, hero->convertFromVisitablePos(step), false, EPathfindingLayer::LAND);\n357: \treturn true;"
+      },
+      {
+        "start": 387,
+        "end": 395,
+        "text": "387: void CDirectorAI::advanceTurn()\n388: {\n389: \tif(!turnActive || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||\n390: \t\t!pendingQueries.empty() || !queryRequests.empty())\n391: \t\treturn;\n392: \tif(issueEconomy())\n393: \t\treturn;\n394: \tif(!issueMove())\n395: \t\tfinishTurn();"
+      },
+      {
+        "start": 424,
+        "end": 467,
+        "text": "424: void CDirectorAI::requestRealized(PackageApplied * pa)\n425: {\n426: \tif(pa->player != playerID)\n427: \t\treturn;\n428: \tif(pendingEconomy && static_cast<int>(pa->requestID) == economyRequest)\n429: \t{\n430: \t\tpendingEconomy = false;\n431: \t\tlogGlobal->info(\"DirectorAI: economy request finished id=%d success=%d\", economyRequest, pa->result);\n432: \t\ttraceState(pa->result ? \"economy_applied\" : \"economy_failed\");\n433: \t\tadvanceTurn();\n434: \t}\n435: \tauto query = queryRequests.find(pa->requestID);\n436: \tif(query != queryRequests.end())\n437: \t{\n438: \t\tif(pa->result)\n439: \t\t\tpendingQueries.erase(query->second);\n440: \t\tqueryRequests.erase(query);\n441: \t\tadvanceTurn();\n442: \t}\n443: \tif(pa->packType == CTypeList::getInstance().getTypeID<MoveHero>(nullptr) && pendingMove)\n444: \t{\n445: \t\tpendingMove = false;\n446: \t\ttraceState(pa->result ? \"move_applied\" : \"move_failed\");\n447: \t\tif(!pa->result)\n448: \t\t\tblockedHeroes.insert(pendingHero.getNum());\n449: \t\tadvanceTurn();\n450: \t}\n451: \tif(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr) && endingTurn)\n452: \t{\n453: \t\tendingTurn = false;\n454: \t\tif(pa->result)\n455: \t\t\tturnActive = false;\n456: \t}\n457: }\n458: \n459: void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)\n460: {\n461: \tif(auto reply = dynamic_cast<const QueryReply *>(pack))\n462: \t\tqueryRequests[requestID] = reply->qid;\n463: \tif(pendingEconomy && (dynamic_cast<const BuildStructure *>(pack) ||\n464: \t\tdynamic_cast<const RecruitCreatures *>(pack) || dynamic_cast<const ArrangeStacks *>(pack) ||\n465: \t\tdynamic_cast<const HireHero *>(pack)))\n466: \t\teconomyRequest = requestID;\n467: }"
+      },
+      {
+        "start": 476,
+        "end": 508,
+        "text": "476: void CDirectorAI::playerBlocked(int reason, bool start)\n477: {\n478: \tif(reason == PlayerBlocked::UPCOMING_BATTLE)\n479: \t{\n480: \t\tbattleBusy = start;\n481: \t\ttraceState(start ? \"native_battle_blocked\" : \"native_battle_ready\");\n482: \t\tif(!start)\n483: \t\t\tadvanceTurn();\n484: \t}\n485: \tif(reason == PlayerBlocked::ONGOING_MOVEMENT)\n486: \t{\n487: \t\tmovementBusy = start;\n488: \t\ttraceState(start ? \"native_movement_blocked\" : \"native_movement_unblocked\");\n489: \t\tif(!start)\n490: \t\t\tadvanceTurn();\n491: \t}\n492: }\n493: \n494: void CDirectorAI::battleEnded()\n495: {\n496: \t// Isolated server emits UPCOMING_BATTLE END after the complete request,\n497: \t// deferred queries and victory checks. BattleEnded alone is not readiness.\n498: }\n499: \n500: void CDirectorAI::gameOver(PlayerColor player, const EVictoryLossCheckResult & result)\n501: {\n502: \tlogGlobal->info(\"DirectorAI: native gameOver player=%s victory=%d loss=%d\",\n503: \t\tplayer.toString(), result.victory(), result.loss());\n504: \tif(player == playerID)\n505: \t{\n506: \t\ttraceState(result.victory() ? \"victory\" : \"defeat\");\n507: \t\tturnActive = false;\n508: \t}"
+      },
+      {
+        "start": 807,
+        "end": 810,
+        "text": "807: std::optional<BattleAction> CDirectorAI::makeSurrenderRetreatDecision(const BattleID & battleID, const BattleStateInfoForRetreat & battleState)\n808: {\n809: \t// Never surrender or retreat: the director treats every battle as worth fighting.\n810: \treturn std::nullopt;"
+      }
+    ]
+  },
+  "server/NetPacksServer.cpp": {
+    "sha256": "3b70ad9a109c1cf41bd34cfc5767d6ea6c5dc5cbafba54e35515358d1ea8de3b",
+    "excerpts": [
+      {
+        "start": 47,
+        "end": 52,
+        "text": "47: void ApplyGhNetPackVisitor::visitEndTurn(EndTurn & pack)\n48: {\n49: \tgh.throwIfWrongPlayer(connection, &pack);\n50: \tgh.throwIfPlayerNotActive(connection, &pack);\n51: \tresult = gh.turnOrder->onPlayerEndsTurn(pack.player);\n52: }"
+      }
+    ]
+  },
+  "review_scope": "read-only source observed; no edits/compile/native runs"
+}

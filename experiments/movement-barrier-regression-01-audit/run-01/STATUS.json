@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/movement-barrier-regression-01-audit/run_and_compare.py\", line 58, in main\n    assert (agent/request).read_bytes()==(oldagent/request).read_bytes(),f'Request prefix differs at {i}'\nAssertionError: Request prefix differs at 273\n"
+}

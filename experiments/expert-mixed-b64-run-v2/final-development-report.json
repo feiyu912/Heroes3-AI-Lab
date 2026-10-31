@@ -1,0 +1,370 @@
+{
+  "source": "expert-mixed-b64-run-v2/*-development.json",
+  "target": 0.95,
+  "development_scenarios": [
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239
+  ],
+  "seeds": 2,
+  "roles": 2,
+  "games_per_cell": 192,
+  "models": {
+    "public-original|BattleAI": {
+      "wins": 157,
+      "games": 192,
+      "rate": 0.8177083333333334,
+      "wilson95": [
+        0.757,
+        0.8659
+      ],
+      "scenario_cluster95": [
+        0.7448,
+        0.8906
+      ],
+      "role": {
+        "attacker": {
+          "wins": 82,
+          "games": 96,
+          "rate": 0.8542
+        },
+        "defender": {
+          "wins": 75,
+          "games": 96,
+          "rate": 0.7812
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 96.93,
+      "wins_needed_for_95": 183,
+      "wins_short": 26
+    },
+    "b64-baseline|BattleAI": {
+      "wins": 172,
+      "games": 192,
+      "rate": 0.8958333333333334,
+      "wilson95": [
+        0.8446,
+        0.9316
+      ],
+      "scenario_cluster95": [
+        0.8281,
+        0.9531
+      ],
+      "role": {
+        "attacker": {
+          "wins": 89,
+          "games": 96,
+          "rate": 0.9271
+        },
+        "defender": {
+          "wins": 83,
+          "games": 96,
+          "rate": 0.8646
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 93.55,
+      "wins_needed_for_95": 183,
+      "wins_short": 11
+    },
+    "mixed-16|BattleAI": {
+      "wins": 172,
+      "games": 192,
+      "rate": 0.8958333333333334,
+      "wilson95": [
+        0.8446,
+        0.9316
+      ],
+      "scenario_cluster95": [
+        0.8333,
+        0.9531
+      ],
+      "role": {
+        "attacker": {
+          "wins": 89,
+          "games": 96,
+          "rate": 0.9271
+        },
+        "defender": {
+          "wins": 83,
+          "games": 96,
+          "rate": 0.8646
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 95.37,
+      "wins_needed_for_95": 183,
+      "wins_short": 11
+    },
+    "mixed-32|BattleAI": {
+      "wins": 164,
+      "games": 192,
+      "rate": 0.8541666666666666,
+      "wilson95": [
+        0.7973,
+        0.8971
+      ],
+      "scenario_cluster95": [
+        0.7865,
+        0.9167
+      ],
+      "role": {
+        "attacker": {
+          "wins": 88,
+          "games": 96,
+          "rate": 0.9167
+        },
+        "defender": {
+          "wins": 76,
+          "games": 96,
+          "rate": 0.7917
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 96.39,
+      "wins_needed_for_95": 183,
+      "wins_short": 19
+    },
+    "public-original|MMAI_MODEL": {
+      "wins": 96,
+      "games": 192,
+      "rate": 0.5,
+      "wilson95": [
+        0.43,
+        0.57
+      ],
+      "scenario_cluster95": [
+        0.5,
+        0.5
+      ],
+      "role": {
+        "attacker": {
+          "wins": 46,
+          "games": 96,
+          "rate": 0.4792
+        },
+        "defender": {
+          "wins": 50,
+          "games": 96,
+          "rate": 0.5208
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 107.2
+    },
+    "b64-baseline|MMAI_MODEL": {
+      "wins": 114,
+      "games": 192,
+      "rate": 0.59375,
+      "wilson95": [
+        0.5231,
+        0.6607
+      ],
+      "scenario_cluster95": [
+        0.5156,
+        0.6719
+      ],
+      "role": {
+        "attacker": {
+          "wins": 65,
+          "games": 96,
+          "rate": 0.6771
+        },
+        "defender": {
+          "wins": 49,
+          "games": 96,
+          "rate": 0.5104
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 102.61
+    },
+    "mixed-16|MMAI_MODEL": {
+      "wins": 113,
+      "games": 192,
+      "rate": 0.5885416666666666,
+      "wilson95": [
+        0.5179,
+        0.6557
+      ],
+      "scenario_cluster95": [
+        0.5156,
+        0.6562
+      ],
+      "role": {
+        "attacker": {
+          "wins": 60,
+          "games": 96,
+          "rate": 0.625
+        },
+        "defender": {
+          "wins": 53,
+          "games": 96,
+          "rate": 0.5521
+        }
+      },
+      "truncated": 0,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 103.01
+    },
+    "mixed-32|MMAI_MODEL": {
+      "wins": 109,
+      "games": 192,
+      "rate": 0.5677083333333334,
+      "wilson95": [
+        0.497,
+        0.6358
+      ],
+      "scenario_cluster95": [
+        0.4896,
+        0.6458
+      ],
+      "role": {
+        "attacker": {
+          "wins": 62,
+          "games": 96,
+          "rate": 0.6458
+        },
+        "defender": {
+          "wins": 47,
+          "games": 96,
+          "rate": 0.4896
+        }
+      },
+      "truncated": 1,
+      "invalid_actions": 0,
+      "non_normal_terminations": 0,
+      "mean_units_lost": 101.88
+    }
+  },
+  "loss_taxonomy": {
+    "b64_losses": 20,
+    "lost_by_public_too": 12,
+    "public_wins_b64_loses": 8,
+    "both_lose_cells": [
+      [
+        "diverse-194",
+        "defender"
+      ],
+      [
+        "diverse-208",
+        "defender"
+      ],
+      [
+        "diverse-214",
+        "defender"
+      ],
+      [
+        "diverse-220",
+        "defender"
+      ],
+      [
+        "diverse-223",
+        "attacker"
+      ],
+      [
+        "diverse-223",
+        "defender"
+      ],
+      [
+        "diverse-235",
+        "attacker"
+      ],
+      [
+        "diverse-235",
+        "defender"
+      ]
+    ],
+    "public_only_cells": [
+      [
+        "diverse-196",
+        "attacker"
+      ],
+      [
+        "diverse-208",
+        "attacker"
+      ],
+      [
+        "diverse-211",
+        "defender"
+      ],
+      [
+        "diverse-224",
+        "attacker"
+      ],
+      [
+        "diverse-236",
+        "defender"
+      ],
+      [
+        "diverse-237",
+        "attacker"
+      ]
+    ],
+    "ceiling_if_public_imitated_perfectly": {
+      "wins": 180,
+      "games": 192,
+      "rate": 0.9375
+    }
+  },
+  "note": "Development set. Used to choose the next method, never as independent confirmation. Scenario-clustered intervals resample whole scenarios, not individual games."
+}

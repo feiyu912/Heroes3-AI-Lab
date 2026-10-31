@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scope": "Source/candidate/report hashes restored after crossed observability request; no native build or game occurred during crossing",
+  "v1_restored_hashes": {
+    "CANDIDATE_MANIFEST.json": "6357e835f5019d7e10da5d7b3f268f637fdd41e6202c428d5a2052a1d71aac5d",
+    "CPU_REPORT.json": "54dd1141ab61217d01fb7c685f0460e5774cc82796dae27dfd8ea31027ab688b",
+    "NATIVE_SYNTAX.json": "d1d0bc74fc37fa698dd9b0c996160c67005337ecdc43ff7c0100b9aea99a3545",
+    "build_capsule.py": "f15cc494795d1ab89033523ea7fd8e9159f54cb631db0e0177ebdd075791baaf"
+  },
+  "v1_and_v2_controller_identical": true,
+  "v2_behavior_epoch": "scripted-supply-v1",
+  "v2_observability_revision": 2,
+  "native_built": false,
+  "native_games": 0
+}

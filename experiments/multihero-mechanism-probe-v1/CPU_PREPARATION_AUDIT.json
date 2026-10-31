@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "synthetic_gate_tests_only": true,
+  "compiled": false,
+  "installed": false,
+  "native_games_started": 0,
+  "optimizer_steps": 0,
+  "tests": {
+    "close-only_positive_synthetic": true,
+    "transfer-close_positive_synthetic": true,
+    "wrong_transfer_ack_id": true,
+    "close_before_transfer_ack": true,
+    "missing_queryresolved": true,
+    "missing_native_move_ack": true,
+    "fake_currentposition_move": true,
+    "failed_endturn": true,
+    "troop_creation": true,
+    "empty_donor": true,
+    "server_rejection": true,
+    "original_unhandled_not_success": true,
+    "generator_deterministic": true,
+    "original-unhandled_no_policy": true,
+    "original-unhandled_real_path": true,
+    "close-only_no_policy": true,
+    "close-only_real_path": true,
+    "transfer-close_no_policy": true,
+    "transfer-close_real_path": true,
+    "map_two_distinct_owned_heroes": true
+  },
+  "sha256": "4d0f6fe8c441dce9de58c8360d3323e22ab0cda49d51d373c52a8ebb0a7ff4e6"
+}

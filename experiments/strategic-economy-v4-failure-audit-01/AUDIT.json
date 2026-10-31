@@ -1,0 +1,1252 @@
+{
+  "schema": "economy-v4-stopped-native-failure-audit-v1",
+  "registered_inputs_unchanged": true,
+  "execution_sha256": "40c548b7a59a3df31108833fde128133ab3c81c4e376185b1353d3ca034fd23a",
+  "failed_episode": "engineering-map0-blue-2026101860",
+  "smoke_passed": true,
+  "native_completed": true,
+  "failure_records": [
+    {
+      "line": 823,
+      "state": {
+        "event": "move_failed",
+        "player": 1,
+        "day": 31,
+        "own_turn": 31,
+        "gold": 40,
+        "wood": 44,
+        "ore": 49,
+        "heroes": [
+          {
+            "id": 1,
+            "x": 16,
+            "y": 13,
+            "z": 0,
+            "movement": 474,
+            "army": [
+              [
+                0,
+                75
+              ],
+              [
+                2,
+                46
+              ],
+              [
+                6,
+                12
+              ],
+              [
+                4,
+                25
+              ],
+              [
+                8,
+                12
+              ]
+            ]
+          }
+        ],
+        "towns": [
+          {
+            "id": 13,
+            "buildings": [
+              0,
+              5,
+              7,
+              8,
+              10,
+              11,
+              14,
+              16,
+              21,
+              30,
+              31,
+              32,
+              33,
+              34
+            ],
+            "army": [
+              [
+                8,
+                3
+              ],
+              [
+                6,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "available": [
+              14,
+              9,
+              12,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "previous": [
+        822,
+        {
+          "event": "before_move",
+          "player": 1,
+          "day": 31,
+          "own_turn": 31,
+          "gold": 40,
+          "wood": 44,
+          "ore": 49,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 16,
+              "y": 13,
+              "z": 0,
+              "movement": 474,
+              "army": [
+                [
+                  0,
+                  75
+                ],
+                [
+                  2,
+                  46
+                ],
+                [
+                  6,
+                  12
+                ],
+                [
+                  4,
+                  25
+                ],
+                [
+                  8,
+                  12
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                0,
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                16,
+                21,
+                30,
+                31,
+                32,
+                33,
+                34
+              ],
+              "army": [
+                [
+                  8,
+                  3
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ]
+              ],
+              "available": [
+                14,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "next": [
+        824,
+        {
+          "event": "turn_end",
+          "player": 1,
+          "day": 31,
+          "own_turn": 31,
+          "gold": 40,
+          "wood": 44,
+          "ore": 49,
+          "heroes": [
+            {
+              "id": 1,
+              "x": 16,
+              "y": 13,
+              "z": 0,
+              "movement": 474,
+              "army": [
+                [
+                  0,
+                  75
+                ],
+                [
+                  2,
+                  46
+                ],
+                [
+                  6,
+                  12
+                ],
+                [
+                  4,
+                  25
+                ],
+                [
+                  8,
+                  12
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 13,
+              "buildings": [
+                0,
+                5,
+                7,
+                8,
+                10,
+                11,
+                14,
+                16,
+                21,
+                30,
+                31,
+                32,
+                33,
+                34
+              ],
+              "army": [
+                [
+                  8,
+                  3
+                ],
+                [
+                  6,
+                  4
+                ],
+                [
+                  4,
+                  2
+                ]
+              ],
+              "available": [
+                14,
+                9,
+                12,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ],
+      "decision_number": 295,
+      "decision": [
+        295,
+        {
+          "schema": "strategy-candidates-v1",
+          "player": 1,
+          "day": 31,
+          "hero": 1,
+          "selected_candidate": 0,
+          "from": [
+            16,
+            13,
+            0
+          ],
+          "destination": [
+            17,
+            12,
+            0
+          ],
+          "step": [
+            17,
+            12,
+            0
+          ],
+          "candidates": [
+            {
+              "kind": 0,
+              "position": [
+                17,
+                12,
+                0
+              ],
+              "next": [
+                17,
+                12,
+                0
+              ],
+              "path_cost": 0.135897,
+              "heuristic_score": 9.43548
+            }
+          ]
+        }
+      ],
+      "request": {
+        "schema": "strategy-candidates-v3",
+        "request_id": 295,
+        "player": 1,
+        "day": 31,
+        "hero": 1,
+        "from": [
+          16,
+          13,
+          0
+        ],
+        "gold": 40,
+        "wood": 44,
+        "ore": 49,
+        "own_army_value": 31731,
+        "movement": 474,
+        "visible_threats": [],
+        "own_towns": [
+          {
+            "position": [
+              29,
+              8,
+              0
+            ],
+            "army_value": 3937
+          }
+        ],
+        "candidates": [
+          {
+            "kind": 0,
+            "position": [
+              17,
+              12,
+              0
+            ],
+            "next": [
+              17,
+              12,
+              0
+            ],
+            "path_cost": 0.135897,
+            "heuristic_score": 9.43548
+          }
+        ]
+      },
+      "request_sha256": "5f637222d17452bf47221b77571f371e5fe2969bf8fb1f480284070b36e86264",
+      "log_context": [
+        {
+          "line": 33316,
+          "text": "Sending a pack of type 19GiveStackExperience"
+        },
+        {
+          "line": 33317,
+          "text": "\tApplied on gameState(): 19GiveStackExperience"
+        },
+        {
+          "line": 33318,
+          "text": "\tSending to all clients: 17SetHeroExperience"
+        },
+        {
+          "line": 33319,
+          "text": "Received CPack of type 19GiveStackExperience"
+        },
+        {
+          "line": 33320,
+          "text": "Sending a pack of type 17SetHeroExperience"
+        },
+        {
+          "line": 33321,
+          "text": "\tApplied on gameState(): 17SetHeroExperience"
+        },
+        {
+          "line": 33322,
+          "text": "\tSending to all clients: 20BattleResultAccepted"
+        },
+        {
+          "line": 33323,
+          "text": "Sending a pack of type 20BattleResultAccepted"
+        },
+        {
+          "line": 33324,
+          "text": "\tMade first apply on cl: 19GiveStackExperience"
+        },
+        {
+          "line": 33325,
+          "text": "\tApplied on gameState(): 20BattleResultAccepted"
+        },
+        {
+          "line": 33326,
+          "text": "\tApplied on gs: 19GiveStackExperience"
+        },
+        {
+          "line": 33327,
+          "text": "Entering void QueriesProcessor::popIfTop(QueryPtr): query='[0x75de85a69390] A query of type '12CBattleQuery' and qid = 333 affecting player BLUE, '."
+        },
+        {
+          "line": 33328,
+          "text": "\tMade second apply on cl: 19GiveStackExperience"
+        },
+        {
+          "line": 33329,
+          "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de85a69390] A query of type '12CBattleQuery' and qid = 333 affecting player BLUE, '."
+        },
+        {
+          "line": 33330,
+          "text": "Received CPack of type 17SetHeroExperience"
+        },
+        {
+          "line": 33331,
+          "text": "Entering void BattleResultProcessor::battleFinalize(const BattleID&, const BattleResult&)."
+        },
+        {
+          "line": 33332,
+          "text": "Decremented gameHandler->queries count to 0"
+        },
+        {
+          "line": 33333,
+          "text": "\tMade first apply on cl: 17SetHeroExperience"
+        },
+        {
+          "line": 33334,
+          "text": "\tApplied on gs: 17SetHeroExperience"
+        },
+        {
+          "line": 33335,
+          "text": "\tMade second apply on cl: 17SetHeroExperience"
+        },
+        {
+          "line": 33336,
+          "text": "Received CPack of type 20BattleResultAccepted"
+        },
+        {
+          "line": 33337,
+          "text": "\tSending to all clients: 20BattleResultsApplied"
+        },
+        {
+          "line": 33338,
+          "text": "Sending a pack of type 20BattleResultsApplied"
+        },
+        {
+          "line": 33339,
+          "text": "\tMade first apply on cl: 20BattleResultAccepted"
+        },
+        {
+          "line": 33340,
+          "text": "\tApplied on gs: 20BattleResultAccepted"
+        },
+        {
+          "line": 33341,
+          "text": "\tMade second apply on cl: 20BattleResultAccepted"
+        },
+        {
+          "line": 33342,
+          "text": "Received CPack of type 20BattleResultsApplied"
+        },
+        {
+          "line": 33343,
+          "text": "\tApplied on gameState(): 20BattleResultsApplied"
+        },
+        {
+          "line": 33344,
+          "text": "\tSending to all clients: 11BattleEnded"
+        },
+        {
+          "line": 33345,
+          "text": "Sending a pack of type 11BattleEnded"
+        },
+        {
+          "line": 33346,
+          "text": "\tMade first apply on cl: 20BattleResultsApplied"
+        },
+        {
+          "line": 33347,
+          "text": "\tApplied on gs: 20BattleResultsApplied"
+        },
+        {
+          "line": 33348,
+          "text": "\tMade second apply on cl: 20BattleResultsApplied"
+        },
+        {
+          "line": 33349,
+          "text": "Received CPack of type 11BattleEnded"
+        },
+        {
+          "line": 33350,
+          "text": "\tApplied on gameState(): 11BattleEnded"
+        },
+        {
+          "line": 33351,
+          "text": "Leaving void BattleResultProcessor::battleFinalize(const BattleID&, const BattleResult&)."
+        },
+        {
+          "line": 33352,
+          "text": "\tMade first apply on cl: 11BattleEnded"
+        },
+        {
+          "line": 33353,
+          "text": "\tSending to all clients: 12RemoveObject"
+        },
+        {
+          "line": 33354,
+          "text": "Sending a pack of type 12RemoveObject"
+        },
+        {
+          "line": 33355,
+          "text": "removing object id=159; address=75de85a3b2b0; name=creatures.core.griffin.name.plural"
+        },
+        {
+          "line": 33356,
+          "text": "\tApplied on gameState(): 12RemoveObject"
+        },
+        {
+          "line": 33357,
+          "text": "\tApplied on gs: 11BattleEnded"
+        },
+        {
+          "line": 33358,
+          "text": "blue strategic hero got level 1"
+        },
+        {
+          "line": 33359,
+          "text": "\tSending to all clients: 15SetPrimarySkill"
+        },
+        {
+          "line": 33360,
+          "text": "Sending a pack of type 15SetPrimarySkill"
+        },
+        {
+          "line": 33361,
+          "text": "\tApplied on gameState(): 15SetPrimarySkill"
+        },
+        {
+          "line": 33362,
+          "text": "Created a new query with id 334"
+        },
+        {
+          "line": 33363,
+          "text": "Entering void QueriesProcessor::addQuery(PlayerColor, QueryPtr): player='1', query='[0x75de859fc240] A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, '."
+        },
+        {
+          "line": 33364,
+          "text": "\tSending to all clients: 11HeroLevelUp"
+        },
+        {
+          "line": 33365,
+          "text": "Sending a pack of type 11HeroLevelUp"
+        },
+        {
+          "line": 33366,
+          "text": "\tApplied on gameState(): 11HeroLevelUp"
+        },
+        {
+          "line": 33367,
+          "text": "Leaving void QueriesProcessor::addQuery(PlayerColor, QueryPtr)."
+        },
+        {
+          "line": 33368,
+          "text": "Leaving void QueriesProcessor::popQuery(PlayerColor, QueryPtr)."
+        },
+        {
+          "line": 33369,
+          "text": "Leaving void QueriesProcessor::popIfTop(QueryPtr)."
+        },
+        {
+          "line": 33370,
+          "text": "Destructed the query with id 333"
+        },
+        {
+          "line": 33371,
+          "text": "Leaving void BattleResultProcessor::endBattle(const CBattleInfoCallback&)."
+        },
+        {
+          "line": 33372,
+          "text": "Message 10MakeAction successfully applied!"
+        },
+        {
+          "line": 33373,
+          "text": "Sending a pack of type 14PackageApplied"
+        },
+        {
+          "line": 33374,
+          "text": "CPathfinder finished with 945 iterations"
+        },
+        {
+          "line": 33375,
+          "text": "CPathfinder finished with 945 iterations"
+        },
+        {
+          "line": 33376,
+          "text": "DirectorAI: step hero 1 (16 13 0) -> (17 12 0) reason=local candidate policy"
+        },
+        {
+          "line": 33377,
+          "text": "Sending a request \"8MoveHero\". It'll have an ID=484."
+        },
+        {
+          "line": 33378,
+          "text": "Sending a pack of type 8MoveHero"
+        },
+        {
+          "line": 33379,
+          "text": "\tMade second apply on cl: 11BattleEnded"
+        },
+        {
+          "line": 33380,
+          "text": "Received CPack of type 12RemoveObject"
+        },
+        {
+          "line": 33381,
+          "text": "Received CPack of type 8MoveHero"
+        },
+        {
+          "line": 33382,
+          "text": "\tMade first apply on cl: 12RemoveObject"
+        },
+        {
+          "line": 33383,
+          "text": "Sending a pack of type 15PackageReceived"
+        },
+        {
+          "line": 33384,
+          "text": "removing object id=159; address=75de80385200; name=creatures.core.griffin.name.plural"
+        },
+        {
+          "line": 33385,
+          "text": "\tSending to all clients: 13SystemMessage"
+        },
+        {
+          "line": 33386,
+          "text": "\tApplied on gs: 12RemoveObject"
+        },
+        {
+          "line": 33387,
+          "text": "Sending a pack of type 13SystemMessage"
+        },
+        {
+          "line": 33388,
+          "text": "\tMade second apply on cl: 12RemoveObject"
+        },
+        {
+          "line": 33389,
+          "text": "Received CPack of type 15SetPrimarySkill"
+        },
+        {
+          "line": 33390,
+          "text": "\tMade first apply on cl: 15SetPrimarySkill"
+        },
+        {
+          "line": 33391,
+          "text": "\tApplied on gs: 15SetPrimarySkill"
+        },
+        {
+          "line": 33392,
+          "text": "\tMade second apply on cl: 15SetPrimarySkill"
+        },
+        {
+          "line": 33393,
+          "text": "\tApplied on gameState(): 13SystemMessage"
+        },
+        {
+          "line": 33394,
+          "text": ""
+        },
+        {
+          "line": 33395,
+          "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+        },
+        {
+          "line": 33396,
+          "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, \""
+        },
+        {
+          "line": 33397,
+          "text": ""
+        },
+        {
+          "line": 33398,
+          "text": "Received CPack of type 11HeroLevelUp"
+        },
+        {
+          "line": 33399,
+          "text": "Sending a pack of type 14PackageApplied"
+        },
+        {
+          "line": 33400,
+          "text": "\tMade first apply on cl: 11HeroLevelUp"
+        },
+        {
+          "line": 33401,
+          "text": "\tApplied on gs: 11HeroLevelUp"
+        },
+        {
+          "line": 33402,
+          "text": "Sending a request \"10QueryReply\". It'll have an ID=485."
+        },
+        {
+          "line": 33403,
+          "text": "Sending a pack of type 10QueryReply"
+        },
+        {
+          "line": 33404,
+          "text": "\tMade second apply on cl: 11HeroLevelUp"
+        },
+        {
+          "line": 33405,
+          "text": "Received CPack of type 14PackageApplied"
+        },
+        {
+          "line": 33406,
+          "text": "\tMade first apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33407,
+          "text": "\tApplied on gs: 14PackageApplied"
+        },
+        {
+          "line": 33408,
+          "text": "\tMade second apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33409,
+          "text": "Received CPack of type 15PackageReceived"
+        },
+        {
+          "line": 33410,
+          "text": "\tMade first apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33411,
+          "text": "\tApplied on gs: 15PackageReceived"
+        },
+        {
+          "line": 33412,
+          "text": "\tMade second apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33413,
+          "text": "Received CPack of type 13SystemMessage"
+        },
+        {
+          "line": 33414,
+          "text": "Received CPack of type 10QueryReply"
+        },
+        {
+          "line": 33415,
+          "text": "Sending a pack of type 15PackageReceived"
+        },
+        {
+          "line": 33416,
+          "text": "\tMade first apply on cl: 13SystemMessage"
+        },
+        {
+          "line": 33417,
+          "text": "Player 1 attempts answering query 334 with answer:"
+        },
+        {
+          "line": 33418,
+          "text": "\tApplied on gs: 13SystemMessage"
+        },
+        {
+          "line": 33419,
+          "text": "0"
+        },
+        {
+          "line": 33420,
+          "text": "System message: Server encountered a problem: "
+        },
+        {
+          "line": 33421,
+          "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+        },
+        {
+          "line": 33422,
+          "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, \""
+        },
+        {
+          "line": 33423,
+          "text": ""
+        },
+        {
+          "line": 33424,
+          "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de859fc240] A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, '."
+        },
+        {
+          "line": 33425,
+          "text": "\tMade second apply on cl: 13SystemMessage"
+        },
+        {
+          "line": 33426,
+          "text": "Received CPack of type 14PackageApplied"
+        },
+        {
+          "line": 33427,
+          "text": "\tMade first apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33428,
+          "text": "\tApplied on gs: 14PackageApplied"
+        },
+        {
+          "line": 33429,
+          "text": "\tSending to all clients: 13QueryResolved"
+        },
+        {
+          "line": 33430,
+          "text": "Sending a pack of type 13QueryResolved"
+        },
+        {
+          "line": 33431,
+          "text": "\tMade second apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33432,
+          "text": "Received CPack of type 15PackageReceived"
+        },
+        {
+          "line": 33433,
+          "text": "\tMade first apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33434,
+          "text": "\tApplied on gs: 15PackageReceived"
+        },
+        {
+          "line": 33435,
+          "text": "\tMade second apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33436,
+          "text": "Received CPack of type 13QueryResolved"
+        },
+        {
+          "line": 33437,
+          "text": "\tMade first apply on cl: 13QueryResolved"
+        },
+        {
+          "line": 33438,
+          "text": "\tApplied on gs: 13QueryResolved"
+        },
+        {
+          "line": 33439,
+          "text": "\tMade second apply on cl: 13QueryResolved"
+        },
+        {
+          "line": 33440,
+          "text": "\tApplied on gameState(): 13QueryResolved"
+        },
+        {
+          "line": 33441,
+          "text": "Completing hero level-up query. blue strategic hero gains skill 0"
+        },
+        {
+          "line": 33442,
+          "text": "\tSending to all clients: 11SetSecSkill"
+        },
+        {
+          "line": 33443,
+          "text": "Sending a pack of type 11SetSecSkill"
+        },
+        {
+          "line": 33444,
+          "text": "Received CPack of type 11SetSecSkill"
+        },
+        {
+          "line": 33445,
+          "text": "\tMade first apply on cl: 11SetSecSkill"
+        },
+        {
+          "line": 33446,
+          "text": "\tApplied on gs: 11SetSecSkill"
+        },
+        {
+          "line": 33447,
+          "text": "\tMade second apply on cl: 11SetSecSkill"
+        },
+        {
+          "line": 33448,
+          "text": "\tApplied on gameState(): 11SetSecSkill"
+        },
+        {
+          "line": 33449,
+          "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de859b0bc0] A query of type '19MapObjectVisitQuery' and qid = 332 affecting player BLUE, '."
+        },
+        {
+          "line": 33450,
+          "text": "\tSending to all clients: 9HeroVisit"
+        },
+        {
+          "line": 33451,
+          "text": "Sending a pack of type 9HeroVisit"
+        },
+        {
+          "line": 33452,
+          "text": "\tApplied on gameState(): 9HeroVisit"
+        },
+        {
+          "line": 33453,
+          "text": "Hero blue strategic hero after victory over guard finishes visit to (17 13 0)"
+        },
+        {
+          "line": 33454,
+          "text": "Received CPack of type 9HeroVisit"
+        },
+        {
+          "line": 33455,
+          "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de853e1550] A query of type '18CHeroMovementQuery' and qid = 331 affecting player BLUE, '."
+        },
+        {
+          "line": 33456,
+          "text": "\tMade first apply on cl: 9HeroVisit"
+        },
+        {
+          "line": 33457,
+          "text": "\tApplied on gs: 9HeroVisit"
+        },
+        {
+          "line": 33458,
+          "text": "\tMade second apply on cl: 9HeroVisit"
+        },
+        {
+          "line": 33459,
+          "text": "\tSending to all clients: 13PlayerBlocked"
+        },
+        {
+          "line": 33460,
+          "text": "Sending a pack of type 13PlayerBlocked"
+        },
+        {
+          "line": 33461,
+          "text": "\tApplied on gameState(): 13PlayerBlocked"
+        },
+        {
+          "line": 33462,
+          "text": "Received CPack of type 13PlayerBlocked"
+        },
+        {
+          "line": 33463,
+          "text": "Leaving void QueriesProcessor::popQuery(PlayerColor, QueryPtr)."
+        },
+        {
+          "line": 33464,
+          "text": "\tMade first apply on cl: 13PlayerBlocked"
+        },
+        {
+          "line": 33465,
+          "text": "Destructed the query with id 331"
+        },
+        {
+          "line": 33466,
+          "text": "\tApplied on gs: 13PlayerBlocked"
+        },
+        {
+          "line": 33467,
+          "text": "Leaving void QueriesProcessor::popQuery(PlayerColor, QueryPtr)."
+        },
+        {
+          "line": 33468,
+          "text": "\tMade second apply on cl: 13PlayerBlocked"
+        },
+        {
+          "line": 33469,
+          "text": "Destructed the query with id 332"
+        },
+        {
+          "line": 33470,
+          "text": "Leaving void QueriesProcessor::popQuery(PlayerColor, QueryPtr)."
+        },
+        {
+          "line": 33471,
+          "text": "Destructed the query with id 334"
+        },
+        {
+          "line": 33472,
+          "text": "Message 10QueryReply successfully applied!"
+        },
+        {
+          "line": 33473,
+          "text": "Sending a pack of type 14PackageApplied"
+        },
+        {
+          "line": 33474,
+          "text": "Received CPack of type 14PackageApplied"
+        },
+        {
+          "line": 33475,
+          "text": "\tMade first apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33476,
+          "text": "\tApplied on gs: 14PackageApplied"
+        },
+        {
+          "line": 33477,
+          "text": "DirectorAI: no hero with movement points"
+        },
+        {
+          "line": 33478,
+          "text": "Player 1 ended his turn."
+        },
+        {
+          "line": 33479,
+          "text": "Sending a request \"7EndTurn\". It'll have an ID=486."
+        },
+        {
+          "line": 33480,
+          "text": "Sending a pack of type 7EndTurn"
+        },
+        {
+          "line": 33481,
+          "text": "\tMade second apply on cl: 14PackageApplied"
+        },
+        {
+          "line": 33482,
+          "text": "Received CPack of type 7EndTurn"
+        },
+        {
+          "line": 33483,
+          "text": "Sending a pack of type 15PackageReceived"
+        },
+        {
+          "line": 33484,
+          "text": "\tSending to all clients: 14TurnTimeUpdate"
+        },
+        {
+          "line": 33485,
+          "text": "Sending a pack of type 14TurnTimeUpdate"
+        },
+        {
+          "line": 33486,
+          "text": "Received CPack of type 15PackageReceived"
+        },
+        {
+          "line": 33487,
+          "text": "\tMade first apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33488,
+          "text": "\tApplied on gs: 15PackageReceived"
+        },
+        {
+          "line": 33489,
+          "text": "\tMade second apply on cl: 15PackageReceived"
+        },
+        {
+          "line": 33490,
+          "text": "Received CPack of type 14TurnTimeUpdate"
+        },
+        {
+          "line": 33491,
+          "text": "\tMade first apply on cl: 14TurnTimeUpdate"
+        },
+        {
+          "line": 33492,
+          "text": "\tApplied on gs: 14TurnTimeUpdate"
+        },
+        {
+          "line": 33493,
+          "text": "Server sets turn timer {turn: 0, base: 0, battle: 0, creature: 0} for blue"
+        },
+        {
+          "line": 33494,
+          "text": "\tMade second apply on cl: 14TurnTimeUpdate"
+        },
+        {
+          "line": 33495,
+          "text": "\tApplied on gameState(): 14TurnTimeUpdate"
+        },
+        {
+          "line": 33496,
+          "text": "\tSending to all clients: 14PlayerEndsTurn"
+        },
+        {
+          "line": 33497,
+          "text": "Sending a pack of type 14PlayerEndsTurn"
+        },
+        {
+          "line": 33498,
+          "text": "\tApplied on gameState(): 14PlayerEndsTurn"
+        },
+        {
+          "line": 33499,
+          "text": "Turn 32"
+        },
+        {
+          "line": 33500,
+          "text": "Received CPack of type 14PlayerEndsTurn"
+        },
+        {
+          "line": 33501,
+          "text": "\tMade first apply on cl: 14PlayerEndsTurn"
+        },
+        {
+          "line": 33502,
+          "text": "\tApplied on gs: 14PlayerEndsTurn"
+        },
+        {
+          "line": 33503,
+          "text": "Server ends turn of blue"
+        },
+        {
+          "line": 33504,
+          "text": "\tMade second apply on cl: 14PlayerEndsTurn"
+        },
+        {
+          "line": 33505,
+          "text": "\tSending to all clients: 7NewTurn"
+        },
+        {
+          "line": 33506,
+          "text": "Sending a pack of type 7NewTurn"
+        },
+        {
+          "line": 33507,
+          "text": "Received CPack of type 7NewTurn"
+        },
+        {
+          "line": 33508,
+          "text": "Replay: new chapter, snapshot of 113897 bytes, 3 chapters kept"
+        },
+        {
+          "line": 33509,
+          "text": "Replay: new chapter, snapshot of 114045 bytes, 3 chapters kept"
+        },
+        {
+          "line": 33510,
+          "text": "\tMade first apply on cl: 7NewTurn"
+        },
+        {
+          "line": 33511,
+          "text": "\tApplied on gameState(): 7NewTurn"
+        },
+        {
+          "line": 33512,
+          "text": "Info about turn 32 has been sent!"
+        },
+        {
+          "line": 33513,
+          "text": "\tSending to all clients: 16PlayerStartsTurn"
+        },
+        {
+          "line": 33514,
+          "text": "Sending a pack of type 16PlayerStartsTurn"
+        },
+        {
+          "line": 33515,
+          "text": "\tApplied on gameState(): 16PlayerStartsTurn"
+        }
+      ]
+    }
+  ],
+  "rejection_lines": [
+    {
+      "line": 33395,
+      "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 33396,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, \""
+    },
+    {
+      "line": 33421,
+      "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 33422,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 334 affecting player BLUE, \""
+    },
+    {
+      "line": 35372,
+      "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 35373,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 346 affecting player BLUE, \""
+    },
+    {
+      "line": 35390,
+      "text": "| Player \"BLUE\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 35391,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 346 affecting player BLUE, \""
+    }
+  ],
+  "validated_prefix": [
+    {
+      "tag": "engineering-map0-red-2026101860",
+      "stage": "engineering",
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "role": "red",
+      "seed": 2026101860,
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-01/engineering-map0-red-2026101860/RAW_AUDIT.json",
+      "won": 1,
+      "native_days": 19,
+      "original_main_loss_day": null,
+      "original_main_status": "present_at_terminal",
+      "delivered_count": 169,
+      "delivered_to_main_count": 169,
+      "mechanism_gate_passed": true,
+      "first_building33": {
+        "before_line": 92,
+        "after_line": 93,
+        "day": 5,
+        "town": 12,
+        "building": 33,
+        "gold_cost": 2000
+      },
+      "first_building32": {
+        "before_line": 118,
+        "after_line": 119,
+        "day": 6,
+        "town": 12,
+        "building": 32,
+        "gold_cost": 1000
+      },
+      "recruited_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "transferred_types": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ]
+    }
+  ],
+  "evidence": {
+    "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-fwugh6es/strategy-trace.jsonl": "45c01a45fd7d195adf50100a4fc27522304745f25591e9256b87d81bb0f2e5b5",
+    "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-fwugh6es/client.log": "0d69651fc3d6e3465d50130d47da1b985635f7d2104e1f7c1c7b95658a359fa9",
+    "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-fwugh6es/strategy-decisions.jsonl": "7a932d912b96885ffa55dd477c8e4eba6c9646fee131c1d3c4bdcb8cad7f1e9a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-01/engineering-map0-blue-2026101860/smoke-result.json": "5070c2c2dfb56862c17908c64da5c228ecb207068eac7e24c55a5b6e0864ecab"
+  },
+  "engineering_gate_complete": false,
+  "nk_games_started": 0,
+  "bc_eligible": 0
+}

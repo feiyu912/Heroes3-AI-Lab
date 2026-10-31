@@ -1,0 +1,10 @@
+{
+  "schema": "strategic-parallel-episode-balanced-ppo-v1",
+  "protocol_sha256": "ec27935151703a7c02e9645a21de37397b3e245feba70b3f862cca5dbf7f96df",
+  "target_total_updates": 2,
+  "resumed_from": null,
+  "origin_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+  "origin_sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+  "device": "cuda",
+  "independent_evaluation": false
+}

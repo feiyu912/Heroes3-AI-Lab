@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "changed_initial_tensors": [
+    "actor.recruit_bias"
+  ],
+  "old_initial_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "new_initial_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+  "old_manual_recruit_bias": -4.0,
+  "new_manual_recruit_bias": 0.0,
+  "manual_prior_is_learning": false,
+  "same_833_parent": true,
+  "same_catalog_architecture_encoder": true,
+  "PPO_protocol_exactly_unchanged": true,
+  "new_Adam_empty": true,
+  "actual_requests_checked": 17,
+  "nonrecruit_logits_and_critic_exact": true,
+  "recruit_logit_delta_expected": 4.0,
+  "recruit_logit_delta_max_error": 2.384185791015625e-07,
+  "actual_request_probability_changes": [
+    {
+      "decision_id": 1,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0015133345732465386,
+      "new_recruit_probability": 0.07642618846148252
+    },
+    {
+      "decision_id": 2,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018984944617841393,
+      "new_recruit_probability": 0.09408101066946983
+    },
+    {
+      "decision_id": 3,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.001899036084068939,
+      "new_recruit_probability": 0.0941053731366992
+    },
+    {
+      "decision_id": 4,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.002214459120295942,
+      "new_recruit_probability": 0.10807754658162594
+    },
+    {
+      "decision_id": 5,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0022146734117995948,
+      "new_recruit_probability": 0.10808690637350082
+    },
+    {
+      "decision_id": 6,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018146214133594185,
+      "new_recruit_probability": 0.09029304329305887
+    },
+    {
+      "decision_id": 7,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018153086712118238,
+      "new_recruit_probability": 0.0903242165222764
+    },
+    {
+      "decision_id": 8,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018159660685341805,
+      "new_recruit_probability": 0.09035401232540607
+    },
+    {
+      "decision_id": 9,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018165968940593302,
+      "new_recruit_probability": 0.09038262814283371
+    },
+    {
+      "decision_id": 10,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018172049603890628,
+      "new_recruit_probability": 0.09041018318384886
+    },
+    {
+      "decision_id": 11,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0015993591223377734,
+      "new_recruit_probability": 0.0804275730624795
+    },
+    {
+      "decision_id": 12,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0014585565077140927,
+      "new_recruit_probability": 0.07386038638651371
+    },
+    {
+      "decision_id": 13,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018121713656000793,
+      "new_recruit_probability": 0.09018193744122982
+    },
+    {
+      "decision_id": 14,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0014610940561397001,
+      "new_recruit_probability": 0.07397955283522606
+    },
+    {
+      "decision_id": 15,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018133104022126645,
+      "new_recruit_probability": 0.09023356717079878
+    },
+    {
+      "decision_id": 16,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.001813838811358437,
+      "new_recruit_probability": 0.09025756176561117
+    },
+    {
+      "decision_id": 17,
+      "old_argmax_op": "move",
+      "new_argmax_op": "move",
+      "old_recruit_probability": 0.0018143430061172694,
+      "new_recruit_probability": 0.09028041083365679
+    }
+  ],
+  "rejected_cases": [
+    "old_prior_initialization_wrong_epoch",
+    "false_zero_prior_metadata"
+  ],
+  "old_source_freeze_all_files_unchanged": true,
+  "optimizer_steps": 0,
+  "GPU_steps": 0,
+  "native_runs": 0,
+  "locks_acquired": false,
+  "DEV_read": false
+}

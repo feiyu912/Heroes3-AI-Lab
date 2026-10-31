@@ -1,0 +1,158 @@
+{
+  "schema": "recruitment-prior-zero-source-derivation-v1",
+  "parent_source_freeze_sha256": "9919de90735e946dbb543059923287f0c0e712ee0a91a2d09cc5e47195890a22",
+  "sources": {
+    "experiments\\strategic-learned-recruitment-policy-v3\\admit_episode_v5.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\admit_episode_v5.py",
+      "parent_sha256": "fced4b65232365b4a795d7ad5aa32bc1516aa00825526b4d74216f724b6766f3"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\broker.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\broker.py",
+      "parent_sha256": "4582f1cb96752c28bf5f6cccca30b0190d82966cf245e48f3d3667788b0ffe0a"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\check_actual_cpu.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\check_actual_cpu.py",
+      "parent_sha256": "5741a134899c73cf825494020e74e6aa576a9c1776ddf3f1d59782d6a70aa088"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\check_cpu.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\check_cpu.py",
+      "parent_sha256": "269d063c6d255738a942e92d75027fe2a493fcd54eb5235433b5c9657dab2c3a"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\encoder.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\encoder.py",
+      "parent_sha256": "5bc83e5bc7fc137d37c45494fbb7c5518b0b0b2fa61e0b9147d47698e876c58f"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\episode_balanced_ppo.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\episode_balanced_ppo.py",
+      "parent_sha256": "6eb06ecf004f60231d99c870282d9fb4ce883aad4f6c8253281ab9d40288922a"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\load_admitted.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\load_admitted.py",
+      "parent_sha256": "7b4300afbfc80b564f8b36a25980116915d7ca8ceed4586f582934a52f148422"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\migrate_init_cpu.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\migrate_init_cpu.py",
+      "parent_sha256": "ca6a38f2b622a3878ed11c8c30f5fea0e6b95e10ffde9ca59b083d38a751bbc3"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\model.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\model.py",
+      "parent_sha256": "163b5e6a72badf47cae09b291bd5570bc3330bf1f31e06fe73acc901eb8799b3"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\model_io.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\model_io.py",
+      "parent_sha256": "007c17f39b1bbda4844ad884fcfabab3519390c303fb53e5d8383aa8ded1178f"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\onpolicy_broker_v2.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\onpolicy_broker_v2.py",
+      "parent_sha256": "f165e24c76a8b3f492fa13124e8aa82403938fb89d325568e7760e44ff42cbb2"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\qualification.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\qualification.py",
+      "parent_sha256": "ae2d2e9408dbe54152710db625bb320b4744b0558610fa15fc6975c713cf1aed"
+    },
+    "experiments\\strategic-learned-recruitment-policy-v3\\train_update_v3.py": {
+      "parent": "experiments\\strategic-learned-recruitment-policy-v2\\train_update_v3.py",
+      "parent_sha256": "29af3aba5193bb15c16023cd033dacb9102b9a70945658b80124decc6652dba9"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\audit_game_v6.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\audit_game_v6.py",
+      "parent_sha256": "6bef0767c9f8c2ce6fc07d87bcc336ba19d3e7c7d8349cef99b70c2c31f47e78"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\bind_qualification.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\bind_qualification.py",
+      "parent_sha256": "0bf705bb7a61be1340b40d6504e529afef28d38e9d48463b7536fe33538a88d7"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\collect_cpu.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\collect_cpu.py",
+      "parent_sha256": "b1c62ff66b7ebe3f9a62cd3fab74da38fe7b7ce51d09771712460d8f0ade62d2"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\collect_episode_v5.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\collect_episode_v5.py",
+      "parent_sha256": "b906757c72c9fa83d4fbf956b10cd063f5ce0631247e94e6d8f49c6c08081b72"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\evaluate_dev.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\evaluate_dev.py",
+      "parent_sha256": "48e7846cc7417c6ebd18f0130b86adf230cc1a76a7ed59db89b3f16434471f52"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\pipeline_common.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\pipeline_common.py",
+      "parent_sha256": "9a177f25542c045f51b4346f3b4715c05cdbe1161794b15870ddc8eed5d5b37b"
+    },
+    "experiments\\strategic-learned-recruitment-run-v2\\run_pipeline.py": {
+      "parent": "experiments\\strategic-learned-recruitment-run-v1\\run_pipeline.py",
+      "parent_sha256": "86e76a83d89eded56548151ca28ddba88a8f7e85fd3caaa3f775f19d41798824"
+    }
+  },
+  "namespace_replacements": [
+    [
+      "strategic-learned-recruitment-policy-v2",
+      "strategic-learned-recruitment-policy-v3"
+    ],
+    [
+      "strategic-learned-recruitment-run-v1",
+      "strategic-learned-recruitment-run-v2"
+    ],
+    [
+      "strategic-learned-recruitment-training-v1",
+      "strategic-learned-recruitment-prior-zero-training-v1"
+    ],
+    [
+      "strategic-learned-recruitment-ppo-checkpoint-v1",
+      "strategic-learned-recruitment-prior-zero-ppo-checkpoint-v1"
+    ],
+    [
+      "strategic-learned-recruitment-initialization-v1",
+      "strategic-learned-recruitment-prior-zero-initialization-v1"
+    ],
+    [
+      "2026104000",
+      "2026104200"
+    ],
+    [
+      "2026104008",
+      "2026104208"
+    ],
+    [
+      "learned-recruitment-train-20261023-01",
+      "learned-recruitment-prior-zero-train-20261023-01"
+    ]
+  ],
+  "experimental_factor": {
+    "manual_recruit_bias_before": -4.0,
+    "manual_recruit_bias_after": 0.0
+  },
+  "other_hyperparameter_changes": [],
+  "native_changes": [],
+  "GPU_steps": 0,
+  "native_runs": 0,
+  "design_revision": {
+    "status": "before source freeze; no native/GPU executed",
+    "TRAIN_seeds": [
+      2026103900,
+      2026103901,
+      2026103902,
+      2026103903,
+      2026103904,
+      2026103905,
+      2026103906,
+      2026103907
+    ],
+    "DEV_seeds": [
+      2026104200,
+      2026104201,
+      2026104202,
+      2026104203,
+      2026104204,
+      2026104205,
+      2026104206,
+      2026104207
+    ],
+    "DEV_arms": [
+      "minus4_initial",
+      "minus4_updated",
+      "zero_initial",
+      "zero_updated"
+    ],
+    "preserved_unexecuted_draft": "policy-v3/initialization-01 used seed4100 metadata; actual registered initialization will be initialization-02 with shared seed3900"
+  }
+}

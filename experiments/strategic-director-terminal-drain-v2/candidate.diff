@@ -1,0 +1,35 @@
+--- v1/client/Client.h
++++ atomic-v2/client/Client.h
+@@ -54,6 +54,16 @@
+ 		clear();
+ 	}
+ 
++	std::vector<T> requestTerminationWithSnapshot()
++	{
++		TLock lock(mx);
++		isTerminating = true;
++		const auto terminated = items;
++		items.clear();
++		cond.notify_all();
++		return terminated;
++	}
++
+ 	void clear()
+ 	{
+ 		TLock lock(mx);
+--- v1/client/Client.cpp
++++ atomic-v2/client/Client.cpp
+@@ -146,12 +146,11 @@
+ 
+ void CClient::finishGameplay()
+ {
+-	const auto remaining=waitingRequest.snapshot();
++	const auto remaining=waitingRequest.requestTerminationWithSnapshot();
+ 	std::ostringstream ids;ids << '[';
+ 	for(size_t i=0;i<remaining.size();++i) { if(i) ids << ',';ids << remaining[i]; }
+ 	ids << ']';
+ 	logGlobal->info("NativeRequestTermination pending_ids=%s",ids.str());
+-	waitingRequest.requestTermination();
+ 	waitingDirectorRequest.clear();
+ 
+ 	//suggest interfaces to finish their stuff (AI should interrupt any bg working threads)

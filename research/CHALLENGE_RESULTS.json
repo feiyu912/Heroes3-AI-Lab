@@ -1,0 +1,1437 @@
+{
+  "selection": {
+    "name": "v6-role-portfolio",
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.pt",
+    "policy": "recovered",
+    "iteration": 0,
+    "finetuning_mode": "derived",
+    "derivation_manifest": "/mnt/g/Heroes3-AI-Lab/models/derived-candidates/roles-25daa7b00b793932.json",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-validation.json",
+    "validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 34,
+      "win_rate": 0.7083333333333334,
+      "wilson95": [
+        0.5682047226383246,
+        0.8175858393813663
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 59.270833333333336
+    },
+    "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-upstream_validation.json",
+    "upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 22,
+      "win_rate": 0.4583333333333333,
+      "wilson95": [
+        0.3257502185455351,
+        0.5970916690505266
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 66.29166666666667
+    },
+    "development_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-development_validation.json",
+    "development_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 45,
+      "win_rate": 0.9375,
+      "wilson95": [
+        0.8316430233725778,
+        0.9785171568687727
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 82.58333333333333
+    },
+    "development_upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v6-role-portfolio-development_upstream_validation.json",
+    "development_upstream_validation": {
+      "policy": "recovered",
+      "battles": 48,
+      "wins": 32,
+      "win_rate": 0.6666666666666666,
+      "wilson95": [
+        0.5253984633247204,
+        0.783233986291032
+      ],
+      "truncated": 0,
+      "non_normal_terminations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.5625
+    },
+    "goal_selection_metrics": {
+      "author_cluster95_lower": 0.375,
+      "development_author_cluster95_lower": 0.5416666666666666,
+      "rule_version": 2,
+      "normalized_constraints": [
+        0.986842105263158,
+        1.0833333333333333
+      ],
+      "rule": "Fair mirror development primary: both goals met first; otherwise worst normalized progress (BattleAI/.95, author cluster95 lower/.50). Once both met prefer higher BattleAI rate. Old unequal-army stress only breaks ties. Final thresholds unchanged."
+    },
+    "selection": "Validation only, fair-mirror primary normalized goal score v2. Old unequal-army stress retained as diagnostic/tie-breaker. Added independently verified role combinations and three interpolations before any final test; final criteria unchanged and fresh outcomes never inspected.",
+    "validation_score": [
+      0.0,
+      0.986842105263,
+      0.9375,
+      0.541666666667,
+      0.666666666667,
+      1.166666666667,
+      -82.583333333333
+    ]
+  },
+  "fresh_results": [
+    {
+      "name": "fresh-upstream-vs-battleai",
+      "summary": [
+        {
+          "policy": "upstream",
+          "battles": 512,
+          "wins": 457,
+          "win_rate": 0.892578125,
+          "wilson95": [
+            0.8627731358966663,
+            0.9165358612838636
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 60.4296875
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-upstream-vs-battleai.json",
+      "scenario_cluster95": [
+        0.849609375,
+        0.931640625
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    },
+    {
+      "name": "fresh-v3-vs-battleai",
+      "summary": [
+        {
+          "policy": "model",
+          "battles": 512,
+          "wins": 214,
+          "win_rate": 0.41796875,
+          "wilson95": [
+            0.37601122287668953,
+            0.4611480911452893
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 75.333984375
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-v3-vs-battleai.json",
+      "scenario_cluster95": [
+        0.333984375,
+        0.501953125
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 5,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 5,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 6,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 2,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 4,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 11,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 5,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    },
+    {
+      "name": "fresh-selected-vs-battleai",
+      "summary": [
+        {
+          "policy": "recovered",
+          "battles": 512,
+          "wins": 434,
+          "win_rate": 0.84765625,
+          "wilson95": [
+            0.813947967766721,
+            0.8761863680448925
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 61.787109375
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-selected-vs-battleai.json",
+      "scenario_cluster95": [
+        0.77734375,
+        0.908203125
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 15,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    },
+    {
+      "name": "fresh-selected-vs-upstream",
+      "summary": [
+        {
+          "policy": "recovered",
+          "battles": 512,
+          "wins": 268,
+          "win_rate": 0.5234375,
+          "wilson95": [
+            0.480161314640071,
+            0.5663645956393636
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 71.533203125
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-selected-vs-upstream.json",
+      "scenario_cluster95": [
+        0.44140625,
+        0.60546875
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 4,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 5,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 6,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 4,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 14,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 13,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 12,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 9,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 4,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    },
+    {
+      "name": "fresh-v3-vs-upstream",
+      "summary": [
+        {
+          "policy": "model",
+          "battles": 512,
+          "wins": 84,
+          "win_rate": 0.1640625,
+          "wilson95": [
+            0.13450780937794646,
+            0.19862080995015738
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 79.89453125
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-v3-vs-upstream.json",
+      "scenario_cluster95": [
+        0.08984375,
+        0.25
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 2,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 3,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 16,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 2,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 6,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 4,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 6,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 10,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 5,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 1,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 0,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 2,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    },
+    {
+      "name": "fresh-battleai-vs-battleai",
+      "summary": [
+        {
+          "policy": "teacher",
+          "battles": 512,
+          "wins": 254,
+          "win_rate": 0.49609375,
+          "wilson95": [
+            0.4529754300729721,
+            0.5392702515471222
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 72.42578125
+        }
+      ],
+      "report": "/mnt/g/Heroes3-AI-Lab/research/fresh-battleai-vs-battleai.json",
+      "scenario_cluster95": [
+        0.490234375,
+        0.5
+      ],
+      "case_results": [
+        {
+          "scenario": "challenge-mirror-00",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-01",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-02",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-03",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-04",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-05",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-06",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-07",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-08",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-09",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-10",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-11",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-12",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-13",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-14",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-15",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-16",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-17",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-18",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-19",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-20",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-21",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-22",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-23",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-24",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-25",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-26",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-27",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-28",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-29",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-30",
+          "wins": 8,
+          "battles": 16,
+          "truncated": 0
+        },
+        {
+          "scenario": "challenge-mirror-31",
+          "wins": 7,
+          "battles": 16,
+          "truncated": 0
+        }
+      ]
+    }
+  ],
+  "improvements": {
+    "vs_old_lab": {
+      "mean": 0.4296875,
+      "scenario_cluster95": [
+        0.333984375,
+        0.52734375
+      ]
+    },
+    "vs_original_upstream": {
+      "mean": -0.044921875,
+      "scenario_cluster95": [
+        -0.115234375,
+        0.01953125
+      ]
+    },
+    "direct_vs_old_lab": {
+      "mean": 0.359375,
+      "scenario_cluster95": [
+        0.23046875,
+        0.48046875
+      ]
+    }
+  },
+  "objectives": {
+    "beat_upstream_point_estimate": true,
+    "beat_upstream_cluster95_lower_above_half": false,
+    "near100_defined_as_at_least95_percent": false,
+    "observed100": false
+  },
+  "scope": "Fresh32 exact mirror three-stack cases; two upgraded pools absent from local additional curricula (upstream pretraining exposure unknown); each512 real games, role swaps and8 seeds; no test selection",
+  "limitations": [
+    "One new training seed per method; cluster intervals describe scenario variation, not complete training-seed variation",
+    "Same plain battlefield geometry; not complete Heroes III strategy, magic, siege or human strength",
+    "Previously seen160-test suite used diagnostically; only fresh512 suite is final holdout",
+    "Unlinked continuation switched from12/roll64 to24/roll32 at user request; not an architecture-only control",
+    "Recovered candidates start from public upstream weights, not a from-scratch achievement; selected fine-tuning mode: derived"
+  ]
+}

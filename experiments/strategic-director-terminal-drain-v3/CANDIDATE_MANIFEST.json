@@ -1,0 +1,52 @@
+{
+  "schema": "director-native-terminal-drain-closed-v3",
+  "files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "baseline_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+      "candidate_sha256": "2fd91c7199d396896f29bb725d48810aa7cfb9f6b7fa9aa7a91070521d9ed2ae"
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "baseline_sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "candidate_sha256": "d43e7cf0d0e76522877aec5f1bc32319c91336d525cc54734db606601dd4fb21"
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "baseline_sha256": null,
+      "candidate_sha256": "9aef11e358269b4e42212b895595ecf953a474ab3e392ccbb80c9f6c218ab310"
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "baseline_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+    },
+    "server/CGameHandler.cpp": {
+      "baseline_sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+      "candidate_sha256": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865"
+    },
+    "server/CGameHandler.h": {
+      "baseline_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9"
+    },
+    "client/Client.h": {
+      "baseline_sha256": "353b9e02b8796b0bd19f5a293c1f0dc1a6adf1f8175af37722e6a9f03a9099cb",
+      "candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde"
+    },
+    "client/NetPacksClient.cpp": {
+      "baseline_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+      "candidate_sha256": "4bcd30eb5621dad894f0b1564c989fb43101820b3c1201193d09bc32a291eba3"
+    },
+    "client/Client.cpp": {
+      "baseline_sha256": "ac0a5d7b3b2d01807bebc99ad54e27ab35b9f1eb55917cc84560f7e68165b209",
+      "candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+    }
+  },
+  "compiled": false,
+  "installed": false,
+  "plan_sha256": "07824fe5267fdc3cd3fed66cb30dc38fb4473f8bb3db223c2f268a3bae5c142d",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "Atomic termination with late enqueue rejection, terminating wait predicate and nonasserting late ACK removal. Real Director ACK scope unchanged.",
+  "parent_candidate_manifest_sha256": "87c642017d7dd8fbd06ce418b367ded2a54c2db5e427c17202fc3f9e468fcad0",
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "changed_from_v2": [
+    "client/Client.h"
+  ]
+}

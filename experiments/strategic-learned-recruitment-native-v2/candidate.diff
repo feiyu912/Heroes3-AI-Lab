@@ -1,0 +1,603 @@
+--- compiled-capsule02/AI/DirectorAI/CDirectorAI.cpp
++++ reviewed-source-ready/AI/DirectorAI/CDirectorAI.cpp
+@@ -41,11 +41,31 @@
+ #include <cstdio>
+ #include <thread>
+ #include <chrono>
++#include <tuple>
+ #include "../../lib/pathfinder/CGPathNode.h"
+ #include "../../lib/pathfinder/PathfinderCache.h"
+ 
+ namespace
+ {
++ std::map<int,std::int64_t> armyTotals(const CArmedInstance * army)
++ {
++  std::map<int,std::int64_t> totals;
++  if(army) for(const auto & slot:army->Slots()) totals[slot.second->getCreatureID().getNum()]+=slot.second->getCount();
++  return totals;
++ }
++ template<class Resources> std::array<std::int64_t,7> resourceTotals(const Resources & values)
++ { std::array<std::int64_t,7> result{};for(unsigned i=0;i<7;++i) result[i]=values[i];return result; }
++ std::string armySlotsJSON(const CArmedInstance * army)
++ {
++  std::ostringstream out;out << '[';
++  for(int i=0;i<7;++i)
++  {
++   if(i) out << ',';const CStackInstance * stack=(army && army->hasStackAtSlot(SlotID(i))) ? army->getStackPtr(SlotID(i)) : nullptr;
++   if(!stack) out << "null";
++   else out << "{\"slot\":" << i << ",\"creature_id\":" << stack->getCreatureID().getNum() << ",\"count\":" << stack->getCount() << '}';
++  }
++  out << ']';return out.str();
++ }
+ 	int distanceSquared(const int3 & a, const int3 & b)
+ 	{
+ 		const int dx = a.x - b.x;
+@@ -61,9 +81,11 @@
+ 	autocombatPreferences = AP;
+ 	human = false;
+ 	playerID = *cb->getPlayerID();
+- try { learnedBuildEnabled=LabLearnedBuild::enabled(std::getenv("LAB_ADV_LEARNED_ECONOMY")); }
++ try { learnedRecruitEnabled=LabLearnedRecruit::enabled(std::getenv("LAB_ADV_LEARNED_ECONOMY"));learnedBuildEnabled=learnedRecruitEnabled || LabLearnedBuild::enabled(std::getenv("LAB_ADV_LEARNED_ECONOMY")); }
+  catch(...) { typedFailure("invalid_learned_build_mode");return; }
+- if(learnedBuildEnabled) logGlobal->info("DirectorLearnedEconomyEpoch player=%d epoch=learned-economy-build-v1 schema=strategy-candidates-v5",playerID.getNum());
++ if(learnedRecruitEnabled) logGlobal->info("DirectorLearnedEconomyEpoch player=%d epoch=learned-economy-build-recruit-v1 schema=strategy-candidates-v6",playerID.getNum());
++ else if(learnedBuildEnabled) logGlobal->info("DirectorLearnedEconomyEpoch player=%d epoch=learned-economy-build-v1 schema=strategy-candidates-v5",playerID.getNum());
++ if(learnedRecruitEnabled && !exportCreatureCatalog()) return;
+  const auto * replanMode=std::getenv("LAB_ADV_THREAT_REPLAN");
+  const std::string mode=replanMode ? replanMode : "off";
+  if(mode!="off" && mode!="once") { typedFailure("invalid_threat_replan_mode");return; }
+@@ -286,6 +308,7 @@
+ 			}
+ 		}
+ 		if(learnedBuildEnabled && buildWindow.open) appendBuildCandidates();
++  if(learnedRecruitEnabled && buildWindow.open) appendRecruitCandidates();
+ 		Candidate stop{};stop.endTurn=true;candidates.push_back(stop);
+ 		const int selected = chooseExternalCandidate(hero);
+ 		if(selected < 0 || selected >= static_cast<int>(candidates.size()))
+@@ -296,6 +319,7 @@
+ 		selectedCandidate = selected;
+ 		if(candidates[selected].endTurn) { reason="typed_end_turn";return true; }
+   if(candidates[selected].build) { reason="typed_build";return true; }
++  if(candidates[selected].recruit) { reason="typed_recruit";return true; }
+ 		destination = candidates[selected].destination;
+ 		committedTargets[hero->id.getNum()] = {destination, candidates[selected].kind};
+ 		reason = "local candidate policy";
+@@ -355,8 +379,9 @@
+ 	if(!preparedTyped || preparedTyped->ownTurn!=ownTurns) { typedFailure("stale_prepared_action");return false; }
+ 	if(learnedBuildEnabled)
+  {
+-  if(!buildWindow.select(preparedTyped->op)) { typedFailure("build_window_violation");return false; }
++  if(!(learnedRecruitEnabled ? LabLearnedRecruit::select(buildWindow,preparedTyped->op) : buildWindow.select(preparedTyped->op))) { typedFailure("build_window_violation");return false; }
+   if(candidates[selectedCandidate].build) return issuePolicyBuild();
++  if(candidates[selectedCandidate].recruit) return issuePolicyRecruit();
+  }
+  if(candidates[selectedCandidate].endTurn) { finishTurn();return true; }
+ 	emitTypedBusy();
+@@ -415,6 +440,7 @@
+   pendingMove=false;pendingHero=ObjectInstanceID();battleBusy=false;movementBusy=false;
+  }
+  turnActive=true;endingTurn=false;blockedHeroes.clear();committedTargets.clear();threatReplanUsed.clear();recruitedThisTurn.clear();
++ if(learnedRecruitEnabled) { if(pendingFreeTransfer) { typedFailure("new_turn_with_free_transfer_pending");return; }attemptedFreeTransferStates.clear(); }
+  ++ownTurns;if(learnedBuildEnabled) buildWindow.begin(ownTurns);traceState("turn_start");
+  emitTyped("{\"event\":\"your_turn\",\"player\":"+std::to_string(playerID.getNum())+",\"own_turn\":"+std::to_string(ownTurns)+"}");
+  if(!savedInitial) { savedInitial=true;cb->save("Saves/director-v5-initial",false); }
+@@ -429,7 +455,7 @@
+  emitTypedBusy();
+  if(!turnActive || typedProtocolFailed || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+     !pendingQueries.empty() || !queryRequests.empty() || outstandingTyped || preparedTyped) return;
+- if(learnedBuildEnabled && buildWindow.open && issueFreeArmyTransfer()) return;
++ if(learnedBuildEnabled && (buildWindow.open || learnedRecruitEnabled) && issueFreeArmyTransfer()) return;
+  if((!learnedBuildEnabled || !buildWindow.open || cb->getHeroesInfo().empty()) && issueEconomy()) return;
+  if(!issueMove()) finishTurn();
+ }
+@@ -449,6 +475,7 @@
+   preparedTyped=ctx;
+  }
+  if(preparedTyped->ownTurn!=ownTurns) { typedFailure("stale_prepared_end_turn");return; }
++ if(learnedRecruitEnabled) buildWindow.open=false;
+  emitTypedBusy();endingTurn=true;traceState(preparedTyped->automatic ? "turn_end" : "before_end_turn");
+  cb->endTurn(); // A genuine native EndTurn; never a same-position MoveHero.
+ }
+@@ -473,6 +500,15 @@
+  if(pa->player!=playerID) return;
+  if(pendingEconomy && static_cast<int>(pa->requestID)==economyRequest)
+  {
++  if(learnedRecruitEnabled && pendingFreeTransfer)
++  {
++   const auto transfer=*pendingFreeTransfer;
++   if(transfer.nativeRequestID!=static_cast<int>(pa->requestID) || pa->packType!=CTypeList::getInstance().getTypeID<ArrangeStacks>(nullptr))
++   { typedFailure("free_transfer_ack_tuple_mismatch");return; }
++   const bool changed=pa->result && verifyFreeTransferApplied(transfer);
++   emitTyped("{\"event\":\"free_transfer_ack_state\",\"player\":"+std::to_string(playerID.getNum())+",\"native_request_id\":"+std::to_string(pa->requestID)+",\"success\":"+(pa->result ? "true" : "false")+",\"state_change_verified\":"+(changed ? "true" : "false")+",\"before_state\":"+transfer.beforeState+",\"state\":"+recruitTownState(transfer.townID)+"}");
++   pendingFreeTransfer.reset();if(!changed) typedFailure("free_transfer_ack_without_exact_conservation");
++  }
+   pendingEconomy=false;logGlobal->info("DirectorAI: economy request finished id=%d success=%d",economyRequest,pa->result);
+   traceState(pa->result ? "economy_applied" : "economy_failed");advanceTurn();
+  }
+@@ -484,14 +520,21 @@
+  const bool move=pa->packType==CTypeList::getInstance().getTypeID<MoveHero>(nullptr);
+  const bool end=pa->packType==CTypeList::getInstance().getTypeID<EndTurn>(nullptr);
+  const bool build=learnedBuildEnabled && pa->packType==CTypeList::getInstance().getTypeID<BuildStructure>(nullptr);
+- if(!move && !end && !build) return;
++ const bool recruit=learnedRecruitEnabled && pa->packType==CTypeList::getInstance().getTypeID<RecruitCreatures>(nullptr);
++ if(!move && !end && !build && !recruit) return;
+  if(!outstandingTyped || outstandingTyped->nativeRequestID!=static_cast<int>(pa->requestID) ||
+-    outstandingTyped->op!=(move ? "move" : (build ? "build" : "end_turn"))) { typedFailure("unmatched_typed_ack");return; }
++    outstandingTyped->op!=(move ? "move" : (build ? "build" : (recruit ? "recruit" : "end_turn")))) { typedFailure("unmatched_typed_ack");return; }
+  const auto ctx=*outstandingTyped; // Save the old turn, never substitute the live ownTurns.
+  if(build)
+  {
+   emitTypedAction("build_ack_state",ctx,",\"state\":"+buildTownState(ctx.townID));
+   if(pa->result && !ctx.buildResultSeen) typedFailure("build_ack_without_received_structure");
++ }
++ if(recruit)
++ {
++  const bool changed=pa->result && verifyRecruitApplied(ctx);
++  emitTypedAction("recruit_ack_state",ctx,std::string(",\"state_change_verified\":")+(changed ? "true" : "false")+",\"before_state\":"+ctx.beforeBuildState+",\"state\":"+recruitTownState(ctx.townID));
++  if(!changed) typedFailure("recruit_ack_without_exact_state_change");
+  }
+  emitTypedAction("package_applied",ctx,std::string(",\"source\":\"client\",\"package\":\"PackageApplied\",\"success\":")+(pa->result ? "true" : "false"));
+  outstandingTyped.reset(); // Only this exact native request/op ACK can clear the tuple.
+@@ -512,15 +555,26 @@
+ void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)
+ {
+  if(auto reply=dynamic_cast<const QueryReply *>(pack)) queryRequests[requestID]=reply->qid;
+- if(pendingEconomy && ((!learnedBuildEnabled && dynamic_cast<const BuildStructure *>(pack)) || dynamic_cast<const RecruitCreatures *>(pack) ||
++ if(pendingEconomy && ((!learnedBuildEnabled && dynamic_cast<const BuildStructure *>(pack)) || (!learnedRecruitEnabled && dynamic_cast<const RecruitCreatures *>(pack)) ||
+     dynamic_cast<const ArrangeStacks *>(pack) || dynamic_cast<const HireHero *>(pack))) economyRequest=requestID;
++ if(learnedRecruitEnabled && pendingFreeTransfer)
++ {
++  const auto * actual=dynamic_cast<const ArrangeStacks *>(pack);auto & transfer=*pendingFreeTransfer;
++  if(!actual || requestID<1 || pack->player!=playerID || static_cast<int>(pack->requestID)!=requestID || transfer.nativeRequestID!=-1 ||
++     actual->id1.getNum()!=transfer.sourceArmyID || actual->id2.getNum()!=transfer.targetArmyID || actual->p1.getNum()!=transfer.fromSlot || actual->p2.getNum()!=transfer.toSlot || actual->what!=transfer.expectedWhat || actual->val!=0)
++  { typedFailure("free_transfer_native_payload_mismatch");return; }
++  transfer.nativeRequestID=requestID;
++  emitTyped("{\"event\":\"free_transfer_native_sent\",\"player\":"+std::to_string(playerID.getNum())+",\"native_request_id\":"+std::to_string(requestID)+",\"source_army_id\":"+std::to_string(transfer.sourceArmyID)+",\"target_army_id\":"+std::to_string(transfer.targetArmyID)+",\"from_slot\":"+std::to_string(transfer.fromSlot)+",\"to_slot\":"+std::to_string(transfer.toSlot)+",\"creature_id\":"+std::to_string(transfer.creatureID)+",\"amount\":"+std::to_string(transfer.amount)+",\"actual_what\":"+std::to_string(actual->what)+",\"actual_val\":"+std::to_string(actual->val)+",\"before_state\":"+transfer.beforeState+"}");
++ }
+  const bool move=dynamic_cast<const MoveHero *>(pack)!=nullptr;
+  const bool end=dynamic_cast<const EndTurn *>(pack)!=nullptr;
+  const auto * actualBuild=dynamic_cast<const BuildStructure *>(pack);
+  const bool build=learnedBuildEnabled && actualBuild;
+- if(!move && !end && !build) return;
++ const auto * actualRecruit=dynamic_cast<const RecruitCreatures *>(pack);
++ const bool recruit=learnedRecruitEnabled && actualRecruit;
++ if(!move && !end && !build && !recruit) return;
+  if(requestID<1 || !preparedTyped || outstandingTyped || preparedTyped->ownTurn!=ownTurns ||
+-    preparedTyped->op!=(move ? "move" : (build ? "build" : "end_turn"))) { typedFailure("unbound_native_request");return; }
++    preparedTyped->op!=(move ? "move" : (build ? "build" : (recruit ? "recruit" : "end_turn")))) { typedFailure("unbound_native_request");return; }
+ 
+  if(pack->player!=playerID || static_cast<int>(pack->requestID)!=requestID)
+  { typedFailure("actual_native_request_identity_mismatch");return; }
+@@ -531,11 +585,18 @@
+  }
+  if(build && (pendingEconomy || actualBuild->tid.getNum()!=preparedTyped->townID || actualBuild->bid.getNum()!=preparedTyped->buildingID))
+  { typedFailure("actual_native_build_payload_mismatch");return; }
++ if(recruit && (pendingEconomy || actualRecruit->tid.getNum()!=preparedTyped->townID || actualRecruit->dst.getNum()!=preparedTyped->destinationArmyID || actualRecruit->crid.getNum()!=preparedTyped->creatureID || actualRecruit->amount!=preparedTyped->amount || actualRecruit->level!=preparedTyped->level))
++ { typedFailure("actual_native_recruit_payload_mismatch");return; }
+  outstandingTyped=*preparedTyped;outstandingTyped->nativeRequestID=requestID;preparedTyped.reset();
+  if(build)
+  {
+   const auto & ctx=*outstandingTyped;
+   emitTypedAction("native_action_sent",ctx,",\"actual_request\":{\"pack_type\":\"BuildStructure\",\"player\":"+std::to_string(pack->player.getNum())+",\"native_request_id\":"+std::to_string(requestID)+",\"town_id\":"+std::to_string(actualBuild->tid.getNum())+",\"building_id\":"+std::to_string(actualBuild->bid.getNum())+"},\"before_state\":"+ctx.beforeBuildState);
++ }
++ else if(recruit)
++ {
++  const auto & ctx=*outstandingTyped;
++  emitTypedAction("native_action_sent",ctx,",\"actual_request\":{\"pack_type\":\"RecruitCreatures\",\"player\":"+std::to_string(pack->player.getNum())+",\"native_request_id\":"+std::to_string(requestID)+",\"town_id\":"+std::to_string(actualRecruit->tid.getNum())+",\"destination_army_id\":"+std::to_string(actualRecruit->dst.getNum())+",\"creature_id\":"+std::to_string(actualRecruit->crid.getNum())+",\"amount\":"+std::to_string(actualRecruit->amount)+",\"level\":"+std::to_string(actualRecruit->level)+"},\"before_state\":"+ctx.beforeBuildState);
+  }
+  else emitTypedAction("native_action_sent",*outstandingTyped);
+ }
+@@ -585,6 +646,7 @@
+ 
+ bool CDirectorAI::issueFreeArmyTransfer()
+ {
++ if(learnedRecruitEnabled) return issueFreeArmyTransferV6();
+ 	for(const auto * town : cb->getTownsInfo())
+ 	{
+ 		const auto * army = town->getUpperArmy();
+@@ -628,6 +690,8 @@
+ 				return true;
+ 			}
+ 		}
++  // New mode permits the existing no-hero rescue only; no scripted creature spending or legacy once-key transfer.
++  if(learnedRecruitEnabled) continue;
+ 		const BuildingID priorities[] = {BuildingID::TOWN_HALL, BuildingID::CITY_HALL,
+ 			BuildingID::CAPITOL, BuildingID::TAVERN, BuildingID::MARKETPLACE,
+ 			BuildingID::BLACKSMITH, BuildingID::MAGES_GUILD_1, BuildingID::FORT, BuildingID::DWELL_LVL_1,
+@@ -802,7 +866,7 @@
+  const std::string request = std::string(directory) + "/request-" + suffix;
+  const std::string response = std::string(directory) + "/action-" + suffix;
+  std::ostringstream out;
+- out << "{\"schema\":\"" << (learnedBuildEnabled ? "strategy-candidates-v5" : "strategy-candidates-v4") << "\",\"request_id\":" << externalDecisionSerial
++ out << "{\"schema\":\"" << (learnedRecruitEnabled ? "strategy-candidates-v6" : (learnedBuildEnabled ? "strategy-candidates-v5" : "strategy-candidates-v4")) << "\",\"request_id\":" << externalDecisionSerial
+   << ",\"player\":" << static_cast<int>(playerID.getNum()) << ",\"own_turn\":" << ownTurns << ",\"own_hero_count\":1"
+   << ",\"day\":" << cb->getCalendar().getCurrentDay() << ",\"hero\":" << hero->id.getNum()
+   << ",\"from\":[" << hero->visitablePos().x << ',' << hero->visitablePos().y << ',' << hero->visitablePos().z
+@@ -817,7 +881,8 @@
+    << "],\"approx_army_value\":" << threat.second << '}';
+  }
+  out << "]";
+- if(learnedBuildEnabled) out << ",\"economy_epoch\":\"learned-economy-build-v1\",\"economy_window_open\":" << (buildWindow.open ? "true" : "false") << ",\"resources\":" << LabLearnedBuild::resources(cb->getResourceAmount());
++ if(learnedBuildEnabled) out << ",\"economy_epoch\":\"" << (learnedRecruitEnabled ? "learned-economy-build-recruit-v1" : "learned-economy-build-v1") << "\",\"economy_window_open\":" << (buildWindow.open ? "true" : "false") << ",\"resources\":" << LabLearnedBuild::resources(cb->getResourceAmount());
++ if(learnedRecruitEnabled) out << ",\"creature_catalog_sha256\":\"" << creatureCatalogSHA << '"';
+  out << ",\"own_towns\":[";first=true;
+  for(const auto * town : cb->getTownsInfo())
+  {
+@@ -828,6 +893,7 @@
+   {
+    if(town->built<0 || town->getFactionID().getNum()<0) { typedFailure("invalid_own_town_state");return -1; }
+    out << ",\"town_id\":" << town->id.getNum() << ",\"faction_id\":" << town->getFactionID().getNum() << ",\"built_today\":" << town->built << ",\"buildings\":" << LabLearnedBuild::ids(town->getBuildings());
++   if(learnedRecruitEnabled) out << ",\"recruit_state\":" << recruitTownState(town->id.getNum());
+   }
+   out << '}';
+  }
+@@ -835,7 +901,7 @@
+  for(const auto & c : candidates)
+  {
+   if(!first) out << ',';first=false;out << typedCandidateJSON(c);
+-  operations.push_back(c.endTurn ? "end_turn" : (c.build ? "build" : "move"));
++  operations.push_back(c.endTurn ? "end_turn" : (c.build ? "build" : (c.recruit ? "recruit" : "move")));
+  }
+  out << "]}\n";const auto requestBytes=out.str();const auto requestSHA=LabTypedPolicy::sha256(requestBytes);
+  {
+@@ -856,12 +922,13 @@
+    try
+    {
+     const auto selected=LabTypedPolicy::parseResponse(raw,static_cast<int>(externalDecisionSerial),playerID.getNum(),
+-       hero->id.getNum(),ownTurns,requestSHA,operations,learnedBuildEnabled ? "strategy-typed-action-response-v2" : "strategy-typed-action-response-v1");
++       hero->id.getNum(),ownTurns,requestSHA,operations,learnedRecruitEnabled ? "strategy-typed-action-response-v3" : (learnedBuildEnabled ? "strategy-typed-action-response-v2" : "strategy-typed-action-response-v1"));
+     TypedContext ctx;ctx.automatic=false;ctx.decisionID=static_cast<int>(externalDecisionSerial);
+     ctx.player=playerID.getNum();ctx.hero=hero->id.getNum();ctx.ownTurn=ownTurns;
+     ctx.op=selected.op;ctx.selectedIndex=selected.index;ctx.requestSHA=requestSHA;
+     ctx.classification=selected.classification;ctx.candidateJSON=typedCandidateJSON(candidates[selected.index]);
+     if(candidates[selected.index].build) { ctx.townID=candidates[selected.index].townID;ctx.buildingID=candidates[selected.index].buildingID; }
++    if(candidates[selected.index].recruit) { const auto & c=candidates[selected.index];ctx.townID=c.townID;ctx.destinationArmyID=c.destinationArmyID;ctx.creatureID=c.creatureID;ctx.amount=c.amount;ctx.level=c.level; }
+     preparedTyped=ctx;return selected.index;
+    }
+    catch(const std::exception & error)
+@@ -924,6 +991,7 @@
+ {
+  if(c.endTurn) return "{\"op\":\"end_turn\"}";
+  if(c.build) return "{\"op\":\"build\",\"actor\":\"player_town\",\"town_id\":"+std::to_string(c.townID)+",\"building_id\":"+std::to_string(c.buildingID)+",\"category\":\""+c.category+"\",\"cost\":"+c.costJSON+"}";
++ if(c.recruit) return "{\"op\":\"recruit\",\"actor\":\"player_town\",\"town_id\":"+std::to_string(c.townID)+",\"destination_army_id\":"+std::to_string(c.destinationArmyID)+",\"destination_role\":\""+(c.destinationArmyID==c.townID ? std::string("town") : std::string("garrison_hero"))+"\",\"creature_id\":"+std::to_string(c.creatureID)+",\"amount\":"+std::to_string(c.amount)+",\"level\":"+std::to_string(c.level)+",\"destination_slot\":"+std::to_string(c.nativeSlot)+",\"quantity_bucket\":\""+c.quantityBucket+"\",\"available\":"+std::to_string(c.available)+",\"affordable\":"+std::to_string(c.affordable)+",\"cost\":"+c.costJSON+"}";
+  std::ostringstream out;
+  out << "{\"op\":\"move\",\"kind\":" << c.kind << ",\"position\":[" << c.destination.x << ',' << c.destination.y
+   << ',' << c.destination.z << "],\"next\":[" << c.next.x << ',' << c.next.y << ',' << c.next.z
+@@ -972,7 +1040,7 @@
+  if(ctx.automatic) out << "null"; else out << ctx.decisionID;
+  out << ",\"native_request_id\":" << ctx.nativeRequestID << ",\"player\":" << ctx.player
+   << ",\"hero\":" << ctx.hero << ",\"own_turn\":" << ctx.ownTurn << ",\"op\":\"" << ctx.op
+-  << "\",\"pack_type\":\"" << (ctx.op == "move" ? "MoveHero" : (ctx.op=="build" ? "BuildStructure" : "EndTurn")) << "\",\"selected_index\":";
++  << "\",\"pack_type\":\"" << (ctx.op == "move" ? "MoveHero" : (ctx.op=="build" ? "BuildStructure" : (ctx.op=="recruit" ? "RecruitCreatures" : "EndTurn"))) << "\",\"selected_index\":";
+  if(ctx.automatic) out << "null"; else out << ctx.selectedIndex;
+  out << ",\"request_sha256\":";
+  if(ctx.automatic) out << "null"; else out << '"' << ctx.requestSHA << '"';
+@@ -980,6 +1048,7 @@
+  if(ctx.automatic) out << ",\"automatic_reason\":\"" << ctx.automaticReason << '"';
+  else out << ",\"classification\":\"" << ctx.classification << '"';
+  if(ctx.op=="build") out << ",\"actor\":\"player_town\",\"town_id\":" << ctx.townID << ",\"building_id\":" << ctx.buildingID;
++ if(ctx.op=="recruit") out << ",\"actor\":\"player_town\",\"town_id\":" << ctx.townID << ",\"destination_army_id\":" << ctx.destinationArmyID << ",\"creature_id\":" << ctx.creatureID << ",\"amount\":" << ctx.amount << ",\"level\":" << ctx.level;
+  out << extra << '}';emitTyped(out.str());
+ }
+ 
+@@ -1067,3 +1136,205 @@
+   ",\"what\":"+std::to_string(what)+",\"state\":"+buildTownState(town->id.getNum()));
+  // Observation only: never clear the tuple, synthesize ACK, or advance here.
+ }
++
++// Schema6 owns creature spending. This is an actual native offer/resource/slot
++// view, not a surrogate economy simulator. War machines/external dwellings excluded.
++void CDirectorAI::appendRecruitCandidates() const
++{
++ if(!learnedRecruitEnabled || !buildWindow.open) return;
++ std::map<std::tuple<int,int,int,int,int>,Candidate> offers;
++ for(const auto * town:cb->getTownsInfo())
++ {
++  if(!town || town->getOwner()!=playerID) continue;
++  const auto * army=town->getUpperArmy();
++  if(!army || army->getOwner()!=playerID) continue;
++  for(int level=0;level<static_cast<int>(town->creatures.size());++level)
++  {
++   const auto & stock=town->creatures[level];
++   if(stock.first<=0 || stock.first>std::numeric_limits<int>::max()) continue;
++   for(const auto id:stock.second)
++   {
++    const auto * definition=id.toCreature();
++    if(!definition || id.getNum()<0 || definition->warMachine!=ArtifactID::NONE) continue;
++    const auto slot=army->getSlotFor(id);if(!slot.validSlot()) continue;
++    const int affordable=definition->maxAmount(cb->getResourceAmount()); // Same native predicate as server.
++    const int limit=std::min<int>(stock.first,affordable);
++    for(const int quantity:LabLearnedRecruit::quantities(limit))
++    {
++     const auto totalCost=definition->getFullRecruitCost()*quantity;
++     if(!LabLearnedBuild::nonnegative(totalCost) || !cb->getResourceAmount().canAfford(totalCost)) continue;
++     Candidate c{};c.recruit=true;c.townID=town->id.getNum();c.destinationArmyID=army->id.getNum();c.creatureID=id.getNum();c.level=level;c.amount=quantity;
++     c.nativeSlot=slot.getNum();c.available=stock.first;c.affordable=affordable;
++     c.quantityBucket=quantity==1 ? "one" : (quantity==limit ? "affordable_all" : "half");
++     c.costJSON=LabLearnedBuild::resources(totalCost);
++     offers[{c.townID,c.destinationArmyID,c.level,c.creatureID,c.amount}]=c;
++    }
++   }
++  }
++ }
++ for(const auto & item:offers) candidates.push_back(item.second);
++}
++
++bool CDirectorAI::issuePolicyRecruit()
++{
++ if(!learnedRecruitEnabled || !buildWindow.open || !preparedTyped || preparedTyped->op!="recruit" || pendingEconomy || outstandingTyped ||
++    selectedCandidate<0 || selectedCandidate>=static_cast<int>(candidates.size()))
++ { typedFailure("invalid_policy_recruit_state");return false; }
++ const auto chosen=candidates[selectedCandidate];
++ if(!chosen.recruit || chosen.townID!=preparedTyped->townID || chosen.destinationArmyID!=preparedTyped->destinationArmyID || chosen.creatureID!=preparedTyped->creatureID || chosen.amount!=preparedTyped->amount || chosen.level!=preparedTyped->level)
++ { typedFailure("recruit_candidate_tuple_mismatch");return false; }
++ const CGTownInstance * town=nullptr;
++ for(const auto * t:cb->getTownsInfo()) if(t && t->id.getNum()==chosen.townID && t->getOwner()==playerID) town=t;
++ if(!town || chosen.level<0 || chosen.level>=static_cast<int>(town->creatures.size()))
++ { typedFailure("selected_recruit_town_or_level_changed");return false; }
++ const auto * army=town->getUpperArmy();const CreatureID id(chosen.creatureID);const auto * definition=id.toCreature();
++ const auto & stock=town->creatures[chosen.level];
++ if(!army || army->getOwner()!=playerID || army->id.getNum()!=chosen.destinationArmyID || !definition || definition->warMachine!=ArtifactID::NONE ||
++    std::find(stock.second.begin(),stock.second.end(),id)==stock.second.end() || stock.first!=chosen.available || chosen.amount<=0 || chosen.amount>stock.first)
++ { typedFailure("selected_recruit_stock_or_actor_changed");return false; }
++ const auto slot=army->getSlotFor(id);const int affordable=definition->maxAmount(cb->getResourceAmount());
++ const auto totalCost=definition->getFullRecruitCost()*chosen.amount;
++ if(!slot.validSlot() || slot.getNum()!=chosen.nativeSlot || affordable!=chosen.affordable || chosen.amount>affordable ||
++    !LabLearnedRecruit::quantities(std::min<int>(stock.first,affordable)).count(chosen.amount) || !LabLearnedBuild::nonnegative(totalCost) ||
++    !cb->getResourceAmount().canAfford(totalCost) || LabLearnedBuild::resources(totalCost)!=chosen.costJSON)
++ { typedFailure("selected_recruit_slot_or_cost_changed");return false; }
++ preparedTyped->beforeStock=stock.first;preparedTyped->beforeResources=resourceTotals(cb->getResourceAmount());preparedTyped->recruitCost=resourceTotals(totalCost);
++ preparedTyped->beforeArmy=armyTotals(army);preparedTyped->beforeBuildState=recruitTownState(chosen.townID);
++ for(const auto & offer:town->creatures)
++ {
++  std::vector<int> ids;for(const auto offered:offer.second) ids.push_back(offered.getNum());
++  preparedTyped->beforeRecruitStock.emplace_back(offer.first,std::move(ids));
++ }
++ if(const auto * visitor=town->getVisitingHero()) { preparedTyped->beforeVisitorID=visitor->id.getNum();preparedTyped->beforeVisitorArmy=armyTotals(visitor); }
++ emitTypedBusy();traceState("before_policy_recruit");
++ // CCallback returns void. Only the actual requestSent callback may bind this tuple.
++ cb->recruitCreatures(town,army,id,chosen.amount,chosen.level);
++ // No post-send liveness assertion: a real fast ACK may already have cleared it.
++ return true;
++}
++
++std::string CDirectorAI::recruitTownState(int townID) const
++{
++ for(const auto * town:cb->getTownsInfo()) if(town && town->id.getNum()==townID && town->getOwner()==playerID)
++ {
++  const auto * upper=town->getUpperArmy();const auto * visitor=town->getVisitingHero();std::ostringstream out;
++  out << "{\"town_id\":" << townID << ",\"owner\":" << town->getOwner().getNum() << ",\"built_today\":" << town->built
++   << ",\"resources\":" << LabLearnedBuild::resources(cb->getResourceAmount()) << ",\"upper_army_id\":" << upper->id.getNum()
++   << ",\"upper_army\":" << armySlotsJSON(upper) << ",\"visitor\":";
++  if(visitor) out << "{\"hero_id\":" << visitor->id.getNum() << ",\"army_id\":" << visitor->id.getNum() << ",\"owner\":" << visitor->getOwner().getNum() << ",\"army\":" << armySlotsJSON(visitor) << '}';
++  else out << "null";
++  out << ",\"recruit_stock\":[";
++  for(int level=0;level<static_cast<int>(town->creatures.size());++level)
++  {
++   if(level) out << ',';out << "{\"level\":" << level << ",\"available\":" << town->creatures[level].first << ",\"creature_ids\":" << LabLearnedBuild::ids(town->creatures[level].second) << '}';
++  }
++  out << "]}";return out.str();
++ }
++ return "null";
++}
++
++bool CDirectorAI::verifyRecruitApplied(const TypedContext & ctx) const
++{
++ for(const auto * town:cb->getTownsInfo()) if(town && town->getOwner()==playerID && town->id.getNum()==ctx.townID)
++ {
++  const auto * army=town->getUpperArmy();
++  if(!army || army->getOwner()!=playerID || army->id.getNum()!=ctx.destinationArmyID || ctx.level<0 || ctx.level>=static_cast<int>(town->creatures.size()) || ctx.amount<=0 ||
++     town->creatures[ctx.level].first!=ctx.beforeStock-ctx.amount) return false;
++  auto expected=ctx.beforeArmy;expected[ctx.creatureID]+=ctx.amount;
++  if(armyTotals(army)!=expected) return false;
++  if(ctx.beforeRecruitStock.size()!=town->creatures.size()) return false;
++  for(unsigned level=0;level<town->creatures.size();++level)
++  {
++   const auto & before=ctx.beforeRecruitStock[level];const auto & after=town->creatures[level];std::vector<int> ids;
++   for(const auto id:after.second) ids.push_back(id.getNum());
++   if(ids!=before.second || after.first!=before.first-(static_cast<int>(level)==ctx.level ? ctx.amount : 0)) return false;
++  }
++  const auto * visitor=town->getVisitingHero();
++  if((visitor ? visitor->id.getNum() : -1)!=ctx.beforeVisitorID) return false;
++  if(visitor && visitor->id.getNum()!=ctx.destinationArmyID && armyTotals(visitor)!=ctx.beforeVisitorArmy) return false;
++  const auto resources=resourceTotals(cb->getResourceAmount());
++  for(unsigned i=0;i<7;++i) if(resources[i]!=ctx.beforeResources[i]-ctx.recruitCost[i]) return false;
++  return true;
++ }
++ return false;
++}
++
++bool CDirectorAI::issueFreeArmyTransferV6()
++{
++ if(!learnedRecruitEnabled || pendingEconomy || pendingFreeTransfer || outstandingTyped || preparedTyped) return false;
++ for(const auto * town:cb->getTownsInfo())
++ {
++  if(!town || town->getOwner()!=playerID) continue;
++  const auto * army=town->getUpperArmy();const auto * hero=town->getVisitingHero();
++  if(!army || !hero || army==hero || hero->getOwner()!=playerID || army->getOwner()!=playerID || (army->needsLastStack() && army->stacksCount()<2)) continue;
++  for(const auto & slot:army->Slots())
++  {
++   const auto id=slot.second->getCreatureID();const auto target=hero->getSlotFor(id);
++   if(!target.validSlot() || slot.second->getCount()<=0 || slot.second->getCount()>std::numeric_limits<int>::max()) continue;
++   TransferContext tx;tx.townID=town->id.getNum();tx.sourceArmyID=army->id.getNum();tx.targetArmyID=hero->id.getNum();tx.creatureID=id.getNum();tx.amount=slot.second->getCount();tx.fromSlot=slot.first.getNum();tx.toSlot=target.getNum();
++   tx.expectedWhat=army->getCreature(slot.first)==hero->getCreature(target) ? 2 : 1;
++   tx.sourceBefore=armyTotals(army);tx.targetBefore=armyTotals(hero);tx.resources=resourceTotals(cb->getResourceAmount());tx.beforeState=recruitTownState(tx.townID);
++   tx.fingerprint=tx.beforeState+"/"+std::to_string(tx.fromSlot)+"/"+std::to_string(tx.toSlot);
++   if(!attemptedFreeTransferStates.insert(tx.fingerprint).second) continue;
++   pendingFreeTransfer=tx;pendingEconomy=true;economyRequest=-1;
++   traceState("before_army_transfer");cb->mergeOrSwapStacks(army,hero,slot.first,target);return true;
++  }
++ }
++ return false;
++}
++
++bool CDirectorAI::verifyFreeTransferApplied(const TransferContext & ctx) const
++{
++ for(const auto * town:cb->getTownsInfo()) if(town && town->getOwner()==playerID && town->id.getNum()==ctx.townID)
++ {
++  const auto * source=town->getUpperArmy();const auto * target=town->getVisitingHero();
++  if(!source || !target || source->id.getNum()!=ctx.sourceArmyID || target->id.getNum()!=ctx.targetArmyID || source->getOwner()!=playerID || target->getOwner()!=playerID || resourceTotals(cb->getResourceAmount())!=ctx.resources) return false;
++  auto expectedSource=ctx.sourceBefore;auto expectedTarget=ctx.targetBefore;
++  if(expectedSource[ctx.creatureID]<ctx.amount || ctx.amount<=0) return false;
++  expectedSource[ctx.creatureID]-=ctx.amount;if(expectedSource[ctx.creatureID]==0) expectedSource.erase(ctx.creatureID);
++  expectedTarget[ctx.creatureID]+=ctx.amount;
++  return armyTotals(source)==expectedSource && armyTotals(target)==expectedTarget;
++ }
++ return false;
++}
++
++bool CDirectorAI::exportCreatureCatalog()
++{
++ // This is the actual public runtime registry, not a guessed core-ID range.
++ std::map<int,std::string> entries;std::set<std::string> keys;
++ for(const auto & creature:LIBRARY->creh->objects)
++ {
++  if(!creature) continue;
++  const auto id=creature->getIndex();const auto key=creature->getJsonKey();
++  if(id<0 || key.empty() || !entries.emplace(id,key).second || !keys.insert(key).second)
++  { typedFailure("invalid_runtime_creature_catalog");return false; }
++ }
++ if(entries.empty()) { typedFailure("empty_runtime_creature_catalog");return false; }
++ std::ostringstream out;out << "{\"schema\":\"strategy-runtime-creature-catalog-v1\",\"entries\":[";bool first=true;
++ for(const auto & item:entries)
++ {
++  if(!first) out << ',';first=false;
++  out << "{\"creature_id\":" << item.first << ",\"canonical_key\":" << LabLearnedRecruit::jsonString(item.second) << '}';
++ }
++ out << "]}\n";const auto bytes=out.str();creatureCatalogSHA=LabTypedPolicy::sha256(bytes);
++ const auto * agent=std::getenv("LAB_ADV_AGENT_DIR");
++ if(!agent) { typedFailure("creature_catalog_missing_agent_directory");return false; }
++ const auto path=std::string(agent)+"/creature-catalog.json";
++ std::ifstream prior(path,std::ios::binary);
++ if(prior)
++ {
++  const std::string existing((std::istreambuf_iterator<char>(prior)),std::istreambuf_iterator<char>());
++  if(existing!=bytes) { typedFailure("creature_catalog_existing_bytes_differ");return false; }
++ }
++ else
++ {
++  std::ofstream file(path+".tmp",std::ios::binary);file << bytes;file.close();
++  if(!file || std::rename((path+".tmp").c_str(),path.c_str())!=0)
++  { typedFailure("creature_catalog_publish_failed");return false; }
++ }
++ const auto json=bytes.substr(0,bytes.size()-1);
++ logGlobal->info("DirectorCreatureCatalog sha256=%s json=%s",creatureCatalogSHA,json);
++ // Actual capsule/source/bin/load binding is certified externally against this
++ // raw SHA and log mirror; do not trust an ENV-supplied capsule identity as proof.
++ return true;
++}
+--- compiled-capsule02/AI/DirectorAI/CDirectorAI.h
++++ reviewed-source-ready/AI/DirectorAI/CDirectorAI.h
+@@ -72,6 +72,8 @@
+ 		double score;
+ 		bool endTurn = false;
+   bool build = false; int townID = -1; int buildingID = -1;
++  bool recruit = false; int destinationArmyID = -1; int creatureID = -1; int amount = 0; int level = -1;
++  int nativeSlot = -1; int available = 0; int affordable = 0; std::string quantityBucket;
+   std::string category, costJSON;
+ 	};
+ 	mutable std::vector<Candidate> candidates;
+@@ -91,15 +93,37 @@
+  {
+   bool automatic = false;bool moveResultSeen = false;bool buildResultSeen = false;
+   int townID = -1;int buildingID = -1;std::string beforeBuildState;
++  int destinationArmyID=-1;int creatureID=-1;int amount=0;int level=-1;int beforeStock=0;
++  std::array<std::int64_t,7> beforeResources{},recruitCost{};
++  std::map<int,std::int64_t> beforeArmy;
++  std::vector<std::pair<std::int64_t,std::vector<int>>> beforeRecruitStock;
++  int beforeVisitorID=-1;std::map<int,std::int64_t> beforeVisitorArmy;
+   int3 objectStep = int3(-1,-1,-1);
+   int decisionID = -1;int nativeRequestID = -1;int player = 0;int hero = 0;int ownTurn = 0;int selectedIndex = -1;
+   std::string op, requestSHA, candidateJSON, classification, automaticReason;
+  };
+  bool learnedBuildEnabled = false;
++ bool learnedRecruitEnabled = false;
++ std::string creatureCatalogSHA;
++ bool exportCreatureCatalog();
++ struct TransferContext
++ {
++  int townID=-1,sourceArmyID=-1,targetArmyID=-1,creatureID=-1,amount=0,fromSlot=-1,toSlot=-1,nativeRequestID=-1,expectedWhat=-1;
++  std::array<std::int64_t,7> resources{};
++  std::map<int,std::int64_t> sourceBefore,targetBefore;
++  std::string fingerprint,beforeState;
++ };
++ std::optional<TransferContext> pendingFreeTransfer;
++ std::set<std::string> attemptedFreeTransferStates;
+  LabLearnedBuild::Window buildWindow;
+  void appendBuildCandidates() const;
+  std::string buildTownState(int townID) const;
+  bool issuePolicyBuild();
++ void appendRecruitCandidates() const;
++ bool issuePolicyRecruit();
++ std::string recruitTownState(int townID) const;
++ bool verifyRecruitApplied(const TypedContext & ctx) const;
++ bool verifyFreeTransferApplied(const TransferContext & ctx) const;
+  mutable std::optional<TypedContext> preparedTyped;
+  std::optional<TypedContext> outstandingTyped;
+  mutable bool typedProtocolFailed = false;
+@@ -111,6 +135,7 @@
+  bool issueMove();
+ 	bool issueEconomy();
+ 	bool issueFreeArmyTransfer();
++ bool issueFreeArmyTransferV6();
+ 	void traceState(const std::string & event) const;
+ 	void traceDecision(const CGHeroInstance * hero, const int3 & destination, const int3 & step) const;
+ 	int chooseExternalCandidate(const CGHeroInstance * hero) const;
+--- compiled-capsule02/AI/DirectorAI/TypedPolicyProtocol.h
++++ reviewed-source-ready/AI/DirectorAI/TypedPolicyProtocol.h
+@@ -230,3 +230,34 @@
+  const auto line=json+'\n';if(out) out.write(line.data(),line.size());
+ }
+ }
++
++#include <algorithm>
++// New independent schema6 mode. Legacy schema4/5 parsers/windows are untouched.
++namespace LabLearnedRecruit
++{
++inline std::string jsonString(const std::string & value)
++{
++ std::ostringstream out;out << '"';
++ for(const unsigned char c:value)
++ {
++  if(c=='"' || c=='\\') out << '\\' << static_cast<char>(c);
++  else if(c<32) out << "\\u" << std::hex << std::setfill('0') << std::setw(4) << static_cast<unsigned>(c) << std::dec;
++  else out << static_cast<char>(c);
++ }
++ out << '"';return out.str();
++}
++inline bool enabled(const char * mode) { return mode && std::string(mode)=="build_recruit_v1"; }
++template<class Window> inline bool select(Window & window,const std::string & op)
++{
++ if(window.ownTurn<1) return false;
++ if(op=="build" || op=="recruit") return window.open;
++ if(op=="move") return true; // Owned-town economy remains available after real movement.
++ if(op!="end_turn") return false;
++ window.open=false;return true;
++}
++inline std::set<int> quantities(int affordableAvailable)
++{
++ if(affordableAvailable<=0) return {};
++ return {1,std::max(1,affordableAvailable/2),affordableAvailable};
++}
++}
+--- compiled-capsule02/server/CGameHandler.cpp
++++ reviewed-source-ready/server/CGameHandler.cpp
+@@ -526,11 +526,16 @@
+  {
+   const bool move = dynamic_cast<const MoveHero *>(&pack) != nullptr;
+   const auto * build=dynamic_cast<const BuildStructure *>(&pack);
++  const auto * recruit=dynamic_cast<const RecruitCreatures *>(&pack);
++  const auto * transfer=dynamic_cast<const ArrangeStacks *>(&pack);
+   const char * mode=std::getenv("LAB_ADV_LEARNED_ECONOMY");
+-  if(!move && !dynamic_cast<const EndTurn *>(&pack) && !(build && mode && std::string(mode)=="build_v1")) return;
++  const bool schema6=mode && std::string(mode)=="build_recruit_v1";
++  if(!move && !dynamic_cast<const EndTurn *>(&pack) && !(build && mode && (std::string(mode)=="build_v1" || schema6)) && !(schema6 && (recruit || transfer))) return;
+   logGlobal->info("TypedActionApplied player=%d native_request_id=%d op=%s success=%d",
+-   static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),move ? "move" : (build ? "build" : "end_turn"),success ? 1 : 0);
++   static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),move ? "move" : (build ? "build" : (recruit ? "recruit" : (transfer ? "free_transfer" : "end_turn"))),success ? 1 : 0);
+   if(build) logGlobal->info("TypedBuildApplied player=%d native_request_id=%d town_id=%d building_id=%d success=%d",static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),build->tid.getNum(),build->bid.getNum(),success ? 1 : 0);
++  if(schema6 && recruit) logGlobal->info("TypedRecruitApplied player=%d native_request_id=%d town_id=%d destination_army_id=%d creature_id=%d amount=%u level=%d success=%d",static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),recruit->tid.getNum(),recruit->dst.getNum(),recruit->crid.getNum(),recruit->amount,recruit->level,success ? 1 : 0);
++  if(schema6 && transfer) logGlobal->info("TypedFreeTransferApplied player=%d native_request_id=%d source_army_id=%d target_army_id=%d from_slot=%d to_slot=%d what=%d val=%d success=%d",static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),transfer->id1.getNum(),transfer->id2.getNum(),transfer->p1.getNum(),transfer->p2.getNum(),transfer->what,transfer->val,success ? 1 : 0);
+  };
+ 
+ 	PackageReceived received(

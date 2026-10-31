@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "roundtrip_weights_equal": true,
+  "interrupted_write_preserves_last_checkpoint": true,
+  "temporary_files_cleaned": true,
+  "probe_not_a_training_candidate": true
+}

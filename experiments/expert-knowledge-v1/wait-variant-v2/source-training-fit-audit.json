@@ -1,0 +1,157 @@
+{
+  "status": "passed",
+  "device": "CPU only; no backward, optimizer, CUDA or game execution",
+  "training_report_sha256": "921395362b89eea26cadb64a61084ada808ff9c1a11e695e8f0786e271a51a83",
+  "initial_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+  "model_sha256": "839d7747c8a058aa0a34af329f199dcc5cd6d598d76db7b084b84330d8eb63e1",
+  "dataset_sha256": "54a40ca76e7a2bf578d3381d8a50df1238a4433f265a176541064c8400910eb1",
+  "auditor_sha256": "15520002641cbd9e921525457e2f92fb34c4c7e7234ce2ad9fa1ac1aa48cdc5f",
+  "samples": 4,
+  "split": "train",
+  "heldout_states_or_results_read": false,
+  "source_codec_unchanged": true,
+  "graph_and_value_tensors_unchanged": true,
+  "shape_and_finite_checks_passed": true,
+  "batch_structure": "Same four records as CUDA BC; role-specific graph batches and head_collate on CPU",
+  "nll_cpu": {
+    "before": 9.843853950500488,
+    "after": 1.8457722663879395
+  },
+  "nll_cuda_recorded": {
+    "before": 9.843875885009766,
+    "after": 1.8457727432250977
+  },
+  "nll_absolute_tolerance": 0.0002,
+  "nll_absolute_difference": {
+    "before": 2.193450927734375e-05,
+    "after": 4.76837158203125e-07
+  },
+  "fit": {
+    "before": {
+      "argmax_correct": 1,
+      "samples": 4,
+      "records": [
+        {
+          "case": "hallas-wait-ghost-v2-2-attacker",
+          "actor_side": 0,
+          "split": "train",
+          "legal_actions": 137,
+          "wait_action_id": 161,
+          "wait_probability": 0.9899594783782959,
+          "wait_rank": 1,
+          "tied_logit_count": 1,
+          "argmax_action_id": 161,
+          "argmax_matches_wait": true,
+          "wait_negative_log_probability": 0.010091237723827362
+        },
+        {
+          "case": "hallas-wait-ghost-v2-2-defender",
+          "actor_side": 1,
+          "split": "train",
+          "legal_actions": 139,
+          "wait_action_id": 158,
+          "wait_probability": 3.733103426384332e-08,
+          "wait_rank": 13,
+          "tied_logit_count": 1,
+          "argmax_action_id": 157,
+          "argmax_matches_wait": false,
+          "wait_negative_log_probability": 17.10344123840332
+        },
+        {
+          "case": "hallas-wait-ghost-v2-3-attacker",
+          "actor_side": 0,
+          "split": "train",
+          "legal_actions": 137,
+          "wait_action_id": 161,
+          "wait_probability": 0.256517618894577,
+          "wait_rank": 2,
+          "tied_logit_count": 1,
+          "argmax_action_id": 159,
+          "argmax_matches_wait": false,
+          "wait_negative_log_probability": 1.3605579137802124
+        },
+        {
+          "case": "hallas-wait-ghost-v2-3-defender",
+          "actor_side": 1,
+          "split": "train",
+          "legal_actions": 139,
+          "wait_action_id": 158,
+          "wait_probability": 8.368894466315169e-10,
+          "wait_rank": 43,
+          "tied_logit_count": 1,
+          "argmax_action_id": 155,
+          "argmax_matches_wait": false,
+          "wait_negative_log_probability": 20.901329040527344
+        }
+      ]
+    },
+    "after": {
+      "argmax_correct": 3,
+      "samples": 4,
+      "records": [
+        {
+          "case": "hallas-wait-ghost-v2-2-attacker",
+          "actor_side": 0,
+          "split": "train",
+          "legal_actions": 137,
+          "wait_action_id": 161,
+          "wait_probability": 0.9995670914649963,
+          "wait_rank": 1,
+          "tied_logit_count": 1,
+          "argmax_action_id": 161,
+          "argmax_matches_wait": true,
+          "wait_negative_log_probability": 0.00043299360550008714
+        },
+        {
+          "case": "hallas-wait-ghost-v2-2-defender",
+          "actor_side": 1,
+          "split": "train",
+          "legal_actions": 139,
+          "wait_action_id": 158,
+          "wait_probability": 0.03482172265648842,
+          "wait_rank": 1,
+          "tied_logit_count": 1,
+          "argmax_action_id": 158,
+          "argmax_matches_wait": true,
+          "wait_negative_log_probability": 3.357513904571533
+        },
+        {
+          "case": "hallas-wait-ghost-v2-3-attacker",
+          "actor_side": 0,
+          "split": "train",
+          "legal_actions": 137,
+          "wait_action_id": 161,
+          "wait_probability": 0.9263300895690918,
+          "wait_rank": 1,
+          "tied_logit_count": 1,
+          "argmax_action_id": 161,
+          "argmax_matches_wait": true,
+          "wait_negative_log_probability": 0.07652465999126434
+        },
+        {
+          "case": "hallas-wait-ghost-v2-3-defender",
+          "actor_side": 1,
+          "split": "train",
+          "legal_actions": 139,
+          "wait_action_id": 158,
+          "wait_probability": 0.01928134076297283,
+          "wait_rank": 8,
+          "tied_logit_count": 1,
+          "argmax_action_id": 157,
+          "argmax_matches_wait": false,
+          "wait_negative_log_probability": 3.948617458343506
+        }
+      ]
+    }
+  },
+  "files_read_or_hashed": [
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/graph_observation_codec.py",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/offline_source_fit_audit.py",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/candidate-bc-train.jsonl",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/models/source-wait-bc.pt",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source-bc-training.json",
+    "/mnt/g/Heroes3-AI-Lab/research/recovered-graph.py",
+    "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt"
+  ],
+  "limitations": "Training-label fit only. Four initial WAIT labels do not establish held-out improvement, selective timing, counter-tactics or ordinary-battle retention."
+}

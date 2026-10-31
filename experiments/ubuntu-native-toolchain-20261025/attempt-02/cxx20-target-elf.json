@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/bin/readelf",
+    "-l",
+    "-d",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02/cxx20"
+  ],
+  "returncode": 0,
+  "seconds": 0.001424551010131836,
+  "stdout_sha256": "a90f0fc1e6002b09b2db559917ae8c08af0720c40534d4d04b5c8f9bdbf5c981",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

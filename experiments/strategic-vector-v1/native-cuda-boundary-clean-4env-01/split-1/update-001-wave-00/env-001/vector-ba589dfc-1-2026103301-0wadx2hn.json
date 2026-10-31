@@ -1,0 +1,61 @@
+{
+  "schema": "adventure-run-v5",
+  "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-1-2026103301-0wadx2hn",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "EmptyAI",
+    "blue": "DirectorAI",
+    "seed": 2026103301,
+    "seconds": 120,
+    "tag": "vector-ba589dfc-1",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/split-1/update-001-wave-00/env-001/agent",
+    "pool_lock_fd": 23,
+    "pool_lock_dev": 2096,
+    "pool_lock_inode": 674895,
+    "report_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/split-1/update-001-wave-00/env-001",
+    "native_pid_file": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/split-1/update-001-wave-00/env-001/native-pid.json",
+    "lab_root": "/root/heroes3-ai-lab"
+  },
+  "engine_exit": 0,
+  "timed_out": false,
+  "interrupted": false,
+  "crashed": false,
+  "completed": true,
+  "winner": "blue",
+  "wrapper_exit": 0,
+  "actual_ai": {
+    "red": "EmptyAI",
+    "blue": "DirectorAI"
+  },
+  "turns": 29,
+  "moves_requested": 249,
+  "move_replies": 249,
+  "changed_tile_replies": 249,
+  "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+  "displacement_replies": 245,
+  "blocking_visit_replies": 4,
+  "failed_move_replies": 0,
+  "inputs_unchanged": true,
+  "log_sha256": "24f3d514d6d8fb4169d31b17cda099ac0256f3b306a7bc4fb77f6df26fac469c",
+  "native_load_verified": null,
+  "load_markers": null,
+  "wall_seconds": 10.580685507999988,
+  "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+  "strategy_trace_sha256": "0342d7957dca17856e1a26cfd8e41944bdbc84f61eff26be10d6e31134b827a4",
+  "strategy_trace_records": 1161,
+  "native_calendar_last_day": 29,
+  "turns_source": "native strategy state calendar day; not a count of sampled decisions",
+  "strategy_targets_sha256": "f610e83a5aa14ff29a6ced910574c311d6183f88e3c5cba47d2fd6f4fca0689d",
+  "strategy_targets_records": 16,
+  "strategy_decisions_sha256": "7acd2e0e22c5cb6ff513f3b111d1400a8a6a218d04895c28918081f07db34423",
+  "strategy_decision_records": 249,
+  "save_files": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-1-2026103301-0wadx2hn/data/vcmi/Saves/director-v5-initial.vsgm1",
+      "bytes": 341062,
+      "sha256": "110fe8bed3983e334899e2fbbde081345186c7e86ade5d55fc09602f57f832fb"
+    }
+  ]
+}

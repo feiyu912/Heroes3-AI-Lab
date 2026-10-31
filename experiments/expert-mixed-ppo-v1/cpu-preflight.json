@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "plan_sha256": "0b51ff49e7dc32203a5362f83c99a024a9ce74be235e0f86931ec2d980223ff1",
+  "plan": "/mnt/g/Heroes3-AI-Lab/experiments/expert-mixed-ppo-v1/b64-anchor-plan-v2.json",
+  "finalized_for_execution": true,
+  "device": "cpu",
+  "curriculum_counts": [
+    {
+      "phase": 0,
+      "counts": {
+        "ordinary": {
+          "attacker": 6,
+          "defender": 6
+        },
+        "expert": {
+          "attacker": 4,
+          "defender": 4
+        },
+        "history": {
+          "attacker": 2,
+          "defender": 2
+        }
+      },
+      "expert_family_roles": {
+        "death-cloud": {
+          "attacker": 2,
+          "defender": 2
+        },
+        "dragon-breath": {
+          "attacker": 1,
+          "defender": 1
+        },
+        "retaliation-bait": {
+          "attacker": 1,
+          "defender": 1
+        }
+      }
+    },
+    {
+      "phase": 1,
+      "counts": {
+        "ordinary": {
+          "attacker": 6,
+          "defender": 6
+        },
+        "expert": {
+          "attacker": 4,
+          "defender": 4
+        },
+        "history": {
+          "attacker": 2,
+          "defender": 2
+        }
+      },
+      "expert_family_roles": {
+        "death-cloud": {
+          "attacker": 1,
+          "defender": 1
+        },
+        "dragon-breath": {
+          "attacker": 2,
+          "defender": 2
+        },
+        "retaliation-bait": {
+          "attacker": 1,
+          "defender": 1
+        }
+      }
+    }
+  ],
+  "train_only": true,
+  "expert_legal_actions_checked": 24,
+  "real_graph_forward_backward": true,
+  "metrics": {
+    "loss": -0.023622413476308186,
+    "policy_loss": -0.013431946436564127,
+    "value_loss": 0.00937203752497832,
+    "entropy": 1.4876614014307659,
+    "approximate_kl": 0.0005107050140698751,
+    "gradient_norm": 23.005083719889324,
+    "clip_fraction": 0.0,
+    "reference_kl": 1.2571797090762022e-06,
+    "epochs_completed": 1,
+    "maximum_recompute_logp_error": 0.0,
+    "recompute_batch_size": 24,
+    "reference_coef": 0.1
+  },
+  "frozen_body_unchanged": true,
+  "independent_reference_unchanged": true,
+  "dependency_gate_rejected_changed_sha": true,
+  "simulator_started": false,
+  "CUDA_started": false,
+  "fragment_accounting_checked": true,
+  "fragment_test": {
+    "rotation": {
+      "reason": "rotation",
+      "discarded_ongoing_fragments": 2,
+      "sampled_owned_steps_in_fragments": 4,
+      "fragments": [
+        {
+          "worker": 2,
+          "category": "ordinary",
+          "role": "attacker",
+          "sampled_owned_steps": 2,
+          "scenario_id": "diverse-114"
+        },
+        {
+          "worker": 3,
+          "category": "ordinary",
+          "role": "defender",
+          "sampled_owned_steps": 2,
+          "scenario_id": "diverse-066"
+        }
+      ],
+      "environment_truncations_added": 0,
+      "rewards_or_outcomes_changed": false
+    },
+    "finish": {
+      "reason": "finish",
+      "discarded_ongoing_fragments": 1,
+      "sampled_owned_steps_in_fragments": 1,
+      "fragments": [
+        {
+          "worker": 0,
+          "category": "ordinary",
+          "role": "attacker",
+          "sampled_owned_steps": 1,
+          "scenario_id": "diverse-153"
+        }
+      ],
+      "environment_truncations_added": 0,
+      "rewards_or_outcomes_changed": false
+    }
+  },
+  "optimization_scope": "One CPU mathematical preflight update only; no trained candidate saved",
+  "training_effectiveness_proven": false
+}

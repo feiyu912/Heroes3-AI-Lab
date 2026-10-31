@@ -1,0 +1,398 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "index": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104600
+      },
+      "arms": {
+        "initial": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 175,
+            "policy_builds": 7,
+            "policy_recruits": 68,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "030916db1ca67daf3a8ff5e4d7eb2ab3922ec6e05ddd85ef69888d5bdd45bf97",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 68
+        },
+        "control": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 603,
+            "policy_builds": 11,
+            "policy_recruits": 256,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "cb07beca7f8bc7b592f496208d3b39dfc80943ec5cc955ca5cd4acb5458b49d8",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 256
+        },
+        "curriculum": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 162,
+            "policy_builds": 7,
+            "policy_recruits": 51,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "f68f1e1d3a9ea791c03a3a41e2a54778e845bcce1214e74ba696001ed655ce00",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 51
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104601
+      },
+      "arms": {
+        "initial": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 926,
+            "policy_builds": 23,
+            "policy_recruits": 430,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "8c843b752603c7680886faad05f8f1b041ce784eeb8b9b746a2a76a93480042b",
+          "initial_request_sha256": "546db57a6e6c3903d6a21086a2049dffa66a6efeb8b78202e40f03be9cf45a69",
+          "recruited_amount": 430
+        },
+        "control": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 525,
+            "policy_builds": 17,
+            "policy_recruits": 255,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "0198b286f76a1341552f9ac1dd23d4a4ff5f99856eb5c2d42e506a75506c66e2",
+          "initial_request_sha256": "546db57a6e6c3903d6a21086a2049dffa66a6efeb8b78202e40f03be9cf45a69",
+          "recruited_amount": 255
+        },
+        "curriculum": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 247,
+            "policy_builds": 6,
+            "policy_recruits": 84,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "0e4bbf06ac810fd17a6e5820d7530f28c8beccae5932a7d1015627ab5a5d601a",
+          "initial_request_sha256": "546db57a6e6c3903d6a21086a2049dffa66a6efeb8b78202e40f03be9cf45a69",
+          "recruited_amount": 84
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104602
+      },
+      "arms": {
+        "initial": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 1212,
+            "policy_builds": 18,
+            "policy_recruits": 521,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "daea3f0ac61d4d6d56933dbb1878fa2afcc19904d37dcef404c51ce884a87319",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 521
+        },
+        "control": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 119,
+            "policy_builds": 7,
+            "policy_recruits": 34,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "9f2f9dab80235a6a9a84f9734d7ff43bd9ac3c5162055302221081a9b0a7ccb3",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 34
+        },
+        "curriculum": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 487,
+            "policy_builds": 12,
+            "policy_recruits": 185,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "7ebd5fdbcf6ac212a8e428d9931fbe9eacffaa069c44851b8d2aef374adb87cd",
+          "initial_request_sha256": "886b688297716b47dd910d704c7a16844713a7c09f73960c0acb71900c751b1d",
+          "recruited_amount": 185
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104603
+      },
+      "arms": {
+        "initial": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 1612,
+            "policy_builds": 16,
+            "policy_recruits": 709,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "40a6b2a65745a09bf97612a075dd6d30a17f59643dc7b996abc470d1553dc044",
+          "initial_request_sha256": "48d5055ad14e20d5b212ec2561989a5228c8be84192b30d95b46b4408131f823",
+          "recruited_amount": 709
+        },
+        "control": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 571,
+            "policy_builds": 19,
+            "policy_recruits": 237,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "ddbfb69db559128ff96980eb6549fd42642413d49f95a810f1e656642d920b22",
+          "initial_request_sha256": "48d5055ad14e20d5b212ec2561989a5228c8be84192b30d95b46b4408131f823",
+          "recruited_amount": 237
+        },
+        "curriculum": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 587,
+            "policy_builds": 9,
+            "policy_recruits": 226,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "2c45fb6ac468886087d306a84c6613bb2b92a795b63cf04f682f924af392a808",
+          "initial_request_sha256": "48d5055ad14e20d5b212ec2561989a5228c8be84192b30d95b46b4408131f823",
+          "recruited_amount": 226
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026104604
+      },
+      "arms": {
+        "initial": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 408,
+            "policy_builds": 9,
+            "policy_recruits": 157,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "636c52904691f10c9d7d4522e25efdaded574dade9961fabf8da4efffacec74c",
+          "initial_request_sha256": "a4319935a86abc42784f67a36a1bcc8942c49d801cfd37be029b6614e017686d",
+          "recruited_amount": 157
+        },
+        "control": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 124,
+            "policy_builds": 7,
+            "policy_recruits": 36,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "49a669f26fbcd4ebf51313eee6ee79061199ec42d403e6e6a74eaa5bf707c75b",
+          "initial_request_sha256": "a4319935a86abc42784f67a36a1bcc8942c49d801cfd37be029b6614e017686d",
+          "recruited_amount": 36
+        },
+        "curriculum": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 178,
+            "policy_builds": 7,
+            "policy_recruits": 64,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "500c312e6be5ded110df8a65aae4d8e9bf6ac85891e496823443a273a0f10f5e",
+          "initial_request_sha256": "a4319935a86abc42784f67a36a1bcc8942c49d801cfd37be029b6614e017686d",
+          "recruited_amount": 64
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026104605
+      },
+      "arms": {
+        "initial": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 255,
+            "policy_builds": 9,
+            "policy_recruits": 91,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "09fc8df99d13b3f109d97c807aa43df8b92ce35261163e01a9c969fc3426e785",
+          "initial_request_sha256": "6e83f397cad3d3028c8ecb8fcecbfbff37e72e49b646a7bc855899e10b0e1e0b",
+          "recruited_amount": 91
+        },
+        "control": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 498,
+            "policy_builds": 15,
+            "policy_recruits": 241,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "062e2add3b46b1f178e2f5ea11bfa49c28b789152c5337732192512c46b83380",
+          "initial_request_sha256": "6e83f397cad3d3028c8ecb8fcecbfbff37e72e49b646a7bc855899e10b0e1e0b",
+          "recruited_amount": 241
+        },
+        "curriculum": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 328,
+            "policy_builds": 9,
+            "policy_recruits": 142,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "985d395101a96fe0d980b4e354816ec392303db6dcebcf9f2c87014451afccc0",
+          "initial_request_sha256": "6e83f397cad3d3028c8ecb8fcecbfbff37e72e49b646a7bc855899e10b0e1e0b",
+          "recruited_amount": 142
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026104606
+      },
+      "arms": {
+        "initial": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 1202,
+            "policy_builds": 16,
+            "policy_recruits": 593,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "74e7bd42c124f35f1e1bdac8955a39995237998c08a045de657bf2d70d78e200",
+          "initial_request_sha256": "4888cceb373454e9f298e85b82acad4fd0d7fbbe2815b4718aa89c3087cdf342",
+          "recruited_amount": 593
+        },
+        "control": {
+          "win": true,
+          "counts": {
+            "new_policy_decisions": 903,
+            "policy_builds": 23,
+            "policy_recruits": 426,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "4da4366433b7cbe4467f3125c30327559c0c4a2b40363aa2f693a2c0194b3116",
+          "initial_request_sha256": "4888cceb373454e9f298e85b82acad4fd0d7fbbe2815b4718aa89c3087cdf342",
+          "recruited_amount": 426
+        },
+        "curriculum": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 756,
+            "policy_builds": 13,
+            "policy_recruits": 290,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "ef2eb2036a1eebc586763e0b5d2aa24e3045fc9ef234f12f24c0164fdd752f9e",
+          "initial_request_sha256": "4888cceb373454e9f298e85b82acad4fd0d7fbbe2815b4718aa89c3087cdf342",
+          "recruited_amount": 290
+        }
+      },
+      "initial_request_equal_all_three": true
+    },
+    {
+      "index": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026104607
+      },
+      "arms": {
+        "initial": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 2665,
+            "policy_builds": 36,
+            "policy_recruits": 1519,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "85cda84676fe1b4015d6ccd0f9e5477a80ef1889759d45a9a81e5c0c01314d27",
+          "initial_request_sha256": "15c9064217e30ca52c7247dd69a2883a1da7441a73da69e52cc153f1557eaa40",
+          "recruited_amount": 1519
+        },
+        "control": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 1146,
+            "policy_builds": 16,
+            "policy_recruits": 561,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "13a45a8176296537db3e0e37ff101e3071254222e96bb8f2732122a7ecbdb43f",
+          "initial_request_sha256": "15c9064217e30ca52c7247dd69a2883a1da7441a73da69e52cc153f1557eaa40",
+          "recruited_amount": 561
+        },
+        "curriculum": {
+          "win": false,
+          "counts": {
+            "new_policy_decisions": 1182,
+            "policy_builds": 21,
+            "policy_recruits": 582,
+            "automatic_end_turns": 0
+          },
+          "audit_sha256": "9627d6377adcc4dcec37a6dab014be7331e551779a34aef41e3a43967175897f",
+          "initial_request_sha256": "15c9064217e30ca52c7247dd69a2883a1da7441a73da69e52cc153f1557eaa40",
+          "recruited_amount": 582
+        }
+      },
+      "initial_request_equal_all_three": true
+    }
+  ],
+  "arm_wins": {
+    "initial": 4,
+    "control": 5,
+    "curriculum": 4
+  },
+  "optimizer_steps": 0,
+  "admitted_samples": 0,
+  "model_promoted": false,
+  "final_test_touched": false
+}

@@ -1,0 +1,6 @@
+{
+  "parent_sha256": "f2969991eed118f8c3cef5b8c3db6503b3e85dd23bc976706c7e7e65952f6fbc",
+  "runner_sha256": "c208c2b45eca33b10b3d30de9aa49dd6f982fdc8faf19d7fb597d2ab244212fb",
+  "semantics": "Same frozen CPU model and runtime; explicit off/once, training diagnostic maps, full41 compiled scripts",
+  "optimizer_steps": 0
+}

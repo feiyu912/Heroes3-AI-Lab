@@ -1,0 +1,32 @@
+{
+  "structurally_valid": true,
+  "legal_actions_complete": true,
+  "normal_terminal": false,
+  "bc_exploratory_eligible": false,
+  "bc_q3_eligible": false,
+  "errors": [],
+  "unknown": [
+    "episode.outcome",
+    "episode.permanent_army_loss"
+  ],
+  "q3_denials": [
+    "Synthetic validator fixture cannot enter training",
+    "Source not verified; source kind/name alone grants no expert quality",
+    "Below Q3; exploratory Q2 must not be called verified expert learning",
+    "No complete normal terminal outcome; BC Q3 forbidden",
+    "Unknown required training evidence",
+    "Human source lacks identity/reference/permission",
+    "source: no evidence artifact",
+    "tactic: no evidence artifact"
+  ],
+  "samples": 15,
+  "source_kind": "human_structured",
+  "trajectory_origin": "human_recorded",
+  "quality_tier": "Q2",
+  "input": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/synthetic-unknown-outcome-example.json",
+  "input_sha256": "d5f77a7242bc22fca7bb02a287c9dbe8237ca1e3ef07f95db3835ded0fbb7349",
+  "legacy_adapted": false,
+  "mode": "bc-q3",
+  "evidence_limit": "This gate verifies records and hashed audit attestations; it does not itself simulate/replay the battle or authenticate a human identity.",
+  "passed": false
+}

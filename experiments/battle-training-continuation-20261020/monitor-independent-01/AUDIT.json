@@ -1,0 +1,50 @@
+{
+  "snapshot_checks_passed": true,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps_performed": 0,
+  "parent_historical_Adam_steps": 3840,
+  "arm": "control",
+  "observed_workers": 16,
+  "native_library_bound_workers": 16,
+  "native_worker_pids": [
+    1079,
+    1115,
+    1154,
+    1190,
+    1226,
+    1265,
+    1304,
+    1343,
+    1379,
+    1418,
+    1454,
+    1490,
+    1529,
+    1565,
+    1601,
+    1648
+  ],
+  "latest_complete_saved_boundary": {
+    "global_update": 32,
+    "stage_updates": 2,
+    "cumulative_Adam_steps": 4096,
+    "stage_Adam_steps": 256,
+    "stage_sampled_rows": 1024,
+    "checkpoint_sha256": "011ba01a45b3febe27a391b4a83867bd47ae505c8aaab212201b3eaca7c8cee9",
+    "rollout_sha256": "5cb3e1a1700062af1497089d200de7df0e6dea685d974c58a740de4ea41789ae"
+  },
+  "source_freeze_current": true,
+  "input_count": 494,
+  "final_two_arm_DEV_certified": false,
+  "actual_scale_observed_is_24": false,
+  "limitation": "One bounded process/resource read window; engine is embedded in worker threads, not separate executable PIDs. This is monitoring, not final or independent GPU restoration.",
+  "restoration_original_sha256": "515b0b713df3552b87713fb68691ce936f73d56ad1017ad5cf3af2429b5fd7aa",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/snapshot.py": "b28f51eeb3a123cfe8ecb0a92c14a62cc99c77ae95df0026f82c8316716ed0bb",
+    "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/FREEZE.json": "83961684eddc4a917d2dc632643092b3e71beb2aebf37056062cad0c70b09711",
+    "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/PLAN.json": "a0ee2af6793aac256979be082f5514c09d4070d0b23b4dc8d2a006b2d1ca5733",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/OS_SNAPSHOT.json": "b71708f08120093511c0163bb474f4cdbf8a9b2773110c96a2fde1c02d6072c5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/RESTORATION_SNAPSHOT.json": "661a9c8a3ad764f0b11bb857d14578f51282e5193d3af661736c893074d2dc2e"
+  }
+}

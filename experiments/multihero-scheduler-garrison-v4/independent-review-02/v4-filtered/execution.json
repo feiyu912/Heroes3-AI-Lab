@@ -1,0 +1,60 @@
+{
+  "controlled_stop": true,
+  "timed_out": false,
+  "game_completed": false,
+  "winner": null,
+  "optimizer_steps": 0,
+  "stop_reason": "observed_two_mobile_heroes_two_turns",
+  "engine_exit": -15,
+  "wall_seconds": 0.44267699199997423,
+  "loaded_library_observations": [
+    {
+      "pid": 418,
+      "executable": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/vcmiclient",
+      "executable_sha256": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+      "executable_matches_capsule": true,
+      "libraries": [
+        {
+          "maps_line": "77a30ba00000-77a30bb99000 r--p 00000000 08:30 1506831                    /root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+          "path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+          "deleted": false,
+          "sha256": "2c79ee7e411bbfaa96a13c5449c0b37bc9058de57dc8cb35b0d307665ed93c12",
+          "inode_matches": true,
+          "device_matches": true,
+          "expected_path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+          "path_matches": true,
+          "expected_sha256": "2c79ee7e411bbfaa96a13c5449c0b37bc9058de57dc8cb35b0d307665ed93c12",
+          "valid": true
+        }
+      ],
+      "valid": true,
+      "run_server_threads": [
+        {
+          "tid": 449,
+          "comm": "runServer",
+          "proc_comm_path": "/proc/418/task/449/comm"
+        }
+      ]
+    }
+  ],
+  "loaded_library_errors": [],
+  "loaded_library_verified": true,
+  "thread_server_verification": {
+    "mode": "thread",
+    "settings_server_useProcess": false,
+    "client_library_verified": true,
+    "run_server_threads": [
+      {
+        "pid": 418,
+        "tid": 449,
+        "comm": "runServer",
+        "proc_comm_path": "/proc/418/task/449/comm"
+      }
+    ],
+    "native_server_log_markers": {
+      "CVCMIServer created!": true,
+      "Server gives turn to ": true
+    },
+    "passed": true
+  }
+}

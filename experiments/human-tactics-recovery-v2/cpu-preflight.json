@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "original_episodes": 24,
+  "decoded_decisions": 718,
+  "restored_empty_edge_relations": 2471,
+  "eligible_normal_win_expert_episodes": 6,
+  "eligible_samples": 185,
+  "roles": [
+    0,
+    1
+  ],
+  "source_episodes": [
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-dragon-breath-train-0-attacker.json",
+      "sha256": "de7a5e1ec5f5c560f3fe5f57113ce9c22ba8a6f69fd276ddbd1ca9c3a7cfdd9d",
+      "samples": 15,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-dragon-breath-train-1-attacker.json",
+      "sha256": "15c51e64b710985c80a2fcc33f20866cd651dc35236bde05d5079e4ab95c26d0",
+      "samples": 35,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-retaliation-bait-train-8-attacker.json",
+      "sha256": "8f123d9a866d8eb9d890e71788260c5b4f16184e7509ae88b947ae0dc8521926",
+      "samples": 39,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-retaliation-bait-train-9-defender.json",
+      "sha256": "d1504066bcb3eb8b414083bcd59e1607d65e8bdfb5718fd8943bac1a2bdba6f5",
+      "samples": 29,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-death-cloud-train-16-attacker.json",
+      "sha256": "967fc331e82fe2f74054300336956d0be6dd26d583be6246a0377f3da537dc78",
+      "samples": 35,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/runs/expert-death-cloud-train-17-attacker.json",
+      "sha256": "d3bd5c266d051801bad8f63a116d35b341221e6878e258dcf8a221addccf52fa",
+      "samples": 32,
+      "filter": "Q2 exploratory normal-win candidate; not Q3 tactic/source verified"
+    }
+  ],
+  "codec_sha256": "6e6cb83ba122e375383726dd9fd6462850ee4f409ba506ca3340e10ab612fcb5",
+  "simulator_started": false,
+  "GPU_started": false,
+  "wall_seconds": 23.03027469799963,
+  "quality": "Q2 exploratory candidates, not validated tactic or human demonstrations"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "stage": "JSON report serialization after all4 phases",
+  "error": "TypeError: Object of type int64 is not JSON serializable",
+  "source_sha256": "6decc455c92c3a24e22051d65f36b52444891ce26fd98bbdf9c47d609d2569fe",
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "criteria_changed": false
+}

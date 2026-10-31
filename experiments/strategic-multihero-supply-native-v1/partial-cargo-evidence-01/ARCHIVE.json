@@ -1,0 +1,15 @@
+{
+  "archive_passed": true,
+  "whole_game_completed": false,
+  "whole_game_score_eligible": false,
+  "mechanics_qualified_by_archive": false,
+  "source_execution_preserved": true,
+  "records": 476,
+  "regular_files": 472,
+  "symlinks": 4,
+  "no_asset_link_dereference": true,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "limitation": "Archive integrity only. Partial suboperation qualification and any cargo-delivery failure require the independent raw audit. This record has no win/loss."
+}

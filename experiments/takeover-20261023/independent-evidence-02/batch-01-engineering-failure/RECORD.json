@@ -1,0 +1,92 @@
+{
+  "schema": "engineering-failure-record-v1",
+  "batch_directory": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-curriculum-x4-train-20261023-01",
+  "batch_result": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-curriculum-x4-train-20261023-01/RESULT.json",
+  "batch_result_sha256": "e6f652cd9028958987f6ec6fa0fb99625ad274d54debe0311de3459f0cd18f7b",
+  "train_log": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-curriculum-x4-train-20261023-01/train.log",
+  "train_log_sha256": "e89eb610644ad7ed58e7d0c1c57a7f44870aeffd50e4a6a9929b9ef3a8f8c0d0",
+  "error": "AssertionError('Training failed; preserve the original partial checkpoint/report')",
+  "failure_traceback": [
+    "    if admission.get('pipeline_epoch')!='strategic-learned-recruitment-prior-zero-training-v1' or admission.get('economy_epoch')!='learned-economy-build-recruit-v1':raise ValueError('Schema6 economy admission epoch required')",
+    "ValueError: Schema6 economy admission epoch required"
+  ],
+  "root_cause": "policy-v3/load_admitted.py hardcodes the prior-zero pipeline epoch, so it rejected the x4 admission manifests",
+  "failed_stage": "training admission loading",
+  "valid_admissions_preserved": 8,
+  "episodes": [
+    {
+      "map": "active-calibration-train-01-owned0-hero-x4",
+      "player": 0,
+      "opponent": "EmptyAI",
+      "reward": 1.0,
+      "decisions": 419,
+      "raw_audit_sha256": "a5a533c81ead3736fdcc683ae1eadb785d898b4be98ff80a9ee4ec62fc5e625b"
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x4",
+      "player": 1,
+      "opponent": "EmptyAI",
+      "reward": 1.0,
+      "decisions": 1156,
+      "raw_audit_sha256": "2e0da54f1247f38b6120fa87d2a259559983155b81048703ae62c205df380dc2"
+    },
+    {
+      "map": "active-calibration-train-01-owned0-hero-x4",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "reward": -1.0,
+      "decisions": 173,
+      "raw_audit_sha256": "78acae7934d2707baf03cf3e4c17de814b1d49947ad4d98ff8466796f4eea2c5"
+    },
+    {
+      "map": "active-calibration-train-01-owned1-hero-x4",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "reward": -1.0,
+      "decisions": 381,
+      "raw_audit_sha256": "2b3be311b42a9d7d7f056abd3fd90bba49ae7fec91e69f9b7d7f4c0ed109c4da"
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x4",
+      "player": 0,
+      "opponent": "EmptyAI",
+      "reward": 1.0,
+      "decisions": 555,
+      "raw_audit_sha256": "e28cf850789db2bdce41798d00ebfbdebea775723eb8b02e11aeb8b2166f4609"
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x4",
+      "player": 1,
+      "opponent": "EmptyAI",
+      "reward": 1.0,
+      "decisions": 993,
+      "raw_audit_sha256": "cd722351f8c35ffd69ae417913d010e094d8247819444b321cc02390c7d5b192"
+    },
+    {
+      "map": "active-calibration-train-02-owned0-hero-x4",
+      "player": 0,
+      "opponent": "Nullkiller2",
+      "reward": -1.0,
+      "decisions": 411,
+      "raw_audit_sha256": "272e2ade35b5780d3fae4c6c884336a2c1570d89f7aefef5f0be68e600b7b4a7"
+    },
+    {
+      "map": "active-calibration-train-02-owned1-hero-x4",
+      "player": 1,
+      "opponent": "Nullkiller2",
+      "reward": -1.0,
+      "decisions": 230,
+      "raw_audit_sha256": "45fd3510a27760949cd5184efb9603c9f05eba1536dab5e8f457658b668c5d64"
+    }
+  ],
+  "optimizer_steps": 0,
+  "cuda_optimizer_steps": 0,
+  "checkpoint_created": false,
+  "training_rows_consumed": 0,
+  "fix": [
+    "local load_admitted_x4.py requires this package EPOCH",
+    "checkpoint protocol keeps the frozen model-format schema and records curriculum_epoch separately"
+  ],
+  "new_batch": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-curriculum-x4-train-20261023-02",
+  "claim": "The first batch is an engineering failure before any optimizer step; it is not a training repetition, a game loss or evidence of ability."
+}

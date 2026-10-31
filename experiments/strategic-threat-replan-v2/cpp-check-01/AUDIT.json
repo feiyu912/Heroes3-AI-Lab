@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "actual_cpp_compiled": true,
+  "assertions": 18,
+  "header_sha256": "9aef11e358269b4e42212b895595ecf953a474ab3e392ccbb80c9f6c218ab310",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "scope": "Threshold boundaries, invalid strength/level, overflow-safe coordinate deltas, one-budget predicate and original SHA helper. Not actual native integration proof."
+}

@@ -1,0 +1,44 @@
+# Source-ready template only. Do not configure until user-prefix payloads and
+# compiler/sysroot/link probes have a separately recorded qualification.
+if(NOT DEFINED ENV{HEROES3_TOOLCHAIN_ROOT} OR NOT DEFINED ENV{HEROES3_LAB_ROOT})
+    message(FATAL_ERROR "Explicit qualified user toolchain and lab profile are required")
+endif()
+file(REAL_PATH "$ENV{HEROES3_TOOLCHAIN_ROOT}" TOOLCHAIN_ROOT)
+set(SYSROOT "${TOOLCHAIN_ROOT}/sysroot")
+if(NOT EXISTS "${TOOLCHAIN_ROOT}/QUALIFIED_TOOLCHAIN.json")
+    message(FATAL_ERROR "Toolchain qualification certificate is missing")
+endif()
+file(READ "${TOOLCHAIN_ROOT}/QUALIFIED_TOOLCHAIN.json" TOOLCHAIN_QUALIFICATION)
+string(JSON TOOLCHAIN_PASSED GET "${TOOLCHAIN_QUALIFICATION}" passed)
+string(JSON TOOLCHAIN_EXPECTED_ROOT GET "${TOOLCHAIN_QUALIFICATION}" toolchain_root)
+if(NOT TOOLCHAIN_PASSED OR NOT TOOLCHAIN_EXPECTED_ROOT STREQUAL TOOLCHAIN_ROOT)
+    message(FATAL_ERROR "Toolchain certificate is invalid for this prefix")
+endif()
+
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR x86_64)
+set(CMAKE_SYSROOT "${SYSROOT}")
+set(CMAKE_C_COMPILER "${SYSROOT}/usr/bin/gcc-11")
+set(CMAKE_CXX_COMPILER "${SYSROOT}/usr/bin/g++-11")
+set(CMAKE_AR "${SYSROOT}/usr/bin/ar")
+set(CMAKE_RANLIB "${SYSROOT}/usr/bin/ranlib")
+set(CMAKE_LINKER "${SYSROOT}/usr/bin/ld.bfd")
+set(CMAKE_NM "${SYSROOT}/usr/bin/nm")
+set(CMAKE_STRIP "${SYSROOT}/usr/bin/strip")
+set(CMAKE_MAKE_PROGRAM "${SYSROOT}/usr/bin/ninja" CACHE FILEPATH "Qualified old Ninja")
+set(CMAKE_FIND_ROOT_PATH "${SYSROOT}")
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+
+# The onnxruntime headers/library already belong to the fully verified lab.
+set(ONNXRUNTIME_ROOT "$ENV{HEROES3_LAB_ROOT}/onnxruntime" CACHE PATH "Pinned profile ONNX Runtime")
+set(ONNXRUNTIME_INCLUDE_DIR "${ONNXRUNTIME_ROOT}/include" CACHE PATH "Pinned ONNX headers")
+set(ONNXRUNTIME_LIBRARY "${ONNXRUNTIME_ROOT}/lib/libonnxruntime.so" CACHE FILEPATH "Pinned ONNX library")
+set(Boost_DIR "${SYSROOT}/usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0" CACHE PATH "Pinned Boost")
+set(TBB_DIR "${SYSROOT}/usr/lib/x86_64-linux-gnu/cmake/TBB" CACHE PATH "Pinned TBB")
+
+# No CMAKE_TRY_COMPILE_TARGET_TYPE shortcut: actual executable linking remains
+# required. Per-process compiler environment and pkg-config sysroot must be
+# set by the future qualified controller, not by modifying system files.

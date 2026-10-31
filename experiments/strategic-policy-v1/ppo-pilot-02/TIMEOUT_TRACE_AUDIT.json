@@ -1,0 +1,742 @@
+{
+  "source": "/root/heroes3-ai-lab/workers/adv-runs/update-3-episode-0-2026101930-2ahbjm60/strategy-decisions.jsonl",
+  "sha256": "342b2a54f53e839ae3a587653c8c6928781d876bad4b95f2e948df8bd15c18c2",
+  "all": {
+    "decisions": 11823,
+    "first_day": 1,
+    "last_day": 1305,
+    "selected_kind_counts": {
+      "3": 481,
+      "2": 13,
+      "5": 10872,
+      "4": 457
+    },
+    "unique_origins": 434,
+    "unique_destinations": 523,
+    "most_common_targets": [
+      {
+        "kind": 4,
+        "destination": [
+          6,
+          8,
+          0
+        ],
+        "count": 457
+      },
+      {
+        "kind": 3,
+        "destination": [
+          26,
+          15,
+          0
+        ],
+        "count": 336
+      },
+      {
+        "kind": 3,
+        "destination": [
+          26,
+          11,
+          0
+        ],
+        "count": 131
+      },
+      {
+        "kind": 5,
+        "destination": [
+          11,
+          33,
+          0
+        ],
+        "count": 126
+      },
+      {
+        "kind": 5,
+        "destination": [
+          11,
+          2,
+          0
+        ],
+        "count": 121
+      },
+      {
+        "kind": 5,
+        "destination": [
+          7,
+          3,
+          0
+        ],
+        "count": 120
+      },
+      {
+        "kind": 5,
+        "destination": [
+          6,
+          30,
+          0
+        ],
+        "count": 119
+      },
+      {
+        "kind": 5,
+        "destination": [
+          6,
+          31,
+          0
+        ],
+        "count": 118
+      },
+      {
+        "kind": 5,
+        "destination": [
+          1,
+          24,
+          0
+        ],
+        "count": 118
+      },
+      {
+        "kind": 5,
+        "destination": [
+          1,
+          25,
+          0
+        ],
+        "count": 118
+      },
+      {
+        "kind": 5,
+        "destination": [
+          5,
+          30,
+          0
+        ],
+        "count": 116
+      },
+      {
+        "kind": 5,
+        "destination": [
+          4,
+          3,
+          0
+        ],
+        "count": 115
+      }
+    ],
+    "candidate_kind_counts": {
+      "3": 17480,
+      "4": 10977,
+      "5": 1077985,
+      "2": 32
+    }
+  },
+  "last_1000": {
+    "decisions": 1000,
+    "first_day": 1194,
+    "last_day": 1305,
+    "selected_kind_counts": {
+      "5": 880,
+      "3": 99,
+      "4": 21
+    },
+    "unique_origins": 158,
+    "unique_destinations": 98,
+    "most_common_targets": [
+      {
+        "kind": 3,
+        "destination": [
+          26,
+          15,
+          0
+        ],
+        "count": 99
+      },
+      {
+        "kind": 5,
+        "destination": [
+          32,
+          17,
+          0
+        ],
+        "count": 34
+      },
+      {
+        "kind": 5,
+        "destination": [
+          0,
+          24,
+          0
+        ],
+        "count": 24
+      },
+      {
+        "kind": 5,
+        "destination": [
+          31,
+          16,
+          0
+        ],
+        "count": 24
+      },
+      {
+        "kind": 5,
+        "destination": [
+          32,
+          30,
+          0
+        ],
+        "count": 24
+      },
+      {
+        "kind": 5,
+        "destination": [
+          1,
+          34,
+          0
+        ],
+        "count": 24
+      },
+      {
+        "kind": 5,
+        "destination": [
+          1,
+          26,
+          0
+        ],
+        "count": 23
+      },
+      {
+        "kind": 5,
+        "destination": [
+          1,
+          25,
+          0
+        ],
+        "count": 22
+      },
+      {
+        "kind": 4,
+        "destination": [
+          6,
+          8,
+          0
+        ],
+        "count": 21
+      },
+      {
+        "kind": 5,
+        "destination": [
+          31,
+          17,
+          0
+        ],
+        "count": 19
+      },
+      {
+        "kind": 5,
+        "destination": [
+          31,
+          32,
+          0
+        ],
+        "count": 18
+      },
+      {
+        "kind": 5,
+        "destination": [
+          33,
+          29,
+          0
+        ],
+        "count": 18
+      }
+    ],
+    "candidate_kind_counts": {
+      "3": 991,
+      "4": 602,
+      "5": 53816
+    }
+  },
+  "last_12_choices": [
+    {
+      "day": 1304,
+      "from": [
+        24,
+        17,
+        0
+      ],
+      "destination": [
+        26,
+        15,
+        0
+      ],
+      "step": [
+        24,
+        16,
+        0
+      ],
+      "selected": {
+        "kind": 3,
+        "position": [
+          26,
+          15,
+          0
+        ],
+        "next": [
+          24,
+          16,
+          0
+        ],
+        "path_cost": 0.328205,
+        "heuristic_score": 4.82972
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        24,
+        16,
+        0
+      ],
+      "destination": [
+        26,
+        15,
+        0
+      ],
+      "step": [
+        25,
+        15,
+        0
+      ],
+      "selected": {
+        "kind": 3,
+        "position": [
+          26,
+          15,
+          0
+        ],
+        "next": [
+          25,
+          15,
+          0
+        ],
+        "path_cost": 0.232051,
+        "heuristic_score": 5.4641
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        25,
+        15,
+        0
+      ],
+      "destination": [
+        26,
+        15,
+        0
+      ],
+      "step": [
+        26,
+        15,
+        0
+      ],
+      "selected": {
+        "kind": 3,
+        "position": [
+          26,
+          15,
+          0
+        ],
+        "next": [
+          26,
+          15,
+          0
+        ],
+        "path_cost": 0.0961538,
+        "heuristic_score": 6.70968
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        25,
+        15,
+        0
+      ],
+      "destination": [
+        31,
+        16,
+        0
+      ],
+      "step": [
+        24,
+        16,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          31,
+          16,
+          0
+        ],
+        "next": [
+          24,
+          16,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.635085
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        24,
+        16,
+        0
+      ],
+      "destination": [
+        32,
+        17,
+        0
+      ],
+      "step": [
+        24,
+        17,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          17,
+          0
+        ],
+        "next": [
+          24,
+          17,
+          0
+        ],
+        "path_cost": 1.09615,
+        "heuristic_score": 0.689157
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        24,
+        17,
+        0
+      ],
+      "destination": [
+        32,
+        16,
+        0
+      ],
+      "step": [
+        24,
+        18,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          16,
+          0
+        ],
+        "next": [
+          24,
+          18,
+          0
+        ],
+        "path_cost": 1.03974,
+        "heuristic_score": 0.844296
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        24,
+        18,
+        0
+      ],
+      "destination": [
+        31,
+        16,
+        0
+      ],
+      "step": [
+        25,
+        19,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          31,
+          16,
+          0
+        ],
+        "next": [
+          25,
+          19,
+          0
+        ],
+        "path_cost": 0.903846,
+        "heuristic_score": 0.783562
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        25,
+        19,
+        0
+      ],
+      "destination": [
+        31,
+        16,
+        0
+      ],
+      "step": [
+        26,
+        19,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          31,
+          16,
+          0
+        ],
+        "next": [
+          26,
+          19,
+          0
+        ],
+        "path_cost": 0.767949,
+        "heuristic_score": 0.867543
+      }
+    },
+    {
+      "day": 1304,
+      "from": [
+        26,
+        19,
+        0
+      ],
+      "destination": [
+        32,
+        16,
+        0
+      ],
+      "step": [
+        27,
+        19,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          16,
+          0
+        ],
+        "next": [
+          27,
+          19,
+          0
+        ],
+        "path_cost": 0.711538,
+        "heuristic_score": 1.07302
+      }
+    },
+    {
+      "day": 1305,
+      "from": [
+        27,
+        19,
+        0
+      ],
+      "destination": [
+        32,
+        17,
+        0
+      ],
+      "step": [
+        28,
+        19,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          17,
+          0
+        ],
+        "next": [
+          28,
+          19,
+          0
+        ],
+        "path_cost": 0.560256,
+        "heuristic_score": 1.03748
+      }
+    },
+    {
+      "day": 1305,
+      "from": [
+        28,
+        19,
+        0
+      ],
+      "destination": [
+        32,
+        16,
+        0
+      ],
+      "step": [
+        29,
+        19,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          16,
+          0
+        ],
+        "next": [
+          29,
+          19,
+          0
+        ],
+        "path_cost": 0.503846,
+        "heuristic_score": 1.29502
+      }
+    },
+    {
+      "day": 1305,
+      "from": [
+        29,
+        19,
+        0
+      ],
+      "destination": [
+        32,
+        16,
+        0
+      ],
+      "step": [
+        30,
+        18,
+        0
+      ],
+      "selected": {
+        "kind": 5,
+        "position": [
+          32,
+          16,
+          0
+        ],
+        "next": [
+          30,
+          18,
+          0
+        ],
+        "path_cost": 0.407692,
+        "heuristic_score": 1.21186
+      }
+    }
+  ],
+  "note": "Observational audit only; repeated targets do not alone establish root cause.",
+  "state_trace": {
+    "sha256": "a1ac14caa294a48c5bd3af5d618341fb7a9ea52af2cdfab40943211680a9d1ff",
+    "last_record": {
+      "event": "turn_end",
+      "player": 0,
+      "day": 1938,
+      "own_turn": 1938,
+      "gold": 6767620,
+      "wood": 3863,
+      "ore": 7408,
+      "heroes": [
+        {
+          "id": 0,
+          "x": 30,
+          "y": 18,
+          "z": 0,
+          "movement": 1560,
+          "army": [
+            [
+              0,
+              4255
+            ],
+            [
+              2,
+              2732
+            ]
+          ]
+        }
+      ],
+      "towns": [
+        {
+          "id": 12,
+          "buildings": [
+            0,
+            5,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            30,
+            31
+          ],
+          "army": [
+            [
+              2,
+              2088
+            ],
+            [
+              0,
+              3248
+            ]
+          ],
+          "available": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "records_after_final_decision_day": 1614,
+    "events_after_final_decision_day": {
+      "turn_start": 633,
+      "turn_end": 633,
+      "before_recruit": 174,
+      "economy_applied": 174
+    }
+  },
+  "log_counts": {
+    "That hero is not visible!": 10905,
+    "DirectorAI: no target for hero": 634,
+    "DirectorAI: no hero with movement points": 1938,
+    "external policy failed": 0
+  }
+}

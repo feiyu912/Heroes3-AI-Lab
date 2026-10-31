@@ -1,0 +1,10 @@
+{
+  "created_unix": 1792075310.942447,
+  "final_test_read": false,
+  "basis": "Observed B64/B128 validation trade-off, before any fresh final testing",
+  "candidates": "Best predicted role combination if better than any single; three weight interpolations alpha .25/.50/.75",
+  "donors": "Scheduled recovered candidates only. Goal-score leader and development BattleAI leader; if identical, highest-scoring different checkpoint.",
+  "selection_rule": "Fair-mirror primary goal_selection.score v2 (goal-selection-mirror-alignment.json); old unequal-army stress only for diagnostics/ties. All derived candidates require four real 48-battle validations; final criteria unchanged.",
+  "source": "https://proceedings.mlr.press/v162/wortsman22a.html",
+  "caveat": "Weight averaging evidence in vision is only motivation; improvement in this RL task must be measured."
+}

@@ -1,0 +1,20 @@
+--- frozen-v2/support.py
++++ family-curriculum/support.py
+@@ -6,14 +6,14 @@
+ def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+ def validate_args(a):
+     assert sha(a.checkpoint)==B64 and not a.resume
+-    assert (a.workers,a.updates,a.rollout,a.mode)==(8,4,32,'last')
++    assert (a.workers,a.updates,a.rollout,a.mode)==(12,4,32,'last')
+     assert a.opponents==['BattleAI','MMAI_MODEL'] and a.native_opponent_device=='cpu'
+     assert a.learning_rate==1e-6 and a.head_learning_rate==1e-5 and a.epochs==2
+     assert a.gamma==1 and a.step_cost==0 and a.shaping==.5 and a.entropy_coef==.005
+-    assert a.seed==2026102008 and a.rotate_every==16 and a.first_battle
++    assert a.seed==2026102012 and a.rotate_every==2 and a.first_battle
+     assert a.no_auto_microbatch and a.microbatch==8
+ def verify_freeze(path):
+-    d=json.loads(Path(path).read_text());assert d['schema']=='battle-resume-bounded-last-v1'
++    d=json.loads(Path(path).read_text());assert d['schema']=='battle-family-balanced-last-v1'
+     assert all(sha(p)==h for p,h in d['input_sha256'].items()),'Frozen input changed'
+     return d
+ def capture_local(folder,frozen):

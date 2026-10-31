@@ -1,0 +1,53 @@
+{
+  "seed": 20261013,
+  "role": "attacker",
+  "opponent": "BattleAI",
+  "map": "lab/smoke.vmap",
+  "schema": 15,
+  "boot_seconds": 0.9568774990000293,
+  "elapsed_seconds": 0.9905220750001718,
+  "policy": "deterministic attack-priority legal-action diagnostic",
+  "note": "No spells, summons or resurrection; army values are schema permille, not raw casualty counts.",
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 4,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 333
+      },
+      "final_value_permille": {
+        "0": 633,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 33,
+        "1": 333
+      },
+      "terminal_info": {
+        "side": 0,
+        "round": 4,
+        "step": 4,
+        "net_value": 300,
+        "is_success": true,
+        "reward_step_fixed": -4.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": 341.0,
+        "reward_term_mult": 301.0,
+        "reward_relval_mult": 364.0
+      },
+      "actions": [
+        70,
+        70,
+        70,
+        70
+      ],
+      "reward_sum": 1002.0,
+      "initial_observation_sha256": "e6028f39794b8d7433a7e7816d989afcd9b3d142a1121f6d5c29a05bc72f6b6f",
+      "trajectory_sha256": "c6ea24ecd03a8748d28cc68208503cae39f664e13a42748d3846027b4ed5f380"
+    }
+  ]
+}

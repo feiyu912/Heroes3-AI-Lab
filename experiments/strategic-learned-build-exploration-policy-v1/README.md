@@ -1,0 +1,15 @@
+# Executable build-exploration training adapters
+
+New isolated training package for calibrated initialization SHA256 `40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97`, build_bias1.5, ancestry34a6/188 historical CUDA steps. This epoch explicitly starts fresh Adam/RNG/rollout. No old source, model, capsule or admission is modified. This task ran CPU checks only, no native/CUDA sampler/optimizer step.
+
+Architecture and encoder are imported with exact SHA checks from frozen exploration-v1 and strict schema5 policy respectively. The only new parameter is `actor.build_bias`; original43-feature semantics, native action schema5/economy epoch/build contract and original qualified capsule stay unchanged. The architecture/version is `schema5-build-logit-offset-v1`.
+
+`model_io.py` accepts the strict calibration initialization through its SHA-bound codec. New complete/partial checkpoints have format `strategic-learned-build-exploration-ppo-checkpoint-v1` and mandatory architecture_version, named optimizer binding including actor.build_bias, current bias in prior_config, protocol/source hashes, complete update boundary, CPU/CUDA/Python RNG and collection state. Protocol schema must be `strategic-learned-build-exploration-training-v1`. Old schema5 training format and malformed/partial/source-mismatched resume are rejected. This does not resume old Adam state.
+
+Broker and CUDA sampler CLIs match prior versions. Admission and training import root's new sibling `strategic-learned-build-exploration-run-v1/pipeline_common.py` and collector. Admission and load_admitted require the new pipeline epoch, while native audit_epoch remains `director-learned-economy-build-v1`. They retain whole-native-game/build evidence plus exact CUDA sampling replay. No old3000 calibration row can become on-policy data for this modified model. Training requires all8 fresh Training cells, parent/source/runtime/update consistency and at least one genuine build. Saved reports include actual build_bias before/after, named Adam step and moment.
+
+The PPO objective/update function ASTs exactly match the frozen original economic policy; only encoder import and algorithm epoch metadata differ. Reward and Adam/PPO settings remain unchanged. New actor parameter automatically participates in the actor group and existing forced-transition handling.
+
+`cpu-02/AUDIT.json` verifies the actual40eccc initialization, empty-Adam named parameter binding/save/load, exact CPU/Python RNG restore, scalar derivatives build1/move0/criticNone, unchanged PPO function ASTs, and8 negative cases without mutation. Adam was never stepped; nonempty CUDA moment/new-bias restoration must be verified after root's real update. `cpu-01` is an intermediate CPU result from before the final train-report observation addition. Training/admission `--help` imports passed against root's actual new common/collector.
+
+`SOURCE_FREEZE.json` and `source-freeze-01` snapshot the final10 Python source files. Root owns fresh native collection, CUDA sampling/admission/PPO execution and independent paired DEV. No new native compilation or extra framework is introduced here.

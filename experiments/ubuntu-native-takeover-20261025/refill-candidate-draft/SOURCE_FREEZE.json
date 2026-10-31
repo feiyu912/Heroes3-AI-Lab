@@ -1,0 +1,25 @@
+{
+  "status": "source-only-draft-not-compiled-not-native-qualified",
+  "files": {
+    "derive.py": "339ebcf744db07858be7fcfa34f9d6f76bf48e39e617077590f4667a21e17bea",
+    "candidate.diff": "4954367d4c8a89fc3d565f5044ed206a13157926c4f5dcc3d626581d36041bb7",
+    "CANDIDATE_MANIFEST.json": "5998b87f9ed0b7bacd3405e08bf1fd5f59db5297a8c659cf12c5fb527fbb0e46",
+    "DERIVATION_REPORT.json": "4dc9b56179c193846cf910369ccb183dbdba38a1896d6dc984eebbc0b9bb29c9",
+    "SOURCE_REVIEW.md": "e22da28ec2868945d77f16776897ddf91d3b1d8be74dbd8e93ea331e54e58f30",
+    "QUALIFICATION_PLAN.md": "481a1bed0104d13aa38a87fd240d754ae0d3ef93350eb89f62ab48d6413bb138"
+  },
+  "candidate_payloads": {
+    "AI/DirectorAI/CDirectorAI.cpp": "5dfa4d8a770ab1b6170653ad6b31996de15a10d6cd6358b27f7a9446f64f2911",
+    "AI/DirectorAI/CDirectorAI.h": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c",
+    "AI/DirectorAI/TypedPolicyProtocol.h": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c",
+    "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+    "server/CGameHandler.cpp": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d",
+    "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "client/NetPacksClient.cpp": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+    "client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+  },
+  "native_builds": 0,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "model_version": 15,
+  "native_temperature": 0,
+  "checks": [
+    "Legal ID echo, finite probabilities and greedy action verified every decision",
+    "Swapped Python/native sides give identical terminal casualties",
+    "Native model selfplay 80/160"
+  ],
+  "limitation": "Swapped-side smoke one seed; suite verifies every model output"
+}

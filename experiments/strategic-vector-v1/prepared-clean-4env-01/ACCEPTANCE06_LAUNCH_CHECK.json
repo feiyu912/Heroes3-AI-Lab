@@ -1,0 +1,16 @@
+{
+  "acceptance": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-06",
+  "completed_episodes": 12,
+  "mechanism_gates": 12,
+  "all_registered_inputs_unchanged": true,
+  "acceptance_execution_sha256": "e5c4cd828031086d59c98f403ccee398d8ae6ed7945881112c90e54c8ee617b0",
+  "acceptance_protocol_sha256": "583baa2391bde4fc127521f2110519d3fa7e376636b71a55020a14055bd84f13",
+  "accepted_native_hashes": {
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac"
+  },
+  "cleanprior_sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+  "parent_and_tactics_explicit_pool_release_received": true,
+  "note": "This check starts no process, lock or GPU; parent authorization is recorded from the active chat, not inferred from elapsed time."
+}

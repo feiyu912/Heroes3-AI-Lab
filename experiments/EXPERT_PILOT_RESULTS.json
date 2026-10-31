@@ -1,0 +1,214 @@
+{
+  "complete": true,
+  "goal_achieved": false,
+  "human": {
+    "completed": true,
+    "groups": {
+      "baseline": {
+        "battles": 12,
+        "wins": 10,
+        "truncations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 72.58333333333333,
+        "permanent_loss_valid_denominator": 12,
+        "unknown_final_losses": 0,
+        "multi_target_opportunities": 8,
+        "selected_multi_enemy_attacks": 5
+      },
+      "bc": {
+        "battles": 12,
+        "wins": 9,
+        "truncations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 77.66666666666667,
+        "permanent_loss_valid_denominator": 12,
+        "unknown_final_losses": 0,
+        "multi_target_opportunities": 11,
+        "selected_multi_enemy_attacks": 8
+      }
+    },
+    "recovery_version": "human-tactics-recovery-v2",
+    "quality_tier": "Q2-exploratory",
+    "limitations": "Small fixed pilot; coverage is not certified tactic success. No human traces, counter expert, historical pool or ordinary-battle regression completed."
+  },
+  "source_wait": {
+    "baseline": {
+      "battles": 4,
+      "wins": 4,
+      "first_wait": 1,
+      "actual_windows": 1,
+      "mean_ghost_dragons_lost": 1.0
+    },
+    "source-bc": {
+      "battles": 4,
+      "wins": 4,
+      "first_wait": 2,
+      "actual_windows": 2,
+      "mean_ghost_dragons_lost": 1.0
+    }
+  },
+  "retention": {
+    "complete": true,
+    "results": [
+      {
+        "model": "b64-baseline",
+        "opponent": "BattleAI",
+        "checkpoint_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/b64-baseline-BattleAI-development.json",
+        "report_sha256": "76491ac321efd7e996dec6a4dbb4ca61b22941216fe7794d5c64a9f12785f998",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 84,
+          "win_rate": 0.875,
+          "wilson95": [
+            0.7941135793103388,
+            0.9270287100760494
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 94.94791666666667
+        },
+        "role_wins": {
+          "attacker": 43,
+          "defender": 41
+        }
+      },
+      {
+        "model": "b64-baseline",
+        "opponent": "MMAI_MODEL",
+        "checkpoint_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/b64-baseline-MMAI_MODEL-development.json",
+        "report_sha256": "bc8bb4ef828cd7a776ae4f924e3e7f309e7aac632061516d61e1c9deb9d0b479",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 58,
+          "win_rate": 0.6041666666666666,
+          "wilson95": [
+            0.5041492795838095,
+            0.6961680230235204
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 102.26041666666667
+        },
+        "role_wins": {
+          "attacker": 33,
+          "defender": 25
+        }
+      },
+      {
+        "model": "human-q2-bc",
+        "opponent": "BattleAI",
+        "checkpoint_sha256": "bde72571e0555a41c0696e17179ea42a47c15e3ba7170e3e1be612e92f32f4d4",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/human-q2-bc-BattleAI-development.json",
+        "report_sha256": "60203f29a12bbb1953bb74ea436c29300c9072f8d2ead87b04ad1712eb6c9713",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 83,
+          "win_rate": 0.8645833333333334,
+          "wilson95": [
+            0.7819868570932831,
+            0.9191237020323721
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 97.16666666666667
+        },
+        "role_wins": {
+          "attacker": 42,
+          "defender": 41
+        }
+      },
+      {
+        "model": "human-q2-bc",
+        "opponent": "MMAI_MODEL",
+        "checkpoint_sha256": "bde72571e0555a41c0696e17179ea42a47c15e3ba7170e3e1be612e92f32f4d4",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/human-q2-bc-MMAI_MODEL-development.json",
+        "report_sha256": "a4d5d6a017158eaa3fc387eba58c061c75972b93b6ae211764d89d297bbf69cd",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 58,
+          "win_rate": 0.6041666666666666,
+          "wilson95": [
+            0.5041492795838095,
+            0.6961680230235204
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 102.25
+        },
+        "role_wins": {
+          "attacker": 35,
+          "defender": 23
+        }
+      },
+      {
+        "model": "source-wait-bc",
+        "opponent": "BattleAI",
+        "checkpoint_sha256": "839d7747c8a058aa0a34af329f199dcc5cd6d598d76db7b084b84330d8eb63e1",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/source-wait-bc-BattleAI-development.json",
+        "report_sha256": "438162f74f5f01c07132c476e6e3ebae8d9be00ae080935444bc48944209bf70",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 85,
+          "win_rate": 0.8854166666666666,
+          "wilson95": [
+            0.8063720685325512,
+            0.9348019511145699
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 97.05208333333333
+        },
+        "role_wins": {
+          "attacker": 43,
+          "defender": 42
+        }
+      },
+      {
+        "model": "source-wait-bc",
+        "opponent": "MMAI_MODEL",
+        "checkpoint_sha256": "839d7747c8a058aa0a34af329f199dcc5cd6d598d76db7b084b84330d8eb63e1",
+        "report": "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/source-wait-bc-MMAI_MODEL-development.json",
+        "report_sha256": "754c0a02e845c61cc07436f4ee7d8c2142e114beb2c130f3c42d763e41f66555",
+        "summary": {
+          "policy": "recovered",
+          "battles": 96,
+          "wins": 58,
+          "win_rate": 0.6041666666666666,
+          "wilson95": [
+            0.5041492795838095,
+            0.6961680230235204
+          ],
+          "truncated": 0,
+          "non_normal_terminations": 0,
+          "invalid_actions": 0,
+          "mean_permanent_units_lost": 100.97916666666667
+        },
+        "role_wins": {
+          "attacker": 34,
+          "defender": 24
+        }
+      }
+    ],
+    "scope": "Development retention diagnosis; never independent confirmation or test-based model selection",
+    "goal_achieved": false,
+    "independent_confirmation_run": false,
+    "total_battles": 576
+  },
+  "evidence_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/pilot-comparison.json": "93c68d39248232bd89a2d66e3be346a82a296c93ece672214b871dff3ad0c8df",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source-bc-heldout.json": "b09c9e153f10f3298b15746cc79bd32860eaeb3caa17202b0a31f3316929f0f4",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/development-results.json": "051974c7762714b39d6134bab1343fbe261277c1e2b6f06666dead1d7f777ea5"
+  }
+}

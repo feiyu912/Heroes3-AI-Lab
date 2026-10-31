@@ -1,0 +1,54 @@
+--- learned-economy-native-v1/AI/DirectorAI/CDirectorAI.cpp
++++ learned-economy-native-v2/AI/DirectorAI/CDirectorAI.cpp
+@@ -429,6 +429,7 @@
+  emitTypedBusy();
+  if(!turnActive || typedProtocolFailed || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+     !pendingQueries.empty() || !queryRequests.empty() || outstandingTyped || preparedTyped) return;
++ if(learnedBuildEnabled && buildWindow.open && issueFreeArmyTransfer()) return;
+  if((!learnedBuildEnabled || !buildWindow.open || cb->getHeroesInfo().empty()) && issueEconomy()) return;
+  if(!issueMove()) finishTurn();
+ }
+@@ -580,6 +581,33 @@
+ 		turnActive = false;
+ 		emitTyped("{\"event\":\"game_over\",\"completed\":true,\"player\":"+std::to_string(playerID.getNum())+",\"own_turn\":"+std::to_string(ownTurns)+"}");
+ 	}
++}
++
++bool CDirectorAI::issueFreeArmyTransfer()
++{
++	for(const auto * town : cb->getTownsInfo())
++	{
++		const auto * army = town->getUpperArmy();
++		if(auto hero = town->getVisitingHero())
++		{
++			if(hero->getOwner() == playerID && army != hero)
++			{
++				for(const auto & slot : army->Slots())
++				{
++					const auto key = std::make_pair(town->id.getNum(), 1000 + slot.second->getCreatureID().getNum());
++					const auto targetSlot = hero->getSlotFor(slot.second->getCreatureID());
++					if(!targetSlot.validSlot() || recruitedThisTurn.count(key))
++						continue;
++					recruitedThisTurn.insert(key);
++					pendingEconomy = true;
++					traceState("before_army_transfer");
++					cb->mergeOrSwapStacks(army, hero, slot.first, targetSlot);
++					return true;
++				}
++			}
++		}
++	}
++	return false;
+ }
+ 
+ bool CDirectorAI::issueEconomy()
+--- learned-economy-native-v1/AI/DirectorAI/CDirectorAI.h
++++ learned-economy-native-v2/AI/DirectorAI/CDirectorAI.h
+@@ -110,6 +110,7 @@
+  void typedFailure(const std::string & reason) const;
+  bool issueMove();
+ 	bool issueEconomy();
++	bool issueFreeArmyTransfer();
+ 	void traceState(const std::string & event) const;
+ 	void traceDecision(const CGHeroInstance * hero, const int3 & destination, const int3 & step) const;
+ 	int chooseExternalCandidate(const CGHeroInstance * hero) const;

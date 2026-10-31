@@ -1,0 +1,29 @@
+{
+  "initial": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+  "initial_sha256": "2ff877ab85bb451bc2cd71c3d1c25258e5fe1de6b132ea38d2bd600da75f26cc",
+  "workers": 24,
+  "updates": 32,
+  "rollout": 32,
+  "learning_rate": 1e-05,
+  "reference_coef": 0.1,
+  "gamma": 1.0,
+  "step_cost": 0.0,
+  "shaping": 0.5,
+  "entropy_coef": 0.005,
+  "train_cases": "192 diverse ordinary mirrors, train only",
+  "development_cases": "All 48 diverse development scenarios, both roles x2 seeds, 192 games/opponent",
+  "checkpoints": [
+    16,
+    32
+  ],
+  "opponents": [
+    "BattleAI",
+    "MMAI_GPU"
+  ],
+  "reference": "Frozen original public pair, independently encoded observations",
+  "basis": "Frozen v5 failed BattleAI target and regressed on defense; preserve public strategy while testing finite-win objective",
+  "old_final_results_read": true,
+  "old_final_results_used_for_selection": false,
+  "new_independent_confirmation_required": true,
+  "caveat": "Combined method changes; not a single-factor KL ablation. Pilot result does not prove >=95% or beat author."
+}

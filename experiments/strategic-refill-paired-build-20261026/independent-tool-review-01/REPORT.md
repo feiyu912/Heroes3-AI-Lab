@@ -1,0 +1,15 @@
+# 冻结补兵机制工具独立只读复核
+
+复核当前冻结工具common、collector、selector、raw contract auditor、mechanism auditor、pair auditor及其原生schema6字段/协议来源。未发现有确凿证据的启动阻断或虚假通过问题；这不是原生运行资格通过。新capsule尚须真实完整运行，fixture的实际visitor、frontier可达、原commit继续有效、同回合返回及transfer都不能由本复核证明。
+
+实际完成九模块AST解析/内存语法编译、六个无副作用模块导入、60项source freeze及build contract SHA复核。没有启动native、GPU、优化器，没有修改冻结源码、builder或prefix。CHECKS.json列真实输入SHA。
+
+可执行性核证：selector TOP字段与原生chooseExternalCandidate的schema6输出对应；response的九个键及diagnostic_only分类与TypedPolicyProtocol严格解析键集对应。collector显式设置learned economy mode、AI双方、XDG资源目录，启动前验证完整capsule，沿用thread-server与真实libvcmi /proc路径/inode/SHA门。broker及exec wrapper都接收pass_fds，实际源码第64、72行分别注册broker.pid与child.pid到ACTIVE_GROUPS。
+
+资源安全疑点已核证撤回：当前freeze并非未注册direct Popen。finally即使stop_group失败也调用finish_owned_groups，该函数对注册会话继续清理并等待活成员消失，然后才写execution与关闭FD。input SHA读回位于该清理之后。没有为假设异常虚构新安全问题。
+
+覆盖/审计核证：selector一旦遇到前置条件失败会记录uncovered并仅回复真实EndTurn；mechanism auditor独立拒绝任何uncovered。candidate正例要求原move+kind4实际候选、先继续原move、再返城，并逐selected move要求实际move_result、package_applied、下一request坐标及trace callback。recruit与transfer使用原生完整库存/资源/双方army守恒及服务端log mirror，非ACK布尔单独代替。baseline或负边界缺refill不能代替candidate正例通过；pair审计重新调用两臂raw/mechanism审计，不信任已有passed文件。
+
+fixture运行限制仍如实存在：positive/empty地图字节相同，区分由固定selector是否招募产生；这符合登记。full-merge是否真实招到已有物种、满七槽是否真实载入，运行审计另有断言，不能由静态地图声明通过。六个deferred boundaries没有被这批工具伪报已运行。
+
+判定：当前没有需要修改冻结工具的确证发现。继续真实执行时若有启动、路径或coverage失败，须保存原始失败，并在新epoch修正；本报告不构造模拟成功、不替代实际原生证据。

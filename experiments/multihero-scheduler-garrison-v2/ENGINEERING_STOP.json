@@ -1,0 +1,86 @@
+{
+  "engineering_pass": false,
+  "scheduler_qualified": false,
+  "optimizer_steps": 0,
+  "final_test_touched": false,
+  "runs": {
+    "baseline": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-baseline-02",
+      "sha256": {
+        "probe.jsonl": "5dbb4c76599e5235a954b5f75af090783115cb727b8f0c955dc8567afd2ba4ea",
+        "strategy-trace.jsonl": "6c452a7db9ce7e0047201bbbcd41e05f14b9845847fdfaf8d35b0365ba20dc0f",
+        "client.log": "15a2fb6ba0934a91f5610cf793ba784554ced4f19611ff1440fa4a7562c19314",
+        "plan.json": "aca363cd6e778ec24885c25882b3a33fbffd22e2e81a0599354c4600f6394c0b",
+        "execution.json": "08951f6227d2efecb060de38fc6e4eb43c94a1f757416ab27d484c84ca8c9ce9",
+        "AUDIT_SCHEDULER.json": "147d4f89842bce421ce9e21d48fed4e64ce5b980ba7b64f3f13fb8336a30809c"
+      },
+      "blockers": [
+        "move_sent_for_non_mobile_hero",
+        "native_log_scheduled_control_hero",
+        "native_query_or_apply_rejection",
+        "native_stop_not_controlled",
+        "native_timeout",
+        "strict:mobile_0_turn_2_native_motion",
+        "strict:mobile_2_turn_2_native_motion",
+        "strict:only_mobile_heroes_selected",
+        "successful_move_ack_for_non_mobile_hero",
+        "town_tile_control_scheduled",
+        "wrong_stop_reason"
+      ],
+      "strict_checks": {
+        "one_native_setup_handshake": true,
+        "setup_order_and_request_tuple": true,
+        "setup_before_any_selection": true,
+        "one_before_after_state": true,
+        "native_visiting_to_real_positive_mp_garrison": true,
+        "setup_seven_resources_conserved": true,
+        "setup_hero_identity_position_mp_conserved": true,
+        "setup_army_conserved_deduplicated": true,
+        "setup_town_buildings_stock_conserved": true,
+        "garrison_remains_fixed": true,
+        "only_mobile_heroes_selected": false,
+        "mobile_0_turn_1_native_motion": true,
+        "mobile_2_turn_1_native_motion": true,
+        "mobile_0_turn_2_native_motion": false,
+        "mobile_2_turn_2_native_motion": false,
+        "move_request_ack_bijection": true
+      }
+    },
+    "filtered": {
+      "raw": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-filtered-02",
+      "sha256": {
+        "probe.jsonl": "cb5bc26d5b7517e77f8021c0f1f81a268eebe49277c424e55ce2a63e9b6c41d4",
+        "strategy-trace.jsonl": "080ad7c77cef9f7392618886c763318cc9136a553730d3791d1f9f897d82eadf",
+        "client.log": "7af4668239cd83c581156ad022c3ecc11de653899fab6396932aac9c8436dd13",
+        "plan.json": "ec8489bd655add98d8827f07658cae74a8952b97e4328c7dabcd4b7140c3a2a0",
+        "execution.json": "78bbf1d45428943b16dacc1c61fa84530733644a10994f38ee6d50da8c61e9cd",
+        "AUDIT_SCHEDULER.json": "b868588f15e73ee7c4268e332fed908af12ef4abc245fa24249760d090d71e37"
+      },
+      "blockers": [
+        "native_stop_not_controlled",
+        "native_timeout",
+        "strict:mobile_0_turn_2_native_motion",
+        "strict:mobile_2_turn_2_native_motion",
+        "wrong_stop_reason"
+      ],
+      "strict_checks": {
+        "one_native_setup_handshake": true,
+        "setup_order_and_request_tuple": true,
+        "setup_before_any_selection": true,
+        "one_before_after_state": true,
+        "native_visiting_to_real_positive_mp_garrison": true,
+        "setup_seven_resources_conserved": true,
+        "setup_hero_identity_position_mp_conserved": true,
+        "setup_army_conserved_deduplicated": true,
+        "setup_town_buildings_stock_conserved": true,
+        "garrison_remains_fixed": true,
+        "only_mobile_heroes_selected": true,
+        "mobile_0_turn_1_native_motion": true,
+        "mobile_2_turn_1_native_motion": true,
+        "mobile_0_turn_2_native_motion": false,
+        "mobile_2_turn_2_native_motion": false,
+        "move_request_ack_bijection": true
+      }
+    }
+  }
+}

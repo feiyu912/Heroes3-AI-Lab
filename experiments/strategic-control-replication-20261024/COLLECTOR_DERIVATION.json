@@ -1,0 +1,10 @@
+{
+  "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-active-opponent-learning-20261024/collect_cpu.py",
+  "changes": [
+    "DEV-only replication metadata",
+    "fixed original initialization and original x1-trained control checkpoint only",
+    "complete frozen source closure includes new controller and current checkpoint"
+  ],
+  "native_changes": false,
+  "optimizer_steps": 0
+}

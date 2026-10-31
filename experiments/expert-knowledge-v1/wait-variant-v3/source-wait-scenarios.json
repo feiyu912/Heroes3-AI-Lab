@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hallas-wait-multi-v3-0-attacker",
+    "map": "lab/hallas-wait-multi-v3-0-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 4
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {},
+        {}
+      ]
+    ],
+    "index": 20,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "c981e1b5f2e450874fc2e8358a7dbead57756abe882c4c62b3092e78d15ab81a",
+    "reconstruction": "One fast flyer versus three slower stacks; lab-generated counts/positions, not human replay",
+    "source_locator": "Hallas page5 Waiting to attack final paragraph: flying troops and gang-up risk",
+    "side_effects": "Ghost Dragon aging active; no breath ability claimed; random combat effects not isolated",
+    "morale_control": "All units undead; actual action order must be checked"
+  },
+  {
+    "id": "hallas-wait-multi-v3-0-defender",
+    "map": "lab/hallas-wait-multi-v3-0-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 25
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 4
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 20,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "d566ed8b394d61c8c7c0fc518a3971080d7d2b703ecbec614e0909dbc13f69ef",
+    "reconstruction": "One fast flyer versus three slower stacks; lab-generated counts/positions, not human replay",
+    "source_locator": "Hallas page5 Waiting to attack final paragraph: flying troops and gang-up risk",
+    "side_effects": "Ghost Dragon aging active; no breath ability claimed; random combat effects not isolated",
+    "morale_control": "All units undead; actual action order must be checked"
+  },
+  {
+    "id": "hallas-wait-multi-v3-1-attacker",
+    "map": "lab/hallas-wait-multi-v3-1-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {},
+        {},
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {},
+        {}
+      ]
+    ],
+    "index": 21,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "b96dc04113d7be9b6fc159f1145bf20a3446b8596646e01761144ecdcef197cf",
+    "reconstruction": "One fast flyer versus three slower stacks; lab-generated counts/positions, not human replay",
+    "source_locator": "Hallas page5 Waiting to attack final paragraph: flying troops and gang-up risk",
+    "side_effects": "Ghost Dragon aging active; no breath ability claimed; random combat effects not isolated",
+    "morale_control": "All units undead; actual action order must be checked"
+  },
+  {
+    "id": "hallas-wait-multi-v3-1-defender",
+    "map": "lab/hallas-wait-multi-v3-1-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {},
+        {},
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {
+          "type": "core:walkingDead",
+          "amount": 35
+        },
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 6
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 21,
+    "split": "train",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "dc46345250b8481cb242b8ac2b57b1d61dfcf035dbcac924060c9651afffdd27",
+    "reconstruction": "One fast flyer versus three slower stacks; lab-generated counts/positions, not human replay",
+    "source_locator": "Hallas page5 Waiting to attack final paragraph: flying troops and gang-up risk",
+    "side_effects": "Ghost Dragon aging active; no breath ability claimed; random combat effects not isolated",
+    "morale_control": "All units undead; actual action order must be checked"
+  }
+]

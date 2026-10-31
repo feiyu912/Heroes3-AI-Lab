@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/PLAN.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/PLAN.json",
+      "sha256": "f5a4bcd73670851a76da90693147bc204248be857270a38bf205ca9f92eb6521"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/EXECUTION.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/EXECUTION.json",
+      "sha256": "2b5b36073787b460bd416522601724cdb73e908421f134018978e91f6ac84106"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/CANDIDATE_MANIFEST.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/CANDIDATE_MANIFEST.json",
+      "sha256": "865988a27bc8de8f257b767ac5b10927e76da96fe974e37414fe7519f38e7830"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/build.log",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/build.log",
+      "sha256": "4f71d3c1f462fe52a7f77cdeaa57f954d49c6c3e7bf7ae29fa61f6f12cb267f9"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/restore-accepted-build.log",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/restore-accepted-build.log",
+      "sha256": "ca2edac2997c3d728e81432edf71931a02866dbd9214a1a83f8522beeb027b5a"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/build-source-manifest.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/build-source-manifest.json",
+      "sha256": "53ef006a544933091b5e32fba2eae2d1e1cd406c56e13b61e8c8b04fa63d0c31"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-01/CONTRACT.md",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-01/CONTRACT.md",
+      "sha256": "1f3a9d3c0777e31787df5e8cd2a2af1614d326a04f9b0f85ac0e83c3e42d15a3"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/PLAN.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/PLAN.json",
+      "sha256": "fd3cdfb9598d74a0bcc1d26a3557febd63de99aeb8ba43da35c8b7b70717e340"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/EXECUTION.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/EXECUTION.json",
+      "sha256": "1dd10f1cb026e94d16fe62708a383835a1afbf42c167148e890ccc4cb381400b"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/CANDIDATE_MANIFEST.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/CANDIDATE_MANIFEST.json",
+      "sha256": "bec33627673811f3d995fa29bad836f23eee1f47aa70c2f5241af745f6e918c6"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/build.log",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/build.log",
+      "sha256": "f1d7fb73c56bd8107f4ea91edc7c1c2bdec882f1051788a06bf1f961d7831bc2"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/restore-accepted-build.log",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/restore-accepted-build.log",
+      "sha256": "8390ff6e579922afba27cadde36c2af128ba2a3e898c5ddd19c0064c20ae1753"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/build-source-manifest.json",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/build-source-manifest.json",
+      "sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48"
+    },
+    {
+      "source": "/root/heroes3-ai-lab/evaluations/strategic-learned-recruitment-capsule-02/CONTRACT.md",
+      "copy": "/mnt/g/Heroes3-AI-Lab/experiments/takeover-20261023/native-build-evidence-01/capsule-02/CONTRACT.md",
+      "sha256": "1f3a9d3c0777e31787df5e8cd2a2af1614d326a04f9b0f85ac0e83c3e42d15a3"
+    }
+  ],
+  "scope": "Reviewable build evidence only; binaries retained at original Linux capsule paths"
+}

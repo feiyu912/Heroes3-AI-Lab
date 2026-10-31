@@ -1,0 +1,52 @@
+{
+  "passed": false,
+  "mechanism_only": true,
+  "candidate_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "capsule_directory": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02",
+  "capsule_manifest_sha256": "b6e8131d4955151c57b562aef40f69701ff6cf734900e22c766b7332f71d7812",
+  "native_artifacts": {
+    "vcmiclient": "0e9231fe7b562674d77278efa27fece3c3023a55cb851269835574d97d78f327",
+    "vcmiserver": "d995f852f4706f694aee268e49519fc2e95543131c25a141259d251677ac6e5d",
+    "libvcmi.so": "107ceeb3aed04724aaf2d397c6e1405de58b423c8946cf303d060ab00a0aea22"
+  },
+  "cases": [
+    {
+      "folder": "/root/heroes3-ai-lab/evaluations/strategic-free-stock-qualification-02",
+      "audit": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/proof-01/raw-audit-00/AUDIT.json",
+      "audit_sha256": "b2c7fa959c29295c76732aedd1c50f24b45bda48c7cba3cea2885692a19fed0c",
+      "raw_sha256": {
+        "client.log": "c83fb800b94ee3e75225a829db8c8096d7e62186206f1e762bbb9d64c37f7433",
+        "typed.jsonl": "0414a04bf6aa5b11ec21627922f017ee7ed271af1407103e44fc23426f2ca97c",
+        "strategy-decisions.jsonl": "133d7ed381743251665739a1b427bd530f7dce1b8b907308025bc8a93ecab39b",
+        "EXECUTION.json": "010b51b8f31ee2d31bdb639fdd77c8af181aa27014d60c47f8507931901e3b7d",
+        "PLAN.json": "effacd1db0209c90d69580a121927c02ceee7b181e5b7e721b110e84bd039f00",
+        "agent/typed-broker.jsonl": "4423b619f2ec26387540be3b6f7d0756ba1294fdb00e8a508e74be49fdde5720",
+        "build-packs.jsonl": "9d368afb843a543d733792231c44622993908fd9b162a8c6b6d55968472c0eb8"
+      },
+      "flow_raw_sha256": {
+        "client.log": "c83fb800b94ee3e75225a829db8c8096d7e62186206f1e762bbb9d64c37f7433",
+        "strategy-trace.jsonl": "dbe63bb8705849555359bc2314c40a6ec6b226717bfaa77a69df5a5d35a465b7",
+        "PLAN.json": "effacd1db0209c90d69580a121927c02ceee7b181e5b7e721b110e84bd039f00",
+        "agent/typed-broker.jsonl": "4423b619f2ec26387540be3b6f7d0756ba1294fdb00e8a508e74be49fdde5720"
+      },
+      "prewindow_transfers": 0,
+      "training_samples": 0,
+      "optimizer_steps": 0
+    }
+  ],
+  "multistack_before_first_policy_proven": false,
+  "rescue_hire_then_free_transfer_before_first_policy_proven": false,
+  "flow_auditor_dependencies": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/audit_game_v6.py": "898fefb947b88a070858c412a30ea0d29b6f863a7a16ea27293c1ac6575cfd7d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/collect_mechanism.py": "4e21670ba4401555435eb22bc074ad1191bb45807ca3a210204f0272d2e92e5f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/finalize_proof.py": "257897898e24a99749d22d91e1a335e9b2ef373ac7eb9f5a68ace6ce99e7d81f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/flow_evidence.py": "0d263839dadd6d117d98acb305993e6b2dc167c4e66b0c088350375d97256e60",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/pipeline_common.py": "8d80f413d3d39beb1c3142559aa469daac2d12f3ac92ae560e50e1774492eb88",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/prepare_bootstrap.py": "092f11c218ff2778bcde7486fc0a9cc249fe09976cc7d78948d6ea63a0677ee4"
+  },
+  "directly_observed_complete_arrange_payload": false,
+  "limitation": "Actual ID/player/type/received/server stack mutation/success/ACK directly observed. Donor/recipient and whole-stack quantities uniquely reconstructed from own public stack snapshots and matching compiled helper; slot IDs/what are not directly logged. No hidden-state inspection.",
+  "training_samples": 0,
+  "optimizer_steps": 0
+}

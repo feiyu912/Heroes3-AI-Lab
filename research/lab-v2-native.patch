@@ -1,0 +1,220 @@
+--- a/vcmi/AI/BattleAI/BattleAI.cpp
++++ b/vcmi/AI/BattleAI/BattleAI.cpp
+@@ -88,7 +88,7 @@
+ 	tacticsHandler->onActionFinished(action);
+ }
+ 
+-static float getStrengthRatio(std::shared_ptr<CBattleInfoCallback> cb, BattleSide side)
++float getStrengthRatio(std::shared_ptr<CBattleInfoCallback> cb, BattleSide side)
+ {
+ 	auto stacks = cb->battleGetAllStacks();
+ 	uint64_t our = 0;
+--- a/vcmi/AI/BattleAI/BattleEvaluator.h
++++ b/vcmi/AI/BattleAI/BattleEvaluator.h
+@@ -16,6 +16,11 @@
+ class CSpell;
+ class CBattleCallback;
+ class BattleAction;
++
++struct StartInfo;
++class CBattleInfoCallback;
++DLL_EXPORT float getStrengthRatio(std::shared_ptr<CBattleInfoCallback> cb, BattleSide side);
++DLL_EXPORT int getSimulationTurnsCount(const StartInfo * startInfo);
+ 
+ struct CachedAttack
+ {
+--- a/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
++++ b/vcmi/AI/MMAI/BAI/v15/BAI_v15.cpp
+@@ -11,6 +11,8 @@
+ #include "BAI/v15/BAI_v15.h"
+ 
+ #include "AI/BattleAI/BattleEvaluator.h"
++#include "callback/IGameInfoCallback.h"
++#include "StartInfo.h"
+ #include "BAI/v15/graph/nodes/action_v15.h"
+ #include "battle/BattleAction.h"
+ #include "battle/BattleHex.h"
+@@ -379,6 +381,41 @@
+ 
+ 	state->onActiveStack(astack, roundcounter);
+ 
++	const char * collectTeacher = std::getenv("LAB_BATTLEAI_TEACHER");
++	if(collectTeacher && std::strcmp(collectTeacher, "1") == 0)
++	{
++		auto evaluator = BattleEvaluator(env, cb, astack, *cb->getPlayerID(), bid,
++			battle->battleGetMySide(), getStrengthRatio(cb->getBattle(bid), battle->battleGetMySide()),
++			getSimulationTurnsCount(env->game()->getStartInfo()));
++		const auto teacher = evaluator.selectStackAction(astack);
++		state->supdata->teacherDescription = teacher.toString();
++		for(const int id : state->G->getActiveActionIds())
++		{
++			const auto candidate = ToBattleAction(*battle, state->G->getById<N::Action>(id), astack);
++			if(candidate.side != teacher.side || candidate.stackNumber != teacher.stackNumber
++				|| candidate.actionType != teacher.actionType || candidate.spell != teacher.spell
++				|| candidate.target.size() != teacher.target.size())
++				continue;
++			const auto candidateTargets = candidate.getTarget(battle.get());
++			const auto teacherTargets = teacher.getTarget(battle.get());
++			bool matches = true;
++			for(std::size_t i = 0; i < teacherTargets.size(); ++i)
++			{
++				if(teacher.actionType == EActionType::WALK_AND_ATTACK && i == 1)
++					matches = matches && battle->battleGetUnitByPos(candidateTargets.at(i).hexValue)
++						== battle->battleGetUnitByPos(teacherTargets.at(i).hexValue);
++				else
++					matches = matches && candidateTargets.at(i).hexValue == teacherTargets.at(i).hexValue;
++			}
++			if(matches)
++			{
++				state->supdata->teacherAction = id;
++				break;
++			}
++		}
++	}
++
++
+ #ifndef ENABLE_ML
+ 	if(maybeCastSpell(astack, bid))
+ 		return;
+--- a/vcmi/AI/MMAI/schema/v15/types.h
++++ b/vcmi/AI/MMAI/schema/v15/types.h
+@@ -10,6 +10,8 @@
+ 
+ #pragma once
+ 
++#include <array>
++#include <map>
+ #include <cstdint>
+ #include <string>
+ #include <vector>
+@@ -65,6 +67,14 @@
+ 
+ using AttackLogs = std::vector<const IAttackLog *>;
+ 
++struct MMAI_DLL_LINKAGE TerminalOutcome
++{
++    int resultType = -1;
++    int winner = -1;
++    std::array<std::map<int, int>, 2> casualties;
++    std::array<std::map<int, int>, 2> initialArmies;
++};
++
+ // This is returned as std::any by IState
+ // => MMAI_DLL_LINKAGE is needed to ensure std::any_cast sees the same symbol
+ class MMAI_DLL_LINKAGE ISupplementaryData
+@@ -79,6 +89,9 @@
+ 	virtual Type getType() const = 0;
+ 	virtual const Graph::IGraph * getGraph() const = 0;
+ 	virtual AttackLogs getAttackLogs() const = 0;
++	virtual int getTeacherAction() const = 0;
++	virtual std::string getTeacherDescription() const = 0;
++	virtual const TerminalOutcome & getTerminalOutcome() const = 0;
+ 	virtual std::string getAnsiRender() const = 0;
+ 	virtual ~ISupplementaryData() = default;
+ };
+--- a/vcmi/AI/MMAI/BAI/v15/supplementary_data_v15.h
++++ b/vcmi/AI/MMAI/BAI/v15/supplementary_data_v15.h
+@@ -69,6 +69,17 @@
+ 		return victory;
+ 	}
+ 
++	const S15::TerminalOutcome & getTerminalOutcome() const override
++	{
++		return terminalOutcome;
++	}
++
++	int teacherAction = -1;
++	std::string teacherDescription;
++	int getTeacherAction() const override { return teacherAction; }
++	std::string getTeacherDescription() const override { return teacherDescription; }
++	S15::TerminalOutcome terminalOutcome;
++
+ 	std::string getAnsiRender() const override
+ 	{
+ 		return ansiRender;
+--- a/vcmi/AI/MMAI/BAI/v15/state_v15.h
++++ b/vcmi/AI/MMAI/BAI/v15/state_v15.h
+@@ -84,6 +84,7 @@
+ 	const int version_;
+ 	const CPlayerBattleCallback & battle;
+ 
++	std::array<std::map<int, int>, 2> initialArmies;
+ 	GlobalStats startStats;
+ 	GlobalStats lastStats;
+ 
+--- a/vcmi/AI/MMAI/BAI/v15/state_v15.cpp
++++ b/vcmi/AI/MMAI/BAI/v15/state_v15.cpp
+@@ -2013,6 +2013,9 @@
+ State::State(int version, const std::string & colorname, const CPlayerBattleCallback & battle)
+ 	: version_(version), battle(battle), startStats(CalcGlobalStats(battle)), lastStats(startStats), colorname(colorname), side(battle.battleGetMySide())
+ {
++	for(const auto * stack : battle.battleGetAllStacks(false))
++		if(stack->unitSlot().getNum() >= 0 && stack->unitSlot().getNum() < GameConstants::ARMY_SIZE && !stack->summoned)
++			initialArmies.at(static_cast<int>(stack->unitSide()))[stack->creatureId().getNum()] += stack->getCount();
+ }
+ 
+ void State::onBattleStacksAttacked(const std::vector<BattleStackAttacked> & bsa)
+@@ -2074,6 +2077,12 @@
+ 		default:
+ 			onActiveStack(nullptr, round, S15::CombatResult::DRAW);
+ 	}
++	supdata->terminalOutcome.initialArmies = initialArmies;
++	supdata->terminalOutcome.resultType = static_cast<int>(br.result);
++	supdata->terminalOutcome.winner = static_cast<int>(br.winner);
++	for(const auto side : {BattleSide::ATTACKER, BattleSide::DEFENDER})
++		for(const auto & [creature, count] : br.casualties[side])
++			supdata->terminalOutcome.casualties.at(static_cast<int>(side)).emplace(creature.getNum(), count);
+ }
+ 
+ void State::onActiveStack(const CStack * acstack, int round, S15::CombatResult result)
+--- a/vcmi/lib/VCMIDirs.cpp
++++ b/vcmi/lib/VCMIDirs.cpp
+@@ -492,6 +492,8 @@
+ bfs::path VCMIDirsXDG::userDataPath() const
+ {
+ #ifdef ML
++	if(const char * dataHome = std::getenv("XDG_DATA_HOME"))
++		return bfs::path(dataHome) / "vcmi";
+ 	return bfs::path(".") / "data";
+ #else
+ 	// $XDG_DATA_HOME, default: $HOME/.local/share
+--- a/vcmi_gym/connectors/v15/threadconnector.cpp
++++ b/vcmi_gym/connectors/v15/threadconnector.cpp
+@@ -297,11 +297,26 @@
+         // std::cout << ss.str() << std::flush;
+ 
+         LOG("Creating p_dict...");
++        py::object p_outcome = py::none();
++        const auto & outcome = sup->getTerminalOutcome();
++        if(outcome.resultType >= 0)
++        {
++            auto p_casualties = py::dict();
++            for(int side = 0; side < 2; ++side)
++                p_casualties[py::int_(side)] = py::cast(outcome.casualties.at(side));
++            p_outcome = py::dict(py::arg("result_type") = outcome.resultType,
++                                py::arg("winner") = outcome.winner,
++                                py::arg("casualties") = p_casualties,
++                                py::arg("initial_armies") = py::cast(outcome.initialArmies));
++        }
+ 
+         return py::dict(
+             py::arg("nodes") = p_nodesdict,
+             py::arg("edges") = p_edgesdict,
+-            py::arg("active_action_ids") = p_activeids
++            py::arg("active_action_ids") = p_activeids,
++            py::arg("terminal_outcome") = p_outcome,
++            py::arg("teacher_action_id") = sup->getTeacherAction(),
++            py::arg("teacher_action_description") = sup->getTeacherDescription()
+         );
+     }
+ 
+--- a/vcmi_gym/envs/v15/vcmi_env.py
++++ b/vcmi_gym/envs/v15/vcmi_env.py
+@@ -654,6 +654,7 @@
+             step=steps_this_episode,
+             net_value=efficiency,
+             is_success=gnode.BATTLE_WINNER == side,
++            terminal_outcome=obs.get("terminal_outcome"),
+             reward_step_fixed=rewvals_total.step_fixed,
+             reward_prog=rewvals_total.prog,
+             reward_dmg_mult=rewvals_total.dmg_mult,

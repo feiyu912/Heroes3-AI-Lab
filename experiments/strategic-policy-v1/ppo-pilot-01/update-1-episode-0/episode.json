@@ -1,0 +1,60 @@
+{
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "DirectorAI",
+    "blue": "EmptyAI",
+    "seed": 2026101910
+  },
+  "valid": true,
+  "reward": 1.0,
+  "decisions": 558,
+  "native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-0-2026101910-7y4xv9_b",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026101910,
+      "seconds": 90,
+      "tag": "update-1-episode-0",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-0-f_lc_xw4"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "EmptyAI"
+    },
+    "turns": null,
+    "moves_requested": 558,
+    "move_replies": 557,
+    "changed_tile_replies": 557,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "a4c510d15f00e95ba8156118c02133c32756712d6c616982ce7b2ecc34cd422b",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 4.470808146999843,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "4fef383ac1ec9fd15c0fb7800f1fd0e30df13d5eb17752f6669371975b73cf24",
+    "strategy_trace_records": 1317,
+    "strategy_decisions_sha256": "a86b36f663453fb171c4dd756178c0f82653a28a991ab382437dfc1894c2e162",
+    "strategy_decision_records": 558,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-0-2026101910-7y4xv9_b/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 341371,
+        "sha256": "201d2914532bec9b136a41940ee8387df0093bef9b4d2c8f3a6060f096c8e390"
+      }
+    ]
+  },
+  "rollout_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-0-f_lc_xw4",
+  "wall_seconds": 4.624702294999679
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "typed-native-source-candidate-v2-terminal-ack-drain",
+  "installed": false,
+  "compiled": false,
+  "native_runs": 0,
+  "files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "baseline_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+      "candidate_sha256": "7aec5cb31144504a70f6c48f937db45ffaec00c5e07b17228482bd7fe51cfb5d"
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "baseline_sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "candidate_sha256": "098f0c3c526780b3874352e9ab6473e98aa62a052ff9242a4fe2391f40b07c52"
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "baseline_sha256": null,
+      "candidate_sha256": "c3cfb614b68c46907f50148292b92c2d5579b62419752726f3bd31cbc8f226ce"
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "baseline_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+    },
+    "server/CGameHandler.cpp": {
+      "baseline_sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+      "candidate_sha256": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865"
+    },
+    "server/CGameHandler.h": {
+      "baseline_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9"
+    },
+    "client/Client.h": {
+      "baseline_sha256": "353b9e02b8796b0bd19f5a293c1f0dc1a6adf1f8175af37722e6a9f03a9099cb",
+      "candidate_sha256": "a8fe014f7dc5db5fcecb97460e3b5789c1cc9c9f95c85b8ffe788b7a569c43d6"
+    },
+    "client/NetPacksClient.cpp": {
+      "baseline_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+      "candidate_sha256": "15f4ba640335c5fb14e2ce20d2019996122cf0e89a0ba0cd10731b61404652eb"
+    }
+  },
+  "scope": "Native rules, server apply and acknowledgment unchanged. Headless auto-test cleanup waits for existing actual request registry to drain."
+}

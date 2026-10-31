@@ -1,0 +1,11 @@
+{
+  "schema": "economy-v4-acceptance-execution-v1",
+  "status": "failed",
+  "episodes": [],
+  "scripted_economy": true,
+  "learned_improvement": false,
+  "bc_eligible": 0,
+  "failed_episode": "engineering-map0-red-2026101860",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/run_acceptance.py\", line 78, in main\n    audit=audit_economy(game/'smoke-result.json')\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/audit_economy_raw.py\", line 40, in audit_economy\n    assert pending_move is None,'Unconfirmed final movement action'\nAssertionError: Unconfirmed final movement action\n",
+  "wall_seconds": 5.929643480999857
+}

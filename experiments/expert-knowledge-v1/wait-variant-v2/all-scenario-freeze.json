@@ -1,0 +1,11 @@
+{
+  "manifest": "all-source-wait-scenarios.json",
+  "sha256": "3911afc99823d682c8c7b5cc868bb2f02030e989145a79f7cb2e9304af25e639",
+  "split_counts": {
+    "train": 8,
+    "development": 4,
+    "test": 4
+  },
+  "holdouts_executed": false,
+  "disclosure": "Combined manifest only; active v2 runner keeps its original training-only manifest and is not modified."
+}

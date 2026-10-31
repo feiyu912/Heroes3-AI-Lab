@@ -1,0 +1,10 @@
+{
+  "valid": false,
+  "winner": null,
+  "diagnostic_only": true,
+  "reason": "runner_exited",
+  "matched_requests": 11823,
+  "runner_exit": 1,
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/exact-replay-f5n62tek",
+  "source_unchanged": true
+}

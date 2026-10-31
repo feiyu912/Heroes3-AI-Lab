@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "gamma": 0.99,
+      "length": 2,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 0.99,
+      "length": 2,
+      "terminal_reward": 1.0,
+      "passed": true
+    },
+    {
+      "gamma": 0.99,
+      "length": 31,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 0.99,
+      "length": 31,
+      "terminal_reward": 1.0,
+      "passed": true
+    },
+    {
+      "gamma": 0.99,
+      "length": 100,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 0.99,
+      "length": 100,
+      "terminal_reward": 1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 2,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 2,
+      "terminal_reward": 1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 31,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 31,
+      "terminal_reward": 1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 100,
+      "terminal_reward": -1.0,
+      "passed": true
+    },
+    {
+      "gamma": 1.0,
+      "length": 100,
+      "terminal_reward": 1.0,
+      "passed": true
+    }
+  ],
+  "truncation_bootstrap_and_potential_passed": true,
+  "scope": "Reward/GAE mathematics only; optional gamma1/step-cost0 has not been trained or shown stronger. Existing experiments retain gamma.99/step-cost.002 defaults."
+}

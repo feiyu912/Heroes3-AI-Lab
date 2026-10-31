@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "mlp: padding, legal-only probabilities, sampling, candidate permutation",
+    "attention: padding, legal-only probabilities, sampling, candidate permutation",
+    "gnn: padding, legal-only probabilities, sampling, candidate permutation",
+    "GAE: termination removes bootstrap; truncation uses final value and stops trace",
+    "GAE: complete episode reward propagates backward",
+    "Empty legal set rejected"
+  ]
+}

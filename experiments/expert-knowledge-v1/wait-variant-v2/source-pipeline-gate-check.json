@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "device": "CPU only; disposable optimizer check, no CUDA calls or game processes",
+  "real_demonstrations_checked": 4,
+  "negative_gates_rejected": [
+    "non_training_label",
+    "wrong_actor",
+    "not_wait_label",
+    "checkpoint_changed",
+    "heldout_definition_changed",
+    "fixture_hash_mismatch",
+    "code_changed_after_capture"
+  ],
+  "actual_model_window_truth_table_passed": true,
+  "runtime_input_hashes_checked": 42,
+  "source_snapshot_files": 8,
+  "real_model_cpu_backward_steps": 2,
+  "real_model_cpu_initial_nll": 9.843853950500488,
+  "real_model_cpu_second_step_nll": 9.62376594543457,
+  "note": "Two CPU-only BC/KL optimizer steps on a disposable actual-model copy; no checkpoint saved. Synthetic checkpoint bytes only exercise hash gates; formal CUDA BC and native tests remain pending"
+}

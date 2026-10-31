@@ -1,0 +1,98 @@
+{
+  "allowedArtifacts": {
+    "anyOf": [
+      "core:pendantOfFreeWill"
+    ]
+  },
+  "defeatIconIndex": 3,
+  "description": "Normal 1v1 strategic development map. Public exploration, resources, mines, recruitment and optional expansion. No scripted grants.",
+  "difficulty": "NORMAL",
+  "mapLevels": {
+    "surface": {
+      "height": 36,
+      "index": 0,
+      "width": 36
+    }
+  },
+  "mods": null,
+  "name": "takeover-v2-dev-01-river",
+  "players": {
+    "blue": {
+      "canPlay": "PlayerOrAI",
+      "heroes": {
+        "hero_1": {
+          "type": "core:sorsha"
+        }
+      }
+    },
+    "red": {
+      "canPlay": "PlayerOrAI",
+      "heroes": {
+        "hero_0": {
+          "type": "core:christian"
+        }
+      }
+    }
+  },
+  "rumors": [],
+  "triggeredEvents": {
+    "standardDefeat": {
+      "condition": [
+        "daysWithoutTown",
+        {
+          "value": 7
+        }
+      ],
+      "effect": {
+        "messageToSend": {
+          "exactStrings": null,
+          "localStrings": null,
+          "message": null,
+          "numbers": null,
+          "stringsTextID": null
+        },
+        "type": "defeat"
+      },
+      "message": {
+        "exactStrings": null,
+        "localStrings": null,
+        "message": [
+          2
+        ],
+        "numbers": null,
+        "stringsTextID": [
+          "core.genrltxt.7"
+        ]
+      }
+    },
+    "standardVictory": {
+      "condition": [
+        "standardWin"
+      ],
+      "effect": {
+        "messageToSend": {
+          "exactStrings": null,
+          "localStrings": null,
+          "message": null,
+          "numbers": null,
+          "stringsTextID": null
+        },
+        "type": "victory"
+      },
+      "message": {
+        "exactStrings": null,
+        "localStrings": null,
+        "message": [
+          2
+        ],
+        "numbers": null,
+        "stringsTextID": [
+          "core.genrltxt.659"
+        ]
+      }
+    }
+  },
+  "versionMajor": 1,
+  "versionMinor": 1,
+  "victoryIconIndex": 11
+}

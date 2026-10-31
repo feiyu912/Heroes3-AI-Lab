@@ -1,0 +1,61 @@
+{
+  "groups": {
+    "EmptyAI/build": {
+      "rows": 108,
+      "negative": 49,
+      "positive": 59,
+      "normalized_advantage_sum": 70.6543671535328,
+      "weighted_advantage_sum": 56.08862263892585
+    },
+    "EmptyAI/move": {
+      "rows": 1967,
+      "negative": 734,
+      "positive": 1233,
+      "normalized_advantage_sum": 1153.351374447142,
+      "weighted_advantage_sum": 1001.1729467089674
+    },
+    "EmptyAI/recruit": {
+      "rows": 958,
+      "negative": 511,
+      "positive": 447,
+      "normalized_advantage_sum": 276.09330365178175,
+      "weighted_advantage_sum": 281.14379811030835
+    },
+    "EmptyAI/end_turn": {
+      "rows": 343,
+      "negative": 72,
+      "positive": 129,
+      "normalized_advantage_sum": 97.39753154374193,
+      "weighted_advantage_sum": 82.613187128053
+    },
+    "Nullkiller2/move": {
+      "rows": 869,
+      "negative": 736,
+      "positive": 133,
+      "normalized_advantage_sum": -562.890633816307,
+      "weighted_advantage_sum": -971.6814885764553
+    },
+    "Nullkiller2/build": {
+      "rows": 29,
+      "negative": 23,
+      "positive": 6,
+      "normalized_advantage_sum": -12.812070727348328,
+      "weighted_advantage_sum": -25.586321444926515
+    },
+    "Nullkiller2/recruit": {
+      "rows": 240,
+      "negative": 218,
+      "positive": 22,
+      "normalized_advantage_sum": -182.6411052532494,
+      "weighted_advantage_sum": -322.7868681001349
+    },
+    "Nullkiller2/end_turn": {
+      "rows": 141,
+      "negative": 68,
+      "positive": 10,
+      "normalized_advantage_sum": -56.24257083656266,
+      "weighted_advantage_sum": -100.96383048143987
+    }
+  },
+  "scope": "Observed complete TRAIN returns only; correlations are not causal explanations; no DEV teacher labels"
+}

@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "balanced-00",
+    "map": "lab/balanced-00.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 12,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 6,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 3,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 3,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 6,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 12,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "527e6826daccd2c90ac8dff683c0c05e0a93fbcd8542ca1907f688a36a1a77ea",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-01",
+    "map": "lab/balanced-01.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 12,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 6,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 2,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 4,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 8,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "737203a0c5f4086e772785a88caec7685798ddb727536fe84a071e8c7b812010",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-02",
+    "map": "lab/balanced-02.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 15,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 9,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 5,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 3,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 7,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 13,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "e6a86a1db1d31794b9ff16b2c6dcdb5f5ce6b436877aa87fce19fff95f369a26",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-03",
+    "map": "lab/balanced-03.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 15,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 9,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 4,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 4,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 9,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 15,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "824105e1ed090555064ee82fcdc78451563ee38fa494540fcc6c0e958be354b2",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-04",
+    "map": "lab/balanced-04.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 17,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 11,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 6,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 4,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 9,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 15,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "03383483a6cf100283ea731c63ae92b628bc65a6e51bc9817ad8a8fdcbeaa3e9",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-05",
+    "map": "lab/balanced-05.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 16,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 10,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 4,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 6,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 12,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 18,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "352a00a2700d040996d0141202b2845980975b1417a3f6465779555d02b953cf",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-06",
+    "map": "lab/balanced-06.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 18,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 12,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 6,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 6,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 12,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 18,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "16e4ac76020c3807064d883900642d15405640ea847dac4b3371b29417c51557",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-07",
+    "map": "lab/balanced-07.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 18,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 12,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 5,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 7,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 14,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 20,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "fc1905722c6a879ad1c21014f4ce28a3098fc76accec9857c7f2820e0aad10c1",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-08",
+    "map": "lab/balanced-08.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 21,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 8,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 6,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 13,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 19,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "d41683b19a622a9ee859132bb0f7c61e72ab1970e1a580e57201b10f629f3899",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-09",
+    "map": "lab/balanced-09.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 21,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 7,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 21,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "6e1ed7e8ca438f2ba9857f4abc46e8dfbd090ee14ecd18401efb6bb110d7c667",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-10",
+    "map": "lab/balanced-10.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 23,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 17,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 9,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 7,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 15,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 21,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "04c08226d8b45b6c90b8a18aeaacc8bc8c2603a4914e1c0ea510adf21f3ace8a",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-11",
+    "map": "lab/balanced-11.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 22,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 16,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 7,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 9,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "5dbfab3ada3cbd52f032ac9408fb6b67dd8d955ada54033ca776a09e677281c1",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-12",
+    "map": "lab/balanced-12.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 24,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 9,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 9,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 24,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "a8d7592815ee7b3b65d56847f0929010f062dd44741b3f02de5543bf62b459ac",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-13",
+    "map": "lab/balanced-13.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 24,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 18,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 8,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 10,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 20,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 26,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "e631d09cd407d70e5edb98cca2db3cfd56e5aed4a17344898fefec28ec3b1346",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-14",
+    "map": "lab/balanced-14.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 27,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 21,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 11,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 9,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 19,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 25,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "39afaedcd8f564424fc5bc527f4e3d0c923115e20f125bb2ee9f7922fe4ab43a",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-15",
+    "map": "lab/balanced-15.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 27,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 21,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 10,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 10,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 21,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 27,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "52a7d91dcd1e630f61ec7b7007003bc2d590b0da715d208b093c3aaf8bb14b67",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-16",
+    "map": "lab/balanced-16.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 29,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 23,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 12,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 10,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 21,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 27,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "8be691b745557ad6ae8291e5992dc9aa1421c29c29c2595cf5ffc315802c4a8f",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-17",
+    "map": "lab/balanced-17.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 28,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 22,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 10,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 12,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 30,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "610e58368ec5bf8588389cc136220c4b1acde51ad832de0a3da35d1a0456a0c5",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-18",
+    "map": "lab/balanced-18.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {
+          "amount": 30,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 12,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 12,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 30,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "96291df787c850c458525356da8214f6ef74b92b3e130ed428cf5676150f7f52",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-19",
+    "map": "lab/balanced-19.vmap",
+    "split": "train",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 30,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 24,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 11,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 13,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 26,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 32,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "abe0212637e0061f6c1c8c9957e39205a19dda91f865adad81b87f3b39c3922f",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-20",
+    "map": "lab/balanced-20.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {
+          "amount": 33,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 12,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 25,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 31,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "1e4ccf85496e1335f6e6e272e70a53f95799080c1c1b59cf8586b52b4a904d8a",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-21",
+    "map": "lab/balanced-21.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 33,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 13,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 13,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 33,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "257485aa7ec505617b5971b24abe61e24e7239aee3ec7db65f02320a047b3a55",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-22",
+    "map": "lab/balanced-22.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {
+          "amount": 35,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 29,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 15,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 13,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 27,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 33,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "da3a51398c38dd69363ba378cec4ea896e7f9bb6749661ae0d8c10fc7c33ecfd",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-23",
+    "map": "lab/balanced-23.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 34,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 28,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 13,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 15,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 30,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 36,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "d275e89d448d692ca692a38c5d720a1d6691f01e7e34d6a142fd9cecbf991f25",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-24",
+    "map": "lab/balanced-24.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {
+          "amount": 36,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 30,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 15,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 15,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 30,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 36,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "90f094ae87a8b07abd75f030c53f09aebcc555f3af47616c39434f07d1ff086d",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-25",
+    "map": "lab/balanced-25.vmap",
+    "split": "validation",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 36,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 30,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 14,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 16,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 32,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 38,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "2606f705efc0584f6568f653c463d20d7d22336b39b80f3db00513a17edebae4",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-26",
+    "map": "lab/balanced-26.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 39,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 33,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 15,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 31,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 37,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "1151a1ef74f50cbcfa82ffc2556085ed4fe06d22e4bacedab1f2c76a80f89754",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-27",
+    "map": "lab/balanced-27.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 39,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 33,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 16,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 33,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 39,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "54e88da1c53633b371d1d9ab7bc7f4d3e141f98cb10f096080bf2fd3716d39c2",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-28",
+    "map": "lab/balanced-28.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 41,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 35,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 18,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 16,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 33,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 39,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "94b11b08837afed0200cfc27929360a00e8f0955d0c5002addb2d337613915a5",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-29",
+    "map": "lab/balanced-29.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 40,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 34,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 16,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 18,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 36,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 42,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "eb163633284bfb443ba0fbcbb43891179c723a1e16ec739f03c5ae4d09c2e829",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-30",
+    "map": "lab/balanced-30.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 42,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 36,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 18,
+          "type": "core:griffin"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 18,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 36,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 42,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "a9cad9f4822309c8a0519de6f62c7132ee2d034cc394ec08de14f372d1ce9db8",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-31",
+    "map": "lab/balanced-31.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 42,
+          "type": "core:centaur"
+        },
+        {},
+        {
+          "amount": 36,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 17,
+          "type": "core:pegasus"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 19,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 38,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 44,
+          "type": "core:centaur"
+        }
+      ]
+    ],
+    "sha256": "5f6d29eb4903eb9b0a54f801c58e6df3a344301a6d058148fdbc2f083248b059",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-32",
+    "map": "lab/balanced-32.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 45,
+          "type": "core:swordsman"
+        },
+        {},
+        {
+          "amount": 39,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 20,
+          "type": "core:cavalier"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 18,
+          "type": "core:cavalier"
+        },
+        {},
+        {
+          "amount": 37,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 43,
+          "type": "core:swordsman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "5ad5f5fc592d3a9ebd17b9ea2740dee3ebbddab72286704aef67b4d1712f6e5d",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-33",
+    "map": "lab/balanced-33.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 45,
+          "type": "core:dwarf"
+        },
+        {},
+        {
+          "amount": 39,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 19,
+          "type": "core:unicorn"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 19,
+          "type": "core:unicorn"
+        },
+        {},
+        {
+          "amount": 39,
+          "type": "core:woodElf"
+        },
+        {},
+        {},
+        {
+          "amount": 45,
+          "type": "core:dwarf"
+        }
+      ]
+    ],
+    "sha256": "d37c078744d6ae1bdff536fa14d085331a17708bd79f96ca8255b3736685cfe8",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-34",
+    "map": "lab/balanced-34.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {
+          "amount": 47,
+          "type": "core:pikeman"
+        },
+        {},
+        {
+          "amount": 41,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 21,
+          "type": "core:pegasus"
+        },
+        {}
+      ],
+      [
+        {
+          "amount": 19,
+          "type": "core:pegasus"
+        },
+        {},
+        {
+          "amount": 39,
+          "type": "core:monk"
+        },
+        {},
+        {},
+        {
+          "amount": 45,
+          "type": "core:pikeman"
+        },
+        {}
+      ]
+    ],
+    "sha256": "9d8022b47ea9a3842689aa4a29b9d2b15dd6d7eb22113cb1228c2cc83626c9bf",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  },
+  {
+    "id": "balanced-35",
+    "map": "lab/balanced-35.vmap",
+    "split": "test",
+    "armies": [
+      [
+        {},
+        {
+          "amount": 46,
+          "type": "core:dendroidGuard"
+        },
+        {},
+        {
+          "amount": 40,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 19,
+          "type": "core:griffin"
+        }
+      ],
+      [
+        {},
+        {
+          "amount": 21,
+          "type": "core:griffin"
+        },
+        {},
+        {
+          "amount": 42,
+          "type": "core:archer"
+        },
+        {},
+        {},
+        {
+          "amount": 48,
+          "type": "core:dendroidGuard"
+        }
+      ]
+    ],
+    "sha256": "bbb18bb8c567778b2cf4c5ea6b597980c9cb073471aaa9f506654cc582eb7a50",
+    "random_obstacles": 0,
+    "scope": "same creature types and close counts; reversed deployment; no magic"
+  }
+]

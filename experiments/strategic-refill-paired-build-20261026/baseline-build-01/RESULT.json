@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "action": "baseline",
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "error": "AssertionError('Command failed; original attempt log retained')",
+  "traceback": "Traceback (most recent call last):\n  File \"/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/build_pair.py\", line 369, in main\n    actual = run_command(command, env, entries, out)\n  File \"/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/build_pair.py\", line 268, in run_command\n    assert code == 0, 'Command failed; original attempt log retained'\n           ^^^^^^^^^\nAssertionError: Command failed; original attempt log retained\n",
+  "protected_inputs_before_and_after_equal": true
+}

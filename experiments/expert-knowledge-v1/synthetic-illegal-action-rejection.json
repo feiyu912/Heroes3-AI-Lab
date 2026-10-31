@@ -1,0 +1,29 @@
+{
+  "structurally_valid": false,
+  "legal_actions_complete": true,
+  "normal_terminal": true,
+  "bc_exploratory_eligible": false,
+  "bc_q3_eligible": false,
+  "errors": [
+    "decision-0: expert action not legal"
+  ],
+  "unknown": [],
+  "q3_denials": [
+    "Synthetic validator fixture cannot enter training",
+    "Source not verified; source kind/name alone grants no expert quality",
+    "Below Q3; exploratory Q2 must not be called verified expert learning",
+    "Human source lacks identity/reference/permission",
+    "source: no evidence artifact",
+    "tactic: no evidence artifact"
+  ],
+  "samples": 15,
+  "source_kind": "human_structured",
+  "trajectory_origin": "human_recorded",
+  "quality_tier": "Q2",
+  "input": "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/synthetic-illegal-human-example.jsonl",
+  "input_sha256": "dd0c9bd6a2bb05650a5cf5ef2529a6d1531dac44342db786272b2576ba161183",
+  "legacy_adapted": false,
+  "mode": "audit",
+  "evidence_limit": "This gate verifies records and hashed audit attestations; it does not itself simulate/replay the battle or authenticate a human identity.",
+  "passed": false
+}

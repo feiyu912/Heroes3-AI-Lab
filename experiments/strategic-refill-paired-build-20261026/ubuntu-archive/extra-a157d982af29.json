@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "package": "libmd0",
+      "version": "1.0.4-1build1",
+      "found": true,
+      "verified": true,
+      "metadata": {
+        "Package": "libmd0",
+        "Architecture": "amd64",
+        "Version": "1.0.4-1build1",
+        "Multi-Arch": "same",
+        "Priority": "important",
+        "Section": "libs",
+        "Source": "libmd",
+        "Origin": "Ubuntu",
+        "Maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+        "Original-Maintainer": "Guillem Jover <guillem@debian.org>",
+        "Bugs": "https://bugs.launchpad.net/ubuntu/+filebug",
+        "Installed-Size": "71",
+        "Depends": "libc6 (>= 2.33)",
+        "Filename": "pool/main/libm/libmd/libmd0_1.0.4-1build1_amd64.deb",
+        "Size": "22964",
+        "MD5sum": "2f268d57c9decda69da2e09a5ee6823d",
+        "SHA1": "3f75efb63d4261cb7be40bfd35883b6583e652dc",
+        "SHA256": "bcdad5e400aeb660f0337a1c5c1a77e3effa91d0803e64ce2d000e9006f67cdb",
+        "SHA512": "cde8196695c5960be84a970791e7b12d2a366e9d4adf938d5c6385b42a6f85254527b655c54ba5cf54479e194a7497517d1625c688668b60b5ee73ca4a0d611a",
+        "Homepage": "https://www.hadrons.org/software/libmd/",
+        "Description": "message digest functions from BSD systems - shared library",
+        "Task": "minimal, server-minimal",
+        "Description-md5": "9f178d99a8400fec0a8ae1aa28518f9b"
+      },
+      "deb_path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-paired-build-20261026/ubuntu-archive/libmd0_1.0.4-1build1_amd64.deb",
+      "deb_sha256": "bcdad5e400aeb660f0337a1c5c1a77e3effa91d0803e64ce2d000e9006f67cdb",
+      "control": "Package: libmd0\nVersion: 1.0.4-1build1\nArchitecture: amd64\n"
+    }
+  ],
+  "system_installed": false,
+  "extracted": false
+}

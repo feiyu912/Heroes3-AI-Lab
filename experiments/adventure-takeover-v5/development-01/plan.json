@@ -1,0 +1,128 @@
+{
+  "schema": "adventure-development-v1",
+  "jobs": [
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101811,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101812,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-open-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101811,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101812,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-detour-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101811,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101811,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101812,
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    {
+      "map": "Maps/adv/takeover-economy-36-v1",
+      "seed": 2026101812,
+      "red": "Nullkiller2",
+      "blue": "Nullkiller2"
+    }
+  ],
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "ede3a49d24bd977ae430b961d62948e68f87d35d4bd0cd5f0a5ff3f84cee05bb",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure-takeover-v5/run_development.py": "684fa0609b3e839a14c074a258e91f5bb898a40c1fb09a999554535d54983949",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "84c98cbd8a793486c72594f74097c76222b9f496f78104abf8fbb2f82423de4d",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.cpp": "c6c85a9bab40ee1cc28e57caafa16fc72c0f8bb1cde883a9e9c33c35292fbc4b",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/StdInc.h": "de34f54eb11972628e60657e86b7555817838978ae8a6bd3641b4e237cb14103",
+    "/root/heroes3-ai-lab/src/vcmi-adv/AI/DirectorAI/CDirectorAI.h": "c14381ba73cf898c647ae76da529daa807442bfbc59dbe57663543280288e8bf",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-open-36-v1.vmap": "ba43fbcd2ff14c3525e82d42dad470ffa436018d323883cc6c1b7794c025fc89",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-detour-36-v1.vmap": "0ad14bec18c0c9c3014f5de8ce8a6096167f8c5f736628bae230e3950009c975",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-economy-36-v1.vmap": "d533dab889c76fb2660f409b845b99dcc28f1b2d02367c218aea5b3ed8a1dacf"
+  },
+  "held_out": false,
+  "purpose": "Engineering/heuristic baseline, not learned-policy performance confirmation."
+}

@@ -1,0 +1,27 @@
+{
+  "interface": "DeepSeek Harness bundled headless CLI",
+  "session_file": "G:\\Heroes3-AI-Lab\\experiments\\battle-opponent-method-review-20261024\\sessions\\--G-Heroes3-AI-Lab-experiments-battle-opponent-method-review-20261024--\\session-a2cfea51-3810-40fb-8766-2566046c6516\\session.v4.jsonl.zstd",
+  "request_header_records": [
+    {
+      "type": "request/header",
+      "seq": 10,
+      "time": 1792776131229,
+      "data": {
+        "header": {
+          "config": {
+            "provider": "mini",
+            "model": "MiniMax-M3.1-Flash",
+            "maxTokens": 4096,
+            "reasoningEffort": "low"
+          },
+          "adapterDefaults": {
+            "reasoningEffort": true,
+            "maxTokens": true
+          }
+        },
+        "reason": "initial"
+      }
+    }
+  ],
+  "session_id": "session-a2cfea51-3810-40fb-8766-2566046c6516"
+}

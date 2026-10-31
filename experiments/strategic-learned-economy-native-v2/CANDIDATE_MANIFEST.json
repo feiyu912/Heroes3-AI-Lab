@@ -1,0 +1,58 @@
+{
+  "schema": "director-learned-economy-free-stock-prewindow-v2",
+  "parent_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "compiled_parent_source_manifest_sha256": "a98b8754efc7afbd83cb8cb1be68425f4eaf1a7dfe08564a708926dcef3e600f",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "flow_epoch": "learned-economy-free-existing-stock-prewindow-v2",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "build_driver_sha256": "b5a2ce34750647b0bc37719c70f807bfe066db496312744b82fb2f347eab8de6",
+  "prepare_sha256": "a499fa89cf088cca175c19afc991c2e6dafad8e21c6519efa6f78b236e245f13",
+  "files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "baseline_sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+      "parent_candidate_sha256": "70c0df767766b677f1a14524412c386c1db0c490f60a434f8ba6c844c184331b",
+      "candidate_sha256": "10d84f3f68712ad1a8fefe7be7c6bc4d63aca1b44602e4aa5d251e4aaf207ae7"
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "baseline_sha256": "fbdbf346a3a133f12be1e34233d4bbab139375f2b80c408650f36414a2cdbbca",
+      "parent_candidate_sha256": "a3445378f155b6ad3a676100e5ee4518fb1df614d47e0347b87ea02722cc55ef",
+      "candidate_sha256": "ce3bc61ca062ed592643a0f2852c70d26bf346a299b8b1e48b06ea4ffdfdd2df"
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "baseline_sha256": null,
+      "parent_candidate_sha256": "41e657ef23f74b56402ba1985b3311a931f0cbf660574a785242af86174f974c",
+      "candidate_sha256": "41e657ef23f74b56402ba1985b3311a931f0cbf660574a785242af86174f974c"
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "baseline_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "parent_candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565"
+    },
+    "server/CGameHandler.cpp": {
+      "baseline_sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+      "parent_candidate_sha256": "3b05d16d3cf3b8977dfa501e7f65c935b6f2ea167e8b8eab734c7869952e47af",
+      "candidate_sha256": "3b05d16d3cf3b8977dfa501e7f65c935b6f2ea167e8b8eab734c7869952e47af"
+    },
+    "server/CGameHandler.h": {
+      "baseline_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "parent_candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9"
+    },
+    "client/Client.h": {
+      "baseline_sha256": "353b9e02b8796b0bd19f5a293c1f0dc1a6adf1f8175af37722e6a9f03a9099cb",
+      "parent_candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde"
+    },
+    "client/NetPacksClient.cpp": {
+      "baseline_sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+      "parent_candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+      "candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e"
+    },
+    "client/Client.cpp": {
+      "baseline_sha256": "ac0a5d7b3b2d01807bebc99ad54e27ab35b9f1eb55917cc84560f7e68165b209",
+      "parent_candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+    }
+  },
+  "status": "source-ready-not-native-qualified"
+}

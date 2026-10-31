@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "samples_admitted": 253,
+  "policy_moves": 253,
+  "policy_end_turns": 0,
+  "automatic_end_turns_excluded": 25,
+  "sampling_device": "cuda",
+  "replay_actions_logprobs_values_rng_exact": true,
+  "optimizer_steps": 0,
+  "native_episode_winner": "red",
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/observer-v5-raw-audit-01/AUDIT.json": "4ae06ae83e12c87e490535d9eeb1c2dd8bb6f6ce944623014436781fa2aec774",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-observer-v5-01/agent/sampling-state.pt": "0254094ca1b2a684030a81764fce00661e6b6f8e4f08fdad4e32f11a1a05b0a4",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-observer-v5-01/agent/typed-broker.jsonl": "8518a9e0c4b96d17efdd4ab2089a3312914ae37004f7e1e9a0e1889a1d412504",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v5.py": "e5c9cf986a389f5d6c460dbe712d6f666bb5398f302411f34ac96bfb5417cbff"
+  },
+  "output_sha256": {
+    "samples.jsonl": "8bfd8d5de23fd800fb78ff30bc23eaad586b145e535706a93f908f3d00cba959",
+    "episode.json": "e429e2f965f6a59f41c50e317982f78e13aa7f25cba59022fd9fcf8e79ae3444"
+  }
+}

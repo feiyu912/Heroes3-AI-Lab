@@ -1,0 +1,112 @@
+{
+  "server/CGameHandler.cpp": {
+    "sha256": "d7c0b037dfaacd7bcb9f0a801ac19b024da281a2262eb9049bb8e1afed750755",
+    "excerpts": [
+      {
+        "start": 509,
+        "end": 582,
+        "text": "509: void CGameHandler::handleReceivedPack(GameConnectionID connection, CPackForServer & pack)\n510: {\n511: \t//prepare struct informing that action was applied\n512: \tauto sendPackageResponse = [&](bool successfullyApplied)\n513: \t{\n514: \t\tPackageApplied applied(\n515: \t\t\tpack.player,\n516: \t\t\tpack.requestID,\n517: \t\t\tCTypeList::getInstance().getTypeID(&pack),\n518: \t\t\tsuccessfullyApplied\n519: \t\t);\n520: \t\tgameServer().sendPack(applied, connection);\n521: \t};\n522: \n523: \tPackageReceived received(\n524: \t\tpack.player,\n525: \t\tpack.requestID,\n526: \t\tCTypeList::getInstance().getTypeID(&pack)\n527: \t);\n528: \tgameServer().sendPack(received, connection);\n529: \n530: \tif(isBlockedByQueries(&pack, pack.player))\n531: \t{\n532: \t\tsendPackageResponse(false);\n533: \t}\n534: \telse\n535: \t{\n536: \t\tbool result;\n537: \t\ttry\n538: \t\t{\n539: \t\t\tApplyGhNetPackVisitor applier(*this, connection);\n540: \t\t\tpack.visit(applier);\n541: \t\t\tresult = applier.getResult();\n542: \t\t}\n543: \t\tcatch(ExceptionNotAllowedAction &)\n544: \t\t{\n545: \t\t\tresult = false;\n546: \t\t}\n547: \n548: \t\tif(result)\n549: \t\t\tlogGlobal->trace(\"Message %s successfully applied!\", typeid(pack).name());\n550: \t\telse\n551: \t\t\tcomplain((boost::format(\"Got false in applying %s... that request must have been fishy!\")\n552: \t\t\t\t% typeid(pack).name()).str());\n553: \n554: \t\tsendPackageResponse(true);\n555: \t}\n556: \n557: \t// BattleEnded and movement-query removal can arrive in either order.\n558: \t// Notify readiness only here, after all consequences of this request\n559: \t// (including deferred prompts and victory checks) and its ACK.\n560: \tfor(auto it = pendingBattleBarriers.begin(); it != pendingBattleBarriers.end();)\n561: \t{\n562: \t\tconst auto player = *it;\n563: \t\tconst bool inBattle = std::any_of(gs->currentBattles.begin(), gs->currentBattles.end(),\n564: \t\t\t[player](const auto & battle)\n565: \t\t\t{\n566: \t\t\t\treturn battle->getSidePlayer(BattleSide::ATTACKER) == player ||\n567: \t\t\t\t\tbattle->getSidePlayer(BattleSide::DEFENDER) == player;\n568: \t\t\t});\n569: \t\tif(queries->topQuery(player) || inBattle)\n570: \t\t{\n571: \t\t\t++it;\n572: \t\t\tcontinue;\n573: \t\t}\n574: \t\tit = pendingBattleBarriers.erase(it);\n575: \t\tPlayerBlocked ready;\n576: \t\tready.player = player;\n577: \t\tready.reason = PlayerBlocked::UPCOMING_BATTLE;\n578: \t\tready.startOrEnd = PlayerBlocked::BLOCKADE_ENDED;\n579: \t\tlogGlobal->trace(\"Adventure battle barrier ready for player %s\", player.toString());\n580: \t\tsendAndApply(ready);\n581: \t}\n582: }"
+      }
+    ]
+  },
+  "server/CGameHandler.h": {
+    "sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "excerpts": [
+      {
+        "start": 85,
+        "end": 94,
+        "text": "85: \n86: \t//queries stuff\n87: \tQueryID QID;\n88: \n89: \tstd::set<PlayerColor> uiReadyForDialogs;\n90: \n91: \t// Transport-only barrier; never used to alter game state or legality.\n92: \tstd::set<PlayerColor> pendingBattleBarriers;\n93: \n94: \tML(std::shared_ptr<ML::ServerPlugin> mlplugin);"
+      },
+      {
+        "start": 278,
+        "end": 290,
+        "text": "278: \ttemplate <typename Handler> void serialize(Handler &h)\n279: \t{\n280: \t\th & QID;\n281: \t\th & *randomizer;\n282: \t\th & *battles;\n283: \t\th & *heroPool;\n284: \t\th & *playerMessages;\n285: \t\th & *turnOrder;\n286: \t\th & *turnTimerHandler;\n287: \n288: \t\th & *statistics;\n289: \t}\n290: "
+      }
+    ]
+  },
+  "server/battles/BattleProcessor.cpp": {
+    "sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+    "excerpts": [
+      {
+        "start": 50,
+        "end": 61,
+        "text": "50: void BattleProcessor::engageIntoBattle(PlayerColor player)\n51: {\n52: \t// Release only after the complete server request and all battle queries.\n53: \tif(player.isValidPlayer())\n54: \t\tgameHandler->pendingBattleBarriers.insert(player);\n55: \t//notify interfaces\n56: \tPlayerBlocked pb;\n57: \tpb.player = player;\n58: \tpb.reason = PlayerBlocked::UPCOMING_BATTLE;\n59: \tpb.startOrEnd = PlayerBlocked::BLOCKADE_STARTED;\n60: \tgameHandler->sendAndApply(pb);\n61: }"
+      }
+    ]
+  },
+  "server/queries/QueriesProcessor.cpp": {
+    "sha256": "2a2de115ebd72f346bdd6481c07dbf8467f24e4d7aeff113ad39ebe7eb1d3dea",
+    "excerpts": [
+      {
+        "start": 21,
+        "end": 48,
+        "text": "21: void QueriesProcessor::popQuery(PlayerColor player, QueryPtr query)\n22: {\n23: \tLOG_TRACE_PARAMS(logGlobal, \"player='%s', query='%s'\", player % query);\n24: \tif(topQuery(player) != query)\n25: \t{\n26: \t\tlogGlobal->trace(\"Cannot remove, not a top!\");\n27: \t\treturn;\n28: \t}\n29: \n30: \tconst auto idx = static_cast<size_t>(player.getNum());\n31: \tassert(query);\n32: \n33: \tauto & stack = queries.at(idx);\n34: \tstack.pop_back();\n35: \tauto nextQuery = topQuery(player);\n36: \n37: \tquery->onRemoval(player);\n38: \n39: \t//Exposure on query below happens only if removal didn't trigger any new query\n40: \tif(nextQuery && nextQuery == topQuery(player))\n41: \t\tnextQuery->onExposure(query);\n42: \n43: \tif(queriesStackListener)\n44: \t\tqueriesStackListener->onQueryStackChanged(player);\n45: \n46: \tif(!topQuery(player))\n47: \t\tgameHandler.checkVictoryLossConditionsForPlayer(player);\n48: }"
+      }
+    ]
+  },
+  "server/queries/BattleQueries.cpp": {
+    "sha256": "3e4c3c7e0d15ee8884d80c3d375e6606a80825271f52d29a1050f6c2b4723cd1",
+    "excerpts": [
+      {
+        "start": 100,
+        "end": 112,
+        "text": "100: void CBattleQuery::onRemoval(PlayerColor color)\n101: {\n102: \tassert(result);\n103: \n104: \tif(result)\n105: \t\tgh->battles->battleFinalize(battleID, *result);\n106: \n107: \t// Guarded map object visits are notified after the battle query is removed.\n108: \t// In that case, defer level-up prompts until the object applies its battle result.\n109: \t// In multi-player battles, also wait until this battle query is removed for all players.\n110: \tif(!hasPendingBattleOrVisitQueries())\n111: \t\tcompleteDeferredLevelUps();\n112: }"
+      }
+    ]
+  },
+  "server/battles/BattleResultProcessor.cpp": {
+    "sha256": "5b4a6c9cafb864139bb7c5051b777249dca3838c5f5c3137f1f9b45daad51cae",
+    "excerpts": [
+      {
+        "start": 426,
+        "end": 452,
+        "text": "426: void BattleResultProcessor::battleFinalize(const BattleID & battleID, const BattleResult & result)\n427: {\n428: \tLOG_TRACE(logGlobal);\n429: \n430: \tassert(finishingBattles.count(battleID) != 0);\n431: \tif(finishingBattles.count(battleID) == 0)\n432: \t\treturn;\n433: \n434: \tauto & finishingBattle = finishingBattles[battleID];\n435: \n436: \tfinishingBattle->remainingBattleQueriesCount--;\n437: \tlogGlobal->trace(\"Decremented gameHandler->queries count to %d\", finishingBattle->remainingBattleQueriesCount);\n438: \n439: \tif (finishingBattle->remainingBattleQueriesCount > 0)\n440: \t\t//Battle results will be handled when all battle gameHandler->queries are closed\n441: \t\treturn;\n442: \n443: \t//TODO consider if we really want it to work like above. ATM each player as unblocked as soon as possible\n444: \t// but the battle consequences are applied after final player is unblocked. Hard to abuse...\n445: \t// Still, it looks like a hole.\n446: \n447: \tconst auto battle = std::find_if(gameHandler->gameState().currentBattles.begin(), gameHandler->gameState().currentBattles.end(),\n448: \t\t[battleID](const auto & desiredBattle)\n449: \t\t{\n450: \t\t\treturn desiredBattle->battleID == battleID;\n451: \t\t});\n452: \tassert(battle != gameHandler->gameState().currentBattles.end());"
+      },
+      {
+        "start": 681,
+        "end": 693,
+        "text": "681: \t//notify all players that battle has ended after all consequences are applied\n682: \tBattleEnded ended;\n683: \tended.battleID = battleID;\n684: \tended.victor = finishingBattle->victor;\n685: \tended.loser = finishingBattle->loser;\n686: \tgameHandler->sendAndApply(ended);\n687: \n688: \t//handle victory/loss of engaged players\n689: \tgameHandler->checkVictoryLossConditions({finishingBattle->loser, finishingBattle->victor});\n690: \n691: \tfinishingBattles.erase(battleID);\n692: \tbattleResults.erase(battleID);\n693: }"
+      }
+    ]
+  },
+  "AI/DirectorAI/CDirectorAI.cpp": {
+    "sha256": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "excerpts": [
+      {
+        "start": 387,
+        "end": 395,
+        "text": "387: void CDirectorAI::advanceTurn()\n388: {\n389: \tif(!turnActive || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||\n390: \t\t!pendingQueries.empty() || !queryRequests.empty())\n391: \t\treturn;\n392: \tif(issueEconomy())\n393: \t\treturn;\n394: \tif(!issueMove())\n395: \t\tfinishTurn();"
+      },
+      {
+        "start": 476,
+        "end": 508,
+        "text": "476: void CDirectorAI::playerBlocked(int reason, bool start)\n477: {\n478: \tif(reason == PlayerBlocked::UPCOMING_BATTLE)\n479: \t{\n480: \t\tbattleBusy = start;\n481: \t\ttraceState(start ? \"native_battle_blocked\" : \"native_battle_ready\");\n482: \t\tif(!start)\n483: \t\t\tadvanceTurn();\n484: \t}\n485: \tif(reason == PlayerBlocked::ONGOING_MOVEMENT)\n486: \t{\n487: \t\tmovementBusy = start;\n488: \t\ttraceState(start ? \"native_movement_blocked\" : \"native_movement_unblocked\");\n489: \t\tif(!start)\n490: \t\t\tadvanceTurn();\n491: \t}\n492: }\n493: \n494: void CDirectorAI::battleEnded()\n495: {\n496: \t// Isolated server emits UPCOMING_BATTLE END after the complete request,\n497: \t// deferred queries and victory checks. BattleEnded alone is not readiness.\n498: }\n499: \n500: void CDirectorAI::gameOver(PlayerColor player, const EVictoryLossCheckResult & result)\n501: {\n502: \tlogGlobal->info(\"DirectorAI: native gameOver player=%s victory=%d loss=%d\",\n503: \t\tplayer.toString(), result.victory(), result.loss());\n504: \tif(player == playerID)\n505: \t{\n506: \t\ttraceState(result.victory() ? \"victory\" : \"defeat\");\n507: \t\tturnActive = false;\n508: \t}"
+      }
+    ]
+  },
+  "AI/Nullkiller2/AIGateway.cpp": {
+    "sha256": "e076b134a4f06fe63277bca6eca1e12d9f25f820a9a5b81a09264ae8fe44e4f8",
+    "excerpts": [
+      {
+        "start": 143,
+        "end": 151,
+        "text": "143: void AIGateway::playerBlocked(int reason, bool start)\n144: {\n145: \tLOG_TRACE_PARAMS(logAi, \"reason '%i', start '%i'\", reason % start);\n146: \tif(start && reason == PlayerBlocked::UPCOMING_BATTLE)\n147: \t\tstatus.setBattle(UPCOMING_BATTLE);\n148: \n149: \tif(reason == PlayerBlocked::ONGOING_MOVEMENT)\n150: \t\tstatus.setMove(start);\n151: }"
+      }
+    ]
+  },
+  "client/NetPacksClient.cpp": {
+    "sha256": "6e10125340aef5965d3e0e29a671264bfdb116c795687d6266290bbf6eb2c3fc",
+    "excerpts": [
+      {
+        "start": 940,
+        "end": 945,
+        "text": "940: void ApplyClientNetPackVisitor::visitBattleEnded(BattleEnded & pack)\n941: {\n942: \tcallInterfaceIfPresent(cl, pack.victor, &IGameEventsReceiver::battleEnded);\n943: \tcallInterfaceIfPresent(cl, pack.loser, &IGameEventsReceiver::battleEnded);\n944: \tcallInterfaceIfPresent(cl, PlayerColor::SPECTATOR, &IGameEventsReceiver::battleEnded);\n945: }"
+      },
+      {
+        "start": 970,
+        "end": 975,
+        "text": "970: void ApplyClientNetPackVisitor::visitPackageApplied(PackageApplied & pack)\n971: {\n972: \tcallInterfaceIfPresent(cl, pack.player, &IGameEventsReceiver::requestRealized, &pack);\n973: \tif(!cl.waitingRequest.tryRemovingElement(pack.requestID))\n974: \t\tlogNetwork->warn(\"Surprising server message! PackageApplied for unknown requestID!\");\n975: }"
+      }
+    ]
+  }
+}

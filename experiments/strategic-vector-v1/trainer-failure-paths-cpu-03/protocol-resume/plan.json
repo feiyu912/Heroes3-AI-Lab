@@ -1,0 +1,10 @@
+{
+  "schema": "strategic-parallel-episode-balanced-ppo-v1",
+  "protocol_sha256": "cbea16845dc72119fe5372ef3898750728821b8a0e0c151597e3a27ed77a3a84",
+  "target_total_updates": 2,
+  "resumed_from": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-1.pt",
+  "origin_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-1.pt",
+  "origin_sha256": "237d84fd3edc8f45bcb349f1a352248651e687e3e79c6c04e5732109b06cbfe6",
+  "device": "cpu",
+  "independent_evaluation": false
+}

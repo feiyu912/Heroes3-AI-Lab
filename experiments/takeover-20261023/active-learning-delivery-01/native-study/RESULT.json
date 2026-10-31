@@ -1,0 +1,1064 @@
+{
+  "passed": true,
+  "arms": {
+    "control": {
+      "episodes": [
+        {
+          "episode_id": "4984ce3d602bc32baca6ddb389b91791411194e94ee63d52e8ad4beed29d9dc1",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 799,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-00/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "028b24ff5371e524ae0abd1e0cdadf282c721081cbdeac1a07ae3aaa787ac705",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 8519717512803225703,
+          "job": {
+            "seed": 2026104400,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 218,
+          "policy_builds": 11
+        },
+        {
+          "episode_id": "24be55785009bb61154d86a22ce05896f2608bc2888783ff30d979f1906f5ded",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 513,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-01/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "4ad1aae3ea4280623d523b0af82ed2ee4c8db860726abcbd87bd1e49bf6b2c0b",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 5267593120479861593,
+          "job": {
+            "seed": 2026104401,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 132,
+          "policy_builds": 11
+        },
+        {
+          "episode_id": "e7d629e0bd548de69f80ed9e04991f4b86695c91a7098342697fcde858de198a",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 386,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-02/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "b947b0301a73d617a259beb76d629f1316f494a8223cc2f943896860bda649ec",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 5120875201328190496,
+          "job": {
+            "seed": 2026104402,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 55,
+          "policy_builds": 7
+        },
+        {
+          "episode_id": "493aea4c363222750309356a4cd0a869abe4e0141b8ee33b66ed05450d1857cd",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 63,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-03/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "1ced7865ca33fa723d48cecce55e601dfd637e033dd0f1db85a075b34e3162cc",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 1318956798903692425,
+          "job": {
+            "seed": 2026104403,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 7,
+          "policy_builds": 4
+        },
+        {
+          "episode_id": "68590b14c25659f085742e9b15d5921c5887a18dbfa854486cc0c3f9ec63a252",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 998,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-04/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "067635b5e93690e46f16adfeca8c2bf98a811871303cce0e6ffb933879adeeb1",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 36825500741890674,
+          "job": {
+            "seed": 2026104404,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 226,
+          "policy_builds": 38
+        },
+        {
+          "episode_id": "13aa342c78369d8d9389b78a1611ac18008bb2199e28884c20cd75b401bda3e9",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 1066,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-05/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "d04721f5de4c4ff0c1e8bc7ba21fe743a0d8a774702051f3423ec6658dab6c1c",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 1208473221526483496,
+          "job": {
+            "seed": 2026104405,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 382,
+          "policy_builds": 48
+        },
+        {
+          "episode_id": "0a71a972bed779a611d92988ddf2147067896857f301a528b3c5e2f35c94e739",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 81,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-06/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "9b164b888daf0a7fc7843c9bdfa116a32fbfe5d547752e258d51a4fcd7c4da1d",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 7406605815573617775,
+          "job": {
+            "seed": 2026104406,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 2,
+          "policy_builds": 4
+        },
+        {
+          "episode_id": "d70fd51a60f6f2c832b16fdd3987e36479e4ce9da36ef0f3ad85b380587c0939",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 232,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/cell-07/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "14f1b8199ec401ac0270fa83601024e257cbb4fa3595464c2a1e1bde76c5b656",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 6159412475504477677,
+          "job": {
+            "seed": 2026104407,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "control",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 35,
+          "policy_builds": 7
+        }
+      ],
+      "training": {
+        "completed_update": true,
+        "cuda_optimizer_steps": 260,
+        "ability_improvement_claim": false,
+        "training_updates": 1,
+        "optimizer_steps_total": 260,
+        "checkpoint_sha256": "b52ac74ad3b0ba6860e57be0a6b2deed9d8c88f14e140b59bd2c61e8b1f739fc",
+        "checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/update-01/update-1.pt",
+        "recruit_bias_before": 0.0,
+        "recruit_bias_after": 0.01471861731261015,
+        "recruit_bias_delta": 0.01471861731261015,
+        "stop_bias_before": -1.9710108041763306,
+        "stop_bias_after": -1.972080945968628,
+        "stop_bias_adam_step": 260,
+        "progress": {
+          "optimizer_steps": 260,
+          "minibatches": 260,
+          "completed": true,
+          "early_stop_kl": false,
+          "forced_only_minibatches": 0,
+          "algorithm_schema": "strategic-learned-recruitment-episode-balanced-choice-ppo-v1",
+          "weighting": {
+            "samples": 4138,
+            "episodes": 8,
+            "free_choices": 3951,
+            "forced_transitions": 187,
+            "active_actor_episodes": 8,
+            "actor_weight_sum": 4138.0,
+            "critic_weight_sum": 4138.0,
+            "advantage_mean": 0.23408572229762648,
+            "advantage_variance": 0.5151282808301374,
+            "per_episode": [
+              {
+                "episode_id": "4984ce3d602bc32baca6ddb389b91791411194e94ee63d52e8ad4beed29d9dc1",
+                "steps": 799,
+                "free_choices": 766,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "24be55785009bb61154d86a22ce05896f2608bc2888783ff30d979f1906f5ded",
+                "steps": 513,
+                "free_choices": 488,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "e7d629e0bd548de69f80ed9e04991f4b86695c91a7098342697fcde858de198a",
+                "steps": 386,
+                "free_choices": 363,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "493aea4c363222750309356a4cd0a869abe4e0141b8ee33b66ed05450d1857cd",
+                "steps": 63,
+                "free_choices": 59,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "68590b14c25659f085742e9b15d5921c5887a18dbfa854486cc0c3f9ec63a252",
+                "steps": 998,
+                "free_choices": 954,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "13aa342c78369d8d9389b78a1611ac18008bb2199e28884c20cd75b401bda3e9",
+                "steps": 1066,
+                "free_choices": 1026,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "0a71a972bed779a611d92988ddf2147067896857f301a528b3c5e2f35c94e739",
+                "steps": 81,
+                "free_choices": 75,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "d70fd51a60f6f2c832b16fdd3987e36479e4ce9da36ef0f3ad85b380587c0939",
+                "steps": 232,
+                "free_choices": 220,
+                "reward": -1.0
+              }
+            ],
+            "collector_manifest_verified": true
+          },
+          "last": {
+            "actor": -0.11456532776355743,
+            "critic": 0.20995144546031952,
+            "entropy": 1.886705756187439,
+            "kl": 0.005103971343487501,
+            "conditional_kl": 0.005103971343487501,
+            "loss": -0.01902313344180584
+          },
+          "epoch": 4,
+          "full_batch_post_epoch": {
+            "actor": -0.00383047129348491,
+            "critic": 0.14739717629910554,
+            "entropy": 1.5860580696236866,
+            "kl": 0.0033005641563131558,
+            "conditional_kl": 0.0033005641563131558,
+            "loss": 0.061937827917617996
+          },
+          "group_optimizer_steps": {
+            "actor": 260,
+            "critic": 260,
+            "recruit_actor": 260,
+            "recruit_critic": 260
+          },
+          "parameter_delta_from_previous_update": {
+            "actor": {
+              "changed_tensors": 10,
+              "total_tensors": 10,
+              "l2_delta": 0.8615954418289222,
+              "max_abs_delta": 0.03462096117436886
+            },
+            "critic": {
+              "changed_tensors": 7,
+              "total_tensors": 7,
+              "l2_delta": 1.4371398666351465,
+              "max_abs_delta": 0.08397297002375126
+            },
+            "recruit_actor": {
+              "changed_tensors": 1,
+              "total_tensors": 1,
+              "l2_delta": 0.05881432061582046,
+              "max_abs_delta": 0.02123752422630787
+            },
+            "recruit_critic": {
+              "changed_tensors": 1,
+              "total_tensors": 1,
+              "l2_delta": 0.09823324838361794,
+              "max_abs_delta": 0.039737723767757416
+            }
+          }
+        },
+        "build_bias_before": 1.4829988479614258,
+        "build_bias_after": 1.481136441230774,
+        "build_bias_adam_step": 260,
+        "build_bias_adam_exp_avg": -0.007395400665700436,
+        "episodes": 8,
+        "samples": 4138,
+        "training_wins": 4,
+        "policy_builds": 130,
+        "recruitment": {
+          "actual_policy_recruit_transactions": 1057,
+          "quantity_buckets": {
+            "one": 445,
+            "half": 247,
+            "affordable_all": 365
+          },
+          "total_creatures_recruited": 4655,
+          "seven_resource_spend": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 690340
+          },
+          "registered_stock_levels": {
+            "1": 248,
+            "0": 273,
+            "3": 171,
+            "2": 204,
+            "4": 106,
+            "5": 55
+          },
+          "free_transfer_transactions": 43,
+          "actual_new_parameter_Adam": {
+            "actor.recruit_bias": {
+              "adam_step": 260,
+              "exp_avg_l2": 0.001479018130339682
+            },
+            "recruit_actor.weight": {
+              "adam_step": 260,
+              "exp_avg_l2": 0.028359722599212423
+            },
+            "recruit_critic.weight": {
+              "adam_step": 260,
+              "exp_avg_l2": 0.006491477501366131
+            }
+          },
+          "scope": "Every selected recruitment backed by raw server/ACK/full-state deltas; free transfers remain scripted"
+        },
+        "training_losses": 4,
+        "purpose": "curriculum_training",
+        "checkpoint_model_readback_exact": true
+      },
+      "recovery": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/control/recovery-audit/AUDIT.json"
+    },
+    "curriculum": {
+      "episodes": [
+        {
+          "episode_id": "516e7bfa14c02badc4ec7cadea1e8287eb6ad54057ea30f81173926a303218e7",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 799,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-00/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "f96b6dfc176b56a0dae9cf1ad3a22fae6d17ec8bb2827c818dc375f518ce9b94",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 8519717512803225703,
+          "job": {
+            "seed": 2026104400,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 218,
+          "policy_builds": 11
+        },
+        {
+          "episode_id": "3d291cb421ef1ee5d36f62b4733b5bde90fdd08eb845779f3b6c143aa0ea5be8",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 513,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-01/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "fab204b5c5cd69826d45d3eab12bb3ede10f4d9ea6decd26bfd0464eb8c882ea",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 5267593120479861593,
+          "job": {
+            "seed": 2026104401,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 132,
+          "policy_builds": 11
+        },
+        {
+          "episode_id": "09fe0da9ea840f2df49c24d9d09f78361632ffee9fc71ab321c2802bbeee3257",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 376,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-02/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "c47fdd61a25715b74f755a74959fe5d37258c14eeab98df294fd7e50d625e9d2",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 5120875201328190496,
+          "job": {
+            "seed": 2026104402,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 4,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 61,
+          "policy_builds": 7
+        },
+        {
+          "episode_id": "bcdb2af2d5bd8071fcbda74545fc2273010576ad4b77432e829832de4c68f5b1",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 360,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-03/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "71e50db02539048064b788958fda0d3325b0ced40e6adee385762adb1953c195",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 1318956798903692425,
+          "job": {
+            "seed": 2026104403,
+            "map": "takeover-v2-train-01-mines",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 4,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 83,
+          "policy_builds": 7
+        },
+        {
+          "episode_id": "cba82c0e447dda8464f8ee08876b8caeef11522894fb1fd85c51686de050dec2",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 998,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-04/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "ed1b7a7d5fedcfe7ba1fb32caef521c107d3489576cf57433d5ca9347ed4bf66",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 36825500741890674,
+          "job": {
+            "seed": 2026104404,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 226,
+          "policy_builds": 38
+        },
+        {
+          "episode_id": "0c899133e31206aa967db2a4e6a23f811a904200c99c1a60b7e8e9cfd9157260",
+          "valid": true,
+          "reward": 1.0,
+          "decisions": 1066,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-05/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "bcaf880fe151dceae0c401b17f61f18e2fc9d58a7c334768ec1e7ddf0ea67ae3",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 1208473221526483496,
+          "job": {
+            "seed": 2026104405,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "EmptyAI",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 1,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 382,
+          "policy_builds": 48
+        },
+        {
+          "episode_id": "7818430ea452161ef52ffeb639ddb28d7b3b96d4fb11bcb9d9279de695bb1ee9",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 348,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-06/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "7e938cf6cce80bfc492cc92bc169d5da14ba657d4b66aa6f5309b6999d68239a",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 7406605815573617775,
+          "job": {
+            "seed": 2026104406,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 0,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 4,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 55,
+          "policy_builds": 9
+        },
+        {
+          "episode_id": "bce2acf2c9f4ee5d1a6454512a0cba4080d4ce6e98ca63bbe9f7eb8b4c1ab25f",
+          "valid": true,
+          "reward": -1.0,
+          "decisions": 195,
+          "native_consumption_verified": true,
+          "native": {
+            "completed": true,
+            "inputs_unchanged": true
+          },
+          "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/cell-07/raw-audit/AUDIT.json",
+          "raw_audit_sha256": "d9e022130cee16cbd5bcba2362f840ab03b3e51f96ae25f33553f8796519c8ca",
+          "sampling_replay_exact": true,
+          "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+          "sampling_seed": 6159412475504477677,
+          "job": {
+            "seed": 2026104407,
+            "map": "takeover-v2-train-02-development",
+            "owned_player": 1,
+            "opponent": "Nullkiller2",
+            "logical_update": 0,
+            "arm": "curriculum",
+            "multiplier": 4,
+            "checkpoint_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1"
+          },
+          "runtime": {
+            "capsule_manifest_sha256": "caf55cf5fbed30e1a9dbd0db4691bd91b3f7c4a8e10f6de0019a61ca286d8c48",
+            "native_artifacts": {
+              "vcmiclient": "b6375c6cfc4019190b66ada860e33dfdb7c99dcfc1e37d9d3e93a3aeb2003304",
+              "vcmiserver": "2a3f54f859805909a26b119e300436f769ce1377f376365e1f4f967e7e7939d6",
+              "libvcmi.so": "61d339315db5add57b9b95bfecd631eb2bbe0a1b17d610b9adc2a92e551f3ad5"
+            }
+          },
+          "transport_drained": true,
+          "pipeline_epoch": "strategic-active-opponent-paired-learning-v1",
+          "economy_epoch": "learned-economy-build-recruit-v1",
+          "native_flow_epoch": "learned-economy-build-recruit-v1",
+          "threat_replan": "off",
+          "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+          "policy_recruits": 41,
+          "policy_builds": 6
+        }
+      ],
+      "training": {
+        "completed_update": true,
+        "cuda_optimizer_steps": 292,
+        "ability_improvement_claim": false,
+        "training_updates": 1,
+        "optimizer_steps_total": 292,
+        "checkpoint_sha256": "74e1c9d8ae7843e059c11b278b8d541bfe08308b176373b274a28dcf48a37fca",
+        "checkpoint": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/update-01/update-1.pt",
+        "recruit_bias_before": 0.0,
+        "recruit_bias_after": 0.012865439988672733,
+        "recruit_bias_delta": 0.012865439988672733,
+        "stop_bias_before": -1.9710108041763306,
+        "stop_bias_after": -1.9834314584732056,
+        "stop_bias_adam_step": 292,
+        "progress": {
+          "optimizer_steps": 292,
+          "minibatches": 292,
+          "completed": true,
+          "early_stop_kl": false,
+          "forced_only_minibatches": 0,
+          "algorithm_schema": "strategic-learned-recruitment-episode-balanced-choice-ppo-v1",
+          "weighting": {
+            "samples": 4655,
+            "episodes": 8,
+            "free_choices": 4450,
+            "forced_transitions": 205,
+            "active_actor_episodes": 8,
+            "actor_weight_sum": 4655.0,
+            "critic_weight_sum": 4655.0,
+            "advantage_mean": 0.07045034744977133,
+            "advantage_variance": 0.6167607601674204,
+            "per_episode": [
+              {
+                "episode_id": "516e7bfa14c02badc4ec7cadea1e8287eb6ad54057ea30f81173926a303218e7",
+                "steps": 799,
+                "free_choices": 766,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "3d291cb421ef1ee5d36f62b4733b5bde90fdd08eb845779f3b6c143aa0ea5be8",
+                "steps": 513,
+                "free_choices": 488,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "09fe0da9ea840f2df49c24d9d09f78361632ffee9fc71ab321c2802bbeee3257",
+                "steps": 376,
+                "free_choices": 355,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "bcdb2af2d5bd8071fcbda74545fc2273010576ad4b77432e829832de4c68f5b1",
+                "steps": 360,
+                "free_choices": 344,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "cba82c0e447dda8464f8ee08876b8caeef11522894fb1fd85c51686de050dec2",
+                "steps": 998,
+                "free_choices": 954,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "0c899133e31206aa967db2a4e6a23f811a904200c99c1a60b7e8e9cfd9157260",
+                "steps": 1066,
+                "free_choices": 1026,
+                "reward": 1.0
+              },
+              {
+                "episode_id": "7818430ea452161ef52ffeb639ddb28d7b3b96d4fb11bcb9d9279de695bb1ee9",
+                "steps": 348,
+                "free_choices": 330,
+                "reward": -1.0
+              },
+              {
+                "episode_id": "bce2acf2c9f4ee5d1a6454512a0cba4080d4ce6e98ca63bbe9f7eb8b4c1ab25f",
+                "steps": 195,
+                "free_choices": 187,
+                "reward": -1.0
+              }
+            ],
+            "collector_manifest_verified": true
+          },
+          "last": {
+            "actor": -0.07805775105953217,
+            "critic": 0.16778618097305298,
+            "entropy": 2.1299073696136475,
+            "kl": 0.0012777693336829543,
+            "conditional_kl": 0.0012777693336829543,
+            "loss": -0.004814197309315205
+          },
+          "epoch": 4,
+          "full_batch_post_epoch": {
+            "actor": -0.0017862685384863125,
+            "critic": 0.17015765845839628,
+            "entropy": 1.5884925165186634,
+            "kl": 0.0008890175244097708,
+            "conditional_kl": 0.0008890175244097708,
+            "loss": 0.07535009329096208
+          },
+          "group_optimizer_steps": {
+            "actor": 292,
+            "critic": 292,
+            "recruit_actor": 292,
+            "recruit_critic": 292
+          },
+          "parameter_delta_from_previous_update": {
+            "actor": {
+              "changed_tensors": 10,
+              "total_tensors": 10,
+              "l2_delta": 0.5447418359862901,
+              "max_abs_delta": 0.02728027105331421
+            },
+            "critic": {
+              "changed_tensors": 7,
+              "total_tensors": 7,
+              "l2_delta": 1.7493838930882446,
+              "max_abs_delta": 0.08739853277802467
+            },
+            "recruit_actor": {
+              "changed_tensors": 1,
+              "total_tensors": 1,
+              "l2_delta": 0.06196065292793991,
+              "max_abs_delta": 0.02728027105331421
+            },
+            "recruit_critic": {
+              "changed_tensors": 1,
+              "total_tensors": 1,
+              "l2_delta": 0.12937799659819968,
+              "max_abs_delta": 0.0519767627120018
+            }
+          }
+        },
+        "build_bias_before": 1.4829988479614258,
+        "build_bias_after": 1.488800048828125,
+        "build_bias_adam_step": 292,
+        "build_bias_adam_exp_avg": -0.0014637875137850642,
+        "episodes": 8,
+        "samples": 4655,
+        "training_wins": 4,
+        "policy_builds": 137,
+        "recruitment": {
+          "actual_policy_recruit_transactions": 1198,
+          "quantity_buckets": {
+            "one": 519,
+            "half": 279,
+            "affordable_all": 400
+          },
+          "total_creatures_recruited": 5045,
+          "seven_resource_spend": {
+            "wood": 0,
+            "mercury": 0,
+            "ore": 0,
+            "sulfur": 0,
+            "crystal": 0,
+            "gems": 0,
+            "gold": 750280
+          },
+          "registered_stock_levels": {
+            "1": 269,
+            "0": 311,
+            "3": 207,
+            "2": 245,
+            "4": 105,
+            "5": 61
+          },
+          "free_transfer_transactions": 55,
+          "actual_new_parameter_Adam": {
+            "actor.recruit_bias": {
+              "adam_step": 292,
+              "exp_avg_l2": 0.010172445327043533
+            },
+            "recruit_actor.weight": {
+              "adam_step": 292,
+              "exp_avg_l2": 0.0323895088213229
+            },
+            "recruit_critic.weight": {
+              "adam_step": 292,
+              "exp_avg_l2": 0.00824520119704774
+            }
+          },
+          "scope": "Every selected recruitment backed by raw server/ACK/full-state deltas; free transfers remain scripted"
+        },
+        "training_losses": 4,
+        "purpose": "curriculum_training",
+        "checkpoint_model_readback_exact": true
+      },
+      "recovery": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/curriculum/recovery-audit/AUDIT.json"
+    }
+  },
+  "final_test_touched": false,
+  "model_promoted": false,
+  "DEV": "/root/heroes3-ai-lab/evaluations/strategic-active-learning-native-01/DEV/RESULT.json"
+}

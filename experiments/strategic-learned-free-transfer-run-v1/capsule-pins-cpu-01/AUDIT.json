@@ -1,0 +1,19 @@
+{
+  "passed_CPU_capsule_integrity": true,
+  "native_games": 0,
+  "GPU_steps": 0,
+  "optimizer_steps": 0,
+  "native_run_allowed": false,
+  "prewindow_qualification_pending": true,
+  "actual_flow_parser_pending": true,
+  "capsule": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-02",
+  "capsule_manifest_sha256": "b6e8131d4955151c57b562aef40f69701ff6cf734900e22c766b7332f71d7812",
+  "native_artifacts": {
+    "vcmiclient": "0e9231fe7b562674d77278efa27fece3c3023a55cb851269835574d97d78f327",
+    "vcmiserver": "d995f852f4706f694aee268e49519fc2e95543131c25a141259d251677ac6e5d",
+    "libvcmi.so": "107ceeb3aed04724aaf2d397c6e1405de58b423c8946cf303d060ab00a0aea22"
+  },
+  "candidate_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "bindings_sha256": "92f7dfe0efb5023caa7e016d2f3f94b0b4df16a2ddef35dbf72503cd9b4adb5a"
+}

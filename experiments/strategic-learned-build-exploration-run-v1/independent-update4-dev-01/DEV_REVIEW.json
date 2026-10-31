@@ -1,0 +1,414 @@
+{
+  "passed": true,
+  "raw_audits_actually_rerun": 16,
+  "full_cpu_proposals_actually_recomputed": 3884,
+  "all_source_capsule_raw_hashes_unchanged": true,
+  "cases": [
+    {
+      "pair": 0,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-00/a",
+      "win": true,
+      "counts": {
+        "policy_moves": 341,
+        "policy_builds": 19,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 35,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 360,
+        "blocking_visits": 9
+      },
+      "decisions": 360,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 0,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-00/b",
+      "win": true,
+      "counts": {
+        "policy_moves": 248,
+        "policy_builds": 14,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 28,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 262,
+        "blocking_visits": 7
+      },
+      "decisions": 262,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 1,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-01/a",
+      "win": true,
+      "counts": {
+        "policy_moves": 116,
+        "policy_builds": 9,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 13,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 125,
+        "blocking_visits": 5
+      },
+      "decisions": 125,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 1,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-01/b",
+      "win": true,
+      "counts": {
+        "policy_moves": 415,
+        "policy_builds": 20,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 41,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 435,
+        "blocking_visits": 8
+      },
+      "decisions": 435,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 2,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-02/a",
+      "win": false,
+      "counts": {
+        "policy_moves": 96,
+        "policy_builds": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 11,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 97,
+        "blocking_visits": 5
+      },
+      "decisions": 97,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 2,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-02/b",
+      "win": false,
+      "counts": {
+        "policy_moves": 92,
+        "policy_builds": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 11,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 93,
+        "blocking_visits": 6
+      },
+      "decisions": 93,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 3,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-03/a",
+      "win": false,
+      "counts": {
+        "policy_moves": 86,
+        "policy_builds": 3,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 10,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 89,
+        "blocking_visits": 5
+      },
+      "decisions": 89,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 3,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-03/b",
+      "win": false,
+      "counts": {
+        "policy_moves": 165,
+        "policy_builds": 2,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 20,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 167,
+        "blocking_visits": 5
+      },
+      "decisions": 167,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 4,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-04/a",
+      "win": true,
+      "counts": {
+        "policy_moves": 401,
+        "policy_builds": 24,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 42,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 425,
+        "blocking_visits": 7
+      },
+      "decisions": 425,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 4,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-04/b",
+      "win": true,
+      "counts": {
+        "policy_moves": 471,
+        "policy_builds": 24,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 50,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 495,
+        "blocking_visits": 6
+      },
+      "decisions": 495,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 5,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-05/a",
+      "win": true,
+      "counts": {
+        "policy_moves": 220,
+        "policy_builds": 9,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 23,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 229,
+        "blocking_visits": 7
+      },
+      "decisions": 229,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 5,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-05/b",
+      "win": true,
+      "counts": {
+        "policy_moves": 193,
+        "policy_builds": 11,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 20,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 204,
+        "blocking_visits": 5
+      },
+      "decisions": 204,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 6,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-06/a",
+      "win": false,
+      "counts": {
+        "policy_moves": 94,
+        "policy_builds": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 11,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 95,
+        "blocking_visits": 4
+      },
+      "decisions": 95,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 6,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-06/b",
+      "win": false,
+      "counts": {
+        "policy_moves": 467,
+        "policy_builds": 12,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 46,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 479,
+        "blocking_visits": 14
+      },
+      "decisions": 479,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 7,
+      "arm": "a",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-07/a",
+      "win": false,
+      "counts": {
+        "policy_moves": 47,
+        "policy_builds": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 5,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 48,
+        "blocking_visits": 3
+      },
+      "decisions": 48,
+      "model_sha256": "40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    },
+    {
+      "pair": 7,
+      "arm": "b",
+      "case": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-update4-dev-01/pair-07/b",
+      "win": false,
+      "counts": {
+        "policy_moves": 276,
+        "policy_builds": 5,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 33,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 281,
+        "blocking_visits": 11
+      },
+      "decisions": 281,
+      "model_sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+      "raw_audit_exact": true,
+      "all_cpu_proposals_exact": true
+    }
+  ],
+  "pairs": [
+    {
+      "pair": 0,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 360,
+      "b_decisions": 262
+    },
+    {
+      "pair": 1,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 125,
+      "b_decisions": 435
+    },
+    {
+      "pair": 2,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 97,
+      "b_decisions": 93
+    },
+    {
+      "pair": 3,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 89,
+      "b_decisions": 167
+    },
+    {
+      "pair": 4,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 425,
+      "b_decisions": 495
+    },
+    {
+      "pair": 5,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 229,
+      "b_decisions": 204
+    },
+    {
+      "pair": 6,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 95,
+      "b_decisions": 479
+    },
+    {
+      "pair": 7,
+      "initial_request_semantics_equal": true,
+      "equal_request_prefix": 1,
+      "first_different_action_on_equal_request": 1,
+      "a_decisions": 48,
+      "b_decisions": 281
+    }
+  ],
+  "wins": {
+    "initial": 4,
+    "update4": 4
+  },
+  "builds": {
+    "initial": 67,
+    "update4": 89
+  },
+  "checkpoint": {
+    "sha256": "24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d",
+    "training_updates": 4,
+    "optimizer_steps_metadata_cpu_validated": 504,
+    "protocol_sha256": "64d424b904251d38f43249527c246208062da4539f62230c55757034b57137ff",
+    "protocol_sources_match": true
+  },
+  "gpu_optimizer_restore_rerun": false,
+  "source_scope": "Checkpoint original protocol verified as saved; continuation outer controller is separate and not retroactively asserted to be in checkpoint protocol.",
+  "new_native_runs": 0,
+  "new_gpu_runs": 0,
+  "new_optimizer_steps": 0
+}

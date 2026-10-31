@@ -1,0 +1,72 @@
+{
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/verify_native_restore_v3.py": "5135cf3d1cec7e3181d6158598a2f0fc0346f49799dfbd3b825ff2cea3ec3598",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+    "/root/heroes3-ai-lab/workers/adv-runs/v3-visible-info-smoke-01-2026101923-587vye4m/data/vcmi/Saves/director-v5-initial.vsgm1": "e7ff7669710686b05180f95dfa9feed3e096e2d2b73557780a2f8a082dc1f11f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/broker.py": "0785d8d5acfed5dd59f3a278fed9a3e875a3d5c1bd7280924e834454a6e24ad3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply_policy.py": "20b3bb7c3797b311bbda315fe9d5f2c911bea8ed3a5b8c39668c47311ffb88fa",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "54b35847ade42105a18f5a003aca5a4656da8f1bf18b2f70894e276c5cdc45d6"
+  },
+  "original_agent": "/root/heroes3-ai-lab/workers/strategy-agent-runs/v3-visible-info-smoke-01-sk2ntgdz",
+  "original_native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/v3-visible-info-smoke-01-2026101923-587vye4m",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "red": "Nullkiller2",
+      "blue": "DirectorAI",
+      "seed": 2026101923,
+      "seconds": 120,
+      "tag": "v3-visible-info-smoke-01",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/v3-visible-info-smoke-01-sk2ntgdz"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "Nullkiller2",
+      "blue": "DirectorAI"
+    },
+    "turns": 27,
+    "moves_requested": 224,
+    "move_replies": 224,
+    "changed_tile_replies": 224,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 215,
+    "blocking_visit_replies": 9,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "78a794061e85b69b42aa58080b7525132e41be4707c4bfe37f18077d92266467",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 5.933577266999919,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "3fe496560e0688a729e32dc8aa773f625b675bc882e70cc3da41e9714dbaa5a7",
+    "strategy_trace_records": 567,
+    "native_calendar_last_day": 27,
+    "strategy_targets_sha256": "43f25dd8a86b5e5d904392971a3b797b08f39da5be4ae2804d6b0f9f3f2526c4",
+    "strategy_targets_records": 584,
+    "strategy_decisions_sha256": "dbf9eb76c5f9f24abddb5e142f8ecc889703cc4095eefa30363f9b4f63cb6cf4",
+    "strategy_decision_records": 224,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/v3-visible-info-smoke-01-2026101923-587vye4m/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 346969,
+        "sha256": "e7ff7669710686b05180f95dfa9feed3e096e2d2b73557780a2f8a082dc1f11f"
+      }
+    ]
+  },
+  "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/restore-v3-mou0359q",
+  "scope": "Native turn-start boundary only; not mid-action or mid-battle restore"
+}

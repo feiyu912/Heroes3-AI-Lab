@@ -1,0 +1,7 @@
+{
+  "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/collect_episode_v5.py": "cf259a97bf3e9ca20c6625e06bf28fbe52190bcb7d438d13f680172c8a289be3",
+  "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/audit_typed_execution.py": "7d662f32e63d55ccfbfb47daf48a97fcd2d7442ca7f646789c5d1d30976a849e",
+  "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/raw_events_v4.py": "f18c0c804788564e7eeeedb450cbcec5a39a7d6aea1dcbc6c4516117a67b371a",
+  "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/audit_game_v6.py": "93a1184a554df5039211f43a2694c657b8228fa62235e931870f381b86b06a86",
+  "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/run_pipeline.py": "663b9da968f88ce8726900d6bb8d362da1bb8c0ffb69c9eddf7f1bdc9e0180b6"
+}

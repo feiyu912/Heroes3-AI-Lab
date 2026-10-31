@@ -1,0 +1,108 @@
+{
+  "cpu_synthetic_games": true,
+  "real_serialized_torch_checkpoints": true,
+  "CUDA_training_tested": false,
+  "full_sha256": "b9fec9b69ffe6b43ae819fc3adf94304feac2b95530dfe3eaf08a5f118a5b35b",
+  "resumed_sha256": "e07ca48204060c8a83d7cfd7424e6f1bfbf88a22e943c010dd95ecc83a41340f",
+  "protocol_equal": true,
+  "first_update_model_comparison": {
+    "equal": false,
+    "max_abs": 6.498885340988636e-08
+  },
+  "final_boundary_comparisons": {
+    "state_dict": {
+      "equal": false,
+      "max_abs": 0.0010555833578109741
+    },
+    "optimizer": {
+      "equal": false,
+      "max_abs": 0.00847540283575654
+    },
+    "torch_rng": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "cuda_rng": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "python_rng": {
+      "equal": true,
+      "max_abs": 0.0
+    },
+    "collection_episode_generator_states": {
+      "equal": false,
+      "max_abs": 254.0
+    }
+  },
+  "full_optimizer_steps": 8,
+  "resume_optimizer_steps": 8,
+  "partial_real_optimizer_steps": 1,
+  "partial_complete": false,
+  "partial_resume_rejected": true,
+  "initial_trained_preserved": true,
+  "schedule": {
+    "2": {
+      "episodes": 8,
+      "cells": 8,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "valid": true
+    },
+    "4": {
+      "episodes": 8,
+      "cells": 8,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "valid": true
+    },
+    "8": {
+      "episodes": 8,
+      "cells": 8,
+      "counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "valid": true
+    },
+    "24": {
+      "episodes": 24,
+      "cells": 8,
+      "counts": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "valid": true
+    }
+  },
+  "note": "Bitwise equality is reported rather than assumed. Dynamic microbatch sizes can produce floating differences; CUDA recovery still requires its own native/device audit.",
+  "passed": false
+}

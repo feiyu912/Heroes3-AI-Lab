@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "scope": "configured flags/options/include graph; not a successful full compile or runtime test",
+  "contract_sha256": "94fababf70089e1d944b17280c0d6e003ba39dc34c6a34fcb853316dc4308cf2",
+  "configured_sha256": "dc806a32c438e6c5a9e53c33639771b2ec08d8de443c768a59f7a2e95ebc1b3e",
+  "build_ninja_sha256": "3239eacb53c89d5b1ee2df673b0e306fd104503e2e0369adc7a01c10b024afd7",
+  "compile_commands_sha256": "98670b8a4c529662f50ddcfd063c5d0fc65ed920cbae70689939e7d6f095b242",
+  "compile_commands": 720,
+  "director_flags_exact_after_build_path_relocation": true,
+  "unchanged_options": {
+    "ENABLE_BATTLE_AI": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_CCACHE": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_CLIENT": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_COLORIZED_COMPILER_OUTPUT": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_DEBUG_CONSOLE": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_DISCORD": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_EDITOR": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_GITVERSION": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_GOLDMASTER": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_LAUNCHER": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_LOBBY": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_LTO": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_MINIMAL_LIB": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_ML": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_MMAI": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_MMAI_TEST": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_MONOLITHIC_INSTALL": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_NULLKILLER2_AI": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_PCH": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_SDL3": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_SERVER": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_SINGLE_APP_BUILD": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_STATIC_LIBS": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_STRICT_COMPILATION": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_STUPID_AI": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_TEST": {
+      "expected": "OFF",
+      "actual": "OFF"
+    },
+    "ENABLE_TRANSLATIONS": {
+      "expected": "ON",
+      "actual": "ON"
+    },
+    "ENABLE_VIDEO": {
+      "expected": "OFF",
+      "actual": "OFF"
+    }
+  },
+  "include_paths": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/heroes3-ai-lab/onnxruntime/include",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/BattleAI",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/DirectorAI",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/EmptyAI",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/MMAI",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/Nullkiller2",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/StupidAI",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/client",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/clientapp",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/clientsdl2",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/luascript",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/serverapp",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/include/SDL2",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/include/luajit-2.1"
+  ],
+  "new_native_games": 0,
+  "optimizer_steps": 0
+}

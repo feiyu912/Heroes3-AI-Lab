@@ -1,0 +1,437 @@
+{
+  "schema": "acceptance06-independent-lifecycle-audit-v1",
+  "passed": true,
+  "episodes": [
+    {
+      "tag": "engineering-map0-red-2026101860",
+      "won": 1,
+      "days": 19,
+      "moves": 194,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        1,
+        0
+      ],
+      "movement_block_unblock": [
+        194,
+        194
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        0,
+        0
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 921,
+        "terminal_event": "victory",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": null,
+      "delivered": 169,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-red-2026101860-2026101860-hohu7ayv/client.log": "ef44917757d083ef552dab031bc24599eac7c3fa37db35b1313c30b0ad5848ac",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-red-2026101860-2026101860-hohu7ayv/strategy-trace.jsonl": "ed2115055ccf681683ee7d3c5a5b0bfb48401a49a36101852b68b4b7c2bcd6bf",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-red-2026101860-2026101860-hohu7ayv/strategy-decisions.jsonl": "f6df496c9ae576623bdaf7fbcd5bfd63600d9afd1a1cb456b7ffebe9166e3cac"
+      }
+    },
+    {
+      "tag": "engineering-map0-blue-2026101860",
+      "won": 1,
+      "days": 33,
+      "moves": 307,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        4,
+        3
+      ],
+      "movement_block_unblock": [
+        307,
+        307
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        2,
+        2
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 1479,
+        "terminal_event": "victory",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": null,
+      "delivered": 148,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-zgz30zt5/client.log": "1322fee8aecd187ab0176c9acc1f384d4aedc456c8332c25799828ac700227ee",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-zgz30zt5/strategy-trace.jsonl": "d3d0ea8bb6fa4fbedf7d71f1a2996292179847a093f89485eace2d42ebe1e1a2",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-zgz30zt5/strategy-decisions.jsonl": "4b5caf8f1347883e65b3b13a1a5d2a3b9163239721e449b9c6c663967f77439a"
+      }
+    },
+    {
+      "tag": "engineering-map1-red-2026101860",
+      "won": 1,
+      "days": 29,
+      "moves": 285,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        4,
+        3
+      ],
+      "movement_block_unblock": [
+        285,
+        285
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        2,
+        2
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 1379,
+        "terminal_event": "victory",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": null,
+      "delivered": 268,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-red-2026101860-2026101860-phg85fhz/client.log": "14dd0f638e24f1e69a3d112dd7d76b4c10a090dfbda117f07db3870d44ad11be",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-red-2026101860-2026101860-phg85fhz/strategy-trace.jsonl": "9532c8908b0351d9d35b994045934461bf0e896e9774bd791ccf17e7d6a2e6c5",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-red-2026101860-2026101860-phg85fhz/strategy-decisions.jsonl": "f7d2dcc150b7547883361a2fcd8b17fcf369ddd24571cb6cdb2b8f31202c055a"
+      }
+    },
+    {
+      "tag": "engineering-map1-blue-2026101860",
+      "won": 1,
+      "days": 15,
+      "moves": 137,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        3,
+        2
+      ],
+      "movement_block_unblock": [
+        137,
+        137
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        1,
+        1
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 671,
+        "terminal_event": "victory",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": null,
+      "delivered": 74,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-blue-2026101860-2026101860-j1oc5una/client.log": "cae362e681414603af4170a61c7bfe385bdf589e5f8f88dabba41992219f7374",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-blue-2026101860-2026101860-j1oc5una/strategy-trace.jsonl": "b9d9073fe0db8a504d24f9399e760fc2d3c36f58778a28d43e5b7c70d7e26e41",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map1-blue-2026101860-2026101860-j1oc5una/strategy-decisions.jsonl": "b2432867054eb84a96eaada6c60fcd966fdbc78f5223966cc3fb80446000d178"
+      }
+    },
+    {
+      "tag": "nk-development-map0-red-2026101861",
+      "won": 0,
+      "days": 41,
+      "moves": 438,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        10,
+        9
+      ],
+      "movement_block_unblock": [
+        438,
+        438
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        6,
+        6
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 2088,
+        "terminal_event": "defeat",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": 40,
+      "delivered": 206,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101861-2026101861-fv7b3xt5/client.log": "af562068230a326358deb14efe7586448129a55e9c9d3bea6efb0c8c01d16ab5",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101861-2026101861-fv7b3xt5/strategy-trace.jsonl": "5a8c0c8a9bc439ac1826ac082ca23e3961f577c03b9cd745931fe5ba903c21a8",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101861-2026101861-fv7b3xt5/strategy-decisions.jsonl": "6cf60fbbae561aeae3e84b6686b4c1ed64e36af9497ac0315401125d654bf067"
+      }
+    },
+    {
+      "tag": "nk-development-map0-red-2026101862",
+      "won": 0,
+      "days": 46,
+      "moves": 314,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        12,
+        12
+      ],
+      "movement_block_unblock": [
+        314,
+        314
+      ],
+      "terminal_unconsumed_battle_ready": 0,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        10,
+        10
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 1572,
+        "terminal_event": "defeat",
+        "entries": [
+          {
+            "line": 1573,
+            "event": "native_battle_ready",
+            "state_identical_to_terminal": true
+          }
+        ],
+        "count": 1
+      },
+      "main_loss_day": 34,
+      "delivered": 196,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101862-2026101862-3ubl8v4p/client.log": "e942c10241bfd3251f47aec2abd973b82087715a84303cb0fb7190677ee75163",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101862-2026101862-3ubl8v4p/strategy-trace.jsonl": "0dc2ae6b3e6a5582eecce17caace4666d5c6c357a6f17a7f2d8294b052b5a9e2",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-red-2026101862-2026101862-3ubl8v4p/strategy-decisions.jsonl": "bf03b9f8668f0b2ecc0856eba38b8c2af6cf661fa80e373d20070c7b045924a8"
+      }
+    },
+    {
+      "tag": "nk-development-map0-blue-2026101861",
+      "won": 1,
+      "days": 44,
+      "moves": 504,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        7,
+        6
+      ],
+      "movement_block_unblock": [
+        504,
+        504
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        8,
+        8
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 2341,
+        "terminal_event": "victory",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": 44,
+      "delivered": 245,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101861-2026101861-0duqw254/client.log": "e804045a867c1b963cac67d9d15db5fc8a7a58130fe2c2611ce955ad3818989d",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101861-2026101861-0duqw254/strategy-trace.jsonl": "8f5f5ecea84b2a2740000e1c3c8d28909532c629dd29437bb065e0b3cce883da",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101861-2026101861-0duqw254/strategy-decisions.jsonl": "f628f18de430bbcbf9c352df831b8f056b935f51f4b43e2bb9d4e55a6a4fb625"
+      }
+    },
+    {
+      "tag": "nk-development-map0-blue-2026101862",
+      "won": 0,
+      "days": 75,
+      "moves": 703,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        15,
+        15
+      ],
+      "movement_block_unblock": [
+        703,
+        703
+      ],
+      "terminal_unconsumed_battle_ready": 0,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        13,
+        13
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 3340,
+        "terminal_event": "defeat",
+        "entries": [
+          {
+            "line": 3341,
+            "event": "native_battle_ready",
+            "state_identical_to_terminal": true
+          }
+        ],
+        "count": 1
+      },
+      "main_loss_day": 72,
+      "delivered": 421,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101862-2026101862-rr5crfj2/client.log": "688c4469a7ae2845ffe985e572181ce37037468fcc48d8c2f3f51223f096b04c",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101862-2026101862-rr5crfj2/strategy-trace.jsonl": "c2e77add1e877f658ad47edb977270325552ea0e14514c2df3627d163e918c07",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map0-blue-2026101862-2026101862-rr5crfj2/strategy-decisions.jsonl": "51031f98b0d018b23b77f978adb01f959b7a8bb7660be9ca52a473483d57cad2"
+      }
+    },
+    {
+      "tag": "nk-development-map1-red-2026101861",
+      "won": 0,
+      "days": 105,
+      "moves": 1285,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        64,
+        63
+      ],
+      "movement_block_unblock": [
+        1285,
+        1285
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        42,
+        42
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 5942,
+        "terminal_event": "defeat",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": 91,
+      "delivered": 1240,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101861-2026101861-ebsd5n14/client.log": "2e40a4ba30c1cd38a9dc50413eeba8413d3ae3a57fa4657d5309d117a35a4e6c",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101861-2026101861-ebsd5n14/strategy-trace.jsonl": "73a30124620cc82bd377f1351ed2655bc3b555fb503d6ea04e78784c54ca5d51",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101861-2026101861-ebsd5n14/strategy-decisions.jsonl": "7f87f02f22a25040daf153ccfd0087870e4b00759af539b0a8fc66be118676b1"
+      }
+    },
+    {
+      "tag": "nk-development-map1-red-2026101862",
+      "won": 0,
+      "days": 18,
+      "moves": 112,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        4,
+        4
+      ],
+      "movement_block_unblock": [
+        112,
+        112
+      ],
+      "terminal_unconsumed_battle_ready": 0,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        11,
+        11
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 552,
+        "terminal_event": "defeat",
+        "entries": [
+          {
+            "line": 553,
+            "event": "native_battle_ready",
+            "state_identical_to_terminal": true
+          }
+        ],
+        "count": 1
+      },
+      "main_loss_day": 13,
+      "delivered": 34,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101862-2026101862-de817vy7/client.log": "6a21d4e21de201711e1716389b7241838170bf971d890c6be75e6e103de8a7b9",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101862-2026101862-de817vy7/strategy-trace.jsonl": "fa9a87c3416715dfe79ddd074d1aab88f89fb8f6bbb7a1c3df5b21d818418a28",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-red-2026101862-2026101862-de817vy7/strategy-decisions.jsonl": "8df259744e38c38feecc04ac887217f2de2eb32de1a27303ab760a7619905f48"
+      }
+    },
+    {
+      "tag": "nk-development-map1-blue-2026101861",
+      "won": 0,
+      "days": 48,
+      "moves": 430,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        32,
+        32
+      ],
+      "movement_block_unblock": [
+        430,
+        430
+      ],
+      "terminal_unconsumed_battle_ready": 0,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        21,
+        21
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 2047,
+        "terminal_event": "defeat",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": 48,
+      "delivered": 316,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101861-2026101861-96kb2zg6/client.log": "dbcae166ebb0b44cd0e675a645647d5e80c24f4541d26762bba464768f2a2f99",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101861-2026101861-96kb2zg6/strategy-trace.jsonl": "21f889bc7892d955a795779108bdc21ede2920008ea36cc81f2639fd70ae7785",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101861-2026101861-96kb2zg6/strategy-decisions.jsonl": "802a544aee7b948c77855d56ed2f2b9ad2f396c09c4e6c469622e11ee5c447fd"
+      }
+    },
+    {
+      "tag": "nk-development-map1-blue-2026101862",
+      "won": 0,
+      "days": 37,
+      "moves": 367,
+      "native_rejection_lines": [],
+      "battle_block_ready": [
+        19,
+        18
+      ],
+      "movement_block_unblock": [
+        367,
+        367
+      ],
+      "terminal_unconsumed_battle_ready": 1,
+      "terminal_unconsumed_move_unblock": 0,
+      "queries_sent_applied": [
+        18,
+        18
+      ],
+      "terminal_tail_transport": {
+        "terminal_line": 1751,
+        "terminal_event": "defeat",
+        "entries": [],
+        "count": 0
+      },
+      "main_loss_day": 23,
+      "delivered": 304,
+      "evidence_sha256": {
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101862-2026101862-bgw3kud8/client.log": "d3ad00094799cac0864eea3215128efad4bf5f6aaf3a109cee0271384327cbb7",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101862-2026101862-bgw3kud8/strategy-trace.jsonl": "7cffca1b6d1cf6b5ae0247db06e1163c0143602bf4a6c8b922f81da2232fd424",
+        "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-nk-development-map1-blue-2026101862-2026101862-bgw3kud8/strategy-decisions.jsonl": "14284ffb06414a3f8397109ed9f3631494efe8bb4eade5433bfc243e680cc51c"
+      }
+    }
+  ],
+  "engineering_wins": 4,
+  "nk_development_wins": 1,
+  "gradient_updates": 0,
+  "independent_capability_evaluation": false,
+  "bc_eligible": 0
+}

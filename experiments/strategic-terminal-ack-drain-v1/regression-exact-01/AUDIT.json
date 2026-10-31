@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "gameplay_and_policy_traces_exact": true,
+  "checks": {
+    "strategy-decisions.jsonl": {
+      "exact_bytes": true,
+      "sha256": "16709dc63bade73534920f1c1ebb6f2e163ce6cf5d5e1bc74f7adc8c4f19395d"
+    },
+    "strategy-trace.jsonl": {
+      "exact_bytes": true,
+      "sha256": "492a6b489801d25fc7d149b5b9cba02877e979fee14be805bb223acd4fc2f071"
+    },
+    "strategy-trace.jsonl.targets.jsonl": {
+      "exact_bytes": true,
+      "sha256": "e806bc89fb7aa230e79cf054a6692fd1d87017157f37155eec5ee438f7582ed1"
+    },
+    "agent/typed-broker.jsonl": {
+      "exact_bytes": true,
+      "sha256": "2ce3befd5b31aa48a25a3b2530ce22b7dca3958d530ef938f0ed8470f3152e5b"
+    },
+    "request-????????.json": {
+      "files": 100,
+      "exact_bytes": true
+    },
+    "action-????????.json": {
+      "files": 100,
+      "exact_bytes": true
+    }
+  },
+  "terminal_auto_endturn_request_id": 330,
+  "true_ACK_after_game_over_observed": true,
+  "new_action_after_terminal": false,
+  "original_failed_evidence_preserved": true,
+  "unchanged_outcome": "Director red normal defeat day12: seven days without town",
+  "new_policy_samples": 0,
+  "optimizer_steps": 0,
+  "scope": "Transport/lifecycle regression, not an ability improvement or a second independent capability sample."
+}

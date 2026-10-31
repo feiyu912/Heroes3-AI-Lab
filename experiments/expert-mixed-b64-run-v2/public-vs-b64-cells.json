@@ -1,0 +1,258 @@
+{
+  "BattleAI": {
+    "public_wins": 157,
+    "b64_wins": 172,
+    "games": 192,
+    "public_only": 8,
+    "b64_only": 23,
+    "both_win": 149,
+    "both_lose": 12,
+    "recoverable_cells": [
+      {
+        "scenario": "diverse-196",
+        "role": "attacker",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-236",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-211",
+        "role": "defender",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-224",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-237",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      }
+    ],
+    "recoverable_games": 8
+  },
+  "MMAI_MODEL": {
+    "public_wins": 96,
+    "b64_wins": 114,
+    "games": 192,
+    "public_only": 35,
+    "b64_only": 53,
+    "both_win": 61,
+    "both_lose": 43,
+    "recoverable_cells": [
+      {
+        "scenario": "diverse-195",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-196",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-201",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "attacker",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-209",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-215",
+        "role": "attacker",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-224",
+        "role": "attacker",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-233",
+        "role": "defender",
+        "public": 2,
+        "b64": 0,
+        "games": 2,
+        "headroom": 2
+      },
+      {
+        "scenario": "diverse-203",
+        "role": "defender",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-204",
+        "role": "defender",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-205",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-207",
+        "role": "defender",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-210",
+        "role": "attacker",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-211",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-214",
+        "role": "attacker",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-218",
+        "role": "defender",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-221",
+        "role": "defender",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-222",
+        "role": "attacker",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-223",
+        "role": "defender",
+        "public": 2,
+        "b64": 1,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-226",
+        "role": "defender",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-228",
+        "role": "defender",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-230",
+        "role": "defender",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      },
+      {
+        "scenario": "diverse-232",
+        "role": "attacker",
+        "public": 1,
+        "b64": 0,
+        "games": 2,
+        "headroom": 1
+      }
+    ],
+    "recoverable_games": 31
+  }
+}

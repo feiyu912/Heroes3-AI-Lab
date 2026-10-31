@@ -1,0 +1,9 @@
+# Why original Training qualification02 did not cover the new flow
+
+The strict whole-game audit passed. Its flow evidence records15 real ArrangeStacks and0 before-first-policy transfers. This is actual absent coverage, not a generic-ACK logging-order false negative: each transfer's economy callback occurs after that own turn's first real policy action. Transfer IDs41,42(day1),366–368(day8),389(day9),523(day14),585–587/590(day16),627–630(day17) are retained in proof-01/raw-audit-00/AUDIT.json. The helper uses the actual economy callback boundary, not the later generic ACK line, so the known ACK printing order does not explain these zeros.
+
+Public own trace contains no before_hire_hero event in23 own turns. The observed HireHero raw packets belong to other players, not own rescue economy callbacks. Own hero is away from town at almost every turn start; day9 starts at own town but its garrison is empty. This run never presented the intended stocked-town opening or same-turn rescue condition. It remains a complete real mechanism run with insufficient targeted coverage, excluded from PPO and capability score.
+
+Historical finalDEV pairs03/07 contained only director-v5-initial.vsgm1 files; no pre-hire day20/day33 autosave was found. Loading those initial saves would not directly reproduce the late rescue boundary. The next case therefore uses an explicitly changed own-side initial-condition fixture, not repeated random seeds or fabricated saved controller state.
+
+The fixture retains the original header (including its original player hero metadata), terrain, faction/tavern/resource setup and all other object structures. Actual native callbacks must prove that the removed own hero is absent initially, the town really has the two specified stacks, and rescue/transfer happens. A native loader discrepancy is a failure to retain and diagnose, never inferred success from the fixture JSON alone.

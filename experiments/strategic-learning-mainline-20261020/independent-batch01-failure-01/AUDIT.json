@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Independent diagnosis, NOT successful training batch certification",
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps_performed": 0,
+  "batch_valid": false,
+  "completed_admitted_cells": 6,
+  "failed_cell": 6,
+  "unrun_cells": [
+    7
+  ],
+  "request": {
+    "id": 291,
+    "player": 1,
+    "owned_player": 0,
+    "pack_type": 189,
+    "type": "GarrisonHeroSwap",
+    "actual_apply": false,
+    "ack_success": 1,
+    "owned_registration": false,
+    "ACK_lines": [
+      28636
+    ],
+    "rejection_lines": [
+      28617,
+      28629
+    ]
+  },
+  "cell06_native_completed": true,
+  "cell06_train_admitted": false,
+  "source_snapshot_matches_capsule_manifest": true,
+  "inference": "The exact complaint identifies the no-garrison/no-visiting branch at processing time. The log does not establish why NK issued this request or prove deterministic recurrence.",
+  "strict_global_rejection_preserved": true,
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/independent-batch01-failure-01/review.py": "a36f013edec42d82c816e4e477121552d5d07bad6dde71f7a4152f66abf60c28",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/RESULT.json": "2915dfe36318195950974c84c39a62710bfaa182ad1e9a15f2192d2b16e8795d",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/PLAN.json": "da8fd3bcca8e1f5091be242f37ede4138e4c6cbc90ac7209c4956afe3150a0b7",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-06/audit.log": "1d0ec4d25530551712bd66bf1899a07a26152ad81d851696195bc36302625f54",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-06/native/client.log": "d2f8582ee91d4f5afaac2c6142ef1f7093109c1a6c36a549ec4010341ef3f400",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-06/native/PLAN.json": "ac27592d8eab7292ff372fe9867baccd3744d5ed97c46080be292b9ace4c6247",
+    "/root/heroes3-ai-lab/evaluations/strategic-mainline-temperature2-train-01/cell-06/native/EXECUTION.json": "faca654a0858a0686c3171344ccdcf0b4d1e3514dda4849f2c2a1dc7a3082269",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-capsule-03/build-source-manifest.json": "2972318d45d8d69683eb869bd13f36781baa00bad123c06a76b8f549a10eeb9c",
+    "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-capsule-03/source-snapshot/server/CGameHandler.cpp": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865",
+    "/root/heroes3-ai-lab/src/vcmi-adv/server/NetPacksServer.cpp": "3b70ad9a109c1cf41bd34cfc5767d6ea6c5dc5cbafba54e35515358d1ea8de3b"
+  }
+}

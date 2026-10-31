@@ -1,0 +1,33 @@
+{
+  "checkpoint_sha256": "8d3169e85d51b0bf7d7247cc2d4bdc6949410d5262793f1729a6463dbd3976bf",
+  "source_inspection_passed": true,
+  "CUDA_restore_executed": true,
+  "audit_optimizer_steps": 0,
+  "new_native_games": 0,
+  "native_environment_restored": false,
+  "auditor_sha256": "142be8d54bd4d3ea7c366a8f406df74db7449a6da207d67423220baa075c407b",
+  "helper_sha256": "d07c1326a3458bbe0cd8786c32aa58b80eac01c48ced33c350a25cf81aaa143f",
+  "plan_only": false,
+  "passed_exact": true,
+  "model_Adam_named_binding_exact": true,
+  "CPU_CUDA_Python_NumPy_RNG_exact": true,
+  "actual_Adam_counter_restored": 7296,
+  "per_parameter_steps": {
+    "7272": 97,
+    "7266": 97
+  },
+  "invalid_resume_preserves_model_Adam_all_RNG_counter": true,
+  "negative_cases": [
+    "partial",
+    "wrong_mode",
+    "counter_reset",
+    "counter_drift",
+    "group_binding",
+    "moment_shape",
+    "CUDA_RNG",
+    "Python_RNG",
+    "NumPy_RNG"
+  ],
+  "native_fresh_required": true,
+  "new_schedule_epoch_required": true
+}

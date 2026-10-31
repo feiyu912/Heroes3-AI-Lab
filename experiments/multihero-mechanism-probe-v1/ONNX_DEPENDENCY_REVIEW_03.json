@@ -1,0 +1,382 @@
+{
+  "source_exact_references": [],
+  "cmake_relevant_lines": [
+    {
+      "path": "CMakeLists.txt",
+      "line": 275,
+      "text": "set_property(GLOBAL PROPERTY USE_FOLDERS TRUE)"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 339,
+      "text": "# GCC assumes any exported function may be interposed at load time and so cannot"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 370,
+      "text": "#Global fallback mapping"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 477,
+      "text": "\t\t\t\tset(CMAKE_VS_GLOBALS"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 631,
+      "text": "\t# upstream SDL3, its static builds and the Conan packages all export different target"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 643,
+      "text": "\t\t\tget_property(allTargets GLOBAL PROPERTY IMPORTED_TARGETS)"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "line": 933,
+      "text": "#TODO: remove version from Global.h and use this one as define?"
+    },
+    {
+      "path": "launcher/CMakeLists.txt",
+      "line": 239,
+      "text": "\t# - cmake_minimum_required set to 2.8.11 globally and in this file"
+    },
+    {
+      "path": "launcher/CMakeLists.txt",
+      "line": 248,
+      "text": "\tset_property(GLOBAL PROPERTY AUTOGEN_TARGETS_FOLDER vcmilauncher)"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 98,
+      "text": "\tglobalLobby/GlobalLobbyAddChannelWindow.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 99,
+      "text": "\tglobalLobby/GlobalLobbyClient.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 100,
+      "text": "\tglobalLobby/GlobalLobbyInviteWindow.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 101,
+      "text": "\tglobalLobby/GlobalLobbyLoginWindow.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 102,
+      "text": "\tglobalLobby/GlobalLobbyRoomWindow.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 103,
+      "text": "\tglobalLobby/GlobalLobbyServerSetup.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 104,
+      "text": "\tglobalLobby/GlobalLobbyWidget.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 105,
+      "text": "\tglobalLobby/GlobalLobbyWindow.cpp"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 319,
+      "text": "\tglobalLobby/GlobalLobbyClient.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 320,
+      "text": "\tglobalLobby/GlobalLobbyDefines.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 321,
+      "text": "\tglobalLobby/GlobalLobbyAddChannelWindow.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 322,
+      "text": "\tglobalLobby/GlobalLobbyInviteWindow.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 323,
+      "text": "\tglobalLobby/GlobalLobbyLoginWindow.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 324,
+      "text": "\tglobalLobby/GlobalLobbyRoomWindow.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 325,
+      "text": "\tglobalLobby/GlobalLobbyServerSetup.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 326,
+      "text": "\tglobalLobby/GlobalLobbyObserver.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 327,
+      "text": "\tglobalLobby/GlobalLobbyWidget.h"
+    },
+    {
+      "path": "client/CMakeLists.txt",
+      "line": 328,
+      "text": "\tglobalLobby/GlobalLobbyWindow.h"
+    },
+    {
+      "path": "lib/CMakeLists.txt",
+      "line": 357,
+      "text": "\t../Global.h"
+    },
+    {
+      "path": "lib/CMakeLists.txt",
+      "line": 508,
+      "text": "\tcallback/CGlobalAI.h"
+    },
+    {
+      "path": "mapeditor/CMakeLists.txt",
+      "line": 329,
+      "text": "\t# - cmake_minimum_required set to 2.8.11 globally and in this file"
+    },
+    {
+      "path": "mapeditor/CMakeLists.txt",
+      "line": 338,
+      "text": "\tset_property(GLOBAL PROPERTY AUTOGEN_TARGETS_FOLDER vcmieditor)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 35,
+      "text": "  BAI/v13/global_stats_v13.cpp"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 36,
+      "text": "  BAI/v13/global_stats_v13.h"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 83,
+      "text": "  BAI/v15/graph/nodes/global_v15.cpp"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 84,
+      "text": "  BAI/v15/graph/nodes/global_v15.h"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 123,
+      "text": "add_definitions(-DUSING_ONNX=1)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 133,
+      "text": "  find_package(onnxruntime CONFIG QUIET)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 134,
+      "text": "  if(onnxruntime_FOUND)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 135,
+      "text": "    message(STATUS \"Found onnxruntime via CMake config\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 136,
+      "text": "    target_link_libraries(MMAI PRIVATE onnxruntime::onnxruntime)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 139,
+      "text": "    message(STATUS \"onnxruntime CMake config not found, trying system installation\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 140,
+      "text": "    set(ONNXRUNTIME_ROOT \"/opt/onnxruntime\" CACHE PATH \"Path to onnxruntime containing lib/onnxruntime.so and include/onnxruntime_cxx_api.h\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 141,
+      "text": "    message(STATUS \"Looking for onnxruntime via find_path/find_library (hint: ${ONNXRUNTIME_ROOT})\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 142,
+      "text": "    find_path(ONNXRUNTIME_INCLUDE_DIR"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 143,
+      "text": "      NAMES onnxruntime_cxx_api.h"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 144,
+      "text": "      HINTS \"${ONNXRUNTIME_ROOT}/include\""
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 146,
+      "text": "          onnxruntime"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 148,
+      "text": "          include/onnxruntime"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 151,
+      "text": "    find_library(ONNXRUNTIME_LIBRARY NAMES onnxruntime libonnxruntime"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 152,
+      "text": "      HINTS \"${ONNXRUNTIME_ROOT}/lib\""
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 155,
+      "text": "    if(ONNXRUNTIME_INCLUDE_DIR AND ONNXRUNTIME_LIBRARY)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 156,
+      "text": "      message(STATUS \"Using onnxruntime:\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 157,
+      "text": "      message(STATUS \"  include: ${ONNXRUNTIME_INCLUDE_DIR}\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 158,
+      "text": "      message(STATUS \"  library: ${ONNXRUNTIME_LIBRARY}\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 159,
+      "text": "      target_include_directories(MMAI PRIVATE \"${ONNXRUNTIME_INCLUDE_DIR}\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 160,
+      "text": "      target_link_libraries(MMAI PRIVATE \"${ONNXRUNTIME_LIBRARY}\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 162,
+      "text": "      message(FATAL_ERROR \"onnxruntime not found. Install onnxruntime-devel or set ONNXRUNTIME_ROOT to a custom installation path, or disable MMAI with -DENABLE_MMAI=OFF\")"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 166,
+      "text": "  find_package(onnxruntime CONFIG REQUIRED)"
+    },
+    {
+      "path": "AI/MMAI/CMakeLists.txt",
+      "line": 167,
+      "text": "  target_link_libraries(MMAI PRIVATE onnxruntime::onnxruntime)"
+    },
+    {
+      "path": "server/CMakeLists.txt",
+      "line": 23,
+      "text": "\t\tGlobalLobbyProcessor.cpp"
+    },
+    {
+      "path": "server/CMakeLists.txt",
+      "line": 55,
+      "text": "\t\tGlobalLobbyProcessor.h"
+    },
+    {
+      "path": "luascript/CMakeLists.txt",
+      "line": 52,
+      "text": "\t\tapi/DocExport.cpp"
+    },
+    {
+      "path": "luascript/CMakeLists.txt",
+      "line": 109,
+      "text": "\t\tapi/DocExport.h"
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "line": 183,
+      "text": "\tfile(GLOB_RECURSE BATTLE_AI_TEST_SRCS \"../AI/BattleAI/*.cpp\")"
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "line": 262,
+      "text": "# lib globals single-instance and lets classes needed only by tests stay"
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "line": 263,
+      "text": "# unexported, since static linking ignores visibility."
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "line": 286,
+      "text": "# slow global initialization."
+    },
+    {
+      "path": "test/CMakeLists.txt",
+      "line": 294,
+      "text": "file (GLOB_RECURSE testdata \"testdata/*.*\")"
+    }
+  ],
+  "generated_build_exact_references": [],
+  "MMAI_runtime_model_references": [
+    {
+      "path": "AI/MMAI/BAI/factory.h",
+      "line": 25,
+      "text": "\tstd::unique_ptr<Ort::Session> session = nullptr;"
+    },
+    {
+      "path": "AI/MMAI/BAI/factory.h",
+      "line": 33,
+      "text": "\t\tstd::unique_ptr<Ort::Session> session,"
+    },
+    {
+      "path": "AI/MMAI/BAI/factory.cpp",
+      "line": 27,
+      "text": "\tstd::unique_ptr<Ort::Session> load(const std::string & path)"
+    },
+    {
+      "path": "AI/MMAI/BAI/factory.cpp",
+      "line": 39,
+      "text": "\t\tauto opts = Ort::SessionOptions();"
+    },
+    {
+      "path": "AI/MMAI/BAI/factory.cpp",
+      "line": 53,
+      "text": "\t\treturn std::make_unique<Ort::Session>(env, data.get(), length, opts);"
+    },
+    {
+      "path": "AI/MMAI/BAI/factory.cpp",
+      "line": 56,
+      "text": "\tint readVersion(Ort::Session * session, OrtAllocator * allocator, const Ort::ModelMetadata & md)"
+    }
+  ],
+  "inspected_cmake_cache_MMAI": [
+    "ENABLE_MMAI:BOOL=ON",
+    "ENABLE_MMAI_TEST:BOOL=OFF"
+  ]
+}

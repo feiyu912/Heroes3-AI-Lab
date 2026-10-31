@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "parent_nine_payload_match_actual_compiled_capsule": true,
+  "changed_files": [
+    "AI/DirectorAI/CDirectorAI.cpp",
+    "AI/DirectorAI/CDirectorAI.h"
+  ],
+  "old_transfer_block_preserved_in_issueEconomy": true,
+  "free_helper_uses_identical_legacy_block": true,
+  "cpp_syntax_or_compile_run": false,
+  "native_builds": 0,
+  "native_games": 0,
+  "gpu_runs": 0,
+  "optimizer_steps": 0,
+  "python_ast_passed": true,
+  "default_plan_executed": true,
+  "plan_took_no_locks": true,
+  "build_and_restore_locked_body_ast_exact_v1": true,
+  "full_original_issueEconomy_and_following_source_exact": true,
+  "prewindow_call_after_full_guard": true,
+  "manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "driver_sha256": "b5a2ce34750647b0bc37719c70f807bfe066db496312744b82fb2f347eab8de6"
+}

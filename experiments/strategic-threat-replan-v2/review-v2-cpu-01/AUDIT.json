@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "rejection_checks": [
+    "deleted_release_in_both_log_and_sidecar",
+    "off_unlogged_multi_candidate",
+    "off_logged_release",
+    "budget_used_unlogged_reopening",
+    "budget_used_logged_second_release",
+    "wrong_previous_goal",
+    "unpublished_threat",
+    "below_pressure_threshold",
+    "duplicate_release",
+    "out_of_order_proposals",
+    "swapped_other_game_proof",
+    "wrong_proof_owner",
+    "missing_proof_file_hash",
+    "wrong_core_auditor_source",
+    "mutated_raw_with_old_core_proof",
+    "proposal_byte_hash_mismatch",
+    "mutated_action_file",
+    "request_semantics_equal_bytes_changed"
+  ],
+  "positive_predicate_checks": 5,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/check_audit_replan_v2.py": "242b8fe262bc9033bb1ef2d56998dfad13f343dd7b538cd11e2eb7ae92b0538b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_replan_v2.py": "d4e42d713591c7ee99d83ce2f3a7719f115aa968cf450b8cc4579025df8bb031"
+  },
+  "limitation": "Artificial CPU predicate fixtures only; no native game or native certification."
+}

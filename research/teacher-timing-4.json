@@ -1,0 +1,1025 @@
+{
+  "run_id": "1791987397861231392",
+  "workers": 12,
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+  "opponent": "BattleAI",
+  "teacher_turns": 4,
+  "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/scenarios-v2.json",
+  "independent_battle_seed": true,
+  "scenario_ids": [
+    26,
+    28,
+    31,
+    35
+  ],
+  "wall_seconds": 3.08388462100001,
+  "summary": [
+    {
+      "policy": "teacher",
+      "battles": 16,
+      "wins": 8,
+      "win_rate": 0.5,
+      "wilson95": [
+        0.2799923761135083,
+        0.7200076238864916
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 79.0
+    }
+  ],
+  "battles": [
+    {
+      "scenario": "balanced-26",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104000,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204000,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 18,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 39,
+            "8": 33,
+            "10": 12
+          },
+          "1": {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 39,
+            "8": 33,
+            "10": 17
+          },
+          {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 3,
+        "4": 1,
+        "2": 3,
+        "3": 11
+      },
+      "trajectory_sha256": "a18eed1e6502c9e240f16e7afe77a89092d0b0a95b49c112487be35d483efee3",
+      "wall_seconds": 0.2728443980000179,
+      "policy_latency_ms": {
+        "p50": 0.016407999993361955,
+        "p95": 0.03389089998080398,
+        "p99": 0.0794413799857806
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 2.0235,
+        "p95": 3.7007,
+        "p99": 3.7673399999999995
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-26",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104001,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204001,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 19,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 39,
+            "8": 33,
+            "10": 8
+          },
+          "1": {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 39,
+            "8": 33,
+            "10": 17
+          },
+          {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 4,
+        "4": 1,
+        "2": 4,
+        "3": 10
+      },
+      "trajectory_sha256": "33bad74e865c5b71611764f13224924a1935eb3e1d262e350187c6bceab4cee0",
+      "wall_seconds": 0.2719195479999996,
+      "policy_latency_ms": {
+        "p50": 0.014751000009027848,
+        "p95": 0.032857299993338265,
+        "p99": 0.12064185998951873
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.867,
+        "p95": 2.9898999999999982,
+        "p99": 3.6515800000000005
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-26",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104000,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204000,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 19,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 39,
+            "8": 33,
+            "10": 7
+          },
+          "1": {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 39,
+            "8": 33,
+            "10": 17
+          },
+          {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 1,
+        "2": 1,
+        "3": 12
+      },
+      "trajectory_sha256": "82b348b5d2fd37bffe001c27fac2a26a6d4dca00f5acd31be822a942527a0586",
+      "wall_seconds": 0.27029109399998674,
+      "policy_latency_ms": {
+        "p50": 0.017181999993454156,
+        "p95": 0.03341309998177151,
+        "p99": 0.08579381998515603
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.753,
+        "p95": 3.4086,
+        "p99": 3.43452
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-26",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104001,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204001,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 19,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "6": 39,
+            "8": 33,
+            "10": 8
+          },
+          "1": {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "6": 39,
+            "8": 33,
+            "10": 17
+          },
+          {
+            "6": 37,
+            "8": 31,
+            "10": 15
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 1,
+        "2": 1,
+        "3": 12
+      },
+      "trajectory_sha256": "09cc364cd5a816ee6a6b852c09d19390495a905363efb117d8ebdfc796d83d46",
+      "wall_seconds": 0.28738060000000587,
+      "policy_latency_ms": {
+        "p50": 0.01702700001260382,
+        "p95": 0.039623699990443,
+        "p99": 0.08457833998818388
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 2.144,
+        "p95": 3.2438,
+        "p99": 3.34316
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-28",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104200,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204200,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 20,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 41,
+            "8": 20,
+            "20": 18
+          },
+          "1": {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 41,
+            "8": 35,
+            "20": 18
+          },
+          {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 8,
+        "2": 4,
+        "3": 3
+      },
+      "trajectory_sha256": "c2052c4d17f709ebb55083cbca8516ddd7e44362bccecad5f8409deb77473bbd",
+      "wall_seconds": 0.264887348000002,
+      "policy_latency_ms": {
+        "p50": 0.013189500009502808,
+        "p95": 0.028130500011514004,
+        "p99": 0.07765970001088354
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.617,
+        "p95": 3.8241500000000026,
+        "p99": 6.8208299999999955
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-28",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104201,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204201,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 15,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 41,
+            "8": 7,
+            "20": 18
+          },
+          "1": {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 41,
+            "8": 35,
+            "20": 18
+          },
+          {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        ]
+      },
+      "action_types": {
+        "0": 4,
+        "4": 4,
+        "2": 3,
+        "3": 4
+      },
+      "trajectory_sha256": "09b45d2938c6f806a2c0cdd99a790698a1ae018652ba8bdc23dc99581e57a9ef",
+      "wall_seconds": 0.23517005400000812,
+      "policy_latency_ms": {
+        "p50": 0.015305999994552622,
+        "p95": 0.04115219999505364,
+        "p99": 0.08005203999857709
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.776,
+        "p95": 5.116599999999999,
+        "p99": 5.54892
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-28",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104200,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204200,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 24,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 41,
+            "8": 15,
+            "20": 18
+          },
+          "1": {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 41,
+            "8": 35,
+            "20": 18
+          },
+          {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        ]
+      },
+      "action_types": {
+        "0": 9,
+        "4": 4,
+        "2": 4,
+        "3": 7
+      },
+      "trajectory_sha256": "1d2c90cf81a9acdecbff2a809b3f8e1ee99747730b011ad8011288d143725fc1",
+      "wall_seconds": 0.31121474299999363,
+      "policy_latency_ms": {
+        "p50": 0.013134000013792502,
+        "p95": 0.02006654999462398,
+        "p99": 0.0757660899992629
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.6175000000000002,
+        "p95": 3.019799999999999,
+        "p99": 3.3152399999999997
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-28",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104201,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204201,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 18,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "0": 41,
+            "8": 5,
+            "20": 18
+          },
+          "1": {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "0": 41,
+            "8": 35,
+            "20": 18
+          },
+          {
+            "0": 39,
+            "8": 33,
+            "20": 16
+          }
+        ]
+      },
+      "action_types": {
+        "0": 6,
+        "4": 2,
+        "2": 2,
+        "3": 8
+      },
+      "trajectory_sha256": "40d985e8e40eb3d2dbb5256e070be0390e8cdb564e3208f1c2e5c22ead2e4c53",
+      "wall_seconds": 0.2597909979999997,
+      "policy_latency_ms": {
+        "p50": 0.01347200000623161,
+        "p95": 0.034966050000662,
+        "p99": 0.08937081000624389
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.825,
+        "p95": 2.9568499999999993,
+        "p99": 3.3233699999999993
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-31",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104500,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204500,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 24,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 1,
+        "casualties": {
+          "0": {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          "1": {
+            "14": 37,
+            "18": 5,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          {
+            "14": 44,
+            "18": 38,
+            "20": 19
+          }
+        ]
+      },
+      "action_types": {
+        "0": 11,
+        "2": 1,
+        "4": 1,
+        "3": 11
+      },
+      "trajectory_sha256": "171178b8924e77f2ce8612cec840955ca50dad0be10779837432d5734c125942",
+      "wall_seconds": 0.3836719469999821,
+      "policy_latency_ms": {
+        "p50": 0.013901499997359679,
+        "p95": 0.025760299979538086,
+        "p99": 0.07927065999353997
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 2.426,
+        "p95": 3.6155500000000003,
+        "p99": 3.80611
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-31",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104501,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204501,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 21,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 1,
+        "casualties": {
+          "0": {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          "1": {
+            "14": 30,
+            "18": 5,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          {
+            "14": 44,
+            "18": 38,
+            "20": 19
+          }
+        ]
+      },
+      "action_types": {
+        "0": 7,
+        "2": 1,
+        "4": 1,
+        "3": 12
+      },
+      "trajectory_sha256": "21c00ba8d83a4c38b4ecf73c2355c8f0e5889228f217534a0f81fc673c710d3e",
+      "wall_seconds": 0.35210793499999227,
+      "policy_latency_ms": {
+        "p50": 0.014069000002336907,
+        "p95": 0.06296399999428104,
+        "p99": 0.09812319999582544
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 2.346,
+        "p95": 3.375,
+        "p99": 4.447000000000001
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-31",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104500,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204500,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 22,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 1,
+        "casualties": {
+          "0": {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          "1": {
+            "14": 19,
+            "18": 5,
+            "20": 16
+          }
+        },
+        "initial_armies": [
+          {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          {
+            "14": 44,
+            "18": 38,
+            "20": 19
+          }
+        ]
+      },
+      "action_types": {
+        "0": 8,
+        "4": 5,
+        "2": 1,
+        "3": 8
+      },
+      "trajectory_sha256": "849233a6e193cd5124c40ab805457668234212162ea15ea604393d7b66f49e11",
+      "wall_seconds": 0.32182659599999397,
+      "policy_latency_ms": {
+        "p50": 0.013082000009490002,
+        "p95": 0.020561249996831066,
+        "p99": 0.08029930997935246
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.3675000000000002,
+        "p95": 4.26505,
+        "p99": 4.45086
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-31",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104501,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204501,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 18,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 1,
+        "casualties": {
+          "0": {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          "1": {
+            "14": 31,
+            "18": 5,
+            "20": 15
+          }
+        },
+        "initial_armies": [
+          {
+            "14": 42,
+            "18": 36,
+            "20": 17
+          },
+          {
+            "14": 44,
+            "18": 38,
+            "20": 19
+          }
+        ]
+      },
+      "action_types": {
+        "0": 3,
+        "4": 5,
+        "2": 1,
+        "3": 9
+      },
+      "trajectory_sha256": "eed58c37b12b420f50f348d711e18217e3187b414795842837b90c96bf8279db",
+      "wall_seconds": 0.27187452399999756,
+      "policy_latency_ms": {
+        "p50": 0.013127000002555178,
+        "p95": 0.06947420001353062,
+        "p99": 0.09002924000384377
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.8014999999999999,
+        "p95": 4.369299999999997,
+        "p99": 5.553859999999997
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-35",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104900,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204900,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 30,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "2": 5,
+            "4": 19,
+            "22": 29
+          },
+          "1": {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        },
+        "initial_armies": [
+          {
+            "2": 40,
+            "4": 19,
+            "22": 46
+          },
+          {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        ]
+      },
+      "action_types": {
+        "0": 9,
+        "4": 9,
+        "2": 5,
+        "3": 7
+      },
+      "trajectory_sha256": "37223f5878d6903e60f470f20ba8e157f5a697c6034974fae59ab75f0ef92d65",
+      "wall_seconds": 0.2636683229999903,
+      "policy_latency_ms": {
+        "p50": 0.011788500003717672,
+        "p95": 0.013666799989664469,
+        "p99": 0.07211106998852308
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 0.8919999999999999,
+        "p95": 3.739949999999996,
+        "p99": 4.886850000000001
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-35",
+      "split": "test",
+      "role": "attacker",
+      "seed": 2026104901,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204901,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 27,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": true,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "2": 18,
+            "4": 19,
+            "22": 20
+          },
+          "1": {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        },
+        "initial_armies": [
+          {
+            "2": 40,
+            "4": 19,
+            "22": 46
+          },
+          {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        ]
+      },
+      "action_types": {
+        "0": 8,
+        "4": 8,
+        "2": 3,
+        "3": 8
+      },
+      "trajectory_sha256": "82fbb3c7257dc48360c8456f070bb69ed6cb20a5066ed673a0d3e26e48d80052",
+      "wall_seconds": 0.22645746099999542,
+      "policy_latency_ms": {
+        "p50": 0.012905999994927697,
+        "p95": 0.015468800000917325,
+        "p99": 0.0786762600012024
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 0.86,
+        "p95": 2.6793999999999993,
+        "p99": 4.006559999999998
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-35",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104900,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204900,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 20,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "2": 27,
+            "4": 19,
+            "22": 19
+          },
+          "1": {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        },
+        "initial_armies": [
+          {
+            "2": 40,
+            "4": 19,
+            "22": 46
+          },
+          {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 8,
+        "2": 4,
+        "3": 3
+      },
+      "trajectory_sha256": "7f13f7e49feff1d16c78bc445d68ec9af99bac5661a699def81e4e292002f5ec",
+      "wall_seconds": 0.19069319000001883,
+      "policy_latency_ms": {
+        "p50": 0.012465000011729899,
+        "p95": 0.018433500001435787,
+        "p99": 0.07770589999694257
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.048,
+        "p95": 3.206300000000001,
+        "p99": 4.077259999999998
+      },
+      "teacher_python_selection_latency_only": true
+    },
+    {
+      "scenario": "balanced-35",
+      "split": "test",
+      "role": "defender",
+      "seed": 2026104901,
+      "opponent": "BattleAI",
+      "opponent_seed": 2026204901,
+      "policy": "teacher",
+      "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+      "steps": 20,
+      "terminated": true,
+      "truncated": false,
+      "invalid_actions": 0,
+      "success": false,
+      "terminal_outcome": {
+        "result_type": 0,
+        "winner": 0,
+        "casualties": {
+          "0": {
+            "2": 23,
+            "4": 19,
+            "22": 22
+          },
+          "1": {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        },
+        "initial_armies": [
+          {
+            "2": 40,
+            "4": 19,
+            "22": 46
+          },
+          {
+            "2": 42,
+            "4": 21,
+            "22": 48
+          }
+        ]
+      },
+      "action_types": {
+        "0": 5,
+        "4": 8,
+        "2": 4,
+        "3": 3
+      },
+      "trajectory_sha256": "908200f54e35db6646db8cad9e08b2df895d6dc8d1ce3df5a32f0813a3d3e984",
+      "wall_seconds": 0.18700529200000915,
+      "policy_latency_ms": {
+        "p50": 0.012353500011386132,
+        "p95": 0.01786434999360159,
+        "p99": 0.0763592699814807
+      },
+      "teacher_engine_latency_ms": {
+        "p50": 1.0205,
+        "p95": 3.1830500000000015,
+        "p99": 4.339009999999998
+      },
+      "teacher_python_selection_latency_only": true
+    }
+  ]
+}

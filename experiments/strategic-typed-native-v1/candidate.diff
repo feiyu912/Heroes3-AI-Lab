@@ -1,0 +1,772 @@
+--- baseline/AI\DirectorAI\CDirectorAI.cpp
++++ candidate/AI\DirectorAI\CDirectorAI.cpp
+@@ -17,6 +17,8 @@
+  */
+ #include "StdInc.h"
+ #include "CDirectorAI.h"
++#include "TypedPolicyProtocol.h"
++#include <iterator>
+ 
+ #include "../../lib/CStack.h"
+ #include "../../lib/battle/BattleAction.h"
+@@ -97,6 +99,7 @@
+ 
+ bool CDirectorAI::findTarget(const CGHeroInstance * hero, int3 & destination, std::string & reason) const
+ {
++	if(!std::getenv("LAB_ADV_AGENT_DIR")) { typedFailure("missing_agent_directory");return false; }
+ 	bool found = false;
+ 	candidates.clear();
+ 	visibleThreats.clear();
+@@ -208,8 +211,6 @@
+ 		else if(obj->ID == Obj::RESOURCE || obj->ID == Obj::TREASURE_CHEST || obj->ID == Obj::ARTIFACT)
+ 			consider(obj->visitablePos(), 4, "visible pickup", 3);
+ 	}
+-	if(found && !std::getenv("LAB_ADV_AGENT_DIR"))
+-		return true;
+ 	// Explore only reachable known tiles bordering fog, rather than requesting a remote unseen goal.
+ 	const int3 size = cb->getMapSize();
+ 	for(int z = 0; z < size.z; ++z)
+@@ -233,7 +234,7 @@
+ 		}
+ 	}
+ 
+-	if(found && std::getenv("LAB_ADV_AGENT_DIR"))
++	if(std::getenv("LAB_ADV_AGENT_DIR"))
+ 	{
+ 		// Keep a chosen destination within this turn while it remains an admissible goal.
+ 		auto previous = committedTargets.find(hero->id.getNum());
+@@ -249,6 +250,7 @@
+ 				candidates.assign(1, committed);
+ 			}
+ 		}
++		Candidate stop{};stop.endTurn=true;candidates.push_back(stop);
+ 		const int selected = chooseExternalCandidate(hero);
+ 		if(selected < 0 || selected >= static_cast<int>(candidates.size()))
+ 		{
+@@ -256,6 +258,7 @@
+ 			return false;
+ 		}
+ 		selectedCandidate = selected;
++		if(candidates[selected].endTurn) { reason="typed_end_turn";return true; }
+ 		destination = candidates[selected].destination;
+ 		committedTargets[hero->id.getNum()] = {destination, candidates[selected].kind};
+ 		reason = "local candidate policy";
+@@ -296,6 +299,7 @@
+ 	}
+ 
+ 	std::vector<const CGHeroInstance *> heroes = cb->getHeroesInfo();
++	if(heroes.size()>1) { typedFailure("single_hero_pilot_required");return false; }
+ 	const CGHeroInstance * hero = pickHero(heroes);
+ 	if(!hero)
+ 	{
+@@ -307,11 +311,12 @@
+ 	std::string reason;
+ 	if(!findTarget(hero, destination, reason))
+ 	{
+-		logGlobal->info("DirectorAI: no target for hero %d", hero->id.getNum());
+-		blockedHeroes.insert(hero->id.getNum());
+-		return issueMove();
+-	}
+-
++		typedFailure("typed_target_selection_failed");return false;
++	}
++
++	if(!preparedTyped || preparedTyped->ownTurn!=ownTurns) { typedFailure("stale_prepared_action");return false; }
++	if(candidates[selectedCandidate].endTurn) { finishTurn();return true; }
++	emitTypedBusy();
+ 	const int3 here = hero->visitablePos();
+ 	int3 step = destination;
+ 	bool zeroLength = false;
+@@ -331,14 +336,14 @@
+ 		{
+ 			logGlobal->info("DirectorAI: hero %d cannot reach %s reason=%s",
+ 				hero->id.getNum(), destination.toString(), reason);
+-			return false;
++			typedFailure("selected_move_path_changed");return false;
+ 		}
+ 		const CGPathNode next = path.nextNode();
+ 		if(next.turns != 0)
+ 		{
+ 			logGlobal->info("DirectorAI: %s not reachable this turn (turns=%d) reason=%s",
+ 				destination.toString(), static_cast<int>(next.turns), reason);
+-			return false;
++			typedFailure("selected_move_not_current_turn");return false;
+ 		}
+ 		step = next.coord;
+ 	}
+@@ -357,113 +362,114 @@
+ 	return true;
+ }
+ 
++
+ void CDirectorAI::yourTurn(QueryID queryID)
+ {
+-	pendingMove = false;
+-	pendingHero = ObjectInstanceID();
+-	turnActive = true;
+-	endingTurn = false;
+-	battleBusy = false;
+-	movementBusy = false;
+-	blockedHeroes.clear();
+-	committedTargets.clear();
+-	recruitedThisTurn.clear();
+-	++ownTurns;
+-	traceState("turn_start");
+-	if(!savedInitial)
+-	{
+-		savedInitial = true;
+-		cb->save("Saves/director-v5-initial", false);
+-	}
+-	movesThisTurn = 0;
+-	if(queryID != QueryID(-1))
+-	{
+-		pendingQueries.insert(queryID);
+-		cb->selectionMade(0, queryID);
+-	}
+-	advanceTurn();
+-}
++ // The immutable typed tuple survives even if old EndTurn ACK is still in flight.
++ if(!outstandingTyped)
++ {
++  pendingMove=false;pendingHero=ObjectInstanceID();battleBusy=false;movementBusy=false;
++ }
++ turnActive=true;endingTurn=false;blockedHeroes.clear();committedTargets.clear();recruitedThisTurn.clear();
++ ++ownTurns;traceState("turn_start");
++ emitTyped("{\"event\":\"your_turn\",\"player\":"+std::to_string(playerID.getNum())+",\"own_turn\":"+std::to_string(ownTurns)+"}");
++ if(!savedInitial) { savedInitial=true;cb->save("Saves/director-v5-initial",false); }
++ movesThisTurn=0;
++ if(queryID!=QueryID(-1)) { pendingQueries.insert(queryID);cb->selectionMade(0,queryID); }
++ advanceTurn();
++}
++
+ 
+ void CDirectorAI::advanceTurn()
+ {
+-	if(!turnActive || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
+-		!pendingQueries.empty() || !queryRequests.empty())
+-		return;
+-	if(issueEconomy())
+-		return;
+-	if(!issueMove())
+-		finishTurn();
+-}
++ emitTypedBusy();
++ if(!turnActive || typedProtocolFailed || endingTurn || pendingMove || pendingEconomy || battleBusy || movementBusy ||
++    !pendingQueries.empty() || !queryRequests.empty() || outstandingTyped || preparedTyped) return;
++ if(issueEconomy()) return;
++ if(!issueMove()) finishTurn();
++}
++
+ 
+ void CDirectorAI::finishTurn()
+ {
+-	if(!turnActive)
+-		return;
+-	endingTurn = true;
+-	traceState("turn_end");
+-	cb->endTurn();
+-}
++ if(!turnActive || typedProtocolFailed || outstandingTyped || pendingMove || pendingEconomy || battleBusy || movementBusy ||
++    !pendingQueries.empty() || !queryRequests.empty()) return;
++ if(preparedTyped && preparedTyped->op!="end_turn") { typedFailure("unconsumed_move_before_end_turn");return; }
++ if(!preparedTyped)
++ {
++  TypedContext ctx;ctx.automatic=true;ctx.player=playerID.getNum();ctx.ownTurn=ownTurns;ctx.op="end_turn";
++  const auto heroes=cb->getHeroesInfo();ctx.hero=heroes.empty() ? 0 : heroes.front()->id.getNum();
++  ctx.candidateJSON="{\"op\":\"end_turn\"}";
++  ctx.automaticReason=heroes.empty() ? "no_owned_hero" : (movesThisTurn>=MAX_MOVES_PER_TURN ? "native_move_budget" : "no_movable_hero");
++  preparedTyped=ctx;
++ }
++ if(preparedTyped->ownTurn!=ownTurns) { typedFailure("stale_prepared_end_turn");return; }
++ emitTypedBusy();endingTurn=true;traceState(preparedTyped->automatic ? "turn_end" : "before_end_turn");
++ cb->endTurn(); // A genuine native EndTurn; never a same-position MoveHero.
++}
++
+ 
+ void CDirectorAI::heroMoved(const TryMoveHero & details, bool verbose)
+ {
+-	if(!turnActive || !pendingMove)
+-		return;
+-	// heroMoved is global: ignore every hero that is not the one we sent.
+-	if(!(details.id == pendingHero))
+-		return;
+-
+-	logGlobal->info("DirectorAI: step finished result=%d points_left=%d from %s to %s",
+-		static_cast<int>(details.result), details.movePoints,
+-		details.start.toString(), details.end.toString());
+-
+-	if(details.result == TryMoveHero::FAILED || details.start == details.end)
+-		blockedHeroes.insert(details.id.getNum());
+-	// Observation only. The request acknowledgment and query/battle state drive scheduling.
+-}
++ if(!outstandingTyped || outstandingTyped->op!="move" || details.id.getNum()!=outstandingTyped->hero) return;
++ if(outstandingTyped->moveResultSeen) { typedFailure("duplicate_move_result");return; }
++ outstandingTyped->moveResultSeen=true;
++ logGlobal->info("DirectorAI: step finished result=%d points_left=%d from %s to %s",static_cast<int>(details.result),
++  details.movePoints,details.start.toString(),details.end.toString());
++ // Evidence is the real received server TryMoveHero pack, not a fabricated reply.
++ emitTypedAction("move_result",*outstandingTyped,",\"source\":\"server\",\"evidence\":\"received_TryMoveHero\",\"result\":"+std::to_string(static_cast<int>(details.result)));
++ if(details.result==TryMoveHero::FAILED || details.start==details.end) blockedHeroes.insert(details.id.getNum());
++ if(details.result==TryMoveHero::FAILED) typedFailure("native_move_failed");
++}
++
+ 
+ void CDirectorAI::requestRealized(PackageApplied * pa)
+ {
+-	if(pa->player != playerID)
+-		return;
+-	if(pendingEconomy && static_cast<int>(pa->requestID) == economyRequest)
+-	{
+-		pendingEconomy = false;
+-		logGlobal->info("DirectorAI: economy request finished id=%d success=%d", economyRequest, pa->result);
+-		traceState(pa->result ? "economy_applied" : "economy_failed");
+-		advanceTurn();
+-	}
+-	auto query = queryRequests.find(pa->requestID);
+-	if(query != queryRequests.end())
+-	{
+-		if(pa->result)
+-			pendingQueries.erase(query->second);
+-		queryRequests.erase(query);
+-		advanceTurn();
+-	}
+-	if(pa->packType == CTypeList::getInstance().getTypeID<MoveHero>(nullptr) && pendingMove)
+-	{
+-		pendingMove = false;
+-		traceState(pa->result ? "move_applied" : "move_failed");
+-		if(!pa->result)
+-			blockedHeroes.insert(pendingHero.getNum());
+-		advanceTurn();
+-	}
+-	if(pa->packType == CTypeList::getInstance().getTypeID<EndTurn>(nullptr) && endingTurn)
+-	{
+-		endingTurn = false;
+-		if(pa->result)
+-			turnActive = false;
+-	}
+-}
++ if(pa->player!=playerID) return;
++ if(pendingEconomy && static_cast<int>(pa->requestID)==economyRequest)
++ {
++  pendingEconomy=false;logGlobal->info("DirectorAI: economy request finished id=%d success=%d",economyRequest,pa->result);
++  traceState(pa->result ? "economy_applied" : "economy_failed");advanceTurn();
++ }
++ auto query=queryRequests.find(pa->requestID);
++ if(query!=queryRequests.end())
++ {
++  if(pa->result) pendingQueries.erase(query->second);queryRequests.erase(query);advanceTurn();
++ }
++ const bool move=pa->packType==CTypeList::getInstance().getTypeID<MoveHero>(nullptr);
++ const bool end=pa->packType==CTypeList::getInstance().getTypeID<EndTurn>(nullptr);
++ if(!move && !end) return;
++ if(!outstandingTyped || outstandingTyped->nativeRequestID!=static_cast<int>(pa->requestID) ||
++    outstandingTyped->op!=(move ? "move" : "end_turn")) { typedFailure("unmatched_typed_ack");return; }
++ const auto ctx=*outstandingTyped; // Save the old turn, never substitute the live ownTurns.
++ emitTypedAction("package_applied",ctx,std::string(",\"source\":\"client\",\"package\":\"PackageApplied\",\"success\":")+(pa->result ? "true" : "false"));
++ outstandingTyped.reset(); // Only this exact native request/op ACK can clear the tuple.
++ if(move)
++ {
++  pendingMove=false;traceState(pa->result ? "move_applied" : "move_failed");
++  if(!pa->result) blockedHeroes.insert(ctx.hero);
++ }
++ else if(ctx.ownTurn==ownTurns)
++ {
++  endingTurn=false;if(pa->result) turnActive=false;
++ }
++ if(!pa->result) typedFailure("native_action_ack_failed");
++ advanceTurn(); // A late old EndTurn ACK resumes the already-started new turn safely.
++}
++
+ 
+ void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)
+ {
+-	if(auto reply = dynamic_cast<const QueryReply *>(pack))
+-		queryRequests[requestID] = reply->qid;
+-	if(pendingEconomy && (dynamic_cast<const BuildStructure *>(pack) ||
+-		dynamic_cast<const RecruitCreatures *>(pack) || dynamic_cast<const ArrangeStacks *>(pack) ||
+-		dynamic_cast<const HireHero *>(pack)))
+-		economyRequest = requestID;
++ if(auto reply=dynamic_cast<const QueryReply *>(pack)) queryRequests[requestID]=reply->qid;
++ if(pendingEconomy && (dynamic_cast<const BuildStructure *>(pack) || dynamic_cast<const RecruitCreatures *>(pack) ||
++    dynamic_cast<const ArrangeStacks *>(pack) || dynamic_cast<const HireHero *>(pack))) economyRequest=requestID;
++ const bool move=dynamic_cast<const MoveHero *>(pack)!=nullptr;
++ const bool end=dynamic_cast<const EndTurn *>(pack)!=nullptr;
++ if(!move && !end) return;
++ if(requestID<1 || !preparedTyped || outstandingTyped || preparedTyped->ownTurn!=ownTurns ||
++    preparedTyped->op!=(move ? "move" : "end_turn")) { typedFailure("unbound_native_request");return; }
++ outstandingTyped=*preparedTyped;outstandingTyped->nativeRequestID=requestID;preparedTyped.reset();
++ emitTypedAction("native_action_sent",*outstandingTyped);
+ }
+ 
+ void CDirectorAI::queryResolved(QueryID queryID)
+@@ -505,6 +511,7 @@
+ 	{
+ 		traceState(result.victory() ? "victory" : "defeat");
+ 		turnActive = false;
++		emitTyped("{\"event\":\"game_over\",\"completed\":true,\"player\":"+std::to_string(playerID.getNum())+",\"own_turn\":"+std::to_string(ownTurns)+"}");
+ 	}
+ }
+ 
+@@ -683,84 +690,82 @@
+ 	{
+ 		if(!first) out << ',';
+ 		first = false;
+-		out << "{\"kind\":" << c.kind << ",\"position\":[" << c.destination.x << ',' << c.destination.y
+-			<< ',' << c.destination.z << "],\"next\":[" << c.next.x << ',' << c.next.y << ',' << c.next.z
+-			<< "],\"path_cost\":" << c.cost << ",\"heuristic_score\":" << c.score << '}';
++		out << typedCandidateJSON(c);
+ 	}
+ 	out << "]}\n";
+ }
+ 
++
+ int CDirectorAI::chooseExternalCandidate(const CGHeroInstance * hero) const
+ {
+-	const auto * directory = std::getenv("LAB_ADV_AGENT_DIR");
+-	if(!directory)
+-		return -1;
+-	char suffix[32];
+-	std::snprintf(suffix, sizeof(suffix), "%08u.json", ++externalDecisionSerial);
+-	const std::string request = std::string(directory) + "/request-" + suffix;
+-	const std::string response = std::string(directory) + "/action-" + suffix;
+-	{
+-		std::ofstream out(request + ".tmp");
+-		if(!out)
+-			return -1;
+-		out << "{\"schema\":\"strategy-candidates-v3\",\"request_id\":" << externalDecisionSerial
+-			<< ",\"player\":" << static_cast<int>(playerID.getNum())
+-			<< ",\"day\":" << cb->getCalendar().getCurrentDay() << ",\"hero\":" << hero->id.getNum()
+-			<< ",\"from\":[" << hero->visitablePos().x << ',' << hero->visitablePos().y << ',' << hero->visitablePos().z
+-			<< "],\"gold\":" << cb->getResourceAmount(GameResID::GOLD)
+-			<< ",\"wood\":" << cb->getResourceAmount(GameResID::WOOD)
+-			<< ",\"ore\":" << cb->getResourceAmount(GameResID::ORE)
+-			<< ",\"own_army_value\":" << ArmyDescriptor(hero, true).getStrength()
+-			<< ",\"movement\":" << hero->movementPointsRemaining() << ",\"visible_threats\":[";
+-		bool firstThreat = true;
+-		for(const auto & threat : visibleThreats)
+-		{
+-			if(!firstThreat) out << ',';
+-			firstThreat = false;
+-			out << "{\"position\":[" << threat.first.x << ',' << threat.first.y << ',' << threat.first.z
+-				<< "],\"approx_army_value\":" << threat.second << '}';
+-		}
+-		out << "],\"own_towns\":[";
+-		bool firstTown = true;
+-		for(const auto * town : cb->getTownsInfo())
+-		{
+-			if(!firstTown) out << ',';
+-			firstTown = false;
+-			const int3 pos = town->visitablePos();
+-			out << "{\"position\":[" << pos.x << ',' << pos.y << ',' << pos.z
+-				<< "],\"army_value\":" << ArmyDescriptor(town->getUpperArmy(), true).getStrength() << '}';
+-		}
+-		out << "],\"candidates\":[";
+-		bool first = true;
+-		for(const auto & c : candidates)
+-		{
+-			if(!first) out << ',';
+-			first = false;
+-			out << "{\"kind\":" << c.kind << ",\"position\":[" << c.destination.x << ',' << c.destination.y << ',' << c.destination.z
+-				<< "],\"next\":[" << c.next.x << ',' << c.next.y << ',' << c.next.z
+-				<< "],\"path_cost\":" << c.cost << ",\"heuristic_score\":" << c.score << '}';
+-		}
+-		out << "]}\n";
+-	}
+-	if(std::rename((request + ".tmp").c_str(), request.c_str()) != 0)
+-		return -1;
+-	const auto deadline = std::chrono::steady_clock::now() + std::chrono::seconds(30);
+-	while(std::chrono::steady_clock::now() < deadline)
+-	{
+-		std::ifstream in(response);
+-		if(in)
+-		{
+-			int index = -1;
+-			if(!(in >> index))
+-				return -1;
+-			std::string extra;
+-			if(in >> extra)
+-				return -1;
+-			return index >= 0 && index < static_cast<int>(candidates.size()) ? index : -1;
+-		}
+-		std::this_thread::sleep_for(std::chrono::milliseconds(1));
+-	}
+-	return -1;
++ const auto * directory = std::getenv("LAB_ADV_AGENT_DIR");
++ if(!directory || ownTurns < 1 || cb->getHeroesInfo().size() != 1 || preparedTyped || outstandingTyped)
++ { typedFailure("invalid_policy_request_state");return -1; }
++ if(externalDecisionSerial >= static_cast<unsigned>(std::numeric_limits<int>::max()))
++ { typedFailure("decision_counter_overflow");return -1; }
++ char suffix[32];std::snprintf(suffix,sizeof(suffix),"%08u.json",++externalDecisionSerial);
++ const std::string request = std::string(directory) + "/request-" + suffix;
++ const std::string response = std::string(directory) + "/action-" + suffix;
++ std::ostringstream out;
++ out << "{\"schema\":\"strategy-candidates-v4\",\"request_id\":" << externalDecisionSerial
++  << ",\"player\":" << static_cast<int>(playerID.getNum()) << ",\"own_turn\":" << ownTurns << ",\"own_hero_count\":1"
++  << ",\"day\":" << cb->getCalendar().getCurrentDay() << ",\"hero\":" << hero->id.getNum()
++  << ",\"from\":[" << hero->visitablePos().x << ',' << hero->visitablePos().y << ',' << hero->visitablePos().z
++  << "],\"gold\":" << cb->getResourceAmount(GameResID::GOLD) << ",\"wood\":" << cb->getResourceAmount(GameResID::WOOD)
++  << ",\"ore\":" << cb->getResourceAmount(GameResID::ORE) << ",\"own_army_value\":" << ArmyDescriptor(hero,true).getStrength()
++  << ",\"movement\":" << hero->movementPointsRemaining() << ",\"visible_threats\":[";
++ bool first = true;
++ for(const auto & threat : visibleThreats)
++ {
++  if(!first) out << ',';first=false;
++  out << "{\"position\":[" << threat.first.x << ',' << threat.first.y << ',' << threat.first.z
++   << "],\"approx_army_value\":" << threat.second << '}';
++ }
++ out << "],\"own_towns\":[";first=true;
++ for(const auto * town : cb->getTownsInfo())
++ {
++  if(!first) out << ',';first=false;const int3 pos=town->visitablePos();
++  out << "{\"position\":[" << pos.x << ',' << pos.y << ',' << pos.z
++   << "],\"army_value\":" << ArmyDescriptor(town->getUpperArmy(),true).getStrength() << '}';
++ }
++ out << "],\"candidates\":[";first=true;std::vector<std::string> operations;
++ for(const auto & c : candidates)
++ {
++  if(!first) out << ',';first=false;out << typedCandidateJSON(c);
++  operations.push_back(c.endTurn ? "end_turn" : "move");
++ }
++ out << "]}\n";const auto requestBytes=out.str();const auto requestSHA=LabTypedPolicy::sha256(requestBytes);
++ {
++  std::ofstream file(request+".tmp",std::ios::binary);
++  if(!file) { typedFailure("request_open_failed");return -1; }
++  file << requestBytes;file.close();
++  if(!file) { typedFailure("request_write_failed");return -1; }
++ }
++ if(std::rename((request+".tmp").c_str(),request.c_str())!=0)
++ { typedFailure("request_publish_failed");return -1; }
++ const auto deadline=std::chrono::steady_clock::now()+std::chrono::seconds(30);
++ while(std::chrono::steady_clock::now()<deadline)
++ {
++  std::ifstream file(response,std::ios::binary);
++  if(file)
++  {
++   const std::string raw((std::istreambuf_iterator<char>(file)),std::istreambuf_iterator<char>());
++   try
++   {
++    const auto selected=LabTypedPolicy::parseResponse(raw,static_cast<int>(externalDecisionSerial),playerID.getNum(),
++       hero->id.getNum(),ownTurns,requestSHA,operations);
++    TypedContext ctx;ctx.automatic=false;ctx.decisionID=static_cast<int>(externalDecisionSerial);
++    ctx.player=playerID.getNum();ctx.hero=hero->id.getNum();ctx.ownTurn=ownTurns;
++    ctx.op=selected.op;ctx.selectedIndex=selected.index;ctx.requestSHA=requestSHA;
++    ctx.classification=selected.classification;ctx.candidateJSON=typedCandidateJSON(candidates[selected.index]);
++    preparedTyped=ctx;return selected.index;
++   }
++   catch(const std::exception & error)
++   { logGlobal->error("DirectorTypedResponseRejected %s",error.what());typedFailure("response_rejected");return -1; }
++  }
++  std::this_thread::sleep_for(std::chrono::milliseconds(1));
++ }
++ typedFailure("response_timeout");return -1;
+ }
+ 
+ void CDirectorAI::heroGotLevel(const CGHeroInstance *hero, PrimarySkill pskill, std::vector<SecondarySkill> &skills, QueryID queryID)
+@@ -809,3 +814,65 @@
+ 	// Never surrender or retreat: the director treats every battle as worth fighting.
+ 	return std::nullopt;
+ }
++
++
++std::string CDirectorAI::typedCandidateJSON(const Candidate & c) const
++{
++ if(c.endTurn) return "{\"op\":\"end_turn\"}";
++ std::ostringstream out;
++ out << "{\"op\":\"move\",\"kind\":" << c.kind << ",\"position\":[" << c.destination.x << ',' << c.destination.y
++  << ',' << c.destination.z << "],\"next\":[" << c.next.x << ',' << c.next.y << ',' << c.next.z
++  << "],\"path_cost\":" << c.cost << ",\"heuristic_score\":" << c.score << '}';
++ return out.str();
++}
++
++void CDirectorAI::emitTyped(const std::string & json) const
++{
++ logGlobal->info("DirectorTypedEvent %s", json);
++ const auto * explicitPath = std::getenv("LAB_ADV_TYPED_EVENTS");
++ const auto * legacyPath = std::getenv("LAB_ADV_TRACE");
++ if(!explicitPath && !legacyPath) return;
++ const auto path = explicitPath ? std::string(explicitPath) : std::string(legacyPath) + ".typed.jsonl";
++ std::ofstream out(path, std::ios::app | std::ios::binary);
++ if(out) out << json << '\n';
++}
++
++void CDirectorAI::typedFailure(const std::string & reason) const
++{
++ typedProtocolFailed = true;
++ logGlobal->error("DirectorTypedProtocolError %s", reason);
++ traceState("typed_protocol_error");
++ // Static reason identifiers only, never arbitrary broker text in JSON.
++ emitTyped("{\"event\":\"typed_protocol_error\",\"player\":" + std::to_string(playerID.getNum()) +
++  ",\"own_turn\":" + std::to_string(ownTurns) + "}");
++}
++
++void CDirectorAI::emitTypedBusy() const
++{
++ if(ownTurns<1) return;
++ std::set<QueryID> queries = pendingQueries;
++ for(const auto & entry : queryRequests) queries.insert(entry.second);
++ std::ostringstream out;
++ out << "{\"event\":\"busy_state\",\"player\":" << static_cast<int>(playerID.getNum()) << ",\"own_turn\":" << ownTurns
++  << ",\"query_count\":" << queries.size() << ",\"movement_busy\":" << (movementBusy || pendingMove ? "true" : "false")
++  << ",\"economy_busy\":" << (pendingEconomy ? "true" : "false")
++  << ",\"battle_busy\":" << (battleBusy ? "true" : "false") << '}';
++ emitTyped(out.str());
++}
++
++void CDirectorAI::emitTypedAction(const std::string & event, const TypedContext & ctx, const std::string & extra) const
++{
++ std::ostringstream out;
++ out << "{\"event\":\"" << event << "\",\"decision_id\":";
++ if(ctx.automatic) out << "null"; else out << ctx.decisionID;
++ out << ",\"native_request_id\":" << ctx.nativeRequestID << ",\"player\":" << ctx.player
++  << ",\"hero\":" << ctx.hero << ",\"own_turn\":" << ctx.ownTurn << ",\"op\":\"" << ctx.op
++  << "\",\"pack_type\":\"" << (ctx.op == "move" ? "MoveHero" : "EndTurn") << "\",\"selected_index\":";
++ if(ctx.automatic) out << "null"; else out << ctx.selectedIndex;
++ out << ",\"request_sha256\":";
++ if(ctx.automatic) out << "null"; else out << '"' << ctx.requestSHA << '"';
++ out << ",\"candidate\":" << ctx.candidateJSON;
++ if(ctx.automatic) out << ",\"automatic_reason\":\"" << ctx.automaticReason << '"';
++ else out << ",\"classification\":\"" << ctx.classification << '"';
++ out << extra << '}';emitTyped(out.str());
++}
+--- baseline/AI\DirectorAI\CDirectorAI.h
++++ candidate/AI\DirectorAI\CDirectorAI.h
+@@ -68,6 +68,7 @@
+ 		int kind;
+ 		double cost;
+ 		double score;
++		bool endTurn = false;
+ 	};
+ 	mutable std::vector<Candidate> candidates;
+ 	mutable int selectedCandidate = -1;
+@@ -79,7 +80,22 @@
+ 	ObjectInstanceID pendingHero;
+ 	int3 lastStep = int3(-1, -1, -1);
+ 
+-	bool issueMove();
++
++ struct TypedContext
++ {
++  bool automatic = false;bool moveResultSeen = false;
++  int decisionID = -1;int nativeRequestID = -1;int player = 0;int hero = 0;int ownTurn = 0;int selectedIndex = -1;
++  std::string op, requestSHA, candidateJSON, classification, automaticReason;
++ };
++ mutable std::optional<TypedContext> preparedTyped;
++ std::optional<TypedContext> outstandingTyped;
++ mutable bool typedProtocolFailed = false;
++ std::string typedCandidateJSON(const Candidate & candidate) const;
++ void emitTyped(const std::string & json) const;
++ void emitTypedBusy() const;
++ void emitTypedAction(const std::string & event, const TypedContext & ctx, const std::string & extra = "") const;
++ void typedFailure(const std::string & reason) const;
++ bool issueMove();
+ 	bool issueEconomy();
+ 	void traceState(const std::string & event) const;
+ 	void traceDecision(const CGHeroInstance * hero, const int3 & destination, const int3 & step) const;
+--- baseline/AI\DirectorAI\TypedPolicyProtocol.h
++++ candidate/AI\DirectorAI\TypedPolicyProtocol.h
+@@ -0,0 +1,163 @@
++/* Isolated schema4 wire helpers. No engine state, RNG, shell or crypto-library dependency. */
++#pragma once
++#include <array>
++#include <cstdint>
++#include <iomanip>
++#include <limits>
++#include <map>
++#include <set>
++#include <sstream>
++#include <stdexcept>
++#include <string>
++#include <vector>
++
++namespace LabTypedPolicy
++{
++inline std::uint32_t rotateRight(std::uint32_t x, unsigned n) { return (x >> n) | (x << (32 - n)); }
++inline std::string sha256(const std::string & raw)
++{
++ static constexpr std::array<std::uint32_t,64> k = {{
++  0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
++  0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
++  0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
++  0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
++  0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
++  0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
++  0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
++  0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2 }};
++ std::array<std::uint32_t,8> h = {{0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19}};
++ std::vector<std::uint8_t> bytes(raw.begin(), raw.end());
++ const auto bits = static_cast<std::uint64_t>(bytes.size()) * 8;
++ bytes.push_back(0x80);
++ while(bytes.size() % 64 != 56) bytes.push_back(0);
++ for(int shift = 56; shift >= 0; shift -= 8) bytes.push_back(static_cast<std::uint8_t>(bits >> shift));
++ for(std::size_t start = 0; start < bytes.size(); start += 64)
++ {
++  std::array<std::uint32_t,64> w{};
++  for(unsigned i = 0; i < 16; ++i)
++   for(unsigned j = 0; j < 4; ++j) w[i] = (w[i] << 8) | bytes[start + 4 * i + j];
++  for(unsigned i = 16; i < 64; ++i)
++  {
++   const auto s0 = rotateRight(w[i-15],7) ^ rotateRight(w[i-15],18) ^ (w[i-15] >> 3);
++   const auto s1 = rotateRight(w[i-2],17) ^ rotateRight(w[i-2],19) ^ (w[i-2] >> 10);
++   w[i] = w[i-16] + s0 + w[i-7] + s1;
++  }
++  auto a=h[0],b=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],z=h[7];
++  for(unsigned i = 0; i < 64; ++i)
++  {
++   const auto s1 = rotateRight(e,6) ^ rotateRight(e,11) ^ rotateRight(e,25);
++   const auto t1 = z + s1 + ((e & f) ^ (~e & g)) + k[i] + w[i];
++   const auto s0 = rotateRight(a,2) ^ rotateRight(a,13) ^ rotateRight(a,22);
++   const auto t2 = s0 + ((a & b) ^ (a & c) ^ (b & c));
++   z=g;g=f;f=e;e=d+t1;d=c;c=b;b=a;a=t1+t2;
++  }
++  h[0]+=a;h[1]+=b;h[2]+=c;h[3]+=d;h[4]+=e;h[5]+=f;h[6]+=g;h[7]+=z;
++ }
++ std::ostringstream out;out << std::hex << std::setfill('0');
++ for(auto word : h) out << std::setw(8) << word;
++ return out.str();
++}
++
++// The exact response schema is flat and has only strings/nonnegative integers.
++// Reject duplicate keys, booleans, decimal/exponent integers, nested objects,
++// leading-zero numbers, unknown keys, trailing JSON and legacy plain integers.
++struct Value { bool integer = false; std::uint64_t number = 0; std::string text; };
++class FlatObjectParser
++{
++ const std::string & input;std::size_t at = 0;
++ void spaces() { while(at<input.size() && (input[at]==' ' || input[at]=='\t' || input[at]=='\r' || input[at]=='\n')) ++at; }
++ void take(char c) { spaces();if(at>=input.size() || input[at++]!=c) throw std::runtime_error("typed JSON syntax"); }
++ unsigned hex(char c) const
++ {
++  if(c>='0' && c<='9') return c-'0';
++  if(c>='a' && c<='f') return c-'a'+10;
++  if(c>='A' && c<='F') return c-'A'+10;
++  throw std::runtime_error("typed JSON unicode");
++ }
++ std::string string()
++ {
++  take('"');std::string result;
++  while(at<input.size())
++  {
++   const unsigned char c=input[at++];
++   if(c=='"') return result;
++   if(c<32) throw std::runtime_error("typed JSON control");
++   if(c!='\\') { result.push_back(static_cast<char>(c));continue; }
++   if(at>=input.size()) throw std::runtime_error("typed JSON escape");
++   switch(input[at++])
++   {
++    case '"':result+='"';break;case '\\':result+='\\';break;case '/':result+='/';break;
++    case 'b':result+='\b';break;case 'f':result+='\f';break;case 'n':result+='\n';break;
++    case 'r':result+='\r';break;case 't':result+='\t';break;
++    case 'u':
++    {
++     if(at+4>input.size()) throw std::runtime_error("typed JSON unicode");
++     unsigned code=0;for(int i=0;i<4;++i) code=16*code+hex(input[at++]);
++     // All accepted keys/context strings are ASCII. No surrogate ambiguity.
++     if(code>127) throw std::runtime_error("typed JSON non-ASCII context");
++     result+=static_cast<char>(code);break;
++    }
++    default:throw std::runtime_error("typed JSON escape");
++   }
++  }
++  throw std::runtime_error("typed JSON unterminated string");
++ }
++ Value value()
++ {
++  spaces();Value v;
++  if(at<input.size() && input[at]=='"') { v.text=string();return v; }
++  if(at>=input.size() || input[at]<'0' || input[at]>'9') throw std::runtime_error("typed JSON integer required");
++  v.integer=true;const auto begin=at;
++  while(at<input.size() && input[at]>='0' && input[at]<='9')
++  {
++   const auto digit=static_cast<unsigned>(input[at++]-'0');
++   if(v.number>(std::numeric_limits<std::uint64_t>::max()-digit)/10) throw std::runtime_error("typed integer overflow");
++   v.number=10*v.number+digit;
++  }
++  if(at-begin>1 && input[begin]=='0') throw std::runtime_error("typed leading zero");
++  return v;
++ }
++public:
++ explicit FlatObjectParser(const std::string & data):input(data) {}
++ std::map<std::string,Value> parse()
++ {
++  if(input.empty() || input.size()>16384 || input.back()!='\n') throw std::runtime_error("typed JSON newline/size");
++  take('{');std::map<std::string,Value> result;spaces();
++  if(at<input.size() && input[at]=='}') throw std::runtime_error("typed JSON empty response");
++  while(true)
++  {
++   const auto key=string();take(':');const auto v=value();
++   if(!result.emplace(key,v).second) throw std::runtime_error("typed duplicate key");
++   spaces();if(at>=input.size()) throw std::runtime_error("typed JSON incomplete");
++   if(input[at]=='}') { ++at;break; }
++   take(',');
++  }
++  spaces();if(at!=input.size()) throw std::runtime_error("typed trailing JSON");
++  return result;
++ }
++};
++
++struct Response { int index = -1; std::string op; std::string classification; };
++inline Response parseResponse(const std::string & bytes, int decision, int player, int hero, int turn,
++ const std::string & requestSHA, const std::vector<std::string> & operations)
++{
++ const auto object=FlatObjectParser(bytes).parse();
++ const std::set<std::string> keys={"schema","selected_index","decision_id","player","hero","own_turn","op","request_sha256","classification"};
++ if(object.size()!=keys.size()) throw std::runtime_error("typed response exact key set");
++ for(const auto & entry:object) if(!keys.count(entry.first)) throw std::runtime_error("typed unknown key");
++ const auto str=[&](const std::string & key)->const std::string &
++ { const auto & v=object.at(key);if(v.integer) throw std::runtime_error("typed string required");return v.text; };
++ const auto integer=[&](const std::string & key)->int
++ { const auto & v=object.at(key);if(!v.integer || v.number>static_cast<std::uint64_t>(std::numeric_limits<int>::max())) throw std::runtime_error("typed integer range");return static_cast<int>(v.number); };
++ if(str("schema")!="strategy-typed-action-response-v1" || integer("decision_id")!=decision || decision<1 ||
++    integer("player")!=player || integer("hero")!=hero || integer("own_turn")!=turn || turn<1)
++  throw std::runtime_error("typed immutable response context");
++ const auto index=integer("selected_index");
++ if(index<0 || static_cast<std::size_t>(index)>=operations.size()) throw std::runtime_error("typed selected index");
++ if(str("op")!=operations[index] || str("request_sha256")!=requestSHA || requestSHA.size()!=64)
++  throw std::runtime_error("typed operation/request SHA");
++ const auto & classification=str("classification");
++ if(classification!="new_policy" && classification!="diagnostic_only") throw std::runtime_error("typed provenance");
++ return {index,str("op"),classification};
++}
++}
+--- baseline/server\CGameHandler.cpp
++++ candidate/server\CGameHandler.cpp
+@@ -9,6 +9,7 @@
+  */
+ #include "StdInc.h"
+ #include "CGameHandler.h"
++#include "../lib/networkPacks/PacksForServer.h"
+ 
+ #include "CVCMIServer.h"
+ #include "TurnTimerHandler.h"
+@@ -520,6 +521,15 @@
+ 		gameServer().sendPack(applied, connection);
+ 	};
+ 
++
++ auto traceTypedActionResult = [&](bool success)
++ {
++  const bool move = dynamic_cast<const MoveHero *>(&pack) != nullptr;
++  if(!move && !dynamic_cast<const EndTurn *>(&pack)) return;
++  logGlobal->info("TypedActionApplied player=%d native_request_id=%d op=%s success=%d",
++   static_cast<int>(pack.player.getNum()),static_cast<int>(pack.requestID),move ? "move" : "end_turn",success ? 1 : 0);
++ };
++
+ 	PackageReceived received(
+ 		pack.player,
+ 		pack.requestID,
+@@ -529,6 +539,7 @@
+ 
+ 	if(isBlockedByQueries(&pack, pack.player))
+ 	{
++		traceTypedActionResult(false);
+ 		sendPackageResponse(false);
+ 	}
+ 	else
+@@ -551,6 +562,7 @@
+ 			complain((boost::format("Got false in applying %s... that request must have been fishy!")
+ 				% typeid(pack).name()).str());
+ 
++		traceTypedActionResult(result); // Actual visitor result, before original ACK.
+ 		sendPackageResponse(true);
+ 	}
+ 

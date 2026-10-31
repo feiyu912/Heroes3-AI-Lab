@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "all_exact_trajectories": true,
+  "records": [
+    {
+      "role": "attacker",
+      "scenario": 0,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 3.1630300259998876,
+      "GPU_wall_seconds": 51.95248076400003
+    },
+    {
+      "role": "attacker",
+      "scenario": 7,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 2.7963850269998147,
+      "GPU_wall_seconds": 2.772354872000051
+    },
+    {
+      "role": "attacker",
+      "scenario": 14,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 1.939620393000041,
+      "GPU_wall_seconds": 2.705365792000066
+    },
+    {
+      "role": "defender",
+      "scenario": 0,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 4.125520178999977,
+      "GPU_wall_seconds": 4.16154111700007
+    },
+    {
+      "role": "defender",
+      "scenario": 7,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 3.0529423869998027,
+      "GPU_wall_seconds": 4.07113620500013
+    },
+    {
+      "role": "defender",
+      "scenario": 14,
+      "exact_trajectory": true,
+      "CPU_wall_seconds": 2.4440846060001604,
+      "GPU_wall_seconds": 2.2502906750000875
+    }
+  ],
+  "profiles": [
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-37419_2026-10-15_19-27-07.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    },
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-34565_2026-10-15_19-26-27.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    },
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-33533_2026-10-15_19-26-05.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    },
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-31705_2026-10-15_19-25-47.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    },
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-36075_2026-10-15_19-26-45.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    },
+    {
+      "path": "/root/heroes3-ai-lab/profiles/native-cuda-27105_2026-10-15_19-24-41.json",
+      "cuda_nodes": 5373,
+      "cpu_nodes": 2262
+    }
+  ],
+  "unchanged_engine_rules": true,
+  "TF32_disabled": true,
+  "scope": "Six seeded battles, both roles; native CPU1.22 vs native CUDA1.23.2 opponent, same public weights and greedy policy",
+  "evaluation_folder": "/root/heroes3-ai-lab/evaluations/native-cuda-contract-1792063471132171567"
+}

@@ -1,0 +1,377 @@
+{
+  "schema": "strategic-economy-state-audit-v1",
+  "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/restore-fixed-v5-2026101801-xoj9sx1q",
+  "trace_sha256": "0ace582dd006be13710e9a5ba1b4b989400b5a9df566eb1572f67a8ffbf1fd84",
+  "trace_records": 57,
+  "trace_matches_runner_sha": true,
+  "runner_completed": true,
+  "verified_counts": {
+    "build": 5,
+    "recruit": 4,
+    "army_transfer": 4
+  },
+  "verified_pairs": [
+    {
+      "kind": "build",
+      "resource_delta_observed": {
+        "gold": -500,
+        "wood": -5,
+        "ore": 0
+      },
+      "buildings_added_by_town": {
+        "2": [
+          14
+        ]
+      },
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {},
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 2,
+      "after_line": 3,
+      "player": 0,
+      "own_turn": 1,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "recruit",
+      "resource_delta_observed": {
+        "gold": -900,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {
+        "2": [
+          0,
+          -9,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "town_army_delta_by_creature": {
+        "2": 9
+      },
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {
+        "2": 9
+      },
+      "verified_state_transition": true,
+      "before_line": 4,
+      "after_line": 5,
+      "player": 0,
+      "own_turn": 1,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "recruit",
+      "resource_delta_observed": {
+        "gold": -840,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {
+        "2": [
+          -14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "town_army_delta_by_creature": {
+        "0": 14
+      },
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {
+        "0": 14
+      },
+      "verified_state_transition": true,
+      "before_line": 6,
+      "after_line": 7,
+      "player": 0,
+      "own_turn": 1,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "army_transfer",
+      "resource_delta_observed": {
+        "gold": 0,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {
+        "2": -9
+      },
+      "hero_army_delta_by_creature": {
+        "2": 9
+      },
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 8,
+      "after_line": 9,
+      "player": 0,
+      "own_turn": 1,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "army_transfer",
+      "resource_delta_observed": {
+        "gold": 0,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {
+        "0": -14
+      },
+      "hero_army_delta_by_creature": {
+        "0": 14
+      },
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 10,
+      "after_line": 11,
+      "player": 0,
+      "own_turn": 1,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "build",
+      "resource_delta_observed": {
+        "gold": -1000,
+        "wood": -5,
+        "ore": 0
+      },
+      "buildings_added_by_town": {
+        "2": [
+          16
+        ]
+      },
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {},
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 14,
+      "after_line": 15,
+      "player": 0,
+      "own_turn": 2,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "build",
+      "resource_delta_observed": {
+        "gold": -2000,
+        "wood": -5,
+        "ore": -5
+      },
+      "buildings_added_by_town": {
+        "2": [
+          0
+        ]
+      },
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {},
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 18,
+      "after_line": 19,
+      "player": 0,
+      "own_turn": 3,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "build",
+      "resource_delta_observed": {
+        "gold": -5000,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {
+        "2": [
+          12
+        ]
+      },
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {},
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 22,
+      "after_line": 23,
+      "player": 0,
+      "own_turn": 4,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "build",
+      "resource_delta_observed": {
+        "gold": -2500,
+        "wood": 0,
+        "ore": -5
+      },
+      "buildings_added_by_town": {
+        "2": [
+          8
+        ]
+      },
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {},
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 30,
+      "after_line": 31,
+      "player": 0,
+      "own_turn": 7,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "recruit",
+      "resource_delta_observed": {
+        "gold": -1300,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {
+        "2": [
+          0,
+          -13,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "town_army_delta_by_creature": {
+        "2": 13
+      },
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {
+        "2": 13
+      },
+      "verified_state_transition": true,
+      "before_line": 34,
+      "after_line": 35,
+      "player": 0,
+      "own_turn": 8,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "recruit",
+      "resource_delta_observed": {
+        "gold": -1260,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {
+        "2": [
+          -21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "town_army_delta_by_creature": {
+        "0": 21
+      },
+      "hero_army_delta_by_creature": {},
+      "combined_army_delta_by_creature": {
+        "0": 21
+      },
+      "verified_state_transition": true,
+      "before_line": 36,
+      "after_line": 37,
+      "player": 0,
+      "own_turn": 8,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "army_transfer",
+      "resource_delta_observed": {
+        "gold": 0,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {
+        "2": -13
+      },
+      "hero_army_delta_by_creature": {
+        "2": 13
+      },
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 40,
+      "after_line": 41,
+      "player": 0,
+      "own_turn": 9,
+      "native_request_reported_applied": true
+    },
+    {
+      "kind": "army_transfer",
+      "resource_delta_observed": {
+        "gold": 0,
+        "wood": 0,
+        "ore": 0
+      },
+      "buildings_added_by_town": {},
+      "buildings_removed_by_town": {},
+      "recruit_offer_delta_by_town_level": {},
+      "town_army_delta_by_creature": {
+        "0": -21
+      },
+      "hero_army_delta_by_creature": {
+        "0": 21
+      },
+      "combined_army_delta_by_creature": {},
+      "verified_state_transition": true,
+      "before_line": 42,
+      "after_line": 43,
+      "player": 0,
+      "own_turn": 9,
+      "native_request_reported_applied": true
+    }
+  ],
+  "rejected_pairs": [],
+  "unpaired_before_events": [],
+  "limitations": [
+    "Trace does not contain request IDs; only adjacent same-player/same-turn acknowledgment pairs accepted.",
+    "Resource audit covers logged gold/wood/ore; exact native price tables and other resources are not logged.",
+    "Army counts are compared by creature type, not treated as equal strategic value.",
+    "Same-state/no-op requests are rejected even when native callback reports success.",
+    "Complete economy mechanics do not demonstrate a strong learned strategic policy."
+  ],
+  "all_three_mechanics_observed": true
+}

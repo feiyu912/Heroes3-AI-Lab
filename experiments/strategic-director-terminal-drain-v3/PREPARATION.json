@@ -1,0 +1,24 @@
+{
+  "prepared": true,
+  "native_engine_builds": 0,
+  "native_engine_runs": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "changed_from_v2": [
+    "client/Client.h"
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/audit_game_v6.py": "31fc8cd89685d63dfb6bc0df80fd1a537fc77e44223dfce235292d3ee61eba99",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/audit_replan_v3.py": "64410449ff82803a4c2e1b92cb83e524205202f25ba84ef622f58d159d0e9713",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/build_capsule.py": "5581d0835ee92b6a68416f9632b8024d51956709280120607659795585ae04df",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/check_director_drain_cpu.py": "693eb30c56b39577738d7f412ed74b3892ae40392f76a537dcb29c06fb525fee",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/check_threadsafe_vector_cpp.py": "10574bbb11720575e894fb3a1a012ddc0d8632912adb1816ecca5506417a32c5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/director_registry_v1.py": "7a81a7d4c229e1a90bf9246c1dc68a58787cd9e6bd81744b92e3919f620e4a69",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/finalize_prepare_v3.py": "dc4fa8c36a87a080c0697626a6d94f8f33f3104f11220f2ed00ae11073541d29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/qualify.py": "04b93a85a7094a5a0c54eb6b56f428b69db71cc703ed1cdfbd277ff73485f48e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/run_proxy_game_director_drain.py": "3bdd8e6b1939e100a6cc28aa84161bf3e4887c9d6c542091a3e1de5476ff922d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/PLAN.md": "07824fe5267fdc3cd3fed66cb30dc38fb4473f8bb3db223c2f268a3bae5c142d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate.diff": "ca23fe70c9120c31f15bebb9c36847b27e52b19bbf44943d3d70d8e2a86feca8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/CANDIDATE_MANIFEST.json": "638945535d6878723ac42adf2147f0d0c0e6054523ccf655f1ee2e7f389252c0"
+  }
+}

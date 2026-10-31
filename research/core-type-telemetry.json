@@ -1,0 +1,1574 @@
+{
+  "topology": [
+    {
+      "id": 256,
+      "group": 0,
+      "logicalProcessor": 0,
+      "core": 0,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 257,
+      "group": 0,
+      "logicalProcessor": 1,
+      "core": 0,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 258,
+      "group": 0,
+      "logicalProcessor": 2,
+      "core": 2,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 259,
+      "group": 0,
+      "logicalProcessor": 3,
+      "core": 2,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 260,
+      "group": 0,
+      "logicalProcessor": 4,
+      "core": 4,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 261,
+      "group": 0,
+      "logicalProcessor": 5,
+      "core": 4,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 262,
+      "group": 0,
+      "logicalProcessor": 6,
+      "core": 6,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 263,
+      "group": 0,
+      "logicalProcessor": 7,
+      "core": 6,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 264,
+      "group": 0,
+      "logicalProcessor": 8,
+      "core": 8,
+      "efficiencyClass": 1,
+      "schedulingClass": 2
+    },
+    {
+      "id": 265,
+      "group": 0,
+      "logicalProcessor": 9,
+      "core": 8,
+      "efficiencyClass": 1,
+      "schedulingClass": 2
+    },
+    {
+      "id": 266,
+      "group": 0,
+      "logicalProcessor": 10,
+      "core": 10,
+      "efficiencyClass": 1,
+      "schedulingClass": 2
+    },
+    {
+      "id": 267,
+      "group": 0,
+      "logicalProcessor": 11,
+      "core": 10,
+      "efficiencyClass": 1,
+      "schedulingClass": 2
+    },
+    {
+      "id": 268,
+      "group": 0,
+      "logicalProcessor": 12,
+      "core": 12,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 269,
+      "group": 0,
+      "logicalProcessor": 13,
+      "core": 12,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 270,
+      "group": 0,
+      "logicalProcessor": 14,
+      "core": 14,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 271,
+      "group": 0,
+      "logicalProcessor": 15,
+      "core": 14,
+      "efficiencyClass": 1,
+      "schedulingClass": 1
+    },
+    {
+      "id": 272,
+      "group": 0,
+      "logicalProcessor": 16,
+      "core": 16,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 273,
+      "group": 0,
+      "logicalProcessor": 17,
+      "core": 17,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 274,
+      "group": 0,
+      "logicalProcessor": 18,
+      "core": 18,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 275,
+      "group": 0,
+      "logicalProcessor": 19,
+      "core": 19,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 276,
+      "group": 0,
+      "logicalProcessor": 20,
+      "core": 20,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 277,
+      "group": 0,
+      "logicalProcessor": 21,
+      "core": 21,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 278,
+      "group": 0,
+      "logicalProcessor": 22,
+      "core": 22,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 279,
+      "group": 0,
+      "logicalProcessor": 23,
+      "core": 23,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 280,
+      "group": 0,
+      "logicalProcessor": 24,
+      "core": 24,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 281,
+      "group": 0,
+      "logicalProcessor": 25,
+      "core": 25,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 282,
+      "group": 0,
+      "logicalProcessor": 26,
+      "core": 26,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    },
+    {
+      "id": 283,
+      "group": 0,
+      "logicalProcessor": 27,
+      "core": 27,
+      "efficiencyClass": 0,
+      "schedulingClass": 0
+    }
+  ],
+  "samples": [
+    {
+      "timeUtc": "2026-10-14T13:58:27.9069313Z",
+      "availableMemoryMiB": 12695.89453125,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 64
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 64
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 59
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 53
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 59
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 6
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 53
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 47
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 94
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 82
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 29
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:30.2861909Z",
+      "availableMemoryMiB": 12653.10546875,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 62
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 62
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 43
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 50
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 31
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 43
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 18
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 50
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 43
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 81
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 12
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 30
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:32.6626417Z",
+      "availableMemoryMiB": 12586.5390625,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 47
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 41
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 70
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 35
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 35
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 58
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 35
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 11
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 41
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 47
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 82
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 34
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:34.9755295Z",
+      "availableMemoryMiB": 12558.62109375,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 69
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 87
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 100
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 44
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 31
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 44
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 44
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 75
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 48
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:37.3117500Z",
+      "availableMemoryMiB": 12513.5625,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 50
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 87
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 75
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 1
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 44
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 21
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:39.6840208Z",
+      "availableMemoryMiB": 12459.58984375,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 57
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 69
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 57
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 21
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 33
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 21
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 21
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 15
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 45
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 27
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 21
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 3
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 39
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 39
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 39
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 9
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 15
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 69
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 24
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:42.0512784Z",
+      "availableMemoryMiB": 12420.8046875,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 58
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 17
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 64
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 29
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 11
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 40
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 23
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 82
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 36
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:44.4161576Z",
+      "availableMemoryMiB": 12368.09375,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 82
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 58
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 11
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 11
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 40
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 5
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 40
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 82
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 18
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:46.7685445Z",
+      "availableMemoryMiB": 12335.3203125,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 62
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 1
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 87
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 69
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 50
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 100
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 50
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 19
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 13
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 31
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 38
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 25
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 56
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 1
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 7
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 75
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 34
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:49.1014249Z",
+      "availableMemoryMiB": 12302.66796875,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 28
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 28
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 52
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 28
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 88
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 88
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 70
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 25
+        }
+      ]
+    },
+    {
+      "timeUtc": "2026-10-14T13:58:51.4540466Z",
+      "availableMemoryMiB": 12269.05078125,
+      "cpuLogical": [
+        {
+          "Name": "0",
+          "PercentProcessorTime": 46
+        },
+        {
+          "Name": "1",
+          "PercentProcessorTime": 10
+        },
+        {
+          "Name": "10",
+          "PercentProcessorTime": 58
+        },
+        {
+          "Name": "11",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "12",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "13",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "14",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "15",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "16",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "17",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "18",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "19",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "2",
+          "PercentProcessorTime": 34
+        },
+        {
+          "Name": "20",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "21",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "22",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "23",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "24",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "25",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "26",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "27",
+          "PercentProcessorTime": 4
+        },
+        {
+          "Name": "3",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "4",
+          "PercentProcessorTime": 16
+        },
+        {
+          "Name": "5",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "6",
+          "PercentProcessorTime": 22
+        },
+        {
+          "Name": "7",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "8",
+          "PercentProcessorTime": 0
+        },
+        {
+          "Name": "9",
+          "PercentProcessorTime": 76
+        },
+        {
+          "Name": "_Total",
+          "PercentProcessorTime": 14
+        }
+      ]
+    }
+  ],
+  "scope": "Windows whole-host logical utilization by CPU-set efficiency class, including desktop/background work; no guest-to-host vCPU identity or per-worker core affinity claim.",
+  "source": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-system_cpu_set_information"
+}

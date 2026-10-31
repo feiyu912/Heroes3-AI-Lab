@@ -1,0 +1,39 @@
+{
+  "mechanism_only": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "source_map": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/fixture-01/free-stock-rescue-stock-mechanism-v2-01.vmap",
+  "source_map_sha256": "466b2bac6dcd89975191f9745d9f7b951c26d50f81da91d751954e87bd59e1c5",
+  "fixture_map": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v2/qualification/schema6-recruit-neighbor-mechanism-v1.vmap",
+  "fixture_map_sha256": "8079c2514d9a15cdedd93556d37bc515ae80a063a502be883acbbb2418cee0ea",
+  "changed_zip_entries": [
+    "objects.json"
+  ],
+  "added_object_key": "schema6_mechanism_neighbor_gold",
+  "added_object": {
+    "l": 0,
+    "options": {
+      "amount": 800
+    },
+    "subtype": "core:gold",
+    "template": {
+      "animation": "AVTgold0.def",
+      "editorAnimation": "",
+      "mask": [
+        "VA"
+      ],
+      "visitableFrom": [
+        "+++",
+        "+-+",
+        "+++"
+      ]
+    },
+    "type": "resource",
+    "x": 29,
+    "y": 9
+  },
+  "copied_actual_template_key": "resource_left_gold",
+  "all_previous_objects_identical": true,
+  "all_other_zip_entries_byte_identical": true,
+  "legality": "No preclaimed reachability: selector must observe an actual kind3 position==next candidate; missing it is uncovered"
+}

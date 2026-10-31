@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-14",
+  "engine_commit": "e956242503f465ae6ec0a62a3aeb2c4ea179db5c",
+  "gym_commit": "11241d496db95541766498373e23245a67847a97",
+  "protocol": "lab-terminal-outcome-v1 + lab-teacher-v1; matching rebuilt connector required",
+  "selected_workers": 12,
+  "dependencies": [
+    "cloudpickle==3.1.2",
+    "Farama-Notifications==0.0.6",
+    "filelock==4.1.0",
+    "fsspec==2026.9.0",
+    "gymnasium==1.2.1",
+    "Jinja2==3.1.6",
+    "MarkupSafe==3.0.4",
+    "mpmath==1.3.0",
+    "networkx==3.4.2",
+    "numpy==2.2.6",
+    "sympy==1.14.0",
+    "torch==2.14.1+cpu",
+    "typing_extensions==4.16.0"
+  ],
+  "files": [
+    {
+      "path": "battle-smoke.py",
+      "sha256": "98ce9261c44c440a3e9987bb2c30d58223af451d8f8359196ffe32ca4e4b9b3b"
+    },
+    {
+      "path": "benchmark-environments.py",
+      "sha256": "19537731a8ae4fcb578e5fbb79c6979a31582927afa7d41819368fd2fb671a37"
+    },
+    {
+      "path": "benchmark-worker.py",
+      "sha256": "2f10c394f683651293241586c8d220328dee6faa99bee68cc1dbc3f1323f9134"
+    },
+    {
+      "path": "collect-teacher.py",
+      "sha256": "c4fb6b1b04adbb48d2085cb5f5e0a3d2f8c7161faec3e50b460fe71318e116c9"
+    },
+    {
+      "path": "debug-battle-smoke.sh",
+      "sha256": "884ab8e7c96ca48e151fa666a91c7ab31f26f4825ce50493698b9e5306fc90d4"
+    },
+    {
+      "path": "decision_model.py",
+      "sha256": "6c1fc7d9ee24976c3e4bc9db9b5c8feea59a12197ebabf86fe4b1eb174ffd814"
+    },
+    {
+      "path": "evaluate-battles.py",
+      "sha256": "4fe90cd57e8324c13d11f8e7dd5265b2f0ddccccde8bc6e67eba62b54c59ba70"
+    },
+    {
+      "path": "evaluate-policy.py",
+      "sha256": "98b9cb021cf01e7ebd9b6d349014f59f3e4a7d46d5db2dcc726cccaecb000694"
+    },
+    {
+      "path": "extend-outcome-interface.py",
+      "sha256": "67a556c80780dbb287c75cb2372e76904e11f66356ec0a199a2e31a7e435422d"
+    },
+    {
+      "path": "extend-teacher-interface.py",
+      "sha256": "6ffcb91583e5662a08b17a703f4e5134673239c70c11b49feeed3f0191305778"
+    },
+    {
+      "path": "lab-env.py",
+      "sha256": "f18751b3a1c8d7a4218c3da50224b370eafab89267eca60f24195552ddd2ea1b"
+    },
+    {
+      "path": "lab-v2-native.patch",
+      "sha256": "44194dd699a49998d7d64db1edab941cd641c1f39072370ee51278cfa61dec2a"
+    },
+    {
+      "path": "make-smoke-map.py",
+      "sha256": "22c9394d8fa5dd39273ec99387f30d2161b4faae721290c29bdf01ee22784dfa"
+    },
+    {
+      "path": "make-training-maps.py",
+      "sha256": "0c49564e4677bbe3cbffbd32ec9da4426e7090291ce2f3615375e1ca9ca4aa31"
+    },
+    {
+      "path": "masked_ppo.py",
+      "sha256": "38eedb13dfbac58c30ae7167093d4ca963bb32cb997ef762c55c02e8ce18881c"
+    },
+    {
+      "path": "outcome-isolation.patch",
+      "sha256": "ca0d939e6e40962dde27b834a32b24f840abd110a048f51ce2cc2341b7064c13"
+    },
+    {
+      "path": "prepare-worker.py",
+      "sha256": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c"
+    },
+    {
+      "path": "run-battle-smoke.sh",
+      "sha256": "956580d3592b9d0ac1487db0ee5b282b92f26899914dee47dbd5b43d2dab26ac"
+    },
+    {
+      "path": "run-lab.sh",
+      "sha256": "e3c7ee60c54666a046b1e739655d39db4adab7a67938ea3ca5c91d0b66d488af"
+    },
+    {
+      "path": "snapshot-lab-v2.py",
+      "sha256": "7ef18360ddae8478c1c9b2599a0b6ba13ab85c839a1f8202e1776c5760cec9fa"
+    },
+    {
+      "path": "snapshot-outcome-patch.py",
+      "sha256": "50dae29d6018600ba067e5cbda1d009b7cc86c19b70529061eb1edfeec81c74d"
+    },
+    {
+      "path": "teacher-interface.patch",
+      "sha256": "ef6d92c62a4fa6e93b8a3c464ff13519d1cc6813f37e24003794033c219c1570"
+    },
+    {
+      "path": "teacher-mapping-fix.patch",
+      "sha256": "8b726a6b971292a5d80b6a224d784856ce0aba478565d532620ac28d209b81d6"
+    },
+    {
+      "path": "teacher-pipeline.py",
+      "sha256": "54950808b545c95692ad841d84d3a5d2edfb75a2f481c77aa6c9fbf669a254c4"
+    },
+    {
+      "path": "test-training-contracts.py",
+      "sha256": "edb99c81cd6641b158797b64c2bdfb959ede57d43e8997a3e16d3435e08cbb30"
+    },
+    {
+      "path": "train-bc.py",
+      "sha256": "d1581349fefe5a01f8e04c4fb7537b33b263ffcb96fade3309f54366b47361e4"
+    },
+    {
+      "path": "train-ppo.py",
+      "sha256": "e10307d0ae15d9d6d3ab75b19f8664e9ce653466a93b54244d291c4ba6fc6d61"
+    },
+    {
+      "path": "vector_env.py",
+      "sha256": "cb5d230ef471c04a4e12baf7bcf4eb5d3794645b82fbb72d20371bc7712b1bcb"
+    },
+    {
+      "path": "verify-battle-smoke.py",
+      "sha256": "6832e5879b0a362f426c1c0a4b32352e4005894b3cb8ba116673e9e01e0170f6"
+    },
+    {
+      "path": "write-v2-reports.py",
+      "sha256": "ea5036b5890cfc432e51ffc2671ae09c31e1ec083e3e8bf84ba1214c7bbbf0aa"
+    },
+    {
+      "path": "wsl-build-fixes.patch",
+      "sha256": "7c8e09828eda42085405d6368e63c6e7ce1c3bc9c184fd4e7b220fcdf6e1944f"
+    },
+    {
+      "path": "wsl-build.sh",
+      "sha256": "ab3aacd4fab86052ba1afae6499bb8a7af11a89f6ce911df15918661140fd9f4"
+    },
+    {
+      "path": "wsl-compat-fixes.py",
+      "sha256": "30298552a98949becf757ba262a2c5781464ac748458ac6e0a2d851cbc63327d"
+    },
+    {
+      "path": "wsl-configure.sh",
+      "sha256": "153cc786bdb041b29b33e8273bfc86c276d4f5f77e039c6380437b97ef6d04c9"
+    },
+    {
+      "path": "wsl-prepare-data.sh",
+      "sha256": "b5c3c4d5dc4cf278eb83076b0cedab306cd7e45884aa7d551e80efebdec84800"
+    }
+  ]
+}

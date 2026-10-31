@@ -1,0 +1,470 @@
+{
+  "plan_sha256": "6841812dd4977c02c275ab9c8f9840d14db1580d8cbaeb1d298061ca87ff97a5",
+  "batch_sha256": "942b2a801ff9cc1df2ab81a83a1d7a81810fa871750797de4c646e18d3110f61",
+  "accepted_rollout_sha256": "3cdd34ef4f34f59858d4943286439ce5f2ecaee8499840bc82ad004dbe5f74d9",
+  "episodes": [
+    {
+      "index": 0,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026102200
+      },
+      "decisions": 323,
+      "native_days": 35,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 323,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 323,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 4,
+        "expected_actions": 323,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "36bf621d85b08cc8b918a71f84e5c55875c1576008e7ffa42be0b323b3c2aef7",
+      "worker_log_sha256": "9baac6c840da4545439d4d342ba55c8c4f5caa22b3d36531e5db60978fca6a4b"
+    },
+    {
+      "index": 1,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026102201
+      },
+      "decisions": 190,
+      "native_days": 22,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 190,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 190,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 190,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "9a558218c36e2d0b8cb7c680f66fce490e455c7f27a79dbc2267b55bba410aed",
+      "worker_log_sha256": "a81822247dcf9669ca991ed621ff638264cbb6ad65a30507be3ae787ee85b33b"
+    },
+    {
+      "index": 2,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026102202
+      },
+      "decisions": 271,
+      "native_days": 35,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 271,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 271,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 271,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "3df425a0f87cf70e760768d0febffc04e0f341c28133a077121570dfbb380d35",
+      "worker_log_sha256": "727894a537cc1b401577ecbb01672bd3d7ac208c72bf4e91dedbb65a317b36a3"
+    },
+    {
+      "index": 3,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026102203
+      },
+      "decisions": 364,
+      "native_days": 41,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 364,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 364,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 8,
+        "expected_actions": 364,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "b00af3f963d50c387b805c31f27fa6d4d2e879c251e8033c094327215875b8c8",
+      "worker_log_sha256": "4e9da2137ded611375084cd802d2fcb37e438ee9469618c152347062e606200a"
+    },
+    {
+      "index": 4,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026102204
+      },
+      "decisions": 196,
+      "native_days": 23,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 196,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 196,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 196,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "183357a6745e2e47e0995a9c163c2e2dbff5233f078e0a439002ff603d6868a5",
+      "worker_log_sha256": "0b6f198498e70e1de94dd79c72eb1adc08c9bb06ecb947c6aa3f79cf7bc40817"
+    },
+    {
+      "index": 5,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026102205
+      },
+      "decisions": 402,
+      "native_days": 43,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 401,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 402,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 402,
+        "missing_ack_count": 1,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": true,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution_terminal_ack_missing"
+      },
+      "native_result_sha256": "091444ce0cc671fad949c492d304fec71c6d3941d126e80d8768691e2fee68e9",
+      "worker_log_sha256": "05edcce1bebdd6a80c41fd686e38b5f0c8604d07ce84766c89b11e3a77cafcf2"
+    },
+    {
+      "index": 6,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026102206
+      },
+      "decisions": 285,
+      "native_days": 35,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 285,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 285,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 7,
+        "expected_actions": 285,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "ed4e2a318b832f33cca2a0dafc497a1990e9506102ee0c39abbe6a3f3dd30244",
+      "worker_log_sha256": "77f82a4517c33012527abcad810014551c477e8b5b850b205b29fe47fb0fa45a"
+    },
+    {
+      "index": 7,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026102207
+      },
+      "decisions": 157,
+      "native_days": 25,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 157,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 157,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 157,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "f949d84bfce680259be295bfbcad35b76860391c4e5f83b4d84ed9a1b550b135",
+      "worker_log_sha256": "e457137adde42761c868f489042b7f360ca7b478e93a75d3402c9eb335b9a22a"
+    },
+    {
+      "index": 8,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026102208
+      },
+      "decisions": 321,
+      "native_days": 34,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 321,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 321,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 4,
+        "expected_actions": 321,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "25edf4d0c609ab47db2c43209cf8fe7046c2fca06107aae1ad6f0e7103fbd9da",
+      "worker_log_sha256": "7faf56799b0474885705bf9e325aa4cac961be0b98002e3d6aee4cb62690e009"
+    },
+    {
+      "index": 9,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026102209
+      },
+      "decisions": 208,
+      "native_days": 22,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 208,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 208,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 4,
+        "expected_actions": 208,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "42c41b67387908b333bbd23bb93371d518703cf0fee441d8b2be664a4e7769d3",
+      "worker_log_sha256": "96ff25eacf45aff8d79f2e5591bf33b1177219a4eaa2514d2e66d5890d245996"
+    },
+    {
+      "index": 10,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026102210
+      },
+      "decisions": 235,
+      "native_days": 29,
+      "native_winner": "blue",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 235,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 235,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 5,
+        "expected_actions": 235,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "811bd3df835a4026f42a643e7aa91c51532c8737bf802ba2d152a9b6e1ef7373",
+      "worker_log_sha256": "4d41d24626fb6245753364fc2c2a15b436522cf35179acd3e1d5c3cbc970dcc1"
+    },
+    {
+      "index": 11,
+      "config": {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026102211
+      },
+      "decisions": 530,
+      "native_days": 56,
+      "native_winner": "red",
+      "raw_hashes_verified": true,
+      "io_and_consumption_verified": true,
+      "accepted_rows_exactly_commits_plus_terminal_return": true,
+      "event_audit": {
+        "valid": true,
+        "counts": {
+          "move_applied": 530,
+          "move_failed": 0,
+          "economy_failed": 0,
+          "query_failed": 0,
+          "server_rejected": 0
+        },
+        "evidence": [],
+        "move_reply_count": 530,
+        "failed_move_reply_count": 0,
+        "blocking_visit_reply_count": 9,
+        "expected_actions": 530,
+        "missing_ack_count": 0,
+        "missing_execution_reply_count": 0,
+        "terminal_ack_missing_after_execution": false,
+        "terminal_native_visit_execution_proof": null,
+        "terminal_unconfirmed_action_indices": [],
+        "classification": "complete_execution"
+      },
+      "native_result_sha256": "afc903d1878272016bd0b49a727bc403b8dad57bcebe424f99dae08333a62e58",
+      "worker_log_sha256": "72b2b2431dd385230918f2ff8aa81ff2548878966e07e9bdb24e056601ee360d"
+    }
+  ],
+  "total_samples": 3482,
+  "recorded_optimizer_steps": 0,
+  "frozen_input_changes": [],
+  "policy_unchanged": true,
+  "remaining_processes_report": [],
+  "errors": [],
+  "passed": true
+}

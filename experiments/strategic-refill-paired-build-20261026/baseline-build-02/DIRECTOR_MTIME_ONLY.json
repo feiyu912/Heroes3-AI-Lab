@@ -1,0 +1,8 @@
+{
+  "path": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/AI/DirectorAI/CDirectorAI.cpp",
+  "reason": "Force current-stage DirectorAI compile and facade relink while reusing only unchanged isolated baseline objects.",
+  "before_sha256": "2d7180f8101d2f60e83d28b84b462e82cd6534b5ce85ac4e13a76c56b7b40eb2",
+  "before_mtime_ns": 1793014819051345704,
+  "after_sha256": "2d7180f8101d2f60e83d28b84b462e82cd6534b5ce85ac4e13a76c56b7b40eb2",
+  "after_mtime_ns": 1793015695947594235
+}

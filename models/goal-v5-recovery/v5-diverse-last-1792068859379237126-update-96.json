@@ -1,0 +1,45 @@
+{
+  "source_checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-96.pt",
+  "backup_checkpoint": "/mnt/g/Heroes3-AI-Lab/models/goal-v5-recovery/v5-diverse-last-1792068859379237126-update-96.pt",
+  "sha256": "a412ff1f621c49be968f448938d81b153bb190a2fe28c7320be77324d08cd6d5",
+  "completed_updates": 96,
+  "environment_steps": 73728,
+  "config": {
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last.json",
+    "mode": "last",
+    "workers": 24,
+    "updates": 128,
+    "rollout": 32,
+    "microbatch": 32,
+    "epochs": 2,
+    "seed": 20261021,
+    "learning_rate": 1e-05,
+    "head_learning_rate": 5e-05,
+    "opponents": [
+      "BattleAI",
+      "MMAI_GPU"
+    ],
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "shaping": 0.5,
+    "step_cost": 0.002,
+    "resume": false,
+    "rotate_every": 16,
+    "native_opponent_device": "cpu",
+    "no_auto_microbatch": false,
+    "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+    "first_battle": false,
+    "requested_opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "fixed_opponent_inference": "central-cuda",
+    "fixed_opponent_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "requested_microbatch": 4
+  },
+  "resume_available": true,
+  "weights_finite": true,
+  "zip_crc_verified": true,
+  "source_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last.json",
+  "validation_status": "Not yet evaluated; backup is not evidence of playing strength"
+}

@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-18T03:49:47.491775+00:00",
+  "locks": {
+    "/root/heroes3-ai-lab/evaluations/.pool-lock": "held_at_probe",
+    "/root/heroes3-ai-lab/evaluations/.gpu-learner-lock": "free_at_probe"
+  },
+  "processes": [
+    {
+      "pid": 419,
+      "cmdline": "/root/heroes3-ai-lab/venv/bin/python /mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/replay_rollout.py --source /root/heroes3-ai-lab/workers/strategy-agent-runs/update-3-episode-0-4edxrk4r/rollout.jsonl --out /mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/replay-diagnostic-01 --map Maps/adv/takeover-v2-train-01-mines --red DirectorAI --blue EmptyAI --seed 2026101930 --seconds 180 --max-decisions 11823 "
+    },
+    {
+      "pid": 421,
+      "cmdline": "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient --headless --testmap Maps/adv/takeover-v2-train-01-mines --nointro --disable-video --savefrequency 1 "
+    }
+  ],
+  "sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/training.json": "0b2d81b1978f1c206c27bbf21f147e6386faa8e8375e26edea0fa8b21d3343ba",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-1.pt": "965eb0f363ba04a09e6844efdb59dbdd7b16aaa53d0e84660d35f376bc9e302b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+    "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/vcmiserver": "26ab58b469584dfd58f5ce2fe3502503409962f6c928c59ad7c63d46c8999a05",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/vcmiclient": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae"
+  },
+  "frozen_verify": {
+    "args": [
+      "bash",
+      "/mnt/g/Heroes3-AI-Lab/experiments/adv-verify-frozen.sh"
+    ],
+    "returncode": 0,
+    "stdout": "OK    libvcmi.so\nOK    libmlclient.so\nOK    libmlserverplugin.so\nOK    vcmiserver\nOK    vcmiclient\nfrozen_intact=true\n",
+    "stderr": ""
+  },
+  "gpu": {
+    "args": [
+      "nvidia-smi",
+      "--query-gpu=name,memory.used,memory.total,utilization.gpu",
+      "--format=csv"
+    ],
+    "returncode": 0,
+    "stdout": "name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]\nNVIDIA GeForce RTX 5070 Ti, 1319 MiB, 16303 MiB, 1 %\n",
+    "stderr": ""
+  }
+}

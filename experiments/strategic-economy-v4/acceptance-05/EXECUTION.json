@@ -1,0 +1,11 @@
+{
+  "schema": "economy-v4-acceptance-execution-v1",
+  "status": "failed",
+  "episodes": [],
+  "scripted_economy": true,
+  "learned_improvement": false,
+  "bc_eligible": 0,
+  "failed_episode": "engineering-map0-red-2026101860",
+  "error": "Traceback (most recent call last):\n  File \"/mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/run_acceptance.py\", line 76, in main\n    assert code==0,f'Native/protocol game failed: {game}'\nAssertionError: Native/protocol game failed: /mnt/g/Heroes3-AI-Lab/experiments/strategic-economy-v4/acceptance-05/engineering-map0-red-2026101860\n",
+  "wall_seconds": 0.14840996500015535
+}

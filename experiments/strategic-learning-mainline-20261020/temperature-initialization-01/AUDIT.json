@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/temperature-initialization-01/temperature-2-initialization.pt",
+  "checkpoint_sha256": "d5908330038444107ed9ba00585fb068e453a5d1636856ba994d9aa3eb68df72",
+  "parent_sha256": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+  "rows_checked": 2588,
+  "max_logit_temperature_error": 0.0,
+  "critic_value_max_error": 0.0,
+  "argmax_unchanged_on_all_train_states": true,
+  "changed_state_keys": [
+    "actor.4.bias",
+    "actor.4.weight",
+    "actor.stop_bias",
+    "prior_scale"
+  ],
+  "new_gradient_steps": 0,
+  "explicit_optimizer_rng_reset_required": true,
+  "ability_improvement_claim": false,
+  "lineage": {
+    "reset_optimizer": true,
+    "reset_rng": true,
+    "discard_rollout": true,
+    "weights_only": true,
+    "parent_checkpoint_sha256": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "parent_training_updates": 1,
+    "parent_optimizer_steps_total": 164,
+    "initialization_intervention": "all actor logits divided by2; critic unchanged",
+    "temperature": 2,
+    "new_gradient_steps": 0,
+    "ability_improvement_claim": false,
+    "audit_sha256": "21d0116f5485af238f52f41df66aa04f5a3f9536d4d4cc4ec7579bf22ba941d3"
+  },
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/initialize_temperature.py": "56af7ae6741744ea1418a60ed9dc30a41f1de9e0517e1377f165111cfe5ec4cd",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/PLAN.md": "388c284aa5a699651b01605a3a800f5c5b560ffae4388d9bfadfb18ec854345a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/train-exploration-audit-01/AUDIT.json": "21d0116f5485af238f52f41df66aa04f5a3f9536d4d4cc4ec7579bf22ba941d3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3"
+  }
+}

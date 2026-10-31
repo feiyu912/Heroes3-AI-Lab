@@ -1,0 +1,5 @@
+# Director-only native request binding
+
+Supersedes the broader unplayed v1 proposal. Preserve that source/build and original failed proxy pair; do not rewrite frozen input. CClient captures the actual shared interface after real request ID/player/waiting registration. The existing public dllName identifies DirectorAI: its requestSent runs once before the complete sendGamePack path (including tryPredictReply), all other interfaces run once after transport as originally. This leaves NK2's QueryReply bookkeeping timing unchanged. Existing hero/object-coordinate/native-ID payload checks are retained.
+
+Run the exact failing train01/red/NK seed2026111002, once+clearance with frozen5398 and all41 Lua assets. Strict apply/ACK and pre-apply real-ID binding gate unchanged; original failed arm stays invalid/unscored. Compare full request/action/trace prefix and note any native nondeterminism. Require exact accepted V8 source/three binary recompilation restoration and frozen battle SHA. Then a separately named rerun of the full preselected8 proxy pairs may use this capsule in both arms. No PPO, expert labels, final test or strength claim.

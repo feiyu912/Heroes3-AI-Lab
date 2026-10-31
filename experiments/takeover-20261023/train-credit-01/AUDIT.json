@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "scope": "2089 original TRAIN observations only; no DEV targets, no causal attribution",
+  "samples": 2089,
+  "episodes": 8,
+  "ppo_metadata": {
+    "samples": 2089,
+    "episodes": 8,
+    "free_choices": 2089,
+    "forced_transitions": 0,
+    "active_actor_episodes": 8,
+    "actor_weight_sum": 2089.0,
+    "critic_weight_sum": 2089.0,
+    "advantage_mean": 0.21078976181935116,
+    "advantage_variance": 0.3305937513420675,
+    "per_episode": [
+      {
+        "episode_id": "5aaeeaec56f0dce6752e6dee5d413ec45646697398979ea71c828d950faf3585",
+        "steps": 621,
+        "free_choices": 621,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "29a22209ac6772bd5779e51ccab2b45f3730c6de2ce8fe183cca7e994daebecf",
+        "steps": 294,
+        "free_choices": 294,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "377a44aeca72b736f7f39aa0a6d7f98e4bab3db219d78a649511f31e4dea914f",
+        "steps": 77,
+        "free_choices": 77,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "077ffc9db267668e65ca7a3b7085a030c425b893e5552a5282dab6504d229a69",
+        "steps": 93,
+        "free_choices": 93,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "dd7be8313acb26de8aac89a9ece3ec1a064632c24fc8c9d6b816dcf5a6534e7c",
+        "steps": 241,
+        "free_choices": 241,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "f492d4d637cfebf94f1cbf12fab5194f5db9fcc7ed3dff9de886be8dd8ec392b",
+        "steps": 582,
+        "free_choices": 582,
+        "reward": 1.0
+      },
+      {
+        "episode_id": "bd676c6be3da41ce1b40ec5b9cf4d8e97cf899326783b59472e1f91327fb3949",
+        "steps": 97,
+        "free_choices": 97,
+        "reward": -1.0
+      },
+      {
+        "episode_id": "3202977671d4cb83eb27acdd7765686f0826aa4137b90de02d72902e5e586f75",
+        "steps": 84,
+        "free_choices": 84,
+        "reward": -1.0
+      }
+    ],
+    "collector_manifest_verified": true
+  },
+  "groups": [
+    {
+      "opponent": "EmptyAI",
+      "action": "build",
+      "rows": 35,
+      "episodes": 4,
+      "raw_advantage_mean": 0.21468264375414167,
+      "normalized_advantage_mean": 0.0067705633118748665,
+      "positive_normalized_rows": 17,
+      "negative_normalized_rows": 18,
+      "actor_mass": 21.2047061920166,
+      "weighted_normalized_advantage_sum": 5.4666852951049805,
+      "army_mean": 16398.2
+    },
+    {
+      "opponent": "EmptyAI",
+      "action": "end_turn",
+      "rows": 158,
+      "episodes": 4,
+      "raw_advantage_mean": 0.1998632181482979,
+      "normalized_advantage_mean": -0.019003575667738914,
+      "positive_normalized_rows": 73,
+      "negative_normalized_rows": 85,
+      "actor_mass": 90.67847442626953,
+      "weighted_normalized_advantage_sum": 19.455406188964844,
+      "army_mean": 16125.449367088608
+    },
+    {
+      "opponent": "EmptyAI",
+      "action": "mine",
+      "rows": 97,
+      "episodes": 4,
+      "raw_advantage_mean": 0.45004183453382907,
+      "normalized_advantage_mean": 0.41611021757125854,
+      "positive_normalized_rows": 53,
+      "negative_normalized_rows": 44,
+      "actor_mass": 64.26203155517578,
+      "weighted_normalized_advantage_sum": 47.51701354980469,
+      "army_mean": 16249.577319587628
+    },
+    {
+      "opponent": "EmptyAI",
+      "action": "other_move",
+      "rows": 1369,
+      "episodes": 4,
+      "raw_advantage_mean": 0.24893176390186028,
+      "normalized_advantage_mean": 0.06633704155683517,
+      "positive_normalized_rows": 640,
+      "negative_normalized_rows": 729,
+      "actor_mass": 823.5526733398438,
+      "weighted_normalized_advantage_sum": 269.5487060546875,
+      "army_mean": 17045.878743608475
+    },
+    {
+      "opponent": "EmptyAI",
+      "action": "own_town",
+      "rows": 79,
+      "episodes": 4,
+      "raw_advantage_mean": 0.040842058066325855,
+      "normalized_advantage_mean": -0.29557517170906067,
+      "positive_normalized_rows": 26,
+      "negative_normalized_rows": 53,
+      "actor_mass": 44.80220031738281,
+      "weighted_normalized_advantage_sum": -5.492143630981445,
+      "army_mean": 15706.569620253165
+    },
+    {
+      "opponent": "Nullkiller2",
+      "action": "build",
+      "rows": 6,
+      "episodes": 3,
+      "raw_advantage_mean": -0.1806292881568273,
+      "normalized_advantage_mean": -0.6807610392570496,
+      "positive_normalized_rows": 1,
+      "negative_normalized_rows": 5,
+      "actor_mass": 17.19864273071289,
+      "weighted_normalized_advantage_sum": -11.621929168701172,
+      "army_mean": 3945.0
+    },
+    {
+      "opponent": "Nullkiller2",
+      "action": "end_turn",
+      "rows": 22,
+      "episodes": 4,
+      "raw_advantage_mean": 0.007735819979147477,
+      "normalized_advantage_mean": -0.3531539738178253,
+      "positive_normalized_rows": 5,
+      "negative_normalized_rows": 17,
+      "actor_mass": 66.12812042236328,
+      "weighted_normalized_advantage_sum": -21.50090789794922,
+      "army_mean": 4122.636363636364
+    },
+    {
+      "opponent": "Nullkiller2",
+      "action": "mine",
+      "rows": 50,
+      "episodes": 4,
+      "raw_advantage_mean": 0.047304161190986634,
+      "normalized_advantage_mean": -0.28433623909950256,
+      "positive_normalized_rows": 21,
+      "negative_normalized_rows": 29,
+      "actor_mass": 158.18821716308594,
+      "weighted_normalized_advantage_sum": -45.0743522644043,
+      "army_mean": 4034.68
+    },
+    {
+      "opponent": "Nullkiller2",
+      "action": "other_move",
+      "rows": 262,
+      "episodes": 4,
+      "raw_advantage_mean": 0.041563722127266514,
+      "normalized_advantage_mean": -0.2943200469017029,
+      "positive_normalized_rows": 105,
+      "negative_normalized_rows": 157,
+      "actor_mass": 771.27978515625,
+      "weighted_normalized_advantage_sum": -222.75071716308594,
+      "army_mean": 4154.778625954198
+    },
+    {
+      "opponent": "Nullkiller2",
+      "action": "own_town",
+      "rows": 11,
+      "episodes": 3,
+      "raw_advantage_mean": -0.4211098429831592,
+      "normalized_advantage_mean": -1.0990077257156372,
+      "positive_normalized_rows": 0,
+      "negative_normalized_rows": 11,
+      "actor_mass": 31.705276489257812,
+      "weighted_normalized_advantage_sum": -35.5477409362793,
+      "army_mean": 2860.0
+    }
+  ],
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-00/admitted/AUDIT.json": "204d81a9d0a783dbed1f29ea602dff9fb0a0b6cd68558a8884caabbaac3362bc",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-01/admitted/AUDIT.json": "582b5fb964f32718449dff0e4115374312d3477fc4971537836fa03f059c86ff",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-02/admitted/AUDIT.json": "673a47ae97e7acd018538e578f4f9461405ec885bcf711cb3ed5cf20400708e8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-03/admitted/AUDIT.json": "68e9426a5275e8508aa6501ae3ca0c285298cef725943346fc23a721d8a91a15",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-04/admitted/AUDIT.json": "65fa4ecbb7ca83da47ec31cf03db9496824a9c109cd43d17faade7999df3b6bf",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-05/admitted/AUDIT.json": "f4206abbfe263d755fdc2922439af706ba310e7c8301b31ce9842d32c135b1ff",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-06/admitted/AUDIT.json": "fcb34a83809e7083ad48ef03d704dd92dfd53fdc0452ff6e81d77058dd4c251c",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/cell-07/admitted/AUDIT.json": "ef62f029e70fc4cfa5cf1e5c7afe81cc8fff158eb0189c098ec355e48ae520cd"
+  },
+  "native_games_started": 0,
+  "optimizer_steps": 0,
+  "interpretation": "The sign is the actual initial PPO surrogate reinforcement direction, conditional on sampled actions. It is not a causal estimate of refill utility or the gradient of the final updated policy."
+}

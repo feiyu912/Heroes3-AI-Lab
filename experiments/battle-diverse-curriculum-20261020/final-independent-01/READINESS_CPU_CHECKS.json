@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Static source and fake incomplete-final fixtures only; no training/native recovery executed",
+  "gate_negative_tests": [
+    {
+      "stage": 0,
+      "rejected": true
+    },
+    {
+      "stage": 1,
+      "rejected": true
+    },
+    {
+      "stage": 2,
+      "rejected": true
+    },
+    {
+      "stage": 3,
+      "rejected": true
+    }
+  ],
+  "resume_CLI_qualified": false,
+  "resume_explicitly_rejected": true,
+  "latent_branch_missing_restores": [
+    "Python RNG",
+    "NumPy RNG",
+    "cumulative optimizer hook counter"
+  ],
+  "phase_after_completed_30": 15,
+  "registered_phase_count": 15,
+  "native_environment_restorable": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps_performed": 0,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/final-independent-01/audit_final.py": "af0319ffd6a1442c1bf3f7f51e541aa2bd12374fb33434e841c0c2203a45c915",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/support.py": "97dcc2e1efb214ee39ead053cebe530f2feae1cb5d1ca45a29d138da68ddc638",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/train_last_graph.py": "bfb556cb56841bdd112dbc908aa4d36b5df982cfdcd6982ad5fca80ae012a4c4",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/curriculum.py": "3bea9f42f55dadca8e1b7e6c238e22a83781ba3094f94203a95bc62e2e6f57bc",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-diverse-curriculum-20261020/final-independent-01/check_readiness.py": "dd407378c1085fe4bc65b6230baa9a6d54135029faa251f4d232a6ab76d85c17"
+  }
+}

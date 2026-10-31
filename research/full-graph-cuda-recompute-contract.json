@@ -1,0 +1,78 @@
+{
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-112.pt",
+  "distinct_training_observations": 64,
+  "role_observation_combinations": 128,
+  "trials": [
+    {
+      "deterministic": false,
+      "batch_size": 24,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 9.918212890625e-05,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 8.630752563476562e-05,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": false,
+      "batch_size": 32,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.0001220703125,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 9.608268737792969e-05,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": false,
+      "batch_size": 8,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.00018310546875,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 9.083747863769531e-05,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": false,
+      "batch_size": 64,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.000152587890625,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 0.00012040138244628906,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": true,
+      "batch_size": 24,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.0,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 0.0,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": true,
+      "batch_size": 32,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.000213623046875,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 5.14984130859375e-05,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": true,
+      "batch_size": 8,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.00018310546875,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 0.00012183189392089844,
+      "greedy_differences": 0
+    },
+    {
+      "deterministic": true,
+      "batch_size": 64,
+      "repeats": 3,
+      "maximum_all_legal_log_probability_error": 0.000244140625,
+      "maximum_log_probability_error_for_p_above_exp_minus12": 4.57763671875e-05,
+      "greedy_differences": 0
+    }
+  ],
+  "no_optimizer_updates": true,
+  "weights_unchanged": true,
+  "gradient_paths_passed": true,
+  "matmul_allow_tf32": false,
+  "cublas_workspace": ":4096:8",
+  "deterministic_rollout_batch_exact": true,
+  "explanation": "All legal-action log probabilities are checked, including extremely unlikely actions; raw full graph repeats and different batch partitions, unlike cached-head-only test."
+}

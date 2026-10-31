@@ -1,0 +1,47 @@
+{
+  "passed_exact": true,
+  "checkpoint_sha256": "b52ac74ad3b0ba6860e57be0a6b2deed9d8c88f14e140b59bd2c61e8b1f739fc",
+  "auditor_sha256": "bf854b3b3dffb9428c3fae6903556586fe99c6e1df6b3cb9b3d222995402c172",
+  "audit_optimizer_steps": 0,
+  "new_native_games": 0,
+  "actual_CUDA_restore_executed": true,
+  "model_Adam_exact": true,
+  "cpu_CUDA_python_RNG_exact": true,
+  "invalid_resume_does_not_mutate_state": true,
+  "negative_cases": [
+    "partial",
+    "protocol",
+    "counter",
+    "bad_CPU_RNG",
+    "bad_CUDA_RNG",
+    "bad_Python_RNG",
+    "wrong_LR",
+    "parameter_order",
+    "cpu_as_cuda",
+    "moment:actor.recruit_bias",
+    "moment:recruit_actor.weight",
+    "moment:recruit_critic.weight"
+  ],
+  "training_updates": 1,
+  "optimizer_steps_restored": 260,
+  "new_recruitment_parameters": {
+    "actor.recruit_bias": {
+      "Adam_step": 260,
+      "moment_norm": 0.001479018130339682,
+      "parameter_norm": 0.01471861731261015
+    },
+    "recruit_actor.weight": {
+      "Adam_step": 260,
+      "moment_norm": 0.02835972234606743,
+      "parameter_norm": 0.05881432071328163
+    },
+    "recruit_critic.weight": {
+      "Adam_step": 260,
+      "moment_norm": 0.0064914776012301445,
+      "parameter_norm": 0.09823325276374817
+    }
+  },
+  "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+  "source_inputs_unchanged": true,
+  "limitation": "Restores saved learner boundary, not in-flight native state or ability improvement."
+}

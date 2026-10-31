@@ -1,0 +1,50 @@
+--- previous/AI/DirectorAI/CDirectorAI.cpp
++++ bind-first/AI/DirectorAI/CDirectorAI.cpp
+@@ -388,6 +388,7 @@
+ 		zeroLength ? " (interact with current tile)" : "");
+ 	traceState("before_move");
+ 	traceDecision(hero, destination, step);
++	preparedTyped->objectStep=hero->convertFromVisitablePos(step);
+ 	cb->moveHero(hero, hero->convertFromVisitablePos(step), false, EPathfindingLayer::LAND);
+ 	return true;
+ }
+@@ -498,6 +499,14 @@
+  if(!move && !end) return;
+  if(requestID<1 || !preparedTyped || outstandingTyped || preparedTyped->ownTurn!=ownTurns ||
+     preparedTyped->op!=(move ? "move" : "end_turn")) { typedFailure("unbound_native_request");return; }
++
++ if(pack->player!=playerID || static_cast<int>(pack->requestID)!=requestID)
++ { typedFailure("actual_native_request_identity_mismatch");return; }
++ if(const auto * actual=dynamic_cast<const MoveHero *>(pack))
++ {
++  if(actual->hid.getNum()!=preparedTyped->hero || actual->path.size()!=1 || actual->path.front()!=preparedTyped->objectStep)
++  { typedFailure("actual_native_move_payload_mismatch");return; }
++ }
+  outstandingTyped=*preparedTyped;outstandingTyped->nativeRequestID=requestID;preparedTyped.reset();
+  emitTypedAction("native_action_sent",*outstandingTyped);
+ }
+--- previous/AI/DirectorAI/CDirectorAI.h
++++ bind-first/AI/DirectorAI/CDirectorAI.h
+@@ -86,6 +86,7 @@
+  struct TypedContext
+  {
+   bool automatic = false;bool moveResultSeen = false;
++  int3 objectStep = int3(-1,-1,-1);
+   int decisionID = -1;int nativeRequestID = -1;int player = 0;int hero = 0;int ownTurn = 0;int selectedIndex = -1;
+   std::string op, requestSHA, candidateJSON, classification, automaticReason;
+  };
+--- previous/client/Client.cpp
++++ bind-first/client/Client.cpp
+@@ -533,9 +533,11 @@
+ 	waitingRequest.pushBack(requestID);
+ 	request.requestID = requestID;
+ 	request.player = player;
+-	GAME->server().sendGamePack(request);
++	// Bind the allocated request identity before another thread may apply it.
++	// waitingRequest already owns this ID; actual server apply/ACK remain mandatory.
+ 	if(vstd::contains(playerint, player))
+ 		playerint[player]->requestSent(&request, requestID);
++	GAME->server().sendGamePack(request);
+ 
+ 	if(waitTillRealize)
+ 	{

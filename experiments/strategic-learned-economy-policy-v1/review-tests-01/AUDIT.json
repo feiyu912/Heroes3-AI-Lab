@@ -1,0 +1,108 @@
+{
+  "synthetic_only": true,
+  "positive_fixture_passed": true,
+  "native_games": 0,
+  "optimizer_steps": 0,
+  "rejection_cases": [
+    {
+      "case": "wrong_cost",
+      "rejected": true,
+      "error": "Actual resource packets/state/cost disagree"
+    },
+    {
+      "case": "wrong_actual_nativeid",
+      "rejected": true,
+      "error": "Actual BuildStructure payload mismatch"
+    },
+    {
+      "case": "wrong_server_nativeid",
+      "rejected": true,
+      "error": "Unbound real server build"
+    },
+    {
+      "case": "missing_ack",
+      "rejected": true,
+      "error": "Build still outstanding at EOF"
+    },
+    {
+      "case": "missing_structures",
+      "rejected": true,
+      "error": "Missing received NewStructures/callback"
+    },
+    {
+      "case": "missing_resources",
+      "rejected": true,
+      "error": "Actual resource packets/state/cost disagree"
+    },
+    {
+      "case": "missing_build_callback",
+      "rejected": true,
+      "error": "Missing received NewStructures/callback"
+    },
+    {
+      "case": "missing_server_apply",
+      "rejected": true,
+      "error": "Incomplete real build evidence"
+    },
+    {
+      "case": "wrong_ack_resource_state",
+      "rejected": true,
+      "error": "Actual resource packets/state/cost disagree"
+    },
+    {
+      "case": "wrong_town",
+      "rejected": true,
+      "error": "Wrong build subject"
+    },
+    {
+      "case": "wrong_building",
+      "rejected": true,
+      "error": "Wrong build subject"
+    },
+    {
+      "case": "wrong_ack_binding",
+      "rejected": true,
+      "error": "Unbound build observation"
+    },
+    {
+      "case": "wrong_daily_counter",
+      "rejected": true,
+      "error": "Build daily counter mismatch"
+    },
+    {
+      "case": "mirror_mismatch",
+      "rejected": true,
+      "error": "Raw received-pack log/file mirror mismatch"
+    },
+    {
+      "case": "second_window_reopened",
+      "rejected": true,
+      "error": "Build window is not the first actual policy choice"
+    },
+    {
+      "case": "late_subject_server_apply_after_ACK",
+      "rejected": false
+    },
+    {
+      "case": "early_ack_state_before_subject_server_apply",
+      "rejected": false
+    },
+    {
+      "case": "window_reopened_after_move",
+      "rejected": true,
+      "error": "Build window is not the first actual policy choice"
+    }
+  ],
+  "unrejected": [
+    "late_subject_server_apply_after_ACK",
+    "early_ack_state_before_subject_server_apply"
+  ],
+  "reviewed_source_sha256": {
+    "build_evidence.py": "bbc94eb556032fbb30f59719d9ef5093b6033471a382b28b98d5d8a0b4ad91bf",
+    "collect_episode_v5.py": "0ab4d8788a88af3db83d619dd549527dd1a9de9db9d3172ecbd046c299e78580",
+    "pipeline_common.py": "5f8a1456f0ed0df270988bf2a972559e6dd391f0bd73d928e50ed5427a236e72",
+    "audit_contract.py": "807f5bd8b1b6ee020f912ca72840a5b3ae47c26a9fdaac3cc9219342b70f714e",
+    "raw_events_v5.py": "5cf48a8baf89517dce029a54134bdaad2112099726cba1969cc11385f7eb3493",
+    "audit_game_v6.py": "c23cfc9d3f230ec5a4c4b1882c373209434cbe67de253e502eaa97ac765a2673"
+  }
+}

@@ -1,0 +1,2621 @@
+{
+  "diagnostic_only": true,
+  "audits": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/adv-runs/update-3-episode-0-2026101930-2ahbjm60/client.log",
+      "sha256": "1c007db77a8afccba222fc411a804e77967b374bbab18951936fdd28d49c0308",
+      "spawns": [
+        {
+          "line": 42679,
+          "position": [
+            22,
+            15,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42684,
+          "position": [
+            11,
+            19,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42695,
+          "position": [
+            25,
+            13,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42705,
+          "position": [
+            29,
+            33,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42714,
+          "position": [
+            27,
+            34,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42724,
+          "position": [
+            30,
+            12,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 77903,
+          "position": [
+            21,
+            6,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77908,
+          "position": [
+            10,
+            24,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77917,
+          "position": [
+            0,
+            15,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77927,
+          "position": [
+            33,
+            18,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77938,
+          "position": [
+            34,
+            32,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 203757,
+          "position": [
+            22,
+            17,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203762,
+          "position": [
+            32,
+            27,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203772,
+          "position": [
+            9,
+            30,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203782,
+          "position": [
+            12,
+            1,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203792,
+          "position": [
+            29,
+            16,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 222175,
+          "position": [
+            2,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222180,
+          "position": [
+            9,
+            35,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222190,
+          "position": [
+            12,
+            5,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222200,
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222206,
+          "position": [
+            28,
+            31,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 240705,
+          "position": [
+            8,
+            27,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240710,
+          "position": [
+            34,
+            29,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240716,
+          "position": [
+            13,
+            7,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240725,
+          "position": [
+            27,
+            13,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240739,
+          "position": [
+            20,
+            13,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 315384,
+          "position": [
+            16,
+            4,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315391,
+          "position": [
+            24,
+            29,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315401,
+          "position": [
+            17,
+            11,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315411,
+          "position": [
+            14,
+            35,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315424,
+          "position": [
+            18,
+            19,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 389331,
+          "position": [
+            6,
+            16,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389336,
+          "position": [
+            22,
+            27,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389346,
+          "position": [
+            2,
+            9,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389357,
+          "position": [
+            1,
+            3,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 407903,
+          "position": [
+            16,
+            16,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407909,
+          "position": [
+            23,
+            4,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407915,
+          "position": [
+            22,
+            0,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407920,
+          "position": [
+            26,
+            9,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 482653,
+          "position": [
+            9,
+            3,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482658,
+          "position": [
+            32,
+            15,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482667,
+          "position": [
+            11,
+            28,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482677,
+          "position": [
+            4,
+            13,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 519204,
+          "position": [
+            9,
+            11,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519209,
+          "position": [
+            22,
+            30,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519219,
+          "position": [
+            7,
+            34,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519229,
+          "position": [
+            3,
+            25,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 556735,
+          "position": [
+            35,
+            22,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556740,
+          "position": [
+            7,
+            29,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556750,
+          "position": [
+            20,
+            3,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556760,
+          "position": [
+            13,
+            28,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 575185,
+          "position": [
+            20,
+            18,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575190,
+          "position": [
+            15,
+            12,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575199,
+          "position": [
+            30,
+            26,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575209,
+          "position": [
+            34,
+            20,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 630454,
+          "position": [
+            3,
+            16,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630459,
+          "position": [
+            9,
+            21,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630468,
+          "position": [
+            20,
+            9,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630480,
+          "position": [
+            29,
+            21,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 684602,
+          "position": [
+            15,
+            14,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 684607,
+          "position": [
+            35,
+            34,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 684614,
+          "position": [
+            13,
+            25,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 720901,
+          "position": [
+            33,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 720906,
+          "position": [
+            1,
+            23,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 720915,
+          "position": [
+            5,
+            25,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 775731,
+          "position": [
+            5,
+            23,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 775738,
+          "position": [
+            2,
+            11,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 775744,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 811755,
+          "position": [
+            32,
+            32,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 811761,
+          "position": [
+            31,
+            1,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 811772,
+          "position": [
+            4,
+            32,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 830210,
+          "position": [
+            19,
+            0,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 830215,
+          "position": [
+            6,
+            12,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 830225,
+          "position": [
+            17,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 868969,
+          "position": [
+            4,
+            11,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 868974,
+          "position": [
+            16,
+            24,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 868979,
+          "position": [
+            2,
+            18,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 888477,
+          "position": [
+            5,
+            0,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 888484,
+          "position": [
+            28,
+            1,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 888494,
+          "position": [
+            35,
+            5,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 896192,
+          "position": [
+            2,
+            21,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 896197,
+          "position": [
+            35,
+            13,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 896204,
+          "position": [
+            19,
+            34,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 904132,
+          "position": [
+            25,
+            31,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 904138,
+          "position": [
+            26,
+            23,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 904148,
+          "position": [
+            21,
+            33,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 908011,
+          "position": [
+            10,
+            33,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 908018,
+          "position": [
+            14,
+            23,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 908027,
+          "position": [
+            1,
+            28,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 916048,
+          "position": [
+            4,
+            20,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1709
+        },
+        {
+          "line": 916053,
+          "position": [
+            0,
+            12,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1709
+        },
+        {
+          "line": 939677,
+          "position": [
+            32,
+            25,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1877
+        },
+        {
+          "line": 939682,
+          "position": [
+            26,
+            6,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1877
+        },
+        {
+          "line": 947255,
+          "position": [
+            6,
+            2,
+            0
+          ],
+          "creature_id": 44,
+          "day": 1933
+        },
+        {
+          "line": 947261,
+          "position": [
+            8,
+            24,
+            0
+          ],
+          "creature_id": 44,
+          "day": 1933
+        }
+      ],
+      "unassigned_spawns": [],
+      "creature_object_ids": 95,
+      "new_object_broadcasts": 95,
+      "spawns_through_day1305": 74,
+      "near_final_hero_through_day1305": [
+        {
+          "line": 203792,
+          "position": [
+            29,
+            16,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        }
+      ]
+    },
+    {
+      "path": "/root/heroes3-ai-lab/workers/adv-runs/replay-diagnostic-03-2026101930-8jgwyzie/client.log",
+      "sha256": "1aae39a4e18af8f6240b34b11731106e918b4123a2dbf95df82c2354bfc803c2",
+      "spawns": [
+        {
+          "line": 42679,
+          "position": [
+            22,
+            15,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42684,
+          "position": [
+            11,
+            19,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42694,
+          "position": [
+            25,
+            13,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42704,
+          "position": [
+            29,
+            33,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42714,
+          "position": [
+            27,
+            34,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 42724,
+          "position": [
+            30,
+            12,
+            0
+          ],
+          "creature_id": 104,
+          "day": 57
+        },
+        {
+          "line": 77903,
+          "position": [
+            21,
+            6,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77908,
+          "position": [
+            10,
+            24,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77918,
+          "position": [
+            0,
+            15,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77929,
+          "position": [
+            33,
+            18,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 77939,
+          "position": [
+            34,
+            32,
+            0
+          ],
+          "creature_id": 44,
+          "day": 113
+        },
+        {
+          "line": 203755,
+          "position": [
+            22,
+            17,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203760,
+          "position": [
+            32,
+            27,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203765,
+          "position": [
+            9,
+            30,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203772,
+          "position": [
+            12,
+            1,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 203779,
+          "position": [
+            29,
+            16,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        },
+        {
+          "line": 222173,
+          "position": [
+            2,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222179,
+          "position": [
+            9,
+            35,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222185,
+          "position": [
+            12,
+            5,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222195,
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 222201,
+          "position": [
+            28,
+            31,
+            0
+          ],
+          "creature_id": 60,
+          "day": 337
+        },
+        {
+          "line": 240701,
+          "position": [
+            8,
+            27,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240706,
+          "position": [
+            34,
+            29,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240711,
+          "position": [
+            13,
+            7,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240716,
+          "position": [
+            27,
+            13,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 240721,
+          "position": [
+            20,
+            13,
+            0
+          ],
+          "creature_id": 100,
+          "day": 365
+        },
+        {
+          "line": 315384,
+          "position": [
+            16,
+            4,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315391,
+          "position": [
+            24,
+            29,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315401,
+          "position": [
+            17,
+            11,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315411,
+          "position": [
+            14,
+            35,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 315421,
+          "position": [
+            18,
+            19,
+            0
+          ],
+          "creature_id": 60,
+          "day": 477
+        },
+        {
+          "line": 389327,
+          "position": [
+            6,
+            16,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389332,
+          "position": [
+            22,
+            27,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389337,
+          "position": [
+            2,
+            9,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 389342,
+          "position": [
+            1,
+            3,
+            0
+          ],
+          "creature_id": 44,
+          "day": 589
+        },
+        {
+          "line": 407903,
+          "position": [
+            16,
+            16,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407908,
+          "position": [
+            23,
+            4,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407913,
+          "position": [
+            22,
+            0,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 407918,
+          "position": [
+            26,
+            9,
+            0
+          ],
+          "creature_id": 14,
+          "day": 617
+        },
+        {
+          "line": 482649,
+          "position": [
+            9,
+            3,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482654,
+          "position": [
+            32,
+            15,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482661,
+          "position": [
+            11,
+            28,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 482666,
+          "position": [
+            4,
+            13,
+            0
+          ],
+          "creature_id": 70,
+          "day": 729
+        },
+        {
+          "line": 519202,
+          "position": [
+            9,
+            11,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519210,
+          "position": [
+            22,
+            30,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519219,
+          "position": [
+            7,
+            34,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 519229,
+          "position": [
+            3,
+            25,
+            0
+          ],
+          "creature_id": 85,
+          "day": 785
+        },
+        {
+          "line": 556735,
+          "position": [
+            35,
+            22,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556740,
+          "position": [
+            7,
+            29,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556749,
+          "position": [
+            20,
+            3,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 556760,
+          "position": [
+            13,
+            28,
+            0
+          ],
+          "creature_id": 60,
+          "day": 841
+        },
+        {
+          "line": 575183,
+          "position": [
+            20,
+            18,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575189,
+          "position": [
+            15,
+            12,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575196,
+          "position": [
+            30,
+            26,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 575209,
+          "position": [
+            34,
+            20,
+            0
+          ],
+          "creature_id": 14,
+          "day": 869
+        },
+        {
+          "line": 630454,
+          "position": [
+            3,
+            16,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630459,
+          "position": [
+            9,
+            21,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630469,
+          "position": [
+            20,
+            9,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 630479,
+          "position": [
+            29,
+            21,
+            0
+          ],
+          "creature_id": 20,
+          "day": 953
+        },
+        {
+          "line": 684602,
+          "position": [
+            15,
+            14,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 684607,
+          "position": [
+            35,
+            34,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 684617,
+          "position": [
+            13,
+            25,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1037
+        },
+        {
+          "line": 720897,
+          "position": [
+            33,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 720902,
+          "position": [
+            1,
+            23,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 720909,
+          "position": [
+            5,
+            25,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1093
+        },
+        {
+          "line": 775731,
+          "position": [
+            5,
+            23,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 775736,
+          "position": [
+            2,
+            11,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 775741,
+          "position": [
+            26,
+            17,
+            0
+          ],
+          "creature_id": 85,
+          "day": 1177
+        },
+        {
+          "line": 811756,
+          "position": [
+            32,
+            32,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 811761,
+          "position": [
+            31,
+            1,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 811769,
+          "position": [
+            4,
+            32,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1233
+        },
+        {
+          "line": 830209,
+          "position": [
+            19,
+            0,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 830215,
+          "position": [
+            6,
+            12,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 830223,
+          "position": [
+            17,
+            34,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1261
+        },
+        {
+          "line": 868973,
+          "position": [
+            4,
+            11,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 868978,
+          "position": [
+            16,
+            24,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 868988,
+          "position": [
+            2,
+            18,
+            0
+          ],
+          "creature_id": 104,
+          "day": 1373
+        },
+        {
+          "line": 888477,
+          "position": [
+            5,
+            0,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 888482,
+          "position": [
+            28,
+            1,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 888487,
+          "position": [
+            35,
+            5,
+            0
+          ],
+          "creature_id": 14,
+          "day": 1513
+        },
+        {
+          "line": 896192,
+          "position": [
+            2,
+            21,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 896199,
+          "position": [
+            35,
+            13,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 896207,
+          "position": [
+            19,
+            34,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1569
+        },
+        {
+          "line": 904129,
+          "position": [
+            25,
+            31,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 904134,
+          "position": [
+            26,
+            23,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 904139,
+          "position": [
+            21,
+            33,
+            0
+          ],
+          "creature_id": 100,
+          "day": 1625
+        },
+        {
+          "line": 908009,
+          "position": [
+            10,
+            33,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 908015,
+          "position": [
+            14,
+            23,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 908021,
+          "position": [
+            1,
+            28,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1653
+        },
+        {
+          "line": 916048,
+          "position": [
+            4,
+            20,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1709
+        },
+        {
+          "line": 916053,
+          "position": [
+            0,
+            12,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1709
+        },
+        {
+          "line": 939679,
+          "position": [
+            32,
+            25,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1877
+        },
+        {
+          "line": 939685,
+          "position": [
+            26,
+            6,
+            0
+          ],
+          "creature_id": 70,
+          "day": 1877
+        },
+        {
+          "line": 947256,
+          "position": [
+            6,
+            2,
+            0
+          ],
+          "creature_id": 44,
+          "day": 1933
+        },
+        {
+          "line": 947263,
+          "position": [
+            8,
+            24,
+            0
+          ],
+          "creature_id": 44,
+          "day": 1933
+        },
+        {
+          "line": 951084,
+          "position": [
+            27,
+            4,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1961
+        },
+        {
+          "line": 951089,
+          "position": [
+            2,
+            14,
+            0
+          ],
+          "creature_id": 60,
+          "day": 1961
+        },
+        {
+          "line": 954772,
+          "position": [
+            5,
+            35,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1989
+        },
+        {
+          "line": 954779,
+          "position": [
+            15,
+            29,
+            0
+          ],
+          "creature_id": 20,
+          "day": 1989
+        },
+        {
+          "line": 958516,
+          "position": [
+            7,
+            32,
+            0
+          ],
+          "creature_id": 100,
+          "day": 2017
+        },
+        {
+          "line": 958523,
+          "position": [
+            32,
+            12,
+            0
+          ],
+          "creature_id": 100,
+          "day": 2017
+        },
+        {
+          "line": 966135,
+          "position": [
+            16,
+            2,
+            0
+          ],
+          "creature_id": 70,
+          "day": 2073
+        },
+        {
+          "line": 966140,
+          "position": [
+            10,
+            16,
+            0
+          ],
+          "creature_id": 70,
+          "day": 2073
+        },
+        {
+          "line": 973854,
+          "position": [
+            0,
+            20,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2129
+        },
+        {
+          "line": 973859,
+          "position": [
+            30,
+            24,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2129
+        },
+        {
+          "line": 981753,
+          "position": [
+            10,
+            14,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2185
+        },
+        {
+          "line": 981760,
+          "position": [
+            5,
+            30,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2185
+        },
+        {
+          "line": 985722,
+          "position": [
+            10,
+            9,
+            0
+          ],
+          "creature_id": 14,
+          "day": 2213
+        },
+        {
+          "line": 985728,
+          "position": [
+            35,
+            0,
+            0
+          ],
+          "creature_id": 14,
+          "day": 2213
+        },
+        {
+          "line": 993862,
+          "position": [
+            10,
+            6,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2269
+        },
+        {
+          "line": 993867,
+          "position": [
+            3,
+            28,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2269
+        },
+        {
+          "line": 997954,
+          "position": [
+            19,
+            27,
+            0
+          ],
+          "creature_id": 100,
+          "day": 2297
+        },
+        {
+          "line": 997961,
+          "position": [
+            4,
+            5,
+            0
+          ],
+          "creature_id": 100,
+          "day": 2297
+        },
+        {
+          "line": 1006163,
+          "position": [
+            31,
+            9,
+            0
+          ],
+          "creature_id": 85,
+          "day": 2353
+        },
+        {
+          "line": 1006168,
+          "position": [
+            5,
+            27,
+            0
+          ],
+          "creature_id": 85,
+          "day": 2353
+        },
+        {
+          "line": 1010203,
+          "position": [
+            20,
+            31,
+            0
+          ],
+          "creature_id": 72,
+          "day": 2381
+        },
+        {
+          "line": 1010208,
+          "position": [
+            34,
+            27,
+            0
+          ],
+          "creature_id": 72,
+          "day": 2381
+        },
+        {
+          "line": 1018132,
+          "position": [
+            1,
+            32,
+            0
+          ],
+          "creature_id": 70,
+          "day": 2437
+        },
+        {
+          "line": 1018137,
+          "position": [
+            15,
+            21,
+            0
+          ],
+          "creature_id": 70,
+          "day": 2437
+        },
+        {
+          "line": 1022208,
+          "position": [
+            17,
+            30,
+            0
+          ],
+          "creature_id": 20,
+          "day": 2465
+        },
+        {
+          "line": 1022213,
+          "position": [
+            13,
+            20,
+            0
+          ],
+          "creature_id": 20,
+          "day": 2465
+        },
+        {
+          "line": 1026334,
+          "position": [
+            11,
+            35,
+            0
+          ],
+          "creature_id": 100,
+          "day": 2493
+        },
+        {
+          "line": 1060030,
+          "position": [
+            26,
+            28,
+            0
+          ],
+          "creature_id": 60,
+          "day": 2745
+        },
+        {
+          "line": 1063484,
+          "position": [
+            0,
+            10,
+            0
+          ],
+          "creature_id": 28,
+          "day": 2773
+        },
+        {
+          "line": 1070381,
+          "position": [
+            5,
+            18,
+            0
+          ],
+          "creature_id": 44,
+          "day": 2829
+        },
+        {
+          "line": 1073807,
+          "position": [
+            23,
+            8,
+            0
+          ],
+          "creature_id": 4,
+          "day": 2857
+        },
+        {
+          "line": 1077205,
+          "position": [
+            31,
+            6,
+            0
+          ],
+          "creature_id": 60,
+          "day": 2885
+        },
+        {
+          "line": 1080659,
+          "position": [
+            24,
+            33,
+            0
+          ],
+          "creature_id": 85,
+          "day": 2913
+        },
+        {
+          "line": 1105031,
+          "position": [
+            15,
+            0,
+            0
+          ],
+          "creature_id": 100,
+          "day": 3109
+        },
+        {
+          "line": 1128355,
+          "position": [
+            7,
+            22,
+            0
+          ],
+          "creature_id": 100,
+          "day": 3305
+        },
+        {
+          "line": 1131639,
+          "position": [
+            2,
+            6,
+            0
+          ],
+          "creature_id": 44,
+          "day": 3333
+        },
+        {
+          "line": 1138314,
+          "position": [
+            0,
+            30,
+            0
+          ],
+          "creature_id": 14,
+          "day": 3389
+        },
+        {
+          "line": 1141710,
+          "position": [
+            12,
+            3,
+            0
+          ],
+          "creature_id": 72,
+          "day": 3417
+        },
+        {
+          "line": 1151978,
+          "position": [
+            0,
+            5,
+            0
+          ],
+          "creature_id": 44,
+          "day": 3501
+        },
+        {
+          "line": 1158877,
+          "position": [
+            32,
+            21,
+            0
+          ],
+          "creature_id": 72,
+          "day": 3557
+        },
+        {
+          "line": 1169385,
+          "position": [
+            23,
+            20,
+            0
+          ],
+          "creature_id": 44,
+          "day": 3641
+        },
+        {
+          "line": 1176368,
+          "position": [
+            30,
+            4,
+            0
+          ],
+          "creature_id": 60,
+          "day": 3697
+        },
+        {
+          "line": 1183203,
+          "position": [
+            13,
+            16,
+            0
+          ],
+          "creature_id": 60,
+          "day": 3753
+        },
+        {
+          "line": 1210292,
+          "position": [
+            16,
+            8,
+            0
+          ],
+          "creature_id": 28,
+          "day": 3977
+        },
+        {
+          "line": 1213636,
+          "position": [
+            30,
+            29,
+            0
+          ],
+          "creature_id": 28,
+          "day": 4005
+        },
+        {
+          "line": 1217034,
+          "position": [
+            7,
+            0,
+            0
+          ],
+          "creature_id": 104,
+          "day": 4033
+        },
+        {
+          "line": 1223769,
+          "position": [
+            24,
+            26,
+            0
+          ],
+          "creature_id": 100,
+          "day": 4089
+        },
+        {
+          "line": 1237414,
+          "position": [
+            8,
+            6,
+            0
+          ],
+          "creature_id": 70,
+          "day": 4201
+        },
+        {
+          "line": 1247754,
+          "position": [
+            15,
+            6,
+            0
+          ],
+          "creature_id": 85,
+          "day": 4285
+        },
+        {
+          "line": 1254693,
+          "position": [
+            21,
+            23,
+            0
+          ],
+          "creature_id": 85,
+          "day": 4341
+        },
+        {
+          "line": 1258147,
+          "position": [
+            19,
+            15,
+            0
+          ],
+          "creature_id": 100,
+          "day": 4369
+        },
+        {
+          "line": 1261655,
+          "position": [
+            25,
+            21,
+            0
+          ],
+          "creature_id": 86,
+          "day": 4397
+        },
+        {
+          "line": 1268636,
+          "position": [
+            8,
+            18,
+            0
+          ],
+          "creature_id": 20,
+          "day": 4453
+        },
+        {
+          "line": 1272150,
+          "position": [
+            12,
+            13,
+            0
+          ],
+          "creature_id": 70,
+          "day": 4481
+        },
+        {
+          "line": 1279227,
+          "position": [
+            3,
+            3,
+            0
+          ],
+          "creature_id": 20,
+          "day": 4537
+        },
+        {
+          "line": 1282795,
+          "position": [
+            16,
+            19,
+            0
+          ],
+          "creature_id": 70,
+          "day": 4565
+        },
+        {
+          "line": 1286415,
+          "position": [
+            24,
+            2,
+            0
+          ],
+          "creature_id": 28,
+          "day": 4593
+        },
+        {
+          "line": 1293692,
+          "position": [
+            6,
+            5,
+            0
+          ],
+          "creature_id": 104,
+          "day": 4649
+        },
+        {
+          "line": 1297354,
+          "position": [
+            12,
+            33,
+            0
+          ],
+          "creature_id": 44,
+          "day": 4677
+        },
+        {
+          "line": 1315236,
+          "position": [
+            28,
+            29,
+            0
+          ],
+          "creature_id": 72,
+          "day": 4817
+        },
+        {
+          "line": 1325712,
+          "position": [
+            0,
+            8,
+            0
+          ],
+          "creature_id": 85,
+          "day": 4901
+        },
+        {
+          "line": 1335882,
+          "position": [
+            0,
+            17,
+            0
+          ],
+          "creature_id": 72,
+          "day": 4985
+        },
+        {
+          "line": 1339336,
+          "position": [
+            29,
+            9,
+            0
+          ],
+          "creature_id": 104,
+          "day": 5013
+        },
+        {
+          "line": 1362940,
+          "position": [
+            10,
+            0,
+            0
+          ],
+          "creature_id": 100,
+          "day": 5209
+        },
+        {
+          "line": 1372914,
+          "position": [
+            16,
+            32,
+            0
+          ],
+          "creature_id": 4,
+          "day": 5293
+        },
+        {
+          "line": 1376310,
+          "position": [
+            22,
+            13,
+            0
+          ],
+          "creature_id": 44,
+          "day": 5321
+        },
+        {
+          "line": 1379710,
+          "position": [
+            34,
+            25,
+            0
+          ],
+          "creature_id": 100,
+          "day": 5349
+        }
+      ],
+      "unassigned_spawns": [],
+      "creature_object_ids": 162,
+      "new_object_broadcasts": 162,
+      "spawns_through_day1305": 74,
+      "near_final_hero_through_day1305": [
+        {
+          "line": 203779,
+          "position": [
+            29,
+            16,
+            0
+          ],
+          "creature_id": 72,
+          "day": 309
+        }
+      ]
+    }
+  ],
+  "spawn_prefix_through_day1305_equal": true,
+  "conclusion": "Native monthly monsters exist despite initially monster-free map, including guard at (29,16). DirectorAI has no Obj::MONSTER target branch. This establishes a missing legal strategic action class; complete frontier disconnection still needs visible guardian/path diagnostics."
+}

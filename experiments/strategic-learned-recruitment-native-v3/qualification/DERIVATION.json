@@ -1,0 +1,7 @@
+{
+  "parent": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/fixture-01/collect_fixture.py",
+  "parent_sha256": "65d838b995314bd8eeae6e4c59fc759880c916787a2ea51866572f1cca336eaf",
+  "transport_and_lock_source": "Frozen CPU fixture collector; no native execution during derivation",
+  "new_native_runs": 0,
+  "new_gpu_runs": 0
+}

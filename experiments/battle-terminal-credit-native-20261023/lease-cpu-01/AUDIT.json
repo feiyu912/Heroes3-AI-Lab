@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "inherited_kernel_flocks_survive_controller_fd_close": true,
+  "wrong_inode_rejected": true,
+  "unheld_metadata_ENV_rejected": true,
+  "independent_session_descendants_stopped_before_release": true,
+  "failed_child_live_descendants_cleaned": true,
+  "temporary_test_locks_only": true,
+  "shared_resource_locks_taken": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0
+}

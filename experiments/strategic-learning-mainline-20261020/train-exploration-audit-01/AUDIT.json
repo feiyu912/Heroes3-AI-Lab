@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "scope": "TRAIN observations only; probability analysis, no gradient/new games/training rows",
+  "rows": 2588,
+  "one_move_plus_stop": 2017,
+  "multiple_move_plus_stop": 571,
+  "variants": {
+    "1": {
+      "stop": {
+        "mean": 0.005216961904829537,
+        "median": 0.0018714513350841814,
+        "min": 5.6119112661977984e-08,
+        "max": 0.015196110006497482
+      },
+      "entropy": {
+        "mean": 0.7970695136259182,
+        "median": 0.05570454285775092,
+        "min": 9.930719970167906e-07,
+        "max": 4.621915979389288
+      },
+      "move_entropy": {
+        "mean": 3.479833819368966,
+        "median": 3.746066215101991,
+        "min": 0.03650361259215259,
+        "max": 4.621290701691809
+      },
+      "top_probability": {
+        "mean": 0.8258926109096517,
+        "median": 0.9900645859916346,
+        "min": 0.01677576572405615,
+        "max": 0.9999999438808873
+      },
+      "forward_kl": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "argmax_unchanged": true,
+      "eligible": false
+    },
+    "2": {
+      "stop": {
+        "mean": 0.050454029086879994,
+        "median": 0.0415036511856091,
+        "min": 0.00019434933506123396,
+        "max": 0.11049434462660451
+      },
+      "entropy": {
+        "mean": 1.0971614774485403,
+        "median": 0.3050071636925562,
+        "min": 0.0022139706163997164,
+        "max": 4.642363983475024
+      },
+      "move_entropy": {
+        "mean": 4.177588293035442,
+        "median": 4.206334670415912,
+        "min": 1.5221529867681425,
+        "max": 4.63897251655048
+      },
+      "top_probability": {
+        "mean": 0.7447203303752248,
+        "median": 0.9089296880971612,
+        "min": 0.013135679628432888,
+        "max": 0.9997631613701057
+      },
+      "forward_kl": {
+        "mean": 0.08762475607761323,
+        "median": 0.06111292855710211,
+        "min": 0.00023634208503610092,
+        "max": 1.0232037461764938
+      },
+      "argmax_unchanged": true,
+      "eligible": true
+    },
+    "4": {
+      "stop": {
+        "mean": 0.15054676088911706,
+        "median": 0.17224600390731537,
+        "min": 0.002764922711447178,
+        "max": 0.2606003120011268
+      },
+      "entropy": {
+        "mean": 1.316301615112786,
+        "median": 0.5515762396724885,
+        "min": 0.07854317208260876,
+        "max": 4.657313601150202
+      },
+      "move_entropy": {
+        "mean": 4.291515870772374,
+        "median": 4.325944669487569,
+        "min": 3.572396229508745,
+        "max": 4.65110068076946
+      },
+      "top_probability": {
+        "mean": 0.6363898072636285,
+        "median": 0.7595689855923178,
+        "min": 0.011223638505107164,
+        "max": 0.9848419187523456
+      },
+      "forward_kl": {
+        "mean": 0.2585004174147481,
+        "median": 0.22810802257182017,
+        "min": 0.0056371569639203836,
+        "max": 2.319249447932769
+      },
+      "argmax_unchanged": true,
+      "eligible": false
+    },
+    "8": {
+      "stop": {
+        "mean": 0.25165047406204616,
+        "median": 0.3132656097699502,
+        "min": 0.005062038866956703,
+        "max": 0.37251899231668445
+      },
+      "entropy": {
+        "mean": 1.4355295616225756,
+        "median": 0.6534453889810521,
+        "min": 0.3472869054729843,
+        "max": 4.70093077163716
+      },
+      "move_entropy": {
+        "mean": 4.3071105045898,
+        "median": 4.343136373928038,
+        "min": 3.58115013843243,
+        "max": 4.692879237387984
+      },
+      "top_probability": {
+        "mean": 0.5337928673344732,
+        "median": 0.6399527267976428,
+        "min": 0.010351019357571633,
+        "max": 0.8896306263407127
+      },
+      "forward_kl": {
+        "mean": 0.426261848089583,
+        "median": 0.39561155331935177,
+        "min": 0.009467216806604338,
+        "max": 3.3169235496999665
+      },
+      "argmax_unchanged": true,
+      "eligible": false
+    }
+  },
+  "chosen_temperature": 2,
+  "checkpoint_sha256": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/balanced-ack-certified-01/RESULT.json": "a3db7158e290b4220f1196e6560c7f8d1ef4bc4286142f83ac07325c9760dac3",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-00/admitted/AUDIT.json": "890cbb78fc16bca20b98cbea9e40de1e01d998ff674d330df8dc122163f511dd",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-01/admitted/AUDIT.json": "ab9d48ff236397f23b223e475b4fda37533817f1c6b4fd3e8dbcd456c29ef377",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-02/admitted/AUDIT.json": "cffa8e15658645835f3bdd6e6c40220aa67c4e88402f586b3bdf40e871eb887f",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-03/admitted/AUDIT.json": "a6f2e881eafe5f26f33ecb729ba59c08ee6d580fd148f971011dba981d418798",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-04/admitted/AUDIT.json": "9a550874983f395beb71454a3f80cc9744e141a046bb2c5d24799673fb9fc71b",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-05/admitted/AUDIT.json": "440feacc661b13a9993b4519c306aa7e2c256220a874e8b49517f51281d9d0f2",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-01/cell-06/admitted/AUDIT.json": "91531998643d9c1936c3c686b9944610a9936610c350ae5a49932d63ccd9efca",
+    "/root/heroes3-ai-lab/evaluations/typed-onpolicy-balanced-ack-reconcile-01/admitted/AUDIT.json": "acbf7ff42058d6ee4e295e187cb7dfe9d46844627c60c9bac2e72dd4e780cabb",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/audit_train_exploration.py": "cdaba6d5d157b5a1561b30cc938b24227292d77cd0f792a0d11094bbeeb68e6f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/PLAN.md": "388c284aa5a699651b01605a3a800f5c5b560ffae4388d9bfadfb18ec854345a"
+  },
+  "active_matching_processes": [],
+  "gpu_compute_processes": "",
+  "both_locks_free": true,
+  "optimizer_steps": 0,
+  "new_native_games": 0,
+  "limitation": "Archived training rows were sampled by the predecessor7415, not5398. This evaluates5398 probabilities on TRAIN states only, not exact on-policy replay or learning. Temperature does not add missing destinations."
+}

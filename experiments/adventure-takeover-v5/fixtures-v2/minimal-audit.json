@@ -1,0 +1,146 @@
+{
+  "schema": "strategic-development-map-suite-v2",
+  "base_sha256": "d533dab889c76fb2660f409b845b99dcc28f1b2d02367c218aea5b3ed8a1dacf",
+  "generator_sha256": "366352be27f4af1f7445c46457193222c969f1cc0c44525ea734c05f7fe10ae6",
+  "template_audit_sha256": "cb571b8a6355c713dfc5ab5bcd620bb1d9f0f007b8f5a7be739799d1a302d8fa",
+  "split_frozen_before_outcomes": true,
+  "engine_executed_by_generator": false,
+  "status": "STATIC_CHECKED_ENGINE_ACCEPTANCE_PENDING",
+  "source_hashes": {
+    "config/objects/moddables.json": "bb4803bd6c0e7ab9a3913faa08476c01138ace227c000d31cfe366ca4cee3c7d",
+    "lib/mapObjects/MiscObjects.cpp": "15b5193d75bcee365b310d6bcdc1aa02eb53248d23d7c3474a198057c206dd14",
+    "lib/mapObjects/CGResource.cpp": "037b193ba8d3cc5ed862ce4888e6974b04c3d0ff2578e5cedcecabea43814840",
+    "lib/mapObjects/CGCreature.cpp": "939ff9c7ad972c7c302a48e5ad816a88af78600bc6128c6b8125b97653abf362",
+    "lib/mapObjects/ObjectTemplate.cpp": "def53871e50bf8bf6fe7245b78a343b91359a7ebaf29ad0f2636692e100796a6",
+    "lib/mapObjects/army/CArmedInstance.cpp": "98f48bba97cff942147695d9b0dc6920e9363d091649b13e91cb265f211c8bba"
+  },
+  "maps": [
+    {
+      "spec": {
+        "name": "takeover-v2-train-01-mines",
+        "split": "train",
+        "minimal": true,
+        "gold": 600,
+        "materials": 6,
+        "guards": 0,
+        "delta": 0
+      },
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/adventure-takeover-v5/fixtures-v2/maps/takeover-v2-train-01-mines.vmap",
+      "installed_path": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+      "resource_name": "Maps/adv/takeover-v2-train-01-mines",
+      "sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+      "object_counts": {
+        "hero": 2,
+        "town": 2,
+        "resource": 6,
+        "mine": 4
+      },
+      "added_objects": [
+        {
+          "key": "resource_left_gold",
+          "type": "resource",
+          "subtype": "core:gold",
+          "visitable": [
+            9,
+            11
+          ],
+          "paired_with": "resource_right_gold"
+        },
+        {
+          "key": "resource_left_wood",
+          "type": "resource",
+          "subtype": "core:wood",
+          "visitable": [
+            4,
+            12
+          ],
+          "paired_with": "resource_right_wood"
+        },
+        {
+          "key": "resource_left_ore",
+          "type": "resource",
+          "subtype": "core:ore",
+          "visitable": [
+            9,
+            15
+          ],
+          "paired_with": "resource_right_ore"
+        },
+        {
+          "key": "mine_left_sawmill",
+          "type": "mine",
+          "subtype": "core:sawmill",
+          "visitable": [
+            6,
+            15
+          ],
+          "paired_with": "mine_right_sawmill"
+        },
+        {
+          "key": "mine_left_orePit",
+          "type": "mine",
+          "subtype": "core:orePit",
+          "visitable": [
+            12,
+            12
+          ],
+          "paired_with": "mine_right_orePit"
+        },
+        {
+          "key": "resource_right_gold",
+          "type": "resource",
+          "subtype": "core:gold",
+          "visitable": [
+            26,
+            11
+          ],
+          "paired_with": "resource_left_gold"
+        },
+        {
+          "key": "resource_right_wood",
+          "type": "resource",
+          "subtype": "core:wood",
+          "visitable": [
+            31,
+            12
+          ],
+          "paired_with": "resource_left_wood"
+        },
+        {
+          "key": "resource_right_ore",
+          "type": "resource",
+          "subtype": "core:ore",
+          "visitable": [
+            26,
+            15
+          ],
+          "paired_with": "resource_left_ore"
+        },
+        {
+          "key": "mine_right_sawmill",
+          "type": "mine",
+          "subtype": "core:sawmill",
+          "visitable": [
+            29,
+            15
+          ],
+          "paired_with": "mine_left_sawmill"
+        },
+        {
+          "key": "mine_right_orePit",
+          "type": "mine",
+          "subtype": "core:orePit",
+          "visitable": [
+            23,
+            12
+          ],
+          "paired_with": "mine_left_orePit"
+        }
+      ],
+      "old_map_not_modified": true,
+      "engine_load_verified": false,
+      "static_reachable_cells": 1252,
+      "actual_native_path_not_computed": true
+    }
+  ]
+}

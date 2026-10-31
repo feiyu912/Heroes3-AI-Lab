@@ -1,0 +1,34 @@
+{
+  "previous_completed_updates": 30,
+  "previous_environment_steps": 15360,
+  "actual_Adam_steps_restored": 3840,
+  "CUDA_restore_executed": true,
+  "native_environment_restored": false,
+  "native_fresh_required": true,
+  "new_explicit_schedule_epoch_required": true,
+  "next_schedule_phase": null,
+  "model_CPU_to_CUDA_exact": true,
+  "Adam_CPU_to_CUDA_exact": true,
+  "parent_checkpoint_sha256": "dcaab92162b9c5b4cb9e5d9773067a320fe9b81fe91c1907449d4a7f8374cdaa",
+  "model_digest": "3364c904e7495442cdd169ecd1020372e932ea33a429cfd48ab68c5f4298c5fb",
+  "Adam_digest_before_lr_override": "233039a0bd50f1f1f7858e60e64d943cbd1ff6048223581d1c10a93ca30f8009",
+  "schedule_epoch": "continuation-update31-60-native-seeds3800-v1",
+  "parent_completed_updates": 30,
+  "parent_environment_steps": 15360,
+  "parent_actual_Adam_steps": 3840,
+  "lr_override": {
+    "arm": "control",
+    "group": "last_graph",
+    "before": 1e-06,
+    "after": 1e-06,
+    "heads_unchanged": 1e-05
+  },
+  "all_RNG_before_first_sampling": {
+    "Torch_CPU_exact": true,
+    "Torch_CUDA_exact": true,
+    "Python_exact": true,
+    "NumPy_exact": true,
+    "CUDA_restore_executed": true
+  },
+  "actual_Adam_counter_before_first_sampling": 3840
+}

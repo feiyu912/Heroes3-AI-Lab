@@ -1,0 +1,25 @@
+{
+  "schema": "threat-response-review-delivery-v1",
+  "compiled": false,
+  "native_runs": 0,
+  "files": {
+    "baseline-CDirectorAI.cpp": "e198e32f9d3c787e14d575f2fe1c33bba44a8d1351403ffc833c54e4a3079b00",
+    "candidate-CDirectorAI.cpp": "9a8dda3d323691f597ee5ffea70dcd82a9aa4f8f5081cb0e4231b7cabfdd0541",
+    "candidate.diff": "01efead124d800a3c58d295b46fa38b1a9d6c4e8a36450275c0f2c6955573679",
+    "CANDIDATE_CPU_RESULT.json": "8212e546f3b39bd425ff80c03080d08aaf8a10d99da28a8c348d91b206b074e1",
+    "CANDIDATE_MANIFEST.json": "67f39cb10151184b30dbe7294536269140df82f9641e69920871f3ec276f2ee3",
+    "CPU_REPLAY.json": "d24d86fb9db95f34bb506439808728d1b3240fa216cf03ae7704ed2a3ea054da",
+    "MANIFEST.json": "ede60be7fa85741a94a17454084e47b020089bb14eeb1be9e601827c6f70b080",
+    "PHASE_A_BINDING_TEMPLATE.json": "8a8d6b3004169733ec01d25d1e6043afad6e751906d4e100307c0b67522ca827",
+    "PHASE_A_NATIVE_PREREG.md": "0c9b88cd46ff5606e83f09b376e7db8b1e6d3bb87926407cde44633548a40378",
+    "PLAN.md": "4ea26fe812d3fc2da8cef9940f2d9b79a3c51c066d64298b2cfd35ae6ff69f6c",
+    "prepare_candidate.py": "d180b17e046b1394c6e1252c164c1b105a14c37d886ecef82dd8d54dfb1a51ee",
+    "replay_visible_cpu.py": "bbb08df80648f5604314f64d8b5ea9df2608020342ec1fa15a150afb078c797c",
+    "RESULTS.md": "2ec6718c3eef39066d30c94d154ed484c98c6d27c96b842e6c9f2b1c2f55dc51",
+    "SOURCE_EVIDENCE.json": "59acd589b5dcaa7243dcf83d2fbe0424d3e5813b561d49f5cb1a2f00fec38b53",
+    "TACTICAL_GAIN_PREREG.md": "b5e57e29bcb048c3b83aeaf10d30577a6df0ccc4d5bb561f7b0fdcd8987a79f1",
+    "test_candidate_cpu.py": "afdcedb65ea845fe4b766ddeea223fd6e3dd5b9d08b636020a9bec290d739293",
+    "test_contract.py": "a20d36153462a0c2fc2057706d7b710493b86415ac65e02f173321bb51a92e68",
+    "threat_contract.py": "90b47b6e57caa284a8f91944bbaac661bfecb74cd7375e0b6eb5be3b3012d320"
+  }
+}

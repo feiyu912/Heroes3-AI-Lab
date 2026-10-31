@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "arms": {
+    "control": {
+      "rows": 4138,
+      "groups": {
+        "EmptyAI/build": {
+          "rows": 108,
+          "negative_advantage": 56,
+          "positive_advantage": 52,
+          "initial_recruit_bias_policy_ascent": -0.0003588504514482338,
+          "initial_recruit_bias_entropy_ascent": 6.039510775934787e-06,
+          "mean_greedy_action_probability": 0.36994751466921083,
+          "mean_entropy": 1.7701570408211813,
+          "mean_recruit_probability": 0.14656443148851395,
+          "mean_candidate_count": 15.333333333333334
+        },
+        "EmptyAI/move": {
+          "rows": 1967,
+          "negative_advantage": 904,
+          "positive_advantage": 1063,
+          "initial_recruit_bias_policy_ascent": -0.0073630848007573135,
+          "initial_recruit_bias_entropy_ascent": 2.416097376899823e-05,
+          "mean_greedy_action_probability": 0.6248249088276232,
+          "mean_entropy": 1.4794402771432191,
+          "mean_recruit_probability": 0.07090384858657085,
+          "mean_candidate_count": 24.740721911540415
+        },
+        "EmptyAI/recruit": {
+          "rows": 958,
+          "negative_advantage": 564,
+          "positive_advantage": 394,
+          "initial_recruit_bias_policy_ascent": 0.011420721309605142,
+          "initial_recruit_bias_entropy_ascent": -1.0103290092877693e-06,
+          "mean_greedy_action_probability": 0.15469790033661684,
+          "mean_entropy": 2.4118975804095975,
+          "mean_recruit_probability": 0.8166985952845601,
+          "mean_candidate_count": 16.953027139874738
+        },
+        "EmptyAI/end_turn": {
+          "rows": 343,
+          "negative_advantage": 100,
+          "positive_advantage": 101,
+          "initial_recruit_bias_policy_ascent": -0.00023480361198835453,
+          "initial_recruit_bias_entropy_ascent": -1.8567166848448835e-06,
+          "mean_greedy_action_probability": 0.8707975945530497,
+          "mean_entropy": 0.34519300038543455,
+          "mean_recruit_probability": 0.0585257788962595,
+          "mean_candidate_count": 2.4169096209912535
+        },
+        "Nullkiller2/move": {
+          "rows": 556,
+          "negative_advantage": 440,
+          "positive_advantage": 116,
+          "initial_recruit_bias_policy_ascent": 0.018857268196299515,
+          "initial_recruit_bias_entropy_ascent": 4.205813701485539e-05,
+          "mean_greedy_action_probability": 0.6359579945519138,
+          "mean_entropy": 1.438390629608921,
+          "mean_recruit_probability": 0.05215728579745661,
+          "mean_candidate_count": 21.093525179856115
+        },
+        "Nullkiller2/build": {
+          "rows": 22,
+          "negative_advantage": 18,
+          "positive_advantage": 4,
+          "initial_recruit_bias_policy_ascent": 0.0008561896247556433,
+          "initial_recruit_bias_entropy_ascent": 4.577683057505055e-06,
+          "mean_greedy_action_probability": 0.39650489389896393,
+          "mean_entropy": 1.6910261538895694,
+          "mean_recruit_probability": 0.05836705084551464,
+          "mean_candidate_count": 14.363636363636363
+        },
+        "Nullkiller2/recruit": {
+          "rows": 99,
+          "negative_advantage": 93,
+          "positive_advantage": 6,
+          "initial_recruit_bias_policy_ascent": -0.014451687078235409,
+          "initial_recruit_bias_entropy_ascent": 7.755364803685438e-06,
+          "mean_greedy_action_probability": 0.29747790007880237,
+          "mean_entropy": 1.7577339621505352,
+          "mean_recruit_probability": 0.6794569824982171,
+          "mean_candidate_count": 9.525252525252526
+        },
+        "Nullkiller2/end_turn": {
+          "rows": 85,
+          "negative_advantage": 30,
+          "positive_advantage": 10,
+          "initial_recruit_bias_policy_ascent": 0.0006887364288559183,
+          "initial_recruit_bias_entropy_ascent": 9.460440537623072e-07,
+          "mean_greedy_action_probability": 0.9275219293201671,
+          "mean_entropy": 0.21370953847380245,
+          "mean_recruit_probability": 0.031167957011391134,
+          "mean_candidate_count": 1.6
+        }
+      },
+      "initial_full_batch_recruit_bias_policy_ascent": 0.009414489582923125,
+      "initial_full_batch_recruit_bias_entropy_ascent": 8.267066898071107e-05,
+      "initial_full_batch_recruit_bias_autograd": 0.00949715882234159,
+      "analytic_autograd_agree": true,
+      "CPU_CUDA_archived_selected_logp_max_abs_error": 9.5367431640625e-07,
+      "CPU_CUDA_archived_value_max_abs_error": 4.76837158203125e-07,
+      "CPU_CUDA_archived_class_probability_max_abs_error": 3.5762786865234375e-07,
+      "actual_training_bias_delta": 0.01471861731261015,
+      "actual_training_Adam": 260,
+      "advantage_moments": {
+        "samples": 4138,
+        "episodes": 8,
+        "free_choices": 3951,
+        "forced_transitions": 187,
+        "active_actor_episodes": 8,
+        "actor_weight_sum": 4138.0,
+        "critic_weight_sum": 4138.0,
+        "advantage_mean": 0.2340857222976265,
+        "advantage_variance": 0.5151282808301374,
+        "per_episode": [
+          {
+            "episode_id": "4984ce3d602bc32baca6ddb389b91791411194e94ee63d52e8ad4beed29d9dc1",
+            "steps": 799,
+            "free_choices": 766,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "24be55785009bb61154d86a22ce05896f2608bc2888783ff30d979f1906f5ded",
+            "steps": 513,
+            "free_choices": 488,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "e7d629e0bd548de69f80ed9e04991f4b86695c91a7098342697fcde858de198a",
+            "steps": 386,
+            "free_choices": 363,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "493aea4c363222750309356a4cd0a869abe4e0141b8ee33b66ed05450d1857cd",
+            "steps": 63,
+            "free_choices": 59,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "68590b14c25659f085742e9b15d5921c5887a18dbfa854486cc0c3f9ec63a252",
+            "steps": 998,
+            "free_choices": 954,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "13aa342c78369d8d9389b78a1611ac18008bb2199e28884c20cd75b401bda3e9",
+            "steps": 1066,
+            "free_choices": 1026,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "0a71a972bed779a611d92988ddf2147067896857f301a528b3c5e2f35c94e739",
+            "steps": 81,
+            "free_choices": 75,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "d70fd51a60f6f2c832b16fdd3987e36479e4ce9da36ef0f3ad85b380587c0939",
+            "steps": 232,
+            "free_choices": 220,
+            "reward": -1.0
+          }
+        ],
+        "collector_manifest_verified": true
+      }
+    },
+    "curriculum": {
+      "rows": 4655,
+      "groups": {
+        "EmptyAI/build": {
+          "rows": 108,
+          "negative_advantage": 49,
+          "positive_advantage": 59,
+          "initial_recruit_bias_policy_ascent": -0.0008226229751926439,
+          "initial_recruit_bias_entropy_ascent": 6.0395106764588036e-06,
+          "mean_greedy_action_probability": 0.36994751466921083,
+          "mean_entropy": 1.7701570408211813,
+          "mean_recruit_probability": 0.14656443148851395,
+          "mean_candidate_count": 15.333333333333334
+        },
+        "EmptyAI/move": {
+          "rows": 1967,
+          "negative_advantage": 734,
+          "positive_advantage": 1233,
+          "initial_recruit_bias_policy_ascent": -0.011325807884864147,
+          "initial_recruit_bias_entropy_ascent": 2.4160973886636766e-05,
+          "mean_greedy_action_probability": 0.6248249088276232,
+          "mean_entropy": 1.4794402777492655,
+          "mean_recruit_probability": 0.07090384858657085,
+          "mean_candidate_count": 24.740721911540415
+        },
+        "EmptyAI/recruit": {
+          "rows": 958,
+          "negative_advantage": 511,
+          "positive_advantage": 447,
+          "initial_recruit_bias_policy_ascent": 0.016270479808554228,
+          "initial_recruit_bias_entropy_ascent": -1.0103293610064235e-06,
+          "mean_greedy_action_probability": 0.15469790033661684,
+          "mean_entropy": 2.4118975804095975,
+          "mean_recruit_probability": 0.8166985952845601,
+          "mean_candidate_count": 16.953027139874738
+        },
+        "EmptyAI/end_turn": {
+          "rows": 343,
+          "negative_advantage": 72,
+          "positive_advantage": 129,
+          "initial_recruit_bias_policy_ascent": -0.0008425917653767101,
+          "initial_recruit_bias_entropy_ascent": -1.8567166812921698e-06,
+          "mean_greedy_action_probability": 0.8707975945530497,
+          "mean_entropy": 0.34519300038543455,
+          "mean_recruit_probability": 0.0585257788962595,
+          "mean_candidate_count": 2.4169096209912535
+        },
+        "Nullkiller2/move": {
+          "rows": 869,
+          "negative_advantage": 736,
+          "positive_advantage": 133,
+          "initial_recruit_bias_policy_ascent": 0.01573222953425102,
+          "initial_recruit_bias_entropy_ascent": 5.0457413858354117e-05,
+          "mean_greedy_action_probability": 0.6187660207819746,
+          "mean_entropy": 1.4872840827390428,
+          "mean_recruit_probability": 0.06789452855885715,
+          "mean_candidate_count": 22.342922899884925
+        },
+        "Nullkiller2/build": {
+          "rows": 29,
+          "negative_advantage": 23,
+          "positive_advantage": 6,
+          "initial_recruit_bias_policy_ascent": 0.0009429776218894403,
+          "initial_recruit_bias_entropy_ascent": 5.752927492608251e-06,
+          "mean_greedy_action_probability": 0.45828717921314566,
+          "mean_entropy": 1.4673197521217938,
+          "mean_recruit_probability": 0.09238789230585098,
+          "mean_candidate_count": 10.586206896551724
+        },
+        "Nullkiller2/recruit": {
+          "rows": 240,
+          "negative_advantage": 218,
+          "positive_advantage": 22,
+          "initial_recruit_bias_policy_ascent": -0.016712080638967564,
+          "initial_recruit_bias_entropy_ascent": 1.0691476977742198e-05,
+          "mean_greedy_action_probability": 0.24938825420103966,
+          "mean_entropy": 1.867606964086493,
+          "mean_recruit_probability": 0.7352490360538165,
+          "mean_candidate_count": 9.783333333333333
+        },
+        "Nullkiller2/end_turn": {
+          "rows": 141,
+          "negative_advantage": 68,
+          "positive_advantage": 10,
+          "initial_recruit_bias_policy_ascent": 0.001340973969490733,
+          "initial_recruit_bias_entropy_ascent": -1.30888082594538e-07,
+          "mean_greedy_action_probability": 0.8882332276685018,
+          "mean_entropy": 0.31737120127212914,
+          "mean_recruit_probability": 0.042793204281347016,
+          "mean_candidate_count": 2.617021276595745
+        }
+      },
+      "initial_full_batch_recruit_bias_policy_ascent": 0.004583557481055323,
+      "initial_full_batch_recruit_bias_entropy_ascent": 9.410436911139186e-05,
+      "initial_full_batch_recruit_bias_autograd": 0.004677662247559056,
+      "analytic_autograd_agree": true,
+      "CPU_CUDA_archived_selected_logp_max_abs_error": 9.5367431640625e-07,
+      "CPU_CUDA_archived_value_max_abs_error": 4.76837158203125e-07,
+      "CPU_CUDA_archived_class_probability_max_abs_error": 3.5762786865234375e-07,
+      "actual_training_bias_delta": 0.012865439988672733,
+      "actual_training_Adam": 292,
+      "advantage_moments": {
+        "samples": 4655,
+        "episodes": 8,
+        "free_choices": 4450,
+        "forced_transitions": 205,
+        "active_actor_episodes": 8,
+        "actor_weight_sum": 4655.00048828125,
+        "critic_weight_sum": 4655.0,
+        "advantage_mean": 0.07045034744977136,
+        "advantage_variance": 0.6167607601674203,
+        "per_episode": [
+          {
+            "episode_id": "516e7bfa14c02badc4ec7cadea1e8287eb6ad54057ea30f81173926a303218e7",
+            "steps": 799,
+            "free_choices": 766,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "3d291cb421ef1ee5d36f62b4733b5bde90fdd08eb845779f3b6c143aa0ea5be8",
+            "steps": 513,
+            "free_choices": 488,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "09fe0da9ea840f2df49c24d9d09f78361632ffee9fc71ab321c2802bbeee3257",
+            "steps": 376,
+            "free_choices": 355,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "bcdb2af2d5bd8071fcbda74545fc2273010576ad4b77432e829832de4c68f5b1",
+            "steps": 360,
+            "free_choices": 344,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "cba82c0e447dda8464f8ee08876b8caeef11522894fb1fd85c51686de050dec2",
+            "steps": 998,
+            "free_choices": 954,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "0c899133e31206aa967db2a4e6a23f811a904200c99c1a60b7e8e9cfd9157260",
+            "steps": 1066,
+            "free_choices": 1026,
+            "reward": 1.0
+          },
+          {
+            "episode_id": "7818430ea452161ef52ffeb639ddb28d7b3b96d4fb11bcb9d9279de695bb1ee9",
+            "steps": 348,
+            "free_choices": 330,
+            "reward": -1.0
+          },
+          {
+            "episode_id": "bce2acf2c9f4ee5d1a6454512a0cba4080d4ce6e98ca63bbe9f7eb8b4c1ab25f",
+            "steps": 195,
+            "free_choices": 187,
+            "reward": -1.0
+          }
+        ],
+        "collector_manifest_verified": true
+      }
+    }
+  },
+  "complete_TRAIN_rows_numerically_recomputed": 8793,
+  "model_unchanged": true,
+  "CPU_RNG_unchanged": true,
+  "optimizer_steps": 0,
+  "GPU_operations": 0,
+  "native_games": 0,
+  "expert_labels": 0,
+  "DEV_teacher_rows": 0,
+  "scope": "Initial raw recruit-bias gradient includes unchosen actions and entropy. Full PPO epochs/minibatches/Adam/clipping differ later; this is not causal action quality or a new training update."
+}

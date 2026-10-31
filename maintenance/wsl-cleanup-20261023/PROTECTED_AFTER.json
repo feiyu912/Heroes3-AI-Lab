@@ -1,0 +1,19 @@
+{
+  "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libvcmi.so": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+  "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlclient.so": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+  "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/libmlserverplugin.so": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+  "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/vcmiclient": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+  "/root/heroes3-ai-lab/src/gym/vcmi/rel/bin/vcmiserver": "26ab58b469584dfd58f5ce2fe3502503409962f6c928c59ad7c63d46c8999a05",
+  "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libvcmi.so": "a3516f9dd4749558a8a9cff72a76a319099d8d2c2790e659191e4c5472cfebf6",
+  "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlclient.so": "a1f288a2ed50dc70469bc21e58d5506592a491cb134db5eb2f97914e91974f82",
+  "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/libmlserverplugin.so": "50091d0b3f1c8d4c5b1d3158e553370e89f640ea2ef616d7ae8b261be058490f",
+  "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/vcmiclient": "adc1e7cc77610828070004a09b7f247ef2cc70eae879d78de445f092ad30aba2",
+  "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel/bin/vcmiserver": "c6bd532bc5da513ade18c0eacd420b7db1e7250e92320b5646b85d72cfd44e88",
+  "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "d7016313e9f0e0dfc36d46a9e24d718fb2e7552e6433b5dcd0ca6a26cdaa285a",
+  "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+  "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "bbe0de38b7791c7900b2393d1809b38f5f1856ac8922f30d742095759cd43fac",
+  "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+  "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/control/models/1792508024116623978/update-60.pt": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+  "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/candidate/models/1792509605969861627/update-57.pt": "8d3169e85d51b0bf7d7247cc2d4bdc6949410d5262793f1729a6463dbd3976bf",
+  "/root/heroes3-ai-lab/evaluations/strategic-learned-free-transfer-train-01/update-01/update-1.pt": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00"
+}

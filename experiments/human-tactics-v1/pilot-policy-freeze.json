@@ -1,0 +1,10 @@
+{
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-v1/models/bc-policy.pt",
+  "sha256": "bde72571e0555a41c0696e17179ea42a47c15e3ba7170e3e1be612e92f32f4d4",
+  "initial": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+  "initial_sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936",
+  "frozen_unix": 1792081747.4939084,
+  "test_results_read": false,
+  "selection": "Fixed 60-step Q2 BC pilot; no test selection",
+  "recovery_version": "human-tactics-recovery-v2"
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "scope": "Static strings and fake scalar bucket/conservation examples only; no compile/native predicate or transaction execution",
+  "bucket_examples": 6,
+  "fake_clamp_and_no_progress_rejected": true,
+  "source_execution_gate_present": true,
+  "native_run_allowed": false,
+  "CXX_syntax_checked": false,
+  "native_builds": 0,
+  "native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v1/check_static.py": "7c021727ea70451eaf58fdac40cd8d8e459280c7dde3eb50d839b3da6470a502",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v1/CANDIDATE_MANIFEST.json": "1a04aafe7372ef1b738d1bd297128c8e225d2cc1151ac48f0c31b13576d56590",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v1/candidate.diff": "de78b0a583e06273b277828fa9e0afc65676c779f1d25ea4f4244e358d9e172c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v1/CONTRACT_DRAFT.md": "c3f432419bea862bfa1dcce051bd896ddcb9a5520963e161d3a6a864906c4af7"
+  }
+}

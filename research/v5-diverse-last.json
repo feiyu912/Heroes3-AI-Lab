@@ -1,0 +1,597 @@
+{
+  "config": {
+    "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-112.pt",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last.json",
+    "mode": "last",
+    "workers": 24,
+    "updates": 16,
+    "rollout": 32,
+    "microbatch": 32,
+    "epochs": 2,
+    "seed": 20261021,
+    "learning_rate": 1e-05,
+    "head_learning_rate": 5e-05,
+    "opponents": [
+      "BattleAI",
+      "MMAI_GPU"
+    ],
+    "scenario_file": "/mnt/g/Heroes3-AI-Lab/research/diverse-curriculum.json",
+    "shaping": 0.5,
+    "step_cost": 0.002,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "entropy_coef": 0.005,
+    "resume": true,
+    "rotate_every": 16,
+    "native_opponent_device": "cpu",
+    "no_auto_microbatch": false,
+    "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+    "first_battle": false,
+    "deterministic_cuda": true,
+    "recompute_batch_size": 24,
+    "requested_opponents": [
+      "BattleAI",
+      "MMAI_MODEL"
+    ],
+    "fixed_opponent_inference": "central-cuda",
+    "fixed_opponent_checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "requested_microbatch": 4
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt",
+  "completed": true,
+  "resumed_from_updates": 112,
+  "experiment_initial_checkpoint": "/root/heroes3-ai-lab/models/recovered-ppo/1792064038645299702/update-128.pt",
+  "source_snapshot": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/source",
+  "records": [
+    {
+      "update": 113,
+      "samples": 768,
+      "steps_per_second": 27.491111028723928,
+      "episodes": 22,
+      "wins": 19,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.05854545140755363,
+        "policy_loss": -0.007634395655865471,
+        "value_loss": 0.14181225878807405,
+        "entropy": 0.9452563052376112,
+        "approximate_kl": 0.004837802815018222,
+        "gradient_norm": 5.122160931428273,
+        "clip_fraction": 0.0234375,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.660566691000213,
+        "environment": 8.075018546000251,
+        "update": 12.44634339999999
+      },
+      "free_mib": 6077.83203125,
+      "gpu_peak_mib": 946.6396484375,
+      "fixed_opponent": {
+        "requests": 407,
+        "batches": 107,
+        "inference_seconds": 7.911702381999959,
+        "weights_unchanged": true
+      },
+      "gpu_telemetry": {
+        "temperature_c": 43.0,
+        "memory_mib": 3126.0,
+        "utilization_percent": 34.0
+      }
+    },
+    {
+      "update": 114,
+      "samples": 768,
+      "steps_per_second": 26.710368239315365,
+      "episodes": 51,
+      "wins": 43,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.06724056543316692,
+        "policy_loss": -0.007493267767131329,
+        "value_loss": 0.15911818264673153,
+        "entropy": 0.9650516578306755,
+        "approximate_kl": 0.004750838968902826,
+        "gradient_norm": 6.204264911512534,
+        "clip_fraction": 0.01953125,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.521766684000056,
+        "environment": 9.446182764999946,
+        "update": 12.252210321000007
+      },
+      "free_mib": 6049.31640625,
+      "gpu_peak_mib": 946.6396484375,
+      "fixed_opponent": {
+        "requests": 841,
+        "batches": 243,
+        "inference_seconds": 16.201682161000207,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 115,
+      "samples": 768,
+      "steps_per_second": 28.34059057072487,
+      "episodes": 84,
+      "wins": 69,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.03937269807405149,
+        "policy_loss": -0.00838881762077411,
+        "value_loss": 0.10525575458693008,
+        "entropy": 0.973272247860829,
+        "approximate_kl": 0.0025474163509594896,
+        "gradient_norm": 5.065154520173867,
+        "clip_fraction": 0.024739583333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.531758641999943,
+        "environment": 7.679718596000157,
+        "update": 12.350254868000036
+      },
+      "free_mib": 6041.9609375,
+      "gpu_peak_mib": 966.259765625,
+      "fixed_opponent": {
+        "requests": 1232,
+        "batches": 345,
+        "inference_seconds": 22.88985612500008,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 116,
+      "samples": 768,
+      "steps_per_second": 27.572286067258382,
+      "episodes": 118,
+      "wins": 95,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.074126000564623,
+        "policy_loss": -0.008508061524480581,
+        "value_loss": 0.1745447915357848,
+        "entropy": 0.9276669658720493,
+        "approximate_kl": 0.006538648294129719,
+        "gradient_norm": 6.425947380562623,
+        "clip_fraction": 0.022786458333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.516280595000012,
+        "environment": 8.553858807999916,
+        "update": 12.255114481000021
+      },
+      "free_mib": 6033.734375,
+      "gpu_peak_mib": 966.259765625,
+      "fixed_opponent": {
+        "requests": 1633,
+        "batches": 465,
+        "inference_seconds": 30.345674798000317,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 117,
+      "samples": 768,
+      "steps_per_second": 28.240118438336,
+      "episodes": 151,
+      "wins": 120,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.07692913476300116,
+        "policy_loss": -0.008209345435413221,
+        "value_loss": 0.18000961867316315,
+        "entropy": 0.9732657298445702,
+        "approximate_kl": 0.004123251206086327,
+        "gradient_norm": 5.771420041720073,
+        "clip_fraction": 0.020833333333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.563705404000018,
+        "environment": 8.027827927999795,
+        "update": 12.068083064000007
+      },
+      "free_mib": 6022.18359375,
+      "gpu_peak_mib": 967.7646484375,
+      "fixed_opponent": {
+        "requests": 2020,
+        "batches": 569,
+        "inference_seconds": 37.30529121400005,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 118,
+      "samples": 768,
+      "steps_per_second": 28.22015231894382,
+      "episodes": 184,
+      "wins": 141,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.05260590791779881,
+        "policy_loss": -0.006283054361119866,
+        "value_loss": 0.12795932435741028,
+        "entropy": 1.0181400900085766,
+        "approximate_kl": 0.0021428323428456983,
+        "gradient_norm": 5.660369689265887,
+        "clip_fraction": 0.018229166666666668,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.487872799999991,
+        "environment": 8.225877843999854,
+        "update": 11.999286734999998
+      },
+      "free_mib": 6021.9453125,
+      "gpu_peak_mib": 967.7646484375,
+      "fixed_opponent": {
+        "requests": 2423,
+        "batches": 677,
+        "inference_seconds": 44.43336689999998,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 119,
+      "samples": 768,
+      "steps_per_second": 26.75300671490697,
+      "episodes": 214,
+      "wins": 163,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.0774628000993592,
+        "policy_loss": -0.007928110969563326,
+        "value_loss": 0.18031397849942246,
+        "entropy": 0.9532160994907221,
+        "approximate_kl": 0.0018933634855784476,
+        "gradient_norm": 5.580239497125149,
+        "clip_fraction": 0.015625,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.50423759399996,
+        "environment": 9.662485102999995,
+        "update": 12.009793980999973
+      },
+      "free_mib": 6011.69140625,
+      "gpu_peak_mib": 967.7646484375,
+      "fixed_opponent": {
+        "requests": 2880,
+        "batches": 814,
+        "inference_seconds": 53.02677381899994,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 120,
+      "samples": 768,
+      "steps_per_second": 28.155207821454837,
+      "episodes": 248,
+      "wins": 188,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.06284043574123643,
+        "policy_loss": -0.007759230017351608,
+        "value_loss": 0.15114215776945153,
+        "entropy": 0.9942824803292751,
+        "approximate_kl": 0.005962591133235644,
+        "gradient_norm": 7.936424247920513,
+        "clip_fraction": 0.026041666666666668,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.546484065999948,
+        "environment": 8.090468290999866,
+        "update": 12.107101914999987
+      },
+      "free_mib": 6009.79296875,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 3282,
+        "batches": 925,
+        "inference_seconds": 59.99224203599945,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 121,
+      "samples": 768,
+      "steps_per_second": 27.86233059516338,
+      "episodes": 280,
+      "wins": 213,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.05536477604376463,
+        "policy_loss": -0.007580841037755211,
+        "value_loss": 0.13562615231300393,
+        "entropy": 0.9734917680422465,
+        "approximate_kl": 0.005305943583759169,
+        "gradient_norm": 7.076741188764572,
+        "clip_fraction": 0.022786458333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.5133990749999953,
+        "environment": 8.293690069999741,
+        "update": 12.241823544000056
+      },
+      "free_mib": 6009.70703125,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 3701,
+        "batches": 1039,
+        "inference_seconds": 67.11190520299951,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 122,
+      "samples": 768,
+      "steps_per_second": 27.692854153867557,
+      "episodes": 313,
+      "wins": 237,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.06487647207298626,
+        "policy_loss": -0.006965380472441514,
+        "value_loss": 0.15342868934385478,
+        "entropy": 0.9744985389212767,
+        "approximate_kl": 0.0052378134957204265,
+        "gradient_norm": 6.64886353413264,
+        "clip_fraction": 0.022786458333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.5158895949998623,
+        "environment": 8.563184425000372,
+        "update": 12.114153499000054
+      },
+      "free_mib": 6004.23046875,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 4095,
+        "batches": 1158,
+        "inference_seconds": 74.60668435099964,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 123,
+      "samples": 768,
+      "steps_per_second": 26.707401294958075,
+      "episodes": 344,
+      "wins": 262,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.05172268116924291,
+        "policy_loss": -0.0054947422662129,
+        "value_loss": 0.12393143765317897,
+        "entropy": 0.9496589290599028,
+        "approximate_kl": 0.0037156408798182383,
+        "gradient_norm": 4.889971906940143,
+        "clip_fraction": 0.021484375,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.6232102080002733,
+        "environment": 9.370040463000237,
+        "update": 12.132528921000016
+      },
+      "free_mib": 5999.0859375,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 4530,
+        "batches": 1291,
+        "inference_seconds": 82.82501418399929,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 124,
+      "samples": 768,
+      "steps_per_second": 27.569556273933127,
+      "episodes": 379,
+      "wins": 293,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.03760469526362916,
+        "policy_loss": -0.006972086111394067,
+        "value_loss": 0.0984731634768347,
+        "entropy": 0.9319599121809006,
+        "approximate_kl": 0.0014112886565271765,
+        "gradient_norm": 5.101661756634712,
+        "clip_fraction": 0.016927083333333332,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.5006396860004543,
+        "environment": 8.887756568000327,
+        "update": 11.926842385999976
+      },
+      "free_mib": 6000.03125,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 4952,
+        "batches": 1414,
+        "inference_seconds": 90.55021034999967,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 125,
+      "samples": 768,
+      "steps_per_second": 28.117070484327,
+      "episodes": 410,
+      "wins": 317,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.04224315097477908,
+        "policy_loss": -0.008460328448563814,
+        "value_loss": 0.11153852256635825,
+        "entropy": 1.013156456251939,
+        "approximate_kl": 0.002577402696867163,
+        "gradient_norm": 5.218845481673877,
+        "clip_fraction": 0.025390625,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.762848680999923,
+        "environment": 7.8022735910000165,
+        "update": 11.938032909999947
+      },
+      "free_mib": 5998.28515625,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 5340,
+        "batches": 1511,
+        "inference_seconds": 97.22848165399975,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 126,
+      "samples": 768,
+      "steps_per_second": 25.921981273927507,
+      "episodes": 447,
+      "wins": 346,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.052649929110581674,
+        "policy_loss": -0.009316316378923753,
+        "value_loss": 0.13414232525974512,
+        "entropy": 1.0209831893444061,
+        "approximate_kl": 0.002174490495235659,
+        "gradient_norm": 5.3887204974889755,
+        "clip_fraction": 0.018229166666666668,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 4.141775186000018,
+        "environment": 9.464910771000177,
+        "update": 12.000701706999962
+      },
+      "free_mib": 5984.5078125,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 5758,
+        "batches": 1629,
+        "inference_seconds": 105.52507227799967,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 127,
+      "samples": 768,
+      "steps_per_second": 26.378294521022656,
+      "episodes": 478,
+      "wins": 371,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.042840423120651394,
+        "policy_loss": -0.007465168833732605,
+        "value_loss": 0.11031091292776789,
+        "entropy": 0.9699728240569433,
+        "approximate_kl": 0.002871450546081178,
+        "gradient_norm": 4.695285243292649,
+        "clip_fraction": 0.029947916666666668,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.642065550999746,
+        "environment": 9.808143867000013,
+        "update": 12.033567977999951
+      },
+      "free_mib": 5982.5,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 6202,
+        "batches": 1762,
+        "inference_seconds": 114.11315930299926,
+        "weights_unchanged": true
+      }
+    },
+    {
+      "update": 128,
+      "samples": 768,
+      "steps_per_second": 25.789062709975845,
+      "episodes": 510,
+      "wins": 396,
+      "truncations": 0,
+      "metrics": {
+        "loss": 0.04648133693262935,
+        "policy_loss": -0.005472083071557184,
+        "value_loss": 0.11454854843517144,
+        "entropy": 1.0641708659629028,
+        "approximate_kl": 0.0018253561186914642,
+        "gradient_norm": 5.105814218521118,
+        "clip_fraction": 0.013671875,
+        "epochs_completed": 2,
+        "maximum_recompute_logp_error": 0.0,
+        "recompute_batch_size": 24
+      },
+      "timing_seconds": {
+        "inference": 3.7527623130002894,
+        "environment": 10.129361568000036,
+        "update": 12.120580394999934
+      },
+      "free_mib": 5980.25390625,
+      "gpu_peak_mib": 1023.6669921875,
+      "fixed_opponent": {
+        "requests": 6640,
+        "batches": 1898,
+        "inference_seconds": 123.06922417799873,
+        "weights_unchanged": true
+      }
+    }
+  ],
+  "wall_seconds": 472.9428049620001,
+  "policy": "recovered",
+  "total_parameters": 8993178,
+  "trainable_parameters": 1084450,
+  "reward": "Normal terminal +/-1, step cost, gamma-correct army-value potential with zero terminal potential",
+  "CUDA_training": true,
+  "all_workers_exit_zero": true,
+  "checkpoint_history": {
+    "112": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-112.pt",
+    "48": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-48.pt",
+    "32": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-32.pt",
+    "80": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-80.pt",
+    "64": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+    "96": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-96.pt",
+    "16": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-16.pt",
+    "128": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt"
+  }
+}

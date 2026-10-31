@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "maps": 24,
+  "train": 12,
+  "development": 6,
+  "test": 6,
+  "final_results_read": false,
+  "seed": 2026102801,
+  "all_exact_mirrors": true,
+  "arbitrary_layouts_supported": false
+}

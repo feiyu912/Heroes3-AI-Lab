@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "actual_restoration_records": true,
+  "model_and_pre_override_Adam_digests_equal": true,
+  "four_RNG_restoration_records_exact": true,
+  "inherited_counter": 3840,
+  "native_environment_restored": false,
+  "audit_optimizer_steps": 0,
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/control/training.restoration.json": "515b0b713df3552b87713fb68691ce936f73d56ad1017ad5cf3af2429b5fd7aa",
+    "/root/heroes3-ai-lab/evaluations/battle-continuation-lr-paired-01/candidate/training.restoration.json": "e61ec72f11bcba9b81dec7f0a80f058123523fdebc1d43cf0ad1498931cd9fa9"
+  },
+  "limitation": "Checks actual saved restoration records and their identities; does not certify later training or identical native hidden state."
+}

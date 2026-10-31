@@ -1,0 +1,13 @@
+# Stopped on explicit user instruction
+
+Stopped immediately after root relayed the user's request to stop and continue later. No further review, test, build, native run or GPU work will be started. No background process or child agent was started by this reviewer; every issued CPU command has returned. Shared environment/global process and lock confirmation remains with root.
+
+Current v4 is a draft, not finally frozen, built, run or recovery-qualified. This reviewer did not modify the implementation agent's v4 source, root's runner, any frozen v3 source/auditor, or original native evidence.
+
+Completed work retained here: SOURCE_REVIEW.md with actual SaveLocalState/SaveGame/load/yourTurn evidence, checkpoint_predicates.py and check_cpu.py with cpu-01 (28 artificial refusal checks, native_execution_certified=false), and V4_PREBUILD_REVIEW.md with draft read-only findings. No actual v4 event adapter or native checkpoint certificate is complete.
+
+Blocking finding sent to root/implementation agent: the draft CClient load gate required supply mode/bundle for every loaded DirectorAI, breaking older schema4 typed saves without a supply payload. The optional namespace read also used a potentially mutating JsonNode operator[] through unique_ptr; a const alias was requested. These findings were communicated, but any subsequent implementation fixes have not been independently rechecked.
+
+Remaining suggested checks, not completed: decoder invalid reserve/cargo count and negative coordinate rejection; explicit transient boundary observation fields; strict thirteen-file manifest/recovery epoch runner preflight; checkpoint-turn2-only flag validation; copied bundle save path portability; final codec/event/bundle interface and source-token reconstruction; complete candidate/builder restoration review; actual SaveLocalState ACK, real SaveGame success/file proof; fresh exact-file native embedded hydration; comparison of complete same-process/fresh continuation through the first own-turn6 boundary, with separately retained polling tails. Positive ACK alone does not prove SaveGame file success because native save catches errors.
+
+The reviewed draft's metadata callback chain is nonblocking and conceptually sound: received actual ACK is tracked before outer unified ACK logging/removal; save follows real local-state callback ACK; loaded native payload is decoded and assigned to real controller members; the first loaded yourTurn resumes without incrementing own-turn or clearing budgets. These are source findings only, not runtime evidence. Original v3 cargo mechanism proof and final auditors remain the latest completed native mechanism evidence.

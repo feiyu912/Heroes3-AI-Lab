@@ -1,0 +1,8 @@
+usage: selector.py [-h] --agent-dir AGENT_DIR --case CASE
+                   [--idle-seconds IDLE_SECONDS]
+
+options:
+  -h, --help            show this help message and exit
+  --agent-dir AGENT_DIR
+  --case CASE
+  --idle-seconds IDLE_SECONDS

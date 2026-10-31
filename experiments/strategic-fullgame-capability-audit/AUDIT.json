@@ -1,0 +1,756 @@
+{
+  "read_only": true,
+  "games_launched": 0,
+  "optimizer_steps": 0,
+  "isolated_source": "/root/heroes3-ai-lab/src/vcmi-adv",
+  "source_files": 20,
+  "changed_live_sources": [],
+  "snapshot_differences": [],
+  "coverage": [
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-01569838-0-2026103300-pqm695p5",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 30,
+        "before_build": 7,
+        "economy_applied": 49,
+        "before_recruit": 38,
+        "before_move": 263,
+        "native_movement_blocked": 263,
+        "native_movement_unblocked": 263,
+        "move_applied": 263,
+        "before_army_transfer": 4,
+        "turn_end": 29,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-01569838-1-2026103301-6f5u58_k",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 29,
+        "before_build": 11,
+        "economy_applied": 53,
+        "before_recruit": 37,
+        "before_move": 249,
+        "native_movement_blocked": 249,
+        "native_movement_unblocked": 249,
+        "move_applied": 249,
+        "before_army_transfer": 5,
+        "turn_end": 28,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-01569838-2-2026103302-m9moqmke",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 11,
+        "before_build": 4,
+        "economy_applied": 8,
+        "before_recruit": 2,
+        "before_move": 95,
+        "native_movement_blocked": 95,
+        "native_movement_unblocked": 95,
+        "move_applied": 95,
+        "before_army_transfer": 2,
+        "turn_end": 11,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-01569838-3-2026103303-apiqk599",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1,
+        19
+      ],
+      "event_counts": {
+        "turn_start": 31,
+        "before_build": 7,
+        "economy_applied": 54,
+        "before_recruit": 35,
+        "before_move": 263,
+        "native_movement_blocked": 263,
+        "native_movement_unblocked": 263,
+        "move_applied": 263,
+        "turn_end": 31,
+        "native_battle_blocked": 8,
+        "native_battle_ready": 8,
+        "before_hire_hero": 1,
+        "before_army_transfer": 11,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-0-2026103304-wqnohmtg",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2
+      ],
+      "event_counts": {
+        "turn_start": 33,
+        "before_build": 18,
+        "economy_applied": 88,
+        "before_recruit": 49,
+        "before_move": 317,
+        "native_movement_blocked": 317,
+        "native_movement_unblocked": 317,
+        "move_applied": 317,
+        "before_army_transfer": 21,
+        "turn_end": 32,
+        "native_battle_blocked": 5,
+        "native_battle_ready": 4,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-1-2026103305-wo0f5ld9",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 21,
+        "before_build": 12,
+        "economy_applied": 38,
+        "before_recruit": 20,
+        "before_move": 178,
+        "native_movement_blocked": 178,
+        "native_movement_unblocked": 178,
+        "move_applied": 178,
+        "before_army_transfer": 6,
+        "turn_end": 20,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 2,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-2-2026103306-_hm7ayyi",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2,
+        29,
+        31,
+        86
+      ],
+      "event_counts": {
+        "turn_start": 36,
+        "before_build": 11,
+        "economy_applied": 53,
+        "before_recruit": 27,
+        "before_move": 340,
+        "native_movement_blocked": 340,
+        "native_movement_unblocked": 340,
+        "move_applied": 340,
+        "before_army_transfer": 12,
+        "turn_end": 36,
+        "native_battle_blocked": 13,
+        "native_battle_ready": 12,
+        "before_hire_hero": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-e9aec523-3-2026103307-aamgl4_z",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 13,
+        "before_build": 7,
+        "economy_applied": 13,
+        "before_recruit": 4,
+        "before_move": 113,
+        "native_movement_blocked": 113,
+        "native_movement_unblocked": 113,
+        "move_applied": 113,
+        "turn_end": 13,
+        "before_army_transfer": 2,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-1927f71c-0-2026104300-t210kkox",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 45,
+        "before_build": 7,
+        "economy_applied": 91,
+        "before_recruit": 66,
+        "before_move": 410,
+        "native_movement_blocked": 410,
+        "native_movement_unblocked": 410,
+        "move_applied": 409,
+        "before_army_transfer": 18,
+        "turn_end": 44,
+        "native_battle_blocked": 1,
+        "native_battle_ready": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-1927f71c-1-2026104301-e5ze_peg",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 22,
+        "before_build": 11,
+        "economy_applied": 44,
+        "before_recruit": 24,
+        "before_move": 210,
+        "native_movement_blocked": 210,
+        "native_movement_unblocked": 210,
+        "move_applied": 210,
+        "before_army_transfer": 9,
+        "turn_end": 21,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-1927f71c-2-2026104302-59mrt8s0",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 10,
+        "before_build": 6,
+        "economy_applied": 14,
+        "before_recruit": 5,
+        "before_move": 83,
+        "native_movement_blocked": 83,
+        "native_movement_unblocked": 83,
+        "move_applied": 83,
+        "before_army_transfer": 3,
+        "turn_end": 10,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-1927f71c-3-2026104303-n3c9g1i9",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 39,
+        "before_build": 7,
+        "economy_applied": 75,
+        "before_recruit": 58,
+        "before_move": 209,
+        "native_movement_blocked": 209,
+        "native_movement_unblocked": 209,
+        "move_applied": 209,
+        "turn_end": 39,
+        "before_army_transfer": 10,
+        "native_battle_blocked": 4,
+        "native_battle_ready": 4,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-00dae944-0-2026104304-ljdgzqy4",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2
+      ],
+      "event_counts": {
+        "turn_start": 70,
+        "before_build": 32,
+        "economy_applied": 130,
+        "before_recruit": 83,
+        "before_move": 634,
+        "native_movement_blocked": 634,
+        "native_movement_unblocked": 634,
+        "move_applied": 633,
+        "before_army_transfer": 15,
+        "turn_end": 69,
+        "native_battle_blocked": 8,
+        "native_battle_ready": 8,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-00dae944-1-2026104305-5sg8pk52",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 21,
+        "before_build": 11,
+        "economy_applied": 44,
+        "before_recruit": 21,
+        "before_move": 191,
+        "native_movement_blocked": 191,
+        "native_movement_unblocked": 191,
+        "move_applied": 191,
+        "before_army_transfer": 12,
+        "turn_end": 20,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-00dae944-2-2026104306-_2ga16mg",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2,
+        25,
+        27,
+        33
+      ],
+      "event_counts": {
+        "turn_start": 39,
+        "before_build": 10,
+        "economy_applied": 76,
+        "before_recruit": 42,
+        "before_move": 328,
+        "native_movement_blocked": 328,
+        "native_movement_unblocked": 328,
+        "move_applied": 328,
+        "turn_end": 39,
+        "native_battle_blocked": 15,
+        "native_battle_ready": 15,
+        "before_hire_hero": 3,
+        "before_army_transfer": 21,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "continuous-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-00dae944-3-2026104307-sttj_afw",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 25,
+        "before_build": 9,
+        "economy_applied": 36,
+        "before_recruit": 16,
+        "before_move": 216,
+        "native_movement_blocked": 216,
+        "native_movement_unblocked": 216,
+        "move_applied": 216,
+        "before_army_transfer": 11,
+        "turn_end": 24,
+        "native_battle_blocked": 4,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-0-2026103300-gmiycs96",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 30,
+        "before_build": 7,
+        "economy_applied": 49,
+        "before_recruit": 38,
+        "before_move": 263,
+        "native_movement_blocked": 263,
+        "native_movement_unblocked": 263,
+        "move_applied": 263,
+        "before_army_transfer": 4,
+        "turn_end": 29,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-1-2026103301-0wadx2hn",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 29,
+        "before_build": 11,
+        "economy_applied": 53,
+        "before_recruit": 37,
+        "before_move": 249,
+        "native_movement_blocked": 249,
+        "native_movement_unblocked": 249,
+        "move_applied": 249,
+        "before_army_transfer": 5,
+        "turn_end": 28,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-2-2026103302-ul82a0gg",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 11,
+        "before_build": 4,
+        "economy_applied": 8,
+        "before_recruit": 2,
+        "before_move": 95,
+        "native_movement_blocked": 95,
+        "native_movement_unblocked": 95,
+        "move_applied": 95,
+        "before_army_transfer": 2,
+        "turn_end": 11,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-ba589dfc-3-2026103303-j8d1ln3x",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1,
+        19
+      ],
+      "event_counts": {
+        "turn_start": 31,
+        "before_build": 7,
+        "economy_applied": 54,
+        "before_recruit": 35,
+        "before_move": 263,
+        "native_movement_blocked": 263,
+        "native_movement_unblocked": 263,
+        "move_applied": 263,
+        "turn_end": 31,
+        "native_battle_blocked": 8,
+        "native_battle_ready": 8,
+        "before_hire_hero": 1,
+        "before_army_transfer": 11,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-0f11ec75-0-2026103304-wnsp7v8m",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2
+      ],
+      "event_counts": {
+        "turn_start": 33,
+        "before_build": 18,
+        "economy_applied": 88,
+        "before_recruit": 49,
+        "before_move": 317,
+        "native_movement_blocked": 317,
+        "native_movement_unblocked": 317,
+        "move_applied": 317,
+        "before_army_transfer": 21,
+        "turn_end": 32,
+        "native_battle_blocked": 5,
+        "native_battle_ready": 4,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-0f11ec75-1-2026103305-wwnjurnq",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 21,
+        "before_build": 12,
+        "economy_applied": 38,
+        "before_recruit": 20,
+        "before_move": 178,
+        "native_movement_blocked": 178,
+        "native_movement_unblocked": 178,
+        "move_applied": 178,
+        "before_army_transfer": 6,
+        "turn_end": 20,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 2,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-0f11ec75-2-2026103306-om7g_orq",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2,
+        29,
+        31,
+        86
+      ],
+      "event_counts": {
+        "turn_start": 36,
+        "before_build": 11,
+        "economy_applied": 53,
+        "before_recruit": 27,
+        "before_move": 340,
+        "native_movement_blocked": 340,
+        "native_movement_unblocked": 340,
+        "move_applied": 340,
+        "before_army_transfer": 12,
+        "turn_end": 36,
+        "native_battle_blocked": 13,
+        "native_battle_ready": 12,
+        "before_hire_hero": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "split-1",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-0f11ec75-3-2026103307-g7qv3uev",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 13,
+        "before_build": 7,
+        "economy_applied": 13,
+        "before_recruit": 4,
+        "before_move": 113,
+        "native_movement_blocked": 113,
+        "native_movement_unblocked": 113,
+        "move_applied": 113,
+        "turn_end": 13,
+        "before_army_transfer": 2,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-94aba5df-0-2026104300-kcclzhia",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 45,
+        "before_build": 7,
+        "economy_applied": 91,
+        "before_recruit": 66,
+        "before_move": 410,
+        "native_movement_blocked": 410,
+        "native_movement_unblocked": 410,
+        "move_applied": 409,
+        "before_army_transfer": 18,
+        "turn_end": 44,
+        "native_battle_blocked": 1,
+        "native_battle_ready": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-94aba5df-1-2026104301-xzyv3x_o",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 22,
+        "before_build": 11,
+        "economy_applied": 44,
+        "before_recruit": 24,
+        "before_move": 210,
+        "native_movement_blocked": 210,
+        "native_movement_unblocked": 210,
+        "move_applied": 210,
+        "before_army_transfer": 9,
+        "turn_end": 21,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-94aba5df-2-2026104302-7jvz_99m",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        0
+      ],
+      "event_counts": {
+        "turn_start": 10,
+        "before_build": 6,
+        "economy_applied": 14,
+        "before_recruit": 5,
+        "before_move": 83,
+        "native_movement_blocked": 83,
+        "native_movement_unblocked": 83,
+        "move_applied": 83,
+        "before_army_transfer": 3,
+        "turn_end": 10,
+        "native_battle_blocked": 3,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-94aba5df-3-2026104303-s0ajnpm6",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        1
+      ],
+      "event_counts": {
+        "turn_start": 39,
+        "before_build": 7,
+        "economy_applied": 75,
+        "before_recruit": 58,
+        "before_move": 209,
+        "native_movement_blocked": 209,
+        "native_movement_unblocked": 209,
+        "move_applied": 209,
+        "turn_end": 39,
+        "before_army_transfer": 10,
+        "native_battle_blocked": 4,
+        "native_battle_ready": 4,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-2cd10639-0-2026104304-otwkydu4",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2
+      ],
+      "event_counts": {
+        "turn_start": 70,
+        "before_build": 32,
+        "economy_applied": 130,
+        "before_recruit": 83,
+        "before_move": 634,
+        "native_movement_blocked": 634,
+        "native_movement_unblocked": 634,
+        "move_applied": 633,
+        "before_army_transfer": 15,
+        "turn_end": 69,
+        "native_battle_blocked": 8,
+        "native_battle_ready": 8,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-2cd10639-1-2026104305-el22a4er",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 21,
+        "before_build": 11,
+        "economy_applied": 44,
+        "before_recruit": 21,
+        "before_move": 191,
+        "native_movement_blocked": 191,
+        "native_movement_unblocked": 191,
+        "move_applied": 191,
+        "before_army_transfer": 12,
+        "turn_end": 20,
+        "native_battle_blocked": 1,
+        "victory": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-2cd10639-2-2026104306-148og4wn",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        2,
+        25,
+        27,
+        33
+      ],
+      "event_counts": {
+        "turn_start": 39,
+        "before_build": 10,
+        "economy_applied": 76,
+        "before_recruit": 42,
+        "before_move": 328,
+        "native_movement_blocked": 328,
+        "native_movement_unblocked": 328,
+        "move_applied": 328,
+        "turn_end": 39,
+        "native_battle_blocked": 15,
+        "native_battle_ready": 15,
+        "before_hire_hero": 3,
+        "before_army_transfer": 21,
+        "defeat": 1
+      }
+    },
+    {
+      "stage": "resume-2",
+      "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-2cd10639-3-2026104307-el5feoei",
+      "max_director_owned_heroes": 1,
+      "decision_hero_ids": [
+        3
+      ],
+      "event_counts": {
+        "turn_start": 25,
+        "before_build": 9,
+        "economy_applied": 36,
+        "before_recruit": 16,
+        "before_move": 216,
+        "native_movement_blocked": 216,
+        "native_movement_unblocked": 216,
+        "move_applied": 216,
+        "before_army_transfer": 11,
+        "turn_end": 24,
+        "native_battle_blocked": 4,
+        "native_battle_ready": 3,
+        "defeat": 1
+      }
+    }
+  ],
+  "scope": "Source-proven capability boundaries and archived coverage; unexercised native meeting/transfer mechanisms are not certified."
+}

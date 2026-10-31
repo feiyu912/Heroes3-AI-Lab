@@ -1,0 +1,46 @@
+--- /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/takeover-20261023/independent-evidence-01/audit_mechanism.py
++++ /run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/raw_contract_auditor.py
+@@ -70,14 +70,14 @@
+  assert not any(e['event']=='typed_protocol_error' for e in events)
+  mirrored=[json.JSONDecoder().raw_decode(line.split('DirectorTypedEvent ',1)[1])[0] for line in log.splitlines() if 'DirectorTypedEvent ' in line]
+  assert mirrored==events,'typed sidecar differs from actual client log mirror'
+- registry_path=Path('/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/director_registry_v1.py')
++ registry_path=Path(__file__).resolve().parent.parent/'strategic-director-terminal-drain-v4/director_registry_v1.py'
+  spec=importlib.util.spec_from_file_location('_independent_registry',registry_path);registry=importlib.util.module_from_spec(spec);spec.loader.exec_module(registry)
+  assert str(registry_path) in plan['hashes'],'registry must be frozen source input'
+  drain=registry.verify(log,plan['owned_player'])
+  assert any(e['event']=='game_over' and e.get('completed') is True for e in events)
+  capsule=Path(plan['capsule']);att=load(capsule/'EXECUTION.json');manifest=load(capsule/'build-source-manifest.json')
+- assert att['passed'] and att['accepted_binaries_restored'] and att['accepted_sources_restored'] and not att['rebuild_required']
+- for path,h in att['candidate_artifacts'].items():assert sha(capsule/path)==h
++ from common import validate_capsule,CONTRACT,load as load_json
++ verified=validate_capsule(capsule,plan['arm']);assert verified['execution']==att
+  observed=execution['loaded_library_observations'];assert observed and all(e['valid'] for e in observed)
+  assert any(e.get('libraries') for e in observed)
+  for o in observed:
+@@ -87,13 +87,9 @@
+    assert lib['inode_matches'] and lib['device_matches'] and lib['path_matches'] and lib['sha256']==lib['expected_sha256']
+    assert not lib['deleted'] and lib['sha256']==sha(capsule/'bin/libvcmi.so')
+    assert Path(lib['path']).resolve()==Path(lib['expected_path']).resolve()==(capsule/'bin/libvcmi.so').resolve()
+- # Independently bind source closure to the source manifest frozen by collector.
+- n=native;m=load(n/'CANDIDATE_MANIFEST.json')
+- for p in [n/'CANDIDATE_MANIFEST.json',n/'CONTRACT.md',capsule/'build-source-manifest.json',capsule/'EXECUTION.json']:
+-  assert str(p) in plan['hashes'] and sha(p)==plan['hashes'][str(p)],str(p)
+- assert sha(n/'CONTRACT.md')==m['contract_sha256']==att['flow_contract_sha256']
+- assert sha(n/'CANDIDATE_MANIFEST.json')==att['candidate_manifest_sha256']
+- for path,e in m['files'].items():assert sha(n/'candidate'/path)==sha(capsule/'source-snapshot'/path)==manifest[path]['sha256']==e['candidate_sha256']
++ # Full compiled snapshot/payload closure is checked above against new immutable build contract.
++ for p in [CONTRACT,capsule/'BUILD_ATTESTATION.json',capsule/'build-source-manifest.json',capsule/'EXECUTION.json']:
++  assert str(p) in plan['hashes'] and sha(p)==plan['hashes'][str(p)]
+  catpath=work/'agent/creature-catalog.json';cat=load(catpath);catsha=sha(catpath);raw=catpath.read_bytes();assert raw.endswith(b'\n')
+  assert set(cat)=={'schema','entries'} and cat['schema']=='strategy-runtime-creature-catalog-v1' and cat['entries']
+  ids=[e['creature_id'] for e in cat['entries']];keys=[e['canonical_key'] for e in cat['entries']]
+@@ -171,7 +167,7 @@
+   end_sent,_=unique(events,lambda e:e['event']=='native_action_sent' and e.get('decision_id')==end_rid)
+   assert any(second_ack<si<ai<end_sent and s['creature_id']==c2['creature_id'] for si,ai,s in transfers),'no real same-species free transfer after second recruit before End'
+  rawhashes={str(p.relative_to(work)):sha(p) for p in [work/'PLAN.json',work/'EXECUTION.json',work/'typed.jsonl',work/'client.log',catpath]+sorted((work/'agent').glob('request-*.json'))+sorted((work/'agent').glob('action-*.json'))}
+- return dict(passed=True,whole_game_valid=True,native_game_completed=True,transport_drained=True,full_state_recruitment_verified=True,free_transfer_verified=True,mechanism_coverage_verified=mechanism,same_turn_build_recruit_move_recruit_return_end_verified=mechanism,catalog_runtime_bound=True,scope='raw native contract and state proof; no ability claim',raw=str(work),catalog_sha256=catsha,compiled_manifest_sha256=att['candidate_manifest_sha256'],actual_decisions_checked=len(checks),actual_recruits_checked=sum(c['op']=='recruit' for c in checks),actual_transfers_checked=len(transfers),one_turn_sequence=ops,checks=checks,drain=drain,source_sha256=plan['hashes'],raw_sha256=rawhashes,native_runs_by_auditor=0,gpu_runs=0,optimizer_steps=0)
++ return dict(passed=True,whole_game_valid=True,native_game_completed=True,transport_drained=True,full_state_recruitment_verified=True,free_transfer_verified=True,mechanism_coverage_verified=mechanism,same_turn_build_recruit_move_recruit_return_end_verified=mechanism,catalog_runtime_bound=True,scope='raw native contract and state proof; no ability claim',raw=str(work),catalog_sha256=catsha,compiled_manifest_sha256=load_json(CONTRACT)['parent_manifest' if plan['arm']=='baseline' else 'candidate_manifest']['sha256'],actual_decisions_checked=len(checks),actual_recruits_checked=sum(c['op']=='recruit' for c in checks),actual_transfers_checked=len(transfers),one_turn_sequence=ops,checks=checks,drain=drain,source_sha256=plan['hashes'],raw_sha256=rawhashes,native_runs_by_auditor=0,gpu_runs=0,optimizer_steps=0)
+ if __name__=='__main__':
+  p=argparse.ArgumentParser();p.add_argument('--raw',type=Path,required=True);p.add_argument('--native',type=Path,required=True);p.add_argument('--whole-game',action='store_true');p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(exist_ok=False,parents=True)
+  try:result=audit_game(a.raw,a.native,mechanism=not a.whole_game)

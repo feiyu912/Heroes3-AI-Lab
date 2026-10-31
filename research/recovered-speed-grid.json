@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "workers": 24,
+      "repeat": 0,
+      "failed": false,
+      "steps_per_second": 228.10589919004642,
+      "peak_gpu_mib": 389.66943359375
+    },
+    {
+      "workers": 24,
+      "repeat": 1,
+      "failed": false,
+      "steps_per_second": 242.2871898608177,
+      "peak_gpu_mib": 389.66943359375
+    }
+  ],
+  "completed": true,
+  "medians": {
+    "24": 235.19654452543205
+  },
+  "recommended_workers": 24,
+  "scope": "Official frozen full graph encoding plus live CPU battle sampling and PPO head updates; warm first update omitted"
+}

@@ -1,0 +1,15 @@
+{
+  "trials": [
+    {
+      "size": 32,
+      "seconds": 0.39718416400000933,
+      "incremental_allocated_mib": 36.16796875,
+      "peak_reserved_mib": 858.0,
+      "passed": true
+    }
+  ],
+  "weights_unchanged": true,
+  "sampling_rng_unchanged": true,
+  "optimizer_steps": 0,
+  "selected_microbatch": 32
+}

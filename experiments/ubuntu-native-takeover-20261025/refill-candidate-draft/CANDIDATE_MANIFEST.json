@@ -1,0 +1,73 @@
+{
+  "schema": "schema6-committed-refill-retention-source-draft-v1",
+  "status": "source-ready-not-CXX-compiled-not-native-qualified",
+  "mode": "build_recruit_v1",
+  "action_schema": "strategy-candidates-v6",
+  "response_schema": "strategy-typed-action-response-v3",
+  "factor": "when commitment applies retain original committed move plus generated receivable own-town kind4 moves",
+  "parent_manifest_path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/CANDIDATE_MANIFEST.json",
+  "parent_manifest_sha256": "bec33627673811f3d995fa29bad836f23eee1f47aa70c2f5241af745f6e918c6",
+  "derive_sha256": "339ebcf744db07858be7fcfa34f9d6f76bf48e39e617077590f4667a21e17bea",
+  "files": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "parent_candidate_sha256": "2d7180f8101d2f60e83d28b84b462e82cd6534b5ce85ac4e13a76c56b7b40eb2",
+      "candidate_sha256": "5dfa4d8a770ab1b6170653ad6b31996de15a10d6cd6358b27f7a9446f64f2911",
+      "changed": true
+    },
+    "AI/DirectorAI/CDirectorAI.h": {
+      "parent_candidate_sha256": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c",
+      "candidate_sha256": "e5acc7a1433a8d7344b587f2f98872907a2fe462631a515236feb2482209232c",
+      "changed": false
+    },
+    "AI/DirectorAI/TypedPolicyProtocol.h": {
+      "parent_candidate_sha256": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c",
+      "candidate_sha256": "a6ccd2fdaaea8ac9a00d565c95b534f71ef7418eeb0e194c6d3f1111db764a6c",
+      "changed": false
+    },
+    "server/battles/BattleProcessor.cpp": {
+      "parent_candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "candidate_sha256": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "changed": false
+    },
+    "server/CGameHandler.cpp": {
+      "parent_candidate_sha256": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d",
+      "candidate_sha256": "55a1af39f43b9032c036564fe4cc6d4747f0211a73c1a515608c2bf580cede1d",
+      "changed": false
+    },
+    "server/CGameHandler.h": {
+      "parent_candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "candidate_sha256": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "changed": false
+    },
+    "client/Client.h": {
+      "parent_candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "candidate_sha256": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "changed": false
+    },
+    "client/NetPacksClient.cpp": {
+      "parent_candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+      "candidate_sha256": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+      "changed": false
+    },
+    "client/Client.cpp": {
+      "parent_candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "candidate_sha256": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "changed": false
+    }
+  },
+  "old_source_bytes_unchanged": true,
+  "build_allowed": false,
+  "native_run_allowed": false,
+  "next_gate": "review and adapt isolated native Ubuntu capsule builder, then registered mechanism qualification",
+  "CXX_syntax_checked": false,
+  "native_builds": 0,
+  "native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "reward_changed": false,
+  "PPO_changed": false,
+  "initialization_changed": false,
+  "new_protocol_fields": false,
+  "forced_policy_action": false,
+  "destination_merging": false
+}

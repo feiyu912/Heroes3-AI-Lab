@@ -1,0 +1,7 @@
+{
+  "prior_plan_sha256": "65e475d419a588911a31dddfd9b40feec0900d199569cd1b5f4b06edaa232147",
+  "prior_script_sha256": "59609006a90d893fca34c769eb4219739d7e7f0e7ce830b3a274f0f6508678a6",
+  "new_plan_sha256": "a797e6dc1199eac90e49b61715d2125f4147aad9a4627ba64953b0e6bef4cf0c",
+  "new_script_sha256": "75717b6c06b7e4013f64f60ce53ce86505314a28fc11b180fb7b0fca22a8b107",
+  "change": "Add four completed qualifier certificates, zero-update checkpoint and freeze evidence; retain raw GPU compute query and verify nautilus GUI identity; no global process kill or empty-compute-list claim."
+}

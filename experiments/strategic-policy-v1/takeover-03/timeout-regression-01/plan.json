@@ -1,0 +1,18 @@
+{
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/regression_timeout.py": "b2ee33f4075445c6884c498a344af408d0bc3791b5a4b0bd4f4ac19dd7d0f2b2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/train_ppo_pilot.py": "91a4e3b10f4e16eda9f08ace94f01f8f32dfcc7719ef3c7d60faac727ba02b19",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/model.py": "385d3a2c75013f1e35defb3ebf41643c2630feba5be6a698d2554c2cd5b199f5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/encoder.py": "d2da88b66aaff85359526e990a09d49255ec14b0a498d801c3268d46b40419f2",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "f98e70847400d81de680259c823579980e83c8c2fe6efc60ac6adbbdb9c9bfef"
+  },
+  "protocol_change": "Native within-turn target commitment and visible neutral army clearance.",
+  "optimizer_steps": 0,
+  "CUDA_training": false,
+  "training_samples_accepted": false,
+  "independent_evaluation": false
+}

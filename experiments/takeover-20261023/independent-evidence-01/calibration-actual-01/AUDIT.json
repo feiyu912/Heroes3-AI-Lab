@@ -1,0 +1,236 @@
+{
+  "passed": true,
+  "unique_TRAIN_calibration_games": 12,
+  "complete_native_audits_rerun": 12,
+  "complete_CPU_proposals_recomputed": 11058,
+  "wins_by_multiplier": {
+    "1": 0,
+    "2": 1,
+    "4": 2
+  },
+  "selected_multiplier": 4,
+  "cells": [
+    {
+      "cell": 0,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x1",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 1,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 657,
+      "recruits": 265,
+      "creatures": 265,
+      "raw_audit_sha256": "23cff69b20d53173a5e7f967bdae97829dc0820c84a2ea20c8f3ac010638e411",
+      "fresh_raw_audit_sha256": "23cff69b20d53173a5e7f967bdae97829dc0820c84a2ea20c8f3ac010638e411",
+      "full_CPU_replay_sha256": "48e303c2f001092958227bdce4fbaad98036ef9fb18df10f3a64ad644b53a821"
+    },
+    {
+      "cell": 1,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x1",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 1,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 1129,
+      "recruits": 436,
+      "creatures": 436,
+      "raw_audit_sha256": "fc9ac440d12a4e3a8ee09cfefb7b689fe3f98a868aba86813a9caf42446df13b",
+      "fresh_raw_audit_sha256": "fc9ac440d12a4e3a8ee09cfefb7b689fe3f98a868aba86813a9caf42446df13b",
+      "full_CPU_replay_sha256": "339c393ee67dfebc7d7d1d978aed6e986ec3aea2711e41aee0e2be07765e807e"
+    },
+    {
+      "cell": 2,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x1",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 1,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 738,
+      "recruits": 328,
+      "creatures": 328,
+      "raw_audit_sha256": "195e48fedf7f69edf58c82adf1752e838965b11e1b8f26952c1fefa7b94541ea",
+      "fresh_raw_audit_sha256": "195e48fedf7f69edf58c82adf1752e838965b11e1b8f26952c1fefa7b94541ea",
+      "full_CPU_replay_sha256": "613636a0299297faeb0b6853453cb77070ed364cb17a3853a19821b22028d090"
+    },
+    {
+      "cell": 3,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x1",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 1,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 805,
+      "recruits": 356,
+      "creatures": 356,
+      "raw_audit_sha256": "cff2c475cb5bbb15ccd7d0f27834d3a90881e99df15edd9d6d2db4cb8252a9d0",
+      "fresh_raw_audit_sha256": "cff2c475cb5bbb15ccd7d0f27834d3a90881e99df15edd9d6d2db4cb8252a9d0",
+      "full_CPU_replay_sha256": "a93ae87d31c232145c7e356fabb9760cdda4aac0f5af46e4860e06c10a366bdb"
+    },
+    {
+      "cell": 4,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x2",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 2,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 984,
+      "recruits": 331,
+      "creatures": 331,
+      "raw_audit_sha256": "e384cd25027bf4608aa4c6792d968bf99b6352f4b865b4a8f7235cbeb2592b2a",
+      "fresh_raw_audit_sha256": "e384cd25027bf4608aa4c6792d968bf99b6352f4b865b4a8f7235cbeb2592b2a",
+      "full_CPU_replay_sha256": "b6d4cbc266dc054d3fd6b070d9c5713a1467c684d6e3e86ceb64954e9ec7376a"
+    },
+    {
+      "cell": 5,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x2",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 2,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "win": true,
+      "decisions": 211,
+      "recruits": 82,
+      "creatures": 82,
+      "raw_audit_sha256": "038997727313119c1060026b888077a7110870b871456265c7b59d264d08eb36",
+      "fresh_raw_audit_sha256": "038997727313119c1060026b888077a7110870b871456265c7b59d264d08eb36",
+      "full_CPU_replay_sha256": "8b1a658d014f9762be6713c36c43d985cfe1e5fe9299c304945aa1b68252e9e6"
+    },
+    {
+      "cell": 6,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x2",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 2,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 1578,
+      "recruits": 765,
+      "creatures": 765,
+      "raw_audit_sha256": "e9cfa1918374ea666b8e81538a1f5d47ebf02d2695752c0e3e36637cbaff8369",
+      "fresh_raw_audit_sha256": "e9cfa1918374ea666b8e81538a1f5d47ebf02d2695752c0e3e36637cbaff8369",
+      "full_CPU_replay_sha256": "bc7b253ef51432c9f9d06c75f8a7e1ff9e21fb07899c66bc5629542b60ad7220"
+    },
+    {
+      "cell": 7,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x2",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 2,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 570,
+      "recruits": 208,
+      "creatures": 208,
+      "raw_audit_sha256": "a459286e907b03962cc65c335954fc6889cf686d90981e97d410529d49adb524",
+      "fresh_raw_audit_sha256": "a459286e907b03962cc65c335954fc6889cf686d90981e97d410529d49adb524",
+      "full_CPU_replay_sha256": "b74bb679e9a24ffba007815b33d0c31a0e4d798c32ea7dcbd3e6fbd2b1119152"
+    },
+    {
+      "cell": 8,
+      "job": {
+        "map": "active-calibration-train-01-owned0-hero-x4",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 0,
+        "multiplier": 4,
+        "seed": 2026104300,
+        "opponent": "Nullkiller2"
+      },
+      "win": true,
+      "decisions": 170,
+      "recruits": 66,
+      "creatures": 66,
+      "raw_audit_sha256": "9ee5f06d88620ca42ef8923d17c162245b51964928f9b2b0356e36b1fceab6cf",
+      "fresh_raw_audit_sha256": "9ee5f06d88620ca42ef8923d17c162245b51964928f9b2b0356e36b1fceab6cf",
+      "full_CPU_replay_sha256": "4ff0d391cc72d36207498836899b887731ef8ec8f5597a1569a314328a119741"
+    },
+    {
+      "cell": 9,
+      "job": {
+        "map": "active-calibration-train-01-owned1-hero-x4",
+        "source_map": "takeover-v2-train-01-mines",
+        "player": 1,
+        "multiplier": 4,
+        "seed": 2026104301,
+        "opponent": "Nullkiller2"
+      },
+      "win": true,
+      "decisions": 337,
+      "recruits": 127,
+      "creatures": 127,
+      "raw_audit_sha256": "a34d187a977ffbf3c37b8958707ee739c87d17f64aba61163d242750fd5db6f7",
+      "fresh_raw_audit_sha256": "a34d187a977ffbf3c37b8958707ee739c87d17f64aba61163d242750fd5db6f7",
+      "full_CPU_replay_sha256": "c27f12e34fab788062e72cd56231ab5ceeb9a206b662492c7a4fa61e09f94678"
+    },
+    {
+      "cell": 10,
+      "job": {
+        "map": "active-calibration-train-02-owned0-hero-x4",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 0,
+        "multiplier": 4,
+        "seed": 2026104302,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 2880,
+      "recruits": 1567,
+      "creatures": 1567,
+      "raw_audit_sha256": "296f5d06a650b5678fc286169db4ff3d07935f84e1932f5d77cb99c768660e1a",
+      "fresh_raw_audit_sha256": "296f5d06a650b5678fc286169db4ff3d07935f84e1932f5d77cb99c768660e1a",
+      "full_CPU_replay_sha256": "3f95b568661ff285a9c1f77f7b8b8f4f38da2a91adcb42dd067e8073747ea47a"
+    },
+    {
+      "cell": 11,
+      "job": {
+        "map": "active-calibration-train-02-owned1-hero-x4",
+        "source_map": "takeover-v2-train-02-development",
+        "player": 1,
+        "multiplier": 4,
+        "seed": 2026104303,
+        "opponent": "Nullkiller2"
+      },
+      "win": false,
+      "decisions": 999,
+      "recruits": 448,
+      "creatures": 448,
+      "raw_audit_sha256": "02425c7727438fcad73386d5cc38cf20e025876d5c67f92090782871321c2c29",
+      "fresh_raw_audit_sha256": "02425c7727438fcad73386d5cc38cf20e025876d5c67f92090782871321c2c29",
+      "full_CPU_replay_sha256": "66900ab812eda2da35d56c95eecac0d5826074e99e75d900c4072c1f0bcc1471"
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "expert_labels": 0,
+  "independent_strength_claim": false,
+  "final_test_touched": false
+}

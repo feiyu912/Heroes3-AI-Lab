@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-13",
+  "gym_commit": "11241d496db95541766498373e23245a67847a97",
+  "engine_commit": "e956242503f465ae6ec0a62a3aeb2c4ea179db5c",
+  "files": [
+    {
+      "path": "wsl-configure.sh",
+      "sha256": "153cc786bdb041b29b33e8273bfc86c276d4f5f77e039c6380437b97ef6d04c9"
+    },
+    {
+      "path": "wsl-build.sh",
+      "sha256": "ab3aacd4fab86052ba1afae6499bb8a7af11a89f6ce911df15918661140fd9f4"
+    },
+    {
+      "path": "wsl-prepare-data.sh",
+      "sha256": "b5c3c4d5dc4cf278eb83076b0cedab306cd7e45884aa7d551e80efebdec84800"
+    },
+    {
+      "path": "wsl-compat-fixes.py",
+      "sha256": "30298552a98949becf757ba262a2c5781464ac748458ac6e0a2d851cbc63327d"
+    },
+    {
+      "path": "wsl-build-fixes.patch",
+      "sha256": "7c8e09828eda42085405d6368e63c6e7ce1c3bc9c184fd4e7b220fcdf6e1944f"
+    },
+    {
+      "path": "make-smoke-map.py",
+      "sha256": "22c9394d8fa5dd39273ec99387f30d2161b4faae721290c29bdf01ee22784dfa"
+    },
+    {
+      "path": "battle-smoke.py",
+      "sha256": "98ce9261c44c440a3e9987bb2c30d58223af451d8f8359196ffe32ca4e4b9b3b"
+    },
+    {
+      "path": "run-battle-smoke.sh",
+      "sha256": "956580d3592b9d0ac1487db0ee5b282b92f26899914dee47dbd5b43d2dab26ac"
+    },
+    {
+      "path": "verify-battle-smoke.py",
+      "sha256": "6832e5879b0a362f426c1c0a4b32352e4005894b3cb8ba116673e9e01e0170f6"
+    },
+    {
+      "path": "smoke-verification.json",
+      "sha256": "bdf491191570d1a1a4678f4bb5b59963265a90f83b25cfc9e2b70109ffabf734"
+    },
+    {
+      "path": "smoke-attacker-1.json",
+      "sha256": "8f4fe4f8d707ec55f4758f46e3ed40db93389b103a52cdc438d8f2f22cd67cd2"
+    },
+    {
+      "path": "smoke-attacker-2.json",
+      "sha256": "0b08351c2a68c82fcfa38084d89839047cb15a7da62ef88bed97ccf9aaca4281"
+    },
+    {
+      "path": "smoke-defender-1.json",
+      "sha256": "9afc999cffb74749a37f42d727a329c0ee048e19a504e0d297a83f63953e3188"
+    },
+    {
+      "path": "extend-outcome-interface.py",
+      "sha256": "67a556c80780dbb287c75cb2372e76904e11f66356ec0a199a2e31a7e435422d"
+    },
+    {
+      "path": "prepare-worker.py",
+      "sha256": "ca31495945969ea4a589ae6fa2479e894e7500d70255de36d551cee59f7aec9c"
+    },
+    {
+      "path": "benchmark-worker.py",
+      "sha256": "6e732454bc7fa18b413da3aeb638d7abf291ac0101835e7ea58deef091cd6139"
+    },
+    {
+      "path": "benchmark-environments.py",
+      "sha256": "ac71730bf1ac29a106bb096d672e7cdee5cc2040ab4830ff1779571f9ff003e3"
+    },
+    {
+      "path": "snapshot-outcome-patch.py",
+      "sha256": "50dae29d6018600ba067e5cbda1d009b7cc86c19b70529061eb1edfeec81c74d"
+    },
+    {
+      "path": "outcome-isolation.patch",
+      "sha256": "ca0d939e6e40962dde27b834a32b24f840abd110a048f51ce2cc2341b7064c13"
+    },
+    {
+      "path": "environment-benchmark.json",
+      "sha256": "1a69cda744c4d0dfd29127748b1c673761565a7ed48c79224a77fd9bfcd8289a"
+    },
+    {
+      "path": "BENCHMARK_RESULTS.md",
+      "sha256": "c36990fb19ee54d6a4109b67f6efaea6c3b888621e1619d64023464db5938187"
+    },
+    {
+      "path": "../RUN_BATTLE_SMOKE.ps1",
+      "sha256": "a8a5b4f7629467de128684002732930b72a1f5db3c80148fed04fd1e3099a293"
+    }
+  ],
+  "terminal_outcome_protocol": "lab-terminal-outcome-v1",
+  "scope": "No-magic battle regression and independent 1/2/4/8-worker benchmarks; no model training"
+}

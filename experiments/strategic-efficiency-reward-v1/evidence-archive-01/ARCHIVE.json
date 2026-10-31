@@ -1,0 +1,19 @@
+{
+  "archive_integrity_passed": true,
+  "sha256": "bd41deb4027b76935a2146b53b3a433524379e1e95f24f4d729d6a4b72da3afb",
+  "archive_bytes": 71359495,
+  "regular_files": 30620,
+  "symlinks": 96,
+  "source_after_and_archive_regular_bytes_exact": true,
+  "no_asset_symlink_dereference": true,
+  "archive_extracted": false,
+  "original_Linux_evidence_retained": true,
+  "ability_improvement_claim": false,
+  "names": [
+    "strategic-efficiency-shared-train-01",
+    "strategic-efficiency-targets-01",
+    "strategic-efficiency-control-update-01",
+    "strategic-efficiency-treatment-update-01",
+    "strategic-efficiency-paired-dev-01"
+  ]
+}

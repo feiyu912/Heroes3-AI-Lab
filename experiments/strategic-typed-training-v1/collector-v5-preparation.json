@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "unchanged_inputs": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode_v4.py": "3fd674a7acb91ab75fac115cd1475dce9952b29b05bc670771bebbf48e0039a1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v4.py": "07d13901a127661781011f9c329b22eedd02c8e8b12f1c053fe217b56dd4a6a1",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/train_update_v2.py": "0745c29abdf4024b57217f47e5a8ff1870912823a571e5d9783bec41ec79dbe7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/live_jsonl.py": "3a4bd16e5264970485f69b56c73adedcb3403d0fb9306277b650616966859a35"
+  },
+  "new_files": {
+    "collect_episode_v5.py": "cd649dc5f4b46d2a914c9046c8e6723fa1c8d2d1c3742f9ada51e8c38331443b",
+    "admit_episode_v5.py": "e5c9cf986a389f5d6c460dbe712d6f666bb5398f302411f34ac96bfb5417cbff",
+    "train_update_v3.py": "9337bdb81543412fe6c6d73b902498489ca352c972be87e3ad0e893ad819202f"
+  },
+  "optimizer_steps": 0,
+  "native_games": 0,
+  "semantics": "Committed JSONL observation only; new training protocol also binds actual admitted collector/admission sources. Old checkpoints cannot silently resume across this epoch."
+}

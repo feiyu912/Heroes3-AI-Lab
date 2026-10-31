@@ -1,0 +1,25 @@
+{
+  "schema": "terminal-drain-prefix-credit-v1",
+  "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/user-pause-01/control-update-60.pt",
+  "parent_sha256": "443863dd26ea0daaed17cd01ab3dd44a6a16544efac73c96a89839f5b72c0e20",
+  "parent_Adam": 7680,
+  "registered_curriculum": "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/REGISTERED_CURRICULUM.json",
+  "admitted_per_arm": 4096,
+  "suffix_per_arm": 4096,
+  "native_per_arm": 8192,
+  "planned_Adam_per_arm": 1024,
+  "global_updates": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68
+  ],
+  "evaluation": false,
+  "DEV_games": 96,
+  "DEV_seed_base": 2026107600,
+  "execute": false
+}

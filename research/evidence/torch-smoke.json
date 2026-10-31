@@ -1,0 +1,22 @@
+{
+  "python": "3.13.5",
+  "torch": "2.10.0.dev20251107+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "capability": [
+    12,
+    0
+  ],
+  "architectures": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "tiny_matmul_sum": 32768.0,
+  "note": "32x32 correctness smoke test; not throughput or stability benchmark"
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "samples": 127,
+  "real_native_cuda_admission": true,
+  "stop_bias_gradient": 0.0018394241342321038,
+  "weighting": {
+    "samples": 127,
+    "episodes": 1,
+    "free_choices": 127,
+    "forced_transitions": 0,
+    "active_actor_episodes": 1,
+    "actor_weight_sum": 127.0,
+    "critic_weight_sum": 127.0,
+    "advantage_mean": 0.8940831821734511,
+    "advantage_variance": 0.02776121445470295,
+    "per_episode": [
+      {
+        "episode_id": "e4899e201819821214e0d41edccb0d8f5f1719aaa5b1ba6aec330171241b40a2",
+        "steps": 127,
+        "free_choices": 127,
+        "reward": 1.0
+      }
+    ],
+    "collector_manifest_verified": true
+  },
+  "negative_cases": [
+    "null_reward",
+    "unverified_execution",
+    "wrong_operation",
+    "bad_action_schema",
+    "uncertified_episode",
+    "wrong_policy_checkpoint"
+  ],
+  "cpu_optimizer_steps": 0,
+  "cuda_optimizer_steps": 0,
+  "scope": "Backward gradients and rejection gates only. No learned checkpoint or training win-rate claim."
+}

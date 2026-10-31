@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-23T23:27:24+0800",
+  "command": [
+    "H:\\DeepSeek Harness\\resources\\runtime\\cli\\bin\\dsh.cmd",
+    "headless",
+    "--patch",
+    "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review\\review-overlay.yml",
+    "--json",
+    "-"
+  ],
+  "cwd": "G:\\Heroes3-AI-Lab\\experiments\\multihero-scheduler-garrison-v2\\minimax-review",
+  "provider": "mini",
+  "model": "MiniMax-M3.1-Flash",
+  "interface": "bundled normal dsh headless CLI; ephemeral --patch; local credentials service",
+  "task_sha256": "025f4b0e7e8adb209a0fa708def18ec20ba9bc98dfce5f7cd4c38476552b84ec",
+  "source_access": "prompt supplied only; all model-facing tool provider entries disabled",
+  "status": "process_finished",
+  "exit_code": 1,
+  "finished_at": "2026-10-23T23:34:24+0800"
+}

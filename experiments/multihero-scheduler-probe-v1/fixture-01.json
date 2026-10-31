@@ -1,0 +1,43 @@
+{
+  "source": "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap",
+  "source_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+  "map": "/mnt/g/Heroes3-AI-Lab/experiments/multihero-scheduler-probe-v1/fixture-01.vmap",
+  "sha256": "aa50587cb8ced39df3f1e1a476a00bde5cdfbb16c6a8dc12ddfdebbff5498e13",
+  "installed": false,
+  "loaded_by_native": false,
+  "red_heroes": 3,
+  "mobile_heroes": [
+    0,
+    2
+  ],
+  "control_hero": 3,
+  "enemy_control_hero": 1,
+  "targets": {
+    "hero_0": [
+      [
+        "resource_a1",
+        9,
+        11
+      ],
+      [
+        "resource_a2",
+        7,
+        11
+      ]
+    ],
+    "hero_2": [
+      [
+        "resource_b1",
+        12,
+        11
+      ],
+      [
+        "resource_b2",
+        10,
+        11
+      ]
+    ]
+  },
+  "positions_are_object_coordinates": true,
+  "native_pathfinding_still_required": true
+}

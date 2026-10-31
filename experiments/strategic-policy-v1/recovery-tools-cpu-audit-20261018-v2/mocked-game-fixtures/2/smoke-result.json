@@ -1,0 +1,1 @@
+{"passed": true, "native_result": {"completed": true, "inputs_unchanged": true, "actual_ai": {"red": "EmptyAI", "blue": "DirectorAI"}, "winner": "red", "run_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018-v2/mocked-game-fixtures/2/synthetic-native", "SYNTHETIC_ONLY": true}}

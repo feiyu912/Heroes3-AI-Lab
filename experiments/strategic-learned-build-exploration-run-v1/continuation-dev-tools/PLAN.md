@@ -1,0 +1,3 @@
+# Preselected update4 independent DEV
+
+After fresh complete TRAIN batches at logical updates0,1,2,3 and true same-Adam continuation, compare calibrated initialization40eccc against final24b8c3f3 (training_updates4,504actual Adam steps). Fixed8pairs/16games, two historically seen DEV maps x both roles x EmptyAI/Nullkiller2, new seeds3300..3307 registered in continuation-01 before update2. No selection of a best intermediate model. Same native capsule01/economic window and CPUargmax. Every raw/source/cost/ACK gate remains identical; invalid arms stop unscored. No finaltest or training admission from DEV. This estimates update effect conditional on the calibrated initialization, not the causal gain of its zero-gradient offset.

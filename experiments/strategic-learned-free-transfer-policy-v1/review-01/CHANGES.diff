@@ -1,0 +1,504 @@
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/admit_episode_v5.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/admit_episode_v5.py
+@@ -1,7 +1,7 @@
+ import sys
+ from pathlib import Path
+ LOCAL=Path(__file__).resolve().parent
+-BASE=LOCAL;RUN=LOCAL.parent/'strategic-learned-build-exploration-run-v1';sys.path.append(str(RUN))
++BASE=LOCAL;RUN=LOCAL.parent/'strategic-learned-free-transfer-run-v1';sys.path.append(str(RUN))
+ sys.path.append(str(BASE))
+ from pipeline_common import source_inputs,capsule_inputs,validate_capsule,audit_metadata,validate_native_epoch,validate_cells,clean_environment,AUDITOR,NATIVE,MARKER,EPOCH,BASE
+ """Admit only complete raw-certified episodes after exact CUDA sampling replay."""
+@@ -15,6 +15,7 @@
+     p=argparse.ArgumentParser();p.add_argument('--run',type=Path,required=True);p.add_argument('--native-audit',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
+     run=a.run.resolve();native=json.loads(a.native_audit.read_text());plan=json.loads((run/'PLAN.json').read_text());execution=json.loads((run/'EXECUTION.json').read_text())
+     validate_native_epoch(native,plan,execution)
++    assert native.get('prewindow_evidence_verified') is True and plan.get('threat_replan')=='off'
+     assert native['whole_game_valid'] and native['native_game_completed'] and not native['contract_errors']
+     assert native['native_game_completed'] and native['transport_drained'] and execution['input_sha_unchanged'] and execution['client_exit']==0
+     assert execution.get('transport_drained') is True or native.get('wrapper_terminal_observation_corrected') is True
+@@ -64,12 +65,15 @@
+     manifest['transport_drained']=True
+     manifest['pipeline_epoch']=EPOCH
+     manifest['economy_epoch']='learned-economy-build-v1'
++    manifest['native_flow_epoch']='free-stock-prewindow-v2'
++    manifest['threat_replan']='off'
+     manifest['policy_builds']=sum(r['action_type']=='build' for r in rows)
+     a.out.mkdir(parents=True,exist_ok=False)
+     (a.out/'samples.jsonl').write_text(''.join(json.dumps(r,separators=(',',':'))+'\n' for r in rows))
+     write(a.out/'episode.json',manifest)
+     report=dict(passed=True,samples_admitted=len(rows),policy_moves=sum(r['action_type']=='move' for r in rows),
+         pipeline_epoch=EPOCH,economy_epoch='learned-economy-build-v1',policy_builds=manifest['policy_builds'],
++        native_flow_epoch='free-stock-prewindow-v2',threat_replan='off',prewindow_evidence_verified=True,
+         policy_end_turns=sum(r['action_type']=='end_turn' for r in rows),automatic_end_turns_excluded=native['counts']['automatic_end_turns'],
+         sampling_device='cuda',replay_actions_logprobs_values_rng_exact=True,optimizer_steps=0,
+         native_episode_winner=native['winner'],ability_improvement_claim=False,
+@@ -79,3 +83,4 @@
+ if __name__=='__main__':main()
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/broker.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/broker.py
+@@ -157,3 +157,4 @@
+     raise SystemExit(main())
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/draft_resume_guard_cpu.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/draft_resume_guard_cpu.py
+@@ -0,0 +1,32 @@
++"""Read-only proof that changing runtime/source protocol cannot reuse old resume acceptance."""
++import argparse,copy,hashlib,importlib.util,json,random
++from pathlib import Path
++import torch
++HERE=Path(__file__).resolve().parent
++PARENT=Path('/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-04/update/update-4.pt')
++EXPECTED='24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d'
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False)
++    source=HERE.parent/'strategic-learned-build-exploration-policy-v1/model_io.py'
++    spec=importlib.util.spec_from_file_location('_free_transfer_draft_old_codec',source)
++    codec=importlib.util.module_from_spec(spec);spec.loader.exec_module(codec)
++    torch.set_num_threads(1);model,bundle,digest=codec.load_model(PARENT,'cpu')
++    assert digest==EXPECTED and bundle['optimizer_steps_total']==504
++    optimizer=torch.optim.Adam(model.parameters(),lr=3e-4)
++    before=codec.tensor_sha(model.state_dict());rng=torch.get_rng_state().clone();python=random.getstate()
++    proposed=copy.deepcopy(bundle['protocol']);proposed['schema']='strategic-learned-free-transfer-training-v1'
++    # This is only a changed-protocol rejection test, not a fabricated v2 capsule SHA.
++    proposed_sha=codec.digest_json(proposed);assert proposed_sha!=bundle['protocol_sha256']
++    try:codec.restore_training(bundle,model,optimizer,protocol_sha=proposed_sha,device='cpu')
++    except ValueError as error:reason=str(error)
++    else:raise AssertionError('Old protocol resume wrongly accepted a changed epoch')
++    assert before==codec.tensor_sha(model.state_dict()) and not optimizer.state
++    assert torch.equal(rng,torch.get_rng_state()) and python==random.getstate()
++    report=dict(passed=True,CPU_only=True,native_games=0,GPU_steps=0,optimizer_steps=0,status='draft_only_not_frozen',
++        parent_sha256=digest,parent_saved_Adam_steps=504,old_protocol_sha256=bundle['protocol_sha256'],
++        changed_schema_test_protocol_sha256=proposed_sha,old_resume_rejected=True,rejection_reason=reason,
++        model_optimizer_CPU_Python_RNG_unchanged=True,chosen_transition='same-architecture exact weights-only migration; reset Adam/RNG/rollout; new source/runtime epoch',
++        native_v2_capsule_pins_pending=True,new_initialization_not_generated=True,
++        inspected_codec_sha256=hashlib.sha256(source.read_bytes()).hexdigest())
++    (a.out/'AUDIT.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
++if __name__=='__main__':main()
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/encoder.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/encoder.py
+@@ -7,3 +7,4 @@
+ _module=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_module)
+ for _name in dir(_module):
+     if not _name.startswith('__'):globals()[_name]=getattr(_module,_name)
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/episode_balanced_ppo.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/episode_balanced_ppo.py
+@@ -17,7 +17,7 @@
+ encoder=importlib.util.module_from_spec(spec);spec.loader.exec_module(encoder)
+ collate,validate=encoder.collate,encoder.validate
+ 
+-PROTOCOL = dict(schema='strategic-learned-build-exploration-episode-balanced-choice-ppo-v1', action_schema='strategy-candidates-v5', gamma=1.0,
++PROTOCOL = dict(schema='strategic-learned-free-transfer-episode-balanced-choice-ppo-v1', action_schema='strategy-candidates-v5', gamma=1.0,
+     reward='Completed native terminal win +1/loss -1 only; invalid batch must abort before update.',
+     actor_sample_weight='N/(E*episode_free_choices) if candidate_count>1, otherwise 0; E includes zero-choice episodes',
+     critic_sample_weight='N/(E*episode_steps); E includes all valid episodes',
+@@ -237,3 +237,4 @@
+         progress['parameter_delta_from_previous_update']=parameter_delta(model,before)
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/load_admitted.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/load_admitted.py
+@@ -6,14 +6,16 @@
+     directory=Path(directory);admission=json.loads((directory/'AUDIT.json').read_text())
+     if admission.get('passed') is not True or admission.get('replay_actions_logprobs_values_rng_exact') is not True:
+         raise ValueError('Exact CUDA/native admission required')
+-    if admission.get('pipeline_epoch')!='strategic-learned-build-exploration-training-v1' or admission.get('economy_epoch')!='learned-economy-build-v1':raise ValueError('Schema5 economy admission epoch required')
++    if admission.get('pipeline_epoch')!='strategic-learned-free-transfer-training-v1' or admission.get('economy_epoch')!='learned-economy-build-v1':raise ValueError('Schema5 economy admission epoch required')
+     if not all(sha(f)==h for f,h in admission['input_sha256'].items()) or not all(sha(directory/f)==h for f,h in admission['output_sha256'].items()):
+         raise ValueError('Admitted input/output hash changed')
+     episode=json.loads((directory/'episode.json').read_text())
+     if sha(episode['raw_audit_path'])!=episode['raw_audit_sha256']:raise ValueError('Raw audit changed')
+     raw=json.loads(Path(episode['raw_audit_path']).read_text())
+     if raw.get('whole_game_valid') is not True or raw.get('contract_errors'):raise ValueError('Invalid native game')
+-    if raw.get('audit_epoch')!='director-learned-economy-build-v1':raise ValueError('Wrong native build audit epoch')
++    if raw.get('audit_epoch')!='director-learned-economy-free-stock-prewindow-v2':raise ValueError('Wrong native free-stock audit epoch')
++    if (admission.get('prewindow_evidence_verified') is not True or admission.get('threat_replan')!='off'
++            or raw.get('prewindow_evidence_verified') is not True or raw.get('native_flow_epoch')!='free-stock-prewindow-v2'):raise ValueError('Missing qualified prewindow evidence')
+     samples=[json.loads(s) for s in (directory/'samples.jsonl').read_text().splitlines()]
+     if len(samples)!=admission['samples_admitted'] or len(samples)!=episode['decisions']:raise ValueError('Admission count mismatch')
+     if len({s['decision_id'] for s in samples})!=len(samples) or len({s['native_request_id'] for s in samples})!=len(samples):
+@@ -23,3 +25,4 @@
+     if sum(s['action_type']=='build' for s in samples)!=admission['policy_builds'] or admission['policy_builds']!=raw['counts']['policy_builds']:raise ValueError('Build evidence count differs')
+     return samples,[episode],admission
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/migrate_init_cpu.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/migrate_init_cpu.py
+@@ -0,0 +1,55 @@
++"""Same-architecture exact weights migration; no native qualification or optimizer update."""
++import argparse,copy,hashlib,importlib.util,json,sys
++from pathlib import Path
++import torch
++import model_io
++HERE=Path(__file__).resolve().parent
++PARENT=Path('/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-04/update/update-4.pt')
++EXPECTED='24b8c3f3d5ddacd61e48bd87a526c1fd59b2a83eafbdacfe44bd5ddcfb5d3e6d'
++def module(name,path):
++    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);a=p.parse_args();a.out.mkdir(parents=True,exist_ok=False)
++    torch.set_num_threads(1)
++    oldio=module('_free_transfer_old_codec',HERE.parent/'strategic-learned-build-exploration-policy-v1/model_io.py')
++    old,pb,digest=oldio.load_model(PARENT,'cpu');assert digest==EXPECTED and pb['optimizer_steps_total']==504
++    initial=dict(format=model_io.INITIAL_FORMAT,schema=model_io.architecture.encoder.SCHEMA,
++        encoder_version=model_io.architecture.ENCODER_VERSION,architecture_version=model_io.architecture.ARCHITECTURE_VERSION,
++        state_dim=35,candidate_dim=43,hidden=old.hidden,prior_config=copy.deepcopy(pb['prior_config']),
++        state_dict=model_io.cpu_tree(old.state_dict()),policy_tensor_sha256=model_io.tensor_sha(old.state_dict()),
++        lineage=dict(reset_optimizer=True,reset_rng=True,discard_rollout=True,weights_only=True,new_gradient_steps=0,
++            parent_checkpoint_sha256=digest,parent_optimizer_steps_not_continued=504,parent_training_updates=4,
++            new_epoch='strategic-learned-free-transfer-training-v1',threat_replan='off',
++            architecture_unchanged=True,native_qualification_pending=True))
++    target=a.out/'free-transfer-initialization.pt';initial_sha=model_io.save_initialization(initial,target)
++    new,_,loaded_sha=model_io.load_model(target,'cpu')
++    assert loaded_sha==initial_sha and model_io.tensor_sha(new.state_dict())==model_io.tensor_sha(old.state_dict())
++    loader=module('_free_transfer_historical_admission',HERE.parent/'strategic-learned-economy-policy-v1/load_admitted.py')
++    source=Path('/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01');rows_checked=0;windows=0
++    with torch.no_grad():
++        for cell in sorted(source.glob('cell-*')):
++            rows,_,_=loader.load(cell/'admitted')
++            for row in rows:
++                q=row['request'];batch=model_io.architecture.encoder.collate([q]);x,v=old(**batch);y,w=new(**batch)
++                assert torch.equal(x,y) and torch.equal(v,w);rows_checked+=1
++                windows+=any(c['op']=='build' for c in q['candidates'])
++    assert rows_checked==3000 and windows==400
++    optimizer=torch.optim.Adam(new.parameters(),lr=3e-4)
++    assert not optimizer.state and model_io.steps(optimizer.state_dict())==0
++    assert 'actor.build_bias' in model_io.groups(new,optimizer)[0]
++    run=HERE.parent/'strategic-learned-free-transfer-run-v1';sys.path.append(str(run))
++    import pipeline_common
++    rejected=[]
++    for name,fn in [('source_closure',pipeline_common.source_inputs),('capsule',lambda:pipeline_common.validate_capsule(Path('/unqualified/no-native-run'))),('qualification',pipeline_common.require_qualification)]:
++        try:fn()
++        except ValueError:rejected.append(name)
++        else:raise AssertionError('Draft native execution gate accepted '+name)
++    report=dict(passed=True,CPU_only=True,native_games=0,GPU_steps=0,optimizer_steps=0,
++        status='reviewable source draft; native-v2 exact qualification pins and flow auditor pending; not frozen',
++        parent_sha256=digest,parent_optimizer_steps_not_continued=504,initialization_sha256=initial_sha,
++        same_architecture_exact_weights=True,logits_and_critic_bitwise_exact_rows=rows_checked,included_historical_build_windows=windows,
++        new_Adam_state_empty=True,new_Adam_step=0,new_Adam_binding_includes_build_bias=True,
++        unqualified_native_gates_rejected=rejected,
++        source_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in HERE.glob('*.py')})
++    (a.out/'AUDIT.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
++if __name__=='__main__':main()
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/model.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/model.py
+@@ -9,3 +9,4 @@
+ for _name in ('encoder','STATE_DIM','CANDIDATE_DIM','ENCODER_VERSION','ARCHITECTURE_VERSION','EPOCH','PriorCandidateActorCritic'):
+     globals()[_name]=getattr(_module,_name)
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/model_io.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/model_io.py
+@@ -5,17 +5,26 @@
+ HERE=Path(__file__).resolve().parent
+ spec=importlib.util.spec_from_file_location('_typed_checkpoint_architecture',HERE/'model.py')
+ architecture=importlib.util.module_from_spec(spec);spec.loader.exec_module(architecture)
+-FORMAT='strategic-learned-build-exploration-ppo-checkpoint-v1'
+-INITIAL_FORMAT='strategic-learned-build-exploration-initialization-v1'
++FORMAT='strategic-learned-free-transfer-ppo-checkpoint-v1'
++INITIAL_FORMAT='strategic-learned-free-transfer-initialization-v1'
+ INITIAL_KEYS={'format','schema','encoder_version','state_dim','candidate_dim','hidden','prior_config','state_dict','lineage','contract_sha256','policy_tensor_sha256'}
+ CONTRACT_SHA256='e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5'
+ 
+ def initialization_model(bundle,device='cpu'):
+-    path=HERE.parent/'strategic-learned-build-exploration-v1/model_io.py'
+-    if hashlib.sha256(path.read_bytes()).hexdigest()!='cadbe644db1ce31d68376b822c0ae69ec20ff512d1f690fc88a160c71abc3ae6':raise ValueError('Frozen calibration codec changed')
+-    spec=importlib.util.spec_from_file_location('_exploration_calibration_codec',path)
+-    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+-    return module.from_bundle(bundle,device)
++    keys={'format','schema','encoder_version','architecture_version','state_dim','candidate_dim','hidden','prior_config','state_dict','lineage','policy_tensor_sha256'}
++    if (not isinstance(bundle,dict) or set(bundle)!=keys or bundle['format']!=INITIAL_FORMAT
++            or bundle['schema']!=architecture.encoder.SCHEMA or bundle['encoder_version']!=architecture.ENCODER_VERSION
++            or bundle['architecture_version']!=architecture.ARCHITECTURE_VERSION
++            or bundle['state_dim']!=35 or bundle['candidate_dim']!=43):raise ValueError('Distinct same-architecture free-transfer initialization required')
++    lineage=bundle['lineage']
++    if (not all(lineage.get(k) is True for k in ('reset_optimizer','reset_rng','discard_rollout','weights_only'))
++            or lineage.get('new_gradient_steps')!=0 or lineage.get('new_epoch')!='strategic-learned-free-transfer-training-v1'
++            or lineage.get('threat_replan')!='off'):raise ValueError('Explicit new free-transfer epoch reset required')
++    if tensor_sha(bundle['state_dict'])!=bundle['policy_tensor_sha256'] or any(not bool(torch.isfinite(v).all()) for v in bundle['state_dict'].values()):raise ValueError('Invalid free-transfer weights')
++    with torch.random.fork_rng(devices=[]):model=architecture.PriorCandidateActorCritic(bundle['hidden'],**bundle['prior_config'])
++    model.load_state_dict(bundle['state_dict'],strict=True)
++    if float(model.prior_scale)!=bundle['prior_config']['prior_scale'] or float(model.actor.build_bias.detach())!=bundle['prior_config']['build_bias']:raise ValueError('Free-transfer prior metadata differs')
++    return model.to(device).eval()
+ 
+ def save_initialization(bundle,path):
+     initialization_model(bundle)
+@@ -66,7 +75,8 @@
+     protocol=bundle['protocol']
+     if (protocol.get('action_schema')!=architecture.encoder.SCHEMA or protocol.get('economy_epoch')!=architecture.encoder.EPOCH
+             or protocol.get('contract_sha256')!=CONTRACT_SHA256):raise ValueError('Schema5 build protocol/contract binding required')
+-    if protocol.get('schema')!='strategic-learned-build-exploration-training-v1' or protocol.get('architecture_version')!=architecture.ARCHITECTURE_VERSION:raise ValueError('Exploration training epoch required')
++    if protocol.get('schema')!='strategic-learned-free-transfer-training-v1' or protocol.get('architecture_version')!=architecture.ARCHITECTURE_VERSION:raise ValueError('Exploration training epoch required')
++    if protocol.get('threat_replan')!='off' or protocol.get('native_flow_epoch')!='free-stock-prewindow-v2':raise ValueError('Qualified free-stock/off protocol required')
+     if tensor_sha(bundle['state_dict'])!=bundle['policy_tensor_sha256']:raise ValueError('Model tensor digest mismatch')
+     if steps(bundle['optimizer'])!=bundle['optimizer_steps_total']:raise ValueError('Adam step metadata mismatch')
+     if bundle['optimizer_kind'] not in ('Adam','AdamW') or bundle['snapshot_device'] not in ('cpu','cuda'):raise ValueError('Unsupported optimizer/device')
+@@ -139,3 +149,4 @@
+     return bundle['training_updates']
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/onpolicy_broker_v2.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/onpolicy_broker_v2.py
+@@ -83,3 +83,4 @@
+ if __name__=='__main__':raise SystemExit(main())
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-policy-v1/train_update_v3.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-policy-v1/train_update_v3.py
+@@ -1,7 +1,7 @@
+ import sys
+ from pathlib import Path
+ LOCAL=Path(__file__).resolve().parent
+-BASE=LOCAL;RUN=LOCAL.parent/'strategic-learned-build-exploration-run-v1';sys.path.append(str(RUN))
++BASE=LOCAL;RUN=LOCAL.parent/'strategic-learned-free-transfer-run-v1';sys.path.append(str(RUN))
+ sys.path.append(str(BASE))
+ from pipeline_common import source_inputs,capsule_inputs,validate_capsule,audit_metadata,validate_native_epoch,validate_cells,clean_environment,AUDITOR,NATIVE,MARKER,EPOCH,BASE
+ """One certified fresh on-policy CUDA update; complete boundaries only for resume."""
+@@ -18,7 +18,7 @@
+ 
+ def protocol(capsule,purpose,seed):
+     sources=source_inputs()+[Path(__file__).resolve()]
+-    return dict(schema=EPOCH,architecture_version=architecture.ARCHITECTURE_VERSION,action_schema='strategy-candidates-v5',economy_epoch='learned-economy-build-v1',contract_sha256=CONTRACT_SHA256,purpose=purpose,algorithm=PROTOCOL,learning_rate=3e-4,
++    return dict(schema=EPOCH,threat_replan='off',native_flow_epoch='free-stock-prewindow-v2',architecture_version=architecture.ARCHITECTURE_VERSION,action_schema='strategy-candidates-v5',economy_epoch='learned-economy-build-v1',contract_sha256=CONTRACT_SHA256,purpose=purpose,algorithm=PROTOCOL,learning_rate=3e-4,
+         global_seed=seed,optimizer='Adam',torch_version=str(torch.__version__),cuda_version=torch.version.cuda,device=torch.cuda.get_device_name(0),
+         deterministic_algorithms=True,allow_tf32=False,
+         sources={str(p):sha(p) for p in sources},capsule_manifest_sha256=sha(capsule/'build-source-manifest.json'),
+@@ -108,3 +108,4 @@
+ if __name__=='__main__':raise SystemExit(main())
+ 
+ 
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/audit_contract.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/audit_contract.py
+@@ -1,6 +1,6 @@
+ import sys
+ from pathlib import Path
+-sys.path.insert(0,str(Path(__file__).resolve().parent.parent/"strategic-learned-build-exploration-policy-v1"))
++sys.path.insert(0,str(Path(__file__).resolve().parent.parent/"strategic-learned-free-transfer-policy-v1"))
+ """Strict proposed native event contract audit. CPU fixtures are never real execution evidence."""
+ import argparse
+ import copy
+@@ -184,3 +184,4 @@
+ 
+ if __name__=='__main__':
+     raise SystemExit(main())
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/audit_game_v6.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/audit_game_v6.py
+@@ -9,8 +9,11 @@
+ from raw_events_v5 import extract
+ from audit_contract import audit
+ from build_evidence import verify as verify_build
++from free_transfer_evidence import verify as verify_free_transfer
++from pipeline_common import require_qualification
+ 
+ folder=Path(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=False)
++require_qualification()
+ plan=json.loads((folder/'PLAN.json').read_text());owned=plan['owned_player']
+ assert plan['terminal_ack_scope']=='director'
+ assert plan['termination_registry_semantics']=='atomic-termination-closed-registry-v3'
+@@ -18,7 +21,7 @@
+ assert input_audit_epoch==AUDIT_EPOCH
+ assert all(plan.get(k)==v for k,v in audit_metadata().items())
+ candidate_manifest=json.loads((NATIVE/'CANDIDATE_MANIFEST.json').read_text())
+-assert candidate_manifest['schema']=='director-learned-economy-build-v1'
++assert candidate_manifest['schema']=='director-learned-economy-free-stock-prewindow-v2'
+ manifest_path=NATIVE/'CANDIDATE_MANIFEST.json'
+ assert plan['hashes'][str(manifest_path)]==digest(manifest_path.read_bytes())
+ capsule=Path(plan['capsule']);compiled_attestation=json.loads((capsule/'EXECUTION.json').read_text())
+@@ -46,6 +49,8 @@
+     assert d['destination']==c['position'] and d['step']==c['next']
+ contract=audit(proposals,events,fixture=False)
+ build_proof=verify_build(raw,proposals,[json.loads(s) for s in (folder/'build-packs.jsonl').read_text().splitlines()])
++flow_proof=verify_free_transfer(raw,proposals)
++assert flow_proof['passed'] is True
+ assert build_proof['passed'] and build_proof['policy_builds']==contract['counts']['policy_builds']
+ registry=verify_registry(raw,owned)
+ execution=json.loads((folder/'EXECUTION.json').read_text())
+@@ -96,6 +101,8 @@
+     auditor_sha256={n:digest(p.read_bytes()) for n,p in AUDITOR_SOURCES.items()},
+     limitation='Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.')
+ report.update(audit_metadata());report.update(build_evidence_verified=True,build_evidence=build_proof)
++report.update(prewindow_evidence_verified=True,prewindow_evidence=flow_proof)
+ (out/'events.jsonl').write_text(''.join(json.dumps(e)+'\n' for e in events));(out/'WHOLE_GAME_CONTRACT.json').write_text(json.dumps(contract,indent=2));(out/'AUDIT.json').write_text(json.dumps(report,indent=2))
+ print(json.dumps(report,indent=2))
+ raise SystemExit(0 if report['whole_game_valid'] else 1)
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/build_evidence.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/build_evidence.py
+@@ -108,3 +108,4 @@
+             town_id=row['sent']['town_id'],building_id=row['sent']['building_id'],before=row['before'],after=row['ack_state']))
+     need(len(reports)==sum(p['response']['op']=='build' for p in proposals),'Unconsumed policy builds')
+     return dict(passed=True,policy_builds=len(reports),received_packets=len(pack_rows),builds=reports)
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/collect_episode_v5.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/collect_episode_v5.py
+@@ -1,7 +1,7 @@
+ import sys
+ from pathlib import Path
+ LOCAL=Path(__file__).resolve().parent
+-BASE=LOCAL.parent/'strategic-learned-build-exploration-policy-v1'
++BASE=LOCAL.parent/'strategic-learned-free-transfer-policy-v1'
+ LEGACY=LOCAL.parent/'strategic-typed-training-v1'
+ sys.path.append(str(LEGACY))
+ sys.path.append(str(BASE))
+@@ -76,6 +76,7 @@
+     sampling_seed=int.from_bytes(hashlib.sha256(seed_material).digest()[:8],'little')%(2**63-1)
+     frozen={str(p):sha(p) for p in inputs};write(work/'PLAN.json',dict(capsule=str(capsule),seed=args.seed,map=args.map,owned_player=args.player,opponent=args.opponent,load_save=str(args.load_save) if args.load_save else None,classification='new_policy',checkpoint=str(checkpoint),sampling='onpolicy CUDA multinomial',sampling_seed=sampling_seed,logical_update=args.logical_update,training_samples=0,optimizer_steps=0,winner=None,game_completed=False,hashes=frozen,**audit_metadata()))
+     env=dict(os.environ,LD_LIBRARY_PATH=str(bins),SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',XDG_DATA_HOME=str(work/'data'),XDG_CONFIG_HOME=str(work),XDG_CACHE_HOME=str(work/'cache'),LAB_ADV_AI_0='DirectorAI' if args.player==0 else args.opponent,LAB_ADV_AI_1='DirectorAI' if args.player==1 else args.opponent,LAB_ADV_TRACE=str(work/'strategy-trace.jsonl'),LAB_ADV_DECISIONS=str(work/'strategy-decisions.jsonl'),LAB_ADV_AGENT_DIR=str(work/'agent'),LAB_ADV_TYPED_EVENTS=str(work/'typed.jsonl'),LAB_ADV_LEARNED_ECONOMY='build_v1',LAB_ADV_BUILD_PACKS=str(work/'build-packs.jsonl'))
++    env['LAB_ADV_THREAT_REPLAN']='off'
+     (work/'build-packs.jsonl').touch(exist_ok=False)
+     loaded={};child=None;broker=None;result={'controlled_stop':False,'game_completed':False,'winner':None,'optimizer_steps':0,'training_samples':0,**audit_metadata()}
+     with owned_resources() as lease_fds,(work/'broker.log').open('w') as blog,(work/'client.log').open('w') as log:
+@@ -137,3 +138,4 @@
+     assert a.seconds>0
+     assert a.logical_update>=0
+     raise SystemExit(run(a))
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/free_transfer_evidence.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/free_transfer_evidence.py
+@@ -0,0 +1,4 @@
++"""Unqualified flow-audit entry point; root supplies actual v2 evidence parser before enabling runs."""
++QUALIFIED=False
++def verify(raw,proposals):
++    raise RuntimeError('Draft prewindow native evidence parser is not qualified. Root must bind actual ArrangeStacks/ACK/post-transfer observations before enabling this epoch.')
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/pipeline_common.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/pipeline_common.py
+@@ -3,44 +3,78 @@
+ from pathlib import Path
+ HERE=Path(__file__).resolve().parent
+ EXPERIMENTS=HERE.parent
+-BASE=EXPERIMENTS/'strategic-learned-build-exploration-policy-v1'
++BASE=EXPERIMENTS/'strategic-learned-free-transfer-policy-v1'
+ AUDITOR=HERE
+-NATIVE=EXPERIMENTS/'strategic-learned-economy-native-v1'
++NATIVE=EXPERIMENTS/'strategic-learned-economy-native-v2'
++CONTRACT=EXPERIMENTS/'strategic-learned-economy-native-v1/CONTRACT.md'
++BINDINGS_PATH=HERE/'DRAFT_BINDINGS.json'
++BINDINGS=json.loads(BINDINGS_PATH.read_text())
+ OLD=EXPERIMENTS/'strategic-learning-mainline-20261020/native-pipeline'
+ SUPPORT=EXPERIMENTS/'multihero-mechanism-probe-v1/build-driver-frozen-03'
+ LAB=Path('/root/heroes3-ai-lab')
+-EPOCH='strategic-learned-build-exploration-training-v1'
+-AUDIT_EPOCH='director-learned-economy-build-v1'
++EPOCH='strategic-learned-free-transfer-training-v1'
++AUDIT_EPOCH='director-learned-economy-free-stock-prewindow-v2'
+ TERMINATION='atomic-termination-closed-registry-v3'
+-DEFAULT_CAPSULE=LAB/'evaluations/strategic-learned-economy-build-capsule-01'
+-DEFAULT_INITIAL=EXPERIMENTS/'strategic-learned-build-exploration-v1/calibration-01/build-offset-initialization.pt'
+-INITIAL_SHA='40eccc511fbc61b84b86e75b5aec102781835f2574db809f9a698f9a81db6d97'
++DEFAULT_CAPSULE=Path(BINDINGS.get('qualified_capsule_directory') or LAB/'evaluations/UNQUALIFIED-free-stock-capsule')
++DEFAULT_INITIAL=BASE/'initialization-01/free-transfer-initialization.pt'
++INITIAL_SHA=BINDINGS.get('initialization_sha256')
+ MAPS=('takeover-v2-train-01-mines','takeover-v2-train-02-development')
+ EXPECTED_CELLS={(m,p,o) for m in MAPS for p in (0,1) for o in ('EmptyAI','Nullkiller2')}
+ spec=importlib.util.spec_from_file_location('_learned_build_registry',EXPERIMENTS/'strategic-director-terminal-drain-v4/director_registry_v1.py')
+ registry=importlib.util.module_from_spec(spec);spec.loader.exec_module(registry)
+ MARKER=registry.MARKER
+ def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
++
++def require_qualification():
++    b=json.loads(BINDINGS_PATH.read_text())
++    if b.get('native_run_allowed') is not True:raise ValueError('Native free-stock capsule/flow audit is not qualified; draft execution is disabled')
++    required=('native_candidate_directory','native_contract_sha256','native_manifest_sha256','qualified_capsule_directory',
++        'qualified_capsule_manifest_sha256','qualified_native_binary_sha256','native_exact_payload_paths_and_sha256',
++        'prewindow_qualification_report','prewindow_qualification_report_sha256','flow_auditor_sha256')
++    if any(not b.get(k) for k in required):raise ValueError('Missing exact free-stock qualification pins')
++    if Path(b['native_candidate_directory']).resolve()!=NATIVE.resolve():raise ValueError('Wrong native candidate directory')
++    if b.get('native_manifest_schema')!='director-learned-economy-free-stock-prewindow-v2':raise ValueError('Wrong native schema')
++    if b.get('native_flow_epoch')!='free-stock-prewindow-v2' or b.get('native_audit_epoch')!=AUDIT_EPOCH:raise ValueError('Wrong free-stock flow/audit epoch')
++    if sha(CONTRACT)!=b['native_contract_sha256'] or sha(NATIVE/'CANDIDATE_MANIFEST.json')!=b['native_manifest_sha256']:raise ValueError('Native contract/manifest changed')
++    proof=Path(b['prewindow_qualification_report'])
++    if sha(proof)!=b['prewindow_qualification_report_sha256']:raise ValueError('Qualification proof changed')
++    result=json.loads(proof.read_text())
++    if result.get('passed') is not True or result.get('candidate_manifest_sha256')!=b['native_manifest_sha256']:raise ValueError('Qualification lacks exact compiled candidate binding')
++    if sha(HERE/'free_transfer_evidence.py')!=b['flow_auditor_sha256']:raise ValueError('Flow auditor changed')
++    spec=importlib.util.spec_from_file_location('_free_stock_flow_qualification',HERE/'free_transfer_evidence.py')
++    flow=importlib.util.module_from_spec(spec);spec.loader.exec_module(flow)
++    if getattr(flow,'QUALIFIED',False) is not True:raise ValueError('Per-game free-stock evidence verifier remains unqualified')
++    return b
+ def audit_metadata():
+     return dict(terminal_ack_scope='director',termination_registry_semantics=TERMINATION,
+         audit_epoch=AUDIT_EPOCH,pipeline_epoch=EPOCH,action_schema='strategy-candidates-v5',
+-        economy_epoch='learned-economy-build-v1',contract_sha256=sha(NATIVE/'CONTRACT.md'))
++        economy_epoch='learned-economy-build-v1',contract_sha256=sha(CONTRACT),
++        native_flow_epoch='free-stock-prewindow-v2',threat_replan='off')
+ def source_inputs():
+-    folders=(HERE,BASE,SUPPORT,EXPERIMENTS/'strategic-learned-economy-policy-v1',EXPERIMENTS/'strategic-learned-build-exploration-v1',EXPERIMENTS/'strategic-typed-training-v1',
++    require_qualification()
++    folders=(HERE,BASE,SUPPORT,EXPERIMENTS/'strategic-learned-build-exploration-policy-v1',EXPERIMENTS/'strategic-learned-economy-policy-v1',EXPERIMENTS/'strategic-learned-build-exploration-v1',EXPERIMENTS/'strategic-typed-training-v1',
+         EXPERIMENTS/'strategic-policy-v3',EXPERIMENTS/'strategic-typed-native-v1',
+         EXPERIMENTS/'strategic-director-terminal-drain-v4')
+     paths={p.resolve() for folder in folders for p in folder.glob('*.py')}
+-    paths.update((NATIVE/'CONTRACT.md',NATIVE/'CANDIDATE_MANIFEST.json'))
++    paths.update((CONTRACT,NATIVE/'CANDIDATE_MANIFEST.json',BINDINGS_PATH))
+     manifest=json.loads((NATIVE/'CANDIDATE_MANIFEST.json').read_text())
+-    assert manifest['schema']=='director-learned-economy-build-v1' and len(manifest['files'])==9
++    b=require_qualification()
++    paths.add(Path(b['prewindow_qualification_report']).resolve())
++    assert manifest['schema']==b['native_manifest_schema']
++    assert {k:v['candidate_sha256'] for k,v in manifest['files'].items()}==b['native_exact_payload_paths_and_sha256']
+     paths.update(NATIVE/'candidate'/r for r in manifest['files'])
+     return sorted(paths,key=str)
+ def validate_capsule(capsule):
++    b=require_qualification()
+     capsule=Path(capsule).resolve();att=json.loads((capsule/'EXECUTION.json').read_text())
++    assert capsule==Path(b['qualified_capsule_directory']).resolve()
+     source=json.loads((capsule/'build-source-manifest.json').read_text())
+     manifest=json.loads((NATIVE/'CANDIDATE_MANIFEST.json').read_text())
+-    assert manifest['schema']=='director-learned-economy-build-v1' and len(manifest['files'])==9
+-    assert manifest['contract_sha256']==sha(NATIVE/'CONTRACT.md')
++    assert manifest['schema']==b['native_manifest_schema']
++    assert {k:v['candidate_sha256'] for k,v in manifest['files'].items()}==b['native_exact_payload_paths_and_sha256']
++    assert manifest['contract_sha256']==sha(CONTRACT)==b['native_contract_sha256']
++    assert sha(capsule/'build-source-manifest.json')==b['qualified_capsule_manifest_sha256']
++    assert {n:sha(capsule/'bin'/n) for n in ('vcmiclient','vcmiserver','libvcmi.so')}==b['qualified_native_binary_sha256']
+     assert att['passed'] and att['accepted_binaries_restored'] and not att['rebuild_required']
+     assert all(sha(capsule/r)==h for r,h in att['candidate_artifacts'].items())
+     for relative,entry in manifest['files'].items():
+@@ -60,6 +94,7 @@
+     assert set(native['auditor_sha256'])==set(AUDITOR_SOURCES)
+     assert all(sha(AUDITOR_SOURCES[k])==v for k,v in native['auditor_sha256'].items())
+     assert native['build_evidence_verified'] is True
++    assert native.get('prewindow_evidence_verified') is True
+ def validate_cells(episodes):
+     assert len(episodes)==8 and len({e['episode_id'] for e in episodes})==8
+     assert {(e['job']['map'],e['job']['owned_player'],e['job']['opponent']) for e in episodes}==EXPECTED_CELLS
+@@ -71,3 +106,5 @@
+     assert os.environ.get('LAB_ADV_LEARNED_ECONOMY') in (None,'','build_v1')
+ AUDITOR_SOURCES={n:HERE/n for n in ('audit_game_v6.py','audit_contract.py','raw_events_v5.py','build_evidence.py')}
+ AUDITOR_SOURCES['director_registry_v1.py']=EXPERIMENTS/'strategic-director-terminal-drain-v4/director_registry_v1.py'
++AUDITOR_SOURCES['free_transfer_evidence.py']=HERE/'free_transfer_evidence.py'
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/raw_events_v5.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/raw_events_v5.py
+@@ -23,3 +23,4 @@
+             event={k:bindings[key][k] for k in BINDING};event.update(event='server_action_applied',source='server',success=True)
+             events.append(event);lines.append(number)
+     return events,client_events,lines,foreign
++
+--- /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-build-exploration-run-v1/run_pipeline.py
++++ /mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-free-transfer-run-v1/run_pipeline.py
+@@ -9,7 +9,7 @@
+ def main():
+     parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,required=True)
+     parser.add_argument('--capsule',type=Path,default=DEFAULT_CAPSULE);parser.add_argument('--checkpoint',type=Path,default=DEFAULT_INITIAL)
+-    parser.add_argument('--seed-base',type=int,default=2026102800);parser.add_argument('--seconds',type=float,default=120)
++    parser.add_argument('--seed-base',type=int,required=True);parser.add_argument('--seconds',type=float,default=120)
+     parser.add_argument('--execute',action='store_true');parser.add_argument('--collect-only',action='store_true')
+     a=parser.parse_args();assert a.seconds>0;clean_environment()
+     checkpoint=a.checkpoint.resolve();capsule=a.capsule.resolve();assert sha(checkpoint)==INITIAL_SHA,'Exploration batch must use the registered build-offset initialization'
+@@ -52,3 +52,4 @@
+     except BaseException as error:
+         write(a.out/'RESULT.json',dict(passed=False,error=repr(error),completed=completed,complete_curriculum=False,ability_improvement_claim=False));return 1
+ if __name__=='__main__':raise SystemExit(main())
++

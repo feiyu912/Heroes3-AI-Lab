@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "actual_CPU_parent_restore": {
+    "previous_completed_updates": 60,
+    "previous_environment_steps": 30720,
+    "actual_Adam_steps_restored": 7680,
+    "CUDA_restore_executed": false,
+    "native_environment_restored": false,
+    "native_fresh_required": true,
+    "new_explicit_schedule_epoch_required": true,
+    "next_schedule_phase": null
+  },
+  "production_float32_target_cases": [
+    "win",
+    "loss",
+    "cap_original_bootstrap",
+    "truncation_original_bootstrap",
+    "post_terminal_no_leakage",
+    "control_exact_baseline"
+  ],
+  "collector_real_NN_legal_sampling_over_marked_synthetic_fixture": true,
+  "collector_private_RNG_preserved": true,
+  "collector_zero_loss_suffix": true,
+  "collector_evidence": {
+    "path": "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/cpu-final-01/SYNTHETIC_COLLECTOR_FIXTURE/suffix-fixture.pt",
+    "sha256": "4030956c1e08b6e78cb9f249e4675e71fbffb892a082f713df11bad63c879ca5",
+    "bytes": 7397143
+  },
+  "synthetic_fixture_rejected_by_native_auditor": true,
+  "synthetic_fixture_not_native_qualification": true,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "resource_locks_taken": false,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/audit.py": "c43f3d993eeca92c9a6818bfba6b9cc7eab71d40c1efc566f6934ed11e1dd27e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/check_cpu.py": "798516376e7ec9121aa20aa2e2ee352c87a1f9a20d8d06619099390f8e6d7ac9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/credit_reference.py": "b45a2540f1ee7b06b641cbca69206137c4a260798fcf656e14984ef513c62b2c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/derive.py": "90d31e7953cabb0cc9356c1caf3a9d9d10c261d60ef07f58395bdcc581c2e115",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/dev_raw_auditor.py": "49ecfa7755130174238a6eff44b4c64b56d717d829a92e03300b3666ffe2f016",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/dev_utils.py": "667d3eb42426af3748aecd0f96522ede10e2fc10d104040bd7a4493fc17105a7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/evaluate.py": "0395777bcf263f1fa19122f7c04976f9b13da1b5e2f2e0b983e9ce8debfd8087",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/evaluate_policy_steps.py": "a3ad870b5563e3f76e5789b8b58248aca43ef6d3e3587ca7333f2fd433d2cf0a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/legacy_support.py": "6ea344ab7ba0f6bc20e44284206155be170ce182e302608ef47d9bcef1256708",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/recorded_vector.py": "353d3bfe2cf47a7fc19c5035dadd858019054b0442d07e35eaa19aa0c1449ca3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/replay_dev.py": "d2352790b59ca7bc3bd784ed8ac895e5a2c55eccd342441bc08a89e662587e5a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/restore_learner.py": "e06151039e1665742897e9381cab1f51b3598d51db1e2f050d4315b0de5b7df9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/run.py": "c358883df965a5f9328f85008ef141ebfa3a09464bcca59de9a13e26a07e6739",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/step_evidence.py": "2811111ea8a54489244d005acc72dca2af312f7b085c659930768013149fd48a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/targets.py": "4233d8b8e2e55c73e5a9ce04de68c2a36283570ebae667ddce2c191a530fa219",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/train.py": "db67a8b9b832ea70aaec8c2335bad25b34621095c8ea004f3ec507e81f0a9a7b"
+  }
+}

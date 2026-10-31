@@ -1,0 +1,19 @@
+{
+  "passed_exact": true,
+  "checkpoint_sha256": "34a6a86ea74d727338388db74e0ab3b9e16ec85e45ef46313757b1ac814538bc",
+  "training_updates": 1,
+  "optimizer_steps_restored": 188,
+  "model_Adam_stop_moment_exact": true,
+  "cpu_CUDA_python_RNG_exact": true,
+  "invalid_resume_does_not_mutate_state": true,
+  "negative_cases": [
+    "partial",
+    "protocol_change",
+    "adam_count",
+    "wrong_stop_moment",
+    "cpu_as_cuda"
+  ],
+  "audit_optimizer_steps": 0,
+  "auditor_sha256": "1ace4490a3935f0b5bc6a71c786b85ec877b96462f50c4bbcbcba441667ab74d",
+  "limitation": "Exact saved boundary recovery. Continuous-vs-split native training equivalence requires an additional experiment."
+}

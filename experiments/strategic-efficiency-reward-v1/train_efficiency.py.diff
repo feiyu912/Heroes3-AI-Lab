@@ -1,0 +1,85 @@
+--- frozen/train_efficiency.py
++++ efficiency/train_efficiency.py
+@@ -1,6 +1,7 @@
+ import sys
+ from pathlib import Path
+-LOCAL=Path(__file__).resolve().parent
++LOCAL=Path(__file__).resolve().parent.parent/'strategic-learning-mainline-20261020/native-pipeline'
++sys.path.append(str(LOCAL))
+ BASE=LOCAL.parent.parent/'strategic-typed-training-v1'
+ sys.path.append(str(BASE))
+ from pipeline_common import source_inputs,capsule_inputs,validate_capsule,audit_metadata,validate_native_epoch,validate_cells,clean_environment,AUDITOR,NATIVE,MARKER,EPOCH,BASE
+@@ -11,14 +12,14 @@
+ from pathlib import Path
+ import torch
+ from collect_episode_v5 import owned_resources,sha,write
+-from load_admitted import load
+-from episode_balanced_ppo import PROTOCOL,ppo_update,optimizer_steps
++from targets import load_targets, sources as target_sources, EPOCH as REWARD_EPOCH, SCHEMA as REWARD_SCHEMA, FORMULA, INITIAL_SHA, SEED, verify_targets
++from efficiency_ppo import PROTOCOL,ppo_update,optimizer_steps
+ from model_io import load_model,restore_training,make_bundle,atomic_save,digest_json,tensor_sha
+ HERE=BASE;TYPED=HERE.parent/'strategic-policy-v3'
+ 
+ def protocol(capsule,purpose,seed):
+-    sources=source_inputs()+[Path(__file__).resolve(),LOCAL/'run_pipeline.py']
+-    return dict(schema=EPOCH,purpose=purpose,algorithm=PROTOCOL,learning_rate=3e-4,
++    sources=[Path(p) for p in target_sources()]+[LOCAL/'run_pipeline.py']
++    return dict(schema=REWARD_EPOCH,purpose=purpose,algorithm=PROTOCOL,learning_rate=3e-4,
+         global_seed=seed,optimizer='Adam',torch_version=str(torch.__version__),cuda_version=torch.version.cuda,device=torch.cuda.get_device_name(0),
+         deterministic_algorithms=True,allow_tf32=False,
+         sources={str(p):sha(p) for p in sources},capsule_manifest_sha256=sha(capsule/'build-source-manifest.json'),
+@@ -27,13 +28,20 @@
+ 
+ def main():
+     p=argparse.ArgumentParser();group=p.add_mutually_exclusive_group(required=True)
+-    group.add_argument('--initialize',type=Path);group.add_argument('--resume',type=Path)
++    group.add_argument('--initialize',type=Path)
++    p.add_argument('--arm',choices=['control','treatment'],required=True);p.add_argument('--targets',type=Path,required=True)
+     p.add_argument('--admission',type=Path,action='append',required=True);p.add_argument('--capsule',type=Path,required=True)
+-    p.add_argument('--out',type=Path,required=True);p.add_argument('--seed',type=int,default=2026102801)
++    p.add_argument('--out',type=Path,required=True);p.add_argument('--seed',type=int,default=2026102300)
+     p.add_argument('--purpose',choices=['engineering_boundary','curriculum_training'],default='curriculum_training');a=p.parse_args()
++    a.resume=None
++    assert a.seed==SEED and sha(a.initialize)==INITIAL_SHA,'Registered identical parent and RNG seed required'
++    targets=verify_targets(a.targets)
++    expected=[e['admission_directory'] for e in targets['episodes']]
++    assert len(a.admission)==8 and {str(p.resolve()) for p in a.admission}==set(expected),'Exact shared eight admissions required'
++    a.admission=[Path(p) for p in expected]  # Identical rows under identical RNG in both arms.
+     a.out.mkdir(parents=True,exist_ok=False);samples=[];episodes=[];admissions=[]
+     for directory in a.admission:
+-        rows,manifest,report=load(directory);samples.extend(rows);episodes.extend(manifest)
++        rows,manifest,report=load_targets(directory,a.targets,a.arm,verified=targets);samples.extend(rows);episodes.extend(manifest)
+         admissions.append({'directory':str(directory.resolve()),'sha256':sha(directory/'AUDIT.json'),'report':report})
+     assert len({e['episode_id'] for e in episodes})==len(episodes)
+     if a.purpose=='curriculum_training':
+@@ -44,7 +52,9 @@
+         torch.set_num_threads(1);torch.use_deterministic_algorithms(True);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
+         torch.manual_seed(a.seed);torch.cuda.manual_seed_all(a.seed);random.seed(a.seed)
+         model,parent_bundle,parent_sha=load_model(parent,'cuda');optimizer=torch.optim.Adam(model.parameters(),lr=3e-4)
+-        config=protocol(a.capsule,a.purpose,a.seed);config_sha=digest_json(config)
++        config=protocol(a.capsule,a.purpose,a.seed)
++        config['derived_reward']=dict(schema=REWARD_SCHEMA,epoch=REWARD_EPOCH,formula=FORMULA,arm=a.arm,targets_sha256=sha(a.targets/'TARGETS.json'),shared_batch_sha256=targets['shared_batch_sha256'])
++        config_sha=digest_json(config)
+         expected_runtime={k:config[k] for k in ['capsule_manifest_sha256','native_artifacts']}
+         assert all(e.get('runtime')==expected_runtime and e.get('transport_drained') is True for e in episodes),'Mixed or uncertified native runtime epoch'
+         # Bind the actual admitted collector/observer to this protocol epoch.
+@@ -74,7 +84,7 @@
+         stop_before=float(model.actor.stop_bias.detach().cpu());step_before=optimizer_steps(optimizer)
+         lineage={'parent_format':parent_bundle['format'],'parent_training_updates':parent_bundle.get('training_updates',0),
+                  'parent_optimizer_steps_total':parent_bundle.get('optimizer_steps_total',0),'parent_lineage':parent_bundle.get('lineage',{}),
+-                 'training_epoch':EPOCH,'explicit_optimizer_reset':bool(a.initialize),'purpose':a.purpose,'not_an_independent_ability_evaluation':True}
++                 'training_epoch':REWARD_EPOCH,'reward_arm':a.arm,'explicit_optimizer_reset':bool(a.initialize),'purpose':a.purpose,'not_an_independent_ability_evaluation':True}
+         try:
+             assert next(model.parameters()).device.type=='cuda'
+             ppo_update(model,optimizer,samples,'cuda',progress,episodes=episodes)
+@@ -89,8 +99,8 @@
+                 optimizer_steps_total=optimizer_steps(optimizer),checkpoint_sha256=digest,checkpoint=str(checkpoint_path),
+                 stop_bias_before=stop_before,stop_bias_after=float(model.actor.stop_bias.detach().cpu()),
+                 stop_bias_adam_step=int(optimizer.state[model.actor.stop_bias]['step']),progress=progress,
+-                episodes=len(episodes),samples=len(samples),training_wins=sum(e['reward']==1 for e in episodes),
+-                training_losses=sum(e['reward']==-1 for e in episodes),purpose=a.purpose,checkpoint_model_readback_exact=True)
++                episodes=len(episodes),samples=len(samples),training_wins=sum(e['native_reward']==1 for e in episodes),
++                training_losses=sum(e['native_reward']==-1 for e in episodes),purpose=a.purpose,checkpoint_model_readback_exact=True)
+         except BaseException as error:
+             progress['attempted_update']=update+1
+             partial=make_bundle(model,optimizer,training_updates=update,complete=False,protocol=config,parent_sha=parent_sha,

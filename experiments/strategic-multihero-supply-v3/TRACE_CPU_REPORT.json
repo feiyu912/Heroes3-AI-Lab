@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": 13,
+  "native_games": 0,
+  "native_built": false,
+  "scope": "actual extracted trace function, synthetic logger/world stubs only",
+  "extracted_function_sha256": "52cf1eae9832d0c0cd085b3398c37fe1083ca3feb2d79e3ea1df3da54b9c4a0d",
+  "adapter_sha256": "a2d8fd77bd9d755f5373eb77247d31bfd7b7c8b830504c8d5e98ddf2c8bc427a"
+}

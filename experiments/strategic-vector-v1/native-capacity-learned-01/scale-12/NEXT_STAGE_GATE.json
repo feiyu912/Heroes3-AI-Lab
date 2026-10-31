@@ -1,0 +1,11 @@
+{
+  "predicted_next_rss_with_25pct_reserve": 3590860800.0,
+  "available_conservative": 13764919296,
+  "raw_passed": true,
+  "reason": "Avoid suspected cross-filesystem hot IO overhead within unchanged 120-second budget; IO causation not directly measured",
+  "passed": true,
+  "next": 24,
+  "reserve": 3333452595,
+  "next_run": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24",
+  "stage": 12
+}

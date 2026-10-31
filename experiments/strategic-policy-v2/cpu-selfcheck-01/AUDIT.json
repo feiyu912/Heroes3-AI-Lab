@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "game_started": false,
+  "GPU_initialized": false,
+  "optimizer_steps": 0,
+  "state_dim": 26,
+  "candidate_dim": 23,
+  "parent_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+  "migrated_checkpoint_sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+  "parent_lineage": {
+    "mode": "explicit-v1-to-v2-visible-weight-migration",
+    "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2/update-2.pt",
+    "parent_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+    "parent_training_updates": 2,
+    "parent_lineage": {
+      "mode": "weights-only-migration",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+      "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+      "parent_training_updates": 2,
+      "reset_optimizer": true,
+      "reset_rng": true
+    },
+    "parent_protocol_sha256": "816b047f277c75eafa876afaee7489e13349427195336f6705787c1e9e1c44c4",
+    "parent_optimizer_steps_total": 132,
+    "reset_optimizer": true,
+    "reset_rng": true,
+    "source_optimizer_reused": false
+  },
+  "numerical_error": {
+    "logit_max_abs": 0.0,
+    "value_max_abs": 0.0
+  },
+  "extra_columns_zero": true,
+  "extra_information_changes_features": true,
+  "extra_information_initially_does_not_change_policy": true,
+  "legacy_prefix_and_mask_preserved": true,
+  "invalid_observations_rejected": 4,
+  "finite_nonzero_extra_feature_gradients": {
+    "actor": {
+      "appended_state_gradient_l1": 0.0054200636222958565,
+      "appended_candidate_gradient_l1": 0.06348119676113129
+    },
+    "critic": {
+      "appended_state_gradient_l1": 7.640478134155273,
+      "appended_candidate_gradient_l1": 4.291321754455566
+    }
+  },
+  "broker_checks": {
+    "heuristic": {
+      "actions": [
+        0,
+        0
+      ],
+      "model_scope": "Script heuristic argmax; no neural inference",
+      "invalid_missing_field_rejected": true
+    },
+    "legacy-policy": {
+      "actions": [
+        0,
+        0
+      ],
+      "model_scope": "Legacy 11 state/15 candidate features; explicit projection ignores threat/supply extras",
+      "invalid_missing_field_rejected": true
+    },
+    "new-policy": {
+      "actions": [
+        0,
+        0
+      ],
+      "model_scope": "New visible threat/supply encoder; no script action override",
+      "invalid_missing_field_rejected": true
+    },
+    "supply-aware": {
+      "actions": [
+        0,
+        0
+      ],
+      "model_scope": "Legacy 11 state/15 candidate features; explicit projection ignores threat/supply extras; explicit scripted supply-aware override, not learned improvement",
+      "invalid_missing_field_rejected": true
+    }
+  },
+  "trainer_CPU_preflight_passed": true,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/broker.py": "0785d8d5acfed5dd59f3a278fed9a3e875a3d5c1bd7280924e834454a6e24ad3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/check_supply_cpu.py": "ddc258d8c636d8a76ff838246f3910342a709c903046f5ed6c316cebade4db63",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/legacy.py": "fc20f08acf84f6c2454b003c686c99ba033b0756e3e167ff1f0f4417917d1079",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/migrate_checkpoint.py": "6168392c5257ca1fc15eba1aadf72813226332c8093e7dbbc02631cf922b3716",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/selfcheck_cpu.py": "0a9df13bd4e5733fe6addd404b91cb1bce8498a5c94c5e467462a5600750a5ac",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/smoke_game.py": "be4d0aba31b824a0f4ec059e9f40d9286db40352db4567d1e2d04f05caf23a25",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/supply_policy.py": "20b3bb7c3797b311bbda315fe9d5f2c911bea8ed3a5b8c39668c47311ffb88fa",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/train_ppo_pilot.py": "eccd6a33012ced4e82fe94b82a561eba8b97f59fc7fd3ef5a7d91a4050e61951"
+  },
+  "limitations": "Synthetic CPU engineering checks only; native visibility provenance and strategic benefit require real-game validation."
+}

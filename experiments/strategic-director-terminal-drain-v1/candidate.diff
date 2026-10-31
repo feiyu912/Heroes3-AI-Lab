@@ -1,0 +1,120 @@
+--- bind-first/client/Client.h
++++ owned-drain/client/Client.h
+@@ -76,6 +76,12 @@
+ 		return items.empty();
+ 	}
+ 
++	std::vector<T> snapshot()
++	{
++		TLock lock(mx);
++		return items;
++	}
++
+ 	void waitWhileContains(const T & item)
+ 	{
+ 		TLock lock(mx);
+@@ -169,6 +175,8 @@
+ 	void unregisterBattleInterface(std::shared_ptr<IBattleEventsReceiver> battleEvents, PlayerColor color);
+ 
+ 	ThreadSafeVector<int> waitingRequest;
++	ThreadSafeVector<int> waitingDirectorRequest;
++	bool directorTerminalShutdownScheduled = false;
+ 
+ 	/// While set, this client only observes a replay and must not send anything to the server
+ 	std::atomic<bool> observerMode = false;
+--- bind-first/client/NetPacksClient.cpp
++++ owned-drain/client/NetPacksClient.cpp
+@@ -8,6 +8,7 @@
+  *
+  */
+ #include "StdInc.h"
++#include <sstream>
+ #include "ClientNetPackVisitors.h"
+ 
+ #include "Client.h"
+@@ -441,18 +442,31 @@
+ static void shutdownAutoTestAfterNativeAcks(CClient & cl, const CGameState & gs)
+ {
+ 	const bool allPlayersEndedGame = std::none_of(gs.players.begin(), gs.players.end(), [](const auto & player)
+-	{
+-		return player.second.status == EPlayerStatus::INGAME;
+-	});
++	{ return player.second.status == EPlayerStatus::INGAME; });
+ 	const bool autoTest = !settings["session"]["testmap"].isNull() || !settings["session"]["testsave"].isNull();
+-	if(!autoTest || !allPlayersEndedGame)
+-		return;
+-	if(!cl.waitingRequest.empty())
++	if(!autoTest || !allPlayersEndedGame || cl.directorTerminalShutdownScheduled) return;
++	const bool directorGame = std::any_of(cl.playerint.begin(),cl.playerint.end(),[](const auto & entry)
++	{ return entry.second && entry.second->dllName=="DirectorAI"; });
++	if(directorGame ? !cl.waitingDirectorRequest.empty() : !cl.waitingRequest.empty())
+ 	{
+ 		logAi->info("Auto-test shutdown deferred: pending native request acknowledgments");
+ 		return;
+ 	}
+-	logAi->info("All players have ended the game. Ending game after native ACK drain.");
++	cl.directorTerminalShutdownScheduled=true;
++	if(directorGame)
++	{
++		const auto remaining=cl.waitingRequest.snapshot();
++		if(!remaining.empty())
++		{
++			std::ostringstream ids;ids << '[';
++			for(size_t i=0;i<remaining.size();++i) { if(i) ids << ',';ids << remaining[i]; }
++			ids << ']';
++			logAi->info("TerminalPeerRequestCancellation ids=%s",ids.str());
++		}
++		logAi->info("All players have ended the game. Ending game after Director request ACK drain.");
++	}
++	else logAi->info("All players have ended the game. Ending game after native ACK drain.");
++	// finishGameplay performs real requestTermination on unprocessed peer waits.
+ 	GAME->onShutdownRequested(settings["session"]["spectate"].Bool());
+ }
+ 
+@@ -977,6 +991,9 @@
+ void ApplyClientNetPackVisitor::visitPackageApplied(PackageApplied & pack)
+ {
+ 	callInterfaceIfPresent(cl, pack.player, &IGameEventsReceiver::requestRealized, &pack);
++	logAi->info("NativeRequestAck id=%u player=%d pack_type=%d success=%d",pack.requestID,pack.player.getNum(),pack.packType,pack.result);
++	if(cl.waitingDirectorRequest.tryRemovingElement(pack.requestID))
++		logAi->info("DirectorNativeRequestAck id=%u player=%d pack_type=%d success=%d",pack.requestID,pack.player.getNum(),pack.packType,pack.result);
+ 	if(!cl.waitingRequest.tryRemovingElement(pack.requestID))
+ 		logNetwork->warn("Surprising server message! PackageApplied for unknown requestID!");
+ 	shutdownAutoTestAfterNativeAcks(cl, gs);
+--- bind-first/client/Client.cpp
++++ owned-drain/client/Client.cpp
+@@ -8,6 +8,8 @@
+  *
+  */
+ #include "StdInc.h"
++#include <sstream>
++#include "../lib/serializer/CTypeList.h"
+ #include "Global.h"
+ #include "Client.h"
+ 
+@@ -144,7 +146,13 @@
+ 
+ void CClient::finishGameplay()
+ {
++	const auto remaining=waitingRequest.snapshot();
++	std::ostringstream ids;ids << '[';
++	for(size_t i=0;i<remaining.size();++i) { if(i) ids << ',';ids << remaining[i]; }
++	ids << ']';
++	logGlobal->info("NativeRequestTermination pending_ids=%s",ids.str());
+ 	waitingRequest.requestTermination();
++	waitingDirectorRequest.clear();
+ 
+ 	//suggest interfaces to finish their stuff (AI should interrupt any bg working threads)
+ 	for(auto & i : playerint)
+@@ -539,7 +547,11 @@
+ 	const auto receiver=interfaceIt==playerint.end() ? nullptr : interfaceIt->second;
+ 	const bool bindBeforeSend=receiver && receiver->dllName=="DirectorAI";
+ 	if(bindBeforeSend)
++	{
++		waitingDirectorRequest.pushBack(requestID);
++		logGlobal->info("DirectorNativeRequestRegistered id=%u player=%d pack_type=%d type=%s",requestID,player.getNum(),CTypeList::getInstance().getTypeID(&request),typeid(request).name());
+ 		receiver->requestSent(&request, requestID);
++	}
+ 	GAME->server().sendGamePack(request);
+ 	if(receiver && !bindBeforeSend)
+ 		receiver->requestSent(&request, requestID);

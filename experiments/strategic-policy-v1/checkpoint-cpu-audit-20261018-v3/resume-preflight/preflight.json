@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "nonzero_gradients": 12,
+  "game_started": false,
+  "cuda_training_started": false,
+  "lineage": {
+    "mode": "resume",
+    "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/checkpoint-cpu-audit-20261018-v3/synthetic-cli-resume-boundary.pt",
+    "parent_sha256": "4d1c4cd328d9d6f8a8ae75665fda16f1511556ee766290eab310cba0346bdad8",
+    "parent_training_updates": 1,
+    "reset_optimizer": false,
+    "reset_rng": false
+  },
+  "cuda_rng_restored": false,
+  "optimizer_steps": 0,
+  "optimizer_steps_total": 16
+}

@@ -1,0 +1,117 @@
+{
+  "actual_processes": [
+    {
+      "pid": 22597,
+      "pgrp": 22597,
+      "sid": 22597,
+      "command": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ninja -C /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build -j2 -v vcmiclient vcmiserver ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22659,
+      "pgrp": 22659,
+      "sid": 22597,
+      "command": "/bin/sh -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/g++-11 --sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DENABLE_BATTLE_AI -DENABLE_MMAI -DENABLE_NULLKILLER2_AI -DENABLE_STUPID_AI -DM_BIN_DIR=\\\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\\\" -DM_DATA_DIR=\\\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\\\" -DVCMI_VERSION_MAJOR=1 -DVCMI_VERSION_MINOR=8 -DVCMI_VERSION_PATCH=0 -DVCMI_VERSION_STRING=\\\"1.8.0\\\" -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/ -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -O3 -DNDEBUG -std=gnu++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdiagnostics-color=always -ffunction-sections -fdata-sections -fno-semantic-interposition -Winvalid-pch -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx -MD -MT server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o -MF server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o.d -o server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/HeroPoolProcessor.cpp ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22660,
+      "pgrp": 22659,
+      "sid": 22597,
+      "command": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/g++-11 --sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DENABLE_BATTLE_AI -DENABLE_MMAI -DENABLE_NULLKILLER2_AI -DENABLE_STUPID_AI -DM_BIN_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\" -DM_DATA_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\" -DVCMI_VERSION_MAJOR=1 -DVCMI_VERSION_MINOR=8 -DVCMI_VERSION_PATCH=0 -DVCMI_VERSION_STRING=\"1.8.0\" -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/ -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -O3 -DNDEBUG -std=gnu++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdiagnostics-color=always -ffunction-sections -fdata-sections -fno-semantic-interposition -Winvalid-pch -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx -MD -MT server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o -MF server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o.d -o server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/HeroPoolProcessor.cpp ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22661,
+      "pgrp": 22659,
+      "sid": 22597,
+      "command": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -imultiarch x86_64-linux-gnu -iprefix /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/../lib/gcc/x86_64-linux-gnu/11/ -isysroot /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -isystem /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/include -isystem /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/include -MD server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.d -MF server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o.d -MT server/CMakeFiles/vcmiservercommon.dir/processors/HeroPoolProcessor.cpp.o -D_GNU_SOURCE -D BOOST_ALL_NO_LIB -D BOOST_FILESYSTEM_DYN_LINK -D BOOST_PROGRAM_OPTIONS_DYN_LINK -D ENABLE_BATTLE_AI -D ENABLE_MMAI -D ENABLE_NULLKILLER2_AI -D ENABLE_STUPID_AI -D M_BIN_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\" -D M_DATA_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\" -D VCMI_VERSION_MAJOR=1 -D VCMI_VERSION_MINOR=8 -D VCMI_VERSION_PATCH=0 -D VCMI_VERSION_STRING=\"1.8.0\" -D NDEBUG -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/HeroPoolProcessor.cpp -quiet -dumpdir server/CMakeFiles/vcmiservercommon.dir/processors/ -dumpbase HeroPoolProcessor.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -Winvalid-pch -std=gnu++20 -fdiagnostics-color=always -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -ffunction-sections -fdata-sections -fno-semantic-interposition -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQrsojM.s ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22663,
+      "pgrp": 22663,
+      "sid": 22597,
+      "command": "/bin/sh -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/g++-11 --sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DENABLE_BATTLE_AI -DENABLE_MMAI -DENABLE_NULLKILLER2_AI -DENABLE_STUPID_AI -DM_BIN_DIR=\\\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\\\" -DM_DATA_DIR=\\\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\\\" -DVCMI_VERSION_MAJOR=1 -DVCMI_VERSION_MINOR=8 -DVCMI_VERSION_PATCH=0 -DVCMI_VERSION_STRING=\\\"1.8.0\\\" -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/ -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -O3 -DNDEBUG -std=gnu++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdiagnostics-color=always -ffunction-sections -fdata-sections -fno-semantic-interposition -Winvalid-pch -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx -MD -MT server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o -MF server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o.d -o server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/NewTurnProcessor.cpp ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22664,
+      "pgrp": 22663,
+      "sid": 22597,
+      "command": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/g++-11 --sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -DBOOST_ALL_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DENABLE_BATTLE_AI -DENABLE_MMAI -DENABLE_NULLKILLER2_AI -DENABLE_STUPID_AI -DM_BIN_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\" -DM_DATA_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\" -DVCMI_VERSION_MAJOR=1 -DVCMI_VERSION_MINOR=8 -DVCMI_VERSION_PATCH=0 -DVCMI_VERSION_STRING=\"1.8.0\" -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ -B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/ -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -O3 -DNDEBUG -std=gnu++20 -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdiagnostics-color=always -ffunction-sections -fdata-sections -fno-semantic-interposition -Winvalid-pch -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx -MD -MT server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o -MF server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o.d -o server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o -c /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/NewTurnProcessor.cpp ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    },
+    {
+      "pid": 22665,
+      "pgrp": 22663,
+      "sid": 22597,
+      "command": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/lib -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source -I /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/include -imultiarch x86_64-linux-gnu -iprefix /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/../lib/gcc/x86_64-linux-gnu/11/ -isysroot /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot -isystem /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/include -isystem /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/include -MD server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.d -MF server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o.d -MT server/CMakeFiles/vcmiservercommon.dir/processors/NewTurnProcessor.cpp.o -D_GNU_SOURCE -D BOOST_ALL_NO_LIB -D BOOST_FILESYSTEM_DYN_LINK -D BOOST_PROGRAM_OPTIONS_DYN_LINK -D ENABLE_BATTLE_AI -D ENABLE_MMAI -D ENABLE_NULLKILLER2_AI -D ENABLE_STUPID_AI -D M_BIN_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/bin\" -D M_DATA_DIR=\"/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/install/share/vcmi\" -D VCMI_VERSION_MAJOR=1 -D VCMI_VERSION_MINOR=8 -D VCMI_VERSION_PATCH=0 -D VCMI_VERSION_STRING=\"1.8.0\" -D NDEBUG -include /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build/server/CMakeFiles/vcmiservercommon.dir/cmake_pch.hxx /home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/source/server/processors/NewTurnProcessor.cpp -quiet -dumpdir server/CMakeFiles/vcmiservercommon.dir/processors/ -dumpbase NewTurnProcessor.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O3 -Wall -Wextra -Wpointer-arith -Wuninitialized -Wmismatched-tags -Wno-unused-parameter -Wno-switch -Wno-reorder -Wno-sign-compare -Winvalid-pch -std=gnu++20 -fdiagnostics-color=always -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -ffunction-sections -fdata-sections -fno-semantic-interposition -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccuQRp6y.s ",
+      "fds": [
+        {
+          "fd": 3,
+          "matches": true
+        },
+        {
+          "fd": 4,
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "scope": "instantaneous proc observation; empty means observation missed short build"
+}

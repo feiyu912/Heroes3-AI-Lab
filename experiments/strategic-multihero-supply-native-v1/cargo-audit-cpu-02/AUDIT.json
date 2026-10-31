@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "positive_explicit_cargo_case": true,
+  "rejected": [
+    "cargo_registered_before_pickup_ACK",
+    "picked_counter_without_native_ACK",
+    "initial_reserve_changed",
+    "reserve_ledger_tampered",
+    "cargo_slot_false_contribution",
+    "success_before_close_ACK",
+    "successful_count_only",
+    "delivered_counter_only",
+    "wrong_job_id",
+    "wrong_status",
+    "wrong_controller_epoch",
+    "missing_control_ACK_identity",
+    "native_reserve_lost",
+    "cargo_booked_at_prepared",
+    "missing_middle_ACK_is_not_EOF"
+  ],
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/check_audit_supply_cargo_v3_cpu.py": "a310724c96dbd489583303be476f26c9dc5166ad73dcee59a645c21cae970ed4",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/audit_supply_cargo_v3.py": "66fe37250c215205b7f10206ef123a3b3917cdba6466ccc308a092a5006a827c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/check_audit_supply_cpu.py": "51b8d8a65e8b4ce82dbb768b3b674c34977d3d548a9b3ae230a76bf8d1e03495"
+  }
+}

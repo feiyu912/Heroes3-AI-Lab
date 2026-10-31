@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "prepared_only": true,
+  "fake_incomplete_cases": [
+    {
+      "stage": 0,
+      "rejected": true
+    },
+    {
+      "stage": 1,
+      "rejected": true
+    },
+    {
+      "stage": 2,
+      "rejected": true
+    },
+    {
+      "stage": 3,
+      "rejected": true
+    }
+  ],
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps_performed": 0,
+  "actual_final_evidence_checked": false,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/final-independent-01/check_prepared.py": "e358cb7f715be910f1f14038001f1dc77c59df8f450185d26dc862b2caf1e9de",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/final-independent-01/audit_final.py": "b1ce7d1e5c29d6bab834188a16e67d3e289943934155a774bce79db1f1e092cf",
+    "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/monitor-independent-01/compact_status.py": "8b5c9d78bd5e53a4db08f840f99656f7dbf349830eb009f7e6d8e7c7ac0ec3c1"
+  }
+}

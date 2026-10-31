@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "groups": {
+    "baseline": {
+      "battles": 12,
+      "wins": 10,
+      "truncations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 72.58333333333333,
+      "permanent_loss_valid_denominator": 12,
+      "unknown_final_losses": 0,
+      "multi_target_opportunities": 8,
+      "selected_multi_enemy_attacks": 5
+    },
+    "bc": {
+      "battles": 12,
+      "wins": 9,
+      "truncations": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 77.66666666666667,
+      "permanent_loss_valid_denominator": 12,
+      "unknown_final_losses": 0,
+      "multi_target_opportunities": 11,
+      "selected_multi_enemy_attacks": 8
+    }
+  },
+  "recovery_version": "human-tactics-recovery-v2",
+  "quality_tier": "Q2-exploratory",
+  "limitations": "Small fixed pilot; coverage is not certified tactic success. No human traces, counter expert, historical pool or ordinary-battle regression completed."
+}

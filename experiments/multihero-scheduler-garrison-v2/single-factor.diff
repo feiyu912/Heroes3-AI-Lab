@@ -1,0 +1,11 @@
+--- baseline
++++ filtered
+@@ -86,7 +86,7 @@
+ 	int bestMovement = 0;
+ 	for(const auto * hero : heroes)
+ 	{
+-		if(!hero || hero->getOwner() != playerID || blockedHeroes.count(hero->id.getNum()))
++		if(!hero || hero->getOwner() != playerID || hero->isGarrisoned() || blockedHeroes.count(hero->id.getNum()))
+ 			continue;
+ 		const int movement = hero->movementPointsRemaining();
+ 		if(movement > bestMovement)

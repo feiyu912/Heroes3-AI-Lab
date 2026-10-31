@@ -1,0 +1,191 @@
+{
+  "status": "HEAP_ABORT_OBSERVED_CAUSE_UNPROVEN_REPEATS_DID_NOT_REPRODUCE",
+  "runs": [
+    {
+      "run": "/root/heroes3-ai-lab/workers/adv-runs/development-01-15-2026101812-7whqgl65",
+      "log_sha256": "8b74fd2035eede41ccbbda4b84c18043434fd8e97a9171381565d1b01a27e685",
+      "log_hash_matches_runner": true,
+      "strategy_trace_sha256": "b61128651adfb9e37d36ccb3de76b26f56c74173ab5b7b5b6a822a5a20ba34de",
+      "strategy_records": 334,
+      "engine_exit": -6,
+      "completed": false,
+      "turn_entries": 124,
+      "last_turn_entries": [
+        [
+          "1",
+          "blue",
+          "121"
+        ],
+        [
+          "1",
+          "blue",
+          "122"
+        ],
+        [
+          "1",
+          "blue",
+          "123"
+        ],
+        [
+          "1",
+          "blue",
+          "124"
+        ]
+      ],
+      "duplicated_same_player_day_starts": [],
+      "your_turn_query_entries_parsed": 124,
+      "duplicated_query_ids": {
+        "-1": 124
+      },
+      "heap_messages": [
+        "double free or corruption (out)",
+        "malloc(): unaligned fastbin chunk detected"
+      ],
+      "last_log_lines": [
+        "\tApplied on gs: 14PackageApplied",
+        "Entering virtual void NK2AI::AIGateway::requestRealized(PackageApplied*).",
+        "Removing query 1475 - Exchange between heroes hero.core.tyraxor.name (1) and hero.core.dace.name (1). Total queries count: 0",
+        "Leaving virtual void NK2AI::AIGateway::requestRealized(PackageApplied*).",
+        "\tMade second apply on cl: 14PackageApplied",
+        "Hero hero.core.tyraxor.name moved from (8 9 0) to (8 9 0). Returning 1.",
+        "Task Composition[Hero exchange for hero.core.dace.name by hero.core.tyraxor.name[4], turn 0: hero.core.tyraxor.name[4]->(8 10 0); , ] [ExecuteHeroChain hero(8 10 0) by hero.core.tyraxor.name => ]  completed in 8",
+        "Hero hero.core.tyraxor.name moved from (8 9 0) to (8 9 0). Returning 1.",
+        "Task Composition[Hero exchange for hero.core.dace.name by hero.core.tyraxor.name[4], turn 0: hero.core.tyraxor.name[4]->(8 10 0); , ] [ExecuteHeroChain hero(8 10 0) by hero.core.tyraxor.name => ]  completed in 2",
+        "Start BuildAnalyzer::update",
+        "Start BuildAnalyzer::update",
+        "Checking other buildings",
+        "double free or corruption (out)",
+        "malloc(): unaligned fastbin chunk detected"
+      ],
+      "binary_hashes": {
+        "vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+        "vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+        "libvcmi.so": "84c98cbd8a793486c72594f74097c76222b9f496f78104abf8fbb2f82423de4d"
+      }
+    },
+    {
+      "run": "/root/heroes3-ai-lab/workers/adv-runs/crash-audit-v5-2026101812-e9jfiqs2",
+      "log_sha256": "69424be54a325485927f2d6c8aeb585244c450585c6eb6016b8773ee39fea59f",
+      "log_hash_matches_runner": true,
+      "strategy_trace_sha256": "5ec07b6589c51bbbf34b88b1f8b0f9d21ad28bf0718ec50636a3f319a058e05e",
+      "strategy_records": 393,
+      "engine_exit": 0,
+      "completed": true,
+      "turn_entries": 147,
+      "last_turn_entries": [
+        [
+          "1",
+          "blue",
+          "144"
+        ],
+        [
+          "1",
+          "blue",
+          "145"
+        ],
+        [
+          "1",
+          "blue",
+          "146"
+        ],
+        [
+          "1",
+          "blue",
+          "147"
+        ]
+      ],
+      "duplicated_same_player_day_starts": [],
+      "your_turn_query_entries_parsed": 147,
+      "duplicated_query_ids": {
+        "-1": 147
+      },
+      "heap_messages": [],
+      "last_log_lines": [
+        "[Thread 0x7ffff0f92600 (LWP 1855) exited]",
+        "[Thread 0x7ffff1f96600 (LWP 1851) exited]",
+        "[Thread 0x7ffff2b99600 (LWP 1848) exited]",
+        "[Thread 0x7ffff1393600 (LWP 1854) exited]",
+        "[Thread 0x7fffd3bfe600 (LWP 1859) exited]",
+        "[Thread 0x7ffff1b95600 (LWP 1852) exited]",
+        "[Thread 0x7fffd37fd600 (LWP 1860) exited]",
+        "[Thread 0x7fffd33fc600 (LWP 1861) exited]",
+        "[Thread 0x7ffff2798600 (LWP 1849) exited]",
+        "[Thread 0x7ffff2397600 (LWP 1850) exited]",
+        "[Thread 0x7ffff1794600 (LWP 1853) exited]",
+        "[Inferior 1 (process 1844) exited normally]",
+        "$1 = 0",
+        "$2 = void"
+      ],
+      "binary_hashes": {
+        "vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+        "vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+        "libvcmi.so": "84c98cbd8a793486c72594f74097c76222b9f496f78104abf8fbb2f82423de4d"
+      }
+    },
+    {
+      "run": "/root/heroes3-ai-lab/workers/adv-runs/crash-repeat-v5-2026101812-220p4ie_",
+      "log_sha256": "1545c84f2546be9c3190e243556615b40222bcc02b2a7738822d004ebab980d0",
+      "log_hash_matches_runner": true,
+      "strategy_trace_sha256": "5ec07b6589c51bbbf34b88b1f8b0f9d21ad28bf0718ec50636a3f319a058e05e",
+      "strategy_records": 393,
+      "engine_exit": 0,
+      "completed": true,
+      "turn_entries": 147,
+      "last_turn_entries": [
+        [
+          "1",
+          "blue",
+          "144"
+        ],
+        [
+          "1",
+          "blue",
+          "145"
+        ],
+        [
+          "1",
+          "blue",
+          "146"
+        ],
+        [
+          "1",
+          "blue",
+          "147"
+        ]
+      ],
+      "duplicated_same_player_day_starts": [],
+      "your_turn_query_entries_parsed": 147,
+      "duplicated_query_ids": {
+        "-1": 147
+      },
+      "heap_messages": [],
+      "last_log_lines": [
+        "Ending current game!",
+        "Removed GUI.",
+        "Deleted mapHandler and gameState.",
+        "Entering virtual NK2AI::AIGateway::~AIGateway().",
+        "Leaving virtual NK2AI::AIGateway::~AIGateway().",
+        "Bonus (type=184, val=1) is no longer propagated to Bonus system node of type 16CBonusSystemNode",
+        "Bonus (type=136, val=1) is no longer propagated to Bonus system node of type 16CBonusSystemNode",
+        "Bonus (type=136, val=1) is no longer propagated to Bonus system node of type 16CBonusSystemNode",
+        "Bonus (type=184, val=1) is no longer propagated to Bonus system node of type 16CBonusSystemNode",
+        "Deleted playerInts.",
+        "Client stopped.",
+        "\tMade second apply on cl: 14PlayerEndsGame",
+        "Ending network thread",
+        "Ending..."
+      ],
+      "binary_hashes": {
+        "vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+        "vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+        "libvcmi.so": "84c98cbd8a793486c72594f74097c76222b9f496f78104abf8fbb2f82423de4d"
+      }
+    }
+  ],
+  "repeat_strategy_traces_equal": true,
+  "crash_trace_prefix_equal_to_first_repeat_records": 334,
+  "all_recorded_binary_hashes_equal": true,
+  "no_game_started": true,
+  "source_or_build_modified": false,
+  "caveat": "Log sequences have no thread ID or analyzer address; consecutive update messages do not prove concurrent access"
+}

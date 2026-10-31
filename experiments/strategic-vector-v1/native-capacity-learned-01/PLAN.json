@@ -1,0 +1,27 @@
+{
+  "status": "prepared_waiting_for_dev_completion",
+  "purpose": "Engineering capacity validation only: one frozen trained candidate, one central CUDA model, no optimizer or additional training",
+  "prerequisite": "native-paired-dev-clean-01 completes all 16 strict valid games and independent raw audit is reported; any invalid dev game halts this ladder pending diagnosis",
+  "candidate": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-cuda-boundary-clean-4env-01/continuous-2/update-2.pt",
+  "candidate_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+  "stages": [8, 12, 24],
+  "inference_schedule": "barrier",
+  "seconds": 120,
+  "policy_version": "learned-update2-capacity-v1",
+  "native_and_core_policy": "Parent holds the current native/source snapshot fixed; every collection captures execution-time hashes, and no frozen collector/trainer/PPO is edited",
+  "gates_per_stage": [
+    "Whole batch complete, all native games have exact request consumption and strict execution gates, no unconfirmed action/rejection imputation",
+    "Candidate tensors and every frozen input unchanged, actual optimizer steps zero",
+    "Sample proves N live native PIDs with N worker session leaders, rather than only queue length",
+    "Independent raw IO/log/state re-audit passes",
+    "Resource gates hold: available RAM >= max(2GiB,20% total), swap growth <=256MiB, native-log disk >=5GiB, batch RSS <=70% total RAM",
+    "Before next scale, peak RSS per slot x next scale x1.25 must fit measured available RAM after reserve",
+    "No token-bearing processes remain; manager exits and learner/pool leases are released before next scale"
+  ],
+  "balance": {
+    "8": "Two training maps x two opponents x two roles, one job per cell",
+    "12": "CLI engineering workload is unbalanced: train01 has eight jobs, train02 four; do not present as balanced strength evaluation",
+    "24": "Three CLI groups of eight; verify three unique-seed jobs per two-map/opponent/role cell"
+  },
+  "limitations": "These samples establish bounded CPU-simulator/CUDA-broker capacity, not independent ability improvement, a final test, or parallel optimizer updates"
+}

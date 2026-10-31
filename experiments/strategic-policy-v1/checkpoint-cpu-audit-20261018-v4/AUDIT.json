@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "game_started": false,
+  "GPU_initialized": false,
+  "scope": "Synthetic checkpoint engineering only. No native-game boundary replay or ability claim.",
+  "trainer_sha256": "91a4e3b10f4e16eda9f08ace94f01f8f32dfcc7719ef3c7d60faac727ba02b19",
+  "audit_script_sha256": "5890dffb6c94c0437c17e903727530b180218eb018c2b85c61a6482839481a8c",
+  "checks": {
+    "first_synthetic_update": {
+      "metrics": {
+        "optimizer_steps": 8,
+        "minibatches": 8,
+        "completed": true,
+        "early_stop_kl": false,
+        "last": {
+          "loss": -0.12653253972530365,
+          "actor": -0.37089094519615173,
+          "critic": 0.49562689661979675,
+          "entropy": 0.6910097002983093,
+          "kl": 1.0728836059570312e-06
+        }
+      },
+      "delta": {
+        "actor": {
+          "changed_tensors": 6,
+          "total_tensors": 6,
+          "l2_delta": 0.04880466117052448,
+          "max_abs_delta": 0.0014282541815191507
+        },
+        "critic": {
+          "changed_tensors": 6,
+          "total_tensors": 6,
+          "l2_delta": 0.16065151773656638,
+          "max_abs_delta": 0.0023255832493305206
+        }
+      }
+    },
+    "synthetic_boundary_resume_bitwise_equal": {
+      "passed": true,
+      "model": true,
+      "optimizer": true,
+      "cpu_rng": true,
+      "python_rng": true,
+      "steps_total": 16
+    },
+    "single_read_sha_and_restore": true,
+    "atomic_save_failure_retains_previous": true,
+    "partial_failure_actual_optimizer_steps": {
+      "actual_steps": 3,
+      "callback_completed_steps": 2,
+      "partial_rejected_for_resume": true
+    },
+    "protocol_mismatch_rejected": true,
+    "step_metadata_mismatch_rejected": true,
+    "historical_update2_readonly_load": {
+      "sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+      "training_updates": 2,
+      "historical_optimizer_steps": 176,
+      "weights_only_migration_optimizer_steps": 0
+    },
+    "cpu_no_cuda_rng_access": true,
+    "real_cli_migration_cpu_preflight": {
+      "passed": true,
+      "device": "cpu",
+      "nonzero_gradients": 12,
+      "game_started": false,
+      "cuda_training_started": false,
+      "lineage": {
+        "mode": "weights-only-migration",
+        "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+        "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+        "parent_training_updates": 2,
+        "reset_optimizer": true,
+        "reset_rng": true
+      },
+      "cuda_rng_restored": false,
+      "optimizer_steps": 0,
+      "optimizer_steps_total": 0
+    },
+    "real_cli_resume_cpu_preflight": {
+      "passed": true,
+      "device": "cpu",
+      "nonzero_gradients": 12,
+      "game_started": false,
+      "cuda_training_started": false,
+      "lineage": {
+        "mode": "resume",
+        "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/checkpoint-cpu-audit-20261018-v4/synthetic-cli-resume-boundary.pt",
+        "parent_sha256": "1424a3ece381b3e002e7d9ab37f893ac116e4e578b89b70b312afeea5ad56860",
+        "parent_training_updates": 1,
+        "reset_optimizer": false,
+        "reset_rng": false
+      },
+      "cuda_rng_restored": false,
+      "optimizer_steps": 0,
+      "optimizer_steps_total": 16
+    }
+  }
+}

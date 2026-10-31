@@ -1,0 +1,557 @@
+{
+  "engineering_pass": true,
+  "blockers": [],
+  "winner": null,
+  "game_completed": false,
+  "controlled_boundary": "real native positive-MP garrison and each mobile hero moves in each of turns 1 and 2; garrison never selected",
+  "audit_gate": "real-garrison-and-two-mobile-heroes-each-of-two-turns",
+  "mobile_heroes": [
+    0,
+    2
+  ],
+  "control_hero": 3,
+  "mobile_move_sequences": {
+    "0": [
+      {
+        "request_id": 4,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 6,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 8,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 10,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 12,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 14,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 16,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 18,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 20,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 22,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 26,
+        "own_turn": 2,
+        "ack_turn": 2
+      }
+    ],
+    "2": [
+      {
+        "request_id": 5,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 7,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 9,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 11,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 13,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 15,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 17,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 19,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 21,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 23,
+        "own_turn": 1,
+        "ack_turn": 1
+      },
+      {
+        "request_id": 27,
+        "own_turn": 2,
+        "ack_turn": 2
+      }
+    ]
+  },
+  "mobile_move_turns": [
+    1,
+    2
+  ],
+  "mobile_positions": {
+    "0": [
+      [
+        7,
+        10,
+        0
+      ],
+      [
+        7,
+        11,
+        0
+      ],
+      [
+        7,
+        12,
+        0
+      ],
+      [
+        6,
+        12,
+        0
+      ],
+      [
+        5,
+        12,
+        0
+      ],
+      [
+        5,
+        13,
+        0
+      ],
+      [
+        5,
+        14,
+        0
+      ],
+      [
+        5,
+        15,
+        0
+      ],
+      [
+        5,
+        16,
+        0
+      ],
+      [
+        5,
+        17,
+        0
+      ],
+      [
+        5,
+        18,
+        0
+      ]
+    ],
+    "2": [
+      [
+        10,
+        10,
+        0
+      ],
+      [
+        11,
+        10,
+        0
+      ],
+      [
+        12,
+        10,
+        0
+      ],
+      [
+        13,
+        10,
+        0
+      ],
+      [
+        14,
+        10,
+        0
+      ],
+      [
+        15,
+        10,
+        0
+      ],
+      [
+        16,
+        10,
+        0
+      ],
+      [
+        17,
+        10,
+        0
+      ],
+      [
+        18,
+        10,
+        0
+      ],
+      [
+        19,
+        10,
+        0
+      ],
+      [
+        20,
+        11,
+        0
+      ],
+      [
+        21,
+        11,
+        0
+      ]
+    ]
+  },
+  "control_positions": [
+    [
+      6,
+      8,
+      0
+    ]
+  ],
+  "turn_open_count": 2,
+  "successful_endturn_ack_count": 1,
+  "failed_move_acks": [],
+  "changed_inputs": [],
+  "thread_server_verification": {
+    "mode": "thread",
+    "settings_server_useProcess": false,
+    "client_library_verified": true,
+    "run_server_threads": [
+      {
+        "pid": 418,
+        "tid": 449,
+        "comm": "runServer",
+        "proc_comm_path": "/proc/418/task/449/comm"
+      }
+    ],
+    "native_server_log_markers": {
+      "CVCMIServer created!": true,
+      "Server gives turn to ": true
+    },
+    "passed": true
+  },
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "execution": {
+    "controlled_stop": true,
+    "timed_out": false,
+    "game_completed": false,
+    "winner": null,
+    "optimizer_steps": 0,
+    "stop_reason": "observed_two_mobile_heroes_two_turns",
+    "engine_exit": -15,
+    "wall_seconds": 0.44267699199997423,
+    "loaded_library_observations": [
+      {
+        "pid": 418,
+        "executable": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/vcmiclient",
+        "executable_sha256": "b94162bb0d20566ae88512457bdb33266415d338fe92e50c4a6aa6dbd578dd78",
+        "executable_matches_capsule": true,
+        "libraries": [
+          {
+            "maps_line": "77a30ba00000-77a30bb99000 r--p 00000000 08:30 1506831                    /root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+            "path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+            "deleted": false,
+            "sha256": "2c79ee7e411bbfaa96a13c5449c0b37bc9058de57dc8cb35b0d307665ed93c12",
+            "inode_matches": true,
+            "device_matches": true,
+            "expected_path": "/root/heroes3-ai-lab/evaluations/multihero-scheduler-garrison-capsule-04/filtered/bin/libvcmi.so",
+            "path_matches": true,
+            "expected_sha256": "2c79ee7e411bbfaa96a13c5449c0b37bc9058de57dc8cb35b0d307665ed93c12",
+            "valid": true
+          }
+        ],
+        "valid": true,
+        "run_server_threads": [
+          {
+            "tid": 449,
+            "comm": "runServer",
+            "proc_comm_path": "/proc/418/task/449/comm"
+          }
+        ]
+      }
+    ],
+    "loaded_library_errors": [],
+    "loaded_library_verified": true,
+    "thread_server_verification": {
+      "mode": "thread",
+      "settings_server_useProcess": false,
+      "client_library_verified": true,
+      "run_server_threads": [
+        {
+          "pid": 418,
+          "tid": 449,
+          "comm": "runServer",
+          "proc_comm_path": "/proc/418/task/449/comm"
+        }
+      ],
+      "native_server_log_markers": {
+        "CVCMIServer created!": true,
+        "Server gives turn to ": true
+      },
+      "passed": true
+    }
+  },
+  "raw_sha256": {
+    "probe.jsonl": "ed3a79114a14fde1e8166d1dbbc918fb18281efdf1b1706021473abc98405e32",
+    "strategy-trace.jsonl": "5f993edcf8b831edb5fa0cdf0ca0be30fbea679779952900dc5b1bbe1a24754e",
+    "client.log": "f0945bed5e113f08908d32321c468422ba6881497362b057c8c187d9bd8a8939"
+  },
+  "strict_checks": {
+    "one_native_setup_handshake": true,
+    "setup_order_and_request_tuple": true,
+    "setup_before_any_selection": true,
+    "one_before_after_state": true,
+    "native_visiting_to_real_positive_mp_garrison": true,
+    "setup_seven_resources_conserved": true,
+    "setup_hero_identity_position_mp_conserved": true,
+    "setup_army_conserved_deduplicated": true,
+    "setup_town_buildings_stock_conserved": true,
+    "garrison_remains_fixed": true,
+    "garrison_town_reference_persists": true,
+    "only_mobile_heroes_selected": true,
+    "mobile_0_turn_1_native_motion": true,
+    "mobile_2_turn_1_native_motion": true,
+    "mobile_0_turn_2_native_motion": true,
+    "mobile_2_turn_2_native_motion": true,
+    "move_request_ack_bijection": true,
+    "one_quiescent_boundary": true,
+    "boundary_no_pending_requests": true,
+    "no_action_after_boundary": true
+  },
+  "strict_detail": {
+    "motion": {
+      "0:1": {
+        "successful_requests": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "positions": [
+          [
+            5,
+            12,
+            0
+          ],
+          [
+            5,
+            13,
+            0
+          ],
+          [
+            5,
+            14,
+            0
+          ],
+          [
+            5,
+            15,
+            0
+          ],
+          [
+            5,
+            16,
+            0
+          ],
+          [
+            5,
+            17,
+            0
+          ],
+          [
+            6,
+            12,
+            0
+          ],
+          [
+            7,
+            10,
+            0
+          ],
+          [
+            7,
+            11,
+            0
+          ],
+          [
+            7,
+            12,
+            0
+          ]
+        ]
+      },
+      "2:1": {
+        "successful_requests": [
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23
+        ],
+        "positions": [
+          [
+            10,
+            10,
+            0
+          ],
+          [
+            11,
+            10,
+            0
+          ],
+          [
+            12,
+            10,
+            0
+          ],
+          [
+            13,
+            10,
+            0
+          ],
+          [
+            14,
+            10,
+            0
+          ],
+          [
+            15,
+            10,
+            0
+          ],
+          [
+            16,
+            10,
+            0
+          ],
+          [
+            17,
+            10,
+            0
+          ],
+          [
+            18,
+            10,
+            0
+          ],
+          [
+            19,
+            10,
+            0
+          ],
+          [
+            20,
+            11,
+            0
+          ]
+        ]
+      },
+      "0:2": {
+        "successful_requests": [
+          26
+        ],
+        "positions": [
+          [
+            5,
+            17,
+            0
+          ],
+          [
+            5,
+            18,
+            0
+          ]
+        ]
+      },
+      "2:2": {
+        "successful_requests": [
+          27
+        ],
+        "positions": [
+          [
+            20,
+            11,
+            0
+          ],
+          [
+            21,
+            11,
+            0
+          ]
+        ]
+      }
+    },
+    "setup_request_id": 3,
+    "control_selections": [],
+    "setup_army_totals_before": {
+      "0": 33,
+      "2": 16
+    },
+    "setup_army_totals_after": {
+      "0": 33,
+      "2": 16
+    }
+  }
+}

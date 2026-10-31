@@ -1,0 +1,2106 @@
+{
+  "old": {
+    "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/economy-v4-engineering-map0-blue-2026101860-2026101860-fwugh6es",
+    "log_sha256": "0d69651fc3d6e3465d50130d47da1b985635f7d2104e1f7c1c7b95658a359fa9",
+    "request272": {
+      "schema": "strategy-candidates-v3",
+      "request_id": 272,
+      "player": 1,
+      "day": 29,
+      "hero": 1,
+      "from": [
+        9,
+        32,
+        0
+      ],
+      "gold": 40,
+      "wood": 40,
+      "ore": 45,
+      "own_army_value": 34644,
+      "movement": 1410,
+      "visible_threats": [],
+      "own_towns": [
+        {
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "army_value": 970
+        }
+      ],
+      "candidates": [
+        {
+          "kind": 0,
+          "position": [
+            7,
+            34,
+            0
+          ],
+          "next": [
+            8,
+            33,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 7.77409
+        }
+      ]
+    },
+    "selected272": {
+      "kind": 0,
+      "position": [
+        7,
+        34,
+        0
+      ],
+      "next": [
+        8,
+        33,
+        0
+      ],
+      "path_cost": 0.271795,
+      "heuristic_score": 7.77409
+    },
+    "request273": {
+      "schema": "strategy-candidates-v3",
+      "request_id": 273,
+      "player": 1,
+      "day": 29,
+      "hero": 1,
+      "from": [
+        8,
+        33,
+        0
+      ],
+      "gold": 40,
+      "wood": 40,
+      "ore": 45,
+      "own_army_value": 33591,
+      "movement": 1198,
+      "visible_threats": [],
+      "own_towns": [
+        {
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "army_value": 970
+        }
+      ],
+      "candidates": [
+        {
+          "kind": 0,
+          "position": [
+            7,
+            34,
+            0
+          ],
+          "next": [
+            7,
+            34,
+            0
+          ],
+          "path_cost": 0.135897,
+          "heuristic_score": 9.43548
+        }
+      ]
+    },
+    "selected273": {
+      "kind": 0,
+      "position": [
+        7,
+        34,
+        0
+      ],
+      "next": [
+        7,
+        34,
+        0
+      ],
+      "path_cost": 0.135897,
+      "heuristic_score": 9.43548
+    },
+    "action272": 0,
+    "action273": 0,
+    "context": [
+      {
+        "line": 30473,
+        "text": "\tSending to all clients: 11BattleEnded"
+      },
+      {
+        "line": 30474,
+        "text": "Sending a pack of type 11BattleEnded"
+      },
+      {
+        "line": 30479,
+        "text": "Received CPack of type 11BattleEnded"
+      },
+      {
+        "line": 30480,
+        "text": "\tMade first apply on cl: 11BattleEnded"
+      },
+      {
+        "line": 30481,
+        "text": "\tApplied on gameState(): 11BattleEnded"
+      },
+      {
+        "line": 30483,
+        "text": "\tApplied on gs: 11BattleEnded"
+      },
+      {
+        "line": 30484,
+        "text": "\tSending to all clients: 12RemoveObject"
+      },
+      {
+        "line": 30485,
+        "text": "Sending a pack of type 12RemoveObject"
+      },
+      {
+        "line": 30486,
+        "text": "removing object id=160; address=75de859fa340; name=creatures.core.griffin.name.plural"
+      },
+      {
+        "line": 30487,
+        "text": "\tApplied on gameState(): 12RemoveObject"
+      },
+      {
+        "line": 30488,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de853d0af0] A query of type '19MapObjectVisitQuery' and qid = 308 affecting player BLUE, '."
+      },
+      {
+        "line": 30492,
+        "text": "Hero blue strategic hero after victory over guard finishes visit to (9 33 0)"
+      },
+      {
+        "line": 30493,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 307 affecting player BLUE, '."
+      },
+      {
+        "line": 30494,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30495,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30496,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30507,
+        "text": "CPathfinder finished with 834 iterations"
+      },
+      {
+        "line": 30508,
+        "text": "CPathfinder finished with 834 iterations"
+      },
+      {
+        "line": 30509,
+        "text": "DirectorAI: step hero 1 (8 33 0) -> (7 34 0) reason=local candidate policy"
+      },
+      {
+        "line": 30512,
+        "text": "\tMade second apply on cl: 11BattleEnded"
+      },
+      {
+        "line": 30513,
+        "text": "Received CPack of type 12RemoveObject"
+      },
+      {
+        "line": 30516,
+        "text": "\tMade first apply on cl: 12RemoveObject"
+      },
+      {
+        "line": 30518,
+        "text": "removing object id=160; address=75de80386100; name=creatures.core.griffin.name.plural"
+      },
+      {
+        "line": 30519,
+        "text": "\tApplied on gs: 12RemoveObject"
+      },
+      {
+        "line": 30520,
+        "text": "\tMade second apply on cl: 12RemoveObject"
+      },
+      {
+        "line": 30525,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30526,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30527,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30528,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30532,
+        "text": "Entering void QueriesProcessor::addQuery(PlayerColor, QueryPtr): player='1', query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30533,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30534,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30542,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30543,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30544,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30545,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30546,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30555,
+        "text": "Entering void QueriesProcessor::popIfTop(QueryPtr): query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30556,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30557,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30559,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30560,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30572,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30573,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30574,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30575,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30579,
+        "text": "CPathfinder finished with 839 iterations"
+      },
+      {
+        "line": 30580,
+        "text": "CPathfinder finished with 839 iterations"
+      },
+      {
+        "line": 30581,
+        "text": "DirectorAI: step hero 1 (7 34 0) -> (7 33 0) reason=local candidate policy"
+      },
+      {
+        "line": 30594,
+        "text": "Entering void QueriesProcessor::addQuery(PlayerColor, QueryPtr): player='1', query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30595,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30596,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30597,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30599,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30601,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30603,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30604,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30610,
+        "text": "Entering void QueriesProcessor::popIfTop(QueryPtr): query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30612,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x75de8535b010] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30614,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30615,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30616,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30627,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30628,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      }
+    ],
+    "checkpoint_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+    "broker_code": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/broker.py": "0785d8d5acfed5dd59f3a278fed9a3e875a3d5c1bd7280924e834454a6e24ad3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/legacy.py": "fc20f08acf84f6c2454b003c686c99ba033b0756e3e167ff1f0f4417917d1079",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/smoke_game.py": "be4d0aba31b824a0f4ec059e9f40d9286db40352db4567d1e2d04f05caf23a25",
+      "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/encoder.py": "ff03b951ff62999ede3e8a6853905adc9e63c12b8c73ac8fad246ffb65ca72ae",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/model.py": "385d3a2c75013f1e35defb3ebf41643c2630feba5be6a698d2554c2cd5b199f5"
+    },
+    "faction_config_sha256": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b",
+    "map_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036"
+  },
+  "new": {
+    "native_dir": "/root/heroes3-ai-lab/workers/adv-runs/movement-barrier-regression-01-2026101860-8q9ergvp",
+    "log_sha256": "7ce1ecc577a4c6bc3d1ecfe8d31b608c69d08bd7adfd1d443a8150a04f3f9b92",
+    "request272": {
+      "schema": "strategy-candidates-v3",
+      "request_id": 272,
+      "player": 1,
+      "day": 29,
+      "hero": 1,
+      "from": [
+        9,
+        32,
+        0
+      ],
+      "gold": 40,
+      "wood": 40,
+      "ore": 45,
+      "own_army_value": 34644,
+      "movement": 1410,
+      "visible_threats": [],
+      "own_towns": [
+        {
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "army_value": 970
+        }
+      ],
+      "candidates": [
+        {
+          "kind": 0,
+          "position": [
+            7,
+            34,
+            0
+          ],
+          "next": [
+            8,
+            33,
+            0
+          ],
+          "path_cost": 0.271795,
+          "heuristic_score": 7.77409
+        }
+      ]
+    },
+    "selected272": {
+      "kind": 0,
+      "position": [
+        7,
+        34,
+        0
+      ],
+      "next": [
+        8,
+        33,
+        0
+      ],
+      "path_cost": 0.271795,
+      "heuristic_score": 7.77409
+    },
+    "request273": {
+      "schema": "strategy-candidates-v3",
+      "request_id": 273,
+      "player": 1,
+      "day": 29,
+      "hero": 1,
+      "from": [
+        8,
+        33,
+        0
+      ],
+      "gold": 40,
+      "wood": 40,
+      "ore": 45,
+      "own_army_value": 33591,
+      "movement": 1198,
+      "visible_threats": [],
+      "own_towns": [
+        {
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "army_value": 970
+        }
+      ],
+      "candidates": [
+        {
+          "kind": 4,
+          "position": [
+            29,
+            8,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.27179,
+          "heuristic_score": 1.32563
+        },
+        {
+          "kind": 0,
+          "position": [
+            21,
+            2,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.44102,
+          "heuristic_score": 1.52245
+        },
+        {
+          "kind": 0,
+          "position": [
+            31,
+            22,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.6,
+          "heuristic_score": 1.93548
+        },
+        {
+          "kind": 0,
+          "position": [
+            18,
+            8,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 1.83601
+        },
+        {
+          "kind": 0,
+          "position": [
+            17,
+            12,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.3282,
+          "heuristic_score": 2.12149
+        },
+        {
+          "kind": 0,
+          "position": [
+            12,
+            10,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.57692,
+          "heuristic_score": 1.95
+        },
+        {
+          "kind": 5,
+          "position": [
+            18,
+            0,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.52051,
+          "heuristic_score": 0.298469
+        },
+        {
+          "kind": 5,
+          "position": [
+            18,
+            1,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.42436,
+          "heuristic_score": 0.305783
+        },
+        {
+          "kind": 5,
+          "position": [
+            17,
+            2,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.28846,
+          "heuristic_score": 0.343147
+        },
+        {
+          "kind": 5,
+          "position": [
+            18,
+            2,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.3282,
+          "heuristic_score": 0.287341
+        },
+        {
+          "kind": 5,
+          "position": [
+            16,
+            3,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.15256,
+          "heuristic_score": 0.355914
+        },
+        {
+          "kind": 5,
+          "position": [
+            17,
+            3,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.19231,
+          "heuristic_score": 0.297917
+        },
+        {
+          "kind": 5,
+          "position": [
+            15,
+            4,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.05641,
+          "heuristic_score": 0.365537
+        },
+        {
+          "kind": 5,
+          "position": [
+            16,
+            4,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 3.05641,
+          "heuristic_score": 0.309301
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            5,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.96026,
+          "heuristic_score": 0.375695
+        },
+        {
+          "kind": 5,
+          "position": [
+            15,
+            5,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.96026,
+          "heuristic_score": 0.317896
+        },
+        {
+          "kind": 5,
+          "position": [
+            13,
+            6,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.386433
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            6,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.326982
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            7,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.416159
+        },
+        {
+          "kind": 5,
+          "position": [
+            13,
+            7,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 0.336603
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            8,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.386433
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            9,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.90385,
+          "heuristic_score": 0.381921
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            10,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.57692,
+          "heuristic_score": 0.4225
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            12,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.24872,
+          "heuristic_score": 0.400187
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            13,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.15256,
+          "heuristic_score": 0.452393
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            14,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 2.05641,
+          "heuristic_score": 0.508526
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            15,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.96026,
+          "heuristic_score": 0.5284
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            16,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.8641,
+          "heuristic_score": 0.549892
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            17,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.76795,
+          "heuristic_score": 0.573205
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            18,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.65641,
+          "heuristic_score": 0.602854
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            19,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.56026,
+          "heuristic_score": 0.630989
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            20,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.4641,
+          "heuristic_score": 0.610966
+        },
+        {
+          "kind": 5,
+          "position": [
+            13,
+            21,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.32821,
+          "heuristic_score": 0.71108
+        },
+        {
+          "kind": 5,
+          "position": [
+            14,
+            21,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.36795,
+          "heuristic_score": 0.588881
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            22,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.19231,
+          "heuristic_score": 0.768182
+        },
+        {
+          "kind": 5,
+          "position": [
+            13,
+            22,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.23205,
+          "heuristic_score": 0.635085
+        },
+        {
+          "kind": 5,
+          "position": [
+            11,
+            23,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.05641,
+          "heuristic_score": 0.899506
+        },
+        {
+          "kind": 5,
+          "position": [
+            12,
+            23,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 1.09615,
+          "heuristic_score": 0.689157
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            23,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.326982
+        },
+        {
+          "kind": 5,
+          "position": [
+            35,
+            23,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.96026,
+          "heuristic_score": 0.317896
+        },
+        {
+          "kind": 5,
+          "position": [
+            11,
+            24,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.960256,
+          "heuristic_score": 0.890255
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            24,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.8641,
+          "heuristic_score": 0.356707
+        },
+        {
+          "kind": 5,
+          "position": [
+            11,
+            25,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.864103,
+          "heuristic_score": 0.953007
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            25,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 0.397803
+        },
+        {
+          "kind": 5,
+          "position": [
+            11,
+            26,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.767949,
+          "heuristic_score": 0.94641
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            26,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 0.397803
+        },
+        {
+          "kind": 5,
+          "position": [
+            7,
+            27,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.616667,
+          "heuristic_score": 1.25373
+        },
+        {
+          "kind": 5,
+          "position": [
+            8,
+            27,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.576923,
+          "heuristic_score": 1.20714
+        },
+        {
+          "kind": 5,
+          "position": [
+            9,
+            27,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.616667,
+          "heuristic_score": 1.16418
+        },
+        {
+          "kind": 5,
+          "position": [
+            10,
+            27,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.65641,
+          "heuristic_score": 1.03769
+        },
+        {
+          "kind": 5,
+          "position": [
+            11,
+            27,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.767949,
+          "heuristic_score": 0.867543
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            27,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 0.397803
+        },
+        {
+          "kind": 5,
+          "position": [
+            6,
+            28,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.560256,
+          "heuristic_score": 1.22612
+        },
+        {
+          "kind": 5,
+          "position": [
+            7,
+            28,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.520513,
+          "heuristic_score": 1.07789
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            28,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.76795,
+          "heuristic_score": 0.397803
+        },
+        {
+          "kind": 5,
+          "position": [
+            5,
+            29,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.503846,
+          "heuristic_score": 1.29502
+        },
+        {
+          "kind": 5,
+          "position": [
+            6,
+            29,
+            0
+          ],
+          "next": [
+            8,
+            32,
+            0
+          ],
+          "path_cost": 0.464103,
+          "heuristic_score": 1.14096
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            29,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.63333,
+          "heuristic_score": 0.414894
+        },
+        {
+          "kind": 5,
+          "position": [
+            4,
+            30,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.503846,
+          "heuristic_score": 1.29502
+        },
+        {
+          "kind": 5,
+          "position": [
+            5,
+            30,
+            0
+          ],
+          "next": [
+            7,
+            32,
+            0
+          ],
+          "path_cost": 0.407692,
+          "heuristic_score": 1.21186
+        },
+        {
+          "kind": 5,
+          "position": [
+            33,
+            30,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.53718,
+          "heuristic_score": 0.362178
+        },
+        {
+          "kind": 5,
+          "position": [
+            34,
+            30,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.63333,
+          "heuristic_score": 0.446809
+        },
+        {
+          "kind": 5,
+          "position": [
+            3,
+            31,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.560256,
+          "heuristic_score": 1.32044
+        },
+        {
+          "kind": 5,
+          "position": [
+            4,
+            31,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.464103,
+          "heuristic_score": 1.14096
+        },
+        {
+          "kind": 5,
+          "position": [
+            32,
+            31,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.44103,
+          "heuristic_score": 0.374019
+        },
+        {
+          "kind": 5,
+          "position": [
+            33,
+            31,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.53718,
+          "heuristic_score": 0.428029
+        },
+        {
+          "kind": 5,
+          "position": [
+            3,
+            32,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.520513,
+          "heuristic_score": 1.27387
+        },
+        {
+          "kind": 5,
+          "position": [
+            31,
+            32,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.34487,
+          "heuristic_score": 0.386661
+        },
+        {
+          "kind": 5,
+          "position": [
+            32,
+            32,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.44103,
+          "heuristic_score": 0.442023
+        },
+        {
+          "kind": 5,
+          "position": [
+            3,
+            33,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.480769,
+          "heuristic_score": 1.32549
+        },
+        {
+          "kind": 5,
+          "position": [
+            20,
+            33,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.24872,
+          "heuristic_score": 0.629032
+        },
+        {
+          "kind": 5,
+          "position": [
+            21,
+            33,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.34487,
+          "heuristic_score": 0.596247
+        },
+        {
+          "kind": 5,
+          "position": [
+            22,
+            33,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.44103,
+          "heuristic_score": 0.566711
+        },
+        {
+          "kind": 5,
+          "position": [
+            30,
+            33,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.24872,
+          "heuristic_score": 0.400187
+        },
+        {
+          "kind": 5,
+          "position": [
+            31,
+            33,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.34487,
+          "heuristic_score": 0.456963
+        },
+        {
+          "kind": 5,
+          "position": [
+            3,
+            34,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.520513,
+          "heuristic_score": 1.27387
+        },
+        {
+          "kind": 5,
+          "position": [
+            19,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.15256,
+          "heuristic_score": 0.665632
+        },
+        {
+          "kind": 5,
+          "position": [
+            20,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.24872,
+          "heuristic_score": 0.743402
+        },
+        {
+          "kind": 5,
+          "position": [
+            22,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.48077,
+          "heuristic_score": 0.656311
+        },
+        {
+          "kind": 5,
+          "position": [
+            23,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.57692,
+          "heuristic_score": 0.52963
+        },
+        {
+          "kind": 5,
+          "position": [
+            29,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.15256,
+          "heuristic_score": 0.414693
+        },
+        {
+          "kind": 5,
+          "position": [
+            30,
+            34,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.24872,
+          "heuristic_score": 0.472948
+        },
+        {
+          "kind": 5,
+          "position": [
+            3,
+            35,
+            0
+          ],
+          "next": [
+            7,
+            33,
+            0
+          ],
+          "path_cost": 0.560256,
+          "heuristic_score": 1.1318
+        },
+        {
+          "kind": 5,
+          "position": [
+            19,
+            35,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.15256,
+          "heuristic_score": 0.665632
+        },
+        {
+          "kind": 5,
+          "position": [
+            23,
+            35,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 1.61667,
+          "heuristic_score": 0.519685
+        },
+        {
+          "kind": 5,
+          "position": [
+            29,
+            35,
+            0
+          ],
+          "next": [
+            9,
+            33,
+            0
+          ],
+          "path_cost": 2.19231,
+          "heuristic_score": 0.408571
+        }
+      ]
+    },
+    "selected273": {
+      "kind": 0,
+      "position": [
+        17,
+        12,
+        0
+      ],
+      "next": [
+        8,
+        32,
+        0
+      ],
+      "path_cost": 2.3282,
+      "heuristic_score": 2.12149
+    },
+    "action272": 0,
+    "action273": 4,
+    "context": [
+      {
+        "line": 30473,
+        "text": "\tSending to all clients: 11BattleEnded"
+      },
+      {
+        "line": 30474,
+        "text": "Sending a pack of type 11BattleEnded"
+      },
+      {
+        "line": 30479,
+        "text": "Received CPack of type 11BattleEnded"
+      },
+      {
+        "line": 30480,
+        "text": "\tApplied on gameState(): 11BattleEnded"
+      },
+      {
+        "line": 30482,
+        "text": "\tMade first apply on cl: 11BattleEnded"
+      },
+      {
+        "line": 30483,
+        "text": "\tSending to all clients: 12RemoveObject"
+      },
+      {
+        "line": 30484,
+        "text": "Sending a pack of type 12RemoveObject"
+      },
+      {
+        "line": 30485,
+        "text": "removing object id=160; address=742871a7b8a0; name=creatures.core.griffin.name.plural"
+      },
+      {
+        "line": 30486,
+        "text": "\tApplied on gameState(): 12RemoveObject"
+      },
+      {
+        "line": 30487,
+        "text": "\tApplied on gs: 11BattleEnded"
+      },
+      {
+        "line": 30488,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x742871a146d0] A query of type '19MapObjectVisitQuery' and qid = 308 affecting player BLUE, '."
+      },
+      {
+        "line": 30489,
+        "text": "\tMade second apply on cl: 11BattleEnded"
+      },
+      {
+        "line": 30490,
+        "text": "Received CPack of type 12RemoveObject"
+      },
+      {
+        "line": 30494,
+        "text": "Hero blue strategic hero after victory over guard finishes visit to (9 33 0)"
+      },
+      {
+        "line": 30495,
+        "text": "\tMade first apply on cl: 12RemoveObject"
+      },
+      {
+        "line": 30496,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 307 affecting player BLUE, '."
+      },
+      {
+        "line": 30497,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30498,
+        "text": "removing object id=160; address=74286c386190; name=creatures.core.griffin.name.plural"
+      },
+      {
+        "line": 30499,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30500,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30501,
+        "text": "\tApplied on gs: 12RemoveObject"
+      },
+      {
+        "line": 30503,
+        "text": "\tMade second apply on cl: 12RemoveObject"
+      },
+      {
+        "line": 30512,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30514,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30516,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30520,
+        "text": "CPathfinder finished with 835 iterations"
+      },
+      {
+        "line": 30521,
+        "text": "CPathfinder finished with 835 iterations"
+      },
+      {
+        "line": 30522,
+        "text": "DirectorAI: step hero 1 (8 33 0) -> (8 32 0) reason=local candidate policy"
+      },
+      {
+        "line": 30525,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30539,
+        "text": "Entering void QueriesProcessor::addQuery(PlayerColor, QueryPtr): player='1', query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30540,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30541,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30542,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30544,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30546,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30548,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30550,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30555,
+        "text": "Entering void QueriesProcessor::popIfTop(QueryPtr): query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30558,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 310 affecting player BLUE, '."
+      },
+      {
+        "line": 30560,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30562,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30563,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30568,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30571,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30573,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30575,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30579,
+        "text": "CPathfinder finished with 839 iterations"
+      },
+      {
+        "line": 30580,
+        "text": "CPathfinder finished with 839 iterations"
+      },
+      {
+        "line": 30581,
+        "text": "DirectorAI: step hero 1 (8 32 0) -> (8 31 0) reason=local candidate policy"
+      },
+      {
+        "line": 30594,
+        "text": "Entering void QueriesProcessor::addQuery(PlayerColor, QueryPtr): player='1', query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30595,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30596,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30597,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30599,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30601,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30602,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30607,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30608,
+        "text": "Entering void QueriesProcessor::popIfTop(QueryPtr): query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30611,
+        "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='1', query='[0x742870789aa0] A query of type '18CHeroMovementQuery' and qid = 311 affecting player BLUE, '."
+      },
+      {
+        "line": 30612,
+        "text": "\tSending to all clients: 13PlayerBlocked"
+      },
+      {
+        "line": 30614,
+        "text": "Sending a pack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30615,
+        "text": "\tApplied on gameState(): 13PlayerBlocked"
+      },
+      {
+        "line": 30625,
+        "text": "Received CPack of type 13PlayerBlocked"
+      },
+      {
+        "line": 30627,
+        "text": "\tMade first apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30629,
+        "text": "\tApplied on gs: 13PlayerBlocked"
+      },
+      {
+        "line": 30630,
+        "text": "\tMade second apply on cl: 13PlayerBlocked"
+      },
+      {
+        "line": 30634,
+        "text": "CPathfinder finished with 847 iterations"
+      },
+      {
+        "line": 30635,
+        "text": "CPathfinder finished with 847 iterations"
+      },
+      {
+        "line": 30636,
+        "text": "DirectorAI: step hero 1 (8 31 0) -> (8 30 0) reason=local candidate policy"
+      }
+    ],
+    "checkpoint_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+    "broker_code": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/broker.py": "0785d8d5acfed5dd59f3a278fed9a3e875a3d5c1bd7280924e834454a6e24ad3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/legacy.py": "fc20f08acf84f6c2454b003c686c99ba033b0756e3e167ff1f0f4417917d1079",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/smoke_game.py": "be4d0aba31b824a0f4ec059e9f40d9286db40352db4567d1e2d04f05caf23a25",
+      "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/encoder.py": "ff03b951ff62999ede3e8a6853905adc9e63c12b8c73ac8fad246ffb65ca72ae",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/model.py": "385d3a2c75013f1e35defb3ebf41643c2630feba5be6a698d2554c2cd5b199f5"
+    },
+    "faction_config_sha256": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b",
+    "map_sha256": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036"
+  },
+  "schema": "movement-barrier-first-difference-cause-v1",
+  "unchanged_checkpoint_broker_map_faction": true,
+  "old_decision273_log_line": 30509,
+  "new_decision273_log_line": 30522,
+  "old_guard_removal_log_lines": [
+    30486,
+    30518
+  ],
+  "new_guard_removal_log_lines": [
+    30485,
+    30498
+  ],
+  "old_decision_precedes_client_guard_removal": true,
+  "new_decision_follows_client_guard_removal": true,
+  "causal_interpretation": "The barrier delays reconsideration until the defeated guard object is removed and its visit/movement query is unblocked. Old request273 still committed to the stale neutral target; new request273 correctly lacks that defeated target. This is a legal earlier observable divergence, not an exact 295-action counterfactual."
+}

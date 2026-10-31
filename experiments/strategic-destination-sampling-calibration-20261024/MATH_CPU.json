@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "native_runs": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "distributions_checked": 102,
+  "invalid_cases_rejected": 15,
+  "max_absolute_operation_mass_error": 2.384185791015625e-07,
+  "autograd_gradcheck": true,
+  "tolerances": {
+    "torch.float32": [
+      3e-06,
+      3e-07
+    ],
+    "torch.float64": [
+      3e-13,
+      3e-14
+    ]
+  },
+  "zero_one_move_identity": true,
+  "non_move_logits_bitwise": true,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-destination-sampling-calibration-20261024/check_math_cpu.py": "fa0785c22d70e27c393e005918858a46aa29954204acf4bbd6bcf849533db900",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-destination-sampling-calibration-20261024/movement_exploration.py": "656c526aabcef70e4fc1fff0fd10ad88f61f0e37c015631fb41c4a05189c5f8c"
+  }
+}

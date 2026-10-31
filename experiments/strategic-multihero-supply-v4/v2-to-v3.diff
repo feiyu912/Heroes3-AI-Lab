@@ -1,0 +1,203 @@
+--- v2/AI/DirectorAI/SupplyAdapter.inc
++++ v3/AI/DirectorAI/SupplyAdapter.inc
+@@ -38,7 +38,7 @@
+  const char*path=std::getenv("LAB_ADV_SUPPLY_TRACE");
+  const auto world=supplyWorld();
+  std::ostringstream out;
+- out<<"{\"schema\":\"scripted-supply-events-v1\",\"event\":\""<<event<<"\",\"native_request_id\":"<<id
++ out<<"{\"schema\":\"scripted-supply-events-v3\",\"controller_epoch\":\"scripted-supply-cargo-v3\",\"event\":\""<<event<<"\",\"native_request_id\":"<<id
+  <<",\"player\":"<<playerID.getNum()<<",\"day\":"<<cb->getCalendar().getCurrentDay()<<",\"own_turn\":"<<supply.turn
+  <<",\"main\":"<<supply.main<<",\"courier\":"<<supply.courier<<",\"home\":"<<supply.home<<",\"phase\":"<<int(supply.phase)
+  <<",\"query\":"<<supply.query<<",\"cursor\":"<<supply.cursor<<",\"cycles\":"<<supply.cycles
+@@ -69,7 +69,17 @@
+   out<<"{\"op\":"<<int(c.op)<<",\"actor\":"<<c.actor<<",\"target\":"<<c.target<<",\"source\":"<<c.source
+   <<",\"from_slot\":"<<c.from<<",\"to_slot\":"<<c.to<<",\"destination\":["<<c.destination.x<<','<<c.destination.y<<','<<c.destination.z<<"]}";
+  }
+- out<<",\"actual_request\":"<<(actualRequest.empty()?"null":actualRequest)<<"}";
++ out<<",\"actual_request\":"<<(actualRequest.empty()?"null":actualRequest)<<",\"job\":{\"id\":"<<supply.job
++ <<",\"status\":"<<int(supply.jobStatus)<<",\"successful_jobs\":"<<supply.successfulJobs<<",\"incomplete_attempts\":"<<supply.incompleteAttempts
++ <<",\"success\":"<<(supply.jobStatus==supply_v1::JobStatus::Delivered?"true":"false")<<",\"reason\":\""<<supply.deliveryReason<<"\",\"initial_reserve_slots\":[";
++ for(int i=0;i<7;++i) {if(i)out<<',';out<<'['<<supply.initialReserve[i].creature<<','<<supply.initialReserve[i].count<<']';}
++ out<<"],\"cargo_slots\":[";
++ for(int i=0;i<7;++i) {if(i)out<<',';out<<'['<<supply.cargoSlots[i].creature<<','<<supply.cargoSlots[i].count<<']';}
++ out<<']';
++ auto ledger=[&](const char*name,const std::map<int,long long>&values)
++ {out<<",\""<<name<<"\":[";bool first=true;for(const auto&p:values){if(!first)out<<',';first=false;out<<'['<<p.first<<','<<p.second<<']';}out<<']';};
++ ledger("reserve",supply.reserve);ledger("picked",supply.picked);ledger("cargo_remaining",supply.cargo);ledger("delivered",supply.delivered);
++ out<<"}}";
+  const auto json=out.str();
+  logGlobal->info("DirectorSupplyEvent %s",json);
+  if(path) {std::ofstream file(path,std::ios::app);file<<json<<'\n';file.flush();}
+@@ -223,6 +233,7 @@
+   if(pa->packType!=expected) throw std::runtime_error("supply_ack_type_mismatch");
+   if(c.op==supply_v1::Op::Move && !supplyMoveSeen) throw std::runtime_error("supply_ack_without_move_result");
+   supplyTrace(pa->result?"real_ack":"real_rejection",pa->requestID);supply.ack(pa->requestID,c.op,pa->result,supplyWorld());
++  supplyTrace("control_ack_applied",pa->requestID);
+   if(c.op==supply_v1::Op::End)
+   {
+    turnActive=false;endingTurn=false;
+--- v2/AI/DirectorAI/SupplyController.h
++++ v3/AI/DirectorAI/SupplyController.h
+@@ -1,5 +1,5 @@
+ #pragma once
+-// scripted_supply-v1: deterministic research controller, no learned transitions.
++// scripted-supply-cargo-v3: deterministic research controller, no learned transitions.
+ // Inputs are owned state only. The adapter alone may issue native requests.
+ #include <algorithm>
+ #include <array>
+@@ -19,6 +19,7 @@
+ struct World { std::vector<Hero> heroes; std::vector<Town> towns; };
+ enum class Phase { Return, Pickup, Meeting, Exchange };
+ enum class Op { Move, Transfer, Close, End };
++enum class JobStatus { Empty, Carrying, Delivered, Incomplete };
+ struct Command
+ {
+  Op op=Op::Move; int actor=-1,target=-1,source=-1,from=-1,to=-1,query=-1;
+@@ -55,6 +56,11 @@
+  Phase phase=Phase::Return;
+  Phase phaseBeforeExchange=Phase::Return;
+  bool exchangeDelivery=false;
++ Army initialReserve{},cargoSlots{};
++ std::map<int,long long> reserve,cargo,picked,delivered;
++ int job=0,successfulJobs=0,incompleteAttempts=0;
++ JobStatus jobStatus=JobStatus::Empty;
++ std::string deliveryReason="no_acknowledged_cargo";
+  std::map<int,int> spent;
+  std::map<int,std::string> blocked;
+  std::map<int,Pos> goals;
+@@ -63,6 +69,21 @@
+  bool failed=false;
+  std::string failure;
+  static constexpr int budget=48;
++ static long long amount(const std::map<int,long long>&m,int type)
++ {auto it=m.find(type);return it==m.end()?0:it->second;}
++ bool reservePresent(const Army&a) const
++ {
++  auto count=totals(a);for(const auto&p:reserve) if(amount(count,p.first)<p.second) return false;
++  for(int i=0;i<7;++i) if(initialReserve[i].count>0 &&
++   (a[i].creature!=initialReserve[i].creature || a[i].count<initialReserve[i].count)) return false;
++  return true;
++ }
++ bool pureCargoSlot(const Army&a,int slot) const
++ {
++  const auto&s=a[slot];if(s.count<=0 || amount(cargo,s.creature)<s.count || occupied(a)<2 ||
++   cargoSlots[slot].creature!=s.creature || cargoSlots[slot].count!=s.count) return false;
++  Army after=a;after[slot]=Stack{};return reservePresent(after);
++ }
+ 
+  void require(bool ok,const std::string &why)
+  { if(!ok) {failed=true;failure=why;throw std::runtime_error(why);} }
+@@ -78,6 +99,16 @@
+   try { (void)hero(w,main);(void)hero(w,courier);(void)town(w); }
+   catch(const std::exception&e) { require(false,e.what()); }
+   for(const auto&h:w.heroes) for(const auto&s:h.army) require(s.count>=0 && (s.count==0 || s.creature>=0),"bad_army");
++  const auto actual=totals(hero(w,courier).army);
++  require(reservePresent(hero(w,courier).army),"initial_reserve_slot_changed_or_lost");
++  require(totals(cargoSlots)==cargo,"cargo_slot_ledger_mismatch");
++  for(int i=0;i<7;++i) if(cargoSlots[i].count>0)
++  {
++   const auto&s=hero(w,courier).army[i];
++   require(s.creature==cargoSlots[i].creature && s.count>=cargoSlots[i].count+initialReserve[i].count,"cargo_slot_changed_or_lost");
++  }
++  for(const auto&r:reserve) require(amount(actual,r.first)>=r.second+amount(cargo,r.first),"reserve_or_acknowledged_cargo_lost");
++  for(const auto&c:cargo) require(amount(actual,c.first)>=c.second+amount(reserve,c.first),"acknowledged_cargo_lost");
+  }
+  void start(const World&w)
+  {
+@@ -86,6 +117,8 @@
+   main=std::min(w.heroes[0].id,w.heroes[1].id);courier=std::max(w.heroes[0].id,w.heroes[1].id);
+   home=std::min_element(w.towns.begin(),w.towns.end(),[](const Town&a,const Town&b){return a.id<b.id;})->id;
+   validate(w);
++  initialReserve=hero(w,courier).army;reserve=totals(initialReserve);
++  require(!reserve.empty(),"courier_initial_reserve_required");
+  }
+  void beginTurn(const World&w)
+  {
+@@ -115,6 +148,7 @@
+   if(delivery && occupied(donor)<2) return {};
+   for(int i=0;i<7;++i) if(donor[i].count>0)
+   {
++   if(delivery && !pureCargoSlot(donor,i)) continue;
+    int slot=compatible(recipient,donor[i].creature);if(slot<0) continue;
+    Command c;c.op=Op::Transfer;c.actor=courier;c.source=source;c.target=target;c.from=i;c.to=slot;
+    c.query=query;c.delivery=delivery;c.donorBefore=donor;c.recipientBefore=recipient;return c;
+@@ -130,6 +164,15 @@
+   {
+    require(phase==Phase::Exchange,"query_phase_mismatch");
+    if(exchangeDelivery) {auto cmd=transfer(c.army,m.army,courier,main,true);if(cmd) return cmd;}
++   if(exchangeDelivery)
++   {
++    if(cargo.empty()) deliveryReason=picked.empty()?"no_acknowledged_cargo":"all_cargo_transferred_waiting_close_ack";
++    else
++    {
++     bool separable=false;for(int i=0;i<7;++i) if(pureCargoSlot(c.army,i)) separable=true;
++     deliveryReason=separable?"recipient_has_no_compatible_slot":"cargo_merged_with_reserve_or_untracked_units";
++    }
++   }
+    Command close;close.op=Op::Close;close.query=query;return close;
+   }
+   for(int attempt=0;attempt<2;++attempt)
+@@ -150,7 +193,7 @@
+      require(t.visitor==courier,"pickup_requires_actual_town_visitor");
+      auto pickup=transfer(t.army,c.army,home,courier,false);
+      if(pickup) return pickup;
+-     if(occupied(c.army)<2) { yield(id,"no_deliverable_cargo_preserving_reserve");continue; }
++     if(cargo.empty()) { yield(id,"no_acknowledged_pickup_cargo");continue; }
+      phase=Phase::Meeting;
+     }
+     if(phase==Phase::Meeting) {cmd.target=main;cmd.destination=m.pos;}
+@@ -163,7 +206,10 @@
+  }
+  void prepare(const Command&c)
+  {
+-  require(!pending && request<0,"second_global_pending_request");pending=c;
++  require(!pending && request<0,"second_global_pending_request");
++  if(c.op==Op::Transfer && c.delivery)
++   require(c.from>=0 && c.from<7 && pureCargoSlot(c.donorBefore,c.from),"delivery_not_pure_acknowledged_cargo");
++  pending=c;
+   if(c.actor>=0) ++spent[c.actor];
+  }
+  void bind(int id,Op actual)
+@@ -187,16 +233,40 @@
+     require(donor[i].count==expectedDonor[i].count && (!donor[i].count || donor[i].creature==expectedDonor[i].creature),"donor_delta_mismatch");
+     require(recipient[i].count==expectedRecipient[i].count && (!recipient[i].count || recipient[i].creature==expectedRecipient[i].creature),"recipient_delta_mismatch");
+    }
+-   if(c.delivery) require(occupied(donor)>=1,"courier_reserve_lost");
++   if(c.delivery)
++   {
++    require(occupied(donor)>=1 && reservePresent(donor),"courier_initial_reserve_lost");
++    require(amount(cargo,stack.creature)>=stack.count,"delivery_exceeds_acknowledged_cargo");
++    cargo[stack.creature]-=stack.count;if(cargo[stack.creature]==0)cargo.erase(stack.creature);
++    require(cargoSlots[c.from].creature==stack.creature && cargoSlots[c.from].count==stack.count,"delivery_slot_exceeds_acknowledged_cargo");
++    cargoSlots[c.from]=Stack{};
++    delivered[stack.creature]+=stack.count;
++   }
++   else
++   {
++    if(cargo.empty() && (jobStatus==JobStatus::Empty || jobStatus==JobStatus::Delivered))
++    {++job;picked.clear();delivered.clear();}
++    picked[stack.creature]+=stack.count;cargo[stack.creature]+=stack.count;jobStatus=JobStatus::Carrying;
++    require(cargoSlots[c.to].count==0 || cargoSlots[c.to].creature==stack.creature,"pickup_cargo_slot_species_changed");
++    cargoSlots[c.to].creature=stack.creature;cargoSlots[c.to].count+=stack.count;
++    deliveryReason="acknowledged_cargo_in_transit";
++   }
+   }
+   if(c.op==Op::Close)
+   {
+    require(c.query==query,"close_query_mismatch");query=-1;
+-   if(exchangeDelivery) {phase=Phase::Return;++cycles;}
++   if(exchangeDelivery)
++   {
++    phase=Phase::Return;++cycles;
++    if(!picked.empty() && cargo.empty() && picked==delivered && reservePresent(hero(w,courier).army))
++    {jobStatus=JobStatus::Delivered;++successfulJobs;deliveryReason="all_acknowledged_cargo_delivered_and_query_closed";}
++    else {jobStatus=JobStatus::Incomplete;++incompleteAttempts;}
++   }
+    else phase=phaseBeforeExchange; // legal accidental meeting: close only, no delivery/cycle claim.
+    exchangeDelivery=false;
+   }
+   pending.reset();request=-1;
++  validate(w);
+  }
+  bool boundary(bool movement,bool battle,bool nativeQueries,bool ownedRequests) const
+  { return !failed && !pending && request<0 && query<0 && !movement && !battle && !nativeQueries && !ownedRequests; }

@@ -1,0 +1,10 @@
+{
+  "files": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/run_variants.py": "28478844ffa645c46deb1cbe80c3bbb8498ddbc6b9bf583f859bd7b85e6e3461",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/reconstruct_wait.py": "636f70858ec85d96be988532eaaaccfce7655ba0747ee59de4f9ad5025964109",
+    "/mnt/g/Heroes3-AI-Lab/experiments/expert-knowledge-v1/wait-variant-v2/source_wait_case.json": "b7d67f1a38f7d191b676f58670d149fd90d6c5ab1e7f094f9c18843e2a6583eb"
+  },
+  "scope": "Train variants only; no test/development outcomes inspected",
+  "control": "Identical counts/map/seed/opponent; only first own decision WAIT versus greedy",
+  "interpretation": "A same-seed advantage is a paired observation, not proof aging and random attack outcomes are causally isolated"
+}

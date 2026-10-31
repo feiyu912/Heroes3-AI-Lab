@@ -1,0 +1,20 @@
+{
+  "wall": 51.95697377600027,
+  "rows": 6237,
+  "peaks": {
+    "native": 24,
+    "workers": 24,
+    "simultaneous_pairs": 24,
+    "rss": 2750189568,
+    "pss": 1855221760,
+    "gpu_torch_allocated_sampled": 34665984,
+    "gpu_torch_reserved_sampled": 39845888,
+    "system_swap_used": 0
+  },
+  "forwards": 530,
+  "forward_seconds": 6.682206235003832,
+  "forward_fraction": 0.12861038180962045,
+  "mean_interval": 0.09514472785444243,
+  "balanced_8cells_3_each": true,
+  "unique_seeds": true
+}

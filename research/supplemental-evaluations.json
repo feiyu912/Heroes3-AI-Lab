@@ -1,0 +1,154 @@
+[
+  {
+    "name": "balanced-bc-mlp64-test",
+    "checkpoint": "/root/heroes3-ai-lab/models/bc-balanced-ablation-v1/mlp64.pt",
+    "opponent": "BattleAI",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-mlp64-test.json",
+    "summary": [
+      {
+        "policy": "model",
+        "battles": 160,
+        "wins": 55,
+        "win_rate": 0.34375,
+        "wilson95": [
+          0.2745936591757187,
+          0.42023353977741645
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 88.06875
+      }
+    ]
+  },
+  {
+    "name": "balanced-bc-mlp-no-value-test",
+    "checkpoint": "/root/heroes3-ai-lab/models/bc-balanced-ablation-v1/mlp-no-value.pt",
+    "opponent": "BattleAI",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-mlp-no-value-test.json",
+    "summary": [
+      {
+        "policy": "model",
+        "battles": 160,
+        "wins": 42,
+        "win_rate": 0.2625,
+        "wilson95": [
+          0.20046534399003782,
+          0.33567199841872775
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 90.2375
+      }
+    ]
+  },
+  {
+    "name": "independent-StupidAI",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "opponent": "StupidAI",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/independent-StupidAI.json",
+    "summary": [
+      {
+        "policy": "teacher",
+        "battles": 80,
+        "wins": 73,
+        "win_rate": 0.9125,
+        "wilson95": [
+          0.8302301722291654,
+          0.95696854535256
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 74.9125
+      },
+      {
+        "policy": "model",
+        "battles": 80,
+        "wins": 60,
+        "win_rate": 0.75,
+        "wilson95": [
+          0.6451511899886556,
+          0.8319389418790569
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 77.3125
+      }
+    ]
+  },
+  {
+    "name": "independent-MMAI_RANDOM",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "opponent": "MMAI_RANDOM",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/independent-MMAI_RANDOM.json",
+    "summary": [
+      {
+        "policy": "teacher",
+        "battles": 80,
+        "wins": 79,
+        "win_rate": 0.9875,
+        "wilson95": [
+          0.9325356757603457,
+          0.9977900813816939
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 24.975
+      },
+      {
+        "policy": "model",
+        "battles": 80,
+        "wins": 72,
+        "win_rate": 0.9,
+        "wilson95": [
+          0.8148912101660255,
+          0.9484530008223144
+        ],
+        "truncated": 8,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 22.680555555555557
+      }
+    ]
+  },
+  {
+    "name": "teacher-timing-2",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "opponent": "BattleAI",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/teacher-timing-2.json",
+    "summary": [
+      {
+        "policy": "teacher",
+        "battles": 16,
+        "wins": 8,
+        "win_rate": 0.5,
+        "wilson95": [
+          0.2799923761135083,
+          0.7200076238864916
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 83.1875
+      }
+    ]
+  },
+  {
+    "name": "teacher-timing-4",
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "opponent": "BattleAI",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/teacher-timing-4.json",
+    "summary": [
+      {
+        "policy": "teacher",
+        "battles": 16,
+        "wins": 8,
+        "win_rate": 0.5,
+        "wilson95": [
+          0.2799923761135083,
+          0.7200076238864916
+        ],
+        "truncated": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 79.0
+      }
+    ]
+  }
+]

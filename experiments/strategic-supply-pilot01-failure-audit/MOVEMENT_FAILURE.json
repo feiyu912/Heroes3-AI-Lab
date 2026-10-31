@@ -1,0 +1,2566 @@
+{
+  "decision_number": 156,
+  "trace_failure_line": 385,
+  "decision": {
+    "schema": "strategy-candidates-v1",
+    "player": 0,
+    "day": 18,
+    "hero": 2,
+    "selected_candidate": 0,
+    "from": [
+      11,
+      30,
+      0
+    ],
+    "destination": [
+      15,
+      23,
+      0
+    ],
+    "step": [
+      12,
+      30,
+      0
+    ],
+    "candidates": [
+      {
+        "kind": 0,
+        "position": [
+          15,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 5.14003
+      },
+      {
+        "kind": 5,
+        "position": [
+          4,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 3.05641,
+        "heuristic_score": 0.393655
+      },
+      {
+        "kind": 5,
+        "position": [
+          5,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 3,
+        "heuristic_score": 0.371429
+      },
+      {
+        "kind": 5,
+        "position": [
+          6,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          7,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          8,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.416159
+      },
+      {
+        "kind": 5,
+        "position": [
+          3,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          4,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.317896
+      },
+      {
+        "kind": 5,
+        "position": [
+          8,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.326982
+      },
+      {
+        "kind": 5,
+        "position": [
+          9,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.402541
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.386433
+      },
+      {
+        "kind": 5,
+        "position": [
+          3,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.326982
+      },
+      {
+        "kind": 5,
+        "position": [
+          9,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.351064
+      },
+      {
+        "kind": 5,
+        "position": [
+          10,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.414894
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.433505
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.340611
+      },
+      {
+        "kind": 5,
+        "position": [
+          10,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.362178
+      },
+      {
+        "kind": 5,
+        "position": [
+          11,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.57692,
+        "heuristic_score": 0.4225
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.414894
+      },
+      {
+        "kind": 5,
+        "position": [
+          11,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.48077,
+        "heuristic_score": 0.369032
+      },
+      {
+        "kind": 5,
+        "position": [
+          12,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.52051,
+        "heuristic_score": 0.397284
+      },
+      {
+        "kind": 5,
+        "position": [
+          13,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.56026,
+        "heuristic_score": 0.424801
+      },
+      {
+        "kind": 5,
+        "position": [
+          14,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.460954
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.428029
+      },
+      {
+        "kind": 5,
+        "position": [
+          14,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.374019
+      },
+      {
+        "kind": 5,
+        "position": [
+          15,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.442023
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.442023
+      },
+      {
+        "kind": 5,
+        "position": [
+          15,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.34487,
+        "heuristic_score": 0.386661
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.38461,
+        "heuristic_score": 0.450667
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.34487,
+        "heuristic_score": 0.421812
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.28846,
+        "heuristic_score": 0.394483
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.3282,
+        "heuristic_score": 0.495014
+      },
+      {
+        "kind": 5,
+        "position": [
+          0,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.28846,
+        "heuristic_score": 0.394483
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.24872,
+        "heuristic_score": 0.400187
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.23205,
+        "heuristic_score": 0.475833
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          12,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.1359,
+        "heuristic_score": 0.493191
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          13,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 2.05641,
+        "heuristic_score": 0.508526
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          14,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.96026,
+        "heuristic_score": 0.5284
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          15,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.8641,
+        "heuristic_score": 0.507592
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          16,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.72949,
+        "heuristic_score": 0.493387
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          16,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.8641,
+        "heuristic_score": 0.549892
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          17,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.67308,
+        "heuristic_score": 0.506195
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          17,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.71282,
+        "heuristic_score": 0.632677
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          18,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.61667,
+        "heuristic_score": 0.614173
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          19,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.52051,
+        "heuristic_score": 0.643401
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          20,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.42436,
+        "heuristic_score": 0.67555
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          21,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.32821,
+        "heuristic_score": 0.71108
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          22,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.69282
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.672414
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.750555
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          24,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.672414
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          24,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.80829
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          25,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.794671
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          26,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.09615,
+        "heuristic_score": 0.814458
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          27,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.835255
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          28,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.753292
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          29,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.821773
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          30,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.890255
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          31,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.806391
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          31,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.958736
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          32,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.752564,
+        "heuristic_score": 0.878199
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          32,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.953007
+      },
+      {
+        "kind": 5,
+        "position": [
+          0,
+          33,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.15256,
+        "heuristic_score": 0.665632
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          33,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.706755
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          33,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.696154,
+        "heuristic_score": 0.919614
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          33,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.953007
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          34,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.09615,
+        "heuristic_score": 0.814458
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          34,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1,
+        "heuristic_score": 0.733333
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          34,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.639744,
+        "heuristic_score": 0.965129
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          34,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.735897,
+        "heuristic_score": 1.05187
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          35,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.706755
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          35,
+          0
+        ],
+        "next": [
+          12,
+          31,
+          0
+        ],
+        "path_cost": 0.679487,
+        "heuristic_score": 0.932609
+      }
+    ]
+  },
+  "request": {
+    "schema": "strategy-candidates-v3",
+    "request_id": 156,
+    "player": 0,
+    "day": 18,
+    "hero": 2,
+    "from": [
+      11,
+      30,
+      0
+    ],
+    "gold": 17020,
+    "wood": 19,
+    "ore": 29,
+    "own_army_value": 6048,
+    "movement": 1348,
+    "visible_threats": [
+      {
+        "position": [
+          15,
+          23,
+          0
+        ],
+        "approx_army_value": 2208
+      }
+    ],
+    "own_towns": [
+      {
+        "position": [
+          6,
+          8,
+          0
+        ],
+        "army_value": 0
+      },
+      {
+        "position": [
+          12,
+          29,
+          0
+        ],
+        "army_value": 0
+      }
+    ],
+    "candidates": [
+      {
+        "kind": 0,
+        "position": [
+          15,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 5.14003
+      },
+      {
+        "kind": 5,
+        "position": [
+          4,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 3.05641,
+        "heuristic_score": 0.393655
+      },
+      {
+        "kind": 5,
+        "position": [
+          5,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 3,
+        "heuristic_score": 0.371429
+      },
+      {
+        "kind": 5,
+        "position": [
+          6,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          7,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          8,
+          3,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.416159
+      },
+      {
+        "kind": 5,
+        "position": [
+          3,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.375695
+      },
+      {
+        "kind": 5,
+        "position": [
+          4,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.96026,
+        "heuristic_score": 0.317896
+      },
+      {
+        "kind": 5,
+        "position": [
+          8,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.326982
+      },
+      {
+        "kind": 5,
+        "position": [
+          9,
+          4,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.402541
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.386433
+      },
+      {
+        "kind": 5,
+        "position": [
+          3,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.8641,
+        "heuristic_score": 0.326982
+      },
+      {
+        "kind": 5,
+        "position": [
+          9,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.351064
+      },
+      {
+        "kind": 5,
+        "position": [
+          10,
+          5,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.414894
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.433505
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.72949,
+        "heuristic_score": 0.340611
+      },
+      {
+        "kind": 5,
+        "position": [
+          10,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.362178
+      },
+      {
+        "kind": 5,
+        "position": [
+          11,
+          6,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.57692,
+        "heuristic_score": 0.4225
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.63333,
+        "heuristic_score": 0.414894
+      },
+      {
+        "kind": 5,
+        "position": [
+          11,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.48077,
+        "heuristic_score": 0.369032
+      },
+      {
+        "kind": 5,
+        "position": [
+          12,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.52051,
+        "heuristic_score": 0.397284
+      },
+      {
+        "kind": 5,
+        "position": [
+          13,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.56026,
+        "heuristic_score": 0.424801
+      },
+      {
+        "kind": 5,
+        "position": [
+          14,
+          7,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.460954
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.53718,
+        "heuristic_score": 0.428029
+      },
+      {
+        "kind": 5,
+        "position": [
+          14,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.374019
+      },
+      {
+        "kind": 5,
+        "position": [
+          15,
+          8,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.442023
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.44103,
+        "heuristic_score": 0.442023
+      },
+      {
+        "kind": 5,
+        "position": [
+          15,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.34487,
+        "heuristic_score": 0.386661
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          9,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.38461,
+        "heuristic_score": 0.450667
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.34487,
+        "heuristic_score": 0.421812
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.28846,
+        "heuristic_score": 0.394483
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          10,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.3282,
+        "heuristic_score": 0.495014
+      },
+      {
+        "kind": 5,
+        "position": [
+          0,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.28846,
+        "heuristic_score": 0.394483
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.24872,
+        "heuristic_score": 0.400187
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          11,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.23205,
+        "heuristic_score": 0.475833
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          12,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 2.1359,
+        "heuristic_score": 0.493191
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          13,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 2.05641,
+        "heuristic_score": 0.508526
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          14,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.96026,
+        "heuristic_score": 0.5284
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          15,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.8641,
+        "heuristic_score": 0.507592
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          16,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.72949,
+        "heuristic_score": 0.493387
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          16,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.8641,
+        "heuristic_score": 0.549892
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          17,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.67308,
+        "heuristic_score": 0.506195
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          17,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.71282,
+        "heuristic_score": 0.632677
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          18,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.61667,
+        "heuristic_score": 0.614173
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          19,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.52051,
+        "heuristic_score": 0.643401
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          20,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.42436,
+        "heuristic_score": 0.67555
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          21,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.32821,
+        "heuristic_score": 0.71108
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          22,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.69282
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.672414
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          23,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.750555
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          24,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.672414
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          24,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.23205,
+        "heuristic_score": 0.80829
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          25,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.1359,
+        "heuristic_score": 0.794671
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          26,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.09615,
+        "heuristic_score": 0.814458
+      },
+      {
+        "kind": 5,
+        "position": [
+          21,
+          27,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.835255
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          28,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.753292
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          29,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.821773
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          30,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.890255
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          31,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.806391
+      },
+      {
+        "kind": 5,
+        "position": [
+          20,
+          31,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.960256,
+        "heuristic_score": 0.958736
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          32,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.752564,
+        "heuristic_score": 0.878199
+      },
+      {
+        "kind": 5,
+        "position": [
+          19,
+          32,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.953007
+      },
+      {
+        "kind": 5,
+        "position": [
+          0,
+          33,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.15256,
+        "heuristic_score": 0.665632
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          33,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.706755
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          33,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.696154,
+        "heuristic_score": 0.919614
+      },
+      {
+        "kind": 5,
+        "position": [
+          18,
+          33,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.864103,
+        "heuristic_score": 0.953007
+      },
+      {
+        "kind": 5,
+        "position": [
+          1,
+          34,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.09615,
+        "heuristic_score": 0.814458
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          34,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1,
+        "heuristic_score": 0.733333
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          34,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.639744,
+        "heuristic_score": 0.965129
+      },
+      {
+        "kind": 5,
+        "position": [
+          17,
+          34,
+          0
+        ],
+        "next": [
+          12,
+          30,
+          0
+        ],
+        "path_cost": 0.735897,
+        "heuristic_score": 1.05187
+      },
+      {
+        "kind": 5,
+        "position": [
+          2,
+          35,
+          0
+        ],
+        "next": [
+          10,
+          30,
+          0
+        ],
+        "path_cost": 1.05641,
+        "heuristic_score": 0.706755
+      },
+      {
+        "kind": 5,
+        "position": [
+          16,
+          35,
+          0
+        ],
+        "next": [
+          12,
+          31,
+          0
+        ],
+        "path_cost": 0.679487,
+        "heuristic_score": 0.932609
+      }
+    ]
+  },
+  "request_path": "/root/heroes3-ai-lab/workers/strategy-agent-runs/supply-map1-red-2026101852-legacy-policy-yfk7k7sw/request-00000156.json",
+  "log_context": [
+    {
+      "line": 50262,
+      "text": "\tMade second apply on cl: 14PackageApplied"
+    },
+    {
+      "line": 50263,
+      "text": "Received CPack of type 15PackageReceived"
+    },
+    {
+      "line": 50264,
+      "text": "\tMade first apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50265,
+      "text": "\tApplied on gs: 15PackageReceived"
+    },
+    {
+      "line": 50266,
+      "text": "\tMade second apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50267,
+      "text": "Received CPack of type 13QueryResolved"
+    },
+    {
+      "line": 50268,
+      "text": "\tMade first apply on cl: 13QueryResolved"
+    },
+    {
+      "line": 50269,
+      "text": "\tApplied on gs: 13QueryResolved"
+    },
+    {
+      "line": 50270,
+      "text": "CPathfinder finished with 545 iterations"
+    },
+    {
+      "line": 50271,
+      "text": "CPathfinder finished with 545 iterations"
+    },
+    {
+      "line": 50272,
+      "text": "DirectorAI: step hero 2 (11 30 0) -> (12 30 0) reason=local candidate policy"
+    },
+    {
+      "line": 50273,
+      "text": "Sending a request \"8MoveHero\". It'll have an ID=643."
+    },
+    {
+      "line": 50274,
+      "text": "Sending a pack of type 8MoveHero"
+    },
+    {
+      "line": 50275,
+      "text": "\tMade second apply on cl: 13QueryResolved"
+    },
+    {
+      "line": 50276,
+      "text": "Received CPack of type 11SetSecSkill"
+    },
+    {
+      "line": 50277,
+      "text": "Received CPack of type 8MoveHero"
+    },
+    {
+      "line": 50278,
+      "text": "Sending a pack of type 15PackageReceived"
+    },
+    {
+      "line": 50279,
+      "text": "\tMade first apply on cl: 11SetSecSkill"
+    },
+    {
+      "line": 50280,
+      "text": "\tSending to all clients: 13SystemMessage"
+    },
+    {
+      "line": 50281,
+      "text": "Sending a pack of type 13SystemMessage"
+    },
+    {
+      "line": 50282,
+      "text": "\tApplied on gs: 11SetSecSkill"
+    },
+    {
+      "line": 50283,
+      "text": "\tMade second apply on cl: 11SetSecSkill"
+    },
+    {
+      "line": 50284,
+      "text": "Received CPack of type 15SetPrimarySkill"
+    },
+    {
+      "line": 50285,
+      "text": "\tMade first apply on cl: 15SetPrimarySkill"
+    },
+    {
+      "line": 50286,
+      "text": "\tApplied on gs: 15SetPrimarySkill"
+    },
+    {
+      "line": 50287,
+      "text": "\tMade second apply on cl: 15SetPrimarySkill"
+    },
+    {
+      "line": 50288,
+      "text": "\tApplied on gameState(): 13SystemMessage"
+    },
+    {
+      "line": 50289,
+      "text": ""
+    },
+    {
+      "line": 50290,
+      "text": "| Player \"RED\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 50291,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 401 affecting player RED, \""
+    },
+    {
+      "line": 50292,
+      "text": ""
+    },
+    {
+      "line": 50293,
+      "text": "Received CPack of type 11HeroLevelUp"
+    },
+    {
+      "line": 50294,
+      "text": "Sending a pack of type 14PackageApplied"
+    },
+    {
+      "line": 50295,
+      "text": "\tMade first apply on cl: 11HeroLevelUp"
+    },
+    {
+      "line": 50296,
+      "text": "\tApplied on gs: 11HeroLevelUp"
+    },
+    {
+      "line": 50297,
+      "text": "Sending a request \"10QueryReply\". It'll have an ID=644."
+    },
+    {
+      "line": 50298,
+      "text": "Sending a pack of type 10QueryReply"
+    },
+    {
+      "line": 50299,
+      "text": "\tMade second apply on cl: 11HeroLevelUp"
+    },
+    {
+      "line": 50300,
+      "text": "Received CPack of type 10QueryReply"
+    },
+    {
+      "line": 50301,
+      "text": "Sending a pack of type 15PackageReceived"
+    },
+    {
+      "line": 50302,
+      "text": "Received CPack of type 14PackageApplied"
+    },
+    {
+      "line": 50303,
+      "text": "Player 0 attempts answering query 401 with answer:"
+    },
+    {
+      "line": 50304,
+      "text": "\tMade first apply on cl: 14PackageApplied"
+    },
+    {
+      "line": 50305,
+      "text": "0"
+    },
+    {
+      "line": 50306,
+      "text": "\tApplied on gs: 14PackageApplied"
+    },
+    {
+      "line": 50307,
+      "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='0', query='[0x7dd241b0a520] A query of type '23CHeroLevelUpDialogQuery' and qid = 401 affecting player RED, '."
+    },
+    {
+      "line": 50308,
+      "text": "\tMade second apply on cl: 14PackageApplied"
+    },
+    {
+      "line": 50309,
+      "text": "Received CPack of type 15PackageReceived"
+    },
+    {
+      "line": 50310,
+      "text": "\tMade first apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50311,
+      "text": "\tApplied on gs: 15PackageReceived"
+    },
+    {
+      "line": 50312,
+      "text": "\tMade second apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50313,
+      "text": "Received CPack of type 13SystemMessage"
+    },
+    {
+      "line": 50314,
+      "text": "\tMade first apply on cl: 13SystemMessage"
+    },
+    {
+      "line": 50315,
+      "text": "\tApplied on gs: 13SystemMessage"
+    },
+    {
+      "line": 50316,
+      "text": "System message: Server encountered a problem: "
+    },
+    {
+      "line": 50317,
+      "text": "| Player \"RED\" has to answer queries before attempting any further actions."
+    },
+    {
+      "line": 50318,
+      "text": "| Top Query: \"A query of type '23CHeroLevelUpDialogQuery' and qid = 401 affecting player RED, \""
+    },
+    {
+      "line": 50319,
+      "text": ""
+    },
+    {
+      "line": 50320,
+      "text": "\tMade second apply on cl: 13SystemMessage"
+    },
+    {
+      "line": 50321,
+      "text": "Received CPack of type 14PackageApplied"
+    },
+    {
+      "line": 50322,
+      "text": "\tMade first apply on cl: 14PackageApplied"
+    },
+    {
+      "line": 50323,
+      "text": "\tApplied on gs: 14PackageApplied"
+    },
+    {
+      "line": 50324,
+      "text": "\tSending to all clients: 13QueryResolved"
+    },
+    {
+      "line": 50325,
+      "text": "Sending a pack of type 13QueryResolved"
+    },
+    {
+      "line": 50326,
+      "text": "\tMade second apply on cl: 14PackageApplied"
+    },
+    {
+      "line": 50327,
+      "text": "Received CPack of type 15PackageReceived"
+    },
+    {
+      "line": 50328,
+      "text": "\tMade first apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50329,
+      "text": "\tApplied on gs: 15PackageReceived"
+    },
+    {
+      "line": 50330,
+      "text": "\tMade second apply on cl: 15PackageReceived"
+    },
+    {
+      "line": 50331,
+      "text": "Received CPack of type 13QueryResolved"
+    },
+    {
+      "line": 50332,
+      "text": "\tMade first apply on cl: 13QueryResolved"
+    },
+    {
+      "line": 50333,
+      "text": "\tApplied on gs: 13QueryResolved"
+    },
+    {
+      "line": 50334,
+      "text": "\tApplied on gameState(): 13QueryResolved"
+    },
+    {
+      "line": 50335,
+      "text": "Completing hero level-up query. red strategic hero gains skill 0"
+    },
+    {
+      "line": 50336,
+      "text": "\tSending to all clients: 11SetSecSkill"
+    },
+    {
+      "line": 50337,
+      "text": "Sending a pack of type 11SetSecSkill"
+    },
+    {
+      "line": 50338,
+      "text": "\tApplied on gameState(): 11SetSecSkill"
+    },
+    {
+      "line": 50339,
+      "text": "DirectorAI: no hero with movement points"
+    },
+    {
+      "line": 50340,
+      "text": "Entering void QueriesProcessor::popQuery(PlayerColor, QueryPtr): player='0', query='[0x7dd241b525b0] A query of type '19MapObjectVisitQuery' and qid = 398 affecting player RED, '."
+    },
+    {
+      "line": 50341,
+      "text": "\tSending to all clients: 9HeroVisit"
+    },
+    {
+      "line": 50342,
+      "text": "Player 0 ended his turn."
+    },
+    {
+      "line": 50343,
+      "text": "Sending a pack of type 9HeroVisit"
+    }
+  ]
+}

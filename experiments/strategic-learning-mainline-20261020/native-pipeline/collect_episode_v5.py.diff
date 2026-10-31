@@ -1,0 +1,62 @@
+--- frozen/collect_episode_v5.py
++++ mainline/collect_episode_v5.py
+@@ -1,9 +1,15 @@
++import sys
++from pathlib import Path
++LOCAL=Path(__file__).resolve().parent
++BASE=LOCAL.parent.parent/'strategic-typed-training-v1'
++sys.path.append(str(BASE))
++from pipeline_common import source_inputs,capsule_inputs,validate_capsule,audit_metadata,validate_native_epoch,validate_cells,clean_environment,AUDITOR,NATIVE,MARKER,EPOCH,BASE
+ """One on-policy CUDA sampled native episode. No optimizer; admission is separate."""
+ import argparse,fcntl,hashlib,json,os,shutil,signal,subprocess,sys,time
+ from contextlib import contextmanager
+ from pathlib import Path
+ from live_jsonl import read as read_jsonl
+-HERE=Path(__file__).resolve().parent
++HERE=BASE
+ sys.path.insert(0,str(HERE.parent/'multihero-mechanism-probe-v1/build-driver-frozen-03'))
+ from capsule_support import idle_locks,sha,write,session_evidence,thread_server_gate
+ LAB=Path('/root/heroes3-ai-lab');BROKER=HERE/'onpolicy_broker_v2.py'
+@@ -27,6 +33,8 @@
+     except subprocess.TimeoutExpired:os.killpg(child.pid,signal.SIGKILL);child.wait()
+ 
+ def run(args):
++    clean_environment();assert args.load_save is None,"New training cells start from the Training map"
++    validate_capsule(args.capsule)
+     capsule,work,checkpoint=args.capsule,args.out,args.checkpoint
+     checkpoint=checkpoint.resolve();assert checkpoint.is_file()
+     capsule=capsule.resolve();work=work.resolve();att=json.loads((capsule/'EXECUTION.json').read_text())
+@@ -57,15 +65,16 @@
+         for n in ['persistentStorage.json','keyBindingsConfig.json']:write(d/n,{})
+     shutil.copytree(work/'config',work/'initial-config');shutil.copytree(work/'data/vcmi/config',work/'initial-user-config')
+     inputs=[Path(__file__),HERE/'live_jsonl.py',source,BROKER,HERE/'model_io.py',checkpoint,capsule/'EXECUTION.json']+script_inputs+list((HERE.parent/'strategic-policy-v3').glob('*.py'))+list((work/'initial-config').rglob('*.json'))+list((work/'initial-user-config').rglob('*.json'))
++    inputs.extend(source_inputs()+capsule_inputs(capsule))
+     if args.load_save:
+         original=args.load_save.resolve();head=original.read_bytes()[:15]
+         assert original.suffix=='.vsgm1' and head[:4]==b'VCMI' and head[8:15]==b'VCMISVG','Native save header required'
+         target=work/'data/vcmi/Saves/resume-snapshot.vsgm1';target.parent.mkdir();shutil.copy2(original,target);inputs.extend([original,target])
+     seed_material=json.dumps(dict(seed=args.seed,map=args.map,player=args.player,opponent=args.opponent,logical_update=args.logical_update),sort_keys=True).encode()
+     sampling_seed=int.from_bytes(hashlib.sha256(seed_material).digest()[:8],'little')%(2**63-1)
+-    frozen={str(p):sha(p) for p in inputs};write(work/'PLAN.json',dict(capsule=str(capsule),seed=args.seed,map=args.map,owned_player=args.player,opponent=args.opponent,load_save=str(args.load_save) if args.load_save else None,classification='new_policy',checkpoint=str(checkpoint),sampling='onpolicy CUDA multinomial',sampling_seed=sampling_seed,logical_update=args.logical_update,training_samples=0,optimizer_steps=0,winner=None,game_completed=False,hashes=frozen))
++    frozen={str(p):sha(p) for p in inputs};write(work/'PLAN.json',dict(capsule=str(capsule),seed=args.seed,map=args.map,owned_player=args.player,opponent=args.opponent,load_save=str(args.load_save) if args.load_save else None,classification='new_policy',checkpoint=str(checkpoint),sampling='onpolicy CUDA multinomial',sampling_seed=sampling_seed,logical_update=args.logical_update,training_samples=0,optimizer_steps=0,winner=None,game_completed=False,hashes=frozen,**audit_metadata()))
+     env=dict(os.environ,LD_LIBRARY_PATH=str(bins),SDL_VIDEODRIVER='dummy',SDL_AUDIODRIVER='dummy',XDG_DATA_HOME=str(work/'data'),XDG_CONFIG_HOME=str(work),XDG_CACHE_HOME=str(work/'cache'),LAB_ADV_AI_0='DirectorAI' if args.player==0 else args.opponent,LAB_ADV_AI_1='DirectorAI' if args.player==1 else args.opponent,LAB_ADV_TRACE=str(work/'strategy-trace.jsonl'),LAB_ADV_DECISIONS=str(work/'strategy-decisions.jsonl'),LAB_ADV_AGENT_DIR=str(work/'agent'),LAB_ADV_TYPED_EVENTS=str(work/'typed.jsonl'))
+-    loaded={};child=None;broker=None;result={'controlled_stop':False,'game_completed':False,'winner':None,'optimizer_steps':0,'training_samples':0}
++    loaded={};child=None;broker=None;result={'controlled_stop':False,'game_completed':False,'winner':None,'optimizer_steps':0,'training_samples':0,**audit_metadata()}
+     with owned_resources() as lease_fds,(work/'broker.log').open('w') as blog,(work/'client.log').open('w') as log:
+         try:
+             broker=subprocess.Popen([str(LAB/'gpu-venv/bin/python'),str(BROKER),'--agent-dir',str(work/'agent'),'--checkpoint',str(checkpoint),
+@@ -99,12 +108,12 @@
+             result['client_exit']=None if child is None else child.returncode
+             result['broker_exit']=None if broker is None else broker.returncode
+     result['transport_drained']=bool(result['game_completed'] and result['client_exit']==0 and
+-        'Ending game after native ACK drain.' in (work/'client.log').read_text(errors='replace'))
++        MARKER in (work/'client.log').read_text(errors='replace'))
+     # A normal fast exit can occur between the final poll and loop iteration.
+     # Re-read final, flushed evidence; never turn a killed/timed-out run into a terminal.
+     final_events=read_jsonl(work/'typed.jsonl',final=True)
+     result['game_completed']=bool(result['client_exit']==0 and any(r['event']=='game_over' and r.get('completed') is True for r in final_events))
+-    result['transport_drained']=bool(result['game_completed'] and 'Ending game after native ACK drain.' in (work/'client.log').read_text(errors='replace'))
++    result['transport_drained']=bool(result['game_completed'] and MARKER in (work/'client.log').read_text(errors='replace'))
+     result['loaded_library_observations']=list(loaded.values())
+     result['input_sha_unchanged']=all(sha(Path(p))==h for p,h in frozen.items())
+     if args.load_save:

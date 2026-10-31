@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-128-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 28,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-128-development_validation.json",
+      "battles": 48,
+      "verified_wins": 41,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-128-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 23,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-128-validation.json",
+      "battles": 48,
+      "verified_wins": 32,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-256-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 27,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-256-development_validation.json",
+      "battles": 48,
+      "verified_wins": 36,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-256-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 22,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-heads-256-validation.json",
+      "battles": 48,
+      "verified_wins": 32,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 35,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-development_validation.json",
+      "battles": 48,
+      "verified_wins": 40,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 25,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-validation.json",
+      "battles": 48,
+      "verified_wins": 36,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-64-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 33,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-64-development_validation.json",
+      "battles": 48,
+      "verified_wins": 44,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-64-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 23,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-64-validation.json",
+      "battles": 48,
+      "verified_wins": 32,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-lab-v3-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 4,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-lab-v3-development_validation.json",
+      "battles": 48,
+      "verified_wins": 22,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-lab-v3-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 15,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-lab-v3-validation.json",
+      "battles": 48,
+      "verified_wins": 29,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-public-original-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 24,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-public-original-development_validation.json",
+      "battles": 48,
+      "verified_wins": 37,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-public-original-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 24,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-public-original-validation.json",
+      "battles": 48,
+      "verified_wins": 28,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-restored-best-heads-development_upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 23,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-restored-best-heads-development_validation.json",
+      "battles": 48,
+      "verified_wins": 33,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-restored-best-heads-upstream_validation.json",
+      "battles": 48,
+      "verified_wins": 26,
+      "normal_outcomes_checked": 48
+    },
+    {
+      "report": "/mnt/g/Heroes3-AI-Lab/research/v5-restored-best-heads-validation.json",
+      "battles": 48,
+      "verified_wins": 26,
+      "normal_outcomes_checked": 48
+    }
+  ],
+  "checked_battles": 1344,
+  "final_results_read": false,
+  "historical_scores_unchanged": true,
+  "scope": "Raw flags plus three-stack casualty consistency. Joint terminated/truncated flags never count as wins."
+}

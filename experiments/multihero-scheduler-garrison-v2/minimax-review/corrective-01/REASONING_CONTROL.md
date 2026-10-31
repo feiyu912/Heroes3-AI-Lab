@@ -1,0 +1,1 @@
+经本机dsh-llm-pi-ai实际schema与profileOptions/resolveReasoningLevel源码核验：使用provider.reasoning=low、modelOverrides.reasoningEfforts.low=low、compat.supportsReasoningEffort=true、thinkingFormat=openai，maxTokens=4096；不尝试off，因为off仅省略参数。官方文档 https://platform.minimax.io/docs/guides/text-generation （2026-10-23核验）规定OpenAI-compatible reasoning_effort支持low，默认max，不能禁用。此为单次纠正调用，不改desktop配置。

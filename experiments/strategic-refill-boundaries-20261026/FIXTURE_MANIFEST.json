@@ -1,0 +1,438 @@
+{
+  "schema": "refill-boundary-fixtures-v1",
+  "registered_date": "2026-10-26",
+  "status": "prepared-not-native-qualified",
+  "source": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/fixtures/refill-positive.vmap",
+  "source_sha256": "88bc6f81a9f73fcf2fecd5e70ca8f110131a85b08627b5a4a79599c8f3fc7d66",
+  "native_water_metadata": "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Native-20261025/runtime/engine-strategic/config/terrains.json",
+  "native_water_metadata_sha256": "4ec55e1ec7f803598e7860eb0ca6fcac31320d41c1e4f41a33b4121ab5d3b901",
+  "terrain_proof_scope": "8-neighbor land graph ignores object collision; a disconnected overapproximation proves no ordinary land walk, but does not replace actual native loader/path/candidate evidence.",
+  "fixtures": {
+    "reachable-stock-control": {
+      "mode": "build_recruit_v1",
+      "schema": "strategy-candidates-v6",
+      "factor": "Unchanged land/owned town/positive stock; precommit reachable kind4 control.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-reachable-stock-control.vmap",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "map_name": "boundary-reachable-stock-control",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    },
+    "unreachable-stock": {
+      "mode": "build_recruit_v1",
+      "schema": "strategy-candidates-v6",
+      "factor": "Only surface terrain changes: closed native water rectangle outside the complete town footprint.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-unreachable-stock.vmap",
+      "sha256": "d85288d47032f44ff3dd93fcfe02f4acb28bda4be89539454849fd1a4ae19a68",
+      "map_name": "boundary-unreachable-stock",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [
+        [
+          25,
+          2
+        ],
+        [
+          25,
+          3
+        ],
+        [
+          25,
+          4
+        ],
+        [
+          25,
+          5
+        ],
+        [
+          25,
+          6
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          25,
+          9
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          26,
+          9
+        ],
+        [
+          27,
+          2
+        ],
+        [
+          27,
+          9
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          28,
+          9
+        ],
+        [
+          29,
+          2
+        ],
+        [
+          29,
+          9
+        ],
+        [
+          30,
+          2
+        ],
+        [
+          30,
+          9
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          31,
+          9
+        ],
+        [
+          32,
+          2
+        ],
+        [
+          32,
+          3
+        ],
+        [
+          32,
+          4
+        ],
+        [
+          32,
+          5
+        ],
+        [
+          32,
+          6
+        ],
+        [
+          32,
+          7
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          32,
+          9
+        ]
+      ],
+      "terrain_only_overapprox_land_connected": false,
+      "native_pathfinding_qualified": false
+    },
+    "nonowned-stock": {
+      "mode": "build_recruit_v1",
+      "schema": "strategy-candidates-v6",
+      "factor": "Only target town owner changes blue→red, retaining stock and terrain.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-nonowned-stock.vmap",
+      "sha256": "811a9ee350f5f44a6818c43267b9ee51d11a797dfa1e66e51b51b81812c72550",
+      "map_name": "boundary-nonowned-stock",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "red",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    },
+    "arrive-incompatible-stock": {
+      "mode": "build_recruit_v1",
+      "schema": "strategy-candidates-v6",
+      "factor": "Only hero army changes to seven incompatible species. Real arrival leaves positive nonreceivable stock; executor remains enabled.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-arrive-incompatible-stock.vmap",
+      "sha256": "14c29703f5501e94d49b3f587037329db6718d819e2d233a09c1b7b03c2eb638",
+      "map_name": "boundary-arrive-incompatible-stock",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "type": "core:centaur",
+          "amount": 1
+        },
+        {
+          "type": "core:centaurCaptain",
+          "amount": 1
+        },
+        {
+          "type": "core:gremlin",
+          "amount": 1
+        },
+        {
+          "type": "core:imp",
+          "amount": 1
+        },
+        {
+          "type": "core:skeleton",
+          "amount": 1
+        },
+        {
+          "type": "core:troglodyte",
+          "amount": 1
+        },
+        {
+          "type": "core:gnoll",
+          "amount": 1
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    },
+    "consumed-pickup": {
+      "mode": "build_recruit_v1",
+      "schema": "strategy-candidates-v6",
+      "factor": "Only town stock is emptied. Select original actual gold pickup; consuming it invalidates the old kind3 goal.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-consumed-pickup.vmap",
+      "sha256": "e11b8a8a3d16492f597657b33c78ae8200d23dbf70af8000160ad174f1e1fd99",
+      "map_name": "boundary-consumed-pickup",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    },
+    "legacy-build": {
+      "mode": "build_v1",
+      "schema": "strategy-candidates-v5",
+      "factor": "Identical reachable-control map; only original native build-only mode. Legacy scripted economy remains enabled.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-legacy-build.vmap",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "map_name": "boundary-legacy-build",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    },
+    "legacy-v4": {
+      "mode": "",
+      "schema": "strategy-candidates-v4",
+      "factor": "Identical reachable-control map; only original native legacy mode. Legacy scripted economy remains enabled.",
+      "path": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-boundaries-20261026/fixtures/boundary-legacy-v4.vmap",
+      "sha256": "88c910fec2745af46c4c1f5ff29ee3097c2a24dfe66d12dcad31e7f6eec7c877",
+      "map_name": "boundary-legacy-v4",
+      "seed": 2026102602,
+      "owned_player": 1,
+      "opponent": "EmptyAI",
+      "max_seconds": 180,
+      "target_town_position": [
+        29,
+        8,
+        0
+      ],
+      "expected_initial_hero_position": [
+        29,
+        11,
+        0
+      ],
+      "hero_army": [
+        {
+          "amount": 20,
+          "type": "core:pikeman"
+        },
+        {
+          "amount": 10,
+          "type": "core:archer"
+        }
+      ],
+      "target_owner": "blue",
+      "target_source_army": [
+        {
+          "type": "core:pikeman",
+          "amount": 1
+        }
+      ],
+      "water_ring_cells": [],
+      "terrain_only_overapprox_land_connected": true,
+      "native_pathfinding_qualified": false
+    }
+  },
+  "shared_terminal": "Existing same native daysPassed3 event, diagnostic only",
+  "new_native_games": 0,
+  "optimizer_steps": 0,
+  "final_test_used": false
+}

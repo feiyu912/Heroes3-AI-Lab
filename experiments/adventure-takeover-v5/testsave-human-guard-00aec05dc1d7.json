@@ -1,0 +1,9 @@
+{
+  "path": "/root/heroes3-ai-lab/src/vcmi-adv/client/CServerHandler.cpp",
+  "changed": true,
+  "before_sha256": "d7bc7e1aca0ac010f3e90714de087fc76bb0d8b0ee1fd1d8c7a94f82d1b16fb2",
+  "after_sha256": "00aec05dc1d74e88cb024e6c5e341aef438bd2a72a469797d735a2078015f229",
+  "compiled": false,
+  "scope": "Only debugStartTest valid-human guard; normal human waiting remains",
+  "server_precheck_modified": false
+}

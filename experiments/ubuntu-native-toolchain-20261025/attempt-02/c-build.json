@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/gcc-11",
+    "--sysroot=/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot",
+    "-B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/",
+    "-B/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/lib/gcc/x86_64-linux-gnu/11/",
+    "-std=gnu11",
+    "-O3",
+    "-DNDEBUG",
+    "-v",
+    "-Wl,-t",
+    "-Wl,-Map,/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02/c.map",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02/c.c",
+    "-o",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-toolchain-20261025/attempt-02/c"
+  ],
+  "returncode": 0,
+  "seconds": 0.05222511291503906,
+  "stdout_sha256": "3cb3332632a6000e5643c6ab02266764228b736a6674652c8ffa7946f4c35b11",
+  "stderr_sha256": "57881fe8d46d9aca252aa897a0a6a02b79fabf932b643528e6fb5102477cbfd9"
+}

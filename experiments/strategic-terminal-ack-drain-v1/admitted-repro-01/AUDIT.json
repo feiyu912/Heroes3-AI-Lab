@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "samples_admitted": 100,
+  "policy_moves": 98,
+  "policy_end_turns": 2,
+  "automatic_end_turns_excluded": 10,
+  "sampling_device": "cuda",
+  "replay_actions_logprobs_values_rng_exact": true,
+  "optimizer_steps": 0,
+  "native_episode_winner": "blue",
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-terminal-ack-drain-v1/native-repro-raw-audit-01/AUDIT.json": "65efde508adc450c5e322fb50f07f30c5cff793eb1963a6b64434cbc786972b5",
+    "/root/heroes3-ai-lab/evaluations/typed-terminal-ack-repro-01/agent/sampling-state.pt": "92afc12049d30a2bcea0e3bbc0756e39a677a985d18a88f3bbc01e1e4a9c905f",
+    "/root/heroes3-ai-lab/evaluations/typed-terminal-ack-repro-01/agent/typed-broker.jsonl": "2ce3befd5b31aa48a25a3b2530ce22b7dca3958d530ef938f0ed8470f3152e5b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v3.py": "8926220d03fb39bf44a82d30e58b6610acf00f667cdd9bd2fda9a580fa93f7e4"
+  },
+  "output_sha256": {
+    "samples.jsonl": "2a37852ba1ba2b97fd353f542ca3d7be642f119c1a31bba41fc0efbcb4404bab",
+    "episode.json": "f5fec0a36d58536e59a9eba6fd84e1123f467a61c694180bfdefe5777a2ed763"
+  }
+}

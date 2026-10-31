@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "game_started": false,
+  "GPU_initialized": false,
+  "protocol": {
+    "schema": "strategic-episode-balanced-choice-ppo-v1",
+    "gamma": 1.0,
+    "reward": "Completed native terminal win +1/loss -1 only; invalid batch must abort before update.",
+    "actor_sample_weight": "N/(E*episode_free_choices) if candidate_count>1, otherwise 0; E includes zero-choice episodes",
+    "critic_sample_weight": "N/(E*episode_steps); E includes all valid episodes",
+    "advantage": "return-old_value; weighted mean/variance only over free choices, equal mass per active episode",
+    "entropy": "Same weights as actor, zero for forced transitions",
+    "KL": "Report objective-weighted and conditional free-choice KL; gate conditional KL to avoid zero-choice dilution",
+    "minibatches": "Uniform random transitions; global N/E weights retained, not renormalized within minibatch",
+    "epochs": 4,
+    "minibatch_size": 64,
+    "clip": 0.2,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.005,
+    "max_gradient_norm": 0.5,
+    "max_conditional_KL": 0.05,
+    "limitations": "Weighted target choice optimization only. No ability improvement implied; native battles/economics delegated."
+  },
+  "original_objective": {
+    "actor": -0.0,
+    "critic": 0.421435683965683,
+    "entropy": 0.462097704410553,
+    "kl": 0.0,
+    "conditional_kl": 0.0,
+    "loss": 0.20840735733509064
+  },
+  "forced_extended_objective": {
+    "actor": 1.7660635620586618e-08,
+    "critic": 0.3892110586166382,
+    "entropy": 0.46209773421287537,
+    "kl": 0.0,
+    "conditional_kl": 0.0,
+    "loss": 0.19229505956172943
+  },
+  "repeated_episode_objective": {
+    "actor": -2.167441559564054e-09,
+    "critic": 0.421435683965683,
+    "entropy": 0.46209776401519775,
+    "kl": 0.0,
+    "conditional_kl": 0.0,
+    "loss": 0.20840735733509064
+  },
+  "episode_objective_mass": {
+    "A": {
+      "actor": 0.3333333134651184,
+      "critic": 0.3333333432674408
+    },
+    "B": {
+      "actor": 0.3333333134651184,
+      "critic": 0.3333333432674408
+    },
+    "C": {
+      "actor": 0.0,
+      "critic": 0.3333333134651184
+    }
+  },
+  "actor_gradient_max_error_after_forced_duplication": 0.0,
+  "critic_gradient_max_error_after_episode_repetition": 2.7939677238464355e-08,
+  "successful_synthetic_update": {
+    "optimizer_steps": 6,
+    "minibatches": 6,
+    "completed": true,
+    "early_stop_kl": false,
+    "algorithm_schema": "strategic-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 10,
+      "episodes": 3,
+      "free_choices": 6,
+      "forced_transitions": 4,
+      "active_actor_episodes": 2,
+      "actor_weight_sum": 6.6666669845581055,
+      "critic_weight_sum": 10.000000953674316,
+      "advantage_mean": -0.3460535705089569,
+      "advantage_variance": 1.0247451777419263,
+      "per_episode": [
+        {
+          "episode_id": "A",
+          "steps": 3,
+          "free_choices": 2,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "B",
+          "steps": 5,
+          "free_choices": 4,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "C",
+          "steps": 2,
+          "free_choices": 0,
+          "reward": 1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": 0.41210952401161194,
+      "critic": 0.33830925822257996,
+      "entropy": 0.2888113260269165,
+      "kl": 2.980232238769531e-07,
+      "conditional_kl": 4.470348358154297e-07,
+      "loss": 0.5798200964927673
+    },
+    "epoch": 2,
+    "full_batch_post_epoch": {
+      "actor": 9.298324584960938e-06,
+      "critic": 0.40497079491615295,
+      "entropy": 0.4620981216430664,
+      "kl": 4.569689394884335e-07,
+      "conditional_kl": 6.854533921796246e-07,
+      "loss": 0.20018421709537507
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.033122569638092236,
+        "max_abs_delta": 0.0015026703476905823
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.08717829788482465,
+        "max_abs_delta": 0.0015723742544651031
+      }
+    }
+  },
+  "invalid_batches_rejected_without_step": 4,
+  "injected_failure": {
+    "optimizer_steps": 3,
+    "minibatches": 2,
+    "completed": false,
+    "early_stop_kl": false,
+    "algorithm_schema": "strategic-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 10,
+      "episodes": 3,
+      "free_choices": 6,
+      "forced_transitions": 4,
+      "active_actor_episodes": 2,
+      "actor_weight_sum": 6.6666669845581055,
+      "critic_weight_sum": 10.000000953674316,
+      "advantage_mean": -0.3460535705089569,
+      "advantage_variance": 1.0247451777419263,
+      "per_episode": [
+        {
+          "episode_id": "A",
+          "steps": 3,
+          "free_choices": 2,
+          "reward": 1.0
+        },
+        {
+          "episode_id": "B",
+          "steps": 5,
+          "free_choices": 4,
+          "reward": -1.0
+        },
+        {
+          "episode_id": "C",
+          "steps": 2,
+          "free_choices": 0,
+          "reward": 1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.004507347941398621,
+      "critic": 0.5832605957984924,
+      "entropy": 0.5776204466819763,
+      "kl": 5.339582571650681e-07,
+      "conditional_kl": 8.009373573258927e-07,
+      "loss": 0.2842348515987396
+    },
+    "error": "RuntimeError('Synthetic failure after third applied Adam step')",
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.03304279975946241,
+        "max_abs_delta": 0.0008272230625152588
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.05085580050036161,
+        "max_abs_delta": 0.0008243843913078308
+      }
+    }
+  },
+  "all_forced_actor_unchanged": {
+    "optimizer_steps": 1,
+    "minibatches": 1,
+    "completed": true,
+    "early_stop_kl": false,
+    "algorithm_schema": "strategic-episode-balanced-choice-ppo-v1",
+    "weighting": {
+      "samples": 2,
+      "episodes": 1,
+      "free_choices": 0,
+      "forced_transitions": 2,
+      "active_actor_episodes": 0,
+      "actor_weight_sum": 0.0,
+      "critic_weight_sum": 2.0,
+      "advantage_mean": 0.0,
+      "advantage_variance": 0.0,
+      "per_episode": [
+        {
+          "episode_id": "C",
+          "steps": 2,
+          "free_choices": 0,
+          "reward": 1.0
+        }
+      ],
+      "collector_manifest_verified": true
+    },
+    "last": {
+      "actor": -0.0,
+      "critic": 0.06318715214729309,
+      "entropy": 0.0,
+      "kl": 0.0,
+      "conditional_kl": 0.0,
+      "loss": 0.031593576073646545
+    },
+    "epoch": 1,
+    "full_batch_post_epoch": {
+      "actor": 0.0,
+      "critic": 0.02158692479133606,
+      "entropy": 0.0,
+      "kl": 0.0,
+      "conditional_kl": 0.0,
+      "loss": 0.01079346239566803
+    },
+    "parameter_delta_from_previous_update": {
+      "actor": {
+        "changed_tensors": 0,
+        "total_tensors": 6,
+        "l2_delta": 0.0,
+        "max_abs_delta": 0.0
+      },
+      "critic": {
+        "changed_tensors": 6,
+        "total_tensors": 6,
+        "l2_delta": 0.08000445953309285,
+        "max_abs_delta": 0.0010000020265579224
+      }
+    }
+  },
+  "module_sha256": "be4084fd073ec6a60b9b805b4cff43209d0f05e87dd7517a855870517376be65",
+  "limitations": "Synthetic CPU objective/gradient engineering only; no native training or ability evidence. Invariance concerns global objectives/gradients, not identical stochastic optimizer trajectories after changing batch size."
+}

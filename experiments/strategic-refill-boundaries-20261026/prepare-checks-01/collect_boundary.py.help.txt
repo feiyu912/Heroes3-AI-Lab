@@ -1,0 +1,12 @@
+usage: collect_boundary.py [-h] --capsule CAPSULE --arm {baseline,candidate}
+                           --case {reachable-stock-control,unreachable-stock,nonowned-stock,arrive-incompatible-stock,consumed-pickup,legacy-build,legacy-v4}
+                           --out OUT [--seconds SECONDS] [--execute]
+
+options:
+  -h, --help            show this help message and exit
+  --capsule CAPSULE
+  --arm {baseline,candidate}
+  --case {reachable-stock-control,unreachable-stock,nonowned-stock,arrive-incompatible-stock,consumed-pickup,legacy-build,legacy-v4}
+  --out OUT
+  --seconds SECONDS
+  --execute

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "native_engine_builds": 0,
+  "native_engine_runs": 0,
+  "cpu_class_compilations": 1,
+  "cpu_test_executable_runs": 1,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "checks": {
+    "passed": true,
+    "cpu_class_checks": 138,
+    "producer_termination_races": 30,
+    "ack_termination_races": 100,
+    "pushes_accepted": 2932,
+    "late_pushes_rejected": 4748
+  },
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/check_threadsafe_vector_cpp.py": "10574bbb11720575e894fb3a1a012ddc0d8632912adb1816ecca5506417a32c5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/actual-class-fragment.h": "2a88be96b5feeea6a389ade0781975475749698bb87f42850dafab48c22e7eee",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/threaded-check.cpp": "495db7668b3312e35019237df3fb320910c4edf50a5cd73d4f3c169dbb85e3f6",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/threaded-check": "4319f4ac109c1f693d88225b16cd0d37a4f2e835e684f326488c1482e0e86023"
+  },
+  "compiler_command": [
+    "g++",
+    "-std=c++17",
+    "-pthread",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/threaded-check.cpp",
+    "-o",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/threaded-cpu-01/threaded-check"
+  ],
+  "scope": "Exact candidate ThreadSafeVector class extracted unchanged, with standard-library vstd/exception support shims. Real concurrent CPU boundary checks, not an engine compile/game or native proof."
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "adventure-run-v5",
+  "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-1649663f-3-2026102203-2ejl16se",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "Nullkiller2",
+    "blue": "DirectorAI",
+    "seed": 2026102203,
+    "seconds": 120,
+    "tag": "vector-1649663f-3",
+    "save_file": "",
+    "gdb": false,
+    "agent_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-clean-4env-01/env-003/agent",
+    "pool_lock_fd": 23,
+    "pool_lock_dev": 2096,
+    "pool_lock_inode": 674895,
+    "report_dir": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-clean-4env-01/env-003",
+    "native_pid_file": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-clean-4env-01/env-003/native-pid.json",
+    "lab_root": "/root/heroes3-ai-lab"
+  },
+  "engine_exit": 0,
+  "timed_out": false,
+  "interrupted": false,
+  "crashed": false,
+  "completed": true,
+  "winner": "red",
+  "wrapper_exit": 0,
+  "actual_ai": {
+    "red": "Nullkiller2",
+    "blue": "DirectorAI"
+  },
+  "turns": 11,
+  "moves_requested": 96,
+  "move_replies": 96,
+  "changed_tile_replies": 96,
+  "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+  "displacement_replies": 92,
+  "blocking_visit_replies": 4,
+  "failed_move_replies": 0,
+  "inputs_unchanged": true,
+  "log_sha256": "0a6453752cca4e6b711dae86c31edb08fe4999e08b4bdc7c2e1269828239e3de",
+  "native_load_verified": null,
+  "load_markers": null,
+  "wall_seconds": 5.222179665000112,
+  "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+  "strategy_trace_sha256": "a961b1d153420752207267c3520c1aa802de9291867e3bae22b42840bbab98d2",
+  "strategy_trace_records": 425,
+  "native_calendar_last_day": 11,
+  "strategy_targets_sha256": "e04c5035696e7b76786ab20be77215850aa38a2127a91af619ca40eddac6acb1",
+  "strategy_targets_records": 162,
+  "strategy_decisions_sha256": "adf9069d43a93b21713ffa653a37d9fc491b665933880919d88d9b36555c6cbb",
+  "strategy_decision_records": 96,
+  "save_files": [
+    {
+      "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-1649663f-3-2026102203-2ejl16se/data/vcmi/Saves/director-v5-initial.vsgm1",
+      "bytes": 342933,
+      "sha256": "c0f0855ccbe6561664458761407d83dabd0d14f8d152746f55da6692f8e118ef"
+    }
+  ]
+}

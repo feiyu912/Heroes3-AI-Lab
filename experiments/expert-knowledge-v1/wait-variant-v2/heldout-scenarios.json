@@ -1,0 +1,314 @@
+[
+  {
+    "id": "hallas-wait-ghost-v2-4-attacker",
+    "map": "lab/hallas-wait-ghost-v2-4-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 5
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 90
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 4,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "a9174440e6768f92a2d84e0887a561930d58cc5219c5203184bdb81529fff606",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103005,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-4-defender",
+    "map": "lab/hallas-wait-ghost-v2-4-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 90
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 5
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 4,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "b9dfee56a2704a72b3da5d2c0172811295d7e9ca99870599a7005a2c98aa0d37",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103005,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-5-attacker",
+    "map": "lab/hallas-wait-ghost-v2-5-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 7
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 110
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 5,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "cbc5d2710e46ec9c17ae2b0b0fad490ef7ef1d220197f0ba68da502f39d604df",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103006,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-5-defender",
+    "map": "lab/hallas-wait-ghost-v2-5-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 110
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 7
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 5,
+    "split": "development",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "2d8d7e9bf3a2c9a942870ae4469fb823cb7f535513caf4b63737c3bbc1bfc275",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103006,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-6-attacker",
+    "map": "lab/hallas-wait-ghost-v2-6-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 9
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 130
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 6,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "ffbdd325c7825f04838669157810abdc945298fa32fdffe72ed8fb3131b323bc",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103007,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-6-defender",
+    "map": "lab/hallas-wait-ghost-v2-6-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 130
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 9
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 6,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "1b69256a0ac3d5d560005b019ebe7f776a036def76b15186379adc013efb7c77",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103007,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-7-attacker",
+    "map": "lab/hallas-wait-ghost-v2-7-attacker.vmap",
+    "role": "attacker",
+    "armies": [
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 11
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 150
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 7,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "d5809959a10d144d32ad09ad8a3e38f037a57590a8d31877128abb53f5643c78",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103008,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  },
+  {
+    "id": "hallas-wait-ghost-v2-7-defender",
+    "map": "lab/hallas-wait-ghost-v2-7-defender.vmap",
+    "role": "defender",
+    "armies": [
+      [
+        {
+          "type": "core:walkingDead",
+          "amount": 150
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      [
+        {
+          "type": "core:ghostDragon",
+          "amount": 11
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    ],
+    "index": 7,
+    "split": "test",
+    "source_case": "hallas-2001-wait-cross-round-action-window",
+    "sha256": "9ca7b54cdd41c7a039b87da3e70d4374e531d1ff44517d0b956324620df0579b",
+    "reconstruction": "Predeclared unobserved holdout; same unit family, novel counts and disjoint seed",
+    "seed": 2026103008,
+    "side_effects": "Ghost Dragon aging remains possible; not disabled",
+    "morale_control": "Both stacks undead; verify actual order"
+  }
+]

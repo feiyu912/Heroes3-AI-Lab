@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "read_only_interpretation": true,
+  "files": {
+    "AUDIT.json": "322e7da4c71c439194efe9882bc3397928c22be63112aecefad8386888d4e4cd",
+    "AGGREGATES.json": "d31cd743836609a5c8860f5dcea24f01b468676b9a80705e8ec510a74bddf83a",
+    "EPISODES.json": "03e6208c933bee42689fdddc609883cadf15088ac6b956a76af62793953485ab",
+    "REQUEST_COMPARISON.jsonl": "0132024734c432caa3d4e97f3a7769c8cade687b2e1cab6822c77a67510e0f13",
+    "REPORT.md": "cda035e36d9ed958b4bae784af2ae977e42d6f107345a5110a26785eb9f52b0f",
+    "FINDINGS.md": "17880f392f8263abd1ccd5fa9e4e6e257b244722e9079d9140257b4e49c84e2a"
+  },
+  "diagnostic_script_sha256": "f810ce79b0c7c7bd6e76996ef258923cdec47ab3339035562663106a0ccc1455",
+  "observation_support": "Only new prior-zero complete TRAIN states",
+  "previous_TRAIN_observations_read": false,
+  "DEV_read": false,
+  "optimizer_steps": 0,
+  "GPU_steps": 0,
+  "native_runs": 0,
+  "policy_run_sources_modified": false
+}

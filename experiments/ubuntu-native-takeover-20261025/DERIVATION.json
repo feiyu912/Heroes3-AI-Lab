@@ -1,0 +1,6 @@
+{
+  "source": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/battle-observed-MC-DEV-20261024/leases.py",
+  "source_sha256": "dcf9d092b5c61c202121678f8e483406c71646f2a421dbfe3215b37aea2625a7",
+  "derived_sha256": "6932663606dd88dd20ef2b77c89dbd1d0662371966f90d75ad8635ab3292255e",
+  "sole_change": "Lease directory uses relocated HEROES3_LAB_ROOT/evaluations; lock order, inherited FD/inode verification and owned session cleanup unchanged."
+}

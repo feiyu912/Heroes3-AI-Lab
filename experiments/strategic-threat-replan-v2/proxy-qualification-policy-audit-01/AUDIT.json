@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "classification": "scripted_evaluation_only",
+  "policy": "clearance",
+  "proposals": 85,
+  "frozen_model_recommendations_and_values_exact": true,
+  "overrides": 2,
+  "details": [
+    {
+      "decision_id": 71,
+      "day": 9,
+      "native_request_id": 252,
+      "request_sha256": "acd1d8605a5727af7c9fe88bd2bd9b2d6dc1c9af063b73d5f0c9e2cc97e7f355",
+      "model_candidate": {
+        "op": "move",
+        "kind": 5,
+        "position": [
+          15,
+          18,
+          0
+        ],
+        "next": [
+          12,
+          14,
+          0
+        ],
+        "path_cost": 0.6,
+        "heuristic_score": 1.18182
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 5,
+        "position": [
+          17,
+          17,
+          0
+        ],
+        "next": [
+          13,
+          13,
+          0
+        ],
+        "path_cost": 0.639744,
+        "heuristic_score": 0.965129
+      },
+      "proxy": {
+        "index": 49,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 6,
+        "baseline_clearance": 6,
+        "eligible_alternatives": 26,
+        "selected_clearance": 7
+      }
+    },
+    {
+      "decision_id": 79,
+      "day": 10,
+      "native_request_id": 272,
+      "request_sha256": "4f882bb4fd6387dc9349d1ecc1d8c028cd1987f7e72461a42179ec566cdb5b8a",
+      "model_candidate": {
+        "op": "move",
+        "kind": 1,
+        "position": [
+          6,
+          8,
+          0
+        ],
+        "next": [
+          14,
+          17,
+          0
+        ],
+        "path_cost": 1.27179,
+        "heuristic_score": 6.77279
+      },
+      "actual_candidate": {
+        "op": "move",
+        "kind": 5,
+        "position": [
+          18,
+          21,
+          0
+        ],
+        "next": [
+          15,
+          18,
+          0
+        ],
+        "path_cost": 0.503846,
+        "heuristic_score": 1.09579
+      },
+      "proxy": {
+        "index": 66,
+        "overridden": true,
+        "method": "scripted_visible_coordinate_proxy",
+        "reason": "strict_existing_step_clearance_increase",
+        "origin_clearance": 5,
+        "baseline_clearance": 5,
+        "eligible_alternatives": 13,
+        "selected_clearance": 6
+      }
+    }
+  ],
+  "native_execution_proof_sha256": "a4923e0130cedc715c292ad88e8f026e6d6638c791c6c196529be299ef98fe42",
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/proxy-qualification-replan-audit-01/AUDIT.json": "a4923e0130cedc715c292ad88e8f026e6d6638c791c6c196529be299ef98fe42",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-qualification-01/agent/typed-broker.jsonl": "a4b4207905165f18161f50be9f9cbf4f75b3201d0ad7adf01c7ae9bc7ae6eeec",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_proxy.py": "376c63d19cc66038d9002da371d60a37f805e7e8a80ef436da32fb05767fc80c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851"
+  },
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "limitation": "Real scripted actions and coordinate changes only. No safety, overall utility, human tactics or learning gain certification."
+}

@@ -1,0 +1,17 @@
+{
+  "sampled_peak_process_group_rss_kib": 7808,
+  "sample_interval_seconds": 0.5,
+  "sample_count": 1,
+  "child_rusage_maxrss_kib": 34528,
+  "sampling_limit": "Short-lived peaks between samples may be missed; child rusage is not aggregate simultaneous RSS.",
+  "samples": [
+    {
+      "monotonic": 1345.588316438,
+      "pids": [
+        17888
+      ],
+      "process_group_rss_kib": 7808,
+      "meminfo": "MemTotal:       64593536 kB\nMemFree:        51129232 kB\nMemAvailable:   59155396 kB\nBuffers:          470208 kB\nCached:          7785484 kB\nSwapCached:            0 kB\nActive:          5566544 kB\nInactive:        6375592 kB\nActive(anon):    3664096 kB\nInactive(anon):        0 kB\nActive(file):    1902448 kB\nInactive(file):  6375592 kB\nUnevictable:         204 kB\nMlocked:             204 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              6860 kB\nWriteback:             0 kB\nAnonPages:       3687300 kB\nMapped:          1561936 kB\nShmem:            188584 kB\nKReclaimable:     473804 kB\nSlab:             834888 kB\nSReclaimable:     469152 kB\nSUnreclaim:       365736 kB\nKernelStack:       31728 kB\nPageTables:        69116 kB\nSecPageTables:      3268 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40685372 kB\nCommitted_AS:   20005508 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      135260 kB\nVmallocChunk:          0 kB\nPercpu:            32032 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:     51200 kB\nFilePmdMapped:      2048 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     1136236 kB\nDirectMap2M:    14401536 kB\nDirectMap1G:    53477376 kB\n"
+    }
+  ]
+}

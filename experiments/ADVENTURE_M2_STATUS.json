@@ -1,0 +1,84 @@
+{
+  "schema": "adventure-m2-status-v1",
+  "recorded_at": "2026-10-18T01:55+08:00",
+  "milestone": "M2",
+  "verdict": "NOT ACCEPTED",
+  "summary": "自研 DirectorAI 已能完整跑完对局并产生原生胜负，崩溃已修复；但策略动作质量不达标：英雄位置读取错误、远距离移动被服务端拒绝，实际上没有形成有效的战略推进。",
+
+  "fixed_issues": [
+    {
+      "id": "cbc-null-crash",
+      "symptom": "第一次进入战斗时进程 core dump，日志无 Disaster",
+      "root_cause": "installNewPlayerInterface(..., bool battlecb = false) 默认 false，AI 玩家的 initBattleInterface 从不被调用；CAdventureAI::battleStart 里 assert(cbc) 在 Release 下被 NDEBUG 关闭，随后 suspendWaitTillRealize() 解引用空 cbc",
+      "evidence": "gdb 调用栈 #0 CAdventureAI::battleStart <- CClient::battleStarted <- CClient::handlePack",
+      "fix": "Client.cpp 只对 DirectorAI 传 battlecb=true；CDirectorAI 覆盖 initBattleInterface 保存 cbc",
+      "verified": "修复后连续 3 局完整跑完，0 崩溃"
+    },
+    {
+      "id": "enemy-enumeration",
+      "symptom": "找不到敌人，只会结束回合",
+      "root_cause": "getHeroesInfo() 只返回己方英雄；getTownsInfo() 默认 onlyOur=true",
+      "fix": "getTownsInfo(false) 取可见城镇；敌方英雄改为逐格 getTopObj + isVisible 过滤（引擎自身的战争迷雾判定，不读取隐藏对象）",
+      "verified": "日志出现 reason=visible enemy hero / visible enemy town / scouting waypoint 三类目标"
+    },
+    {
+      "id": "infinite-move-loop",
+      "symptom": "240s 超时，日志 86 万行，同一移动请求无限重复",
+      "root_cause": "零位移的移动请求返回 SUCCESS，被当作进展继续重发",
+      "fix": "TryMoveHero.start == end 时判定无进展并结束回合；每回合动作上限 12 次",
+      "verified": "超时消失，对局 24-27 回合正常终局"
+    }
+  ],
+
+  "open_issues": [
+    {
+      "id": "stale-hero-position",
+      "detail": "日志记录 hero 1 在 (4,2)，但引擎 TryMoveHero 报 start (5 2 0)。visitablePos() 与我们读取时机不一致，导致 destination==visitablePos() 的终止条件失效、同一目标被反复重发",
+      "next": "改用 hero->pos 并在每次收到移动结果后重新读取位置，而不是复用回调前的指针"
+    },
+    {
+      "id": "long-move-rejected",
+      "detail": "远距离请求返回 result=0 (FAILED)，例如 start (5 2 0) end (36 66 0)。CCallback::moveHero 单点重载只是把 {destination} 作为路径发给服务端，未证明它会计算完整合法路径",
+      "next": "用 Pathfinder 计算真实路径后调用 vector<int3> 重载；核对 layer 与失败回复"
+    }
+  ],
+
+  "runs": [
+    {
+      "run_id": "20261017T175208Z-DirectorAI-vs-Nullkiller2-seed2026101801",
+      "ai_slot0": "DirectorAI",
+      "ai_slot1": "Nullkiller2",
+      "seed": 2026101801,
+      "turns": 27,
+      "winner": "blue (Nullkiller2)",
+      "exit_code": 0,
+      "crashes": 0,
+      "log_sha256": "e549d0d8ca7a4d03f0e88c51d3166dbf3f5829d950630b1ce6efd6a05af23637",
+      "director_moves_issued": 18,
+      "director_moves_finished": 18,
+      "move_reasons": {"visible enemy town": 12, "visible enemy hero": 5, "scouting waypoint": 1},
+      "battles": 2,
+      "distinct_targets": 6,
+      "note": "18 次请求中 12 次是同一个 (4,2)->(12,70)，说明目标选择未随位置更新"
+    }
+  ],
+
+  "acceptance_checklist": {
+    "cbc_initialised": true,
+    "per_player_ai_assignment_verified": true,
+    "full_game_with_native_result": true,
+    "legal_actions_issued_by_our_policy": true,
+    "actions_make_real_progress": false,
+    "both_roles_exercised": false,
+    "seed_repetition": false,
+    "exploration_economy_building": false
+  },
+
+  "not_claimed": [
+    "自研策略没有赢，也没有形成有效推进；不能称 M2 完成",
+    "Nullkiller2 获胜、AI 被正确选中、库编译成功，都不等于自研策略可玩",
+    "竞技场派生图只用于协议测试，不能当战略水平基准"
+  ],
+
+  "reproduce": "bash experiments/adv-run3.sh Maps/adv/adv-arena-01 DirectorAI Nullkiller2 2026101801 240"
+}

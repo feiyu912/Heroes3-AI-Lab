@@ -1,0 +1,86 @@
+{
+  "name": "v5-diverse-last-128",
+  "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071138532938178/update-128.pt",
+  "policy": "recovered",
+  "iteration": 128,
+  "finetuning_mode": "last",
+  "validation_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-validation.json",
+  "validation": {
+    "policy": "recovered",
+    "battles": 48,
+    "wins": 36,
+    "win_rate": 0.75,
+    "wilson95": [
+      0.6121535625207293,
+      0.8507951119028996
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 56.354166666666664
+  },
+  "upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-upstream_validation.json",
+  "upstream_validation": {
+    "policy": "recovered",
+    "battles": 48,
+    "wins": 25,
+    "win_rate": 0.5208333333333334,
+    "wilson95": [
+      0.3832899563598438,
+      0.6552890998421255
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 65.58333333333333
+  },
+  "development_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-development_validation.json",
+  "development_validation": {
+    "policy": "recovered",
+    "battles": 48,
+    "wins": 40,
+    "win_rate": 0.8333333333333334,
+    "wilson95": [
+      0.7042189996260375,
+      0.9130458996054678
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 85.35416666666667
+  },
+  "development_upstream_validation_report": "/mnt/g/Heroes3-AI-Lab/research/v5-diverse-last-128-development_upstream_validation.json",
+  "development_upstream_validation": {
+    "policy": "recovered",
+    "battles": 48,
+    "wins": 35,
+    "win_rate": 0.7291666666666666,
+    "wilson95": [
+      0.5900276538379887,
+      0.8343419643836709
+    ],
+    "truncated": 0,
+    "non_normal_terminations": 0,
+    "invalid_actions": 0,
+    "mean_permanent_units_lost": 88.04166666666667
+  },
+  "goal_selection_metrics": {
+    "author_cluster95_lower": 0.5,
+    "development_author_cluster95_lower": 0.5833333333333334,
+    "normalized_constraints": [
+      0.7894736842105263,
+      0.8771929824561404,
+      1.0,
+      1.1666666666666667
+    ],
+    "rule": "Goal-normalized worst progress across both validation sets; BattleAI/.95, author cluster95 lower/.50. Final thresholds unchanged."
+  },
+  "selection": "Validation only: maximize worst normalized goal progress across old/diverse sets (BattleAI rate/.95; author scenario-cluster95 lower/.50), then BattleAI sum, author lower bound, author sum and lower casualties. Final test never inspected; final success thresholds unchanged.",
+  "validation_score": [
+    0.7894736842105263,
+    1.5833333333333335,
+    0.5,
+    1.25,
+    -85.35416666666667
+  ]
+}

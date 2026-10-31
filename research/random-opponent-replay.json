@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "engine_seed": 2026101403,
+  "opponent_seed": 2026201403,
+  "checked_fields": [
+    "trajectory_sha256",
+    "terminal_outcome",
+    "steps",
+    "action_types",
+    "success",
+    "truncated",
+    "terminated"
+  ],
+  "trajectory_sha256": "93395099402fa78a0ddbb3821c49085cf8277a5dca9916e359bcb392db985746"
+}

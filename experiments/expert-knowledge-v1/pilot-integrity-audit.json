@@ -1,0 +1,50 @@
+{
+  "schema": "human-pilot-integrity-audit-v1",
+  "audited_unix": 1792081773.4493072,
+  "passed": true,
+  "partial": true,
+  "pilot_state": "frozen_independent_tactical_test",
+  "control_path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-recovery-v2/pilot-control.json",
+  "scope": "Read-only integrity of currently completed artifacts, not teacher strength or curriculum completion",
+  "manifests": {
+    "pilot-training-battles": {
+      "completed_reports": 24,
+      "expected_reports": 24,
+      "wins": 15,
+      "truncations": 0,
+      "missing_terminal_outcome": 0,
+      "unknown_final_losses": 0,
+      "known_loss_mean": 66.625,
+      "known_loss_denominator": 24,
+      "unfiltered_loss_mean_valid": true,
+      "note": "Counts of units are not creature-value-weighted losses; summarize paired conditions separately."
+    },
+    "pilot-heldout-battles": {
+      "completed_reports": 0,
+      "expected_reports": 24,
+      "wins": 0,
+      "truncations": 0,
+      "missing_terminal_outcome": 0,
+      "unknown_final_losses": 0,
+      "known_loss_mean": null,
+      "known_loss_denominator": 0,
+      "unfiltered_loss_mean_valid": true,
+      "note": "Counts of units are not creature-value-weighted losses; summarize paired conditions separately."
+    }
+  },
+  "bc": {
+    "present": true,
+    "samples": 185,
+    "source_episodes": 6,
+    "label_quality": "Q2 normal-win coverage/search candidates, not validated human expert or tactic-optimal labels"
+  },
+  "errors": [],
+  "warnings": [],
+  "limitations": [
+    "Current test uses the same creature recipes as training; no cross-creature or arbitrary-position generalization proof.",
+    "Normal winning trajectories do not prove each action is optimal, tactic use successful, or the teacher stronger.",
+    "Freeze chronology and unseen-test selection cannot be proven solely from self-reported timestamps.",
+    "Process exit status is not authoritative; this audit checks actual completed artifacts.",
+    "Files may be added while this partial audit runs; rerun after pilot completion."
+  ]
+}

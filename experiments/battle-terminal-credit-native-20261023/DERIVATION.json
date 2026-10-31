@@ -1,0 +1,38 @@
+{
+  "restore_learner.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/restore_learner.py",
+    "sha256": "cb0f7a5a268f4e7e5a8b5b8c368c8927a528d9ac86d190f06457d1b159429cc7"
+  },
+  "recorded_vector.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/research/vector_env.py",
+    "sha256": "ffea0f0edfc0c62049e9a8469acbf41cc64448fcf3c9be6bf1708f10ebe7e5d6"
+  },
+  "credit_reference.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-episode-boundary-20261023/credit_extension.py",
+    "sha256": "b45a2540f1ee7b06b641cbca69206137c4a260798fcf656e14984ef513c62b2c"
+  },
+  "legacy_support.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-training-continuation-20261020/support.py",
+    "sha256": "6ea344ab7ba0f6bc20e44284206155be170ce182e302608ef47d9bcef1256708"
+  },
+  "evaluate_policy_steps.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-dev-repair-20261023/evaluate_policy_steps.py",
+    "sha256": "a3ad870b5563e3f76e5789b8b58248aca43ef6d3e3587ca7333f2fd433d2cf0a"
+  },
+  "step_evidence.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-dev-repair-20261023/step_evidence.py",
+    "sha256": "2811111ea8a54489244d005acc72dca2af312f7b085c659930768013149fd48a"
+  },
+  "dev_utils.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-dev-repair-20261023/run_dev.py",
+    "sha256": "667d3eb42426af3748aecd0f96522ede10e2fc10d104040bd7a4493fc17105a7"
+  },
+  "dev_raw_auditor.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-dev-repair-20261023/legacy_audit.py",
+    "sha256": "1c1a87365f59193139cff1eaaabf5b1597ec865689901d6b31f4d8af9741a481"
+  },
+  "replay_dev.py": {
+    "source": "/mnt/g/Heroes3-AI-Lab/experiments/battle-dev-repair-20261023/probability-replay-01/replay.py",
+    "sha256": "1a72c7bf2e75dd4fbc74a9fa4428ef0a4f6ec178a854428db1c746bea1d1a11b"
+  }
+}

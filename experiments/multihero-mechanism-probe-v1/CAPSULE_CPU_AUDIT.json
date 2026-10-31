@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "temporary_fake_trees_only": true,
+  "compiler_started": false,
+  "ldd_started": false,
+  "native_games_started": 0,
+  "actual_shared_locks_acquired": false,
+  "native_inputs_written": false,
+  "checks": {
+    "success_restores_sources_new_mtime_rebuilds_accepted": true,
+    "three_fixed_runtime_asset_links_accepted_without_dereferencing": true,
+    "unknown_external_source_directory_rejected": true,
+    "wrong_fixed_asset_target_rejected": true,
+    "exact_reviewed_dangling_runtime_onnx_no_fake_sha_accepted": true,
+    "unknown_dangling_onnx_rejected": true,
+    "reviewed_model_wrong_raw_target_rejected": true,
+    "unchanged_client_changed_lib_attestation_accepted": true,
+    "variant_failure_still_rebuilds_accepted": true,
+    "restore_build_failure_restores_published_bin_flags_rebuild": true,
+    "maps_real_path_inode_device_sha_gate": true,
+    "thread_mode_client_library_and_runServer_and_native_log_positive": true,
+    "missing_runServer_thread_rejected": true,
+    "missing_native_server_log_rejected": true,
+    "process_setting_true_rejected": true,
+    "wrong_mapped_inode_rejected": true,
+    "deleted_mapped_library_rejected": true,
+    "nonblocking_busy_pool_releases_first_gpu_lock": true,
+    "tampered_source_snapshot_rejected": true
+  }
+}

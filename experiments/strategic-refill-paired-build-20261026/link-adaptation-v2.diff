@@ -1,0 +1,187 @@
+--- build_pair.py-preserved
++++ build_pair_link_v2.py
+@@ -1,4 +1,4 @@
+-"""Isolated paired source epoch; each invocation is a separately archived stage."""
++"""Isolated paired epoch with explicit ONNX indirect executable link search."""
+ import argparse, contextlib, fcntl, hashlib, importlib.util, json, os
+ from pathlib import Path
+ import resource, shutil, signal, subprocess, sys, time, traceback
+@@ -179,19 +179,71 @@
+     # search paths from the old epoch, never the optimization flags or factor.
+     flags = '-B' + str(sysroot / 'usr/bin') + '/ -B' + str(sysroot / 'usr/lib/gcc/x86_64-linux-gnu/11') + '/'
+     command += ['-DCMAKE_C_FLAGS=' + flags, '-DCMAKE_CXX_FLAGS=' + flags]
++    onnx_lib = lab / 'onnxruntime/lib'
++    assert (onnx_lib / 'libonnxruntime.so.1').is_file()
++    command += ['-DCMAKE_EXE_LINKER_FLAGS=-Wl,-rpath-link,' + str(onnx_lib)]
+     write(out / 'CONFIGURE_COMMAND.json', command)
+     return command
+ 
+-def group_members(pgid):
++def partial_compile_evidence(c):
++    stage = HERE / 'baseline-build-01'
++    result = json.loads((stage / 'RESULT.json').read_text())
++    command = json.loads((stage / 'COMMAND.json').read_text())
++    assert result['passed'] is False and command['exit_code'] != 0
++    log = (stage / 'command.log').read_text(errors='replace')
++    compile_lines = [line for line in log.splitlines() if line.startswith('[') and 'g++-11 ' in line and ' -c ' in line]
++    assert len(compile_lines) == 720, 'Prior partial compile count differs'
++    assert 'libonnxruntime.so.1' in log and 'OrtGetApiBase@VERS_1.22.0' in log
++    old_graph = json.loads((HERE / 'configure-03/GRAPH_BINDING.json').read_text())
++    compile_commands_path = Path(c['scratch_root']) / 'build/compile_commands.json'
++    old_compile_sha = old_graph[str(compile_commands_path)]
++    assert sha(compile_commands_path) == old_compile_sha, 'Compilation commands changed since partial stage'
++    return dict(stage=str(stage), passed=False, actual_exit_code=command['exit_code'],
++                actual_compile_commands_observed=720,
++                evidence_sha256={name: sha(stage / name) for name in ('COMMAND.json', 'RESULT.json', 'command.log', 'BUILD_SOURCE_BEFORE.json')},
++                prior_compile_commands_sha256=old_compile_sha,
++                source_manifest_sha256=sha(stage / 'BUILD_SOURCE_BEFORE.json'),
++                note='Only unchanged objects/PCH created in this isolated failed baseline stage are reused; stage itself failed at executable links.')
++
++def session_processes(sid):
+     result = []
+     for path in Path('/proc').glob('[0-9]*/stat'):
+         try:
+             fields = path.read_text().rsplit(')', 1)[1].split()
+-            if int(fields[2]) == pgid and fields[0] not in ('Z', 'X'):
+-                result.append(int(path.parent.name))
++            if int(fields[3]) == sid and fields[0] not in ('Z', 'X'):
++                result.append(dict(pid=int(path.parent.name), pgrp=int(fields[2]), sid=int(fields[3]), state=fields[0]))
+         except (FileNotFoundError, ProcessLookupError, ValueError, IndexError):
+             continue
+     return result
++
++def session_members(sid):
++    return [item['pid'] for item in session_processes(sid)]
++
++def signal_session(sid, sig):
++    assert sid != os.getsid(0), 'Never signal the controller or user session'
++    for pgrp in {item['pgrp'] for item in session_processes(sid)}:
++        try:
++            os.killpg(pgrp, sig)
++        except ProcessLookupError:
++            pass
++
++def finish_session(proc):
++    previous = {sig: signal.getsignal(sig) for sig in (signal.SIGTERM, signal.SIGINT)}
++    for sig in previous:
++        signal.signal(sig, signal.SIG_IGN)
++    try:
++        if session_members(proc.pid):
++            signal_session(proc.pid, signal.SIGTERM)
++            deadline = time.monotonic() + 5
++            while session_members(proc.pid) and time.monotonic() < deadline:
++                time.sleep(.1)
++        while session_members(proc.pid):
++            signal_session(proc.pid, signal.SIGKILL)
++            time.sleep(.1)
++        proc.wait()
++    finally:
++        for sig, handler in previous.items():
++            signal.signal(sig, handler)
+ 
+ @contextlib.contextmanager
+ def leases(c, out):
+@@ -234,7 +286,8 @@
+                                 pass_fds=tuple(e['fd'] for e in entries), start_new_session=True)
+         try:
+             while proc.poll() is None:
+-                members = group_members(proc.pid)
++                processes = session_processes(proc.pid)
++                members = [item['pid'] for item in processes]
+                 rss = 0
+                 for pid in members:
+                     try:
+@@ -243,23 +296,14 @@
+                     except (FileNotFoundError, ProcessLookupError):
+                         continue
+                 peak_rss = max(peak_rss, rss)
+-                samples.append(dict(monotonic=time.monotonic(), pids=members, process_group_rss_kib=rss,
++                samples.append(dict(monotonic=time.monotonic(), pids=members, processes=processes, owned_session_rss_kib=rss,
+                                     meminfo=Path('/proc/meminfo').read_text()))
+                 time.sleep(.5)
+             code = proc.wait()
+-            assert not group_members(proc.pid), 'Owned live descendants remain after command exit'
++            assert not session_members(proc.pid), 'Owned live session descendants remain after command exit'
+         finally:
+-            if group_members(proc.pid):
+-                os.killpg(proc.pid, signal.SIGTERM)
+-                deadline = time.monotonic() + 5
+-                while group_members(proc.pid) and time.monotonic() < deadline:
+-                    time.sleep(.1)
+-                if group_members(proc.pid):
+-                    os.killpg(proc.pid, signal.SIGKILL)
+-                proc.wait()
+-                while group_members(proc.pid):
+-                    time.sleep(.1)
+-            write(out / 'RESOURCES.json', dict(sampled_peak_process_group_rss_kib=peak_rss,
++            finish_session(proc)
++            write(out / 'RESOURCES.json', dict(sampled_peak_owned_session_rss_kib=peak_rss,
+                   sample_interval_seconds=.5, sample_count=len(samples),
+                   child_rusage_maxrss_kib=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
+                   sampling_limit='Short-lived peaks between samples may be missed; child rusage is not aggregate simultaneous RSS.', samples=samples))
+@@ -300,6 +344,8 @@
+                        lease_inode_and_inherited_fd_evidence=json.loads((out / 'CHILD_LEASES.json').read_text()),
+                        resource_peaks={k: v for k, v in json.loads((out / 'RESOURCES.json').read_text()).items() if k != 'samples'},
+                        protected_inputs_before_and_after_equal=True)
++    attestation['prior_partial_compile_stage'] = partial_compile_evidence(c)
++    attestation['prior_partial_compile_stage']['pre_link_adaptation_outputs_manifest'] = configured['prior_partial_outputs']
+     write(dest / 'BUILD_ATTESTATION.json', attestation)
+ 
+ def main():
+@@ -338,6 +384,22 @@
+             with leases(c, out) as entries:
+                 if args.action == 'configure':
+                     assert manifest(scratch / 'source') == json.loads((scratch / 'BASELINE_SOURCE.json').read_text())
++                    partial = partial_compile_evidence(c)
++                    write(out / 'PRIOR_PARTIAL_COMPILE.json', partial)
++                    prior = out / 'prior-state'
++                    prior.mkdir()
++                    for name in ('CONFIGURED.json', 'BUILD_ADMISSION.json'):
++                        if (scratch / name).is_file():
++                            shutil.copyfile(scratch / name, prior / name)
++                    for name in ('build.ninja', 'compile_commands.json'):
++                        shutil.copyfile(scratch / 'build' / name, prior / name)
++                    outputs = {}
++                    for entry in json.loads((prior / 'compile_commands.json').read_text()):
++                        target = Path(entry['directory']) / entry['output']
++                        assert target.is_file(), 'Partial stage compile output missing: ' + str(target)
++                        outputs[str(target.relative_to(scratch / 'build'))] = sha(target)
++                    assert len(outputs) == 720
++                    write(prior / 'partial-outputs.json', outputs)
+                     command = configure_command(c, out)
+                 else:
+                     assert (scratch / 'build/build.ninja').is_file()
+@@ -362,17 +424,31 @@
+                         changed = {p for p in set(candidate_source) | set(baseline_source) if candidate_source.get(p) != baseline_source.get(p)}
+                         assert changed == {c['only_arm_source_difference']}
+                     write(out / 'BUILD_SOURCE_BEFORE.json', manifest(scratch / 'source'))
++                    write(out / 'PRIOR_PARTIAL_COMPILE.json', partial_compile_evidence(c))
+                     # Rebuild the changed factor TU on an explicit new attempt,
+                     # including after a prior completed build failure.
+-                    os.utime(scratch / 'source' / c['only_arm_source_difference'], None)
++                    factor_path = scratch / 'source' / c['only_arm_source_difference']
++                    touch = dict(path=str(factor_path), reason='Force current-stage DirectorAI compile and facade relink while reusing only unchanged isolated baseline objects.',
++                                 before_sha256=sha(factor_path), before_mtime_ns=factor_path.stat().st_mtime_ns)
++                    os.utime(factor_path, None)
++                    touch.update(after_sha256=sha(factor_path), after_mtime_ns=factor_path.stat().st_mtime_ns)
++                    assert touch['before_sha256'] == touch['after_sha256']
++                    write(out / 'DIRECTOR_MTIME_ONLY.json', touch)
+                     command = [str(Path(c['toolchain_root']) / 'sysroot/usr/bin/ninja'), '-C', str(scratch / 'build'), '-j2', '-v', 'vcmiclient', 'vcmiserver']
+                 actual = run_command(command, env, entries, out)
+                 assert sha(cert_path) == sha(out / 'TOOLCHAIN_CERTIFICATE.json'), 'Toolchain certificate changed during command'
+                 if closure is not None:
+                     assert dependency_closure(c) == closure, 'Target dependency input changed during command'
+                 if args.action == 'configure':
++                    assert sha(scratch / 'build/compile_commands.json') == sha(out / 'prior-state/compile_commands.json'), 'Link-only adaptation changed compilation commands'
++                    for name, expected in outputs.items():
++                        assert sha(scratch / 'build' / name) == expected, 'Configure changed a previously compiled object'
+                     write(scratch / 'CONFIGURED.json', dict(stage=str(out), command=actual,
+-                          environment_sha256=sha(out / 'ENVIRONMENT.json'), toolchain_certificate_sha256=sha(cert_path), dependency_closure=closure))
++                          environment_sha256=sha(out / 'ENVIRONMENT.json'), toolchain_certificate_sha256=sha(cert_path), dependency_closure=closure,
++                          prior_partial_outputs=dict(path=str(out / 'prior-state/partial-outputs.json'), sha256=sha(out / 'prior-state/partial-outputs.json'), files=len(outputs))))
++                    if (scratch / 'BUILD_ADMISSION.json').exists():
++                        assert sha(scratch / 'BUILD_ADMISSION.json') == sha(out / 'prior-state/BUILD_ADMISSION.json')
++                        (scratch / 'BUILD_ADMISSION.json').unlink()
+                 after = protection(c)
+                 assert before == after, 'Protected input changed during stage'
+                 if args.action in ('baseline', 'candidate'):

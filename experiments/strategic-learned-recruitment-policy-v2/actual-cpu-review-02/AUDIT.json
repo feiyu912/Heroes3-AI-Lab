@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "actual_native_requests_checked": 17,
+  "actual_catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+  "coverage": {
+    "known": 102,
+    "total": 102,
+    "known_fraction": 1.0,
+    "unknown": 0
+  },
+  "actual_no_recruit_projection_logits_critic_softmax_bitwise_equal": true,
+  "model_sha256": "b9ede0d158d113eff42d58cb8a844277b42e8a0820122d985299dfcf9cdb7b79",
+  "byte_binding_negatives": 17,
+  "codec_roundtrip_exact": true,
+  "new_Adam_state_empty": true,
+  "RNG_unchanged_by_save_load": true,
+  "bad_restore_leaves_live_model_Adam_RNG_unchanged": true,
+  "rejected_cases": [
+    "wrong_catalog",
+    "partial_boundary",
+    "wrong_dim",
+    "wrong_adam_count",
+    "wrong_protocol",
+    "wrong_tensor_sha",
+    "malformed_CPU_RNG",
+    "malformed_Python_RNG",
+    "CPU_test_as_training",
+    "CPU_as_CUDA_resume",
+    "resume_protocol_change"
+  ],
+  "optimizer_steps": 0,
+  "GPU_steps": 0,
+  "native_runs": 0,
+  "codec_checkpoint_is_training": false
+}

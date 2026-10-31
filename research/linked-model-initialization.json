@@ -1,0 +1,6 @@
+{
+  "checkpoint": "/root/heroes3-ai-lab/models/linked-v4/initial.pt",
+  "source_checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+  "initial_predictions_identical": true,
+  "parameters": 259458
+}

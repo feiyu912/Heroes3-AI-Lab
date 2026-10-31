@@ -1,0 +1,24 @@
+[
+  {
+    "script": "continue-challenge-at24.py",
+    "returncode": 0,
+    "wall_seconds": 1064.498148917
+  },
+  {
+    "script": "finish-challenge-training.py",
+    "returncode": 0,
+    "wall_seconds": 2143.0318743149996
+  },
+  {
+    "script": "run-recovered-head-adaptation.py",
+    "returncode": 0,
+    "wall_seconds": 602.813818441,
+    "resumed": true
+  },
+  {
+    "script": "select-challenge-final.py",
+    "returncode": 1,
+    "wall_seconds": 7148.819594667,
+    "resumed": true
+  }
+]

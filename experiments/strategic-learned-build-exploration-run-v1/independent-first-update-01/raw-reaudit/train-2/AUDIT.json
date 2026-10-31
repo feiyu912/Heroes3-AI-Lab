@@ -1,0 +1,227 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 0,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 87,
+    "actual_director_ack_count": 87,
+    "registered_ids": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      131,
+      133,
+      143,
+      148,
+      150,
+      160,
+      165,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      306,
+      307,
+      318,
+      320,
+      326,
+      335,
+      337,
+      343,
+      352,
+      354
+    ],
+    "policy_and_auto_request_count": 68,
+    "marker_line": 35069,
+    "owned_terminal_line": 34990,
+    "cancellation_intention": {
+      "line": 35068,
+      "ids": [
+        357
+      ]
+    },
+    "actual_termination": {
+      "line": 35070,
+      "ids": [
+        357
+      ]
+    },
+    "foreign_waits_pending_at_termination": 1,
+    "actual_atomic_cleared_ids": [
+      357
+    ],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 0,
+    "verified_neutral_makeaction_acks": [],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-learned-economy-build-v1",
+  "input_audit_epoch": "director-learned-economy-build-v1",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "blue",
+  "owned_player": 0,
+  "actual_ai_assignment": {
+    "red": "DirectorAI",
+    "blue": "Nullkiller2"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 59,
+    "policy_builds": 0,
+    "policy_end_turns": 5,
+    "automatic_end_turns": 4,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 64,
+    "blocking_visits": 0
+  },
+  "contract_errors": [],
+  "native_apply_markers": 68,
+  "battle_observation": {
+    "last_battle_start_line": 32179,
+    "round_start_count": 3,
+    "native_battle_actions": 41,
+    "unique_last1000_actions": 29,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '3', actionType '6', actionSubtype '-1', target {}}",
+        3
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '1', actionType '6', actionSubtype '-1', target {}}",
+        3
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '4294967295', actionType '4', actionSubtype '15', target {151,}}",
+        2
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '7', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '2', actionType '9', actionSubtype '-1', target {8@151,}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '4', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '5', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "4f1a19bf6a004655ea82c35754a815dda3d68f398e57d889cb0714a34f172566",
+    "typed.jsonl": "21c042b16682c3a313a6ffeb89629acaaa26b0b983aa52731c0d15fdca36f24a",
+    "strategy-decisions.jsonl": "0866d922224dcb33aa39a4a075f622cc1e2f59c84af66c56e2659e1281a27ca8",
+    "EXECUTION.json": "5fb2d05156d45d4119106316ff16dca742bf39c4a0bde3f0dd90263c2fca0127",
+    "PLAN.json": "c648819b7d1b43d1a8ca9736a41af1c36ebce9884978309725d3ee9c53c2742d",
+    "agent/typed-broker.jsonl": "b430ad156172b2b378db38099728d6997327753de80ab5b15acb21654c01d606",
+    "build-packs.jsonl": "a4995ee4cefb57540b6d9dce548b4b8938a312c79a499ca7d70725199304b022"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "c23cfc9d3f230ec5a4c4b1882c373209434cbe67de253e502eaa97ac765a2673",
+    "audit_contract.py": "ae62edb3186960053069c45fc0967366b422b300c1a5248f234b219da987743c",
+    "raw_events_v5.py": "5cf48a8baf89517dce029a54134bdaad2112099726cba1969cc11385f7eb3493",
+    "build_evidence.py": "e549ef7d65f0376fac48705cd02660a2ef8ed72a6e409da365af6d3e3e786a12",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.",
+  "pipeline_epoch": "strategic-learned-build-exploration-training-v1",
+  "action_schema": "strategy-candidates-v5",
+  "economy_epoch": "learned-economy-build-v1",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "build_evidence_verified": true,
+  "build_evidence": {
+    "passed": true,
+    "policy_builds": 0,
+    "received_packets": 26,
+    "builds": []
+  }
+}

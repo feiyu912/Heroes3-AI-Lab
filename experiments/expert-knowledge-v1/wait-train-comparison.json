@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "case": "hallas-wait-0-attacker",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-0-defender",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-1-attacker",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-1-defender",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-2-attacker",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-2-defender",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 1,
+      "control_loss": 1,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-3-attacker",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 2,
+      "control_loss": 2,
+      "benefit_verified": false
+    },
+    {
+      "case": "hallas-wait-3-defender",
+      "split": "train",
+      "wait_success": true,
+      "control_success": true,
+      "window_verified": true,
+      "wait_loss": 2,
+      "control_loss": 2,
+      "benefit_verified": false
+    }
+  ],
+  "source_claim_verified": true,
+  "benefit_cases": 0,
+  "final_human_replay_obtained": false
+}

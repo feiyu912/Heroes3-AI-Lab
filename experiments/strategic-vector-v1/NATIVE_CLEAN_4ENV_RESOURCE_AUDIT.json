@@ -1,0 +1,82 @@
+{
+  "run": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-clean-4env-01",
+  "schema": "synchronous-vector-collection-v2",
+  "checkpoint_sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+  "policy_version": "clean-prior-v3-zero-update",
+  "environments": 4,
+  "jobs": [
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102200
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "EmptyAI",
+      "blue": "DirectorAI",
+      "seed": 2026102201
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "Nullkiller2",
+      "seed": 2026102202
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "Nullkiller2",
+      "blue": "DirectorAI",
+      "seed": 2026102203
+    }
+  ],
+  "inference_schedule": "barrier",
+  "status": "complete_on_policy_batch",
+  "accepted_samples": 717,
+  "wall_seconds": 11.854102361999594,
+  "optimizer_steps": 0,
+  "resource_samples": 51,
+  "inference_batches": 242,
+  "maximum_forward_batch": 4,
+  "maximum_candidate_width": 108,
+  "peaks": {
+    "native": 4,
+    "workers": 4,
+    "simultaneous_pairs": 4,
+    "rss": 461619200,
+    "pss": 343962624,
+    "gpu_torch_allocated_sampled": 34665984,
+    "gpu_torch_reserved_sampled": 35651584,
+    "system_swap_used": 0
+  },
+  "simultaneous_witness": {
+    "seconds": 0.2167710310000075,
+    "native_pids": [
+      424,
+      425,
+      426,
+      427
+    ],
+    "worker_pids": [
+      420,
+      421,
+      422,
+      423
+    ]
+  },
+  "min_system_available": 14473846784,
+  "remaining_processes_report": [],
+  "episode_native_gate_valid": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "source_sha256": {
+    "plan.json": "1c55a8c344b3b0e803b3851b2ecf8a3f2ac9aa78e9d4db901870253a4b9bc82b",
+    "batch.json": "3cc9e377cb622d5281b922d41d5ba980129dd9e7db1ff40199f3460b53b2f39c",
+    "resources.jsonl": "f51fb797832b67ebcb6ecb1463ac647e121cac3e45957dc64977e0b70e33509f",
+    "inference-batches.jsonl": "f9349970d4815e009f988429e61ad6503a27158051c1968ac239774e36088f7a"
+  },
+  "limitations": "Sampled process RSS/PSS excludes manager CPU RSS; global available RAM includes it. GPU fields are sampled Torch allocator values, not hardware total VRAM or an instantaneous CUDA peak. Outcomes here belong only to this recorded checkpoint/native/protocol; no new clean-prior score is inferred."
+}

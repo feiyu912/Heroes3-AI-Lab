@@ -1,0 +1,98 @@
+{
+  "episode_index": 12,
+  "episode_id": "3a5f71d11666274c100633ffbbc6edc14d412c4ce135fb6c8571e40a9ef47c38",
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-02-development",
+    "red": "DirectorAI",
+    "blue": "EmptyAI",
+    "seed": 2026102212
+  },
+  "valid": true,
+  "reward": 1.0,
+  "decisions": 264,
+  "native_consumption_verified": true,
+  "native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/vector-da7383a7-12-2026102212-4mbywi2t",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-02-development",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102212,
+      "seconds": 120,
+      "tag": "vector-da7383a7-12",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-012/agent",
+      "pool_lock_fd": 22,
+      "pool_lock_dev": 2096,
+      "pool_lock_inode": 674895,
+      "report_dir": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-012",
+      "native_pid_file": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-012/native-pid.json",
+      "lab_root": "/root/heroes3-ai-lab"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "interrupted": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "red",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "EmptyAI"
+    },
+    "turns": 30,
+    "moves_requested": 264,
+    "move_replies": 264,
+    "changed_tile_replies": 264,
+    "changed_tile_replies_note": "Legacy reply-coordinate count includes blocking visits; use displacement_replies for native movement results.",
+    "displacement_replies": 260,
+    "blocking_visit_replies": 4,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "6425927035833f5dd07b3f106bba596819d583ed23ce541bd3a27087bb484a95",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 30.80879816400011,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "0913669ec5c351afe9a9782f1ae65bbb5fc8bb1c691feee4a87f64c22bb8bb27",
+    "strategy_trace_records": 1247,
+    "native_calendar_last_day": 30,
+    "turns_source": "native strategy state calendar day; not a count of sampled decisions",
+    "strategy_targets_sha256": "43e051066badda3aab1f07df7a43f550c0318edb47a218476bc0fcaf64790c95",
+    "strategy_targets_records": 256,
+    "strategy_decisions_sha256": "96b489150b0fb4162b5bd936931021e7c477bf79cdf8aed47c72d269d2721cc5",
+    "strategy_decision_records": 264,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/vector-da7383a7-12-2026102212-4mbywi2t/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 345553,
+        "sha256": "936d7f34642a2b3b014552db26c86f91e54f33f1fadca9518387aafced921a73"
+      }
+    ]
+  },
+  "rollout_dir": "/root/heroes3-ai-lab/evaluations/strategic-vector-capacity-learned-01/scale-24/env-012/agent",
+  "generator_seed": 4354893462990447306,
+  "native_event_audit": {
+    "valid": true,
+    "counts": {
+      "move_applied": 264,
+      "move_failed": 0,
+      "economy_failed": 0,
+      "query_failed": 0,
+      "server_rejected": 0
+    },
+    "evidence": [],
+    "move_reply_count": 264,
+    "failed_move_reply_count": 0,
+    "blocking_visit_reply_count": 4,
+    "expected_actions": 264,
+    "missing_ack_count": 0,
+    "missing_execution_reply_count": 0,
+    "terminal_ack_missing_after_execution": false,
+    "terminal_native_visit_execution_proof": null,
+    "terminal_unconfirmed_action_indices": [],
+    "classification": "complete_execution"
+  }
+}

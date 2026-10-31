@@ -1,0 +1,19 @@
+# Terminal-drain prefix-credit executable package
+
+Root-reviewed design is copied unchanged as `APPROVED_PLAN.md`. `REGISTERED_CURRICULUM.json` materializes the16 TRAIN cases,64 case/role/opponent cells and common native/private sampling seeds. No old sources or evidence are edited.
+
+This package implements `run.py` → zero-optimizer qualification → both paired micro stages61/62 → each same optimizer chain63..68 → optional final96DEV. Each completed stage is independently checked by `audit.py` before the next stage. Only `--execute` obtains GPU→pool locks or starts a learner/environment. `train.py` requires the lease-owning controller environment. Default controller is plan-only. Future explicit root invocation from WSL is:
+
+```
+PYTHONPATH=/mnt/g/Heroes3-AI-Lab/research /root/heroes3-ai-lab/gpu-venv/bin/python /mnt/g/Heroes3-AI-Lab/experiments/battle-terminal-credit-native-20261023/run.py --out /root/heroes3-ai-lab/evaluations/battle-terminal-credit-01 --execute --evaluate
+```
+
+This command is documented, **not executed** during preparation. Resource ownership remains with root's strategic pilot until root hands it over.
+
+`train.py` is a lightweight spawn-safe bootstrap; `learner_impl.py` restores the full approved model/named Adam/four RNG and actual call counter7680, or a matching completed per-arm even-update boundary. Native child imports must not load Torch: a subprocess CPU test verifies the bootstrap and actual native startup records/rejects worker Torch imports. The learner reapplies all RNG after capacity probing and before sampling. Per phase:32 admitted steps→PPO1,32 admitted steps→hold policy,64 suffix steps under the same behavior policy/private sampling generators→PPO2. Suffix global RNG/model/Adam identity is actually asserted. Counter fields separately store admitted rows, suffix native rows and total native rows; suffix rows never become actor/critic/entropy loss rows. All successful updates save exact model/Adam/all RNG/counters and read back. KL budget mismatch preserves the checkpoint and stops, without forcing updates/reseeding. Qualification consumes2048 actual observations with0 optimization and no claim of admitted training.
+
+`recorded_vector.py` derives from the accepted vector worker and additionally copies the actual full synchronous `env.step` return before any normal auto-reset. Every decision and actual worker return is append-only binary evidence. Records preserve complete NN graph/logits/probabilities/value, sampled legal candidate/native ID, wrapped outcome and actual native return. A pending decision remains if a request fails. Prefix/suffix files record behavior-checkpoint identity, arrays and journal SHA. `targets.py` preserves the original production float32 GAE; the copied reviewed CPU math supplies eligibility/reference checks. `audit.py` independently verifies raw graph continuity, actual terminal/reward/potential, NN selection legality/probability, target reconstruction, no suffix loss membership and CPU checkpoint restoration. Synthetic fixtures are explicitly rejected by the native auditor.
+
+`evaluate.py` releases learner leases then owns pool for fixed96 DEV, seedbase2026107600,8 workers. It uses copied repaired pending→parent-finalization behavior, independent full raw paired review and complete CPU NN probability replay. Parent is correctly calledparent60. No interim DEV, retries or checkpoint selection.
+
+CPU preparation checks restore the actual control60 boundary, run production target edge cases, and invoke the actual NN collector over explicitly synthetic, marked transition fixtures with real historical TRAIN graph inputs. Those fixtures test legal sampling/private RNG/recording and are not native qualification, expert demonstrations or learning. AST/import/plan-only checks do not certify native execution. See latest CPU report and plan-only output. The first actual qualification must still run and independently pass before any optimization.

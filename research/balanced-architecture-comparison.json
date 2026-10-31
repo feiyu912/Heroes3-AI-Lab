@@ -1,0 +1,110 @@
+[
+  {
+    "architecture": "mlp",
+    "split": "validation",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-mlp-validation.json",
+    "summary": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 17,
+      "win_rate": 0.3541666666666667,
+      "wilson95": [
+        0.23433457112685735,
+        0.4956120354593591
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 70.47916666666667
+    }
+  },
+  {
+    "architecture": "mlp",
+    "split": "test",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-mlp-test.json",
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 43,
+      "win_rate": 0.26875,
+      "wilson95": [
+        0.20607446423090833,
+        0.3422697902197317
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.30625
+    }
+  },
+  {
+    "architecture": "attention",
+    "split": "validation",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-attention-validation.json",
+    "summary": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 13,
+      "win_rate": 0.2708333333333333,
+      "wilson95": [
+        0.16565803561632889,
+        0.40997234616201117
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 73.125
+    }
+  },
+  {
+    "architecture": "attention",
+    "split": "test",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-attention-test.json",
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 58,
+      "win_rate": 0.3625,
+      "wilson95": [
+        0.2920431858352033,
+        0.43940474924355566
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 86.75625
+    }
+  },
+  {
+    "architecture": "gnn",
+    "split": "validation",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-gnn-validation.json",
+    "summary": {
+      "policy": "model",
+      "battles": 48,
+      "wins": 18,
+      "win_rate": 0.375,
+      "wilson95": [
+        0.2521507240406812,
+        0.5163749387475043
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 69.97916666666667
+    }
+  },
+  {
+    "architecture": "gnn",
+    "split": "test",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/balanced-bc-gnn-test.json",
+    "summary": {
+      "policy": "model",
+      "battles": 160,
+      "wins": 48,
+      "win_rate": 0.3,
+      "wilson95": [
+        0.23436254021925296,
+        0.37501627444076
+      ],
+      "truncated": 0,
+      "invalid_actions": 0,
+      "mean_permanent_units_lost": 90.43125
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "cpu_fixture_optimizer_steps": 1,
+  "cuda_optimizer_steps": 0,
+  "delivered_schema4_training_updates": 0,
+  "model_and_Adam_exact": true,
+  "stop_bias_moment_restored": true,
+  "cpu_and_python_rng_exact": true,
+  "save_does_not_advance_rng": true,
+  "atomic_fault_preserved_old_file": true,
+  "rejected": [
+    "cpu_fixture_deployment",
+    "old_weights_loader",
+    "partial_resume",
+    "protocol_change",
+    "adam_counter",
+    "cpu_as_cuda",
+    "bad_moment_shape"
+  ],
+  "checkpoint_sha256": "ba1c8ff46a84b0cc7232137b77a1feecf58a30361c87ca9bc87babe9bb8e984f",
+  "purpose": "CPU test only; deployment and CUDA resume rejected"
+}

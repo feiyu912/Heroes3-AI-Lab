@@ -1,0 +1,1 @@
+{"mods": {"validation": "off"}, "general": {"music": 0, "sound": 0, "showIntro": false}, "adventure": {"enemyMoveTime": 0, "heroMoveTime": 0}, "server": {"ML": {"statsMode": "disabled"}}, "session": {"onlyai": true}}

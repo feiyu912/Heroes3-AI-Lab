@@ -1,0 +1,64 @@
+{
+  "run": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-02",
+  "schema": "synchronous-vector-collection-v1",
+  "checkpoint_sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+  "policy_version": "initial-v3",
+  "environments": 2,
+  "jobs": [
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102200
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "EmptyAI",
+      "blue": "DirectorAI",
+      "seed": 2026102201
+    }
+  ],
+  "inference_schedule": "not recorded by historical collector",
+  "status": "complete_on_policy_batch",
+  "accepted_samples": 572,
+  "wall_seconds": 10.383945021000272,
+  "optimizer_steps": 0,
+  "resource_samples": 46,
+  "inference_batches": 425,
+  "maximum_forward_batch": 2,
+  "maximum_candidate_width": 101,
+  "peaks": {
+    "native": 2,
+    "workers": 2,
+    "simultaneous_pairs": 2,
+    "rss": 226971648,
+    "pss": 181818368,
+    "gpu_torch_allocated_sampled": 34665984,
+    "gpu_torch_reserved_sampled": 35651584,
+    "system_swap_used": 0
+  },
+  "simultaneous_witness": {
+    "seconds": 0.2088781040001777,
+    "native_pids": [
+      415,
+      416
+    ],
+    "worker_pids": [
+      413,
+      414
+    ]
+  },
+  "min_system_available": 14640476160,
+  "remaining_processes_report": [],
+  "episode_native_gate_valid": [
+    true,
+    true
+  ],
+  "source_sha256": {
+    "plan.json": "9d5c4069fdb86bc837bea715127b06cb5a35681c24501750ef5871f108060d0c",
+    "batch.json": "499f991d0e527d7c5e5e1d7d18ffa2053af4be2005d1fb3c0acc70c8e5a827e9",
+    "resources.jsonl": "92e9bccd2e646886e176d50de15a4d3db6fd374952a6307440db57e272b3911b",
+    "inference-batches.jsonl": "c62b4ab65120730f264c9cc2a76671628edb4b4b17aa94aeda10177eff552b7e"
+  },
+  "limitations": "Sampled process RSS/PSS excludes manager CPU RSS; global available RAM includes it. GPU fields are sampled Torch allocator values, not hardware total VRAM or an instantaneous CUDA peak. Outcomes here belong only to this recorded checkpoint/native/protocol; no new clean-prior score is inferred."
+}

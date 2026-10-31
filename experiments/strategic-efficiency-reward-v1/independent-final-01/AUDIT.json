@@ -1,0 +1,670 @@
+{
+  "passed": true,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "audit_optimizer_steps": 0,
+  "target_verify_independently_rerun": true,
+  "source_closure_verified": true,
+  "three_independent_negative_cases": [
+    "missing_source",
+    "wrong_parent",
+    "wrong_arms"
+  ],
+  "control_full_gradient_check_independently_rerun": false,
+  "control_CPU_gradient_certificate_verified": true,
+  "objective_and_PPO_loop_source_equality_independently_checked": true,
+  "checkpoints": {
+    "control": {
+      "sha256": "1cb4da8f816983831665069b880ea262b2af0d854cb87ccb2c2c408ed834006f",
+      "optimizer_steps": 132,
+      "GPU_recovery_certificate_verified": true,
+      "GPU_recovery_independently_rerun": false
+    },
+    "treatment": {
+      "sha256": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15",
+      "optimizer_steps": 132,
+      "GPU_recovery_certificate_verified": true,
+      "GPU_recovery_independently_rerun": false
+    }
+  },
+  "saved_RNG_and_sampling_states_equality_independently_checked_CPU": true,
+  "episode_targets": [
+    {
+      "episode_id": "a481228c6d3a62f642f5b046cd8fa616b6c2dc2bc924aca68695f54985ae377a",
+      "native_reward": 1.0,
+      "first_day": 1,
+      "terminal_day": 106,
+      "elapsed": 105,
+      "treatment": 0.9708333333333333
+    },
+    {
+      "episode_id": "327d2df19204977d329a6132ced564c8fe3c98f14e09052806b136ff2f14ac5e",
+      "native_reward": 1.0,
+      "first_day": 1,
+      "terminal_day": 44,
+      "elapsed": 43,
+      "treatment": 0.9817796610169491
+    },
+    {
+      "episode_id": "803da278866cc7c317ec56ea1b9cae995f23634ae24886a0f0fb3b579926b25e",
+      "native_reward": -1.0,
+      "first_day": 1,
+      "terminal_day": 11,
+      "elapsed": 10,
+      "treatment": -1
+    },
+    {
+      "episode_id": "d7b0310c4122c4ff2563c6644c4eb57a0f966c40fff56d1722d29afc23fd1a58",
+      "native_reward": -1.0,
+      "first_day": 1,
+      "terminal_day": 10,
+      "elapsed": 9,
+      "treatment": -1
+    },
+    {
+      "episode_id": "12ce8add5831e15b472aa7bb33c5c6f388cebddae66163fc0f10aea2f03c015e",
+      "native_reward": 1.0,
+      "first_day": 1,
+      "terminal_day": 42,
+      "elapsed": 41,
+      "treatment": 0.9823275862068965
+    },
+    {
+      "episode_id": "11e715da656bfea5abcb2365e102c813a8c8a932803cffc13509ce810792efcf",
+      "native_reward": 1.0,
+      "first_day": 1,
+      "terminal_day": 38,
+      "elapsed": 37,
+      "treatment": 0.9834821428571429
+    },
+    {
+      "episode_id": "317fb792a6d39bd5e314d988575ba2271371dd8cea5c051d7e5a467a81a90433",
+      "native_reward": -1.0,
+      "first_day": 1,
+      "terminal_day": 32,
+      "elapsed": 31,
+      "treatment": -1
+    },
+    {
+      "episode_id": "81a12f3f5b6644c7bef1cce3fa75fc158687da740df2adf8f4edf641238765cb",
+      "native_reward": -1.0,
+      "first_day": 1,
+      "terminal_day": 25,
+      "elapsed": 24,
+      "treatment": -1
+    }
+  ],
+  "train_rows": 2111,
+  "train_argmax_differences": 0,
+  "train_forward_KL_mean": 1.8688294040248143e-08,
+  "raw_DEV_games_independently_reaudited": 16,
+  "DEV_proposals_CPU_argmax_replayed": 7364,
+  "DEV_argmax_end_turns": 0,
+  "baseline_wins": 4,
+  "candidate_wins": 4,
+  "pairs": [
+    {
+      "pair": 0,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102400
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "trace_terminal_day": 33,
+          "policy_decisions": 313,
+          "counts": {
+            "policy_moves": 313,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 32,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 313,
+            "blocking_visits": 5
+          }
+        },
+        "b": {
+          "win": true,
+          "trace_terminal_day": 33,
+          "policy_decisions": 313,
+          "counts": {
+            "policy_moves": 313,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 32,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 313,
+            "blocking_visits": 5
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 313,
+        "once_count": 313,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "6f631ff0e78f69e087556f8ba1406e5abcc2f0526f27fd9a72dc18f246b1d738",
+        "once_projection_sha256": "6f631ff0e78f69e087556f8ba1406e5abcc2f0526f27fd9a72dc18f246b1d738"
+      }
+    },
+    {
+      "pair": 1,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102401
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "trace_terminal_day": 15,
+          "policy_decisions": 144,
+          "counts": {
+            "policy_moves": 144,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 144,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": true,
+          "trace_terminal_day": 15,
+          "policy_decisions": 144,
+          "counts": {
+            "policy_moves": 144,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 144,
+            "blocking_visits": 4
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 144,
+        "once_count": 144,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "81768a041cacc627ef9b30f26c6b675521e586b6f33b7817e409f9460365bc3c",
+        "once_projection_sha256": "81768a041cacc627ef9b30f26c6b675521e586b6f33b7817e409f9460365bc3c"
+      }
+    },
+    {
+      "pair": 2,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102402
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "trace_terminal_day": 82,
+          "policy_decisions": 825,
+          "counts": {
+            "policy_moves": 825,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 82,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 825,
+            "blocking_visits": 29
+          }
+        },
+        "b": {
+          "win": false,
+          "trace_terminal_day": 82,
+          "policy_decisions": 825,
+          "counts": {
+            "policy_moves": 825,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 82,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 825,
+            "blocking_visits": 29
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 2182,
+        "once_count": 2182,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "65b501d0756a10f83bf5467fa5f9773972f3f443a99754007eaeca071e87203f",
+        "once_projection_sha256": "65b501d0756a10f83bf5467fa5f9773972f3f443a99754007eaeca071e87203f"
+      }
+    },
+    {
+      "pair": 3,
+      "job": {
+        "map": "takeover-v2-dev-01-river",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102403
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "trace_terminal_day": 58,
+          "policy_decisions": 552,
+          "counts": {
+            "policy_moves": 552,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 57,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 552,
+            "blocking_visits": 30
+          }
+        },
+        "b": {
+          "win": false,
+          "trace_terminal_day": 58,
+          "policy_decisions": 552,
+          "counts": {
+            "policy_moves": 552,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 57,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 552,
+            "blocking_visits": 30
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 1965,
+        "once_count": 1965,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "62a583355745deb19a0c8f6d25802aa886adfd735a63240743993582cf41cee5",
+        "once_projection_sha256": "62a583355745deb19a0c8f6d25802aa886adfd735a63240743993582cf41cee5"
+      }
+    },
+    {
+      "pair": 4,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 0,
+        "seed": 2026102404
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "trace_terminal_day": 41,
+          "policy_decisions": 427,
+          "counts": {
+            "policy_moves": 427,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 40,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 427,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": true,
+          "trace_terminal_day": 41,
+          "policy_decisions": 427,
+          "counts": {
+            "policy_moves": 427,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 40,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 427,
+            "blocking_visits": 4
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 427,
+        "once_count": 427,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "0e9df291ad7b66458f13052ff3b4edb7505a80bc191934cc26c7bf7cabb8b3e2",
+        "once_projection_sha256": "0e9df291ad7b66458f13052ff3b4edb7505a80bc191934cc26c7bf7cabb8b3e2"
+      }
+    },
+    {
+      "pair": 5,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "EmptyAI",
+        "player": 1,
+        "seed": 2026102405
+      },
+      "arms": {
+        "a": {
+          "win": true,
+          "trace_terminal_day": 15,
+          "policy_decisions": 144,
+          "counts": {
+            "policy_moves": 144,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 144,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": true,
+          "trace_terminal_day": 15,
+          "policy_decisions": 144,
+          "counts": {
+            "policy_moves": 144,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 14,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 144,
+            "blocking_visits": 4
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 144,
+        "once_count": 144,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "376b1b4d63021a0d44cf58cbe64cf1c5626008ecc8a20b611cf5264fd9180ed4",
+        "once_projection_sha256": "376b1b4d63021a0d44cf58cbe64cf1c5626008ecc8a20b611cf5264fd9180ed4"
+      }
+    },
+    {
+      "pair": 6,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 0,
+        "seed": 2026102406
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "trace_terminal_day": 11,
+          "policy_decisions": 97,
+          "counts": {
+            "policy_moves": 97,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 11,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 97,
+            "blocking_visits": 4
+          }
+        },
+        "b": {
+          "win": false,
+          "trace_terminal_day": 11,
+          "policy_decisions": 97,
+          "counts": {
+            "policy_moves": 97,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 11,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 97,
+            "blocking_visits": 4
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 193,
+        "once_count": 193,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "a04dbfe2a078eeaa317a3bc0bf8353e03b7cc03663cf128f959a6b39c8b5dc58",
+        "once_projection_sha256": "a04dbfe2a078eeaa317a3bc0bf8353e03b7cc03663cf128f959a6b39c8b5dc58"
+      }
+    },
+    {
+      "pair": 7,
+      "job": {
+        "map": "takeover-v2-dev-02-reserves",
+        "opponent": "Nullkiller2",
+        "player": 1,
+        "seed": 2026102407
+      },
+      "arms": {
+        "a": {
+          "win": false,
+          "trace_terminal_day": 127,
+          "policy_decisions": 1180,
+          "counts": {
+            "policy_moves": 1180,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 126,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 1180,
+            "blocking_visits": 51
+          }
+        },
+        "b": {
+          "win": false,
+          "trace_terminal_day": 127,
+          "policy_decisions": 1180,
+          "counts": {
+            "policy_moves": 1180,
+            "policy_end_turns": 0,
+            "automatic_end_turns": 126,
+            "late_end_turn_acks": 0,
+            "diagnostic_decisions": 0,
+            "new_policy_decisions": 1180,
+            "blocking_visits": 51
+          }
+        }
+      },
+      "request_first_difference": null,
+      "semantic_action_first_difference": null,
+      "step_first_difference": null,
+      "full_server_movement_projection": {
+        "off_count": 3375,
+        "once_count": 3375,
+        "first_difference": {
+          "index": 2324,
+          "off_eof": false,
+          "once_eof": false,
+          "off": {
+            "hero_log_name": "hero.core.krellion.name",
+            "start": [
+              10,
+              10,
+              0
+            ],
+            "end": [
+              10,
+              11,
+              0
+            ]
+          },
+          "once": {
+            "hero_log_name": "hero.core.thane.name",
+            "start": [
+              7,
+              8,
+              0
+            ],
+            "end": [
+              7,
+              9,
+              0
+            ]
+          },
+          "off_line": 302430,
+          "once_line": 302427
+        },
+        "recorded_order_exact": false,
+        "off_projection_sha256": "863c439bcd36701f90ebf31fe8863e144d3e2aa604ada168f1d51c6118cc9f2c",
+        "once_projection_sha256": "0d1778100228019ad515f20d9785b0dac391abe3e05412abe6c305257e438c1d"
+      }
+    }
+  ],
+  "ability_improvement_claim": false,
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/review.py": "b7bac67e9eab03435e7661c6b0d25200915e0352d38aeb62946bbe84ebe84676",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-targets-01/TARGETS.json": "b5fc0fba63fafc6c62513777b10ce92a5eefd4fe8b9a05b9da826746af123ce9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/CPU_REPORT.json": "8836e2c3ea1bd1436978ed256ffaffe4c0b3861dc5c43a8f8a02fec5f3feda52",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/matched-audit-01/AUDIT.json": "234d75429254df90768205bed105fdc3c5db9a13b5c75ba7f8937f54741a89b9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/matched-audit-01/POLICY_DIFFERENCES.json": "167e84487fde925c8f12c77de2c8621cab9dc6eacac9d546540777e4a5418fca",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-control-update-01/update-1.pt": "1cb4da8f816983831665069b880ea262b2af0d854cb87ccb2c2c408ed834006f",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-control-update-01/PLAN.json": "b7e99d55a840907ee9a756b91a87e9a6dd65f71251886dc9fe239cd9a85af9e3",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-control-update-01/RESULT.json": "513a141f36f76ca6e9d16f576faa980083629d93ccecbf74f4612fff15cdc3aa",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/control-checkpoint-cuda-audit-01/AUDIT.json": "5c337f43034a5ed16d0f1f333d3f136f38a41de00e27e6aa99f70a2f09b02fa8",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-treatment-update-01/update-1.pt": "daa2a4e0f138df2079eda562712e6382c9bec40da8838426d3470f78d3f1ff15",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-treatment-update-01/PLAN.json": "2b2acbd48de9a07cb57566040751be82786e4b4d0bde7d9395c0b28d1d949397",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-treatment-update-01/RESULT.json": "97108279268467b8fa346ccf4d4aa099303db3bc53f27963b67acda31d360237",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/treatment-checkpoint-cuda-audit-01/AUDIT.json": "feba4b4cd9066d82f133878662927d6118ccd7415fffac1702113f8c4902f455",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/PLAN.json": "24dc702a1a7117f88907e649da27d6e88845a252002550315a24fec3e12ef2b4",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/EXECUTION.json": "ef42c33331b78f7bd7535038d054d52ceb0ecc78db47b1c0b885e8bc22dcb085",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/client.log": "499a83c8f0e2583c6fd27388fa804b6fbd192862aa62434333d10a929b6bf674",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/typed.jsonl": "fc8b293e0c5269b797aff72ca83af59e3d3037cf5d781616f2f964308b4e33ac",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/strategy-trace.jsonl": "ba055e0423868eb0d32de90afb06eac3313a7e4efa475bf256205b7e3b3c74b7",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/a/native/agent/typed-broker.jsonl": "1ad42feee240a89a0e24321b4881c2c1d860496f2ba4eeacf3f4491038b04f88",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-00/a/raw-audit/AUDIT.json": "dd5830f8dffa0007913b269ddd7889b56de06ba5504c1aa24e8a10b4d02b918b",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/PLAN.json": "259ce31f4127ddea124ec833c1411d0da1fe6f91ab3680e36c5510691c6345ba",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/EXECUTION.json": "eb27017fba6fd3c7eaf1449f1f025a4ead1655dec90e2a34e4a259bb16bee582",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/client.log": "92c64af2023e2bd956b9f7116fb023c25e6146604e34b72ae1273d20f69596f4",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/typed.jsonl": "fc8b293e0c5269b797aff72ca83af59e3d3037cf5d781616f2f964308b4e33ac",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/strategy-trace.jsonl": "ba055e0423868eb0d32de90afb06eac3313a7e4efa475bf256205b7e3b3c74b7",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-00/b/native/agent/typed-broker.jsonl": "b22d603d999d7bdcde0eacf88ee12c2be1a12e881cac1cfc550e99c91ae3fdd7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-00/b/raw-audit/AUDIT.json": "8ffeebc3ef8713ba2b9e9f311b974753de79afd237603f2d130d11a785c5289b",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/PLAN.json": "d6d73f3627c72cecdcf511f22153a1d2a3988249b17dca7902f3562a6cd404d1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/EXECUTION.json": "b6cc841ae37eff8f6205be5ce7b893b643d408ec0263f5adc277bf9212ed9331",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/client.log": "1b0ef70cb3db3570eb9e56918dfe0377fbd553c3a3f322363871dccbd798e405",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/typed.jsonl": "6de6d0ca6a0c8fa0e4478a6cac44dc65c3a66398b8836cd69eae56e81e8f6c7e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/strategy-trace.jsonl": "26682ca790542d319a3ccc566fa2b8c8fcae55727de1e7faac557f26cd08d50c",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/a/native/agent/typed-broker.jsonl": "d290b98558a43716fe19503edf4d89cd111a702655ab4b0d25fcf1aee435679b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-01/a/raw-audit/AUDIT.json": "c35b6ff6999a52c49cff3d3614be468597d6929123c67481e398662ee21f0f7d",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/PLAN.json": "a732c29632fb82bedb79cc6cf00f5dc9b9c879c2c53ac0bc832a56641f18a256",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/EXECUTION.json": "7aa6419812d5ab80325f06e4fec42edc7969e8ff49976fe7df996a7cd1c118a1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/client.log": "3e549812351feb7b488e2331d0122895170566f009a95527c69c103da5be071e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/typed.jsonl": "6de6d0ca6a0c8fa0e4478a6cac44dc65c3a66398b8836cd69eae56e81e8f6c7e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/strategy-trace.jsonl": "26682ca790542d319a3ccc566fa2b8c8fcae55727de1e7faac557f26cd08d50c",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-01/b/native/agent/typed-broker.jsonl": "d1069c4cf57e00d493dea1ed26f320a0eaa5d864e6d3eec72974be9b8c8bda54",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-01/b/raw-audit/AUDIT.json": "ae1ca7f5d268c99967fd378f9ed5c6aaf10ad07bdac205b5e0cf951cb7ed69a2",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/PLAN.json": "e762fa53d1c4d1f6165aed6b3ea90e1a2ad7d5649e45f45b58a647c8a1bd2f56",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/EXECUTION.json": "a3b801ded87bca65601ec4dde8791c528ac143296de368503cd01eb0b3caef33",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/client.log": "ecda3e6562c59e9085e316bafdb68d194426fbc1546237b74279b52dc43caa1e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/typed.jsonl": "895e8cd63126da2ce3408818a9672a9171d90c125c71b3d12de4f019f0084228",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/strategy-trace.jsonl": "b76ecf10e49aff7e4d14c6bda71e7ecb034d6647acb0f145a91dd9f41021dad1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/a/native/agent/typed-broker.jsonl": "2b23167d546f01668fa0a46bd41e0aa94930f025ae5cd6ca62f56c85eea923d4",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-02/a/raw-audit/AUDIT.json": "4513643f5f7a195228ac445872666b4d05b8fa798e9289436fe0dce7a13ff3b4",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/PLAN.json": "60a64080d1d2f803d9a7ee99fa27a2a7b82fdd2aee6d1b32bf9f110ad4b10fb4",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/EXECUTION.json": "f49b86914e488b5a5c6817f912988e2d306f22b714c187e32a2ada15c35bf2dc",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/client.log": "4addae36247ba2e6f44534eda9fcc826394a36eb0f5f320e7b17d620f4202955",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/typed.jsonl": "895e8cd63126da2ce3408818a9672a9171d90c125c71b3d12de4f019f0084228",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/strategy-trace.jsonl": "b76ecf10e49aff7e4d14c6bda71e7ecb034d6647acb0f145a91dd9f41021dad1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-02/b/native/agent/typed-broker.jsonl": "fcab68fcdabf74ed894148a7acf0067b1bc75da39a0fa790ec5fb7f5f708a59f",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-02/b/raw-audit/AUDIT.json": "19ca21aec8397109820b4297c5a7d6184d71dab7d5315666923c322523449a06",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/PLAN.json": "8189d9282e6e7c830d15ad43cb5cc13cf383026a878bee870ec3ae4f4f471417",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/EXECUTION.json": "ed990d3bfbf0144bcbb0efa60a64ea1dc97f5951551fc3c27884327dca064bb7",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/client.log": "cc0aec0cf774f797d3544dc31a4ac32a5734199bc2e34f41d957b68f091cbc9a",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/typed.jsonl": "f0f7610bef62f9b95cdd952c0568a906a9c3af9de7e2f646267856f86a468c13",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/strategy-trace.jsonl": "5594e18f5faebb118fdd49d56c426822e9a18650274619803cb3177422b152db",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/a/native/agent/typed-broker.jsonl": "84d57df1155b2f3aca0d147ac060932db5a99841b82f44e102883693d95d573a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-03/a/raw-audit/AUDIT.json": "2f93c2a56b9299858ac18312818c6825b32d9fccde41944004da49e7ccfac6fa",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/PLAN.json": "f0130a0b3b14a1157b2a96abcfea2b16b88badb81c97be9157d9c42392151872",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/EXECUTION.json": "a574ce078fd191d81e42bb6775e17d000d31e61cb5d1f7fed674a9b287c50d97",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/client.log": "1a5780166fec359c64b0ce634bfaf1e50ba85e483d08bf95cfa716b466e3d5ae",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/typed.jsonl": "f0f7610bef62f9b95cdd952c0568a906a9c3af9de7e2f646267856f86a468c13",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/strategy-trace.jsonl": "5594e18f5faebb118fdd49d56c426822e9a18650274619803cb3177422b152db",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-03/b/native/agent/typed-broker.jsonl": "e90a743e49ca4363830f8c7409eb14ed82829dc272b555a37bf1ada9ab02725d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-03/b/raw-audit/AUDIT.json": "3d517065b8869793289b2edee3e15e9a1e51d44efa03f3401c0d42c9e5c8d07d",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/PLAN.json": "08798ff7483145243a7844d0391f64d59a776a7ef169330c5490838bc4b491a8",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/EXECUTION.json": "14c7fe18e3eb7ffa89c1ae3b586bdec89dbebe8fa2d0845600469d2c805a47ad",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/client.log": "aef170cb6cf625640f79956e7e77ae89b214a18c4c689dd2f3255fb9bd99fc99",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/typed.jsonl": "ae2e7f7a42bb6c98637cdf80bdf8175b53de7ac3c9e64b18b8fb798885a7fbf5",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/strategy-trace.jsonl": "c0881edb7e74fa9b073300f1ee7cce9bc23f7e2b906ffe3340ad6b254a8ccfd3",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/a/native/agent/typed-broker.jsonl": "f2f0f1d0193e274cef8517bf9378f64a101636fdbaf4df59cd8758deb5d703e7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-04/a/raw-audit/AUDIT.json": "fb3b2a757b8fabf6495c87309ada1b298acac22feb8bfcf53b980636138a1b2f",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/PLAN.json": "34c998c6c4932377206a981347caedf9c3e104ff93e466d2d07ed1a0a846f7ac",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/EXECUTION.json": "241d9fb4d0bccaedf0863388568f1d0ce2007d0da41c16488c2a0ea6d1c46ee6",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/client.log": "70a2f77d3cee82fb4e5737632628f32d82da105373f8241fc86a430a081c9ef1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/typed.jsonl": "ae2e7f7a42bb6c98637cdf80bdf8175b53de7ac3c9e64b18b8fb798885a7fbf5",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/strategy-trace.jsonl": "c0881edb7e74fa9b073300f1ee7cce9bc23f7e2b906ffe3340ad6b254a8ccfd3",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-04/b/native/agent/typed-broker.jsonl": "e2b6298f2f571d864c501d318fc9b02ad1df7f5304571fbe5f27007f99cfee35",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-04/b/raw-audit/AUDIT.json": "591c0516b4da700761bf45cf8f978276fc2e649c8e6228284e8c9605db1bef87",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/PLAN.json": "1342fdfb826c72c8918be296baf01e9779954aa4a73fed63115dbdc14c45a922",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/EXECUTION.json": "1163b1345f39aaacc53994a96e902c9fc55da6e96c5a6e91ed92aaf98dc8f5a6",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/client.log": "72f73e0d08b2ed08424177ede62341e4367218f6b197db1ebe007fa6c1727376",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/typed.jsonl": "661ffc5ef5fda95da0e1fa65343b5bf4f750b45ac30f741902ec34a84ae61f5b",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/strategy-trace.jsonl": "ef1274d28418d48f8bb1ce1f82e5af480db6ce6d536cfd7fcbfd07b7594c8f65",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/a/native/agent/typed-broker.jsonl": "d9261f4588f48cde9afb0265afe14460c727997e2f67d5cbee745cef36e5d0c9",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-05/a/raw-audit/AUDIT.json": "7ae0419af3f630bba7c06c50cd24e89f315bfa7fd051786a2028705b320397f5",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/PLAN.json": "8ed86edd356e3f60f32aff1c03bc7a43d6e03eb2a2e161cf2d2485c283c7c911",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/EXECUTION.json": "f45f598f793f598343a313f285446408e7c5809d3cdaede4b36d225971247558",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/client.log": "cd79cd8659218d59626ff0e40f81941e199d662306b784efbe96d966cf74489a",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/typed.jsonl": "661ffc5ef5fda95da0e1fa65343b5bf4f750b45ac30f741902ec34a84ae61f5b",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/strategy-trace.jsonl": "ef1274d28418d48f8bb1ce1f82e5af480db6ce6d536cfd7fcbfd07b7594c8f65",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-05/b/native/agent/typed-broker.jsonl": "7fcffc736f1d644e06519637802481ee518fa92a0e548f0423ebe52035a650af",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-05/b/raw-audit/AUDIT.json": "0dc0d7ba50f761b36f24016748de12b2714e957b213e7ea042dba42d3a1ffbf1",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/PLAN.json": "a6f3166efe439337158640014feb44d99ee30955fc23b198c3fb48dba2f7cd56",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/EXECUTION.json": "d927af33d751ae602f3d8bd9fdd749a8a0191a14256dbc0654f9873b99430a8c",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/client.log": "96c7de8371f4e41211f98cf9cfaa1fa57477430116ec610081c87d2bd9bf2012",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/typed.jsonl": "4870e130d4c438fbb396deb9b7b6b5dbbd6cbc14de022375364dfcb28ea1b68f",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/strategy-trace.jsonl": "9aca59b6d8bf938f4b84ab8e5cfff06547549458ee371bc81e9e31c834162dc9",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/a/native/agent/typed-broker.jsonl": "0698ba7332c324ccfa92103799d4e4a42d4065633502abfe2aa2c4501e8f8e5d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-06/a/raw-audit/AUDIT.json": "098d424e0c7da4d1c258544f5e822e46ca77173de875a28bd8a2bcd1a2f96e19",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/PLAN.json": "3caec3e56a48ee3c88c2402b06afbdbd352a7bfea1d1b8e9097d5952d1a2a905",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/EXECUTION.json": "9e83364b99130bf4f948054764436e802fe17a70ce5d39f4521e96504de1f5ca",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/client.log": "9cfb08353a6fcdf0c9a8c2be4d7b89f3c6894d210ae0b07095a228860b2c4ec2",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/typed.jsonl": "4870e130d4c438fbb396deb9b7b6b5dbbd6cbc14de022375364dfcb28ea1b68f",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/strategy-trace.jsonl": "9aca59b6d8bf938f4b84ab8e5cfff06547549458ee371bc81e9e31c834162dc9",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-06/b/native/agent/typed-broker.jsonl": "605c7dc0a496ec9b6bc28c7c6f0d533661025965c277270cc6a0ee59e889eada",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-06/b/raw-audit/AUDIT.json": "4d6afd2b8d8d52fbc30484b05e8affae8413df463de7cef66ceb66473aa0ee65",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/PLAN.json": "7f19d36adcf9b5bf73ebe076720f61fbb612867e04e4030f898432493400438e",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/EXECUTION.json": "b3aa97df6d71ffc01dbca4b4e556d93658286920930840f055f346a2bb3b1fcf",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/client.log": "a0983c3e20bb3011e3a455469136a4c426003226e8c8ff9333c05356693c5197",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/typed.jsonl": "66c72d984b111f10ee2018d0daadc0c3c9881404bae511c1e99fd49be94664eb",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/strategy-trace.jsonl": "852c50bd56f7321a625c95dfdf488c2104d818a169261a3e4964c42ab4873640",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/a/native/agent/typed-broker.jsonl": "25cf24fc590be614088073b778a98be6176407200ac6a86bac5d9e171e1c4ab7",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-07/a/raw-audit/AUDIT.json": "1642764a489fd303a07fca6ed4b379fbd0b9f46073a622a87628289e390d6fa7",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/PLAN.json": "4ad0a5ab5bf91199647e6ac494923cf7e81cf08e87aeb536e42cf84eae0feaca",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/EXECUTION.json": "b90b1a17a4e36441fed235c693d0ac6954bbdf88ca8995a3eaf7c16c4c8d535c",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/client.log": "0194ce05011133b5ff1d53e85a7a7c15ca8b00804bcb0ca71ed7606605d3204a",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/typed.jsonl": "66c72d984b111f10ee2018d0daadc0c3c9881404bae511c1e99fd49be94664eb",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/strategy-trace.jsonl": "852c50bd56f7321a625c95dfdf488c2104d818a169261a3e4964c42ab4873640",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/pair-07/b/native/agent/typed-broker.jsonl": "4c858c1465089490cd2e4218c646146a0149b9e73945e1557b57e3345fb9eed3",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/independent-final-01/pair-07/b/raw-audit/AUDIT.json": "f04c8fb1d200835741541a42959ca6a5eb140891ddedbb968b6e9b00b611f555",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/PLAN.json": "cf55683e4219010d385eb69c4f582601a9babcf54933a01bc12181a3277dfb03",
+    "/root/heroes3-ai-lab/evaluations/strategic-efficiency-paired-dev-01/RESULT.json": "294d3cacac3d25fc84d240f7736860fbc4402058a4344255ba3a976c5963a7ad"
+  },
+  "elapsed_seconds": 23.173737876000004
+}

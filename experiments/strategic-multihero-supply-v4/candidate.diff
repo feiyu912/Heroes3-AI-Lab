@@ -1,0 +1,419 @@
+--- v3/AI/DirectorAI/CDirectorAI.cpp
++++ v4/AI/DirectorAI/CDirectorAI.cpp
+@@ -68,6 +68,7 @@
+ 	pathfinderOptions = std::make_unique<PathfinderOptions>(*cb);
+ 	pathfinder = std::make_unique<PathfinderCache>(cb.get(), *pathfinderOptions);
+ 	logGlobal->info("DirectorAI: game interface ready for player %s", playerID.toString());
++ recoveryInit();
+ }
+ 
+ void CDirectorAI::initBattleInterface(std::shared_ptr<Environment> ENV, std::shared_ptr<CBattleCallback> CB, AutocombatPreferences AP)
+@@ -459,7 +460,7 @@
+ 
+ void CDirectorAI::requestRealized(PackageApplied * pa)
+ {
+- if(supplyMode()) {supplyAck(pa);return;}
++ if(supplyMode()) {try {if(!recoveryAck(pa))supplyAck(pa);}catch(const std::exception&e){typedFailure(e.what());}return;}
+  if(pa->player!=playerID) return;
+  if(pendingEconomy && static_cast<int>(pa->requestID)==economyRequest)
+  {
+@@ -495,7 +496,7 @@
+ 
+ void CDirectorAI::requestSent(const CPackForServer * pack, int requestID)
+ {
+- if(supplyMode()) {supplySent(pack,requestID);return;}
++ if(supplyMode()) {try {if(!recoverySent(pack,requestID))supplySent(pack,requestID);}catch(const std::exception&e){typedFailure(e.what());}return;}
+  if(auto reply=dynamic_cast<const QueryReply *>(pack)) queryRequests[requestID]=reply->qid;
+  if(pendingEconomy && (dynamic_cast<const BuildStructure *>(pack) || dynamic_cast<const RecruitCreatures *>(pack) ||
+     dynamic_cast<const ArrangeStacks *>(pack) || dynamic_cast<const HireHero *>(pack))) economyRequest=requestID;
+@@ -929,3 +930,5 @@
+ }
+ 
+ #include "SupplyAdapter.inc"
++
++#include "SupplyRecovery.inc"
+--- v3/AI/DirectorAI/CDirectorAI.h
++++ v4/AI/DirectorAI/CDirectorAI.h
+@@ -14,6 +14,8 @@
+  */
+ #pragma once
+ #include "SupplyController.h"
++#include "SupplyRecovery.h"
++#include "../../lib/json/JsonNode.h"
+ 
+ #include "../../lib/callback/CAdventureAI.h"
+ #include "../../lib/pathfinder/CGPathNode.h"
+@@ -46,6 +48,19 @@
+ 
+ private:
+  bool supplyMode() const;
++ std::map<int,std::pair<int,int>> recoveryOwned;
++ int recoveryLocalRequest=-1,recoverySaveRequest=-1,recoveryTargetTurn=0,recoveryBoundaryTurn=0;
++ bool recoveryPersistenceBusy=false,recoveryCheckpointDone=false,recoveryResumePending=false;
++ std::string recoveryNonce,recoverySaveName;
++ JsonNode recoveryPayload;
++ std::string recoveryEconomy() const;
++ supply_recovery_v4::Snapshot recoveryCurrent() const;
++ void recoveryEvent(const std::string & event,int request) const;
++ void recoveryInit();
++ bool recoveryResumeTurn(QueryID q);
++ bool recoveryBeforeAdvance();
++ bool recoverySent(const CPackForServer * pack,int request);
++ bool recoveryAck(PackageApplied * pa);
+  supply_v1::Controller supply;
+  supply_v1::TurnBoundaryGate supplyTurnGate;
+  std::map<int,int> supplyReplies;
+--- v3/AI/DirectorAI/SupplyAdapter.inc
++++ v4/AI/DirectorAI/SupplyAdapter.inc
+@@ -95,6 +95,7 @@
+  {
+   const bool oldEndPending=supply.pending && supply.pending->op==supply_v1::Op::End;
+   if(supplyTurnGate.defer(oldEndPending,q.getNum())) {supplyTrace("new_turn_deferred_for_old_end_ack");return;}
++  if(recoveryResumeTurn(q))return;
+   // Native load integration is deliberately disabled until save/sidecar/load proof exists.
+   if(std::getenv("LAB_ADV_SUPPLY_RESTORE")) throw std::runtime_error("supply_native_restore_not_qualified");
+   if(supply.main<0) supply.start(supplyWorld());
+@@ -109,6 +110,7 @@
+  try
+  {
+   if(!turnActive || typedProtocolFailed || supply.failed || endingTurn || supply.pending || supplyReplyRequest>=0) return;
++  if(recoveryBeforeAdvance())return;
+   // A queued genuine prompt is answered only after the previous scripted request ACK.
+   if(!supplyReplies.empty())
+   {
+--- v3/AI/DirectorAI/SupplyRecovery.h
++++ v4/AI/DirectorAI/SupplyRecovery.h
+@@ -0,0 +1,111 @@
++#pragma once
++#include "SupplyController.h"
++#include <cstdint>
++#include <fstream>
++#include <iomanip>
++#include <set>
++#include <sstream>
++#include <tuple>
++
++namespace supply_recovery_v4
++{
++inline constexpr const char* sourceToken="8bf43fd2ed69367a411d74bbf0b7b3bd152d9d6c63890c429900e0826cce1049";
++inline constexpr const char* epoch="supply-native-boundary-v4";
++inline void ensure(bool yes,const char*reason) {if(!yes)throw std::runtime_error(reason);}
++inline std::string sha256(const std::string&data)
++{
++ static const uint32_t k[64]={0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
++ 0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,
++ 0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,
++ 0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,
++ 0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
++ 0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,
++ 0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2};
++ auto rr=[](uint32_t x,int n){return (x>>n)|(x<<(32-n));};
++ std::vector<unsigned char>bytes(data.begin(),data.end());uint64_t bits=uint64_t(bytes.size())*8;bytes.push_back(128);
++ while(bytes.size()%64!=56)bytes.push_back(0);
++ for(int i=7;i>=0;--i)bytes.push_back(static_cast<unsigned char>(bits>>(i*8)));
++ uint32_t h[8]={0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19};
++ for(size_t offset=0;offset<bytes.size();offset+=64)
++ {
++  uint32_t w[64];for(int i=0;i<16;++i)w[i]=(uint32_t(bytes[offset+4*i])<<24)|(uint32_t(bytes[offset+4*i+1])<<16)|(uint32_t(bytes[offset+4*i+2])<<8)|bytes[offset+4*i+3];
++  for(int i=16;i<64;++i)w[i]=w[i-16]+(rr(w[i-15],7)^rr(w[i-15],18)^(w[i-15]>>3))+w[i-7]+(rr(w[i-2],17)^rr(w[i-2],19)^(w[i-2]>>10));
++  uint32_t a=h[0],b=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],q=h[7];
++  for(int i=0;i<64;++i){uint32_t t=q+(rr(e,6)^rr(e,11)^rr(e,25))+((e&f)^((~e)&g))+k[i]+w[i];uint32_t u=(rr(a,2)^rr(a,13)^rr(a,22))+((a&b)^(a&c)^(b&c));q=g;g=f;f=e;e=d+t;d=c;c=b;b=a;a=t+u;}
++  h[0]+=a;h[1]+=b;h[2]+=c;h[3]+=d;h[4]+=e;h[5]+=f;h[6]+=g;h[7]+=q;
++ }
++ std::ostringstream out;out<<std::hex<<std::setfill('0');for(auto value:h)out<<std::setw(8)<<value;return out.str();
++}
++inline std::string readFile(const std::string&path,size_t limit=128*1024*1024)
++{
++ std::ifstream in(path,std::ios::binary);ensure(bool(in),"recovery_file_missing");
++ in.seekg(0,std::ios::end);auto length=in.tellg();ensure(length>=0 && static_cast<uint64_t>(length)<=limit,"recovery_file_size");
++ std::string data(static_cast<size_t>(length),'\0');in.seekg(0);if(!data.empty())in.read(&data[0],data.size());ensure(bool(in),"recovery_file_read");return data;
++}
++using supply_v1::Army;using supply_v1::World;using supply_v1::Pos;
++struct Snapshot
++{
++ supply_v1::Controller control;
++ std::set<std::tuple<int,int,int>> visited;
++ World world;
++ std::string source,nonce,economy;
++ int player=-1,day=0;
++};
++inline void putArmy(std::ostream&out,const Army&a) {for(const auto&s:a)out<<s.creature<<' '<<s.count<<' ';out<<'\n';}
++inline void getArmy(std::istream&in,Army&a) {for(auto&s:a)in>>s.creature>>s.count;}
++inline size_t size(std::istream&in,size_t max)
++{long long n=-1;in>>n;ensure(bool(in)&&n>=0&&static_cast<uint64_t>(n)<=max,"recovery_collection_size");return size_t(n);}
++template<class T>void putMap(std::ostream&out,const std::map<int,T>&m)
++{out<<m.size()<<' ';for(const auto&p:m)out<<p.first<<' '<<p.second<<' ';out<<'\n';}
++template<class T>void getMap(std::istream&in,std::map<int,T>&m)
++{for(size_t n=size(in,1024);n;--n){int k;T v;in>>k>>v;ensure(bool(in)&&m.emplace(k,v).second,"recovery_duplicate_or_bad_map");}}
++inline std::string worldText(const World&w,const std::string&economy)
++{
++ std::ostringstream out;out<<w.heroes.size()<<'\n';
++ for(const auto&h:w.heroes){out<<h.id<<' '<<h.movement<<' '<<h.garrison<<' '<<h.boat<<' '<<h.pos.x<<' '<<h.pos.y<<' '<<h.pos.z<<'\n';putArmy(out,h.army);}
++ out<<w.towns.size()<<'\n';for(const auto&t:w.towns){out<<t.id<<' '<<t.visitor<<' '<<t.pos.x<<' '<<t.pos.y<<' '<<t.pos.z<<'\n';putArmy(out,t.army);}
++ out<<std::quoted(economy)<<'\n';return out.str();
++}
++inline std::string encode(const Snapshot&s)
++{
++ const auto&c=s.control;ensure(c.boundary(false,false,false,false)&&!c.exchangeDelivery,"recovery_live_control");
++ std::ostringstream out;out<<epoch<<'\n'<<std::quoted(s.source)<<' '<<std::quoted(s.nonce)<<' '<<s.player<<' '<<s.day<<'\n';
++ out<<c.main<<' '<<c.courier<<' '<<c.home<<' '<<c.turn<<' '<<c.cursor<<' '<<c.cycles<<' '<<int(c.phase)<<' '<<int(c.phaseBeforeExchange)<<' '
++ <<c.job<<' '<<c.successfulJobs<<' '<<c.incompleteAttempts<<' '<<int(c.jobStatus)<<' '<<std::quoted(c.deliveryReason)<<'\n';
++ putArmy(out,c.initialReserve);putArmy(out,c.cargoSlots);putMap(out,c.reserve);putMap(out,c.cargo);putMap(out,c.picked);putMap(out,c.delivered);putMap(out,c.spent);
++ out<<c.blocked.size()<<' ';for(const auto&p:c.blocked)out<<p.first<<' '<<std::quoted(p.second)<<' ';out<<'\n';
++ out<<c.goals.size()<<' ';for(const auto&p:c.goals)out<<p.first<<' '<<p.second.x<<' '<<p.second.y<<' '<<p.second.z<<' ';out<<'\n';
++ out<<s.visited.size()<<' ';for(const auto&p:s.visited)out<<std::get<0>(p)<<' '<<std::get<1>(p)<<' '<<std::get<2>(p)<<' ';out<<'\n';
++ out<<worldText(s.world,s.economy);return out.str();
++}
++inline Snapshot decode(const std::string&text)
++{
++ ensure(text.size()<=8*1024*1024,"recovery_control_too_large");Snapshot s;auto&c=s.control;std::istringstream in(text);std::string tag;in>>tag;ensure(tag==epoch,"recovery_epoch_mismatch");
++ in>>std::quoted(s.source)>>std::quoted(s.nonce)>>s.player>>s.day;
++ int phase=-1,before=-1,status=-1;
++ in>>c.main>>c.courier>>c.home>>c.turn>>c.cursor>>c.cycles>>phase>>before>>c.job>>c.successfulJobs>>c.incompleteAttempts>>status>>std::quoted(c.deliveryReason);
++ ensure(phase>=0&&phase<3&&before>=0&&before<3&&status>=0&&status<=3,"recovery_invalid_phase");
++ c.phase=supply_v1::Phase(phase);c.phaseBeforeExchange=supply_v1::Phase(before);c.jobStatus=supply_v1::JobStatus(status);
++ getArmy(in,c.initialReserve);getArmy(in,c.cargoSlots);getMap(in,c.reserve);getMap(in,c.cargo);getMap(in,c.picked);getMap(in,c.delivered);getMap(in,c.spent);
++ for(size_t n=size(in,2);n;--n){int id;std::string why;in>>id>>std::quoted(why);ensure(c.blocked.emplace(id,why).second,"recovery_duplicate_blocked");}
++ for(size_t n=size(in,2);n;--n){int id;Pos p;in>>id>>p.x>>p.y>>p.z;ensure(c.goals.emplace(id,p).second,"recovery_duplicate_goal");}
++ for(size_t n=size(in,65536);n;--n){int x,y,z;in>>x>>y>>z;ensure(s.visited.emplace(x,y,z).second,"recovery_duplicate_visited");}
++ for(size_t n=size(in,2);n;--n){supply_v1::Hero h;in>>h.id>>h.movement>>h.garrison>>h.boat>>h.pos.x>>h.pos.y>>h.pos.z;getArmy(in,h.army);s.world.heroes.push_back(h);}
++ for(size_t n=size(in,128);n;--n){supply_v1::Town t;in>>t.id>>t.visitor>>t.pos.x>>t.pos.y>>t.pos.z;getArmy(in,t.army);s.world.towns.push_back(t);}
++ in>>std::quoted(s.economy);ensure(bool(in),"recovery_truncated_control");in>>std::ws;ensure(in.eof(),"recovery_trailing_data");
++ ensure(s.player>=0&&s.player<8&&s.day>0&&c.turn>0&&c.cursor>=0&&c.cursor<2&&c.cycles>=0&&c.job>=0&&c.successfulJobs>=0&&c.incompleteAttempts>=0,"recovery_invalid_counter");
++ ensure(s.source.size()==64&&!s.nonce.empty()&&s.nonce.size()<=96,"recovery_identity_missing");
++ for(const auto&p:c.spent)ensure((p.first==c.main||p.first==c.courier)&&p.second>=0&&p.second<=54,"recovery_invalid_budget");
++ for(const auto&p:c.blocked)ensure(p.first==c.main||p.first==c.courier,"recovery_invalid_actor");
++ for(const auto&p:c.goals)ensure(p.first==c.main||p.first==c.courier,"recovery_invalid_goal_actor");
++ ensure(c.reserve==supply_v1::totals(c.initialReserve)&&!c.reserve.empty(),"recovery_reserve_mismatch");
++ auto sum=c.cargo;for(const auto&p:c.delivered)sum[p.first]+=p.second;ensure(sum==c.picked,"recovery_cargo_ledger_mismatch");
++ for(const auto*map:{&c.reserve,&c.cargo,&c.picked,&c.delivered})for(const auto&p:*map)ensure(p.first>=0&&p.second>0,"recovery_invalid_cargo_count");
++ c.validate(s.world);ensure(encode(s)==text,"recovery_noncanonical_encoding");return s;
++}
++inline bool nontrivial(const Snapshot&s,int targetTurn)
++{
++ const auto&c=s.control;int used=0;for(const auto&p:c.spent)used+=p.second;
++ return c.turn==targetTurn&&used>0&&c.jobStatus==supply_v1::JobStatus::Carrying&&!c.cargo.empty()&&c.delivered.empty()&&c.cargo==c.picked&&c.phase==supply_v1::Phase::Meeting&&!s.visited.empty();
++}
++}
+--- v3/AI/DirectorAI/SupplyRecovery.inc
++++ v4/AI/DirectorAI/SupplyRecovery.inc
+@@ -0,0 +1,156 @@
++#include "../../lib/CPlayerState.h"
++#include "../../lib/json/JsonNode.h"
++#include "../../lib/filesystem/Filesystem.h"
++#include "../../lib/networkPacks/SaveLocalState.h"
++
++namespace
++{
++ const std::string recoveryKey="heroes3_supply_v4";
++ std::string recoveryEnv(const char*name)
++ {const char*value=std::getenv(name);return value?std::string(value):std::string();}
++ JsonNode recoveryJSON(const std::string&text,const std::string&name)
++ {JsonParsingSettings options;options.strict=true;return JsonNode(text.data(),text.size(),options,name);}
++ bool recoveryNonceValid(const std::string&value)
++ {return !value.empty()&&value.size()<=96&&std::all_of(value.begin(),value.end(),[](unsigned char c){return (c>='a'&&c<='z')||(c>='A'&&c<='Z')||(c>='0'&&c<='9')||c=='-'||c=='_';});}
++}
++std::string CDirectorAI::recoveryEconomy() const
++{
++ std::ostringstream out;
++ for(int resource=0;resource<7;++resource)out<<cb->getResourceAmount(GameResID(resource))<<' ';
++ for(const auto*t:cb->getTownsInfo())
++ {
++  out<<"town "<<t->id.getNum()<<' ';
++  for(int building=0;building<44;++building)out<<t->hasBuilt(BuildingID(building));
++  out<<' '<<t->creatures.size()<<' ';
++  for(const auto&offer:t->creatures){out<<offer.first<<' '<<offer.second.size()<<' ';for(const auto&id:offer.second)out<<id.getNum()<<' ';}
++ }
++ return out.str();
++}
++supply_recovery_v4::Snapshot CDirectorAI::recoveryCurrent() const
++{
++ supply_recovery_v4::Snapshot s;s.control=supply;s.visited=supplyVisited;s.world=supplyWorld();s.economy=recoveryEconomy();
++ s.source=supply_recovery_v4::sourceToken;s.nonce=recoveryNonce;s.player=playerID.getNum();s.day=cb->getCalendar().getCurrentDay();return s;
++}
++void CDirectorAI::recoveryEvent(const std::string&event,int request) const
++{
++ JsonNode row;row["schema"].String()="supply-native-checkpoint-events-v4";row["event"].String()=event;
++ row["player"].Integer()=playerID.getNum();row["day"].Integer()=cb->getCalendar().getCurrentDay();row["own_turn"].Integer()=supply.turn;
++ row["request_id"].Integer()=request;row["local_state_request_id"].Integer()=recoveryLocalRequest;row["save_request_id"].Integer()=recoverySaveRequest;
++ row["owned_callback_pending"].Integer()=recoveryOwned.size();row["save_name"].String()=recoverySaveName;
++ row["payload"]=recoveryPayload;row["source_token"].String()=supply_recovery_v4::sourceToken;
++ row["current_control_text"].String()=supply_recovery_v4::encode(recoveryCurrent());
++ const auto json=row.toCompactString();logGlobal->info("DirectorSupplyCheckpoint %s",json);
++ const auto path=recoveryEnv("LAB_ADV_RECOVERY_EVENTS");
++ if(!path.empty()){std::ofstream file(path,std::ios::app);file<<json<<'\n';file.flush();supply_recovery_v4::ensure(bool(file),"recovery_event_write_failed");}
++}
++void CDirectorAI::recoveryInit()
++{
++ using namespace supply_recovery_v4;
++ const auto*player=cb->getPlayerState(playerID);
++ ensure(player&&player->playerLocalSettings,"recovery_own_settings_missing");
++ const JsonNode&embedded=(*player->playerLocalSettings)[recoveryKey];
++ const auto bundlePath=recoveryEnv("LAB_ADV_RECOVERY_BUNDLE");
++ if(!embedded.isNull() || !bundlePath.empty())
++ {
++  ensure(supplyMode()&&!embedded.isNull()&&!bundlePath.empty(),"recovery_load_requires_mode_bundle_and_native_payload");
++  const auto bundle=recoveryJSON(readFile(bundlePath,16*1024*1024),bundlePath);
++  ensure(bundle["epoch"].String()==epoch&&bundle["source_token"].String()==sourceToken,"recovery_bundle_epoch_or_source");
++  ensure(bundle["payload"].toCompactString()==embedded.toCompactString(),"recovery_bundle_native_payload_mismatch");
++  ensure(sha256(readFile(bundle["save_file"].String()))==bundle["save_sha256"].String(),"recovery_bundle_save_hash_mismatch");
++  ensure(embedded["epoch"].String()==epoch&&embedded["source_token"].String()==sourceToken,"recovery_native_epoch_or_source");
++  const auto text=embedded["control_text"].String();ensure(sha256(text)==embedded["control_sha256"].String(),"recovery_control_hash_mismatch");
++  auto snapshot=decode(text);ensure(snapshot.source==sourceToken&&nontrivial(snapshot,2),"recovery_not_target_boundary");
++  ensure(snapshot.player==playerID.getNum()&&snapshot.day==cb->getCalendar().getCurrentDay(),"recovery_player_or_day_mismatch");
++  ensure(worldText(snapshot.world,snapshot.economy)==worldText(supplyWorld(),recoveryEconomy()),"recovery_native_world_mismatch");
++  recoveryNonce=snapshot.nonce;recoveryPayload=embedded;recoverySaveName=embedded["save_name"].String();
++  supply=snapshot.control;supplyVisited=snapshot.visited;pathfinder->invalidatePaths();
++  recoveryResumePending=true;recoveryCheckpointDone=true;recoveryEvent("hydrated_native_payload",-1);return;
++ }
++ if(!supplyMode())return;
++ const auto target=recoveryEnv("LAB_ADV_RECOVERY_CHECKPOINT_TURN");
++ if(!target.empty())
++ {
++  ensure(target=="2","recovery_only_turn_two_supported");recoveryTargetTurn=2;recoveryNonce=recoveryEnv("LAB_ADV_RECOVERY_NONCE");
++  ensure(recoveryNonceValid(recoveryNonce)&&!recoveryEnv("LAB_ADV_RECOVERY_EVENTS").empty(),"recovery_checkpoint_configuration_missing");
++  recoverySaveName="Saves/supply-boundary-v4-"+recoveryNonce;
++  ensure(!CResourceHandler::get()->existsResource(ResourcePath(recoverySaveName,EResType::SAVEGAME)),"recovery_refuses_existing_save");
++ }
++}
++bool CDirectorAI::recoveryResumeTurn(QueryID q)
++{
++ if(!recoveryResumePending)return false;
++ using namespace supply_recovery_v4;
++ ensure(!turnActive&&!supply.pending&&supply.query<0&&!supplyTurnGate.waiting()&&supplyReplies.empty(),"recovery_resume_not_clean");
++ const auto saved=decode(recoveryPayload["control_text"].String());
++ ensure(encode(recoveryCurrent())==encode(saved),"recovery_state_changed_before_resumed_turn");
++ recoveryResumePending=false;turnActive=true;endingTurn=false;movementBusy=false;battleBusy=false;
++ supplyMoveSeen=false;recoveryEvent("resumed_saved_turn",-1);supplyTrace("hydrated_turn_resume");
++ // This is the engine's actual resume notification, not a newly earned turn.
++ // Do not call beginTurn, clear budgets/visited, choose roles or increment turn.
++ if(q!=QueryID(-1))supplyQueueReply(q,0);else supplyAdvance();return true;
++}
++bool CDirectorAI::recoveryBeforeAdvance()
++{
++ using namespace supply_recovery_v4;
++ if(recoveryLocalRequest==0||recoverySaveRequest==0||recoveryPersistenceBusy)return true;
++ if(!turnActive||endingTurn||supply.pending||movementBusy||battleBusy||!supplyReplies.empty()||supplyReplyRequest>=0||supplyTurnGate.waiting()||!recoveryOwned.empty())return false;
++ if((recoveryCheckpointDone||recoveryTargetTurn>0)&&recoveryBoundaryTurn!=supply.turn)
++ {recoveryBoundaryTurn=supply.turn;recoveryEvent("own_turn_boundary",-1);}
++ if(recoveryCheckpointDone||recoveryTargetTurn==0)return false;
++ auto snapshot=recoveryCurrent();if(!nontrivial(snapshot,recoveryTargetTurn))return false;
++ const auto text=encode(snapshot);(void)decode(text);
++ recoveryPayload["epoch"].String()=epoch;recoveryPayload["source_token"].String()=sourceToken;
++ recoveryPayload["nonce"].String()=recoveryNonce;recoveryPayload["save_name"].String()=recoverySaveName;
++ recoveryPayload["control_text"].String()=text;recoveryPayload["control_sha256"].String()=sha256(text);
++ // The server updates these settings. The current client's cached settings need
++ // not be updated until a later native load; never use that cache as write proof.
++ JsonNode local=*cb->getPlayerState(playerID)->playerLocalSettings;local[recoveryKey]=recoveryPayload;
++ recoveryPersistenceBusy=true;recoveryLocalRequest=0;recoveryCheckpointDone=true;
++ recoveryEvent("checkpoint_prepared",-1);cb->saveLocalState(local);return true;
++}
++bool CDirectorAI::recoverySent(const CPackForServer*pack,int request)
++{
++ using namespace supply_recovery_v4;
++ ensure(request>0&&int(pack->requestID)==request&&pack->player==playerID,"recovery_request_identity_mismatch");
++ int type=-1;
++ // CTypeList supports polymorphic getTypeID via the concrete dynamic branches.
++ if(dynamic_cast<const SaveLocalState*>(pack))type=CTypeList::getInstance().getTypeID<SaveLocalState>(nullptr);
++ else if(dynamic_cast<const SaveGame*>(pack))type=CTypeList::getInstance().getTypeID<SaveGame>(nullptr);
++ else type=CTypeList::getInstance().getTypeID(pack);
++ ensure(recoveryOwned.emplace(request,std::make_pair(pack->player.getNum(),type)).second,"recovery_duplicate_owned_request");
++ if(recoveryLocalRequest==0)
++ {
++  auto*actual=dynamic_cast<const SaveLocalState*>(pack);ensure(actual&&actual->data[recoveryKey].toCompactString()==recoveryPayload.toCompactString(),"recovery_actual_local_state_mismatch");
++  recoveryLocalRequest=request;recoveryEvent("local_state_native_sent",request);return true;
++ }
++ if(recoverySaveRequest==0)
++ {
++  auto*actual=dynamic_cast<const SaveGame*>(pack);ensure(actual&&actual->fname==recoverySaveName&&!actual->notifySuccess&&actual->autosaveCountLimit==0,"recovery_actual_save_request_mismatch");
++  recoverySaveRequest=request;recoveryEvent("save_native_sent",request);return true;
++ }
++ return false;
++}
++bool CDirectorAI::recoveryAck(PackageApplied*pa)
++{
++ using namespace supply_recovery_v4;
++ if(pa->player!=playerID)return false;
++ auto owned=recoveryOwned.find(pa->requestID);
++ ensure(owned!=recoveryOwned.end()&&owned->second.first==pa->player.getNum()&&owned->second.second==pa->packType,"recovery_unbound_owned_ack");
++ recoveryOwned.erase(owned); // real PackageApplied already received in this callback.
++ if(int(pa->requestID)==recoveryLocalRequest&&recoveryPersistenceBusy&&recoverySaveRequest<0)
++ {
++  ensure(pa->packType==CTypeList::getInstance().getTypeID<SaveLocalState>(nullptr)&&pa->result&&recoveryOwned.empty(),"recovery_local_state_ack_failed");
++  ensure(encode(recoveryCurrent())==recoveryPayload["control_text"].String(),"recovery_world_changed_during_local_write");
++  recoveryEvent("local_state_real_ack",pa->requestID);recoverySaveRequest=0;cb->save(recoverySaveName,false);return true;
++ }
++ if(int(pa->requestID)==recoverySaveRequest&&recoveryPersistenceBusy)
++ {
++  ensure(pa->packType==CTypeList::getInstance().getTypeID<SaveGame>(nullptr)&&pa->result&&recoveryOwned.empty(),"recovery_save_ack_failed");
++  ensure(encode(recoveryCurrent())==recoveryPayload["control_text"].String(),"recovery_world_changed_during_save");
++  recoveryPersistenceBusy=false;recoveryEvent("checkpoint_snapshot",pa->requestID);
++  // ACK is real, but gh.save can swallow file-write failure. External bundle
++  // certification must additionally require successful-save marker and file SHA.
++  supplyAdvance();return true;
++ }
++ return false;
++}
+--- v3/client/Client.cpp
++++ v4/client/Client.cpp
+@@ -8,6 +8,7 @@
+  *
+  */
+ #include "StdInc.h"
++#include "../AI/DirectorAI/SupplyRecovery.h"
+ #include <sstream>
+ #include "../lib/serializer/CTypeList.h"
+ #include "Global.h"
+@@ -116,6 +117,7 @@
+ 
+ void CClient::loadGame(std::shared_ptr<CGameState> initializedGameState)
+ {
++ recoveryLoadingGame=true;
+ 	logNetwork->info("Loading procedure started!");
+ 
+ 	logNetwork->info("Game state was transferred over network, loading.");
+@@ -127,6 +129,7 @@
+ 	initMapHandler();
+ 	initPlayerEnvironments();
+ 	initPlayerInterfaces();
++ recoveryLoadingGame=false;
+ }
+ 
+ void CClient::endNetwork()
+@@ -331,6 +334,26 @@
+ 
+ void CClient::installNewPlayerInterface(std::shared_ptr<CGameInterface> gameInterface, PlayerColor color, bool battlecb)
+ {
++ if(recoveryLoadingGame && gameInterface && gameInterface->dllName=="DirectorAI")
++ {
++  using namespace supply_recovery_v4;
++  const char*mode=std::getenv("LAB_ADV_MODE");const char*bundlePath=std::getenv("LAB_ADV_RECOVERY_BUNDLE");
++  const auto*state=gameInfo().getPlayerState(color);
++  const bool embedded=state&&state->playerLocalSettings&&!(*state->playerLocalSettings)["heroes3_supply_v4"].isNull();
++  const bool requested=(mode&&std::string(mode)=="scripted_supply_v1")||(bundlePath&&*bundlePath);
++  if(embedded||requested)
++  {
++  ensure(mode&&std::string(mode)=="scripted_supply_v1"&&bundlePath&&*bundlePath,"native_director_load_requires_supply_recovery_bundle");
++  const auto bytes=readFile(bundlePath,16*1024*1024);JsonParsingSettings parsing;parsing.strict=true;
++  const JsonNode bundle(bytes.data(),bytes.size(),parsing,"supply-recovery-bundle");
++  ensure(bundle["epoch"].String()==epoch&&bundle["source_token"].String()==sourceToken,"native_loaded_source_or_epoch_mismatch");
++  auto actual=CResourceHandler::get()->getResourceName(ResourcePath(GAME->server().si->mapname,EResType::SAVEGAME));
++  ensure(bool(actual),"native_loaded_save_unresolved");
++  const auto actualSHA=sha256(readFile(actual->string()));ensure(actualSHA==bundle["save_sha256"].String(),"actual_loaded_save_hash_mismatch");
++  logGlobal->info("DirectorSupplyActualLoad file=%s sha256=%s source=%s",actual->string(),actualSHA,sourceToken);
++  }
++ }
++
+ 	playerint[color] = gameInterface;
+ 
+ 	logGlobal->trace("\tInitializing the interface for player %s", color.toString());
+--- v3/client/Client.h
++++ v4/client/Client.h
+@@ -148,6 +148,7 @@
+ class CClient : public Environment, public IClient, public ClientSession
+ {
+ 	int requestCounter = 1;
++ bool recoveryLoadingGame=false;
+ 
+ public:
+ 	std::unique_ptr<BattleAction> currentBattleAction;

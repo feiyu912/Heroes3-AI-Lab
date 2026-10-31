@@ -1,0 +1,9 @@
+# Rescue hire followed by stocked-town free transfer: mechanism only
+
+The frozen Training02 source map is copied to a unique fixture basename. Only own blue initial conditions change: remove the single blue starting hero; add that hero's actual two starting stacks (20 core:pikeman and10 core:archer) to the own blue town's army. Tavern, town buildings, starting resources, faction settings and all other object data remain identical. Non-object ZIP entries are byte-identical. Source map is never overwritten. This is explicit scenario setup, not a claimed native action or modification of a live save.
+
+Root runs capsule02, actual update4 weights24b8, CPU argmax, player1 versus Nullkiller2, seed2026103501, threat replan off and build_v1. The server must actually instantiate the specified town stock, offer/hire a hero, issue/ACK legal ArrangeStacks and publish real policy observations. Any missing eligibility, ambiguous state delta or failed native request rejects coverage. No fixture assumption substitutes for observed public state. All input helpers/maps/manifests and runtime scripts are hash-bound by the collector.
+
+The fixture has no training/admission/optimizer pathway and is excluded from PPO, win-rate and capability results. It covers ordering and conservation only. Root executes/monitors; preparing this directory starts no native process or GPU. The original qualification-02 remains immutable and failed coverage despite passing strict whole-game audit; this targeted fixture is used instead of changing seeds to hunt coverage.
+
+After terminal completion, run the frozen qualification/finalize_proof.py on the actual fixture output. It still requires strict whole-game terminal registry, real ACK/apply/state evidence, at least two prewindow transfers, and same-turn rescue hire before the first policy action. Complete payload fields are not directly logged; the report must preserve its explicit source/state reconstruction limitation.

@@ -1,0 +1,305 @@
+{
+  "passed_exact": true,
+  "checks": {
+    "source_protocol_continuous_split": {
+      "equal": true,
+      "differences": []
+    },
+    "source_protocol_continuous_resume": {
+      "equal": true,
+      "differences": []
+    },
+    "initialization_continuous_split": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.state_dict": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.optimizer": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.torch_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.cuda_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.python_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.training_updates": {
+      "equal": true,
+      "differences": []
+    },
+    "initial_boundary.optimizer_steps_total": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.request": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.action": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.old_logprob": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.old_value": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.return": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.generator_seed": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.policy_version": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.episode_id": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.rollout.policy_tensor_sha256": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.episodes": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.collection_RNG": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.state_dict": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.optimizer": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.torch_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.cuda_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.python_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.training_updates": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.optimizer_steps_total": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.complete_update_boundary": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.encoder_version": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.state_dim": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.candidate_dim": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.protocol": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.protocol_sha256": {
+      "equal": true,
+      "differences": []
+    },
+    "update1.checkpoint.policy_tensor_sha256": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.request": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.action": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.old_logprob": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.old_value": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.return": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.generator_seed": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.policy_version": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.episode_id": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.rollout.policy_tensor_sha256": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.episodes": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.collection_RNG": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.state_dict": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.optimizer": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.torch_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.cuda_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.python_rng": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.training_updates": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.optimizer_steps_total": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.complete_update_boundary": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.encoder_version": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.state_dim": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.candidate_dim": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.protocol": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.protocol_sha256": {
+      "equal": true,
+      "differences": []
+    },
+    "update2.checkpoint.policy_tensor_sha256": {
+      "equal": true,
+      "differences": []
+    }
+  },
+  "device_required": "cpu",
+  "synthetic": true,
+  "independent_native_strength_evaluation": false,
+  "optimizer_steps": {
+    "continuous": 8,
+    "split": 4,
+    "resume": 4
+  },
+  "source_protocol_sha256": "92300ac26aaba79be857c27d0ca3ba7896eaeb1f39d8c1198755b44e4d46a17f",
+  "initialization": {
+    "mode": "migrated-v3-initial",
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt",
+    "sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0"
+  },
+  "resume_lineage": {
+    "mode": "resume",
+    "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/trainer-cpu-split-04/update-1.pt",
+    "parent_sha256": "237d84fd3edc8f45bcb349f1a352248651e687e3e79c6c04e5732109b06cbfe6",
+    "parent_training_updates": 1,
+    "parent_protocol_sha256": "92300ac26aaba79be857c27d0ca3ba7896eaeb1f39d8c1198755b44e4d46a17f",
+    "parent_migration_protocol_sha256": null,
+    "parent_lineage": {
+      "mode": "migrated-v3-initial",
+      "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-initial-v3.pt",
+      "parent_sha256": "804aab1aeb3fcc7e685891b469abe1efaf309399619f4d47771382f3d70571d0",
+      "parent_training_updates": 0,
+      "parent_protocol_sha256": null,
+      "parent_migration_protocol_sha256": "2f7f43c21a201dffda0858ee7e9da3fded4e30b031487e288b572e8ef2960aeb",
+      "parent_lineage": {
+        "mode": "explicit-v1-to-v2-visible-weight-migration",
+        "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/takeover-03/native-boundary-01/continuous-2/update-2.pt",
+        "parent_sha256": "f524796161915cb43ae9e228f13dd72c195df016ce5d2c25dab7d8a7d2aeb7cc",
+        "parent_training_updates": 2,
+        "parent_lineage": {
+          "mode": "weights-only-migration",
+          "parent_checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+          "parent_sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0",
+          "parent_training_updates": 2,
+          "reset_optimizer": true,
+          "reset_rng": true
+        },
+        "parent_protocol_sha256": "816b047f277c75eafa876afaee7489e13349427195336f6705787c1e9e1c44c4",
+        "parent_optimizer_steps_total": 132,
+        "reset_optimizer": true,
+        "reset_rng": true,
+        "source_optimizer_reused": false
+      },
+      "parent_trained": true,
+      "reset_optimizer": true,
+      "reset_rng": true
+    },
+    "parent_trained": true,
+    "reset_optimizer": false,
+    "reset_rng": false
+  },
+  "limitations": "Exact scoped comparison only; no tolerance silently promotes differences. Native game evidence checked for CUDA runs. Checkpoint file bytes may differ due lineage; all tensors, Adam, RNG and source protocol are compared. Completed-boundary recovery does not certify mid-game recovery or strategic ability.",
+  "audit_launches_games": false,
+  "audit_optimizer_steps": 0,
+  "audit_CUDA_initialized": false,
+  "comparator_sha256": "4e255868de03dc428124a77075edc50b5d4d500f5ba0cb11dfdc7d7a648ce1cc"
+}

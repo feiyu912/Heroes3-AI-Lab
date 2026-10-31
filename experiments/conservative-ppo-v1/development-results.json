@@ -1,0 +1,119 @@
+[
+  {
+    "name": "public-original",
+    "checkpoint": "/root/heroes3-ai-lab/models/recovered-v15/initial-pair.pt",
+    "checkpoint_sha256": "2ff877ab85bb451bc2cd71c3d1c25258e5fe1de6b132ea38d2bd600da75f26cc",
+    "BattleAI": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/public-original-BattleAI-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 157,
+        "win_rate": 0.8177083333333334,
+        "wilson95": [
+          0.7570445489899875,
+          0.8659078778692701
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 96.92708333333333
+      }
+    },
+    "MMAI_MODEL": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/public-original-MMAI_MODEL-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 96,
+        "win_rate": 0.5,
+        "wilson95": [
+          0.42997169712955335,
+          0.5700283028704467
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 107.19791666666667
+      }
+    }
+  },
+  {
+    "name": "conservative-16",
+    "checkpoint": "/root/heroes3-ai-lab/models/conservative-ppo-v1/1792081061872371557/update-16.pt",
+    "checkpoint_sha256": "77b7ab641354b88da6dd9d23029efcbc2f9fcec3bac146597733904d8a22dfe9",
+    "BattleAI": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/conservative-16-BattleAI-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 157,
+        "win_rate": 0.8177083333333334,
+        "wilson95": [
+          0.7570445489899875,
+          0.8659078778692701
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 97.06770833333333
+      }
+    },
+    "MMAI_MODEL": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/conservative-16-MMAI_MODEL-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 103,
+        "win_rate": 0.5364583333333334,
+        "wilson95": [
+          0.46589762049580147,
+          0.605588723570015
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 106.125
+      }
+    }
+  },
+  {
+    "name": "conservative-32",
+    "checkpoint": "/root/heroes3-ai-lab/models/conservative-ppo-v1/1792081061872371557/update-32.pt",
+    "checkpoint_sha256": "31317a15598ad88ab485839861f2f5e5631ea32299f4a924ec68a5e28d9b260a",
+    "BattleAI": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/conservative-32-BattleAI-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 157,
+        "win_rate": 0.8177083333333334,
+        "wilson95": [
+          0.7570445489899875,
+          0.8659078778692701
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 96.72395833333333
+      }
+    },
+    "MMAI_MODEL": {
+      "report": "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/conservative-32-MMAI_MODEL-development.json",
+      "summary": {
+        "policy": "recovered",
+        "battles": 192,
+        "wins": 101,
+        "win_rate": 0.5260416666666666,
+        "wilson95": [
+          0.4555957151022457,
+          0.5954659592304802
+        ],
+        "truncated": 0,
+        "non_normal_terminations": 0,
+        "invalid_actions": 0,
+        "mean_permanent_units_lost": 106.58854166666667
+      }
+    }
+  }
+]

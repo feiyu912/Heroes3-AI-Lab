@@ -1,0 +1,845 @@
+{
+  "final_test_not_read": true,
+  "results": [
+    {
+      "name": "v5-public-original",
+      "report": "validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 15,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 16,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 3,
+          "win_rate": 0.1875,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 9,
+          "win_rate": 0.5625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 4,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 5,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 3,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-public-original",
+      "report": "upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 9,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 16,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 15,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 8,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 1,
+          "win_rate": 0.125,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 7,
+          "win_rate": 0.875,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-public-original",
+      "report": "development_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 37,
+          "win_rate": 0.7708333333333334,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 19,
+          "win_rate": 0.7916666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 19,
+          "win_rate": 0.7916666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-public-original",
+      "report": "development_upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 6,
+          "win_rate": 0.25,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 1,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 24,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 1,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 6,
+          "win_rate": 0.25,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 1,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-lab-v3",
+      "report": "validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 16,
+          "win_rate": 0.6666666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 16,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 4,
+          "win_rate": 0.25,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 9,
+          "win_rate": 0.5625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 4,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 5,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 4,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-lab-v3",
+      "report": "upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 9,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 14,
+          "win_rate": 0.875,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 6,
+          "win_rate": 0.25,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 1,
+          "win_rate": 0.0625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 1,
+          "win_rate": 0.125,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 6,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-lab-v3",
+      "report": "development_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 22,
+          "win_rate": 0.4583333333333333,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 9,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 9,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-lab-v3",
+      "report": "development_upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 3,
+          "win_rate": 0.125,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 4,
+          "win_rate": 0.08333333333333333,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 3,
+          "win_rate": 0.125,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 1,
+          "win_rate": 0.041666666666666664,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 1,
+          "win_rate": 0.041666666666666664,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-restored-best-heads",
+      "report": "validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 16,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 1,
+          "win_rate": 0.0625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 9,
+          "win_rate": 0.5625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 4,
+          "win_rate": 0.5,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 5,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 1,
+          "win_rate": 0.125,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-restored-best-heads",
+      "report": "upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 11,
+          "win_rate": 0.4583333333333333,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_more": {
+          "battles": 16,
+          "wins": 16,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 15,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "own_fewer": {
+          "battles": 16,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 16,
+          "wins": 10,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 8,
+          "wins": 3,
+          "win_rate": 0.375,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 8,
+          "wins": 7,
+          "win_rate": 0.875,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/own_fewer": {
+          "battles": 8,
+          "wins": 0,
+          "win_rate": 0.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/own_more": {
+          "battles": 8,
+          "wins": 8,
+          "win_rate": 1.0,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-restored-best-heads",
+      "report": "development_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 15,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 33,
+          "win_rate": 0.6875,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 15,
+          "win_rate": 0.625,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 18,
+          "win_rate": 0.75,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    },
+    {
+      "name": "v5-restored-best-heads",
+      "report": "development_upstream_validation_report",
+      "groups": {
+        "attacker": {
+          "battles": 24,
+          "wins": 10,
+          "win_rate": 0.4166666666666667,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "equal_counts": {
+          "battles": 48,
+          "wins": 23,
+          "win_rate": 0.4791666666666667,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "attacker/equal_counts": {
+          "battles": 24,
+          "wins": 10,
+          "win_rate": 0.4166666666666667,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        },
+        "defender/equal_counts": {
+          "battles": 24,
+          "wins": 13,
+          "win_rate": 0.5416666666666666,
+          "losses_without_attack": 0,
+          "losses_waiting_over_40percent": 0,
+          "truncated": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "final_holdout_read": false,
+  "source_models": 8,
+  "scope": "Existing old/development validation; no new model weights or win claims",
+  "best_single": {
+    "attacker": "v5-diverse-last-64",
+    "defender": "v5-diverse-last-64",
+    "score": [
+      0.0,
+      0.964912280702,
+      0.916666666667,
+      0.541666666667,
+      0.6875,
+      1.145833333333,
+      -82.395833333333
+    ],
+    "predicted_validation_rates": {
+      "win_rate": 0.6666666666666666,
+      "upstream_win_rate": 0.4791666666666667,
+      "development_win_rate": 0.9166666666666666,
+      "development_upstream_win_rate": 0.6875
+    },
+    "cluster95_lower": {
+      "author_lower": 0.4375,
+      "development_author_lower": 0.5416666666666667
+    }
+  },
+  "best_portfolio": {
+    "attacker": "v5-diverse-last-64",
+    "defender": "v5-diverse-all-64",
+    "score": [
+      0.0,
+      0.986842105263,
+      0.9375,
+      0.541666666667,
+      0.666666666667,
+      1.166666666667,
+      -82.583333333333
+    ],
+    "predicted_validation_rates": {
+      "win_rate": 0.7083333333333333,
+      "upstream_win_rate": 0.4583333333333333,
+      "development_win_rate": 0.9375,
+      "development_upstream_win_rate": 0.6666666666666667
+    },
+    "cluster95_lower": {
+      "author_lower": 0.375,
+      "development_author_lower": 0.5416666666666666
+    }
+  },
+  "sources": {
+    "attacker": {
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792068859379237126/update-64.pt",
+      "sha256": "1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936"
+    },
+    "defender": {
+      "checkpoint": "/root/heroes3-ai-lab/models/graph-finetune/1792071854422674308/update-64.pt",
+      "sha256": "a6999d155232cc757ef17318c55f4b9e65cd44a65b50fa0d4ceef94105057ecf"
+    }
+  },
+  "promising": true,
+  "top_combinations": [
+    {
+      "attacker": "v5-diverse-last-64",
+      "defender": "v5-diverse-all-64",
+      "score": [
+        0.0,
+        0.986842105263,
+        0.9375,
+        0.541666666667,
+        0.666666666667,
+        1.166666666667,
+        -82.583333333333
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.7083333333333333,
+        "upstream_win_rate": 0.4583333333333333,
+        "development_win_rate": 0.9375,
+        "development_upstream_win_rate": 0.6666666666666667
+      },
+      "cluster95_lower": {
+        "author_lower": 0.375,
+        "development_author_lower": 0.5416666666666666
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-64",
+      "defender": "v5-diverse-last-64",
+      "score": [
+        0.0,
+        0.964912280702,
+        0.916666666667,
+        0.541666666667,
+        0.6875,
+        1.145833333333,
+        -82.395833333333
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6666666666666666,
+        "upstream_win_rate": 0.4791666666666667,
+        "development_win_rate": 0.9166666666666666,
+        "development_upstream_win_rate": 0.6875
+      },
+      "cluster95_lower": {
+        "author_lower": 0.4375,
+        "development_author_lower": 0.5416666666666667
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-64",
+      "defender": "v5-diverse-heads-128",
+      "score": [
+        0.0,
+        0.94298245614,
+        0.895833333333,
+        0.625,
+        0.75,
+        1.125,
+        -81.791666666667
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6666666666666666,
+        "upstream_win_rate": 0.4583333333333333,
+        "development_win_rate": 0.8958333333333333,
+        "development_upstream_win_rate": 0.75
+      },
+      "cluster95_lower": {
+        "author_lower": 0.375,
+        "development_author_lower": 0.625
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-128",
+      "defender": "v5-diverse-all-64",
+      "score": [
+        0.0,
+        0.94298245614,
+        0.895833333333,
+        0.5625,
+        0.6875,
+        1.125,
+        -83.354166666667
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6666666666666667,
+        "upstream_win_rate": 0.4583333333333333,
+        "development_win_rate": 0.8958333333333334,
+        "development_upstream_win_rate": 0.6875
+      },
+      "cluster95_lower": {
+        "author_lower": 0.375,
+        "development_author_lower": 0.5625
+      }
+    },
+    {
+      "attacker": "v5-diverse-heads-256",
+      "defender": "v5-diverse-last-64",
+      "score": [
+        0.0,
+        0.94298245614,
+        0.895833333333,
+        0.5,
+        0.5625,
+        1.145833333333,
+        -83.625
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6666666666666666,
+        "upstream_win_rate": 0.4791666666666667,
+        "development_win_rate": 0.8958333333333333,
+        "development_upstream_win_rate": 0.5625
+      },
+      "cluster95_lower": {
+        "author_lower": 0.4375,
+        "development_author_lower": 0.5
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-64",
+      "defender": "v5-diverse-last-128",
+      "score": [
+        0.0,
+        0.921052631579,
+        0.875,
+        0.583333333333,
+        0.708333333333,
+        1.3125,
+        -84.583333333333
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.7916666666666666,
+        "upstream_win_rate": 0.5208333333333333,
+        "development_win_rate": 0.875,
+        "development_upstream_win_rate": 0.7083333333333334
+      },
+      "cluster95_lower": {
+        "author_lower": 0.5,
+        "development_author_lower": 0.5833333333333333
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-128",
+      "defender": "v5-diverse-last-64",
+      "score": [
+        0.0,
+        0.921052631579,
+        0.875,
+        0.5625,
+        0.708333333333,
+        1.104166666667,
+        -83.166666666667
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.625,
+        "upstream_win_rate": 0.4791666666666667,
+        "development_win_rate": 0.875,
+        "development_upstream_win_rate": 0.7083333333333333
+      },
+      "cluster95_lower": {
+        "author_lower": 0.4375,
+        "development_author_lower": 0.5625
+      }
+    },
+    {
+      "attacker": "v5-diverse-heads-256",
+      "defender": "v5-diverse-heads-128",
+      "score": [
+        0.0,
+        0.921052631579,
+        0.875,
+        0.479166666667,
+        0.625,
+        1.125,
+        -83.020833333333
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6666666666666666,
+        "upstream_win_rate": 0.4583333333333333,
+        "development_win_rate": 0.875,
+        "development_upstream_win_rate": 0.625
+      },
+      "cluster95_lower": {
+        "author_lower": 0.375,
+        "development_author_lower": 0.4791666666666667
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-64",
+      "defender": "v5-public-original",
+      "score": [
+        0.0,
+        0.899122807018,
+        0.854166666667,
+        0.666666666667,
+        0.791666666667,
+        1.104166666667,
+        -85.208333333333
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.6041666666666666,
+        "upstream_win_rate": 0.5,
+        "development_win_rate": 0.8541666666666666,
+        "development_upstream_win_rate": 0.7916666666666667
+      },
+      "cluster95_lower": {
+        "author_lower": 0.5,
+        "development_author_lower": 0.6666666666666666
+      }
+    },
+    {
+      "attacker": "v5-diverse-last-128",
+      "defender": "v5-diverse-heads-128",
+      "score": [
+        0.0,
+        0.899122807018,
+        0.854166666667,
+        0.625,
+        0.770833333333,
+        1.083333333333,
+        -82.5625
+      ],
+      "predicted_validation_rates": {
+        "win_rate": 0.625,
+        "upstream_win_rate": 0.4583333333333333,
+        "development_win_rate": 0.8541666666666667,
+        "development_upstream_win_rate": 0.7708333333333333
+      },
+      "cluster95_lower": {
+        "author_lower": 0.375,
+        "development_author_lower": 0.625
+      }
+    }
+  ],
+  "next_gate": "If promising, materialize the two frozen role networks and verify in real native-opponent games before selection. Fresh final test remains mandatory."
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "new_unique_armies": 32,
+  "prior_army_overlap": 0,
+  "training_cases": 20,
+  "validation_cases": 6,
+  "new_test_cases": 32,
+  "battles_per_policy": 512,
+  "exact_strength_and_deployment_mirror": true,
+  "note": "No exact army/deployment duplicates. Battlefield geometry and six unit pools shared with training; not a general full-game test"
+}

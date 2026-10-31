@@ -1,0 +1,26 @@
+{
+  "passed": false,
+  "original_run_passed": false,
+  "recovered_comparison": true,
+  "arms": {
+    "control": {
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/control-phase-3/update-68.pt",
+      "checkpoint_sha256": "7fc48da22b317d597ef3156670d22b8cd5c901d324b5e039bf5e7aaad6f6d702",
+      "actual_Adam_steps": 8704,
+      "admitted_stage_rows": 4096,
+      "suffix_stage_rows": 4096,
+      "total_native_stage_rows": 8192,
+      "new_Adam_steps": 1024
+    },
+    "candidate": {
+      "checkpoint": "/root/heroes3-ai-lab/evaluations/battle-terminal-credit-recovery-01/candidate-phase-3/update-68.pt",
+      "checkpoint_sha256": "e9f7c15cfcf05bbcb37690e40804e2da952094427d38ce60cf4f7753069fbf64",
+      "actual_Adam_steps": 8704,
+      "admitted_stage_rows": 4096,
+      "suffix_stage_rows": 4096,
+      "total_native_stage_rows": 8192,
+      "new_Adam_steps": 1024
+    }
+  },
+  "ability_promotion": false
+}

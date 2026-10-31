@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "device": "cpu",
+  "nonzero_gradients": 8,
+  "game_started": false,
+  "cuda_training_started": false
+}

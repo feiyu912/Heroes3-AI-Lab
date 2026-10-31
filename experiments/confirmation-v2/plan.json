@@ -1,0 +1,43 @@
+{
+  "after_failure": "Viewed v2 outcomes become diagnostics; any further training requires a newly declared fresh confirmation suite",
+  "battle_seed_base": 2026101601,
+  "battle_seed_rule": "battle_seed_base + case_index*100 + seed_index (seed_index 0..7)",
+  "battles_per_opponent": 512,
+  "candidate_model": null,
+  "candidate_model_selected": false,
+  "cases": 32,
+  "environment": {
+    "mana_max": 0,
+    "mana_min": 0,
+    "no_active_hero_magic": true,
+    "random_armies": false,
+    "random_heroes": 0,
+    "random_obstacles": 0,
+    "town_chance": 0,
+    "warmachine_chance": 0
+  },
+  "fixture_definition_sha256": "4959d4d0b711c6a552a6d61b636bc19d5971625058900adfcf10510e88d2cf3c",
+  "fixture_seed": 2026101601,
+  "model_final_freeze_created": false,
+  "native_execution_performed": false,
+  "opponents": [
+    "native BattleAI",
+    "native CPU original public MMAI ONNX"
+  ],
+  "results_exist_created_by_generator": false,
+  "results_read": false,
+  "roles": [
+    "attacker",
+    "defender"
+  ],
+  "schema": "heroes3-confirmation-v2-plan",
+  "seeds_per_case_role": 8,
+  "selection_rule": "Select on existing development evidence, then freeze one candidate before reading any v2 outcome; never select model or tune training on this confirmation suite",
+  "unchanged_objective": "BattleAI win rate at least 95%; author-model advantage judged by existing scenario-cluster uncertainty criteria, no relaxed threshold",
+  "unknowns": [
+    "Native execution compatibility has not been tested",
+    "Public-model pretraining exposure to these creatures is unknown",
+    "Same template and eight known compositions; no new-creature or new-source generalization claim",
+    "Morale, luck, terrain and creature abilities follow the preserved engine/template, not newly controlled event-level experiments"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "recruitment-prior-zero-policy-run-source-freeze-v1",
+  "files": {
+    "strategic-learned-recruitment-policy-v3\\admit_episode_v5.py": "9e9589b979502c9b7a02ca2d67d5dd338dd3b7f412f2e44235bf080cdaa69dbd",
+    "strategic-learned-recruitment-policy-v3\\broker.py": "4582f1cb96752c28bf5f6cccca30b0190d82966cf245e48f3d3667788b0ffe0a",
+    "strategic-learned-recruitment-policy-v3\\check_actual_cpu.py": "fdf969e5438cff837a65b43935287759b073a8ffdba6751bdb3cf9908c1c9efa",
+    "strategic-learned-recruitment-policy-v3\\check_cpu.py": "2fe09210d6dc7a4efc9bc7347613ba44516658f613413aebfc1591857e63308b",
+    "strategic-learned-recruitment-policy-v3\\check_prior_factor_cpu.py": "9549b8c18b5bb7619c82e757b71e6314409bd65b925973c4bf1644625cc73b5e",
+    "strategic-learned-recruitment-policy-v3\\creature_vocabulary.json": "ab6c8073134d0c7eb05df8d2538e156ca4a46fd29d3fe643d4c6e37eb84baf74",
+    "strategic-learned-recruitment-policy-v3\\encoder.py": "5bc83e5bc7fc137d37c45494fbb7c5518b0b0b2fa61e0b9147d47698e876c58f",
+    "strategic-learned-recruitment-policy-v3\\episode_balanced_ppo.py": "6eb06ecf004f60231d99c870282d9fb4ce883aad4f6c8253281ab9d40288922a",
+    "strategic-learned-recruitment-policy-v3\\load_admitted.py": "b23a898bc093d16e4231b1015111d4cdefde692902adeee00c8f6b2030b3d91c",
+    "strategic-learned-recruitment-policy-v3\\migrate_init_cpu.py": "9438ee77138cc91dc2a689992ed9a17aeaebdb6aceef97fedb41b7029f15bc49",
+    "strategic-learned-recruitment-policy-v3\\model.py": "e9ca2fd439977b784deeb59efddfd153f32a69a48ccb5f5673e58a5fb491475b",
+    "strategic-learned-recruitment-policy-v3\\model_io.py": "9c7edceddbc644cba5995a136e8c1dea218d0db81414d1f71cb979a56a77f289",
+    "strategic-learned-recruitment-policy-v3\\onpolicy_broker_v2.py": "f165e24c76a8b3f492fa13124e8aa82403938fb89d325568e7760e44ff42cbb2",
+    "strategic-learned-recruitment-policy-v3\\qualification.py": "0422d1662aab3f2d84d276ddbcdc142a45a3511c1e7976d07616a5752f4ee40b",
+    "strategic-learned-recruitment-policy-v3\\REVIEW.md": "311d33cfa6888c9e61694faabe326ea63f39c203ddb349a871156815c27af00f",
+    "strategic-learned-recruitment-policy-v3\\train_update_v3.py": "e1fa0ee036c8df1f1f6a3b3b6f379448ee28232010b451ccf6e3924dbbe2666f",
+    "strategic-learned-recruitment-run-v2\\audit_game_v6.py": "77c6655bb20ff0d1ed1613747b1a6e4408ec3877ba2c770476be5ae59e19e3d4",
+    "strategic-learned-recruitment-run-v2\\bind_qualification.py": "8d48fa4247075569296039037d6ea4d279cefe1d2c89635c149083fef6faa4b1",
+    "strategic-learned-recruitment-run-v2\\collect_cpu.py": "03c65c6d8a983b26e06af63e216ff98ec063ffe109458703f0c8852280d7cbb9",
+    "strategic-learned-recruitment-run-v2\\collect_episode_v5.py": "f9d020ed1039d12ac6c464314caba804b60b97223308bee6699b88e32c5c075e",
+    "strategic-learned-recruitment-run-v2\\DERIVATION.json": "98db26905656359bc607ea4d2eeb4c0296ecd4381df5a62432a6adc25ddc00fc",
+    "strategic-learned-recruitment-run-v2\\evaluate_dev.py": "2a198e236e3a200c2ec0bdbb5ca28fb7e5495fe1a1111dfcd6196899e4d91c22",
+    "strategic-learned-recruitment-run-v2\\pipeline_common.py": "104d92aabbc4432bc15b06e05071e97d2e55d6e49e7fde0be382b2b19ae3b279",
+    "strategic-learned-recruitment-run-v2\\PLAN.md": "ea3073fb61a60d9ee87e9dd9044741fa6153099061b5bf7f5fb5f29db36a7248",
+    "strategic-learned-recruitment-run-v2\\QUALIFICATION.json": "d33ecd5a1d4ca7cbf4953de35bad8868b270af441ac5455f66b7653df86d4e36",
+    "strategic-learned-recruitment-run-v2\\run_pipeline.py": "acfda1f32e564bf4c813b305345de337cb4ce1dfaec2b656ba07d943668c5410"
+  },
+  "registered_initialization": "strategic-learned-recruitment-policy-v3/initialization-02/recruitment-initialization.pt",
+  "actual_initialization_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+  "CPU_actual_audit": "strategic-learned-recruitment-policy-v3/check_actual_cpu-02/AUDIT.json",
+  "CPU_factor_audit": "strategic-learned-recruitment-policy-v3/check_prior_factor_cpu-03/AUDIT.json",
+  "protected_parent_source_freeze_sha256": "9919de90735e946dbb543059923287f0c0e712ee0a91a2d09cc5e47195890a22",
+  "status": "source-ready; actual native mechanism/catalog unchanged; prior-zero pilot native/CUDA unexecuted",
+  "experimental_factor": {
+    "old_manual_bias": -4.0,
+    "new_manual_bias": 0.0,
+    "manual_prior_is_learning": false
+  },
+  "TRAIN_seeds": [
+    2026103900,
+    2026103901,
+    2026103902,
+    2026103903,
+    2026103904,
+    2026103905,
+    2026103906,
+    2026103907
+  ],
+  "DEV_seeds": [
+    2026104200,
+    2026104201,
+    2026104202,
+    2026104203,
+    2026104204,
+    2026104205,
+    2026104206,
+    2026104207
+  ],
+  "DEV_arms": [
+    "minus4_initial",
+    "minus4_updated",
+    "zero_initial",
+    "zero_updated"
+  ],
+  "planned_new_TRAIN_rollouts": 8,
+  "planned_new_updates": 1,
+  "planned_DEV_games": 32
+}

@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "actual_cpp_compiled": true,
+  "header_sha256": "c3cfb614b68c46907f50148292b92c2d5579b62419752726f3bd31cbc8f226ce",
+  "sha256_input_lengths": [
+    0,
+    3,
+    55,
+    56,
+    64,
+    1000,
+    256
+  ],
+  "response_checks": [
+    {
+      "case": "valid",
+      "accepted": true
+    },
+    {
+      "case": "own_turn=True",
+      "accepted": false
+    },
+    {
+      "case": "own_turn=4",
+      "accepted": false
+    },
+    {
+      "case": "hero=3",
+      "accepted": false
+    },
+    {
+      "case": "decision_id=18",
+      "accepted": false
+    },
+    {
+      "case": "player=1",
+      "accepted": false
+    },
+    {
+      "case": "selected_index=2",
+      "accepted": false
+    },
+    {
+      "case": "op=move",
+      "accepted": false
+    },
+    {
+      "case": "classification=expert",
+      "accepted": false
+    },
+    {
+      "case": "request_sha256=0000000000000000000000000000000000000000000000000000000000000000",
+      "accepted": false
+    },
+    {
+      "case": "schema=strategy-candidates-v3",
+      "accepted": false
+    },
+    {
+      "case": "extra_key",
+      "accepted": false
+    },
+    {
+      "case": "missing_op",
+      "accepted": false
+    },
+    {
+      "case": "plain_integer",
+      "accepted": false
+    },
+    {
+      "case": "duplicate_key",
+      "accepted": false
+    },
+    {
+      "case": "trailing_object",
+      "accepted": false
+    },
+    {
+      "case": "missing_newline",
+      "accepted": false
+    }
+  ],
+  "native_game_runs": 0,
+  "optimizer_steps": 0
+}

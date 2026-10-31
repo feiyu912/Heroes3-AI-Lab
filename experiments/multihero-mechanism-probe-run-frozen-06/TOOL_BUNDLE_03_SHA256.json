@@ -1,0 +1,21 @@
+{
+  "build_capsules.py": "a67337d8190a9716c6750fc1ece5f5076e0acbbfa01f574fadc14bb82b1a6872",
+  "capsule_support.py": "850f6f9b6b7e2f94a4526ff3fadcf65b319d4c720fa2f719cfa87ebf18d8c414",
+  "run_probe.py": "d028c1fdc6925e50bdecad4c4f541d3ffde733330fd761a64e72334b68e8dd99",
+  "audit_run.py": "1a4608f15d458ca4a74145552ca1a6684fef57a49a346d41c78254907690fc41",
+  "check_capsules_cpu.py": "23cb117d6bf5eaf9fb13612a5b86ca43c300f63783ef2423ef8cce2984a290a7",
+  "check_cpu.py": "4d0f6fe8c441dce9de58c8360d3323e22ab0cda49d51d373c52a8ebb0a7ff4e6",
+  "prepare_probe.py": "a9bf2279325b73d89419634ee3235386f84cfd3f8b6d0e18ba419824c0d29274",
+  "make_fixture.py": "433bf69b05910fa06e5ddccbee6a18f6bd03f8e8482dfbabe77b925e34558020",
+  "fixture-01.vmap": "ab20ed070f644a545947e1c55ce39af5326b815fbbfab7cad4fe9e39f82b6d39",
+  "candidates-02/PREPARATION.json": "492535364df333903e9d5e30c2c5055be0dd7bd9ed22fe9fb16f5438527075fa",
+  "candidates-02/close-only/CDirectorAI.cpp": "2c8f5f6beca7c843cabbde13dcd85806fb7748198bae3b69d57063bbf8963f75",
+  "candidates-02/close-only/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+  "candidates-02/close-only/source.diff": "a92debb1d1dbce6b96dbf8765317f087dc2f60cb2fe3012a76f94764b9f8b190",
+  "candidates-02/original-unhandled/CDirectorAI.cpp": "a89571ec68198f0e02c0e678afc986e4d69ad8eea04c3047c37620f54a61b1dc",
+  "candidates-02/original-unhandled/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+  "candidates-02/original-unhandled/source.diff": "c33df4dcfd37d3d7fa33dd5f71b8fc68dc91b736c05e62e4a0f57e45b18fe5de",
+  "candidates-02/transfer-close/CDirectorAI.cpp": "8c4f57cdc8f9e5f2a1aaabf1501908d2ce6e05d9a993af7f80a9673f2fae98a7",
+  "candidates-02/transfer-close/CDirectorAI.h": "57d3e0e287a7a38edded54f84cb68fc9f3f766d17721d23f8cd553424d9838a8",
+  "candidates-02/transfer-close/source.diff": "cac6738cb9bb4e0e966ca06cade698cd465fa2362382bbec6879b83cb21239ac"
+}

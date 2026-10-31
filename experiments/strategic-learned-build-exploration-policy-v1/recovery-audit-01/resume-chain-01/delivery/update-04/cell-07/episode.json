@@ -1,0 +1,36 @@
+{
+  "episode_id": "9a3b22f6e44b3d47196b98e1947d570bf30cebc8eb05152ce4c3db6487bc33eb",
+  "valid": true,
+  "reward": -1.0,
+  "decisions": 123,
+  "native_consumption_verified": true,
+  "native": {
+    "completed": true,
+    "inputs_unchanged": true
+  },
+  "raw_audit_path": "/root/heroes3-ai-lab/evaluations/strategic-build-exploration-continuation-01/round-04/cell-07/raw-audit/AUDIT.json",
+  "raw_audit_sha256": "ae35031c01507e727a26aa019d9f3e86dfe4c93bbb5bb0eec3082d6a592fe25d",
+  "sampling_replay_exact": true,
+  "checkpoint_sha256": "317b0b527aa765b51533a7ffaade92240bac4e739d1ee4227480a2d8890d664d",
+  "sampling_seed": 7492541191279484271,
+  "job": {
+    "seed": 2026103207,
+    "map": "takeover-v2-train-02-development",
+    "owned_player": 1,
+    "opponent": "Nullkiller2",
+    "logical_update": 3,
+    "checkpoint_sha256": "317b0b527aa765b51533a7ffaade92240bac4e739d1ee4227480a2d8890d664d"
+  },
+  "runtime": {
+    "capsule_manifest_sha256": "a98b8754efc7afbd83cb8cb1be68425f4eaf1a7dfe08564a708926dcef3e600f",
+    "native_artifacts": {
+      "vcmiclient": "0e9231fe7b562674d77278efa27fece3c3023a55cb851269835574d97d78f327",
+      "vcmiserver": "d995f852f4706f694aee268e49519fc2e95543131c25a141259d251677ac6e5d",
+      "libvcmi.so": "bfa491ad9e8bc3a8e5609ca43e1f60766bc0eea9f31a080dfba1bf30d3996914"
+    }
+  },
+  "transport_drained": true,
+  "pipeline_epoch": "strategic-learned-build-exploration-training-v1",
+  "economy_epoch": "learned-economy-build-v1",
+  "policy_builds": 4
+}

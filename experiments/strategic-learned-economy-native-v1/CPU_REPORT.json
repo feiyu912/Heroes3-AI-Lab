@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "unit": {
+    "passed": true,
+    "scope": "pure wire/window CPU unit tests only",
+    "native_games": 0
+  },
+  "source_invariants": {
+    "no_scripted_build_fallback": true,
+    "window_before_optional_spend": true,
+    "immutable_late_end_ack": true,
+    "unique_pending_build": true,
+    "actual_payload_check": true,
+    "no_build_move_commit": true,
+    "no_build_move_dispatch": true,
+    "real_ack_required": true,
+    "ordinary_native_legal_only": true,
+    "callback_observation_no_advance": true,
+    "retained_query_battle_barrier": true
+  },
+  "candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "candidate_files": {
+    "AI/DirectorAI/CDirectorAI.cpp": "70c0df767766b677f1a14524412c386c1db0c490f60a434f8ba6c844c184331b",
+    "AI/DirectorAI/CDirectorAI.h": "a3445378f155b6ad3a676100e5ee4518fb1df614d47e0347b87ea02722cc55ef",
+    "AI/DirectorAI/TypedPolicyProtocol.h": "41e657ef23f74b56402ba1985b3311a931f0cbf660574a785242af86174f974c",
+    "server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+    "server/CGameHandler.cpp": "3b05d16d3cf3b8977dfa501e7f65c935b6f2ea167e8b8eab734c7869952e47af",
+    "server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+    "client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+    "client/NetPacksClient.cpp": "6ae15e3493b18c9b5aa2707d4b0b532edd30ce75dfbfaa5385d69ded591f8d2e",
+    "client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157"
+  },
+  "native_builds": 0,
+  "native_games": 0,
+  "gpu_runs": 0,
+  "limitation": "Wire/window unit assertions and source guards; native ordering/legality still needs actual engine qualification"
+}

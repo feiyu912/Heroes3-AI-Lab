@@ -1,0 +1,1055 @@
+{
+  "source": "expert-mixed-b64-run-v2/*-development.json",
+  "role_split": {
+    "b64-baseline|BattleAI": {
+      "attacker": {
+        "wins": 89,
+        "games": 96,
+        "rate": 0.9271
+      },
+      "defender": {
+        "wins": 83,
+        "games": 96,
+        "rate": 0.8646
+      }
+    },
+    "mixed-16|BattleAI": {
+      "attacker": {
+        "wins": 89,
+        "games": 96,
+        "rate": 0.9271
+      },
+      "defender": {
+        "wins": 83,
+        "games": 96,
+        "rate": 0.8646
+      }
+    },
+    "mixed-32|BattleAI": {
+      "attacker": {
+        "wins": 88,
+        "games": 96,
+        "rate": 0.9167
+      },
+      "defender": {
+        "wins": 76,
+        "games": 96,
+        "rate": 0.7917
+      }
+    },
+    "b64-baseline|MMAI_MODEL": {
+      "attacker": {
+        "wins": 65,
+        "games": 96,
+        "rate": 0.6771
+      },
+      "defender": {
+        "wins": 49,
+        "games": 96,
+        "rate": 0.5104
+      }
+    },
+    "mixed-16|MMAI_MODEL": {
+      "attacker": {
+        "wins": 60,
+        "games": 96,
+        "rate": 0.625
+      },
+      "defender": {
+        "wins": 53,
+        "games": 96,
+        "rate": 0.5521
+      }
+    },
+    "mixed-32|MMAI_MODEL": {
+      "attacker": {
+        "wins": 62,
+        "games": 96,
+        "rate": 0.6458
+      },
+      "defender": {
+        "wins": 47,
+        "games": 96,
+        "rate": 0.4896
+      }
+    }
+  },
+  "delta_vs_baseline": {
+    "mixed-16|BattleAI": {
+      "net": 0,
+      "gained": 2,
+      "lost": 2,
+      "flipped": [
+        {
+          "scenario": "diverse-230",
+          "role": "defender",
+          "seed": 2026124400,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-230",
+          "role": "defender",
+          "seed": 2026124401,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125000,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125001,
+          "baseline": false,
+          "candidate": true
+        }
+      ]
+    },
+    "mixed-32|BattleAI": {
+      "net": -8,
+      "gained": 2,
+      "lost": 10,
+      "flipped": [
+        {
+          "scenario": "diverse-195",
+          "role": "defender",
+          "seed": 2026120901,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-198",
+          "role": "attacker",
+          "seed": 2026121200,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-200",
+          "role": "defender",
+          "seed": 2026121400,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-200",
+          "role": "defender",
+          "seed": 2026121401,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-206",
+          "role": "defender",
+          "seed": 2026122000,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-206",
+          "role": "defender",
+          "seed": 2026122001,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-212",
+          "role": "defender",
+          "seed": 2026122600,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "defender",
+          "seed": 2026123601,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-230",
+          "role": "defender",
+          "seed": 2026124400,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-230",
+          "role": "defender",
+          "seed": 2026124401,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125000,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125001,
+          "baseline": false,
+          "candidate": true
+        }
+      ]
+    },
+    "mixed-16|MMAI_MODEL": {
+      "net": -1,
+      "gained": 16,
+      "lost": 17,
+      "flipped": [
+        {
+          "scenario": "diverse-193",
+          "role": "attacker",
+          "seed": 2026120700,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-193",
+          "role": "attacker",
+          "seed": 2026120701,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-194",
+          "role": "attacker",
+          "seed": 2026120800,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-194",
+          "role": "attacker",
+          "seed": 2026120801,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-194",
+          "role": "defender",
+          "seed": 2026120801,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-196",
+          "role": "defender",
+          "seed": 2026121000,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-196",
+          "role": "defender",
+          "seed": 2026121001,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-197",
+          "role": "attacker",
+          "seed": 2026121100,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-198",
+          "role": "attacker",
+          "seed": 2026121201,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-201",
+          "role": "attacker",
+          "seed": 2026121500,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-201",
+          "role": "attacker",
+          "seed": 2026121501,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-206",
+          "role": "defender",
+          "seed": 2026122000,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-206",
+          "role": "defender",
+          "seed": 2026122001,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-207",
+          "role": "defender",
+          "seed": 2026122101,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-210",
+          "role": "defender",
+          "seed": 2026122401,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-211",
+          "role": "defender",
+          "seed": 2026122500,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-213",
+          "role": "attacker",
+          "seed": 2026122700,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-213",
+          "role": "attacker",
+          "seed": 2026122701,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-214",
+          "role": "defender",
+          "seed": 2026122801,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-217",
+          "role": "defender",
+          "seed": 2026123100,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-218",
+          "role": "defender",
+          "seed": 2026123200,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-220",
+          "role": "defender",
+          "seed": 2026123401,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "attacker",
+          "seed": 2026123600,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "attacker",
+          "seed": 2026123601,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "defender",
+          "seed": 2026123600,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-227",
+          "role": "defender",
+          "seed": 2026124101,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-232",
+          "role": "defender",
+          "seed": 2026124601,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-233",
+          "role": "attacker",
+          "seed": 2026124700,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-233",
+          "role": "defender",
+          "seed": 2026124700,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-233",
+          "role": "defender",
+          "seed": 2026124701,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-235",
+          "role": "defender",
+          "seed": 2026124901,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-239",
+          "role": "attacker",
+          "seed": 2026125300,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-239",
+          "role": "attacker",
+          "seed": 2026125301,
+          "baseline": true,
+          "candidate": false
+        }
+      ]
+    },
+    "mixed-32|MMAI_MODEL": {
+      "net": -5,
+      "gained": 17,
+      "lost": 22,
+      "flipped": [
+        {
+          "scenario": "diverse-194",
+          "role": "defender",
+          "seed": 2026120800,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-195",
+          "role": "defender",
+          "seed": 2026120900,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-196",
+          "role": "attacker",
+          "seed": 2026121001,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-196",
+          "role": "defender",
+          "seed": 2026121000,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-196",
+          "role": "defender",
+          "seed": 2026121001,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-197",
+          "role": "attacker",
+          "seed": 2026121100,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-198",
+          "role": "attacker",
+          "seed": 2026121201,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-198",
+          "role": "defender",
+          "seed": 2026121200,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-200",
+          "role": "attacker",
+          "seed": 2026121401,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-201",
+          "role": "attacker",
+          "seed": 2026121500,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-201",
+          "role": "attacker",
+          "seed": 2026121501,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-203",
+          "role": "defender",
+          "seed": 2026121700,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-204",
+          "role": "attacker",
+          "seed": 2026121800,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-204",
+          "role": "attacker",
+          "seed": 2026121801,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-204",
+          "role": "defender",
+          "seed": 2026121800,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-207",
+          "role": "attacker",
+          "seed": 2026122100,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-209",
+          "role": "defender",
+          "seed": 2026122301,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-210",
+          "role": "defender",
+          "seed": 2026122401,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-211",
+          "role": "defender",
+          "seed": 2026122501,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-212",
+          "role": "defender",
+          "seed": 2026122600,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-212",
+          "role": "defender",
+          "seed": 2026122601,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-214",
+          "role": "attacker",
+          "seed": 2026122800,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-214",
+          "role": "defender",
+          "seed": 2026122800,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-214",
+          "role": "defender",
+          "seed": 2026122801,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-217",
+          "role": "defender",
+          "seed": 2026123100,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "attacker",
+          "seed": 2026123600,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "attacker",
+          "seed": 2026123601,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "defender",
+          "seed": 2026123600,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-222",
+          "role": "defender",
+          "seed": 2026123601,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-223",
+          "role": "defender",
+          "seed": 2026123700,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-225",
+          "role": "defender",
+          "seed": 2026123900,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-227",
+          "role": "defender",
+          "seed": 2026124100,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-232",
+          "role": "defender",
+          "seed": 2026124601,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-233",
+          "role": "attacker",
+          "seed": 2026124701,
+          "baseline": false,
+          "candidate": true
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125000,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-236",
+          "role": "defender",
+          "seed": 2026125001,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-237",
+          "role": "defender",
+          "seed": 2026125100,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-239",
+          "role": "attacker",
+          "seed": 2026125300,
+          "baseline": true,
+          "candidate": false
+        },
+        {
+          "scenario": "diverse-239",
+          "role": "attacker",
+          "seed": 2026125301,
+          "baseline": true,
+          "candidate": false
+        }
+      ]
+    }
+  },
+  "baseline_losses": {
+    "BattleAI": [
+      {
+        "scenario": "diverse-194",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-196",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-211",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-214",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-220",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-223",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-223",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-224",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-235",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-235",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-236",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-237",
+        "role": "attacker",
+        "seeds_lost": 1
+      }
+    ],
+    "MMAI_MODEL": [
+      {
+        "scenario": "diverse-195",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-196",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-197",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-199",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-200",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-201",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-201",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-202",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-203",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-204",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-205",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-207",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-208",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-209",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-210",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-210",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-211",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-211",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-214",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-214",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-215",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-215",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-216",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-217",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-218",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-218",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-219",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-220",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-221",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-221",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-222",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-222",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-223",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-223",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-224",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-225",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-226",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-227",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-228",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-230",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-231",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-232",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-232",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-233",
+        "role": "attacker",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-233",
+        "role": "defender",
+        "seeds_lost": 2
+      },
+      {
+        "scenario": "diverse-234",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-235",
+        "role": "defender",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-236",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-237",
+        "role": "attacker",
+        "seeds_lost": 1
+      },
+      {
+        "scenario": "diverse-238",
+        "role": "defender",
+        "seeds_lost": 2
+      }
+    ]
+  },
+  "note": "Development set only; used for method decisions, never as independent confirmation."
+}

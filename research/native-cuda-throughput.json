@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "results": [
+    {
+      "cuda_opponent": false,
+      "repeat": 0,
+      "workers": 24,
+      "returncode": 0,
+      "wall_seconds": 51.39765061900016,
+      "probe_excluded": true,
+      "warm_decisions_per_second": 81.50285304514894,
+      "startup_seconds": 40.94390947200054,
+      "estimated_16update_wall_seconds": 191.711637728004,
+      "maximum_gpu_mib": 2211.0
+    },
+    {
+      "cuda_opponent": true,
+      "repeat": 0,
+      "workers": 24,
+      "returncode": 1,
+      "wall_seconds": 64.19184931200016,
+      "probe_excluded": true
+    }
+  ],
+  "use_cuda": false,
+  "estimated_end_to_end_speedup": null,
+  "selection": "Require exact live-game contract, both repetitions complete, >=10% estimated end-to-end improvement, and memory guards; probe checkpoints never adopted"
+}

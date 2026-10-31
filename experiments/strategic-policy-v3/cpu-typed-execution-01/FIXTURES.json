@@ -1,0 +1,687 @@
+{
+  "positive": {
+    "late_endturn_ack_during_newturn_move": {
+      "valid": true,
+      "fixture_only": true,
+      "real_execution_certified": false,
+      "certification_limit": "Event-contract check only; raw native instrumentation/extraction needs independent real-run audit",
+      "errors": [],
+      "counts": {
+        "policy_moves": 2,
+        "policy_end_turns": 2,
+        "automatic_end_turns": 0,
+        "late_end_turn_acks": 1,
+        "diagnostic_decisions": 4,
+        "new_policy_decisions": 0,
+        "blocking_visits": 1
+      },
+      "actions": [
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 1,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 1,
+            "op": "move",
+            "selected_index": 0,
+            "request_sha256": "b0d69e46e43ace4685a841892a13275f74f7956bdebd05f186fbcf0ee92fb944",
+            "native_request_id": 100,
+            "pack_type": "MoveHero",
+            "candidate": {
+              "op": "move",
+              "kind": 0,
+              "position": [
+                12,
+                10,
+                0
+              ],
+              "next": [
+                12,
+                10,
+                0
+              ],
+              "path_cost": 100,
+              "heuristic_score": 2.0
+            }
+          },
+          "line": 3,
+          "server_applied": false,
+          "ack": true,
+          "move_result": 1,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "complete_move"
+        },
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 2,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 1,
+            "op": "end_turn",
+            "selected_index": 1,
+            "request_sha256": "c3b5476afc398595fd4a53a0533fdc2eb4edb9b6ee916824ae366923e2381dc6",
+            "native_request_id": 101,
+            "pack_type": "EndTurn",
+            "candidate": {
+              "op": "end_turn"
+            }
+          },
+          "line": 6,
+          "server_applied": true,
+          "ack": true,
+          "move_result": null,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "complete_end_turn"
+        },
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 3,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 2,
+            "op": "move",
+            "selected_index": 0,
+            "request_sha256": "c3f83db4273aad167e1851107829d914557a89e70ce2bb7c5e106d2f11558a64",
+            "native_request_id": 102,
+            "pack_type": "MoveHero",
+            "candidate": {
+              "op": "move",
+              "kind": 0,
+              "position": [
+                12,
+                10,
+                0
+              ],
+              "next": [
+                12,
+                10,
+                0
+              ],
+              "path_cost": 100,
+              "heuristic_score": 2.0
+            }
+          },
+          "line": 10,
+          "server_applied": false,
+          "ack": true,
+          "move_result": 3,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "complete_move"
+        },
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 4,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 2,
+            "op": "end_turn",
+            "selected_index": 1,
+            "request_sha256": "d1e7b1d4d8c0e51b6def947ae8d6c9e7dd10adc2fb5d6e87296adadf99cc9855",
+            "native_request_id": 103,
+            "pack_type": "EndTurn",
+            "candidate": {
+              "op": "end_turn"
+            }
+          },
+          "line": 14,
+          "server_applied": true,
+          "ack": true,
+          "move_result": null,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "complete_end_turn"
+        }
+      ],
+      "win": null,
+      "reward": null,
+      "ppo_samples_admitted": 0,
+      "potential_verified_policy_decisions": 0,
+      "automatic_policy_samples": 0,
+      "diagnostic_policy_samples": 0
+    },
+    "automatic_is_not_policy": {
+      "valid": true,
+      "fixture_only": true,
+      "real_execution_certified": false,
+      "certification_limit": "Event-contract check only; raw native instrumentation/extraction needs independent real-run audit",
+      "errors": [],
+      "counts": {
+        "policy_moves": 0,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 1,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 0,
+        "new_policy_decisions": 0,
+        "blocking_visits": 0
+      },
+      "actions": [
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": null,
+            "native_request_id": 200,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 1,
+            "op": "end_turn",
+            "pack_type": "EndTurn",
+            "selected_index": null,
+            "request_sha256": null,
+            "candidate": {
+              "op": "end_turn"
+            },
+            "automatic_reason": "no legal move after economic completion"
+          },
+          "line": 3,
+          "server_applied": true,
+          "ack": true,
+          "move_result": null,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "complete_end_turn"
+        }
+      ],
+      "win": null,
+      "reward": null,
+      "ppo_samples_admitted": 0,
+      "potential_verified_policy_decisions": 0,
+      "automatic_policy_samples": 0,
+      "diagnostic_policy_samples": 0
+    },
+    "terminal_move_result_missing_ack": {
+      "valid": true,
+      "fixture_only": true,
+      "real_execution_certified": false,
+      "certification_limit": "Event-contract check only; raw native instrumentation/extraction needs independent real-run audit",
+      "errors": [],
+      "counts": {
+        "policy_moves": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 0,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 1,
+        "new_policy_decisions": 0,
+        "blocking_visits": 0
+      },
+      "actions": [
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 1,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 1,
+            "op": "move",
+            "selected_index": 0,
+            "request_sha256": "b0d69e46e43ace4685a841892a13275f74f7956bdebd05f186fbcf0ee92fb944",
+            "native_request_id": 100,
+            "pack_type": "MoveHero",
+            "candidate": {
+              "op": "move",
+              "kind": 0,
+              "position": [
+                12,
+                10,
+                0
+              ],
+              "next": [
+                12,
+                10,
+                0
+              ],
+              "path_cost": 100,
+              "heuristic_score": 2.0
+            }
+          },
+          "line": 3,
+          "server_applied": false,
+          "ack": false,
+          "move_result": 1,
+          "visit_proof": [],
+          "complete": true,
+          "classification": "terminal_move_result_ack_missing"
+        }
+      ],
+      "win": null,
+      "reward": null,
+      "ppo_samples_admitted": 0,
+      "potential_verified_policy_decisions": 0,
+      "automatic_policy_samples": 0,
+      "diagnostic_policy_samples": 0
+    },
+    "terminal_military_native_visit": {
+      "valid": true,
+      "fixture_only": true,
+      "real_execution_certified": false,
+      "certification_limit": "Event-contract check only; raw native instrumentation/extraction needs independent real-run audit",
+      "errors": [],
+      "counts": {
+        "policy_moves": 1,
+        "policy_end_turns": 0,
+        "automatic_end_turns": 0,
+        "late_end_turn_acks": 0,
+        "diagnostic_decisions": 1,
+        "new_policy_decisions": 0,
+        "blocking_visits": 0
+      },
+      "actions": [
+        {
+          "sent": {
+            "event": "native_action_sent",
+            "decision_id": 1,
+            "player": 0,
+            "hero": 44,
+            "own_turn": 1,
+            "op": "move",
+            "selected_index": 0,
+            "request_sha256": "b0d69e46e43ace4685a841892a13275f74f7956bdebd05f186fbcf0ee92fb944",
+            "native_request_id": 100,
+            "pack_type": "MoveHero",
+            "candidate": {
+              "op": "move",
+              "kind": 0,
+              "position": [
+                12,
+                10,
+                0
+              ],
+              "next": [
+                12,
+                10,
+                0
+              ],
+              "path_cost": 100,
+              "heuristic_score": 2.0
+            }
+          },
+          "line": 3,
+          "server_applied": false,
+          "ack": false,
+          "move_result": null,
+          "visit_proof": [
+            "server_move_received",
+            "hero_visit",
+            "battle_or_capture_outcome"
+          ],
+          "complete": true,
+          "classification": "terminal_native_military_visit_confirmed"
+        }
+      ],
+      "win": null,
+      "reward": null,
+      "ppo_samples_admitted": 0,
+      "potential_verified_policy_decisions": 0,
+      "automatic_policy_samples": 0,
+      "diagnostic_policy_samples": 0
+    }
+  },
+  "negative": {
+    "endturn_missing_server_apply": [
+      {
+        "line": 10,
+        "event": "package_applied",
+        "error": "EndTurn ACK lacks successful service apply"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "endturn_missing_ack_nextturn_not_substitute": [
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "late_ack_rewritten_turn": [
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Immutable native binding mismatch"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "wrong_ack_request": [
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "wrong_ack_op": [
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Immutable native binding mismatch"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "wrong_ack_pack": [
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Immutable native binding mismatch"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "failed_ack": [
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Failed/wrong/duplicate PackageApplied ACK"
+      },
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "endturn_busy_query_count": [
+      {
+        "line": 7,
+        "event": "native_action_sent",
+        "error": "Action sent before Query/Move/Economy/Battle drained"
+      },
+      {
+        "line": 8,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 12,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "endturn_busy_movement_busy": [
+      {
+        "line": 7,
+        "event": "native_action_sent",
+        "error": "Action sent before Query/Move/Economy/Battle drained"
+      },
+      {
+        "line": 8,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 12,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "endturn_busy_economy_busy": [
+      {
+        "line": 7,
+        "event": "native_action_sent",
+        "error": "Action sent before Query/Move/Economy/Battle drained"
+      },
+      {
+        "line": 8,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 12,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "endturn_busy_battle_busy": [
+      {
+        "line": 7,
+        "event": "native_action_sent",
+        "error": "Action sent before Query/Move/Economy/Battle drained"
+      },
+      {
+        "line": 8,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 12,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "action_after_endturn_before_newturn": [
+      {
+        "line": 8,
+        "event": "native_action_sent",
+        "error": "Action outside current active own turn"
+      }
+    ],
+    "turn_sequence_gap": [
+      {
+        "line": 8,
+        "event": "your_turn",
+        "error": "Nonsequential own turn"
+      },
+      {
+        "line": 9,
+        "event": "busy_state",
+        "error": "Busy snapshot has wrong turn"
+      },
+      {
+        "line": 10,
+        "event": "native_action_sent",
+        "error": "Action outside current active own turn"
+      },
+      {
+        "line": 12,
+        "event": "move_result",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 13,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 14,
+        "event": "native_action_sent",
+        "error": "Action outside current active own turn"
+      },
+      {
+        "line": 15,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 16,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          3,
+          4
+        ]
+      }
+    ],
+    "duplicate_ack": [
+      {
+        "line": 12,
+        "event": "package_applied",
+        "error": "Failed/wrong/duplicate PackageApplied ACK"
+      }
+    ],
+    "selected_index_mismatch": [
+      {
+        "line": 6,
+        "event": "native_action_sent",
+        "error": "Native consumption context mismatch"
+      },
+      {
+        "line": 7,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "request_sha_mismatch": [
+      {
+        "line": 6,
+        "event": "native_action_sent",
+        "error": "Native consumption context mismatch"
+      },
+      {
+        "line": 7,
+        "event": "server_action_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "line": 11,
+        "event": "package_applied",
+        "error": "Unmatched native event"
+      },
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2
+        ]
+      }
+    ],
+    "terminal_winner_only": [
+      {
+        "native_request_id": 100,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "endturn_terminal_not_substitute": [
+      {
+        "native_request_id": 101,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "unconsumed_proposal": [
+      {
+        "error": "Unconsumed policy proposals",
+        "decision_ids": [
+          2,
+          3,
+          4
+        ]
+      }
+    ],
+    "visit_after_terminal": [
+      {
+        "line": 5,
+        "event": "server_move_received",
+        "error": "Military visit proof must precede native game_over"
+      },
+      {
+        "line": 6,
+        "event": "hero_visit",
+        "error": "Military visit proof must precede native game_over"
+      },
+      {
+        "line": 7,
+        "event": "battle_or_capture_outcome",
+        "error": "Military visit proof must precede native game_over"
+      },
+      {
+        "native_request_id": 100,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "visit_wrong_order": [
+      {
+        "line": 4,
+        "event": "hero_visit",
+        "error": "Out-of-order military visit proof"
+      },
+      {
+        "line": 6,
+        "event": "battle_or_capture_outcome",
+        "error": "Out-of-order military visit proof"
+      },
+      {
+        "native_request_id": 100,
+        "error": "Unconfirmed execution; terminal/winner is not a substitute"
+      }
+    ],
+    "move_failed": [
+      {
+        "line": 18,
+        "event": "move_failed",
+        "error": "Native failure move_failed"
+      }
+    ],
+    "economy_failed": [
+      {
+        "line": 18,
+        "event": "economy_failed",
+        "error": "Native failure economy_failed"
+      }
+    ],
+    "query_failed": [
+      {
+        "line": 18,
+        "event": "query_failed",
+        "error": "Native failure query_failed"
+      }
+    ],
+    "server_rejected": [
+      {
+        "line": 18,
+        "event": "server_rejected",
+        "error": "Native failure server_rejected"
+      }
+    ]
+  }
+}

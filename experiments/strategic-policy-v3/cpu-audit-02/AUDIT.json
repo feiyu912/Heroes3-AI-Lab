@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "cpu_only": true,
+  "native_started": false,
+  "optimizer_steps": 0,
+  "parent_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+  "expected_parent_sha256": "9a6b15c6be3866d61d8af5fe830471089c39972e57eee6e326828213d5453159",
+  "checkpoint_sha256": "2a630a48a9eafb599ff74210df41d2de7dd225ad129e4e7aba1f45fc5c307e6c",
+  "schema": "strategy-candidates-v4",
+  "encoder_version": "strategy-typed-single-hero-encoder-v3",
+  "model_format": "strategic-typed-single-hero-prior-v4",
+  "state_dim": 27,
+  "candidate_dim": 25,
+  "move_only_mathematically_equivalent": true,
+  "numerical": {
+    "requests": 128,
+    "logits_max_abs": 0.0,
+    "value_max_abs": 0.0,
+    "logits_bitwise_equal": true,
+    "value_bitwise_equal": true
+  },
+  "mixed_or_stop_equivalence_claimed": false,
+  "stop_bias_initial": -4.0,
+  "stop_prior_is_learned": false,
+  "counterexamples_rejected": {
+    "empty": true,
+    "illegal_op": true,
+    "missing_op": true,
+    "multihero_stop": true,
+    "bool_hero_count": true,
+    "stop_move_payload": true,
+    "stop_invented_next": true,
+    "duplicate_stop": true,
+    "turn_bool": true,
+    "turn_zero": true,
+    "turn_missing": true,
+    "all_mask": true,
+    "old_checkpoint_format": true,
+    "optimizer_resume": true,
+    "rollout_resume": true,
+    "unknown_resume_key": true,
+    "resume_flag": true,
+    "missing_reset_lineage": true,
+    "wrong_parent_sha": true,
+    "tensor_stop_move_payload": true,
+    "tensor_invalid_op_bits": true
+  },
+  "gradients": {
+    "stop_bias": -0.9996263384819031,
+    "actor_new_state": 0.009649090468883514,
+    "actor_new_op_bits": [
+      0.2660183608531952,
+      0.270884245634079
+    ],
+    "critic_new_state": 9.906582832336426,
+    "critic_new_op_bits": [
+      6.604388236999512,
+      3.302194118499756
+    ]
+  },
+  "save_load_bitwise": true,
+  "module_cache_unchanged": true,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/encoder.py": "3c613ab07b3d3a4d09bef544c34883e2ba07c04d9114d55a929ebfbd9b4f5056",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/model.py": "a221490d49501939e2634aa1e67b2aed46b84fcd7c1862bdbe5a60a4b2f2f072",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/migrate_weights.py": "cad8d2218e6436e186f1427349ec9e1b1ce64939bc37dabb075aaee72b867e2e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu_audit.py": "bbaf309259d66a7d4e048ab6dbf8025eeda9191c59f23154bc9b23b645c145f8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/encoder.py": "d2cc448370cd82df05e6c6e5a7108f05c24eec35dc7eac21468e27cc5e1d0bc8",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/model.py": "b4e8a0c71ac620d5822b3d4ae88e1edb313e3c4aab1a4dbb940e089e241a3108"
+  }
+}

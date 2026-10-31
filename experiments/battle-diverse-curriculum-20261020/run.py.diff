@@ -1,0 +1,58 @@
+--- frozen-family/run.py
++++ diverse-60case/run.py
+@@ -12,6 +12,7 @@
+     paths.update(runtime/n for n in ['libvcmi.so','libmlclient.so','libmlserverplugin.so'])
+     paths.update(gym/'vcmi_gym/connectors/rel'/n for n in ['connector_v15.so','exporter_v15.so'])
+     paths.update(gym/'vcmi_gym/envs/v15'/n for n in ['vcmi_env.py','pyconnector.py','decode.py'])
++    paths.add(R/'full-graph-contract.json');paths.update((gym/'vcmi_gym').rglob('*.py'))
+     paths.add(LAB/'onnxruntime/lib/libonnxruntime.so');paths.add(LAB/'data/vcmi/Mods/ML/Content/heroes.json')
+     paths.update(LAB/'data/vcmi/Data/MMAI/models'/('lab-upstream-'+role+'.onnx') for role in ['attacker','defender'])
+     cases=json.loads(SCENARIOS.read_text());assert len([c for c in cases if c['split']=='train'])==192
+@@ -20,24 +21,24 @@
+     return {str(p):sha(p) for p in sorted(paths)}
+ def training(out):
+     return ['bash',str(R/'run-lab.sh'),str(HERE/'train_last_graph.py'),'--checkpoint',str(B64),'--output',str(out/'training.json'),
+-        '--models-dir',str(out/'models'),'--freeze',str(out/'FREEZE.json'),'--mode','last','--workers','12','--updates','4','--rollout','32',
++        '--models-dir',str(out/'models'),'--freeze',str(out/'FREEZE.json'),'--mode','last','--workers','16','--updates','30','--rollout','32',
+         '--epochs','2','--microbatch','8','--no-auto-microbatch','--learning-rate','1e-6','--head-learning-rate','1e-5',
+-        '--gamma','1','--step-cost','0','--shaping','.5','--entropy-coef','.005','--seed','2026102012',
++        '--gamma','1','--step-cost','0','--shaping','.5','--entropy-coef','.005','--seed','2026102016',
+         '--native-opponent-device','cpu','--first-battle','--rotate-every','2','--opponents','BattleAI','MMAI_MODEL',
+         '--scenario-file',str(SCENARIOS)]
+ def evaluate(out,name,checkpoint,opponent):
+     command=['bash',str(R/'run-lab.sh'),str(HERE/'evaluate_bounded.py'),'--checkpoint',str(checkpoint),'--policies','recovered',
+-        '--scenario-file',str(SCENARIOS),'--scenarios',*map(str,range(192,200)),'--seeds','1','--seed-base','2026102600',
++        '--scenario-file',str(SCENARIOS),'--scenarios',*map(str,range(192,200)),'--seeds','1','--seed-base','2026103400',
+         '--workers','8','--opponent',opponent,'--output',str(out/(name+'-'+opponent+'-DEV.json'))]
+     if opponent=='MMAI_MODEL':command+=['--opponent-model-template','DATA/MMAI/models/lab-upstream-{role}.onnx']
+     return command
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--execute',action='store_true');p.add_argument('--evaluate',action='store_true');a=p.parse_args()
+     assert not any(os.environ.get(v) not in (None,'','0') for v in ['LAB_NATIVE_ONNX_CUDA','LAB_ONNX_CUDA','LAB_BATTLEAI_TEACHER'])
+-    a.out.mkdir(parents=True,exist_ok=False);frozen=dict(schema='battle-family-balanced-last-v1',input_sha256=inputs())
++    a.out.mkdir(parents=True,exist_ok=False);frozen=dict(schema='battle-diverse-60case-last-v1',input_sha256=inputs())
+     assert sha(B64)=='1e022707186a3c0dad7c671233b100930e870fff6c79cc703fb5b89dfb192936'
+     write(a.out/'FREEZE.json',frozen)
+-    plan=dict(schema=frozen['schema'],execute=a.execute,train_command=training(a.out),workers=12,updates=4,owned_transitions_budget=1536,
++    plan=dict(schema=frozen['schema'],execute=a.execute,train_command=training(a.out),workers=16,updates=30,owned_transitions_budget=15360,
+         optimizer='New Adam, B64 weights only',TRAIN_indices=list(range(192)),DEV_indices=list(range(192,200)),DEV_games=64,
+         evaluation=a.evaluate,registered_curriculum=curriculum.registered(SCENARIOS),opponents=['BattleAI','MMAI_MODEL'],MMAI_GPU_used=False,expert_labels_used=False,
+         native_environment_restorable=False,confirmation_v2_touched=False,freeze_sha256=sha(a.out/'FREEZE.json'))
+@@ -50,7 +51,7 @@
+             h=(LAB/'evaluations'/name).open('a');fcntl.flock(h,fcntl.LOCK_EX|fcntl.LOCK_NB);handles.append(h)
+         with (a.out/'training.log').open('w') as stream:run=subprocess.run(plan['train_command'],env=env,stdout=stream,stderr=subprocess.STDOUT)
+         assert run.returncode==0,'Training exited '+str(run.returncode)
+-        t=json.loads((a.out/'training.json').read_text());assert t['completed'] and t['all_workers_exit_zero'] and len(t['records'])==4
++        t=json.loads((a.out/'training.json').read_text());assert t['completed'] and t['all_workers_exit_zero'] and len(t['records'])==30
+         assert all(r['actual_Adam_steps']>0 and r['checkpoint_readback']['Adam_exact'] for r in t['records'])
+         assert all(sha(f)==h for f,h in frozen['input_sha256'].items())
+         result.update(training_completed=True,checkpoint=t['checkpoint'],checkpoint_sha256=sha(t['checkpoint']),actual_Adam_steps=t['records'][-1]['actual_Adam_steps_total'])
+@@ -59,7 +60,7 @@
+         handles=[]
+         if a.evaluate:
+             env['LAB_PYTHON']=str(LAB/'venv/bin/python');reports=[]
+-            for name,checkpoint in [('B64',B64),('update4',t['checkpoint'])]:
++            for name,checkpoint in [('B64',B64),('update30',t['checkpoint'])]:
+                 for opponent in ['BattleAI','MMAI_MODEL']:
+                     command=evaluate(a.out,name,checkpoint,opponent)
+                     with (a.out/(name+'-'+opponent+'-DEV.log')).open('w') as stream:r=subprocess.run(command,env=env,stdout=stream,stderr=subprocess.STDOUT)

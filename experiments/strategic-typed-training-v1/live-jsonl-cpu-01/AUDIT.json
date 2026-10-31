@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "split_positions": 91,
+  "final_partial_rejected": true,
+  "malformed_committed_rejected": true,
+  "native_games": 0,
+  "optimizer_steps": 0
+}

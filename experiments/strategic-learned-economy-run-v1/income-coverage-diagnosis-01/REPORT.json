@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "statistics": {
+    "states": 3000,
+    "legal_build_candidates": 1473,
+    "category_infrastructure": 1291,
+    "build_windows": 421,
+    "windows_with_legal_build": 400,
+    "own_town_windows": 430,
+    "built_today_zero": 430,
+    "town_hall_already_present": 410,
+    "city_hall_already_present": 0,
+    "capitol_already_present": 0,
+    "city_prerequisite_missing_0": 346,
+    "city_prerequisite_offered_0": 330,
+    "city_prerequisite_missing_14": 299,
+    "city_prerequisite_offered_14": 296,
+    "city_prerequisite_missing_16": 249,
+    "city_prerequisite_offered_16": 246,
+    "category_dwelling": 182
+  },
+  "cells": [
+    {
+      "cell": 0,
+      "counts": {
+        "states": 314,
+        "build_windows": 44
+      }
+    },
+    {
+      "cell": 1,
+      "counts": {
+        "states": 822,
+        "build_windows": 115
+      }
+    },
+    {
+      "cell": 2,
+      "counts": {
+        "states": 339,
+        "build_windows": 46
+      }
+    },
+    {
+      "cell": 3,
+      "counts": {
+        "states": 113,
+        "build_windows": 15
+      }
+    },
+    {
+      "cell": 4,
+      "counts": {
+        "states": 527,
+        "build_windows": 75
+      }
+    },
+    {
+      "cell": 5,
+      "counts": {
+        "states": 560,
+        "build_windows": 85
+      }
+    },
+    {
+      "cell": 6,
+      "counts": {
+        "states": 86,
+        "build_windows": 10
+      }
+    },
+    {
+      "cell": 7,
+      "counts": {
+        "states": 239,
+        "build_windows": 31
+      }
+    }
+  ],
+  "city_missing_mage_market_blacksmith": {
+    "(0, 14, 16)": 114,
+    "(0, 14)": 164,
+    "(14,)": 17,
+    "(0, 16)": 68,
+    "(14, 16)": 4,
+    "(16,)": 63
+  },
+  "town_hall_absent_missing_direct_prerequisites": {
+    "(5,)": 20
+  },
+  "offered_building_ids": {
+    "0": 330,
+    "8": 226,
+    "14": 296,
+    "16": 246,
+    "33": 89,
+    "21": 76,
+    "32": 76,
+    "9": 77,
+    "34": 17,
+    "5": 20,
+    "7": 20
+  },
+  "selected_building_ids": {
+    "16": 4,
+    "33": 2,
+    "8": 4,
+    "32": 1,
+    "0": 2,
+    "9": 3,
+    "14": 3
+  },
+  "compiled_source_and_config": {
+    "AI/DirectorAI/CDirectorAI.cpp": {
+      "path": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/source-snapshot/AI/DirectorAI/CDirectorAI.cpp",
+      "sha256": "70c0df767766b677f1a14524412c386c1db0c490f60a434f8ba6c844c184331b"
+    },
+    "lib/callback/CGameInfoCallback.cpp": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/callback/CGameInfoCallback.cpp",
+      "sha256": "ba241c6e34257f339f8cc39ccac1f2fcd5a2c80dc1a0ac2f4b904c8136f411ee"
+    },
+    "lib/mapObjects/CGTownInstance.cpp": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/mapObjects/CGTownInstance.cpp",
+      "sha256": "430d61204532dcaad217e4108adb13f585ed3bee150314624099a666cfcb7e7e"
+    },
+    "lib/entities/faction/CTownHandler.cpp": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/entities/faction/CTownHandler.cpp",
+      "sha256": "2994c87c6d645a4da3ebccb8273d24326f696552e2a9889cae1747c9ecb13950"
+    },
+    "lib/entities/building/CBuilding.h": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/entities/building/CBuilding.h",
+      "sha256": "febeba9f54da45561838eac08701cf3cbb152422eb148a5a244e11a419357b56"
+    },
+    "lib/constants/EntityIdentifiers.h": {
+      "path": "/root/heroes3-ai-lab/src/vcmi-adv/lib/constants/EntityIdentifiers.h",
+      "sha256": "9f4f444764b164868c3fa4541d57768d8d057a93c9ca88183de03738a1605208"
+    },
+    "config/buildingsLibrary.json": {
+      "path": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/bin/config/buildingsLibrary.json",
+      "sha256": "6a0ceada7ae3619abf8a840b6a04265ad7a1b64b63a0233b2e5790b2e17528e4"
+    },
+    "config/factions/castle.json": {
+      "path": "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/bin/config/factions/castle.json",
+      "sha256": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b"
+    }
+  },
+  "input_sha256": {
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/build-source-manifest.json": "a98b8754efc7afbd83cb8cb1be68425f4eaf1a7dfe08564a708926dcef3e600f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/EXECUTION.json": "b6349a95e033f40f92115fca160846b6b2d9231d6f5fb621b4cd780ead9b1e05",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/source-snapshot/AI/DirectorAI/CDirectorAI.cpp": "70c0df767766b677f1a14524412c386c1db0c490f60a434f8ba6c844c184331b",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/callback/CGameInfoCallback.cpp": "ba241c6e34257f339f8cc39ccac1f2fcd5a2c80dc1a0ac2f4b904c8136f411ee",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/mapObjects/CGTownInstance.cpp": "430d61204532dcaad217e4108adb13f585ed3bee150314624099a666cfcb7e7e",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/entities/faction/CTownHandler.cpp": "2994c87c6d645a4da3ebccb8273d24326f696552e2a9889cae1747c9ecb13950",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/entities/building/CBuilding.h": "febeba9f54da45561838eac08701cf3cbb152422eb148a5a244e11a419357b56",
+    "/root/heroes3-ai-lab/src/vcmi-adv/lib/constants/EntityIdentifiers.h": "9f4f444764b164868c3fa4541d57768d8d057a93c9ca88183de03738a1605208",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/bin/config/buildingsLibrary.json": "6a0ceada7ae3619abf8a840b6a04265ad7a1b64b63a0233b2e5790b2e17528e4",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-economy-build-capsule-01/bin/config/factions/castle.json": "3b152491e0e19f75eb81e322b33dc4eb4719574d0e1ecbb484f765b8e54dfc9b",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00/native/agent/typed-broker.jsonl": "778cf6cdfbfcb47fdc5ee1d02b6cc1aa727dda31c58b764980be1b7906c2588a",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-00/raw-audit/AUDIT.json": "f3edc97f17b0d3b00af9cec095eb2fd651341a9fce7b9c540f8c0a05558c94fe",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01/native/agent/typed-broker.jsonl": "44536aca8a0a73da6f1671c61030dc55506355d1562e178252441f1c6ac591e8",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-01/raw-audit/AUDIT.json": "768f30add2cfadd945859705769e79dba1fadf7c9351adf7a6680b77d292fb8e",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02/native/agent/typed-broker.jsonl": "c1d462273ace5cbeca840a7f8d311ab39a6882ff1cdf763fe2b6c9d5c5bd8602",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-02/raw-audit/AUDIT.json": "d50cbbfccd6448acf12ff0d73c4862f1bf26efca28b9d25cc6330f984f11d267",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-03/native/agent/typed-broker.jsonl": "b0acfb9c1085a458d06a87abec3bc0d5d2eaf4cf14821239c30a355ae4441791",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-03/raw-audit/AUDIT.json": "cf923dbad2aeab5f96ab043ef6c6322028032e537bf136a3d366bcde8ea804a2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04/native/agent/typed-broker.jsonl": "8e060161b6b20de91d1b170abfa819cf254669d2c9b913a5ff3a41e05722b8a2",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-04/raw-audit/AUDIT.json": "8435c1d1dc2cbb601069b2d9e8b2244557bf2db77206029c0ff0c099ea3354c3",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-05/native/agent/typed-broker.jsonl": "bb1c4f8abdf01a39013084fcb19e54e3ff15dc5e1cba4ca4b6d3b165ee2c7884",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-05/raw-audit/AUDIT.json": "ca7c7ee8dfca9fa44f4a28b80e7bf52bc17c10996775bbab0fd6b0489b9803ec",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-06/native/agent/typed-broker.jsonl": "6e64a72e4bbb0e7c421ad5c687007fce90b17ba8076266e37318a05a0c5096f5",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-06/raw-audit/AUDIT.json": "9c6be26ba32c169d5e199c051ae7f7b7049eaa75b4f56fc0366fcd9253c69e6f",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-07/native/agent/typed-broker.jsonl": "d96bac26e19feeea79716943305f945531abf8f0f75935fabfd57dbc48e05cf5",
+    "/root/heroes3-ai-lab/evaluations/strategic-learned-build-training-01/cell-07/raw-audit/AUDIT.json": "ca91407075933babeb6fecee41254296b4b47f5d043df54243aeac4000e45296"
+  },
+  "native_runs": 0,
+  "gpu_runs": 0,
+  "optimizer_steps": 0,
+  "limits": [
+    "No actual canBuildStructure enum was logged for omitted candidates; report proves visible prerequisite/already-built exclusions, not an engine replay.",
+    "Forbidden-building flags and fully resolved legacy prices were not logged in policy requests; no hidden map/native-save state was read.",
+    "More exploration may select already-offered prerequisites and unlock income on later windows; no guaranteed unlock or strength improvement follows."
+  ]
+}

@@ -1,0 +1,9 @@
+# Boundary preparation and narrow natural evidence
+
+The natural raw re-audit of two existing candidate games passed. Exact one-kind4 continuation while away from town and positive stock is proved. Real arrival/transfer/post-policy state proves free re-selection after arrival plus stock depletion; those causes are not separated by these existing games. Policy-visible positive receivable stock at the current tile remains unobserved, and the executor remains enabled.
+
+Seven actual diagnostic map files and executable collector/selector/raw auditor/boundary auditor/pair auditor are prepared. `prepare-checks-02/RESULT.json` passed: 10 Python modules compile, 5 CLI entries run, all seven ZIP/object/terrain differences match their sole registered interventions, and the water ring is outside the town footprint with disconnected ordinary-land overapproximation. The new schema6 raw parser also rechecked the eight actual decisions of an existing completed game. These are CPU preparation/readback results, not runtime qualification of the new fixtures or legacy branches.
+
+New native games: **0**. GPU runs: **0**. Adam steps: **0**. Final test: **untouched**. No model promotion, expertise or strength improvement is claimed. Unreachable and nonowned Town qualification still needs the registered real observations and matched reachable-stock control. Native kind4 has no internal target-status log; the audit explicitly does not invent one. Arrival with seven incompatible species and pickup consumption have separate required native state evidence. Original schema4/5 transport versions remain strict, and legacy automatic economy is not called learned recruitment.
+
+Root review must bind the new freeze, allowed cases, map SHA and capsule attestations in RUN_ADMISSION.json before execution. SOURCE_FREEZE binds all new tools/maps, the existing natural evidence, original imported helpers and original v1 freeze. No original v1 file has been changed.

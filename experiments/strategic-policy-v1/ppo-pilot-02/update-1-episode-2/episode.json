@@ -1,0 +1,61 @@
+{
+  "config": {
+    "map": "Maps/adv/takeover-v2-train-01-mines",
+    "red": "DirectorAI",
+    "blue": "Nullkiller2",
+    "seed": 2026101912
+  },
+  "valid": true,
+  "reward": -1.0,
+  "decisions": 53,
+  "native_consumption_verified": true,
+  "native": {
+    "schema": "adventure-run-v5",
+    "run_dir": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-2-2026101912-d79z0k05",
+    "config": {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "Nullkiller2",
+      "seed": 2026101912,
+      "seconds": 90,
+      "tag": "update-1-episode-2",
+      "save_file": "",
+      "gdb": false,
+      "agent_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-2-_jjvwwh0"
+    },
+    "engine_exit": 0,
+    "timed_out": false,
+    "crashed": false,
+    "completed": true,
+    "winner": "blue",
+    "wrapper_exit": 0,
+    "actual_ai": {
+      "red": "DirectorAI",
+      "blue": "Nullkiller2"
+    },
+    "turns": 6,
+    "moves_requested": 53,
+    "move_replies": 53,
+    "changed_tile_replies": 53,
+    "failed_move_replies": 0,
+    "inputs_unchanged": true,
+    "log_sha256": "4c5996a36a537e196e8977d1ceb04d2492a1daab59101ad53faa2ff5c8604c44",
+    "native_load_verified": null,
+    "load_markers": null,
+    "wall_seconds": 1.1151337989999774,
+    "limitations": "External local target policy; economics scripted; effectiveness requires separate evaluation.",
+    "strategy_trace_sha256": "0c9e15a83d494fefa88b3eb1bc615d1852047ec6e95283182a38707d85a07a0b",
+    "strategy_trace_records": 133,
+    "strategy_decisions_sha256": "28adbced2a9d918a03f49bc4bc0712f0a641c6869366286f2e87c9c1da638e28",
+    "strategy_decision_records": 53,
+    "save_files": [
+      {
+        "path": "/root/heroes3-ai-lab/workers/adv-runs/update-1-episode-2-2026101912-d79z0k05/data/vcmi/Saves/director-v5-initial.vsgm1",
+        "bytes": 341526,
+        "sha256": "8774911a8e76135080429cd02a967cb9f9d22856d0e3561f0e603ebc46d33439"
+      }
+    ]
+  },
+  "rollout_dir": "/root/heroes3-ai-lab/workers/strategy-agent-runs/update-1-episode-2-_jjvwwh0",
+  "wall_seconds": 1.220571602000291
+}

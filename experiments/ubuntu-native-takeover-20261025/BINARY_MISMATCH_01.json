@@ -1,0 +1,46 @@
+{
+  "passed": false,
+  "preflight_stopped_before_native": true,
+  "rows": [
+    {
+      "name": "libvcmi.so",
+      "expected": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+      "restored": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+      "active": "bd50e62ccee1c1e22af4d3bb0f18d6dc1fbc80c5bc0f601489cc3662e34b4441",
+      "original_matches": true,
+      "active_matches": true
+    },
+    {
+      "name": "libmlclient.so",
+      "expected": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+      "restored": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+      "active": "cc8aaea44afd80016f11f8be9404edcea63d109345f6345a0504e60fca1722ae",
+      "original_matches": true,
+      "active_matches": true
+    },
+    {
+      "name": "libmlserverplugin.so",
+      "expected": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+      "restored": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+      "active": "d2d1e26c31cb371c53b52a5d4dfdac8f09d329391a8eacbc29ec8df833b458fa",
+      "original_matches": true,
+      "active_matches": true
+    },
+    {
+      "name": "vcmiclient",
+      "expected": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+      "restored": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+      "active": "8c820049b5f220e19b0f41dc21cb28b15f1114ecc8cf1e0839fff580e32541ab",
+      "original_matches": true,
+      "active_matches": true
+    },
+    {
+      "name": "vcmiserver",
+      "expected": "26ab58b469584dfd58f5ce2fe3502503409962f6c928c59ad7c63d46c8999a05",
+      "restored": "2d2139db6be9f61e518e9590571eb3e95a6dac4a0c515c7174e800553523b6c6",
+      "active": "2d2139db6be9f61e518e9590571eb3e95a6dac4a0c515c7174e800553523b6c6",
+      "original_matches": false,
+      "active_matches": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "CPU_only": true,
+  "parent_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a",
+  "initialization_sha256": "1510149ef1c2c896e3125e6468e9e58234a8bfc9e4278ad239f9d6840e1c62a1",
+  "catalog_sha256": "031d9200e3efa40e2dd82363547d6f39e8f1381296f000d8b83b158ca663eb1e",
+  "registered_species": 150,
+  "new_Adam_state_empty": true,
+  "reset_RNG": true,
+  "discard_rollout": true,
+  "optimizer_steps": 0,
+  "native_runs": 0,
+  "GPU_steps": 0,
+  "manual_prior_is_learning": false,
+  "readback_exact": true
+}

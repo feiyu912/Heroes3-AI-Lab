@@ -1,0 +1,17 @@
+{
+  "schema": "refill-mechanism-tools-derivation-v1",
+  "parents": {
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/qualification/collect_mechanism.py": "d6931557a344f96f214f34b0efc5b496ff67df15b11e047e8cbc072de1477988",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/qualification/selector.py": "a7b0669ab61212be8487dec74004311aa2f6ce2ea75185c000138e71c15d2332",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/qualification/pipeline_common.py": "d5665fea30f2726633f534900e13677a416629fead636954e39ee12b7a6a400d",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-learned-recruitment-native-v3/qualification/prepare_fixture.py": "8cf394906361eded518acadab95bb6cbfeaef61c02eeac67e9ead270b33fc069",
+    "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/takeover-20261023/independent-evidence-01/audit_mechanism.py": "69f3999387e41cf89b8eef0ac22bba95d7bb9018f8355db8154e26fab0cf1188"
+  },
+  "actual_preparation_check": "/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/strategic-refill-retention-qualification-20261025/prepare-checks-02/RESULT.json",
+  "actual_preparation_check_sha256": "cdc24f816d00165e23bfa9c25b87493c96d8e904da40728e1e6c819c7368fbd3",
+  "new_native_games": 0,
+  "GPU_runs": 0,
+  "optimizer_steps": 0,
+  "frozen_originals_modified": false,
+  "shared_tree_restoration_flags_fabricated": false
+}

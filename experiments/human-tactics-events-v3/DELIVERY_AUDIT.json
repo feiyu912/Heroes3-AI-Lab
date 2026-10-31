@@ -1,0 +1,536 @@
+{
+  "passed": true,
+  "episodes": 75,
+  "steps": 1797,
+  "normal": 75,
+  "illegal": 0,
+  "truncated": 0,
+  "bc_eligible": 0,
+  "rows": [
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/probes/probe-0.json",
+      "summary_sha256": "6e56bd2b48ac3d9910cd4c2a10cf8f99f74357a0893264f7af85f4a04c3f4e08",
+      "archive_sha256": "be414c607af46e2eba6ee1ab2762be1fb0fae9bcc908edbad230548a2974917d",
+      "steps": 51,
+      "historical_sources_restored_from_snapshot": 1
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/probes/probe-1.json",
+      "summary_sha256": "343d5699834e9389bba5078111686369d94b4be6615ae1537a96c94e72cd6b81",
+      "archive_sha256": "3f9330da45e15634cdfc0a09d987b406bebcb47f5b33bf49fecb0b109a824f23",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 1
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/bait-attacker.json",
+      "summary_sha256": "da421fd2e63c45221580d12cf7c4e6ced62bc73bb647daf9d128072b7188ca30",
+      "archive_sha256": "07b1fe305a2ec576b36bb0e6dc9f117d5b42e676e8c361f5c463093ba0e7c210",
+      "steps": 34,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/bait-defender.json",
+      "summary_sha256": "1e160b4162504b6a3b97d522d3f08aa735eec9f8c4f60dc18b6a3b729b64464d",
+      "archive_sha256": "ebc288746e9706c640555398539b539d13b637f643880352026cc7a1564b3137",
+      "steps": 37,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/cloud-attacker.json",
+      "summary_sha256": "defcba4dab765b2305db24a18e248211eee66a38269218cbcde8e9ee2fdabd35",
+      "archive_sha256": "ea159b6c9c46e09b149f56ada0b489ac67b996b4ce690bc0163c8dc631f2c1e2",
+      "steps": 32,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/cloud-defender.json",
+      "summary_sha256": "e7d910fe4552c9464e8bc15b21e27566eba086d3534b8fd61e688eebb2ed7963",
+      "archive_sha256": "540e05b00b43e376c946f2e1f19fce30d9d159d15f20a1964f9b9bc74d5b813e",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-attacker.json",
+      "summary_sha256": "4a4bcfafe3765fb4e2d9622e9fda77f90c6e79c35268a0d04e3367cb86d3ece7",
+      "archive_sha256": "bb9f591bb5fadb3e2fbc283018385d3f0967746d4613216f4ef20f58bf0c44e0",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 4
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-defender.json",
+      "summary_sha256": "3f03bc9186704c97f84ce9de9c5f82de9a5602c793b3eac34e84d8dbb49fb6da",
+      "archive_sha256": "2e59d91576d7f72ea78fb04906fd5da494bc02dcc1d66c35f355b93c1bc4cbe5",
+      "steps": 25,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/runs/smoke/dragon-repeat-attacker.json",
+      "summary_sha256": "b04b3b3f863bc65d293c256e24b348c7e67affa09b3c196cb72bad1056fa09c7",
+      "archive_sha256": "aa5cf3895e2b9d1e260523f5c1edd79cbf9f175bc47aa1b5803a7cbfa34568c5",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 2
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-attacker-2026101811-teacher.json",
+      "summary_sha256": "ac68ab96204ee55c613ba8668f8b0e0512bd7eafd8c8128b39137574a35958d8",
+      "archive_sha256": "796321c2167aa36a92191469fb458d75834ca5424eb29e2f9c4f597b0d2fe7fc",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "ca126fca80a59c417830a796f93caf6c32995ae2c8b112275482524d9dd1528f",
+      "archive_sha256": "98858834b8ad59319b990b67a8f88bcbfb95d4dd4338a1f0ee15b501d7b0ffdf",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-attacker-2026101812-teacher.json",
+      "summary_sha256": "8f8b7213efeaa5a796776404cf40d3aabc71b07f3c7084e60a252ee3265d45ea",
+      "archive_sha256": "551413321e74c33ed20d2556698ce2287198e96e3014e5840db67ed21df08c66",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "895b40171d479837eea2879b597367b645fe2f07df4441fe899a55d1ba559af3",
+      "archive_sha256": "7c793501e23f5571ed76c6aee90eabe10c31d082d9a3607c28da1cf94d1558b5",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-defender-2026101811-teacher.json",
+      "summary_sha256": "b6585e6e2edde74a631cbf41d8fc33fab2b19b60dd70eeee866a5f9faf97d16b",
+      "archive_sha256": "1636d181de6433ed6876629f53a5cd8ba21a09119e507e60b763358dec11a70e",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-defender-2026101811-wait-bait.json",
+      "summary_sha256": "e20f638b5670f5f00699c1f7c4e9bd93aff44ec682100a53d8b0f87edb7d3646",
+      "archive_sha256": "5f36349693377983acd095d7bf8156d0d4aa9b21ef6974eee72d2a60c3e87ef5",
+      "steps": 22,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-defender-2026101812-teacher.json",
+      "summary_sha256": "96001f6eb44d7698fa2514f98a60668d2ea746db748477cb89d1afe0a83fe426",
+      "archive_sha256": "edc3ddad0d8a401453089dd8d44e020eb6d181136ae6eae1116ff0814e0a4033",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/0-defender-2026101812-wait-bait.json",
+      "summary_sha256": "b225434d0b52858df2a438263e79dc8aa9fa7c24f6757b9bd7f11327293945d5",
+      "archive_sha256": "2978540b9fcf28c53e25fc1d90c4cc3e6e802064b5d546b28bc3b9628cf50814",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-attacker-2026101811-teacher.json",
+      "summary_sha256": "1d208186eedbac589e462a82e1e2c1639378287a86b44b7b3733bd390daacce8",
+      "archive_sha256": "c1ee11678b6f62f1cebc32d4ec7de84bdf253acc65e44801b421e88bc8325990",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "f1b47675148f078bb17c06ba71707084deedb33f3b6b6c2c22cd559e7757e252",
+      "archive_sha256": "706174edd763dc5e2fd59083b7031b32c420dfa30fa26daeb2378448b31fe3de",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-attacker-2026101812-teacher.json",
+      "summary_sha256": "2662d93167a8799f17e68eb06b492b78a764b8c14c0aa5d00fe65a9071583f62",
+      "archive_sha256": "dbf2e2a4a52b88008e1f2fd48eb7d879c277d787c22f2a1eccf0c317b6407b26",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "0604a9e6b51a40eb7e411e9889da13cf875d96ca84e04db919948c14aa2f511b",
+      "archive_sha256": "9bf791a565484a63ef60b67a48cfbebb57940d1f84fde0b82f7a15989e3c8246",
+      "steps": 28,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-defender-2026101811-teacher.json",
+      "summary_sha256": "de67d34598bc862deedbd8571680baf28e9dfdc13c83b5e0733218aa3f66b899",
+      "archive_sha256": "5fa455e936092e31bf899b7c445f2eb6a669f72c7fbd3fd8a6273a4252cfefcb",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-defender-2026101811-wait-bait.json",
+      "summary_sha256": "7d47a1a1be6f1f499caebc18aa69afcea58e7004b55a2aa8c4275b6c7ba3a48b",
+      "archive_sha256": "37ee8431f9ca2067ce93cb7d1a9b4af30e22d7e28178013becafb4e5b037b502",
+      "steps": 22,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-defender-2026101812-teacher.json",
+      "summary_sha256": "199a059423fa4ced5e0710d4489a24edc0b96fba69850b183ff37512a9a9fcbf",
+      "archive_sha256": "29876807927b637062eaf724db3da7aa1059a435f61ec588edb611579c294482",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v1/runs/train/1-defender-2026101812-wait-bait.json",
+      "summary_sha256": "a57d887e1dee60b1d149abcc612a4a7e2dd12afddaed8c79b0d5cfb20a797791",
+      "archive_sha256": "20a53fe91c3415a1762099e08daddc51a397a4a4ddb6f8f6b7dbe1ad9dbfcdce",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-attacker-2026101811-teacher.json",
+      "summary_sha256": "8823f47b1e0fe4f4b8de4a0a92472ba8e2b24538ac0fafe595281fc9ae8d08e4",
+      "archive_sha256": "83668e640f39f69c881d13e706ad4036e1e78cba33b054e87be3a0df9b4f5231",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "09e586f10391e141712caa4665a0e19ef61e862196275f2a1d20b632b214d271",
+      "archive_sha256": "7af7b6d4c0a89645c754c6d45f3597cb53f78327344c3c7081fb89d7d9e08d22",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-attacker-2026101812-teacher.json",
+      "summary_sha256": "e77d9478d5c9d20c21710d770d0e50fd8adf44967e47c281971d89dc8a091531",
+      "archive_sha256": "6431440ff776aa6175596cb393b5c2d89ea770d0b55865cc815cd144e9af86b7",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "153d1118ef6fd0d3cf91257adedce044e9fceb5c17edc83e04cc76e4ecc08233",
+      "archive_sha256": "b7c57f999f173c818ff014d58d705db473ce22561f4ead5eb868fd9b32f53f98",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-defender-2026101811-teacher.json",
+      "summary_sha256": "3cd82d8984fc2b4d76d004734b9ebd0bf1562ad452a43fc51a3dbc03fcb1ab1c",
+      "archive_sha256": "31cf59083725d5502924fd1b764caa4338fe285ec4f07c96329c9025c3f7a5f6",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-defender-2026101811-wait-bait.json",
+      "summary_sha256": "323f5c4962e464c0cff180333aabee91319b8a1d30f5e51ee4e49a9213404058",
+      "archive_sha256": "2b6119b3e7c4678a5c212dd878acbbd894d44ca4b2e5adae2cd34e0ab2dfe391",
+      "steps": 22,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-defender-2026101812-teacher.json",
+      "summary_sha256": "fb0ad61a04d6ae22b1527aab17a39a38acf418633c03091b5e20d58a6942dab8",
+      "archive_sha256": "33b37817e4c782e5ce2598e8a235dee2d72a4c4b14a85ff6780b01fe9dad8b18",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/0-defender-2026101812-wait-bait.json",
+      "summary_sha256": "9a09a4d44bbd5c8e850bd09e1377574e069d2efbafde816e4052ca63e75c6783",
+      "archive_sha256": "eb858d44107a96e9dd67444a0ae6444a3a2971a447a44d4857b14a3d85c7036a",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-attacker-2026101811-teacher.json",
+      "summary_sha256": "e1adaa78b1d611fd95aab69c8158722b04051b5b3fef69123473a5798b7b4ae7",
+      "archive_sha256": "df11cf190cb312517bcf7155adb47c885c655f0e47f3ce3c910906956fd43549",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "6e2ed19096b8678bf098a864bb5acefb8ebac4af0b3f270e4b7291797ac30be1",
+      "archive_sha256": "e4a71f4a97474f8b3e5c82185f66b6d36e67302c4806f1e811c5e7eec1a55f03",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-attacker-2026101812-teacher.json",
+      "summary_sha256": "50c6f67655e20b5a45ba16b20eb0e2069bf2dae4b0961f0d3b8e47d67910b9e5",
+      "archive_sha256": "aacd888861ff90a540b86a8a2e0b776782fd74aa130db26a94f513dcc6fe2c5d",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "0237038bd69ea81431e98d039c89e8905d114d4b10c518ad6d4695f186093093",
+      "archive_sha256": "2e2cc36ee3cfe0623871901ce09e2cc5c921a031d1219bf4208309c1190748e4",
+      "steps": 28,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-defender-2026101811-teacher.json",
+      "summary_sha256": "9dc33fc73c0e7532fe3ee56ac8477057ae4216775fced37343dc974cd3f27971",
+      "archive_sha256": "7c5711bf07185bfb27c6c48e22f0ffe4b4fed1f50c4605dd6ee75b4255cfd924",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-defender-2026101811-wait-bait.json",
+      "summary_sha256": "eeaaec93bafc4336fe0882e3467173c175c89451b7d9bc698ed3738fb65c6da2",
+      "archive_sha256": "54d4eb6f36047ce61b32daa8dc0da59c0a9689757a5b57542cd0a20b18e1252c",
+      "steps": 22,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-defender-2026101812-teacher.json",
+      "summary_sha256": "af020904ede02a03dbe74237c671f166dd8363d499183626f539a2e3308d1ed6",
+      "archive_sha256": "3e2be10c1506f1e158d34f53db2b928da4496f0c715c26d1d30b2707e0cd51a9",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v2/runs/train/1-defender-2026101812-wait-bait.json",
+      "summary_sha256": "7b3c45ed3e06eca229faef8a38c9b0fa613ea2eb971b76b66b5dd3fb03230d7f",
+      "archive_sha256": "d35908890765918b942591508d4dc5004837e313b35823d2a68059e1e4603220",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101811-teacher.json",
+      "summary_sha256": "60f54fa7eb7ed09e3016ba6371c2a52f336ebe80756d7d426db5ee58f5a2d833",
+      "archive_sha256": "b07cad8c11b5e97e5ca5e46a414b72251b80c870d76d6de6d79f3565aed85340",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "2b2882528e43acf6916f16dc2409c3653e9e6d49f553e5bdb9331870554a7d95",
+      "archive_sha256": "659d9f4539ee3bf8347d57fc5fbc2c7c920d282cec5557ba3e45a048afbf1a92",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101812-teacher.json",
+      "summary_sha256": "99ed630d7d24073a3075577476b75a4e5360e3f1d20c5c99d9026c9ce8c6b3e7",
+      "archive_sha256": "5c3a9db5f8a87607d6aab3a916f2973614c4d5392a0214ba517b7c1cbbfd55ee",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "2728b2c253382ad8d0280a7a9733c5f7de7dbe2cc85e96f611900445a8175f28",
+      "archive_sha256": "9fd023522f415148fdf0ce3e4b7bdf86e44ae8bba4c7d9e3b6dc71480f8e4cf1",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101811-teacher.json",
+      "summary_sha256": "0d9e49acf75a722d2a69b7328ee2d8255ffc6694f786322cb4089eb8a6f609a5",
+      "archive_sha256": "81b3a499ef9991acb8b2a342f9665665e891af37bbbb20e5e2d63e7a1ab12d4a",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101811-wait-bait.json",
+      "summary_sha256": "87c2f02c79023e478fe00c18937bc110e6eca738a60687731b1299af823dbe89",
+      "archive_sha256": "f3cd00ab9a731cdd4f18c46511ea5858a40b244c13c434733c6c1487332b67f2",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101812-teacher.json",
+      "summary_sha256": "7a0fbf631675f9ddc117a9f85449f9447c98919c8b8b766dd11983dac2bd0d7b",
+      "archive_sha256": "4f9fad0b3bec3a8100a137e94eccc82494d34ecae6f58752f1bdb6a7b2af089c",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/0-defender-2026101812-wait-bait.json",
+      "summary_sha256": "9fd2d4a08631a4b57bf0c55cc4f3e3cdff4cab8eba55ce2d83cb5f4e6be1c2bc",
+      "archive_sha256": "1b6ff4c41d07268d3bc4d2d0a256b0f467267bbc0b84749e34dcf72da56e86e8",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101811-teacher.json",
+      "summary_sha256": "0e46f42f82e6b712d10ee0e9c31d78cb83803e376ecf19f8a454f7d4057017b0",
+      "archive_sha256": "6c468b6237cdcfd2fa2c4b341671b4bdcf735539441f6108518c223bc136c4da",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101811-wait-bait.json",
+      "summary_sha256": "e15e5aad55fcb0f9d243c46e09307d55d4691db017a2cea347d22b90e8b4dcbf",
+      "archive_sha256": "bd643c330722a98ea1803503e2afaf9811879cca16eb859ebab730748b9faa3a",
+      "steps": 24,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101812-teacher.json",
+      "summary_sha256": "38c5a700d3090f491804992628256a41bcb0633f15d33d628b21dcea6f5cb44c",
+      "archive_sha256": "b39fd582da9a4cb64f793ae43d63f9e91e84b268fac495b23902f778eb7da38c",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-attacker-2026101812-wait-bait.json",
+      "summary_sha256": "1c188a56b201e82354fb2be36e5f5cb417b5210c51395cfee6ff0ef44980dd68",
+      "archive_sha256": "732427b656cb67a951f9b11c37435bfd83289e07c510ca0d863a128f488d66af",
+      "steps": 28,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101811-teacher.json",
+      "summary_sha256": "f42a831917e07db3d1c39a154ce305745cd56508a9d8647c85c36208d1f42781",
+      "archive_sha256": "5b21d99f465147b4acc451adda358611ce459cbb524f239346f714dde10014e4",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101811-wait-bait.json",
+      "summary_sha256": "6f4fc080a20025da84308bb5d8f47f12a907c61a92e31419bbdcb2774f3b392a",
+      "archive_sha256": "4695c146943eaa360e3e8be397dc6f61d06df1a2e8a34431a62e775cb28630a8",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101812-teacher.json",
+      "summary_sha256": "b0e64043374b4865592f5b5636e9e2e56ef694a0fa0f4dfc1131afd562ecf9d3",
+      "archive_sha256": "b912f63ba41604209bb120fddb98f083b282c4958a6ad87563f191d23c53d5c3",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/curriculum-v3/runs/train/1-defender-2026101812-wait-bait.json",
+      "summary_sha256": "3668a62589a5a411aaa6abbbbd9cf6ec40892ed911df2b081905ece3bc0fb61f",
+      "archive_sha256": "5a10384294536d383c3e6b40446f5c6e66cdeda3b88a362c4c33cbdbdb19fd57",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-attacker-2026101811-h2.json",
+      "summary_sha256": "c282274f63956709d3498170308a378d605a1320ef88269c4e451b091ec29098",
+      "archive_sha256": "7ad9ed557859a3e0be23451fff7400f5c50d7c9d7ff4e2160e314d92d25a54c6",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-attacker-2026101811-h4.json",
+      "summary_sha256": "a639947822ce502d390092f51766b9fdc8986a4834b96f45aa57ab7f321f1a15",
+      "archive_sha256": "b5acba9c44a31fd6913496ef959f8877fa3477656fa8b54d5ec6e2c69854aaa5",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-attacker-2026101812-h2.json",
+      "summary_sha256": "90f0d6bd0bc561e6921af6ca4d0064de845b9aafa5bcf6001b6415e674469539",
+      "archive_sha256": "43b63d8075431291a4e4584b7a2aa0e1f6a8f2649b0aead20d7f06d603b90fd4",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-attacker-2026101812-h4.json",
+      "summary_sha256": "0452b8c3a38757fe48f8127619f9da71b3593fb38b5ea8f22b855f1ea77f3e4a",
+      "archive_sha256": "24f6a0b64699c380a4f61eb49bb35ff35e9fb9a3d724691879a0088f32870c2c",
+      "steps": 19,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-defender-2026101811-h2.json",
+      "summary_sha256": "cf09dbdb77a46d1a6fc8e63e55d8a9d795f75684ef40992b91c13a0199fe85de",
+      "archive_sha256": "73eaa40488fef4441b6d73934975a33151c6ea7fe1961ce00d856e1be4a00865",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-defender-2026101811-h4.json",
+      "summary_sha256": "b03b8b9ba5c05fe1cb14bfb162db10f512db44a7ff670dce9b37bcea58141a6c",
+      "archive_sha256": "9e6bb063559d4f7a028f2f798a0ce0d333bf0d90c47a87e8786b59af54a3ef9e",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-defender-2026101812-h2.json",
+      "summary_sha256": "c63f1abfbfd45d3ad4ae2375beb3542dbb2695452e4d0c6c9d4d47de6364f7d2",
+      "archive_sha256": "51a2c4f353be7c0ef004dc9ca50b10656c99b5f392be4cbfd42f87e5cf88c250",
+      "steps": 20,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/0-defender-2026101812-h4.json",
+      "summary_sha256": "f90e7fb28971222d148210e1690b72de773dda8b43a81495dd37db09afaf9c36",
+      "archive_sha256": "70e4ab6c2674da820d7df74329cbf49b2f44b52f6190531452992997143436b4",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-attacker-2026101811-h2.json",
+      "summary_sha256": "cf6228719586099d2dc29006512dddee803124752dfe34015c09d26b4a0d08c7",
+      "archive_sha256": "c57d3d426910ee481be78bb396501c622c5a2fe872483f1d77ab10d9929f901e",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-attacker-2026101811-h4.json",
+      "summary_sha256": "ad3981fe8c9a2052b14953409a5b6d832c92caba0931aeff1e66d2ed90f867e2",
+      "archive_sha256": "2990c6e9f3bbe99d30b2c52962a61194b8ddd7af603fcbd6ceace528b0173cda",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-attacker-2026101812-h2.json",
+      "summary_sha256": "cf6f47fa9651fc55f00002612a895a8952327d0ab8341eaaecc330bc0ec6e6bf",
+      "archive_sha256": "6f279877e45b1180429e2f2147ea7d40e04e7e06cff317727b98f22bdd60155d",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-attacker-2026101812-h4.json",
+      "summary_sha256": "003164779055b5677d6ffdec3cf6002d6b723bdd97333502efe8fbfe95e1aeab",
+      "archive_sha256": "208140b56f1528b48ae991ae65f0e30155fa7982ab1790fad7b8573c46460197",
+      "steps": 27,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-defender-2026101811-h2.json",
+      "summary_sha256": "7aaefb706eda0eb2c6157347809e9dd6ca04492f8f9b35cac923383bb76bcc50",
+      "archive_sha256": "f9b8d6d4f3b1d514e94a4657dd8d1589df18805a96231aa66220bb8db11e2783",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-defender-2026101811-h4.json",
+      "summary_sha256": "1f47bbd23899f93774d0ba9767c4088cc735ea9f471b952d04990a2ec0b0a2e3",
+      "archive_sha256": "645acb999fcb7167384d655af845eb920ee0614efebf9c237ee712ad2fd45527",
+      "steps": 23,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-defender-2026101812-h2.json",
+      "summary_sha256": "e971f6f576345faf6c56fc7862531b5be5900188a0766d657f011169ae2f5ec1",
+      "archive_sha256": "ea9a15673ab3bd78fa8662b82fefc7cc2ea4eced337676f7109c3046e944ce8f",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/planner-pilot-v1/runs/train/1-defender-2026101812-h4.json",
+      "summary_sha256": "6b55d8f057825171b4f0f92e0db5289755bc2b75b8254834fa03c6f061fba236",
+      "archive_sha256": "4577b49a336b2ae01bad3e18308efd1d93804fe652256b7cbc09cc896c0f62d7",
+      "steps": 26,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/replay-branch-probe-v1/runs/control.json",
+      "summary_sha256": "98d952ce3a2e06bd0134ac7b2ba63aa4d1a9c34edc25ca924bf95a50be5365a2",
+      "archive_sha256": "b5f64bc3322676415b941eb0333e1c383ec6cea3155bf37a1a96a3cb5215e444",
+      "steps": 21,
+      "historical_sources_restored_from_snapshot": 0
+    },
+    {
+      "path": "/mnt/g/Heroes3-AI-Lab/experiments/human-tactics-events-v3/replay-branch-probe-v1/runs/intervention-wait.json",
+      "summary_sha256": "b628e5f7e47f3b79e10abbdff10eaf98e0ae43950925c53bff264d301b8b7a86",
+      "archive_sha256": "c5f9ba4a7b5e216a9064b5761e2097d332ea6c05641088a9b8b0da8a2ca719df",
+      "steps": 22,
+      "historical_sources_restored_from_snapshot": 0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+--- v1/build_capsule.py
++++ v2/build_capsule.py
+@@ -10,6 +10,37 @@
+ LAB=Path('/root/heroes3-ai-lab');SOURCE=LAB/'src/vcmi-adv';BUILD=LAB/'src/vcmi-adv-build'
+ ACCEPTED=LAB/'evaluations/typed-director-terminal-drain-capsule-03/accepted-backup'
+ DELETE_ALLOWLIST={'TypedPolicyProtocol.h'}
++PAYLOAD_NAMES=frozenset({
++    'AI/DirectorAI/CDirectorAI.cpp','AI/DirectorAI/CDirectorAI.h','AI/DirectorAI/TypedPolicyProtocol.h',
++    'server/battles/BattleProcessor.cpp','server/CGameHandler.cpp','server/CGameHandler.h',
++    'client/Client.h','client/NetPacksClient.cpp','client/Client.cpp'})
++PARENT=HERE.parent/'strategic-learned-economy-native-v1'
++PARENT_CAPSULE=LAB/'evaluations/strategic-learned-economy-build-capsule-01'
++def validate_inputs():
++    manifest=json.loads((HERE/'CANDIDATE_MANIFEST.json').read_text())
++    flow=json.loads((HERE/'FLOW_CONTRACT.json').read_text())
++    parent=json.loads((PARENT/'CANDIDATE_MANIFEST.json').read_text())
++    compiled=json.loads((PARENT_CAPSULE/'build-source-manifest.json').read_text())
++    assert manifest['status']=='source-ready-not-native-qualified'
++    assert manifest['schema']=='director-learned-economy-free-stock-prewindow-v2'
++    assert manifest['flow_epoch']==flow['flow_epoch']=='learned-economy-free-existing-stock-prewindow-v2'
++    assert manifest['flow_contract_sha256']==sha(HERE/'FLOW_CONTRACT.json')
++    assert manifest['build_driver_sha256']==sha(Path(__file__))
++    assert manifest['prepare_sha256']==sha(HERE/'prepare.py')
++    assert manifest['contract_sha256']==flow['action_contract_sha256']==sha(PARENT/'CONTRACT.md')
++    assert manifest['parent_manifest_sha256']==sha(PARENT/'CANDIDATE_MANIFEST.json')
++    assert manifest['compiled_parent_source_manifest_sha256']==sha(PARENT_CAPSULE/'build-source-manifest.json')
++    assert set(manifest['files'])==set(parent['files'])==PAYLOAD_NAMES
++    assert {str(p.relative_to(HERE/'candidate')) for p in (HERE/'candidate').rglob('*') if p.is_file()}==PAYLOAD_NAMES
++    changed=set()
++    for p,e in manifest['files'].items():
++        assert not (HERE/'candidate'/p).is_symlink()
++        assert sha(HERE/'candidate'/p)==e['candidate_sha256']
++        assert e['baseline_sha256']==parent['files'][p]['baseline_sha256']
++        assert e['parent_candidate_sha256']==parent['files'][p]['candidate_sha256']==compiled[p]['sha256']==sha(PARENT/'candidate'/p)
++        if e['candidate_sha256']!=e['parent_candidate_sha256']:changed.add(p)
++    assert changed=={'AI/DirectorAI/CDirectorAI.cpp','AI/DirectorAI/CDirectorAI.h'}
++    return manifest,flow
+ def remove_added(target):
+     assert target.parent.resolve()==(SOURCE/'AI/DirectorAI').resolve() and target.name in DELETE_ALLOWLIST
+     assert not target.is_symlink()
+@@ -30,10 +61,12 @@
+     assert 'CDirectorAI.cpp' in log.read_text(errors='replace'),'Director compilation not observed'
+ 
+ def execute(out):
+-    manifest=json.loads((HERE/'CANDIDATE_MANIFEST.json').read_text())
++    manifest,flow=validate_inputs()
+     payload={p:(HERE/'candidate'/p).read_bytes() for p in manifest['files']}
+     for p,data in payload.items(): assert hashlib.sha256(data).hexdigest()==manifest['files'][p]['candidate_sha256']
+-    result={'passed':False,'native_runs':0,'optimizer_steps':0,'incremental_from_accepted_shared_tree':True}
++    result={'passed':False,'native_runs':0,'optimizer_steps':0,'incremental_from_accepted_shared_tree':True,
++            'flow_epoch':flow['flow_epoch'],'flow_contract_sha256':sha(HERE/'FLOW_CONTRACT.json'),
++            'candidate_manifest_sha256':sha(HERE/'CANDIDATE_MANIFEST.json')}
+     with idle_locks():
+         assert_no_native(BUILD/'bin');base=source_manifest(SOURCE);validate_source_links(base)
+         assert base==json.loads((ACCEPTED/'base-source-manifest.json').read_text()),'Not original accepted V8 source tree'
+@@ -104,8 +137,15 @@
+ 
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--execute',action='store_true');args=p.parse_args()
++    manifest,flow=validate_inputs()
+     args.out.mkdir(parents=True,exist_ok=False)
++    for name in ('CANDIDATE_MANIFEST.json','FLOW_CONTRACT.json','build_capsule.py','prepare.py'):
++        shutil.copyfile(HERE/name,args.out/name)
++    shutil.copyfile(PARENT/'CONTRACT.md',args.out/'ACTION_CONTRACT.md')
+     write(args.out/'PLAN.json',{'execute':args.execute,'driver_sha256':sha(Path(__file__)),'candidate_manifest_sha256':sha(HERE/'CANDIDATE_MANIFEST.json'),
++          'flow_epoch':flow['flow_epoch'],'flow_contract_sha256':sha(HERE/'FLOW_CONTRACT.json'),
++          'action_contract_sha256':manifest['contract_sha256'],'nine_payload_inputs_checked':True,
++          'candidate_files':{p:e['candidate_sha256'] for p,e in manifest['files'].items()},
+           'lock_order':['gpu learner NB','pool NB'],'native_games':0,'optimizer_steps':0,'restore_requires_recompile':True})
+     if not args.execute:return
+     try:result=execute(args.out)

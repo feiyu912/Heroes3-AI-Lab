@@ -1,0 +1,256 @@
+{
+  "passed": true,
+  "summary": {
+    "admitted_cells": 8,
+    "admitted_rows": 2089,
+    "wins": 4,
+    "losses": 4,
+    "policy_builds": 41,
+    "policy_end_turns": 180,
+    "prewindow_transfers": 4,
+    "cells": [
+      {
+        "cell": 0,
+        "episode_id": "5aaeeaec56f0dce6752e6dee5d413ec45646697398979ea71c828d950faf3585",
+        "job": {
+          "seed": 2026103700,
+          "map": "takeover-v2-train-01-mines",
+          "owned_player": 0,
+          "opponent": "EmptyAI",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 621,
+        "reward": 1.0,
+        "policy_moves": 548,
+        "policy_builds": 11,
+        "policy_end_turns": 62,
+        "prewindow_transfers": 0,
+        "terminal_day": 102,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 1,
+        "episode_id": "29a22209ac6772bd5779e51ccab2b45f3730c6de2ce8fe183cca7e994daebecf",
+        "job": {
+          "seed": 2026103701,
+          "map": "takeover-v2-train-01-mines",
+          "owned_player": 1,
+          "opponent": "EmptyAI",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 294,
+        "reward": 1.0,
+        "policy_moves": 265,
+        "policy_builds": 6,
+        "policy_end_turns": 23,
+        "prewindow_transfers": 0,
+        "terminal_day": 43,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 2,
+        "episode_id": "377a44aeca72b736f7f39aa0a6d7f98e4bab3db219d78a649511f31e4dea914f",
+        "job": {
+          "seed": 2026103702,
+          "map": "takeover-v2-train-01-mines",
+          "owned_player": 0,
+          "opponent": "Nullkiller2",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 77,
+        "reward": -1.0,
+        "policy_moves": 70,
+        "policy_builds": 1,
+        "policy_end_turns": 6,
+        "prewindow_transfers": 2,
+        "terminal_day": 11,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 3,
+        "episode_id": "077ffc9db267668e65ca7a3b7085a030c425b893e5552a5282dab6504d229a69",
+        "job": {
+          "seed": 2026103703,
+          "map": "takeover-v2-train-01-mines",
+          "owned_player": 1,
+          "opponent": "Nullkiller2",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 93,
+        "reward": -1.0,
+        "policy_moves": 81,
+        "policy_builds": 3,
+        "policy_end_turns": 9,
+        "prewindow_transfers": 0,
+        "terminal_day": 13,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 4,
+        "episode_id": "dd7be8313acb26de8aac89a9ece3ec1a064632c24fc8c9d6b816dcf5a6534e7c",
+        "job": {
+          "seed": 2026103704,
+          "map": "takeover-v2-train-02-development",
+          "owned_player": 0,
+          "opponent": "EmptyAI",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 241,
+        "reward": 1.0,
+        "policy_moves": 218,
+        "policy_builds": 5,
+        "policy_end_turns": 18,
+        "prewindow_transfers": 0,
+        "terminal_day": 34,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 5,
+        "episode_id": "f492d4d637cfebf94f1cbf12fab5194f5db9fcc7ed3dff9de886be8dd8ec392b",
+        "job": {
+          "seed": 2026103705,
+          "map": "takeover-v2-train-02-development",
+          "owned_player": 1,
+          "opponent": "EmptyAI",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 582,
+        "reward": 1.0,
+        "policy_moves": 514,
+        "policy_builds": 13,
+        "policy_end_turns": 55,
+        "prewindow_transfers": 0,
+        "terminal_day": 91,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 6,
+        "episode_id": "bd676c6be3da41ce1b40ec5b9cf4d8e97cf899326783b59472e1f91327fb3949",
+        "job": {
+          "seed": 2026103706,
+          "map": "takeover-v2-train-02-development",
+          "owned_player": 0,
+          "opponent": "Nullkiller2",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 97,
+        "reward": -1.0,
+        "policy_moves": 92,
+        "policy_builds": 2,
+        "policy_end_turns": 3,
+        "prewindow_transfers": 0,
+        "terminal_day": 13,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      },
+      {
+        "cell": 7,
+        "episode_id": "3202977671d4cb83eb27acdd7765686f0826aa4137b90de02d72902e5e586f75",
+        "job": {
+          "seed": 2026103707,
+          "map": "takeover-v2-train-02-development",
+          "owned_player": 1,
+          "opponent": "Nullkiller2",
+          "logical_update": 0,
+          "checkpoint_sha256": "83319be8bde5d94eea839b1a889821449a7c1492c65da7ca6cde2deb63aab25a"
+        },
+        "rows": 84,
+        "reward": -1.0,
+        "policy_moves": 80,
+        "policy_builds": 0,
+        "policy_end_turns": 4,
+        "prewindow_transfers": 2,
+        "terminal_day": 11,
+        "cuda_admission_replay_certificate_passed": true,
+        "admission_cuda_replay_rerun_here": false
+      }
+    ],
+    "update_complete_from_actual_readout": true,
+    "reported_cuda_optimizer_steps": 132,
+    "reported_optimizer_steps_total": 132,
+    "outer_pipeline_passed": true,
+    "gradient_evidence": "Actual update RESULT readout only; no steps inferred from directories, rows or expected minibatches. No optimizer/GPU execution by this review."
+  },
+  "actual_raw_audits_rerun": 8,
+  "raw_reviews": [
+    {
+      "cell": 0,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 621,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 1,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 294,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 2,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 77,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 3,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 93,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 4,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 241,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 5,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 582,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 6,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 97,
+      "admission_cuda_replay_certificate_verified_only": true
+    },
+    {
+      "cell": 7,
+      "raw_audit_actually_rerun": true,
+      "full_audit_json_exact": true,
+      "rows": 84,
+      "admission_cuda_replay_certificate_verified_only": true
+    }
+  ],
+  "qualified_fixture_excluded_from_training": true,
+  "complete_eight_cells_same_parent_verified": true,
+  "source_capsule_and_wrapper_proof_verified": true,
+  "checkpoint_sha256": "6dd26e29b55364c293d9874c36a743e4636bcd0208daf5e61042e1f8b506ea00",
+  "optimizer_steps_from_actual_readout": 132,
+  "cuda_admission_replay_rerun": false,
+  "gpu_restore_rerun": false,
+  "native_games_started": 0,
+  "gpu_runs": 0,
+  "optimizer_steps_executed_here": 0
+}

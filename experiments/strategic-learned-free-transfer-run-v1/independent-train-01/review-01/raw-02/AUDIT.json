@@ -1,0 +1,1865 @@
+{
+  "whole_game_valid": true,
+  "event_contract_valid": true,
+  "native_game_completed": true,
+  "transport_drained": true,
+  "terminal_ack_scope": "director",
+  "director_registry_proof": {
+    "passed": true,
+    "terminal_ack_scope": "director",
+    "owned_player": 0,
+    "audit_epoch": "director-neutral-makeaction-ack-v4",
+    "registered_count": 100,
+    "actual_director_ack_count": 100,
+    "registered_ids": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      76,
+      77,
+      78,
+      79,
+      87,
+      89,
+      92,
+      98,
+      100,
+      103,
+      109,
+      112,
+      119,
+      126,
+      133,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      201,
+      202,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      361,
+      362,
+      363,
+      364,
+      365
+    ],
+    "policy_and_auto_request_count": 82,
+    "marker_line": 35983,
+    "owned_terminal_line": 35939,
+    "cancellation_intention": {
+      "line": 35983,
+      "ids": []
+    },
+    "actual_termination": {
+      "line": 35984,
+      "ids": []
+    },
+    "foreign_waits_pending_at_termination": 0,
+    "actual_atomic_cleared_ids": [],
+    "exact_cancelled_id_count_certified": true,
+    "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+    "foreign_acks_between_intention_and_termination": [],
+    "director_requests_cancelled": 0,
+    "verified_neutral_makeaction_ack_count": 0,
+    "verified_neutral_makeaction_acks": [],
+    "limitation": "Native termination atomically returns cleared wait IDs. Clearing a foreign wait is not an ACK/application and does not prove that its action never executed. The caller must verify this v3 native capsule and normal exit0."
+  },
+  "audit_epoch": "director-learned-economy-free-stock-prewindow-v2",
+  "input_audit_epoch": "director-learned-economy-free-stock-prewindow-v2",
+  "read_only_legacy_reaudit": false,
+  "termination_registry_semantics": "atomic-termination-closed-registry-v3",
+  "compiled_native_epoch_proven": true,
+  "candidate_manifest_sha256": "7404ac1b26b12faeb393d28a2a44083c003ad950cbca5b45a749948e99c59fc9",
+  "wrapper_terminal_observation_corrected": false,
+  "original_wrapper_game_completed": true,
+  "winner": "blue",
+  "owned_player": 0,
+  "actual_ai_assignment": {
+    "red": "DirectorAI",
+    "blue": "Nullkiller2"
+  },
+  "raw_transport_consistent": true,
+  "training_samples": 0,
+  "optimizer_steps": 0,
+  "counts": {
+    "policy_moves": 70,
+    "policy_builds": 1,
+    "policy_end_turns": 6,
+    "automatic_end_turns": 5,
+    "late_end_turn_acks": 0,
+    "diagnostic_decisions": 0,
+    "new_policy_decisions": 77,
+    "blocking_visits": 2
+  },
+  "contract_errors": [],
+  "native_apply_markers": 82,
+  "battle_observation": {
+    "last_battle_start_line": 14061,
+    "round_start_count": 6,
+    "native_battle_actions": 50,
+    "unique_last1000_actions": 35,
+    "top_last1000_actions": [
+      [
+        "{BattleAction: side '0', stackNumber '3', actionType '6', actionSubtype '-1', target {}}",
+        4
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '0', actionType '6', actionSubtype '-1', target {}}",
+        4
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '1', actionType '6', actionSubtype '-1', target {}}",
+        4
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '2', actionType '9', actionSubtype '-1', target {5@151,}}",
+        4
+      ],
+      [
+        "{BattleAction: side '1', stackNumber '4', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '2', actionType '6', actionSubtype '-1', target {}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '3', actionType '8', actionSubtype '-1', target {134,151,81,}}",
+        2
+      ],
+      [
+        "{BattleAction: side '0', stackNumber '4294967295', actionType '4', actionSubtype '43', target {1,}}",
+        1
+      ]
+    ]
+  },
+  "raw_sha256": {
+    "client.log": "42d074934a05366df43b9dc9304130dfa966510eaf200a3f0a43ec34cdd45960",
+    "typed.jsonl": "185d66279a168688acdc85a8440a099c2392baecaeeccca965dec1681e2d6b3c",
+    "strategy-decisions.jsonl": "3bba83bf4b0eebe8a235fead14181bba3b8648c1e41ae123334480c17d445ebf",
+    "strategy-trace.jsonl": "bb0af23d544d0150349cf49854661b99d25ef8b4035c98a7b9020cbad576bf8f",
+    "EXECUTION.json": "61f78a46c8f93a6d8655c13146b6be23c860288ce5d849c0b4317e8139de27ea",
+    "PLAN.json": "2ea9506866793cf83e89f61a322689c997105fc75fc2f608ec9b98c0c02229f5",
+    "agent/typed-broker.jsonl": "22d591d7d712bbb36f661c09fcbf63be223e8609a9233113c7ea642dc6ad77a7",
+    "build-packs.jsonl": "8e73b4bc49b2101748c93d59a7eea2f107fb104aa765c0d932c4b96942dbb90b"
+  },
+  "auditor_sha256": {
+    "audit_game_v6.py": "52901de643850c1e5e465713e4536c190c16a1a0633368367a582076e1fdf52b",
+    "audit_contract.py": "c879efa9fedec3710aeaa5608f39a5c95daa9bc130bb9c2a834ea8dbd4d1d7f8",
+    "raw_events_v5.py": "fb8a4874125a7c26d38a71a0460aadc0b9d4dc75914692aa861b1dafd6b5b5bd",
+    "build_evidence.py": "4b7f21e548b68b319ed5d2871c2276408ea8bc81495088aca83a44d516ef6368",
+    "director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68",
+    "free_transfer_evidence.py": "c89a67e24ae9f3f3578af77e88766f8f99450221ef16bf66a40d0c0ee9f44153",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/audit_game_v6.py": "898fefb947b88a070858c412a30ea0d29b6f863a7a16ea27293c1ac6575cfd7d",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/collect_mechanism.py": "4e21670ba4401555435eb22bc074ad1191bb45807ca3a210204f0272d2e92e5f",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/finalize_proof.py": "257897898e24a99749d22d91e1a335e9b2ef373ac7eb9f5a68ace6ce99e7d81f",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/flow_evidence.py": "0d263839dadd6d117d98acb305993e6b2dc167c4e66b0c088350375d97256e60",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/pipeline_common.py": "8d80f413d3d39beb1c3142559aa469daac2d12f3ac92ae560e50e1774492eb88",
+    "flow_dependency:/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v2/qualification/prepare_bootstrap.py": "092f11c218ff2778bcde7486fc0a9cc249fe09976cc7d78948d6ea63a0677ee4"
+  },
+  "limitation": "Director requests require actual ACKs; explicitly terminated foreign waits are not ACKed or successful. Whole-game completion also requires exit0. Timeout has no reward or optimizer update.",
+  "pipeline_epoch": "strategic-learned-free-transfer-training-v1",
+  "action_schema": "strategy-candidates-v5",
+  "economy_epoch": "learned-economy-build-v1",
+  "contract_sha256": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+  "native_flow_epoch": "learned-economy-free-existing-stock-prewindow-v2",
+  "flow_contract_sha256": "32ff1ccd70f3a2e0d18b32f9772bf6b5d40a69fcc782b3104a964de0094e65c0",
+  "threat_replan": "off",
+  "build_evidence_verified": true,
+  "build_evidence": {
+    "passed": true,
+    "policy_builds": 1,
+    "received_packets": 28,
+    "builds": [
+      {
+        "native_request_id": 76,
+        "decision_id": 18,
+        "town_id": 12,
+        "building_id": 8,
+        "before": {
+          "town_id": 12,
+          "owner": 0,
+          "built_today": 0,
+          "buildings": [
+            5,
+            7,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 10,
+            "mercury": 4,
+            "ore": 18,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 9060
+          }
+        },
+        "after": {
+          "town_id": 12,
+          "owner": 0,
+          "built_today": 1,
+          "buildings": [
+            5,
+            7,
+            8,
+            10,
+            11,
+            30,
+            31
+          ],
+          "resources": {
+            "wood": 10,
+            "mercury": 4,
+            "ore": 13,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 6560
+          }
+        }
+      }
+    ]
+  },
+  "prewindow_evidence_verified": true,
+  "prewindow_evidence": {
+    "passed": true,
+    "observed_transfers": 2,
+    "prewindow_transfers": 2,
+    "groups": [
+      {
+        "own_turn": 4,
+        "prewindow_transfers": 2,
+        "rescue_hire_same_turn": true,
+        "first_policy_request": {
+          "schema": "strategy-candidates-v5",
+          "request_id": 22,
+          "player": 0,
+          "own_turn": 4,
+          "own_hero_count": 1,
+          "day": 4,
+          "hero": 15,
+          "from": [
+            6,
+            8,
+            0
+          ],
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "own_army_value": 3766,
+          "movement": 1630,
+          "visible_threats": [
+            {
+              "position": [
+                11,
+                13,
+                0
+              ],
+              "approx_army_value": 5155
+            }
+          ],
+          "economy_epoch": "learned-economy-build-v1",
+          "economy_window_open": true,
+          "resources": {
+            "wood": 10,
+            "mercury": 4,
+            "ore": 15,
+            "sulfur": 4,
+            "crystal": 4,
+            "gems": 4,
+            "gold": 5060
+          },
+          "own_towns": [
+            {
+              "position": [
+                6,
+                8,
+                0
+              ],
+              "army_value": 0,
+              "town_id": 12,
+              "faction_id": 0,
+              "built_today": 0,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ]
+            }
+          ],
+          "candidates": [
+            {
+              "op": "move",
+              "kind": 2,
+              "position": [
+                6,
+                15,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 4.53112
+            },
+            {
+              "op": "move",
+              "kind": 3,
+              "position": [
+                4,
+                12,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.464103,
+              "heuristic_score": 4.14894
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                4,
+                3,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.888462,
+              "heuristic_score": 1.00831
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                5,
+                3,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.928205,
+              "heuristic_score": 0.910233
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                6,
+                3,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 0.841494
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                7,
+                3,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.928205,
+              "heuristic_score": 0.910233
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                8,
+                3,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.888462,
+              "heuristic_score": 1.00831
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                3,
+                4,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.752564,
+              "heuristic_score": 1.03787
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                4,
+                4,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.792308,
+              "heuristic_score": 0.85119
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                8,
+                4,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.792308,
+              "heuristic_score": 0.85119
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                9,
+                4,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.752564,
+              "heuristic_score": 1.03787
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                5,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.696154,
+              "heuristic_score": 1.08682
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                3,
+                5,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.65641,
+              "heuristic_score": 0.951219
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                9,
+                5,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.65641,
+              "heuristic_score": 0.951219
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                10,
+                5,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.696154,
+              "heuristic_score": 1.08682
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                6,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.639744,
+              "heuristic_score": 1.22835
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                6,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.6,
+              "heuristic_score": 1
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                10,
+                6,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.6,
+              "heuristic_score": 1
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                11,
+                6,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.639744,
+              "heuristic_score": 1.14061
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                7,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.6,
+              "heuristic_score": 1.18182
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                11,
+                7,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.6,
+              "heuristic_score": 1
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                12,
+                7,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.696154,
+              "heuristic_score": 1.00322
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                13,
+                7,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.792308,
+              "heuristic_score": 1.00595
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                14,
+                7,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.888462,
+              "heuristic_score": 1.00831
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                8,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.560256,
+              "heuristic_score": 1.22612
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                14,
+                8,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.848718,
+              "heuristic_score": 0.815589
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                15,
+                8,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.944872,
+              "heuristic_score": 0.899734
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                9,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.520513,
+              "heuristic_score": 1.27387
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                15,
+                9,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 0.905128,
+              "heuristic_score": 0.782847
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                16,
+                9,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 0.841494
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                10,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.560256,
+              "heuristic_score": 1.22612
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                16,
+                10,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 0.712033
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                17,
+                10,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.853125
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                11,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.6,
+              "heuristic_score": 1.18182
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                17,
+                11,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.792187
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                1,
+                12,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.639744,
+              "heuristic_score": 1.22835
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                12,
+                0
+              ],
+              "next": [
+                5,
+                9,
+                0
+              ],
+              "path_cost": 0.54359,
+              "heuristic_score": 1.05405
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                17,
+                12,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.18077,
+              "heuristic_score": 0.773455
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                13,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.639744,
+              "heuristic_score": 1.05287
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                17,
+                13,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.27692,
+              "heuristic_score": 0.731602
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                14,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.735897,
+              "heuristic_score": 1.05187
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                16,
+                14,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.27692,
+              "heuristic_score": 0.619048
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                17,
+                14,
+                0
+              ],
+              "next": [
+                7,
+                9,
+                0
+              ],
+              "path_cost": 1.31667,
+              "heuristic_score": 0.770642
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                2,
+                15,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.832051,
+              "heuristic_score": 1.05101
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                3,
+                15,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.792308,
+              "heuristic_score": 0.85119
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                15,
+                15,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.63321
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                16,
+                15,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.33333,
+              "heuristic_score": 0.709091
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                3,
+                16,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 0.888462,
+              "heuristic_score": 0.864266
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                14,
+                16,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.670312
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                15,
+                16,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                3,
+                17,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 0.906224
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                4,
+                17,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.04487,
+              "heuristic_score": 0.712033
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                13,
+                17,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.670312
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                14,
+                17,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.18077,
+              "heuristic_score": 0.773455
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                4,
+                18,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.792187
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                5,
+                18,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.670312
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                11,
+                18,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.14103,
+              "heuristic_score": 0.670312
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                12,
+                18,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.18077,
+              "heuristic_score": 0.713959
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                13,
+                18,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.805904
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                5,
+                19,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                6,
+                19,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.18077,
+              "heuristic_score": 0.654462
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                10,
+                19,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.18077,
+              "heuristic_score": 0.654462
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                11,
+                19,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                6,
+                20,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.27692,
+              "heuristic_score": 0.787879
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                7,
+                20,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                8,
+                20,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                9,
+                20,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.23718,
+              "heuristic_score": 0.748339
+            },
+            {
+              "op": "move",
+              "kind": 5,
+              "position": [
+                10,
+                20,
+                0
+              ],
+              "next": [
+                6,
+                9,
+                0
+              ],
+              "path_cost": 1.27692,
+              "heuristic_score": 0.787879
+            },
+            {
+              "op": "build",
+              "actor": "player_town",
+              "town_id": 12,
+              "building_id": 0,
+              "category": "infrastructure",
+              "cost": {
+                "wood": 5,
+                "mercury": 0,
+                "ore": 5,
+                "sulfur": 0,
+                "crystal": 0,
+                "gems": 0,
+                "gold": 2000
+              }
+            },
+            {
+              "op": "build",
+              "actor": "player_town",
+              "town_id": 12,
+              "building_id": 9,
+              "category": "infrastructure",
+              "cost": {
+                "wood": 10,
+                "mercury": 0,
+                "ore": 10,
+                "sulfur": 0,
+                "crystal": 0,
+                "gems": 0,
+                "gold": 5000
+              }
+            },
+            {
+              "op": "build",
+              "actor": "player_town",
+              "town_id": 12,
+              "building_id": 14,
+              "category": "infrastructure",
+              "cost": {
+                "wood": 5,
+                "mercury": 0,
+                "ore": 0,
+                "sulfur": 0,
+                "crystal": 0,
+                "gems": 0,
+                "gold": 500
+              }
+            },
+            {
+              "op": "build",
+              "actor": "player_town",
+              "town_id": 12,
+              "building_id": 16,
+              "category": "infrastructure",
+              "cost": {
+                "wood": 5,
+                "mercury": 0,
+                "ore": 0,
+                "sulfur": 0,
+                "crystal": 0,
+                "gems": 0,
+                "gold": 1000
+              }
+            },
+            {
+              "op": "end_turn"
+            }
+          ]
+        },
+        "final_transfer_after": {
+          "event": "economy_applied",
+          "player": 0,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "heroes": [
+            {
+              "id": 15,
+              "x": 6,
+              "y": 8,
+              "z": 0,
+              "movement": 1630,
+              "army": [
+                [
+                  2,
+                  14
+                ],
+                [
+                  2,
+                  7
+                ],
+                [
+                  0,
+                  14
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 12,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "transfers": [
+      {
+        "id": 158,
+        "player": 0,
+        "pack_type": 183,
+        "type": "ArrangeStacks",
+        "registered_line": 19361,
+        "callback_line": 19384,
+        "generic_ack_line": 19391,
+        "before": {
+          "event": "before_army_transfer",
+          "player": 0,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "heroes": [
+            {
+              "id": 15,
+              "x": 6,
+              "y": 8,
+              "z": 0,
+              "movement": 1630,
+              "army": [
+                [
+                  2,
+                  5
+                ],
+                [
+                  2,
+                  7
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 12,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  2,
+                  9
+                ],
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "after": {
+          "event": "economy_applied",
+          "player": 0,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "heroes": [
+            {
+              "id": 15,
+              "x": 6,
+              "y": 8,
+              "z": 0,
+              "movement": 1630,
+              "army": [
+                [
+                  2,
+                  14
+                ],
+                [
+                  2,
+                  7
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 12,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "hero": 15,
+        "town": 12,
+        "creature": 2,
+        "count": 9,
+        "before_first_policy": true,
+        "first_policy_request": 22,
+        "first_policy_sent_line": 19418,
+        "server_mutation": "Received CPack of type 15RebalanceStacks",
+        "payload_observation": "native ID/player/type directly logged; donor/recipient and whole-stack amount uniquely reconstructed from public state plus compiled helper; slot IDs/what not directly logged",
+        "resource_evidence": "gold/wood/ore exact unchanged; no own SetResources pack during actual transfer; first policy seven-resource state retained"
+      },
+      {
+        "id": 159,
+        "player": 0,
+        "pack_type": 183,
+        "type": "ArrangeStacks",
+        "registered_line": 19387,
+        "callback_line": 19410,
+        "generic_ack_line": 19421,
+        "before": {
+          "event": "before_army_transfer",
+          "player": 0,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "heroes": [
+            {
+              "id": 15,
+              "x": 6,
+              "y": 8,
+              "z": 0,
+              "movement": 1630,
+              "army": [
+                [
+                  2,
+                  14
+                ],
+                [
+                  2,
+                  7
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 12,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ],
+              "army": [
+                [
+                  0,
+                  14
+                ]
+              ],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "after": {
+          "event": "economy_applied",
+          "player": 0,
+          "day": 4,
+          "own_turn": 4,
+          "gold": 5060,
+          "wood": 10,
+          "ore": 15,
+          "heroes": [
+            {
+              "id": 15,
+              "x": 6,
+              "y": 8,
+              "z": 0,
+              "movement": 1630,
+              "army": [
+                [
+                  2,
+                  14
+                ],
+                [
+                  2,
+                  7
+                ],
+                [
+                  0,
+                  14
+                ]
+              ]
+            }
+          ],
+          "towns": [
+            {
+              "id": 12,
+              "buildings": [
+                5,
+                7,
+                8,
+                10,
+                11,
+                30,
+                31
+              ],
+              "army": [],
+              "available": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        },
+        "hero": 15,
+        "town": 12,
+        "creature": 0,
+        "count": 14,
+        "before_first_policy": true,
+        "first_policy_request": 22,
+        "first_policy_sent_line": 19418,
+        "server_mutation": "Received CPack of type 15RebalanceStacks",
+        "payload_observation": "native ID/player/type directly logged; donor/recipient and whole-stack amount uniquely reconstructed from public state plus compiled helper; slot IDs/what not directly logged",
+        "resource_evidence": "gold/wood/ore exact unchanged; no own SetResources pack during actual transfer; first policy seven-resource state retained"
+      }
+    ],
+    "raw_sha256": {
+      "client.log": "42d074934a05366df43b9dc9304130dfa966510eaf200a3f0a43ec34cdd45960",
+      "strategy-trace.jsonl": "bb0af23d544d0150349cf49854661b99d25ef8b4035c98a7b9020cbad576bf8f",
+      "PLAN.json": "2ea9506866793cf83e89f61a322689c997105fc75fc2f608ec9b98c0c02229f5",
+      "agent/typed-broker.jsonl": "22d591d7d712bbb36f661c09fcbf63be223e8609a9233113c7ea642dc6ad77a7"
+    },
+    "directly_observed_complete_arrange_payload": false,
+    "training_samples": 0,
+    "optimizer_steps": 0
+  }
+}

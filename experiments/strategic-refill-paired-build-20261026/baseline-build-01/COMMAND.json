@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Toolchain-GCC11-01/sysroot/usr/bin/ninja",
+    "-C",
+    "/home/kaicheng/Documents/Codex/2026-10-24/hello/outputs/Heroes3-Refill-Build-20261026-01/build",
+    "-j2",
+    "-v",
+    "vcmiclient",
+    "vcmiserver"
+  ],
+  "exit_code": 1,
+  "inherited_lease_proof_sha256": "8af2c46a022b45a7e270f875596710c12533422c62fda1e219664f05b262f71f"
+}

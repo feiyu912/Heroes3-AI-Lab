@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-15",
+  "scope": "public-source pilot; not completed video understanding",
+  "evidence_scale": {
+    "E0": "channel identified",
+    "E1": "metadata/title/description/chapters only",
+    "E2": "explicit authored text actually read",
+    "E3": "human state/action trace verified",
+    "E4": "pinned VCMI replication with controls"
+  },
+  "sources": [
+    {
+      "id": "hallas2001",
+      "title": "Heroes III Complete Strategy Guide — page 5",
+      "author": "Richard Hallas",
+      "url": "https://www.insidemacgames.com/historical/features/view.php%3FID%3D64%26Page%3D5.html",
+      "published_at": "2001-08-27",
+      "game_version": "Complete; exact executable build unknown",
+      "material_type": "original_text_tutorial",
+      "topics": [
+        "dragon_retaliation_friendly_fire",
+        "shooter_screening",
+        "waiting",
+        "formation"
+      ],
+      "evidence_level": "E2_explicit_authored_text_read",
+      "access_observed": "Full public text opened successfully",
+      "content_locator": "General combat tips; Make retaliation count; Range-attacking troops; Waiting to attack",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "aq_dw_collection",
+      "title": "英雄无敌3阿青DW对战骨灰级教学，华山论剑显锋芒（关联青华大学合集索引）",
+      "author": "阿青Hero3",
+      "url": "https://www.bilibili.com/video/BV1K4411r7Hu/",
+      "published_at": "2019-08-23T19:27:40+08:00",
+      "game_version": "DW manual-combat rules; exact game build unknown",
+      "material_type": "original_video_metadata_and_collection_index",
+      "topics": [
+        "legacy_ai_valuation",
+        "dragon_breath",
+        "battle_value",
+        "BT_problem_solving",
+        "army_chaining"
+      ],
+      "evidence_level": "E1_metadata_and_chapter_titles_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": {
+        "important_distinction": "following chapter names belong to linked collection items, not necessarily this video's own parts; direct item IDs unresolved",
+        "chapter_titles": [
+          "利用AI的价值判断导致敌方片伤远程的发呆",
+          "无失明魔法，利用站位价值绑定电脑走位，形成假控制",
+          "巧用龙息，误伤的魅力",
+          "英雄无敌3〖BT图〗战场机制研究，致每一位热爱H3的玩家"
+        ],
+        "timestamps": null
+      },
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "aq_no_magic_elves",
+      "title": "阿青英雄无敌3：禁魔法禁SL，只用大地精灵通关归隐田园，对战思维打单机",
+      "author": "阿青Hero3",
+      "url": "https://www.bilibili.com/video/BV1A4411F76m/",
+      "published_at": "2019-07-07T21:26:48+08:00",
+      "game_version": "exact version unknown; description forbids magic and save/loading",
+      "material_type": "original_video_metadata",
+      "topics": [
+        "ranged_micro",
+        "positioning",
+        "attrition"
+      ],
+      "evidence_level": "E1_metadata_and_chapter_titles_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": {
+        "parts": [
+          "P3：站位威慑",
+          "P5：以弱胜强",
+          "P6：游击消耗"
+        ],
+        "timestamps": null
+      },
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "aq_nine_factions",
+      "title": "匠心巨制！最全面的英雄无敌3九族教学，致我们深爱的情怀游戏",
+      "author": "阿青Hero3",
+      "url": "https://www.bilibili.com/video/BV1bx4y1Z7wq/",
+      "published_at": null,
+      "game_version": "mixed rules possible; exact version unknown",
+      "material_type": "original_video_metadata_and_collection_index",
+      "topics": [
+        "nine_factions",
+        "economy",
+        "development"
+      ],
+      "evidence_level": "E1_metadata_and_chapter_titles_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": "九族手册合集；发布时间未取得可靠完整字段",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "aq_movement",
+      "title": "阿青英雄无敌3：移动力解析，野蛮族演示走位布局",
+      "author": "阿青Hero3",
+      "url": "https://www.bilibili.com/video/BV1z4411V7ZY/",
+      "published_at": "2019-06-15T14:42:32+08:00",
+      "game_version": "exact version unknown",
+      "material_type": "original_video_metadata_and_collection_index",
+      "topics": [
+        "adventure_movement",
+        "army_chaining",
+        "terrain"
+      ],
+      "evidence_level": "E1_metadata_and_chapter_titles_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": "青华大学相关课程；章节名和时长可见，但非已确认技巧时间戳",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "aq_hota_fly",
+      "title": "英雄无敌3阿青入门教程：深渊号角港口族1v7特大双，HOTA随机图飞跳回的终极形态",
+      "author": "阿青Hero3",
+      "url": "https://www.bilibili.com/video/BV1z4411U7qu/",
+      "published_at": "2019-08-15T23:51:58+08:00",
+      "game_version": "HotA; exact version unknown",
+      "material_type": "original_video_metadata_and_description",
+      "topics": [
+        "adventure_fly_dimension_door_town_portal",
+        "1v7"
+      ],
+      "evidence_level": "E1_metadata_and_description_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": null,
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "xiaoz_intro",
+      "title": "〖英雄无敌3〗全b站最详细！！！面向0基础玩家的入门教学",
+      "author": "英雄无敌3狂小Z",
+      "url": "https://www.bilibili.com/video/BV1Aa411D7R7/",
+      "published_at": "2022-07-24T10:06:18+08:00",
+      "game_version": "includes Cove; exact version unknown",
+      "material_type": "original_video_metadata_and_chapter_index",
+      "topics": [
+        "factions",
+        "basic_rules",
+        "magic"
+      ],
+      "evidence_level": "E1_metadata_and_chapter_titles_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": "15-part index available; no verified move-level tactical segment",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "coffee_fortress",
+      "title": "英雄无敌3咖啡耐心解说九族系列要塞篇 攻守兼备的霸天种族",
+      "author": "给我一杯咖啡好吗",
+      "url": "https://www.bilibili.com/video/BV1bP411Y7fX/",
+      "published_at": "2023-08-31T09:16:59+08:00",
+      "game_version": "exact version unknown",
+      "material_type": "original_video_metadata",
+      "topics": [
+        "fortress",
+        "defense"
+      ],
+      "evidence_level": "E1_metadata_only",
+      "access_observed": "Search index exposed original publication metadata/chapters; direct page fetch returned HTTP 412 or internal fetch error. No attempt to bypass; no playback, subtitle or state extraction.",
+      "content_locator": "耐心要塞P1/P2；未取得字幕或具体战术定位",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "lexiav_youtube",
+      "title": "Lexiav — official-named YouTube channel",
+      "author": "Lexiav",
+      "url": "https://www.youtube.com/@Lexiav",
+      "published_at": null,
+      "game_version": "HotA often attributed by community; individual video rules must be checked",
+      "material_type": "creator_channel",
+      "topics": [
+        "competitive_play",
+        "duel"
+      ],
+      "evidence_level": "E0_channel_identified_only",
+      "access_observed": "Channel URL opens but tool returns only a small shell; no video metadata/transcript read",
+      "content_locator": null,
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "lexiav_twitch",
+      "title": "Lexiav — Twitch channel",
+      "author": "Lexiav",
+      "url": "https://www.twitch.tv/lexiav",
+      "published_at": null,
+      "game_version": null,
+      "material_type": "creator_channel",
+      "topics": [
+        "competitive_play"
+      ],
+      "evidence_level": "E0_channel_identified_only",
+      "access_observed": "Channel opens as empty dynamic shell; no VOD, chapter or transcript extracted",
+      "content_locator": null,
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    },
+    {
+      "id": "gcores_vyi2019",
+      "title": "回忆经典——《英雄无敌3》中的战术细节",
+      "author": "v翼",
+      "url": "https://www.gcores.com/articles/109112",
+      "published_at": "2019-05-09",
+      "game_version": "H3 with expansion discussion; exact executable unknown",
+      "material_type": "original_authored_community_article",
+      "topics": [
+        "speed_initiative",
+        "waiting_double_action",
+        "kiting",
+        "army_chaining",
+        "adventure_magic"
+      ],
+      "evidence_level": "E2_explicit_authored_text_read",
+      "access_observed": "Full public text opened successfully",
+      "content_locator": "（3）控制法术，速度和等待段；（1）移动力，兵链段",
+      "accessed_at": "2026-10-15",
+      "video_watched": false,
+      "transcript_extracted": false,
+      "structured_human_trajectory_available": false,
+      "reliability": "Source existence and stated topic are distinct from tactical correctness; experimental verification required",
+      "rights": {
+        "reuse_license": "unknown",
+        "media_downloaded": false,
+        "allowed_by_this_pipeline": "links, bibliographic metadata, concise original paraphrase; no full transcript or video redistribution"
+      }
+    }
+  ],
+  "selection_criteria": [
+    "Original creator publication preferred",
+    "Exact rule/version and source locator required before labels",
+    "Independent authors and mechanism checks, no popularity-based correctness",
+    "Current non-active-magic battle mechanics first",
+    "Unknown state remains null",
+    "No source title or model speculation as demonstration",
+    "No bypass of access restrictions or unauthorized bulk media redistribution"
+  ],
+  "rejected_or_unpromoted": [
+    {
+      "url": "https://heroesmightandmagic3.wiki/guides/combat/",
+      "reason": "Search result describes an unverified 2026 H3 Remake; wrong/unsupported product claims, excluded"
+    },
+    {
+      "url": "https://www.scribd.com/document/599431326/Tribute-to-Strategists",
+      "reason": "Reupload/permission and complete access unknown; not used as training source"
+    },
+    {
+      "url": "https://rutube.ru/video/2616c87d1d5f8516f78237aa95caa29e/",
+      "reason": "Third-party tournament reupload rights and original authorship unresolved; not downloaded or treated as demonstration"
+    }
+  ],
+  "limitations": [
+    "No video watched or subtitles extracted",
+    "No authenticated expert replay/state trajectory obtained",
+    "A named strategy author is not automatically a verified professional player",
+    "Source claims alone do not establish VCMI equivalence or policy improvement"
+  ]
+}

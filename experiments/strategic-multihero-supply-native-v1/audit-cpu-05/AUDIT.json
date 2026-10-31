@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "fixture": true,
+  "real_execution_certified": false,
+  "new_native_games": 0,
+  "GPU_operations": 0,
+  "optimizer_steps": 0,
+  "rejected": [
+    "mirror_mismatch",
+    "missing_registration",
+    "missing_unified_ack",
+    "wrong_ack_type",
+    "false_server_apply",
+    "missing_server_receive",
+    "missing_exact_move_apply",
+    "query_not_popped",
+    "query_not_destroyed",
+    "wrong_move_coordinates",
+    "wrong_payload_owner",
+    "wrong_payload_source",
+    "wrong_payload_operation",
+    "missing_native_transport",
+    "wrong_query_payload",
+    "army_delta_tamper",
+    "role_drift",
+    "policy_claim",
+    "own_turn_phase_reset",
+    "closed_query_still_live"
+  ],
+  "partial_tail_preserved": true,
+  "source_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/check_audit_supply_cpu.py": "51b8d8a65e8b4ce82dbb768b3b674c34977d3d548a9b3ae230a76bf8d1e03495",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-multihero-supply-native-v1/audit_supply.py": "6fe41bfcd1c9333215cdac09a852b0f0146ec43932f3e4b29a9b033d80290aa9"
+  },
+  "legal_transfer_without_cargo_delivery_rejected_as_logistics_success": true
+}

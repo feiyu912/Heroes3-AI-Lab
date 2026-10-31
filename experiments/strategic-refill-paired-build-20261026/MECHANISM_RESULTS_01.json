@@ -1,0 +1,151 @@
+{
+  "status": "four-registered-mechanism-pairs-passed-not-full-capability-qualified",
+  "native_games": 8,
+  "independently_checked_decisions": 44,
+  "actual_successful_moves": 14,
+  "actual_recruits": 6,
+  "actual_free_transfers": 2,
+  "seed": 2026102601,
+  "controlled_player": 1,
+  "opponent": "EmptyAI",
+  "diagnostic_calendar_terminal": true,
+  "optimizer_steps": 0,
+  "strength_evaluation_games": 0,
+  "model_promoted": false,
+  "final_test_used": false,
+  "remaining_boundary_qualification_incomplete": true,
+  "rows": [
+    {
+      "case": "positive",
+      "arm": "baseline",
+      "decisions": 5,
+      "recruits": 1,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "f5945bb944ecdfc03b230e2cd6ccf07e996e8ae8a4ef933c3c79003c991cb155"
+    },
+    {
+      "case": "positive",
+      "arm": "candidate",
+      "decisions": 8,
+      "recruits": 1,
+      "free_transfers": 1,
+      "actual_successful_moves": 4,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "move",
+        "move",
+        "move",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": true,
+      "pair_audit_sha256": "f5945bb944ecdfc03b230e2cd6ccf07e996e8ae8a4ef933c3c79003c991cb155"
+    },
+    {
+      "case": "empty",
+      "arm": "baseline",
+      "decisions": 4,
+      "recruits": 0,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "b10a9e30ac40b467bbdbc7767c81e6010858b6dd85d73e42b5dd2b6731f30920"
+    },
+    {
+      "case": "empty",
+      "arm": "candidate",
+      "decisions": 4,
+      "recruits": 0,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "b10a9e30ac40b467bbdbc7767c81e6010858b6dd85d73e42b5dd2b6731f30920"
+    },
+    {
+      "case": "full-incompatible",
+      "arm": "baseline",
+      "decisions": 5,
+      "recruits": 1,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "779bb157153359c66e89bb5e78ffefec8a5099c4513d8d248792c28f7e4cd206"
+    },
+    {
+      "case": "full-incompatible",
+      "arm": "candidate",
+      "decisions": 5,
+      "recruits": 1,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "779bb157153359c66e89bb5e78ffefec8a5099c4513d8d248792c28f7e4cd206"
+    },
+    {
+      "case": "full-merge",
+      "arm": "baseline",
+      "decisions": 5,
+      "recruits": 1,
+      "free_transfers": 0,
+      "actual_successful_moves": 1,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": false,
+      "pair_audit_sha256": "35a6cee546b3221996e326f1911b5b1bfebc97d4cca8bc00e5981b14d1514b06"
+    },
+    {
+      "case": "full-merge",
+      "arm": "candidate",
+      "decisions": 8,
+      "recruits": 1,
+      "free_transfers": 1,
+      "actual_successful_moves": 4,
+      "same_turn_sequence": [
+        "move",
+        "recruit",
+        "move",
+        "move",
+        "move",
+        "end_turn"
+      ],
+      "normal_whole_game": true,
+      "refill_retention_covered": true,
+      "pair_audit_sha256": "35a6cee546b3221996e326f1911b5b1bfebc97d4cca8bc00e5981b14d1514b06"
+    }
+  ]
+}

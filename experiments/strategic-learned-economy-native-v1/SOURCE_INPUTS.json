@@ -1,0 +1,17 @@
+{
+  "frozen_candidate_manifest_sha256": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+  "sources": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/BuildAdapter.inc": "da4e3fb278d0d4489729b08a5b07dd691240a0173c3870dd418f2ff680c79607",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/BuildWire.inc": "17a4cbc34991cc569afbe87039f4f34c8cb7494c1d1fc3b7efb1d5096c5f4168",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/CANDIDATE_MANIFEST.json": "d04c95d6bfbb2f4e3cf26e3df090fe3365b28c5ac0d522456f30a312a6cceace",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/CONTRACT.md": "e9c0f43ccc0ef5e880f969863bf14665e2c80210acaaa2c5f36bf05516e14af5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/build_capsule.py": "0c245d5867f5dab3c7cf4ecf89e5e2bfd5b829f07887a6a165e51e5c5e7cd7e5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/check_cpu.py": "4b85a5ed17b68194500281c9b6968aafbb2389203603551038495cd5f4aa685a",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/check_native_syntax.py": "19b7b52ba6233f6b52bde2007e071c0d84a3817b5909f3d18d3758590557ef6e",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/prepare.py": "2ebd8c1cb9e9adb12e689d5c44107d9d8fcd4e7be87a1d282dafd90ed657655c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learned-economy-native-v1/test_protocol.cpp": "16005285f9e9c8aef267476d003c321d08324e06f4b1e61eaae6f0ee3aed20ea"
+  },
+  "native_builds": 0,
+  "native_games": 0,
+  "gpu_runs": 0
+}

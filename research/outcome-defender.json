@@ -1,0 +1,80 @@
+{
+  "seed": 20261013,
+  "role": "defender",
+  "opponent": "BattleAI",
+  "map": "lab/smoke.vmap",
+  "schema": 15,
+  "boot_seconds": 0.8347081489999937,
+  "elapsed_seconds": 0.8619590360000018,
+  "policy": "deterministic attack-priority legal-action diagnostic",
+  "note": "Permanent loss counts come from server BattleResult for this normal no-magic fixture; schema army values retained for comparison.",
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 3,
+      "winner": 0,
+      "terminated": true,
+      "truncated": false,
+      "initial_value_permille": {
+        "0": 666,
+        "1": 266
+      },
+      "final_value_permille": {
+        "0": 600,
+        "1": 0
+      },
+      "loss_value_permille": {
+        "0": 66,
+        "1": 266
+      },
+      "terminal_info": {
+        "side": 1,
+        "round": 4,
+        "step": 3,
+        "net_value": -200,
+        "is_success": false,
+        "terminal_outcome": {
+          "result_type": 0,
+          "winner": 0,
+          "casualties": {
+            "0": {
+              "2": 2
+            },
+            "1": {
+              "2": 10
+            }
+          }
+        },
+        "reward_step_fixed": -3.0,
+        "reward_prog": 0.0,
+        "reward_dmg_mult": -224.0,
+        "reward_term_mult": -201.0,
+        "reward_relval_mult": -246.0
+      },
+      "actions": [
+        68,
+        68,
+        68
+      ],
+      "server_casualties": {
+        "0": {
+          "2": 2
+        },
+        "1": {
+          "2": 10
+        }
+      },
+      "permanent_loss_counts": {
+        "0": 2,
+        "1": 10
+      },
+      "permanent_remaining_counts": {
+        "0": 18,
+        "1": 0
+      },
+      "reward_sum": -674.0,
+      "initial_observation_sha256": "4b64733b1b3d89914d9e391a6c24ec6bd834c703abe55c1a8b389ab0de34afed",
+      "trajectory_sha256": "007d6482aa7b44594162ccb5718e8f072d44bc8fff07fc746b54c0d8925c23fe"
+    }
+  ]
+}

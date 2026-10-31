@@ -1,0 +1,17 @@
+{
+  "name": "SYNTHETIC-process-cleanup",
+  "command": [
+    "/root/heroes3-ai-lab/gpu-venv/bin/python",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/recovery-tools-cpu-audit-20261018-v2/synthetic-owned-process.py"
+  ],
+  "exit_code": 0,
+  "error": null,
+  "wall_seconds": 3.014938461999918,
+  "peak_tree_rss_bytes": 17891328,
+  "peak_device_gpu_memory_mib": null,
+  "resource_scope": "Tree RSS sums shared pages; GPU memory is device-wide, includes other desktop processes.",
+  "leftover_owned_processes_after_exit": [
+    772
+  ],
+  "survivors_after_cleanup": []
+}

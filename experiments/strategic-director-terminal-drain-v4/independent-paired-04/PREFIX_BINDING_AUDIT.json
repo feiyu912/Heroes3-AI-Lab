@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "pair": 2,
+      "decision_id": 442,
+      "anchors": [
+        {
+          "arm": "a",
+          "release_line": 111663,
+          "native_action_sent_line": 111669
+        },
+        {
+          "arm": "b",
+          "release_line": 111663,
+          "native_action_sent_line": 111669
+        }
+      ],
+      "complete_pre_native_binding_server_prefix": {
+        "off_count": 832,
+        "once_count": 832,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "f018e9d69f35311325d238721fbbaeda5cf39b842641b95cc39202557ad77303",
+        "once_projection_sha256": "f018e9d69f35311325d238721fbbaeda5cf39b842641b95cc39202557ad77303"
+      },
+      "movements_between_release_and_binding": [
+        [],
+        []
+      ],
+      "limitation": "Actual pre-dispatch native_action_sent anchors, with actual request ID binding proven by independent whole-game contract. Recorded movement projection only, not hidden world state."
+    },
+    {
+      "pair": 3,
+      "decision_id": 94,
+      "anchors": [
+        {
+          "arm": "a",
+          "release_line": 35151,
+          "native_action_sent_line": 35157
+        },
+        {
+          "arm": "b",
+          "release_line": 35151,
+          "native_action_sent_line": 35157
+        }
+      ],
+      "complete_pre_native_binding_server_prefix": {
+        "off_count": 259,
+        "once_count": 259,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "5f7f00bd714b54452853e31071a37cf524492ef597bc701c3c1025bce6d040ac",
+        "once_projection_sha256": "5f7f00bd714b54452853e31071a37cf524492ef597bc701c3c1025bce6d040ac"
+      },
+      "movements_between_release_and_binding": [
+        [],
+        []
+      ],
+      "limitation": "Actual pre-dispatch native_action_sent anchors, with actual request ID binding proven by independent whole-game contract. Recorded movement projection only, not hidden world state."
+    },
+    {
+      "pair": 7,
+      "decision_id": 63,
+      "anchors": [
+        {
+          "arm": "a",
+          "release_line": 29465,
+          "native_action_sent_line": 29471
+        },
+        {
+          "arm": "b",
+          "release_line": 29465,
+          "native_action_sent_line": 29471
+        }
+      ],
+      "complete_pre_native_binding_server_prefix": {
+        "off_count": 185,
+        "once_count": 185,
+        "first_difference": null,
+        "recorded_order_exact": true,
+        "off_projection_sha256": "60ec4b9fd59f933337c1ca24f29b5945884e8d47c6cfe3a50d75c84b8f8b3c16",
+        "once_projection_sha256": "60ec4b9fd59f933337c1ca24f29b5945884e8d47c6cfe3a50d75c84b8f8b3c16"
+      },
+      "movements_between_release_and_binding": [
+        [],
+        []
+      ],
+      "limitation": "Actual pre-dispatch native_action_sent anchors, with actual request ID binding proven by independent whole-game contract. Recorded movement projection only, not hidden world state."
+    }
+  ],
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/independent-paired-04/AUDIT.json": "174bd2651540e73dac2d11ee7faa1cdf90efc7437ad9c6d3222472a3379ca471",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/review_paired04_prefix.py": "59bee0a1b8416ee51a3c6e332a473eadb62437033d80e21fc752fa171d4a1615",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-02/a/native/client.log": "eebfcd32800e96d2ced74e5e542806f7f89fe512683a6574c6ddb6f15b500ade",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-02/b/native/client.log": "47f73b08ddf2cdabd30a04bf3e0c1fa3e7117aaeb5d87497faa30d88b62bfae6",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-03/a/native/client.log": "22f3f80b843935d0036908d121fb88ee6deee157da36db72cbb6f58326884c3e",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-03/b/native/client.log": "6a380cf3ef14ed820fcb51f0813734e04d79ef76baba22641f090b16d14f2781",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-07/a/native/client.log": "4b0f7d5b0c80f70ba93a6ed9aac6960d34fc0014e3278f7e1900c2042c28af5f",
+    "/root/heroes3-ai-lab/evaluations/typed-clearance-proxy-paired-04/pair-07/b/native/client.log": "a0dbf89fdb39d2956c44d0e9b76cc8b3def9a6bb7927b4e4aab059058b919073"
+  },
+  "new_native_games": 0,
+  "GPU_operations": 0
+}

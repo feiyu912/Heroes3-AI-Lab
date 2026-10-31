@@ -1,0 +1,24 @@
+{
+  "status": "prepared_only_waiting_for_parent_acceptance",
+  "games_started_by_this_preparation": 0,
+  "optimizer_steps": 0,
+  "required_acceptance": "Parent-confirmed complete 12-game acceptance on latest explicit-server-readiness snapshot (05b or a superseding fresh acceptance)",
+  "prerequisite": "Wait for explicit parent/tactics message that all 12 raw-audited games passed and shared pool is released. Existing failed 04/05b files do not authorize launch; terminal-ready telemetry issue must be explicitly audited.",
+  "automatic_launch": false,
+  "checkpoint_sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+  "collector_sha256": "88d657206c1603643f72deed36fdf50eb91db5a8bf628e2b69b6c0410e07122a",
+  "trainer_sha256": "74dcbb58fecbc366a3a1834c9cb70bd500a82b0f1f45994d2a3913f887933df3",
+  "ppo_sha256": "05477bfef29bb4b91c107b43a514c8284fa76e7817947f6f9e276354ed1bf088",
+  "inference_schedule": "barrier",
+  "environments": 4,
+  "claim": "Four independent worker/agent/native sessions are created by the CLI loop; actual simultaneous concurrency must be confirmed from the new run PID files and resource samples, never assumed from this preparation",
+  "argv_for_parent_after_acceptance": [
+    "/root/heroes3-ai-lab/gpu-venv/bin/python",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/collect_vector.py",
+    "--out", "/mnt/g/Heroes3-AI-Lab/experiments/strategic-vector-v1/native-collect-clean-4env-01",
+    "--execute", "--device", "cuda", "--environments", "4", "--seconds", "120",
+    "--inference-schedule", "barrier", "--policy-version", "clean-prior-v3-zero-update",
+    "--checkpoint", "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt"
+  ],
+  "runtime_freeze": "Capture current native source/bin/map inputs only at actual execution, verify the accepted native snapshot first, and never reuse this preparation as proof of native acceptance"
+}

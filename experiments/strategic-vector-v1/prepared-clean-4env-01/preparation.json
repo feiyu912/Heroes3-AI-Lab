@@ -1,0 +1,33 @@
+{
+  "ready_only": true,
+  "jobs": [
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "EmptyAI",
+      "seed": 2026102200
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "EmptyAI",
+      "blue": "DirectorAI",
+      "seed": 2026102201
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "DirectorAI",
+      "blue": "Nullkiller2",
+      "seed": 2026102202
+    },
+    {
+      "map": "Maps/adv/takeover-v2-train-01-mines",
+      "red": "Nullkiller2",
+      "blue": "DirectorAI",
+      "seed": 2026102203
+    }
+  ],
+  "device": "cuda",
+  "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v2/checkpoints/threat-supply-clean-prior-v3.pt",
+  "checkpoint_sha256": "6ced669638242eff327c2b29c3ab635528f07167a7959a2170985f2dc304e2c9",
+  "claim": "No rollout launched, no GPU accessed, no optimizer steps"
+}

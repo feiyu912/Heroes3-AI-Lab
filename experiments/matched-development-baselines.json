@@ -1,0 +1,40 @@
+{
+  "scope": "Matched development seed subset only; model selection diagnostics, not fresh confirmation.",
+  "results": [
+    {
+      "opponent": "BattleAI",
+      "matched_battles": 96,
+      "public_wins": 77,
+      "b64_wins": 84,
+      "improved": 12,
+      "regressed": 5,
+      "scenario_cluster95_win_rate_difference": [
+        0.0,
+        0.14583333333333334
+      ],
+      "source_hashes": {
+        "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/public-original-BattleAI-development.json": "5e07311dfa0b88a92030a7e71658230513d5217e72d60e07e9555a0d06cbca93",
+        "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/b64-baseline-BattleAI-development.json": "76491ac321efd7e996dec6a4dbb4ca61b22941216fe7794d5c64a9f12785f998"
+      },
+      "shared_artifact_hashes_equal": 66
+    },
+    {
+      "opponent": "MMAI_MODEL",
+      "matched_battles": 96,
+      "public_wins": 48,
+      "b64_wins": 58,
+      "improved": 27,
+      "regressed": 17,
+      "scenario_cluster95_win_rate_difference": [
+        0.010416666666666666,
+        0.19791666666666666
+      ],
+      "source_hashes": {
+        "/mnt/g/Heroes3-AI-Lab/experiments/conservative-ppo-v1/public-original-MMAI_MODEL-development.json": "6dc92f7d2689378d1fc8f5f6e5397b6a3f98c71048aa5cd32ca81c31b5b392b1",
+        "/mnt/g/Heroes3-AI-Lab/experiments/expert-retention-v1/b64-baseline-MMAI_MODEL-development.json": "bc8bb4ef828cd7a776ae4f924e3e7f309e7aac632061516d61e1c9deb9d0b479"
+      },
+      "shared_artifact_hashes_equal": 68
+    }
+  ],
+  "goal_achieved": false
+}

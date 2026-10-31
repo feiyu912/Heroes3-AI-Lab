@@ -1,0 +1,381 @@
+{
+  "protocol": {
+    "schema": "strategic-efficiency-reward-matched-data-v1",
+    "purpose": "curriculum_training",
+    "algorithm": {
+      "schema": "strategic-efficiency-reward-matched-data-v1",
+      "action_schema": "strategy-candidates-v4",
+      "gamma": 1.0,
+      "reward": "win:1-0.05*T/(T+75);loss:-1;T=terminal_native_day-first_request_day",
+      "actor_sample_weight": "N/(E*episode_free_choices) if candidate_count>1, otherwise 0; E includes zero-choice episodes",
+      "critic_sample_weight": "N/(E*episode_steps); E includes all valid episodes",
+      "advantage": "return-old_value; weighted mean/variance only over free choices, equal mass per active episode",
+      "entropy": "Same weights as actor, zero for forced transitions",
+      "KL": "Report objective-weighted and conditional free-choice KL; gate conditional KL to avoid zero-choice dilution",
+      "minibatches": "Uniform random transitions; global N/E weights retained, not renormalized within minibatch",
+      "forced_actor_optimizer": "If current minibatch has no free choices, set actor gradients to None; skip actor momentum/decay/state advance",
+      "epochs": 4,
+      "minibatch_size": 64,
+      "clip": 0.2,
+      "value_coefficient": 0.5,
+      "entropy_coefficient": 0.005,
+      "max_gradient_norm": 0.5,
+      "max_conditional_KL": 0.05,
+      "limitations": "Move/EndTurn policy only; automatic EndTurn excluded. No ability improvement implied; native battles/economics delegated."
+    },
+    "learning_rate": 0.0003,
+    "global_seed": 2026102300,
+    "optimizer": "Adam",
+    "torch_version": "2.10.0+cu128",
+    "cuda_version": "12.8",
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "deterministic_algorithms": true,
+    "allow_tf32": false,
+    "sources": {
+      "/mnt/g/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/build-driver-frozen-03/build_capsules.py": "a67337d8190a9716c6750fc1ece5f5076e0acbbfa01f574fadc14bb82b1a6872",
+      "/mnt/g/Heroes3-AI-Lab/experiments/multihero-mechanism-probe-v1/build-driver-frozen-03/capsule_support.py": "850f6f9b6b7e2f94a4526ff3fadcf65b319d4c720fa2f719cfa87ebf18d8c414",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/AI/DirectorAI/CDirectorAI.cpp": "2fd91c7199d396896f29bb725d48810aa7cfb9f6b7fa9aa7a91070521d9ed2ae",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/AI/DirectorAI/CDirectorAI.h": "d43e7cf0d0e76522877aec5f1bc32319c91336d525cc54734db606601dd4fb21",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/AI/DirectorAI/TypedPolicyProtocol.h": "9aef11e358269b4e42212b895595ecf953a474ab3e392ccbb80c9f6c218ab310",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/client/Client.cpp": "ba8b1edc5db94522e4f74518f814c300d0ef0b8c3d5323cc1e448ae7896c9157",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/client/Client.h": "1b0dd0ea4cbfcf76bf1b40273165b3f176e80c2ffb64a6fc56ab621f604eccde",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/client/NetPacksClient.cpp": "4bcd30eb5621dad894f0b1564c989fb43101820b3c1201193d09bc32a291eba3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/server/CGameHandler.cpp": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/server/CGameHandler.h": "7f0b41235e28b7854e92600d4b1ee31cb4ce33aa51454ff40af7abf7024342d9",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v3/candidate/server/battles/BattleProcessor.cpp": "ac38eaa096f2cc8156fc9ff733046ca5b90650b57b75185fedfaf805f50d8565",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/CANDIDATE_MANIFEST.json": "638945535d6878723ac42adf2147f0d0c0e6054523ccf655f1ee2e7f389252c0",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/audit_game_v6.py": "93a1184a554df5039211f43a2694c657b8228fa62235e931870f381b86b06a86",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/audit_replan_v3.py": "5c12cde64db677913d33fe23b2915f49a18be38c289fc750143e727dc75b2dff",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/check_director_drain_cpu.py": "60bf4dc5de4d41637a8110667a676224bd8fa6b523a1de3c84168b0ea9d693d1",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/check_neutral_ack_cpu.py": "196018e2b27a6f7eea930cd3ce31173bead0e3ebb48aedf56c79f8881af2e5e7",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/director_registry_v1.py": "14af4bc7512ba187d5fa43bfc03ea5d27be48e2d7d136f57c043d8712e721b68",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/paired_proxy_drain_v4.py": "2906f83b613e5b8466bbb456a9af5823e16c92773b1e7fc500c081e9d7d28431",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/qualify.py": "87381f63ff6a917e8fa34a9b61faebf5795cba937ca7e628f58dd3691893111b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/review_four_raw.py": "f6c5fff6ea77e7c922cea262283add3e512940d7b85ecfe5d23754fecfbf28d1",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/review_paired04.py": "1f48f4c6106a01fe37a7a509c76d91a4fa43ab239000c5b6f9d5fab1b4b0f426",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/review_paired04_prefix.py": "59bee0a1b8416ee51a3c6e332a473eadb62437033d80e21fc752fa171d4a1615",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-director-terminal-drain-v4/run_proxy_game_director_drain.py": "01f26b15fbf3fb661fb968ff3b41bec335e75114f3f5fda1f5f4ed05de7e0f76",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/PLAN.md": "f2bfba6ac6726f17e84b06f770c9596603994670e05eb46d65bca99ab427ea3e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/check_cpu.py": "b9965941ae9c15835052c7599d64989d04a5a8d43168d2fafa174426267c5cab",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/efficiency_ppo.py": "c1f8214d6a083cd65ec7689fa66b09a45240524203fa10549af3600965938986",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/evaluate_dev.py": "0c87c5f7579e22847ecb2fefd6b44c9e4cc8983b93a3c1c9a4a644f776292865",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/prepare_private.py": "ba0c10e7a137e29803cb3a4742a3efd60cbcf2168194dc7265404a9349bfc4ab",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/targets.py": "a404f828deeedb3bf2fa5ec66ed599b41ebe90de21dc443af1787d0defc65fe3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-efficiency-reward-v1/train_efficiency.py": "83ebf07b69ff9e17930aadfc89907a3a3536f2eecd3f4a417722c4cc64b07448",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/collect_episode_v5.py": "cf259a97bf3e9ca20c6625e06bf28fbe52190bcb7d438d13f680172c8a289be3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/pipeline_common.py": "4a6d4e0a22d761c911ce71998d5db4d219316e90d20b1ace353fe1d1bc3f2eb4",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/audit_typed_execution.py": "7d662f32e63d55ccfbfb47daf48a97fcd2d7442ca7f646789c5d1d30976a849e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/broker.py": "ac2b103011f2243a13b3eea98b3714a2e9b548dae9faf9ca3321d059b638c16d",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu_audit.py": "bbaf309259d66a7d4e048ab6dbf8025eeda9191c59f23154bc9b23b645c145f8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/cpu_typed_execution_audit.py": "b503ac2989b3e25663cc6d2b1cabd86e1d8ea2cd89a355a08c1ef76a1e56c5c4",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/encoder.py": "3c613ab07b3d3a4d09bef544c34883e2ba07c04d9114d55a929ebfbd9b4f5056",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/migrate_weights.py": "cad8d2218e6436e186f1427349ec9e1b1ce64939bc37dabb075aaee72b867e2e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v3/model.py": "a221490d49501939e2634aa1e67b2aed46b84fcd7c1862bdbe5a60a4b2f2f072",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/archive_epoch.py": "69f00a459ac3602d19460283f725f2dda3f6b301e3654ba2c1b9284314f017fc",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/archive_recovery.py": "79eadd84efbbb815b4edaa0ed637833f8e2e7ffa063ae1ea1f363b5d97aad517",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/audit_fullgame_raw.py": "2fad24e04df5f527de744d97fb4272e3a3fd71af3dc11188601b797f8e578fd4",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/audit_game_v4.py": "4b17909a5a4159a1236e1254a0d0157a6ee4888c1aed271670402c7ebea20253",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/audit_game_v5.py": "46e14bbea207255d3d6450c3f837863fbfa3c1b434b2d43f76bbdcd759ff6d6c",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/audit_smoke_raw.py": "c4efbe444105fa197bf724be9ed6d9b7967d2ec29321d4e7ca6d78df6a8fa0d3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/build_capsule.py": "cf6a7c55be9000943886d5656462cbefa6ce7ca0aa0cbfdd2f3500e365865dba",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/check_protocol_cpp.py": "e64cf962811c47592e9a909b20a1b5638dc5bc685c19005edad2085a65c23b47",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/check_runtime_idle.py": "94a34783edb993b95b281b8a711cd40c6a56725ae46c9e0615e0e286cd7687bb",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/compare_native_restore.py": "4fb3a0ccbd146741c4f4e9951a30769fb7cbef946143a791594b112d2213492b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/compare_runtime_scripts.py": "6ed556a0f2ac61dc76d6d835523a0e2ded1524f61adfba544368903c8d8a102e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/prepare_native.py": "ab55cdc63cc114243e97aa7f21b9797c9eef4e653a7564a77a947243b220ab4a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/raw_events_v4.py": "f18c0c804788564e7eeeedb450cbcec5a39a7d6aea1dcbc6c4516117a67b371a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/run_diagnostic_scripts.py": "58f59f6ea8486f7bc025f3294c2fb7f1c0f92ed94ac63a56efe133480ae4db2f",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/run_fullgame.py": "c625d7f1676f02e764b0fc2383c4debd5a2d911d546b9ecffd2a67a1c34ed567",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/run_fullgame_scripts.py": "442a71de2fd43841603ca34ec5869d24495e695eebdaa22958c0915c74210261",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/run_game_v4.py": "ba04197455eaf9e31679fef60591c8f1f5dcc29f74db41a1574bd78b7f00cb2b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-native-v1/run_smoke.py": "71e864a43202521dd63115f62663e9ed6a2c64869f0235b358b07f013f2c32b6",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode.py": "5de82791e1202723d0e904a63496eaab1026836b2c2c8145c26e2e5ed9eaa69a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v2.py": "42fc5d0cf840aeb605504230870ccc76deebff3b3b9dbd1ba2caf080f8b753aa",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v3.py": "8926220d03fb39bf44a82d30e58b6610acf00f667cdd9bd2fda9a580fa93f7e4",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v4.py": "07d13901a127661781011f9c329b22eedd02c8e8b12f1c053fe217b56dd4a6a1",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/admit_episode_v5.py": "e5c9cf986a389f5d6c460dbe712d6f666bb5398f302411f34ac96bfb5417cbff",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/analyze_paired_choices.py": "16f49fffcdb363b234939f154c384c229f619b75c49e16ec2741cb5c3536817a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/analyze_single_episode_centering.py": "6ad668854f219b421d2cceb0e6dc006e502af3c7b1fbd64b11bafe496dddd6f1",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/archive_boundary_v5.py": "8fb732a2763332326ec072238c40f760c6c0383d3e7b9ca7ea7d7987c7bca7da",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/archive_controls.py": "ed6bf8457979c47e86d3144eed4fdc40c6253188ecb762a8601fc95733bfff05",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/archive_phase.py": "afc778ad9edcfeda5c1a755f2b4729ce5c8d0797130b4395caaaa31d5b5fb12a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/archive_run.py": "04f351e311da3af95bf958186755308f8c4e3dd07fab6af503935b31f053a6ed",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_action_opportunity.py": "f0085d62f0680d4952b642bcbc05f8c56b5076d5f003a3eb8b6048322922fc5f",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_boundary_v5.py": "ea028255267c3fcea1522c6101e4fa2e9165b192a699be62cce8511c7b357214",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_checkpoint_cuda.py": "002d3d19b1aef554d55ea335de3c6bd51015daf1bed1f1879622a02c6eeaa60a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_idle_after_boundary.py": "67c37402b1098e4aea8ae17177f8f4ababc9ef5fdb4bbb12f4a14f5e221969e6",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_idle_after_dev.py": "3b8f333564fcf8a701c5311035e72af728cc52914dec3d01809257adb0236437",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_movement_order.py": "5a684bcab1a107e672a3a477a7eeceb9d200fc6f0e75f6c3b821200927eead36",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_native_variability.py": "4e99ecf99febeb0d1e31f844cc37816ccb0d25be9d05ab0b95290cfbb15cd89a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/audit_paired_world_prefix.py": "edeea01a8d78d055b50d906b71564f1edca51f194870f8d923630637f051b426",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/check_checkpoint_cpu.py": "5362bd093bd1e6373e61aefa73ee2ad9cbc587ab61cc38f60af747af90815a97",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/check_collector_epoch_cuda.py": "e0eb66c8d0aeb36399b3c34e5120f69877e730815c27e68ae3a291ce15268129",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/check_collector_epoch_cuda_v2.py": "3f3b217ef6051f1c23c32d5e3c259d67284248f0d1ea80abc3c47c795a08dbad",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/check_live_jsonl.py": "48083ba90074e5ae5efb261286876ea8daa288c20adab8237512824c997c5715",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/check_ppo_cpu.py": "b1590f4d52bd4df1d603a810ef47c943608e06e21910cd1479bb6baa1369564b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_balanced.py": "5389cd5a2161d03453403b2b4f7bf931a5f3a9880d8e6f75c0c97ba5f28da089",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_balanced_v2.py": "1bec4d83889081c36cdf96d593d4647336ae0055982c4e77a7015f2e8778656f",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode.py": "6e6476013c9caadcc18be997550be48d9b428067f05397ff114821fcef81d826",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode_v2.py": "2bbc394c97dec59dd724c91759dd8b94d400d44259bfa742385c7fe7d4eed754",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode_v3.py": "c5ec96c6a874ca5ac16bac54943e8cf79a92ea8ee7e09cedb1a01a2010b2716d",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode_v4.py": "3fd674a7acb91ab75fac115cd1475dce9952b29b05bc670771bebbf48e0039a1",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/collect_episode_v5.py": "cd649dc5f4b46d2a914c9046c8e6723fa1c8d2d1c3742f9ada51e8c38331443b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/episode_balanced_ppo.py": "dcdc00522406c6b03e3efa1279910ddd95749dd2efc3ceceae3fbb95285b0b6d",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/evaluate_game.py": "b2373ed984626ee89ad2ed5c4c6eca54a78d92f28e98029647690ee0d879052e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/evaluate_game_v2.py": "f2969991eed118f8c3cef5b8c3db6503b3e85dd23bc976706c7e7e65952f6fbc",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/evaluation_broker.py": "e8142ca3fc81848e2a8d2534eeb4fcd2a2218184e7c9bb63745a892d1bc7a521",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/live_jsonl.py": "3a4bd16e5264970485f69b56c73adedcb3403d0fb9306277b650616966859a35",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/load_admitted.py": "5f018f7b03f64179be0c102ad473f8b541b3c0f4570ccc35d6113af9e38c6817",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/model_io.py": "fbe6d5764c440a53432d3f2c8c5e057dd0f78a9f8ac70a1d4a472353f5c864b3",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/native_boundary_v5.py": "7d41492229953fe85ceb970da7997e088e0fdb131d59de3b1e840d90df98069a",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/onpolicy_broker.py": "ebbc472356a75612711529e225fb4c550e1ff369cd5992d82e555303d650282e",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/onpolicy_broker_v2.py": "0e4f80d3106650229b59ff9b5816551aa6b0cfb89f9efc1eb5e1dff031cd807b",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/paired_eval.py": "ebabf2286e393b9642e3ea1e76dec675a31e67176134b908fd415a9141189436",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/paired_eval_v2.py": "6abc3b7d3bf8c0cad4b88e9b1d22cc4cce447c7741069268e21bea6e3a23f408",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/prepare_boundary_cli.py": "dfc7c59f5327f3f91968bbbefa17f8ce63426e0212f62804d58c56b0789b66d8",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/prepare_collector_v5.py": "86b3d9383eaf83901bbb9987c55794e7dd666e085e507867a73f4c9f98fd638d",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/prepare_epoch_check_v2.py": "666cd67198dda4851d24b5c8f7e1fa69540712294a50a4e27f091227f1a8c1d2",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/reconcile_curriculum.py": "f2f99860723bda0ca979d82a4a2999f1d5de9927c923f2d7e1c3d7c2d51513d7",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/repeat_dev_control.py": "4f1570295caca54df3146e4740519c6ab200e2f05daf972e40e53ed2d201646d",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/run_boundary_v5.py": "eb72efc0d7c3d5fc30384169a7b2086098f5e2e85a40c2110c9441ad429a1cd0",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/run_boundary_v5_cli.py": "a337c987bc5edd58261af1e9ae210cf75b926d70c763abe3fb9bae54420fa557",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/train_certified_curriculum.py": "49c6f7200b60eea0aa2baff71a055ed6013064cd847734fc1d4a1c762bebfe8c",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/train_update.py": "b15cd1a4747ba9273da2233b5658c29972086d9c2d242b97c46a33a5bc30f1dd",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/train_update_v2.py": "0745c29abdf4024b57217f47e5a8ff1870912823a571e5d9783bec41ec79dbe7",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/train_update_v3.py": "9337bdb81543412fe6c6d73b902498489ca352c972be87e3ad0e893ad819202f",
+      "/root/heroes3-ai-lab/evaluations/typed-director-terminal-drain-capsule-03/source-snapshot/server/CGameHandler.cpp": "f15296afe65e67fe9020d36953c9dfe2d650fdd592274ad5f02caa6887474865",
+      "/root/heroes3-ai-lab/src/vcmi-adv/server/processors/NewTurnProcessor.cpp": "44c5d92e2e89d1e678164912c3e24433f1570fcd1fb8935d006cb2bedb3914ff",
+      "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/run_pipeline.py": "663b9da968f88ce8726900d6bb8d362da1bb8c0ffb69c9eddf7f1bdc9e0180b6"
+    },
+    "capsule_manifest_sha256": "2972318d45d8d69683eb869bd13f36781baa00bad123c06a76b8f549a10eeb9c",
+    "native_artifacts": {
+      "vcmiclient": "9bfff27e8ca5f7e11918f026ec0757d76c638d12da75c35208266c339ae46171",
+      "vcmiserver": "7e3b49e89e9744eeba3b368cf7c41e0a9d3f505b68a66189bc23d81b164926d3",
+      "libvcmi.so": "0376356de6dc87c67164193fb62bd88d39c98805a88a8d89d03ef730412c6403"
+    },
+    "curriculum": "Training maps only; one fresh logical-update seed per episode. No final-test or learning-gain inference.",
+    "derived_reward": {
+      "schema": "strategic-efficiency-derived-targets-v1",
+      "epoch": "strategic-efficiency-reward-matched-data-v1",
+      "formula": "win:1-0.05*T/(T+75);loss:-1;T=terminal_native_day-first_request_day",
+      "arm": "treatment",
+      "targets_sha256": "b5fc0fba63fafc6c62513777b10ce92a5eefd4fe8b9a05b9da826746af123ce9",
+      "shared_batch_sha256": "fed4c24436f7510d544e67876ae8f6d41fdc7f83de0e35c988cb1e6a355b1969"
+    }
+  },
+  "protocol_sha256": "e9034ba70cf1584fea450dd1546bf43b84bf4b739bfad27df1199a653734beb3",
+  "parent_sha256": "d5908330038444107ed9ba00585fb068e453a5d1636856ba994d9aa3eb68df72",
+  "previous_updates": 0,
+  "admissions": [
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-00/admitted",
+      "sha256": "18c9bc297e1e9d07a21b5cb1ebfe6f1e0012b3a226a711f86eed89479cad44b2",
+      "report": {
+        "passed": true,
+        "samples_admitted": 689,
+        "policy_moves": 632,
+        "policy_end_turns": 57,
+        "automatic_end_turns_excluded": 49,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "red",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-00/raw-audit/AUDIT.json": "38476bb24fc70d485c24910d2c057778c95553d1bab2c6ea292a9568a8b87d1b",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-00/native/agent/sampling-state.pt": "15da268af6fa51475daa3570417128a20226266440572e6bdff3f3367202b524",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-00/native/agent/typed-broker.jsonl": "afa62faff34b402c4026a46eb2863db419c7ffdd00a04cfec8485ce55e871587",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "4ed81b901edbfc5af08b7bb59e8a80bda91684b4b5b3239a616ce4465c705e56",
+          "episode.json": "bd80fb6a72c50d3a0c09b78c5b786289bfdadec6718b1cd47d15a26f7c0a8a4d"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-01/admitted",
+      "sha256": "22eb4d067055db8d05559ee6f7844cc1a7fd3fba10d276f4470da14f04a5c364",
+      "report": {
+        "passed": true,
+        "samples_admitted": 307,
+        "policy_moves": 291,
+        "policy_end_turns": 16,
+        "automatic_end_turns_excluded": 27,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "blue",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-01/raw-audit/AUDIT.json": "b2ea721d04eb6d3f2cbdc81df617050530f494bb4301a1f7e9b0d3f72b530507",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-01/native/agent/sampling-state.pt": "2592f4fccbf3e212a63327a84758a5d0663bcf36c1bf1777b153fd6a0a94163b",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-01/native/agent/typed-broker.jsonl": "1e3bc0a6b95ecc6069547edd3bf740caf8ad648ce3d03e36154399ad74c9e7a6",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "7a58bf98e63d24d6f391a5c26a48f07655e79e23777aadf4b241b196373d1c57",
+          "episode.json": "40ddac840c0f9fefe990c5b911c01f77ff2459cfb4d1c8f92d5bf6c6eee806f8"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-02/admitted",
+      "sha256": "4d0eecb2b4bb9e455db2a4deb264776da9056671ce7f07e14ef3cdbcb366ea75",
+      "report": {
+        "passed": true,
+        "samples_admitted": 85,
+        "policy_moves": 82,
+        "policy_end_turns": 3,
+        "automatic_end_turns_excluded": 8,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "blue",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-02/raw-audit/AUDIT.json": "5fe44b25f86c6c17ecb34b3b94507c1f8ab30e2f3d410650280ba97565a409dd",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-02/native/agent/sampling-state.pt": "c66f3426c33e17d4f354c760827cee8d93bb7cbeb15555e89d286c7dc9b11ab4",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-02/native/agent/typed-broker.jsonl": "80948d34dd0ce6f7421753e3039fbbf778b47c62e452007b4f445a237696653d",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "ad1b56ce39a5b7c59e255266b46a6fa6a12192c7995517cf488e43cb6e6e4495",
+          "episode.json": "81c82f9085c8a6fe9fbabb4e648974f3806526cb6a3814ca85978577f52b05f7"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-03/admitted",
+      "sha256": "a20e4c3f4704cb1b74808f702f7a514293188c7ad8b90d9d61d2b198496755b7",
+      "report": {
+        "passed": true,
+        "samples_admitted": 64,
+        "policy_moves": 61,
+        "policy_end_turns": 3,
+        "automatic_end_turns_excluded": 6,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "red",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-03/raw-audit/AUDIT.json": "cea11ac7948fe0968a4ba6c9857ad48d3bf578af925a0e3be1a4278b91da6e90",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-03/native/agent/sampling-state.pt": "ca81fa6d3bb6f7e2d5e7fd04c7d7776bdfb98570455696816a68c8f394e22c97",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-03/native/agent/typed-broker.jsonl": "6a7bf8fcc000eec84d922129cea4cec1c7133da46ea7337e2d1923051fbe2027",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "a05035137be2b0cbbeda4752853adf7c9f4ab18de4ea8b6a1f23aadbbd5b623c",
+          "episode.json": "3987a69e097b2e3fe69e62deacf0b95d9aac58bff854fd004e574e1f2879f903"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-04/admitted",
+      "sha256": "617cea42b46a2c6157d67e75f234227aebcf6e820db3a0bc8b28001a077ba988",
+      "report": {
+        "passed": true,
+        "samples_admitted": 313,
+        "policy_moves": 295,
+        "policy_end_turns": 18,
+        "automatic_end_turns_excluded": 24,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "red",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-04/raw-audit/AUDIT.json": "d43a4c3046a054e0d36ef56a74e5f0b3bca09de9659a09c32f2d4a63e2e818b7",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-04/native/agent/sampling-state.pt": "5a8931abec8591ffe31546831fcdaecca6e8ba146f8812d7d84e4bdcdf94860d",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-04/native/agent/typed-broker.jsonl": "fd61fb33ef92adb8ee37ca6866ddf7d72e8c805309ef074491313c4adf62d850",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "289e9d2ee691c398d667a9d7ccac5377daa1afa73f1906b01d3022333538e4db",
+          "episode.json": "44230ac7d7d3a52b24ccb25336f8870e3c3051227af1cad10427d4fdcae96d4e"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-05/admitted",
+      "sha256": "aeb5f7a71c5b894c6feda67ade4dc80a07b42f91ad4481643ba498cb2a77adbd",
+      "report": {
+        "passed": true,
+        "samples_admitted": 252,
+        "policy_moves": 232,
+        "policy_end_turns": 20,
+        "automatic_end_turns_excluded": 17,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "blue",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-05/raw-audit/AUDIT.json": "8ac07cfe71248b9bd94ade4bd56fff73e4a03c37cdad3ed0b0f39e756e75ecd0",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-05/native/agent/sampling-state.pt": "70ea79f71e02ddd1b2327143c14736aa432b665929881128a57eabca7dae9042",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-05/native/agent/typed-broker.jsonl": "dd571bb68cdb7e1b6fa57196269e23eedab2bd8b63d21825f28e5f0a71c1720d",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "adc42197647630b2f6ead96e6ad1f7abc285904216a3db6f0e94ab080a264cff",
+          "episode.json": "11c370683e298afd2584725f6016f0dfc385b31e48f279d8c319049d260605ca"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-06/admitted",
+      "sha256": "bf09740560dbb67015a5e4e90e5e2a78675104c6d06250a5274913f8db8ccc95",
+      "report": {
+        "passed": true,
+        "samples_admitted": 190,
+        "policy_moves": 174,
+        "policy_end_turns": 16,
+        "automatic_end_turns_excluded": 16,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "blue",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-06/raw-audit/AUDIT.json": "3765a3f24dabf06897858f43a45426600945ba0c3d086940b6fe7ebc6ad50322",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-06/native/agent/sampling-state.pt": "33168bc00c74951d14c82820bd67328dda4564647e9545fd5b1787be66a7d911",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-06/native/agent/typed-broker.jsonl": "46d4c914e4307adcd2828bbe47242fbdc88b7c594f5757ac575f25623c235cbd",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "eebf0b8b291cebaacfb1082a2ba5decb9a09ba5dd0e3686dfd445ce58b878500",
+          "episode.json": "7b8c6a0035f36f2b5dc1dd1decb26aaba87c38845253d3efbc440e10b3f3bb08"
+        }
+      }
+    },
+    {
+      "directory": "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-07/admitted",
+      "sha256": "f95fc76cc59e0f1b79c3af62d92cb8beb2ba55dec5af66d69a525da8579c2eee",
+      "report": {
+        "passed": true,
+        "samples_admitted": 211,
+        "policy_moves": 205,
+        "policy_end_turns": 6,
+        "automatic_end_turns_excluded": 19,
+        "sampling_device": "cuda",
+        "replay_actions_logprobs_values_rng_exact": true,
+        "optimizer_steps": 0,
+        "native_episode_winner": "red",
+        "ability_improvement_claim": false,
+        "input_sha256": {
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-07/raw-audit/AUDIT.json": "6bdabb52ba34ef28165220b4ae18f66776b1010d3f677f726f3a9a4c721c3490",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-07/native/agent/sampling-state.pt": "7b5adb497ce7ab462858e140d429bfb5b003a53f1ea3203a9b8e994e1441d20b",
+          "/root/heroes3-ai-lab/evaluations/strategic-efficiency-shared-train-01/cell-07/native/agent/typed-broker.jsonl": "d06f919aacf9e28315c187b6dc492a0ead2818dcfe91bccfdb6906abf393065b",
+          "/mnt/g/Heroes3-AI-Lab/experiments/strategic-learning-mainline-20261020/native-pipeline/admit_episode_v5.py": "c51ac46934961177c804517e563eac9fb9d3eb1685c464a49a2b3ec50d39f4f0"
+        },
+        "output_sha256": {
+          "samples.jsonl": "81f5ee805c2599f0618f19b3882538435a898ef27d7d96a8e8145100369a4e5a",
+          "episode.json": "39887a530ae349cf13aedb4ea4e1b76630267e39fea12d0943d481a1bd8147ef"
+        }
+      }
+    }
+  ],
+  "source_scope": "One experimental derived model; existing V8 and checkpoints untouched"
+}

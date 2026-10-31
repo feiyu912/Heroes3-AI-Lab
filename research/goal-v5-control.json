@@ -1,0 +1,16 @@
+{
+  "state": "experiments_complete",
+  "updated_unix": 1792079198.101474,
+  "selected": "v6-role-portfolio",
+  "score": [
+    0.0,
+    0.986842105263,
+    0.9375,
+    0.541666666667,
+    0.666666666667,
+    1.166666666667,
+    -82.583333333333
+  ],
+  "workers": 24,
+  "post_training_candidates_complete": true
+}

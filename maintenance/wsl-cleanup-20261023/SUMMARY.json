@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "deleted_files": 5559,
+  "allocated_bytes_removed": 10845573120,
+  "free_before": 864594014208,
+  "free_after": 875439603712,
+  "protected_artifacts_unchanged": true,
+  "summary": {
+    "/root/heroes3-ai-lab/src/vcmi-adv-build": {
+      "files": 13,
+      "allocated": 3142836224
+    },
+    "/root/heroes3-ai-lab/src/gym/vcmi/rel": {
+      "files": 14,
+      "allocated": 3384573952
+    },
+    "/root/heroes3-ai-lab-events-v2/src/gym/vcmi/rel": {
+      "files": 15,
+      "allocated": 3626315776
+    },
+    "/root/.npm/_cacache": {
+      "files": 849,
+      "allocated": 248606720
+    },
+    "/root/.nv/ComputeCache": {
+      "files": 20,
+      "allocated": 270286848
+    },
+    "/root/.triton/cache": {
+      "files": 4648,
+      "allocated": 172953600
+    }
+  },
+  "training_started": false,
+  "final_free_bytes": 875973365760,
+  "apt_get_clean_exit_code": 0,
+  "fstrim_exit_code": 0,
+  "fstrim_reported_bytes": 929712644096,
+  "fstrim_note": "All currently free extents trimmed; this is not the cleanup size",
+  "training_remains_paused": true,
+  "total_observed_free_increase_bytes": 11379351552
+}

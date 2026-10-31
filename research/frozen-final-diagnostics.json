@@ -1,0 +1,93 @@
+{
+  "selected_raw_audit": {
+    "battles": 512,
+    "verified_wins": 434,
+    "normal_outcomes_checked": 512
+  },
+  "public_raw_audit": {
+    "battles": 512,
+    "verified_wins": 457,
+    "normal_outcomes_checked": 512
+  },
+  "groups": {
+    "all": {
+      "battles": 512,
+      "selected_wins": 434,
+      "public_wins": 457,
+      "gained": 32,
+      "regressed": 55
+    },
+    "role:attacker": {
+      "battles": 256,
+      "selected_wins": 219,
+      "public_wins": 220,
+      "gained": 18,
+      "regressed": 19
+    },
+    "composition:core:archer,core:griffin,core:pikeman": {
+      "battles": 64,
+      "selected_wins": 52,
+      "public_wins": 62,
+      "gained": 2,
+      "regressed": 12
+    },
+    "role:defender": {
+      "battles": 256,
+      "selected_wins": 215,
+      "public_wins": 237,
+      "gained": 14,
+      "regressed": 36
+    },
+    "composition:core:centaur,core:pegasus,core:woodElf": {
+      "battles": 64,
+      "selected_wins": 49,
+      "public_wins": 53,
+      "gained": 3,
+      "regressed": 7
+    },
+    "composition:core:cavalier,core:monk,core:swordsman": {
+      "battles": 64,
+      "selected_wins": 54,
+      "public_wins": 55,
+      "gained": 6,
+      "regressed": 7
+    },
+    "composition:core:dwarf,core:unicorn,core:woodElf": {
+      "battles": 64,
+      "selected_wins": 58,
+      "public_wins": 57,
+      "gained": 3,
+      "regressed": 2
+    },
+    "composition:core:monk,core:pegasus,core:pikeman": {
+      "battles": 64,
+      "selected_wins": 37,
+      "public_wins": 58,
+      "gained": 1,
+      "regressed": 22
+    },
+    "composition:core:archer,core:dendroidGuard,core:griffin": {
+      "battles": 64,
+      "selected_wins": 62,
+      "public_wins": 52,
+      "gained": 12,
+      "regressed": 2
+    },
+    "composition:core:halberdier,core:marksman,core:royalGriffin": {
+      "battles": 64,
+      "selected_wins": 60,
+      "public_wins": 58,
+      "gained": 5,
+      "regressed": 3
+    },
+    "composition:core:centaurCaptain,core:grandElf,core:silverPegasus": {
+      "battles": 64,
+      "selected_wins": 62,
+      "public_wins": 62,
+      "gained": 0,
+      "regressed": 0
+    }
+  },
+  "scope": "Frozen v5 final results. Future research may diagnose these outcomes, but any later model needs a new independent confirmation set. No reranking or replacement of the frozen v5 candidate.",
+  "frozen_candidate": "v6-role-portfolio"
+}

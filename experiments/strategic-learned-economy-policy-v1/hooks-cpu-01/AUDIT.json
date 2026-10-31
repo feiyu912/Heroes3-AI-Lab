@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cpu_synthetic_only": true,
+  "native_games": 0,
+  "cuda_steps": 0,
+  "optimizer_steps": 0,
+  "rejection_checks": [
+    "response_schema",
+    "response_selected_index",
+    "response_decision_id",
+    "response_player",
+    "response_hero",
+    "response_own_turn",
+    "response_op",
+    "response_request_sha256",
+    "response_classification",
+    "cpu_checkpoint_cannot_be_training_parent",
+    "old_checkpoint_schema",
+    "partial_boundary",
+    "atomic_fault_old_file_preserved"
+  ],
+  "ppo_function_AST_exact_to_frozen_parent": true,
+  "synthetic_build_gradient_l1": "checked before zero_grad",
+  "checkpoint_purpose": "cpu_codec_test, rejected as actual training parent",
+  "source_sha256": {
+    "admit_episode_v5.py": "07ebcea21b1376a818f9da56ca3f7b80adb11116ab154beca62b2edc1fd08416",
+    "broker.py": "98876d0f8c825b45dd706795152da585effe479b6e222fa35db6b2947034cc9c",
+    "check_cpu.py": "05e46768c99e6ba1644d3db9ea607104671a98ebe1c7a47a1ad9c67377cd42db",
+    "check_hooks_cpu.py": "6346d5f54a723590412d5e9bfc8658eab605431c13521ee60a04f424b3a9ce79",
+    "encoder.py": "77210fd938d0e114e64f6d302f7749dc2a28e76c99e30d1a2488bd7afd02a259",
+    "episode_balanced_ppo.py": "c126900c20ab50795e8ad837af72849296e87b60dff259ebf1cfe6fa62ecc39c",
+    "load_admitted.py": "aa98d7b7605077f75c124c07b16b3da15a940fb8dd9482be720d924a331ca68b",
+    "migrate.py": "8b6d357c2ccf1197ed55532a52a09e6d01db734892b55df2980b51c931e0bb19",
+    "model.py": "80e78ae216394baa1e7437a39b1fd491c2fa91d9efcdc520778b76945456bb76",
+    "model_io.py": "76ae0e1ae586a2a0178b5694e6b975f847305dd90663750d1bc8ea8db23037a3",
+    "onpolicy_broker_v2.py": "455af77891cb452c5dfaac7dc33ec125e619afea7240fd1b913716471956a633",
+    "train_update_v3.py": "bd6d30db5b01b00fdf5b1c06bd62acfd6ee8eb720490fb4aa512a5b8b148863d"
+  }
+}

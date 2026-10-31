@@ -1,0 +1,16 @@
+[
+  {
+    "role": "attacker",
+    "url": "https://github.com/smanolloff/vcmi-gym/releases/download/v2.0/attacker-pdpyqkrb-202607251913.onnx",
+    "path": "models\\upstream-v15\\attacker.onnx",
+    "bytes": 19255061,
+    "sha256": "62adf45ea34a323d72e9ce953a0c8b6740e60c3cec3651f282bfacee785d3151"
+  },
+  {
+    "role": "defender",
+    "url": "https://github.com/smanolloff/vcmi-gym/releases/download/v2.0/defender-zvytfdpo-202607230657.onnx",
+    "path": "models\\upstream-v15\\defender.onnx",
+    "bytes": 19255061,
+    "sha256": "73bca79446ebdcab01e47fbbfada0162380df907bc86b19a21d0c502500cfaa9"
+  }
+]

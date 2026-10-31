@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "run": "attacker-1",
+      "exit_code": 0,
+      "role": "attacker",
+      "episodes": 5,
+      "decisions": 20
+    },
+    {
+      "run": "attacker-2",
+      "exit_code": 0,
+      "role": "attacker",
+      "episodes": 5,
+      "decisions": 20
+    },
+    {
+      "run": "defender-1",
+      "exit_code": 0,
+      "role": "defender",
+      "episodes": 5,
+      "decisions": 15
+    }
+  ],
+  "same_seed_independent_process_replay": true,
+  "total_episodes": 15,
+  "total_decisions": 55,
+  "scope": "Fixed no-magic archer battle, schema v15, legal diagnostic policy vs BattleAI"
+}

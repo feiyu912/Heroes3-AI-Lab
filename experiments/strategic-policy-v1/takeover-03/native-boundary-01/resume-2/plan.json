@@ -1,0 +1,85 @@
+{
+  "schema": "strategic-ppo-pilot-v2",
+  "updates": 2,
+  "jobs": [
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101910
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101911
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101912
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-01-mines",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101913
+      }
+    ],
+    [
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "EmptyAI",
+        "seed": 2026101920
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "EmptyAI",
+        "blue": "DirectorAI",
+        "seed": 2026101921
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "DirectorAI",
+        "blue": "Nullkiller2",
+        "seed": 2026101922
+      },
+      {
+        "map": "Maps/adv/takeover-v2-train-02-development",
+        "red": "Nullkiller2",
+        "blue": "DirectorAI",
+        "seed": 2026101923
+      }
+    ]
+  ],
+  "initial_sha256": "8dd2cc8eeb09c2e83421fd0ec6c2958ba64716580e2dac74086bbb8d92f7e5d3",
+  "hashes": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/train_ppo_pilot.py": "91a4e3b10f4e16eda9f08ace94f01f8f32dfcc7719ef3c7d60faac727ba02b19",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/encoder.py": "ff03b951ff62999ede3e8a6853905adc9e63c12b8c73ac8fad246ffb65ca72ae",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/model.py": "385d3a2c75013f1e35defb3ebf41643c2630feba5be6a698d2554c2cd5b199f5",
+    "/mnt/g/Heroes3-AI-Lab/experiments/adventure_runner_v5.py": "b786989e0a91b910ecd0fd0138136f77fbf83187ca2f8a4dde58472050246846",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiclient": "a400f10b5fc70842002e7555e06a0832d271a98dd5e6e1f9e50ff9d66571bb3c",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/vcmiserver": "66f6fecbc3c60e7c270e1d80ac491b5298ca3da8a460d74e8183c80d9f5feb5b",
+    "/root/heroes3-ai-lab/src/vcmi-adv-build/bin/libvcmi.so": "f98e70847400d81de680259c823579980e83c8c2fe6efc60ac6adbbdb9c9bfef",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/checkpoints/prior-initial-v2.pt": "8dd2cc8eeb09c2e83421fd0ec6c2958ba64716580e2dac74086bbb8d92f7e5d3",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-01-mines.vmap": "0ccc185c66b1379e8a9522ca81dc6e1567f540aefb104d0b1602e23ad538d036",
+    "/root/heroes3-ai-lab/data/vcmi/Maps/adv/takeover-v2-train-02-development.vmap": "5f637c73fe5a7361385f9c32b40c11685dddc4a1014ba7c991fa721582d7b7bd",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0"
+  },
+  "lr": 0.0003,
+  "clip": 0.2,
+  "gamma": 1.0,
+  "initialization": {
+    "mode": "weights-only-migration",
+    "checkpoint": "/mnt/g/Heroes3-AI-Lab/experiments/strategic-policy-v1/ppo-pilot-02/update-2.pt",
+    "sha256": "25ff6d18c51698394991ae84c53800d1c8488a0005f172427989e4fed384b5b0"
+  },
+  "entropy": 0.005,
+  "episodes_per_update": 4,
+  "simultaneous_environments": 1,
+  "reward": "Native terminal win +1/loss -1. No shaping. Invalid episodes abort pilot.",
+  "evaluation": "Training curriculum only; dev/test not touched. No promotion from training wins."
+}

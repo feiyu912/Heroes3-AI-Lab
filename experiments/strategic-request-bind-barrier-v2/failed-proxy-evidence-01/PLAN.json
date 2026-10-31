@@ -1,0 +1,73 @@
+{
+  "jobs": [
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "EmptyAI",
+      "player": 0,
+      "seed": 2026111000
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "EmptyAI",
+      "player": 1,
+      "seed": 2026111001
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "Nullkiller2",
+      "player": 0,
+      "seed": 2026111002
+    },
+    {
+      "map": "takeover-v2-train-01-mines",
+      "opponent": "Nullkiller2",
+      "player": 1,
+      "seed": 2026111003
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "EmptyAI",
+      "player": 0,
+      "seed": 2026111004
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "EmptyAI",
+      "player": 1,
+      "seed": 2026111005
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "Nullkiller2",
+      "player": 0,
+      "seed": 2026111006
+    },
+    {
+      "map": "takeover-v2-train-02-development",
+      "opponent": "Nullkiller2",
+      "player": 1,
+      "seed": 2026111007
+    }
+  ],
+  "modes": "once in both arms",
+  "arms": {
+    "a": "model",
+    "b": "clearance"
+  },
+  "input_sha256": {
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/paired_proxy.py": "20605c9f34e7df6d868888aed174da8f02e38f8d0338c569817b50acc0d7ea9b",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/paired_diagnostic.py": "cb4e2602c60692a4bc93bd9f0de4f38eb00352743a6e05825122444b74d1f602",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/run_proxy_game.py": "05dd8efffbdfba759bd6e8371c76fd0640dac780726de150ebed877007806164",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_broker.py": "3c2ad00af8313b4e3d914a799bdaeaef1a24f7841c191a3d54d76fed7ce2a851",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/clearance_proxy.py": "b08b7fc9239e7bc3ef2c53e155f267032a072af4dc6b474668e15610bff33e29",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_replan_v2.py": "d4e42d713591c7ee99d83ce2f3a7719f115aa968cf450b8cc4579025df8bb031",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/audit_proxy.py": "376c63d19cc66038d9002da371d60a37f805e7e8a80ef436da32fb05767fc80c",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-threat-replan-v2/PROXY_PLAN.md": "f66b8f332c6041abb29d60df480c129e83ebf7cc8385029233a7a6501cdca68d",
+    "/mnt/g/Heroes3-AI-Lab/experiments/strategic-typed-training-v1/cuda-curriculum-ack-01/update-1.pt": "539850b6552a97adb10425605d7eebc065cf60d799a192833227cb2cb220bcc3",
+    "/root/heroes3-ai-lab/evaluations/typed-bounded-replan-capsule-01/EXECUTION.json": "cba63711fd08066a9b9f0b2e44d6c66ccdf2666fde5ea2f704eb1e51be44c244"
+  },
+  "optimizer_steps": 0,
+  "training_samples": 0,
+  "expert_labels": 0,
+  "finaltest_touched": false
+}

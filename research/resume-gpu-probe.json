@@ -1,0 +1,94 @@
+{
+  "run_id": "1791988085996570870",
+  "config": {
+    "workers": 12,
+    "rollout": 64,
+    "updates": 1,
+    "epochs": 3,
+    "batch_size": 64,
+    "seed": 20261014,
+    "resume": true,
+    "inference_device": "cuda",
+    "training_device": "cuda",
+    "scenarios": "/mnt/g/Heroes3-AI-Lab/research/scenarios-v2.json",
+    "worker_python": "/root/heroes3-ai-lab/venv/bin/python",
+    "rotate_every": 0,
+    "loss_shaping": 0.0,
+    "opponents": [
+      "BattleAI"
+    ],
+    "cache_next_value": true,
+    "fixed_map": null,
+    "fixed_role": null,
+    "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791984957445079862/latest.pt",
+    "validation_report": "/mnt/g/Heroes3-AI-Lab/research/ppo-balanced-rollout64-validation.json",
+    "output": "/mnt/g/Heroes3-AI-Lab/research/resume-gpu-probe.json"
+  },
+  "checkpoint": "/root/heroes3-ai-lab/models/ppo-1791988085996570870/latest.pt",
+  "source_checkpoint_sha256": "4b957f913befe6a0cc03817cc5bd734b7894bc6448e80b77bdf106f87f7546d4",
+  "boot_seconds": 1.4503998959999995,
+  "resumed_from_updates": 128,
+  "worker_torch_imported": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "wall_seconds": 2.8688308550000006,
+  "parent_cpu_seconds": 1.5169674729999998,
+  "sampled_peak_total_pss_mib": 5251.875,
+  "torch_version": "2.10.0+cu128",
+  "gpu_peak_allocated_mib": 138.60205078125,
+  "reward": "0 except +1/-1 at authoritative normal battle termination, optional terminal casualty-rate shaping weight 0.0; truncation bootstraps final state",
+  "records": [
+    {
+      "update": 1,
+      "steps": 768,
+      "rollout_seconds": 2.164743736,
+      "actions_sha256": "d1fb6b2f7cd6e068dac57b18d2a4b1d3b167799c72f5a636c45485ace17f5803",
+      "returns_sha256": "3bb733cd709969b7ded13b4b9346e5b5375ca7f7788634f622be86c4b8ce3c32",
+      "inference_seconds": 0.8023304649999954,
+      "environment_ipc_seconds": 1.205759630000002,
+      "update_seconds": 0.6686706579999999,
+      "effective_steps_per_second": 271.0510688539969,
+      "episodes_total": 29,
+      "wins_total": 26,
+      "truncations_total": 0,
+      "sampled_peak_total_pss_mib": 5251.875,
+      "metrics": {
+        "loss": 0.020612107848541603,
+        "policy_loss": -0.01205918254951636,
+        "value_loss": 0.0798671826099356,
+        "entropy": 0.7262299921777513,
+        "approximate_kl": 0.004001526815247619,
+        "gradient_norm": 2.9282383918762207,
+        "clip_fraction": 0.045572916666666664,
+        "epochs_completed": 3
+      },
+      "action_types_total": {
+        "0": 132,
+        "2": 159,
+        "4": 222,
+        "3": 255
+      },
+      "wsl_min_available_mib": 10311.984375,
+      "wsl_max_swap_used_mib": 0.0,
+      "gpu_telemetry": {
+        "temperature_c": 48.0,
+        "memory_used_mib": 1777.0,
+        "utilization_percent": 16.0
+      }
+    }
+  ],
+  "completed": true,
+  "all_workers_exit_zero": true,
+  "checkpoint_sha256": "c485a1395a2bfc73d394e0db469ec13e547a5099710dfc762979b0f2527e3d0f"
+}

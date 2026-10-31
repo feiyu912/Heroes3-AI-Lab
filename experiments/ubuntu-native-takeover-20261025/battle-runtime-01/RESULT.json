@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "games": [],
+  "optimizer_steps": 0,
+  "model_promoted": false,
+  "final_test_touched": false,
+  "error": "AssertionError('/run/media/kaicheng/code/Heroes3-AI-Lab/experiments/ubuntu-native-takeover-20261025/battle-runtime-01/BattleAI-attacker.log')"
+}
