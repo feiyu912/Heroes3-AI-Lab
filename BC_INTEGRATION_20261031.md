@@ -216,7 +216,30 @@ BC 只需要对每个 request 的 logits 做 masked cross-entropy，标签是
 6. **接口扩展**：多英雄、城镇、雇英雄、兵链、魔法是视频内容的主体；不扩接口，
    BC 只能学到一个很窄的单英雄策略。
 
-## 7. 结论一句话
+## 7. Codex thread 与“剩余训练数据”的实际状态
+
+已读取主线程 `01a166c6-eedd-7a91-a4a2-0c79d4aa785c` 及其 10/25 续接 fork
+（`~/.codex/sessions/2026/10/25/rollout-..._01a17175-...jsonl`），并读取
+`thread_history_1.sqlite` 的 7 个 turn。可直接读取的内容包括：
+
+- 10/23 主线程的完整 4,280 条 rollout；
+- 10/25 续接线程的最后 assistant 消息（10/31 03:08 仍在核对中断后的状态）；
+- 10/26 的补兵机制结果：4 组 8 局 + 新增 7 组 14 局边界对照，
+  均在 `experiments/strategic-refill-paired-build-20261026/` 和
+  `experiments/strategic-refill-boundaries-20261026/`；
+- 已 admitted 的训练样本：
+  `experiments/takeover-20261023/active-learning-delivery-01/native-study/{control,curriculum}/cell-*/admitted/samples.jsonl`；
+- 已准备但**未实际执行**的固定 TRAIN 校准包：
+  `experiments/strategic-refill-train-calibration-20261026/`（`NATIVE_ADMISSION.json`
+  仍不存在，`require_native_admission()` 会拒绝启动）。
+
+该线程里没有新的 BC 专家数据集，也没有 `expert-demonstration-v1`/schema6
+教师 JSONL。现有 admitted samples 是当前策略的 on-policy 轨迹（EmptyAI 胜、
+Nullkiller2 负），不是高手数据；把它们直接做 BC 只会复制当前行为。
+如果“剩余训练数据”指的是另一台电脑准备的 BC 文件，需要把实际路径或
+`train.jsonl` 交付过来，再用 `experiments/strategic-bc-20261031/validate_dataset.py` 校验。
+
+## 8. 结论一句话
 
 **BC 在机制上完全适合这个项目，但现在最缺的不是 BC 代码，而是“可执行的教师标签”
 和“能被当前 35+227 维候选接口表达的高手决策”。** 如果其他电脑交付的是
