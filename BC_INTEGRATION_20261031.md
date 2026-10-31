@@ -239,7 +239,27 @@ Nullkiller2 负），不是高手数据；把它们直接做 BC 只会复制当�
 如果“剩余训练数据”指的是另一台电脑准备的 BC 文件，需要把实际路径或
 `train.jsonl` 交付过来，再用 `experiments/strategic-bc-20261031/validate_dataset.py` 校验。
 
-## 8. 结论一句话
+## 8. 如果视频内容主要是“战斗技巧”而不是大地图战略
+
+上面的 schema6 管线只处理**战略层**的 request（move/end_turn/build/recruit）。
+龙息、骗反击、WAIT、护射手、集火等属于**战斗层**，不能塞进 schema6，也不能把
+战斗图的 expert-action 直接当战略候选下标。
+
+战斗层现有的入口是：
+
+- 统一数据格式：`experiments/expert-knowledge-v1/expert_demonstration_schema.json`
+  与 `DEMONSTRATION_INGESTION.md`；
+- 训练器：`experiments/human-tactics-events-v2/bc_train_events.py`
+  （policy-head BC，graph observation；当前只支持已验证的 Q2/Q3 bundle）；
+- 门禁：`video_guess` 会被拒绝；Q0/未知终局不可训练；Q3 才可称“已验证专家”。
+
+历史结果必须正视：205 条探索性战斗标签的 BC 把 NLL 从 10.47 降到 7.64，
+但独立 8 局平均损失反而 +8.12；早期 BattleAI BC 的 top-1 63.3%、独立胜率 26.9%。
+所以战斗 BC 也需要**更多、更强、可执行**的教师数据，并且要单独做配对战斗评估。
+如果其他电脑的战斗数据规模足够（建议至少数万决策），可以复用/扩展
+`bc_train_events.py`，而不是新写一个把视频动作当标签的训练器。
+
+## 9. 结论一句话
 
 **BC 在机制上完全适合这个项目，但现在最缺的不是 BC 代码，而是“可执行的教师标签”
 和“能被当前 35+227 维候选接口表达的高手决策”。** 如果其他电脑交付的是
